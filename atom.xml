@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
+  <link href="http://vladigleba.github.io/"/>
+  <updated>2013-10-14T16:09:52-07:00</updated>
+  <id>http://vladigleba.github.io/</id>
+  <author>
+    <name><![CDATA[Vladi Gleba]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Sup]]></title>
+    <link href="http://vladigleba.github.io/blog/2013/10/14/sup/"/>
+    <updated>2013-10-14T16:07:00-07:00</updated>
+    <id>http://vladigleba.github.io/blog/2013/10/14/sup</id>
+    <content type="html"><![CDATA[<p>Starting a blog is something I wanted to do for a few years now, but I worried too much about not having enough time or things to write about, so I always put it off.</p>
+
+<p>But this weekend I had some free time on my hands and found myself googling around for blogging platforms for hackers. After some clicking around, I ran into Jekyll and was instantly intrigued by it. And now I&rsquo;m sitting here typing up this post.</p>
+
+<p>I want to mention that since this is my first time venturing into the land of blogging, I want to apologize in advance if I make any rookie mistakes. Feel free to laugh and point it out. I will have a good laugh myself and hopefully learn from it.</p>
+
+<p>My main goal with this blog is to share my web development knowledge. I plan on covering the side projects I work on and the technologies that power them. As an aspiring web developer, I heavily rely on other people&rsquo;s blogs to get stuff done, so I want to give back to the community and hopefully be of similar help to other aspiring web developers.</p>
+
+<p>In my next post I&rsquo;ll be talking about the a side project I&rsquo;ve been working on for quite a while now. It&rsquo;s already online and you can check it out at phindee.com.</p>
+
+<p>Stay hungry. Stay foolish.</p>
+]]></content>
+  </entry>
+  
+</feed>
