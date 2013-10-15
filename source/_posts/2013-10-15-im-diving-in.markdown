@@ -16,6 +16,6 @@ I want to mention that since this is my first time venturing into the land of bl
 
 My main goal with this blog is to share my web development knowledge. I plan on covering the side projects I work on and the technologies that power them. As an aspiring web developer, I heavily rely on other people's blogs to get stuff done, so I want to give back to the community and hopefully be of similar help to other aspiring web developers.
 
-In my next post I'll be talking about a side project I've been working on for quite a while now. It's already online and you can check it out at phindee.com.
+In my next post I'll be talking about a side project I've been working on for quite a while now. It's already online and you can check it out at <a href="http://www.phindee.com">phindee.com</a>.
 
 Stay hungry. Stay foolish.
