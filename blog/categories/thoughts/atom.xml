@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Thoughts | My Octopress Blog]]></title>
   <link href="http://vladigleba.github.io/blog/categories/thoughts/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-10-15T11:27:49-07:00</updated>
+  <updated>2013-10-15T14:06:49-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -22,11 +22,14 @@
 
 <p>But this weekend I had some free time on my hands and found myself googling around for blogging platforms. After some clicking around, I ran into Jekyll and was instantly intrigued by it. And now I&rsquo;m sitting here typing up this post.</p>
 
+<!-- more -->
+
+
 <p>I want to mention that since this is my first time venturing into the land of blogging, I want to apologize in advance if I make any rookie mistakes. Feel free to laugh and point it out. I will have a good laugh myself and hopefully learn from it.</p>
 
 <p>My main goal with this blog is to share my web development knowledge. I plan on covering the side projects I work on and the technologies that power them. As an aspiring web developer, I heavily rely on other people&rsquo;s blogs to get stuff done, so I want to give back to the community and hopefully be of similar help to other aspiring web developers.</p>
 
-<p>In my next post I&rsquo;ll be talking about the a side project I&rsquo;ve been working on for quite a while now. It&rsquo;s already online and you can check it out at phindee.com.</p>
+<p>In my next post I&rsquo;ll be talking about a side project I&rsquo;ve been working on for quite a while now. It&rsquo;s already online and you can check it out at phindee.com.</p>
 
 <p>Stay hungry. Stay foolish.</p>
 ]]></content>
