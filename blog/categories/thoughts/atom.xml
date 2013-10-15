@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Thoughts | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/categories/thoughts/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-10-15T14:58:27-07:00</updated>
+  <updated>2013-10-15T15:26:50-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -18,14 +18,14 @@
     <link href="http://vladigleba.github.io/blog/2013/10/15/im-diving-in/"/>
     <updated>2013-10-15T11:20:00-07:00</updated>
     <id>http://vladigleba.github.io/blog/2013/10/15/im-diving-in</id>
-    <content type="html"><![CDATA[<p>Starting a blog is something I wanted to do for a few years now, but I worried too much about not having enough time or things to write about, so I always put it off.</p>
+    <content type="html"><![CDATA[<p>Starting a blog is something I wanted to do for a few years now, but I worried too much about not having enough time or things to write about, so I always put it off. But this weekend that all changed.</p>
 
-<p>But this weekend I had some free time on my hands and found myself googling around for blogging platforms. After some clicking around, I ran into Jekyll and was instantly intrigued by it. And now I&rsquo;m sitting here typing up this post.</p>
+<p>Having some free time on my hands, I found myself doing what I do best: gravitating towards the computer. I then caught myself googling for blogging platforms and the rest, as they say, is history. After a few clicks, I stumbled into Octopress. The framework and I instantly clicked and I knew I found a winner.</p>
 
 <!-- more -->
 
 
-<p>I want to mention that since this is my first time venturing into the land of blogging, I want to apologize in advance if I make any rookie mistakes. Feel free to laugh and point it out. I will have a good laugh myself and hopefully learn from it.</p>
+<p>Now I do want to mention that since this is my first try at blogging, I want to apologize in advance if I make any rookie mistakes. Feel free to laugh and point it out. I will have a good laugh myself and hopefully learn from it.</p>
 
 <p>My main goal with this blog is to share my web development knowledge. I plan on covering the side projects I work on and the technologies that power them. As an aspiring web developer, I heavily rely on other people&rsquo;s blogs to get stuff done, so I want to give back to the community and hopefully be of similar help to other aspiring web developers.</p>
 
