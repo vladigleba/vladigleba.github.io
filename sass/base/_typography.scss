@@ -33,20 +33,20 @@ body {
   @extend .serif;
 }
 h1 {
-  font-size: 2.2em;
+  margin-top: 1.5em;
+  font-size: 2em;
   line-height: 1.2em;
 }
 
 @media only screen and (min-width: 992px) {
   body { font-size: 1.15em; }
-  h1 { font-size: 2.6em; line-height: 1.2em; }
+  h1 { font-size: 2em; line-height: 1.2em; }
 }
 
 #{headings()}{
   @extend .heading;
   text-rendering: optimizelegibility;
-  margin-bottom: 1em;
-  font-weight: bold;
+  margin-bottom: 0.5em;
 }
 h2, section h1 {
   font-size: 1.5em;
@@ -112,7 +112,7 @@ article blockquote {
   $bq-margin: 1.2em;
   font-style: italic;
   position: relative;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.5em;
   padding-left: 1em;
   border-left: 4px solid rgba($text-color-light, .5);

@@ -7,6 +7,8 @@ html {
 	background: $white;
 }
 
+cite { font-style: italic; }
+
 body {
 	font-family: $sans !important;
 	font-size: 1em;
@@ -22,7 +24,7 @@ body {
 
 		h1 {
 			a, a:visited, a:hover {
-				color: #8C8C8C;
+				color: #333;
 				font-family: $heading-font-family;
 			}
 		}
@@ -71,11 +73,12 @@ body {
 	}
 
 	> footer {
+    text-align: center;
 		background: $white;
 		text-shadow: none;
 		color: #AAAAAA;
-	  	padding-left: 0;
-	  	padding-right: 0;
+	  padding-left: 0;
+	  padding-right: 0;
 		border-top: 0px;
 		padding-left: 0px;
 		padding-right: 0px;
@@ -100,6 +103,10 @@ article {
 	padding-top: 2em;
 
 	.entry-content {
+    p {
+      font-size: 120%;
+      line-height: 1.8em;
+    }
 		h3 {
 			font-style: italic
 		}
@@ -114,6 +121,8 @@ article {
 	}
 
 	header {
+    border-bottom: none;
+    
 		h1.entry-title {
 			font-family: $heading-font-family;
 			font-weight: 400;
@@ -160,7 +169,7 @@ article {
 		h1.entry-title {
 			font-family: $heading-font-family;
 			font-weight: 400;
-			font-size: 2.2em;
+			font-size: 2.6em;
 		}
 	}
 	
