@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Design | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/categories/design/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-10-23T16:34:25-07:00</updated>
+  <updated>2013-10-23T16:54:13-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -46,7 +46,7 @@
 
 <p>These grids are built with ratios derived from the available canvas. For example, if your canvas is an A4-sized piece of paper, the ratio would equal the paper&rsquo;s length to width ratio. The canvas is then repeatedly divided according to the ratio and a grid is slowly built up. This creates a sense of connectedness and unity between your layout and the surrounding canvas. I won&rsquo;t go into any more detail, but you can read Mark Boulton&rsquo;s <cite><a href="http://markboulton.co.uk/journal/five-simple-steps-to-designing-grid-systems-part-1">Five Simple Steps</a></cite> series for an illustrative example of this technique.</p>
 
-<h1>Content Based Grids</h1>
+<h1>Grids Based on the Content</h1>
 
 <blockquote><p>Content precedes design. Design in the absence of content is not design, it&rsquo;s decoration. &mdash;<a href="https://twitter.com/zeldman/statuses/804159148">Jeffrey Zeldman</a></p></blockquote>
 
