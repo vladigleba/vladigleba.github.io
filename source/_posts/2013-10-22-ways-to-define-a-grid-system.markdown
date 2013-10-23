@@ -32,7 +32,7 @@ Grids based on the Fibonacci sequence use its numbers to define virtually everyt
 
 These grids are built with ratios derived from the available canvas. For example, if your canvas is an A4-sized piece of paper, the ratio would equal the paper's length to width ratio. The canvas is then repeatedly divided according to the ratio and a grid is slowly built up. This creates a sense of connectedness and unity between your layout and the surrounding canvas. I won't go into any more detail, but you can read Mark Boulton's <cite>[Five Simple Steps](http://markboulton.co.uk/journal/five-simple-steps-to-designing-grid-systems-part-1)</cite> series for an illustrative example of this technique.
 
-# Content Based Grids
+# Grids Based on the Content
 
 > Content precedes design. Design in the absence of content is not design, it's decoration. &mdash;[Jeffrey Zeldman](https://twitter.com/zeldman/statuses/804159148)
 
