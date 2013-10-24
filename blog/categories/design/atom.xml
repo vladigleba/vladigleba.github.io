@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Design | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/categories/design/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-10-23T16:54:13-07:00</updated>
+  <updated>2013-10-23T17:41:26-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -50,7 +50,7 @@
 
 <blockquote><p>Content precedes design. Design in the absence of content is not design, it&rsquo;s decoration. &mdash;<a href="https://twitter.com/zeldman/statuses/804159148">Jeffrey Zeldman</a></p></blockquote>
 
-<p>I never really understood the reasoning behind this quote until I read A List Apart&rsquo;s <cite><a href="http://alistapart.com/article/more-meaningful-typography">More Meaningful Typography</a></cite> article. The article describes how to achieve visual harmony with the help of modular scales, which are based on numbers that are meaningful to your content. To summarize, you start with a ratio (like 1.618) and a number (say 10), and multiply and divide, like so:</p>
+<p>I never really understood the reasoning behind this quote until I read A List Apart&rsquo;s <cite><a href="http://alistapart.com/article/more-meaningful-typography">More Meaningful Typography</a></cite> article. The article describes how to achieve visual harmony with the help of modular scales, which are based on numbers that are meaningful to your content. To summarize, you start with a ratio (like 1.618) and a number (say 10), then you multiply and divide, like so:</p>
 
 <pre><code>10 * 1.618 = 16.180
 16.180 * 1.618 = 26.179
