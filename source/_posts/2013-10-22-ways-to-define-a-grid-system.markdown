@@ -36,7 +36,7 @@ These grids are built with ratios derived from the available canvas. For example
 
 > Content precedes design. Design in the absence of content is not design, it's decoration. &mdash;[Jeffrey Zeldman](https://twitter.com/zeldman/statuses/804159148)
 
-I never really understood the reasoning behind this quote until I read A List Apart's <cite>[More Meaningful Typography](http://alistapart.com/article/more-meaningful-typography)</cite> article. The article describes how to achieve visual harmony with the help of modular scales, which are based on numbers that are meaningful to your content. To summarize, you start with a ratio (like 1.618) and a number (say 10), and multiply and divide, like so:
+I never really understood the reasoning behind this quote until I read A List Apart's <cite>[More Meaningful Typography](http://alistapart.com/article/more-meaningful-typography)</cite> article. The article describes how to achieve visual harmony with the help of modular scales, which are based on numbers that are meaningful to your content. To summarize, you start with a ratio (like 1.618) and a number (say 10), then you multiply and divide, like so:
 
     10 * 1.618 = 16.180
     16.180 * 1.618 = 26.179
