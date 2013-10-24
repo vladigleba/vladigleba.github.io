@@ -8,11 +8,9 @@ categories: Design
 
 I started blogging last week. And ever since publishing that first post, I've been trying to find a suitable design for my blog. I looked at many different blog designs for inspiration, and one of my favorites was Whitney Hess' <cite>[Pleasure and Pain](http://whitneyhess.com/blog/)</cite> blog. I don't know why, but the design just resonates with me. It feels right. 
 
-My knowledge of grid systems is limited, but I figured the design was probably based on a grid. So I decided to spend the past couple of days learning about grid systems and the role they play in page layouts. Disclosure: I don't have a background in design, but I'm always eager to learn more, so if you're a designer, please feel free to contribute!
+My knowledge of grid systems is limited, but I figured the design was probably based on a grid. So I decided to spend the past couple of days learning about grid systems and the role they play in page layouts. <!-- more --> Disclosure: I don't have a background in design, but I'm always eager to learn more, so if you're a designer, please feel free to contribute!
 
 Alright, onto grids.
-
-<!-- more -->
 
 > Spacing and the use of space is what holds a design together. Precise and effective space management can make the difference between an average design and an amazing one. ... How big is the header compared to the navigation bar?  How wide is the photo compared to the sidebar? These ratios are what make or break the balance, emphasis and flow of a design. Additionally . . . we constantly are looking for order and understanding of the world around us. ... Our mind is constantly seeking some reason, pattern or rational for what we are seeing. This is especially true of spacing, sizing and proportions. ... If that unity doesn’t exist it will always feel unpolished. &mdash;[Ross Johnson](http://3.7designs.co/blog/2010/10/how-to-design-using-the-fibonacci-sequence/)
 

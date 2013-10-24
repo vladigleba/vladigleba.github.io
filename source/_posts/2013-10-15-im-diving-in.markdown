@@ -14,7 +14,7 @@ Having some free time on my hands, I found myself doing what I do best: gravitat
 
 Now I'm sitting typing up this first post. I am both excited and nervous at the same time, but starting a blog feels right to me. Writing is something I've always enjoyed doing, so having an outlet to express myself through writing is definitely fulfilling.
 
-Now I do want to mention that since this is my first time blogging, I want to apologize in advance if I make any rookie mistakes. Feel free to laugh and point it out. I will have a good laugh myself and hopefully learn from it.
+I do want to mention that since this is my first time blogging, I want to apologize in advance if I make any rookie mistakes. Feel free to laugh and point it out. I will have a good laugh myself and hopefully learn from it.
 
 My main goal with this blog is to share my web development knowledge. I plan on covering the side projects I work on and the technologies that power them. As an aspiring web developer, I heavily rely on other people's blogs to get stuff done, so I want to give back to the community and hopefully be of similar help to other aspiring web developers.
 
