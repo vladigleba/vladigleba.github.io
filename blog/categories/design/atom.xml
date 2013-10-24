@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Design | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/categories/design/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-10-23T21:18:54-07:00</updated>
+  <updated>2013-10-23T21:21:05-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -20,12 +20,9 @@
     <id>http://vladigleba.github.io/blog/2013/10/22/ways-to-define-a-grid-system</id>
     <content type="html"><![CDATA[<p>I started blogging last week. And ever since publishing that first post, I&rsquo;ve been trying to find a suitable design for my blog. I looked at many different blog designs for inspiration, and one of my favorites was Whitney Hess' <cite><a href="http://whitneyhess.com/blog/">Pleasure and Pain</a></cite> blog. I don&rsquo;t know why, but the design just resonates with me. It feels right.</p>
 
-<p>My knowledge of grid systems is limited, but I figured the design was probably based on a grid. So I decided to spend the past couple of days learning about grid systems and the role they play in page layouts. Disclosure: I don&rsquo;t have a background in design, but I&rsquo;m always eager to learn more, so if you&rsquo;re a designer, please feel free to contribute!</p>
+<p>My knowledge of grid systems is limited, but I figured the design was probably based on a grid. So I decided to spend the past couple of days learning about grid systems and the role they play in page layouts. <!-- more --> Disclosure: I don&rsquo;t have a background in design, but I&rsquo;m always eager to learn more, so if you&rsquo;re a designer, please feel free to contribute!</p>
 
 <p>Alright, onto grids.</p>
-
-<!-- more -->
-
 
 <blockquote><p>Spacing and the use of space is what holds a design together. Precise and effective space management can make the difference between an average design and an amazing one. &hellip; How big is the header compared to the navigation bar?  How wide is the photo compared to the sidebar? These ratios are what make or break the balance, emphasis and flow of a design. Additionally &hellip; we constantly are looking for order and understanding of the world around us. &hellip; Our mind is constantly seeking some reason, pattern or rational for what we are seeing. This is especially true of spacing, sizing and proportions. &hellip; If that unity doesn’t exist it will always feel unpolished. &mdash;<a href="http://3.7designs.co/blog/2010/10/how-to-design-using-the-fibonacci-sequence/">Ross Johnson</a></p></blockquote>
 
