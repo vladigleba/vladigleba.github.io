@@ -10,7 +10,7 @@ html {
 cite { font-style: italic; }
 
 body {
-	font-family: $sans !important;
+	font-family: $serif !important;
 	font-size: 1em;
 	max-width: 850px;
 	padding-left: 0.5em;
@@ -104,8 +104,8 @@ article {
 
 	.entry-content {
     p {
-      font-size: 120%;
-      line-height: 1.8em;
+      font-size: 125%;
+      line-height: 1.6em;
     }
 		h3 {
 			font-style: italic
