@@ -16,7 +16,7 @@ $header-subtitle-font-family: $serif !default;
 .mono { font-family: $mono; }
 
 body > header h1 {
-  font-size: 2.2em;
+  font-size: 3em;
   @extend .heading;
   font-family: $header-title-font-family;
   font-weight: normal;
@@ -24,6 +24,7 @@ body > header h1 {
   margin-bottom: 0.6667em;
 }
 body > header h2 {
+  font-size: 1.4em !important;
   font-family: $header-subtitle-font-family;
 }
 

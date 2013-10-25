@@ -81,11 +81,7 @@ article {
   }
 
 }
-article + article {
-  .blog-index & {
-    background: $img-border top left repeat-x;
-  }
-}
+
 #content .blog-index {
   padding: { top: 0; bottom: 0; }
   article { padding-top: 2em; }
