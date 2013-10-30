@@ -1,6 +1,32 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
+/* 
+-------------------------------------------------------------------------
+Author: Vladi Gleba
+Website: vladigleba.com
+Date: October 2013
+
+This layout is based on the following modular scale:
+
+20px @ 1:1.618
+62px @ 1:1.618
+
+See http://modularscale.com/scale/?px1=20&px2=62&ra1=1.618&ra2=0
+for the numbers in this scale. All font-size, line-height, margin, and 
+padding values are derived from these numbers.
+
+See http://alistapart.com/article/more-meaningful-typography
+to learn about modular scales.
+
+-------------------------------------------------------------------------
+*/ 
+
+
+// ------------------------------
+// variables
+// ------------------------------
+
 $accent-color: #699c5f; 
 $accent-hover-color: darken($accent-color, 8%);
 
@@ -11,8 +37,10 @@ $default-line-color: #e6e6e6;
 
 $border-radius-size: 4px;
 
-// ------------------------------
-// ------------------------------
+
+/*
+general styles
+------------------------------ */
 
 html { 
   font: 125%/1 "PT Serif", Georgia, Times, "Times New Roman", serif; 
@@ -31,25 +59,81 @@ a {
   color: $accent-color; 
   outline: none;
   @include transition(color 0.3s ease 0s);
-}
-a:hover { 
-  color: $accent-hover-color; 
+  
+  &:hover {
+    color: $accent-hover-color; 
+  }
 }
 
-.subscription, .mobile-nav, aside { 
+#main { 
+  clear: both; 
+}
+
+.pagination { 
+  border-top: 1px solid $default-line-color;
+  border-bottom: 1px solid $default-line-color;
+  padding: 23.683px 0;
+  padding: 1.184rem 0;
+  margin-bottom: 38.319px;
+  margin-bottom: 1.916rem;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 3px solid $default-line-color;
+  padding-left: 20px;
+  padding-left: 1rem;
+}
+
+pre {
+  overflow: auto;
+  background-color: #002933;
+  border-radius: $border-radius-size;
+  color: #93A1A1;
+  font-family: Menlo, Monaco, "Andale Mono", "Lucida Console", "Courier New", monospace;
+  font-size: 14.637px;
+  font-size: 0.732rem;
+  padding: 20px;
+  padding: 1rem;
+}
+
+cite { 
+  font-style: italic; 
+}
+
+
+/*
+shared styles
+------------------------------ */
+
+.subscription, 
+.mobile-nav, 
+aside { 
   display: none; 
 }
 
-cite { font-style: italic; }
+h1, h2, h3, h4, h5, h6 { 
+  text-rendering: optimizeLegibility; 
+}
 
-h1, h2, h3, h4, h5, h6, h1 > a { text-rendering: optimizeLegibility; }
+article header, 
+article .entry-content p, 
+pre { 
+  margin-bottom: 32.360px;
+  margin-bottom: 1.618rem; 
+}
 
-article header, article .entry-content p, pre { margin-bottom: 1.618rem; }
-nav ul li, article header p.meta { font-size: 0.878rem; } /* 0.732+0.146 */
+nav ul li, 
+article header p.meta { 
+  font-size: 17.555px;
+  font-size: 0.878rem; /* 0.732 + 0.146 */
+} 
 
 h1, 
 article header p.meta, 
-#blog-archives h2 { font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif; }
+#blog-archives h2 { 
+  font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif; 
+}
 
 article > footer > p.meta, 
 body > header h2, 
@@ -62,41 +146,58 @@ nav ul li,
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; 
 }
 
-// ------------------------------
-// ------------------------------
+
+/*
+blog structure
+------------------------------ */
 
 body {
   > header {
+    margin: 84.715px 0 52.358px 0;
     margin: 4.236rem 0 2.618rem 0;
   
     h1 { 
+      font-size: 62.000px;
       font-size: 3.1rem;
+      margin-bottom: 7.640px;
       margin-bottom: 0.382rem;
     
-      a, a:hover { color: $text-color; }
+      a, a:hover { 
+        color: $text-color; 
+      }
     }
   
     h2 { 
       color: $secondary-text-color;
-      font-size: 1.464rem; /* 1.184+0.28 */
+      font-size: 29.274px;
+      font-size: 1.464rem; /* 1.184 + 0.28 */
     }
   }
   
   > footer {
+    margin-bottom: 52.358px;
     margin-bottom: 2.618rem;
     
-    p { font-size: 0.732rem; color: $secondary-text-color; }
+    p { 
+      font-size: 14.637px;
+      font-size: 0.732rem; 
+      color: $secondary-text-color; 
+    }
   }
 }
 
-// ------------------------------
-// ------------------------------
+
+/*
+navigation
+------------------------------ */
 
 nav {
   border-top: 2px solid #808080;
   border-bottom: 1px solid $default-line-color;
   overflow: hidden;
+  padding: 14.637px 0;
   padding: 0.732rem 0;
+  margin-bottom: 84.715px;
   margin-bottom: 4.236rem;
   
   form { 
@@ -105,104 +206,93 @@ nav {
     input.search { 
       border: none;
       background-color: #f2f2f2;
+      padding: 9.046px 14.637px;
       padding: 0.452rem 0.732rem;
       border-radius: $border-radius-size;
+      font-size: 14.637px;
       font-size: 0.732rem;
     }
   }
   
   ul { 
     float: left;
-    margin-top: 0.45rem;
+    margin-top: 9.03333px;
+    margin-top: 0.45rem; /* rounded */
     
     li { 
       display: inline; 
       font-weight: bold;
-      font-size: 0.968rem; /* 0.732+0.236 */
+      font-size: 19.359px;
+      font-size: 0.968rem; /* 0.732 + 0.236 */
     }
     
     li + li { 
+      padding-left: 32.360px;
       padding-left: 1.618rem;
     }
   }
 }
 
-// ------------------------------
-// ------------------------------
+
+/*
+archives page
+------------------------------ */
 
 #blog-archives {
   h2 {
+    font-size: 38.319px;
     font-size: 1.916rem;
     color: $secondary-text-color;
   }
   
   article {
-    margin-left: 4.4rem; /* number not from scale */
+    margin-left: 88px;
+    margin-left: 4.4rem; /* not from scale */
+    margin-bottom: 52.358px;
     margin-bottom: 2.618rem;
     
     h1 {
+      font-size: 32.360px;
       font-size: 1.618rem;
     }
   }
   
   time, footer { 
     color: $secondary-text-color;
-    font-size: 0.839rem; /* 0.732+0.107 */
+    font-size: 16.773px;
+    font-size: 0.839rem; /* 0.732 + 0.107 */
     display: inline;
   }
   
   time:after {
     content: "•";
-    padding: 0 0.3rem 0 0.5rem;
+    padding: 0 6px 0 10px;
+    padding: 0 0.3rem 0 0.5rem; /* not from scale */
   }
 }
 
-// ------------------------------
-// ------------------------------
 
-#main { 
-  clear: both; 
-}
+/* 
+blog post
+------------------------------ */  
+  
+article.hentry { 
+  margin-bottom: 62.000px;
+  margin-bottom: 3.1rem; /* for complete post */
+} 
 
-.pagination { 
-  border-top: 1px solid $default-line-color;
-  border-bottom: 1px solid $default-line-color;
-  padding: 1.184rem 0;
-  margin-bottom: 1.916rem;
-}
-
-blockquote {
-  font-style: italic;
-  border-left: 3px solid $default-line-color;
-  padding-left: 1rem;
-}
-
-pre {
-  overflow: auto;
-  background-color: #002933;
-  border-radius: $border-radius-size;
-  color: #93A1A1;
-  font-family: Menlo, Monaco, "Andale Mono", "Lucida Console", "Courier New", monospace;
-  font-size: 0.732rem;
-  padding: 1rem;
-}
-
-// ------------------------------
-// ------------------------------       
-
-// mine: 17.5 wpl
-// hess: 16.6 wpl
-// ala:  14.0 wpl
-// 
-
-article.hentry { margin-bottom: 3.1rem; } /* for a complete post */
 article { 
   text-align: left;
-  margin-bottom: 5.634rem; /* 5.016+0.618 | for home page post preview */
+  margin-bottom: 112.677px;
+  margin-bottom: 5.634rem; /* 5.016 + 0.618 | for home page post preview */
+  
+  /* ----- post's header ----- */
   
   header {    
     h1 {
-      font-size: 2.298rem; /* 1.916+0.382 */
+      font-size: 45.959px;
+      font-size: 2.298rem; /* 1.916 + 0.382 */
+      margin-bottom: 9.046px;
       margin-bottom: 0.452rem;
       
       a, a:hover {
@@ -213,33 +303,47 @@ article {
     p.meta { 
       text-transform: uppercase; 
       color: $secondary-text-color; 
-      font-size: 0.968rem; /* 0.732+0.236 */
+      font-size: 19.359px; 
+      font-size: 0.968rem; /* 0.732 + 0.236 */
     }
   }
   
+  /* ----- post's content ----- */
+  
   .entry-content {
     h1 { 
+      font-size: 32.360px;
       font-size: 1.618rem;
+      margin-top: 62.000px;
       margin-top: 3.1rem;
+      margin-bottom: 20px;
       margin-bottom: 1rem;
     }
     
     p {
+      line-height: 32.360px;
       line-height: 1.618rem;
     }
   }
   
+  /* ----- post's footer ----- */
+  
   footer {
+    padding-top: 9.046px;
     padding-top: 0.452rem;
     
     > p.meta:first-child {
+      font-size: 14.637px;
       font-size: 0.732rem;
-      border-bottom: 1px solid $default-line-color;
+      margin-bottom: 32.360px;
       margin-bottom: 1.618rem;
+      padding-bottom: 14.637px;
       padding-bottom: 0.732rem;
+      border-bottom: 1px solid $default-line-color;
       
       time:after, span.author:after {
-        padding: 0 0.3rem 0 0.5rem;
+        padding: 0 6px 0 10px;
+        padding: 0 0.3rem 0 0.5rem; /* not from scale */
         content: "•";
       }
     }
@@ -249,16 +353,23 @@ article {
       background-color: $accent-color; 
       color: #fff;
       border-radius: $border-radius-size;
+      padding: 7.640px 14.637px;
       padding: 0.382rem 0.732rem;
-      font-size: 0.839rem; /* 0.732+0.107 */
-    }
-    
-    > a:hover { 
-      background-color: $accent-hover-color; 
-      color: #fff; 
+      font-size: 16.773px;
+      font-size: 0.839rem; /* 0.732 + 0.107 */
+      
+      &:hover {
+        background-color: $accent-hover-color; 
+        color: #fff;         
+      }
     }
   }
 }
+
+
+/*
+media queries
+------------------------------ */    
 
 @media screen and (max-width: 1050px) {
   body {
@@ -266,31 +377,40 @@ article {
   }
 }
 
+/* ------------------------------ */
+
 @media screen and (max-width: 800px) {
   body {
     width: 90%;
   }
-}
+}  
+
+/* ------------------------------ */
 
 @media screen and (max-width: 650px) {
   html {
     font-size: 106%;
   }
   
+  
   body {
     > header {
-      margin: 2.618rem 0 2.618rem 0;
+      margin: 52.358px 0;
+      margin: 2.618rem 0;
     }
   }
+  
   
   nav {
     border-top: none;
     border-bottom: none;
+    margin-bottom: 52.358px;
     margin-bottom: 2.618rem;
     
     ul {
       border-top: 2px solid #808080;
-      border-bottom: 1px dotted $default-line-color;
+      border-bottom: 1px solid $default-line-color;
+      padding: 20px 0;
       padding: 1rem 0;
     }
     
@@ -300,55 +420,74 @@ article {
     }
     
     form {
+      margin-bottom: 23.683px;
       margin-bottom: 1.184rem;
       
       input.search { 
+        padding-top: 9.046px;
         padding-top: 0.452rem;
+        padding-top: 9.046px;
         padding-bottom: 0.452rem;
-        font-size: 0.905em; /* 0.732+0.173 */
+        font-size: 18.093px;
+        font-size: 0.905em; /* 0.732 + 0.173 */
         width: 50%;
       }
     }
   }
 }
 
+/* ------------------------------ */
+
 @media screen and (max-width: 480px) {
   body > header { 
-    margin: 1.916rem 0 1.916rem 0; 
+    margin: 38.319px 0;
+    margin: 1.916rem 0; 
     
     h1 { 
-      font-size: 2.196rem; /* 1.916+0.28 */
+      font-size: 43.91px;
+      font-size: 2.196rem; /* 1.916 + 0.28 */
     }
   
     h2 { 
-      font-size: 0.905rem;
+      font-size: 18.093px;
+      font-size: 0.905rem; /* 0.732 + 0.173 */
     }
   }
   
+  
   nav {
+    margin-bottom: 38.319px;
     margin-bottom: 1.916rem;
     
     ul {
+      padding: 14.637px 0;
       padding: 0.732rem 0;
     }
     
     form {
+      margin-bottom: 20px;
       margin-bottom: 1rem;
       
-      input.search { width: 70%; }
+      input.search { 
+        width: 70%; 
+      }
     }
   }
   
+  
   article {
     header {
-      line-height: 2.618rem; /* 2.618+0.236 */
+      line-height: 52.358px;
+      line-height: 2.618rem;
       
       p.meta {
+        line-height: 20px;
         line-height: 1rem;
       }
     }
     
     .entry-content h1 {
+      line-height: 38.319px;
       line-height: 1.916rem;
     }
   }
