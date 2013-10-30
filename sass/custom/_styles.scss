@@ -94,7 +94,7 @@ body {
 
 nav {
   border-top: 2px solid #808080;
-  border-bottom: 1px dotted $default-line-color;
+  border-bottom: 1px solid $default-line-color;
   overflow: hidden;
   padding: 0.732rem 0;
   margin-bottom: 4.236rem;
@@ -178,6 +178,7 @@ blockquote {
 }
 
 pre {
+  overflow: auto;
   background-color: #002933;
   border-radius: $border-radius-size;
   color: #93A1A1;
@@ -255,6 +256,100 @@ article {
     > a:hover { 
       background-color: $accent-hover-color; 
       color: #fff; 
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  body {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 106%;
+  }
+  
+  body {
+    > header {
+      margin: 2.618rem 0 2.618rem 0;
+    }
+  }
+  
+  nav {
+    border-top: none;
+    border-bottom: none;
+    margin-bottom: 2.618rem;
+    
+    ul {
+      border-top: 2px solid #808080;
+      border-bottom: 1px dotted $default-line-color;
+      padding: 1rem 0;
+    }
+    
+    ul, form {
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    form {
+      margin-bottom: 1.184rem;
+      
+      input.search { 
+        padding-top: 0.452rem;
+        padding-bottom: 0.452rem;
+        font-size: 0.905em; /* 0.732+0.173 */
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body > header { 
+    margin: 1.916rem 0 1.916rem 0; 
+    
+    h1 { 
+      font-size: 2.196rem; /* 1.916+0.28 */
+    }
+  
+    h2 { 
+      font-size: 0.905rem;
+    }
+  }
+  
+  nav {
+    margin-bottom: 1.916rem;
+    
+    ul {
+      padding: 0.732rem 0;
+    }
+    
+    form {
+      margin-bottom: 1rem;
+      
+      input.search { width: 70%; }
+    }
+  }
+  
+  article {
+    header {
+      line-height: 2.618rem; /* 2.618+0.236 */
+      
+      p.meta {
+        line-height: 1rem;
+      }
+    }
+    
+    .entry-content h1 {
+      line-height: 1.916rem;
     }
   }
 }
