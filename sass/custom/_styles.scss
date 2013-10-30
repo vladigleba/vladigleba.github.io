@@ -1,210 +1,258 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
-$white: #FFFFFF;
+$accent-color: #699c5f; 
+$accent-hover-color: darken($accent-color, 8%);
 
-html {
-	background: $white;
+$text-color: #222;
+$secondary-text-color: #aaa;
+
+$default-line-color: #e6e6e6;
+
+$border-radius-size: 4px;
+
+// ------------------------------
+// ------------------------------
+
+html { 
+  font: 125%/1 "PT Serif", Georgia, Times, "Times New Roman", serif; 
+}
+
+body { 
+  background-color: #fff; 
+  color: $text-color;
+  text-align: center; 
+  width: 55%;
+  margin: 0 auto; 
+}
+
+a { 
+  text-decoration: none; 
+  color: $accent-color; 
+  outline: none;
+  @include transition(color 0.3s ease 0s);
+}
+a:hover { 
+  color: $accent-hover-color; 
+}
+
+.subscription, .mobile-nav, aside { 
+  display: none; 
 }
 
 cite { font-style: italic; }
 
-a { color: $my-link-color !important; text-decoration: none; }
-a:hover { color: darken($my-link-color, 10) !important; }
+article header, article .entry-content p, pre { margin-bottom: 1.618rem; }
+nav ul li, article header p.meta { font-size: 0.878rem; } /* 0.732+0.146 */
+
+h1, 
+article header p.meta, 
+#blog-archives h2 { font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif; }
+
+article > footer > p.meta, 
+body > header h2, 
+body > footer p, 
+article header p.meta, 
+nav ul li, 
+.pagination,
+#blog-archives time, 
+#blog-archives footer { 
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; 
+}
+
+// ------------------------------
+// ------------------------------
 
 body {
-	font-family: $serif !important;
-	font-size: 1em;
-	max-width: 850px;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-
-	> header {
-		background: $white;
-		text-align: center;
-		padding-left: 0px;
-		padding-right: 0px;	
-
-		h1 {
-			a, a:visited, a:hover {
-				color: #333 !important;
-				font-family: $heading-font-family;
-			}
-		}
-	}
-
-	> nav {
-		background: $white;
-    border-top: 1px dashed #e6e6e6 !important;
-		border-bottom: 1px dashed #e6e6e6 !important;
-		padding: 0.9em 0;
-
-		form .search {
-			border-radius: 0.2em;
-			box-shadow: none;
-			border: 0px;
-			padding: 0.6em 0.5em;
-		}
-
-		a {
-      outline: none;
-      padding-top: 0.1em;
-      text-shadow: none;
-      text-transform: uppercase;
-			font-family: $sans;
-			font-size: 1.25em;
-      font-weight: bold;
-		}
+  > header {
+    margin: 4.236rem 0 2.618rem 0;
+  
+    h1 { 
+      font-size: 3.1rem;
+      margin-bottom: 0.382rem;
     
-		li + li {
-	    border: none;
-      padding-left: 1em;
-      
-			a { border: none; }
-		}
-	}
-
-	> div {
-		background: $white;
-		border-bottom: 0px;
-
-		> div {
-			background: $white;
-			border-right-width: 0px;
-		}
-	}
-
-	> footer {
-    text-align: center;
-		background: $white;
-		text-shadow: none;
-		color: #AAAAAA;
-	  padding-left: 0;
-	  padding-right: 0;
-		border-top: 0px;
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-
-	#content {
-		> article {
-			padding-left: 0px;
-			padding-right: 0px;
-		}
-
-		> div {
-			> article, > section {
-				padding-left: 0px;
-				padding-right: 0px;
-			}	
-		}
-	}
-}
-
-article {
-	padding-top: 2em;
-
-	.entry-content {
-    p {
-      font-size: 125%;
-      line-height: 1.6em;
+      a, a:hover { color: $text-color; }
     }
-		h3 {
-			font-style: italic
-		}
-	}
-
-	ul, ol {
-		margin-left: 2em;
-	}
-
-	a, a:visited {
-		color: #1863A1;
-	}
   
-	header {
-    background: none; 
-    margin-bottom: 1.5em;
-    
-		h1.entry-title {
-			font-family: $heading-font-family;
-			font-weight: 400;
-		}
-	}
-  
-  footer {
-    .basic-alignment { font-size: 1.5em; margin-top: 1em; }
+    h2 { 
+      color: $secondary-text-color;
+      font-size: 1.464rem; /* 1.184+0.28 */
+    }
   }
   
+  > footer {
+    margin-bottom: 2.618rem;
+    
+    p { font-size: 0.732rem; color: $secondary-text-color; }
+  }
 }
 
-#content {
-	div.pagination {
-		background: none repeat scroll 0 0 transparent;
-		margin: 0 10px;  
-		font-size: 0.95em;
-		padding-bottom: 1.5em;
-		margin-top: 4em;
-		position: relative;
-		text-align: center;		
-		border-top: dotted 1px #D1D1D1;
-		border-bottom: dotted 1px #D1D1D1;
-	}
+// ------------------------------
+// ------------------------------
 
-	.blog-index {
-		article {
-			padding-top: 4em;
+nav {
+  border-top: 2px solid #808080;
+  border-bottom: 1px dotted $default-line-color;
+  overflow: hidden;
+  padding: 0.732rem 0;
+  margin-bottom: 4.236rem;
+  
+  form { 
+    float: right; 
+    
+    input.search { 
+      border: none;
+      background-color: #f2f2f2;
+      padding: 0.452rem 0.732rem;
+      border-radius: $border-radius-size;
+      font-size: 0.732rem;
+    }
+  }
+  
+  ul { 
+    float: left;
+    margin-top: 0.45rem;
+    
+    li { 
+      display: inline; 
+      font-weight: bold;
+      font-size: 0.968rem; /* 0.732+0.236 */
+    }
+    
+    li + li { 
+      padding-left: 1.618rem;
+    }
+  }
+}
+
+// ------------------------------
+// ------------------------------
+
+#blog-archives {
+  h2 {
+    font-size: 1.916rem;
+    color: $secondary-text-color;
+  }
+  
+  article {
+    margin-left: 4.4rem; /* number not from scale */
+    margin-bottom: 2.618rem;
+    
+    h1 {
+      font-size: 1.618rem;
+    }
+  }
+  
+  time, footer { 
+    color: $secondary-text-color;
+    font-size: 0.839rem; /* 0.732+0.107 */
+    display: inline;
+  }
+  
+  time:after {
+    content: "•";
+    padding: 0 0.3rem 0 0.5rem;
+  }
+}
+
+// ------------------------------
+// ------------------------------
+
+#main { 
+  clear: both; 
+}
+
+.pagination { 
+  border-top: 1px solid $default-line-color;
+  border-bottom: 1px solid $default-line-color;
+  padding: 1.184rem 0;
+  margin-bottom: 1.916rem;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 3px solid $default-line-color;
+  padding-left: 1rem;
+}
+
+pre {
+  background-color: #002933;
+  border-radius: $border-radius-size;
+  color: #93A1A1;
+  font-family: Menlo, Monaco, "Andale Mono", "Lucida Console", "Courier New", monospace;
+  font-size: 0.732rem;
+  padding: 1rem;
+}
+
+// ------------------------------
+// ------------------------------       
+
+// mine: 17.5 wpl
+// hess: 16.6 wpl
+// ala:  14.0 wpl
+// 
+
+article.hentry { margin-bottom: 3.1rem; } /* for a complete post */
+article { 
+  text-align: left;
+  margin-bottom: 5.634rem; /* 5.016+0.618 | for home page post preview */
+  
+  header {    
+    h1 {
+      font-size: 2.298rem; /* 1.916+0.382 */
+      margin-bottom: 0.452rem;
       
-      footer a { 
-        background-color: $my-link-color !important; 
-        color: #fff !important; 
-        border-radius: 4px;
+      a, a:hover {
+        color: $text-color; 
       }
-      footer a:hover { background-color: darken($my-link-color, 10) !important; }
+    }
+    
+    p.meta { 
+      text-transform: uppercase; 
+      color: $secondary-text-color; 
+      font-size: 0.968rem; /* 0.732+0.236 */
+    }
+  }
+  
+  .entry-content {
+    h1 { 
+      font-size: 1.618rem;
+      margin-top: 3.1rem;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      line-height: 1.618rem;
+    }
+  }
+  
+  footer {
+    padding-top: 0.452rem;
+    
+    > p.meta:first-child {
+      font-size: 0.732rem;
+      border-bottom: 1px solid $default-line-color;
+      margin-bottom: 1.618rem;
+      padding-bottom: 0.732rem;
       
-			header {
-				padding-left: 0;
-  			padding-right: 0;
-			}
-		}
-
-		h1 {
-			a {
-        color: #000 !important;
-				font-family: $heading-font-family;
-				font-weight: 400;
-			}
-
-			a:hover {
-				text-decoration: none;
-			}
-		}
-	}
-
-	.hentry {
-		h1.entry-title {
-			font-family: $heading-font-family;
-			font-weight: 400;
-			font-size: 2.6em;
-		}
-	}
-	
-}
-
-figure.code {
-	.highlight {
-		background: #212C3B !important;
-
-		.gutter {
-			display: none;
-		}
-	}
-}
-
-.pre-code, html .gist .gist-file .gist-syntax .highlight pre, .highlight code {
-	background: #212C3B !important;
-}
-
-aside, .subscription {
-	display: none;
+      time:after, span.author:after {
+        padding: 0 0.3rem 0 0.5rem;
+        content: "•";
+      }
+    }
+    
+    > a { 
+      @include transition(all 0.3s ease 0s);
+      background-color: $accent-color; 
+      color: #fff;
+      border-radius: $border-radius-size;
+      padding: 0.382rem 0.732rem;
+      font-size: 0.839rem; /* 0.732+0.107 */
+    }
+    
+    > a:hover { 
+      background-color: $accent-hover-color; 
+      color: #fff; 
+    }
+  }
 }
