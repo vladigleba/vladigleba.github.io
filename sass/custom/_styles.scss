@@ -30,7 +30,7 @@ to learn about modular scales.
 $accent-color: #699c5f; 
 $accent-hover-color: darken($accent-color, 8%);
 
-$text-color: #222;
+$text-color: #333;
 $secondary-text-color: #aaa;
 
 $default-line-color: #e6e6e6;
@@ -43,6 +43,7 @@ general styles
 ------------------------------ */
 
 html { 
+  border-top: 10px solid $accent-color;
   font: 125%/1 "PT Serif", Georgia, Times, "Times New Roman", serif; 
 }
 
@@ -70,17 +71,17 @@ a {
 }
 
 .pagination { 
-  border-top: 1px solid $default-line-color;
-  border-bottom: 1px solid $default-line-color;
+  border-bottom: 2px dotted $text-color;
   padding: 23.683px 0;
   padding: 1.184rem 0;
   margin-bottom: 38.319px;
   margin-bottom: 1.916rem;
+  font-weight: bold;
 }
 
 blockquote {
   font-style: italic;
-  border-left: 3px solid $default-line-color;
+  border-left: 3px dotted $default-line-color;
   padding-left: 20px;
   padding-left: 1rem;
 }
@@ -91,8 +92,6 @@ pre {
   border-radius: $border-radius-size;
   color: #93A1A1;
   font-family: Menlo, Monaco, "Andale Mono", "Lucida Console", "Courier New", monospace;
-  font-size: 14.637px;
-  font-size: 0.732rem;
   padding: 20px;
   padding: 1rem;
 }
@@ -116,11 +115,19 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility; 
 }
 
-article header, 
-article .entry-content p, 
-pre { 
-  margin-bottom: 32.360px;
-  margin-bottom: 1.618rem; 
+article footer > p.meta:first-child,
+nav form input.search,
+body > footer p,
+pre {
+  font-size: 14.637px;
+  font-size: 0.732rem;
+}
+
+#blog-archives time, 
+#blog-archives footer,
+article footer > a {
+  font-size: 16.773px;
+  font-size: 0.839rem; /* 0.732 + 0.107 */
 }
 
 nav ul li, 
@@ -128,6 +135,32 @@ article header p.meta {
   font-size: 17.555px;
   font-size: 0.878rem; /* 0.732 + 0.146 */
 } 
+
+article header p.meta,
+nav ul li {
+  font-size: 19.359px;
+  font-size: 0.968rem; /* 0.732 + 0.236 */
+}
+
+article .entry-content h1,
+#blog-archives article h1 {
+  font-size: 32.360px;
+  font-size: 1.618rem;
+}
+
+article header, 
+article .entry-content p, 
+article footer > p.meta:first-child,
+pre { 
+  margin-bottom: 32.360px;
+  margin-bottom: 1.618rem; 
+}
+
+body > footer,
+#blog-archives article {
+  margin-bottom: 52.358px;
+  margin-bottom: 2.618rem;
+}
 
 h1, 
 article header p.meta, 
@@ -174,15 +207,8 @@ body {
     }
   }
   
-  > footer {
-    margin-bottom: 52.358px;
-    margin-bottom: 2.618rem;
-    
-    p { 
-      font-size: 14.637px;
-      font-size: 0.732rem; 
-      color: $secondary-text-color; 
-    }
+  > footer p {
+    color: $secondary-text-color; 
   }
 }
 
@@ -192,8 +218,7 @@ navigation
 ------------------------------ */
 
 nav {
-  border-top: 2px solid #808080;
-  border-bottom: 1px solid $default-line-color;
+  border-top: 2px dotted $text-color;
   overflow: hidden;
   padding: 14.637px 0;
   padding: 0.732rem 0;
@@ -209,8 +234,6 @@ nav {
       padding: 9.046px 14.637px;
       padding: 0.452rem 0.732rem;
       border-radius: $border-radius-size;
-      font-size: 14.637px;
-      font-size: 0.732rem;
     }
   }
   
@@ -222,8 +245,6 @@ nav {
     li { 
       display: inline; 
       font-weight: bold;
-      font-size: 19.359px;
-      font-size: 0.968rem; /* 0.732 + 0.236 */
     }
     
     li + li { 
@@ -248,19 +269,10 @@ archives page
   article {
     margin-left: 88px;
     margin-left: 4.4rem; /* not from scale */
-    margin-bottom: 52.358px;
-    margin-bottom: 2.618rem;
-    
-    h1 {
-      font-size: 32.360px;
-      font-size: 1.618rem;
-    }
   }
   
   time, footer { 
     color: $secondary-text-color;
-    font-size: 16.773px;
-    font-size: 0.839rem; /* 0.732 + 0.107 */
     display: inline;
   }
   
@@ -303,8 +315,6 @@ article {
     p.meta { 
       text-transform: uppercase; 
       color: $secondary-text-color; 
-      font-size: 19.359px; 
-      font-size: 0.968rem; /* 0.732 + 0.236 */
     }
   }
   
@@ -312,8 +322,6 @@ article {
   
   .entry-content {
     h1 { 
-      font-size: 32.360px;
-      font-size: 1.618rem;
       margin-top: 62.000px;
       margin-top: 3.1rem;
       margin-bottom: 20px;
@@ -333,13 +341,9 @@ article {
     padding-top: 0.452rem;
     
     > p.meta:first-child {
-      font-size: 14.637px;
-      font-size: 0.732rem;
-      margin-bottom: 32.360px;
-      margin-bottom: 1.618rem;
       padding-bottom: 14.637px;
       padding-bottom: 0.732rem;
-      border-bottom: 1px solid $default-line-color;
+      border-bottom: 2px dotted $text-color;
       
       time:after, span.author:after {
         padding: 0 6px 0 10px;
@@ -355,8 +359,6 @@ article {
       border-radius: $border-radius-size;
       padding: 7.640px 14.637px;
       padding: 0.382rem 0.732rem;
-      font-size: 16.773px;
-      font-size: 0.839rem; /* 0.732 + 0.107 */
       
       &:hover {
         background-color: $accent-hover-color; 
@@ -426,7 +428,7 @@ media queries
       input.search { 
         padding-top: 9.046px;
         padding-top: 0.452rem;
-        padding-top: 9.046px;
+        padding-bottom: 9.046px;
         padding-bottom: 0.452rem;
         font-size: 18.093px;
         font-size: 0.905em; /* 0.732 + 0.173 */
