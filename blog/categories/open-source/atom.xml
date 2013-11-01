@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Open Source | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/categories/open-source/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-10-31T18:49:15-07:00</updated>
+  <updated>2013-11-01T16:04:22-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -29,13 +29,13 @@
 
 <h1>Designed Using a Modular Scale</h1>
 
-<p>Before building Readify, I spent some time studying the designs and the underlying code of the various blogs I follow. I ended up learning <a href="http://vladigleba.com/blog/2013/10/22/ways-to-define-a-grid-system/">quite a bit</a>. I read many articles, but the one that resonated with me the most was A List Apart&rsquo;s <a href="http://alistapart.com/articles/more-meaningful-typography/">More Meaningful Typography</a> article; it explained how to use values from a modular scale to build meaningful compositions and achieve visual harmony. I definitely wanted to use this technique with Readify.</p>
+<p>Before building Readify, I spent some time studying the designs and the underlying code of the various blogs I follow. I ended up learning <a href="http://vladigleba.com/blog/2013/10/22/ways-to-define-a-grid-system/">quite a bit</a>. I read many articles, but the one that resonated with me the most was A List Apart&rsquo;s <cite><a href="http://alistapart.com/articles/more-meaningful-typography/">More Meaningful Typography</a></cite> article; it explained how to use values from a modular scale to build meaningful compositions and achieve visual harmony. I definitely wanted to use this technique with Readify.</p>
 
 <p>My modular scale was based on the <a href="http://en.wikipedia.org/wiki/Golden_ratio">golden ratio</a> (1:1.618) and the numbers 20 and 62. I picked the golden ratio because I had just read about it a week earlier when learning about grid systems and was impressed by its occurance in everything from music to architecture to nature. It is known to provide pleasing, visually harmonious proportions, and that&rsquo;s exactly what I wanted for Readify. With regards to picking the two other numbers, 20 was the font size in pixels at which my body text looked most readable, and 62 was the size at which the blog&rsquo;s title looked best. Not very scientific, but it worked.</p>
 
 <p>I then plugged these two numbers, along with the golden ratio, into the calculator at <a href="http://modularscale.com/">modularscale.com</a>, and I had my modular scale. A majority of the font size, line lenght, margin, and padding values come directly from the numbers in the scale. When I needed more options than the scale offered, I ended up adding or subtracting the numbers from the scale for more flexibility.</p>
 
-<h1>Defined Using <code>Rem</code> Units</h1>
+<h1>Defined Using <code>rem</code> Units</h1>
 
 <p>If you look at the actual values though, you&rsquo;ll notice that they are specified in a unit called &lsquo;rem&rsquo;. It&rsquo;s similar to the <code>em</code> unit, but the difference is the <code>em</code> is calculated based on the value of the parent element, while the <code>rem</code> is based on the value of the top-level root element, which is usually the <code>html</code> element. This means that if the entire layout is <code>rem</code> based, changing the <code>html</code> element&rsquo;s font size means the layout will also proportionally readjust itself. So if one day you decide to increase your body text size by 5%, you will no longer need to manually readjust all the other font sizes, line heights, margins and paddings to preserve the layout proportions; all you need to do is increase the <code>html</code> element&rsquo;s font size!</p>
 
@@ -49,7 +49,9 @@
 
 <h1>Built with Sass</h1>
 
-<p>I chose to use the Sass stylesheet language, instead of CSS, because I like using variables in my stylesheets. Instead of doing a document-wide find and replace, I can just change the variable once, and it all propagates everywhere else. I also like the nesting functionality, which saves me quite a bit of typing. And finally, Sass comes with built in lighten() and darken() functions. This means I can use a single color to derive multiple other colors, and that means less maintenance when it&rsquo;s time to change the color scheme.</p>
+<p>I chose to use the Sass stylesheet language, instead of CSS, because I like using variables in my stylesheets. Instead of doing a document-wide find and replace, I can just change the variable once, and it all propagates everywhere else. I also like the nesting functionality, which saves me quite a bit of typing. And finally, Sass comes with built in <code>lighten()</code> and <code>darken()</code> functions. This means I can use a single color to derive multiple other colors, and that means less maintenance when it&rsquo;s time to change the color scheme.</p>
+
+<p>And of course, Readify is built with media queries, so it looks stunning&mdash;and readable&mdash;on all devices.</p>
 
 <p>Alright, I covered everything I wanted to cover, so had on over to GitHub and <a href="http://github.com/">give Readify a try</a>! It&rsquo;s my first open source project, so I&rsquo;d love to hear your feedback!</p>
 ]]></content>
