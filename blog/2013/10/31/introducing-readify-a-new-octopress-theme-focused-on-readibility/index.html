@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Introducing Readify: A New Octopress Theme Focused on Readibility - Hungry and Foolish</title>
+  <meta name="author" content="Vladi Gleba">
+
+  
+  <meta name="description" content="Hackers using the Octopress blogging framework now have a new responsive theme available focused on readability! It&rsquo;s called Readify. &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://vladigleba.github.io/blog/2013/10/31/introducing-readify-a-new-octopress-theme-focused-on-readibility">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Hungry and Foolish" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37472806-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Hungry and Foolish</a></h1>
+  
+    <h2>Utilizing the power of the web for good</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:vladigleba.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Introducing Readify: A New Octopress Theme Focused on Readibility</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-31T09:20:00-07:00" pubdate data-updated="true">Oct 31<span>st</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Hackers using the <a href="http://octopress.org/">Octopress blogging framework</a> now have a new responsive theme available focused on readability! It&rsquo;s called <a href="https://github.com/vladigleba/readify">Readify</a>.</p>
+
+<!-- more -->
+
+
+<h1>Background</h1>
+
+<p>Readify was born out of a desire for a simple, minimalist theme that made the reading experience as pleasurable as possible. There are a couple of minimalist Octopress themes already out there, among them <a href="https://github.com/lucaslew/whitespace">Whitespace</a>, the inspiration behind Readify, but I could not find a theme focused on providing a nice reading experience. So I built Readify to fill in that gap.</p>
+
+<h1>Designed Using a Modular Scale</h1>
+
+<p>Before building Readify, I spent some time studying the designs and the underlying code of the various blogs I follow. I ended up learning <a href="http://vladigleba.com/blog/2013/10/22/ways-to-define-a-grid-system/">quite a bit</a>. I read many articles, but the one that resonated with me the most was A List Apart&rsquo;s <a href="http://alistapart.com/articles/more-meaningful-typography/">More Meaningful Typography</a> article; it explained how to use values from a modular scale to build meaningful compositions and achieve visual harmony. I definitely wanted to use this technique with Readify.</p>
+
+<p>My modular scale was based on the <a href="http://en.wikipedia.org/wiki/Golden_ratio">golden ratio</a> (1:1.618) and the numbers 20 and 62. I picked the golden ratio because I had just read about it a week earlier when learning about grid systems and was impressed by its occurance in everything from music to architecture to nature. It is known to provide pleasing, visually harmonious proportions, and that&rsquo;s exactly what I wanted for Readify. With regards to picking the two other numbers, 20 was the font size in pixels at which my body text looked most readable, and 62 was the size at which the blog&rsquo;s title looked best. Not very scientific, but it worked.</p>
+
+<p>I then plugged these two numbers, along with the golden ratio, into the calculator at <a href="http://modularscale.com/">modularscale.com</a>, and I had my modular scale. A majority of the font size, line lenght, margin, and padding values come directly from the numbers in the scale. When I needed more options than the scale offered, I ended up adding or subtracting the numbers from the scale for more flexibility.</p>
+
+<h1>Defined Using <code>Rem</code> Units</h1>
+
+<p>If you look at the actual values though, you&rsquo;ll notice that they are specified in a unit called &lsquo;rem&rsquo;. It&rsquo;s similar to the <code>em</code> unit, but the difference is the <code>em</code> is calculated based on the value of the parent element, while the <code>rem</code> is based on the value of the top-level root element, which is usually the <code>html</code> element. This means that if the entire layout is <code>rem</code> based, changing the <code>html</code> element&rsquo;s font size means the layout will also proportionally readjust itself. So if one day you decide to increase your body text size by 5%, you will no longer need to manually readjust all the other font sizes, line heights, margins and paddings to preserve the layout proportions; all you need to do is increase the <code>html</code> element&rsquo;s font size!</p>
+
+<p>There is one caveat though. Older browsers do not support <code>rem</code> units, so it&rsquo;s best to include the pixel equivalents as well. This adds code bloat, of course, but if <code>rem</code> units are right for your project then I think it&rsquo;s worth it.</p>
+
+<h1>Expressed in Legible Fonts</h1>
+
+<p>I ended up using the same fonts as those used by the Whitespace theme. They contrast nicely with each other, and the <a href="https://www.google.com/fonts/specimen/PT+Serif">PT Serif</a> font looks stunning when used for the body text. I don&rsquo;t have a scientific explanation for this, but I always prefer body text to be in a serif font compared with a sans serif one as I find serif fonts easier to read. But it&rsquo;s easy to change if you prefer sans serif fonts for the body text.</p>
+
+<p>With regards to font size, small sizes on the web are a pet peeve of mine. I hate moving closer to the screen or increasing the font size just so the content is readable. That&rsquo;s why I made Readify&rsquo;s body font size a comfortable 20 pixels.</p>
+
+<h1>Built with Sass</h1>
+
+<p>I chose to use the Sass stylesheet language, instead of CSS, because I like using variables in my stylesheets. Instead of doing a document-wide find and replace, I can just change the variable once, and it all propagates everywhere else. I also like the nesting functionality, which saves me quite a bit of typing. And finally, Sass comes with built in lighten() and darken() functions. This means I can use a single color to derive multiple other colors, and that means less maintenance when it&rsquo;s time to change the color scheme.</p>
+
+<p>Alright, I covered everything I wanted to cover, so had on over to GitHub and <a href="http://github.com/">give Readify a try</a>! It&rsquo;s my first open source project, so I&rsquo;d love to hear your feedback!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Vladi Gleba</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-31T09:20:00-07:00" pubdate data-updated="true">Oct 31<span>st</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/design/'>Design</a>, <a class='category' href='/blog/categories/open-source/'>Open Source</a>, <a class='category' href='/blog/categories/sass/'>Sass</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/10/22/ways-to-define-a-grid-system/" title="Previous Post: Ways to Define a Grid System">&laquo; Ways to Define a Grid System</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/10/31/introducing-readify-a-new-octopress-theme-focused-on-readibility/">Introducing Readify: A New Octopress Theme Focused on Readibility</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/22/ways-to-define-a-grid-system/">Ways to Define a Grid System</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/15/im-diving-in/">I'm Diving In</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Vladi Gleba -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

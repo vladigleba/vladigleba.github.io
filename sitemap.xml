@@ -2,22 +2,28 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://vladigleba.github.io/blog/2013/10/15/im-diving-in/</loc>
-        <lastmod>2013-10-23T21:19:55-07:00</lastmod>
+        <lastmod>2013-10-31T09:11:05-07:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/blog/2013/10/22/ways-to-define-a-grid-system/</loc>
-        <lastmod>2013-10-23T21:20:56-07:00</lastmod>
+        <lastmod>2013-10-31T10:37:19-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://vladigleba.github.io/blog/2013/10/31/introducing-readify-a-new-octopress-theme-focused-on-readibility/
+        </loc>
+        <lastmod>2013-10-31T18:48:42-07:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/blog/archives/</loc>
-        <lastmod>2013-10-23T21:20:56-07:00</lastmod>
+        <lastmod>2013-10-31T18:48:42-07:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/</loc>
-        <lastmod>2013-10-23T21:20:56-07:00</lastmod>
+        <lastmod>2013-10-31T18:48:42-07:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/robots.txt</loc>
-        <lastmod>2013-10-16T22:43:40-07:00</lastmod>
+        <lastmod>2013-10-31T09:11:06-07:00</lastmod>
     </url>
 </urlset>
