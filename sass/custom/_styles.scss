@@ -91,9 +91,17 @@ pre {
   background-color: #002933;
   border-radius: $border-radius-size;
   color: #93A1A1;
-  font-family: Menlo, Monaco, "Andale Mono", "Lucida Console", "Courier New", monospace;
   padding: 20px;
   padding: 1rem;
+}
+
+p > code {
+  font-size: 18.1px;
+  font-size: 0.905rem; /* 0.732 + 0.173 */
+  background-color: #eee;
+  padding: 0 ;
+  padding: 0 2.92px;
+  padding: 0 0.146rem;
 }
 
 cite { 
@@ -162,6 +170,10 @@ body > footer,
   margin-bottom: 2.618rem;
 }
 
+pre, code {
+  font-family: Menlo, Monaco, "Andale Mono", "Lucida Console", "Courier New", monospace;
+}
+
 h1, 
 article header p.meta, 
 #blog-archives h2 { 
@@ -192,6 +204,8 @@ body {
     h1 { 
       font-size: 62.000px;
       font-size: 3.1rem;
+      font-weight: bold;
+      text-transform: uppercase;
       margin-bottom: 7.640px;
       margin-bottom: 0.382rem;
     
@@ -202,13 +216,17 @@ body {
   
     h2 { 
       color: $secondary-text-color;
-      font-size: 29.274px;
-      font-size: 1.464rem; /* 1.184 + 0.28 */
+      font-size: 23.683px;
+      font-size: 1.184rem;
     }
   }
   
-  > footer p {
-    color: $secondary-text-color; 
+  > footer {
+    clear: both;
+    
+    p {
+      color: $secondary-text-color; 
+    }
   }
 }
 
@@ -269,6 +287,11 @@ archives page
   article {
     margin-left: 88px;
     margin-left: 4.4rem; /* not from scale */
+    
+    h1 {
+      line-height: 38.319px;
+      line-height: 1.916rem;
+    }
   }
   
   time, footer { 
@@ -306,6 +329,8 @@ article {
       font-size: 2.298rem; /* 1.916 + 0.382 */
       margin-bottom: 9.046px;
       margin-bottom: 0.452rem;
+      line-height: 50.58px;
+      line-height: 2.534rem; /* 1.916 + 0.618 */
       
       a, a:hover {
         color: $text-color; 
@@ -340,15 +365,32 @@ article {
     padding-top: 9.046px;
     padding-top: 0.452rem;
     
-    > p.meta:first-child {
-      padding-bottom: 14.637px;
-      padding-bottom: 0.732rem;
-      border-bottom: 2px dotted $text-color;
+    > p.meta {
+      padding-bottom: 1.916rem;
+    
+      &:first-child {
+        padding-bottom: 14.637px;
+        padding-bottom: 0.732rem;
+        border-bottom: 2px dotted $text-color;
       
-      time:after, span.author:after {
-        padding: 0 6px 0 10px;
-        padding: 0 0.3rem 0 0.5rem; /* not from scale */
-        content: "•";
+        time:after, span.author:after {
+          padding: 0 6px 0 10px;
+          padding: 0 0.3rem 0 0.5rem; /* not from scale */
+          content: "•";
+        }
+      }
+    }
+    
+    a.basic-alignment { 
+      width: 45%; 
+      display: block; 
+      
+      &.left {
+        float: left;
+      }
+      
+      &.right {
+        float: right;
       }
     }
     
