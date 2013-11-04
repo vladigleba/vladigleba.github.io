@@ -28,7 +28,7 @@ If you look at the actual values though, you'll notice that they are specified i
 
 But of course, there is one caveat. Older browsers do not support `rem` units, so it's best to include the pixel equivalents as well. This adds code bloat, of course, but if `rem` units are right for your project, then I think it's worth it.
 
-# Expressed in Large, Legible Fonts
+# Expressed with Large, Legible Fonts
 
 I ended up using the same fonts as those used by the Whitespace theme. They contrast nicely with each other, and the [PT Serif](https://www.google.com/fonts/specimen/PT+Serif) font looks stunning when used in body text. I don't have a scientific explanation for this, but I always prefer body text to be in a serif font compared with a sans serif one, as I find serif fonts easier to read. But it's easy to change if you prefer the other.
 
