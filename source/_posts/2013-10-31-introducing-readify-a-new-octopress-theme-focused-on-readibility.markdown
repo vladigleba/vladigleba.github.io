@@ -24,13 +24,13 @@ I then plugged these two numbers, along with the golden ratio, into the calculat
 
 # Defined Using `rem` Units
 
-If you look at the actual values though, you'll notice that they are specified in a unit called 'rem'. It's similar to the `em` unit, but the difference is the `em` is calculated based on the value of the parent element, while the `rem` is based on the value of the top-level root element, which is usually the `html` element. This means that if the entire layout is `rem` based, changing the `html` element's font size means the layout will also proportionally readjust itself. So if one day you decide to increase your body text size by 5%, you will no longer need to manually readjust all the other font sizes, line heights, margins and paddings to preserve the layout proportions; all you need to do is increase the `html` element's font size!
+If you look at the actual values though, you'll notice that they are specified in a unit called 'rem'. It's similar to the `em` unit, but the difference is the `em` is calculated based on the value of the parent element, while the `rem` is based on the value of the top-level root element, which is usually the `html` element. This means that if the entire layout is `rem` based, changing the `html` element's font size means the layout will also proportionally readjust itself. So if one day you decide to increase your body text size by 5%, you will no longer need to manually readjust all the other font sizes, line heights, margins, and paddings to preserve the layout proportions; all you need to do is increase the `html` element's font size! Pretty nifty stuff.
 
-There is one caveat though. Older browsers do not support `rem` units, so it's best to include the pixel equivalents as well. This adds code bloat, of course, but if `rem` units are right for your project then I think it's worth it.
+But of course, there is one caveat. Older browsers do not support `rem` units, so it's best to include the pixel equivalents as well. This adds code bloat, of course, but if `rem` units are right for your project, then I think it's worth it.
 
 # Expressed in Legible Fonts
 
-I ended up using the same fonts as those used by the Whitespace theme. They contrast nicely with each other, and the [PT Serif](https://www.google.com/fonts/specimen/PT+Serif) font looks stunning when used for the body text. I don't have a scientific explanation for this, but I always prefer body text to be in a serif font compared with a sans serif one as I find serif fonts easier to read. But it's easy to change if you prefer sans serif fonts for the body text.
+I ended up using the same fonts as those used by the Whitespace theme. They contrast nicely with each other, and the [PT Serif](https://www.google.com/fonts/specimen/PT+Serif) font looks stunning when used in body text. I don't have a scientific explanation for this, but I always prefer body text to be in a serif font compared with a sans serif one, as I find serif fonts easier to read. But it's easy to change if you prefer the other.
 
 With regards to font size, small sizes on the web are a pet peeve of mine. I hate moving closer to the screen or increasing the font size just so the content is readable. That's why I made Readify's body font size a comfortable 20 pixels.
 
@@ -40,4 +40,4 @@ I chose to use the Sass stylesheet language, instead of CSS, because I like usin
 
 And of course, Readify is built with media queries, so it looks stunning&mdash;and readable&mdash;on all devices. 
 
-Alright, I covered everything I wanted to cover, so had on over to GitHub and [give Readify a try](http://github.com/)! It's my first open source project, so I'd love to hear your feedback!
+If you think Readify is something you might enjoy, head on over to GitHub and [give it a try](http://github.com/)! And feel free to offer feedback! This is my first open source project, so I'd love to read your comments.
