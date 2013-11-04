@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Sass | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/categories/sass/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-11-04T13:48:17-08:00</updated>
+  <updated>2013-11-04T13:56:13-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -41,7 +41,7 @@
 
 <p>But of course, there is one caveat. Older browsers do not support <code>rem</code> units, so it&rsquo;s best to include the pixel equivalents as well. This adds code bloat, of course, but if <code>rem</code> units are right for your project, then I think it&rsquo;s worth it.</p>
 
-<h1>Expressed in Legible Fonts</h1>
+<h1>Expressed in Large, Legible Fonts</h1>
 
 <p>I ended up using the same fonts as those used by the Whitespace theme. They contrast nicely with each other, and the <a href="https://www.google.com/fonts/specimen/PT+Serif">PT Serif</a> font looks stunning when used in body text. I don&rsquo;t have a scientific explanation for this, but I always prefer body text to be in a serif font compared with a sans serif one, as I find serif fonts easier to read. But it&rsquo;s easy to change if you prefer the other.</p>
 
