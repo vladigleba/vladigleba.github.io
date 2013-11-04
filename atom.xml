@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-11-01T16:04:22-07:00</updated>
+  <updated>2013-11-04T13:35:44-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -37,13 +37,13 @@
 
 <h1>Defined Using <code>rem</code> Units</h1>
 
-<p>If you look at the actual values though, you&rsquo;ll notice that they are specified in a unit called &lsquo;rem&rsquo;. It&rsquo;s similar to the <code>em</code> unit, but the difference is the <code>em</code> is calculated based on the value of the parent element, while the <code>rem</code> is based on the value of the top-level root element, which is usually the <code>html</code> element. This means that if the entire layout is <code>rem</code> based, changing the <code>html</code> element&rsquo;s font size means the layout will also proportionally readjust itself. So if one day you decide to increase your body text size by 5%, you will no longer need to manually readjust all the other font sizes, line heights, margins and paddings to preserve the layout proportions; all you need to do is increase the <code>html</code> element&rsquo;s font size!</p>
+<p>If you look at the actual values though, you&rsquo;ll notice that they are specified in a unit called &lsquo;rem&rsquo;. It&rsquo;s similar to the <code>em</code> unit, but the difference is the <code>em</code> is calculated based on the value of the parent element, while the <code>rem</code> is based on the value of the top-level root element, which is usually the <code>html</code> element. This means that if the entire layout is <code>rem</code> based, changing the <code>html</code> element&rsquo;s font size means the layout will also proportionally readjust itself. So if one day you decide to increase your body text size by 5%, you will no longer need to manually readjust all the other font sizes, line heights, margins, and paddings to preserve the layout proportions; all you need to do is increase the <code>html</code> element&rsquo;s font size! Pretty nifty stuff.</p>
 
-<p>There is one caveat though. Older browsers do not support <code>rem</code> units, so it&rsquo;s best to include the pixel equivalents as well. This adds code bloat, of course, but if <code>rem</code> units are right for your project then I think it&rsquo;s worth it.</p>
+<p>But of course, there is one caveat. Older browsers do not support <code>rem</code> units, so it&rsquo;s best to include the pixel equivalents as well. This adds code bloat, of course, but if <code>rem</code> units are right for your project, then I think it&rsquo;s worth it.</p>
 
 <h1>Expressed in Legible Fonts</h1>
 
-<p>I ended up using the same fonts as those used by the Whitespace theme. They contrast nicely with each other, and the <a href="https://www.google.com/fonts/specimen/PT+Serif">PT Serif</a> font looks stunning when used for the body text. I don&rsquo;t have a scientific explanation for this, but I always prefer body text to be in a serif font compared with a sans serif one as I find serif fonts easier to read. But it&rsquo;s easy to change if you prefer sans serif fonts for the body text.</p>
+<p>I ended up using the same fonts as those used by the Whitespace theme. They contrast nicely with each other, and the <a href="https://www.google.com/fonts/specimen/PT+Serif">PT Serif</a> font looks stunning when used in body text. I don&rsquo;t have a scientific explanation for this, but I always prefer body text to be in a serif font compared with a sans serif one, as I find serif fonts easier to read. But it&rsquo;s easy to change if you prefer the other.</p>
 
 <p>With regards to font size, small sizes on the web are a pet peeve of mine. I hate moving closer to the screen or increasing the font size just so the content is readable. That&rsquo;s why I made Readify&rsquo;s body font size a comfortable 20 pixels.</p>
 
@@ -53,7 +53,7 @@
 
 <p>And of course, Readify is built with media queries, so it looks stunning&mdash;and readable&mdash;on all devices.</p>
 
-<p>Alright, I covered everything I wanted to cover, so had on over to GitHub and <a href="http://github.com/">give Readify a try</a>! It&rsquo;s my first open source project, so I&rsquo;d love to hear your feedback!</p>
+<p>If you think Readify is something you might enjoy, head on over to GitHub and <a href="http://github.com/">give it a try</a>! And feel free to offer feedback! This is my first open source project, so I&rsquo;d love to read your comments.</p>
 ]]></content>
   </entry>
   
