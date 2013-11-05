@@ -157,7 +157,7 @@ article .entry-content h1,
 }
 
 article header, 
-article .entry-content p, 
+article p,
 article footer > p.meta:first-child,
 pre { 
   margin-bottom: 32.360px;
@@ -220,12 +220,18 @@ body {
       font-size: 1.184rem;
     }
   }
+
+  .blog-index > article {
+    margin-bottom: 112.677px;
+    margin-bottom: 5.634rem; /* 5.016 + 0.618 | for home page post preview */
+  }
   
   > footer {
     clear: both;
     
     p {
       color: $secondary-text-color; 
+      line-height: 1rem;
     }
   }
 }
@@ -278,6 +284,9 @@ archives page
 ------------------------------ */
 
 #blog-archives {
+  margin-bottom: 100.316px;
+  margin-bottom: 5.016rem;
+  
   h2 {
     font-size: 38.319px;
     font-size: 1.916rem;
@@ -291,6 +300,7 @@ archives page
     h1 {
       line-height: 38.319px;
       line-height: 1.916rem;
+      margin: 0;
     }
   }
   
@@ -310,16 +320,11 @@ archives page
 /* 
 blog post
 ------------------------------ */  
-  
-article.hentry { 
-  margin-bottom: 62.000px;
-  margin-bottom: 3.1rem; /* for complete post */
-} 
 
 article { 
+  margin-bottom: 62.000px;
+  margin-bottom: 3.1rem; /* for complete post */
   text-align: left;
-  margin-bottom: 112.677px;
-  margin-bottom: 5.634rem; /* 5.016 + 0.618 | for home page post preview */
   
   /* ----- post's header ----- */
   
@@ -345,18 +350,16 @@ article {
   
   /* ----- post's content ----- */
   
-  .entry-content {
-    h1 { 
-      margin-top: 62.000px;
-      margin-top: 3.1rem;
-      margin-bottom: 20px;
-      margin-bottom: 1rem;
-    }
+  h1 { 
+    margin-top: 62.000px;
+    margin-top: 3.1rem;
+    margin-bottom: 20px;
+    margin-bottom: 1rem;
+  }
     
-    p {
-      line-height: 32.360px;
-      line-height: 1.618rem;
-    }
+  p {
+    line-height: 32.360px;
+    line-height: 1.618rem;
   }
   
   /* ----- post's footer ----- */

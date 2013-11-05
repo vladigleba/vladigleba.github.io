@@ -6,7 +6,7 @@ comments: true
 categories: Design
 ---
 
-I [started blogging](http://vladigleba.com/blog/2013/10/15/im-diving-in/) last week. And ever since publishing that first post, I've been trying to find a suitable design for my blog. I looked at many different blog designs for inspiration, and one of my favorites was Whitney Hess' <cite>[Pleasure and Pain](http://whitneyhess.com/blog/)</cite> blog. I don't know why, but the design just resonates with me. It feels right. 
+I [started blogging]( root_url }}/blog/2013/10/15/im-diving-in/) last week. And ever since publishing that first post, I've been trying to find a suitable design for my blog. I looked at many different blog designs for inspiration, and one of my favorites was Whitney Hess' <cite>[Pleasure and Pain](http://whitneyhess.com/blog/)</cite> blog. I don't know why, but the design just resonates with me. It feels right. 
 
 My knowledge of grid systems is limited, but I figured the design was probably based on a grid. So I decided to spend the past couple of days learning about grid systems. And because I strongly believe the best way to learn is to teach someone else, I would like to summarize what I learned.
 
