@@ -418,7 +418,7 @@ article {
 media queries
 ------------------------------ */    
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1200px) {
   body {
     width: 75%;
   }
@@ -426,7 +426,7 @@ media queries
 
 /* ------------------------------ */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   body {
     width: 90%;
   }
@@ -434,7 +434,7 @@ media queries
 
 /* ------------------------------ */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
   html {
     font-size: 106%;
   }
