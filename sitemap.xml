@@ -6,24 +6,32 @@
     </url>
     <url>
         <loc>http://vladigleba.github.io/blog/2013/10/22/ways-to-define-a-grid-system/</loc>
-        <lastmod>2013-11-04T13:48:09-08:00</lastmod>
+        <lastmod>2013-11-04T17:14:32-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://vladigleba.github.io/blog/2013/10/31/introducing-readify-a-new-octopress-theme-focused-on-readibility/
         </loc>
-        <lastmod>2013-11-04T14:09:33-08:00</lastmod>
+        <lastmod>2013-11-04T17:13:57-08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://vladigleba.github.io/about/</loc>
+        <lastmod>2013-11-05T11:17:13-08:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/blog/archives/</loc>
-        <lastmod>2013-11-04T14:09:33-08:00</lastmod>
+        <lastmod>2013-11-04T17:14:32-08:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/</loc>
-        <lastmod>2013-11-04T14:09:33-08:00</lastmod>
+        <lastmod>2013-11-04T17:14:32-08:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/robots.txt</loc>
         <lastmod>2013-10-31T09:11:06-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://vladigleba.github.io/subscribe/</loc>
+        <lastmod>2013-11-05T13:46:23-08:00</lastmod>
     </url>
 </urlset>
