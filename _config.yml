@@ -68,6 +68,9 @@ github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
+# Tapir
+tapir_token: 527999f1c852060200000001
+
 # Twitter
 twitter_user:
 twitter_tweet_button: false
