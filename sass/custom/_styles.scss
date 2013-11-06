@@ -27,7 +27,7 @@ to learn about modular scales.
 // variables
 // ------------------------------
 
-$accent-color: #699c5f; 
+$accent-color: #70a665; 
 $accent-hover-color: darken($accent-color, 8%);
 
 $text-color: #333;
@@ -170,6 +170,12 @@ body > footer,
   margin-bottom: 2.618rem;
 }
 
+article,
+section {
+  margin-bottom: 62.000px;
+  margin-bottom: 4.236rem;
+}
+
 pre, code {
   font-family: Menlo, Monaco, "Andale Mono", "Lucida Console", "Courier New", monospace;
 }
@@ -197,6 +203,9 @@ blog structure
 ------------------------------ */
 
 body {
+  
+  /* blog header  */ 
+  
   > header {
     margin: 84.715px 0 52.358px 0;
     margin: 4.236rem 0 2.618rem 0;
@@ -220,19 +229,31 @@ body {
       font-size: 1.184rem;
     }
   }
+  
+  /* blog content */
 
   .blog-index > article {
     margin-bottom: 137.069px;
     margin-bottom: 6.853rem; /* for home page post preview */
   }
   
+  /* blog footer */ 
+  
   > footer {
     clear: both;
     
     p {
       color: $secondary-text-color; 
+      line-height: 20px;
       line-height: 1rem;
     }
+  }
+  
+  /* disqus comments */
+  
+  section h1 { 
+    font-size: 38.319px;
+    font-size: 1.916rem; 
   }
 }
 
@@ -249,6 +270,8 @@ nav {
   margin-bottom: 84.715px;
   margin-bottom: 4.236rem;
   
+  /* search form */ 
+  
   form { 
     float: right; 
     
@@ -260,6 +283,8 @@ nav {
       border-radius: $border-radius-size;
     }
   }
+  
+  /* navigation links */
   
   ul { 
     float: left;
@@ -317,13 +342,36 @@ archives page
 }
 
 
+/*
+search results page
+------------------------------ */
+
+#search_results {
+  article {
+    margin-left: 0;
+    margin-top: 20px;
+    margin-top: 1rem;
+    
+    p {
+      margin-top: 14.637px;
+      margin-top: 0.732rem;
+    }
+    
+    time:after {
+      content: none;
+    }
+    
+    > a { 
+      display: none;
+    }
+  }
+}
+
 /* 
 blog post
 ------------------------------ */  
 
 article { 
-  margin-bottom: 62.000px;
-  margin-bottom: 3.1rem;
   text-align: left;
   
   /* ----- post's header ----- */
@@ -344,7 +392,11 @@ article {
     
     p.meta { 
       text-transform: uppercase; 
-      color: $secondary-text-color; 
+      color: $secondary-text-color;
+      
+      a { 
+        text-transform: lowercase; 
+      }
     }
   }
   
@@ -369,6 +421,7 @@ article {
     padding-top: 0.452rem;
     
     > p.meta {
+      padding-bottom: 38.319px;
       padding-bottom: 1.916rem;
     
       &:first-child {
@@ -394,8 +447,11 @@ article {
       
       &.right {
         float: right;
+        text-align: right;
       }
     }
+    
+    /* 'read on' button */
     
     > a { 
       @include transition(all 0.3s ease 0s);
