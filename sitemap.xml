@@ -34,4 +34,8 @@
         <loc>http://vladigleba.github.io/robots.txt</loc>
         <lastmod>2013-10-31T09:11:06-07:00</lastmod>
     </url>
+    <url>
+        <loc>http://vladigleba.github.io/search.html</loc>
+        <lastmod>2013-10-31T09:11:05-07:00</lastmod>
+    </url>
 </urlset>

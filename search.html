@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Sass - Hungry and Foolish</title>
+  <title>Search Results - Hungry and Foolish</title>
   <meta name="author" content="Vladi Gleba">
 
   
-  <meta name="description" content="Category: Sass">
+  <meta name="description" content="Search Results $('#search_results').tapir({ 'token': '527999f1c852060200000001', 'complete' : function() { document.getElementById('search_loading &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://vladigleba.github.ioblog/categories/sass">
+  <link rel="canonical" href="http://vladigleba.github.io/search.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Hungry and Foolish" type="application/atom+xml">
@@ -86,30 +86,27 @@
 <article role="article">
   
   <header>
-    <h1 class="entry-title">Category: Sass</h1>
+    <h1 class="entry-title">Search Results</h1>
     
   </header>
   
-  <div id="blog-archives" class="category">
+  <div id="search_loading" style="margin: 40px 0">
+    <center><img src="/images/loading.gif"></center>
+</div>
 
-
-
-  
-  <h2>2013</h2>
-
-<article>
-  
-<h1><a href="/blog/2013/10/31/introducing-readify-a-new-octopress-theme-focused-on-readibility/">Introducing Readify: A New Octopress Theme Focused on Readibility</a></h1>
-<time datetime="2013-10-31T09:20:00-07:00" pubdate><span class='month'>Oct</span> <span class='day'>31</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/design/'>Design</a>, <a class='category' href='/blog/categories/projects/'>Projects</a>, <a class='category' href='/blog/categories/sass/'>Sass</a></span>
-</footer>
-
-
-</article>
+<script type="text/javascript" src="/javascripts/jquery-tapir.js"></script>
+<div id="blog-archives">
+<div id="search_results" style="display:none">
 
 </div>
+</div>
+<script>
+    $('#search_results').tapir({
+        'token': '527999f1c852060200000001',
+        'complete' : function() { document.getElementById('search_loading').style.display="none"; }
+    });
+</script>
+
 
   
 </article>
