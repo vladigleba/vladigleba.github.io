@@ -115,6 +115,8 @@ shared styles
 
 .subscription, 
 .mobile-nav, 
+#search_results article > a,
+body section h1,
 aside { 
   display: none; 
 }
@@ -137,12 +139,6 @@ article footer > a {
   font-size: 16.773px;
   font-size: 0.839rem; /* 0.732 + 0.107 */
 }
-
-nav ul li, 
-article header p.meta { 
-  font-size: 17.555px;
-  font-size: 0.878rem; /* 0.732 + 0.146 */
-} 
 
 article header p.meta,
 nav ul li {
@@ -248,13 +244,6 @@ body {
       line-height: 1rem;
     }
   }
-  
-  /* disqus comments */
-  
-  section h1 { 
-    font-size: 38.319px;
-    font-size: 1.916rem; 
-  }
 }
 
 
@@ -294,6 +283,8 @@ nav {
     li { 
       display: inline; 
       font-weight: bold;
+      font-size: 17.555px;
+      font-size: 0.878rem; /* 0.732 + 0.146 */
     }
     
     li + li { 
@@ -360,10 +351,6 @@ search results page
     time:after {
       content: none;
     }
-    
-    > a { 
-      display: none;
-    }
   }
 }
 
@@ -391,11 +378,17 @@ article {
     }
     
     p.meta { 
-      text-transform: uppercase; 
       color: $secondary-text-color;
       
-      a { 
-        text-transform: lowercase; 
+      > span:before, > a:before {
+        content: "•";
+        padding: 0 4px;
+        padding: 0 0.2rem; /* not from scale */
+      }
+      
+      > a:before {
+        padding-right: 8px;
+        padding-right: 0.4rem;
       }
     }
   }
@@ -440,6 +433,8 @@ article {
     a.basic-alignment { 
       width: 45%; 
       display: block; 
+      line-height: 23.683px;
+      line-height: 1.184rem;
       
       &.left {
         float: left;

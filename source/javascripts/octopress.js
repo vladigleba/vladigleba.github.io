@@ -14,6 +14,12 @@ function getNav() {
   mobileNav.children('select').val('');
 }
 
+function removeCategoriesFromHomePage() {
+  $('.blog-index article header p.meta').each(function() {
+    $(this).find('> span, > a').remove();
+  })
+}
+
 function addSidebarToggler() {
   if(!$('body').hasClass('sidebar-footer')) {
     $('#content').append('<span class="toggle-sidebar"></span>');
@@ -124,6 +130,7 @@ $('document').ready(function() {
   addCodeLineNumbers();
   getNav();
   addSidebarToggler();
+  removeCategoriesFromHomePage();
 });
 
 // iOS scaling bug fix
