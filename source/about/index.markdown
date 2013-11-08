@@ -14,5 +14,5 @@ In my mind, the people who visit websites are not users, hits, or numbers on a s
 
 If you have a similar philosophy and think I might be a good fit for a project, feel free to get in touch at <inquiries@vladigleba.com>.
 
-[LinkedIn](http://www.linkedin.com/in/vladigleba) | [GitHub](https://github.com/vladigleba) | [Twitter](https://twitter.com/vladigleba)
+[LinkedIn](http://www.linkedin.com/in/vladigleba) &middot; [GitHub](https://github.com/vladigleba) &middot; [Twitter](https://twitter.com/vladigleba)
 

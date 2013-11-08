@@ -146,6 +146,12 @@ nav ul li {
   font-size: 0.968rem; /* 0.732 + 0.236 */
 }
 
+body > header h2,
+article .entry-content h2 {
+  font-size: 23.683px;
+  font-size: 1.184rem;
+}
+
 article .entry-content h1,
 #blog-archives article h1 {
   font-size: 32.360px;
@@ -172,11 +178,19 @@ section {
   margin-bottom: 4.236rem;
 }
 
+#blog-archives time:after,
+article header p.meta > span:before, 
+article header p.meta > a:before, 
+article footer > p.meta:first-child time:after, 
+article footer > p.meta:first-child span.author:after {
+  content: "•";
+}
+
 pre, code {
   font-family: Menlo, Monaco, "Andale Mono", "Lucida Console", "Courier New", monospace;
 }
 
-h1, 
+h1, h2, h3, h4, h5, h6,
 article header p.meta, 
 #blog-archives h2 { 
   font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif; 
@@ -221,8 +235,6 @@ body {
   
     h2 { 
       color: $secondary-text-color;
-      font-size: 23.683px;
-      font-size: 1.184rem;
     }
   }
   
@@ -326,7 +338,6 @@ archives page
   }
   
   time:after {
-    content: "•";
     padding: 0 6px 0 10px;
     padding: 0 0.3rem 0 0.5rem; /* not from scale */
   }
@@ -381,7 +392,6 @@ article {
       color: $secondary-text-color;
       
       > span:before, > a:before {
-        content: "•";
         padding: 0 4px;
         padding: 0 0.2rem; /* not from scale */
       }
@@ -400,6 +410,11 @@ article {
     margin-top: 3.1rem;
     margin-bottom: 20px;
     margin-bottom: 1rem;
+  }
+  
+  h2 {
+    margin-bottom: 12.361px;
+    margin-bottom: 0.618rem;
   }
     
   p {
@@ -425,7 +440,6 @@ article {
         time:after, span.author:after {
           padding: 0 6px 0 10px;
           padding: 0 0.3rem 0 0.5rem; /* not from scale */
-          content: "•";
         }
       }
     }
