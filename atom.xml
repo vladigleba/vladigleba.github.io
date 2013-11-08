@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-11-08T14:08:29-08:00</updated>
+  <updated>2013-11-08T14:19:33-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -42,7 +42,7 @@
 
 <h2>Storage</h2>
 
-<p>With regards to storage, I went with <a href="http://www.sqlite.org/">SQLite</a> because it was already setup as the Rails default database. I know, kinda lame, but figuring out how to setup a more sophisticated database did not seem like a good use of time, especially since I already had my hands full with server setup. But now that I&rsquo;m done, I do plan on migrating to a <a href="http://www.postgresql.org/">PostgreSQL</a>/<a href="http://redis.io/">Redis</a> backend in the near future.</p>
+<p>With regards to storage, I went with <a href="http://www.sqlite.org/">SQLite</a> because it was already setup as the Rails default database. I know, kinda lame, but figuring out how to setup a more sophisticated database did not seem like a good use of time, especially since I already had my hands full with server setup. But now that I&rsquo;m done, I do plan on migrating to a <a href="http://www.postgresql.org/">PostgreSQL</a> and <a href="http://redis.io/">Redis</a> backend in the near future.</p>
 
 <h2>Mapping</h2>
 
