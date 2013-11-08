@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Phindee: A New Way to Discover Happy Hours in Downtown Portland - Hungry and Foolish</title>
+  <meta name="author" content="Vladi Gleba">
+
+  
+  <meta name="description" content="I love Portland. It’s a fun, quirky city that makes me feel right at home. And the longer I live here, the deeper my affection grows. There are many &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://vladigleba.github.io/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Hungry and Foolish" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37472806-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Hungry and Foolish</a></h1>
+  
+    <h2>Utilizing the power of the web for good</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation">  
+  
+    <form method="get" action="/search.html">
+      <fieldset role="search">
+        <input class="search" name="query" type="text" placeholder="Search..." x-webkit-speech />
+      </fieldset>
+    </form>
+  
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/categories/projects/">Projects</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a title="subscribe via RSS" rel="subscribe-rss" href="/atom.xml">Subscribe</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Phindee: A New Way to Discover Happy Hours in Downtown Portland</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-08T12:59:00-08:00" pubdate data-updated="true">Nov 8<span>th</span>, 2013</time>
+        
+
+<span class="categories">
+  published in 
+  
+    <a class='category' href='/blog/categories/projects/'>Projects</a>, <a class='category' href='/blog/categories/rails/'>Rails</a>
+  
+</span>
+
+
+        
+          <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I love Portland. It’s a fun, quirky city that makes me feel right at home. And the longer I live here, the deeper my affection grows. There are many reasons why this is so, but one high on the list is the food scene. Now I haven’t lived in any other major city, so I can’t compare, but others who have tend to agree. <!-- more --></p>
+
+<p>I’m certainly satisfied.</p>
+
+<h1>An Idea Is Born</h1>
+
+<p>Of course, eating out all the time can get a bit expensive, and being a college student, I’m definitely not swimming in cash. I usually eat out just for lunch because I hate bringing cold lunch, but even this can quickly add up. So in an effort to save money (and to learn Ruby on Rails), I built a happy hour web application a couple months ago called <a href="http://phindee.com/">phindee</a>.</p>
+
+<p>Being a web developer, I always enjoy learning about other people&rsquo;s stacks, so I&rsquo;d like to return the favor and share how phindee works.</p>
+
+<h1>A Look at the Wiring</h1>
+
+<p>When you visit phindee, you’re presented with a map of the current happy hours in downtown Portland, along with information like the happy hour type and time, as well as the name, phone number, website, and address of its location. And of course, it doesn’t matter what device you use to visit phindee because it’s based on a responsive design.</p>
+
+<p>Behind the scenes, phindee sits on top of a <a href="http://linode.com/">Linode</a> server powered by <a href="http://www.ubuntu.com/">Ubuntu</a> and served by <a href="http://nginx.org/">Nginx</a> and <a href="http://unicorn.bogomips.org/">Unicorn</a>. I originally had it setup with <a href="https://www.phusionpassenger.com/">Passenger</a>, but since I like to do multiple deploys a day, I got tired of Passenger restarts and site downtime. Unicorn solves this nicely.</p>
+
+<h2>Deployment</h2>
+
+<p>With regards to choosing Nginx, it was a matter of simplicity and speed. Phindee marked my first try at setting up a server from scratch, and from what I read online, Nginx was best suited for my situation. When it came to the actual setup, Ryan Bates’ <a href="http://railscasts.com/">Railscasts episodes</a> helped me out tremendously, especially his episode about <a href="http://railscasts.com/episodes/335-deploying-to-a-vps">VPS deployment</a>.</p>
+
+<p>Up to that point, my previously deployment experience consisted of firing up <a href="http://fireftp.net/">FireFTP</a> and dragging and dropping the necessary files into the appropriate directories on my server. Funny, I know. As a result, it took me a couple of long nights to get everything working properly. Looking back, it was definitely worth it though.</p>
+
+<h2>Storage</h2>
+
+<p>With regards to storage, I went with <a href="http://www.sqlite.org/">SQLite</a> because it was already setup as the Rails default database. I know, kinda lame, but figuring out how to setup a more sophisticated database did not seem like a good use of time, especially since I already had my hands full with server setup. But now that I&rsquo;m done, I do plan on migrating to a <a href="http://www.postgresql.org/">PostgreSQL</a>/<a href="http://redis.io/">Redis</a> backend in the near future.</p>
+
+<h2>Mapping</h2>
+
+<p>The mapping functionality is provided by the excellent <a href="https://www.mapbox.com/mapbox.js/">MapBox JavaScript API</a>. I stumbled upon MapBox thanks to an A List Apart <a href="http://alistapart.com/article/hack-your-maps">article</a> I had read. I originally planned on using Google Maps, but the level of customization MapBox allows is incredible and their documentation is outstanding. On top of that, I feel like Google already has enough money, so why not support an open source service built by a cool new company? More diversity can&rsquo;t hurt, right?</p>
+
+<h2>Icons</h2>
+
+<p>The icons came from <a href="http://thenounproject.com/">The Noun Project</a>, an excellent collection of vector symbols. All the icons are free, but you are required to attribute the designer if you use them. If that’s not possible, you’re free to purchase a full license from the designer and use the icon without attribution; the fee is usually $1.99.</p>
+
+<h2>Preprocessors</h2>
+
+<p>Finally, I rely on <a href="http://slim-lang.com/">SLIM</a> to generate the HTML, <a href="http://sass-lang.com/">SASS</a> to generate the CSS, and <a href="http://coffeescript.org/">CoffeeScript</a> to generate the JavaScript. These pre-processors are easy to pick up, and they’ll save you more than a few keystrokes.</p>
+
+<h1>The Power of the Web</h1>
+
+<p>The world population is now approaching 7.1 billion and <a href="http://data.worldbank.org/indicator/IT.NET.USER.P2">2.5 billion of those</a> are able to access a web application I can build with nothing more than a laptop. I don’t know about you, but that’s mind boggling to me. There are few other professions that have the same reach with such a limited resource pool.</p>
+
+<p>And beyond that, the internet is one of the few things still in existence that gives power and influence to anybody and everybody who has access to it. It transcends borders and gives people a voice. It’s a tremendous blessing that must never be taken away nor destroyed.</p>
+
+<p>It’s an exciting time to be a web developer.</p>
+</div>
+
+
+  <footer>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/10/31/introducing-readify-a-new-octopress-theme-focused-on-readibility/" title="Previous Post: Introducing Readify: A New Octopress Theme Focused on Readibility">&laquo; Introducing Readify: A New Octopress Theme Focused on Readibility</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/">Phindee: A New Way to Discover Happy Hours in Downtown Portland</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/31/introducing-readify-a-new-octopress-theme-focused-on-readibility/">Introducing Readify: A New Octopress Theme Focused on Readibility</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/22/ways-to-define-a-grid-system/">Ways to Define a Grid System</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/15/im-diving-in/">I'm Diving In</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>Copyright &copy; 2013 Vladi Gleba</p>
+<p>Produced in Portland, Oregon. Powered by <a href="http://octopress.org">Octopress</a>.</p>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'vladigleba';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://vladigleba.github.io/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/';
+        var disqus_url = 'http://vladigleba.github.io/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
