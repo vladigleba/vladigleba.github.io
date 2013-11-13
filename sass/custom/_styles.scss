@@ -578,9 +578,13 @@ media queries
       padding: 14.637px 0;
       padding: 0.732rem 0;
       
+      li {
+        font-weight: normal;
+      }
+      
       li + li {
-        padding-left: 12.361px;
-        padding-left: 0.618rem;
+        padding-left: 20px;
+        padding-left: 1rem;
       }
     }
     
@@ -599,8 +603,8 @@ media queries
   }
   
   .blog-index > article {
-    margin-bottom: 84.715px !important;
-    margin-bottom: 4.236rem !important;
+    margin-bottom: 93.76px !important;
+    margin-bottom: 5.016rem !important; /* 4.236 + 0.452 */
   }
   
   article {
@@ -613,8 +617,8 @@ media queries
       }
       
       p.meta {
-        line-height: 20px;
-        line-height: 1rem;
+        line-height: 23.683px;
+        line-height: 1.618rem;
       }
     }
     
