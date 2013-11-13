@@ -56,7 +56,6 @@ body {
 }
 
 a { 
-  text-decoration: none; 
   color: $accent-color; 
   outline: none;
   @include transition(color 0.3s ease 0s);
@@ -87,7 +86,6 @@ blockquote {
 }
 
 pre {
-  overflow: auto;
   background-color: #002933;
   border-radius: $border-radius-size;
   color: #93A1A1;
@@ -121,8 +119,22 @@ aside {
   display: none; 
 }
 
+h1 a,
+li a,
+footer > a,
+p.meta a.basic-alignment,
+.pagination a {
+  text-decoration: none;
+}
+
 h1, h2, h3, h4, h5, h6 { 
   text-rendering: optimizeLegibility; 
+}
+
+nav, 
+pre, 
+article footer > p.meta {
+  overflow: auto;
 }
 
 article footer > p.meta:first-child,
@@ -180,7 +192,7 @@ section {
 
 #blog-archives time:after,
 article header p.meta > span:before, 
-article header p.meta > a:before, 
+article header p.meta > span:after, 
 article footer > p.meta:first-child time:after, 
 article footer > p.meta:first-child span.author:after {
   content: "•";
@@ -265,7 +277,6 @@ navigation
 
 nav {
   border-top: 2px dotted $text-color;
-  overflow: hidden;
   padding: 14.637px 0;
   padding: 0.732rem 0;
   margin-bottom: 84.715px;
@@ -295,8 +306,6 @@ nav {
     li { 
       display: inline; 
       font-weight: bold;
-      font-size: 17.555px;
-      font-size: 0.878rem; /* 0.732 + 0.146 */
     }
     
     li + li { 
@@ -391,14 +400,9 @@ article {
     p.meta { 
       color: $secondary-text-color;
       
-      > span:before, > a:before {
+      > span:before, > span:after {
         padding: 0 4px;
         padding: 0 0.2rem; /* not from scale */
-      }
-      
-      > a:before {
-        padding-right: 8px;
-        padding-right: 0.4rem;
       }
     }
   }
@@ -515,7 +519,6 @@ media queries
   
   nav {
     border-top: none;
-    border-bottom: none;
     margin-bottom: 52.358px;
     margin-bottom: 2.618rem;
     
@@ -556,8 +559,8 @@ media queries
     margin: 1.916rem 0; 
     
     h1 { 
-      font-size: 43.91px;
-      font-size: 2.196rem; /* 1.916 + 0.28 */
+      font-size: 43.92px;
+      font-size: 2.196rem; /* 1.916 + 0.236 */
     }
   
     h2 { 
@@ -574,6 +577,11 @@ media queries
     ul {
       padding: 14.637px 0;
       padding: 0.732rem 0;
+      
+      li + li {
+        padding-left: 12.361px;
+        padding-left: 0.618rem;
+      }
     }
     
     form {
@@ -586,11 +594,23 @@ media queries
     }
   }
   
+  #blog-archives article {
+    margin-left: 0;
+  }
+  
+  .blog-index > article {
+    margin-bottom: 84.715px !important;
+    margin-bottom: 4.236rem !important;
+  }
   
   article {
     header {
-      line-height: 52.358px;
-      line-height: 2.618rem;
+      h1 { 
+        font-size: 38.319px;
+        font-size: 1.916rem; 
+        line-height: 43.92px;
+        line-height: 2.196rem; /* 1.916 + 0.28 */
+      }
       
       p.meta {
         line-height: 20px;
@@ -598,7 +618,14 @@ media queries
       }
     }
     
+    footer > p.meta { 
+      font-size: 19.359px;
+      font-size: 0.968rem; /* 0.732 + 0.236 */
+    }
+    
     .entry-content h1 {
+      font-size: 31.32px;
+      font-size: 1.566rem; /* 1.184 + 0.382 */
       line-height: 38.319px;
       line-height: 1.916rem;
     }
