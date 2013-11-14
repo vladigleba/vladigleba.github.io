@@ -3,7 +3,7 @@ layout: post
 title: "Phindee: A New Way to Discover Happy Hours in Downtown Portland"
 date: 2013-11-08 12:59
 comments: true
-categories: [Projects, Rails]
+categories: [Projects, Rails, phindee]
 ---
 
 I love Portland. It’s a fun, quirky city that makes me feel right at home. And the longer I live here, the deeper my affection grows. There are many reasons why this is so, but one high on the list is the food scene. Now I haven’t lived in any other major city, so I can’t compare, but others who have tend to agree. <!-- more -->

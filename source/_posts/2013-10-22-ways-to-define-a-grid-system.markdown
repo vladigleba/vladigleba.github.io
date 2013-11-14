@@ -6,7 +6,7 @@ comments: true
 categories: Design
 ---
 
-I [started blogging]( root_url }}/blog/2013/10/15/im-diving-in/) last week. And ever since publishing that first post, I've been trying to find a suitable design for my blog. I looked at many different blog designs for inspiration, and one of my favorites was Whitney Hess' <cite>[Pleasure and Pain](http://whitneyhess.com/blog/)</cite> blog. I don't know why, but the design just resonates with me. It feels right. 
+I [started blogging]({{ root_url }}/blog/2013/10/15/im-diving-in/) last week. And ever since publishing that first post, I've been trying to find a suitable design for my blog. I looked at many different blog designs for inspiration, and one of my favorites was Whitney Hess' <cite>[Pleasure and Pain](http://whitneyhess.com/blog/)</cite> blog. I don't know why, but the design just resonates with me. It feels right. 
 
 My knowledge of grid systems is limited, but I figured the design was probably based on a grid. So I decided to spend the past couple of days learning about grid systems. And because I strongly believe the best way to learn is to teach someone else, I would like to summarize what I learned.
 
@@ -23,7 +23,7 @@ I've learned about many different ways of defining grids that achieve this unity
 # Grids Based on the Fibonacci Sequence
 
 The Fibonacci Sequence looks like this:
-  
+
     0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
 
 The first two numbers 0 and 1 are always given, and each number after that is the sum of the previous two. Now if you divide 144 by 89, you get 1.617, which is very close to the Golden Ratio (1:1.618). In fact, the higher the numbers in the sequence get, the closer they approach the [Golden Ratio](http://en.wikipedia.org/wiki/Golden_ratio), which is historically known to be aesthetically pleasing and is widely used in all kinds of domains.
