@@ -51,7 +51,7 @@ Once we have the coordinates, we’re ready to build a JSON object array that wi
 end
 ```
 
-The above code simply loops through each happy hour, creates an object, then appends and returns the newly created object to the `@geojson` array with the help of the `<<` method. Note that each object in our JSON array must contain a `type’ key, a `geometry` key, and a `property` key. In our example above, the `geometry’ key says that we want our marker to displayed as a point at that specific set of coordinates, while the `property` key says we want our marker to be a medium blue circle that displays the happy hour name and street address when clicked.
+The above code simply loops through each happy hour, creates an object, then appends and returns the newly created object to the `@geojson` array with the help of the `<<` method. Note that each object in our JSON array must contain a `type` key, a `geometry` key, and a `property` key. In our example above, the `geometry` key says that we want our marker to displayed as a point at that specific set of coordinates, while the `property` key says we want our marker to be a medium blue circle that displays the happy hour name and street address when clicked.
 
 I placed the above code inside one of the methods in my happy_hours_controller.rb file, as that’s the controller that deals with happy hours. You’ll place your code inside whatever controller is appropriate for your specific situation.
 
