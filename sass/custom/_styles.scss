@@ -33,7 +33,7 @@ $accent-hover-color: darken($accent-color, 8%);
 $text-color: #333;
 $secondary-text-color: #aaa;
 
-$default-line-color: #e6e6e6;
+$line-color: #e6e6e6;
 
 $border-radius-size: 4px;
 
@@ -80,15 +80,13 @@ a {
 
 blockquote {
   font-style: italic;
-  border-left: 3px dotted $default-line-color;
+  border-left: 3px dotted $line-color;
   padding-left: 20px;
   padding-left: 1rem;
 }
 
 pre {
-  background-color: #002933;
   border-radius: $border-radius-size;
-  color: #93A1A1;
   padding: 20px;
   padding: 1rem;
 }
@@ -96,8 +94,6 @@ pre {
 p > code {
   font-size: 18.1px;
   font-size: 0.905rem; /* 0.732 + 0.173 */
-  background-color: #eee;
-  padding: 0 ;
   padding: 0 2.92px;
   padding: 0 0.146rem;
 }
@@ -524,7 +520,7 @@ media queries
     
     ul {
       border-top: 2px solid #808080;
-      border-bottom: 1px solid $default-line-color;
+      border-bottom: 1px solid $line-color;
       padding: 20px 0;
       padding: 1rem 0;
     }
