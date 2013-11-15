@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-11-14T22:16:11-08:00</updated>
+  <updated>2013-11-14T22:19:01-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -128,8 +128,8 @@
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># initialize the map on the &quot;map&quot; div with the given map ID, center, and zoom</span>
-</span><span class='line'><span class="nv">map = </span><span class="nx">L</span><span class="p">.</span><span class="nx">mapbox</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s">&quot;map&quot;</span><span class="p">,</span> <span class="s">&quot;your-map-id&quot;</span><span class="p">).</span><span class="nx">setView</span><span class="p">([</span><span class="mf">45.52086</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.679523</span><span class="p">],</span> <span class="mi">14</span><span class="p">)</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># initialize the map on the &#39;map&#39; div with the given map ID, center, and zoom</span>
+</span><span class='line'><span class="nv">map = </span><span class="nx">L</span><span class="p">.</span><span class="nx">mapbox</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s">&#39;map&#39;</span><span class="p">,</span> <span class="s">&#39;your-map-id&#39;</span><span class="p">).</span><span class="nx">setView</span><span class="p">([</span><span class="mf">45.52086</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.679523</span><span class="p">],</span> <span class="mi">14</span><span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -152,8 +152,8 @@
 </span><span class='line'><span class="c1"># on success, parse it and </span>
 </span><span class='line'><span class="c1"># hand it over to MapBox for mapping </span>
 </span><span class='line'><span class="nv">markerLayer = </span><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span>
-</span><span class='line'>  <span class="nv">dataType: </span><span class="s">&quot;text&quot;</span>
-</span><span class='line'>  <span class="nv">url: </span><span class="s">&quot;happy_hours/happening_now.json&quot;</span>
+</span><span class='line'>  <span class="nv">dataType: </span><span class="s">&#39;text&#39;</span>
+</span><span class='line'>  <span class="nv">url: </span><span class="s">&#39;happy_hours/happening_now.json&#39;</span>
 </span><span class='line'>  <span class="nv">success: </span><span class="nf">(data) -&gt;</span>
 </span><span class='line'>    <span class="nv">geojson = </span><span class="nx">$</span><span class="p">.</span><span class="nx">parseJSON</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>
 </span><span class='line'>    <span class="nx">map</span><span class="p">.</span><span class="nx">markerLayer</span><span class="p">.</span><span class="nx">setGeoJSON</span><span class="p">(</span><span class="nx">geojson</span><span class="p">)</span>

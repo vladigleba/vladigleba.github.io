@@ -4,7 +4,7 @@
   <title><![CDATA[Category: phindee | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/categories/phindee/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-11-14T22:16:11-08:00</updated>
+  <updated>2013-11-14T22:19:01-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -108,9 +108,9 @@ end
 
 <p>``` coffeescript</p>
 
-<h1>initialize the map on the &ldquo;map&rdquo; div with the given map ID, center, and zoom</h1>
+<h1>initialize the map on the &lsquo;map&rsquo; div with the given map ID, center, and zoom</h1>
 
-<p>map = L.mapbox.map(&ldquo;map&rdquo;, &ldquo;your-map-id&rdquo;).setView([45.52086, -122.679523], 14)
+<p>map = L.mapbox.map(&lsquo;map&rsquo;, &lsquo;your-map-id&rsquo;).setView([45.52086, -122.679523], 14)
 ```</p>
 
 <p>The coordinates we’re passing on to the <code>setView()</code> method tell the API where to center the map, while the 14 represents the zoom level for the map. In reality, <code>setView()</code> actually comes from the <a href="http://leafletjs.com/reference.html#map-setview">Leaflet JavaScript library</a>; MapBox simply extends and simplifies it.</p>
@@ -128,8 +128,8 @@ end
 <h1>hand it over to MapBox for mapping</h1>
 
 <p>markerLayer = $.ajax
-  dataType: &ldquo;text&rdquo;
-  url: &ldquo;happy_hours/happening_now.json&rdquo;
+  dataType: &lsquo;text&rsquo;
+  url: &lsquo;happy_hours/happening_now.json&rsquo;
   success: (data) &ndash;></p>
 
 <pre><code>geojson = $.parseJSON(data)  
