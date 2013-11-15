@@ -4,7 +4,7 @@
   <title><![CDATA[Category: MapBox | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/categories/mapbox/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-11-15T11:22:00-08:00</updated>
+  <updated>2013-11-15T11:22:36-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -108,7 +108,7 @@ end
 
 <p>``` coffeescript</p>
 
-<h1>initialize the map on the &lsquo;map&rsquo; div w</h1>
+<h1>initialize the map on the &lsquo;map&rsquo; div wi</h1>
 
 <p>map = L.mapbox.map(&lsquo;map&rsquo;, &lsquo;your-map-i&rsquo;)
 ```</p>
