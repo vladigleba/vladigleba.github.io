@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-11-14T22:52:26-08:00</updated>
+  <updated>2013-11-14T22:53:56-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -126,9 +126,7 @@
 <p>Next, we’ll create a free MapBox account and make our own custom-colored map. Afterwards, we’ll open the JavaScript file that corresponds to the controller which contains the two earlier code blocks (mine is called happy_hours.js.coffee), and we’ll add a line instantiating the map with the map ID of the custom-colored map we just created.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># initialize the map on the &#39;map&#39; div with the given map ID, center, and zoom</span>
-</span><span class='line'><span class="nv">map = </span><span class="nx">L</span><span class="p">.</span><span class="nx">mapbox</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s">&#39;map&#39;</span><span class="p">,</span> <span class="s">&#39;your-map-id&#39;</span><span class="p">).</span><span class="nx">setView</span><span class="p">([</span><span class="mf">45.52086</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.679523</span><span class="p">],</span> <span class="mi">14</span><span class="p">)</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="nv">map = </span><span class="nx">L</span><span class="p">.</span><span class="nx">mapbox</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s">&#39;map&#39;</span><span class="p">,</span> <span class="s">&#39;your-map-id&#39;</span><span class="p">).</span><span class="nx">setView</span><span class="p">([</span><span class="mf">45.52086</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.679523</span><span class="p">],</span> <span class="mi">14</span><span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -356,9 +354,8 @@
 
 <p>The Fibonacci Sequence looks like this:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...</span></code></pre></td></tr></table></div></figure>
-
+<pre><code>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
+</code></pre>
 
 <p>The first two numbers 0 and 1 are always given, and each number after that is the sum of the previous two. Now if you divide 144 by 89, you get 1.617, which is very close to the Golden Ratio (1:1.618). In fact, the higher the numbers in the sequence get, the closer they approach the <a href="http://en.wikipedia.org/wiki/Golden_ratio">Golden Ratio</a>, which is historically known to be aesthetically pleasing and is widely used in all kinds of domains.</p>
 
