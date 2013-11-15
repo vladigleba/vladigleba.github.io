@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-11-14T22:19:01-08:00</updated>
+  <updated>2013-11-14T22:27:11-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -181,7 +181,7 @@
 <span class='line-number'>14</span>
 <span class='line-number'>15</span>
 </pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># add custom popups to each marker </span>
-</span><span class='line'><span class="nx">map</span><span class="p">.</span><span class="nx">markerLayer</span><span class="p">.</span><span class="nx">on</span> <span class="s">&quot;layeradd&quot;</span><span class="p">,</span> <span class="nf">(e) -&gt;</span>
+</span><span class='line'><span class="nx">map</span><span class="p">.</span><span class="nx">markerLayer</span><span class="p">.</span><span class="nx">on</span> <span class="s">&#39;layeradd&#39;</span><span class="p">,</span> <span class="nf">(e) -&gt;</span>
 </span><span class='line'>  <span class="nv">marker = </span><span class="nx">e</span><span class="p">.</span><span class="nx">layer</span>
 </span><span class='line'>  <span class="nv">feature = </span><span class="nx">marker</span><span class="p">.</span><span class="nx">feature</span>
 </span><span class='line'>
