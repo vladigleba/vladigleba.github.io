@@ -4,7 +4,7 @@
   <title><![CDATA[Category: MapBox | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/categories/mapbox/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-11-14T22:47:25-08:00</updated>
+  <updated>2013-11-14T22:49:36-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -106,9 +106,10 @@ end
 
 <p>Next, we’ll create a free MapBox account and make our own custom-colored map. Afterwards, we’ll open the JavaScript file that corresponds to the controller which contains the two earlier code blocks (mine is called happy_hours.js.coffee), and we’ll add a line instantiating the map with the map ID of the custom-colored map we just created.</p>
 
-<pre><code># initialize the map on the 'map' div with the given map ID, center, and zoom
-map = L.mapbox.map('map', 'your-map-id').setView([45.52086, -122.679523], 14)
-</code></pre>
+<p><code>
+  # initialize the map on the 'map' div with the given map ID, center, and zoom
+  map = L.mapbox.map('map', 'your-map-id').setView([45.52086, -122.679523], 14)
+</code></p>
 
 <p>The coordinates we’re passing on to the <code>setView()</code> method tell the API where to center the map, while the 14 represents the zoom level for the map. In reality, <code>setView()</code> actually comes from the <a href="http://leafletjs.com/reference.html#map-setview">Leaflet JavaScript library</a>; MapBox simply extends and simplifies it.</p>
 
