@@ -156,6 +156,7 @@
 <span class='line-number'>16</span>
 <span class='line-number'>17</span>
 <span class='line-number'>18</span>
+<span class='line-number'>19</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="vi">@happy_hours</span> <span class="o">=</span> <span class="no">HappyHour</span><span class="o">.</span><span class="n">all</span>
 </span><span class='line'><span class="vi">@geojson</span> <span class="o">=</span> <span class="nb">Array</span><span class="o">.</span><span class="n">new</span>
 </span><span class='line'>
@@ -164,9 +165,10 @@
 </span><span class='line'>    <span class="ss">type</span><span class="p">:</span> <span class="s1">&#39;Feature&#39;</span><span class="p">,</span>
 </span><span class='line'>    <span class="ss">geometry</span><span class="p">:</span> <span class="p">{</span>
 </span><span class='line'>      <span class="ss">type</span><span class="p">:</span> <span class="s1">&#39;Point&#39;</span><span class="p">,</span>
-</span><span class='line'>      <span class="ss">coordinates</span><span class="p">:</span> <span class="o">[</span> <span class="n">happy_hour</span><span class="o">.</span><span class="n">longitude</span><span class="p">,</span> <span class="n">happy_hour</span><span class="o">.</span><span class="n">latitude</span> <span class="o">]</span> <span class="p">},</span>
+</span><span class='line'>      <span class="ss">coordinates</span><span class="p">:</span> <span class="o">[</span><span class="n">happy_hour</span><span class="o">.</span><span class="n">longitude</span><span class="p">,</span> <span class="n">happy_hour</span><span class="o">.</span><span class="n">latitude</span><span class="o">]</span>
+</span><span class='line'>    <span class="p">},</span>
 </span><span class='line'>    <span class="ss">properties</span><span class="p">:</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nb">name</span><span class="p">:</span> <span class="n">happy_hour</span><span class="o">.</span><span class="n">name</span>
+</span><span class='line'>      <span class="nb">name</span><span class="p">:</span> <span class="n">happy_hour</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
 </span><span class='line'>      <span class="ss">address</span><span class="p">:</span> <span class="n">happy_hour</span><span class="o">.</span><span class="n">street</span><span class="p">,</span>
 </span><span class='line'>      <span class="ss">:&#39;marker-color&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;#00607d&#39;</span><span class="p">,</span>
 </span><span class='line'>      <span class="ss">:&#39;marker-symbol&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;circle&#39;</span><span class="p">,</span>
@@ -213,7 +215,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>When I wrote this code, the latest version of the MapBox JavaScript API was 1.0.2, so my links above reflect that. See their <a href="https://www.mapbox.com/mapbox.js/overview/">documentation</a> for the current latest version and update your links accordingly.</p>
+<p>When I wrote this code, the latest version of the MapBox JavaScript API was 1.0.2, and my links above reflect that. See their <a href="https://www.mapbox.com/mapbox.js/overview/">documentation</a> for the current latest version and update your links accordingly.</p>
 
 <h2>Initializing the Map</h2>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: MapBox | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/categories/mapbox/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-11-14T17:08:35-08:00</updated>
+  <updated>2013-11-14T21:45:59-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -52,9 +52,10 @@
 <pre><code>type: 'Feature',
 geometry: { 
   type: 'Point', 
-  coordinates: [ happy_hour.longitude, happy_hour.latitude ] },
+  coordinates: [happy_hour.longitude, happy_hour.latitude] 
+},
 properties: { 
-  name: happy_hour.name
+  name: happy_hour.name,
   address: happy_hour.street,
   :'marker-color' =&gt; '#00607d', 
   :'marker-symbol' =&gt; 'circle', 
@@ -99,7 +100,7 @@ end
 <p><link href="http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.css" rel="stylesheet" />
 ```</p>
 
-<p>When I wrote this code, the latest version of the MapBox JavaScript API was 1.0.2, so my links above reflect that. See their <a href="https://www.mapbox.com/mapbox.js/overview/">documentation</a> for the current latest version and update your links accordingly.</p>
+<p>When I wrote this code, the latest version of the MapBox JavaScript API was 1.0.2, and my links above reflect that. See their <a href="https://www.mapbox.com/mapbox.js/overview/">documentation</a> for the current latest version and update your links accordingly.</p>
 
 <h2>Initializing the Map</h2>
 
