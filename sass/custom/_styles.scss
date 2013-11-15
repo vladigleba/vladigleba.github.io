@@ -85,17 +85,12 @@ blockquote {
   padding-left: 1rem;
 }
 
-pre {
-  border-radius: $border-radius-size;
-  padding: 20px;
-  padding: 1rem;
-}
-
 p > code {
-  font-size: 18.1px;
-  font-size: 0.905rem; /* 0.732 + 0.173 */
-  padding: 0 2.92px;
-  padding: 0 0.146rem;
+  font-size: 17.56px;
+  font-size: 0.878rem; /* 0.732 + 0.146 */
+  background-color: #eee;
+  padding: 0 4.722px;
+  padding: 0 0.234rem;
 }
 
 cite { 
@@ -169,7 +164,8 @@ article .entry-content h1,
 article header, 
 article p,
 article footer > p.meta:first-child,
-pre { 
+figure,
+.entry-content > pre { 
   margin-bottom: 32.360px;
   margin-bottom: 1.618rem; 
 }
@@ -413,8 +409,10 @@ article {
   }
   
   h2 {
-    margin-bottom: 12.361px;
-    margin-bottom: 0.618rem;
+    margin-top: 52.358px;
+    margin-top: 2.618rem;
+    margin-bottom: 9.046px;
+    margin-bottom: 0.452rem;
   }
     
   p {
