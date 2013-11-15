@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-11-14T22:55:19-08:00</updated>
+  <updated>2013-11-14T22:56:15-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -127,23 +127,7 @@
 <p>Next, we’ll create a free MapBox account and make our own custom-colored map. Afterwards, we’ll open the JavaScript file that corresponds to the controller which contains the two earlier code blocks (mine is called happy_hours.js.coffee), and we’ll add a line instantiating the map with the map ID of the custom-colored map we just created.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># get JSON object</span>
-</span><span class='line'><span class="c1"># on success, parse it and </span>
-</span><span class='line'><span class="c1"># hand it over to MapBox for mapping </span>
-</span><span class='line'><span class="nv">markerLayer = </span><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span>
-</span><span class='line'>  <span class="nv">dataType: </span><span class="s">&#39;text&#39;</span>
-</span><span class='line'>  <span class="nv">url: </span><span class="s">&#39;happy_hours/happening_now.json&#39;</span>
-</span><span class='line'>  <span class="nv">success: </span><span class="nf">(data) -&gt;</span>
-</span><span class='line'>    <span class="nv">geojson = </span><span class="nx">$</span><span class="p">.</span><span class="nx">parseJSON</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>
-</span><span class='line'>    <span class="nx">map</span><span class="p">.</span><span class="nx">markerLayer</span><span class="p">.</span><span class="nx">setGeoJSON</span><span class="p">(</span><span class="nx">geojson</span><span class="p">)</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="nv">map = </span><span class="nx">L</span><span class="p">.</span><span class="nx">mapbox</span><span class="p">.</span><span class="nx">map</span><span class="p">()</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
