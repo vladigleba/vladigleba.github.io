@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-11-14T22:56:15-08:00</updated>
+  <updated>2013-11-14T22:57:04-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -126,7 +126,7 @@
 <p>Next, we’ll create a free MapBox account and make our own custom-colored map. Afterwards, we’ll open the JavaScript file that corresponds to the controller which contains the two earlier code blocks (mine is called happy_hours.js.coffee), and we’ll add a line instantiating the map with the map ID of the custom-colored map we just created.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="nv">map = </span><span class="nx">L</span><span class="p">.</span><span class="nx">mapbox</span><span class="p">.</span><span class="nx">map</span><span class="p">()</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="nv">map = </span><span class="nx">L</span><span class="p">.</span><span class="nx">mapbox</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s">&#39;map&#39;</span><span class="p">,</span> <span class="s">&#39;your-map-id&#39;</span><span class="p">).</span><span class="nx">setView</span><span class="p">([</span><span class="mf">45.52086</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.679523</span><span class="p">],</span> <span class="mi">14</span><span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
