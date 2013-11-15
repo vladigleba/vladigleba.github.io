@@ -4,7 +4,7 @@
   <title><![CDATA[Category: CoffeeScript | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/categories/coffeescript/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-11-14T22:39:33-08:00</updated>
+  <updated>2013-11-14T22:47:25-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -106,17 +106,9 @@ end
 
 <p>Next, we’ll create a free MapBox account and make our own custom-colored map. Afterwards, we’ll open the JavaScript file that corresponds to the controller which contains the two earlier code blocks (mine is called happy_hours.js.coffee), and we’ll add a line instantiating the map with the map ID of the custom-colored map we just created.</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">initialize</span> <span class="nx">the</span> <span class="nx">map</span> <span class="kc">on</span> <span class="nx">the</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">map</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;</span> <span class="nx">div</span> <span class="nx">with</span> <span class="nx">the</span> <span class="nx">given</span> <span class="nx">map</span> <span class="nx">ID</span><span class="p">,</span> <span class="nx">center</span><span class="p">,</span> <span class="o">and</span> <span class="nx">zoom</span><span class="o">&lt;/</span><span class="nx">h1</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nv">map = </span><span class="nx">L</span><span class="p">.</span><span class="nx">mapbox</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">map</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">your</span><span class="o">-</span><span class="nx">map</span><span class="o">-</span><span class="nx">id</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;).</span><span class="nx">setView</span><span class="p">([</span><span class="mf">45.52086</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.679523</span><span class="p">],</span> <span class="mi">14</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<pre><code># initialize the map on the 'map' div with the given map ID, center, and zoom
+map = L.mapbox.map('map', 'your-map-id').setView([45.52086, -122.679523], 14)
+</code></pre>
 
 <p>The coordinates we’re passing on to the <code>setView()</code> method tell the API where to center the map, while the 14 represents the zoom level for the map. In reality, <code>setView()</code> actually comes from the <a href="http://leafletjs.com/reference.html#map-setview">Leaflet JavaScript library</a>; MapBox simply extends and simplifies it.</p>
 
@@ -137,7 +129,7 @@ end
   url: &lsquo;happy_hours/happening_now.json&rsquo;
   success: (data) &ndash;></p>
 
-<pre><code>geojson = $.parseJSON(data)  
+<pre><code>geojson = $.parseJSON(data)
 map.markerLayer.setGeoJSON(geojson)
 </code></pre>
 
@@ -160,7 +152,7 @@ map.markerLayer.setGeoJSON(geojson)
 <p>  # create custom popup
   popupContent =  &lsquo;<div class="popup">&rsquo; +</p>
 
-<pre><code>                '&lt;h3&gt;' + feature.properties.name + '&lt;/h3&gt;' + 
+<pre><code>                '&lt;h3&gt;' + feature.properties.name + '&lt;/h3&gt;' +
                 '&lt;p&gt;' + feature.properties.address + '&lt;/p&gt;' +
               '&lt;/div&gt;'
 </code></pre>
