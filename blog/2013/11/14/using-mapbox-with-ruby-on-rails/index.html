@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Using MapBox with Ruby on Rails - Hungry and Foolish</title>
+  <meta name="author" content="Vladi Gleba">
+
+  
+  <meta name="description" content="Last week I wrote about phindee, a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://vladigleba.github.io/blog/2013/11/14/using-mapbox-with-ruby-on-rails">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Hungry and Foolish" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37472806-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Hungry and Foolish</a></h1>
+  
+    <h2>Utilizing the power of the web for good</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation">  
+  
+    <form method="get" action="/search.html">
+      <fieldset role="search">
+        <input class="search" name="query" type="text" placeholder="Search..." x-webkit-speech />
+      </fieldset>
+    </form>
+  
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/categories/projects/">Projects</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a title="subscribe via RSS" rel="subscribe-rss" href="http://www.feedblitz.com/f/?Sub=927939&cids=1">Subscribe</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Using MapBox With Ruby on Rails</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-14T10:39:00-08:00" pubdate data-updated="true">Nov 14<span>th</span>, 2013</time>
+        
+
+<span class="categories">
+  published in 
+  
+    <a class='category' href='/blog/categories/coffeescript/'>CoffeeScript</a>, <a class='category' href='/blog/categories/mapbox/'>MapBox</a>, <a class='category' href='/blog/categories/rails/'>Rails</a>, <a class='category' href='/blog/categories/phindee/'>phindee</a>
+  
+</span>
+
+
+        
+          <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Last week <a href="/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/">I wrote about</a> <a href="http://phindee.com/">phindee</a>, a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that phindee’s mapping functionality is provided by the <a href="https://www.mapbox.com/mapbox.js/">MapBox JavaScript API</a>, but did not go into any more detail for brevity reasons. I still think it’s an important topic to talk about because I remember having a hard time finding tutorials about integrating MapBox with Ruby on Rails, specifically.</p>
+
+<p>I hope this post fills a bit of that void. <!-- more --></p>
+
+<h1>Why MapBox?</h1>
+
+<p>It’s actually quite simple, really. You see, Google is an immense company swimming in cash and dominating virtually every product in which it has its hands. Who has the world’s most popular video sharing site? Google. Email service? Google. Whose mobile operating system has the largest market share? Google’s. Who has the world&rsquo;s most popular search engine? Google. And mapping service? Google. Heck, it’s not even a close race in most of these categories. This is not healthy for the rest of us, no matter how you measure it.</p>
+
+<p>MapBox is actually open source, and Google Maps is obviously not. When I have a choice, I’ll go with open source over proprietary any day.</p>
+
+<p>Whenever a company lacks competition, the pace of innovation slows. Every time a majority of our data is concentrated in the hands of a single company, we should feel a bit uneasy. That’s why every time a small, promising startup tries to take on the giant, I will always <a href="http://venturebeat.com/2013/10/16/mapbox-heads-into-battle-against-google-maps-with-a-10m-war-chest-from-foundry-group/">cheer</a> for the underdog. Always. And I’m glad <a href="http://www.pcmag.com/article2/0,2817,2401037,00.asp">I’m not the only one</a>.</p>
+
+<h1>Converting Addresses into Coordinates</h1>
+
+<p>Alright, enough of that. Let&rsquo;s start coding.</p>
+
+<p>First thing we&rsquo;ll do is convert our addresses into coordinates, which MapBox needs in order to place our markers (pin-drops) on the map. We could use the <a href="https://developers.google.com/maps/documentation/geocoding/">Google Geocoding API</a> to do this manually, but I recommend using the <a href="http://www.rubygeocoder.com/">Geocoder</a> gem to automate the process. The gem uses the Google Maps API by default, but it supports other services as well.</p>
+
+<p>Because there is a <a href="http://railscasts.com/episodes/273-geocoder">Railscasts episode</a> covering the gem, I won’t go into any more detail here.</p>
+
+<h1>Building a JSON object</h1>
+
+<p>Once we have the coordinates, we’re ready to build a JSON object array that will tell MapBox how to display our markers. Our JSON objects will be in the <a href="https://en.wikipedia.org/wiki/GeoJSON">GeoJSON format</a>, which is just a format to describe geographic data in JSON. MapBox uses the GeoJSON format to capture the necessary data needed to generate all the markers on the map. Building a JSON object in Rails is easy. Below is how I do it for phindee.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="vi">@happy_hours</span> <span class="o">=</span> <span class="no">HappyHour</span><span class="o">.</span><span class="n">all</span>
+</span><span class='line'><span class="vi">@geojson</span> <span class="o">=</span> <span class="nb">Array</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'>
+</span><span class='line'><span class="vi">@happy_hours</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">happy_hour</span><span class="o">|</span>
+</span><span class='line'>  <span class="vi">@geojson</span> <span class="o">&lt;&lt;</span> <span class="p">{</span>
+</span><span class='line'>    <span class="ss">type</span><span class="p">:</span> <span class="s1">&#39;Feature&#39;</span><span class="p">,</span>
+</span><span class='line'>    <span class="ss">geometry</span><span class="p">:</span> <span class="p">{</span>
+</span><span class='line'>      <span class="ss">type</span><span class="p">:</span> <span class="s1">&#39;Point&#39;</span><span class="p">,</span>
+</span><span class='line'>      <span class="ss">coordinates</span><span class="p">:</span> <span class="o">[</span> <span class="n">happy_hour</span><span class="o">.</span><span class="n">longitude</span><span class="p">,</span> <span class="n">happy_hour</span><span class="o">.</span><span class="n">latitude</span> <span class="o">]</span> <span class="p">},</span>
+</span><span class='line'>    <span class="ss">properties</span><span class="p">:</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nb">name</span><span class="p">:</span> <span class="n">happy_hour</span><span class="o">.</span><span class="n">name</span>
+</span><span class='line'>      <span class="ss">address</span><span class="p">:</span> <span class="n">happy_hour</span><span class="o">.</span><span class="n">street</span><span class="p">,</span>
+</span><span class='line'>      <span class="ss">:&#39;marker-color&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;#00607d&#39;</span><span class="p">,</span>
+</span><span class='line'>      <span class="ss">:&#39;marker-symbol&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;circle&#39;</span><span class="p">,</span>
+</span><span class='line'>      <span class="ss">:&#39;marker-size&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;medium&#39;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The above code simply loops through each happy hour, creates an object, then appends and returns the newly created object to the <code>@geojson</code> array with the help of the <code>&lt;&lt;</code> method. Note that each object in our JSON array must contain a <code>type</code> key, a <code>geometry</code> key, and a <code>property</code> key. In our example above, the <code>geometry</code> key says that we want our marker displayed as a point at that specific set of coordinates, while the <code>property</code> key says we want our marker to be a medium blue circle that displays the happy hour name and street address when clicked.</p>
+
+<p>I placed the above code inside one of the methods in my happy_hours_controller.rb file, as that’s the controller that deals with happy hours. You’ll place your code inside whatever controller is appropriate for your specific situation.</p>
+
+<h2>Telling Rails How to Respond</h2>
+
+<p>Because we want Rails to be able to return a JSON object, we’ll need to explicitly tell it do so via a <code>respond_to</code> block, which we will place right after the code we wrote above.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+</span><span class='line'>  <span class="nb">format</span><span class="o">.</span><span class="n">html</span>
+</span><span class='line'>  <span class="nb">format</span><span class="o">.</span><span class="n">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json</span><span class="p">:</span> <span class="vi">@geojson</span> <span class="p">}</span>  <span class="c1"># respond with the created JSON object</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Depending on the type of request, only one of the two lines above will be executed. For example, when we will later make an AJAX request in the JSON format, Rails will know to respond with the JSON object we just created above; otherwise, it will respond with a regular HTML file.</p>
+
+<h1>Working with the MapBox API</h1>
+
+<p>Now that we have the building blocks in place, we’re ready to start working with the MapBox API itself. My code examples below will all be in CoffeeScript because that’s what I used for phindee, but if you’re not familiar with CoffeeScript, you can copy the code examples into <a href="http://js2coffee.org/">js2coffee.org</a> to get the JavaScript equivalent.</p>
+
+<h2>Adding the Library Code</h2>
+
+<p>Alright, first thing we’ll do is include the MapBox JavaScript API, along with the accompanying CSS code.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="nt">/&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>When I wrote this code, the latest version of the MapBox JavaScript API was 1.0.2, so my links above reflect that. See their <a href="https://www.mapbox.com/mapbox.js/overview/">documentation</a> for the current latest version and update your links accordingly.</p>
+
+<h2>Initializing the Map</h2>
+
+<p>Next, we’ll create a free MapBox account and make our own custom-colored map. Afterwards, we’ll open the JavaScript file that corresponds to the controller which contains the two earlier code blocks (mine is called happy_hours.js.coffee), and we’ll add a line instantiating the map with the map ID of the custom-colored map we just created.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># initialize the map on the &#39;map&#39; div with the given map ID, center, and zoom</span>
+</span><span class='line'><span class="nv">map = </span><span class="nx">L</span><span class="p">.</span><span class="nx">mapbox</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s">&#39;map&#39;</span><span class="p">,</span> <span class="err">‘</span><span class="nx">your</span><span class="o">-</span><span class="nx">map</span><span class="o">-</span><span class="nx">id</span><span class="err">’</span><span class="p">).</span><span class="nx">setView</span><span class="p">([</span><span class="mf">45.52086</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.679523</span><span class="p">],</span> <span class="mi">14</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The coordinates we’re passing on to the <code>setView()</code> method tell the API where to center the map, while the 14 represents the zoom level for the map. In reality, <code>setView()</code> actually comes from the <a href="http://leafletjs.com/reference.html#map-setview">Leaflet JavaScript library</a>; MapBox simply extends and simplifies it.</p>
+
+<h2>Making the AJAX Call</h2>
+
+<p>Okay, now we’re ready to use the JSON objects we created earlier. We’ll make an AJAX call in the JSON format, and Rails will return our JSON object.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># get JSON object</span>
+</span><span class='line'><span class="c1"># on success, parse it and </span>
+</span><span class='line'><span class="c1"># hand it over to MapBox for mapping </span>
+</span><span class='line'><span class="nv">markerLayer = </span><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span>
+</span><span class='line'>  <span class="nv">dataType: </span><span class="s">&quot;text&quot;</span>
+</span><span class='line'>  <span class="nv">url: </span><span class="s">&quot;happy_hours/happening_now.json&quot;</span>
+</span><span class='line'>  <span class="nv">success: </span><span class="nf">(data) -&gt;</span>
+</span><span class='line'>    <span class="nv">geojson = </span><span class="nx">$</span><span class="p">.</span><span class="nx">parseJSON</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>
+</span><span class='line'>    <span class="nx">map</span><span class="p">.</span><span class="nx">markerLayer</span><span class="p">.</span><span class="nx">setGeoJSON</span><span class="p">(</span><span class="nx">geojson</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The code above simply sends out an AJAX call to the URL that corresponds to the controller method into which we added the JSON object code from before. The <code>.json</code> extension alerts Rails to return a JSON response, instead of an HTML one. On a successful return, we then parse the JSON object and pass it on to the <code>setGeoJSON()</code> method for mapping. Kid stuff.</p>
+
+<h2>Creating Custom Popups</h2>
+
+<p>Now we’ll create our custom popups.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># add custom popups to each marker </span>
+</span><span class='line'><span class="nx">map</span><span class="p">.</span><span class="nx">markerLayer</span><span class="p">.</span><span class="nx">on</span> <span class="s">&quot;layeradd&quot;</span><span class="p">,</span> <span class="nf">(e) -&gt;</span>
+</span><span class='line'>  <span class="nv">marker = </span><span class="nx">e</span><span class="p">.</span><span class="nx">layer</span>
+</span><span class='line'>  <span class="nv">feature = </span><span class="nx">marker</span><span class="p">.</span><span class="nx">feature</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1"># create custom popup</span>
+</span><span class='line'>  <span class="nv">popupContent = </span> <span class="s">&#39;&lt;div class=&quot;popup&quot;&gt;&#39;</span> <span class="o">+</span>
+</span><span class='line'>                    <span class="s">&#39;&lt;h3&gt;&#39;</span> <span class="o">+</span> <span class="nx">feature</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s">&#39;&lt;/h3&gt;&#39;</span> <span class="o">+</span>
+</span><span class='line'>                    <span class="s">&#39;&lt;p&gt;&#39;</span> <span class="o">+</span> <span class="nx">feature</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">address</span> <span class="o">+</span> <span class="s">&#39;&lt;/p&gt;&#39;</span> <span class="o">+</span>
+</span><span class='line'>                  <span class="s">&#39;&lt;/div&gt;&#39;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1"># http://leafletjs.com/reference.html#popup</span>
+</span><span class='line'>  <span class="nx">marker</span><span class="p">.</span><span class="nx">bindPopup</span> <span class="nx">popupContent</span><span class="p">,</span>
+</span><span class='line'>    <span class="nv">closeButton: </span><span class="kc">false</span>
+</span><span class='line'>    <span class="nv">minWidth: </span><span class="mi">320</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To summarize the code above, we’re simply looping through each marker, creating a custom popup for it, and then binding it using the <code>bindPop()</code> method, which once again comes from the Leaflet library.</p>
+
+<h2>Opening a Popup Programmatically</h2>
+
+<p>If you look at <a href="http://phindee.com/">phindee</a>, you’ll notice that when you open the sidebar and click on a happy hour, the popup on the corresponding marker on the map automatically opens up. Being able to open up a popup programmatically is useful, and below is how I did it.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># handles a sidebar happy hour click</span>
+</span><span class='line'><span class="nx">$</span><span class="p">(</span><span class="s">&#39;article li&#39;</span><span class="p">).</span><span class="nx">click</span> <span class="nf">(e) -&gt;</span>
+</span><span class='line'>  <span class="nv">current = </span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
+</span><span class='line'>  <span class="nv">currentlyClickedName = </span><span class="nx">current</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s">&#39;h2&#39;</span><span class="p">).</span><span class="nx">text</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1"># opens/closes popup for currently clicked happy hour</span>
+</span><span class='line'>  <span class="nx">map</span><span class="p">.</span><span class="nx">markerLayer</span><span class="p">.</span><span class="nx">eachLayer</span> <span class="nf">(layer) -&gt;</span>
+</span><span class='line'>    <span class="k">if</span> <span class="nx">layer</span><span class="p">.</span><span class="nx">feature</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">name</span> <span class="o">is</span> <span class="nx">currentlyClickedName</span>
+</span><span class='line'>      <span class="nv">id = </span><span class="nx">layer</span><span class="p">.</span><span class="nx">_leaflet_id</span>
+</span><span class='line'>      <span class="nx">map</span><span class="p">.</span><span class="nx">_layers</span><span class="p">[</span><span class="nx">id</span><span class="p">].</span><span class="nx">openPopup</span><span class="p">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We’re simply adding a <code>click</code> event on the sidebar happy hours, extracting the happy hour name, and looping through each marker to find the one with the matching name. Once we find a match, we extract the marker’s ID, and use that ID to open up the popup programmatically by calling Leaflet’s <code>openPopup()</code> method.</p>
+
+<p>And that’s all there is to it! Our MapBox integration with Ruby on Rails is now complete, although we only scratched the surface of what&rsquo;s possible. Feel free to take a look at the <a href="https://www.mapbox.com/mapbox.js">MapBox</a> and <a href="http://leafletjs.com/reference.html">Leaflet</a> documentation to learn more.</p>
+</div>
+
+
+  <footer>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/" title="Previous Post: Phindee: A New Way to Discover Happy Hours in Downtown Portland">&laquo; Phindee: A New Way to Discover Happy Hours in Downtown Portland</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/11/14/using-mapbox-with-ruby-on-rails/">Using MapBox with Ruby on Rails</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/">Phindee: A New Way to Discover Happy Hours in Downtown Portland</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/31/introducing-readify-a-new-octopress-theme-focused-on-readibility/">Introducing Readify: A New Octopress Theme Focused on Readibility</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/22/ways-to-define-a-grid-system/">Ways to Define a Grid System</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/15/im-diving-in/">I'm Diving In</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>Copyright &copy; 2013 Vladi Gleba</p>
+<p>Produced in Portland, Oregon. Powered by <a href="http://octopress.org">Octopress</a> and <a href="https://github.com/vladigleba/readify">Readify</a>.</p>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'vladigleba';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://vladigleba.github.io/blog/2013/11/14/using-mapbox-with-ruby-on-rails/';
+        var disqus_url = 'http://vladigleba.github.io/blog/2013/11/14/using-mapbox-with-ruby-on-rails/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

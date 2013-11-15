@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Rails | Hungry and Foolish]]></title>
-  <link href="http://vladigleba.github.io/blog/categories/rails/atom.xml" rel="self"/>
+  <title><![CDATA[Category: phindee | Hungry and Foolish]]></title>
+  <link href="http://vladigleba.github.io/blog/categories/phindee/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
   <updated>2013-11-14T17:08:35-08:00</updated>
   <id>http://vladigleba.github.io/</id>

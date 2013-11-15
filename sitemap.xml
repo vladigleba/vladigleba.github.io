@@ -2,27 +2,31 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://vladigleba.github.io/blog/2013/10/15/im-diving-in/</loc>
-        <lastmod>2013-11-06T13:38:36-08:00</lastmod>
+        <lastmod>2013-11-14T11:46:47-08:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/blog/2013/10/22/ways-to-define-a-grid-system/</loc>
-        <lastmod>2013-11-06T13:38:36-08:00</lastmod>
+        <lastmod>2013-11-14T16:44:00-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://vladigleba.github.io/blog/2013/10/31/introducing-readify-a-new-octopress-theme-focused-on-readibility/
         </loc>
-        <lastmod>2013-11-06T13:38:36-08:00</lastmod>
+        <lastmod>2013-11-14T11:46:47-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://vladigleba.github.io/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/
         </loc>
-        <lastmod>2013-11-12T21:50:10-08:00</lastmod>
+        <lastmod>2013-11-14T11:46:47-08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://vladigleba.github.io/blog/2013/11/14/using-mapbox-with-ruby-on-rails/</loc>
+        <lastmod>2013-11-14T17:07:41-08:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/about/</loc>
-        <lastmod>2013-11-12T16:27:58-08:00</lastmod>
+        <lastmod>2013-11-14T11:05:06-08:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/atom_search.xml</loc>
@@ -30,18 +34,18 @@
     </url>
     <url>
         <loc>http://vladigleba.github.io/blog/archives/</loc>
-        <lastmod>2013-11-12T21:50:10-08:00</lastmod>
+        <lastmod>2013-11-14T17:07:41-08:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/</loc>
-        <lastmod>2013-11-12T21:50:10-08:00</lastmod>
+        <lastmod>2013-11-14T17:07:41-08:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/robots.txt</loc>
-        <lastmod>2013-10-31T09:11:06-07:00</lastmod>
+        <lastmod>2013-11-14T11:05:06-08:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/search.html</loc>
-        <lastmod>2013-11-06T14:10:45-08:00</lastmod>
+        <lastmod>2013-11-14T11:05:06-08:00</lastmod>
     </url>
 </urlset>
