@@ -4,7 +4,7 @@
   <title><![CDATA[Category: phindee | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/categories/phindee/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-11-15T11:29:34-08:00</updated>
+  <updated>2013-11-15T11:30:55-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -56,7 +56,7 @@ geometry: {
 },
 properties: { 
   name: happy_hour.name,
-  name: happy_hour.street,
+  address: happy_hour.street,
   :'marker-color' =&gt; '#00607d', 
   :'marker-symbol' =&gt; 'circle', 
   :'marker-size' =&gt; 'medium' 
