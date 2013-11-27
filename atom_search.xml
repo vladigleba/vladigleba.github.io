@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-11-27T14:44:03-08:00</updated>
+  <updated>2013-11-27T14:46:17-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -25,11 +25,11 @@
 
 <h1>Why MapBox?</h1>
 
-<p>It’s actually quite simple, really. You see, Google is an immense company swimming in cash and dominating virtually every product it has its hands in. Who has the world’s most popular video sharing site? Google. Search engine? Google. How about email service? Google. And mapping service? Google. Whose mobile operating system has the largest market share worldwide? Google’s. Heck, it’s not even a close race in most of these categories. This is not healthy for the rest of us, no matter how you measure it.</p>
-
-<p>MapBox is actually open source, and Google Maps is obviously not. When I have a choice, I’ll go with open source over proprietary any day.</p>
+<p>It’s actually quite simple, really. You see, Google is an immense company swimming in cash and dominating virtually every product it has its hands in. Who has the world’s most popular video sharing site? Google. Search engine? Google. How about email service? Google. And mapping service? Google. Whose mobile operating system has the largest market share worldwide? Google’s. Heck, it’s not even a close race in most of these categories. While this great for the company, it&rsquo;s not so healthy for the rest of us.</p>
 
 <p>Whenever a company lacks competition, the pace of innovation slows. Every time a majority of our data is concentrated in the hands of a single company, we should feel a bit uneasy. That’s why every time a small, promising startup tries to take on the giant, I will always <a href="http://venturebeat.com/2013/10/16/mapbox-heads-into-battle-against-google-maps-with-a-10m-war-chest-from-foundry-group/">cheer</a> for the underdog. Always. And I’m glad <a href="http://www.pcmag.com/article2/0,2817,2401037,00.asp">I’m not the only one</a>.</p>
+
+<p>MapBox is actually open source, and Google Maps is obviously not. When I have a choice, I’ll go with open source over proprietary any day.</p>
 
 <h1>Converting Addresses into Coordinates</h1>
 
