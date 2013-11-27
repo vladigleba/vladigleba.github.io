@@ -12,7 +12,7 @@ I hope this post fills a bit of that void. <!-- more -->
 
 # Why MapBox?
 
-It’s actually quite simple, really. You see, Google is an immense company swimming in cash and dominating virtually every product in which it has its hands. Who has the world’s most popular video sharing site? Google. Email service? Google. Whose mobile operating system has the largest market share? Google’s. Who has the world's most popular search engine? Google. And mapping service? Google. Heck, it’s not even a close race in most of these categories. This is not healthy for the rest of us, no matter how you measure it.
+It’s actually quite simple, really. You see, Google is an immense company swimming in cash and dominating virtually every product it has its hands in. Who has the world’s most popular video sharing site? Google. Email service? Google. Whose mobile operating system has the largest market share? Google’s. Who has the world's most popular search engine? Email service? Mapping service? Heck, it’s not even a close race in most of these categories. This is not healthy for the rest of us, no matter how you measure it.
 
 MapBox is actually open source, and Google Maps is obviously not. When I have a choice, I’ll go with open source over proprietary any day.
 
@@ -39,9 +39,10 @@ Once we have the coordinates, we’re ready to build a JSON object array that wi
     type: 'Feature',
     geometry: { 
       type: 'Point', 
-      coordinates: [ happy_hour.longitude, happy_hour.latitude ] },
+      coordinates: [happy_hour.longitude, happy_hour.latitude] 
+    },
     properties: { 
-      name: happy_hour.name
+      name: happy_hour.name,
       address: happy_hour.street,
       :'marker-color' => '#00607d', 
       :'marker-symbol' => 'circle', 
@@ -81,7 +82,7 @@ Alright, first thing we’ll do is include the MapBox JavaScript API, along with
 <link href="http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.css" rel="stylesheet" />
 ```
 
-When I wrote this code, the latest version of the MapBox JavaScript API was 1.0.2, so my links above reflect that. See their [documentation](https://www.mapbox.com/mapbox.js/overview/) for the current latest version and update your links accordingly.
+When I wrote this code, the latest version of the MapBox JavaScript API was 1.0.2, and my links above reflect that. See their [documentation](https://www.mapbox.com/mapbox.js/overview/) for the current latest version and update your links accordingly.
 
 ## Initializing the Map
 
@@ -89,7 +90,7 @@ Next, we’ll create a free MapBox account and make our own custom-colored map. 
 
 ``` coffeescript
 # initialize the map on the 'map' div with the given map ID, center, and zoom
-map = L.mapbox.map('map', ‘your-map-id’).setView([45.52086, -122.679523], 14)
+map = L.mapbox.map('map', 'your-map-id').setView([45.52086, -122.679523], 14)
 ```
 
 The coordinates we’re passing on to the `setView()` method tell the API where to center the map, while the 14 represents the zoom level for the map. In reality, `setView()` actually comes from the [Leaflet JavaScript library](http://leafletjs.com/reference.html#map-setview); MapBox simply extends and simplifies it.
@@ -103,10 +104,10 @@ Okay, now we’re ready to use the JSON objects we created earlier. We’ll make
 # on success, parse it and 
 # hand it over to MapBox for mapping 
 markerLayer = $.ajax
-  dataType: "text"
-  url: "happy_hours/happening_now.json"
+  dataType: 'text'
+  url: 'happy_hours/happening_now.json'
   success: (data) ->
-    geojson = $.parseJSON(data)  
+    geojson = $.parseJSON(data)
     map.markerLayer.setGeoJSON(geojson)
 ```
 
@@ -117,14 +118,14 @@ The code above simply sends out an AJAX call to the URL that corresponds to the 
 Now we’ll create our custom popups.
   
 ``` coffeescript
-# add custom popups to each marker 
-map.markerLayer.on "layeradd", (e) ->
+# add custom popups to each marker
+map.markerLayer.on 'layeradd', (e) ->
   marker = e.layer
   feature = marker.feature
 
   # create custom popup
   popupContent =  '<div class="popup">' +
-                    '<h3>' + feature.properties.name + '</h3>' + 
+                    '<h3>' + feature.properties.name + '</h3>' +
                     '<p>' + feature.properties.address + '</p>' +
                   '</div>'
 

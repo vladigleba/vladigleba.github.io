@@ -48,7 +48,8 @@ html {
 }
 
 body { 
-  background-color: #fff; 
+  -webkit-text-size-adjust: none; /* prevent mobile safari from resizing text */
+  background-color: #fff;
   color: $text-color;
   text-align: center; 
   width: 55%;
@@ -80,9 +81,6 @@ a {
 
 blockquote {
   font-style: italic;
-  border-left: 3px dotted $line-color;
-  padding-left: 20px;
-  padding-left: 1rem;
 }
 
 p > code {
@@ -123,7 +121,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 nav, 
-pre, 
+.entry-content > pre, 
+figure.code,
 article footer > p.meta {
   overflow: auto;
 }
@@ -131,7 +130,8 @@ article footer > p.meta {
 article footer > p.meta:first-child,
 nav form input.search,
 body > footer p,
-pre {
+.entry-content > pre,
+figure.code {
   font-size: 14.637px;
   font-size: 0.732rem;
 }
@@ -164,7 +164,7 @@ article .entry-content h1,
 article header, 
 article p,
 article footer > p.meta:first-child,
-figure,
+figure.code,
 .entry-content > pre { 
   margin-bottom: 32.360px;
   margin-bottom: 1.618rem; 
@@ -182,6 +182,13 @@ section {
   margin-bottom: 4.236rem;
 }
 
+
+pre,
+blockquote {
+  padding: 1px 20px;
+  padding: 1px 1rem;
+}
+
 #blog-archives time:after,
 article header p.meta > span:before, 
 article header p.meta > span:after, 
@@ -190,7 +197,9 @@ article footer > p.meta:first-child span.author:after {
   content: "•";
 }
 
-pre, code {
+pre, 
+code, 
+figure.code {
   font-family: Menlo, Monaco, "Andale Mono", "Lucida Console", "Courier New", monospace;
 }
 
@@ -323,8 +332,8 @@ archives page
   }
   
   article {
-    margin-left: 88px;
-    margin-left: 4.4rem; /* not from scale */
+    margin-left: 79px;
+    margin-left: 3.95rem; /* not from scale */
     
     h1 {
       line-height: 38.319px;
