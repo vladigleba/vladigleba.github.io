@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Using @font-face with Ruby on Rails - Hungry and Foolish</title>
+  <meta name="author" content="Vladi Gleba">
+
+  
+  <meta name="description" content="When I was working on phindee, I remember struggling with adding custom fonts to the app; the asset pipeline had just been released for Ruby on Rails &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://vladigleba.github.io/blog/2013/11/29/using-at-font-face-with-ruby-on-rails">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Hungry and Foolish" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37472806-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Hungry and Foolish</a></h1>
+  
+    <h2>Utilizing the power of the web for good</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation">  
+  
+    <form method="get" action="/search.html">
+      <fieldset role="search">
+        <input class="search" name="query" type="text" placeholder="Search..." x-webkit-speech />
+      </fieldset>
+    </form>
+  
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/categories/projects/">Projects</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a title="subscribe via RSS" rel="subscribe-rss" href="http://www.feedblitz.com/f/?Sub=927939&cids=1">Subscribe</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Using @font-face With Ruby on Rails</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-29T11:35:00-08:00" pubdate data-updated="true">Nov 29<span>th</span>, 2013</time>
+        
+
+<span class="categories">
+  published in 
+  
+    <a class='category' href='/blog/categories/fonts/'>Fonts</a>, <a class='category' href='/blog/categories/rails/'>Rails</a>, <a class='category' href='/blog/categories/sass/'>SASS</a>
+  
+</span>
+
+
+        
+          <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>When I was working on <a href="http://phindee.com/">phindee</a>, I remember struggling with adding custom fonts to the app; the asset pipeline had just been released for Ruby on Rails, and it changed how one worked with assets. Perhaps there are others out there struggling with the same thing, which is why I’d like to share what I did and hopefully save some time for a few.</p>
+
+<!-- more -->
+
+
+<p>I&rsquo;ll be using <a href="http://www.fontsquirrel.com/">Font Squirrel</a> to generate the necessary font files, but there are other alternatives out there like <a href="https://www.google.com/fonts/">Google Fonts</a> and <a href="http://typekit.com/">Typekit</a>, which are easier to set up because they host the fonts for you on their own servers. The down side is if their servers go down so do your fonts. With Font Squirrel this is not the case because the fonts live directly on your own servers. This makes the setup a bit more involved, but hey, it&rsquo;s a learning opportunity, and the pay off is well worth it.</p>
+
+<p>Alright, let&rsquo;s get to work.</p>
+
+<h1>Setup</h1>
+
+<p>First thing we’ll do is add a new directory called “fonts” to the <code>app/assets</code> directory; this is where we’ll place all our font files. I usually use Font Squirrel to generate these files, as they have hundreds of open source fonts to choose from; if you find a font you like, you can get access to the font files by downloading the font’s Webfont Kit, which includes all four major font formats (TTF, EOT, WOFF, and SVG). This means your fonts will be cross-browser compatible, as each major browser now supports at least one of the four formats.</p>
+
+<p>Once we have our font files downloaded, we’ll add them to <code>app/assets/fonts</code>.</p>
+
+<h1>Declaring Your Fonts</h1>
+
+<p>Alright, we’re now ready to declare our fonts. In order to keep our code organized, we’ll add a new <code>fonts.css.scss</code> file to <code>app/assets/stylesheets</code>, and we’ll make our <code>@font-face</code> declarations right inside it. (Note that I use the SASS pre-compiler; hence, the additional <code>.scss</code> extension.)</p>
+
+<p>Since I downloaded my fonts from Font Squirrel, I already have my font declarations pre-written for me. All I need to do is open the Webfont Kit I downloaded earlier, find the <code>stylesheet.css</code> file, and copy and paste the code into the <code>font.css.scss</code> file I just created above. If you didn’t use Font Squirrel, you’ll need to write the declarations yourself. You can follow the examples at <a href="https://www.fontspring.com/blog/the-new-bulletproof-font-face-syntax">fontspring.com</a> for guidance.</p>
+
+<p>I downloaded Font Squirrel’s &ldquo;Action Man&rdquo; font as an example, and below is the <code>@font-face</code> declaration that came with it.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='scss'><span class='line'><span class="k">@font-face</span> <span class="p">{</span>
+</span><span class='line'>    <span class="na">font-family</span><span class="o">:</span> <span class="s1">&#39;</span><span class="s2">action_manregular&#39;</span><span class="p">;</span>
+</span><span class='line'>    <span class="na">src</span><span class="o">:</span> <span class="sx">url(&#39;Action_Man-webfont.eot&#39;)</span><span class="p">;</span>
+</span><span class='line'>    <span class="na">src</span><span class="o">:</span> <span class="sx">url(&#39;Action_Man-webfont.eot?#iefix&#39;)</span> <span class="nf">format</span><span class="p">(</span><span class="s1">&#39;</span><span class="s2">embedded-opentype&#39;</span><span class="p">)</span><span class="o">,</span>
+</span><span class='line'>           <span class="sx">url(&#39;Action_Man-webfont.woff&#39;)</span> <span class="nf">format</span><span class="p">(</span><span class="s1">&#39;</span><span class="s2">woff&#39;</span><span class="p">)</span><span class="o">,</span>
+</span><span class='line'>           <span class="sx">url(&#39;Action_Man-webfont.ttf&#39;)</span> <span class="nf">format</span><span class="p">(</span><span class="s1">&#39;</span><span class="s2">truetype&#39;</span><span class="p">)</span><span class="o">,</span>
+</span><span class='line'>           <span class="sx">url(&#39;Action_Man-webfont.svg#action_manregular&#39;)</span> <span class="nf">format</span><span class="p">(</span><span class="s1">&#39;</span><span class="s2">svg&#39;</span><span class="p">);</span>
+</span><span class='line'>    <span class="na">font-weight</span><span class="o">:</span> <span class="no">normal</span><span class="p">;</span>
+</span><span class='line'>    <span class="na">font-style</span><span class="o">:</span> <span class="no">normal</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Note that the above declaration uses the <code>url()</code> methods by default to specify the font’s location. If you’re using the <a href="http://sass-lang.com/">SASS</a> or <a href="http://lesscss.org/">LESS</a> pre-compiler, you’ll want to change those methods to <code>font-url()</code>, or the code might not work.</p>
+
+<p>Now all that&rsquo;s left is to declare our font using the <code>font-family</code> property, like so:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='scss'><span class='line'><span class="nt">p</span> <span class="p">{</span> <span class="na">font-family</span><span class="o">:</span> <span class="s1">&#39;</span><span class="s2">action_manregular&#39;</span><span class="p">;</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Note that my font name matches the font name inside the <code>@font-face</code> <code>font-family</code> declaration. If names don’t match exactly, it might not work.</p>
+
+<h1>And That&rsquo;s a Wrap</h1>
+
+<p>Believe it or not, that’s all there is to it! If you refresh your browser, you should be able to see the new fonts in action. If that’s not the case, double check to make sure you’re using the <code>font-url()</code> methods if you’re running a pre-compiler like SASS or LESS, and make sure your <code>font-family</code> declarations match your <code>@font-face</code> declarations to the tee, including little things like capitalization, hyphens, underscores, etc. If that doesn&rsquo;t do it then Google might be your best bet.</p>
+</div>
+
+
+  <footer>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/11/14/using-mapbox-with-ruby-on-rails/" title="Previous Post: Using MapBox with Ruby on Rails">&laquo; Using MapBox with Ruby on Rails</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/11/29/using-at-font-face-with-ruby-on-rails/">Using @font-face with Ruby on Rails</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/14/using-mapbox-with-ruby-on-rails/">Using MapBox with Ruby on Rails</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/">Phindee: A New Way to Discover Happy Hours in Downtown Portland</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/31/introducing-readify-a-new-octopress-theme-focused-on-readibility/">Introducing Readify: A New Octopress Theme Focused on Readibility</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/22/ways-to-define-a-grid-system/">Ways to Define a Grid System</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>Copyright &copy; 2013 Vladi Gleba</p>
+<p>Produced in Portland, Oregon. Powered by <a href="http://octopress.org">Octopress</a> and <a href="https://github.com/vladigleba/readify">Readify</a>.</p>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'vladigleba';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://vladigleba.github.io/blog/2013/11/29/using-at-font-face-with-ruby-on-rails/';
+        var disqus_url = 'http://vladigleba.github.io/blog/2013/11/29/using-at-font-face-with-ruby-on-rails/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

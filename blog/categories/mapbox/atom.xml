@@ -4,7 +4,7 @@
   <title><![CDATA[Category: MapBox | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/categories/mapbox/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-11-27T15:15:10-08:00</updated>
+  <updated>2013-11-29T14:07:07-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -20,7 +20,10 @@
     <id>http://vladigleba.github.io/blog/2013/11/14/using-mapbox-with-ruby-on-rails</id>
     <content type="html"><![CDATA[<p>Last week <a href="/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/">I wrote about</a> <a href="http://phindee.com/">phindee</a>, a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that phindee’s mapping functionality is provided by the <a href="https://www.mapbox.com/mapbox.js/">MapBox JavaScript API</a>, but did not go into any more detail for brevity reasons. I still think it’s an important topic to talk about because I remember having a hard time finding tutorials about integrating MapBox with Ruby on Rails, specifically.</p>
 
-<p>I hope this post fills a bit of that void. <!-- more --></p>
+<!-- more -->
+
+
+<p>I hope this post fills a bit of that void.</p>
 
 <h1>Why MapBox?</h1>
 
