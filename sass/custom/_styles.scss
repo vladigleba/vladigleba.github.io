@@ -95,6 +95,10 @@ cite {
   font-style: italic; 
 }
 
+figure.code figcaption { 
+  text-align: right; 
+}
+
 
 /*
 shared styles
@@ -151,14 +155,14 @@ nav ul li {
 
 body > header h2,
 article .entry-content h2 {
-  font-size: 23.683px;
-  font-size: 1.184rem;
+  font-size: 28.405px;
+  font-size: 1.42rem;
 }
 
 article .entry-content h1,
 #blog-archives article h1 {
-  font-size: 32.360px;
-  font-size: 1.618rem;
+  font-size: 38.319px;
+  font-size: 1.916rem;
 }
 
 article header, 
@@ -432,8 +436,8 @@ article {
   /* ----- post's footer ----- */
   
   footer {
-    padding-top: 9.046px;
-    padding-top: 0.452rem;
+    padding-top: 32.360px;
+    padding-top: 1.618rem;
     
     > p.meta {
       padding-bottom: 38.319px;

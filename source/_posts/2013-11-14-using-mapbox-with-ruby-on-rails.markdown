@@ -8,15 +8,19 @@ categories: [Rails, CoffeeScript, MapBox, phindee]
 
 Last week [I wrote about]({{ root_url }}/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/) [phindee](http://phindee.com/), a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that phindee’s mapping functionality is provided by the [MapBox JavaScript API](https://www.mapbox.com/mapbox.js/), but did not go into any more detail for brevity reasons. I still think it’s an important topic to talk about because I remember having a hard time finding tutorials about integrating MapBox with Ruby on Rails, specifically. 
 
-I hope this post fills a bit of that void. <!-- more -->
+<!-- more -->
+
+I hope this post fills a bit of that void.
 
 # Why MapBox?
 
-It’s actually quite simple, really. You see, Google is an immense company swimming in cash and dominating virtually every product it has its hands in. Who has the world’s most popular video sharing site? Google. Email service? Google. Whose mobile operating system has the largest market share? Google’s. Who has the world's most popular search engine? Email service? Mapping service? Heck, it’s not even a close race in most of these categories. This is not healthy for the rest of us, no matter how you measure it.
+It’s actually quite simple, really. You see, Google is an immense company swimming in cash and dominating virtually every product it has its hands in. Who has the world’s most popular video sharing site? Google. Search engine? Google. How about email service? Google. And mapping service? Google. Whose mobile operating system has the largest market share worldwide? Google’s. Heck, it’s not even a close race in most of these categories. 
 
-MapBox is actually open source, and Google Maps is obviously not. When I have a choice, I’ll go with open source over proprietary any day.
+While this great for the company, it's not so healthy for the rest of us. Whenever a company lacks competition, the pace of innovation slows, and arrogance towards customers tends to rise. Whenever a majority of our data is concentrated in the hands of a single company, feelings of unease should arise.
 
-Whenever a company lacks competition, the pace of innovation slows. Every time a majority of our data is concentrated in the hands of a single company, we should feel a bit uneasy. That’s why every time a small, promising startup tries to take on the giant, I will always [cheer](http://venturebeat.com/2013/10/16/mapbox-heads-into-battle-against-google-maps-with-a-10m-war-chest-from-foundry-group/) for the underdog. Always. And I’m glad [I’m not the only one](http://www.pcmag.com/article2/0,2817,2401037,00.asp).
+That’s why whenever a small, promising startup takes on the giant, I will cheer for [the underdog](http://venturebeat.com/2013/10/16/mapbox-heads-into-battle-against-google-maps-with-a-10m-war-chest-from-foundry-group/). And I’m glad [I’m not the only one](http://www.pcmag.com/article2/0,2817,2401037,00.asp).
+
+Besides, MapBox is actually open source, and given a choice, I’ll go with open source over proprietary any day.
 
 # Converting Addresses into Coordinates
 
@@ -28,9 +32,9 @@ Because there is a [Railscasts episode](http://railscasts.com/episodes/273-geoco
 
 # Building a JSON object
 
-Once we have the coordinates, we’re ready to build a JSON object array that will tell MapBox how to display our markers. Our JSON objects will be in the [GeoJSON format](https://en.wikipedia.org/wiki/GeoJSON), which is just a format to describe geographic data in JSON. MapBox uses the GeoJSON format to capture the necessary data needed to generate all the markers on the map. Building a JSON object in Rails is easy. Below is how I do it for phindee.
+Once we have the coordinates, we’re ready to build a JSON object array that will tell MapBox how to display our markers. Our JSON objects will be in the [GeoJSON format](https://en.wikipedia.org/wiki/GeoJSON), which is just a format to describe geographic data in JSON. MapBox uses the GeoJSON format to capture the necessary data needed to generate all the markers on the map. Building a JSON object in Rails is easy. The code below shows how I did it for phindee; it comes from my `HappyHourController`.
 
-``` ruby
+``` ruby happy_hours_controller.rb
 @happy_hours = HappyHour.all
 @geojson = Array.new
 
@@ -60,7 +64,7 @@ I placed the above code inside one of the methods in my happy_hours_controller.r
 
 Because we want Rails to be able to return a JSON object, we’ll need to explicitly tell it do so via a `respond_to` block, which we will place right after the code we wrote above.
 
-``` ruby
+``` ruby happy_hours_controller.rb
 respond_to do |format|
   format.html 
   format.json { render json: @geojson }  # respond with the created JSON object
@@ -75,9 +79,9 @@ Now that we have the building blocks in place, we’re ready to start working wi
 
 ## Adding the Library Code
 
-Alright, first thing we’ll do is include the MapBox JavaScript API, along with the accompanying CSS code. 
+Alright, first thing we’ll do is include the MapBox JavaScript API, along with the accompanying CSS code; this will go inside our main application layout file.
 
-``` html
+``` html application.html.erb
 <script src="http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.js"></script>
 <link href="http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.css" rel="stylesheet" />
 ```
@@ -86,10 +90,11 @@ When I wrote this code, the latest version of the MapBox JavaScript API was 1.0.
 
 ## Initializing the Map
 
-Next, we’ll create a free MapBox account and make our own custom-colored map. Afterwards, we’ll open the JavaScript file that corresponds to the controller which contains the two earlier code blocks (mine is called happy_hours.js.coffee), and we’ll add a line instantiating the map with the map ID of the custom-colored map we just created.
+Next, we’ll create a free MapBox account and make our own custom-colored map. Once we have the map ready, we’ll open the JavaScript file that corresponds to the controller which contains the two earlier code blocks (mine is called `happy_hours.js.coffee`), and we’ll add a line instantiating the map with the map ID of the custom-colored map we just created.
 
-``` coffeescript
-# initialize the map on the 'map' div with the given map ID, center, and zoom
+``` coffeescript happy_hours.js.coffee
+# initialize the map on the 'map' div 
+# with the given map ID, center, and zoom
 map = L.mapbox.map('map', 'your-map-id').setView([45.52086, -122.679523], 14)
 ```
 
@@ -99,7 +104,7 @@ The coordinates we’re passing on to the `setView()` method tell the API where 
 
 Okay, now we’re ready to use the JSON objects we created earlier. We’ll make an AJAX call in the JSON format, and Rails will return our JSON object.
 
-``` coffeescript
+``` coffeescript happy_hours.js.coffee
 # get JSON object
 # on success, parse it and 
 # hand it over to MapBox for mapping 
@@ -117,7 +122,7 @@ The code above simply sends out an AJAX call to the URL that corresponds to the 
 
 Now we’ll create our custom popups.
   
-``` coffeescript
+``` coffeescript happy_hours.js.coffee
 # add custom popups to each marker
 map.markerLayer.on 'layeradd', (e) ->
   marker = e.layer
@@ -141,7 +146,7 @@ To summarize the code above, we’re simply looping through each marker, creatin
 
 If you look at [phindee](http://phindee.com/), you’ll notice that when you open the sidebar and click on a happy hour, the popup on the corresponding marker on the map automatically opens up. Being able to open up a popup programmatically is useful, and below is how I did it.
 
-``` coffeescript
+``` coffeescript happy_hours.js.coffee
 # handles a sidebar happy hour click
 $('article li').click (e) ->  
   current = $(this)
