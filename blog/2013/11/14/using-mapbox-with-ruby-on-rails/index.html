@@ -141,9 +141,9 @@
 
 <h1>Building a JSON object</h1>
 
-<p>Once we have the coordinates, we’re ready to build a JSON object array that will tell MapBox how to display our markers. Our JSON objects will be in the <a href="https://en.wikipedia.org/wiki/GeoJSON">GeoJSON format</a>, which is just a format to describe geographic data in JSON. MapBox uses the GeoJSON format to capture the necessary data needed to generate all the markers on the map. Building a JSON object in Rails is easy. Below is how I do it for phindee.</p>
+<p>Once we have the coordinates, we’re ready to build a JSON object array that will tell MapBox how to display our markers. Our JSON objects will be in the <a href="https://en.wikipedia.org/wiki/GeoJSON">GeoJSON format</a>, which is just a format to describe geographic data in JSON. MapBox uses the GeoJSON format to capture the necessary data needed to generate all the markers on the map. Building a JSON object in Rails is easy. The code below shows how I did it for phindee; it comes from my <code>HappyHourController</code>.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>happy_hours_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -192,7 +192,7 @@
 
 <p>Because we want Rails to be able to return a JSON object, we’ll need to explicitly tell it do so via a <code>respond_to</code> block, which we will place right after the code we wrote above.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>happy_hours_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -211,9 +211,9 @@
 
 <h2>Adding the Library Code</h2>
 
-<p>Alright, first thing we’ll do is include the MapBox JavaScript API, along with the accompanying CSS code.</p>
+<p>Alright, first thing we’ll do is include the MapBox JavaScript API, along with the accompanying CSS code; this will go inside our main application layout file.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>application.html.erb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
 </span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="nt">/&gt;</span>
@@ -224,11 +224,13 @@
 
 <h2>Initializing the Map</h2>
 
-<p>Next, we’ll create a free MapBox account and make our own custom-colored map. Afterwards, we’ll open the JavaScript file that corresponds to the controller which contains the two earlier code blocks (mine is called happy_hours.js.coffee), and we’ll add a line instantiating the map with the map ID of the custom-colored map we just created.</p>
+<p>Next, we’ll create a free MapBox account and make our own custom-colored map. Once we have the map ready, we’ll open the JavaScript file that corresponds to the controller which contains the two earlier code blocks (mine is called <code>happy_hours.js.coffee</code>), and we’ll add a line instantiating the map with the map ID of the custom-colored map we just created.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>happy_hours.js.coffee</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># initialize the map on the &#39;map&#39; div with the given map ID, center, and zoom</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># initialize the map on the &#39;map&#39; div </span>
+</span><span class='line'><span class="c1"># with the given map ID, center, and zoom</span>
 </span><span class='line'><span class="nv">map = </span><span class="nx">L</span><span class="p">.</span><span class="nx">mapbox</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s">&#39;map&#39;</span><span class="p">,</span> <span class="s">&#39;your-map-id&#39;</span><span class="p">).</span><span class="nx">setView</span><span class="p">([</span><span class="mf">45.52086</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.679523</span><span class="p">],</span> <span class="mi">14</span><span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure>
 
@@ -239,7 +241,7 @@
 
 <p>Okay, now we’re ready to use the JSON objects we created earlier. We’ll make an AJAX call in the JSON format, and Rails will return our JSON object.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>happy_hours.js.coffee</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -266,7 +268,7 @@
 
 <p>Now we’ll create our custom popups.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>happy_hours.js.coffee</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -305,7 +307,7 @@
 
 <p>If you look at <a href="http://phindee.com/">phindee</a>, you’ll notice that when you open the sidebar and click on a happy hour, the popup on the corresponding marker on the map automatically opens up. Being able to open up a popup programmatically is useful, and below is how I did it.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>happy_hours.js.coffee</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>

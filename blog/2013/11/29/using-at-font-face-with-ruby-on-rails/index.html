@@ -137,7 +137,7 @@
 
 <p>I downloaded Font Squirrel’s &ldquo;Action Man&rdquo; font as an example, and below is the <code>@font-face</code> declaration that came with it.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>fonts.css.scss</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -162,9 +162,9 @@
 
 <p>Note that the above declaration uses the <code>url()</code> methods by default to specify the font’s location. If you’re using the <a href="http://sass-lang.com/">SASS</a> or <a href="http://lesscss.org/">LESS</a> pre-compiler, you’ll want to change those methods to <code>font-url()</code>, or the code might not work.</p>
 
-<p>Now all that&rsquo;s left is to declare our font using the <code>font-family</code> property, like so:</p>
+<p>Now all that&rsquo;s left is to declare our font inside whatever CSS file is appropriate using the <code>font-family</code> property, like so:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>base.css.scss</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='scss'><span class='line'><span class="nt">p</span> <span class="p">{</span> <span class="na">font-family</span><span class="o">:</span> <span class="s1">&#39;</span><span class="s2">action_manregular&#39;</span><span class="p">;</span> <span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
