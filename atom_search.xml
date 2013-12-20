@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-12-19T13:04:07-08:00</updated>
+  <updated>2013-12-20T08:29:07-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -45,8 +45,7 @@
 
 <p>The schema is created based on model definitions, which look like so:</p>
 
-<figure class='code'><figcaption><span>script.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
+<figure class='code'><figcaption><span>script.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
@@ -58,7 +57,6 @@
 <span class='line-number'>11</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">User</span>
 </span><span class='line'>  <span class="kp">include</span> <span class="ss">DataMapper</span><span class="p">:</span><span class="ss">:Resource</span>
-</span><span class='line'>  <span class="n">has</span> <span class="n">n</span><span class="p">,</span> <span class="ss">:events</span><span class="p">,</span> <span class="ss">constraint</span><span class="p">:</span> <span class="ss">:destroy</span>
 </span><span class='line'>
 </span><span class='line'>  <span class="n">property</span> <span class="ss">:id</span><span class="p">,</span> <span class="no">Serial</span>
 </span><span class='line'>  <span class="n">property</span> <span class="ss">:email</span><span class="p">,</span> <span class="nb">String</span><span class="p">,</span> <span class="ss">unique</span><span class="p">:</span> <span class="kp">true</span><span class="p">,</span> <span class="nb">format</span><span class="p">:</span> <span class="ss">:email_address</span>
@@ -74,14 +72,14 @@
 
 <p>The code above then adds <a href="http://datamapper.org/docs/validations.html">validations</a> using either the auto-validation methods, which we specify in the same line as our property declaration, or the manual validation methods, which we specify right below our property declarations. Only the four most common validations are implemented as auto-validation methods: <code>required</code>, <code>unique</code>, <code>length</code>, and <code>format</code>; all the other ones are implemented as manual validation methods.</p>
 
-<p>Once we have our models defined, we have just one more line of code to add:</p>
+<p>Once we have our models defined, all we have left to do is finalize them:</p>
 
-<figure class='code'><figcaption><span>script.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>script.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>12</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">DataMapper</span><span class="o">.</span><span class="n">finalize</span><span class="o">.</span><span class="n">auto_upgrade!</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>This tells DataMapper to generate the database schema. The <code>finalize</code> method runs the validations and initializes the properties, while the <code>auto_upgrade!</code> method will create new tables, if necessary, and add columns to existing tables, but it won’t change any existing columns. If you want to destructively drop and recreate your tables, use the <code>auto_migrate!</code> method instead.</p>
+<p>The <code>finalize</code> method runs the validations and initializes the properties, while the <code>auto_upgrade!</code> method will create new tables, if necessary, and add columns to existing tables, but it won’t change any existing columns. If you want to destructively drop and recreate your tables, use the <code>auto_migrate!</code> method instead.</p>
 
 <p>Believe it or not, that’s all there is to it! After we run <code>auto_upgrade!</code>, our database is ready to go.</p>
 
