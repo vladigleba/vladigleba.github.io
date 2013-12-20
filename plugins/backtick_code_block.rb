@@ -3,6 +3,7 @@ require './plugins/pygments_code'
 module BacktickCodeBlock
   include HighlightCode
   AllOptions = /([^\s]+)\s+(.+?)\s+(https?:\/\/\S+|\/\S+)\s*(.+)?/i
+  FirstLine = /\s*start:(\d+)/
   LangCaption = /([^\s]+)\s*(.+)?/i
   def render_code_block(input)
     @options = nil
@@ -13,7 +14,16 @@ module BacktickCodeBlock
     input.gsub(/^`{3} *([^\n]+)?\n(.+?)\n`{3}/m) do
       @options = $1 || ''
       str = $2
-
+      
+      if @options =~ FirstLine
+        matchData = @options.match FirstLine
+        @firstline = matchData.captures[0].to_i
+        @options.sub! FirstLine, ''
+        
+      else
+        @firstline = 1
+      end
+      
       if @options =~ AllOptions
         @lang = $1
         @caption = "<figcaption><span>#{$2}</span><a href='#{$3}'>#{$4 || 'link'}</a></figcaption>"
@@ -34,7 +44,7 @@ module BacktickCodeBlock
           raw += str
           raw += "\n```\n"
         else
-          code = highlight(str, @lang)
+          code = highlight(str, @lang, @firstline)
           "<figure class='code'>#{@caption}#{code}</figure>"
         end
       end

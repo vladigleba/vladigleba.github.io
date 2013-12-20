@@ -32,7 +32,6 @@ The schema is created based on model definitions, which look like so:
 ``` ruby script.rb
 class User  
   include DataMapper::Resource
-  has n, :events, constraint: :destroy
 
   property :id, Serial
   property :email, String, unique: true, format: :email_address
@@ -47,13 +46,13 @@ This creates a User model definition with four attributes: `:id`, `:email`, `:cr
 
 The code above then adds [validations](http://datamapper.org/docs/validations.html) using either the auto-validation methods, which we specify in the same line as our property declaration, or the manual validation methods, which we specify right below our property declarations. Only the four most common validations are implemented as auto-validation methods: `required`, `unique`, `length`, and `format`; all the other ones are implemented as manual validation methods.
 
-Once we have our models defined, we have just one more line of code to add:
+Once we have our models defined, all we have left to do is finalize them:
 
 ``` ruby script.rb
 DataMapper.finalize.auto_upgrade!
 ```
 
-This tells DataMapper to generate the database schema. The `finalize` method runs the validations and initializes the properties, while the `auto_upgrade!` method will create new tables, if necessary, and add columns to existing tables, but it won’t change any existing columns. If you want to destructively drop and recreate your tables, use the `auto_migrate!` method instead.
+The `finalize` method runs the validations and initializes the properties, while the `auto_upgrade!` method will create new tables, if necessary, and add columns to existing tables, but it won’t change any existing columns. If you want to destructively drop and recreate your tables, use the `auto_migrate!` method instead.
 
 Believe it or not, that’s all there is to it! After we run `auto_upgrade!`, our database is ready to go.
 

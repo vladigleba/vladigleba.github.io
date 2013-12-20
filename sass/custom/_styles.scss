@@ -4,7 +4,6 @@
 /* 
 -------------------------------------------------------------------------
 Author: Vladi Gleba
-Website: vladigleba.com
 Date: October 2013
 
 This layout is based on the following modular scale:
@@ -27,15 +26,15 @@ to learn about modular scales.
 // variables
 // ------------------------------
 
-$accent-color: #70a665; 
+$accent-color: #65a672; 
 $accent-hover-color: darken($accent-color, 8%);
 
 $text-color: #333;
 $secondary-text-color: #aaa;
 
 $line-color: #e6e6e6;
-
 $border-radius-size: 4px;
+$hide-line-numbers: true;
 
 
 /*
@@ -96,7 +95,19 @@ cite {
 }
 
 figure.code figcaption { 
-  text-align: right; 
+  text-align: left; 
+  margin-bottom: 1rem;
+  
+  span { 
+    border: 1px solid #eee; 
+    line-height: 24px;
+  }
+}
+
+pre.line-numbers {
+  @if $hide-line-numbers == true { 
+    display: none; 
+  }
 }
 
 
@@ -134,20 +145,20 @@ article footer > p.meta {
 article footer > p.meta:first-child,
 nav form input.search,
 body > footer p,
-.entry-content > pre,
-figure.code {
+.entry-content > pre {
   font-size: 14.637px;
   font-size: 0.732rem;
 }
 
 #blog-archives time, 
 #blog-archives footer,
-article footer > a {
+figure.code {
   font-size: 16.773px;
   font-size: 0.839rem; /* 0.732 + 0.107 */
 }
 
 article header p.meta,
+article footer > a,
 nav ul li {
   font-size: 19.359px;
   font-size: 0.968rem; /* 0.732 + 0.236 */
@@ -167,6 +178,7 @@ article .entry-content h1,
 
 article header, 
 article p,
+article header p.meta time,
 article footer > p.meta:first-child,
 figure.code,
 .entry-content > pre { 
@@ -188,13 +200,13 @@ section {
 
 
 pre,
-blockquote {
+blockquote,
+figure.code figcaption span {
   padding: 1px 20px;
   padding: 1px 1rem;
 }
 
 #blog-archives time:after,
-article header p.meta > span:before, 
 article header p.meta > span:after, 
 article footer > p.meta:first-child time:after, 
 article footer > p.meta:first-child span.author:after {
@@ -213,7 +225,7 @@ article header p.meta,
   font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif; 
 }
 
-article > footer > p.meta, 
+article > footer, 
 body > header h2, 
 body > footer p, 
 article header p.meta, 
@@ -384,8 +396,7 @@ blog post
 ------------------------------ */  
 
 article { 
-  text-align: left;
-  
+    
   /* ----- post's header ----- */
   
   header {    
@@ -404,6 +415,11 @@ article {
     
     p.meta { 
       color: $secondary-text-color;
+      line-height: 1.184rem;
+      
+      time {
+        display: block;
+      }
       
       > span:before, > span:after {
         padding: 0 4px;
@@ -428,7 +444,8 @@ article {
     margin-bottom: 0.452rem;
   }
     
-  p {
+  .entry-content p {
+    text-align: left;
     line-height: 32.360px;
     line-height: 1.618rem;
   }
@@ -463,6 +480,7 @@ article {
       
       &.left {
         float: left;
+        text-align: left;
       }
       
       &.right {
@@ -478,8 +496,10 @@ article {
       background-color: $accent-color; 
       color: #fff;
       border-radius: $border-radius-size;
-      padding: 7.640px 14.637px;
-      padding: 0.382rem 0.732rem;
+      padding: 10px 0;
+      display: block;
+      width: 30%;
+      margin: 0 auto;
       
       &:hover {
         background-color: $accent-hover-color; 
@@ -552,9 +572,13 @@ media queries
         padding-bottom: 0.452rem;
         font-size: 18.093px;
         font-size: 0.905em; /* 0.732 + 0.173 */
-        width: 50%;
       }
     }
+  }
+  
+  nav input.search,
+  article footer > a {
+    width: 50%;
   }
 }
 
@@ -598,11 +622,12 @@ media queries
     form {
       margin-bottom: 20px;
       margin-bottom: 1rem;
-      
-      input.search { 
-        width: 70%; 
-      }
     }
+  }
+  
+  nav input.search,
+  article footer > a {
+    width: 70%;
   }
   
   #blog-archives article {
@@ -621,11 +646,6 @@ media queries
         font-size: 1.916rem; 
         line-height: 43.92px;
         line-height: 2.196rem; /* 1.916 + 0.28 */
-      }
-      
-      p.meta {
-        line-height: 23.683px;
-        line-height: 1.618rem;
       }
     }
     
