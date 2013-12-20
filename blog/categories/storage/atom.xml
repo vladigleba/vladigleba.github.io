@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Storage | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/categories/storage/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-12-20T08:29:07-08:00</updated>
+  <updated>2013-12-20T10:19:20-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -42,7 +42,7 @@ This specifies an SQLite database connection and sets the path to the database f
 
 <p>The schema is created based on model definitions, which look like so:</p>
 
-<p>``` ruby script.rb start:2
+<p>``` ruby script.rb
 class User<br/>
   include DataMapper::Resource</p>
 
@@ -61,7 +61,7 @@ end
 
 <p>Once we have our models defined, all we have left to do is finalize them:</p>
 
-<p><code>ruby script.rb start:12
+<p><code>ruby script.rb
 DataMapper.finalize.auto_upgrade!
 </code></p>
 
