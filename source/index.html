@@ -11,12 +11,24 @@ layout: default
     </article>
   {% endfor %}
   <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
-    {% endif %}
-    <a href="/blog/archives">Blog Archives</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
+    {% if paginator.total_pages > 1 %}
+      {% if paginator.previous_page %}
+        <a class="prev" href="{{paginator.previous_page}}">&larr; Prev</a>
+      {% endif %}
+      {% for page in (1..paginator.total_pages) %}
+        {% capture url %}/{{site.pagination_dir}}/page/{{page}}{% endcapture %}
+        {% if page == 1 %}
+          {% assign url = "/" %}
+        {% endif %}
+        {% if page != paginator.page %}
+          <a href="{{url}}">{{page}}</a>
+        {% else %}
+          <span>{{page}}</span>
+        {% endif %}
+      {% endfor %}
+      {% if paginator.next_page %}
+        <a class="next" href="{{paginator.next_page}}">Next &rarr;</a>
+      {% endif %}
     {% endif %}
   </div>
 </div>

@@ -41,10 +41,10 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), 'category_index.html')
       self.data['category']    = category
       # Set the title for this page.
-      title_prefix             = site.config['category_title_prefix'] || 'Category: '
+      title_prefix             = site.config['category_title_prefix'] || 'Topic: '
       self.data['title']       = "#{title_prefix}#{category}"
       # Set the meta-description for this page.
-      meta_description_prefix  = site.config['category_meta_description_prefix'] || 'Category: '
+      meta_description_prefix  = site.config['category_meta_description_prefix'] || 'Topic: '
       self.data['description'] = "#{meta_description_prefix}#{category}"
     end
 
@@ -68,10 +68,10 @@ module Jekyll
       self.read_yaml(File.join(base, '_includes/custom'), 'category_feed.xml')
       self.data['category']    = category
       # Set the title for this page.
-      title_prefix             = site.config['category_title_prefix'] || 'Category: '
+      title_prefix             = site.config['category_title_prefix'] || 'Topic: '
       self.data['title']       = "#{title_prefix}#{category}"
       # Set the meta-description for this page.
-      meta_description_prefix  = site.config['category_meta_description_prefix'] || 'Category: '
+      meta_description_prefix  = site.config['category_meta_description_prefix'] || 'Topic: '
       self.data['description'] = "#{meta_description_prefix}#{category}"
 
       # Set the correct feed URL.

@@ -3,7 +3,7 @@
 
 /* 
 -------------------------------------------------------------------------
-Author: Vladi Gleba
+Author: Vladi Gleba (vladigleba.com)
 Date: October 2013
 
 This layout is based on the following modular scale:
@@ -37,9 +37,83 @@ $border-radius-size: 4px;
 $hide-line-numbers: true;
 
 
-/*
-general styles
------------------------------- */
+// ------------------------------
+// shared styles
+// ------------------------------
+
+.font-size-smallest {
+  font-size: 14.637px;
+  font-size: 0.732rem;
+}
+
+.font-size-small {
+  font-size: 16.773px;
+  font-size: 0.839rem; /* 0.732 + 0.107 */
+}
+
+.font-size-medium {
+  font-size: 19.359px;
+  font-size: 0.968rem; /* 0.732 + 0.236 */
+}
+
+.font-size-large {
+  font-size: 28.405px;
+  font-size: 1.42rem;
+}
+
+.font-size-largest {
+  font-size: 38.319px;
+  font-size: 1.916rem;
+}
+
+.margin-bottom-large { 
+  margin-bottom: 32.360px;
+  margin-bottom: 1.618rem; 
+}
+
+.margin-bottom-larger {
+  margin-bottom: 52.358px;
+  margin-bottom: 2.618rem;
+}
+
+.margin-bottom-largest {
+  margin-bottom: 62.000px;
+  margin-bottom: 4.236rem;
+}
+
+.block-padding {
+  padding: 1px 20px;
+  padding: 1px 1rem;
+}
+
+.button {
+  @include transition(all 0.3s ease 0s);
+  border-radius: $border-radius-size;
+  background-color: $accent-color; 
+  color: #fff;
+  
+  &:hover {
+    background-color: $accent-hover-color; 
+    color: #fff;         
+  }
+}
+
+.code-font {
+  font-family: Menlo, Monaco, "Andale Mono", "Lucida Console", "Courier New", monospace;
+}
+
+.sans-serif-font-bold { 
+  font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif; 
+}
+
+.sans-serif-font { 
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; 
+}
+
+
+// ------------------------------
+// general styles
+// ------------------------------
 
 html { 
   border-top: 10px solid $accent-color;
@@ -55,8 +129,14 @@ body {
   margin: 0 auto; 
 }
 
+h1, h2, h3, h4, h5, h6 {
+  @extend .sans-serif-font-bold;
+  text-rendering: optimizeLegibility;
+}
+
 a { 
   color: $accent-color; 
+  text-decoration: none;
   outline: none;
   @include transition(color 0.3s ease 0s);
   
@@ -69,181 +149,79 @@ a {
   clear: both; 
 }
 
-.pagination { 
-  border-bottom: 2px dotted $text-color;
-  padding: 23.683px 0;
-  padding: 1.184rem 0;
-  margin-bottom: 38.319px;
-  margin-bottom: 1.916rem;
-  font-weight: bold;
+aside,
+.mobile-nav,
+.subscription {
+  display: none;
+}
+
+section {
+  @extend .margin-bottom-largest;
 }
 
 blockquote {
+  @extend .block-padding;
   font-style: italic;
 }
 
-p > code {
-  font-size: 17.56px;
-  font-size: 0.878rem; /* 0.732 + 0.146 */
-  background-color: #eee;
-  padding: 0 4.722px;
-  padding: 0 0.234rem;
+pre {
+  @extend .block-padding;
+  @extend .code-font;
+}
+
+code {
+  @extend .code-font;
 }
 
 cite { 
   font-style: italic; 
 }
 
-figure.code figcaption { 
-  text-align: left; 
-  margin-bottom: 1rem;
+figure.code {
+  @extend .font-size-small;
+  @extend .margin-bottom-large;
+  @extend .code-font;
+  overflow: auto;
   
-  span { 
-    border: 1px solid #eee; 
-    line-height: 24px;
+  figcaption {  
+    text-align: right; 
+    margin: 4px 0 10px;  
+  
+    span { 
+      border: 1px solid #ebebeb; 
+      background-color: #fcfcfc;
+      padding: 1px 9.046px;
+      padding: 1px 0.452rem;
+    
+      &:empty {
+        display: none;
+      }
+    }
   }
 }
 
 pre.line-numbers {
   @if $hide-line-numbers == true { 
-    display: none; 
+    display: none;
   }
 }
 
-
-/*
-shared styles
------------------------------- */
-
-.subscription, 
-.mobile-nav, 
-#search_results article > a,
-body section h1,
-aside { 
-  display: none; 
-}
-
-h1 a,
-li a,
-footer > a,
-p.meta a.basic-alignment,
-.pagination a {
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 { 
-  text-rendering: optimizeLegibility; 
-}
-
-nav, 
-.entry-content > pre, 
-figure.code,
-article footer > p.meta {
-  overflow: auto;
-}
-
-article footer > p.meta:first-child,
-nav form input.search,
-body > footer p,
-.entry-content > pre {
-  font-size: 14.637px;
-  font-size: 0.732rem;
-}
-
-#blog-archives time, 
-#blog-archives footer,
-figure.code {
-  font-size: 16.773px;
-  font-size: 0.839rem; /* 0.732 + 0.107 */
-}
-
-article header p.meta,
-article footer > a,
-nav ul li {
-  font-size: 19.359px;
-  font-size: 0.968rem; /* 0.732 + 0.236 */
-}
-
-body > header h2,
-article .entry-content h2 {
-  font-size: 28.405px;
-  font-size: 1.42rem;
-}
-
-article .entry-content h1,
-#blog-archives article h1 {
-  font-size: 38.319px;
-  font-size: 1.916rem;
-}
-
-article header, 
-article p,
-article header p.meta time,
-article footer > p.meta:first-child,
-figure.code,
-.entry-content > pre { 
-  margin-bottom: 32.360px;
-  margin-bottom: 1.618rem; 
-}
-
-body > footer,
-#blog-archives article {
-  margin-bottom: 52.358px;
-  margin-bottom: 2.618rem;
-}
-
-article,
-section {
-  margin-bottom: 62.000px;
-  margin-bottom: 4.236rem;
+ul#topics li {
+  display: inline;
+  margin: 0 52.358px;
+  margin: 0 2.618rem;
+  line-height: 32.36px;
+  line-height: 1.618rem;
 }
 
 
-pre,
-blockquote,
-figure.code figcaption span {
-  padding: 1px 20px;
-  padding: 1px 1rem;
-}
-
-#blog-archives time:after,
-article header p.meta > span:after, 
-article footer > p.meta:first-child time:after, 
-article footer > p.meta:first-child span.author:after {
-  content: "•";
-}
-
-pre, 
-code, 
-figure.code {
-  font-family: Menlo, Monaco, "Andale Mono", "Lucida Console", "Courier New", monospace;
-}
-
-h1, h2, h3, h4, h5, h6,
-article header p.meta, 
-#blog-archives h2 { 
-  font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif; 
-}
-
-article > footer, 
-body > header h2, 
-body > footer p, 
-article header p.meta, 
-nav ul li, 
-.pagination,
-#blog-archives time, 
-#blog-archives footer { 
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; 
-}
-
-
-/*
-blog structure
------------------------------- */
+// ------------------------------
+// blog structure
+// ------------------------------
 
 body {
   
-  /* blog header  */ 
+  // ----- blog header -----
   
   > header {
     margin: 84.715px 0 52.358px 0;
@@ -263,48 +241,91 @@ body {
     }
   
     h2 { 
+      @extend .font-size-large;
+      @extend .sans-serif-font;
       color: $secondary-text-color;
     }
   }
   
-  /* blog content */
+  // ----- blog content -----
 
   .blog-index > article {
     margin-bottom: 137.069px;
     margin-bottom: 6.853rem; /* for home page post preview */
   }
   
-  /* blog footer */ 
+  section h1 {
+    display: none;
+  }
+  
+  // ----- pagination -----
+  
+  .pagination { 
+    @extend .sans-serif-font;
+    border-top: 2px dotted $text-color;
+    padding: 23.683px 0;
+    padding: 1.184rem 0;
+    margin-bottom: 62px;
+    margin-bottom: 3.1rem;
+    margin-top: -84.715px;
+    margin-top: -4.236rem;
+    
+    span, a {
+      border-radius: $border-radius-size;
+      padding: 1px 9.046px;
+      padding: 1px 0.452rem;
+    }
+    
+    a {
+      @extend .button;
+    }
+    
+    span {
+      border: 1px solid $accent-color; 
+      color: $accent-color;
+    }
+  }
+  
+  // ----- blog footer -----
   
   > footer {
+    @extend .margin-bottom-larger;
     clear: both;
     
     p {
+      @extend .font-size-smallest;
+      @extend .sans-serif-font;
       color: $secondary-text-color; 
       line-height: 20px;
       line-height: 1rem;
+      
+      a { 
+        text-decoration: underline;
+      }
     }
   }
 }
 
 
-/*
-navigation
------------------------------- */
+// ------------------------------
+// navigation
+// ------------------------------
 
 nav {
+  overflow: auto;
   border-top: 2px dotted $text-color;
   padding: 14.637px 0;
   padding: 0.732rem 0;
   margin-bottom: 84.715px;
   margin-bottom: 4.236rem;
   
-  /* search form */ 
+  // ----- search form ----- 
   
   form { 
     float: right; 
     
     input.search { 
+      @extend .font-size-smallest;
       border: none;
       background-color: #f2f2f2;
       padding: 9.046px 14.637px;
@@ -313,14 +334,16 @@ nav {
     }
   }
   
-  /* navigation links */
+  // ----- navigation links -----
   
   ul { 
     float: left;
     margin-top: 9.03333px;
     margin-top: 0.45rem; /* rounded */
     
-    li { 
+    li {
+      @extend .font-size-medium;
+      @extend .sans-serif-font;
       display: inline; 
       font-weight: bold;
     }
@@ -333,25 +356,26 @@ nav {
 }
 
 
-/*
-archives page
------------------------------- */
+// ------------------------------
+// archives page
+// ------------------------------
 
 #blog-archives {
   margin-bottom: 100.316px;
   margin-bottom: 5.016rem;
   
   h2 {
+    @extend .sans-serif-font-bold;
+    color: $secondary-text-color;
     font-size: 38.319px;
     font-size: 1.916rem;
-    color: $secondary-text-color;
   }
   
   article {
-    margin-left: 79px;
-    margin-left: 3.95rem; /* not from scale */
+    @extend .margin-bottom-larger;
     
     h1 {
+      @extend .font-size-largest;
       line-height: 38.319px;
       line-height: 1.916rem;
       margin: 0;
@@ -359,26 +383,33 @@ archives page
   }
   
   time, footer { 
+    @extend .font-size-small;
+    @extend .sans-serif-font;
     color: $secondary-text-color;
     display: inline;
   }
   
   time:after {
+    content: "•";
     padding: 0 6px 0 10px;
     padding: 0 0.3rem 0 0.5rem; /* not from scale */
   }
 }
 
 
-/*
-search results page
------------------------------- */
+// ------------------------------
+// search results page
+// ------------------------------
 
 #search_results {
   article {
     margin-left: 0;
     margin-top: 20px;
     margin-top: 1rem;
+    
+    > a {
+      display: none;
+    }
     
     p {
       margin-top: 14.637px;
@@ -391,15 +422,19 @@ search results page
   }
 }
 
-/* 
-blog post
------------------------------- */  
+
+// ------------------------------
+// blog post
+// ------------------------------
 
 article { 
+  @extend .margin-bottom-largest;
     
-  /* ----- post's header ----- */
+  // ----- post's header -----
   
   header {    
+    @extend .margin-bottom-large;
+    
     h1 {
       font-size: 45.959px;
       font-size: 2.298rem; /* 1.916 + 0.382 */
@@ -414,11 +449,19 @@ article {
     }
     
     p.meta { 
+      @extend .font-size-medium;
+      @extend .sans-serif-font;
       color: $secondary-text-color;
       line-height: 1.184rem;
+      text-align: center;
       
       time {
+        @extend .margin-bottom-large;
         display: block;
+      }
+      
+      > span:after {
+        content: "•";
       }
       
       > span:before, > span:after {
@@ -428,9 +471,10 @@ article {
     }
   }
   
-  /* ----- post's content ----- */
+  // ----- post's content -----
   
   h1 { 
+    @extend .font-size-largest;
     margin-top: 62.000px;
     margin-top: 3.1rem;
     margin-bottom: 20px;
@@ -438,34 +482,63 @@ article {
   }
   
   h2 {
+    @extend .font-size-large;
     margin-top: 52.358px;
     margin-top: 2.618rem;
     margin-bottom: 9.046px;
     margin-bottom: 0.452rem;
   }
     
-  .entry-content p {
+  .entry-content > pre {
+    @extend .font-size-smallest;
+    @extend .margin-bottom-large;
+    overflow: auto;
+  }
+    
+  p {
+    @extend .margin-bottom-large;
     text-align: left;
     line-height: 32.360px;
     line-height: 1.618rem;
+      
+    > code {
+      font-size: 17.56px;
+      font-size: 0.878rem; /* 0.732 + 0.146 */
+      background-color: #eee;
+      padding: 0 4.722px;
+      padding: 0 0.234rem;
+    }
+    
+    a { 
+      text-decoration: underline;
+    }
   }
   
-  /* ----- post's footer ----- */
+  // ----- post's footer -----
   
   footer {
+    @extend .sans-serif-font;
     padding-top: 12.361px;
     padding-top: 0.618rem;
     
+    > span > a {
+      text-decoration: underline;
+    }
+    
     > p.meta {
+      overflow: auto;
       padding-bottom: 38.319px;
       padding-bottom: 1.916rem;
     
       &:first-child {
+        @extend .font-size-smallest;
+        @extend .margin-bottom-large;
         padding-bottom: 14.637px;
         padding-bottom: 0.732rem;
         border-bottom: 2px dotted $text-color;
       
         time:after, span.author:after {
+          content: "•";
           padding: 0 6px 0 10px;
           padding: 0 0.3rem 0 0.5rem; /* not from scale */
         }
@@ -473,6 +546,7 @@ article {
     }
     
     a.basic-alignment { 
+      text-decoration: none;
       width: 45%; 
       display: block; 
       line-height: 23.683px;
@@ -489,30 +563,23 @@ article {
       }
     }
     
-    /* 'read on' button */
+    // 'read on' button
     
     > a { 
-      @include transition(all 0.3s ease 0s);
-      background-color: $accent-color; 
-      color: #fff;
-      border-radius: $border-radius-size;
+      @extend .button;
+      @extend .font-size-medium;
       padding: 10px 0;
       display: block;
       width: 30%;
       margin: 0 auto;
-      
-      &:hover {
-        background-color: $accent-hover-color; 
-        color: #fff;         
-      }
     }
   }
 }
 
 
-/*
-media queries
------------------------------- */    
+// ------------------------------
+// media queries
+// ------------------------------
 
 @media screen and (max-width: 1200px) {
   body {
@@ -520,7 +587,7 @@ media queries
   }
 }
 
-/* ------------------------------ */
+// ------------------------------
 
 @media screen and (max-width: 900px) {
   body {
@@ -528,7 +595,7 @@ media queries
   }
 }  
 
-/* ------------------------------ */
+// ------------------------------
 
 @media screen and (max-width: 750px) {
   html {
@@ -582,7 +649,7 @@ media queries
   }
 }
 
-/* ------------------------------ */
+// ------------------------------
 
 @media screen and (max-width: 480px) {
   body > header { 
