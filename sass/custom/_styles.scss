@@ -262,7 +262,7 @@ nav {
     
     li + li { 
       padding-left: 32.360px;
-      padding-left: 1.618rem;
+      padding-left: 0rem;
     }
   }
 }
@@ -463,13 +463,10 @@ article {
         @extend .margin-bottom-large;
       }
       
-      > span:after {
-        content: "•";
-      }
-      
       > span:before, > span:after {
         padding: 0 4px;
         padding: 0 0.2rem; /* not from scale */
+        content: "•";
       }
     }
   }
@@ -700,8 +697,8 @@ article {
       }
       
       li + li {
-        padding-left: 20px;
-        padding-left: 1rem;
+        padding-left: 9.046px;
+        padding-left: 0.452rem;
       }
     }
     
