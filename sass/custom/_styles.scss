@@ -164,54 +164,107 @@ blockquote {
   font-style: italic;
 }
 
-pre {
-  @extend .block-padding;
-  @extend .code-font;
+cite { 
+  font-style: italic; 
 }
+
+
+// ------------------------------
+// code
+// ------------------------------
 
 code {
   @extend .code-font;
-}
-
-cite { 
-  font-style: italic; 
 }
 
 figure.code {
   @extend .font-size-small;
   @extend .margin-bottom-large;
   @extend .code-font;
-  overflow: auto;
   
   figcaption {  
     text-align: right; 
-    margin: 4px 0 10px;  
+    margin: 4px 0 10px;
+    overflow: auto;
   
-    span { 
+    span, a { 
       border: 1px solid #ebebeb; 
       background-color: #fcfcfc;
       padding: 1px 9.046px;
       padding: 1px 0.452rem;
+      float: right;
     
       &:empty {
         display: none;
       }
     }
   }
-}
-
-pre.line-numbers {
-  @if $hide-line-numbers == true { 
-    display: none;
+  
+  .highlight {
+    overflow: auto;
   }
 }
 
-ul#topics li {
-  display: inline;
-  margin: 0 52.358px;
-  margin: 0 2.618rem;
-  line-height: 32.36px;
-  line-height: 1.618rem;
+pre {
+  @extend .block-padding;
+  @extend .code-font;
+  
+  &.line-numbers {
+    @if $hide-line-numbers == true { 
+      display: none;
+    }   
+  }
+}
+
+
+// ------------------------------
+// navigation
+// ------------------------------
+
+nav {
+  overflow: auto;
+  border-top: 2px dotted $text-color;
+  padding: 14.637px 0;
+  padding: 0.732rem 0;
+  margin-bottom: 84.715px;
+  margin-bottom: 4.236rem;
+  
+  // ----- search form ----- 
+  
+  form { 
+    float: right; 
+    
+    input.search { 
+      @extend .font-size-smallest;
+      border: none;
+      background-color: #f2f2f2;
+      padding: 9.046px 14.637px;
+      padding: 0.452rem 0.732rem;
+      border-radius: $border-radius-size;
+    }
+  }
+  
+  // ----- navigation links -----
+  
+  ul { 
+    float: left;
+    margin-top: 9.03333px; /* not from scale */
+    margin-top: 0.45rem; /* rounded */
+    line-height: 32.36px;
+    line-height: 1.618rem;
+    
+    li {
+      @extend .font-size-medium;
+      @extend .sans-serif-font;
+      display: inline; 
+      font-weight: bold;
+    }
+    
+    li + li { 
+      padding-left: 32.360px;
+      padding-left: 1.618rem;
+    }
+  }
 }
 
 
@@ -272,8 +325,8 @@ body {
     
     span, a {
       border-radius: $border-radius-size;
-      padding: 1px 9.046px;
-      padding: 1px 0.452rem;
+      padding: 4.722px 12.361px;
+      padding: 0.236rem 0.618rem;
     }
     
     a {
@@ -302,55 +355,6 @@ body {
       a { 
         text-decoration: underline;
       }
-    }
-  }
-}
-
-
-// ------------------------------
-// navigation
-// ------------------------------
-
-nav {
-  overflow: auto;
-  border-top: 2px dotted $text-color;
-  padding: 14.637px 0;
-  padding: 0.732rem 0;
-  margin-bottom: 84.715px;
-  margin-bottom: 4.236rem;
-  
-  // ----- search form ----- 
-  
-  form { 
-    float: right; 
-    
-    input.search { 
-      @extend .font-size-smallest;
-      border: none;
-      background-color: #f2f2f2;
-      padding: 9.046px 14.637px;
-      padding: 0.452rem 0.732rem;
-      border-radius: $border-radius-size;
-    }
-  }
-  
-  // ----- navigation links -----
-  
-  ul { 
-    float: left;
-    margin-top: 9.03333px;
-    margin-top: 0.45rem; /* rounded */
-    
-    li {
-      @extend .font-size-medium;
-      @extend .sans-serif-font;
-      display: inline; 
-      font-weight: bold;
-    }
-    
-    li + li { 
-      padding-left: 32.360px;
-      padding-left: 1.618rem;
     }
   }
 }
@@ -457,7 +461,6 @@ article {
       
       time {
         @extend .margin-bottom-large;
-        display: block;
       }
       
       > span:after {
@@ -493,6 +496,22 @@ article {
     @extend .font-size-smallest;
     @extend .margin-bottom-large;
     overflow: auto;
+  }
+  
+  ul, ol {
+    @extend .block-padding;
+    @extend .margin-bottom-large;
+    text-align: left;
+    margin-left: 20px;
+    margin-left: 1rem;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
   }
     
   p {
@@ -567,8 +586,8 @@ article {
     
     > a { 
       @extend .button;
-      @extend .font-size-medium;
-      padding: 10px 0;
+      padding: 0.452rem 0;
+      padding: 9.046px 0;
       display: block;
       width: 30%;
       margin: 0 auto;
@@ -721,11 +740,18 @@ article {
       font-size: 0.968rem; /* 0.732 + 0.236 */
     }
     
-    .entry-content h1 {
-      font-size: 31.32px;
-      font-size: 1.566rem; /* 1.184 + 0.382 */
-      line-height: 38.319px;
-      line-height: 1.916rem;
+    .entry-content {
+      h1 {
+        font-size: 31.32px;
+        font-size: 1.566rem; /* 1.184 + 0.382 */
+        line-height: 38.319px;
+        line-height: 1.916rem;
+      }
+    
+      h2 {
+        font-size: 23.683px;
+        font-size: 1.184rem;
+      }
     }
   }
 }
