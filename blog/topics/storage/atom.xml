@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Storage | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/storage/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2013-12-23T15:52:48-08:00</updated>
+  <updated>2014-01-01T14:59:13-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -35,6 +35,24 @@
 DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/ba.db")
 </code>
 This specifies an SQLite database connection and sets the path to the database file. Of course, you can setup other database connections, like MySQL or PostgreSQL, but I chose SQLite because it was more than enough for my little script. And that one line above is actually all the setup we need!</p>
+
+<ol>
+<li>html</li>
+<li>css</li>
+<li>javascript</li>
+</ol>
+
+
+<p>some</p>
+
+<ul>
+<li>ruby on rails</li>
+<li>coffeescript</li>
+<li>sass</li>
+</ul>
+
+
+<p>maybe</p>
 
 <h1>Migration-Free</h1>
 
