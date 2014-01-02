@@ -23,18 +23,6 @@ DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/ba.db")
 ```
 This specifies an SQLite database connection and sets the path to the database file. Of course, you can setup other database connections, like MySQL or PostgreSQL, but I chose SQLite because it was more than enough for my little script. And that one line above is actually all the setup we need!
 
-1. html
-2. css
-3. javascript
-
-some 
-
-- ruby on rails
-- coffeescript
-- sass
-
-maybe
-
 # Migration-Free
 
 As I already mentioned, DataMapper doesn’t require you to write migrations, though [you can if you want](https://github.com/datamapper/dm-migrations). Instead, you can generate a schema simply by calling either `auto_migrate!` or `auto_upgrade!`. The former destructively drops and recreates your tables, while the latter upgrades your tables without destroying already existing data. 

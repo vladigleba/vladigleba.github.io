@@ -86,6 +86,13 @@ $hide-line-numbers: true;
   padding: 1px 1rem;
 }
 
+.code-keywords {
+  background-color: #eee;
+  border-radius: $border-radius-size;
+  padding: 0 7.640px;
+  padding: 0 0.382rem;
+}
+
 .button {
   @include transition(all 0.3s ease 0s);
   border-radius: $border-radius-size;
@@ -183,16 +190,19 @@ figure.code {
   @extend .code-font;
   
   figcaption {  
-    text-align: right; 
     margin: 4px 0 10px;
-    overflow: auto;
-  
+    line-height: 23.683px;
+    line-height: 1.184rem;
+    text-align: right;
+    
+    a { 
+      margin-left: -3px; 
+      text-decoration: underline;
+    }
+          
     span, a { 
-      border: 1px solid #ebebeb; 
-      background-color: #fcfcfc;
-      padding: 1px 9.046px;
-      padding: 1px 0.452rem;
-      float: right;
+      @extend .code-keywords;
+      display: inline-block;
     
       &:empty {
         display: none;
@@ -518,11 +528,9 @@ article {
     line-height: 1.618rem;
       
     > code {
+      @extend .code-keywords;
       font-size: 17.56px;
       font-size: 0.878rem; /* 0.732 + 0.146 */
-      background-color: #eee;
-      padding: 0 4.722px;
-      padding: 0 0.234rem;
     }
     
     a { 
