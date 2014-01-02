@@ -134,24 +134,6 @@
 
 <p>This specifies an SQLite database connection and sets the path to the database file. Of course, you can setup other database connections, like MySQL or PostgreSQL, but I chose SQLite because it was more than enough for my little script. And that one line above is actually all the setup we need!</p>
 
-<ol>
-<li>html</li>
-<li>css</li>
-<li>javascript</li>
-</ol>
-
-
-<p>some</p>
-
-<ul>
-<li>ruby on rails</li>
-<li>coffeescript</li>
-<li>sass</li>
-</ul>
-
-
-<p>maybe</p>
-
 <h1>Migration-Free</h1>
 
 <p>As I already mentioned, DataMapper doesn’t require you to write migrations, though <a href="https://github.com/datamapper/dm-migrations">you can if you want</a>. Instead, you can generate a schema simply by calling either <code>auto_migrate!</code> or <code>auto_upgrade!</code>. The former destructively drops and recreates your tables, while the latter upgrades your tables without destroying already existing data.</p>
