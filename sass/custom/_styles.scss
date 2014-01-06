@@ -171,8 +171,36 @@ blockquote {
   font-style: italic;
 }
 
-cite { 
+cite, em, i, dfn { 
   font-style: italic; 
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+small {
+  font-size: 16px;
+  font-size: 0.8rem;
+}
+
+mark {
+  background-color: #ffff66;
+}
+
+sup, sub {
+  font-size: 14px;
+  font-size: 0.7rem;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.6rem;
+}
+
+sub {
+  bottom: -0.4rem;
 }
 
 
