@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Rails | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/rails/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-01-17T15:43:52-08:00</updated>
+  <updated>2014-01-17T15:45:22-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -157,13 +157,13 @@ assert !identical.valid?
 validates :name, presence: true
 </code></p>
 
-<p>The second test makes sure that a <code>name</code> attribute that exceeds the maximum length of 50 characters is not valid. This means it will look for a <code>length</code> helper with a <code>maximum</code> value set at 50, like so:</p>
+<p>The second test makes sure that a <code>name</code> attribute that exceeds the maximum length of 50 characters is not valid. This means it will look for a <code>length</code> helper with a <code>maximum</code> value set to 50, like so:</p>
 
 <p><code>ruby place.rb
 validates :name, presence: true, length: { maximum: 50 }
 </code></p>
 
-<p>And finally, the third test makes sure that duplicates are not valid, which means it&rsquo;s looking for a <code>uniqueness</code> helper set to <code>true</code>:</p>
+<p>And finally, the third test makes sure that duplicates are not valid, which means it&rsquo;ll look for a <code>uniqueness</code> helper set to <code>true</code>:</p>
 
 <p><code>ruby place.rb
 validates :name, presence: true, length: { maximum: 50 }, uniqueness: true

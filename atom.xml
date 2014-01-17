@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-01-17T15:43:52-08:00</updated>
+  <updated>2014-01-17T15:45:22-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -181,14 +181,14 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>The second test makes sure that a <code>name</code> attribute that exceeds the maximum length of 50 characters is not valid. This means it will look for a <code>length</code> helper with a <code>maximum</code> value set at 50, like so:</p>
+<p>The second test makes sure that a <code>name</code> attribute that exceeds the maximum length of 50 characters is not valid. This means it will look for a <code>length</code> helper with a <code>maximum</code> value set to 50, like so:</p>
 
 <figure class='code'><figcaption><span>place.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">validates</span> <span class="ss">:name</span><span class="p">,</span> <span class="ss">presence</span><span class="p">:</span> <span class="kp">true</span><span class="p">,</span> <span class="ss">length</span><span class="p">:</span> <span class="p">{</span> <span class="ss">maximum</span><span class="p">:</span> <span class="mi">50</span> <span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>And finally, the third test makes sure that duplicates are not valid, which means it&rsquo;s looking for a <code>uniqueness</code> helper set to <code>true</code>:</p>
+<p>And finally, the third test makes sure that duplicates are not valid, which means it&rsquo;ll look for a <code>uniqueness</code> helper set to <code>true</code>:</p>
 
 <figure class='code'><figcaption><span>place.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">validates</span> <span class="ss">:name</span><span class="p">,</span> <span class="ss">presence</span><span class="p">:</span> <span class="kp">true</span><span class="p">,</span> <span class="ss">length</span><span class="p">:</span> <span class="p">{</span> <span class="ss">maximum</span><span class="p">:</span> <span class="mi">50</span> <span class="p">},</span> <span class="ss">uniqueness</span><span class="p">:</span> <span class="kp">true</span>
