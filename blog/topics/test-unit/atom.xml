@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Test Unit | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/test-unit/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-01-17T14:09:25-08:00</updated>
+  <updated>2014-01-17T15:43:52-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -151,19 +151,19 @@ assert !identical.valid?
 
 <p>The <code>setup</code> method is not an actual test case; it’s just a method that gets called before each test case is executed. It simply initializes an instance variable called <code>@place</code> with the fixture we defined earlier called <code>thai</code>. This makes the <code>@place</code> instance variable available inside each subsequent test case.</p>
 
-<p>The first test case sets the <code>name</code> attribute to <code>nil</code> and calls the <code>assert</code> method to check that the <code>valid?</code> method returned <code>false</code>. We can get it to pass by adding the following line to <code>place.rb</code>:</p>
+<p>The first test case sets the <code>name</code> attribute to <code>nil</code> and calls the <code>assert</code> method to check that the <code>valid?</code> method returned <code>false</code>. In other words, it&rsquo;s checking for the line below:</p>
 
 <p><code>ruby place.rb
 validates :name, presence: true
 </code></p>
 
-<p>The second test makes sure that a <code>name</code> attribute that exceeds the maximum length of 50 characters is not valid. We can get this to pass with a simple addition to our previous line:</p>
+<p>The second test makes sure that a <code>name</code> attribute that exceeds the maximum length of 50 characters is not valid. This means it will look for a <code>length</code> helper with a <code>maximum</code> value set at 50, like so:</p>
 
 <p><code>ruby place.rb
 validates :name, presence: true, length: { maximum: 50 }
 </code></p>
 
-<p>And finally, the third test makes sure that duplicates are not valid. The following modification makes it pass:</p>
+<p>And finally, the third test makes sure that duplicates are not valid, which means it&rsquo;s looking for a <code>uniqueness</code> helper set to <code>true</code>:</p>
 
 <p><code>ruby place.rb
 validates :name, presence: true, length: { maximum: 50 }, uniqueness: true
