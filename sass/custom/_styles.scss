@@ -41,6 +41,11 @@ $hide-line-numbers: true;
 // shared styles
 // ------------------------------
 
+.default-line-height {
+  line-height: 32.360px;
+  line-height: 1.618rem;
+}
+
 .font-size-smallest {
   font-size: 14.637px;
   font-size: 0.732rem;
@@ -67,8 +72,8 @@ $hide-line-numbers: true;
 }
 
 .margin-bottom-large { 
-  margin-bottom: 38.319px;
-  margin-bottom: 1.916rem; 
+  margin-bottom: 32.360px;
+  margin-bottom: 1.618rem; 
 }
 
 .margin-bottom-larger {
@@ -177,6 +182,10 @@ cite, em, i, dfn {
 
 b, strong {
   font-weight: bold;
+}
+
+abbr {
+  border-bottom: 1px dotted #000;
 }
 
 small {
@@ -535,6 +544,7 @@ article {
   
   ul, ol {
     @extend .block-padding;
+    @extend .default-line-height;
     @extend .margin-bottom-large;
     text-align: left;
     margin-left: 20px;
@@ -550,10 +560,9 @@ article {
   }
     
   p {
+    @extend .default-line-height;
     @extend .margin-bottom-large;
     text-align: left;
-    line-height: 32.360px;
-    line-height: 1.618rem;
       
     > code {
       @extend .code-keywords;
