@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Sass | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/sass/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-01-06T10:56:13-08:00</updated>
+  <updated>2014-01-17T14:09:25-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -18,7 +18,7 @@
     <link href="http://vladigleba.github.io/blog/2013/11/29/using-at-font-face-with-ruby-on-rails/"/>
     <updated>2013-11-29T11:35:00-08:00</updated>
     <id>http://vladigleba.github.io/blog/2013/11/29/using-at-font-face-with-ruby-on-rails</id>
-    <content type="html"><![CDATA[<p>When I was working on <a href="http://phindee.com/">phindee</a>, I remember struggling with adding custom fonts to the app; the asset pipeline had just been released for Ruby on Rails, and it changed how one worked with assets. Perhaps there are others out there struggling with the same thing, which is why I’d like to share what I did and hopefully save some time for a few.</p>
+    <content type="html"><![CDATA[<p>When I was working on <a href="http://phindee.com/">phindee</a>, I struggled with adding custom fonts; the asset pipeline had just been released, and it changed how one worked with assets. Perhaps there are others out there struggling with the same thing, which is why I’d like to share what I did and hopefully save some time for a few.</p>
 
 <!-- more -->
 
