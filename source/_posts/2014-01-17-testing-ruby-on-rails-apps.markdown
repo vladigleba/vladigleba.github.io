@@ -120,19 +120,19 @@ Unit tests are there to test your models. The `rails generate model NAME` comman
 
 The `setup` method is not an actual test case; it’s just a method that gets called before each test case is executed. It simply initializes an instance variable called `@place` with the fixture we defined earlier called `thai`. This makes the `@place` instance variable available inside each subsequent test case.
 
-The first test case sets the `name` attribute to `nil` and calls the `assert` method to check that the `valid?` method returned `false`. We can get it to pass by adding the following line to `place.rb`:
+The first test case sets the `name` attribute to `nil` and calls the `assert` method to check that the `valid?` method returned `false`. In other words, it's checking for the line below:
 
 ``` ruby place.rb
 validates :name, presence: true
 ```
 
-The second test makes sure that a `name` attribute that exceeds the maximum length of 50 characters is not valid. We can get this to pass with a simple addition to our previous line:
+The second test makes sure that a `name` attribute that exceeds the maximum length of 50 characters is not valid. This means it will look for a `length` helper with a `maximum` value set at 50, like so:
 
 ``` ruby place.rb
 validates :name, presence: true, length: { maximum: 50 }
 ```
 
-And finally, the third test makes sure that duplicates are not valid. The following modification makes it pass:
+And finally, the third test makes sure that duplicates are not valid, which means it's looking for a `uniqueness` helper set to `true`: 
 
 ``` ruby place.rb
 validates :name, presence: true, length: { maximum: 50 }, uniqueness: true
