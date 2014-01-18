@@ -6,7 +6,9 @@ sharing: false
 footer: true
 ---
 
-Hello, my name is Vladi Gleba. I've been doing full-stack web design & development for over 5 years.
+<img style="float: right; border-radius: 125px; margin-left: 20px; margin-left: 1rem; width: 240px;" src="https://pbs.twimg.com/profile_images/3097578390/9e92538281d9613d699f335b54968add.jpeg" alt="portrait" />
+
+Hello, my name is Vladi Gleba. I've been doing full-stack web design & development for over 2 years.
 
 My interfaces are known for their intuitiveness and simplicity and my code for its efficiency and maintainability. I pay supreme attention to detail and firmly believe that an outstanding user experience is what makes it all sing. 
 

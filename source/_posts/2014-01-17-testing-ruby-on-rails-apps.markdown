@@ -126,13 +126,13 @@ The first test case sets the `name` attribute to `nil` and calls the `assert` me
 validates :name, presence: true
 ```
 
-The second test makes sure that a `name` attribute that exceeds the maximum length of 50 characters is not valid. This means it will look for a `length` helper with a `maximum` value set at 50, like so:
+The second test makes sure that a `name` attribute that exceeds the maximum length of 50 characters is not valid. This means it will look for a `length` helper with a `maximum` value set to 50, like so:
 
 ``` ruby place.rb
 validates :name, presence: true, length: { maximum: 50 }
 ```
 
-And finally, the third test makes sure that duplicates are not valid, which means it's looking for a `uniqueness` helper set to `true`: 
+And finally, the third test makes sure that duplicates are not valid, which means it'll look for a `uniqueness` helper set to `true`: 
 
 ``` ruby place.rb
 validates :name, presence: true, length: { maximum: 50 }, uniqueness: true
@@ -191,7 +191,7 @@ Last but not least, we have integration tests, which are used to test controller
 
 One final thing I’d like to mention is the `test/test_helper.rb` file, which holds the default configuration for our tests. This file is included in all the tests, which means any methods added here are automatically available in all our tests. Pretty neat.
 
-# Why Not RSpec
+# Why Not RSpec?
 
 I chose not to use RSpec because I wanted learn about the way testing is done in Rails by default and see how it compares with RSpec. So far, it seems like both approaches are equally capable of doing everything necessary to sufficiently test your code; they just take a different approach with regards to the way you <em>write</em> the tests. RSpec's syntax seems more verbose and reads like English, while Test Unit’s syntax is more terse. 
 
