@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Test Unit | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/test-unit/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-01-17T15:45:22-08:00</updated>
+  <updated>2014-01-17T16:14:52-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -228,7 +228,7 @@ assert_select 'article li h2', assigns(:happening_now).first.location.place.name
 
 <p>One final thing I’d like to mention is the <code>test/test_helper.rb</code> file, which holds the default configuration for our tests. This file is included in all the tests, which means any methods added here are automatically available in all our tests. Pretty neat.</p>
 
-<h1>Why Not RSpec</h1>
+<h1>Why Not RSpec?</h1>
 
 <p>I chose not to use RSpec because I wanted learn about the way testing is done in Rails by default and see how it compares with RSpec. So far, it seems like both approaches are equally capable of doing everything necessary to sufficiently test your code; they just take a different approach with regards to the way you <em>write</em> the tests. RSpec&rsquo;s syntax seems more verbose and reads like English, while Test Unit’s syntax is more terse.</p>
 
