@@ -16,9 +16,7 @@ I hope this post fills a bit of that void.
 
 It’s actually quite simple, really. You see, Google is an immense company swimming in cash and dominating virtually every product it has its hands in. Who has the world’s most popular video sharing site? Google. Search engine? Google. How about email service? Google. And mapping service? Google. Whose mobile operating system has the largest market share worldwide? Google’s. Heck, it’s not even a close race in most of these categories. 
 
-While this great for the company, it's not so healthy for the rest of us. Whenever a company lacks competition, the pace of innovation slows, and arrogance towards customers tends to rise. Whenever a majority of our data is concentrated in the hands of a single company, feelings of unease should arise.
-
-That’s why whenever a small, promising startup takes on the giant, I will cheer for [the underdog](http://venturebeat.com/2013/10/16/mapbox-heads-into-battle-against-google-maps-with-a-10m-war-chest-from-foundry-group/). And I’m glad [I’m not the only one](http://www.pcmag.com/article2/0,2817,2401037,00.asp).
+While this is great for the company, it's not so healthy for the rest of us. Whenever a company lacks competition, the pace of innovation slows, and arrogance towards customers tends to rise. Anytime a majority of our data is concentrated in the hands of a single company, feelings of unease should arise. That’s why whenever a small, promising startup takes on the giant, I will cheer for [the underdog](http://venturebeat.com/2013/10/16/mapbox-heads-into-battle-against-google-maps-with-a-10m-war-chest-from-foundry-group/). And [I’m not the only one](http://www.pcmag.com/article2/0,2817,2401037,00.asp).
 
 Besides, MapBox is actually open source, and given a choice, I’ll go with open source over proprietary any day.
 
