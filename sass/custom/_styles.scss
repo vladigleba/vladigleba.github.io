@@ -1,7 +1,7 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
-/* 
+/*
 -------------------------------------------------------------------------
 Author: Vladi Gleba (vladigleba.com)
 Date: October 2013
@@ -12,29 +12,31 @@ This layout is based on the following modular scale:
 62px @ 1:1.618
 
 See http://modularscale.com/scale/?px1=20&px2=62&ra1=1.618&ra2=0
-for the numbers in this scale. All font-size, line-height, margin, and 
+for the numbers in this scale. All font-size, line-height, margin, and
 padding values are derived from these numbers.
 
 See http://alistapart.com/article/more-meaningful-typography
 to learn about modular scales.
 
 -------------------------------------------------------------------------
-*/ 
+*/
 
 
 // ------------------------------
 // variables
 // ------------------------------
 
-$accent-color: #65a672; 
+$accent-color: #65a672;
 $accent-hover-color: darken($accent-color, 8%);
 
 $text-color: #333;
 $secondary-text-color: #aaa;
 
 $line-color: #e6e6e6;
-$border-radius-size: 4px;
 $hide-line-numbers: true;
+
+$border-radius-size: 4px;
+$border-style: 2px solid $secondary-text-color;
 
 
 // ------------------------------
@@ -71,7 +73,7 @@ $hide-line-numbers: true;
   font-size: 1.916rem;
 }
 
-.margin-bottom-large { 
+.margin-bottom-large {
   margin-bottom: 32.360px;
   margin-bottom: 1.618rem; 
 }
@@ -91,6 +93,10 @@ $hide-line-numbers: true;
   padding: 1px 1rem;
 }
 
+.border-style {
+  border-top: 2px solid $secondary-text-color;
+}
+
 .code-keywords {
   background-color: #eee;
   border-radius: $border-radius-size;
@@ -101,12 +107,12 @@ $hide-line-numbers: true;
 .button {
   @include transition(all 0.3s ease 0s);
   border-radius: $border-radius-size;
-  background-color: $accent-color; 
+  background-color: $accent-color;
   color: #fff;
   
   &:hover {
-    background-color: $accent-hover-color; 
-    color: #fff;         
+    background-color: $accent-hover-color;
+    color: #fff;
   }
 }
 
@@ -114,12 +120,16 @@ $hide-line-numbers: true;
   font-family: Menlo, Monaco, "Andale Mono", "Lucida Console", "Courier New", monospace;
 }
 
-.sans-serif-font-bold { 
-  font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif; 
+.sans-serif-font-bold {
+  font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif;
 }
 
-.sans-serif-font { 
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; 
+.sans-serif-font {
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.default-font {
+  font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
 }
 
 
@@ -127,18 +137,20 @@ $hide-line-numbers: true;
 // general styles
 // ------------------------------
 
-html { 
+html {
+  @extend .default-font;
   border-top: 10px solid $accent-color;
-  font: 125%/1 "PT Serif", Georgia, Times, "Times New Roman", serif; 
+  font-size: 125%;
+  line-height: 1;
 }
 
-body { 
+body {
   -webkit-text-size-adjust: none; /* prevent mobile safari from resizing text */
   background-color: #fff;
   color: $text-color;
-  text-align: center; 
+  text-align: center;
   width: 54%;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -146,19 +158,19 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 
-a { 
-  color: $accent-color; 
+a {
+  color: $accent-color;
   text-decoration: none;
   outline: none;
   @include transition(color 0.3s ease 0s);
   
   &:hover {
-    color: $accent-hover-color; 
+    color: $accent-hover-color;
   }
 }
 
-#main { 
-  clear: both; 
+#main {
+  clear: both;
 }
 
 aside,
@@ -173,11 +185,26 @@ section {
 
 blockquote {
   @extend .block-padding;
+  @extend .margin-bottom-large;
+  border-left: $border-style;
   font-style: italic;
+  
+  p {
+    margin: 0;
+  }
+  
+  footer {
+    @extend .default-font;
+    text-align: right;
+    
+    a {
+      text-decoration: underline;
+    }
+  }
 }
 
-cite, em, i, dfn { 
-  font-style: italic; 
+cite, em, i, dfn {
+  font-style: italic;
 }
 
 b, strong {
@@ -217,30 +244,28 @@ sub {
 // code
 // ------------------------------
 
-code {
+figure.code, pre {
+  @extend .font-size-small;
+  @extend .margin-bottom-large;
   @extend .code-font;
 }
 
 figure.code {
-  @extend .font-size-small;
-  @extend .margin-bottom-large;
-  @extend .code-font;
-  
-  figcaption {  
+  figcaption {
     margin: 4px 0 10px;
     line-height: 23.683px;
     line-height: 1.184rem;
     text-align: right;
     
-    a { 
-      margin-left: -3px; 
+    a {
+      margin-left: -3px;
       text-decoration: underline;
     }
-          
-    span, a { 
+    
+    span, a {
       @extend .code-keywords;
       display: inline-block;
-    
+      
       &:empty {
         display: none;
       }
@@ -254,12 +279,12 @@ figure.code {
 
 pre {
   @extend .block-padding;
-  @extend .code-font;
+  text-align: left;
   
   &.line-numbers {
-    @if $hide-line-numbers == true { 
+    @if $hide-line-numbers == true {
       display: none;
-    }   
+    }
   }
 }
 
@@ -269,19 +294,19 @@ pre {
 // ------------------------------
 
 nav {
+  border-top: $border-style;
   overflow: auto;
-  border-top: 2px dotted $text-color;
   padding: 14.637px 0;
   padding: 0.732rem 0;
   margin-bottom: 84.715px;
   margin-bottom: 4.236rem;
   
-  // ----- search form ----- 
+  // ----- search form -----
   
-  form { 
-    float: right; 
+  form {
+    float: right;
     
-    input.search { 
+    input.search {
       @extend .font-size-smallest;
       border: none;
       background-color: #f2f2f2;
@@ -293,7 +318,7 @@ nav {
   
   // ----- navigation links -----
   
-  ul { 
+  ul {
     float: left;
     margin-top: 9.03333px; /* not from scale */
     margin-top: 0.45rem; /* rounded */
@@ -303,11 +328,11 @@ nav {
     li {
       @extend .font-size-medium;
       @extend .sans-serif-font;
-      display: inline; 
+      display: inline;
       font-weight: bold;
     }
     
-    li + li { 
+    li + li {
       padding-left: 32.360px;
       padding-left: 1.618rem;
     }
@@ -326,21 +351,21 @@ body {
   > header {
     margin: 84.715px 0 52.358px 0;
     margin: 4.236rem 0 2.618rem 0;
-  
-    h1 { 
+    
+    h1 {
       font-size: 62.000px;
       font-size: 3.1rem;
       font-weight: bold;
       text-transform: uppercase;
       margin-bottom: 7.640px;
       margin-bottom: 0.382rem;
-    
-      a, a:hover { 
-        color: $text-color; 
+      
+      a, a:hover {
+        color: $text-color;
       }
     }
-  
-    h2 { 
+    
+    h2 {
       @extend .font-size-large;
       @extend .sans-serif-font;
       color: $secondary-text-color;
@@ -348,7 +373,7 @@ body {
   }
   
   // ----- blog content -----
-
+  
   .blog-index > article {
     margin-bottom: 137.069px;
     margin-bottom: 6.853rem; /* for home page post preview */
@@ -360,15 +385,15 @@ body {
   
   // ----- pagination -----
   
-  .pagination { 
+  .pagination {
     @extend .sans-serif-font;
-    border-top: 2px dotted $text-color;
     padding: 23.683px 0;
     padding: 1.184rem 0;
     margin-bottom: 62px;
     margin-bottom: 3.1rem;
     margin-top: -84.715px;
     margin-top: -4.236rem;
+    border-top: $border-style;
     
     span, a {
       border-radius: $border-radius-size;
@@ -381,7 +406,7 @@ body {
     }
     
     span {
-      border: 1px solid $accent-color; 
+      border: 1px solid $accent-color;
       color: $accent-color;
     }
   }
@@ -395,11 +420,11 @@ body {
     p {
       @extend .font-size-smallest;
       @extend .sans-serif-font;
-      color: $secondary-text-color; 
+      color: $secondary-text-color;
       line-height: 20px;
       line-height: 1rem;
       
-      a { 
+      a {
         text-decoration: underline;
       }
     }
@@ -433,7 +458,7 @@ body {
     }
   }
   
-  time, footer { 
+  time, footer {
     @extend .font-size-small;
     @extend .sans-serif-font;
     color: $secondary-text-color;
@@ -478,12 +503,12 @@ body {
 // blog post
 // ------------------------------
 
-article { 
+article {
   @extend .margin-bottom-largest;
-    
+  
   // ----- post's header -----
   
-  header {    
+  header {
     @extend .margin-bottom-large;
     
     h1 {
@@ -495,11 +520,11 @@ article {
       line-height: 2.534rem; /* 1.916 + 0.618 */
       
       a, a:hover {
-        color: $text-color; 
+        color: $text-color;
       }
     }
     
-    p.meta { 
+    p.meta {
       @extend .font-size-medium;
       @extend .sans-serif-font;
       color: $secondary-text-color;
@@ -520,7 +545,7 @@ article {
   
   // ----- post's content -----
   
-  h1 { 
+  h1 {
     @extend .font-size-largest;
     margin-top: 62.000px;
     margin-top: 3.1rem;
@@ -534,12 +559,6 @@ article {
     margin-top: 2.618rem;
     margin-bottom: 9.046px;
     margin-bottom: 0.452rem;
-  }
-    
-  .entry-content > pre {
-    @extend .font-size-smallest;
-    @extend .margin-bottom-large;
-    overflow: auto;
   }
   
   ul, ol {
@@ -563,14 +582,14 @@ article {
     @extend .default-line-height;
     @extend .margin-bottom-large;
     text-align: left;
-      
+    
     > code {
       @extend .code-keywords;
       font-size: 17.56px;
       font-size: 0.878rem; /* 0.732 + 0.146 */
     }
     
-    a { 
+    a {
       text-decoration: underline;
     }
   }
@@ -590,14 +609,14 @@ article {
       overflow: auto;
       padding-bottom: 38.319px;
       padding-bottom: 1.916rem;
-    
+      
       &:first-child {
         @extend .font-size-smallest;
         @extend .margin-bottom-large;
         padding-bottom: 14.637px;
         padding-bottom: 0.732rem;
-        border-bottom: 2px dotted $text-color;
-      
+        border-bottom: $border-style;
+        
         time:after, span.author:after {
           content: "•";
           padding: 0 6px 0 10px;
@@ -606,10 +625,10 @@ article {
       }
     }
     
-    a.basic-alignment { 
+    a.basic-alignment {
       text-decoration: none;
-      width: 45%; 
-      display: block; 
+      width: 45%;
+      display: block;
       line-height: 23.683px;
       line-height: 1.184rem;
       
@@ -623,17 +642,17 @@ article {
         text-align: right;
       }
     }
-    
-    // 'read on' button
-    
-    > a { 
-      @extend .button;
-      padding: 0.452rem 0;
-      padding: 9.046px 0;
-      display: block;
-      width: 30%;
-      margin: 0 auto;
-    }
+  }
+  
+  
+  // 'read on' button
+  > footer > a {
+    @extend .button;
+    padding: 0.452rem 0;
+    padding: 9.046px 0;
+    display: block;
+    width: 30%;
+    margin: 0 auto;
   }
 }
 
@@ -654,7 +673,7 @@ article {
   body {
     width: 90%;
   }
-}  
+}
 
 // ------------------------------
 
@@ -693,7 +712,7 @@ article {
       margin-bottom: 23.683px;
       margin-bottom: 1.184rem;
       
-      input.search { 
+      input.search {
         padding-top: 9.046px;
         padding-top: 0.452rem;
         padding-bottom: 9.046px;
@@ -705,7 +724,7 @@ article {
   }
   
   nav input.search,
-  article footer > a {
+  article > footer > a {
     width: 50%;
   }
 }
@@ -713,16 +732,16 @@ article {
 // ------------------------------
 
 @media screen and (max-width: 480px) {
-  body > header { 
+  body > header {
     margin: 38.319px 0;
     margin: 1.916rem 0; 
     
-    h1 { 
+    h1 {
       font-size: 43.92px;
       font-size: 2.196rem; /* 1.916 + 0.236 */
     }
-  
-    h2 { 
+    
+    h2 {
       font-size: 18.093px;
       font-size: 0.905rem; /* 0.732 + 0.173 */
     }
@@ -754,7 +773,7 @@ article {
   }
   
   nav input.search,
-  article footer > a {
+  article > footer > a {
     width: 70%;
   }
   
@@ -769,7 +788,7 @@ article {
   
   article {
     header {
-      h1 { 
+      h1 {
         font-size: 38.319px;
         font-size: 1.916rem; 
         line-height: 43.92px;
@@ -777,7 +796,7 @@ article {
       }
     }
     
-    footer > p.meta { 
+    footer > p.meta {
       font-size: 19.359px;
       font-size: 0.968rem; /* 0.732 + 0.236 */
     }
@@ -789,7 +808,7 @@ article {
         line-height: 38.319px;
         line-height: 1.916rem;
       }
-    
+      
       h2 {
         font-size: 23.683px;
         font-size: 1.184rem;

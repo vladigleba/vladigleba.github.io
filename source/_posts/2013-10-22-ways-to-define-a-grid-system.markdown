@@ -16,7 +16,7 @@ Disclosure: I don't have a background in design, but I'm always eager to learn m
 
 Alright, on to grids.
 
-> Spacing and the use of space is what holds a design together. Precise and effective space management can make the difference between an average design and an amazing one. ... How big is the header compared to the navigation bar?  How wide is the photo compared to the sidebar? These ratios are what make or break the balance, emphasis and flow of a design. Additionally . . . we constantly are looking for order and understanding of the world around us. ... Our mind is constantly seeking some reason, pattern or rational for what we are seeing. This is especially true of spacing, sizing and proportions. ... If that unity doesn’t exist it will always feel unpolished. &mdash;[Ross Johnson](http://3.7designs.co/blog/2010/10/how-to-design-using-the-fibonacci-sequence/)
+> Spacing and the use of space is what holds a design together. Precise and effective space management can make the difference between an average design and an amazing one. ... How big is the header compared to the navigation bar?  How wide is the photo compared to the sidebar? These ratios are what make or break the balance, emphasis and flow of a design. Additionally . . . we constantly are looking for order and understanding of the world around us. ... Our mind is constantly seeking some reason, pattern or rational for what we are seeing. This is especially true of spacing, sizing and proportions. ... If that unity doesn’t exist it will always feel unpolished. <footer>&mdash;[Ross Johnson](http://3.7designs.co/blog/2010/10/how-to-design-using-the-fibonacci-sequence/)</footer>
 
 I've learned about many different ways of defining grids that achieve this unity, but for reasons of brevity, I will talk about just three. 
 
@@ -36,7 +36,7 @@ These grids are built with ratios derived from the available canvas. For example
 
 # Grids Based on the Content
 
-> Content precedes design. Design in the absence of content is not design, it's decoration. &mdash;[Jeffrey Zeldman](https://twitter.com/zeldman/statuses/804159148)
+> Content precedes design. Design in the absence of content is not design, it's decoration. <footer>&mdash;[Jeffrey Zeldman](https://twitter.com/zeldman/statuses/804159148)</footer>
 
 I never really understood the reasoning behind this quote until I read A List Apart's <cite>[More Meaningful Typography](http://alistapart.com/article/more-meaningful-typography)</cite> article. The article describes how to achieve visual harmony with the help of modular scales, which are based on numbers that are meaningful to your content. To summarize, you start with a ratio (like 1.618) and a number (say 10), then you multiply and divide, like so:
 
@@ -58,7 +58,7 @@ This method is in contrast to the canvas-based way of defining grids in which th
 
 I'd like to conclude with a quote by Mark Boulton that nicely sums everything up:
 
-> Aesthetics can be measured and more importantly can be constructed. If you want something to be aesthetically pleasing there are steps you can take to make sure it is going in the right direction. ... Well designed grid systems can make your designs not only more beautiful and legible, but more usable. &mdash;[Mark Boulton](http://markboulton.co.uk/journal/five-simple-steps-to-designing-grid-systems-part-2)
+> Aesthetics can be measured and more importantly can be constructed. If you want something to be aesthetically pleasing there are steps you can take to make sure it is going in the right direction. ... Well designed grid systems can make your designs not only more beautiful and legible, but more usable. <footer>&mdash;[Mark Boulton](http://markboulton.co.uk/journal/five-simple-steps-to-designing-grid-systems-part-2)</footer>
 
 
 
