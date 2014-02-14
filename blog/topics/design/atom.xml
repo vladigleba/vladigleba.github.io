@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Design | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/design/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-01-29T09:31:34-08:00</updated>
+  <updated>2014-02-14T11:54:03-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -135,7 +135,7 @@ p { font-family: 'action_manregular'; }
 
 <p>Alright, on to grids.</p>
 
-<blockquote><p>Spacing and the use of space is what holds a design together. Precise and effective space management can make the difference between an average design and an amazing one. &hellip; How big is the header compared to the navigation bar?  How wide is the photo compared to the sidebar? These ratios are what make or break the balance, emphasis and flow of a design. Additionally &hellip; we constantly are looking for order and understanding of the world around us. &hellip; Our mind is constantly seeking some reason, pattern or rational for what we are seeing. This is especially true of spacing, sizing and proportions. &hellip; If that unity doesn’t exist it will always feel unpolished. &mdash;<a href="http://3.7designs.co/blog/2010/10/how-to-design-using-the-fibonacci-sequence/">Ross Johnson</a></p></blockquote>
+<blockquote><p>Spacing and the use of space is what holds a design together. Precise and effective space management can make the difference between an average design and an amazing one. &hellip; How big is the header compared to the navigation bar?  How wide is the photo compared to the sidebar? These ratios are what make or break the balance, emphasis and flow of a design. Additionally &hellip; we constantly are looking for order and understanding of the world around us. &hellip; Our mind is constantly seeking some reason, pattern or rational for what we are seeing. This is especially true of spacing, sizing and proportions. &hellip; If that unity doesn’t exist it will always feel unpolished. <footer>&mdash;<a href="http://3.7designs.co/blog/2010/10/how-to-design-using-the-fibonacci-sequence/">Ross Johnson</a></footer></p></blockquote>
 
 <p>I&rsquo;ve learned about many different ways of defining grids that achieve this unity, but for reasons of brevity, I will talk about just three.</p>
 
@@ -156,7 +156,7 @@ p { font-family: 'action_manregular'; }
 
 <h1>Grids Based on the Content</h1>
 
-<blockquote><p>Content precedes design. Design in the absence of content is not design, it&rsquo;s decoration. &mdash;<a href="https://twitter.com/zeldman/statuses/804159148">Jeffrey Zeldman</a></p></blockquote>
+<blockquote><p>Content precedes design. Design in the absence of content is not design, it&rsquo;s decoration. <footer>&mdash;<a href="https://twitter.com/zeldman/statuses/804159148">Jeffrey Zeldman</a></footer></p></blockquote>
 
 <p>I never really understood the reasoning behind this quote until I read A List Apart&rsquo;s <cite><a href="http://alistapart.com/article/more-meaningful-typography">More Meaningful Typography</a></cite> article. The article describes how to achieve visual harmony with the help of modular scales, which are based on numbers that are meaningful to your content. To summarize, you start with a ratio (like 1.618) and a number (say 10), then you multiply and divide, like so:</p>
 
@@ -179,7 +179,7 @@ p { font-family: 'action_manregular'; }
 
 <p>I&rsquo;d like to conclude with a quote by Mark Boulton that nicely sums everything up:</p>
 
-<blockquote><p>Aesthetics can be measured and more importantly can be constructed. If you want something to be aesthetically pleasing there are steps you can take to make sure it is going in the right direction. &hellip; Well designed grid systems can make your designs not only more beautiful and legible, but more usable. &mdash;<a href="http://markboulton.co.uk/journal/five-simple-steps-to-designing-grid-systems-part-2">Mark Boulton</a></p></blockquote>
+<blockquote><p>Aesthetics can be measured and more importantly can be constructed. If you want something to be aesthetically pleasing there are steps you can take to make sure it is going in the right direction. &hellip; Well designed grid systems can make your designs not only more beautiful and legible, but more usable. <footer>&mdash;<a href="http://markboulton.co.uk/journal/five-simple-steps-to-designing-grid-systems-part-2">Mark Boulton</a></footer></p></blockquote>
 ]]></content>
   </entry>
   
