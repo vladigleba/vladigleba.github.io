@@ -239,6 +239,14 @@ sub {
   bottom: -0.4rem;
 }
 
+img#portrait {
+  float: right;
+  border-radius: 125px;
+  margin-left: 20px;
+  margin-left: 1rem;
+  width: 240px;
+}
+
 
 // ------------------------------
 // code
@@ -784,6 +792,14 @@ article {
   .blog-index > article {
     margin-bottom: 93.76px !important;
     margin-bottom: 5.016rem !important; /* 4.236 + 0.452 */
+  }
+  
+  img#portrait {
+    display: block;
+    float: none;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   article {
