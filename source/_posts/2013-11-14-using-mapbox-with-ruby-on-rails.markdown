@@ -3,10 +3,10 @@ layout: post
 title: "Using MapBox with Ruby on Rails"
 date: 2013-11-14 10:39
 comments: true
-categories: [Rails, CoffeeScript, MapBox, phindee]
+categories: [Rails, CoffeeScript, MapBox, Phindee]
 ---
 
-Last week [I wrote about]({{ root_url }}/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/) [phindee](http://phindee.com/), a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that phindee’s mapping functionality is provided by the [MapBox JavaScript API](https://www.mapbox.com/mapbox.js/), but did not go into any more detail for brevity reasons. I still think it’s an important topic to talk about because I remember having a hard time finding tutorials about integrating MapBox with Ruby on Rails, specifically. 
+Last week [I wrote about]({{ root_url }}/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/) [Phindee](http://phindee.com/), a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that Phindee’s mapping functionality is provided by the [MapBox JavaScript API](https://www.mapbox.com/mapbox.js/), but did not go into any more detail for brevity reasons. I still think it’s an important topic to talk about because I remember having a hard time finding tutorials about integrating MapBox with Ruby on Rails, specifically. 
 
 <!-- more -->
 
@@ -30,7 +30,7 @@ Because there is a [Railscasts episode](http://railscasts.com/episodes/273-geoco
 
 # Building a JSON object
 
-Once we have the coordinates, we’re ready to build a JSON object array that will tell MapBox how to display our markers. Our JSON objects will be in the [GeoJSON format](https://en.wikipedia.org/wiki/GeoJSON), which is just a format to describe geographic data in JSON. MapBox uses the GeoJSON format to capture the necessary data needed to generate all the markers on the map. Building a JSON object in Rails is easy. The code below shows how I did it for phindee; it comes from my `HappyHourController`.
+Once we have the coordinates, we’re ready to build a JSON object array that will tell MapBox how to display our markers. Our JSON objects will be in the [GeoJSON format](https://en.wikipedia.org/wiki/GeoJSON), which is just a format to describe geographic data in JSON. MapBox uses the GeoJSON format to capture the necessary data needed to generate all the markers on the map. Building a JSON object in Rails is easy. The code below shows how I did it for Phindee; it comes from my `HappyHourController`.
 
 ``` ruby happy_hours_controller.rb
 @happy_hours = HappyHour.all
@@ -73,7 +73,7 @@ Depending on the type of request, only one of the two lines above will be execut
 
 # Working with the MapBox API
 
-Now that we have the building blocks in place, we’re ready to start working with the MapBox API itself. My code examples below will all be in CoffeeScript because that’s what I used for phindee, but if you’re not familiar with CoffeeScript, you can copy the code examples into [js2coffee.org](http://js2coffee.org/) to get the JavaScript equivalent.
+Now that we have the building blocks in place, we’re ready to start working with the MapBox API itself. My code examples below will all be in CoffeeScript because that’s what I used for Phindee, but if you’re not familiar with CoffeeScript, you can copy the code examples into [js2coffee.org](http://js2coffee.org/) to get the JavaScript equivalent.
 
 ## Adding the Library Code
 
@@ -142,7 +142,7 @@ To summarize the code above, we’re simply looping through each marker, creatin
 
 ## Opening a Popup Programmatically
 
-If you look at [phindee](http://phindee.com/), you’ll notice that when you open the sidebar and click on a happy hour, the popup on the corresponding marker on the map automatically opens up. Being able to open up a popup programmatically is useful, and below is how I did it.
+If you look at [Phindee](http://phindee.com/), you’ll notice that when you open the sidebar and click on a happy hour, the popup on the corresponding marker on the map automatically opens up. Being able to open up a popup programmatically is useful, and below is how I did it.
 
 ``` coffeescript happy_hours.js.coffee
 # handles a sidebar happy hour click

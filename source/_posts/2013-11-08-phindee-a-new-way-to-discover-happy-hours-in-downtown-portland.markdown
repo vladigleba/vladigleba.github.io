@@ -3,7 +3,7 @@ layout: post
 title: "Phindee: A New Way to Discover Happy Hours in Downtown Portland"
 date: 2013-11-08 12:59
 comments: true
-categories: [Projects, Rails, phindee]
+categories: [Projects, Rails, Phindee]
 ---
 
 I love Portland. It’s a fun, quirky city that makes me feel right at home. And the longer I live here, the deeper my affection grows. There are many reasons why this is so, but one high on the list is the food scene. Now I haven’t lived in any other major city, so I can’t compare, but others who have tend to agree. <!-- more -->
@@ -12,15 +12,15 @@ I’m certainly satisfied.
 
 # An Idea Is Born
 
-Of course, eating out all the time can get a bit expensive, and being a college student, I’m definitely not swimming in cash. I usually eat out just for lunch because I hate bringing cold lunch, but even this can quickly add up. So in an effort to save money (and to learn Ruby on Rails), I built a happy hour web application a couple months ago called [phindee](http://phindee.com/). 
+Of course, eating out all the time can get a bit expensive, and being a college student, I’m definitely not swimming in cash. I usually eat out just for lunch because I hate bringing cold lunch, but even this can quickly add up. So in an effort to save money (and to learn Ruby on Rails), I built a happy hour web application a couple months ago called [Phindee](http://phindee.com/). 
 
-Being a web developer, I always enjoy learning about other people's stacks, so I'd like to return the favor and share how phindee works.
+Being a web developer, I always enjoy learning about other people's stacks, so I'd like to return the favor and share how Phindee works.
 
 # A Look at the Wiring
 
-When you visit phindee, you’re presented with a map of the current happy hours in downtown Portland, along with information like the happy hour type and time, as well as the name, phone number, website, and address of its location. And of course, it doesn’t matter what device you use to visit phindee because it’s based on a responsive design.
+When you visit Phindee, you’re presented with a map of the current happy hours in downtown Portland, along with information like the happy hour type and time, as well as the name, phone number, website, and address of its location. And of course, it doesn’t matter what device you use to visit Phindee because it’s based on a responsive design.
 
-Behind the scenes, phindee sits on top of a [Linode](http://linode.com/) server powered by [Ubuntu](http://www.ubuntu.com/) and served by [Nginx](http://nginx.org/) and [Unicorn](http://unicorn.bogomips.org/). I originally had it setup with [Passenger](https://www.phusionpassenger.com/), but since I like to do multiple deploys a day, I got tired of Passenger restarts and site downtime. Unicorn solves this nicely. 
+Behind the scenes, Phindee sits on top of a [Linode](http://linode.com/) server powered by [Ubuntu](http://www.ubuntu.com/) and served by [Nginx](http://nginx.org/) and [Unicorn](http://unicorn.bogomips.org/). I originally had it setup with [Passenger](https://www.phusionpassenger.com/), but since I like to do multiple deploys a day, I got tired of Passenger restarts and site downtime. Unicorn solves this nicely. 
 
 ## Deployment
 

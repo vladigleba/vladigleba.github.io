@@ -14,7 +14,7 @@ It all started in a 10th grade web design class. I had never seen HTML source co
 
 Throughout high school, I continued learning web development on the side, and once college came around, I decided to study computer science since it was the closest thing to web development I could find.
 
-Computer science expanded my horizons and introduced me to many new things, but exposure to the web was extremely limited. Now that I'm out of college, I'm back to studying web development full-time and determined to make up for lost time. The web is moving fast and there are many cool web technologies I'm eager to pickup up!
+Computer science expanded my horizons and introduced me to many new things, but apart from internships, my exposure to the web was limited. Now that I'm out of college, I'm back to studying web development full-time; the web is moving fast and there are many cool web technologies I want to learn.
 
 I plan on using this blog as means of documenting my progress, and you're welcome to [follow along](http://www.feedblitz.com/f/?Sub=927939&cids=1) if you'd like. My open source work is available on [GitHub](https://github.com/vladigleba) and my work history on [LinkedIn](http://www.linkedin.com/in/vladigleba).
 

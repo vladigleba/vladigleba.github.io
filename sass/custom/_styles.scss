@@ -459,7 +459,8 @@ body {
     @extend .margin-bottom-larger;
     
     h1 {
-      @extend .font-size-largest;
+      font-size: 37.08px;
+      font-size: 1.854rem; /* 1.618 * 0.236 */
       line-height: 38.319px;
       line-height: 1.916rem;
       margin: 0;

@@ -3,10 +3,10 @@ layout: post
 title: "Testing Ruby on Rails Apps"
 date: 2014-01-17 12:35
 comments: true
-categories: [Rails, Testing, Test Unit]
+categories: [Rails, Testing, Phindee]
 ---
 
-I started learning Ruby on Rails over a year ago, and as most beginners, I chose the popular <cite>[Ruby on Rails Tutorial](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book)</cite> as my initial guide. Because there was so much new material to absorb, I decided to skip the sections about testing (and I’m glad I did or my head would’ve exploded). When I finished the book, I decided to build a Rails app called [phindee](http://phindee.com/) in order to solidify what I had just learned. I never went back to learn about testing, however. Now over a year later, I did just that and was finally able to write a solid test suite for the app.
+I started learning Ruby on Rails over a year ago, and as most beginners, I chose the popular <cite>[Ruby on Rails Tutorial](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book)</cite> as my initial guide. Because there was so much new material to absorb, I decided to skip the sections about testing (and I’m glad I did or my head would’ve exploded). When I finished the book, I decided to build a Rails app called [Phindee](http://phindee.com/) in order to solidify what I had just learned. I never went back to learn about testing, however. Now over a year later, I did just that and was finally able to write a solid test suite for the app.
 
 <!-- more -->
 
@@ -27,7 +27,7 @@ The benefits of TDD are many, but the way I see it, it boils down to three main 
 
 ## Peace of Mind
 
-How many times have you found yourself wanting to refactor an ugly mess of code, but due to the fear of breaking things, you ended up ditching the effort all together? This happens to me all the time, and I hate it. It doesn’t need be this way though. Since adding test cases to phindee, I’ve refactored more than half of my helper functions without any worry of breaking things.
+How many times have you found yourself wanting to refactor an ugly mess of code, but due to the fear of breaking things, you ended up ditching the effort all together? This happens to me all the time, and I hate it. It doesn’t need be this way though. Since adding test cases to Phindee, I’ve refactored more than half of my helper functions without any worry of breaking things.
 
 But it gets better. Testing not only allows you to refactor with confidence, you also get to deploy with confidence, and this comes as part of the package, without any additional effort.
 
@@ -41,7 +41,7 @@ The beauty with having a test suite is you write your tests once, and running th
 
 ## Better Code
 
-Now that phindee is backed up by a solid test suite, my code has drastically improved in quality because I was finally able to refactor it. It’s simpler, and there is now less of it.
+Now that Phindee is backed up by a solid test suite, my code has drastically improved in quality because I was finally able to refactor it. It’s simpler, and there is now less of it.
 
 Furthermore, having to write test cases for individual methods has also forced me to write simpler, decoupled methods. You see, it’s hard to write test cases for methods that do more than one thing and happen to be entangled with one another. And this is the reason why test cases lead to cleaner, simpler code. As a result, tracking down bugs is even easier, which means more saved time.
 
@@ -53,7 +53,7 @@ Rails provides directories for five different categories of tests by default: he
 
 ## Fixtures
 
-Fixtures are defined in YAML files, and their role is to initialize our models with sample data for the sole purpose of testing. They allow us to then easily use this data in our test cases without corrupting our development database. As an example, below is a fixture file for a model in phindee called `Place`:
+Fixtures are defined in YAML files, and their role is to initialize our models with sample data for the sole purpose of testing. They allow us to then easily use this data in our test cases without corrupting our development database. As an example, below is a fixture file for a model in Phindee called `Place`:
 
 ``` yaml places.yml
 thai:
@@ -67,11 +67,11 @@ grill:
 
 Here I created two instances of the `Place` model (`thai` and `grill`) and initialized their `name` and `website` attributes. The data is now ready to be used in our test cases. Because YAML is beyond the scope of this post, I won’t go into any more detail, but I encourage you to [learn more](http://yaml.org/YAML_for_ruby.html).
 
-Now that we know about fixtures, we’re ready to learn about the different types of tests we can write for a Rails app. To better explain each type, I will show examples from phindee.
+Now that we know about fixtures, we’re ready to learn about the different types of tests we can write for a Rails app. To better explain each type, I will show examples from Phindee.
 
 ## Helper Tests
 
-Helper tests are just what they sound like&mdash;they’re tests for your helper methods. When you create a controller using the `rails generate controller NAME` command, Rails automatically creates a `NAME_helper_test.rb` file inside `test/helpers` to write the tests in. Below is what one of my helper tests for phindee looks like:
+Helper tests are just what they sound like&mdash;they’re tests for your helper methods. When you create a controller using the `rails generate controller NAME` command, Rails automatically creates a `NAME_helper_test.rb` file inside `test/helpers` to write the tests in. Below is what one of my helper tests for Phindee looks like:
 
 ``` ruby happy_hours_helper_test.rb
   . . .
@@ -91,7 +91,7 @@ In practice, we would typically first write these tests, run them to make sure t
 
 ## Unit Tests
 
-Unit tests are there to test your models. The `rails generate model NAME` command creates a file for these tests called `NAME_test.rb` inside the `test/models` directory. Below are two tests from phindee for an attribute called `location_id`:
+Unit tests are there to test your models. The `rails generate model NAME` command creates a file for these tests called `NAME_test.rb` inside the `test/models` directory. Below are two tests from Phindee for an attribute called `location_id`:
 
 ``` ruby happy_hour_test.rb
   . . .
@@ -183,11 +183,11 @@ As you might guess, mailer tests are there to test mailer classes. A `NAME_maile
 1. test the mailer in isolation to make sure its output is what you expect (using unit tests)
 2. test the controllers and models that use the mailers to make sure the right email is sent at the right time (using functional tests)
 
-When testing your mailers with unit tests, you’ll use fixtures to provide sample data demonstrating how the output should look. I don’t have any examples of mailer tests to show because I have not yet needed to implement email functionality for phindee, but the [Rails guide](http://guides.rubyonrails.org/testing.html) should give you a good feel for what they look like.
+When testing your mailers with unit tests, you’ll use fixtures to provide sample data demonstrating how the output should look. I don’t have any examples of mailer tests to show because I have not yet needed to implement email functionality for Phindee, but the [Rails guide](http://guides.rubyonrails.org/testing.html) should give you a good feel for what they look like.
 
 ## Integration Tests
 
-Last but not least, we have integration tests, which are used to test controllers interacting with one another; they’re the “big picture” tests that make sure important workflows within your application are as bug free as possible. I haven’t written any integration tests for phindee either because the app is simple enough that I only need one controller currently, but that will change in the near future, and I will update this section accordingly; in the meantime, feel free to see the [Rails guide](http://guides.rubyonrails.org/testing.html) for examples.
+Last but not least, we have integration tests, which are used to test controllers interacting with one another; they’re the “big picture” tests that make sure important workflows within your application are as bug free as possible. I haven’t written any integration tests for Phindee either because the app is simple enough that I only need one controller currently, but that will change in the near future, and I will update this section accordingly; in the meantime, feel free to see the [Rails guide](http://guides.rubyonrails.org/testing.html) for examples.
 
 One final thing I’d like to mention is the `test/test_helper.rb` file, which holds the default configuration for our tests. This file is included in all the tests, which means any methods added here are automatically available in all our tests. Pretty neat.
 
