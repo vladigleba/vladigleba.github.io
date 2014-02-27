@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Rails | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/rails/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-02-19T22:16:10-08:00</updated>
+  <updated>2014-02-27T08:52:03-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -18,7 +18,7 @@
     <link href="http://vladigleba.github.io/blog/2014/01/17/testing-ruby-on-rails-apps/"/>
     <updated>2014-01-17T12:35:00-08:00</updated>
     <id>http://vladigleba.github.io/blog/2014/01/17/testing-ruby-on-rails-apps</id>
-    <content type="html"><![CDATA[<p>I started learning Ruby on Rails over a year ago, and as most beginners, I chose the popular <cite><a href="http://ruby.railstutorial.org/ruby-on-rails-tutorial-book">Ruby on Rails Tutorial</a></cite> as my initial guide. Because there was so much new material to absorb, I decided to skip the sections about testing (and I’m glad I did or my head would’ve exploded). When I finished the book, I decided to build a Rails app called <a href="http://phindee.com/">phindee</a> in order to solidify what I had just learned. I never went back to learn about testing, however. Now over a year later, I did just that and was finally able to write a solid test suite for the app.</p>
+    <content type="html"><![CDATA[<p>I started learning Ruby on Rails over a year ago, and as most beginners, I chose the popular <cite><a href="http://ruby.railstutorial.org/ruby-on-rails-tutorial-book">Ruby on Rails Tutorial</a></cite> as my initial guide. Because there was so much new material to absorb, I decided to skip the sections about testing (and I’m glad I did or my head would’ve exploded). When I finished the book, I decided to build a Rails app called <a href="http://phindee.com/">Phindee</a> in order to solidify what I had just learned. I never went back to learn about testing, however. Now over a year later, I did just that and was finally able to write a solid test suite for the app.</p>
 
 <!-- more -->
 
@@ -43,7 +43,7 @@
 
 <h2>Peace of Mind</h2>
 
-<p>How many times have you found yourself wanting to refactor an ugly mess of code, but due to the fear of breaking things, you ended up ditching the effort all together? This happens to me all the time, and I hate it. It doesn’t need be this way though. Since adding test cases to phindee, I’ve refactored more than half of my helper functions without any worry of breaking things.</p>
+<p>How many times have you found yourself wanting to refactor an ugly mess of code, but due to the fear of breaking things, you ended up ditching the effort all together? This happens to me all the time, and I hate it. It doesn’t need be this way though. Since adding test cases to Phindee, I’ve refactored more than half of my helper functions without any worry of breaking things.</p>
 
 <p>But it gets better. Testing not only allows you to refactor with confidence, you also get to deploy with confidence, and this comes as part of the package, without any additional effort.</p>
 
@@ -57,7 +57,7 @@
 
 <h2>Better Code</h2>
 
-<p>Now that phindee is backed up by a solid test suite, my code has drastically improved in quality because I was finally able to refactor it. It’s simpler, and there is now less of it.</p>
+<p>Now that Phindee is backed up by a solid test suite, my code has drastically improved in quality because I was finally able to refactor it. It’s simpler, and there is now less of it.</p>
 
 <p>Furthermore, having to write test cases for individual methods has also forced me to write simpler, decoupled methods. You see, it’s hard to write test cases for methods that do more than one thing and happen to be entangled with one another. And this is the reason why test cases lead to cleaner, simpler code. As a result, tracking down bugs is even easier, which means more saved time.</p>
 
@@ -69,7 +69,7 @@
 
 <h2>Fixtures</h2>
 
-<p>Fixtures are defined in YAML files, and their role is to initialize our models with sample data for the sole purpose of testing. They allow us to then easily use this data in our test cases without corrupting our development database. As an example, below is a fixture file for a model in phindee called <code>Place</code>:</p>
+<p>Fixtures are defined in YAML files, and their role is to initialize our models with sample data for the sole purpose of testing. They allow us to then easily use this data in our test cases without corrupting our development database. As an example, below is a fixture file for a model in Phindee called <code>Place</code>:</p>
 
 <p>``` yaml places.yml
 thai:
@@ -83,11 +83,11 @@ thai:
 
 <p>Here I created two instances of the <code>Place</code> model (<code>thai</code> and <code>grill</code>) and initialized their <code>name</code> and <code>website</code> attributes. The data is now ready to be used in our test cases. Because YAML is beyond the scope of this post, I won’t go into any more detail, but I encourage you to <a href="http://yaml.org/YAML_for_ruby.html">learn more</a>.</p>
 
-<p>Now that we know about fixtures, we’re ready to learn about the different types of tests we can write for a Rails app. To better explain each type, I will show examples from phindee.</p>
+<p>Now that we know about fixtures, we’re ready to learn about the different types of tests we can write for a Rails app. To better explain each type, I will show examples from Phindee.</p>
 
 <h2>Helper Tests</h2>
 
-<p>Helper tests are just what they sound like&mdash;they’re tests for your helper methods. When you create a controller using the <code>rails generate controller NAME</code> command, Rails automatically creates a <code>NAME_helper_test.rb</code> file inside <code>test/helpers</code> to write the tests in. Below is what one of my helper tests for phindee looks like:</p>
+<p>Helper tests are just what they sound like&mdash;they’re tests for your helper methods. When you create a controller using the <code>rails generate controller NAME</code> command, Rails automatically creates a <code>NAME_helper_test.rb</code> file inside <code>test/helpers</code> to write the tests in. Below is what one of my helper tests for Phindee looks like:</p>
 
 <p>``` ruby happy_hours_helper_test.rb
   &hellip;</p>
@@ -110,7 +110,7 @@ assert_equal humanize_days('3,4,7'), 'monday, wednesday, saturday'
 
 <h2>Unit Tests</h2>
 
-<p>Unit tests are there to test your models. The <code>rails generate model NAME</code> command creates a file for these tests called <code>NAME_test.rb</code> inside the <code>test/models</code> directory. Below are two tests from phindee for an attribute called <code>location_id</code>:</p>
+<p>Unit tests are there to test your models. The <code>rails generate model NAME</code> command creates a file for these tests called <code>NAME_test.rb</code> inside the <code>test/models</code> directory. Below are two tests from Phindee for an attribute called <code>location_id</code>:</p>
 
 <p>``` ruby happy_hour_test.rb
   &hellip;</p>
@@ -220,11 +220,11 @@ assert_select 'article li h2', assigns(:happening_now).first.location.place.name
 </ol>
 
 
-<p>When testing your mailers with unit tests, you’ll use fixtures to provide sample data demonstrating how the output should look. I don’t have any examples of mailer tests to show because I have not yet needed to implement email functionality for phindee, but the <a href="http://guides.rubyonrails.org/testing.html">Rails guide</a> should give you a good feel for what they look like.</p>
+<p>When testing your mailers with unit tests, you’ll use fixtures to provide sample data demonstrating how the output should look. I don’t have any examples of mailer tests to show because I have not yet needed to implement email functionality for Phindee, but the <a href="http://guides.rubyonrails.org/testing.html">Rails guide</a> should give you a good feel for what they look like.</p>
 
 <h2>Integration Tests</h2>
 
-<p>Last but not least, we have integration tests, which are used to test controllers interacting with one another; they’re the “big picture” tests that make sure important workflows within your application are as bug free as possible. I haven’t written any integration tests for phindee either because the app is simple enough that I only need one controller currently, but that will change in the near future, and I will update this section accordingly; in the meantime, feel free to see the <a href="http://guides.rubyonrails.org/testing.html">Rails guide</a> for examples.</p>
+<p>Last but not least, we have integration tests, which are used to test controllers interacting with one another; they’re the “big picture” tests that make sure important workflows within your application are as bug free as possible. I haven’t written any integration tests for Phindee either because the app is simple enough that I only need one controller currently, but that will change in the near future, and I will update this section accordingly; in the meantime, feel free to see the <a href="http://guides.rubyonrails.org/testing.html">Rails guide</a> for examples.</p>
 
 <p>One final thing I’d like to mention is the <code>test/test_helper.rb</code> file, which holds the default configuration for our tests. This file is included in all the tests, which means any methods added here are automatically available in all our tests. Pretty neat.</p>
 
@@ -243,7 +243,7 @@ assert_select 'article li h2', assigns(:happening_now).first.location.place.name
     <link href="http://vladigleba.github.io/blog/2013/11/29/using-at-font-face-with-ruby-on-rails/"/>
     <updated>2013-11-29T11:35:00-08:00</updated>
     <id>http://vladigleba.github.io/blog/2013/11/29/using-at-font-face-with-ruby-on-rails</id>
-    <content type="html"><![CDATA[<p>When I was working on <a href="http://phindee.com/">phindee</a>, I struggled with adding custom fonts; the asset pipeline had just been released, and it changed how one worked with assets. Perhaps there are others out there struggling with the same thing, which is why I’d like to share what I did and hopefully save some time for a few.</p>
+    <content type="html"><![CDATA[<p>When I was working on <a href="http://phindee.com/">Phindee</a>, I struggled with adding custom fonts; the asset pipeline had just been released, and it changed how one worked with assets. Perhaps there are others out there struggling with the same thing, which is why I’d like to share what I did and hopefully save some time for a few.</p>
 
 <!-- more -->
 
@@ -303,7 +303,7 @@ p { font-family: 'action_manregular'; }
     <link href="http://vladigleba.github.io/blog/2013/11/14/using-mapbox-with-ruby-on-rails/"/>
     <updated>2013-11-14T10:39:00-08:00</updated>
     <id>http://vladigleba.github.io/blog/2013/11/14/using-mapbox-with-ruby-on-rails</id>
-    <content type="html"><![CDATA[<p>Last week <a href="/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/">I wrote about</a> <a href="http://phindee.com/">phindee</a>, a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that phindee’s mapping functionality is provided by the <a href="https://www.mapbox.com/mapbox.js/">MapBox JavaScript API</a>, but did not go into any more detail for brevity reasons. I still think it’s an important topic to talk about because I remember having a hard time finding tutorials about integrating MapBox with Ruby on Rails, specifically.</p>
+    <content type="html"><![CDATA[<p>Last week <a href="/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/">I wrote about</a> <a href="http://phindee.com/">Phindee</a>, a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that Phindee’s mapping functionality is provided by the <a href="https://www.mapbox.com/mapbox.js/">MapBox JavaScript API</a>, but did not go into any more detail for brevity reasons. I still think it’s an important topic to talk about because I remember having a hard time finding tutorials about integrating MapBox with Ruby on Rails, specifically.</p>
 
 <!-- more -->
 
@@ -328,7 +328,7 @@ p { font-family: 'action_manregular'; }
 
 <h1>Building a JSON object</h1>
 
-<p>Once we have the coordinates, we’re ready to build a JSON object array that will tell MapBox how to display our markers. Our JSON objects will be in the <a href="https://en.wikipedia.org/wiki/GeoJSON">GeoJSON format</a>, which is just a format to describe geographic data in JSON. MapBox uses the GeoJSON format to capture the necessary data needed to generate all the markers on the map. Building a JSON object in Rails is easy. The code below shows how I did it for phindee; it comes from my <code>HappyHourController</code>.</p>
+<p>Once we have the coordinates, we’re ready to build a JSON object array that will tell MapBox how to display our markers. Our JSON objects will be in the <a href="https://en.wikipedia.org/wiki/GeoJSON">GeoJSON format</a>, which is just a format to describe geographic data in JSON. MapBox uses the GeoJSON format to capture the necessary data needed to generate all the markers on the map. Building a JSON object in Rails is easy. The code below shows how I did it for Phindee; it comes from my <code>HappyHourController</code>.</p>
 
 <p>``` ruby happy_hours_controller.rb
 @happy_hours = HappyHour.all
@@ -374,7 +374,7 @@ end
 
 <h1>Working with the MapBox API</h1>
 
-<p>Now that we have the building blocks in place, we’re ready to start working with the MapBox API itself. My code examples below will all be in CoffeeScript because that’s what I used for phindee, but if you’re not familiar with CoffeeScript, you can copy the code examples into <a href="http://js2coffee.org/">js2coffee.org</a> to get the JavaScript equivalent.</p>
+<p>Now that we have the building blocks in place, we’re ready to start working with the MapBox API itself. My code examples below will all be in CoffeeScript because that’s what I used for Phindee, but if you’re not familiar with CoffeeScript, you can copy the code examples into <a href="http://js2coffee.org/">js2coffee.org</a> to get the JavaScript equivalent.</p>
 
 <h2>Adding the Library Code</h2>
 
@@ -463,7 +463,7 @@ minWidth: 320
 
 <h2>Opening a Popup Programmatically</h2>
 
-<p>If you look at <a href="http://phindee.com/">phindee</a>, you’ll notice that when you open the sidebar and click on a happy hour, the popup on the corresponding marker on the map automatically opens up. Being able to open up a popup programmatically is useful, and below is how I did it.</p>
+<p>If you look at <a href="http://phindee.com/">Phindee</a>, you’ll notice that when you open the sidebar and click on a happy hour, the popup on the corresponding marker on the map automatically opens up. Being able to open up a popup programmatically is useful, and below is how I did it.</p>
 
 <p>``` coffeescript happy_hours.js.coffee</p>
 
@@ -500,15 +500,15 @@ minWidth: 320
 
 <h1>An Idea Is Born</h1>
 
-<p>Of course, eating out all the time can get a bit expensive, and being a college student, I’m definitely not swimming in cash. I usually eat out just for lunch because I hate bringing cold lunch, but even this can quickly add up. So in an effort to save money (and to learn Ruby on Rails), I built a happy hour web application a couple months ago called <a href="http://phindee.com/">phindee</a>.</p>
+<p>Of course, eating out all the time can get a bit expensive, and being a college student, I’m definitely not swimming in cash. I usually eat out just for lunch because I hate bringing cold lunch, but even this can quickly add up. So in an effort to save money (and to learn Ruby on Rails), I built a happy hour web application a couple months ago called <a href="http://phindee.com/">Phindee</a>.</p>
 
-<p>Being a web developer, I always enjoy learning about other people&rsquo;s stacks, so I&rsquo;d like to return the favor and share how phindee works.</p>
+<p>Being a web developer, I always enjoy learning about other people&rsquo;s stacks, so I&rsquo;d like to return the favor and share how Phindee works.</p>
 
 <h1>A Look at the Wiring</h1>
 
-<p>When you visit phindee, you’re presented with a map of the current happy hours in downtown Portland, along with information like the happy hour type and time, as well as the name, phone number, website, and address of its location. And of course, it doesn’t matter what device you use to visit phindee because it’s based on a responsive design.</p>
+<p>When you visit Phindee, you’re presented with a map of the current happy hours in downtown Portland, along with information like the happy hour type and time, as well as the name, phone number, website, and address of its location. And of course, it doesn’t matter what device you use to visit Phindee because it’s based on a responsive design.</p>
 
-<p>Behind the scenes, phindee sits on top of a <a href="http://linode.com/">Linode</a> server powered by <a href="http://www.ubuntu.com/">Ubuntu</a> and served by <a href="http://nginx.org/">Nginx</a> and <a href="http://unicorn.bogomips.org/">Unicorn</a>. I originally had it setup with <a href="https://www.phusionpassenger.com/">Passenger</a>, but since I like to do multiple deploys a day, I got tired of Passenger restarts and site downtime. Unicorn solves this nicely.</p>
+<p>Behind the scenes, Phindee sits on top of a <a href="http://linode.com/">Linode</a> server powered by <a href="http://www.ubuntu.com/">Ubuntu</a> and served by <a href="http://nginx.org/">Nginx</a> and <a href="http://unicorn.bogomips.org/">Unicorn</a>. I originally had it setup with <a href="https://www.phusionpassenger.com/">Passenger</a>, but since I like to do multiple deploys a day, I got tired of Passenger restarts and site downtime. Unicorn solves this nicely.</p>
 
 <h2>Deployment</h2>
 

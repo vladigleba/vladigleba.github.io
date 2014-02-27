@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-02-19T22:16:10-08:00</updated>
+  <updated>2014-02-27T08:52:03-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -14,11 +14,69 @@
 
   
   <entry>
+    <title type="html"><![CDATA[I'm Leaving Linode for DigitalOcean]]></title>
+    <link href="http://vladigleba.github.io/blog/2014/02/27/im-leaving-linode-for-digitalocean/"/>
+    <updated>2014-02-27T08:16:00-08:00</updated>
+    <id>http://vladigleba.github.io/blog/2014/02/27/im-leaving-linode-for-digitalocean</id>
+    <content type="html"><![CDATA[<p>A few weeks ago, I ran into a <a href="http://blog.schneidmaster.com/digital-ocean-vs-linode/">blog post</a> (and the resulting <a href="https://news.ycombinator.com/item?id=7021664">Hacker News discussion</a>) comparing two popular VPS providers: <a href="https://www.linode.com/">Linode</a> and <a href="https://www.digitalocean.com/">DigitalOcean</a>. Up until that point, I was a happy Linode customer for over two years. I had heard about DigitalOcean previously, but never considered trying it since I was happy with Linode. This post, however, intrigued me enough to try DigitalOcean out.</p>
+
+<!-- more -->
+
+
+<p>Fast forward to today and <a href="http://www.phindee.com/">Phindee</a> is now running on DigitalOcean servers!</p>
+
+<h1>What’s so Cool about DigitalOcean?</h1>
+
+<p>The single most important reason that made me move to DigitalOcean was their billing policy. Let me explain.</p>
+
+<h2>Flexible Billing</h2>
+
+<p>When you create a new instance with Linode, you’re immediately charged for the entire month; if you then decide to destroy that instance a few days later, Linode will return a large portion of that month’s payment as Linode credit. With DigitalOcean, however, you’re only charged for what you use&mdash;no more, no less&mdash;so if you spin up an instance and decide to delete it the next day, you’ll be charged only for those few hours you used up.</p>
+
+<p>I’ve lost track of the number of instances I’ve temporarily spun up since switching over to DigitalOcean three weeks ago, but I can count the number of times I did this with Linode on one of my two hands. The benefits of this flexibility are obvious: higher incentive to experiment with new technologies, test prototypes, and tinker with new ideas.</p>
+
+<p>But that’s not all.</p>
+
+<h2>Lower Starter Plan</h2>
+
+<p>Besides flexible billing, I also like DigitalOcean’s plans, which I find to be perfect for apps with small amounts of traffic. Linode’s plans start at $20 a month and paying that much to host apps that receive less than 500 visits a month seemed a little ridiculous to me.</p>
+
+<p>DigitalOcean’s plans start at $5 a month, which gives you 512MB of memory, a 20GB SSD disk, and 1TB of transfer. Linode’s basic $20 a month plan gives you 1024MB of RAM, a 48GB disk, and 2TB of transfer, which is similar to DigitalOcean’s $10 plan. In effect, DigitalOcean offers the same thing at half the price, and this carries over to the more expensive plans as well.</p>
+
+<p>In effect, Linode’s starter plan seemed a bit overkill for my low traffic apps, while DigitalOcean suited them perfectly, so my choice was easy.</p>
+
+<h1>Credit Where It&rsquo;s Due</h1>
+
+<p>This post, however, would not be complete if I didn’t give credit where it’s due.</p>
+
+<p>During my two years with Linode, I experienced absolutely no down-time; I think this speaks volumes to the quality of their products. I also want to mention their excellent <a href="https://library.linode.com/">library of guides</a>, which I found to be an invaluable resource whenever I needed help configuring my server.</p>
+
+<p>But perhaps the thing their known for the most is their excellent customer service. Although I never had a need to contact support, I’ve only heard good things from other people, and some developers choose Linode solely due to their outstanding customer service.</p>
+
+<p>Now in the interests of fairness, I should mention that Linode’s security record <a href="https://blog.linode.com/2013/04/16/security-incident-update/">is not spotless</a>, and they have been criticized for the way they handled some of their breaches, but I find this to be the exception rather than the norm. As long as this is a rare occurrence, Linode’s other pros outweigh this con.</p>
+
+<p>Make no mistake, I’m leaving as a happy customer who was merely tempted and eventually won over by DigitalOcean’s flexible billing and a lower starter plan. I will have no hesitation coming back if the need arises.</p>
+
+<h1>A Word About Future Posts</h1>
+
+<p>Now that I’ve successfully moved Phindee over to DigitalOcean, I will use the next two posts to show you how I went about deploying Phindee from scratch. This is how I plan on breaking it down:</p>
+
+<ul>
+<li>Deploying Phindee, Part 1: Setting Up the Server</li>
+<li>Deploying Phindee, Part 2: Setting Up Capistrano</li>
+</ul>
+
+
+<p>I will publish part 1 next week, while part 2 will come the following week. Stay tuned!</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Testing Ruby on Rails Apps]]></title>
     <link href="http://vladigleba.github.io/blog/2014/01/17/testing-ruby-on-rails-apps/"/>
     <updated>2014-01-17T12:35:00-08:00</updated>
     <id>http://vladigleba.github.io/blog/2014/01/17/testing-ruby-on-rails-apps</id>
-    <content type="html"><![CDATA[<p>I started learning Ruby on Rails over a year ago, and as most beginners, I chose the popular <cite><a href="http://ruby.railstutorial.org/ruby-on-rails-tutorial-book">Ruby on Rails Tutorial</a></cite> as my initial guide. Because there was so much new material to absorb, I decided to skip the sections about testing (and I’m glad I did or my head would’ve exploded). When I finished the book, I decided to build a Rails app called <a href="http://phindee.com/">phindee</a> in order to solidify what I had just learned. I never went back to learn about testing, however. Now over a year later, I did just that and was finally able to write a solid test suite for the app.</p>
+    <content type="html"><![CDATA[<p>I started learning Ruby on Rails over a year ago, and as most beginners, I chose the popular <cite><a href="http://ruby.railstutorial.org/ruby-on-rails-tutorial-book">Ruby on Rails Tutorial</a></cite> as my initial guide. Because there was so much new material to absorb, I decided to skip the sections about testing (and I’m glad I did or my head would’ve exploded). When I finished the book, I decided to build a Rails app called <a href="http://phindee.com/">Phindee</a> in order to solidify what I had just learned. I never went back to learn about testing, however. Now over a year later, I did just that and was finally able to write a solid test suite for the app.</p>
 
 <!-- more -->
 
@@ -43,7 +101,7 @@
 
 <h2>Peace of Mind</h2>
 
-<p>How many times have you found yourself wanting to refactor an ugly mess of code, but due to the fear of breaking things, you ended up ditching the effort all together? This happens to me all the time, and I hate it. It doesn’t need be this way though. Since adding test cases to phindee, I’ve refactored more than half of my helper functions without any worry of breaking things.</p>
+<p>How many times have you found yourself wanting to refactor an ugly mess of code, but due to the fear of breaking things, you ended up ditching the effort all together? This happens to me all the time, and I hate it. It doesn’t need be this way though. Since adding test cases to Phindee, I’ve refactored more than half of my helper functions without any worry of breaking things.</p>
 
 <p>But it gets better. Testing not only allows you to refactor with confidence, you also get to deploy with confidence, and this comes as part of the package, without any additional effort.</p>
 
@@ -57,7 +115,7 @@
 
 <h2>Better Code</h2>
 
-<p>Now that phindee is backed up by a solid test suite, my code has drastically improved in quality because I was finally able to refactor it. It’s simpler, and there is now less of it.</p>
+<p>Now that Phindee is backed up by a solid test suite, my code has drastically improved in quality because I was finally able to refactor it. It’s simpler, and there is now less of it.</p>
 
 <p>Furthermore, having to write test cases for individual methods has also forced me to write simpler, decoupled methods. You see, it’s hard to write test cases for methods that do more than one thing and happen to be entangled with one another. And this is the reason why test cases lead to cleaner, simpler code. As a result, tracking down bugs is even easier, which means more saved time.</p>
 
@@ -69,7 +127,7 @@
 
 <h2>Fixtures</h2>
 
-<p>Fixtures are defined in YAML files, and their role is to initialize our models with sample data for the sole purpose of testing. They allow us to then easily use this data in our test cases without corrupting our development database. As an example, below is a fixture file for a model in phindee called <code>Place</code>:</p>
+<p>Fixtures are defined in YAML files, and their role is to initialize our models with sample data for the sole purpose of testing. They allow us to then easily use this data in our test cases without corrupting our development database. As an example, below is a fixture file for a model in Phindee called <code>Place</code>:</p>
 
 <figure class='code'><figcaption><span>places.yml</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -90,11 +148,11 @@
 
 <p>Here I created two instances of the <code>Place</code> model (<code>thai</code> and <code>grill</code>) and initialized their <code>name</code> and <code>website</code> attributes. The data is now ready to be used in our test cases. Because YAML is beyond the scope of this post, I won’t go into any more detail, but I encourage you to <a href="http://yaml.org/YAML_for_ruby.html">learn more</a>.</p>
 
-<p>Now that we know about fixtures, we’re ready to learn about the different types of tests we can write for a Rails app. To better explain each type, I will show examples from phindee.</p>
+<p>Now that we know about fixtures, we’re ready to learn about the different types of tests we can write for a Rails app. To better explain each type, I will show examples from Phindee.</p>
 
 <h2>Helper Tests</h2>
 
-<p>Helper tests are just what they sound like&mdash;they’re tests for your helper methods. When you create a controller using the <code>rails generate controller NAME</code> command, Rails automatically creates a <code>NAME_helper_test.rb</code> file inside <code>test/helpers</code> to write the tests in. Below is what one of my helper tests for phindee looks like:</p>
+<p>Helper tests are just what they sound like&mdash;they’re tests for your helper methods. When you create a controller using the <code>rails generate controller NAME</code> command, Rails automatically creates a <code>NAME_helper_test.rb</code> file inside <code>test/helpers</code> to write the tests in. Below is what one of my helper tests for Phindee looks like:</p>
 
 <figure class='code'><figcaption><span>happy_hours_helper_test.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -123,7 +181,7 @@
 
 <h2>Unit Tests</h2>
 
-<p>Unit tests are there to test your models. The <code>rails generate model NAME</code> command creates a file for these tests called <code>NAME_test.rb</code> inside the <code>test/models</code> directory. Below are two tests from phindee for an attribute called <code>location_id</code>:</p>
+<p>Unit tests are there to test your models. The <code>rails generate model NAME</code> command creates a file for these tests called <code>NAME_test.rb</code> inside the <code>test/models</code> directory. Below are two tests from Phindee for an attribute called <code>location_id</code>:</p>
 
 <figure class='code'><figcaption><span>happy_hour_test.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -266,11 +324,11 @@
 </ol>
 
 
-<p>When testing your mailers with unit tests, you’ll use fixtures to provide sample data demonstrating how the output should look. I don’t have any examples of mailer tests to show because I have not yet needed to implement email functionality for phindee, but the <a href="http://guides.rubyonrails.org/testing.html">Rails guide</a> should give you a good feel for what they look like.</p>
+<p>When testing your mailers with unit tests, you’ll use fixtures to provide sample data demonstrating how the output should look. I don’t have any examples of mailer tests to show because I have not yet needed to implement email functionality for Phindee, but the <a href="http://guides.rubyonrails.org/testing.html">Rails guide</a> should give you a good feel for what they look like.</p>
 
 <h2>Integration Tests</h2>
 
-<p>Last but not least, we have integration tests, which are used to test controllers interacting with one another; they’re the “big picture” tests that make sure important workflows within your application are as bug free as possible. I haven’t written any integration tests for phindee either because the app is simple enough that I only need one controller currently, but that will change in the near future, and I will update this section accordingly; in the meantime, feel free to see the <a href="http://guides.rubyonrails.org/testing.html">Rails guide</a> for examples.</p>
+<p>Last but not least, we have integration tests, which are used to test controllers interacting with one another; they’re the “big picture” tests that make sure important workflows within your application are as bug free as possible. I haven’t written any integration tests for Phindee either because the app is simple enough that I only need one controller currently, but that will change in the near future, and I will update this section accordingly; in the meantime, feel free to see the <a href="http://guides.rubyonrails.org/testing.html">Rails guide</a> for examples.</p>
 
 <p>One final thing I’d like to mention is the <code>test/test_helper.rb</code> file, which holds the default configuration for our tests. This file is included in all the tests, which means any methods added here are automatically available in all our tests. Pretty neat.</p>
 
@@ -372,7 +430,7 @@
     <link href="http://vladigleba.github.io/blog/2013/11/29/using-at-font-face-with-ruby-on-rails/"/>
     <updated>2013-11-29T11:35:00-08:00</updated>
     <id>http://vladigleba.github.io/blog/2013/11/29/using-at-font-face-with-ruby-on-rails</id>
-    <content type="html"><![CDATA[<p>When I was working on <a href="http://phindee.com/">phindee</a>, I struggled with adding custom fonts; the asset pipeline had just been released, and it changed how one worked with assets. Perhaps there are others out there struggling with the same thing, which is why I’d like to share what I did and hopefully save some time for a few.</p>
+    <content type="html"><![CDATA[<p>When I was working on <a href="http://phindee.com/">Phindee</a>, I struggled with adding custom fonts; the asset pipeline had just been released, and it changed how one worked with assets. Perhaps there are others out there struggling with the same thing, which is why I’d like to share what I did and hopefully save some time for a few.</p>
 
 <!-- more -->
 
@@ -440,7 +498,7 @@
     <link href="http://vladigleba.github.io/blog/2013/11/14/using-mapbox-with-ruby-on-rails/"/>
     <updated>2013-11-14T10:39:00-08:00</updated>
     <id>http://vladigleba.github.io/blog/2013/11/14/using-mapbox-with-ruby-on-rails</id>
-    <content type="html"><![CDATA[<p>Last week <a href="http://vladigleba.github.io/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/">I wrote about</a> <a href="http://phindee.com/">phindee</a>, a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that phindee’s mapping functionality is provided by the <a href="https://www.mapbox.com/mapbox.js/">MapBox JavaScript API</a>, but did not go into any more detail for brevity reasons. I still think it’s an important topic to talk about because I remember having a hard time finding tutorials about integrating MapBox with Ruby on Rails, specifically.</p>
+    <content type="html"><![CDATA[<p>Last week <a href="http://vladigleba.github.io/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/">I wrote about</a> <a href="http://phindee.com/">Phindee</a>, a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that Phindee’s mapping functionality is provided by the <a href="https://www.mapbox.com/mapbox.js/">MapBox JavaScript API</a>, but did not go into any more detail for brevity reasons. I still think it’s an important topic to talk about because I remember having a hard time finding tutorials about integrating MapBox with Ruby on Rails, specifically.</p>
 
 <!-- more -->
 
@@ -465,7 +523,7 @@
 
 <h1>Building a JSON object</h1>
 
-<p>Once we have the coordinates, we’re ready to build a JSON object array that will tell MapBox how to display our markers. Our JSON objects will be in the <a href="https://en.wikipedia.org/wiki/GeoJSON">GeoJSON format</a>, which is just a format to describe geographic data in JSON. MapBox uses the GeoJSON format to capture the necessary data needed to generate all the markers on the map. Building a JSON object in Rails is easy. The code below shows how I did it for phindee; it comes from my <code>HappyHourController</code>.</p>
+<p>Once we have the coordinates, we’re ready to build a JSON object array that will tell MapBox how to display our markers. Our JSON objects will be in the <a href="https://en.wikipedia.org/wiki/GeoJSON">GeoJSON format</a>, which is just a format to describe geographic data in JSON. MapBox uses the GeoJSON format to capture the necessary data needed to generate all the markers on the map. Building a JSON object in Rails is easy. The code below shows how I did it for Phindee; it comes from my <code>HappyHourController</code>.</p>
 
 <figure class='code'><figcaption><span>happy_hours_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -531,7 +589,7 @@
 
 <h1>Working with the MapBox API</h1>
 
-<p>Now that we have the building blocks in place, we’re ready to start working with the MapBox API itself. My code examples below will all be in CoffeeScript because that’s what I used for phindee, but if you’re not familiar with CoffeeScript, you can copy the code examples into <a href="http://js2coffee.org/">js2coffee.org</a> to get the JavaScript equivalent.</p>
+<p>Now that we have the building blocks in place, we’re ready to start working with the MapBox API itself. My code examples below will all be in CoffeeScript because that’s what I used for Phindee, but if you’re not familiar with CoffeeScript, you can copy the code examples into <a href="http://js2coffee.org/">js2coffee.org</a> to get the JavaScript equivalent.</p>
 
 <h2>Adding the Library Code</h2>
 
@@ -629,7 +687,7 @@
 
 <h2>Opening a Popup Programmatically</h2>
 
-<p>If you look at <a href="http://phindee.com/">phindee</a>, you’ll notice that when you open the sidebar and click on a happy hour, the popup on the corresponding marker on the map automatically opens up. Being able to open up a popup programmatically is useful, and below is how I did it.</p>
+<p>If you look at <a href="http://phindee.com/">Phindee</a>, you’ll notice that when you open the sidebar and click on a happy hour, the popup on the corresponding marker on the map automatically opens up. Being able to open up a popup programmatically is useful, and below is how I did it.</p>
 
 <figure class='code'><figcaption><span>happy_hours.js.coffee</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -671,15 +729,15 @@
 
 <h1>An Idea Is Born</h1>
 
-<p>Of course, eating out all the time can get a bit expensive, and being a college student, I’m definitely not swimming in cash. I usually eat out just for lunch because I hate bringing cold lunch, but even this can quickly add up. So in an effort to save money (and to learn Ruby on Rails), I built a happy hour web application a couple months ago called <a href="http://phindee.com/">phindee</a>.</p>
+<p>Of course, eating out all the time can get a bit expensive, and being a college student, I’m definitely not swimming in cash. I usually eat out just for lunch because I hate bringing cold lunch, but even this can quickly add up. So in an effort to save money (and to learn Ruby on Rails), I built a happy hour web application a couple months ago called <a href="http://phindee.com/">Phindee</a>.</p>
 
-<p>Being a web developer, I always enjoy learning about other people&rsquo;s stacks, so I&rsquo;d like to return the favor and share how phindee works.</p>
+<p>Being a web developer, I always enjoy learning about other people&rsquo;s stacks, so I&rsquo;d like to return the favor and share how Phindee works.</p>
 
 <h1>A Look at the Wiring</h1>
 
-<p>When you visit phindee, you’re presented with a map of the current happy hours in downtown Portland, along with information like the happy hour type and time, as well as the name, phone number, website, and address of its location. And of course, it doesn’t matter what device you use to visit phindee because it’s based on a responsive design.</p>
+<p>When you visit Phindee, you’re presented with a map of the current happy hours in downtown Portland, along with information like the happy hour type and time, as well as the name, phone number, website, and address of its location. And of course, it doesn’t matter what device you use to visit Phindee because it’s based on a responsive design.</p>
 
-<p>Behind the scenes, phindee sits on top of a <a href="http://linode.com/">Linode</a> server powered by <a href="http://www.ubuntu.com/">Ubuntu</a> and served by <a href="http://nginx.org/">Nginx</a> and <a href="http://unicorn.bogomips.org/">Unicorn</a>. I originally had it setup with <a href="https://www.phusionpassenger.com/">Passenger</a>, but since I like to do multiple deploys a day, I got tired of Passenger restarts and site downtime. Unicorn solves this nicely.</p>
+<p>Behind the scenes, Phindee sits on top of a <a href="http://linode.com/">Linode</a> server powered by <a href="http://www.ubuntu.com/">Ubuntu</a> and served by <a href="http://nginx.org/">Nginx</a> and <a href="http://unicorn.bogomips.org/">Unicorn</a>. I originally had it setup with <a href="https://www.phusionpassenger.com/">Passenger</a>, but since I like to do multiple deploys a day, I got tired of Passenger restarts and site downtime. Unicorn solves this nicely.</p>
 
 <h2>Deployment</h2>
 

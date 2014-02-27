@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>I'm Diving In - Hungry and Foolish</title>
+  <title>I'm Leaving Linode for DigitalOcean - Hungry and Foolish</title>
   <meta name="author" content="Vladi Gleba">
 
   
-  <meta name="description" content="Starting a blog is something I wanted to do for a few years now, but I worried too much about not having enough time or things to write about, so I &hellip;">
+  <meta name="description" content="A few weeks ago, I ran into a blog post (and the resulting Hacker News discussion) comparing two popular VPS providers: Linode and DigitalOcean. Up &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://vladigleba.github.io/blog/2013/10/15/im-diving-in">
+  <link rel="canonical" href="http://vladigleba.github.io/blog/2014/02/27/im-leaving-linode-for-digitalocean">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Hungry and Foolish" type="application/atom+xml">
@@ -79,7 +79,7 @@
   
   <header>
     
-      <h1 class="entry-title">I'm Diving In</h1>
+      <h1 class="entry-title">I'm Leaving Linode for DigitalOcean</h1>
     
     
       <p class="meta">
@@ -95,13 +95,13 @@
   
 
 
-<time datetime="2013-10-15T11:20:00-07:00" pubdate data-updated="true">Oct 15<span>th</span>, 2013</time>
+<time datetime="2014-02-27T08:16:00-08:00" pubdate data-updated="true">Feb 27<span>th</span>, 2014</time>
         
 
 <span class="categories">
   published in 
   
-    <a class='category' href='/blog/topics/thoughts/'>Thoughts</a>
+    <a class='category' href='/blog/topics/deployment/'>Deployment</a>
   
 </span>
 
@@ -114,22 +114,56 @@
   </header>
 
 
-<div class="entry-content"><p>Starting a blog is something I wanted to do for a few years now, but I worried too much about not having enough time or things to write about, so I always put it off. But this weekend that all changed.</p>
+<div class="entry-content"><p>A few weeks ago, I ran into a <a href="http://blog.schneidmaster.com/digital-ocean-vs-linode/">blog post</a> (and the resulting <a href="https://news.ycombinator.com/item?id=7021664">Hacker News discussion</a>) comparing two popular VPS providers: <a href="https://www.linode.com/">Linode</a> and <a href="https://www.digitalocean.com/">DigitalOcean</a>. Up until that point, I was a happy Linode customer for over two years. I had heard about DigitalOcean previously, but never considered trying it since I was happy with Linode. This post, however, intrigued me enough to try DigitalOcean out.</p>
 
 <!-- more -->
 
 
-<p>Having some free time on my hands, I found myself doing what I do best: gravitating towards the computer. Blogging had been on my mind during the past week, so I found myself going over to Google and typing &ldquo;blogging platforms&rdquo; into the search bar. It took just a few clicks to stumble onto <a href="http://octopress.org/">Octopress</a>, a blogging framework for hackers. Coming from a Ruby on Rails background, the framework just made sense to me. I realized this was my moment. I couldn&rsquo;t hold off any longer. So I took the plunge.</p>
+<p>Fast forward to today and <a href="http://www.phindee.com/">Phindee</a> is now running on DigitalOcean servers!</p>
 
-<p>Now I&rsquo;m sitting typing up this first post. I am both excited and nervous at the same time, but starting a blog feels right to me. Writing is something I&rsquo;ve always enjoyed doing, so having an outlet to express myself through writing is definitely fulfilling.</p>
+<h1>What’s so Cool about DigitalOcean?</h1>
 
-<p>I do want to mention that since this is my first time blogging, I want to apologize in advance if I make any rookie mistakes. Feel free to laugh and point it out. I will have a good laugh myself and hopefully learn from it.</p>
+<p>The single most important reason that made me move to DigitalOcean was their billing policy. Let me explain.</p>
 
-<p>My main goal with this blog is to share my web development knowledge. I plan on covering the side projects I work on and the technologies that power them. As an aspiring web developer, I heavily rely on other people&rsquo;s blogs to get stuff done, so I want to give back to the community and hopefully be of similar help to other aspiring web developers.</p>
+<h2>Flexible Billing</h2>
 
-<p>It&rsquo;s been a long time coming, but I now have a blog.</p>
+<p>When you create a new instance with Linode, you’re immediately charged for the entire month; if you then decide to destroy that instance a few days later, Linode will return a large portion of that month’s payment as Linode credit. With DigitalOcean, however, you’re only charged for what you use&mdash;no more, no less&mdash;so if you spin up an instance and decide to delete it the next day, you’ll be charged only for those few hours you used up.</p>
 
-<p>Stay hungry. Stay foolish.</p>
+<p>I’ve lost track of the number of instances I’ve temporarily spun up since switching over to DigitalOcean three weeks ago, but I can count the number of times I did this with Linode on one of my two hands. The benefits of this flexibility are obvious: higher incentive to experiment with new technologies, test prototypes, and tinker with new ideas.</p>
+
+<p>But that’s not all.</p>
+
+<h2>Lower Starter Plan</h2>
+
+<p>Besides flexible billing, I also like DigitalOcean’s plans, which I find to be perfect for apps with small amounts of traffic. Linode’s plans start at $20 a month and paying that much to host apps that receive less than 500 visits a month seemed a little ridiculous to me.</p>
+
+<p>DigitalOcean’s plans start at $5 a month, which gives you 512MB of memory, a 20GB SSD disk, and 1TB of transfer. Linode’s basic $20 a month plan gives you 1024MB of RAM, a 48GB disk, and 2TB of transfer, which is similar to DigitalOcean’s $10 plan. In effect, DigitalOcean offers the same thing at half the price, and this carries over to the more expensive plans as well.</p>
+
+<p>In effect, Linode’s starter plan seemed a bit overkill for my low traffic apps, while DigitalOcean suited them perfectly, so my choice was easy.</p>
+
+<h1>Credit Where It&rsquo;s Due</h1>
+
+<p>This post, however, would not be complete if I didn’t give credit where it’s due.</p>
+
+<p>During my two years with Linode, I experienced absolutely no down-time; I think this speaks volumes to the quality of their products. I also want to mention their excellent <a href="https://library.linode.com/">library of guides</a>, which I found to be an invaluable resource whenever I needed help configuring my server.</p>
+
+<p>But perhaps the thing their known for the most is their excellent customer service. Although I never had a need to contact support, I’ve only heard good things from other people, and some developers choose Linode solely due to their outstanding customer service.</p>
+
+<p>Now in the interests of fairness, I should mention that Linode’s security record <a href="https://blog.linode.com/2013/04/16/security-incident-update/">is not spotless</a>, and they have been criticized for the way they handled some of their breaches, but I find this to be the exception rather than the norm. As long as this is a rare occurrence, Linode’s other pros outweigh this con.</p>
+
+<p>Make no mistake, I’m leaving as a happy customer who was merely tempted and eventually won over by DigitalOcean’s flexible billing and a lower starter plan. I will have no hesitation coming back if the need arises.</p>
+
+<h1>A Word About Future Posts</h1>
+
+<p>Now that I’ve successfully moved Phindee over to DigitalOcean, I will use the next two posts to show you how I went about deploying Phindee from scratch. This is how I plan on breaking it down:</p>
+
+<ul>
+<li>Deploying Phindee, Part 1: Setting Up the Server</li>
+<li>Deploying Phindee, Part 2: Setting Up Capistrano</li>
+</ul>
+
+
+<p>I will publish part 1 next week, while part 2 will come the following week. Stay tuned!</p>
 </div>
 
 
@@ -144,8 +178,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2014/01/17/testing-ruby-on-rails-apps/" title="Previous Post: Testing Ruby on Rails Apps">&laquo; Testing Ruby on Rails Apps</a>
       
-        <a class="basic-alignment right" href="/blog/2013/10/22/ways-to-define-a-grid-system/" title="Next Post: Ways to Define a Grid System">Ways to Define a Grid System &raquo;</a>
       
     </p>
   </footer>
@@ -209,8 +243,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://vladigleba.github.io/blog/2013/10/15/im-diving-in/';
-        var disqus_url = 'http://vladigleba.github.io/blog/2013/10/15/im-diving-in/';
+        var disqus_identifier = 'http://vladigleba.github.io/blog/2014/02/27/im-leaving-linode-for-digitalocean/';
+        var disqus_url = 'http://vladigleba.github.io/blog/2014/02/27/im-leaving-linode-for-digitalocean/';
         var disqus_script = 'embed.js';
       
     (function () {

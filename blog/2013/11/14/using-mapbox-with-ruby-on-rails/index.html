@@ -9,7 +9,7 @@
   <meta name="author" content="Vladi Gleba">
 
   
-  <meta name="description" content="Last week I wrote about phindee, a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that &hellip;">
+  <meta name="description" content="Last week I wrote about Phindee, a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -101,7 +101,7 @@
 <span class="categories">
   published in 
   
-    <a class='category' href='/blog/topics/coffeescript/'>CoffeeScript</a>, <a class='category' href='/blog/topics/mapbox/'>MapBox</a>, <a class='category' href='/blog/topics/rails/'>Rails</a>, <a class='category' href='/blog/topics/phindee/'>phindee</a>
+    <a class='category' href='/blog/topics/coffeescript/'>CoffeeScript</a>, <a class='category' href='/blog/topics/mapbox/'>MapBox</a>, <a class='category' href='/blog/topics/phindee/'>Phindee</a>, <a class='category' href='/blog/topics/rails/'>Rails</a>
   
 </span>
 
@@ -114,7 +114,7 @@
   </header>
 
 
-<div class="entry-content"><p>Last week <a href="/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/">I wrote about</a> <a href="http://phindee.com/">phindee</a>, a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that phindee’s mapping functionality is provided by the <a href="https://www.mapbox.com/mapbox.js/">MapBox JavaScript API</a>, but did not go into any more detail for brevity reasons. I still think it’s an important topic to talk about because I remember having a hard time finding tutorials about integrating MapBox with Ruby on Rails, specifically.</p>
+<div class="entry-content"><p>Last week <a href="/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/">I wrote about</a> <a href="http://phindee.com/">Phindee</a>, a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that Phindee’s mapping functionality is provided by the <a href="https://www.mapbox.com/mapbox.js/">MapBox JavaScript API</a>, but did not go into any more detail for brevity reasons. I still think it’s an important topic to talk about because I remember having a hard time finding tutorials about integrating MapBox with Ruby on Rails, specifically.</p>
 
 <!-- more -->
 
@@ -139,7 +139,7 @@
 
 <h1>Building a JSON object</h1>
 
-<p>Once we have the coordinates, we’re ready to build a JSON object array that will tell MapBox how to display our markers. Our JSON objects will be in the <a href="https://en.wikipedia.org/wiki/GeoJSON">GeoJSON format</a>, which is just a format to describe geographic data in JSON. MapBox uses the GeoJSON format to capture the necessary data needed to generate all the markers on the map. Building a JSON object in Rails is easy. The code below shows how I did it for phindee; it comes from my <code>HappyHourController</code>.</p>
+<p>Once we have the coordinates, we’re ready to build a JSON object array that will tell MapBox how to display our markers. Our JSON objects will be in the <a href="https://en.wikipedia.org/wiki/GeoJSON">GeoJSON format</a>, which is just a format to describe geographic data in JSON. MapBox uses the GeoJSON format to capture the necessary data needed to generate all the markers on the map. Building a JSON object in Rails is easy. The code below shows how I did it for Phindee; it comes from my <code>HappyHourController</code>.</p>
 
 <figure class='code'><figcaption><span>happy_hours_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -205,7 +205,7 @@
 
 <h1>Working with the MapBox API</h1>
 
-<p>Now that we have the building blocks in place, we’re ready to start working with the MapBox API itself. My code examples below will all be in CoffeeScript because that’s what I used for phindee, but if you’re not familiar with CoffeeScript, you can copy the code examples into <a href="http://js2coffee.org/">js2coffee.org</a> to get the JavaScript equivalent.</p>
+<p>Now that we have the building blocks in place, we’re ready to start working with the MapBox API itself. My code examples below will all be in CoffeeScript because that’s what I used for Phindee, but if you’re not familiar with CoffeeScript, you can copy the code examples into <a href="http://js2coffee.org/">js2coffee.org</a> to get the JavaScript equivalent.</p>
 
 <h2>Adding the Library Code</h2>
 
@@ -303,7 +303,7 @@
 
 <h2>Opening a Popup Programmatically</h2>
 
-<p>If you look at <a href="http://phindee.com/">phindee</a>, you’ll notice that when you open the sidebar and click on a happy hour, the popup on the corresponding marker on the map automatically opens up. Being able to open up a popup programmatically is useful, and below is how I did it.</p>
+<p>If you look at <a href="http://phindee.com/">Phindee</a>, you’ll notice that when you open the sidebar and click on a happy hour, the popup on the corresponding marker on the map automatically opens up. Being able to open up a popup programmatically is useful, and below is how I did it.</p>
 
 <figure class='code'><figcaption><span>happy_hours.js.coffee</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -370,6 +370,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/02/27/im-leaving-linode-for-digitalocean/">I'm Leaving Linode for DigitalOcean</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/01/17/testing-ruby-on-rails-apps/">Testing Ruby on Rails Apps</a>
       </li>
     
@@ -383,10 +387,6 @@
     
       <li class="post">
         <a href="/blog/2013/11/14/using-mapbox-with-ruby-on-rails/">Using MapBox with Ruby on Rails</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/">Phindee: A New Way to Discover Happy Hours in Downtown Portland</a>
       </li>
     
   </ul>

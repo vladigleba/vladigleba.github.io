@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Projects | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/projects/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-02-19T22:16:10-08:00</updated>
+  <updated>2014-02-27T08:52:03-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -24,15 +24,15 @@
 
 <h1>An Idea Is Born</h1>
 
-<p>Of course, eating out all the time can get a bit expensive, and being a college student, I’m definitely not swimming in cash. I usually eat out just for lunch because I hate bringing cold lunch, but even this can quickly add up. So in an effort to save money (and to learn Ruby on Rails), I built a happy hour web application a couple months ago called <a href="http://phindee.com/">phindee</a>.</p>
+<p>Of course, eating out all the time can get a bit expensive, and being a college student, I’m definitely not swimming in cash. I usually eat out just for lunch because I hate bringing cold lunch, but even this can quickly add up. So in an effort to save money (and to learn Ruby on Rails), I built a happy hour web application a couple months ago called <a href="http://phindee.com/">Phindee</a>.</p>
 
-<p>Being a web developer, I always enjoy learning about other people&rsquo;s stacks, so I&rsquo;d like to return the favor and share how phindee works.</p>
+<p>Being a web developer, I always enjoy learning about other people&rsquo;s stacks, so I&rsquo;d like to return the favor and share how Phindee works.</p>
 
 <h1>A Look at the Wiring</h1>
 
-<p>When you visit phindee, you’re presented with a map of the current happy hours in downtown Portland, along with information like the happy hour type and time, as well as the name, phone number, website, and address of its location. And of course, it doesn’t matter what device you use to visit phindee because it’s based on a responsive design.</p>
+<p>When you visit Phindee, you’re presented with a map of the current happy hours in downtown Portland, along with information like the happy hour type and time, as well as the name, phone number, website, and address of its location. And of course, it doesn’t matter what device you use to visit Phindee because it’s based on a responsive design.</p>
 
-<p>Behind the scenes, phindee sits on top of a <a href="http://linode.com/">Linode</a> server powered by <a href="http://www.ubuntu.com/">Ubuntu</a> and served by <a href="http://nginx.org/">Nginx</a> and <a href="http://unicorn.bogomips.org/">Unicorn</a>. I originally had it setup with <a href="https://www.phusionpassenger.com/">Passenger</a>, but since I like to do multiple deploys a day, I got tired of Passenger restarts and site downtime. Unicorn solves this nicely.</p>
+<p>Behind the scenes, Phindee sits on top of a <a href="http://linode.com/">Linode</a> server powered by <a href="http://www.ubuntu.com/">Ubuntu</a> and served by <a href="http://nginx.org/">Nginx</a> and <a href="http://unicorn.bogomips.org/">Unicorn</a>. I originally had it setup with <a href="https://www.phusionpassenger.com/">Passenger</a>, but since I like to do multiple deploys a day, I got tired of Passenger restarts and site downtime. Unicorn solves this nicely.</p>
 
 <h2>Deployment</h2>
 
