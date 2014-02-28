@@ -14,7 +14,7 @@ Fast forward to today and [Phindee](http://www.phindee.com/) is now running on D
 
 # What’s so Cool about DigitalOcean?
 
-The single most important reason that made me move to DigitalOcean was their billing policy. Let me explain.
+I was drawn to DigitalOcean due to one killer feature, and I would've moved because of this one feature alone: their billing policy. Let me explain.
 
 ## Flexible Billing
 
