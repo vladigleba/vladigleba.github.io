@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-02-27T22:09:10-08:00</updated>
+  <updated>2014-02-27T22:16:51-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -60,7 +60,7 @@
 
 <h1>A Word About Future Posts</h1>
 
-<p>Now that I’ve successfully moved Phindee over to DigitalOcean, I will use the next two posts to show you how I went about deploying Phindee from scratch. This is how I plan on breaking it down:</p>
+<p>Now that I’ve successfully moved Phindee over to DigitalOcean, I will use the next three posts to show you how I went about deploying Phindee from scratch. This is how I plan on breaking it down:</p>
 
 <ul>
 <li>Deploying Phindee, Part 1: Securing the Server</li>
