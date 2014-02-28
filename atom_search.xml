@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-02-27T19:48:06-08:00</updated>
+  <updated>2014-02-27T22:09:10-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -63,12 +63,13 @@
 <p>Now that I’ve successfully moved Phindee over to DigitalOcean, I will use the next two posts to show you how I went about deploying Phindee from scratch. This is how I plan on breaking it down:</p>
 
 <ul>
-<li>Deploying Phindee, Part 1: Setting Up the Server</li>
-<li>Deploying Phindee, Part 2: Setting Up Capistrano</li>
+<li>Deploying Phindee, Part 1: Securing the Server</li>
+<li>Deploying Phindee, Part 2: Settting up the Server</li>
+<li>Deploying Phindee, Part 3: Configuring Capistrano</li>
 </ul>
 
 
-<p>I will publish part 1 next week, while part 2 will come the following week. Stay tuned!</p>
+<p>I&rsquo;ll publish part 1 next week, part 2 the following week, and part 3 the week after that. Stay tuned!</p>
 ]]></content>
   </entry>
   
