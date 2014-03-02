@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Design | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/design/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-03-02T12:01:39-08:00</updated>
+  <updated>2014-03-02T12:28:40-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -57,7 +57,7 @@ font-style: normal;
 <p>}
 ```</p>
 
-<p>Note that the above declaration uses the <code>url()</code> methods by default to specify the font’s location. If you’re using the <a href="http://sass-lang.com/">SASS</a> or <a href="http://lesscss.org/">LESS</a> pre-compiler, you’ll want to change those methods to <code>font-url()</code>, or the code might not work.</p>
+<p>Note that the above declaration uses the <code>url()</code> methods by default to specify the font’s location. In order to make this work with the Rails Asset Pipeline, you’ll want to change those methods to <code>asset-url()</code>, or the fonts might not load.</p>
 
 <p>Now all that&rsquo;s left is to declare our font inside whatever CSS file is appropriate using the <code>font-family</code> property, like so:</p>
 
