@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Typography | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/typography/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-03-02T11:51:46-08:00</updated>
+  <updated>2014-03-02T12:01:39-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -44,12 +44,12 @@
 <p>``` scss fonts.css.scss
 @font-face {</p>
 
-<pre><code>font-family: 'action_manregular';
-src: url('Action_Man-webfont.eot');
-src: url('Action_Man-webfont.eot?#iefix') format('embedded-opentype'),
-       url('Action_Man-webfont.woff') format('woff'),
-       url('Action_Man-webfont.ttf') format('truetype'),
-       url('Action_Man-webfont.svg#action_manregular') format('svg');
+<pre><code>font-family: 'Action Manregular';
+src: asset-url('Action_Man-webfont.eot');
+src: asset-url('Action_Man-webfont.eot?#iefix') format('embedded-opentype'),
+       asset-url('Action_Man-webfont.woff') format('woff'),
+       asset-url('Action_Man-webfont.ttf') format('truetype'),
+       asset-url('Action_Man-webfont.svg#action_manregular') format('svg');
 font-weight: normal;
 font-style: normal;
 </code></pre>
@@ -62,7 +62,7 @@ font-style: normal;
 <p>Now all that&rsquo;s left is to declare our font inside whatever CSS file is appropriate using the <code>font-family</code> property, like so:</p>
 
 <p><code>scss base.css.scss
-p { font-family: 'action_manregular'; }
+p { font-family: 'Action Manregular'; }
 </code></p>
 
 <p>Note that my font name matches the font name inside the <code>@font-face</code> <code>font-family</code> declaration. If names don’t match exactly, it might not work.</p>
