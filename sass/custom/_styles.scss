@@ -451,24 +451,26 @@ body {
   h2 {
     @extend .sans-serif-font-bold;
     color: $secondary-text-color;
-    font-size: 38.319px;
-    font-size: 1.916rem;
+    font-size: 50.22px;
+    font-size: 2.511rem; /* 2.618 - 0.107 */
   }
   
   article {
     @extend .margin-bottom-larger;
     
     h1 {
-      font-size: 37.08px;
-      font-size: 1.854rem; /* 1.618 * 0.236 */
+      font-size: 38.319px;
+      font-size: 1.916rem;
       line-height: 38.319px;
       line-height: 1.916rem;
+      padding-bottom: 4.722px;
+      padding-bottom: 0.236rem;
       margin: 0;
     }
   }
   
   time, footer {
-    @extend .font-size-small;
+    @extend .font-size-medium;
     @extend .sans-serif-font;
     color: $secondary-text-color;
     display: inline;
@@ -694,7 +696,7 @@ article {
   
   body {
     > header {
-      margin: 52.358px 0;
+      margin: 44.401px 0;
       margin: 2.618rem 0;
     }
   }
@@ -702,13 +704,13 @@ article {
   
   nav {
     border-top: none;
-    margin-bottom: 52.358px;
+    margin-bottom: 44.401px;
     margin-bottom: 2.618rem;
     
     ul {
       border-top: 2px solid #808080;
       border-bottom: 1px solid $line-color;
-      padding: 20px 0;
+      padding: 16.96px 0;
       padding: 1rem 0;
     }
     
@@ -718,15 +720,15 @@ article {
     }
     
     form {
-      margin-bottom: 23.683px;
+      margin-bottom: 20.08px;
       margin-bottom: 1.184rem;
       
       input.search {
-        padding-top: 9.046px;
+        padding-top: 7.66px;
         padding-top: 0.452rem;
-        padding-bottom: 9.046px;
+        padding-bottom: 7.66px;
         padding-bottom: 0.452rem;
-        font-size: 18.093px;
+        font-size: 15.349px;
         font-size: 0.905em; /* 0.732 + 0.173 */
       }
     }
@@ -742,27 +744,27 @@ article {
 
 @media screen and (max-width: 480px) {
   body > header {
-    margin: 38.319px 0;
+    margin: 32.495px 0;
     margin: 1.916rem 0; 
     
     h1 {
-      font-size: 43.92px;
+      font-size: 37.244px;
       font-size: 2.196rem; /* 1.916 + 0.236 */
     }
     
     h2 {
-      font-size: 18.093px;
+      font-size: 15.349px;
       font-size: 0.905rem; /* 0.732 + 0.173 */
     }
   }
   
   
   nav {
-    margin-bottom: 38.319px;
+    margin-bottom: 32.495px;
     margin-bottom: 1.916rem;
     
     ul {
-      padding: 14.637px 0;
+      padding: 12.415px 0;
       padding: 0.732rem 0;
       
       li {
@@ -770,13 +772,13 @@ article {
       }
       
       li + li {
-        padding-left: 9.046px;
+        padding-left: 7.66px;
         padding-left: 0.452rem;
       }
     }
     
     form {
-      margin-bottom: 20px;
+      margin-bottom: 16.96px;
       margin-bottom: 1rem;
     }
   }
@@ -786,12 +788,24 @@ article {
     width: 70%;
   }
   
-  #blog-archives article {
+  #blog-archives {
+    h2 {
+      font-size: 40.161px;
+      font-size: 2.368rem;
+    }
+    
+    article {
     margin-left: 0;
+    
+      h1 {
+        font-size: 27.441px;
+        font-size: 1.618rem;
+      }
+    }
   }
   
   .blog-index > article {
-    margin-bottom: 93.76px !important;
+    margin-bottom: 85.071px !important;
     margin-bottom: 5.016rem !important; /* 4.236 + 0.452 */
   }
   
@@ -806,29 +820,29 @@ article {
   article {
     header {
       h1 {
-        font-size: 38.319px;
+        font-size: 32.495px;
         font-size: 1.916rem; 
-        line-height: 43.92px;
+        line-height: 37.244px;
         line-height: 2.196rem; /* 1.916 + 0.28 */
       }
     }
     
     footer > p.meta {
-      font-size: 19.359px;
+      font-size: 16.417px;
       font-size: 0.968rem; /* 0.732 + 0.236 */
     }
     
     .entry-content {
       h1 {
-        font-size: 31.32px;
+        font-size: 26.559px;
         font-size: 1.566rem; /* 1.184 + 0.382 */
-        line-height: 38.319px;
+        line-height: 32.495px;
         line-height: 1.916rem;
       }
       
       h2 {
-        font-size: 23.683px;
-        font-size: 1.357rem;
+        font-size: 23.015px;
+        font-size: 1.357rem; /* 1.184 + 0.173 */
       }
     }
   }
