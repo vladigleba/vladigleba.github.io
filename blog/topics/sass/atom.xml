@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Sass | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/sass/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-03-02T12:28:40-08:00</updated>
+  <updated>2014-03-02T12:30:08-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -44,7 +44,7 @@
 <p>``` scss fonts.css.scss
 @font-face {</p>
 
-<pre><code>font-family: 'Action Manregular';
+<pre><code>font-family: 'action_manregular';
 src: asset-url('Action_Man-webfont.eot');
 src: asset-url('Action_Man-webfont.eot?#iefix') format('embedded-opentype'),
        asset-url('Action_Man-webfont.woff') format('woff'),
@@ -62,7 +62,7 @@ font-style: normal;
 <p>Now all that&rsquo;s left is to declare our font inside whatever CSS file is appropriate using the <code>font-family</code> property, like so:</p>
 
 <p><code>scss base.css.scss
-p { font-family: 'Action Manregular'; }
+p { font-family: 'action_manregular'; }
 </code></p>
 
 <p>Note that my font name matches the font name inside the <code>@font-face</code> <code>font-family</code> declaration. If names don’t match exactly, it might not work.</p>

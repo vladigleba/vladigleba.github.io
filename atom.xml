@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-03-02T12:28:40-08:00</updated>
+  <updated>2014-03-02T12:30:08-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -465,7 +465,7 @@
 <span class='line-number'>9</span>
 <span class='line-number'>10</span>
 </pre></td><td class='code'><pre><code class='scss'><span class='line'><span class="k">@font-face</span> <span class="p">{</span>
-</span><span class='line'>    <span class="na">font-family</span><span class="o">:</span> <span class="s1">&#39;</span><span class="s2">Action Manregular&#39;</span><span class="p">;</span>
+</span><span class='line'>    <span class="na">font-family</span><span class="o">:</span> <span class="s1">&#39;</span><span class="s2">action_manregular&#39;</span><span class="p">;</span>
 </span><span class='line'>    <span class="na">src</span><span class="o">:</span> <span class="nf">asset-url</span><span class="p">(</span><span class="s1">&#39;</span><span class="s2">Action_Man-webfont.eot&#39;</span><span class="p">);</span>
 </span><span class='line'>    <span class="na">src</span><span class="o">:</span> <span class="nf">asset-url</span><span class="p">(</span><span class="s1">&#39;</span><span class="s2">Action_Man-webfont.eot?#iefix&#39;</span><span class="p">)</span> <span class="nf">format</span><span class="p">(</span><span class="s1">&#39;</span><span class="s2">embedded-opentype&#39;</span><span class="p">)</span><span class="o">,</span>
 </span><span class='line'>           <span class="nf">asset-url</span><span class="p">(</span><span class="s1">&#39;</span><span class="s2">Action_Man-webfont.woff&#39;</span><span class="p">)</span> <span class="nf">format</span><span class="p">(</span><span class="s1">&#39;</span><span class="s2">woff&#39;</span><span class="p">)</span><span class="o">,</span>
@@ -482,7 +482,7 @@
 <p>Now all that&rsquo;s left is to declare our font inside whatever CSS file is appropriate using the <code>font-family</code> property, like so:</p>
 
 <figure class='code'><figcaption><span>base.css.scss</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='scss'><span class='line'><span class="nt">p</span> <span class="p">{</span> <span class="na">font-family</span><span class="o">:</span> <span class="s1">&#39;</span><span class="s2">Action Manregular&#39;</span><span class="p">;</span> <span class="p">}</span>
+</pre></td><td class='code'><pre><code class='scss'><span class='line'><span class="nt">p</span> <span class="p">{</span> <span class="na">font-family</span><span class="o">:</span> <span class="s1">&#39;</span><span class="s2">action_manregular&#39;</span><span class="p">;</span> <span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
