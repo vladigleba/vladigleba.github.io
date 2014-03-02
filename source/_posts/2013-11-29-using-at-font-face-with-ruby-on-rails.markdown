@@ -41,7 +41,7 @@ I downloaded Font Squirrel’s "Action Man" font as an example, and below is the
 }
 ```
 
-Note that the above declaration uses the `url()` methods by default to specify the font’s location. If you’re using the [SASS](http://sass-lang.com/) or [LESS](http://lesscss.org/) pre-compiler, you’ll want to change those methods to `font-url()`, or the code might not work.
+Note that the above declaration uses the `url()` methods by default to specify the font’s location. In order to make this work with the Rails Asset Pipeline, you’ll want to change those methods to `asset-url()`, or the fonts might not load.
 
 Now all that's left is to declare our font inside whatever CSS file is appropriate using the `font-family` property, like so: 
 
