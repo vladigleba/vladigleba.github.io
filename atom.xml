@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-03-02T12:30:08-08:00</updated>
+  <updated>2014-03-03T21:59:44-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -59,16 +59,17 @@
 
 <h1>A Word About Future Posts</h1>
 
-<p>Now that I’ve successfully moved Phindee over to DigitalOcean, I will use the next three posts to show you how I went about deploying Phindee from scratch. This is how I plan on breaking it down:</p>
+<p>Now that I’ve successfully moved Phindee over to DigitalOcean, I will use the next four posts to show you how I went about deploying Phindee from scratch. This is how I plan on breaking it down:</p>
 
 <ul>
 <li>Deploying Rails Apps, Part 1: Securing the Server</li>
 <li>Deploying Rails Apps, Part 2: Setting up the Server</li>
-<li>Deploying Rails Apps, Part 3: Configuring Capistrano</li>
+<li>Deploying Rails Apps, Part 3: Configuring Nginx and Unicorn</li>
+<li>Deploying Rails Apps, Part 4: Configuring Capistrano</li>
 </ul>
 
 
-<p>I&rsquo;ll publish part 1 next week, part 2 the following week, and part 3 the week after that. Stay tuned!</p>
+<p>I&rsquo;ll publish a part per week, starting with part 1 next week. Stay tuned!</p>
 ]]></content>
   </entry>
   
