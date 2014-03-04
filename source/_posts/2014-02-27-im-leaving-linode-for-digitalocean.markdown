@@ -46,10 +46,11 @@ Make no mistake, I’m leaving as a happy customer who was merely tempted and ev
 
 # A Word About Future Posts
 
-Now that I’ve successfully moved Phindee over to DigitalOcean, I will use the next three posts to show you how I went about deploying Phindee from scratch. This is how I plan on breaking it down:
+Now that I’ve successfully moved Phindee over to DigitalOcean, I will use the next four posts to show you how I went about deploying Phindee from scratch. This is how I plan on breaking it down:
 
 - Deploying Rails Apps, Part 1: Securing the Server
 - Deploying Rails Apps, Part 2: Setting up the Server
-- Deploying Rails Apps, Part 3: Configuring Capistrano
+- Deploying Rails Apps, Part 3: Configuring Nginx and Unicorn
+- Deploying Rails Apps, Part 4: Configuring Capistrano
 
-I'll publish part 1 next week, part 2 the following week, and part 3 the week after that. Stay tuned!
+I'll publish a part per week, starting with part 1 next week. Stay tuned!

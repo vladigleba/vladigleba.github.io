@@ -30,7 +30,7 @@ I downloaded Font Squirrel’s "Action Man" font as an example, and below is the
 
 ``` scss fonts.css.scss
 @font-face {
-    font-family: 'Action Manregular';
+    font-family: 'action_manregular';
     src: asset-url('Action_Man-webfont.eot');
     src: asset-url('Action_Man-webfont.eot?#iefix') format('embedded-opentype'),
            asset-url('Action_Man-webfont.woff') format('woff'),
@@ -46,7 +46,7 @@ Note that the above declaration uses the `url()` methods by default to specify t
 Now all that's left is to declare our font inside whatever CSS file is appropriate using the `font-family` property, like so: 
 
 ``` scss base.css.scss
-p { font-family: 'Action Manregular'; }
+p { font-family: 'action_manregular'; }
 ```
 
 Note that my font name matches the font name inside the `@font-face` `font-family` declaration. If names don’t match exactly, it might not work.
