@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-03-03T21:59:44-08:00</updated>
+  <updated>2014-03-04T22:08:48-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -59,7 +59,7 @@
 
 <h1>A Word About Future Posts</h1>
 
-<p>Now that I’ve successfully moved Phindee over to DigitalOcean, I will use the next four posts to show you how I went about deploying Phindee from scratch. This is how I plan on breaking it down:</p>
+<p>Now that I’ve successfully moved Phindee over to DigitalOcean, I will use the next four posts to show you how I went about deploying Phindee from scratch. This is how I&rsquo;ll break it down:</p>
 
 <ul>
 <li>Deploying Rails Apps, Part 1: Securing the Server</li>
@@ -69,7 +69,7 @@
 </ul>
 
 
-<p>I&rsquo;ll publish a part per week, starting with part 1 next week. Stay tuned!</p>
+<p>I plan on publishing one part per week, starting with part 1 next week. If you&rsquo;d like to be notified when each post is out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and you&rsquo;ll get the complete post delivered right to your inbox as soon as it comes out!</p>
 ]]></content>
   </entry>
   
