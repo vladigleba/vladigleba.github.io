@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Deployment | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/deployment/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-03-06T10:16:54-08:00</updated>
+  <updated>2014-03-06T15:13:14-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -18,14 +18,14 @@
     <link href="http://vladigleba.github.io/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/"/>
     <updated>2014-03-05T11:18:00-08:00</updated>
     <id>http://vladigleba.github.io/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server</id>
-    <content type="html"><![CDATA[<p>Setting up a Rails server from scratch can be a daunting task. I remember my first attempt; it was a multi-day process full of frustration, things not working, me not understanding why, and a whole lot of googling. In an effort to make this experience less painful for those new to Rails, I’d like to share the process I went through to deploy Phindee to a VPS (Virtual Private Server).</p>
+    <content type="html"><![CDATA[<p>Setting up a Rails server from scratch can be a daunting task. I remember my first attempt; it was a multi-day process full of frustration, things not working, me not understanding why, and a whole lot of googling. In an effort to make this experience less painful for those new to Rails, I’d like to share the process I went through to deploy <a href="http://phindee.com/">Phindee</a> to a VPS (Virtual Private Server).</p>
 
 <!-- more -->
 
 
 <h1>Choosing a VPS</h1>
 
-<p>Phindee is currently running on DigitalOcean servers, but there are other options available as well, like Linode, which was my previous VPS provider. If you’re new to deployment, <a href="http://digitalocean.com/">I recommend DigitalOcean</a> because it’ll be ideally suited to your needs, due their more flexible billing policy and cheaper plans, but any VPS provider will do.</p>
+<p>Phindee is currently running on DigitalOcean servers, but there are other options available as well, like Linode, which was my previous VPS provider. If you’re new to deployment, I recommend <a href="http://digitalocean.com/">DigitalOcean</a> because it’ll be ideally suited to your needs, due their more flexible billing policy and cheaper plans, but any VPS provider will do.</p>
 
 <p>Once you decide on a VPS, you’ll then signup for a plan. If you’re just starting out, the cheapest plan available will be enough; otherwise, choose a plan that fits your needs. Once you have an account, you’ll be able to create your server, and typically, you’ll have a list of operating systems to choose from. DigitalOcean offers a wide variety of Linux distributions; I chose the latest 32-bit version of Ubuntu for Phindee, and I recommend you do the same if you&rsquo;re new to deployment.</p>
 
