@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Rails | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/rails/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-03-04T22:10:02-08:00</updated>
+  <updated>2014-03-05T16:08:01-08:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -12,6 +12,181 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Deploying Rails Apps, Part 1: Securing the Server]]></title>
+    <link href="http://vladigleba.github.io/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/"/>
+    <updated>2014-03-05T11:18:00-08:00</updated>
+    <id>http://vladigleba.github.io/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server</id>
+    <content type="html"><![CDATA[<p>Setting up a Rails server from scratch can be a daunting task. I remember my first attempt; it was a multi-day process full of frustration, things not working, me not understanding why, and a whole lot of googling. In an effort to make this experience less painful for those new to Rails, I’d like to share the process I went through to deploy Phindee to a VPS (Virtual Private Server).</p>
+
+<!-- more -->
+
+
+<h1>Choosing a VPS</h1>
+
+<p>Phindee is currently running on DigitalOcean servers, but there are other options available as well, like Linode, which was my previous VPS provider. If you’re new to deployment, <a href="http://digitalocean.com/">I recommend DigitalOcean</a> because it’ll be ideally suited to your needs, due their more flexible billing policy and cheaper plans, but any VPS provider will do.</p>
+
+<p>Once you decide on a VPS, you’ll then signup for a plan. If you’re just starting out, the cheapest plan available will be enough; otherwise, choose a plan that fits your needs. Once you have an account, you’ll be able to create your server, and typically, you’ll have a list of operating systems to choose from. DigitalOcean offers a wide variety of Linux distributions; I chose the latest 32-bit version of Ubuntu for Phindee, and I recommend you do the same if you&rsquo;re new to deployment.</p>
+
+<p>The reason why I chose the 32-bit version was because it uses less memory than the 64-bit one. This is something you should consider if you chose one of the cheaper plans with a lower amount of memory, but if memory is not an issue, go with the 64-bit since you’ll have better performance (<a href="howtoubuntu.org/how-to-decide-if-you-should-use-32bit-or-64bit-ubuntu">see this page</a> to learn more).</p>
+
+<h1>Logging In</h1>
+
+<p>Once you create your instance, you’ll be given your server’s IP address and password. If you’re on Linux or a Mac, open up Terminal and login. (If you&rsquo;re on Windows, you&rsquo;ll need to download Putty.) To login using Terminal, use the following command, replacing the Xs with your own IP address:</p>
+
+<p><code>bash
+ssh root@xxx.xxx.xxx.xxx
+</code></p>
+
+<p>This command uses SSH to connect to your server as the user <code>root</code>. If you’re unfamiliar with SSH, it stands for Secure Shell, and it’s basically a network protocol that allows two computers to securely communicate with one another. There are many other protocols out there, such as HTTP, which allows browsers to communicate with web servers.</p>
+
+<p>The first time you attempt to login, you’ll be asked if you’re sure you want to continue connecting; type &ldquo;yes&rdquo;. Then enter the password for the <code>root</code> user, and you’ll be logged in.</p>
+
+<h1>Groups and Privileges</h1>
+
+<p>Now that you’re in, the first thing we’ll do is change the password for <code>root</code> using the following command:</p>
+
+<p><code>bash
+passwd
+</code></p>
+
+<p>This will prompt you to enter a new password twice. Next, we’ll create a new group called <code>deployers</code>, which will allow us to easily manage the users with deployment privileges:</p>
+
+<p><code>bash
+groupadd deployers
+</code></p>
+
+<p>Now we’ll create a new user called <code>bob</code>, and assign him to the <code>deployers</code> group we just created above:</p>
+
+<p><code>bash
+adduser bob —ingroup deployers
+</code></p>
+
+<p>This command will prompt you to enter a password for this user, in addition to some other information afterwards, but after you enter the password twice, feel free to just press “Enter” for the other fields, as they’re not strictly necessary. By the way, don’t use the same password for both <code>root</code> and the user you just created above or <a href="http://www.cartoonstock.com/lowres/computers-computer-self_destruct-explode-username-password-ksm0529l.jpg">bad things will happen</a>.</p>
+
+<p>Next thing we’ll do is open the <code>sudoers</code> file containing a list of users and groups who have root privileges:</p>
+
+<p><code>bash
+nano /etc/sudoers
+</code></p>
+
+<p>and we’ll add the following line into it:</p>
+
+<p><code>text sudoers
+%deployers      ALL=(ALL) ALL
+</code></p>
+
+<p>You can then exit the nano text editor by typing &ldquo;Control-X&rdquo; and typing &ldquo;Y&rdquo; when asked if you want to save. In case you’re wondering, the line we just added above will give the users in the <code>deployers</code> group the ability to run commands as <code>root</code>. If this is new to you, I can explain.</p>
+
+<p>Running commands while logged in as <code>root</code> is considered bad practice because, as the superuser, <code>root</code> can run any and all commands, and since there is no undo functionality in Unix, one accidental bad command and your system can be seriously disrupted. That’s why we created a separate user called <code>bob</code>, which will have deployment privileges and nothing else.</p>
+
+<p>But why did we create a <code>deployers</code> group and added <code>bob</code> into it? Well, first of all, we could’ve avoided creating a group altogether and just added <code>bob</code> to the <code>sudoers</code> file and given <em>him</em> <code>root</code> privileges instead. But let’s say I’m working on a project with a friend and she wants to be able to deploy as well. I would have to then add her to the <code>sudoers</code> file too (to give her <code>root</code> privileges), and the file would keep growing every time a new user with deployment privileges needed to be added. This would be a nightmare to maintain.</p>
+
+<p>A better way to go about this is to create a group called <code>deployers</code>, give the group <code>root</code> privileges, and then add users to this group. This way, whenever I’d need to add new users with deployment privileges, I would just need to add them to the <code>deployers</code> group. This keeps the <code>sudoers</code> file clean and organized, while allowing me to easily manage the members of the group as well. I could, for example, easily revoke some rights for all members of the <code>deployers</code> group at the same time, instead of doing it one user at a time, or I could simply remove a user from the <code>deployers</code> group if I discover, for example, that he still creates &ldquo;1234&rdquo; passwords for his accounts.</p>
+
+<p>Okay, but why is it necessary for users and groups to have <code>root</code> privileges? Well, these privileges allow a user, say <code>bob</code>, to run commands he otherwise would not be able to run due to not having the necessary permissions, which arises from the fact that the user is not <code>root</code> and therefore has limited privileges. But given <code>root</code> privileges, or being part of a group with <code>root</code> privileges, enables <code>bob</code> to run these commands simply by preceding the command with <code>sudo</code>. He’ll then be prompted to enter his password, and the command will run.</p>
+
+<p>That’s the reasoning behind giving the <code>deployers</code> group <code>root</code> privileges and adding <code>bob</code> into it. Later on, <code>bob</code> will need these privileges during the deployment process.</p>
+
+<h1>Configuring SSH Access</h1>
+
+<p>Now we’re ready for the next step in securing our server, and we’ll start by opening the <code>ssh_config</code> file:</p>
+
+<p><code>bash
+nano /etc/ssh/sshd_config
+</code></p>
+
+<p>This file contains a number of rules that define who can login to the server and in what way. The first thing we’ll do is change the port number with which users will login; the default port that servers listen on is 22, but it’s wise to change it to another value so that any potential hackers have some extra work to do in figuring out the correct one; you can choose any port number from 1025 to 65536. Once you have your number, look for a line that looks like the following:</p>
+
+<p><code>text sshd_config
+Port 22
+</code></p>
+
+<p>and change its port number to the one you picked. Make sure you make a note of the new port number because you’ll need it for future login.</p>
+
+<p>Next, look for another line in the file that looks like this:</p>
+
+<p><code>text sshd_config
+PermitRootLogin yes
+</code></p>
+
+<p>and change the “yes” to a “no”; this prevents <code>root</code> user login, which means that any potential hackers will need to know the name of one of the users on the server to actually login.</p>
+
+<p>We can even go a step further and define exactly which existing users are able to login. Since I only want <code>bob</code> to have login access, I’ll add the following line to the end of the file:</p>
+
+<p><code>text sshd_config
+AllowUsers bob
+</code></p>
+
+<p>You could even specify a space-separated list of users here, if you have more than one user in need of login access.</p>
+
+<p>Alright, there is one final line that we’ll add to the end of our file:</p>
+
+<p><code>text sshd_config
+UseDNS no
+</code></p>
+
+<p>This line disables hostname lookup, which can lead to a delay of up to 30 seconds when logging in with <code>ssh</code>. Disabling it will save you time and do no harm.</p>
+
+<p>To put these changes into effect, we’ll reload SSH, like so:</p>
+
+<p><code>bash
+/etc/init.d/sshd reload
+</code></p>
+
+<p>Now we’re ready to test the configurations we just made to make sure they work. I’ll open a new shell in Terminal, without closing my current one, and try to login as the user <code>bob</code> on the port I specified in <code>sshd_config</code>:</p>
+
+<p><code>bash
+ssh -p 23523 bob@xxx.xxx.xxx.xxx
+</code></p>
+
+<p>Make sure you change the above command to match the user and port number you specified in your own <code>sshd_config</code> file, or it obviously won’t work. The above command will then prompt you to enter that user’s password. If you login successfully, congratulations! Your configuration is correct! You can close your previous shell and just continue using the current one; otherwise, you’ll need to go back and double check your <code>sshd_config</code> file configurations.</p>
+
+<h1>Enabling SSH Authentication</h1>
+
+<p>The final thing we’ll do to secure our server is enable SSH authentication, which will allow us to use SSH keys to authenticate with the server, instead of the traditional password authentication. This is a more secure approach because password authentication involves sending your password over the network, and this makes it vulnerable to being intercepted and cracked. It’s also more convenient since you won’t need to enter it every time you want to login. But before we move on, I’d like to briefly explain how SSH keys work and what makes them more secure.</p>
+
+<p>All SSH keys come in pairs: one private and the other public. The private key is stored locally and needs to be carefully guarded, while the public key is stored on the remote server to which you will be logging in. Anytime you want to connect to the server, it will use the public key to create a challenge, which it will then send over to you, and only you, the holder of the private key, will be able to correctly understand and solve the challenge. Your response is then sent back to the server, and if it’s correct, it’ll grant you access.</p>
+
+<p>If you don’t already have an SSH key, you can generate it with the following command:</p>
+
+<p><code>bash
+ssh-keygen
+</code></p>
+
+<p>It’ll prompt you to enter a path and passphrase, but the default path is fine, and since we won’t be setting up a passphrase, you can just press “enter” for both. This will store both the private and public keys in the <code>~/.ssh/</code> directory, and they will be named according to the type of encryption used, the default being RSA authentication. Your private key will be stored in a file called <code>id_rsa</code>, while <code>id_rsa.pub</code> will hold your public key.</p>
+
+<p>Having our keys generated, we’re now ready to copy our public key over to the remote server using the <code>ssh-copy-id</code> command. (If you’re on a Mac, and you don’t have <code>ssh-copy-id</code> installed, you can install it using Homebrew with <code>brew install ssh-copy-id</code>.) Below is the full <code>ssh-copy-id</code> command that will copy our key over to the server:</p>
+
+<p><code>bash
+ssh-copy-id -i ~/.ssh/id_rsa.pub -p 23523 bob@xxx.xxx.xxx.xxx
+</code></p>
+
+<p>This will create a new file called <code>authorized_keys</code> on your remote server inside the <code>~/.ssh</code> directory and store your public key in it. If you now try to <code>ssh</code> into your server, you should be authenticated and logged in without entering your password.</p>
+
+<p>Going through this process might seem a bit tedious and time consuming at first, but after you’ve done it a couple times, it will get easier and hopefully become second nature. Security is important, and the time you spend learning and implementing it is time well spent.</p>
+
+<h1>Summary</h1>
+
+<p>To summarize, we made our server more secure by:</p>
+
+<ol>
+<li>limiting <code>root</code> privileges to just members of the <code>deployers</code> group</li>
+<li>setting a custom port with which to connect</li>
+<li>disabling <code>root</code> login</li>
+<li>specifying exactly which user is able to login</li>
+<li>enabling SSH authentication</li>
+</ol>
+
+
+<p>Of course, this doesn’t mean our server is “unhackable” by any means, but it is significantly more secure than it was before. You can now sleep more peacefully knowing that any future hackers have at least some of their work cut out for them.</p>
+
+<p>In “Deploying Rails Apps, Part 2,” we’ll start setting up the server by installing the technology stack behind Phindee. If you’d like to be notified when its out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and you&rsquo;ll get the complete post delivered right to your inbox as soon as it&rsquo;s released.</p>
+
+<p>Stay hungry. Stay foolish.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Testing Ruby on Rails Apps]]></title>

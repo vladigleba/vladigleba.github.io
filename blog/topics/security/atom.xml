@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Topic: Deployment | Hungry and Foolish]]></title>
-  <link href="http://vladigleba.github.io/blog/topics/deployment/atom.xml" rel="self"/>
+  <title><![CDATA[Topic: Security | Hungry and Foolish]]></title>
+  <link href="http://vladigleba.github.io/blog/topics/security/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
   <updated>2014-03-05T16:08:01-08:00</updated>
   <id>http://vladigleba.github.io/</id>
@@ -185,66 +185,6 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub -p 23523 bob@xxx.xxx.xxx.xxx
 <p>In “Deploying Rails Apps, Part 2,” we’ll start setting up the server by installing the technology stack behind Phindee. If you’d like to be notified when its out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and you&rsquo;ll get the complete post delivered right to your inbox as soon as it&rsquo;s released.</p>
 
 <p>Stay hungry. Stay foolish.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[I'm Leaving Linode for DigitalOcean]]></title>
-    <link href="http://vladigleba.github.io/blog/2014/02/27/im-leaving-linode-for-digitalocean/"/>
-    <updated>2014-02-27T08:16:00-08:00</updated>
-    <id>http://vladigleba.github.io/blog/2014/02/27/im-leaving-linode-for-digitalocean</id>
-    <content type="html"><![CDATA[<p>A few weeks ago, I ran into a <a href="http://blog.schneidmaster.com/digital-ocean-vs-linode/">blog post</a> (and the resulting <a href="https://news.ycombinator.com/item?id=7021664">Hacker News discussion</a>) comparing two popular VPS providers: <a href="https://www.linode.com/">Linode</a> and <a href="https://www.digitalocean.com/">DigitalOcean</a>. Up until that point, I was a happy Linode customer for over two years. I had heard about DigitalOcean previously, but never considered trying it since I was happy with Linode. This post, however, intrigued me enough to try DigitalOcean out.</p>
-
-<!-- more -->
-
-
-<p>Fast forward to today and <a href="http://www.phindee.com/">Phindee</a> is now running on DigitalOcean servers!</p>
-
-<h1>What’s so Cool about DigitalOcean?</h1>
-
-<p>I was drawn to DigitalOcean due to one killer feature, and I would&rsquo;ve moved because of this one feature alone: their billing policy. Let me explain.</p>
-
-<h2>Flexible Billing</h2>
-
-<p>When you create a new instance with Linode, you’re immediately charged for the entire month; if you then decide to destroy that instance a few days later, Linode will return a large portion of that month’s payment as Linode credit. With DigitalOcean, however, you’re only charged for what you use&mdash;no more, no less&mdash;so if you spin up an instance and decide to delete it the next day, you’ll be charged only for those few hours you used up.</p>
-
-<p>I’ve lost track of the number of instances I’ve temporarily spun up since switching over to DigitalOcean three weeks ago, but I can count the number of times I did this with Linode on one of my two hands. The benefits of this flexibility are obvious: higher incentive to experiment with new technologies, test prototypes, and tinker with new ideas.</p>
-
-<p>But that’s not all.</p>
-
-<h2>Lower Starter Plan</h2>
-
-<p>Besides flexible billing, I also like DigitalOcean’s plans, which I find to be perfect for apps with small amounts of traffic. Linode’s plans start at $20 a month and paying that much to host apps that receive less than 500 visits a month seemed a little ridiculous to me.</p>
-
-<p>DigitalOcean’s plans start at $5 a month, which gives you 512MB of memory, a 20GB SSD disk, and 1TB of transfer. Linode’s basic $20 a month plan gives you 1024MB of RAM, a 48GB disk, and 2TB of transfer, which is similar to DigitalOcean’s $10 plan. In effect, DigitalOcean offers the same thing at half the price, and this carries over to the more expensive plans as well.</p>
-
-<p>In effect, Linode’s starter plan seemed a bit overkill for my low traffic apps, while DigitalOcean suited them perfectly, so my choice was easy.</p>
-
-<h1>Credit Where It&rsquo;s Due</h1>
-
-<p>This post, however, would not be complete if I didn’t give credit where it’s due.</p>
-
-<p>During my two years with Linode, I experienced absolutely no down-time; I think this speaks volumes to the quality of their products. I also want to mention their excellent <a href="https://library.linode.com/">library of guides</a>, which I found to be an invaluable resource whenever I needed help configuring my server.</p>
-
-<p>But perhaps the thing their known for the most is their excellent customer service. Although I never had a need to contact support, I’ve only heard good things from other people, and some developers choose Linode solely due to their outstanding customer service.</p>
-
-<p>Now in the interests of fairness, I should mention that Linode’s security record <a href="https://blog.linode.com/2013/04/16/security-incident-update/">is not spotless</a>, and they have been criticized for the way they handled some of their breaches, but I find this to be the exception rather than the norm. As long as this is a rare occurrence, Linode’s other pros outweigh this con.</p>
-
-<p>Make no mistake, I’m leaving as a happy customer who was merely tempted and eventually won over by DigitalOcean’s flexible billing and a lower starter plan. I will have no hesitation coming back if the need arises.</p>
-
-<h1>A Word About Future Posts</h1>
-
-<p>Now that I’ve successfully moved Phindee over to DigitalOcean, I will use the next four posts to show you how I went about deploying Phindee from scratch. This is how I&rsquo;ll break it down:</p>
-
-<ul>
-<li><a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">Deploying Rails Apps, Part 1: Securing the Server</a></li>
-<li>Deploying Rails Apps, Part 2: Setting up the Server</li>
-<li>Deploying Rails Apps, Part 3: Configuring Nginx and Unicorn</li>
-<li>Deploying Rails Apps, Part 4: Configuring Capistrano</li>
-</ul>
-
-
-<p>I plan on publishing one part per week, starting with <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">part 1</a> next week. If you&rsquo;d like to be notified when a post is out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and you&rsquo;ll get the complete post delivered right to your inbox as soon as it comes out!</p>
 ]]></content>
   </entry>
   
