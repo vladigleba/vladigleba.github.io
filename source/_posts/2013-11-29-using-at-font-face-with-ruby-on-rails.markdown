@@ -3,7 +3,7 @@ layout: post
 title: "Using @font-face with Ruby on Rails"
 date: 2013-11-29 11:35
 comments: true
-categories: [Typography, Rails, Design, Sass]
+categories: [Rails, Design, Phindee]
 ---
 
 When I was working on [Phindee](http://phindee.com/), I struggled with adding custom fonts; the asset pipeline had just been released, and it changed how one worked with assets. Perhaps there are others out there struggling with the same thing, which is why I’d like to share what I did and hopefully save some time for a few.

@@ -89,8 +89,8 @@ $border-style: 2px solid $secondary-text-color;
 }
 
 .block-padding {
-  padding: 1px 20px;
-  padding: 1px 1rem;
+  padding: 1px 32.360px;
+  padding: 1px 1.618rem;
 }
 
 .border-style {
@@ -100,8 +100,8 @@ $border-style: 2px solid $secondary-text-color;
 .code-keywords {
   background-color: #eee;
   border-radius: $border-radius-size;
-  padding: 0 7.640px;
-  padding: 0 0.382rem;
+  padding: 0 5.591px;
+  padding: 0 0.28rem;
 }
 
 .button {
@@ -252,13 +252,10 @@ img#portrait {
 // code
 // ------------------------------
 
-figure.code, pre {
+figure.code { 
   @extend .font-size-small;
-  @extend .margin-bottom-large;
   @extend .code-font;
-}
-
-figure.code {
+  
   figcaption {
     margin: 4px 0 10px;
     line-height: 23.683px;
@@ -287,6 +284,9 @@ figure.code {
 
 pre {
   @extend .block-padding;
+  @extend .font-size-small;
+  @extend .code-font;
+  @extend .margin-bottom-large;
   text-align: left;
   
   &.line-numbers {
@@ -579,6 +579,10 @@ article {
     text-align: left;
     margin-left: 20px;
     margin-left: 1rem;
+    
+    a {
+      text-decoration: underline;
+    }
   }
 
   ul {
@@ -594,15 +598,16 @@ article {
     @extend .margin-bottom-large;
     text-align: left;
     
-    > code {
-      @extend .code-keywords;
-      font-size: 17.56px;
-      font-size: 0.878rem; /* 0.732 + 0.146 */
-    }
-    
     a {
       text-decoration: underline;
     }
+  }
+  
+  p > code, li code {
+    @extend .code-keywords;
+    @extend .code-font;
+    font-size: 17.56px;
+    font-size: 0.878rem; /* 0.732 + 0.146 */
   }
   
   // ----- post's footer -----

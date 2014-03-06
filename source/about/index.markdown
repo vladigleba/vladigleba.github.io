@@ -16,6 +16,6 @@ Throughout high school, I continued learning web development on the side, and on
 
 Computer science expanded my horizons and introduced me to many new things, but apart from internships, my exposure to the web was limited. Now that I'm out of college, I'm back to studying web development full-time; the web is moving fast and there are many cool web technologies I want to learn.
 
-I plan on using this blog as means of documenting my progress, and you're welcome to [follow along](http://www.feedblitz.com/f/?Sub=927939&cids=1) if you'd like. My open source work is available on [GitHub](https://github.com/vladigleba) and my work history on [LinkedIn](http://www.linkedin.com/in/vladigleba).
+I plan on using this blog as means of documenting my progress, and you're welcome to [follow along](http://www.feedblitz.com/f/?Sub=927939&cids=1) if you'd like. My open source work is available on [GitHub](https://github.com/vladigleba), my work history on [LinkedIn](http://www.linkedin.com/in/vladigleba), and I'm rarely on [Twitter](https://twitter.com/vladigleba).
 
 And of course, you're always welcome to say hello at <inquiries@vladigleba.com>!
