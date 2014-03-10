@@ -6,13 +6,13 @@ comments: true
 categories: [Rails, Deployment, Security, Phindee]
 ---
 
-Setting up a Rails server from scratch can be a daunting task. I remember my first attempt; it was a multi-day process full of frustration, things not working, me not understanding why, and a whole lot of googling. In an effort to make this experience less painful for those new to Rails, I’d like to share the process I went through to deploy Phindee to a VPS (Virtual Private Server).
+Setting up a Rails server from scratch can be a daunting task. I remember my first attempt; it was a multi-day process full of frustration, things not working, me not understanding why, and a whole lot of googling. In an effort to make this experience less painful for those new to Rails, I’d like to share the process I went through to deploy [Phindee](http://phindee.com/) to a VPS (Virtual Private Server).
 
 <!-- more -->
 
 # Choosing a VPS
 
-Phindee is currently running on DigitalOcean servers, but there are other options available as well, like Linode, which was my previous VPS provider. If you’re new to deployment, [I recommend DigitalOcean](http://digitalocean.com/) because it’ll be ideally suited to your needs, due their more flexible billing policy and cheaper plans, but any VPS provider will do.
+Phindee is currently running on DigitalOcean servers, but there are other options available as well, like Linode, which was my previous VPS provider. If you’re new to deployment, I recommend [DigitalOcean](http://digitalocean.com/) because it’ll be ideally suited to your needs, due their more flexible billing policy and cheaper plans, but any VPS provider will do.
 
 Once you decide on a VPS, you’ll then signup for a plan. If you’re just starting out, the cheapest plan available will be enough; otherwise, choose a plan that fits your needs. Once you have an account, you’ll be able to create your server, and typically, you’ll have a list of operating systems to choose from. DigitalOcean offers a wide variety of Linux distributions; I chose the latest 32-bit version of Ubuntu for Phindee, and I recommend you do the same if you're new to deployment.
 
