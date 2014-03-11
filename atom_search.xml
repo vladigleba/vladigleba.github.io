@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-03-10T12:25:17-07:00</updated>
+  <updated>2014-03-10T21:35:42-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -198,7 +198,7 @@
 
 <p>Of course, this doesn’t mean our server is “unhackable” by any means, but it is significantly more secure than it was before. You can now sleep more peacefully knowing that any future hackers have at least some of their work cut out for them.</p>
 
-<p>In “Deploying Rails Apps, Part 2,” we’ll start setting up the server by installing the technology stack behind Phindee. If you’d like to be notified when its out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and you&rsquo;ll get the complete post delivered right to your inbox as soon as it&rsquo;s released.</p>
+<p>In “Deploying Rails Apps, Part 2,” we’ll start setting up the server by installing the technology stack behind Phindee. If you’d like to be notified when its out, feel free to <a href="http://www.feedblitz.com/f/?sub=927939">subscribe</a>, and you&rsquo;ll get the complete post delivered right to your inbox as soon as it&rsquo;s released.</p>
 
 <p>Stay hungry. Stay foolish.</p>
 ]]></content>
@@ -261,7 +261,7 @@
 </ul>
 
 
-<p>I plan on publishing one part per week, starting with <a href="http://vladigleba.github.io/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">part 1</a> next week. If you&rsquo;d like to be notified when a post is out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and you&rsquo;ll get the complete post delivered right to your inbox as soon as it comes out!</p>
+<p>I plan on publishing one part per week, starting with <a href="http://vladigleba.github.io/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">part 1</a> next week. If you&rsquo;d like to be notified when a post is out, feel free to <a href="http://www.feedblitz.com/f/?sub=927939">subscribe</a>, and you&rsquo;ll get the complete post delivered right to your inbox as soon as it comes out!</p>
 ]]></content>
   </entry>
   
