@@ -1,0 +1,490 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Deploying Rails Apps, Part 2: Setting up the Server - Hungry and Foolish</title>
+  <meta name="author" content="Vladi Gleba">
+
+  
+  <meta name="description" content="In part 1, we decided on a VPS provider, created a new Ubuntu instance, and configured our server to be more secure. Now we’re ready to start setting &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://vladigleba.github.io/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Hungry and Foolish" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37472806-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Hungry and Foolish</a></h1>
+  
+    <h2>Utilizing the power of the web for good</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation">  
+  
+    <form method="get" action="/search.html">
+      <fieldset role="search">
+        <input class="search" name="query" type="text" placeholder="Search..." x-webkit-speech />
+      </fieldset>
+    </form>
+  
+  
+<ul class="main-navigation">
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/blog/topics/projects/">Projects</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a title="subscribe via RSS" rel="subscribe-rss" href="http://www.feedblitz.com/f/?sub=927939">Subscribe</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Deploying Rails Apps, Part 2: Setting Up the Server</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-14T09:45:00-07:00" pubdate data-updated="true">Mar 14<span>th</span>, 2014</time>
+        
+
+<span class="categories">
+  published in 
+  
+    <a class='category' href='/blog/topics/deployment/'>Deployment</a>, <a class='category' href='/blog/topics/phindee/'>Phindee</a>, <a class='category' href='/blog/topics/rails/'>Rails</a>
+  
+</span>
+
+
+        
+          <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>In <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">part 1</a>, we decided on a VPS provider, created a new Ubuntu instance, and configured our server to be more secure. Now we’re ready to start setting it up with the technology stack that’s powering <a href="http://phindee.com/">Phindee</a>. We’ll be installing Node.js, Nginx, PostgreSQL, and rbenv.</p>
+
+<!-- more -->
+
+
+<h1>But First!</h1>
+
+<p>Before we proceed any further, make sure you’re logged in as the user you created in part 1; if you’re already logged in as <code>root</code>, you can switch to the correct user with the following command:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>su - username
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Once logged in, we’ll run the following command to fetch the latest updates for the packages on our system:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo apt-get update
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We’ll follow this up with the command to install the necessary package updates:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo apt-get upgrade
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If the command found any updates to install, it will ask if you want to continue with the install; you can enter “y” to do so. Once it finishes, we’ll be ready begin.</p>
+
+<h1>Setting Timezones and Installing Mail</h1>
+
+<p>We’ll start by setting the correct timezone:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo dpkg-reconfigure tzdata
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You’ll be asked to choose your country and timezone, after which your server’s local time will be displayed; if it displays the correct time, you’re good to go.</p>
+
+<p>We’ll install <code>postfix</code> and <code>telnet</code> next to enable our Rails app to send email:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo apt-get -y install telnet postfix
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Feel free to just press “enter” through all the prompts and keep all the defaults.</p>
+
+<p>Next, we’ll install some useful packages we’ll later need, among them <code>python-software-properties</code>, which will allow us to easily add new repositories to the <code>apt</code> package handling system:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo apt-get -y install curl git-core python-software-properties
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Having the ability to add new repositories this way allows us to install the most recent updates since the default <code>apt-get</code> repositories typically don’t receive the latest updates immediately.</p>
+
+<h1>Installing Node.js</h1>
+
+<p>We’ll actually put this ability to use right now by adding a new repository for <a href="http://nodejs.org/">Node.js</a>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo add-apt-repository ppa:chris-lea/node.js
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We’ll then update the created repository with the latest Node.js code available:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo apt-get -y update
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and install it, like so:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo apt-get -y install nodejs
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We could’ve avoided adding a new repo and just used the traditional <code>apt-get</code> method to do the install, but this would’ve installed an older version of Node.js. Because Node.js is under active development and things are added quite frequently, it’s important to run the latest possible version. This might not matter as much for software that doesn’t have an aggressive update schedule, but this is the route we’ll take for Node.js.</p>
+
+<p>By the way, if you’re wondering why we’re installing Node.js, the reason is it provides a good way to execute JavaScript, and we’ll need this for the Rails <a href="http://guides.rubyonrails.org/asset_pipeline.html">asset pipeline</a>.</p>
+
+<h1>Installing Nginx</h1>
+
+<p>Next, we’ll install a web server called <a href="http://wiki.nginx.org/Main">Nginx</a>, which will handle all our static requests, such as stylesheets, scripts, images, and fonts. Its low memory usage and ability to serve static content quickly and efficiently make it a popular alternative to Apache and an excellent choice for sites running on a Virtual Private Server (VPS). What makes Nginx efficient is the fact that it’s an event-based server, while Apache, on the other hand, is process-based. An event-based server doesn&rsquo;t spawn new processes or threads for each request the way a process-based one does, and this means lower memory usage and faster responses.</p>
+
+<p>We’ll install it by adding another repository:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo add-apt-repository ppa:nginx/stable
+</span><span class='line'>sudo apt-get -y update
+</span><span class='line'>sudo apt-get -y install nginx
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Once it’s installed, we can start it up with:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo service nginx start
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you now visit your server’s IP address, you should see a simple page proclaiming “Welcome to nginx!”</p>
+
+<h1>Installing PostgreSQL</h1>
+
+<p>Most modern apps need to store some sort of data, and there are a plethora of open source databases available, like <a href="https://www.mysql.com/">MySQL</a>, <a href="https://sqlite.org/">SQLite</a>, and <a href="http://www.postgresql.org/">PostgreSQL</a>. I never tried MySQL, but when I first started out, I used SQLite, the default database for Rails apps, because I liked its simplicity and saw no need for something more sophisticated. As my needs have evolved, however, so has my database, and I recently decided to switch to PostgreSQL because of its support for a fast key-value store called HStore and its ability to do full-text search, both of which I&rsquo;ll need for Phindee.</p>
+
+<p>We’ll install it with <code>apt-get</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo apt-get install postgresql postgresql-contrib
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We can then start Postgres as the default <code>postgres</code> user with the following command:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo -u postgres psql
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Had we not specified the default user, it would’ve tried to use the user we’re logged in with on our VPS, and Postgres would’ve complained that the role doesn’t exist since there is no such user created in Postgres. This makes it necessary to login as the default <code>postgres</code> user.</p>
+
+<p>Once logged in, we’ll setup a password for <code>postgres</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="err">\</span><span class="n">password</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We’ll also create a new user called <code>admin</code>, followed by a database called <code>phindee</code>, which will be owned by <code>admin</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">create</span> <span class="k">user</span> <span class="k">admin</span> <span class="k">with</span> <span class="n">password</span> <span class="s1">&#39;secret&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="k">create</span> <span class="k">database</span> <span class="n">phindee</span> <span class="k">owner</span> <span class="k">admin</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Having the basics setup, we can now quit Postgres:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="err">\</span><span class="n">quit</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>Installing rbenv</h1>
+
+<p><a href="https://github.com/sstephenson/rbenv">rbenv</a> is a tool that helps you manage the Ruby versions installed on your system, thereby allowing you to easily switch between them. Whenever you want to play with a new version of Rails&mdash;without messing up your current setup&mdash;rbenv will come in handy.</p>
+
+<p>You may be familiar with another Ruby version manager called <a href="https://rvm.io/">RVM</a>. I used it myself for a while, before switching over to rbenv. It’s not that one is “better” than the other; it’s about which one is better suited for <em>your</em> needs. I made the switch because rbenv is more lightweight than RVM, its design feels cleaner, and it has a cool name.</p>
+
+<p>rbenv will suite you well if you’re starting out; otherwise, install whatever best meets your needs. By the way, it’s worth mentioning that since rbenv is incompatible with RVM, you won’t be able to run them side by side.</p>
+
+<p>Alright, we can install rbenv like so:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo curl -L https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This will run a script that will do most of the install for us. In the end, you’ll receive a message telling you to add rbenv to the load path, and you can do so by opening up <code>bash_profile</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo nano ~/.bash_profile
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and copying/pasting the code that was outputted by the message. We’ll then need to reload the file for the changes to take effect:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>. ~/.bash_profile
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We’re almost ready to install Ruby, but before we do, we first need to install the C compiler and the Make utility, which is needed for the Ruby install. We can do so by installing a package called <code>build-essential</code>, along with some additional packages we’ll need later on:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo apt-get install zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libpq-dev
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>With the packages installed, we’re now ready to install <a href="https://www.ruby-lang.org/en/">Ruby</a> itself.</p>
+
+<h1>Installing Ruby</h1>
+
+<p>To see a list of all the Ruby versions available, we can run the following command:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rbenv install --list
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I chose to install version 2.1.0, as that was the latest one at the time:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rbenv install 2.1.0
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This will take a few minutes to run&mdash;and that’s probably an understatement&mdash;but once it finishes, we’ll make the version it just installed the default Ruby version on our server:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rbenv global 2.1.0
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If everything finished successfully, typing <code>ruby -v</code> should output the Ruby version we now have installed.</p>
+
+<h1>Installing Bundler</h1>
+
+<p>If you’ve never used it before, <a href="http://bundler.io/">Bundler</a> is a tool that helps you easily manage and install gems (Ruby programs and libraries). It allows you to specify the gems your app relies on, along with their versions, and Bundler will then install them all for you, in addition to automatically installing and managing any dependencies (other gems) they rely on.</p>
+
+<p>It’s usually a good idea to include version numbers for your gems because new versions can sometimes introduce changes that cause the old features you rely on to behave differently, which can result in errors the next time you try to run your app. By using Bundler to specify not only the gems you need, but also the versions of those gems, you can save yourself from needless headaches (and unnecessary cups of coffee).</p>
+
+<p>We will install bundler with the following command:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>gem install bundler --no-ri --no-rdoc
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Every time we install a gem that provides us with commands we can execute, we’ll need to run <code>rbenv rehash</code>, which will give us access to the corresponding executable (<a href="http://stackoverflow.com/questions/9394338/how-do-rvm-and-rbenv-actually-work">see this page</a> to learn why this is so). Since Bundler is one of these gems, we’ll do the rehash next:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rbenv rehash
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If things installed successfully, <code>bundle -v</code> should return the Bundler version that was just installed.</p>
+
+<p>As an aside, notice that we’re specifying the <code>—no-ri</code> and <code>—no-rdoc</code> flags to avoid installing the gem’s documentation, which often takes longer than the gem installation itself and is typically unnecessary, especially on a production server. But typing out these flags for each and every gem you install will give you <a href="http://www.webmd.com/pain-management/carpal-tunnel/carpal-tunnel-syndrome-topic-overview">carpel tunnel</a> sooner than you&rsquo;d like, so its best to create a <code>.gemrc</code> file in your home directory:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>nano ~/.gemrc
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and add the following line into it:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>gem: –no-ri –no-rdoc
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The flags will then be included automatically the next time you install new gems.</p>
+
+<p>And with that, our server setup is now complete! Having installed Node.js, Nginx, PostgreSQL, and rbenv, we’re now ready to start configuring Nginx and Unicorn, which I’ll cover in the next post. If you want to be notified when it’s out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and you’ll have the complete post delivered to your inbox as soon as it’s released!</p>
+</div>
+
+
+  <footer>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/" title="Previous Post: Deploying Rails Apps, Part 1: Securing the Server">&laquo; Deploying Rails Apps, Part 1: Securing the Server</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/">Deploying Rails Apps, Part 2: Setting up the Server</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">Deploying Rails Apps, Part 1: Securing the Server</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/02/27/im-leaving-linode-for-digitalocean/">I'm Leaving Linode for DigitalOcean</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/17/testing-ruby-on-rails-apps/">Testing Ruby on Rails Apps</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/12/19/datamapper-an-alternative-to-active-record/">DataMapper: An Alternative to Active Record</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>Copyright &copy; 2014 Vladi Gleba</p>
+<p>Produced in Portland, Oregon. Powered by <a href="http://octopress.org">Octopress</a> and <a href="https://github.com/vladigleba/readify">Readify</a>.</p>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'vladigleba';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://vladigleba.github.io/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/';
+        var disqus_url = 'http://vladigleba.github.io/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://107.170.255.153/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+
+</script>
+<noscript><p><img src="http://107.170.255.153/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</body>
+</html>

@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Phindee | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/phindee/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-03-10T22:19:38-07:00</updated>
+  <updated>2014-03-14T10:48:16-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -12,6 +12,239 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Deploying Rails Apps, Part 2: Setting up the Server]]></title>
+    <link href="http://vladigleba.github.io/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/"/>
+    <updated>2014-03-14T09:45:00-07:00</updated>
+    <id>http://vladigleba.github.io/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server</id>
+    <content type="html"><![CDATA[<p>In <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">part 1</a>, we decided on a VPS provider, created a new Ubuntu instance, and configured our server to be more secure. Now we’re ready to start setting it up with the technology stack that’s powering <a href="http://phindee.com/">Phindee</a>. We’ll be installing Node.js, Nginx, PostgreSQL, and rbenv.</p>
+
+<!-- more -->
+
+
+<h1>But First!</h1>
+
+<p>Before we proceed any further, make sure you’re logged in as the user you created in part 1; if you’re already logged in as <code>root</code>, you can switch to the correct user with the following command:</p>
+
+<p><code>bash
+su - username
+</code></p>
+
+<p>Once logged in, we’ll run the following command to fetch the latest updates for the packages on our system:</p>
+
+<p><code>bash
+sudo apt-get update
+</code></p>
+
+<p>We’ll follow this up with the command to install the necessary package updates:</p>
+
+<p><code>bash
+sudo apt-get upgrade
+</code></p>
+
+<p>If the command found any updates to install, it will ask if you want to continue with the install; you can enter “y” to do so. Once it finishes, we’ll be ready begin.</p>
+
+<h1>Setting Timezones and Installing Mail</h1>
+
+<p>We’ll start by setting the correct timezone:</p>
+
+<p><code>bash
+sudo dpkg-reconfigure tzdata
+</code></p>
+
+<p>You’ll be asked to choose your country and timezone, after which your server’s local time will be displayed; if it displays the correct time, you’re good to go.</p>
+
+<p>We’ll install <code>postfix</code> and <code>telnet</code> next to enable our Rails app to send email:</p>
+
+<p><code>bash
+sudo apt-get -y install telnet postfix
+</code></p>
+
+<p>Feel free to just press “enter” through all the prompts and keep all the defaults.</p>
+
+<p>Next, we’ll install some useful packages we’ll later need, among them <code>python-software-properties</code>, which will allow us to easily add new repositories to the <code>apt</code> package handling system:</p>
+
+<p><code>bash
+sudo apt-get -y install curl git-core python-software-properties
+</code></p>
+
+<p>Having the ability to add new repositories this way allows us to install the most recent updates since the default <code>apt-get</code> repositories typically don’t receive the latest updates immediately.</p>
+
+<h1>Installing Node.js</h1>
+
+<p>We’ll actually put this ability to use right now by adding a new repository for <a href="http://nodejs.org/">Node.js</a>:</p>
+
+<p><code>bash
+sudo add-apt-repository ppa:chris-lea/node.js
+</code></p>
+
+<p>We’ll then update the created repository with the latest Node.js code available:</p>
+
+<p><code>bash
+sudo apt-get -y update
+</code></p>
+
+<p>and install it, like so:</p>
+
+<p><code>bash
+sudo apt-get -y install nodejs
+</code></p>
+
+<p>We could’ve avoided adding a new repo and just used the traditional <code>apt-get</code> method to do the install, but this would’ve installed an older version of Node.js. Because Node.js is under active development and things are added quite frequently, it’s important to run the latest possible version. This might not matter as much for software that doesn’t have an aggressive update schedule, but this is the route we’ll take for Node.js.</p>
+
+<p>By the way, if you’re wondering why we’re installing Node.js, the reason is it provides a good way to execute JavaScript, and we’ll need this for the Rails <a href="http://guides.rubyonrails.org/asset_pipeline.html">asset pipeline</a>.</p>
+
+<h1>Installing Nginx</h1>
+
+<p>Next, we’ll install a web server called <a href="http://wiki.nginx.org/Main">Nginx</a>, which will handle all our static requests, such as stylesheets, scripts, images, and fonts. Its low memory usage and ability to serve static content quickly and efficiently make it a popular alternative to Apache and an excellent choice for sites running on a Virtual Private Server (VPS). What makes Nginx efficient is the fact that it’s an event-based server, while Apache, on the other hand, is process-based. An event-based server doesn&rsquo;t spawn new processes or threads for each request the way a process-based one does, and this means lower memory usage and faster responses.</p>
+
+<p>We’ll install it by adding another repository:</p>
+
+<p><code>bash
+sudo add-apt-repository ppa:nginx/stable
+sudo apt-get -y update
+sudo apt-get -y install nginx
+</code></p>
+
+<p>Once it’s installed, we can start it up with:</p>
+
+<p><code>bash
+sudo service nginx start
+</code></p>
+
+<p>If you now visit your server’s IP address, you should see a simple page proclaiming “Welcome to nginx!”</p>
+
+<h1>Installing PostgreSQL</h1>
+
+<p>Most modern apps need to store some sort of data, and there are a plethora of open source databases available, like <a href="https://www.mysql.com/">MySQL</a>, <a href="https://sqlite.org/">SQLite</a>, and <a href="http://www.postgresql.org/">PostgreSQL</a>. I never tried MySQL, but when I first started out, I used SQLite, the default database for Rails apps, because I liked its simplicity and saw no need for something more sophisticated. As my needs have evolved, however, so has my database, and I recently decided to switch to PostgreSQL because of its support for a fast key-value store called HStore and its ability to do full-text search, both of which I&rsquo;ll need for Phindee.</p>
+
+<p>We’ll install it with <code>apt-get</code>:</p>
+
+<p><code>bash
+sudo apt-get install postgresql postgresql-contrib
+</code></p>
+
+<p>We can then start Postgres as the default <code>postgres</code> user with the following command:</p>
+
+<p><code>bash
+sudo -u postgres psql
+</code></p>
+
+<p>Had we not specified the default user, it would’ve tried to use the user we’re logged in with on our VPS, and Postgres would’ve complained that the role doesn’t exist since there is no such user created in Postgres. This makes it necessary to login as the default <code>postgres</code> user.</p>
+
+<p>Once logged in, we’ll setup a password for <code>postgres</code>:</p>
+
+<p><code>sql
+\password
+</code></p>
+
+<p>We’ll also create a new user called <code>admin</code>, followed by a database called <code>phindee</code>, which will be owned by <code>admin</code>:</p>
+
+<p><code>sql
+create user admin with password 'secret';
+create database phindee owner admin;
+</code></p>
+
+<p>Having the basics setup, we can now quit Postgres:</p>
+
+<p><code>sql
+\quit
+</code></p>
+
+<h1>Installing rbenv</h1>
+
+<p><a href="https://github.com/sstephenson/rbenv">rbenv</a> is a tool that helps you manage the Ruby versions installed on your system, thereby allowing you to easily switch between them. Whenever you want to play with a new version of Rails&mdash;without messing up your current setup&mdash;rbenv will come in handy.</p>
+
+<p>You may be familiar with another Ruby version manager called <a href="https://rvm.io/">RVM</a>. I used it myself for a while, before switching over to rbenv. It’s not that one is “better” than the other; it’s about which one is better suited for <em>your</em> needs. I made the switch because rbenv is more lightweight than RVM, its design feels cleaner, and it has a cool name.</p>
+
+<p>rbenv will suite you well if you’re starting out; otherwise, install whatever best meets your needs. By the way, it’s worth mentioning that since rbenv is incompatible with RVM, you won’t be able to run them side by side.</p>
+
+<p>Alright, we can install rbenv like so:</p>
+
+<p><code>bash
+sudo curl -L https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
+</code></p>
+
+<p>This will run a script that will do most of the install for us. In the end, you’ll receive a message telling you to add rbenv to the load path, and you can do so by opening up <code>bash_profile</code>:</p>
+
+<p><code>bash
+sudo nano ~/.bash_profile
+</code></p>
+
+<p>and copying/pasting the code that was outputted by the message. We’ll then need to reload the file for the changes to take effect:</p>
+
+<p><code>bash
+. ~/.bash_profile
+</code></p>
+
+<p>We’re almost ready to install Ruby, but before we do, we first need to install the C compiler and the Make utility, which is needed for the Ruby install. We can do so by installing a package called <code>build-essential</code>, along with some additional packages we’ll need later on:</p>
+
+<p><code>bash
+sudo apt-get install zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libpq-dev
+</code></p>
+
+<p>With the packages installed, we’re now ready to install <a href="https://www.ruby-lang.org/en/">Ruby</a> itself.</p>
+
+<h1>Installing Ruby</h1>
+
+<p>To see a list of all the Ruby versions available, we can run the following command:</p>
+
+<p><code>bash
+rbenv install --list
+</code></p>
+
+<p>I chose to install version 2.1.0, as that was the latest one at the time:</p>
+
+<p><code>bash
+rbenv install 2.1.0
+</code></p>
+
+<p>This will take a few minutes to run&mdash;and that’s probably an understatement&mdash;but once it finishes, we’ll make the version it just installed the default Ruby version on our server:</p>
+
+<p><code>bash
+rbenv global 2.1.0
+</code></p>
+
+<p>If everything finished successfully, typing <code>ruby -v</code> should output the Ruby version we now have installed.</p>
+
+<h1>Installing Bundler</h1>
+
+<p>If you’ve never used it before, <a href="http://bundler.io/">Bundler</a> is a tool that helps you easily manage and install gems (Ruby programs and libraries). It allows you to specify the gems your app relies on, along with their versions, and Bundler will then install them all for you, in addition to automatically installing and managing any dependencies (other gems) they rely on.</p>
+
+<p>It’s usually a good idea to include version numbers for your gems because new versions can sometimes introduce changes that cause the old features you rely on to behave differently, which can result in errors the next time you try to run your app. By using Bundler to specify not only the gems you need, but also the versions of those gems, you can save yourself from needless headaches (and unnecessary cups of coffee).</p>
+
+<p>We will install bundler with the following command:</p>
+
+<p><code>bash
+gem install bundler --no-ri --no-rdoc
+</code></p>
+
+<p>Every time we install a gem that provides us with commands we can execute, we’ll need to run <code>rbenv rehash</code>, which will give us access to the corresponding executable (<a href="http://stackoverflow.com/questions/9394338/how-do-rvm-and-rbenv-actually-work">see this page</a> to learn why this is so). Since Bundler is one of these gems, we’ll do the rehash next:</p>
+
+<p><code>bash
+rbenv rehash
+</code></p>
+
+<p>If things installed successfully, <code>bundle -v</code> should return the Bundler version that was just installed.</p>
+
+<p>As an aside, notice that we’re specifying the <code>—no-ri</code> and <code>—no-rdoc</code> flags to avoid installing the gem’s documentation, which often takes longer than the gem installation itself and is typically unnecessary, especially on a production server. But typing out these flags for each and every gem you install will give you <a href="http://www.webmd.com/pain-management/carpal-tunnel/carpal-tunnel-syndrome-topic-overview">carpel tunnel</a> sooner than you&rsquo;d like, so its best to create a <code>.gemrc</code> file in your home directory:</p>
+
+<p><code>bash
+nano ~/.gemrc
+</code></p>
+
+<p>and add the following line into it:</p>
+
+<p><code>text
+gem: –no-ri –no-rdoc
+</code></p>
+
+<p>The flags will then be included automatically the next time you install new gems.</p>
+
+<p>And with that, our server setup is now complete! Having installed Node.js, Nginx, PostgreSQL, and rbenv, we’re now ready to start configuring Nginx and Unicorn, which I’ll cover in the next post. If you want to be notified when it’s out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and you’ll have the complete post delivered to your inbox as soon as it’s released!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Deploying Rails Apps, Part 1: Securing the Server]]></title>
@@ -182,7 +415,7 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub -p 23523 bob@xxx.xxx.xxx.xxx
 
 <p>Of course, this doesn’t mean our server is “unhackable” by any means, but it is significantly more secure than it was before. You can now sleep more peacefully knowing that any future hackers have at least some of their work cut out for them.</p>
 
-<p>In “Deploying Rails Apps, Part 2,” we’ll start setting up the server by installing the technology stack behind Phindee. If you’d like to be notified when its out, feel free to <a href="http://www.feedblitz.com/f/?sub=927939">subscribe</a>, and you&rsquo;ll get the complete post delivered right to your inbox as soon as it&rsquo;s released.</p>
+<p>In <a href="/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/">part 2</a>, we’ll start setting up the server by installing the technology stack behind Phindee. If you’d like to be notified when its out, feel free to <a href="http://www.feedblitz.com/f/?sub=927939">subscribe</a>, and you&rsquo;ll get the complete post delivered right to your inbox as soon as it&rsquo;s released.</p>
 
 <p>Stay hungry. Stay foolish.</p>
 ]]></content>
@@ -661,59 +894,6 @@ minWidth: 320
 <p>We’re simply adding a <code>click</code> event on the sidebar happy hours, extracting the happy hour name, and looping through each marker to find the one with the matching name. Once we find a match, we extract the marker’s ID, and use that ID to open up the popup programmatically by calling Leaflet’s <code>openPopup()</code> method.</p>
 
 <p>And that’s all there is to it! Our MapBox integration with Ruby on Rails is now complete, although we only scratched the surface of what&rsquo;s possible. Feel free to take a look at the <a href="https://www.mapbox.com/mapbox.js">MapBox</a> and <a href="http://leafletjs.com/reference.html">Leaflet</a> documentation to learn more.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Phindee: A New Way to Discover Happy Hours in Downtown Portland]]></title>
-    <link href="http://vladigleba.github.io/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/"/>
-    <updated>2013-11-08T12:59:00-08:00</updated>
-    <id>http://vladigleba.github.io/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland</id>
-    <content type="html"><![CDATA[<p>I love Portland. It’s a fun, quirky city that makes me feel right at home. And the longer I live here, the deeper my affection grows. There are many reasons why this is so, but one high on the list is the food scene. Now I haven’t lived in any other major city, so I can’t compare, but others who have tend to agree. <!-- more --></p>
-
-<p>I’m certainly satisfied.</p>
-
-<h1>An Idea Is Born</h1>
-
-<p>Of course, eating out all the time can get a bit expensive, and being a college student, I’m definitely not swimming in cash. I usually eat out just for lunch because I hate bringing cold lunch, but even this can quickly add up. So in an effort to save money (and to learn Ruby on Rails), I built a happy hour web application a couple months ago called <a href="http://phindee.com/">Phindee</a>.</p>
-
-<p>Being a web developer, I always enjoy learning about other people&rsquo;s stacks, so I&rsquo;d like to return the favor and share how Phindee works.</p>
-
-<h1>A Look at the Wiring</h1>
-
-<p>When you visit Phindee, you’re presented with a map of the current happy hours in downtown Portland, along with information like the happy hour type and time, as well as the name, phone number, website, and address of its location. And of course, it doesn’t matter what device you use to visit Phindee because it’s based on a responsive design.</p>
-
-<p>Behind the scenes, Phindee sits on top of a <a href="http://linode.com/">Linode</a> server powered by <a href="http://www.ubuntu.com/">Ubuntu</a> and served by <a href="http://nginx.org/">Nginx</a> and <a href="http://unicorn.bogomips.org/">Unicorn</a>. I originally had it setup with <a href="https://www.phusionpassenger.com/">Passenger</a>, but since I like to do multiple deploys a day, I got tired of Passenger restarts and site downtime. Unicorn solves this nicely.</p>
-
-<h2>Deployment</h2>
-
-<p>With regards to choosing Nginx, it was a matter of simplicity and speed. Phindee marked my first try at setting up a server from scratch, and from what I read online, Nginx was best suited for my situation. When it came to the actual setup, Ryan Bates’ <a href="http://railscasts.com/">Railscasts episodes</a> helped me out tremendously, especially his episode about <a href="http://railscasts.com/episodes/335-deploying-to-a-vps">VPS deployment</a>.</p>
-
-<p>Up to that point, my previously deployment experience consisted of firing up <a href="http://fireftp.net/">FireFTP</a> and dragging and dropping the necessary files into the appropriate directories on my server. Funny, I know. As a result, it took me a couple of long nights to get everything working properly. Looking back, it was definitely worth it though.</p>
-
-<h2>Storage</h2>
-
-<p>With regards to storage, I went with <a href="http://www.sqlite.org/">SQLite</a> because it was already setup as the Rails default database. I know, kinda lame, but figuring out how to setup a more sophisticated database did not seem like a good use of time, especially since I already had my hands full with server setup. But now that I&rsquo;m done, I do plan on migrating to a <a href="http://www.postgresql.org/">PostgreSQL</a> and <a href="http://redis.io/">Redis</a> backend in the near future.</p>
-
-<h2>Mapping</h2>
-
-<p>The mapping functionality is provided by the excellent <a href="https://www.mapbox.com/mapbox.js/">MapBox JavaScript API</a>. I stumbled upon MapBox thanks to an A List Apart <a href="http://alistapart.com/article/hack-your-maps">article</a> I had read. I originally planned on using Google Maps, but the level of customization MapBox allows is incredible and their documentation is outstanding. On top of that, I feel like Google already has enough money, so why not support an open source service built by a cool new company? More diversity can&rsquo;t hurt, right?</p>
-
-<h2>Icons</h2>
-
-<p>The icons came from <a href="http://thenounproject.com/">The Noun Project</a>, an excellent collection of vector symbols. All the icons are free, but you are required to attribute the designer if you use them. If that’s not possible, you’re free to purchase a full license from the designer and use the icon without attribution; the fee is usually $1.99.</p>
-
-<h2>Preprocessors</h2>
-
-<p>Finally, I rely on <a href="http://slim-lang.com/">SLIM</a> to generate the HTML, <a href="http://sass-lang.com/">SASS</a> to generate the CSS, and <a href="http://coffeescript.org/">CoffeeScript</a> to generate the JavaScript. These pre-processors are easy to pick up, and they’ll save you more than a few keystrokes.</p>
-
-<h1>The Power of the Web</h1>
-
-<p>The world population is now approaching 7.1 billion and <a href="http://data.worldbank.org/indicator/IT.NET.USER.P2">2.5 billion of those</a> are able to access a web application I can build with nothing more than a laptop. I don’t know about you, but that’s mind boggling to me. There are few other professions that have the same reach with such a limited resource pool.</p>
-
-<p>And beyond that, the internet is one of the few things still in existence that gives power and influence to anybody and everybody who has access to it. It transcends borders and gives people a voice. It’s a tremendous blessing that must never be taken away nor destroyed.</p>
-
-<p>It’s an exciting time to be a web developer.</p>
 ]]></content>
   </entry>
   
