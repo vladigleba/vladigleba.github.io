@@ -3,7 +3,7 @@ layout: post
 title: "Deploying Rails Apps, Part 1: Securing the Server"
 date: 2014-03-05 11:18
 comments: true
-categories: [Rails, Deployment, Security, Phindee]
+categories: [Rails, Deployment, Phindee]
 ---
 
 Setting up a Rails server from scratch can be a daunting task. I remember my first attempt; it was a multi-day process full of frustration, things not working, me not understanding why, and a whole lot of googling. In an effort to make this experience less painful for those new to Rails, I’d like to share the process I went through to deploy [Phindee](http://phindee.com/) to a VPS (Virtual Private Server).
@@ -166,6 +166,6 @@ To summarize, we made our server more secure by:
 
 Of course, this doesn’t mean our server is “unhackable” by any means, but it is significantly more secure than it was before. You can now sleep more peacefully knowing that any future hackers have at least some of their work cut out for them.
 
-In “Deploying Rails Apps, Part 2,” we’ll start setting up the server by installing the technology stack behind Phindee. If you’d like to be notified when its out, feel free to [subscribe](http://www.feedblitz.com/f/?Sub=927939&cids=1), and you'll get the complete post delivered right to your inbox as soon as it's released.
+In [part 2]({{ root_url }}/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/), we’ll start setting up the server by installing the technology stack behind Phindee. If you’d like to be notified when its out, feel free to [subscribe](http://www.feedblitz.com/f/?sub=927939), and you'll get the complete post delivered right to your inbox as soon as it's released.
 
 Stay hungry. Stay foolish.
