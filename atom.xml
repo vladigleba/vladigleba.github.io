@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-03-14T10:48:16-07:00</updated>
+  <updated>2014-03-16T22:32:40-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -18,7 +18,7 @@
     <link href="http://vladigleba.github.io/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/"/>
     <updated>2014-03-14T09:45:00-07:00</updated>
     <id>http://vladigleba.github.io/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server</id>
-    <content type="html"><![CDATA[<p>In <a href="http://vladigleba.github.io/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">part 1</a>, we decided on a VPS provider, created a new Ubuntu instance, and configured our server to be more secure. Now we’re ready to start setting it up with the technology stack that’s powering <a href="http://phindee.com/">Phindee</a>. We’ll be installing Node.js, Nginx, PostgreSQL, and rbenv.</p>
+    <content type="html"><![CDATA[<p>In <a href="http://vladigleba.github.io/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">part 1</a> I talked about choosing a VPS provider, creating a new Ubuntu instance, and configuring it to be more secure. In this second part I&rsquo;ll now talk about setting up the server with technology stack powering <a href="http://phindee.com/">Phindee</a>&mdash;Node.js, Nginx, PostgreSQL, and rbenv.</p>
 
 <!-- more -->
 
