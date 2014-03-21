@@ -337,9 +337,9 @@
 
 <h2>Last Few Lines</h2>
 
-<p>Alright, we’re down to the last two lines. <code>error_page</code> makes sure that our app’s <code>500.html</code> page is show for any 500-related errors, while <code>keepalive_timeout</code> tells Nginx to retain keep-alive connections (also known as persistent connections) for up to 10 seconds and close them if they exceed that time. The default is 5 seconds, but I increased it to 10 so mobile devices on slow networks have enough time to finish their requests.</p>
+<p>Alright, we’re down to the last two lines. <code>error_page</code> makes sure that our app’s <code>500.html</code> page is show for any 500-related errors, while <code>keepalive_timeout</code> tells Nginx to retain keep-alive connections (also known as persistent connections) for up to 10 seconds and close them if they exceed that time. 10 seconds should be enough even for mobile devices on slow networks to finish their requests.</p>
 
-<p>Persistent connections, by the way, are designed to send multiple HTTP requests in a single connection, as opposed to opening a new connection for each request; in HTTP 1.1, all connections are persistent by default, which means stylesheets, scripts, images, and fonts, for example, would all be sent using a single connection.</p>
+<p>Keep-alive connections, by the way, send multiple HTTP requests in a single connection, as opposed to opening a new connection for each request; in HTTP 1.1, all connections are persistent by default, which means stylesheets, scripts, images, and fonts, for example, would all be sent using a single connection.</p>
 
 <p>These are, of course, not all the options you can specify. If you’d like to learn about the additional ones, feel free to read through the comments in the sample <code>nginx.conf</code> <a href="https://github.com/defunkt/unicorn/blob/master/examples/nginx.conf">file</a> I mentioned earlier.</p>
 
