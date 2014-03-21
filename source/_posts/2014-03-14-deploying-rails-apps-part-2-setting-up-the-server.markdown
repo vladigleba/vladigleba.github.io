@@ -6,7 +6,7 @@ comments: true
 categories: [Rails, Deployment, Phindee]
 ---
 
-In [part 1]({{ root_url }}/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/), we decided on a VPS provider, created a new Ubuntu instance, and configured our server to be more secure. Now we’re ready to start setting it up with the technology stack that’s powering [Phindee](http://phindee.com/). We’ll be installing Node.js, Nginx, PostgreSQL, and rbenv.
+In [part 1]({{ root_url }}/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/), I talked about choosing a VPS provider, creating a new Ubuntu instance, and configuring it to be more secure. Now, in part 2, I'll talk about installing the technology stack behind [Phindee](http://phindee.com/): Node.js, Nginx, PostgreSQL, rbenv, Ruby, and Bundler.
 
 <!-- more -->
 
@@ -171,7 +171,7 @@ We’re almost ready to install Ruby, but before we do, we first need to install
 sudo apt-get install zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libpq-dev
 ```
 
-With the packages installed, we’re now ready to install [Ruby](https://www.ruby-lang.org/en/) itself.
+With the packages installed, we’re now ready to install Ruby itself.
 
 # Installing Ruby
 
@@ -229,4 +229,4 @@ gem: –no-ri –no-rdoc
 
 The flags will then be included automatically the next time you install new gems.
 
-And with that, our server setup is now complete! Having installed Node.js, Nginx, PostgreSQL, and rbenv, we’re now ready to start configuring Nginx and Unicorn, which I’ll cover in the next post. If you want to be notified when it’s out, feel free to [subscribe](http://www.feedblitz.com/f/?Sub=927939&cids=1), and you’ll have the complete post delivered to your inbox as soon as it’s released!
+And with that, our server setup is now complete! Having installed Node.js, Nginx, PostgreSQL, and rbenv, we’re now ready to start configuring Nginx and Unicorn, which I’ll cover in the [next post]({{ root_url }}/blog/2014/03/21/deploying-rails-apps-part-3-configuring-nginx-and-unicorn/). If you want to be notified when it’s out, feel free to [subscribe](http://www.feedblitz.com/f/?Sub=927939&cids=1), and you’ll have the complete post delivered to your inbox as soon as it’s released!

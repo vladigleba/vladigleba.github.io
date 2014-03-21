@@ -565,7 +565,9 @@ article {
   }
   
   h2 {
-    @extend .font-size-large;
+    font-size: 30.56px;
+    font-size: 1.528rem; /* 1.618 - 0.09 */
+    text-transform: uppercase;
     margin-top: 52.358px;
     margin-top: 2.618rem;
     margin-bottom: 9.046px;
@@ -579,6 +581,10 @@ article {
     text-align: left;
     margin-left: 20px;
     margin-left: 1rem;
+    
+    li:last-child p, ol:last-child p { 
+      margin-bottom: 0; 
+    }
     
     a {
       text-decoration: underline;
