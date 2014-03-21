@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Deployment | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/deployment/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-03-21T15:14:10-07:00</updated>
+  <updated>2014-03-21T15:17:05-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -199,7 +199,7 @@ proxy_pass http://unicorn;
 
 <h2>Last Few Lines</h2>
 
-<p>Alright, we’re down to the last two lines. <code>error_page</code> makes sure that our app’s <code>500.html</code> page is show for any 500-related errors, while <code>keepalive_timeout</code> tells Nginx to retain keep-alive connections (also known as persistent connections) for up to 10 seconds and close them if they exceed that time. 10 seconds should be enough even for mobile devices on slow networks to finish their requests.</p>
+<p>Alright, we’re down to the last two lines. <code>error_page</code> makes sure that our app’s <code>500.html</code> page is show for any 500-related errors, while <code>keepalive_timeout</code> tells Nginx to retain keep-alive connections (also known as persistent connections) for up to 10 seconds and close them if they exceed that time. The main concern when choosing the amount of time is mobile devices on slow networks, but I think 10 seconds should be enough.</p>
 
 <p>Keep-alive connections, by the way, send multiple HTTP requests in a single connection, as opposed to opening a new connection for each request; in HTTP 1.1, all connections are persistent by default, which means stylesheets, scripts, images, and fonts, for example, would all be sent using a single connection.</p>
 
