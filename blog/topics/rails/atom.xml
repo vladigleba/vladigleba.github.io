@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Rails | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/rails/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-03-21T13:48:31-07:00</updated>
+  <updated>2014-03-21T13:50:01-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -18,7 +18,7 @@
     <link href="http://vladigleba.github.io/blog/2014/03/21/deploying-rails-apps-part-3-configuring-nginx-and-unicorn/"/>
     <updated>2014-03-21T10:08:00-07:00</updated>
     <id>http://vladigleba.github.io/blog/2014/03/21/deploying-rails-apps-part-3-configuring-nginx-and-unicorn</id>
-    <content type="html"><![CDATA[<p>Having covered how to install the technology stack powering Phindee in my <a href="/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/">previous post</a>, I will now shift gears and explain how I configured Nginx and Unicorn. I already explained why I chose to install Nginx, but I haven’t yet explained why I chose Unicorn, so here we go.</p>
+    <content type="html"><![CDATA[<p>Having covered how to install the technology stack powering Phindee in my <a href="/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/">part 2</a>, I will now shift gears and talk about how I configured Nginx and Unicorn. I already explained why I chose to install Nginx, but I haven’t yet explained why I chose Unicorn, so here we go.</p>
 
 <!-- more -->
 
