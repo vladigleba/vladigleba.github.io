@@ -42,7 +42,7 @@
     </url>
     <url>
         <loc>http://vladigleba.github.io/blog/2014/02/27/im-leaving-linode-for-digitalocean/</loc>
-        <lastmod>2014-03-21T15:50:30-07:00</lastmod>
+        <lastmod>2014-03-27T13:13:22-07:00</lastmod>
     </url>
     <url>
         <loc>
@@ -60,7 +60,13 @@
         <loc>
             http://vladigleba.github.io/blog/2014/03/21/deploying-rails-apps-part-3-configuring-unicorn/
         </loc>
-        <lastmod>2014-03-21T15:49:05-07:00</lastmod>
+        <lastmod>2014-03-27T13:11:54-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://vladigleba.github.io/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/
+        </loc>
+        <lastmod>2014-03-27T13:10:05-07:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/about/</loc>
@@ -72,11 +78,11 @@
     </url>
     <url>
         <loc>http://vladigleba.github.io/blog/archives/</loc>
-        <lastmod>2014-03-21T15:50:30-07:00</lastmod>
+        <lastmod>2014-03-27T13:13:22-07:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/</loc>
-        <lastmod>2014-03-21T15:50:30-07:00</lastmod>
+        <lastmod>2014-03-27T13:13:22-07:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/robots.txt</loc>

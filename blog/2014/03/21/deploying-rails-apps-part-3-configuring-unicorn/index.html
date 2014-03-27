@@ -9,7 +9,7 @@
   <meta name="author" content="Vladi Gleba">
 
   
-  <meta name="description" content="Having covered how to install the technology stack powering Phindee in part 2, I will now shift gears and talk about how I configured Nginx and &hellip;">
+  <meta name="description" content="Having covered how to install the technology stack powering Phindee in part 2, I will now shift gears and talk about how I configured Unicorn. I &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -114,14 +114,16 @@
   </header>
 
 
-<div class="entry-content"><p>Having covered how to install the technology stack powering Phindee in <a href="/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/">part 2</a>, I will now shift gears and talk about how I configured Nginx and Unicorn. I already explained why I chose to install Nginx, but I haven’t yet explained why I chose Unicorn, so here we go.</p>
+<div class="entry-content"><p>Having covered how to install the technology stack powering Phindee in <a href="/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/">part 2</a>, I will now shift gears and talk about how I configured Unicorn. I already explained why I chose to install Nginx, but I haven’t yet explained why I chose Unicorn, so here we go.</p>
 
 <!-- more -->
 
 
+<p><a href="http://unicorn.bogomips.org/">Unicorn</a> is an HTTP server for Ruby. It&rsquo;s designed to be used in a production environment, unlike WEBrick, which is designed for running your app on your local computer. Because it&rsquo;s fast, efficient, and offers tons of cool features, like load balancing and rolling restarts, Unicorn has become a popular production server for Rails apps.</p>
+
 <h1>Comparing Unicorn with Passenger</h1>
 
-<p>When I deployed Phindee for the first time, I actually used the open source version of <a href="https://www.phusionpassenger.com/">Phusion Passenger</a> due to the fact that it was (and is) easier to setup than Unicorn. My main concern, at the time, was to have a functioning app deployed as soon as possible, with as little effort as possible, and Passenger helped me do just that.</p>
+<p>When I deployed Phindee for the first time, however, I actually used the open source version of <a href="https://www.phusionpassenger.com/">Phusion Passenger</a>, due to the fact that it was (and is) easier to setup than Unicorn. My main concern, at the time, was to have a functioning app deployed as soon as possible, with as little effort as possible, and Passenger helped me do just that.</p>
 
 <p>Eventually, I reached a point where I was ready for something that I could configure myself, and Unicorn seemed like a good next step. But if you’re a beginner, Passenger will be the easiest to start with since it’s designed to integrate into Nginx directly and, therefore, requires less work to setup and maintain. You will have to pay for the Enterprise version, however, if you want advanced features like error-resistant, zero-downtime deploys, which come for free with Unicorn.</p>
 
@@ -147,7 +149,7 @@
 
 <h1>Installing and Configuring Unicorn</h1>
 
-<p>With that out of the way, we’re now ready to start working with Unicorn. We’ll begin by adding the following line to our app’s <code>Gemfile</code>:</p>
+<p>With that out of the way, we’re now ready to start working with Unicorn. We’ll begin by adding the following line to our app’s <code>Gemfile</code> on our local computer:</p>
 
 <figure class='code'><figcaption><span>Gemfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">gem</span> <span class="s1">&#39;unicorn&#39;</span><span class="p">,</span> <span class="err">&#39;</span><span class="o">~&gt;</span> <span class="mi">4</span><span class="o">.</span><span class="mi">8</span><span class="o">.</span><span class="mi">0</span><span class="err">’</span>
@@ -169,9 +171,9 @@
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">root</span> <span class="o">=</span> <span class="err">“</span><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">phindee</span><span class="o">/</span><span class="n">current</span><span class="s2">&quot;</span>
-</span><span class='line'><span class="s2">working_directory root</span>
-</span><span class='line'><span class="s2">pid &quot;</span><span class="c1">#{root}/tmp/pids/unicorn.pid&quot;</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">root</span> <span class="o">=</span> <span class="s2">&quot;/var/www/phindee/current&quot;</span>
+</span><span class='line'><span class="n">working_directory</span> <span class="n">root</span>
+</span><span class='line'><span class="n">pid</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">root</span><span class="si">}</span><span class="s2">/tmp/pids/unicorn.pid&quot;</span>
 </span><span class='line'><span class="n">stderr_path</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">root</span><span class="si">}</span><span class="s2">/log/unicorn.log&quot;</span>
 </span><span class='line'><span class="n">stdout_path</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">root</span><span class="si">}</span><span class="s2">/log/unicorn.log&quot;</span>
 </span><span class='line'>
@@ -181,7 +183,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>The first variable <code>root</code> represents the path to the root directory, which is <code>/var/www/phindee/current</code> in my case. You can set this to whatever you like, but generally, web apps are often stored inside <code>/var/www</code> on Unix since the <code>/var</code> directory is designated for files that increase in size over time, and that’s the case with most web apps.</p>
+<p>The first variable <code>root</code> represents the path to the root directory of our app, which I&rsquo;ve set to <code>/var/www/phindee/current</code>. Generally, web apps are stored inside <code>/var/www</code> on Unix since the <code>/var</code> directory is designated for files that increase in size over time, which is the case with most web apps, and a <code>/www</code> directory is typically created inside <code>/var</code> to store files meant for the web. I then have a <code>/phindee</code> directory specified inside <code>/www</code> to store all things related to Phindee, as well as a <code>current</code> directory, which Capistrano will later create and use to store the latest deployment code. You don&rsquo;t have to actually create these directories now, as I will be covering this in part 5.</p>
 
 <p>Below is what the rest of the configurations mean:</p>
 
@@ -216,7 +218,7 @@
 
 <p>I won’t be explaining how to do this here because I haven’t yet set it up myself, but if you’re curious, there is a good <a href="http://www.justinappears.com/blog/2-no-downtime-deploys-with-unicorn/">blog post</a> explaining all the nuances you need to be aware of. Phindee is currently a small, low-traffic app and its code is reloaded within seconds, so I’m not worried about users waiting for their requests and don’t see a need for rolling restarts at the moment, but I’m hoping the need presents itself soon.</p>
 
-<p>Having configured Unicorn, we&rsquo;ll move on to configuring Nginx in part 4. If you want to be notified when it’s out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and the post will be delivered to your inbox as soon as it’s released!</p>
+<p>Having configured Unicorn, we&rsquo;ll move on to configuring Nginx in <a href="/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/">part 4</a>. If you want to be notified when it’s out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and the post will be delivered to your inbox as soon as it’s released!</p>
 </div>
 
 
@@ -233,6 +235,8 @@
       
         <a class="basic-alignment left" href="/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/" title="Previous Post: Deploying Rails Apps, Part 2: Setting up the Server">&laquo; Deploying Rails Apps, Part 2: Setting up the Server</a>
       
+      
+        <a class="basic-alignment right" href="/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/" title="Next Post: Deploying Rails Apps, Part 4: Configuring Nginx">Deploying Rails Apps, Part 4: Configuring Nginx &raquo;</a>
       
     </p>
   </footer>
@@ -254,6 +258,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/">Deploying Rails Apps, Part 4: Configuring Nginx</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/03/21/deploying-rails-apps-part-3-configuring-unicorn/">Deploying Rails Apps, Part 3: Configuring Unicorn</a>
       </li>
     
@@ -267,10 +275,6 @@
     
       <li class="post">
         <a href="/blog/2014/02/27/im-leaving-linode-for-digitalocean/">I'm Leaving Linode for DigitalOcean</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/17/testing-ruby-on-rails-apps/">Testing Ruby on Rails Apps</a>
       </li>
     
   </ul>
