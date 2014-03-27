@@ -6,13 +6,15 @@ comments: true
 categories: [Rails, Deployment, Phindee]
 ---
 
-Having covered how to install the technology stack powering Phindee in [part 2]({{ root_url }}/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/), I will now shift gears and talk about how I configured Nginx and Unicorn. I already explained why I chose to install Nginx, but I haven’t yet explained why I chose Unicorn, so here we go.
+Having covered how to install the technology stack powering Phindee in [part 2]({{ root_url }}/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/), I will now shift gears and talk about how I configured Unicorn. I already explained why I chose to install Nginx, but I haven’t yet explained why I chose Unicorn, so here we go.
 
 <!-- more -->
 
+[Unicorn](http://unicorn.bogomips.org/) is an HTTP server for Ruby. It's designed to be used in a production environment, unlike WEBrick, which is designed for running your app on your local computer. Because it's fast, efficient, and offers tons of cool features, like load balancing and rolling restarts, Unicorn has become a popular production server for Rails apps.
+
 # Comparing Unicorn with Passenger
 
-When I deployed Phindee for the first time, I actually used the open source version of [Phusion Passenger](https://www.phusionpassenger.com/) due to the fact that it was (and is) easier to setup than Unicorn. My main concern, at the time, was to have a functioning app deployed as soon as possible, with as little effort as possible, and Passenger helped me do just that. 
+When I deployed Phindee for the first time, however, I actually used the open source version of [Phusion Passenger](https://www.phusionpassenger.com/), due to the fact that it was (and is) easier to setup than Unicorn. My main concern, at the time, was to have a functioning app deployed as soon as possible, with as little effort as possible, and Passenger helped me do just that. 
 
 Eventually, I reached a point where I was ready for something that I could configure myself, and Unicorn seemed like a good next step. But if you’re a beginner, Passenger will be the easiest to start with since it’s designed to integrate into Nginx directly and, therefore, requires less work to setup and maintain. You will have to pay for the Enterprise version, however, if you want advanced features like error-resistant, zero-downtime deploys, which come for free with Unicorn.
 
@@ -38,7 +40,7 @@ Because threading requires less memory than forking, Puma will be more memory ef
 
 # Installing and Configuring Unicorn
 
-With that out of the way, we’re now ready to start working with Unicorn. We’ll begin by adding the following line to our app’s `Gemfile`:
+With that out of the way, we’re now ready to start working with Unicorn. We’ll begin by adding the following line to our app’s `Gemfile` on our local computer:
 
 ``` ruby Gemfile
 gem 'unicorn', '~> 4.8.0’
@@ -51,7 +53,7 @@ We'll then install Unicorn by running `bundle` in the root path of our app, and 
 Having Unicorn installed, we can begin configuring it. We’ll start by creating a file called `unicorn.rb` on our local computer inside the `/config` directory of our Rails application. This is how my file for Phindee looks:
 
 ``` ruby unicorn.rb
-root = “/var/www/phindee/current"
+root = "/var/www/phindee/current"
 working_directory root
 pid "#{root}/tmp/pids/unicorn.pid"
 stderr_path "#{root}/log/unicorn.log"
@@ -62,7 +64,7 @@ worker_processes 2
 timeout 30
 ```
 
-The first variable `root` represents the path to the root directory, which is `/var/www/phindee/current` in my case. You can set this to whatever you like, but generally, web apps are often stored inside `/var/www` on Unix since the `/var` directory is designated for files that increase in size over time, and that’s the case with most web apps.
+The first variable `root` represents the path to the root directory of our app, which I've set to `/var/www/phindee/current`. Generally, web apps are stored inside `/var/www` on Unix since the `/var` directory is designated for files that increase in size over time, which is the case with most web apps, and a `/www` directory is typically created inside `/var` to store files meant for the web. I then have a `/phindee` directory specified inside `/www` to store all things related to Phindee, as well as a `current` directory, which Capistrano will later create and use to store the latest deployment code. You don't have to actually create these directories now, as I will be covering this in part 5.
 
 Below is what the rest of the configurations mean: 
 
@@ -98,4 +100,4 @@ You’d need to use the `USR2` signal for a rolling restart (which is actually w
 
 I won’t be explaining how to do this here because I haven’t yet set it up myself, but if you’re curious, there is a good [blog post](http://www.justinappears.com/blog/2-no-downtime-deploys-with-unicorn/) explaining all the nuances you need to be aware of. Phindee is currently a small, low-traffic app and its code is reloaded within seconds, so I’m not worried about users waiting for their requests and don’t see a need for rolling restarts at the moment, but I’m hoping the need presents itself soon.
 
-Having configured Unicorn, we'll move on to configuring Nginx in part 4. If you want to be notified when it’s out, feel free to [subscribe](http://www.feedblitz.com/f/?Sub=927939&cids=1), and the post will be delivered to your inbox as soon as it’s released!
+Having configured Unicorn, we'll move on to configuring Nginx in [part 4]({{ root_url }}/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/). If you want to be notified when it’s out, feel free to [subscribe](http://www.feedblitz.com/f/?Sub=927939&cids=1), and the post will be delivered to your inbox as soon as it’s released!

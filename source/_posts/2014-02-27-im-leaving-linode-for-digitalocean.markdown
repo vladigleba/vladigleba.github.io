@@ -51,7 +51,7 @@ Now that I’ve successfully moved Phindee over to DigitalOcean, I will use the 
 - [Deploying Rails Apps, Part 1: Securing the Server]({{ root_url }}/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/)
 - [Deploying Rails Apps, Part 2: Setting up the Server]({{ root_url }}/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/)
 - [Deploying Rails Apps, Part 3: Configuring Unicorn]({{ root_url }}/blog/2014/03/21/deploying-rails-apps-part-3-configuring-unicorn/)
-- Deploying Rails Apps, Part 4: Configuring Nginx
+- [Deploying Rails Apps, Part 4: Configuring Nginx]({{ root_url }}/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/)
 - Deploying Rails Apps, Part 5: Configuring Capistrano
 
 I plan on publishing one part per week, starting with [part 1]({{ root_url }}/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/) next week. If you'd like to be notified when a post is out, feel free to [subscribe](http://www.feedblitz.com/f/?sub=927939), and you'll get the complete post delivered right to your inbox as soon as it's out!
