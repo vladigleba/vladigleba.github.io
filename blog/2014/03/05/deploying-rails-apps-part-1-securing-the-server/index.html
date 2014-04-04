@@ -258,14 +258,30 @@
 
 <p>All SSH keys come in pairs: one private and the other public. The private key is stored locally and needs to be carefully guarded, while the public key is stored on the remote server to which you will be logging in. Anytime you want to connect to the server, it will use the public key to create a challenge, which it will then send over to you, and only you, the holder of the private key, will be able to correctly understand and solve the challenge. Your response is then sent back to the server, and if it’s correct, it’ll grant you access.</p>
 
-<p>If you don’t already have an SSH key, you can generate it with the following command:</p>
+<p>You can see if you already have an SSH key by running:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>ssh-keygen
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ls ~/.ssh
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>It’ll prompt you to enter a path and passphrase, but the default path is fine, and since we won’t be setting up a passphrase, you can just press “enter” for both. This will store both the private and public keys in the <code>~/.ssh/</code> directory, and they will be named according to the type of encryption used, the default being RSA authentication. Your private key will be stored in a file called <code>id_rsa</code>, while <code>id_rsa.pub</code> will hold your public key.</p>
+<p>If you see any files with the <code>.pub</code> extension, then you already have a key generated; otherwise, you can generate one with the following command:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ssh-keygen -C <span class="s2">&quot;your.email@example.com&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Note that we&rsquo;re using the <code>-C</code> flag to create a label for our key for easy identification, and it&rsquo;s typical to set it to your email address. When the command runs, it’ll prompt you to enter a path and passphrase, but the default path is fine, and since we won’t be setting up a passphrase, you can just press “enter” for both. This will store both the private and public keys in the <code>~/.ssh/</code> directory, and they will be named according to the type of encryption used, the default being RSA authentication. Your private key will be stored in a file called <code>id_rsa</code>, while <code>id_rsa.pub</code> will hold your public key.</p>
+
+<p>We&rsquo;ll then need to add the newly generated keys to <code>ssh-agent</code>, which is a program that caches your private key and provides it to the SSH client program on your behalf. You can do so with the following command:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ssh-add ~/.ssh/id_rsa
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>It&rsquo;ll then ask you for a passphrase, but since we didn&rsquo;t set one up, you&rsquo;ll just need to press &ldquo;enter.&rdquo;</p>
 
 <p>Having our keys generated, we’re now ready to copy our public key over to the remote server using the <code>ssh-copy-id</code> command. (If you’re on a Mac, and you don’t have <code>ssh-copy-id</code> installed, you can install it using Homebrew with <code>brew install ssh-copy-id</code>.) Below is the full <code>ssh-copy-id</code> command that will copy our key over to the server:</p>
 
@@ -294,8 +310,6 @@
 <p>Of course, this doesn’t mean our server is “unhackable” by any means, but it is significantly more secure than it was before. You can now sleep more peacefully knowing that any future hackers have at least some of their work cut out for them.</p>
 
 <p>In <a href="/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/">part 2</a>, we’ll start setting up the server by installing the technology stack behind Phindee. If you’d like to be notified when its out, feel free to <a href="http://www.feedblitz.com/f/?sub=927939">subscribe</a>, and you&rsquo;ll get the complete post delivered right to your inbox as soon as it&rsquo;s released.</p>
-
-<p>Stay hungry. Stay foolish.</p>
 </div>
 
 
@@ -335,6 +349,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/">Deploying Rails Apps, Part 5: Configuring Capistrano</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/">Deploying Rails Apps, Part 4: Configuring Nginx</a>
       </li>
     
@@ -348,10 +366,6 @@
     
       <li class="post">
         <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">Deploying Rails Apps, Part 1: Securing the Server</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/02/27/im-leaving-linode-for-digitalocean/">I'm Leaving Linode for DigitalOcean</a>
       </li>
     
   </ul>

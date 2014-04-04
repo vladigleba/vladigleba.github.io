@@ -183,7 +183,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>The first variable <code>root</code> represents the path to the root directory of our app, which I&rsquo;ve set to <code>/var/www/phindee/current</code>. Generally, web apps are stored inside <code>/var/www</code> on Unix since the <code>/var</code> directory is designated for files that increase in size over time, which is the case with most web apps, and a <code>/www</code> directory is typically created inside <code>/var</code> to store files meant for the web. I then have a <code>/phindee</code> directory specified inside <code>/www</code> to store all things related to Phindee, as well as a <code>current</code> directory, which Capistrano will later create and use to store the latest deployment code. You don&rsquo;t have to actually create these directories now, as I will be covering this in part 5.</p>
+<p>The first variable <code>root</code> represents the path to the root directory of our app, which I&rsquo;ve set to <code>/var/www/phindee/current</code>. Generally, web apps are stored inside <code>/var/www</code> on Unix since the <code>/var</code> directory is designated for files that increase in size over time, which is the case with most web apps, and a <code>/www</code> directory is typically created inside <code>/var</code> to store files meant for the web. I then have a <code>/phindee</code> directory specified inside <code>/www</code> to store all things related to Phindee, as well as a <code>current</code> directory, which Capistrano will later create and use to store the latest deployment code. You don&rsquo;t have to actually create these directories now, as Capistrano we&rsquo;ll create them itself when it runs.</p>
 
 <p>Below is what the rest of the configurations mean:</p>
 
@@ -258,6 +258,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/">Deploying Rails Apps, Part 5: Configuring Capistrano</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/">Deploying Rails Apps, Part 4: Configuring Nginx</a>
       </li>
     
@@ -271,10 +275,6 @@
     
       <li class="post">
         <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">Deploying Rails Apps, Part 1: Securing the Server</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/02/27/im-leaving-linode-for-digitalocean/">I'm Leaving Linode for DigitalOcean</a>
       </li>
     
   </ul>

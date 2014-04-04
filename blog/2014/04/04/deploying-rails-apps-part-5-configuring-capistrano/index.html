@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Deploying Rails Apps, Part 5: Configuring Capistrano - Hungry and Foolish</title>
+  <meta name="author" content="Vladi Gleba">
+
+  
+  <meta name="description" content="In the previous four posts, I covered how I went about setting up my server for Phindee and how I configured Unicorn and Nginx. Here in part 5, I &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://vladigleba.github.io/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Hungry and Foolish" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37472806-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Hungry and Foolish</a></h1>
+  
+    <h2>Utilizing the power of the web for good</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation">  
+  
+    <form method="get" action="/search.html">
+      <fieldset role="search">
+        <input class="search" name="query" type="text" placeholder="Search..." x-webkit-speech />
+      </fieldset>
+    </form>
+  
+  
+<ul class="main-navigation">
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/blog/topics/projects/">Projects</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a title="subscribe via RSS" rel="subscribe-rss" href="http://www.feedblitz.com/f/?sub=927939">Subscribe</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Deploying Rails Apps, Part 5: Configuring Capistrano</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-04T07:36:00-07:00" pubdate data-updated="true">Apr 4<span>th</span>, 2014</time>
+        
+
+<span class="categories">
+  published in 
+  
+    <a class='category' href='/blog/topics/deployment/'>Deployment</a>, <a class='category' href='/blog/topics/phindee/'>Phindee</a>, <a class='category' href='/blog/topics/rails/'>Rails</a>
+  
+</span>
+
+
+        
+          <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>In the previous four posts, I covered how I went about setting up my server for Phindee and how I configured Unicorn and Nginx. Here in part 5, I will now talk about how I configured Capistrano to actually deploy Phindee.</p>
+
+<!-- more -->
+
+
+<p>If you’re not familiar with it, <a href="http://capistranorb.com/">Capistrano</a> is the de-facto deployment tool for Rails apps; it makes deployment easier by automating a lot of the work for you, and it can be easily customized to suit your particular needs. If you’ve never used it before, I hope this post will give you a taste of what it can do.</p>
+
+<p>By the way, I’ll be using version 3, which came out last summer; it’s a complete rewrite that ended up reducing Capistrano’s footprint to just 700 lines of code! If you’re coming from version 2, I recommend reading <a href="https://semaphoreapp.com/blog/2013/11/26/capistrano-3-upgrade-guide.html">this post</a> to learn about the differences.</p>
+
+<p>One of the ways the core team was able to keep it so lean was by breaking framework-specific tasks into separate gems, which means that in addition to installing the Capistrano gem itself, we’ll need to install Rails-specific gems as well. Here is what you should add to your <code>Gemfile</code>:</p>
+
+<figure class='code'><figcaption><span>Gemfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">.</span> <span class="o">.</span> <span class="o">.</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">group</span> <span class="ss">:development</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;capistrano&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 3.1.0&#39;</span>
+</span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;capistrano-rails&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 1.1.1&#39;</span>
+</span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;capistrano-bundler&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 1.1.1&#39;</span>
+</span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;capistrano-rbenv&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 2.0.2&#39;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Since we’ll only be using Capistrano in development, we put all the gems in the <code>:development</code> group. Note that we added Rails-specific tasks through the <code>capistrano-rails</code> gem, Bundler-specific tasks through the <code>capistrano-bundler</code> gem, and rbenv-specific tasks through the <code>capistrano-rbenv</code> gem.</p>
+
+<p>We can install them by running <code>bundle</code> in the root directory of our Rails app. After Bundler finishes the install, we’ll tell Capistrano to create the necessary files it needs to do its job by running the following:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>cap install
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>One of the files this created is called <code>Capfile</code>, which will be located in the root directory of your Rails app. It&rsquo;ll contain various <code>require</code> statements to load the necessary code that Capistrano will need to do its job. We’ll open it up and uncomment the following lines to load the gems we just installed:</p>
+
+<figure class='code'><figcaption><span>Capfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;capistrano/rails&#39;</span>
+</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;capistrano/bundler&#39;</span>
+</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;capistrano/rbenv&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You’ll also see the following line at the end of the file:</p>
+
+<figure class='code'><figcaption><span>Capfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Dir</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;lib/capistrano/tasks/*.cap&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="p">{</span> <span class="o">|</span><span class="n">r</span><span class="o">|</span> <span class="n">import</span> <span class="n">r</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This will load any custom tasks from <code>lib/capistrano/tasks</code>, which we will later define.</p>
+
+<h1>Roll up Your Sleeves</h1>
+
+<p>One cool thing about Capistrano is it’s designed to work with different deployment scenarios. You could, for example, have both a production server running your “live” application and a staging server meant for testing newly developed features before they’re pushed to the production server. In other words, you’d have two deployment stages: production and staging. When we ran <code>cap install</code>, Capistrano actually already created the necessary files for this; they’re located inside the <code>/config/deploy</code> directory and are named <code>production.rb</code> and <code>staging.rb</code>, respectively. We’ll use them to define stage-specific configurations, while configurations that are meant to be shared across all stages will be set in <code>config/deploy.rb</code>, and that’s where we’ll start first.</p>
+
+<h2>General Configuration</h2>
+
+<p>Below is how my <code>deploy.rb</code> file looks like for Phindee:</p>
+
+<figure class='code'><figcaption><span>deploy.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">lock</span> <span class="s2">&quot;3.1.0&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">set</span> <span class="ss">:application</span><span class="p">,</span> <span class="s2">&quot;phindee&quot;</span>
+</span><span class='line'><span class="n">set</span> <span class="ss">:repo_url</span><span class="p">,</span> <span class="s2">&quot;git@github.com:vladigleba/phindee.git&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">set</span> <span class="ss">:deploy_to</span><span class="p">,</span> <span class="s2">&quot;/var/www/</span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:application</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="n">set</span> <span class="ss">:deploy_user</span><span class="p">,</span> <span class="s2">&quot;bob&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">set</span> <span class="ss">:rbenv_type</span><span class="p">,</span> <span class="ss">:user</span> <span class="c1"># or :system, depends on your rbenv setup</span>
+</span><span class='line'><span class="n">set</span> <span class="ss">:rbenv_ruby</span><span class="p">,</span> <span class="s2">&quot;2.1.0&quot;</span>
+</span><span class='line'><span class="n">set</span> <span class="ss">:rbenv_prefix</span><span class="p">,</span> <span class="s2">&quot;RBENV_ROOT=</span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:rbenv_path</span><span class="p">)</span><span class="si">}</span><span class="s2"> RBENV_VERSION=</span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:rbenv_ruby</span><span class="p">)</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:rbenv_path</span><span class="p">)</span><span class="si">}</span><span class="s2">/bin/rbenv exec&quot;</span>
+</span><span class='line'><span class="n">set</span> <span class="ss">:rbenv_map_bins</span><span class="p">,</span> <span class="sx">%w{rake gem bundle ruby rails}</span>
+</span><span class='line'><span class="n">set</span> <span class="ss">:rbenv_roles</span><span class="p">,</span> <span class="ss">:all</span> <span class="c1"># default value</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">set</span> <span class="ss">:linked_files</span><span class="p">,</span> <span class="sx">%w{config/database.yml}</span>
+</span><span class='line'><span class="n">set</span> <span class="ss">:linked_dirs</span><span class="p">,</span> <span class="sx">%w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">set</span> <span class="ss">:keep_releases</span><span class="p">,</span> <span class="mi">5</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The very first line locks the configurations in this file to Capistrano 3.1, and if you have any other version installed, the file won’t run. (This is designed to help prevent configurations from braking between version updates.)</p>
+
+<p>Next, we’re using the <code>set()</code> function to initialize the <code>:application</code> variable to “phindee.” (We’ll retrieve this variable’s value later using the corresponding <code>fetch()</code> function.) We’re also setting the <code>:repo_url</code> variable to the URL of the GitHub repository containing your code so Capistrano  knows where to look when we deploy. By the way, if your code is on a branch other than “master,” you’ll need to specify its name by adding <code>set :branch, “branch-name”</code>; otherwise, this is not needed because Capistrano sets it to “master” by default.</p>
+
+<p>The next line sets the <code>:deploy_to</code> variable to the path where you want Capistrano storing the code it downloads from GitHub. This should be the same path you previously set in <code>unicorn.rb</code>, but without the <code>/current</code> directory appended to it. This is because <code>/current</code> represents the directory with the latest deploy code, while Capistrano is interested in the general app directory.</p>
+
+<p><code>:deploy_user</code> is then set to the user Capistrano will be deploying as, and this should match the user you created when you setup your server in <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">part 1</a>.</p>
+
+<p>The next few lines set variables needed by rbenv, and I actually copied and pasted these lines from the <code>capistrano-rbenv</code> <a href="https://github.com/capistrano/rbenv">README file</a>. The key variable here is <code>:rbenv_ruby</code>, which sets the Ruby version that rbenv installed on your machine, and you can run <code>ls ~/.rbenv/versions</code> in the command line to find which version that is. If this is not set correctly, the deploy will fail.</p>
+
+<p>The other variable worth mentioning here is <code>:rbenv_type</code>. We could set it to <code>:system</code> if rbenv was installed system-wide on our machine, but since we installed rbenv on a per-user basis inside <code>~/.rbenv</code>, we&rsquo;re setting it to <code>:user</code>. System-wide installs can lead to problems with permissions, and it’s generally cleaner to just do a per-user install. The other three variables don’t need to be modified, and you can leave them the way they are.</p>
+
+<p>Moving on, we’re setting the <code>:linked_files</code> variable to an array of strings initialized to <code>config/database.yml</code>. This tells Capistrano to store our app’s <code>config/database.yml</code> file inside a directory called <code>/shared</code>, which is meant for any files we want to persist between deploys. Since the contents of <code>database.yml</code> won’t change between deploys, it’s a good idea to store it there.</p>
+
+<p>Similarly, <code>:linked_dirs</code> contains <em>directories</em> that are meant to persist between deploys, and they too will be stored inside <code>/shared</code>. These include directories containing things like log files, Unicorn sockets, and <code>.pid</code> files that will all stay the same between deploys.</p>
+
+<p>And finally, <code>:keep_releases</code> tells Capistrano to only keep the last 5 deploys and discard everything else. This can be useful whenever you need to rollback to a previous release, but you also don&rsquo;t want releases piling up, so it&rsquo;s best not to set this number too high.</p>
+
+<h2>Stage-Specific Configuration</h2>
+
+<p>Now that <code>deploy.rb</code> is configured, we’ll move on to defining stage-specific configurations. Since I currently don’t have a separate environment for staging, I’ll only be going over the <code>config/deploy/production.rb</code> file, and you can just leave <code>staging.rb</code> the way it is by default. Below is how my <code>production.rb</code> file looks like:</p>
+
+<figure class='code'><figcaption><span>production.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">set</span> <span class="ss">:stage</span><span class="p">,</span> <span class="ss">:production</span>
+</span><span class='line'><span class="n">set</span> <span class="ss">:rails_env</span><span class="p">,</span> <span class="ss">:production</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">server</span> <span class="s1">&#39;xxx.xxx.xxx.xxx&#39;</span><span class="p">,</span> <span class="ss">user</span><span class="p">:</span> <span class="s1">&#39;bob&#39;</span><span class="p">,</span> <span class="ss">port</span><span class="p">:</span> <span class="mi">12345</span><span class="p">,</span> <span class="ss">roles</span><span class="p">:</span> <span class="sx">%w{web app db}</span><span class="p">,</span> <span class="ss">primary</span><span class="p">:</span> <span class="kp">true</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>As you can see, there isn’t much going on here. We’re first setting the <code>:stage</code> variable to <code>:production</code> to let Capistrano know that this file is meant for production. We’re also setting the <code>:rails_env</code> variable to the same thing to make sure Rails runs in the production environment. But the key line is the last line, which tells Capistrano how to access our VPS server. Make sure you replace the Xs with the IP address of the server you setup in part 1, along with the user and port number it&rsquo;s set up with.</p>
+
+<p>We’re then using the <code>:roles</code> variable to let Capistrano know that our database server (PostgreSQL) represented by <code>db</code>, web server (Nginx) represented by <code>web</code>, and application server (Unicorn) represented by <code>app</code> all run on the same machine. Apps with lots of traffic, on the other hand, might have multiple separate physical servers for each of these. Setting <code>:primary</code> to <code>true</code> then tells Capistrano that this is our primary database server, and Capistrano will run migrations only on the one we designate as <code>:primary</code>. Even if we’re running all our servers on the same physical machine, setting <code>:primary</code> is still necessary.</p>
+
+<h1>Enabling Agent Forwarding</h1>
+
+<p>Now that Capistrano knows how to access our VPS, we need to make sure it can also access our code on GitHub. We’ll be using agent forwarding to allow us to reuse the local key we generated in part 1 to authenticate with GitHub. In order for this to work, we’ll need to add the key to GitHub, and you can do so by following step 3 on <a href="https://help.github.com/articles/generating-ssh-keys#step-3-add-your-ssh-key-to-github">this GitHub page</a>.</p>
+
+<p>To enable agent forwarding in Capistrano 2, you had explicitly set it in <code>deploy.rb</code>, but in Capistrano 3, it’s already taken care of and enabled by default. The only thing we have left to do is log in to our VPS and run the following command to add github.com to the list of known hosts; this ensures Capistrano won’t have any problems with it being unknown when it tries downloading your code from GitHub to your server:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ssh git@github.com
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You’ll get a warning asking if you’re sure you want to continue connecting. Verify that the key fingerprint matches the one you just added to GitHub, and enter “yes”. If you get an “access denied” message, see <a href="https://help.github.com/articles/error-permission-denied-publickey">this page</a> for potential solutions. If you’re experiencing some other agent forwarding problems, <a href="https://help.github.com/articles/using-ssh-agent-forwarding#troubleshooting">this page</a> might help you out.</p>
+
+<h1>Setting Permissions</h1>
+
+<p>If you look at <code>deploy.rb</code>, you’ll notice I set the <code>:deploy_to</code> variable to “/var/www/phindee,” but on my VPS, the <code>/var</code> directory doesn’t yet contain the <code>/www</code> directory. That’s not a problem since Capistrano will create it for me through the user <code>bob</code>, as specified in <code>deploy.rb</code>, but it needs write permissions to do so.</p>
+
+<p>If you read <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">part 1</a>, you’ll remember we created a group called <code>deployers</code> to contain users with deployment privileges and added the user <code>bob</code> into it. This means we can give the necessary permissions <code>bob</code> will need by simply giving them to <code>deployers</code>, and since <code>bob</code> is a member of the group, he will automatically inherit them.</p>
+
+<p>I’m already logged in to my VPS as <code>bob</code>, and I can change the <code>/var</code> directory’s group to <code>deployers</code> with the following command:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo chgrp deployers /var
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We can then give this group write permissions so its members can create directories within <code>/var</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo chmod g+w /var
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>There are two other places where we need to repeat this process. The first is the <code>/etc/nginx/sites-enabled</code> directory, which Nginx uses to store its configuration files, and this is where our <code>config/nginx.conf</code> file that we created in <a href="/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/">part 4</a> will go. But we actually won’t be storing the file itself there; we’ll create a symlink to it, instead. This will make our deploys easier to manage because we won’t need to add our <code>nginx.conf</code> file to the <code>/etc/nginx/sites-enabled</code> directory <em>every</em> time we deploy. We can simply symlink it since Capistrano will always store our latest deploy code in the same place (<code>/var/www/phindee/current</code>).</p>
+
+<p>Same thing is needed for the <code>config/unicorn_init.sh</code> file from <a href="/blog/2014/03/21/deploying-rails-apps-part-3-configuring-unicorn/">part 3</a>. We’ll need to create a symlink inside <code>/etc/init.d</code>, since that’s the directory Linux uses to store all the shell scripts used to manage the various services installed on the system. When we installed Nginx in <a href="/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/">part 2</a>, for example, a shell script was automatically installed there to help us manage Nginx, and it will be invoked whenever we run a command like <code>sudo service nginx restart</code>. There is nothing like this for Unicorn yet, which is why we need to create a symlink to our <code>unicorn_init.sh</code> script to give us similar functionality.</p>
+
+<p>In order for Capistrano to create symlinks, it needs write permissions in the relevant directories. We can give them with the following commands:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo chgrp deployers /etc/nginx/sites-enabled
+</span><span class='line'>sudo chmod g+w /etc/nginx/sites-enabled
+</span><span class='line'>
+</span><span class='line'>sudo chgrp deployers /etc/init.d
+</span><span class='line'>sudo chmod g+w /etc/init.d
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And now Capistrano should have the necessary permissions to do its work.</p>
+
+<p>Having Capistrano configured, we’re ready to move on and start writing custom tasks to help us deploy our code, and that’s exactly what we’ll do in the next and last post of this series. If you want to be notified when it’s out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and you&rsquo;ll get it delivered to your inbox as soon as it’s released.</p>
+</div>
+
+
+  <footer>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/" title="Previous Post: Deploying Rails Apps, Part 4: Configuring Nginx">&laquo; Deploying Rails Apps, Part 4: Configuring Nginx</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/">Deploying Rails Apps, Part 5: Configuring Capistrano</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/">Deploying Rails Apps, Part 4: Configuring Nginx</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/21/deploying-rails-apps-part-3-configuring-unicorn/">Deploying Rails Apps, Part 3: Configuring Unicorn</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/">Deploying Rails Apps, Part 2: Setting up the Server</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">Deploying Rails Apps, Part 1: Securing the Server</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>Copyright &copy; 2014 Vladi Gleba</p>
+<p>Produced in Portland, Oregon. Powered by <a href="http://octopress.org">Octopress</a> and <a href="https://github.com/vladigleba/readify">Readify</a>.</p>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'vladigleba';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://vladigleba.github.io/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/';
+        var disqus_url = 'http://vladigleba.github.io/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://107.170.255.153/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+
+</script>
+<noscript><p><img src="http://107.170.255.153/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</body>
+</html>

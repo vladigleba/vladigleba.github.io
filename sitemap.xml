@@ -42,31 +42,37 @@
     </url>
     <url>
         <loc>http://vladigleba.github.io/blog/2014/02/27/im-leaving-linode-for-digitalocean/</loc>
-        <lastmod>2014-03-27T13:13:22-07:00</lastmod>
+        <lastmod>2014-04-04T08:36:45-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://vladigleba.github.io/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/
         </loc>
-        <lastmod>2014-03-14T09:49:36-07:00</lastmod>
+        <lastmod>2014-04-04T09:00:05-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://vladigleba.github.io/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/
         </loc>
-        <lastmod>2014-03-21T10:12:20-07:00</lastmod>
+        <lastmod>2014-04-04T08:24:01-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://vladigleba.github.io/blog/2014/03/21/deploying-rails-apps-part-3-configuring-unicorn/
         </loc>
-        <lastmod>2014-03-27T13:11:54-07:00</lastmod>
+        <lastmod>2014-04-04T08:40:59-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://vladigleba.github.io/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/
         </loc>
-        <lastmod>2014-03-27T13:10:05-07:00</lastmod>
+        <lastmod>2014-04-04T08:35:34-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://vladigleba.github.io/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/
+        </loc>
+        <lastmod>2014-04-04T10:30:07-07:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/about/</loc>
@@ -78,11 +84,11 @@
     </url>
     <url>
         <loc>http://vladigleba.github.io/blog/archives/</loc>
-        <lastmod>2014-03-27T13:13:22-07:00</lastmod>
+        <lastmod>2014-04-04T10:30:07-07:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/</loc>
-        <lastmod>2014-03-27T13:13:22-07:00</lastmod>
+        <lastmod>2014-04-04T10:30:07-07:00</lastmod>
     </url>
     <url>
         <loc>http://vladigleba.github.io/robots.txt</loc>
