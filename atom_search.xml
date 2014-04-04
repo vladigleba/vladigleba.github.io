@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-04-04T10:36:47-07:00</updated>
+  <updated>2014-04-04T10:37:57-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -998,7 +998,7 @@
 <li><a href="http://vladigleba.github.io/blog/2014/03/21/deploying-rails-apps-part-3-configuring-unicorn/">Deploying Rails Apps, Part 3: Configuring Unicorn</a></li>
 <li><a href="http://vladigleba.github.io/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/">Deploying Rails Apps, Part 4: Configuring Nginx</a></li>
 <li><a href="http://vladigleba.github.io/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/">Deploying Rails Apps, Part 5: Configuring Capistrano</a></li>
-<li>Deploying Rails Apps, Part 6: Writing Tasks</li>
+<li>Deploying Rails Apps, Part 6: Writing Capistrano Tasks</li>
 </ul>
 
 
