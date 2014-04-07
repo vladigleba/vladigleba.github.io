@@ -229,4 +229,4 @@ gem: –no-ri –no-rdoc
 
 The flags will then be included automatically the next time you install new gems.
 
-And with that, our server setup is now complete! Having installed Node.js, Nginx, PostgreSQL, and rbenv, we’re now ready to start configuring Nginx and Unicorn, which I’ll cover in the [next post]({{ root_url }}/blog/2014/03/21/deploying-rails-apps-part-3-configuring-nginx-and-unicorn/). If you want to be notified when it’s out, feel free to [subscribe](http://www.feedblitz.com/f/?Sub=927939&cids=1), and you’ll have the complete post delivered to your inbox as soon as it’s released!
+And with that, our server setup is now complete! Having installed Node.js, Nginx, PostgreSQL, and rbenv, we’re now ready to start configuring Nginx and Unicorn, which I’ll cover in the [next post]({{ root_url }}/blog/2014/03/21/deploying-rails-apps-part-3-configuring-unicorn/). If you want to be notified when it’s out, feel free to [subscribe](http://www.feedblitz.com/f/?Sub=927939&cids=1), and you’ll have the complete post delivered to your inbox as soon as it’s released!

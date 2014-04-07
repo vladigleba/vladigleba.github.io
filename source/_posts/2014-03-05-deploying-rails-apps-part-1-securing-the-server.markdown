@@ -136,13 +136,27 @@ The final thing we’ll do to secure our server is enable SSH authentication, wh
 
 All SSH keys come in pairs: one private and the other public. The private key is stored locally and needs to be carefully guarded, while the public key is stored on the remote server to which you will be logging in. Anytime you want to connect to the server, it will use the public key to create a challenge, which it will then send over to you, and only you, the holder of the private key, will be able to correctly understand and solve the challenge. Your response is then sent back to the server, and if it’s correct, it’ll grant you access.
 
-If you don’t already have an SSH key, you can generate it with the following command:
+You can see if you already have an SSH key by running:
 
 ``` bash
-ssh-keygen
+ls ~/.ssh
 ```
 
-It’ll prompt you to enter a path and passphrase, but the default path is fine, and since we won’t be setting up a passphrase, you can just press “enter” for both. This will store both the private and public keys in the `~/.ssh/` directory, and they will be named according to the type of encryption used, the default being RSA authentication. Your private key will be stored in a file called `id_rsa`, while `id_rsa.pub` will hold your public key.
+If you see any files with the `.pub` extension, then you already have a key generated; otherwise, you can generate one with the following command:
+
+``` bash
+ssh-keygen -C "your.email@example.com"
+```
+
+Note that we're using the `-C` flag to create a label for our key for easy identification, and it's typical to set it to your email address. When the command runs, it’ll prompt you to enter a path and passphrase, but the default path is fine, and since we won’t be setting up a passphrase, you can just press “enter” for both. This will store both the private and public keys in the `~/.ssh/` directory, and they will be named according to the type of encryption used, the default being RSA authentication. Your private key will be stored in a file called `id_rsa`, while `id_rsa.pub` will hold your public key.
+
+We'll then need to add the newly generated keys to `ssh-agent`, which is a program that caches your private key and provides it to the SSH client program on your behalf. You can do so with the following command:
+
+``` bash
+ssh-add ~/.ssh/id_rsa
+```
+
+It'll then ask you for a passphrase, but since we didn't set one up, you'll just need to press "enter."
 
 Having our keys generated, we’re now ready to copy our public key over to the remote server using the `ssh-copy-id` command. (If you’re on a Mac, and you don’t have `ssh-copy-id` installed, you can install it using Homebrew with `brew install ssh-copy-id`.) Below is the full `ssh-copy-id` command that will copy our key over to the server:
 
@@ -167,5 +181,3 @@ To summarize, we made our server more secure by:
 Of course, this doesn’t mean our server is “unhackable” by any means, but it is significantly more secure than it was before. You can now sleep more peacefully knowing that any future hackers have at least some of their work cut out for them.
 
 In [part 2]({{ root_url }}/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/), we’ll start setting up the server by installing the technology stack behind Phindee. If you’d like to be notified when its out, feel free to [subscribe](http://www.feedblitz.com/f/?sub=927939), and you'll get the complete post delivered right to your inbox as soon as it's released.
-
-Stay hungry. Stay foolish.

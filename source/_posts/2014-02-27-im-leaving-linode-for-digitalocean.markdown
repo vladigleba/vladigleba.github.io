@@ -46,12 +46,13 @@ Make no mistake, I’m leaving as a happy customer who was merely tempted and ev
 
 # A Word About Future Posts
 
-Now that I’ve successfully moved Phindee over to DigitalOcean, I will use the next four posts to show you how I went about deploying Phindee from scratch. This is how I'll break it down:
+Now that I’ve successfully moved Phindee over to DigitalOcean, I will use the next six posts to show you how I went about deploying Phindee from scratch. This is how I'll break it down:
 
 - [Deploying Rails Apps, Part 1: Securing the Server]({{ root_url }}/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/)
 - [Deploying Rails Apps, Part 2: Setting up the Server]({{ root_url }}/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/)
 - [Deploying Rails Apps, Part 3: Configuring Unicorn]({{ root_url }}/blog/2014/03/21/deploying-rails-apps-part-3-configuring-unicorn/)
 - [Deploying Rails Apps, Part 4: Configuring Nginx]({{ root_url }}/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/)
-- Deploying Rails Apps, Part 5: Configuring Capistrano
+- [Deploying Rails Apps, Part 5: Configuring Capistrano]({{ root_url }}/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/)
+- Deploying Rails Apps, Part 6: Writing Capistrano Tasks
 
-I plan on publishing one part per week, starting with [part 1]({{ root_url }}/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/) next week. If you'd like to be notified when a post is out, feel free to [subscribe](http://www.feedblitz.com/f/?sub=927939), and you'll get the complete post delivered right to your inbox as soon as it's out!
+If you'd like to be notified when these posts are out, feel free to [subscribe](http://www.feedblitz.com/f/?sub=927939), and you'll get the complete post delivered right to your inbox as soon as it's released.

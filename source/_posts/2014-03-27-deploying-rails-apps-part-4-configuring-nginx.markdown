@@ -98,4 +98,4 @@ Keep-alive connections, by the way, send multiple HTTP requests in a single conn
 
 These are, of course, not all the options you can specify. If you’d like to learn about the additional ones, feel free to read through the comments in the sample `nginx.conf` [file](https://github.com/defunkt/unicorn/blob/master/examples/nginx.conf) I mentioned earlier.
 
-And that wraps up part 4. In the next and final post of this series, I will introduce Capistrano and show you how I use it to deploy Phindee to my VPS. If you want to be notified when it’s out, feel free to [subscribe](http://www.feedblitz.com/f/?Sub=927939&cids=1), and you'll get the post delivered to your inbox as soon as it’s released.
+And that wraps up part 4. I will introduce Capistrano in the [next post]({{ root_url }}/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/) and will explain how I configured it for Phindee. If you want to be notified when it’s out, feel free to [subscribe](http://www.feedblitz.com/f/?Sub=927939&cids=1), and you'll get it delivered to your inbox as soon as it’s released.

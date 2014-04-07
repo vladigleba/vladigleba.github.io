@@ -64,7 +64,7 @@ worker_processes 2
 timeout 30
 ```
 
-The first variable `root` represents the path to the root directory of our app, which I've set to `/var/www/phindee/current`. Generally, web apps are stored inside `/var/www` on Unix since the `/var` directory is designated for files that increase in size over time, which is the case with most web apps, and a `/www` directory is typically created inside `/var` to store files meant for the web. I then have a `/phindee` directory specified inside `/www` to store all things related to Phindee, as well as a `current` directory, which Capistrano will later create and use to store the latest deployment code. You don't have to actually create these directories now, as I will be covering this in part 5.
+The first variable `root` represents the path to the root directory of our app, which I've set to `/var/www/phindee/current`. Generally, web apps are stored inside `/var/www` on Unix since the `/var` directory is designated for files that increase in size over time, which is the case with most web apps, and a `/www` directory is typically created inside `/var` to store files meant for the web. I then have a `/phindee` directory specified inside `/www` to store all things related to Phindee, as well as a `current` directory, which Capistrano will later create and use to store the latest deployment code. You don't have to actually create these directories now, as Capistrano we'll create them itself when it runs.
 
 Below is what the rest of the configurations mean: 
 
