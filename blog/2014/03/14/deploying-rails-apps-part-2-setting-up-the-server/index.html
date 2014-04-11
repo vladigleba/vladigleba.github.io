@@ -247,7 +247,7 @@
 <p>Once logged in, we’ll setup a password for <code>postgres</code>:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="err">\</span><span class="n">password</span>
+</pre></td><td class='code'><pre><code class='mysql'><span class='line'><span class="err">\</span><span class="n">password</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -255,15 +255,15 @@
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">create</span> <span class="k">user</span> <span class="k">admin</span> <span class="k">with</span> <span class="n">password</span> <span class="s1">&#39;secret&#39;</span><span class="p">;</span>
-</span><span class='line'><span class="k">create</span> <span class="k">database</span> <span class="n">phindee</span> <span class="k">owner</span> <span class="k">admin</span><span class="p">;</span>
+</pre></td><td class='code'><pre><code class='mysql'><span class='line'><span class="k">create</span> <span class="n">user</span> <span class="n">admin</span> <span class="k">with</span> <span class="n">password</span> <span class="s1">&#39;secret&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="k">create</span> <span class="k">database</span> <span class="n">phindee</span> <span class="n">owner</span> <span class="n">admin</span><span class="p">;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
 <p>Having the basics setup, we can now quit Postgres:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="err">\</span><span class="n">quit</span>
+</pre></td><td class='code'><pre><code class='mysql'><span class='line'><span class="err">\</span><span class="n">quit</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -408,6 +408,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/">Deploying Rails Apps, Part 6: Writing Capistrano Tasks</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/">Deploying Rails Apps, Part 5: Configuring Capistrano</a>
       </li>
     
@@ -421,10 +425,6 @@
     
       <li class="post">
         <a href="/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/">Deploying Rails Apps, Part 2: Setting up the Server</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">Deploying Rails Apps, Part 1: Securing the Server</a>
       </li>
     
   </ul>

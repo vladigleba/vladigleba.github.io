@@ -172,14 +172,14 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>and we’ll add the following line into it:</p>
+<p>and we’ll add the following line into it (we use &ldquo;%&rdquo; to indicate that this is a group name):</p>
 
 <figure class='code'><figcaption><span>sudoers</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='text'><span class='line'>%deployers      ALL=(ALL) ALL
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>You can then exit the nano text editor by typing &ldquo;Control-X&rdquo; and typing &ldquo;Y&rdquo; when asked if you want to save. In case you’re wondering, the line we just added above will give the users in the <code>deployers</code> group the ability to run commands as <code>root</code>. If this is new to you, I can explain.</p>
+<p>You can then exit the nano text editor by typing &ldquo;Control-X&rdquo; and typing &ldquo;Y&rdquo; when asked if you want to save. In case you’re wondering, the line we just added above will give the users in the <code>deployers</code> group the ability to run commands as <code>root</code>. If this is new to you, let me explain.</p>
 
 <p>Running commands while logged in as <code>root</code> is considered bad practice because, as the superuser, <code>root</code> can run any and all commands, and since there is no undo functionality in Unix, one accidental bad command and your system can be seriously disrupted. That’s why we created a separate user called <code>bob</code>, which will have deployment privileges and nothing else.</p>
 
@@ -349,6 +349,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/">Deploying Rails Apps, Part 6: Writing Capistrano Tasks</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/">Deploying Rails Apps, Part 5: Configuring Capistrano</a>
       </li>
     
@@ -362,10 +366,6 @@
     
       <li class="post">
         <a href="/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/">Deploying Rails Apps, Part 2: Setting up the Server</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">Deploying Rails Apps, Part 1: Securing the Server</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: MapBox | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/mapbox/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-04-07T12:05:51-07:00</updated>
+  <updated>2014-04-11T09:47:23-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -132,13 +132,13 @@ end
 
 <h1>hand it over to MapBox for mapping</h1>
 
-<p>markerLayer = $.ajax
+<p>$.ajax
   dataType: &lsquo;text&rsquo;
   url: &lsquo;happy_hours/happening_now.json&rsquo;
   success: (data) &ndash;></p>
 
 <pre><code>geojson = $.parseJSON(data)
-map.markerLayer.setGeoJSON(geojson)
+map.featureLayer.setGeoJSON(geojson)
 </code></pre>
 
 <p>```</p>
@@ -153,15 +153,15 @@ map.markerLayer.setGeoJSON(geojson)
 
 <h1>add custom popups to each marker</h1>
 
-<p>map.markerLayer.on &lsquo;layeradd&rsquo;, (e) &ndash;>
+<p>map.featureLayer.on &lsquo;layeradd&rsquo;, (e) &ndash;>
   marker = e.layer
-  feature = marker.feature</p>
+  properties = marker.feature.properties</p>
 
 <p>  # create custom popup
   popupContent =  &lsquo;<div class="popup">&rsquo; +</p>
 
-<pre><code>                '&lt;h3&gt;' + feature.properties.name + '&lt;/h3&gt;' +
-                '&lt;p&gt;' + feature.properties.address + '&lt;/p&gt;' +
+<pre><code>                '&lt;h3&gt;' + properties.name + '&lt;/h3&gt;' +
+                '&lt;p&gt;' + properties.address + '&lt;/p&gt;' +
               '&lt;/div&gt;'
 </code></pre>
 
@@ -189,9 +189,9 @@ minWidth: 320
   currentlyClickedName = current.find(&lsquo;h2&rsquo;).text()</p>
 
 <p>  # opens/closes popup for currently clicked happy hour
-  map.markerLayer.eachLayer (layer) &ndash;></p>
+  map.featureLayer.eachLayer (marker) &ndash;></p>
 
-<pre><code>if layer.feature.properties.name is currentlyClickedName
+<pre><code>if marker.feature.properties.name is currentlyClickedName
   id = layer._leaflet_id
   map._layers[id].openPopup()
 </code></pre>

@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-04-07T12:05:51-07:00</updated>
+  <updated>2014-04-11T09:47:23-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -12,6 +12,368 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Deploying Rails Apps, Part 6: Writing Capistrano Tasks]]></title>
+    <link href="http://vladigleba.github.io/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/"/>
+    <updated>2014-04-10T08:42:00-07:00</updated>
+    <id>http://vladigleba.github.io/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks</id>
+    <content type="html"><![CDATA[<p>It’s been a long time coming, but we finally reached the point where we can deploy our app to our VPS and have it be available on the internet for viewing. We configured Capistrano in the <a href="http://vladigleba.github.io/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/">previous post</a>, and now we’ll actually use it for the deploy. Just like in the previous posts, I’ll be going over how I have things setup for <a href="http://phindee.com/">Phindee</a> to help illustrate the concepts.</p>
+
+<!-- more -->
+
+
+<p>You might already know this, but Capistrano does much of its work with the help of tasks. When we previously ran <code>cap install</code>, we actually invoked a task named <code>install</code> that created various files and directories; if you’re interested, you can see its code <a href="https://github.com/capistrano/capistrano/blob/master/lib/capistrano/tasks/install.rake">on GitHub</a>. Similarly, we can write our own tasks to help us automate various things.</p>
+
+<p>When I was deploying Phindee, I created a file called <code>setup.cap</code> inside the app’s local <code>/lib/capistrano/tasks</code> directory. Go ahead and do the same for your app, and add the following code into it:</p>
+
+<figure class='code'><figcaption><span>setup.cap</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">namespace</span> <span class="ss">:setup</span> <span class="k">do</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">desc</span> <span class="s2">&quot;Upload database.yml file.&quot;</span>
+</span><span class='line'>  <span class="n">task</span> <span class="ss">:upload_yml</span> <span class="k">do</span>
+</span><span class='line'>    <span class="n">on</span> <span class="n">roles</span><span class="p">(</span><span class="ss">:app</span><span class="p">)</span> <span class="k">do</span>
+</span><span class='line'>      <span class="n">execute</span> <span class="s2">&quot;mkdir -p </span><span class="si">#{</span><span class="n">shared_path</span><span class="si">}</span><span class="s2">/config&quot;</span>
+</span><span class='line'>      <span class="n">upload!</span> <span class="no">StringIO</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="no">File</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;config/database.yml&quot;</span><span class="p">)),</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">shared_path</span><span class="si">}</span><span class="s2">/config/database.yml&quot;</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">desc</span> <span class="s2">&quot;Seed the database.&quot;</span>
+</span><span class='line'>  <span class="n">task</span> <span class="ss">:seed_db</span> <span class="k">do</span>
+</span><span class='line'>    <span class="n">on</span> <span class="n">roles</span><span class="p">(</span><span class="ss">:app</span><span class="p">)</span> <span class="k">do</span>
+</span><span class='line'>      <span class="n">within</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">current_path</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">do</span>
+</span><span class='line'>        <span class="n">with</span> <span class="n">rails_env</span><span class="p">:</span> <span class="ss">:production</span> <span class="k">do</span>
+</span><span class='line'>          <span class="n">execute</span> <span class="ss">:rake</span><span class="p">,</span> <span class="s2">&quot;db:seed&quot;</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">desc</span> <span class="s2">&quot;Symlinks config files for Nginx and Unicorn.&quot;</span>
+</span><span class='line'>  <span class="n">task</span> <span class="ss">:symlink_config</span> <span class="k">do</span>
+</span><span class='line'>    <span class="n">on</span> <span class="n">roles</span><span class="p">(</span><span class="ss">:app</span><span class="p">)</span> <span class="k">do</span>
+</span><span class='line'>      <span class="n">execute</span> <span class="s2">&quot;rm -f /etc/nginx/sites-enabled/default&quot;</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="n">execute</span> <span class="s2">&quot;ln -nfs </span><span class="si">#{</span><span class="n">current_path</span><span class="si">}</span><span class="s2">/config/nginx.conf /etc/nginx/sites-enabled/</span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:application</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'>      <span class="n">execute</span> <span class="s2">&quot;ln -nfs </span><span class="si">#{</span><span class="n">current_path</span><span class="si">}</span><span class="s2">/config/unicorn_init.sh /etc/init.d/unicorn_</span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:application</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'>   <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The first thing you’ll notice is we’re organizing all of the tasks here under a namespace called <code>:setup</code>. It’s not strictly necessary, but I just like to keep things organized. If the code seems overwhelming, don’t worry&mdash;I’ll explain everything.</p>
+
+<h1>Uploading Database Info</h1>
+
+<p>We’ll get a feel for how tasks work and what they’re capable of doing by running the first task in this file, which will simply upload our <code>database.yml</code> file to our server. But before we run it, we first need to add <code>database.yml</code> to our <code>.gitignore</code> file to let Git know we don’t want it tracked and uploaded to GitHub from now on. Why? Because we’ll be adding our database password into it, and it’s generally not a good idea to upload passwords to your GitHub repository. Below is how my <code>.gitignore</code> file looks like (it&rsquo;s usually located in your app&rsquo;s root directory, but if it&rsquo;s not there, go ahead and create it):</p>
+
+<figure class='code'><figcaption><span>.gitignore</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'># Ignore bundler config.
+</span><span class='line'>/.bundle
+</span><span class='line'>
+</span><span class='line'># Ignore the default SQLite database.
+</span><span class='line'>/db/*.sqlite3
+</span><span class='line'>/db/*.sqlite3-journal
+</span><span class='line'>
+</span><span class='line'># Ignore log, doc, and tmp directories
+</span><span class='line'>/log/*.log
+</span><span class='line'>/tmp
+</span><span class='line'>/doc
+</span><span class='line'>
+</span><span class='line'># Ignore .DS_Store files on Mac
+</span><span class='line'>.DS_Store
+</span><span class='line'>
+</span><span class='line'># Ignore database.yml file to prevent password leakage
+</span><span class='line'>/config/database.yml
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can see that in addition to ignoring the <code>database.yml</code> file, I’m also ignoring lots of other files as well, especially the annoying <code>.DS_Store</code> files that the Mac OS loves to create.</p>
+
+<p>With that out of the way, we can now safely open up <code>database.yml</code> and add our database parameters to the file&rsquo;s production section. We’ll only need to modify the <code>database</code>, <code>username</code>, and <code>password</code> keys, and everything else can be left the way it is. Make sure you set these to the database name, username, and password you created in <a href="http://vladigleba.github.io/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/">part 2</a>.</p>
+
+<p>Then run the following command inside your app’s local root directory:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>cap production setup:upload_yml
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This tells Capistrano to execute the <code>upload_yml</code> task inside the <code>setup</code> namespace using the <code>production.rb</code> file configurations. (If we had the <code>stage.rb</code> file setup, we could’ve ran <code>cap stage setup:upload_yml</code> to execute this task on our staging environment instead.) We can verify that the command uploaded the <code>database.yml</code> file to our server by logging in and outputting the contents of the file:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>cat /var/www/phindee/shared/config/database.yml
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This is obviously a trivial task, but it shows how powerful Capistrano can be. A few keystrokes allowed us to create a specific directory structure on our server and upload a file from our local computer. Neat stuff&mdash;and it will only get better.</p>
+
+<p>Alright, let’s now switch gears and learn about the syntax that made all of this possible.</p>
+
+<h1>Understanding SSHKit</h1>
+
+<p>Capistrano 3 uses the Rake DSL (Domain Specific Language), which means if you ever wrote Rake tasks, you&rsquo;ll be in familiar territory when writing Capistrano tasks; the only new thing you&rsquo;ll need to learn about is SSHKit and the various methods it provides. <a href="https://github.com/capistrano/sshkit">SSHKit</a> was actually developed and released with Capistrano 3, and it’s basically a lower-level tool that provides methods for connecting and interacting with remote servers; it does all the heavy lifting for Capistrano, in other words. There are four main methods you need to know about:</p>
+
+<ul>
+<li><code>on()</code>: specifies the server to run on</li>
+<li><code>within()</code>: specifies the directory path to run in</li>
+<li><code>as()</code>: specifies the user to run as</li>
+<li><code>with()</code>: specifies the environment variables to run with</li>
+</ul>
+
+
+<p>Typically, you’ll start a task by using an <code>on()</code> method to specify the server on which you want your commands to run. Then you can use any combination of <code>as()</code>, <code>within()</code>, and <code>with()</code> methods, which are repeatable and stackable in any order, to provide additional details. For example, the <code>upload_yml</code> task we ran in <code>setup.cap</code> uses the <code>on()</code> method to specify that the resulting block of code should only be run on the application server. The <code>seed_db</code> task right below it has <em>three</em> parameters that specify how the resulting statement will run; it uses <code>on()</code>, <code>within()</code>, and <code>with()</code> to specify that the statement should only run <em>on</em> the application server, <em>within</em> the path specified, and <em>with</em> certain environment variables set.</p>
+
+<p>Obviously, if SSHKit gives you methods to specify certain parameters that must be met before the actual statements are run, it should also give you methods to help you run those statements. That’s exactly what it does, and below are those methods:</p>
+
+<ul>
+<li><code>execute()</code>: the workhorse that runs the commands on your server</li>
+<li><code>upload()</code>: uploads a file from your local computer to your remote server</li>
+<li><code>capture()</code>: executes a command and returns its output as a string</li>
+<li><code>puts()</code>: writes the output returned by <code>capture()</code> to the screen</li>
+<li><code>background()</code>: runs a command in the background</li>
+<li><code>test()</code>: can be used for control flow since it works like the <code>test</code> command-line utility in Unix and returns false if its expression exits with a non-zero value</li>
+</ul>
+
+
+<p>Armed with this knowledge, we’re now better equipped to understand the three tasks in <code>setup.cap</code>.</p>
+
+<h1>Task Walk-Through</h1>
+
+<p>The <code>upload_yml</code> task, for example, is run on the application server only, and its first statement uses the <code>execute()</code> method to run <code>mkdir -p</code>, which creates the following directory structure inside <code>/var</code>, if it doesn’t already exist:</p>
+
+<pre><code>├── www
+  └── phindee
+    └── shared
+      └── config
+</code></pre>
+
+<p>The <code>shared_path</code> variable evaluates to <code>/var/www/phindee/shared</code>, since it takes the path we specified in <code>deploy_to</code> and appends the <code>/shared</code> directory to the end of it (<a href="https://github.com/capistrano/capistrano/blob/aeab6b6a1e5c5e654f35321dcd7438a0659864d0/lib/capistrano/dsl/paths.rb#L60">see the code</a>). We then append the <code>/config</code> directory to the end of that.</p>
+
+<p>The next statement uses <code>upload()</code> to upload our <code>database.yml</code> file to the directory we just created above. <code>File.read()</code> returns the file&rsquo;s contents as a string, which <code>StringIO.new()</code> takes and turns into a file. We then use this file as our source and <code>#{shared_path}/config/database.yml</code> as our destination. By the way, <code>upload()</code> has the bang symbol (!) because that’s how it’s defined in SSHKit, and it&rsquo;s just a convention letting us know that the method will block until it finishes.</p>
+
+<p>The <code>seed_db</code> task does exactly what it says&mdash;seeds the database with data by running <code>rake db:seed</code>. The <code>current_path</code> variable takes the <code>deploy_to</code> path and appends <code>/current</code> to it, which will result in <code>/var/www/phindee/current</code>. This is where the seed statement will run on the application server with the <code>rails_env</code> variable set to <code>:production</code>.</p>
+
+<p>But in order to ensure <code>rake</code> runs with the proper environment variables set, we have to use <code>rake</code> as a symbol and pass <code>db:seed</code> as a string; otherwise, the environment variables won&rsquo;t be set. This format will also be necessary whenever you’re running any other Rails-specific commands that rely on certain environment variables being set (see <a href="https://github.com/capistrano/sshkit#the-command-map">this section</a> of the SSHKit README to learn more).</p>
+
+<p>The final <code>:symlink_config</code> task does a couple ofthings. First, it removes the default configuration file for Nginx (<code>/etc/nginx/sites-enabled/default</code>) and replaces it with a symlink to our own configuration file (<code>nginx.conf</code>). Then it also creates a symlink to our <code>unicorn_init.sh</code> script that helps us manage Unicorn, but this time inside <code>/etc/init.d</code>, which is the place where Ubuntu stores scripts for managing various services (a similar script for managing Nginx was already added there when we ran <code>apt-get</code>). Notice we’re using <code>fetch()</code> in both cases, which simply retrieves the value of a variable initialized by <code>set()</code>, to name our files after our application name.</p>
+
+<p>These three tasks just merely scratch the surface of what’s possible, however. I recommend you take a look at SSHKit’s <a href="https://github.com/capistrano/sshkit/blob/master/EXAMPLES.md">example page</a> to learn more; I found it to be an invaluable tool in helping me better understand how all the different methods work together.</p>
+
+<h1>Finishing Touches</h1>
+
+<p>We’re almost ready for our deploy. There’s just one more file we need to add to <code>/lib/capistrano/tasks</code> called <code>deploy.cap</code>. Below is the code I have in mine:</p>
+
+<figure class='code'><figcaption><span>deploy.cap</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">namespace</span> <span class="ss">:deploy</span> <span class="k">do</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">desc</span> <span class="s2">&quot;Makes sure local git is in sync with remote.&quot;</span>
+</span><span class='line'>  <span class="n">task</span> <span class="ss">:check_revision</span> <span class="k">do</span>
+</span><span class='line'>    <span class="k">unless</span> <span class="sb">`git rev-parse HEAD`</span> <span class="o">==</span> <span class="sb">`git rev-parse origin/master`</span>
+</span><span class='line'>      <span class="nb">puts</span> <span class="s2">&quot;WARNING: HEAD is not the same as origin/master&quot;</span>
+</span><span class='line'>      <span class="nb">puts</span> <span class="s2">&quot;Run `git push` to sync changes.&quot;</span>
+</span><span class='line'>      <span class="nb">exit</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="sx">%w[start stop restart]</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">command</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">desc</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">command</span><span class="si">}</span><span class="s2"> Unicorn server.&quot;</span>
+</span><span class='line'>    <span class="n">task</span> <span class="n">command</span> <span class="k">do</span>
+</span><span class='line'>      <span class="n">on</span> <span class="n">roles</span><span class="p">(</span><span class="ss">:app</span><span class="p">)</span> <span class="k">do</span>
+</span><span class='line'>        <span class="n">execute</span> <span class="s2">&quot;/etc/init.d/unicorn_</span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:application</span><span class="p">)</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">command</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The <code>check_revision</code> task checks to make sure we pushed all our local changes to the remote master branch; if it finds that our local code is out of sync with the remote, the <code>exit</code> statement will cause Capistrano to quit. We&rsquo;ll want to run this task <em>before</em> Capistrano runs its own <code>deploy</code> task to make sure we don’t forget to push our local changes up to GitHub when trying to deploy.</p>
+
+<p>The second block of code actually creates <em>three</em> separate tasks that will allow us to start, stop, and restart Unicorn from our local computer. We&rsquo;ll run the <code>restart</code> task, for example, after Capistrano finishes its deploy so Unicorn picks up the new code. (Note that I created a namespace called <code>deploy</code> to contain these tasks since that&rsquo;s what they&rsquo;re related to.)</p>
+
+<p>But how do we tell Capistrano to run these tasks as part of its deploy? Well, Capistrano provides two callback functions called <code>before()</code> and <code>after()</code> to help us out, and the code below illustrates how it&rsquo;s done (add it to the end of your <code>deploy.rb</code> file):</p>
+
+<figure class='code'><figcaption><span>deploy.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">.</span> <span class="o">.</span> <span class="o">.</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">namespace</span> <span class="ss">:deploy</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">before</span> <span class="ss">:deploy</span><span class="p">,</span> <span class="s2">&quot;deploy:check_revision&quot;</span>
+</span><span class='line'>  <span class="n">after</span> <span class="ss">:deploy</span><span class="p">,</span> <span class="s2">&quot;deploy:restart&quot;</span>
+</span><span class='line'>  <span class="n">after</span> <span class="ss">:rollback</span><span class="p">,</span> <span class="s2">&quot;deploy:restart&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We&rsquo;re first using <code>before()</code> to tell Capistrano to run our <code>check_revision</code> task before it runs its own <code>deploy</code> task. Then we use <code>after()</code> to make sure Capistrano restarts Unicorn after a <code>deploy</code>. Finally, we do the same thing after a <code>rollback</code> task, which is a task that simply allows you to rollback to the previous deploy if you don&rsquo;t like the current one, for whatever reason, and it&rsquo;s invoked by running <code>cap production deploy:rollback</code>. Of course, we could use these callbacks with <em>any</em> task to run <em>any other</em> task, and this is powerful because it allows us to reuse and extend our code in different ways.</p>
+
+<p>I&rsquo;d like to point out that we&rsquo;re using the callbacks inside a namespace to make sure Capistrano knows which tasks the callbacks are referencing. This way Capistrano will know to run the <code>deploy</code> task, for example, that&rsquo;s defined in its own <code>deploy</code> namespace, and not some other task with an identical name defined somewhere else.</p>
+
+<p>What we now have is our own custom recipe (a Capistrano term meaning a series of tasks) for deployment. You can similarly write multiple other recipes to help you automate any other tedious work you find yourself doing over and over again.</p>
+
+<p>Alright, having all the necessary tasks defined, we can go ahead and push our code up to GitHub so Capistrano can deploy the latest changes:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>git add .
+</span><span class='line'>git commit -m <span class="s2">&quot;message&quot;</span>
+</span><span class='line'>git push origin master
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We’re now ready to deploy.</p>
+
+<h1>Show Time</h1>
+
+<p>This is a moment that was a long time coming. Let’s see what happens:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>cap production deploy
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>It&rsquo;s likely that you encountered some type of error before the task was able to finish. This is normal&mdash;something always goes wrong the first time you deploy (if everything went smoothly, on the other hand, you deserve a place in the Capistrano hall of fame). Capistrano configurations are specific to your setup/environment, and what worked for me may not necessarily work for you. The best advice I can give is to google the specific problem you’re having, and it’s likely you&rsquo;ll find someone who struggled with the same thing and already provided a possible solution for you.</p>
+
+<h2>Breaking It Down</h2>
+
+<p>A lot of things happened when we ran <code>cap production deploy</code>. If you do an <code>ls</code> on your <code>deploy_to</code> directory, for example, you’ll find four new directories there:</p>
+
+<ul>
+<li><code>/releases</code>: whenever you deploy, a new directory will be created here containing all the code for that deploy</li>
+<li><code>/current</code>: a symlink pointing to the latest directory in <code>/releases</code></li>
+<li><code>/shared</code>: holds files and directories that persist throughout deploys</li>
+<li><code>/repo</code>: contains a clone of your <code>.git</code> repo</li>
+</ul>
+
+
+<p>With regards to the directories in <code>/shared</code>, the main ones you need to know about are:</p>
+
+<ul>
+<li><code>/config</code>: contains our <code>database.yml</code> file</li>
+<li><code>/log</code>: contains the <code>production.log</code> and <code>unicorn.log</code> files (see <code>/var/log/nginx/error.log</code> for the Nginx log file)</li>
+<li><code>/public/assets</code>: contains all your assets</li>
+<li><code>/tmp/pids</code>: will contain a <code>unicorn.pid</code> file that stores the process ID of Unicorn’s master process (when it&rsquo;s running)</li>
+</ul>
+
+
+<p>When you run <code>cap production deploy</code>, you’re actually calling a Capistrano task called <code>deploy</code>, which then sequentially invokes other tasks. The main ones are listed below:</p>
+
+<ol>
+<li><code>starting</code>: creates the directory structure and checks that the GitHub repository is reachable</li>
+<li><code>updating</code>: copies the GitHub repository to a new <code>/releases</code> directory, adds symlinks pointing to <code>/shared</code>, runs Bundler, runs migrations, and compiles assets</li>
+<li><code>publishing</code>: symlinks the <code>/current</code> directory to the new <code>/releases</code> directory</li>
+<li><code>finishing</code>: removes old <code>/releases</code> directories</li>
+</ol>
+
+
+<p>If you run <code>cap -T</code>, you’ll see all these tasks listed, along with some other tasks that Capistrano runs during a deploy (see the <a href="http://capistranorb.com/documentation/getting-started/flow/">documentation</a> to learn when they&rsquo;re run). The tasks we defined ourselves will also be listed there, along with their descriptions.</p>
+
+<p>Now that our code is deployed, we can run the two other tasks in <code>deploy.rb</code>. If you have a seed file for seeding your database, you can run <code>cap production setup:seed_db</code> to invoke it; otherwise, you&rsquo;ll need to run <code>cap production setup:symlink_config</code> to symlink your config files.</p>
+
+<h1>Wrapping Up</h1>
+
+<p>One last thing we have left to do is add our symlinked Unicorn script (the one in <code>/etc/init.d</code>) to Ubunut’s startup scripts to make sure Unicorn will automatically start up whenever we restart our VPS. We can do this easily using the <code>update-rc.d</code> utility; we just need to give it a name of a file in <code>/etc/init.d</code>, and it&rsquo;ll automatically add it to the correct startup folders. Below is the command that does this (be sure to change <code>unicorn_phindee</code> to the name of your own script):</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo update-rc.d unicorn_phindee defaults
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This was already done automatically, by the way, for Nginx and PostgreSQL when we installed them with <code>apt-get</code> in part 2, which means that whenever we restart our VPS, these services will be restarted automatically as well.</p>
+
+<p>Once that’s done, I’ll log in to my VPS and restart Nginx (so it picks up the <code>nginx.conf</code> file we symlinked). Then I’ll start Unicorn by calling <code>start</code> on the <code>unicorn_phindee</code> script (be sure to use your own file name):</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo service nginx restart
+</span><span class='line'>/etc/init.d/unicorn_phindee start
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you now open up your favorite browser (I hope it&rsquo;s not Internet Explorer) and type your server’s IP address into the address bar, you might see your app; if you you don&rsquo;t, don&rsquo;t worry. Deployment is hard and takes a while to sink in. If things aren’t working, your best bet is to start with the logs and google any errors you find there.</p>
+
+<p>But the most important thing is to not get discouraged. When I set up my production server from scratch for the very first time, it took me a <em>full week</em> (I’m not kidding) to get it working. It was frustrating, discouraging, and is the reason why I decided to write this series, because I didn’t want other people going through the same thing. It doesn&rsquo;t have be that way though, and I hope it won&rsquo;t be.</p>
+
+<p>Stay hungry. Stay foolish.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Deploying Rails Apps, Part 5: Configuring Capistrano]]></title>
@@ -215,7 +577,7 @@
 
 <p>And now Capistrano should have the necessary permissions to do its work.</p>
 
-<p>Having Capistrano configured, we’re ready to move on and start writing custom tasks to help us deploy our code, and that’s exactly what we’ll do in the next and last post of this series. If you want to be notified when it’s out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and you&rsquo;ll get it delivered to your inbox as soon as it’s released.</p>
+<p>Having Capistrano configured, we’re ready to move on and start writing custom tasks to help us deploy our code, and that’s exactly what we’ll do in the <a href="http://vladigleba.github.io/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/">next and last post</a> of this series. If you want to be notified when it’s out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and you&rsquo;ll get it delivered to your inbox as soon as it’s released.</p>
 ]]></content>
   </entry>
   
@@ -611,7 +973,7 @@
 <p>Once logged in, we’ll setup a password for <code>postgres</code>:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="err">\</span><span class="n">password</span>
+</pre></td><td class='code'><pre><code class='mysql'><span class='line'><span class="err">\</span><span class="n">password</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -619,15 +981,15 @@
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">create</span> <span class="k">user</span> <span class="k">admin</span> <span class="k">with</span> <span class="n">password</span> <span class="s1">&#39;secret&#39;</span><span class="p">;</span>
-</span><span class='line'><span class="k">create</span> <span class="k">database</span> <span class="n">phindee</span> <span class="k">owner</span> <span class="k">admin</span><span class="p">;</span>
+</pre></td><td class='code'><pre><code class='mysql'><span class='line'><span class="k">create</span> <span class="n">user</span> <span class="n">admin</span> <span class="k">with</span> <span class="n">password</span> <span class="s1">&#39;secret&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="k">create</span> <span class="k">database</span> <span class="n">phindee</span> <span class="n">owner</span> <span class="n">admin</span><span class="p">;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
 <p>Having the basics setup, we can now quit Postgres:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="err">\</span><span class="n">quit</span>
+</pre></td><td class='code'><pre><code class='mysql'><span class='line'><span class="err">\</span><span class="n">quit</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -799,14 +1161,14 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>and we’ll add the following line into it:</p>
+<p>and we’ll add the following line into it (we use &ldquo;%&rdquo; to indicate that this is a group name):</p>
 
 <figure class='code'><figcaption><span>sudoers</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='text'><span class='line'>%deployers      ALL=(ALL) ALL
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>You can then exit the nano text editor by typing &ldquo;Control-X&rdquo; and typing &ldquo;Y&rdquo; when asked if you want to save. In case you’re wondering, the line we just added above will give the users in the <code>deployers</code> group the ability to run commands as <code>root</code>. If this is new to you, I can explain.</p>
+<p>You can then exit the nano text editor by typing &ldquo;Control-X&rdquo; and typing &ldquo;Y&rdquo; when asked if you want to save. In case you’re wondering, the line we just added above will give the users in the <code>deployers</code> group the ability to run commands as <code>root</code>. If this is new to you, let me explain.</p>
 
 <p>Running commands while logged in as <code>root</code> is considered bad practice because, as the superuser, <code>root</code> can run any and all commands, and since there is no undo functionality in Unix, one accidental bad command and your system can be seriously disrupted. That’s why we created a separate user called <code>bob</code>, which will have deployment privileges and nothing else.</p>
 
@@ -994,7 +1356,7 @@
 <li><a href="http://vladigleba.github.io/blog/2014/03/21/deploying-rails-apps-part-3-configuring-unicorn/">Deploying Rails Apps, Part 3: Configuring Unicorn</a></li>
 <li><a href="http://vladigleba.github.io/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/">Deploying Rails Apps, Part 4: Configuring Nginx</a></li>
 <li><a href="http://vladigleba.github.io/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/">Deploying Rails Apps, Part 5: Configuring Capistrano</a></li>
-<li>Deploying Rails Apps, Part 6: Writing Capistrano Tasks</li>
+<li><a href="http://vladigleba.github.io/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/">Deploying Rails Apps, Part 6: Writing Capistrano Tasks</a></li>
 </ul>
 
 
@@ -1566,12 +1928,12 @@
 </pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># get JSON object</span>
 </span><span class='line'><span class="c1"># on success, parse it and </span>
 </span><span class='line'><span class="c1"># hand it over to MapBox for mapping </span>
-</span><span class='line'><span class="nv">markerLayer = </span><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span>
+</span><span class='line'><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span>
 </span><span class='line'>  <span class="nv">dataType: </span><span class="s">&#39;text&#39;</span>
 </span><span class='line'>  <span class="nv">url: </span><span class="s">&#39;happy_hours/happening_now.json&#39;</span>
 </span><span class='line'>  <span class="nv">success: </span><span class="nf">(data) -&gt;</span>
 </span><span class='line'>    <span class="nv">geojson = </span><span class="nx">$</span><span class="p">.</span><span class="nx">parseJSON</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>
-</span><span class='line'>    <span class="nx">map</span><span class="p">.</span><span class="nx">markerLayer</span><span class="p">.</span><span class="nx">setGeoJSON</span><span class="p">(</span><span class="nx">geojson</span><span class="p">)</span>
+</span><span class='line'>    <span class="nx">map</span><span class="p">.</span><span class="nx">featureLayer</span><span class="p">.</span><span class="nx">setGeoJSON</span><span class="p">(</span><span class="nx">geojson</span><span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -1597,14 +1959,14 @@
 <span class='line-number'>14</span>
 <span class='line-number'>15</span>
 </pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># add custom popups to each marker</span>
-</span><span class='line'><span class="nx">map</span><span class="p">.</span><span class="nx">markerLayer</span><span class="p">.</span><span class="nx">on</span> <span class="s">&#39;layeradd&#39;</span><span class="p">,</span> <span class="nf">(e) -&gt;</span>
+</span><span class='line'><span class="nx">map</span><span class="p">.</span><span class="nx">featureLayer</span><span class="p">.</span><span class="nx">on</span> <span class="s">&#39;layeradd&#39;</span><span class="p">,</span> <span class="nf">(e) -&gt;</span>
 </span><span class='line'>  <span class="nv">marker = </span><span class="nx">e</span><span class="p">.</span><span class="nx">layer</span>
-</span><span class='line'>  <span class="nv">feature = </span><span class="nx">marker</span><span class="p">.</span><span class="nx">feature</span>
+</span><span class='line'>  <span class="nv">properties = </span><span class="nx">marker</span><span class="p">.</span><span class="nx">feature</span><span class="p">.</span><span class="nx">properties</span>
 </span><span class='line'>
 </span><span class='line'>  <span class="c1"># create custom popup</span>
 </span><span class='line'>  <span class="nv">popupContent = </span> <span class="s">&#39;&lt;div class=&quot;popup&quot;&gt;&#39;</span> <span class="o">+</span>
-</span><span class='line'>                    <span class="s">&#39;&lt;h3&gt;&#39;</span> <span class="o">+</span> <span class="nx">feature</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s">&#39;&lt;/h3&gt;&#39;</span> <span class="o">+</span>
-</span><span class='line'>                    <span class="s">&#39;&lt;p&gt;&#39;</span> <span class="o">+</span> <span class="nx">feature</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">address</span> <span class="o">+</span> <span class="s">&#39;&lt;/p&gt;&#39;</span> <span class="o">+</span>
+</span><span class='line'>                    <span class="s">&#39;&lt;h3&gt;&#39;</span> <span class="o">+</span> <span class="nx">properties</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s">&#39;&lt;/h3&gt;&#39;</span> <span class="o">+</span>
+</span><span class='line'>                    <span class="s">&#39;&lt;p&gt;&#39;</span> <span class="o">+</span> <span class="nx">properties</span><span class="p">.</span><span class="nx">address</span> <span class="o">+</span> <span class="s">&#39;&lt;/p&gt;&#39;</span> <span class="o">+</span>
 </span><span class='line'>                  <span class="s">&#39;&lt;/div&gt;&#39;</span>
 </span><span class='line'>
 </span><span class='line'>  <span class="c1"># http://leafletjs.com/reference.html#popup</span>
@@ -1636,8 +1998,8 @@
 </span><span class='line'>  <span class="nv">currentlyClickedName = </span><span class="nx">current</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s">&#39;h2&#39;</span><span class="p">).</span><span class="nx">text</span><span class="p">()</span>
 </span><span class='line'>
 </span><span class='line'>  <span class="c1"># opens/closes popup for currently clicked happy hour</span>
-</span><span class='line'>  <span class="nx">map</span><span class="p">.</span><span class="nx">markerLayer</span><span class="p">.</span><span class="nx">eachLayer</span> <span class="nf">(layer) -&gt;</span>
-</span><span class='line'>    <span class="k">if</span> <span class="nx">layer</span><span class="p">.</span><span class="nx">feature</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">name</span> <span class="o">is</span> <span class="nx">currentlyClickedName</span>
+</span><span class='line'>  <span class="nx">map</span><span class="p">.</span><span class="nx">featureLayer</span><span class="p">.</span><span class="nx">eachLayer</span> <span class="nf">(marker) -&gt;</span>
+</span><span class='line'>    <span class="k">if</span> <span class="nx">marker</span><span class="p">.</span><span class="nx">feature</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">name</span> <span class="o">is</span> <span class="nx">currentlyClickedName</span>
 </span><span class='line'>      <span class="nv">id = </span><span class="nx">layer</span><span class="p">.</span><span class="nx">_leaflet_id</span>
 </span><span class='line'>      <span class="nx">map</span><span class="p">.</span><span class="nx">_layers</span><span class="p">[</span><span class="nx">id</span><span class="p">].</span><span class="nx">openPopup</span><span class="p">()</span>
 </span></code></pre></td></tr></table></div></figure>

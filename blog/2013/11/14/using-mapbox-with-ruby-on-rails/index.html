@@ -251,12 +251,12 @@
 </pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># get JSON object</span>
 </span><span class='line'><span class="c1"># on success, parse it and </span>
 </span><span class='line'><span class="c1"># hand it over to MapBox for mapping </span>
-</span><span class='line'><span class="nv">markerLayer = </span><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span>
+</span><span class='line'><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span>
 </span><span class='line'>  <span class="nv">dataType: </span><span class="s">&#39;text&#39;</span>
 </span><span class='line'>  <span class="nv">url: </span><span class="s">&#39;happy_hours/happening_now.json&#39;</span>
 </span><span class='line'>  <span class="nv">success: </span><span class="nf">(data) -&gt;</span>
 </span><span class='line'>    <span class="nv">geojson = </span><span class="nx">$</span><span class="p">.</span><span class="nx">parseJSON</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>
-</span><span class='line'>    <span class="nx">map</span><span class="p">.</span><span class="nx">markerLayer</span><span class="p">.</span><span class="nx">setGeoJSON</span><span class="p">(</span><span class="nx">geojson</span><span class="p">)</span>
+</span><span class='line'>    <span class="nx">map</span><span class="p">.</span><span class="nx">featureLayer</span><span class="p">.</span><span class="nx">setGeoJSON</span><span class="p">(</span><span class="nx">geojson</span><span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -282,14 +282,14 @@
 <span class='line-number'>14</span>
 <span class='line-number'>15</span>
 </pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># add custom popups to each marker</span>
-</span><span class='line'><span class="nx">map</span><span class="p">.</span><span class="nx">markerLayer</span><span class="p">.</span><span class="nx">on</span> <span class="s">&#39;layeradd&#39;</span><span class="p">,</span> <span class="nf">(e) -&gt;</span>
+</span><span class='line'><span class="nx">map</span><span class="p">.</span><span class="nx">featureLayer</span><span class="p">.</span><span class="nx">on</span> <span class="s">&#39;layeradd&#39;</span><span class="p">,</span> <span class="nf">(e) -&gt;</span>
 </span><span class='line'>  <span class="nv">marker = </span><span class="nx">e</span><span class="p">.</span><span class="nx">layer</span>
-</span><span class='line'>  <span class="nv">feature = </span><span class="nx">marker</span><span class="p">.</span><span class="nx">feature</span>
+</span><span class='line'>  <span class="nv">properties = </span><span class="nx">marker</span><span class="p">.</span><span class="nx">feature</span><span class="p">.</span><span class="nx">properties</span>
 </span><span class='line'>
 </span><span class='line'>  <span class="c1"># create custom popup</span>
 </span><span class='line'>  <span class="nv">popupContent = </span> <span class="s">&#39;&lt;div class=&quot;popup&quot;&gt;&#39;</span> <span class="o">+</span>
-</span><span class='line'>                    <span class="s">&#39;&lt;h3&gt;&#39;</span> <span class="o">+</span> <span class="nx">feature</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s">&#39;&lt;/h3&gt;&#39;</span> <span class="o">+</span>
-</span><span class='line'>                    <span class="s">&#39;&lt;p&gt;&#39;</span> <span class="o">+</span> <span class="nx">feature</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">address</span> <span class="o">+</span> <span class="s">&#39;&lt;/p&gt;&#39;</span> <span class="o">+</span>
+</span><span class='line'>                    <span class="s">&#39;&lt;h3&gt;&#39;</span> <span class="o">+</span> <span class="nx">properties</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s">&#39;&lt;/h3&gt;&#39;</span> <span class="o">+</span>
+</span><span class='line'>                    <span class="s">&#39;&lt;p&gt;&#39;</span> <span class="o">+</span> <span class="nx">properties</span><span class="p">.</span><span class="nx">address</span> <span class="o">+</span> <span class="s">&#39;&lt;/p&gt;&#39;</span> <span class="o">+</span>
 </span><span class='line'>                  <span class="s">&#39;&lt;/div&gt;&#39;</span>
 </span><span class='line'>
 </span><span class='line'>  <span class="c1"># http://leafletjs.com/reference.html#popup</span>
@@ -321,8 +321,8 @@
 </span><span class='line'>  <span class="nv">currentlyClickedName = </span><span class="nx">current</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s">&#39;h2&#39;</span><span class="p">).</span><span class="nx">text</span><span class="p">()</span>
 </span><span class='line'>
 </span><span class='line'>  <span class="c1"># opens/closes popup for currently clicked happy hour</span>
-</span><span class='line'>  <span class="nx">map</span><span class="p">.</span><span class="nx">markerLayer</span><span class="p">.</span><span class="nx">eachLayer</span> <span class="nf">(layer) -&gt;</span>
-</span><span class='line'>    <span class="k">if</span> <span class="nx">layer</span><span class="p">.</span><span class="nx">feature</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">name</span> <span class="o">is</span> <span class="nx">currentlyClickedName</span>
+</span><span class='line'>  <span class="nx">map</span><span class="p">.</span><span class="nx">featureLayer</span><span class="p">.</span><span class="nx">eachLayer</span> <span class="nf">(marker) -&gt;</span>
+</span><span class='line'>    <span class="k">if</span> <span class="nx">marker</span><span class="p">.</span><span class="nx">feature</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">name</span> <span class="o">is</span> <span class="nx">currentlyClickedName</span>
 </span><span class='line'>      <span class="nv">id = </span><span class="nx">layer</span><span class="p">.</span><span class="nx">_leaflet_id</span>
 </span><span class='line'>      <span class="nx">map</span><span class="p">.</span><span class="nx">_layers</span><span class="p">[</span><span class="nx">id</span><span class="p">].</span><span class="nx">openPopup</span><span class="p">()</span>
 </span></code></pre></td></tr></table></div></figure>
@@ -370,6 +370,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/">Deploying Rails Apps, Part 6: Writing Capistrano Tasks</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/">Deploying Rails Apps, Part 5: Configuring Capistrano</a>
       </li>
     
@@ -383,10 +387,6 @@
     
       <li class="post">
         <a href="/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/">Deploying Rails Apps, Part 2: Setting up the Server</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">Deploying Rails Apps, Part 1: Securing the Server</a>
       </li>
     
   </ul>
