@@ -122,20 +122,20 @@ Had we not specified the default user, it would’ve tried to use the user we’
 
 Once logged in, we’ll setup a password for `postgres`:
 
-``` sql
+``` mysql
 \password
 ```
 
 We’ll also create a new user called `admin`, followed by a database called `phindee`, which will be owned by `admin`:
 
-``` sql
+``` mysql
 create user admin with password 'secret';
 create database phindee owner admin;
 ```
 
 Having the basics setup, we can now quit Postgres:
 
-``` sql
+``` mysql
 \quit
 ```
 

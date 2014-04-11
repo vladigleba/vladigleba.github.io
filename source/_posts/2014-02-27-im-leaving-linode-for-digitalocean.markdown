@@ -53,6 +53,6 @@ Now that I’ve successfully moved Phindee over to DigitalOcean, I will use the 
 - [Deploying Rails Apps, Part 3: Configuring Unicorn]({{ root_url }}/blog/2014/03/21/deploying-rails-apps-part-3-configuring-unicorn/)
 - [Deploying Rails Apps, Part 4: Configuring Nginx]({{ root_url }}/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/)
 - [Deploying Rails Apps, Part 5: Configuring Capistrano]({{ root_url }}/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/)
-- Deploying Rails Apps, Part 6: Writing Capistrano Tasks
+- [Deploying Rails Apps, Part 6: Writing Capistrano Tasks]({{ root_url }}/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/)
 
 If you'd like to be notified when these posts are out, feel free to [subscribe](http://www.feedblitz.com/f/?sub=927939), and you'll get the complete post delivered right to your inbox as soon as it's released.

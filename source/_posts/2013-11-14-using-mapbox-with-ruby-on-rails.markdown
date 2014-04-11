@@ -106,12 +106,12 @@ Okay, now we’re ready to use the JSON objects we created earlier. We’ll make
 # get JSON object
 # on success, parse it and 
 # hand it over to MapBox for mapping 
-markerLayer = $.ajax
+$.ajax
   dataType: 'text'
   url: 'happy_hours/happening_now.json'
   success: (data) ->
     geojson = $.parseJSON(data)
-    map.markerLayer.setGeoJSON(geojson)
+    map.featureLayer.setGeoJSON(geojson)
 ```
 
 The code above simply sends out an AJAX call to the URL that corresponds to the controller method into which we added the JSON object code from before. The `.json` extension alerts Rails to return a JSON response, instead of an HTML one. On a successful return, we then parse the JSON object and pass it on to the `setGeoJSON()` method for mapping. Kid stuff.
@@ -122,14 +122,14 @@ Now we’ll create our custom popups.
   
 ``` coffeescript happy_hours.js.coffee
 # add custom popups to each marker
-map.markerLayer.on 'layeradd', (e) ->
+map.featureLayer.on 'layeradd', (e) ->
   marker = e.layer
-  feature = marker.feature
+  properties = marker.feature.properties
 
   # create custom popup
   popupContent =  '<div class="popup">' +
-                    '<h3>' + feature.properties.name + '</h3>' +
-                    '<p>' + feature.properties.address + '</p>' +
+                    '<h3>' + properties.name + '</h3>' +
+                    '<p>' + properties.address + '</p>' +
                   '</div>'
 
   # http://leafletjs.com/reference.html#popup
@@ -151,8 +151,8 @@ $('article li').click (e) ->
   currentlyClickedName = current.find('h2').text()
   
   # opens/closes popup for currently clicked happy hour
-  map.markerLayer.eachLayer (layer) ->
-    if layer.feature.properties.name is currentlyClickedName
+  map.featureLayer.eachLayer (marker) ->
+    if marker.feature.properties.name is currentlyClickedName
       id = layer._leaflet_id
       map._layers[id].openPopup()
 ```

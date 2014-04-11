@@ -98,7 +98,7 @@ $border-style: 2px solid $secondary-text-color;
 }
 
 .code-keywords {
-  background-color: #e6e6e6;
+  background-color: #e8e8e8;
   border-radius: $border-radius-size;
   padding: 0 5.591px;
   padding: 0 0.28rem;
@@ -288,6 +288,7 @@ pre {
   @extend .code-font;
   @extend .margin-bottom-large;
   text-align: left;
+  line-height: 18px;
   
   &.line-numbers {
     @if $hide-line-numbers == true {

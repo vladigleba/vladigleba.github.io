@@ -159,4 +159,4 @@ sudo chmod g+w /etc/init.d
 
 And now Capistrano should have the necessary permissions to do its work. 
 
-Having Capistrano configured, we’re ready to move on and start writing custom tasks to help us deploy our code, and that’s exactly what we’ll do in the next and last post of this series. If you want to be notified when it’s out, feel free to [subscribe](http://www.feedblitz.com/f/?Sub=927939&cids=1), and you'll get it delivered to your inbox as soon as it’s released.
+Having Capistrano configured, we’re ready to move on and start writing custom tasks to help us deploy our code, and that’s exactly what we’ll do in the [next and last post]({{ root_url }}/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/) of this series. If you want to be notified when it’s out, feel free to [subscribe](http://www.feedblitz.com/f/?Sub=927939&cids=1), and you'll get it delivered to your inbox as soon as it’s released.

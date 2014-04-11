@@ -58,13 +58,13 @@ Next thing we’ll do is open the `sudoers` file containing a list of users and 
 nano /etc/sudoers
 ```
 
-and we’ll add the following line into it:
+and we’ll add the following line into it (we use "%" to indicate that this is a group name):
 
 ``` text sudoers
 %deployers      ALL=(ALL) ALL
 ```
 
-You can then exit the nano text editor by typing "Control-X" and typing "Y" when asked if you want to save. In case you’re wondering, the line we just added above will give the users in the `deployers` group the ability to run commands as `root`. If this is new to you, I can explain.
+You can then exit the nano text editor by typing "Control-X" and typing "Y" when asked if you want to save. In case you’re wondering, the line we just added above will give the users in the `deployers` group the ability to run commands as `root`. If this is new to you, let me explain.
 
 Running commands while logged in as `root` is considered bad practice because, as the superuser, `root` can run any and all commands, and since there is no undo functionality in Unix, one accidental bad command and your system can be seriously disrupted. That’s why we created a separate user called `bob`, which will have deployment privileges and nothing else.
 
