@@ -4,6 +4,7 @@ title: "About"
 comments: false
 sharing: false
 footer: true
+description: Developer. Occasional tennis player. Living and working in Portland, OR.
 ---
 
 <img id="portrait" src="https://pbs.twimg.com/profile_images/3097578390/9e92538281d9613d699f335b54968add.jpeg" alt="portrait" />
