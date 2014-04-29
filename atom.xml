@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-04-29T13:47:34-07:00</updated>
+  <updated>2014-04-29T13:50:38-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -666,7 +666,7 @@
 
 <p>This means that given our current configuration, our server will be able to accept a total of 1024 simultaneous connections. If you want to increase this, it’s generally best to increase the <code>worker_connections</code> value before increasing the number of workers. (Remember, each worker is a single-threaded process, so whenever you increase the number of workers, you’re also increasing the total amount of memory that will be used.) But having one worker process that’s capable of handling 1024 connections is more than enough for a low-traffic app.</p>
 
-<p>By the way, if you&rsquo;re wondering how our own <code>nginx.conf</code> file we created above will get executed, <code>/etc/nginx/nginx.conf</code> already has an <code>include</code> directive inside the <code>http</code> block that will automatically include any files in the <code>/etc/nginx/sites-enabled</code> directory, and that&rsquo;s the place where we will put our own custom <code>nginx.conf</code> file when it&rsquo;s time to deploy.</p>
+<p>By the way, if you&rsquo;re wondering how our own <code>nginx.conf</code> file we created above will get executed, <code>/etc/nginx/nginx.conf</code> already has an <code>include</code> directive inside the <code>http</code> block that will automatically include any files in the <code>/etc/nginx/sites-enabled</code> directory, and that&rsquo;s the place where we will put our custom <code>nginx.conf</code> file when it&rsquo;s time to deploy.</p>
 
 <h1>Hooking up with Unicorn and Handling Redirects</h1>
 
