@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-04-14T10:11:43-07:00</updated>
+  <updated>2014-04-29T13:47:34-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -624,19 +624,7 @@
 <span class='line-number'>29</span>
 <span class='line-number'>30</span>
 <span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-</pre></td><td class='code'><pre><code class='nginx'><span class='line'><span class="k">worker_processes</span> <span class="mi">1</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">events</span> <span class="p">{</span>
-</span><span class='line'>  <span class="kn">worker_connections</span> <span class="mi">1024</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">upstream</span> <span class="s">unicorn</span> <span class="p">{</span>
+</pre></td><td class='code'><pre><code class='nginx'><span class='line'><span class="k">upstream</span> <span class="s">unicorn</span> <span class="p">{</span>
 </span><span class='line'>  <span class="kn">server</span> <span class="s">unix:/tmp/unicorn.phindee.sock</span> <span class="s">fail_timeout=0</span><span class="p">;</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
@@ -674,9 +662,11 @@
 
 <h1>A Bit on Workers</h1>
 
-<p>As you can see, we used the <code>worker_processes</code> directive to tell Nginx to run one worker, which is the default. We then used the <code>worker_connections</code> directive inside the <code>events</code> block to specify that the maximum number of connections a worker can accept is 1024, which is also the default. Since we’re using defaults for both directives, it wasn’t necessary to add them to our file at all, but I chose to include them for completeness.</p>
+<p>If you log in to your VPS and <code>cd</code> into <code>/etc/nginx</code>, you&rsquo;ll find a file called <code>nginx.conf</code>. This is the main Nginx configuration file that Nginx will parse when it runs, and it&rsquo;s the place where you can modify the number of workers available to process requests. You can do this by modifying the <code>worker_processes</code> directive defined at the top of the file. It&rsquo;s set to four workers by default, but I changed mine to one because that&rsquo;s more than enough for a low-traffic app. It&rsquo;s also possible to modify the number of connections a worker can accept by modifying the <code>worker_connections</code> directive inside the <code>events</code> block; I changed mine to 1024 connections.</p>
 
-<p>Given our current configuration, our server will be able to accept a total of 1024 simultaneous connections. If you want to increase this, it’s generally best to increase the <code>worker_connections</code> value before increasing the number of workers. Remember, each worker is a single-threaded process, so whenever you increase the number of workers, you’re also increasing the total amount of memory that will be used. Having one worker process that’s capable of handling 1024 connections is more than enough for a low-traffic app, however.</p>
+<p>This means that given our current configuration, our server will be able to accept a total of 1024 simultaneous connections. If you want to increase this, it’s generally best to increase the <code>worker_connections</code> value before increasing the number of workers. (Remember, each worker is a single-threaded process, so whenever you increase the number of workers, you’re also increasing the total amount of memory that will be used.) But having one worker process that’s capable of handling 1024 connections is more than enough for a low-traffic app.</p>
+
+<p>By the way, if you&rsquo;re wondering how our own <code>nginx.conf</code> file we created above will get executed, <code>/etc/nginx/nginx.conf</code> already has an <code>include</code> directive inside the <code>http</code> block that will automatically include any files in the <code>/etc/nginx/sites-enabled</code> directory, and that&rsquo;s the place where we will put our own custom <code>nginx.conf</code> file when it&rsquo;s time to deploy.</p>
 
 <h1>Hooking up with Unicorn and Handling Redirects</h1>
 
