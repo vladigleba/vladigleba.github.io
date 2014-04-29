@@ -13,12 +13,6 @@ I talked about how I configured Unicorn for [Phindee](http://phindee.com/) in [p
 Alright, since there is quite a bit to cover, we’ll jump right in. We’ll start by creating a file called `nginx.conf` inside our app’s `/config` directory on our local computer. Here’s how mine looks like:
 
 ``` nginx nginx.conf
-worker_processes 1;
-
-events {
-  worker_connections 1024;
-}
-
 upstream unicorn {
   server unix:/tmp/unicorn.phindee.sock fail_timeout=0;
 }
@@ -56,9 +50,11 @@ You might have noticed that the first thing we do is specify the number of worke
 
 # A Bit on Workers
 
-As you can see, we used the `worker_processes` directive to tell Nginx to run one worker, which is the default. We then used the `worker_connections` directive inside the `events` block to specify that the maximum number of connections a worker can accept is 1024, which is also the default. Since we’re using defaults for both directives, it wasn’t necessary to add them to our file at all, but I chose to include them for completeness.
+If you log in to your VPS and `cd` into `/etc/nginx`, you'll find a file called `nginx.conf`. This is the main Nginx configuration file that Nginx will parse when it runs, and it's the place where you can modify the number of workers available to process requests. You can do this by modifying the `worker_processes` directive defined at the top of the file. It's set to four workers by default, but I changed mine to one because that's more than enough for a low-traffic app. It's also possible to modify the number of connections a worker can accept by modifying the `worker_connections` directive inside the `events` block; I changed mine to 1024 connections.
 
-Given our current configuration, our server will be able to accept a total of 1024 simultaneous connections. If you want to increase this, it’s generally best to increase the `worker_connections` value before increasing the number of workers. Remember, each worker is a single-threaded process, so whenever you increase the number of workers, you’re also increasing the total amount of memory that will be used. Having one worker process that’s capable of handling 1024 connections is more than enough for a low-traffic app, however.
+This means that given our current configuration, our server will be able to accept a total of 1024 simultaneous connections. If you want to increase this, it’s generally best to increase the `worker_connections` value before increasing the number of workers. (Remember, each worker is a single-threaded process, so whenever you increase the number of workers, you’re also increasing the total amount of memory that will be used.) But having one worker process that’s capable of handling 1024 connections is more than enough for a low-traffic app.
+
+By the way, if you're wondering how our own `nginx.conf` file we created above will get executed, `/etc/nginx/nginx.conf` already has an `include` directive inside the `http` block that will automatically include any files in the `/etc/nginx/sites-enabled` directory, and that's the place where we will put our own `nginx.conf` file when it's time to deploy.
 
 # Hooking up with Unicorn and Handling Redirects
 
