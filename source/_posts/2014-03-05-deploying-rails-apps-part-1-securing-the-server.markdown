@@ -4,6 +4,7 @@ title: "Deploying Rails Apps, Part 1: Securing the Server"
 date: 2014-03-05 11:18
 comments: true
 categories: [Rails, Deployment, Phindee]
+description: Learn how to set up groups and privileges, configure SSH access, and enable SSH authentication.
 ---
 
 Setting up a Rails server from scratch can be a daunting task. I remember my first attempt; it was a multi-day process full of frustration, things not working, me not understanding why, and a whole lot of googling. In an effort to make this experience less painful for those new to Rails, I’d like to share the process I went through to deploy [Phindee](http://phindee.com/) to a VPS (Virtual Private Server).

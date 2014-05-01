@@ -4,6 +4,7 @@ title: "Deploying Rails Apps, Part 3: Configuring Unicorn"
 date: 2014-03-21 10:08
 comments: true
 categories: [Rails, Deployment, Phindee]
+description: Learn how to configure Unicorn and find out how it differs from Passenger and Puma.
 ---
 
 Having covered how to install the technology stack powering Phindee in [part 2]({{ root_url }}/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/), I will now shift gears and talk about how I configured Unicorn. I already explained why I chose to install Nginx, but I haven’t yet explained why I chose Unicorn, so here we go.

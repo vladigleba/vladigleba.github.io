@@ -4,6 +4,7 @@ title: "DataMapper: An Alternative to Active Record"
 date: 2013-12-19 11:27
 comments: true
 categories: [DataMapper, Active Record, Ruby, Storage]
+description: What it was like using DataMapper and how it compares with Active Record.
 ---
 
 I recently finished working on a Ruby script that needed to store a small amount of data in a database. Having previously worked with [Active Record](http://guides.rubyonrails.org/active_record_querying.html), I loved the idea of an Object Relational Mapper written in Ruby; it makes manipulating data easy and keeps your code organized. Active Record, however, was definitely an overkill for such a small project. I needed something simple, lightweight, and easy to set up.
@@ -12,7 +13,7 @@ I recently finished working on a Ruby script that needed to store a small amount
 
 Naturally, I went to Google for advice. A few searches in and I realized that one ORM was showing up in my search results consistently&mdash;DataMapper. Since I had never used it before, I went over to the DataMapper website to [learn more](http://datamapper.org/why.html). It made some impressive promises, but nothing sold me more than the fact that I didn’t have to deal with migrations. While they are useful for large projects with multiple developers, they just seemed like a chore for my small Ruby script.
 
-Now having spent a few days working with it, I’d like to share how it compares to Active Record.
+Now having spent a few days working with it, I’d like to share how it compares with Active Record.
 
 # Setup
 

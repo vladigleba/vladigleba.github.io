@@ -4,6 +4,7 @@ title: "Deploying Rails Apps, Part 6: Writing Capistrano Tasks"
 date: 2014-04-10 08:42
 comments: true
 categories: [Rails, Deployment, Phindee]
+description: Learn how to write Capistrano tasks to help you automate your deployment.
 ---
 
 It’s been a long time coming, but we finally reached the point where we can deploy our app to our VPS and have it be available on the internet for viewing. We configured Capistrano in the [previous post]({{ root_url }}/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/), and now we’ll actually use it for the deploy. Just like in the previous posts, I’ll be going over how I have things setup for [Phindee](http://phindee.com/) to help illustrate the concepts.

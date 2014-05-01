@@ -4,6 +4,7 @@ title: "Using MapBox with Ruby on Rails"
 date: 2013-11-14 10:39
 comments: true
 categories: [Rails, CoffeeScript, MapBox, Phindee]
+description: Learn how to use the Mapbox.js library to add custom maps to your Ruby on Rails app. 
 ---
 
 Last week [I wrote about]({{ root_url }}/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/) [Phindee](http://phindee.com/), a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that Phindee’s mapping functionality is provided by the [MapBox JavaScript API](https://www.mapbox.com/mapbox.js/), but did not go into any more detail for brevity reasons. I still think it’s an important topic to talk about because I remember having a hard time finding tutorials about integrating MapBox with Ruby on Rails, specifically. 

@@ -4,6 +4,7 @@ title: "I'm Leaving Linode for DigitalOcean"
 date: 2014-02-27 08:16
 comments: true
 categories: [Deployment]
+description: Why I decided to switch to DigitalOcean after two years with Linode.
 ---
 
 A few weeks ago, I ran into a [blog post](http://blog.schneidmaster.com/digital-ocean-vs-linode/) (and the resulting [Hacker News discussion](https://news.ycombinator.com/item?id=7021664)) comparing two popular VPS providers: [Linode](https://www.linode.com/) and [DigitalOcean](https://www.digitalocean.com/). Up until that point, I was a happy Linode customer for over two years. I had heard about DigitalOcean previously, but never considered trying it since I was happy with Linode. This post, however, intrigued me enough to try DigitalOcean out.

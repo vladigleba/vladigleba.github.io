@@ -4,9 +4,10 @@ title: "Introducing Readify: A New Octopress Theme Focused on Readibility"
 date: 2013-10-31 09:20
 comments: true
 categories: [Projects, Design]
+description: Users of the Octopress blogging framework now have a new responsive theme available focused on readability! It's called Readify.
 ---
 
-Hackers using the [Octopress blogging framework](http://octopress.org/) now have a new responsive theme available focused on readability! It's called [Readify](https://github.com/vladigleba/readify).
+Hackers using the [Octopress blogging framework](http://octopress.org/) now have a new responsive theme available focused on readability called [Readify](https://github.com/vladigleba/readify).
 
 <!-- more -->
 

@@ -4,6 +4,7 @@ title: "Ways to Define a Grid System"
 date: 2013-10-22 17:32
 comments: true
 categories: Design
+description: Learn how to design grids based on the Fibonacci sequence, the canvas, or the content.
 ---
 
 I [started blogging]({{ root_url }}/blog/2013/10/15/im-diving-in/) last week. And ever since publishing that first post, I've been trying to find a suitable design for my blog. I looked at many different blog designs for inspiration, and one of my favorites was Whitney Hess' <cite>[Pleasure and Pain](http://whitneyhess.com/blog/)</cite> blog. I don't know why, but the design just resonates with me. It feels right. 

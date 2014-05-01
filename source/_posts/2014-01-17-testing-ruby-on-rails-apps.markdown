@@ -4,6 +4,7 @@ title: "Testing Ruby on Rails Apps"
 date: 2014-01-17 12:35
 comments: true
 categories: [Rails, Testing, Phindee]
+description: Learn how to do Test-Driven Development (TDD) and write tests for your Ruby on Rails app.
 ---
 
 I started learning Ruby on Rails over a year ago, and as most beginners, I chose the popular <cite>[Ruby on Rails Tutorial](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book)</cite> as my initial guide. Because there was so much new material to absorb, I decided to skip the sections about testing (and I’m glad I did or my head would’ve exploded). When I finished the book, I decided to build a Rails app called [Phindee](http://phindee.com/) in order to solidify what I had just learned. I never went back to learn about testing, however. Now over a year later, I did just that and was finally able to write a solid test suite for the app.

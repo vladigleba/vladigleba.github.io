@@ -4,6 +4,7 @@ title: "Deploying Rails Apps, Part 5: Configuring Capistrano"
 date: 2014-04-04 07:36
 comments: true
 categories: [Rails, Deployment, Phindee]
+description: Learn how to configure Capistrano for deployment.
 ---
 
 In the previous four posts, I covered how I went about setting up my server for Phindee and how I configured Unicorn and Nginx. Here in part 5, I will now talk about how I configured Capistrano to actually deploy Phindee. 

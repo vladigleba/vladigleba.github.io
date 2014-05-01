@@ -4,6 +4,7 @@ title: "I'm Diving In"
 date: 2013-10-15 11:20
 comments: true
 categories: Thoughts
+description: Starting a blog is something I wanted to do for a few years now, but I worried too much about not having enough time or things to write about, so I always put it off. But this weekend that all changed.
 ---
 
 Starting a blog is something I wanted to do for a few years now, but I worried too much about not having enough time or things to write about, so I always put it off. But this weekend that all changed.
