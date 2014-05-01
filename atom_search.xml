@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-04-29T13:51:23-07:00</updated>
+  <updated>2014-05-01T09:23:04-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -1646,7 +1646,7 @@
 
 <p>Naturally, I went to Google for advice. A few searches in and I realized that one ORM was showing up in my search results consistently&mdash;DataMapper. Since I had never used it before, I went over to the DataMapper website to <a href="http://datamapper.org/why.html">learn more</a>. It made some impressive promises, but nothing sold me more than the fact that I didn’t have to deal with migrations. While they are useful for large projects with multiple developers, they just seemed like a chore for my small Ruby script.</p>
 
-<p>Now having spent a few days working with it, I’d like to share how it compares to Active Record.</p>
+<p>Now having spent a few days working with it, I’d like to share how it compares with Active Record.</p>
 
 <h1>Setup</h1>
 
@@ -2072,7 +2072,7 @@
     <link href="http://vladigleba.github.io/blog/2013/10/31/introducing-readify-a-new-octopress-theme-focused-on-readibility/"/>
     <updated>2013-10-31T09:20:00-07:00</updated>
     <id>http://vladigleba.github.io/blog/2013/10/31/introducing-readify-a-new-octopress-theme-focused-on-readibility</id>
-    <content type="html"><![CDATA[<p>Hackers using the <a href="http://octopress.org/">Octopress blogging framework</a> now have a new responsive theme available focused on readability! It&rsquo;s called <a href="https://github.com/vladigleba/readify">Readify</a>.</p>
+    <content type="html"><![CDATA[<p>Hackers using the <a href="http://octopress.org/">Octopress blogging framework</a> now have a new responsive theme available focused on readability called <a href="https://github.com/vladigleba/readify">Readify</a>.</p>
 
 <!-- more -->
 
