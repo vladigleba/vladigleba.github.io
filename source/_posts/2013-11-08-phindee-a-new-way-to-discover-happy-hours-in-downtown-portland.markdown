@@ -7,7 +7,7 @@ categories: [Projects, Rails, Phindee]
 description: Learn how I built Phindee, a new app that helps you easily find happy hours in downtown Portland.
 ---
 
-I love Portland. It’s a fun, quirky city that makes me feel right at home. And the longer I live here, the deeper my affection grows. There are many reasons why this is so, but one high on the list is the food scene. Now I haven’t lived in any other major city, so I can’t compare, but others who have tend to agree. <!-- more -->
+I love Portland. It’s a fun, quirky city that makes me feel right at home. And the longer I live here, the deeper my affection grows. There are many reasons why this is so, but one that's high on the list is the food scene. Now I haven’t lived in any other major city, so I can’t compare, but others who have tend to agree. <!-- more -->
 
 I’m certainly satisfied.
 
