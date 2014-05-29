@@ -73,19 +73,17 @@ class SearchSuggestion
 end
 ```
 
-This creates a class called `SearchSuggestion` with a class method called `seed`. Notice that this class doesn’t inherit from `ActiveRecord::Base`, which is the base class that the models you create with `rake g model …` inherit from. We don’t need it because we’ll be using Redis instead of ActiveRecord.
+This creates a class called `SearchSuggestion` with a class method called `seed`. Notice that this class doesn’t inherit from `ActiveRecord::Base`, which is the base class that the models you create with `rake g model ...` inherit from. We don’t need it because we’ll be using Redis instead of ActiveRecord. (By the way, we’re defining a class method instead of an instance method because the logic in this method relates to the class itself, not a specific instance of it.)
 
-By the way, we’re defining a class method instead of an instance method because the logic in this method relates to the class itself, not a specific instance of it.
+## Code Walk-Through
 
-Alright, now let’s go over the code. I’m looping over each record stored in the model called `Place` that contains the name of all the places that have a happy hour. 
-
-The reason why I’m doing `Place.find_each` instead of `Place.all.each` is the `find_each` method works in batches of 1000. This means that if I have thousands of records in my database, `find_each` will load into memory only 1000 at a time, instead of loading them all at once and possibly overwhelming the server, which is the case with `Place.all.each`.
+Alright, now let’s go over the code. I’m looping over each record stored in the model called `Place` that contains the name of all the places that have a happy hour. The reason why I’m doing `Place.find_each` instead of `Place.all.each` is the `find_each` method works in batches of 1000. This means that if I have thousands of records in my database, `find_each` will load into memory only 1000 at a time, instead of loading them all at once and possibly overwhelming the server, which is the case with `Place.all.each`.
 
 For each place, I’m using the `upto` method to loop over the place’s name n times, where n is the number of characters in the name minus 1 (you’ll understand why we’re doing minus 1 later). For example, let’s say the place name is “via delizia”. Our n value would be 10 because the length of the name is 11, but minus 1 brings it down to 10. This means we would iterate over the name 10 times.
 
-On the first iteration, n would be 1 and the `prefix` variable would be set to the string “v” since we’re extracting the characters from 0 to 1. Then the Redis `zadd` command is used to create a Sorted Set called “search-suggestions:v” since the variable `prefix` is set to “v” on the first iteration. (I’m prefixing the set name with “search-suggestions” to keep things organized, but this is not strictly necessary). 
+On the first iteration, n would be 1 and the `prefix` variable would be set to the string “v” since we’re extracting the characters from 0 to 1. Then the Redis `zadd` [command](http://redis.io/commands/zadd) is used to create a Sorted Set called “search-suggestions:v” since the variable `prefix` is set to “v” on the first iteration. (I’m prefixing the set name with “search-suggestions” to keep things organized, but this is not strictly necessary). 
 
-By the way, Sorted Sets in Redis are very similar to Sets because they both store collections of strings, but a Sorted Set also stores an associated score with each string that is then used for sorting. So if we go back to the code, you’ll see that `zadd` initializes the set “search-suggestions:v” with a score of 1 and a value of “via delizia”&mdash;the place’s full name. 
+Sorted Sets in Redis are very similar to Sets because they both store collections of strings, but a Sorted Set also stores an associated score with each string that is then used for sorting. So if we go back to the code, you’ll see that `zadd` initializes the set “search-suggestions:v” with a score of 1 and a value of “via delizia”&mdash;the place’s full name. 
 
 On the second iteration, a new set will be created called “search-suggestions:vi” because the variable `prefix` is set to “vi” since we’re now extracting the characters from 0 to 2. This set is also initialized to a score of 1 and a string of “via delizia”. The same process is then repeated on the subsequent iterations as well. After the 10th iteration, we’ll have 10 different sets initialized to a score of 1 and a string of “via delizia”, like so:
 
@@ -110,9 +108,11 @@ Let’s now assume the second place name is “vault martini”. This means that
 “search-suggestions:v” => [[“via delizia”, 1], [“vault martini”, 1]]
 ```
 
-And now you can see how autocompletion will work. Whenever a user types “v” in the search bar, we can return a list of search suggestions simply by returning the values in the “search-suggestions:v” set. There is no need for expensive queries that search through the entire database and look for matches. Instead, we find what we’re looking for instantly. This is the beauty of Redis (and other key-value stores).
+And now you can see how autocompletion will work. Whenever a user types “v” in the search bar, we can return a list of search suggestions simply by returning the values in the “search-suggestions:v” set. There is no need for expensive queries that search through the entire database and look for matches. Instead, we find what we’re looking for instantly. That's the beauty of Redis (and other key-value stores).
 
-But how do we extract values from a set? Well, Redis has a command called `zrevrange` that does just that. It returns a ———-----HERE———-----
+## Extracting Values from a Sorted Set
+
+But how do we extract values from a set? Well, Redis has a command called `zrevrange` that does just that. It returns a range of elements sorted by score (with the highest scores listed first). Go ahead and add the following function to `search_suggestion.rb`, which accepts a `prefix` variable and uses `zrevrange` to return the first 10 elements of a sorted set containing the specified `prefix` value:
 
 ``` ruby search_suggestion.rb
 . . .
@@ -122,13 +122,85 @@ But how do we extract values from a set? Well, Redis has a command called `zrevr
 . . .
 ```
 
-Next, we’ll need to create a controller that will take the search phrase the user typed in and return a list of suggestions:
+We'll call this function later to return a list of search suggestions to the user.
+
+# Creating a Rake Task to Seed Redis
+
+In order to make it easy for us to seed Redis from the command line, we'll create a Rake task that calls the `seed` method we defined in `search_suggestion.rb`. Create a new file called `search_suggestions.rake` inside your app's `/lib/tasks` directory, and add the following code into it:
+
+``` ruby search_suggestions.rake
+namespace :search_suggestions do
+  
+  desc 'Generate search suggestions'
+  task index: :environment do
+    SearchSuggestion.seed
+  end
+  
+end
+```
+
+The code is simple. We're creating a task called `index` and making it dependent on a Rake task provided by Rails called `environment`, which loads the Rails environment and gives us access to our `SearchSuggestion` class. Then we're just calling the `seed` method we defined earlier to seed Redis. And now we can `cd` into our app's root directory and call this task from the command line, like so:
+
+``` bash
+rake search_suggestions:index
+```
+
+You can then go into the Rails console with `rails c` and run some Redis commands to see if it worked. For example, if I defined a set called "search-suggestions:v" earlier, I can run the `zrevrange` command to return the first 10 elements:
+
+``` bash
+$redis.zrange "search-suggestions:v", 0, 9, with_scores: true
+```
+
+Note that if you want Redis to return the values along with their scores, you need to pass an argument called `with_scores` and set it to `true`; otherwise, Redis omits the scores.
+
+# Setting Up the Front-End
+
+Now that we have the backend functionality setup, it’s time to set up the front-end. We’ll use the [jQueryUI Autocomplete widget](http://api.jqueryui.com/autocomplete/) for the autocompletion drop-down because it’s simple and straightforward to use. We could include it in our app simply by adding a `//= require jquery-ui` to our `/app/assets/javascripts/application.js` file, but this will include the entire library with all the widgets. I don’t like code bloat and prefer to include only the code that I actually need, so that’s what we’ll do.
+
+Head over to the jQueryUI [download page](http://jqueryui.com/download/) and under “Components”, deselect the “Toggle All” option, which will deselect all the checkboxes. Then scroll down to the “Widgets” section and select “Autocomplete”. You’ll see a few other necessary dependencies get selected automatically. Then press “Download”.
+
+If you open the folder it downloaded and go into its `/js` directory, you’ll see a file that starts with “jquery-ui …” and ends with a “.custom.js” extension.  Open it and copy its code. Then head over to your app, create a new file called `autocomplete.js` inside the `/app/assets/javascripts` directory, and paste the code into it.
+
+Now go back to the folder you just downloaded, switch into its `/css` directory, and find a file with “.custom.css” extension. Open it and copy its code. Then create another file called `autocomplete.css` inside your app’s `/app/assets/stylesheets` directory and paste the code into it. Now we just need hook up the autocomplete widget with our HTML.
+
+In Phindee, I have a simple form with a search image and an input field that I want to have the autocomplete functionality:
+
+``` html
+. . .
+<form class=“search-form”>
+  <%= image_tag asset_path('search-icon.svg'), class: “search-icon" %>
+  <input type="text" class="search-field" />
+</form>
+. . .
+```
+
+In another file, I have the following CoffeeScript that hooks up the autocomplete widget to the input field I just mentioned above:
+
+``` coffeescript 
+. . .
+  $('.search-field').autocomplete
+    appendTo: '.search-form',
+    source: ‘/search_suggestions'
+. . .
+```
+
+I’m simply calling the jQueryUI-provided `autocomplete()` method on the input field that will have the autocomplete functionality. I’m also using `appendTo` to specify that I want the autocomplete drop-down to be appended to the form itself. Finally, I’m using `source` to specify the URL path the autocomplete widget will use to get a list of search suggestions that will be displayed in the drop-down. I chose a path called “/search_suggestions”, but you can choose any path you want.
+
+If you look at the [documentation](http://api.jqueryui.com/autocomplete/#option-source) for the `source` option, you’ll see that it can accept the search suggestions as an array of strings, a string pointing to a URL that <em>returns</em> an array of strings, or a function with a response callback that also returns an array of strings. We’re using a string pointing to a URL since this fits our needs perfectly.
+
+This is how it will work. The widget will take whatever the user typed in the search field and append it to a variable called “term”, which itself will get appended to the URL path we specified in `source`. Then it’ll make a GET request to this URL and expect our server to respond with the search suggestions rendered as an array of strings in the JSON format. So for example, if the user types in “v” into the search field, the widget will make a GET request to “/search_suggestions?term=v”, and it’ll expect the server to respond with something like `["via delizia","vault martini”]`.
+
+Our server doesn’t yet know how to respond to a URL like this. Let’s set it up.
+
+# Creating a Controller to Handle Requests
+
+First, we’ll need to create a controller that will take the search phrase the user typed in, pass it on to the `terms_for` method we defined earlier in `search_suggestion.rb`, and return the resulting list of suggestions back to the user. We'll call it `search_suggestions`:
 
 ``` bash
 rails g controller search_suggestions
 ```
 
-Open the newly created `search_suggestions_controller.rb` file and add the following code inside the `SearchSuggestionsController` class:
+This will create a new file called `search_suggestions_controller.rb`. Open it and add the following code inside the `SearchSuggestionsController` class:
 
 ``` ruby search_suggestions_controller.rb
 . . .
@@ -138,4 +210,16 @@ Open the newly created `search_suggestions_controller.rb` file and add the follo
 . . .
 ```
 
-This creates an `index` method that will return a JSON response 
+This is where the magic happens. We’re extracting the value of the `term` variable using `params[:term]`, passing it on to the `terms_for` method, and telling Rails to render the response in JSON format. Kid stuff.
+
+There is one final thing to do. Open your app’s `/config/routes.rb` file and add the following line into it:
+
+`` routes.rb
+. . .
+  match ‘/search_suggestions', to: 'search_suggestions#index', via: :get
+. . .
+```
+
+This maps our `index` controller to the path we specified earlier for the `source` option, and our server now knows how to respond to a URL like “/search_suggestions?term=v”.
+
+I think we’re ready for the moment of truth.
