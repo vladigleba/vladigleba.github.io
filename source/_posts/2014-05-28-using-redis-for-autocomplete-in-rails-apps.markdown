@@ -29,18 +29,18 @@ When it finishes, it’ll give you the command to start the Redis server:
 redis-server /usr/local/etc/redis.conf
 ```
 
-You can then access the Redis command-line and by running the following:
+You can then access the Redis command-line by running the following:
 
 ``` bash
 redis-cli
 ```
 
-This allows you play around with Redis the same way that the Rails console allows you to interact with your Rails app.
+This allows you to play around with various Redis commands to see how they work.
 
 Next, you’ll need to hook Redis up with your Rails app, and you can do this by adding the following line to your ‘Gemfile’:
 
 ``` ruby Gemfile
-gem ‘redis’
+gem 'redis', '~> 3.0.7'
 ```
 
 Then run `bundle` to install it.
@@ -62,10 +62,10 @@ class SearchSuggestion
   
   def self.seed
     Place.find_each do |place|
-    name = place.name
-     1.upto(name.length - 1) do |n|
+      name = place.name
+      1.upto(name.length - 1) do |n|
         prefix = name[0, n]
-        $redis.zadd "search-suggestions:#{prefix.downcase}", 1, name.downcase
+        $redis.zadd 'search-suggestions:#{prefix.downcase}', 1, name.downcase
       end
     end
   end
@@ -87,17 +87,36 @@ Sorted Sets in Redis are very similar to Sets because they both store collection
 
 On the second iteration, a new set will be created called “search-suggestions:vi” because the variable `prefix` is set to “vi” since we’re now extracting the characters from 0 to 2. This set is also initialized to a score of 1 and a string of “via delizia”. The same process is then repeated on the subsequent iterations as well. After the 10th iteration, we’ll have 10 different sets initialized to a score of 1 and a string of “via delizia”, like so:
 
-```
-“search-suggestions:v” => [“via delizia”, 1]
-“search-suggestions:vi” => [“via delizia”, 1]
-“search-suggestions:via” => [“via delizia”, 1]
-“search-suggestions:via “ => [“via delizia”, 1]
-“search-suggestions:via d” => [“via delizia”, 1]
-“search-suggestions:via de” => [“via delizia”, 1]
-“search-suggestions:via del” => [“via delizia”, 1]
-“search-suggestions:via deli” => [“via delizia”, 1]
-“search-suggestions:via deliz” => [“via delizia”, 1]
-“search-suggestions:via delizi” => [“via delizia”, 1]
+``` bash
+'search-suggestions:v'
+=> ['via delizia', 1]
+
+'search-suggestions:vi'
+=> ['via delizia', 1]
+
+'search-suggestions:via'
+=> ['via delizia', 1]
+
+'search-suggestions:via '
+=> ['via delizia', 1]
+
+'search-suggestions:via d'
+=> ['via delizia', 1]
+
+'search-suggestions:via de'
+=> ['via delizia', 1]
+
+'search-suggestions:via del'
+=> ['via delizia', 1]
+
+'search-suggestions:via deli'
+=> ['via delizia', 1]
+
+'search-suggestions:via deliz'
+=> ['via delizia', 1]
+
+'search-suggestions:via delizi'
+=> ['via delizia', 1]
 ```
 
 Note that we don’t create a last set called “search-suggestions:via delizia” because there is no point in returning “via delizia” as a suggested term when a user types “via delizia”. That’s why we added the minus 1 to the length of the name. By the way, all the scores are identical right now, but they can be incremented later to increase the ranking of popular search terms.
@@ -105,7 +124,8 @@ Note that we don’t create a last set called “search-suggestions:via delizia�
 Let’s now assume the second place name is “vault martini”. This means that on the very first iteration for “vault martini”, with the `prefix` variable set to “v”, there will be no new set created since we already have a set called “search-suggestions:v”. `zadd` will recognize this and add to the already existing set, instead. This means that the set “search-suggestions:v” will now hold two keys:
 
 ```
-“search-suggestions:v” => [[“via delizia”, 1], [“vault martini”, 1]]
+'search-suggestions:v'
+=> [['via delizia', 1], ['vault martini', 1]]
 ```
 
 And now you can see how autocompletion will work. Whenever a user types “v” in the search bar, we can return a list of search suggestions simply by returning the values in the “search-suggestions:v” set. There is no need for expensive queries that search through the entire database and look for matches. Instead, we find what we’re looking for instantly. That's the beauty of Redis (and other key-value stores).
@@ -116,9 +136,11 @@ But how do we extract values from a set? Well, Redis has a command called `zrevr
 
 ``` ruby search_suggestion.rb
 . . .
+
   def self.terms_for(prefix)
-    $redis.zrevrange "search-suggestions:#{prefix.downcase}", 0, 9
+    $redis.zrevrange 'search-suggestions:#{prefix.downcase}', 0, 9
   end
+  
 . . .
 ```
 
@@ -148,7 +170,8 @@ rake search_suggestions:index
 You can then go into the Rails console with `rails c` and run some Redis commands to see if it worked. For example, if I defined a set called "search-suggestions:v" earlier, I can run the `zrevrange` command to return the first 10 elements:
 
 ``` bash
-$redis.zrange "search-suggestions:v", 0, 9, with_scores: true
+$redis.zrange 'search-suggestions:v', 0, 9, with_scores: true
+=> [["vault martini", 1.0], ["via delizia", 1.0], ["vino bar", 1.0]]
 ```
 
 Note that if you want Redis to return the values along with their scores, you need to pass an argument called `with_scores` and set it to `true`; otherwise, Redis omits the scores.
@@ -165,12 +188,14 @@ Now go back to the folder you just downloaded, switch into its `/css` directory,
 
 In Phindee, I have a simple form with a search image and an input field that I want to have the autocomplete functionality:
 
-``` html
+``` erb
 . . .
-<form class=“search-form”>
-  <%= image_tag asset_path('search-icon.svg'), class: “search-icon" %>
-  <input type="text" class="search-field" />
+
+<form class="search-form”>
+  <%= image_tag asset_path('search-icon.svg'), class: 'search-icon' %>
+  <input type="text" class=“search-field" />
 </form>
+
 . . .
 ```
 
@@ -178,9 +203,11 @@ In another file, I have the following CoffeeScript that hooks up the autocomplet
 
 ``` coffeescript 
 . . .
+
   $('.search-field').autocomplete
     appendTo: '.search-form',
     source: ‘/search_suggestions'
+    
 . . .
 ```
 
@@ -204,9 +231,11 @@ This will create a new file called `search_suggestions_controller.rb`. Open it a
 
 ``` ruby search_suggestions_controller.rb
 . . .
+
   def index
     render json: SearchSuggestion.terms_for(params[:term])
   end
+  
 . . .
 ```
 
@@ -214,12 +243,38 @@ This is where the magic happens. We’re extracting the value of the `term` vari
 
 There is one final thing to do. Open your app’s `/config/routes.rb` file and add the following line into it:
 
-`` routes.rb
+``` ruby routes.rb
 . . .
-  match ‘/search_suggestions', to: 'search_suggestions#index', via: :get
+
+  match '/search_suggestions', to: 'search_suggestions#index', via: :get
+  
 . . .
 ```
 
-This maps our `index` controller to the path we specified earlier for the `source` option, and our server now knows how to respond to a URL like “/search_suggestions?term=v”.
+This maps our `index` controller to the path we specified earlier for the `source` option, and our server now knows how to respond to a URL like "/search_suggestions?term=v".
 
-I think we’re ready for the moment of truth.
+I think we’re ready for the moment of truth. Restart the rails server, type some text in the search field, and if all is well with the world, you should see a drop-down menu with a list of search suggestions. If you don’t, you’ll have to roll up your sleeves and start debugging.
+
+# Making It Work on a VPS
+
+Installing Redis on a VPS isn’t as easy as running `brew install redis`, but it’s not too bad because DigitalOcean has a [nice tutorial](https://www.digitalocean.com/community/articles/how-to-install-and-use-redis) on the subject. I used it myself to get Redis installed on the server running Phindee, and it worked without a hiccup. I highly recommend it.
+
+Once you have it installed, you’ll need to run the `index` task to seed the database with data. If you’re using Capistrano, you can use the following task to seed it from your local computer:
+
+``` ruby
+desc 'Seed the redis database (search suggestions)'
+task :seed_redis do
+  on roles(:app) do
+    within '#{current_path}' do
+      with rails_env: :production do
+        execute :rake, 'search_suggestions:index'
+      end
+    end
+  end
+end
+```
+
+If you’re new to Capistrano, feel free to read through my [earlier post]({{ root_url }}/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/) which explains what it is and how you can use it. Or if you’re new to deployment in general, you’re welcome to go through my [6-part series]({{ root_url }}/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/), which covers everything from setting up and securing a server to configuring Nginx, Unicorn, and Capistrano.
+
+
+
