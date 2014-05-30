@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Phindee | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/phindee/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-05-01T09:23:04-07:00</updated>
+  <updated>2014-05-30T10:46:06-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -12,6 +12,307 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Do Autocomplete in Rails Using Redis]]></title>
+    <link href="http://vladigleba.github.io/blog/2014/05/30/how-to-do-autocomplete-in-rails-using-redis/"/>
+    <updated>2014-05-30T10:40:00-07:00</updated>
+    <id>http://vladigleba.github.io/blog/2014/05/30/how-to-do-autocomplete-in-rails-using-redis</id>
+    <content type="html"><![CDATA[<p>A few days ago, I added search functionality to <a href="http://phindee.com/">Phindee</a> so users can quickly find information about a particular happy hour. Search that is well-done often comes with autocomplete, and Phindee is no exception.</p>
+
+<!-- more -->
+
+
+<p>Autocomplete in Phindee does a couple of things for the user: 1) it reduces typing, 2) it lets the user quickly know if a specific happy hour is in the database, 3) it allows her to quickly find a particular happy hour that <em>is</em> in the database, and 4) it lets him know if the happy hour is currently happening because it will have a green circle next to it if that’s the case.</p>
+
+<p>What makes this work behind the scenes is an open-source, in-memory, key-value store called <a href="https://github.com/antirez/redis/">Redis</a>. Because it’s in-memory, Redis is fast, which makes it perfect for autocompletion. I’ve known about Redis for a while now, but never had a need to use it, so I’m glad the opportunity finally presented itself. But now that I’ve had a chance to work with it, I’d like to explain how the autocomplete functionality works behind the scenes, and hopefully, teach you a few things for your own projects.</p>
+
+<p>Before we go on, it’s important that you have a basic understanding of Redis. If you’re never used it before, I recommend going through the <a href="http://try.redis.io/">interactive tutorial</a> on their website; it will help you understand what it’s for, what it can do, and how to use it. Pay special attention to the section on sorted sets because that’s what we’ll be using for autocompletion.</p>
+
+<h1>Installing Redis</h1>
+
+<p>If you’re on a Mac, you can easily install Redis using <a href="https://github.com/Homebrew/homebrew">Homebrew</a> by running the following command:</p>
+
+<p><code>bash
+brew install redis
+</code></p>
+
+<p>When it finishes, it’ll give you the command to start the Redis server:</p>
+
+<p><code>bash
+redis-server /usr/local/etc/redis.conf
+</code></p>
+
+<p>You can then access the Redis command-line by running <code>redis-cli</code>, which allows you to play around with various Redis commands to see how they work.</p>
+
+<p>Next, you’ll need to hook Redis up with your Rails app, and you can do this by adding the following line to your ‘Gemfile’:</p>
+
+<p><code>ruby Gemfile
+gem 'redis', '~&gt; 3.0.7'
+</code></p>
+
+<p>Then run <code>bundle</code> to install it.</p>
+
+<h1>Defining a Model for Redis to Work With</h1>
+
+<p>First thing we’ll need to do is create an initializer file for setting up our Redis connection. Go ahead and create a file called <code>redis.rb</code> inside your app’s <code>/config/initializers</code> directory. Then add the following line into it:</p>
+
+<p><code>ruby redis.rb
+$redis = Redis.new
+</code></p>
+
+<p>This creates a global variable called <code>$redis</code> to make it easy for us to access Redis through out our app.</p>
+
+<p>Next, we’ll create a new file called <code>search_suggestion.rb</code> inside the <code>/app/models</code> directory. It will contain the code that seeds our Redis database and retrieves a list of suggestions. To start things off, add the following code into it:</p>
+
+<p>``` ruby search_suggestion.rb
+class SearchSuggestion</p>
+
+<p>  def self.seed</p>
+
+<pre><code>Place.find_each do |place|
+  name = place.name
+  1.upto(name.length - 1) do |n|
+    prefix = name[0, n]
+    $redis.zadd 'search-suggestions:#{prefix.downcase}', 1, name.downcase
+  end
+end
+</code></pre>
+
+<p>  end</p>
+
+<p>end
+```</p>
+
+<p>This creates a class called <code>SearchSuggestion</code> with a class method called <code>seed()</code>. Notice that this class doesn’t inherit from <code>ActiveRecord::Base</code>, which is the base class that the models you create with <code>rails g model ...</code> inherit from. We don’t need it because we’ll be using Redis instead of ActiveRecord. (By the way, we’re defining a class method instead of an instance method because the logic in this method relates to the class itself, not a specific instance of it.)</p>
+
+<h2>Code Walk-Through</h2>
+
+<p>Alright, now let’s go over the code. Phindee has a model called <code>Place</code> for storing all the places that have a happy hour, and I’m simply looping over each record stored in it. The reason why I’m doing <code>Place.find_each</code> instead of <code>Place.all.each</code> is the <code>find_each()</code> method works in batches of 1000. This means that if I have thousands of records in my database, <code>find_each()</code> will load into memory only 1000 at a time, instead of loading them all at once and possibly overwhelming the server, which is the case with <code>Place.all.each</code>.</p>
+
+<p>For each place, I’m using the <code>upto()</code> method to loop over the place’s name n times, where n is the number of characters in the name minus 1 (you’ll see why we’re doing minus 1 later). For example, let’s say the place name is “via delizia”. Our n value would be 10 because the length of the name is 11, but minus 1 brings it down to 10, so we would iterate over the name 10 times.</p>
+
+<p>On the first iteration, n would be 1 and the <code>prefix</code> variable would be set to the string “v” since we’re extracting the characters from 0 to 1. Then the Redis <a href="http://redis.io/commands/zadd"><code>ZADD</code> command</a> is used to create a Sorted Set called “search-suggestions:v” since the variable <code>prefix</code> is set to “v” on the first iteration. (I’m prefixing the set name with “search-suggestions” to keep things organized, but this is not strictly necessary).</p>
+
+<p>Sorted Sets are very similar to Sets because they both store collections of strings, but a Sorted Set also stores an associated score with each string that is then used for sorting. So if we go back to the code, you’ll see that <code>ZADD</code> initializes the set “search-suggestions:v” with a score of 1 and a value of “via delizia”&mdash;the place’s full name.</p>
+
+<p>On the second iteration, a new set will be created called “search-suggestions:vi” since we’re now extracting the characters from 0 to 2, and this initializes the variable <code>prefix</code> to “vi”.  The set itself is then initialized to a score of 1 and a string of “via delizia”, just like the first time.</p>
+
+<p>The same process is then repeated on the subsequent iterations as well. After the 10th iteration, we’ll have 10 different sets initialized to a score of 1 and a string of “via delizia”, like so:</p>
+
+<p>``` bash
+&lsquo;search-suggestions:v&rsquo; => [&lsquo;via delizia&rsquo;, 1]</p>
+
+<p>&lsquo;search-suggestions:vi&rsquo; => [&lsquo;via delizia&rsquo;, 1]</p>
+
+<p>&lsquo;search-suggestions:via&rsquo; => [&lsquo;via delizia&rsquo;, 1]</p>
+
+<p>&lsquo;search-suggestions:via &rsquo; => [&lsquo;via delizia&rsquo;, 1]</p>
+
+<p>&lsquo;search-suggestions:via d&rsquo; => [&lsquo;via delizia&rsquo;, 1]</p>
+
+<p>&lsquo;search-suggestions:via de&rsquo; => [&lsquo;via delizia&rsquo;, 1]</p>
+
+<p>&lsquo;search-suggestions:via del&rsquo; => [&lsquo;via delizia&rsquo;, 1]</p>
+
+<p>&lsquo;search-suggestions:via deli&rsquo; => [&lsquo;via delizia&rsquo;, 1]</p>
+
+<p>&lsquo;search-suggestions:via deliz&rsquo; => [&lsquo;via delizia&rsquo;, 1]</p>
+
+<p>&lsquo;search-suggestions:via delizi&rsquo; => [&lsquo;via delizia&rsquo;, 1]
+```</p>
+
+<p>Note that we don’t create a last set called “search-suggestions:via delizia” because there is no point in returning “via delizia” as a suggested term when a user types “via delizia”. That’s why we added the minus 1 to the length of the name.</p>
+
+<p>By the way, all the scores are identical right now, but they can be incremented later to increase the ranking of popular search terms, although I won&rsquo;t be covering how to do this here.</p>
+
+<p>Let’s now assume the second place name is “vault martini”. This means that on the very first iteration, with the <code>prefix</code> variable set to “v” once again, there will be no new set created since we already have a set called “search-suggestions:v”. <code>ZADD</code> will recognize this and add to the already existing set, instead. This means that the set “search-suggestions:v” will now hold two keys:</p>
+
+<p><code>
+'search-suggestions:v' =&gt; [['via delizia', 1], ['vault martini', 1]]
+</code></p>
+
+<p>And now you can see how autocompletion will work. Whenever a user types “v” in the search bar, we can return a list of search suggestions simply by returning the values in the “search-suggestions:v” set. There is no need for expensive queries that search through the entire database and look for matches. Instead, we find what we’re looking for right away. That&rsquo;s the beauty of Redis (and other key-value stores).</p>
+
+<h2>Extracting Values from a Sorted Set</h2>
+
+<p>But how do we extract values from a set? Well, Redis has a command called <a href="http://redis.io/commands/zrevrange"><code>ZREVRANGE</code></a> that does just that. It returns a range of elements sorted by score (with the highest scores listed first). Go ahead and add the following to <code>search_suggestion.rb</code>:</p>
+
+<p>``` ruby search_suggestion.rb
+&hellip;</p>
+
+<p>  def self.terms_for(prefix)</p>
+
+<pre><code>$redis.zrevrange 'search-suggestions:#{prefix.downcase}', 0, 9
+</code></pre>
+
+<p>  end</p>
+
+<p>&hellip;
+```</p>
+
+<p>This function accepts a <code>prefix</code> variable and uses <code>ZREVRANGE</code> to return the first 10 elements of a sorted set containing the specified <code>prefix</code> value. We&rsquo;ll use it later to return a list of search suggestions to the user.</p>
+
+<h1>Creating a Rake Task to Seed Redis</h1>
+
+<p>In order to make it easy for us to seed Redis from the command line, we&rsquo;ll create a <a href="https://github.com/jimweirich/rake">Rake</a> task that calls the <code>seed()</code> method we defined earlier. (If you&rsquo;re new to Rake, I highly recommend watching the <a href="http://railscasts.com/episodes/66-custom-rake-tasks">Railscasts episode</a> about it.) Go ahead and create a new file called <code>search_suggestions.rake</code> inside your app&rsquo;s <code>/lib/tasks</code> directory, and add the following into it:</p>
+
+<p>``` ruby search_suggestions.rake
+namespace :search_suggestions do</p>
+
+<p>  desc &lsquo;Generate search suggestions&rsquo;
+  task index: :environment do</p>
+
+<pre><code>SearchSuggestion.seed
+</code></pre>
+
+<p>  end</p>
+
+<p>end
+```</p>
+
+<p>The code is simple. We&rsquo;re creating a task called <code>index</code> and making it dependent on a Rake task provided by Rails called <code>environment</code>, which loads the Rails environment and gives us access to our <code>SearchSuggestion</code> class. Then we&rsquo;re just calling the <code>seed()</code> method we defined earlier to seed Redis. (We wrap this up inside a namespace called <code>search_suggestions</code> to keep things neat and organized.)</p>
+
+<p>And now we can <code>cd</code> into our app&rsquo;s root directory and call this task from the command line, like so:</p>
+
+<p><code>bash
+rake search_suggestions:index
+</code></p>
+
+<p>You can then go into the Rails console with <code>rails c</code> and run some Redis commands to see if it worked. For example, if I defined a set called &ldquo;search-suggestions:v&rdquo; earlier, I can run the <code>ZREVRANGE</code> command to return the first 10 elements:</p>
+
+<p><code>bash
+$redis.zrange 'search-suggestions:v', 0, 9, with_scores: true
+=&gt; [["vault martini", 1.0], ["via delizia", 1.0], ["vino bar", 1.0]]
+</code></p>
+
+<p>Note that if you want Redis to return the values along with their scores, you need to pass an argument called <code>with_scores</code> and set it to <code>true</code>; otherwise, Redis omits the scores.</p>
+
+<h1>Setting Up the Front-End</h1>
+
+<p>Now that we have the back-end functionality setup, it’s time to set up the front-end. We’ll use the jQueryUI <a href="http://api.jqueryui.com/autocomplete/">autocomplete widget</a> due to its simplicity and ease of use. We could include it in our app simply by adding the following to our <code>/app/assets/javascripts/application.js</code> file:</p>
+
+<p><code>javascript application.js
+//= require jquery-ui
+</code></p>
+
+<p>but this will include the entire library with all the widgets. I don’t like code bloat and prefer to include only the code that I actually need, so we&rsquo;ll take another route.</p>
+
+<h2>Keeping Things Slim</h2>
+
+<p>Head over to the jQueryUI <a href="http://jqueryui.com/download/">download page</a> and under “Components”, deselect the “Toggle All” option, which will deselect all the checkboxes. Then scroll down to the “Widgets” section, select “Autocomplete”, and you’ll see a few other necessary dependencies get selected automatically. Then press “Download”.</p>
+
+<p>If you open the folder it downloaded and go into its <code>/js</code> directory, you’ll see a file that starts with “jquery-ui-” and ends with a “.custom.js” extension.  Open it and copy its code. Then head over to your app, create a new file called <code>autocomplete.js</code> inside the <code>/app/assets/javascripts</code> directory, and paste that code into it.</p>
+
+<p>Now go back to the folder you just downloaded, go into its <code>/css</code> directory, find a file with a “.custom.css” extension, open it, and copy its code. Then create another file called <code>autocomplete.css</code> inside your app’s <code>/app/assets/stylesheets</code> directory and paste the code into it.</p>
+
+<p>Now we have the code we need and no more.</p>
+
+<h2>Hooking It up with HTML</h2>
+
+<p>We&rsquo;re ready to connect the autocomplete code we just added to our app&rsquo;s HTML. In Phindee, I have a simple form with a search image and an input field that needs the autocomplete functionality:</p>
+
+<p>``` erb
+&hellip;</p>
+
+<p><form class="search-form”>
+  &lt;%= image_tag asset_path(&lsquo;search-icon.svg&rsquo;), class: &lsquo;search-icon&rsquo; %>
+  <input type="text" class=“search-field" />
+</form></p>
+
+<p>&hellip;
+```</p>
+
+<p>In another file, I have the following CoffeeScript code that hooks up the autocomplete widget to the input field I just mentioned above:</p>
+
+<p>``` coffeescript
+&hellip;</p>
+
+<p>  $(&lsquo;.search-field&rsquo;).autocomplete</p>
+
+<pre><code>appendTo: '.search-form',
+source: '/search_suggestions'
+</code></pre>
+
+<p>&hellip;
+```</p>
+
+<p>I’m simply calling the jQueryUI-provided <code>autocomplete()</code> method on the input field I&rsquo;m interested in. I then use the <code>appendTo</code> option to specify that the autocomplete drop-down should be appended to the form itself. Finally, I’m using <code>source</code> to specify the URL path the autocomplete widget will use to get a list of search suggestions that will be displayed in the drop-down. I chose a path called “/search_suggestions”, but you can choose any path you want.</p>
+
+<h2>How It Works</h2>
+
+<p>If you look at the <a href="http://api.jqueryui.com/autocomplete/#option-source">documentation</a> for <code>source</code>, you’ll see that it can accept the search suggestions as an array of strings, a string pointing to a URL that <em>returns</em> an array of strings, or a function with a response callback that also returns an array of strings. We’re using a string pointing to a URL since this fits our needs perfectly.</p>
+
+<p>This is how it will work. The widget will take whatever is typed in the search field and append it to a variable called “term”, which itself will get appended to the URL path we specified in <code>source</code>. Then it’ll make a GET request to the URL and expect our server to respond with the search suggestions rendered as an array of strings in the JSON format. So for example, if the user types in “v”, the widget will make a GET request to “/search_suggestions?term=v”, and it’ll expect the server to respond with something like <code>["via delizia","vault martini”]</code>.</p>
+
+<p>Our server doesn’t yet know how to respond to a URL like this. Let’s set it up.</p>
+
+<h1>Creating a Controller to Handle Requests</h1>
+
+<p>First, we’ll create a controller that takes the search phrase the user types in, passes it on to the <code>terms_for()</code> method we defined in <code>search_suggestion.rb</code>, and returns the resulting list of suggestions back to the user. We&rsquo;ll call it <code>search_suggestions</code>:</p>
+
+<p><code>bash
+rails g controller search_suggestions
+</code></p>
+
+<p>This will create a new file called <code>search_suggestions_controller.rb</code>. Open it and add the following code inside the <code>SearchSuggestionsController</code> class:</p>
+
+<p>``` ruby search_suggestions_controller.rb
+&hellip;</p>
+
+<p>  def index</p>
+
+<pre><code>render json: SearchSuggestion.terms_for(params[:term])
+</code></pre>
+
+<p>  end</p>
+
+<p>&hellip;
+```</p>
+
+<p>We extract the value of the <code>term</code> variable using <code>params[:term]</code>, pass it on to the <code>terms_for()</code> method, and tell Rails to render the response in JSON format. Kid stuff.</p>
+
+<p>Then open your app’s <code>/config/routes.rb</code> file and add the following line into it:</p>
+
+<p>``` ruby routes.rb
+&hellip;</p>
+
+<p>  match &lsquo;/search_suggestions&rsquo;, to: &lsquo;search_suggestions#index&rsquo;, via: :get</p>
+
+<p>&hellip;
+```</p>
+
+<p>This maps our <code>index</code> controller to the path we specified earlier in <code>source</code>, and our server now knows how to respond to a URL like &ldquo;/search_suggestions?term=v&rdquo;.</p>
+
+<p>I think we’re ready for the moment of truth. Restart the rails server, type something in the search field, and if all is well with the world, you should see a drop-down menu with a list of search suggestions. If you don’t, you&rsquo;ll need to do some debugging to figure out what&rsquo;s wrong.</p>
+
+<h1>Making It Work on a VPS</h1>
+
+<p>Installing Redis on a VPS isn’t as easy as running <code>brew install redis</code>, but it’s not too bad. DigitalOcean has a <a href="https://www.digitalocean.com/community/articles/how-to-install-and-use-redis">nice tutorial</a> on the subject. I used it myself to get Redis installed on the server running Phindee, and it worked without a hiccup. I highly recommend it.</p>
+
+<p>Once you have it installed, you’ll need to run the <code>index</code> task we wrote earlier to seed the database with data. If you’re using Capistrano, you can use the following task to run it from your local computer:</p>
+
+<p>``` ruby
+desc &lsquo;Seed the redis database (search suggestions)&rsquo;
+task :seed_redis do
+  on roles(:app) do</p>
+
+<pre><code>within '#{current_path}' do
+  with rails_env: :production do
+    execute :rake, 'search_suggestions:index'
+  end
+end
+</code></pre>
+
+<p>  end
+end
+```</p>
+
+<p>If you’re new to Capistrano, feel free to read through an <a href="/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/">earlier post</a> I wrote, which explains what it is and how you can use it. Or if you’re new to deployment in general, you’re welcome to go through my <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">6-part series</a>, which covers everything from setting up and securing a server to configuring Nginx, Unicorn, and Capistrano.</p>
+
+<p>Alright, that&rsquo;s all I have. Stay hungry. Stay foolish.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Deploying Rails Apps, Part 6: Writing Capistrano Tasks]]></title>
@@ -678,239 +979,6 @@ chmod +x config/unicorn_init.sh
 <p>I won’t be explaining how to do this here because I haven’t yet set it up myself, but if you’re curious, there is a good <a href="http://www.justinappears.com/blog/2-no-downtime-deploys-with-unicorn/">blog post</a> explaining all the nuances you need to be aware of. Phindee is currently a small, low-traffic app and its code is reloaded within seconds, so I’m not worried about users waiting for their requests and don’t see a need for rolling restarts at the moment, but I’m hoping the need presents itself soon.</p>
 
 <p>Having configured Unicorn, we&rsquo;ll move on to configuring Nginx in <a href="/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/">part 4</a>. If you want to be notified when it’s out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and the post will be delivered to your inbox as soon as it’s released!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Deploying Rails Apps, Part 2: Setting up the Server]]></title>
-    <link href="http://vladigleba.github.io/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/"/>
-    <updated>2014-03-14T09:45:00-07:00</updated>
-    <id>http://vladigleba.github.io/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server</id>
-    <content type="html"><![CDATA[<p>In <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">part 1</a>, I talked about choosing a VPS provider, creating a new Ubuntu instance, and configuring it to be more secure. Now, in part 2, I&rsquo;ll talk about installing the technology stack behind <a href="http://phindee.com/">Phindee</a>: Node.js, Nginx, PostgreSQL, rbenv, Ruby, and Bundler.</p>
-
-<!-- more -->
-
-
-<h1>But First!</h1>
-
-<p>Before we proceed any further, make sure you’re logged in as the user you created in part 1; if you’re already logged in as <code>root</code>, you can switch to the correct user with the following command:</p>
-
-<p><code>bash
-su - username
-</code></p>
-
-<p>Once logged in, we’ll run the following command to fetch the latest updates for the packages on our system:</p>
-
-<p><code>bash
-sudo apt-get update
-</code></p>
-
-<p>We’ll follow this up with the command to install the necessary package updates:</p>
-
-<p><code>bash
-sudo apt-get upgrade
-</code></p>
-
-<p>If the command found any updates to install, it will ask if you want to continue with the install; you can enter “y” to do so. Once it finishes, we’ll be ready begin.</p>
-
-<h1>Setting Timezones and Installing Mail</h1>
-
-<p>We’ll start by setting the correct timezone:</p>
-
-<p><code>bash
-sudo dpkg-reconfigure tzdata
-</code></p>
-
-<p>You’ll be asked to choose your country and timezone, after which your server’s local time will be displayed; if it displays the correct time, you’re good to go.</p>
-
-<p>We’ll install <code>postfix</code> and <code>telnet</code> next to enable our Rails app to send email:</p>
-
-<p><code>bash
-sudo apt-get -y install telnet postfix
-</code></p>
-
-<p>Feel free to just press “enter” through all the prompts and keep all the defaults.</p>
-
-<p>Next, we’ll install some useful packages we’ll later need, among them <code>python-software-properties</code>, which will allow us to easily add new repositories to the <code>apt</code> package handling system:</p>
-
-<p><code>bash
-sudo apt-get -y install curl git-core python-software-properties
-</code></p>
-
-<p>Having the ability to add new repositories this way allows us to install the most recent updates since the default <code>apt-get</code> repositories typically don’t receive the latest updates immediately.</p>
-
-<h1>Installing Node.js</h1>
-
-<p>We’ll actually put this ability to use right now by adding a new repository for <a href="http://nodejs.org/">Node.js</a>:</p>
-
-<p><code>bash
-sudo add-apt-repository ppa:chris-lea/node.js
-</code></p>
-
-<p>We’ll then update the created repository with the latest Node.js code available:</p>
-
-<p><code>bash
-sudo apt-get -y update
-</code></p>
-
-<p>and install it, like so:</p>
-
-<p><code>bash
-sudo apt-get -y install nodejs
-</code></p>
-
-<p>We could’ve avoided adding a new repo and just used the traditional <code>apt-get</code> method to do the install, but this would’ve installed an older version of Node.js. Because Node.js is under active development and things are added quite frequently, it’s important to run the latest possible version. This might not matter as much for software that doesn’t have an aggressive update schedule, but this is the route we’ll take for Node.js.</p>
-
-<p>By the way, if you’re wondering why we’re installing Node.js, the reason is it provides a good way to execute JavaScript, and we’ll need this for the Rails <a href="http://guides.rubyonrails.org/asset_pipeline.html">asset pipeline</a>.</p>
-
-<h1>Installing Nginx</h1>
-
-<p>Next, we’ll install a web server called <a href="http://wiki.nginx.org/Main">Nginx</a>, which will handle all our static requests, such as stylesheets, scripts, images, and fonts. Its low memory usage and ability to serve static content quickly and efficiently make it a popular alternative to Apache and an excellent choice for sites running on a Virtual Private Server (VPS). What makes Nginx efficient is the fact that it’s an event-based server, while Apache, on the other hand, is process-based. An event-based server doesn&rsquo;t spawn new processes or threads for each request the way a process-based one does, and this means lower memory usage and faster responses.</p>
-
-<p>We’ll install it by adding another repository:</p>
-
-<p><code>bash
-sudo add-apt-repository ppa:nginx/stable
-sudo apt-get -y update
-sudo apt-get -y install nginx
-</code></p>
-
-<p>Once it’s installed, we can start it up with:</p>
-
-<p><code>bash
-sudo service nginx start
-</code></p>
-
-<p>If you now visit your server’s IP address, you should see a simple page proclaiming “Welcome to nginx!”</p>
-
-<h1>Installing PostgreSQL</h1>
-
-<p>Most modern apps need to store some sort of data, and there are a plethora of open source databases available, like <a href="https://www.mysql.com/">MySQL</a>, <a href="https://sqlite.org/">SQLite</a>, and <a href="http://www.postgresql.org/">PostgreSQL</a>. I never tried MySQL, but when I first started out, I used SQLite, the default database for Rails apps, because I liked its simplicity and saw no need for something more sophisticated. As my needs have evolved, however, so has my database, and I recently decided to switch to PostgreSQL because of its support for a fast key-value store called HStore and its ability to do full-text search, both of which I&rsquo;ll need for Phindee.</p>
-
-<p>We’ll install it with <code>apt-get</code>:</p>
-
-<p><code>bash
-sudo apt-get install postgresql postgresql-contrib
-</code></p>
-
-<p>We can then start Postgres as the default <code>postgres</code> user with the following command:</p>
-
-<p><code>bash
-sudo -u postgres psql
-</code></p>
-
-<p>Had we not specified the default user, it would’ve tried to use the user we’re logged in with on our VPS, and Postgres would’ve complained that the role doesn’t exist since there is no such user created in Postgres. This makes it necessary to login as the default <code>postgres</code> user.</p>
-
-<p>Once logged in, we’ll setup a password for <code>postgres</code>:</p>
-
-<p><code>mysql
-\password
-</code></p>
-
-<p>We’ll also create a new user called <code>admin</code>, followed by a database called <code>phindee</code>, which will be owned by <code>admin</code>:</p>
-
-<p><code>mysql
-create user admin with password 'secret';
-create database phindee owner admin;
-</code></p>
-
-<p>Having the basics setup, we can now quit Postgres:</p>
-
-<p><code>mysql
-\quit
-</code></p>
-
-<h1>Installing rbenv</h1>
-
-<p><a href="https://github.com/sstephenson/rbenv">rbenv</a> is a tool that helps you manage the Ruby versions installed on your system, thereby allowing you to easily switch between them. Whenever you want to play with a new version of Rails&mdash;without messing up your current setup&mdash;rbenv will come in handy.</p>
-
-<p>You may be familiar with another Ruby version manager called <a href="https://rvm.io/">RVM</a>. I used it myself for a while, before switching over to rbenv. It’s not that one is “better” than the other; it’s about which one is better suited for <em>your</em> needs. I made the switch because rbenv is more lightweight than RVM, its design feels cleaner, and it has a cool name.</p>
-
-<p>rbenv will suite you well if you’re starting out; otherwise, install whatever best meets your needs. By the way, it’s worth mentioning that since rbenv is incompatible with RVM, you won’t be able to run them side by side.</p>
-
-<p>Alright, we can install rbenv like so:</p>
-
-<p><code>bash
-sudo curl -L https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
-</code></p>
-
-<p>This will run a script that will do most of the install for us. In the end, you’ll receive a message telling you to add rbenv to the load path, and you can do so by opening up <code>bash_profile</code>:</p>
-
-<p><code>bash
-sudo nano ~/.bash_profile
-</code></p>
-
-<p>and copying/pasting the code that was outputted by the message. We’ll then need to reload the file for the changes to take effect:</p>
-
-<p><code>bash
-. ~/.bash_profile
-</code></p>
-
-<p>We’re almost ready to install Ruby, but before we do, we first need to install the C compiler and the Make utility, which is needed for the Ruby install. We can do so by installing a package called <code>build-essential</code>, along with some additional packages we’ll need later on:</p>
-
-<p><code>bash
-sudo apt-get install zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libpq-dev
-</code></p>
-
-<p>With the packages installed, we’re now ready to install Ruby itself.</p>
-
-<h1>Installing Ruby</h1>
-
-<p>To see a list of all the Ruby versions available, we can run the following command:</p>
-
-<p><code>bash
-rbenv install --list
-</code></p>
-
-<p>I chose to install version 2.1.0, as that was the latest one at the time:</p>
-
-<p><code>bash
-rbenv install 2.1.0
-</code></p>
-
-<p>This will take a few minutes to run&mdash;and that’s probably an understatement&mdash;but once it finishes, we’ll make the version it just installed the default Ruby version on our server:</p>
-
-<p><code>bash
-rbenv global 2.1.0
-</code></p>
-
-<p>If everything finished successfully, typing <code>ruby -v</code> should output the Ruby version we now have installed.</p>
-
-<h1>Installing Bundler</h1>
-
-<p>If you’ve never used it before, <a href="http://bundler.io/">Bundler</a> is a tool that helps you easily manage and install gems (Ruby programs and libraries). It allows you to specify the gems your app relies on, along with their versions, and Bundler will then install them all for you, in addition to automatically installing and managing any dependencies (other gems) they rely on.</p>
-
-<p>It’s usually a good idea to include version numbers for your gems because new versions can sometimes introduce changes that cause the old features you rely on to behave differently, which can result in errors the next time you try to run your app. By using Bundler to specify not only the gems you need, but also the versions of those gems, you can save yourself from needless headaches (and unnecessary cups of coffee).</p>
-
-<p>We will install bundler with the following command:</p>
-
-<p><code>bash
-gem install bundler --no-ri --no-rdoc
-</code></p>
-
-<p>Every time we install a gem that provides us with commands we can execute, we’ll need to run <code>rbenv rehash</code>, which will give us access to the corresponding executable (<a href="http://stackoverflow.com/questions/9394338/how-do-rvm-and-rbenv-actually-work">see this page</a> to learn why this is so). Since Bundler is one of these gems, we’ll do the rehash next:</p>
-
-<p><code>bash
-rbenv rehash
-</code></p>
-
-<p>If things installed successfully, <code>bundle -v</code> should return the Bundler version that was just installed.</p>
-
-<p>As an aside, notice that we’re specifying the <code>—no-ri</code> and <code>—no-rdoc</code> flags to avoid installing the gem’s documentation, which often takes longer than the gem installation itself and is typically unnecessary, especially on a production server. But typing out these flags for each and every gem you install will give you <a href="http://www.webmd.com/pain-management/carpal-tunnel/carpal-tunnel-syndrome-topic-overview">carpel tunnel</a> sooner than you&rsquo;d like, so its best to create a <code>.gemrc</code> file in your home directory:</p>
-
-<p><code>bash
-nano ~/.gemrc
-</code></p>
-
-<p>and add the following line into it:</p>
-
-<p><code>text
-gem: –no-ri –no-rdoc
-</code></p>
-
-<p>The flags will then be included automatically the next time you install new gems.</p>
-
-<p>And with that, our server setup is now complete! Having installed Node.js, Nginx, PostgreSQL, and rbenv, we’re now ready to start configuring Nginx and Unicorn, which I’ll cover in the <a href="/blog/2014/03/21/deploying-rails-apps-part-3-configuring-unicorn/">next post</a>. If you want to be notified when it’s out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and you’ll have the complete post delivered to your inbox as soon as it’s released!</p>
 ]]></content>
   </entry>
   

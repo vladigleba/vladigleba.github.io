@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-05-01T09:23:04-07:00</updated>
+  <updated>2014-05-30T10:46:06-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -12,6 +12,384 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Do Autocomplete in Rails Using Redis]]></title>
+    <link href="http://vladigleba.github.io/blog/2014/05/30/how-to-do-autocomplete-in-rails-using-redis/"/>
+    <updated>2014-05-30T10:40:00-07:00</updated>
+    <id>http://vladigleba.github.io/blog/2014/05/30/how-to-do-autocomplete-in-rails-using-redis</id>
+    <content type="html"><![CDATA[<p>A few days ago, I added search functionality to <a href="http://phindee.com/">Phindee</a> so users can quickly find information about a particular happy hour. Search that is well-done often comes with autocomplete, and Phindee is no exception.</p>
+
+<!-- more -->
+
+
+<p>Autocomplete in Phindee does a couple of things for the user: 1) it reduces typing, 2) it lets the user quickly know if a specific happy hour is in the database, 3) it allows her to quickly find a particular happy hour that <em>is</em> in the database, and 4) it lets him know if the happy hour is currently happening because it will have a green circle next to it if that’s the case.</p>
+
+<p>What makes this work behind the scenes is an open-source, in-memory, key-value store called <a href="https://github.com/antirez/redis/">Redis</a>. Because it’s in-memory, Redis is fast, which makes it perfect for autocompletion. I’ve known about Redis for a while now, but never had a need to use it, so I’m glad the opportunity finally presented itself. But now that I’ve had a chance to work with it, I’d like to explain how the autocomplete functionality works behind the scenes, and hopefully, teach you a few things for your own projects.</p>
+
+<p>Before we go on, it’s important that you have a basic understanding of Redis. If you’re never used it before, I recommend going through the <a href="http://try.redis.io/">interactive tutorial</a> on their website; it will help you understand what it’s for, what it can do, and how to use it. Pay special attention to the section on sorted sets because that’s what we’ll be using for autocompletion.</p>
+
+<h1>Installing Redis</h1>
+
+<p>If you’re on a Mac, you can easily install Redis using <a href="https://github.com/Homebrew/homebrew">Homebrew</a> by running the following command:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>brew install redis
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>When it finishes, it’ll give you the command to start the Redis server:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>redis-server /usr/local/etc/redis.conf
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can then access the Redis command-line by running <code>redis-cli</code>, which allows you to play around with various Redis commands to see how they work.</p>
+
+<p>Next, you’ll need to hook Redis up with your Rails app, and you can do this by adding the following line to your ‘Gemfile’:</p>
+
+<figure class='code'><figcaption><span>Gemfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">gem</span> <span class="s1">&#39;redis&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 3.0.7&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Then run <code>bundle</code> to install it.</p>
+
+<h1>Defining a Model for Redis to Work With</h1>
+
+<p>First thing we’ll need to do is create an initializer file for setting up our Redis connection. Go ahead and create a file called <code>redis.rb</code> inside your app’s <code>/config/initializers</code> directory. Then add the following line into it:</p>
+
+<figure class='code'><figcaption><span>redis.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="vg">$redis</span> <span class="o">=</span> <span class="no">Redis</span><span class="o">.</span><span class="n">new</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This creates a global variable called <code>$redis</code> to make it easy for us to access Redis through out our app.</p>
+
+<p>Next, we’ll create a new file called <code>search_suggestion.rb</code> inside the <code>/app/models</code> directory. It will contain the code that seeds our Redis database and retrieves a list of suggestions. To start things off, add the following code into it:</p>
+
+<figure class='code'><figcaption><span>search_suggestion.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">SearchSuggestion</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">seed</span>
+</span><span class='line'>    <span class="no">Place</span><span class="o">.</span><span class="n">find_each</span> <span class="k">do</span> <span class="o">|</span><span class="n">place</span><span class="o">|</span>
+</span><span class='line'>      <span class="nb">name</span> <span class="o">=</span> <span class="n">place</span><span class="o">.</span><span class="n">name</span>
+</span><span class='line'>      <span class="mi">1</span><span class="o">.</span><span class="n">upto</span><span class="p">(</span><span class="nb">name</span><span class="o">.</span><span class="n">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">n</span><span class="o">|</span>
+</span><span class='line'>        <span class="n">prefix</span> <span class="o">=</span> <span class="nb">name</span><span class="o">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="o">]</span>
+</span><span class='line'>        <span class="vg">$redis</span><span class="o">.</span><span class="n">zadd</span> <span class="s1">&#39;search-suggestions:#{prefix.downcase}&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">name</span><span class="o">.</span><span class="n">downcase</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This creates a class called <code>SearchSuggestion</code> with a class method called <code>seed()</code>. Notice that this class doesn’t inherit from <code>ActiveRecord::Base</code>, which is the base class that the models you create with <code>rails g model ...</code> inherit from. We don’t need it because we’ll be using Redis instead of ActiveRecord. (By the way, we’re defining a class method instead of an instance method because the logic in this method relates to the class itself, not a specific instance of it.)</p>
+
+<h2>Code Walk-Through</h2>
+
+<p>Alright, now let’s go over the code. Phindee has a model called <code>Place</code> for storing all the places that have a happy hour, and I’m simply looping over each record stored in it. The reason why I’m doing <code>Place.find_each</code> instead of <code>Place.all.each</code> is the <code>find_each()</code> method works in batches of 1000. This means that if I have thousands of records in my database, <code>find_each()</code> will load into memory only 1000 at a time, instead of loading them all at once and possibly overwhelming the server, which is the case with <code>Place.all.each</code>.</p>
+
+<p>For each place, I’m using the <code>upto()</code> method to loop over the place’s name n times, where n is the number of characters in the name minus 1 (you’ll see why we’re doing minus 1 later). For example, let’s say the place name is “via delizia”. Our n value would be 10 because the length of the name is 11, but minus 1 brings it down to 10, so we would iterate over the name 10 times.</p>
+
+<p>On the first iteration, n would be 1 and the <code>prefix</code> variable would be set to the string “v” since we’re extracting the characters from 0 to 1. Then the Redis <a href="http://redis.io/commands/zadd"><code>ZADD</code> command</a> is used to create a Sorted Set called “search-suggestions:v” since the variable <code>prefix</code> is set to “v” on the first iteration. (I’m prefixing the set name with “search-suggestions” to keep things organized, but this is not strictly necessary).</p>
+
+<p>Sorted Sets are very similar to Sets because they both store collections of strings, but a Sorted Set also stores an associated score with each string that is then used for sorting. So if we go back to the code, you’ll see that <code>ZADD</code> initializes the set “search-suggestions:v” with a score of 1 and a value of “via delizia”&mdash;the place’s full name.</p>
+
+<p>On the second iteration, a new set will be created called “search-suggestions:vi” since we’re now extracting the characters from 0 to 2, and this initializes the variable <code>prefix</code> to “vi”.  The set itself is then initialized to a score of 1 and a string of “via delizia”, just like the first time.</p>
+
+<p>The same process is then repeated on the subsequent iterations as well. After the 10th iteration, we’ll have 10 different sets initialized to a score of 1 and a string of “via delizia”, like so:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="s1">&#39;search-suggestions:v&#39;</span> <span class="o">=</span>&gt; <span class="o">[</span><span class="s1">&#39;via delizia&#39;</span>, 1<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">&#39;search-suggestions:vi&#39;</span> <span class="o">=</span>&gt; <span class="o">[</span><span class="s1">&#39;via delizia&#39;</span>, 1<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">&#39;search-suggestions:via&#39;</span> <span class="o">=</span>&gt; <span class="o">[</span><span class="s1">&#39;via delizia&#39;</span>, 1<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">&#39;search-suggestions:via &#39;</span> <span class="o">=</span>&gt; <span class="o">[</span><span class="s1">&#39;via delizia&#39;</span>, 1<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">&#39;search-suggestions:via d&#39;</span> <span class="o">=</span>&gt; <span class="o">[</span><span class="s1">&#39;via delizia&#39;</span>, 1<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">&#39;search-suggestions:via de&#39;</span> <span class="o">=</span>&gt; <span class="o">[</span><span class="s1">&#39;via delizia&#39;</span>, 1<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">&#39;search-suggestions:via del&#39;</span> <span class="o">=</span>&gt; <span class="o">[</span><span class="s1">&#39;via delizia&#39;</span>, 1<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">&#39;search-suggestions:via deli&#39;</span> <span class="o">=</span>&gt; <span class="o">[</span><span class="s1">&#39;via delizia&#39;</span>, 1<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">&#39;search-suggestions:via deliz&#39;</span> <span class="o">=</span>&gt; <span class="o">[</span><span class="s1">&#39;via delizia&#39;</span>, 1<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">&#39;search-suggestions:via delizi&#39;</span> <span class="o">=</span>&gt; <span class="o">[</span><span class="s1">&#39;via delizia&#39;</span>, 1<span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Note that we don’t create a last set called “search-suggestions:via delizia” because there is no point in returning “via delizia” as a suggested term when a user types “via delizia”. That’s why we added the minus 1 to the length of the name.</p>
+
+<p>By the way, all the scores are identical right now, but they can be incremented later to increase the ranking of popular search terms, although I won&rsquo;t be covering how to do this here.</p>
+
+<p>Let’s now assume the second place name is “vault martini”. This means that on the very first iteration, with the <code>prefix</code> variable set to “v” once again, there will be no new set created since we already have a set called “search-suggestions:v”. <code>ZADD</code> will recognize this and add to the already existing set, instead. This means that the set “search-suggestions:v” will now hold two keys:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="s1">&#39;search-suggestions:v&#39;</span> <span class="o">=</span>&gt; <span class="o">[[</span><span class="s1">&#39;via delizia&#39;</span>, 1<span class="o">]</span>, <span class="o">[</span><span class="s1">&#39;vault martini&#39;</span>, 1<span class="o">]]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And now you can see how autocompletion will work. Whenever a user types “v” in the search bar, we can return a list of search suggestions simply by returning the values in the “search-suggestions:v” set. There is no need for expensive queries that search through the entire database and look for matches. Instead, we find what we’re looking for right away. That&rsquo;s the beauty of Redis (and other key-value stores).</p>
+
+<h2>Extracting Values from a Sorted Set</h2>
+
+<p>But how do we extract values from a set? Well, Redis has a command called <a href="http://redis.io/commands/zrevrange"><code>ZREVRANGE</code></a> that does just that. It returns a range of elements sorted by score (with the highest scores listed first). Go ahead and add the following to <code>search_suggestion.rb</code>:</p>
+
+<figure class='code'><figcaption><span>search_suggestion.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">.</span> <span class="o">.</span> <span class="o">.</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">terms_for</span><span class="p">(</span><span class="n">prefix</span><span class="p">)</span>
+</span><span class='line'>    <span class="vg">$redis</span><span class="o">.</span><span class="n">zrevrange</span> <span class="s1">&#39;search-suggestions:#{prefix.downcase}&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">9</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">.</span> <span class="o">.</span> <span class="o">.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This function accepts a <code>prefix</code> variable and uses <code>ZREVRANGE</code> to return the first 10 elements of a sorted set containing the specified <code>prefix</code> value. We&rsquo;ll use it later to return a list of search suggestions to the user.</p>
+
+<h1>Creating a Rake Task to Seed Redis</h1>
+
+<p>In order to make it easy for us to seed Redis from the command line, we&rsquo;ll create a <a href="https://github.com/jimweirich/rake">Rake</a> task that calls the <code>seed()</code> method we defined earlier. (If you&rsquo;re new to Rake, I highly recommend watching the <a href="http://railscasts.com/episodes/66-custom-rake-tasks">Railscasts episode</a> about it.) Go ahead and create a new file called <code>search_suggestions.rake</code> inside your app&rsquo;s <code>/lib/tasks</code> directory, and add the following into it:</p>
+
+<figure class='code'><figcaption><span>search_suggestions.rake</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">namespace</span> <span class="ss">:search_suggestions</span> <span class="k">do</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">desc</span> <span class="s1">&#39;Generate search suggestions&#39;</span>
+</span><span class='line'>  <span class="n">task</span> <span class="ss">index</span><span class="p">:</span> <span class="ss">:environment</span> <span class="k">do</span>
+</span><span class='line'>    <span class="no">SearchSuggestion</span><span class="o">.</span><span class="n">seed</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The code is simple. We&rsquo;re creating a task called <code>index</code> and making it dependent on a Rake task provided by Rails called <code>environment</code>, which loads the Rails environment and gives us access to our <code>SearchSuggestion</code> class. Then we&rsquo;re just calling the <code>seed()</code> method we defined earlier to seed Redis. (We wrap this up inside a namespace called <code>search_suggestions</code> to keep things neat and organized.)</p>
+
+<p>And now we can <code>cd</code> into our app&rsquo;s root directory and call this task from the command line, like so:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rake search_suggestions:index
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can then go into the Rails console with <code>rails c</code> and run some Redis commands to see if it worked. For example, if I defined a set called &ldquo;search-suggestions:v&rdquo; earlier, I can run the <code>ZREVRANGE</code> command to return the first 10 elements:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$redis</span>.zrange <span class="s1">&#39;search-suggestions:v&#39;</span>, 0, 9, with_scores: <span class="nb">true</span>
+</span><span class='line'><span class="o">=</span>&gt; <span class="o">[[</span><span class="s2">&quot;vault martini&quot;</span>, 1.0<span class="o">]</span>, <span class="o">[</span><span class="s2">&quot;via delizia&quot;</span>, 1.0<span class="o">]</span>, <span class="o">[</span><span class="s2">&quot;vino bar&quot;</span>, 1.0<span class="o">]]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Note that if you want Redis to return the values along with their scores, you need to pass an argument called <code>with_scores</code> and set it to <code>true</code>; otherwise, Redis omits the scores.</p>
+
+<h1>Setting Up the Front-End</h1>
+
+<p>Now that we have the back-end functionality setup, it’s time to set up the front-end. We’ll use the jQueryUI <a href="http://api.jqueryui.com/autocomplete/">autocomplete widget</a> due to its simplicity and ease of use. We could include it in our app simply by adding the following to our <code>/app/assets/javascripts/application.js</code> file:</p>
+
+<figure class='code'><figcaption><span>application.js</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="c1">//= require jquery-ui</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>but this will include the entire library with all the widgets. I don’t like code bloat and prefer to include only the code that I actually need, so we&rsquo;ll take another route.</p>
+
+<h2>Keeping Things Slim</h2>
+
+<p>Head over to the jQueryUI <a href="http://jqueryui.com/download/">download page</a> and under “Components”, deselect the “Toggle All” option, which will deselect all the checkboxes. Then scroll down to the “Widgets” section, select “Autocomplete”, and you’ll see a few other necessary dependencies get selected automatically. Then press “Download”.</p>
+
+<p>If you open the folder it downloaded and go into its <code>/js</code> directory, you’ll see a file that starts with “jquery-ui-” and ends with a “.custom.js” extension.  Open it and copy its code. Then head over to your app, create a new file called <code>autocomplete.js</code> inside the <code>/app/assets/javascripts</code> directory, and paste that code into it.</p>
+
+<p>Now go back to the folder you just downloaded, go into its <code>/css</code> directory, find a file with a “.custom.css” extension, open it, and copy its code. Then create another file called <code>autocomplete.css</code> inside your app’s <code>/app/assets/stylesheets</code> directory and paste the code into it.</p>
+
+<p>Now we have the code we need and no more.</p>
+
+<h2>Hooking It up with HTML</h2>
+
+<p>We&rsquo;re ready to connect the autocomplete code we just added to our app&rsquo;s HTML. In Phindee, I have a simple form with a search image and an input field that needs the autocomplete functionality:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='erb'><span class='line'><span class="x">. . .</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;form class=&quot;search-form”&gt;</span>
+</span><span class='line'><span class="x">  </span><span class="cp">&lt;%=</span> <span class="n">image_tag</span> <span class="n">asset_path</span><span class="p">(</span><span class="s1">&#39;search-icon.svg&#39;</span><span class="p">),</span> <span class="ss">class</span><span class="p">:</span> <span class="s1">&#39;search-icon&#39;</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span><span class='line'><span class="x">  &lt;input type=&quot;text&quot; class=“search-field&quot; /&gt;</span>
+</span><span class='line'><span class="x">&lt;/form&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">. . .</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>In another file, I have the following CoffeeScript code that hooks up the autocomplete widget to the input field I just mentioned above:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">$</span><span class="p">(</span><span class="s">&#39;.search-field&#39;</span><span class="p">).</span><span class="nx">autocomplete</span>
+</span><span class='line'>    <span class="nv">appendTo: </span><span class="s">&#39;.search-form&#39;</span><span class="p">,</span>
+</span><span class='line'>    <span class="nv">source: </span><span class="s">&#39;/search_suggestions&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I’m simply calling the jQueryUI-provided <code>autocomplete()</code> method on the input field I&rsquo;m interested in. I then use the <code>appendTo</code> option to specify that the autocomplete drop-down should be appended to the form itself. Finally, I’m using <code>source</code> to specify the URL path the autocomplete widget will use to get a list of search suggestions that will be displayed in the drop-down. I chose a path called “/search_suggestions”, but you can choose any path you want.</p>
+
+<h2>How It Works</h2>
+
+<p>If you look at the <a href="http://api.jqueryui.com/autocomplete/#option-source">documentation</a> for <code>source</code>, you’ll see that it can accept the search suggestions as an array of strings, a string pointing to a URL that <em>returns</em> an array of strings, or a function with a response callback that also returns an array of strings. We’re using a string pointing to a URL since this fits our needs perfectly.</p>
+
+<p>This is how it will work. The widget will take whatever is typed in the search field and append it to a variable called “term”, which itself will get appended to the URL path we specified in <code>source</code>. Then it’ll make a GET request to the URL and expect our server to respond with the search suggestions rendered as an array of strings in the JSON format. So for example, if the user types in “v”, the widget will make a GET request to “/search_suggestions?term=v”, and it’ll expect the server to respond with something like <code>["via delizia","vault martini”]</code>.</p>
+
+<p>Our server doesn’t yet know how to respond to a URL like this. Let’s set it up.</p>
+
+<h1>Creating a Controller to Handle Requests</h1>
+
+<p>First, we’ll create a controller that takes the search phrase the user types in, passes it on to the <code>terms_for()</code> method we defined in <code>search_suggestion.rb</code>, and returns the resulting list of suggestions back to the user. We&rsquo;ll call it <code>search_suggestions</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rails g controller search_suggestions
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This will create a new file called <code>search_suggestions_controller.rb</code>. Open it and add the following code inside the <code>SearchSuggestionsController</code> class:</p>
+
+<figure class='code'><figcaption><span>search_suggestions_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">.</span> <span class="o">.</span> <span class="o">.</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">index</span>
+</span><span class='line'>    <span class="n">render</span> <span class="ss">json</span><span class="p">:</span> <span class="no">SearchSuggestion</span><span class="o">.</span><span class="n">terms_for</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:term</span><span class="o">]</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">.</span> <span class="o">.</span> <span class="o">.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We extract the value of the <code>term</code> variable using <code>params[:term]</code>, pass it on to the <code>terms_for()</code> method, and tell Rails to render the response in JSON format. Kid stuff.</p>
+
+<p>Then open your app’s <code>/config/routes.rb</code> file and add the following line into it:</p>
+
+<figure class='code'><figcaption><span>routes.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">.</span> <span class="o">.</span> <span class="o">.</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">match</span> <span class="s1">&#39;/search_suggestions&#39;</span><span class="p">,</span> <span class="ss">to</span><span class="p">:</span> <span class="s1">&#39;search_suggestions#index&#39;</span><span class="p">,</span> <span class="ss">via</span><span class="p">:</span> <span class="ss">:get</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">.</span> <span class="o">.</span> <span class="o">.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This maps our <code>index</code> controller to the path we specified earlier in <code>source</code>, and our server now knows how to respond to a URL like &ldquo;/search_suggestions?term=v&rdquo;.</p>
+
+<p>I think we’re ready for the moment of truth. Restart the rails server, type something in the search field, and if all is well with the world, you should see a drop-down menu with a list of search suggestions. If you don’t, you&rsquo;ll need to do some debugging to figure out what&rsquo;s wrong.</p>
+
+<h1>Making It Work on a VPS</h1>
+
+<p>Installing Redis on a VPS isn’t as easy as running <code>brew install redis</code>, but it’s not too bad. DigitalOcean has a <a href="https://www.digitalocean.com/community/articles/how-to-install-and-use-redis">nice tutorial</a> on the subject. I used it myself to get Redis installed on the server running Phindee, and it worked without a hiccup. I highly recommend it.</p>
+
+<p>Once you have it installed, you’ll need to run the <code>index</code> task we wrote earlier to seed the database with data. If you’re using Capistrano, you can use the following task to run it from your local computer:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">desc</span> <span class="s1">&#39;Seed the redis database (search suggestions)&#39;</span>
+</span><span class='line'><span class="n">task</span> <span class="ss">:seed_redis</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">on</span> <span class="n">roles</span><span class="p">(</span><span class="ss">:app</span><span class="p">)</span> <span class="k">do</span>
+</span><span class='line'>    <span class="n">within</span> <span class="s1">&#39;#{current_path}&#39;</span> <span class="k">do</span>
+</span><span class='line'>      <span class="n">with</span> <span class="n">rails_env</span><span class="p">:</span> <span class="ss">:production</span> <span class="k">do</span>
+</span><span class='line'>        <span class="n">execute</span> <span class="ss">:rake</span><span class="p">,</span> <span class="s1">&#39;search_suggestions:index&#39;</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you’re new to Capistrano, feel free to read through an <a href="http://vladigleba.github.io/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/">earlier post</a> I wrote, which explains what it is and how you can use it. Or if you’re new to deployment in general, you’re welcome to go through my <a href="http://vladigleba.github.io/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">6-part series</a>, which covers everything from setting up and securing a server to configuring Nginx, Unicorn, and Capistrano.</p>
+
+<p>Alright, that&rsquo;s all I have. Stay hungry. Stay foolish.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Deploying Rails Apps, Part 6: Writing Capistrano Tasks]]></title>
@@ -1777,7 +2155,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Using MapBox with Ruby on Rails]]></title>
+    <title type="html"><![CDATA[How to Do Autocomplete in Rails Using Redis]]></title>
     <link href="http://vladigleba.github.io/blog/2013/11/14/using-mapbox-with-ruby-on-rails/"/>
     <updated>2013-11-14T10:39:00-08:00</updated>
     <id>http://vladigleba.github.io/blog/2013/11/14/using-mapbox-with-ruby-on-rails</id>
@@ -2006,7 +2384,7 @@
     <link href="http://vladigleba.github.io/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/"/>
     <updated>2013-11-08T12:59:00-08:00</updated>
     <id>http://vladigleba.github.io/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland</id>
-    <content type="html"><![CDATA[<p>I love Portland. It’s a fun, quirky city that makes me feel right at home. And the longer I live here, the deeper my affection grows. There are many reasons why this is so, but one high on the list is the food scene. Now I haven’t lived in any other major city, so I can’t compare, but others who have tend to agree. <!-- more --></p>
+    <content type="html"><![CDATA[<p>I love Portland. It’s a fun, quirky city that makes me feel right at home. And the longer I live here, the deeper my affection grows. There are many reasons why this is so, but one that&rsquo;s high on the list is the food scene. Now I haven’t lived in any other major city, so I can’t compare, but others who have tend to agree. <!-- more --></p>
 
 <p>I’m certainly satisfied.</p>
 
