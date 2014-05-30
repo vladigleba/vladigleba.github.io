@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-05-30T10:46:06-07:00</updated>
+  <updated>2014-05-30T11:12:58-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -2155,7 +2155,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[How to Do Autocomplete in Rails Using Redis]]></title>
+    <title type="html"><![CDATA[Using MapBox with Ruby on Rails]]></title>
     <link href="http://vladigleba.github.io/blog/2013/11/14/using-mapbox-with-ruby-on-rails/"/>
     <updated>2013-11-14T10:39:00-08:00</updated>
     <id>http://vladigleba.github.io/blog/2013/11/14/using-mapbox-with-ruby-on-rails</id>
