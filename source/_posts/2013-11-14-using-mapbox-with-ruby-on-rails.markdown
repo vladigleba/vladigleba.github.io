@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Do Autocomplete in Rails Using Redis"
+title: "Using MapBox with Ruby on Rails"
 date: 2013-11-14 10:39
 comments: true
 categories: [Rails, Maps, Phindee]
