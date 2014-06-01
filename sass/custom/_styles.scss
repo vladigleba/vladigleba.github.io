@@ -139,7 +139,7 @@ $border-style: 2px solid $secondary-text-color;
 
 html {
   @extend .default-font;
-  border-top: 10px solid $accent-color;
+  border-top: 8px solid $accent-color;
   font-size: 125%;
   line-height: 1;
 }
@@ -327,7 +327,7 @@ nav {
       padding: 9.046px 14.637px;
       padding: 0.452rem 0.732rem;
       border-radius: $border-radius-size;
-      width: 200px;
+      width: 180px;
     }
   }
   
@@ -348,8 +348,8 @@ nav {
     }
     
     li + li {
-      padding-left: 32.360px;
-      padding-left: 1.618rem;
+      padding-left: 23.683px;
+      padding-left: 1.184rem;
     }
   }
 }
@@ -680,7 +680,7 @@ article {
     padding: 0.452rem 0;
     padding: 9.046px 0;
     display: block;
-    width: 30%;
+    width: 35%;
     margin: 0 auto;
   }
 }
@@ -742,10 +742,6 @@ article {
       margin-bottom: 1.184rem;
       
       input.search {
-        padding-top: 7.66px;
-        padding-top: 0.452rem;
-        padding-bottom: 7.66px;
-        padding-bottom: 0.452rem;
         font-size: 15.349px;
         font-size: 0.905em; /* 0.732 + 0.173 */
       }
