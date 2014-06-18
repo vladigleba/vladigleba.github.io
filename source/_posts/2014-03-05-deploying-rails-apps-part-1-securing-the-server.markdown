@@ -117,7 +117,7 @@ UseDNS no
 
 This line disables hostname lookup, which can lead to a delay of up to 30 seconds when logging in with `ssh`. Disabling it will save you time and do no harm.
 
-To put these changes into effect, we’ll reload SSH, like so:
+To put these changes into effect, we’ll restart SSH, like so:
 
 ``` bash
 service ssh restart
