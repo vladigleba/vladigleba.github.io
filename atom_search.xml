@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-06-17T22:20:53-07:00</updated>
+  <updated>2014-06-23T12:48:27-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -1603,7 +1603,7 @@
 <p>To put these changes into effect, we’ll restart SSH, like so:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>service ssh restart
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo service ssh restart
 </span></code></pre></td></tr></table></div></figure>
 
 
