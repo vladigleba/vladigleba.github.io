@@ -120,7 +120,7 @@ This line disables hostname lookup, which can lead to a delay of up to 30 second
 To put these changes into effect, we’ll restart SSH, like so:
 
 ``` bash
-service ssh restart
+sudo service ssh restart
 ```
 
 Now we’re ready to test the configurations we just made to make sure they work. I’ll open a new shell in Terminal, without closing my current one, and try to login as the user `bob` on the port I specified in `sshd_config`:
