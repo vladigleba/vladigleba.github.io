@@ -11,9 +11,9 @@ I recently gave [Phindee]() users the ability to "like" happy hours. Up until th
 
 <!-- mroe -->
 
-So I went over to the [ruby-toolbox.com](https://www.ruby-toolbox.com/categories/backups) "Backups" page to familiarize myself with the various backup tools available for Ruby projects. The [Backup gem](https://github.com/meskyanichi/backup) was (and is) the most popular one by far, and after doing a bit of reading about it, I was impressed by its ease of use (not to mention all the [features it supports](http://meskyanichi.github.io/backup/v4/)).
+So I went over to the [ruby-toolbox.com](https://www.ruby-toolbox.com/categories/backups) "Backups" page to familiarize myself with the various backup tools available for Ruby projects. The [Backup gem](https://github.com/meskyanichi/backup) was (and is) the most popular one by far, and after doing a bit of reading about it, I was impressed by its ease of use (not to mention all the [features it supports](http://meskyanichi.github.io/backup/v4/)). I knew I had to try it out.
 
-I had to try it out.
+Having now used it for a few weeks, I'd like to explain how I set it up so you can take advantage of it as well.
 
 # Setting It Up
 
