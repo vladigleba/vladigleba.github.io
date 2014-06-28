@@ -15,59 +15,56 @@ So I went over to the [ruby-toolbox.com](https://www.ruby-toolbox.com/categories
 
 Having now used it for a few weeks, I'd like to explain how I set it up, so you can take advantage of it as well.
 
-# Setting It Up
+# Setting Up Backup
 
-To install Backup, log in to your VPS containing the data you'd like to backup and run the following:
+Log in to the VPS running your database and install Backup:
 
 ``` bash
 gem install backup
 ```
 
-You can then run `backup` to familiarize yourself with all the commands it provides. We'll start things off by creating a Backup model, which is a description of whatever you want to backup. If you run 
+You can then run `backup` to familiarize yourself with all the commands it provides. We'll start things off by creating a Backup model, which is simply a description of how a backup will work. If you run 
 
 ``` bash
 backup help generate:model
 ```
 
-you'll see all the options we can use to tell Backup how we want our database backup to work. Below is the command I ran to create my model:
+you'll see all the options we can use to describe how we want our backup to work. Below is the command I ran to create my model:
 
 ``` bash
 backup generate:model --trigger=db_backup --databases='postgresql' --storages='scp' --compressor='gzip' --notifiers='mail'
 ```
 
-As you can see, I'm first using the `--trigger` option to name my model `db_backup`. Then I'm using the `--databases` option to specify that I'll be backing up a PostgreSQL database. Next, I use `--storages` to tell Backup to use [SCP](https://en.wikipedia.org/wiki/Secure_copy) to transfer the backup file to my VPS (you could also use SFTP, rsync, Amazon AWS, or even Dropbox for this, among others). I then specify gzip as my file compressor, and finally, I tell Backup to notify me via email if the backup succeeded/failed.
+As you can see, I'm first using the `--trigger` option to create a model called `db_backup`. Then I'm using the `--databases` option to specify that I'll be backing up a PostgreSQL database. Next, I use `--storages` to tell Backup how to perform the backup. By specifying `scp`, I'm saying that the backup file should be stored on a secondary VPS, and it should be transferred there via [SCP](https://en.wikipedia.org/wiki/Secure_copy). (Ideally, your secondary VPS should be in a location that's different from the VPS running your database.) I then specify that I want my backup to be compressed with gzip, and finally, I tell Backup to notify me via email if the backup succeeded or failed.
 
-When this command runs, it'll create a `~/Backup` directory with a `config.rb` and a `models/db_backup.rb` file (named after our trigger). The latter will hold configurations specific to the model we just created, while the former is for common configuration across multiple models. Since we're only creating a single model, we'll only modify the `models/db_backup.rb` file. 
+When this command runs, it'll create a `~/Backup` directory with a `config.rb` and a `models/db_backup.rb` file (named after our trigger). The latter will hold configurations specific to the model we just created, while the former is for common configuration across multiple models. Since we're only creating a single model, we'll only modify the `models/db_backup.rb` file, which will already have some configuration corresponding to the options we just specified.
 
-This file will already contain some code corresponding, and all we need to do is fill in some missing information. As an example, here is what my own file looks like:
+If you ran the command above, the file should look something like this:
 
 ``` ruby db_backup.rb
 # encoding: utf-8
 
 # load login info
-rails_env           = ENV['RAILS_ENV'] || 'production'
-database_yml        = File.expand_path('/var/www/shared/config/database.yml')
-db_config           = YAML.load_file(database_yml)[rails_env]
-application_yml     = File.expand_path('/var/www/shared/config/application.yml')
-app_config          = YAML.load_file(application_yml)
+db_config           = YAML.load_file('/var/www/phindee/shared/config/database.yml')['production']
+app_config          = YAML.load_file('/var/www/phindee/shared/config/application.yml')
 
 Model.new(:db_backup, 'backs up ip_addresses table') do
 
   # PostgreSQL [Database]
   database PostgreSQL do |db|
-    db.name           = CONFIG[:database]
-    db.username       = CONFIG[:username]
-    db.password       = CONFIG[:password]
+    db.name           = db_config['database']
+    db.username       = db_config['username']
+    db.password       = db_config['password']
     db.host           = "localhost"
     db.only_tables    = ["ip_addresses"]
   end
 
   # SCP (Secure Copy) [Storage]
   store_with SCP do |server|
-    server.username   = CONFIG[:backup_username]
-    server.password   = CONFIG[:backup_password]
-    server.ip         = CONFIG[:backup_ip]
-    server.port       = CONFIG[:backup_port]
+    server.username   = app_config['backup_username']
+    server.password   = app_config['backup_password']
+    server.ip         = app_config['backup_ip']
+    server.port       = app_config['backup_port']
     server.path       = "~/backups/"
     server.keep       = 5
   end
@@ -81,13 +78,13 @@ Model.new(:db_backup, 'backs up ip_addresses table') do
     mail.on_warning         = true
     mail.on_failure         = true
 
-    mail.from               = CONFIG[:email_username]
-    mail.to                 = CONFIG[:email_username]
-    mail.address            = CONFIG[:email_address]
-    mail.port               = CONFIG[:email_port]
-    mail.domain             = CONFIG[:email_domain]
-    mail.user_name          = CONFIG[:email_username]
-    mail.password           = CONFIG[:email_password]
+    mail.from               = app_config['email_username']
+    mail.to                 = app_config['email_username']
+    mail.address            = app_config['email_address']
+    mail.port               = app_config['email_port']
+    mail.domain             = app_config['email_domain']
+    mail.user_name          = app_config['email_username']
+    mail.password           = app_config['email_password']
     mail.authentication     = :login
     mail.encryption         = :ssl
   end
@@ -95,14 +92,22 @@ Model.new(:db_backup, 'backs up ip_addresses table') do
 end
 ```
 
-I added the first few lines of code myself to load the necessary login information because I didn't want to hard-code things like usernames and passwords. 
+Apart from the first few lines, your own file will look very similar. Since I store my database information in the `database.yml` file and my email and VPS information in `application.yml`, I added two lines in the beginning to load the necessary login information from these files using the `load_file()` method from the YAML module. I recommend you do the same because it's best to keep these things in a dedicated file, instead of hard-coding them in every time.
 
-The file contains four sections of code that correspond to the options we specified when we ran the `backup generate:model` command. The first section describes how to connect to my PostgreSQL database and tells Backup to only worry about the `ip_addresses` table since the data for all my other tables is saved in my `seed.rb` file. The second section describes how to connect to my VPS and specifies that I want the five most recent backups stored in the `~/backups` directory. The third section simply tells Backup to use gzip for comression. And the last section first tells Backup to only send an email if a warning or a failure occurs, and then it goes on to explain how and where to send it.
+Let's now go over our `db_backup` model, which consists of four sections.
 
-To make it easier to edit these files (and put them under version control), I suggest you recreate them on your local computer. I created a directory called `/backup` in my app's `/config` directory and stored them there. We'll later write a Capistrano task to upload them to the proper location on the VPS.
+Since we specified PostgreSQL for the `--databases` option, the first section contains configuration that is specific to PostgreSQL. It collects our database name, username, password, and host, along with an array of tables to back up. This last line is optional and should be used only if you don't want your entire database backed up. (I used it because the `ip_addresses` table is the only table I'm interested in backing up since the data for all my other tables is saved in my `seed.rb` file.)
 
-By the way, I chose not to hard-code things like usernames and passwords partly because I like to keep these things in a dedicated file, but mainly because I don't want them uploaded to my GitHub repo. I store my database information in the `database.yml` file, while email and VPS information is stored in `application.yml`. To make this data accessible in all 
+The second section describes how to connect to our secondary VPS and specifies that we want the five most recent backups stored in the `~/backups` directory. The third section simply tells Backup to use gzip for comression. And the last section first tells Backup to only send an email if a warning or a failure occurs, and then it goes on to explain how and where to send it.
 
+Once our `db_backup.rb` file is configured, we can try running it with the following command:
 
-# after filling in the details, run
+``` bash
 backup perform -t db_backup
+```
+
+If all went well, you should be able to find a gzipped backup file on your secondary VPS.
+
+Okay, this is all great, but wouldn't it be cool if the backup was done automatically without you having to trigger it? Well, this is possible with a tool called Cron. 
+
+To make it easier to edit these files (and put them under version control), I suggest you recreate them on your local computer. I created a directory called `/backup` in my app's `/config` directory and stored them there. We'll later write a Capistrano task to upload them to the proper location on our VPS.
