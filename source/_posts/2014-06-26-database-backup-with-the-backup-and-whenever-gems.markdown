@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Backup Your Rails Database with the Backup and Whenever Gems"
+title: "Backup a Rails Database with the Backup and Whenever Gems"
 date: 2014-06-26 16:22
 comments: true
-categories: [Rails, Storage, Phindee]
+categories: [Rails, Databases, Phindee]
 description: Learn how to backup your Rails database with the Backup and Whenever gems.
 ---
 
-I recently gave [Phindee](http://phindee.com/) users the ability to "like" happy hours. Up until that point, all my happy hour data was safely stored in a version-controlled `seed.rb` file, but now I was dealing with data that was dynamically generated and not being backed up anywhere. And that is not a good thing.
+[Phindee](http://phindee.com/) users recently got the ability to "like" happy hours. Up until that point, all my happy hour data was safely stored in a version controlled `seed.rb` file, but now I was dealing with data that was dynamically generated and not being backed up anywhere. And that is not a good thing.
 
-<!-- mroe -->
+<!-- more -->
 
-So I went over to the [ruby-toolbox.com](https://www.ruby-toolbox.com/categories/backups) "Backups" page to familiarize myself with the various backup tools available for Ruby projects. The [Backup gem](https://github.com/meskyanichi/backup) caught my eye as it was (and is) the most popular one by far. After doing a bit of reading about it, I was impressed by its ease of use (not to mention all the [features it supports](http://meskyanichi.github.io/backup/v4/)). I knew I had to try it out.
+So I went over to [ruby-toolbox.com](https://www.ruby-toolbox.com/categories/backups) to familiarize myself with the various backup tools available for Ruby projects. The [Backup gem](https://github.com/meskyanichi/backup) caught my eye as it was (and is) the most popular one by far. After reading a bit about it, I was impressed by its ease of use and its extensive [list of features](http://meskyanichi.github.io/backup/v4/). I knew I had to try it out.
 
 Having now used it for a few weeks, I'd like to explain how I set it up, so you can take advantage of it as well.
 
@@ -23,21 +23,25 @@ Setting up Backup is as straightforward as it gets. Log in to the VPS running yo
 gem install backup
 ```
 
-You can then run `backup` to familiarize yourself with all the commands it provides. We'll start things off by creating a Backup model, which is simply a description of how a backup will work. If you run 
+You can then run `backup` to familiarize yourself with all the commands it provides. We'll start out by creating a Backup model, which is simply a description of how a backup will work. If you run 
 
 ``` bash
 backup help generate:model
 ```
 
-you'll see all the options we can use to describe how we want our backup to function. Below is the command I ran to create my model:
+you'll see all the options available for describing how we want our backup to function. Below is the command and options I used to create my model:
 
 ``` bash
 backup generate:model --trigger=db_backup --databases='postgresql' --storages='scp' --compressor='gzip' --notifiers='mail'
 ```
 
-As you can see, I'm first using the `--trigger` option to create a model called `db_backup`. Then I'm using the `--databases` option to specify that I'll be backing up a PostgreSQL database. Next, I use `--storages` to tell Backup how to perform the backup. By specifying `scp`, I'm saying that the backup file should be stored on a secondary VPS, and it should be transferred there via [SCP](https://en.wikipedia.org/wiki/Secure_copy). (Ideally, your secondary VPS should be in a location that's different from the VPS running your database.) I then specify that I want my backup to be compressed with gzip, and finally, I tell Backup to notify me via email if the backup succeeded or failed.
+As you can see, I'm first using the `--trigger` option to create a model called `db_backup`. Then I'm using the `--databases` option to specify that I'll be backing up a PostgreSQL database. 
 
-When this command runs, it'll create a `~/Backup` directory containing two files: `config.rb` and `models/db_backup.rb` (named after our trigger). The latter will hold configurations specific to the model we just created, while the former is for common configuration across multiple models. Since we're only creating a single model, we'll only modify the `models/db_backup.rb` file, which will already contain some configuration corresponding to the options we just specified.
+Next, I use `--storages` to tell Backup how to perform the backup itself. By specifying `scp`, I'm saying that the backup file should be stored on a secondary VPS, and it should be transferred there via [SCP](https://en.wikipedia.org/wiki/Secure_copy). (Ideally, your secondary VPS should be in a location that's different from the VPS running your database.)
+
+I then specify that I want my backup to be compressed with gzip, and finally, I tell Backup to notify me via email if the backup succeeded or failed.
+
+When this command runs, it'll create a `~/Backup` directory containing two files: `config.rb` and `models/db_backup.rb` (named after our trigger). The latter will hold configuration specific to the model we just created, while the former is for common configuration across multiple models. Since we're only creating a single model, we'll only modify the `models/db_backup.rb` file, which will already contain some code corresponding to the options we just specified.
 
 If you ran the command above, the file should look something like this:
 
@@ -92,17 +96,13 @@ Model.new(:db_backup, 'backs up ip_addresses table') do
 end
 ```
 
-Apart from the first few lines, your own file will look very similar. Since I store my database information in the `database.yml` file and my email and VPS information in `application.yml`, I added two lines in the beginning to load the necessary login information from these files using the `load_file()` method from the YAML module. I recommend you do the same because it's best to keep these things in a dedicated file, instead of hard-coding them in every time.
+Since I store my database information in the `database.yml` file and my email and VPS information in `application.yml`, I added two lines in the beginning to load the necessary login information from these files using the `load_file()` method from the YAML module. I recommend you do the same because it's best to keep these things in a dedicated file, instead of hard-coding them in every time.
 
-Let's now go over our `db_backup` model, which consists of four sections.
+Let's now go over our `db_backup` model, which consists of four sections. Because we specified PostgreSQL for the `--databases` option, the first section contains configuration that is specific to PostgreSQL. It collects our database name, username, password, and host, along with an array of tables to back up. This array is optional and should be used only if you don't want your entire database backed up. (I used it because the `ip_addresses` table is the only table I'm interested in backing up since the data for all my other tables is saved in `seed.rb`.)
 
-Since we specified PostgreSQL for the `--databases` option, the first section contains configuration that is specific to PostgreSQL. It collects our database name, username, password, and host, along with an array of tables to back up. This last line is optional and should be used only if you don't want your entire database backed up. (I used it because the `ip_addresses` table is the only table I'm interested in backing up since the data for all my other tables is saved in `seed.rb`.)
+The second section describes how to connect to our secondary VPS. After setting the username, password, IP address, and port, I specify the path where the backups will be stored, and I tell Backup to keep only the five most recent ones. The third section simply tells Backup to use gzip for compression, while the last contains settings for setting up email notifications, which tell Backup to only send an email if a warning or a failure occurs.
 
-The second section describes how to connect to our secondary VPS. After setting the username, password, IP address, and port, I specify the path where the backups will be stored, and I tell Backup to keep only the five most recent ones.
-
-The third section simply tells Backup to use gzip for compression, while the last contains settings for setting up email notifications, which tells Backup to only send an email if a warning or a failure occurs.
-
-Once our `db_backup.rb` file is configured, we can try running it with the following command:
+Once our `db_backup.rb` file is configured, we can run it with the following command:
 
 ``` bash
 backup perform -t db_backup
@@ -135,7 +135,7 @@ Then run:
 wheneverize .
 ```
 
-This will create a `schedule.rb` file in `~/Backup/config` for writing our cron jobs. Below is what mine looks like:
+This will create a `schedule.rb` file in `~/Backup/config` for writing your cron jobs. Below is the code I added to mine:
 
 ``` ruby schedule.rb
 every 1.day, :at => '11:30 pm' do
@@ -144,7 +144,7 @@ end
 
 ```
 
-The code pretty much explains itself: everyday at 11pm, cron will run the `backup perform -t db_backup` command. Let's now see this code converted to cron syntax by running `whenever`:
+The code pretty much explains itself: everyday at 11pm, cron will run the `backup perform -t db_backup` command. If you'd like to see this converted to cron syntax, run `whenever`:
 
 ``` bash
 $ whenever
@@ -153,7 +153,9 @@ $ whenever
 
 This is known as your crontab (which stands for cron table), and it lists all the jobs cron is scheduled to run, along with the time and day they'll run.
 
-The first column defines the minute (0-59) at which the command will run, while the second column defines the hour (0-23) in military time. The third  column defines the day of the month (1-31), while the fourth defines the month itself (1-12). If you'd like your jobs running on a weekly basis, you can use the fifth column to specify the day of the week (with Sunday being represented by both 0 and 7). You could even use hyphens (-) to specify ranges and commas to specify multiple values, if you'd like. (See the previously mentioned [article](https://www.digitalocean.com/community/tutorials/how-to-schedule-routine-tasks-with-cron-and-anacron-on-a-vps) by DigitalOcean to learn more.)
+The first column, for example, defines the minute (0-59) at which the command will run, while the second column defines the hour (0-23) in military time. The third  column defines the day of the month, while the fourth defines the month itself (1-12).
+
+If you want your jobs running on a weekly basis, you can use the fifth column to specify the day of the week (with Sunday being represented by both 0 and 7). You could even use hyphens (-) to specify ranges and commas to specify multiple values, if you'd like. (See the previously mentioned [article by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-schedule-routine-tasks-with-cron-and-anacron-on-a-vps) to learn more.)
 
 Because running `whenever` didn't actually write our job to crontab, we'll need to run 
 
@@ -161,7 +163,7 @@ Because running `whenever` didn't actually write our job to crontab, we'll need 
 whenever --update-crontab
 ```
 
-to do so. Having done that, cron will now know about our job, and it'll get executed at the specified time and day. When it runs, it'll also log its activity in a `cron.log` file inside `~/Backup/config` for future reference.
+to do so. Having done that, cron will now know about our job, and it'll get executed at the specified time and day. When it runs, it'll also log its activity in a `~/Backup/config/cron.log` file for future reference.
 
 # Hooking Things Up with Capistrano
 
@@ -187,7 +189,9 @@ namespace :backup do
       upload! StringIO.new(File.read("config/backup/schedule.rb")), "#{fetch(:backup_path)}/config/schedule.rb"
         
       within "#{fetch(:backup_path)}" do
-        with path: "/home/#{fetch(:deploy_user)}/.rbenv/shims:$PATH" dot
+        # capistrano was unable to find the executable for whenever
+        # without the path to rbenv shims set
+        with path: "/home/#{fetch(:deploy_user)}/.rbenv/shims:$PATH" do
           puts capture :whenever
           puts capture :whenever, '--update-crontab'
         end
@@ -203,11 +207,13 @@ And inside my `/config/deploy.rb` file, I then have the following definition for
 
 ``` ruby deploy.rb
 . . .
+
 set :backup_path, "/home/#{fetch(:deploy_user)}/Backup"
+
 . . .
 ```
 
-If you're new to Capistrano, feel free to read my posts explaining [how to configure it](http://vladigleba.com/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/) and [how to write custom tasks](http://vladigleba.com/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/).
+(If this is all new to you, feel free to read my posts explaining [how to configure Capistrano](http://vladigleba.com/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/) and [how to write Capistrano tasks](http://vladigleba.com/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/) to quickly get up to speed.)
 
 And with that, our backup functionality is complete. You'll now have a backup of your database stored on a secondary VPS every 24 hours without you having to lift a finger! And it even notifies you if it fails!
 

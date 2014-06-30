@@ -3,7 +3,7 @@ layout: post
 title: "DataMapper: An Alternative to Active Record"
 date: 2013-12-19 11:27
 comments: true
-categories: [Ruby, Storage]
+categories: [Ruby, Databases]
 description: What it's like using DataMapper and how it compares with Active Record.
 ---
 
