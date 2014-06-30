@@ -165,4 +165,50 @@ to do so. Having done that, cron will now know about our job, and it'll get exec
 
 # Hooking Things Up with Capistrano
 
-In order to make it easier to edit these files in the future, I like to recreate them on my local computer and store them in my app's `/config` directory in a folder called `/backup`. This will also put them under version control.
+In order to make it easier to edit these files in the future, I decided to recreate them on my local computer and store them in my app's `/config` directory in a folder called `/backup`, which means they'll now be under version control as well. And since I use Capistrano for deployment, I wrote two tasks to automate the process of uploading these files back to the server. They reside in a file called `backup.cap` in my app's `/lib/capistrano/tasks` directory:
+
+``` ruby backup.cap
+namespace :backup do
+  
+  desc "Upload backup config files."
+  task :upload_config do
+    on roles(:app) do
+      execute "mkdir -p #{fetch(:backup_path)}/models"
+      upload! StringIO.new(File.read("config/backup/config.rb")), "#{fetch(:backup_path)}/config.rb"
+      upload! StringIO.new(File.read("config/backup/models/db_backup.rb")), "#{fetch(:backup_path)}/models/db_backup.rb"
+    end
+  end
+  
+  desc "Upload cron schedule file."
+  task :upload_cron do
+    on roles(:app) do
+      execute "mkdir -p #{fetch(:backup_path)}/config"
+      execute "touch #{fetch(:backup_path)}/config/cron.log"
+      upload! StringIO.new(File.read("config/backup/schedule.rb")), "#{fetch(:backup_path)}/config/schedule.rb"
+        
+      within "#{fetch(:backup_path)}" do
+        with path: "/home/#{fetch(:deploy_user)}/.rbenv/shims:$PATH" dot
+          puts capture :whenever
+          puts capture :whenever, '--update-crontab'
+        end
+      end
+    end
+  end
+  
+end
+
+```
+
+And inside my `/config/deploy.rb` file, I then have the following definition for the `backup_path` variable:
+
+``` ruby deploy.rb
+. . .
+set :backup_path, "/home/#{fetch(:deploy_user)}/Backup"
+. . .
+```
+
+If you're new to Capistrano, feel free to read my posts explaining [how to configure it](http://vladigleba.com/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/) and [how to write custom tasks](http://vladigleba.com/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/).
+
+And with that, our backup functionality is complete. You'll now have a backup of your database stored on a secondary VPS every 24 hours without you having to lift a finger! And it even notifies you if it fails!
+
+Life is good.
