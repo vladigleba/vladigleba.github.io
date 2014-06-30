@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Backup a Rails Database with the Backup and Whenever Gems"
-date: 2014-06-26 16:22
+date: 2014-06-30 16:07
 comments: true
 categories: [Rails, Databases, Phindee]
-description: Learn how to backup your Rails database with the Backup and Whenever gems.
+description: Learn how to backup your Rails database with the Backup and Whenever gems. 
 ---
 
 [Phindee](http://phindee.com/) users recently got the ability to "like" happy hours. Up until that point, all my happy hour data was safely stored in a version controlled `seed.rb` file, but now I was dealing with data that was dynamically generated and not being backed up anywhere. And that is not a good thing.
