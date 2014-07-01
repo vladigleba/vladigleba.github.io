@@ -147,13 +147,13 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>As you can see, I&rsquo;m first using the <code>--trigger</code> option to create a model called <code>db_backup</code>. Then I&rsquo;m using the <code>--databases</code> option to specify that I&rsquo;ll be backing up a PostgreSQL database.</p>
+<p>As you can see, I&rsquo;m first using the <code>--trigger</code> option to create a model called <code>db_backup</code>. Then I&rsquo;m using the <code>--databases</code> option to specify that I&rsquo;ll be backing up a PostgreSQL database. (Basides PostgreSQL, Backup also supports MySQL, MongoDB, Redis, and Riak.)</p>
 
-<p>Next, I use <code>--storages</code> to tell Backup how to perform the backup itself. By specifying <code>scp</code>, I&rsquo;m saying that the backup file should be stored on a secondary VPS, and it should be transferred there via <a href="https://en.wikipedia.org/wiki/Secure_copy">SCP</a>. (Ideally, your secondary VPS should be in a location that&rsquo;s different from the VPS running your database.)</p>
+<p>Next, I use <code>--storages</code> to tell Backup how to perform the backup itself. By specifying <code>scp</code>, I&rsquo;m saying that the backup file should be stored on a secondary VPS, and it should be transferred there via <a href="https://en.wikipedia.org/wiki/Secure_copy">SCP</a>. (Ideally, your secondary VPS should be in a location that&rsquo;s different from the VPS running your database.) In addition to SCP, Backup also supports rsync, SFTP, S3, Dropbox, and <a href="http://meskyanichi.github.io/backup/v4/storages/">a few others</a>.</p>
 
-<p>I then specify that I want my backup to be compressed with gzip, and finally, I tell Backup to notify me via email if the backup succeeded or failed.</p>
+<p>I then specify that I want my backup to be compressed with gzip (you could also use bzip2, if you&rsquo;d like), and finally, I tell Backup to notify me via email if the backup succeeded or failed. If you dislike email, your other options include Twitter, Prowl, Campfire, Hipchat, and <a href="http://meskyanichi.github.io/backup/v4/notifiers/">others</a>.</p>
 
-<p>When this command runs, it&rsquo;ll create a <code>~/Backup</code> directory containing two files: <code>config.rb</code> and <code>models/db_backup.rb</code> (named after our trigger). The latter will hold configuration specific to the model we just created, while the former is for common configuration across multiple models. Since we&rsquo;re only creating a single model, we&rsquo;ll only modify the <code>models/db_backup.rb</code> file, which will already contain some code corresponding to the options we just specified.</p>
+<p>Once this command runs, it&rsquo;ll create a <code>~/Backup</code> directory containing two files: <code>config.rb</code> and <code>models/db_backup.rb</code> (named after our trigger). The latter will hold configuration specific to the model we just created, while the former is for common configuration across multiple models. Since we&rsquo;re only creating a single model, we&rsquo;ll only modify the <code>models/db_backup.rb</code> file, which will already contain some code corresponding to the options we just specified.</p>
 
 <p>If you ran the command above, the file should look something like this:</p>
 
