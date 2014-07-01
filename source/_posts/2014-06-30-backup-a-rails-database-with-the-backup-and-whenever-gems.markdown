@@ -4,7 +4,7 @@ title: "Backup a Rails Database with the Backup and Whenever Gems"
 date: 2014-06-30 16:07
 comments: true
 categories: [Rails, Databases, Phindee]
-description: Learn how to backup your Rails database with the Backup and Whenever gems. 
+description: Learn how to backup your Rails database with the Backup and Whenever gems.
 ---
 
 [Phindee](http://phindee.com/) users recently got the ability to "like" happy hours. Up until that point, all my happy hour data was safely stored in a version controlled `seed.rb` file, but now I was dealing with data that was dynamically generated and not being backed up anywhere. And that is not a good thing.
@@ -35,13 +35,13 @@ you'll see all the options available for describing how we want our backup to fu
 backup generate:model --trigger=db_backup --databases='postgresql' --storages='scp' --compressor='gzip' --notifiers='mail'
 ```
 
-As you can see, I'm first using the `--trigger` option to create a model called `db_backup`. Then I'm using the `--databases` option to specify that I'll be backing up a PostgreSQL database. 
+As you can see, I'm first using the `--trigger` option to create a model called `db_backup`. Then I'm using the `--databases` option to specify that I'll be backing up a PostgreSQL database. (Basides PostgreSQL, Backup also supports MySQL, MongoDB, Redis, and Riak.)
 
-Next, I use `--storages` to tell Backup how to perform the backup itself. By specifying `scp`, I'm saying that the backup file should be stored on a secondary VPS, and it should be transferred there via [SCP](https://en.wikipedia.org/wiki/Secure_copy). (Ideally, your secondary VPS should be in a location that's different from the VPS running your database.)
+Next, I use `--storages` to tell Backup how to perform the backup itself. By specifying `scp`, I'm saying that the backup file should be stored on a secondary VPS, and it should be transferred there via [SCP](https://en.wikipedia.org/wiki/Secure_copy). (Ideally, your secondary VPS should be in a location that's different from the VPS running your database.) In addition to SCP, Backup also supports rsync, FTP/SFTP, S3, Dropbox, and [a few others](http://meskyanichi.github.io/backup/v4/storages/).
 
-I then specify that I want my backup to be compressed with gzip, and finally, I tell Backup to notify me via email if the backup succeeded or failed.
+I then specify that I want my backup to be compressed with gzip (you could also use bzip2, if you'd like), and finally, I tell Backup to notify me via email if the backup succeeded or failed. If you dislike email, your other options include Twitter, Prowl, Campfire, Hipchat, and [others](http://meskyanichi.github.io/backup/v4/notifiers/).
 
-When this command runs, it'll create a `~/Backup` directory containing two files: `config.rb` and `models/db_backup.rb` (named after our trigger). The latter will hold configuration specific to the model we just created, while the former is for common configuration across multiple models. Since we're only creating a single model, we'll only modify the `models/db_backup.rb` file, which will already contain some code corresponding to the options we just specified.
+Once this command runs, it'll create a `~/Backup` directory containing two files: `config.rb` and `models/db_backup.rb` (named after our trigger). The latter will hold configuration specific to the model we just created, while the former is for common configuration across multiple models. Since we're only creating a single model, we'll only modify the `models/db_backup.rb` file, which will already contain some code corresponding to the options we just specified.
 
 If you ran the command above, the file should look something like this:
 
