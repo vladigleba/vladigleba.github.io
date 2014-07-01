@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Phindee | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/phindee/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-06-30T19:27:36-07:00</updated>
+  <updated>2014-07-01T09:02:37-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -176,9 +176,7 @@ $ whenever
 
 <p>This is known as your crontab (which stands for cron table), and it lists all the jobs cron is scheduled to run, along with the time and day they&rsquo;ll run.</p>
 
-<p>The first column, for example, defines the minute (0-59) at which the command will run, while the second column defines the hour (0-23) in military time. The third  column defines the day of the month, while the fourth defines the month itself (1-12).</p>
-
-<p>If you want your jobs running on a weekly basis, you can use the fifth column to specify the day of the week (with Sunday being represented by both 0 and 7). You could even use hyphens (&ndash;) to specify ranges and commas to specify multiple values, if you&rsquo;d like. (See the previously mentioned <a href="https://www.digitalocean.com/community/tutorials/how-to-schedule-routine-tasks-with-cron-and-anacron-on-a-vps">article by DigitalOcean</a> to learn more.)</p>
+<p>The first column, for example, defines the minute (0-59) at which the command will run, while the second defines the hour (0-23) in military time. The third column defines the day of the month, the fourth defines the month itself (1-12), and the fifth is used to specify the day of the week (with Sunday being represented by both 0 and 7).</p>
 
 <p>Because running <code>whenever</code> didn&rsquo;t actually write our job to crontab, we&rsquo;ll need to run</p>
 
