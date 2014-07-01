@@ -153,9 +153,7 @@ $ whenever
 
 This is known as your crontab (which stands for cron table), and it lists all the jobs cron is scheduled to run, along with the time and day they'll run.
 
-The first column, for example, defines the minute (0-59) at which the command will run, while the second column defines the hour (0-23) in military time. The third  column defines the day of the month, while the fourth defines the month itself (1-12).
-
-If you want your jobs running on a weekly basis, you can use the fifth column to specify the day of the week (with Sunday being represented by both 0 and 7). You could even use hyphens (-) to specify ranges and commas to specify multiple values, if you'd like. (See the previously mentioned [article by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-schedule-routine-tasks-with-cron-and-anacron-on-a-vps) to learn more.)
+The first column, for example, defines the minute (0-59) at which the command will run, while the second defines the hour (0-23) in military time. The third column defines the day of the month, the fourth defines the month itself (1-12), and the fifth is used to specify the day of the week (with Sunday being represented by both 0 and 7).
 
 Because running `whenever` didn't actually write our job to crontab, we'll need to run 
 
