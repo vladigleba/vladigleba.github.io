@@ -225,7 +225,7 @@ nano ~/.gemrc
 and add the following line into it:
 
 ``` text
-gem: –no-ri –no-rdoc
+gem: --no-rdoc --no-ri
 ```
 
 The flags will then be included automatically the next time you install new gems.
