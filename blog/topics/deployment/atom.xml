@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Deployment | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/deployment/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-07-01T09:02:37-07:00</updated>
+  <updated>2014-07-03T14:35:20-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -905,7 +905,7 @@ nano ~/.gemrc
 <p>and add the following line into it:</p>
 
 <p><code>text
-gem: –no-ri –no-rdoc
+gem: --no-rdoc --no-ri
 </code></p>
 
 <p>The flags will then be included automatically the next time you install new gems.</p>
