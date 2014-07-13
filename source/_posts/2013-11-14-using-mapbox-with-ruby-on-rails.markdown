@@ -25,9 +25,7 @@ Besides, MapBox is actually open source, and given a choice, I’ll go with open
 
 Alright, enough of that. Let's start coding.
 
-First thing we'll do is convert our addresses into coordinates, which MapBox needs in order to place our markers (pin-drops) on the map. We could use the [Google Geocoding API](https://developers.google.com/maps/documentation/geocoding/) to do this manually, but I recommend using the [Geocoder](http://www.rubygeocoder.com/) gem to automate the process. The gem uses the Google Maps API by default, but it supports other services as well. 
-
-Because there is a [Railscasts episode](http://railscasts.com/episodes/273-geocoder) covering the gem, I won’t go into any more detail here.
+First thing we'll do is convert our addresses into coordinates, which MapBox needs in order to place our markers (pin-drops) on the map. We can do this manually by using the [MapBox Geocoding API](https://www.mapbox.com/developers/api/geocoding/), or we could automate it with the [Geocoder](http://www.rubygeocoder.com/) gem. Because there is a [Railscasts episode](http://railscasts.com/episodes/273-geocoder) covering the gem, I won’t go into any more detail here.
 
 # Building a JSON object
 
