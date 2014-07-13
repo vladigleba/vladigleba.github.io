@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-07-03T14:35:20-07:00</updated>
+  <updated>2014-07-13T11:35:19-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -2491,9 +2491,7 @@
 
 <p>Alright, enough of that. Let&rsquo;s start coding.</p>
 
-<p>First thing we&rsquo;ll do is convert our addresses into coordinates, which MapBox needs in order to place our markers (pin-drops) on the map. We could use the <a href="https://developers.google.com/maps/documentation/geocoding/">Google Geocoding API</a> to do this manually, but I recommend using the <a href="http://www.rubygeocoder.com/">Geocoder</a> gem to automate the process. The gem uses the Google Maps API by default, but it supports other services as well.</p>
-
-<p>Because there is a <a href="http://railscasts.com/episodes/273-geocoder">Railscasts episode</a> covering the gem, I won’t go into any more detail here.</p>
+<p>First thing we&rsquo;ll do is convert our addresses into coordinates, which MapBox needs in order to place our markers (pin-drops) on the map. We can do this manually by using the <a href="https://www.mapbox.com/developers/api/geocoding/">MapBox Geocoding API</a>, or we could automate it with the <a href="http://www.rubygeocoder.com/">Geocoder</a> gem. Because there is a <a href="http://railscasts.com/episodes/273-geocoder">Railscasts episode</a> covering the gem, I won’t go into any more detail here.</p>
 
 <h1>Building a JSON object</h1>
 
