@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "chef is awesome"
+title: "Setting up a Rails server with Chef, Part 1:"
 date: 2014-07-18 15:06
 comments: true
 categories: 
@@ -13,9 +13,9 @@ About a month ago, I was in the middle of upgrading the server running [Phindee]
 
 I hit the logs, and luckily, it turned out to be a minor problem that was fixable without too much downtime. Needless to say, I have not ran `apt-get upgrade` on my Phindee server since that day.
 
-But what if I wasn't so lucky and the problem wasn't as easy to fix? What if my server was wrecked and I had to rebuild it from scratch? That would be a nightmare because I would need to provision the server manually&mdash;by hand! 
+But what if I wasn't so lucky and the problem wasn't as easy to fix? What if my server was wrecked and I had to rebuild it from scratch? That would be a nightmare because I would need to provision everything manually&mdash;by hand! 
 
-There had to a better solution.
+There had to a better way of doing this.
 
 Since my server was running on [DigitalOcean](http://digitalocean.com/), one possible solution was to take a snapshot of it in a fully-provisioned state and use that for future rebuilding. But this would tie me to DigitalOcean, which I love, but I still like having the freedom to switch providers freely if the need arises.
 
@@ -25,14 +25,33 @@ It's really cool and it'll make you feel like a badass.
 
 # Why Chef?
 
-Besides Chef, you could also use a tool called Puppet. There are some [good](https://www.quora.com/What-are-the-key-reasons-to-choose-Puppet-over-Chef-or-vice-versa)   [articles](http://devopsanywhere.blogspot.com/2011/10/puppet-vs-chef-fight.html)comparing the two, but the main reason why I went with Chef is because Puppet was designed with system administrators in mind, while Chef was designed with developers in mind, and as a developer, Chef is more natural for me to work with because it feels a lot like programming. Each tool has its strenghts and weaknesses though, and you should pick the one that best fits <em>your</em> needs.
+Besides Chef, you could also use a tool called Puppet. There are some [good](https://www.quora.com/What-are-the-key-reasons-to-choose-Puppet-over-Chef-or-vice-versa)   [articles](http://devopsanywhere.blogspot.com/2011/10/puppet-vs-chef-fight.html)comparing the two, but the main reason why I went with Chef is because Puppet was designed with system administrators in mind, while Chef was designed with developers in mind, and as a developer, Chef is more natural for me to work with because it feels a lot like programming. Each tool has its strengths and weaknesses though, and you should pick the one that best fits <em>your</em> needs.
 
 But you might not even need Puppet or Chef at all. If you just need to provision a single server every now and then, a simple shell script will probably do. I decided to learn Chef because I'll be working with servers for the foreseeable future and being able to automate their provisioning will help me save a significant amount of time down the road.
 
-One thing that a tool like Chef offers over shell scripts is idempotency. Idempotency is when you're able to run something over and over again safely. With Chef and Puppet, you're not only able to provision your server, but you can also rerun it to verify that your server is in the state you defined it to be and correct it if it's not. For example, if the initial server permissions or configuration settings change, you can easily bring them back to their original state by rerunning your recipe. You can't say the same thing about a shell script, unless you're extremely careful.
+One thing that a tool like Chef offers over shell scripts is idempotence. Idempotence is when you're able to run something over and over again safely. With a tool like Puppet or Chef, you're not only able to provision your server, but you can also use it to verify that your server is in the state you defined it to be in and correct it if it's not. So if the initial server permissions or configuration settings change, you can easily bring them back to their original state by rerunning your recipe. You can't really say the same thing about a shell script (unless you're extremely careful).
 
 Puppet and Chef also allow you to easily access the data about your system, such as kernel name, version, and release, in a way that works across platforms. You can easily target specific servers or run against multiple servers, and your configuration files can be easily customized for particular users. But perhaps most importantly, your recipes will be far more readable than shell scripts, and that's almost worth it on its own.
 
-# Chef Solo
+# Chef Solo vs. Chef Server
 
+Chef comes in two flavors: Chef Solo and Chef Server. Chef Solo is a basically a simpler version of Chef Server, and it's designed to be used with a small number of servers. This fits my needs my perfectly because I'm currently running Phindee on a single server. With Chef Solo, you write your recipes on your local computer, upload them to your server, and Chef Solo runs them on the server. (A recipe is a file containing the commands that will run to provision your server.)
+
+With Chef Server, you still write your recipes on your local computer, but instead of uploading them to the server you want provisioned, you upload them to a server that's specifically dedicated to Chef. This server acts as the main repository of all your recipes and other Chef configuration. The servers you want provisioned will then have a program running on them (referred to as a Chef client) that is in constant communication with your Chef server, and whenever you upload your recipes to Chef server, Chef client will notice this and run them automatically. Chef Solo is also Chef client; it just doesn't need a Chef server to do its job.
+
+Since Phindee is running on a single server, I currently have no need for Chef Server, but if Phindee grows to multiple servers, I'll definitely consider it.
+
+# Working with Chef Solo
+
+One nice thing about Chef Server is you get to use a command-line tool called Knife that allows you to easily communicate with Chef Server right from your local computer. It gives you commands to easily upload your recipes, for example, among many other things. Unfortunately, it doesn't have similar commands for Chef Solo, but there is a Knife plugin called knife-solo that does provide this functionality for Chef Solo as well.
+
+Since it's packaged as a gem, all we need to do is add the following lines to our app's Gemfile:
+
+``` ruby Gemfile
+group :development do
+  gem 'knife-solo', '~> 0.4.2'
+end
+```
+
+Then run `bundle` to install it.
 
