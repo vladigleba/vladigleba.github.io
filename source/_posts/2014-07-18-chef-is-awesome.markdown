@@ -43,9 +43,7 @@ Since Phindee is running on a single server, I currently have no need for Chef S
 
 # Working with Chef Solo
 
-One nice thing about Chef Server is you get to use a command-line tool called Knife that allows you to easily communicate with Chef Server right from your local computer. It gives you commands to easily upload your recipes, for example, among many other things. Unfortunately, it doesn't have similar commands for Chef Solo, but there is a Knife plugin called knife-solo that does provide this functionality for Chef Solo as well.
-
-Since it's packaged as a gem, all we need to do is add the following lines to our app's Gemfile:
+One nice thing about Chef Server is you get to use a command-line tool called Knife that allows you to easily communicate with Chef Server right from your local computer. It gives you commands to easily upload your recipes, for example, among many other things. Unfortunately, it doesn't offer similar commands for Chef Solo, but there is a Knife plugin called knife-solo that does just this. Since it's packaged as a gem, all we need to do is add the following lines to our app's Gemfile:
 
 ``` ruby Gemfile
 group :development do
@@ -53,5 +51,42 @@ group :development do
 end
 ```
 
-Then run `bundle` to install it.
+and then run `bundle` to install it. This will install the Chef gem as well.
+
+If you now `cd` into your app's root directory and run `knife`, you'll now see a list of all the commands available to you through Knife, including those provided by knife-solo, which start with `knife solo ...`.
+
+With that out of the way, we're ready to start working with Chef Solo. The first thing we'll do is create a configuration file for Knife:
+
+``` bash
+knife configure -r . --defaults
+```
+
+This will create a new `~/.chef` directory with a file called `knife.rb` containing some default configurations. This file is used by Chef Server, so we actually won't need it, but Knife will keep complaining if we don't create it.
+
+Next, `cd` into your app's `/config` directory and run the following:
+
+```
+knife solo init chef
+cd chef
+```
+
+This will create a new directory called `/chef` inside your app's `/config` directory. It will contain a standard Chef directory structure, also known as a "kitchen", that looks like this:
+
+- `/.chef`: contains a `knife.rb` file for Chef Solo
+- `/cookbooks`: holds recipes written by the community
+- `/data_bags`: stores sensitive configuration for your infrastructure
+- `/environments`: contains the environments you've defined for Chef Server (I'll explain shortly)
+- `/nodes`: stores server-specific information
+- `/roles`: contains the roles you've defined for Chef Server (I'll explain shortly)
+- `/site-cookbooks`: holds recipes written by you
+
+The folders above introduced us to some new terms I haven't yet explained.
+
+A cookbook is a collection of one or more recipes that will be run to set up and configure your servers. These servers are known as "nodes" and each node belongs to an environment. An environment is the stage that a node is in. For example, you can define a "testing" and a "production" environment to differentiate between node in the testing stage and those in production. We won't need this functionality, and it's actually only available in Chef Server.
+
+A node can also have a role assigned to it that describes what the node does. For example, you can assign nodes running your databases to the database role, while nodes running the actual Rails application are assigned to the application role. This would make sense in a production environment, but in testing, you might have a node running both the database and the application, so you would assign it to both roles.
+
+Data bags are 
+
+We won't be using the `/data_bags`, 
 
