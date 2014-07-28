@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Server Provisioning | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/server-provisioning/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-07-28T14:36:28-07:00</updated>
+  <updated>2014-07-28T14:41:00-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -23,7 +23,7 @@
 <!-- more -->
 
 
-<p>But what if I wasn&rsquo;t so lucky and the problem wasn&rsquo;t as easy to fix? What if my server was wrecked and I had to rebuild it from scratch? That would be a nightmare because I would need to provision everything manually&mdash;by hand!  There had to a better way of doing this.</p>
+<p>But what if I wasn&rsquo;t so lucky and the problem wasn&rsquo;t as easy to fix? What if my server was wrecked and I had to rebuild it from scratch? That would be a nightmare because I would need to provision everything manually&mdash;by hand!  There had to be a better way of doing this.</p>
 
 <p>Since my server was running on <a href="http://digitalocean.com/">DigitalOcean</a>, one possible solution was to take a snapshot of it in a fully-provisioned state and use that for future rebuilding. But this would tie me to DigitalOcean, which I love, but I still like having the freedom to switch providers freely if the need arises.</p>
 
