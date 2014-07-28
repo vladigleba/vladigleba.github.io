@@ -118,22 +118,24 @@ This creates a cookbook called "phindee" and uses the `-o` option to tell Knife 
 If you then do an `ls` inside the cookbook we just created, you'll find the following directory structure:
 
     phindee/
-    ├── CHANGELOG.md
-    ├── README.md
     ├── attributes
-    │   └── default.rb
     ├── definitions
     ├── files
-    │   └── default
     ├── libraries
     ├── metadata.rb
     ├── providers
     ├── recipes
-    │   └── default.rb
     ├── resources
     └── templates
-        └── default        
 
-Here's a brief description of the important directories and files you should know about:
+Here's a brief description of the files and directories you should know about:
 
-- `attributes`: 
+- `attributes`: folder for defining default values for recipes
+- `files`: contains files that are copied and placed on the server
+- `metadata.rb`: stores metadata about your cookbook, like name, version, dependencies, etc.
+- `recipes`: stores the recipes that are part of the cookbook
+- `templates`: stores ERB (Embedded Ruby) files that are later converted to configuration files
+
+The rest of the directories are for advanced users, and I won't be explaining them here.
+
+And with that, we reached the end of part 1. Now that the groundwork is done, we're ready to start writing the recipe that will provision our Rails server, which we'll do in part 2.
