@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Topic: Server Provisioning | Hungry and Foolish]]></title>
+  <link href="http://vladigleba.github.io/blog/topics/server-provisioning/atom.xml" rel="self"/>
+  <link href="http://vladigleba.github.io/"/>
+  <updated>2014-07-28T14:36:28-07:00</updated>
+  <id>http://vladigleba.github.io/</id>
+  <author>
+    <name><![CDATA[Vladi Gleba]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Provisioning a Rails Server Using Chef, Part 1: Introduction to Chef Solo]]></title>
+    <link href="http://vladigleba.github.io/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/"/>
+    <updated>2014-07-28T14:31:00-07:00</updated>
+    <id>http://vladigleba.github.io/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo</id>
+    <content type="html"><![CDATA[<p>About a month ago, I was in the middle of upgrading the server running <a href="http://phindee.com/">Phindee</a> using the harmless (or so I thought) <code>apt-get upgrade</code>. All appeared to be going well. But when I visited the app in the browser, staring back at me was the infamous &ldquo;We&rsquo;re sorry, but something went wrong&rdquo; page. I hit the logs, and luckily, it turned out to be a minor problem that was fixable without too much downtime.</p>
+
+<!-- more -->
+
+
+<p>But what if I wasn&rsquo;t so lucky and the problem wasn&rsquo;t as easy to fix? What if my server was wrecked and I had to rebuild it from scratch? That would be a nightmare because I would need to provision everything manually&mdash;by hand!  There had to a better way of doing this.</p>
+
+<p>Since my server was running on <a href="http://digitalocean.com/">DigitalOcean</a>, one possible solution was to take a snapshot of it in a fully-provisioned state and use that for future rebuilding. But this would tie me to DigitalOcean, which I love, but I still like having the freedom to switch providers freely if the need arises.</p>
+
+<p>Another solution was to write a script that executed all the commands I ran to provision the server manually, and this would work, but I had also heard about a tool called <a href="https://github.com/opscode/chef">Chef</a> that&rsquo;s specifically designed for these kinds of things, and I wanted to see if it was something I could use. After a bit of research, I decided to give it a try. Fast forward a couple weeks, and I&rsquo;m now able to provision a Rails server from scratch with a single command. It&rsquo;s really cool, and it makes me feel like a badass.</p>
+
+<h1>Why Chef?</h1>
+
+<p>Besides Chef, there is another popular tool you could use to provision your server called <a href="https://github.com/puppetlabs/puppet">Puppet</a>. There are some <a href="https://www.quora.com/What-are-the-key-reasons-to-choose-Puppet-over-Chef-or-vice-versa">good</a> <a href="http://devopsanywhere.blogspot.com/2011/10/puppet-vs-chef-fight.html">articles</a> comparing the two, but the main reason why I went with Chef is because Puppet was designed with system administrators in mind, while Chef was designed with developers in mind, and as a developer, Chef is more natural for me to work with because it feels a lot like programming. Each tool has its strengths and weaknesses though, and you should pick the one that best fits <em>your</em> needs.</p>
+
+<p>You might not even need Puppet or Chef at all. If you just need to provision a single server every now and then, a simple shell script will probably do. I decided to learn Chef because I do server provisioning pretty often, so it&rsquo;ll save me a significant amount of time down the road.</p>
+
+<p>One thing that a tool like Chef offers is idempotence, which means you&rsquo;re able to run something over and over again safely. With Chef (and Puppet), you&rsquo;re not only able to provision your server, but you can also use it to verify that your server is in the state it&rsquo;s supposed to be in and correct it if it&rsquo;s not. So if the initial server permissions or configuration settings change, you can easily bring them back to their original state by rerunning your recipe. You can&rsquo;t really say the same thing about a shell script (unless you do a significant amount of extra work).</p>
+
+<p>Puppet and Chef also allow you to easily access information about your system, such as kernel name, version, and release, in a way that works across platforms. They make it easy to run your recipes against multiple servers too. But perhaps most importantly, they make your recipes readable, and that&rsquo;s almost worth it on its own.</p>
+
+<h1>Chef Solo or Chef Server?</h1>
+
+<p>Chef comes in two flavors: Chef Solo and Chef Server. Chef Solo is a basically a simpler version of Chef Server because it&rsquo;s designed to be used with a small number of servers. With Chef Solo, you write your recipes on your local computer, upload them to your server(s), and Chef Solo is then called to run them. (A recipe, by the way, is a file containing the commands that will run to provision your server.)</p>
+
+<p>With Chef Server, you still write your recipes on your local computer, but instead of uploading them to the server you want provisioned, you upload them to a server that&rsquo;s specifically dedicated to Chef. This server acts as the main repository of <em>all</em> your recipes. The servers you want provisioned will then have a program running on them (referred to as a Chef client) that is in constant communication with your Chef server, and whenever you upload your recipes to Chef server, Chef client will notice this and run them automatically. (Chef Solo is also Chef client; it just doesn&rsquo;t need a Chef server to do its job.)</p>
+
+<p>Since Phindee is running on a single server, I currently have no need for Chef Server; Chef Solo does everything I need it to. Chef is a complex tool, and I found that there is enough new things to learn without the added complexity of Chef Server. If you&rsquo;re new to Chef, this is the route I recommend, even if you intend on using Chef Server, because the learning curve will be much more manageable.</p>
+
+<h1>Working with Chef Solo</h1>
+
+<p>One nice thing about Chef Server is you get to use a command-line tool called Knife that allows you to easily communicate with Chef Server right from your local computer. It gives you commands to easily upload your recipes, for example, among many other things. Unfortunately, it doesn&rsquo;t offer similar commands for Chef Solo, but there is a Knife plugin called <a href="https://github.com/matschaffer/knife-solo">knife-solo</a> that does just this. Since it&rsquo;s a packaged gem, all we need to do is add it to our app&rsquo;s Gemfile on our local computer, and the commands we need will be available automatically:</p>
+
+<p><code>ruby Gemfile
+group :development do
+  gem 'knife-solo', '~&gt; 0.4.2'
+end
+</code></p>
+
+<p>When you run <code>bundle</code> to install it, the Chef gem will be installed as well. If you then go into your app&rsquo;s root directory and run <code>knife</code>, you&rsquo;ll see a list of the commands available to you through Knife, including those provided by knife-solo, which will start with <code>knife solo ...</code>.</p>
+
+<h2>Diving In</h2>
+
+<p>Having that installed, we&rsquo;re now ready to start working with Chef Solo. The first thing we&rsquo;ll do is create a configuration file for Knife on our local computer:</p>
+
+<p><code>bash
+knife configure -r . --defaults
+</code></p>
+
+<p>This will create a new <code>~/.chef</code> directory with a file called <code>knife.rb</code> containing some default configurations. This file is used by Chef Server, so we actually won&rsquo;t need it, but Knife will keep complaining if we don&rsquo;t create it.</p>
+
+<p>Next, go into your app&rsquo;s <code>/config</code> directory and run the following:</p>
+
+<p><code>bash
+knife solo init chef
+cd chef
+</code></p>
+
+<p>This will create a standard Chef directory structure (referred to as a &ldquo;kitchen&rdquo;) inside a directory called <code>/chef</code>. It&rsquo;ll look like this:</p>
+
+<pre><code>chef/
+├── cookbooks
+├── data_bags
+├── environments
+├── nodes
+├── roles
+└── site-cookbooks
+</code></pre>
+
+<p>Here is a brief description of each one:</p>
+
+<ul>
+<li><code>cookbooks</code>: holds recipes written by the community</li>
+<li><code>data_bags</code>: stores sensitive configuration for your infrastructure</li>
+<li><code>environments</code>: contains the environments defined for Chef Server</li>
+<li><code>nodes</code>: stores server-specific information</li>
+<li><code>roles</code>: contains the roles defined for Chef Server</li>
+<li><code>site-cookbooks</code>: holds recipes written by you</li>
+</ul>
+
+
+<p>Note that some of these directories are only for Chef Server, but they&rsquo;re created anyway because they&rsquo;re part of the standard Chef directory structure.</p>
+
+<h2>New Chef Terms</h2>
+
+<p>There are some new terms above that I haven&rsquo;t explained yet, so lets briefly go over them.</p>
+
+<p>A cookbook is a collection of one or more recipes that will be run to set up and configure your servers. These servers are known as &ldquo;nodes&rdquo; and each node belongs to an environment. An environment is the stage that a node is in. For example, you can define a &ldquo;testing&rdquo; and a &ldquo;production&rdquo; environment to differentiate between nodes in the testing stage and those in production. We won&rsquo;t need this functionality, and it&rsquo;s actually only available in Chef Server.</p>
+
+<p>A node can also have a role assigned to it that describes what the node does. For example, you can assign nodes running your databases to the database role, while nodes running the actual Rails application are assigned to the application role. This would make sense in a production environment, but in testing, you might have a node running both the database and the application, so you would assign it to both roles.</p>
+
+<p>Data bags are subdirectories containing JSON files that store sensitive configuration for your infrastructure. Because they&rsquo;re used to store confidential information, they can be encrypted. They cannot, however, be assigned to a Chef environment, and should therefore be used to only store truly global configuration details.</p>
+
+<p>We won&rsquo;t be using data bags, environments, or roles with Chef Solo, so these directories will remain empty. Our <code>/cookbooks</code> directory will also remain empty because I won&rsquo;t be using any community-provided cookbooks. They tend to be complex and bloated with code because they support different installation options and they try to cover as many operating systems as possible. I think they&rsquo;re a great way to learn Chef, but when it&rsquo;s time to write a recipe, I prefer to write my own.</p>
+
+<h2>Creating Our Own Cookbook</h2>
+
+<p>Alright, with the terms clarified, we&rsquo;re now ready to create our own cookbook. Go ahead and run the following inside the <code>/chef</code> directory we created above (replace &ldquo;phindee&rdquo; with the name of your app):</p>
+
+<p><code>bash
+knife cookbook create phindee -o site-cookbooks
+</code></p>
+
+<p>This creates a cookbook called &ldquo;phindee&rdquo; and uses the <code>-o</code> option to tell Knife to store it in the <code>/site-cookbooks</code> directory. (Remember, this is the directory for storing our own cookbooks, while the <code>/cookbooks</code> directory is for those written by the community. In fact, anything stored in <code>/cookbooks</code> won&rsquo;t actually be version controlled.)</p>
+
+<p>If you then do an <code>ls</code> inside the cookbook you just created, you&rsquo;ll see what a standard cookbook directory structure looks like. There will be a number of directories listed, but here are the ones you should know about:</p>
+
+<ul>
+<li><code>attributes</code>: stores files that define default values for recipes</li>
+<li><code>files</code>: contains files that are copied and placed on the server</li>
+<li><code>metadata.rb</code>: stores metadata about your cookbook, like name, version, dependencies, etc.</li>
+<li><code>recipes</code>: stores the recipes that are part of the cookbook</li>
+<li><code>templates</code>: stores ERB (Embedded Ruby) files that are later converted to configuration files</li>
+</ul>
+
+
+<p>The rest of the directories are for advanced Chef setups, and I won&rsquo;t be explaining them here.</p>
+
+<p>With our cookbook created, we&rsquo;re now ready to start writing the recipe that will provision our Rails server, which I&rsquo;ll cover in part 2.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Deploying Rails Apps, Part 2: Setting up the Server]]></title>
+    <link href="http://vladigleba.github.io/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/"/>
+    <updated>2014-03-14T09:45:00-07:00</updated>
+    <id>http://vladigleba.github.io/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server</id>
+    <content type="html"><![CDATA[<p>In <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">part 1</a>, I talked about choosing a VPS provider, creating a new Ubuntu instance, and configuring it to be more secure. Now, in part 2, I&rsquo;ll talk about installing the technology stack behind <a href="http://phindee.com/">Phindee</a>: Node.js, Nginx, PostgreSQL, rbenv, Ruby, and Bundler.</p>
+
+<!-- more -->
+
+
+<h1>But First!</h1>
+
+<p>Before we proceed any further, make sure you’re logged in as the user you created in part 1; if you’re already logged in as <code>root</code>, you can switch to the correct user with the following command:</p>
+
+<p><code>bash
+su - username
+</code></p>
+
+<p>Once logged in, we’ll run the following command to fetch the latest updates for the packages on our system:</p>
+
+<p><code>bash
+sudo apt-get update
+</code></p>
+
+<p>We’ll follow this up with the command to install the necessary package updates:</p>
+
+<p><code>bash
+sudo apt-get upgrade
+</code></p>
+
+<p>If the command found any updates to install, it will ask if you want to continue with the install; you can enter “y” to do so. Once it finishes, we’ll be ready begin.</p>
+
+<h1>Setting Timezones and Installing Mail</h1>
+
+<p>We’ll start by setting the correct timezone:</p>
+
+<p><code>bash
+sudo dpkg-reconfigure tzdata
+</code></p>
+
+<p>You’ll be asked to choose your country and timezone, after which your server’s local time will be displayed; if it displays the correct time, you’re good to go.</p>
+
+<p>We’ll install <code>postfix</code> and <code>telnet</code> next to enable our Rails app to send email:</p>
+
+<p><code>bash
+sudo apt-get -y install telnet postfix
+</code></p>
+
+<p>Feel free to just press “enter” through all the prompts and keep all the defaults.</p>
+
+<p>Next, we’ll install some useful packages we’ll later need, among them <code>python-software-properties</code>, which will allow us to easily add new repositories to the <code>apt</code> package handling system:</p>
+
+<p><code>bash
+sudo apt-get -y install curl git-core python-software-properties
+</code></p>
+
+<p>Having the ability to add new repositories this way allows us to install the most recent updates since the default <code>apt-get</code> repositories typically don’t receive the latest updates immediately.</p>
+
+<h1>Installing Node.js</h1>
+
+<p>We’ll actually put this ability to use right now by adding a new repository for <a href="http://nodejs.org/">Node.js</a>:</p>
+
+<p><code>bash
+sudo add-apt-repository ppa:chris-lea/node.js
+</code></p>
+
+<p>We’ll then update the created repository with the latest Node.js code available:</p>
+
+<p><code>bash
+sudo apt-get -y update
+</code></p>
+
+<p>and install it, like so:</p>
+
+<p><code>bash
+sudo apt-get -y install nodejs
+</code></p>
+
+<p>We could’ve avoided adding a new repo and just used the traditional <code>apt-get</code> method to do the install, but this would’ve installed an older version of Node.js. Because Node.js is under active development and things are added quite frequently, it’s important to run the latest possible version. This might not matter as much for software that doesn’t have an aggressive update schedule, but this is the route we’ll take for Node.js.</p>
+
+<p>By the way, if you’re wondering why we’re installing Node.js, the reason is it provides a good way to execute JavaScript, and we’ll need this for the Rails <a href="http://guides.rubyonrails.org/asset_pipeline.html">asset pipeline</a>.</p>
+
+<h1>Installing Nginx</h1>
+
+<p>Next, we’ll install a web server called <a href="http://wiki.nginx.org/Main">Nginx</a>, which will handle all our static requests, such as stylesheets, scripts, images, and fonts. Its low memory usage and ability to serve static content quickly and efficiently make it a popular alternative to Apache and an excellent choice for sites running on a Virtual Private Server (VPS). What makes Nginx efficient is the fact that it’s an event-based server, while Apache, on the other hand, is process-based. An event-based server doesn&rsquo;t spawn new processes or threads for each request the way a process-based one does, and this means lower memory usage and faster responses.</p>
+
+<p>We’ll install it by adding another repository:</p>
+
+<p><code>bash
+sudo add-apt-repository ppa:nginx/stable
+sudo apt-get -y update
+sudo apt-get -y install nginx
+</code></p>
+
+<p>Once it’s installed, we can start it up with:</p>
+
+<p><code>bash
+sudo service nginx start
+</code></p>
+
+<p>If you now visit your server’s IP address, you should see a simple page proclaiming “Welcome to nginx!”</p>
+
+<h1>Installing PostgreSQL</h1>
+
+<p>Most modern apps need to store some sort of data, and there are a plethora of open source databases available, like <a href="https://www.mysql.com/">MySQL</a>, <a href="https://sqlite.org/">SQLite</a>, and <a href="http://www.postgresql.org/">PostgreSQL</a>. I never tried MySQL, but when I first started out, I used SQLite, the default database for Rails apps, because I liked its simplicity and saw no need for something more sophisticated. As my needs have evolved, however, so has my database, and I recently decided to switch to PostgreSQL because of its support for a fast key-value store called HStore and its ability to do full-text search, both of which I&rsquo;ll need for Phindee.</p>
+
+<p>We’ll install it with <code>apt-get</code>:</p>
+
+<p><code>bash
+sudo apt-get install postgresql postgresql-contrib
+</code></p>
+
+<p>We can then start Postgres as the default <code>postgres</code> user with the following command:</p>
+
+<p><code>bash
+sudo -u postgres psql
+</code></p>
+
+<p>Had we not specified the default user, it would’ve tried to use the user we’re logged in with on our VPS, and Postgres would’ve complained that the role doesn’t exist since there is no such user created in Postgres. This makes it necessary to login as the default <code>postgres</code> user.</p>
+
+<p>Once logged in, we’ll setup a password for <code>postgres</code>:</p>
+
+<p><code>mysql
+\password
+</code></p>
+
+<p>We’ll also create a new user called <code>admin</code>, followed by a database called <code>phindee</code>, which will be owned by <code>admin</code>:</p>
+
+<p><code>mysql
+create user admin with password 'secret';
+create database phindee owner admin;
+</code></p>
+
+<p>Having the basics setup, we can now quit Postgres:</p>
+
+<p><code>mysql
+\quit
+</code></p>
+
+<h1>Installing rbenv</h1>
+
+<p><a href="https://github.com/sstephenson/rbenv">rbenv</a> is a tool that helps you manage the Ruby versions installed on your system, thereby allowing you to easily switch between them. Whenever you want to play with a new version of Rails&mdash;without messing up your current setup&mdash;rbenv will come in handy.</p>
+
+<p>You may be familiar with another Ruby version manager called <a href="https://rvm.io/">RVM</a>. I used it myself for a while, before switching over to rbenv. It’s not that one is “better” than the other; it’s about which one is better suited for <em>your</em> needs. I made the switch because rbenv is more lightweight than RVM, its design feels cleaner, and it has a cool name.</p>
+
+<p>rbenv will suite you well if you’re starting out; otherwise, install whatever best meets your needs. By the way, it’s worth mentioning that since rbenv is incompatible with RVM, you won’t be able to run them side by side.</p>
+
+<p>Alright, we can install rbenv like so:</p>
+
+<p><code>bash
+sudo curl -L https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
+</code></p>
+
+<p>This will run a script that will do most of the install for us. In the end, you’ll receive a message telling you to add rbenv to the load path, and you can do so by opening up <code>bash_profile</code>:</p>
+
+<p><code>bash
+sudo nano ~/.bash_profile
+</code></p>
+
+<p>and copying/pasting the code that was outputted by the message. We’ll then need to reload the file for the changes to take effect:</p>
+
+<p><code>bash
+. ~/.bash_profile
+</code></p>
+
+<p>We’re almost ready to install Ruby, but before we do, we first need to install the C compiler and the Make utility, which is needed for the Ruby install. We can do so by installing a package called <code>build-essential</code>, along with some additional packages we’ll need later on:</p>
+
+<p><code>bash
+sudo apt-get install zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libpq-dev
+</code></p>
+
+<p>With the packages installed, we’re now ready to install Ruby itself.</p>
+
+<h1>Installing Ruby</h1>
+
+<p>To see a list of all the Ruby versions available, we can run the following command:</p>
+
+<p><code>bash
+rbenv install --list
+</code></p>
+
+<p>I chose to install version 2.1.0, as that was the latest one at the time:</p>
+
+<p><code>bash
+rbenv install 2.1.0
+</code></p>
+
+<p>This will take a few minutes to run&mdash;and that’s probably an understatement&mdash;but once it finishes, we’ll make the version it just installed the default Ruby version on our server:</p>
+
+<p><code>bash
+rbenv global 2.1.0
+</code></p>
+
+<p>If everything finished successfully, typing <code>ruby -v</code> should output the Ruby version we now have installed.</p>
+
+<h1>Installing Bundler</h1>
+
+<p>If you’ve never used it before, <a href="http://bundler.io/">Bundler</a> is a tool that helps you easily manage and install gems (Ruby programs and libraries). It allows you to specify the gems your app relies on, along with their versions, and Bundler will then install them all for you, in addition to automatically installing and managing any dependencies (other gems) they rely on.</p>
+
+<p>It’s usually a good idea to include version numbers for your gems because new versions can sometimes introduce changes that cause the old features you rely on to behave differently, which can result in errors the next time you try to run your app. By using Bundler to specify not only the gems you need, but also the versions of those gems, you can save yourself from needless headaches (and unnecessary cups of coffee).</p>
+
+<p>We will install bundler with the following command:</p>
+
+<p><code>bash
+gem install bundler --no-ri --no-rdoc
+</code></p>
+
+<p>Every time we install a gem that provides us with commands we can execute, we’ll need to run <code>rbenv rehash</code>, which will give us access to the corresponding executable (<a href="http://stackoverflow.com/questions/9394338/how-do-rvm-and-rbenv-actually-work">see this page</a> to learn why this is so). Since Bundler is one of these gems, we’ll do the rehash next:</p>
+
+<p><code>bash
+rbenv rehash
+</code></p>
+
+<p>If things installed successfully, <code>bundle -v</code> should return the Bundler version that was just installed.</p>
+
+<p>As an aside, notice that we’re specifying the <code>—no-ri</code> and <code>—no-rdoc</code> flags to avoid installing the gem’s documentation, which often takes longer than the gem installation itself and is typically unnecessary, especially on a production server. But typing out these flags for each and every gem you install will give you <a href="http://www.webmd.com/pain-management/carpal-tunnel/carpal-tunnel-syndrome-topic-overview">carpel tunnel</a> sooner than you&rsquo;d like, so its best to create a <code>.gemrc</code> file in your home directory:</p>
+
+<p><code>bash
+nano ~/.gemrc
+</code></p>
+
+<p>and add the following line into it:</p>
+
+<p><code>text
+gem: --no-rdoc --no-ri
+</code></p>
+
+<p>The flags will then be included automatically the next time you install new gems.</p>
+
+<p>And with that, our server setup is now complete! Having installed Node.js, Nginx, PostgreSQL, and rbenv, we’re now ready to start configuring Nginx and Unicorn, which I’ll cover in the <a href="/blog/2014/03/21/deploying-rails-apps-part-3-configuring-unicorn/">next post</a>. If you want to be notified when it’s out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and you’ll have the complete post delivered to your inbox as soon as it’s released!</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,121 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Deploying Rails Apps, Part 1: Securing the Server - Hungry and Foolish</title>
-  <meta name="author" content="Vladi Gleba">
-
-  
-  <meta name="description" content="Learn how to set up groups and privileges, configure SSH access, and enable SSH authentication.">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://vladigleba.github.io/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Hungry and Foolish" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
-
-  
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-37472806-2']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-
-</head>
-
-<body   class="collapse-sidebar sidebar-footer" >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Hungry and Foolish</a></h1>
-  
-    <h2>Utilizing the power of the web for good</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation">  
-  
-    <form method="get" action="/search.html">
-      <fieldset role="search">
-        <input class="search" name="query" type="text" placeholder="Search..." x-webkit-speech />
-      </fieldset>
-    </form>
-  
-  
-<ul class="main-navigation">
-  <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/blog/topics/projects/">Projects</a></li>
-  <li><a href="/about">About</a></li>
-  <li><a title="subscribe via RSS" rel="subscribe-rss" href="http://www.feedblitz.com/f/?sub=927939">Subscribe</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
+  <title><![CDATA[Topic: Security | Hungry and Foolish]]></title>
+  <link href="http://vladigleba.github.io/blog/topics/security/atom.xml" rel="self"/>
+  <link href="http://vladigleba.github.io/"/>
+  <updated>2014-07-28T14:36:28-07:00</updated>
+  <id>http://vladigleba.github.io/</id>
+  <author>
+    <name><![CDATA[Vladi Gleba]]></name>
     
-      <h1 class="entry-title">Deploying Rails Apps, Part 1: Securing the Server</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2014-03-05T11:18:00-08:00" pubdate data-updated="true">Mar 5<span>th</span>, 2014</time>
-        
-
-<span class="categories">
-  published in 
-  
-    <a class='category' href='/blog/topics/deployment/'>Deployment</a>, <a class='category' href='/blog/topics/phindee/'>Phindee</a>, <a class='category' href='/blog/topics/security/'>Security</a>
-  
-</span>
-
-
-        
-          <a href="#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><p>Setting up a Rails server from scratch can be a daunting task. I remember my first attempt; it was a multi-day process full of frustration, things not working, me not understanding why, and a whole lot of googling. In an effort to make this experience less painful for those new to Rails, I’d like to share the process I went through to deploy <a href="http://phindee.com/">Phindee</a> to a VPS (Virtual Private Server).</p>
+  <entry>
+    <title type="html"><![CDATA[Deploying Rails Apps, Part 1: Securing the Server]]></title>
+    <link href="http://vladigleba.github.io/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/"/>
+    <updated>2014-03-05T11:18:00-08:00</updated>
+    <id>http://vladigleba.github.io/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server</id>
+    <content type="html"><![CDATA[<p>Setting up a Rails server from scratch can be a daunting task. I remember my first attempt; it was a multi-day process full of frustration, things not working, me not understanding why, and a whole lot of googling. In an effort to make this experience less painful for those new to Rails, I’d like to share the process I went through to deploy <a href="http://phindee.com/">Phindee</a> to a VPS (Virtual Private Server).</p>
 
 <!-- more -->
 
@@ -132,10 +35,9 @@
 
 <p>Once you create your instance, you’ll be given your server’s IP address and password. If you’re on Linux or a Mac, open up Terminal and login. (If you&rsquo;re on Windows, you&rsquo;ll need to download Putty.) To login using Terminal, use the following command, replacing the Xs with your own IP address:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>ssh root@xxx.xxx.xxx.xxx
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>bash
+ssh root@xxx.xxx.xxx.xxx
+</code></p>
 
 <p>This command uses SSH to connect to your server as the user <code>root</code>. If you’re unfamiliar with SSH, it stands for Secure Shell, and it’s basically a network protocol that allows two computers to securely communicate with one another. There are many other protocols out there, such as HTTP, which allows browsers to communicate with web servers.</p>
 
@@ -145,40 +47,35 @@
 
 <p>Now that you’re in, the first thing we’ll do is change the password for <code>root</code> using the following command:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>passwd
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>bash
+passwd
+</code></p>
 
 <p>This will prompt you to enter a new password twice. Next, we’ll create a new group called <code>deployers</code>, which will allow us to easily manage the users with deployment privileges:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>groupadd deployers
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>bash
+groupadd deployers
+</code></p>
 
 <p>Now we’ll create a new user called <code>bob</code>, and assign him to the <code>deployers</code> group we just created above:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>adduser bob —ingroup deployers
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>bash
+adduser bob —ingroup deployers
+</code></p>
 
 <p>This command will prompt you to enter a password for this user, in addition to some other information afterwards, but after you enter the password twice, feel free to just press “Enter” for the other fields, as they’re not strictly necessary. By the way, don’t use the same password for both <code>root</code> and the user you just created above or <a href="http://www.cartoonstock.com/lowres/computers-computer-self_destruct-explode-username-password-ksm0529l.jpg">bad things will happen</a>.</p>
 
 <p>Next thing we’ll do is open the <code>sudoers</code> file containing a list of users and groups who have root privileges:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>nano /etc/sudoers
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>bash
+nano /etc/sudoers
+</code></p>
 
 <p>and we’ll add the following line into it (we use &ldquo;%&rdquo; to indicate that this is a group name):</p>
 
-<figure class='code'><figcaption><span>sudoers</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='text'><span class='line'>%deployers      ALL=(ALL) ALL
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>text sudoers
+%deployers      ALL=(ALL) ALL
+</code></p>
 
 <p>You can then exit the nano text editor by typing &ldquo;Control-X&rdquo; and typing &ldquo;Y&rdquo; when asked if you want to save. In case you’re wondering, the line we just added above will give the users in the <code>deployers</code> group the ability to run commands as <code>root</code>. If this is new to you, let me explain.</p>
 
@@ -196,60 +93,53 @@
 
 <p>Now we’re ready for the next step in securing our server, and we’ll start by opening the <code>ssh_config</code> file:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>nano /etc/ssh/sshd_config
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>bash
+nano /etc/ssh/sshd_config
+</code></p>
 
 <p>This file contains a number of rules that define who can login to the server and in what way. The first thing we’ll do is change the port number with which users will login; the default port that servers listen on is 22, but it’s wise to change it to another value so that any potential hackers have some extra work to do in figuring out the correct one; you can choose any port number from 1025 to 65536. Once you have your number, look for a line that looks like the following:</p>
 
-<figure class='code'><figcaption><span>sshd_config</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='text'><span class='line'>Port 22
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>text sshd_config
+Port 22
+</code></p>
 
 <p>and change its port number to the one you picked. Make sure you make a note of the new port number because you’ll need it for future login.</p>
 
 <p>Next, look for another line in the file that looks like this:</p>
 
-<figure class='code'><figcaption><span>sshd_config</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='text'><span class='line'>PermitRootLogin yes
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>text sshd_config
+PermitRootLogin yes
+</code></p>
 
 <p>and change the “yes” to a “no”; this prevents <code>root</code> user login, which means that any potential hackers will need to know the name of one of the users on the server to actually login.</p>
 
 <p>We can even go a step further and define exactly which existing users are able to login. Since I only want <code>bob</code> to have login access, I’ll add the following line to the end of the file:</p>
 
-<figure class='code'><figcaption><span>sshd_config</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='text'><span class='line'>AllowUsers bob
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>text sshd_config
+AllowUsers bob
+</code></p>
 
 <p>You could even specify a space-separated list of users here, if you have more than one user in need of login access.</p>
 
 <p>Alright, there is one final line that we’ll add to the end of our file:</p>
 
-<figure class='code'><figcaption><span>sshd_config</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='text'><span class='line'>UseDNS no
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>text sshd_config
+UseDNS no
+</code></p>
 
 <p>This line disables hostname lookup, which can lead to a delay of up to 30 seconds when logging in with <code>ssh</code>. Disabling it will save you time and do no harm.</p>
 
 <p>To put these changes into effect, we’ll restart SSH, like so:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo service ssh restart
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>bash
+sudo service ssh restart
+</code></p>
 
 <p>Now we’re ready to test the configurations we just made to make sure they work. I’ll open a new shell in Terminal, without closing my current one, and try to login as the user <code>bob</code> on the port I specified in <code>sshd_config</code>:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>ssh -p 23523 bob@xxx.xxx.xxx.xxx
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>bash
+ssh -p 23523 bob@xxx.xxx.xxx.xxx
+</code></p>
 
 <p>Make sure you change the above command to match the user and port number you specified in your own <code>sshd_config</code> file, or it obviously won’t work. The above command will then prompt you to enter that user’s password. If you login successfully, congratulations! Your configuration is correct! You can close your previous shell and just continue using the current one; otherwise, you’ll need to go back and double check your <code>sshd_config</code> file configurations.</p>
 
@@ -261,35 +151,31 @@
 
 <p>You can see if you already have an SSH key by running:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>ls ~/.ssh
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>bash
+ls ~/.ssh
+</code></p>
 
 <p>If you see any files with the <code>.pub</code> extension, then you already have a key generated; otherwise, you can generate one with the following command:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>ssh-keygen -C <span class="s2">&quot;your.email@example.com&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>bash
+ssh-keygen -C "your.email@example.com"
+</code></p>
 
 <p>Note that we&rsquo;re using the <code>-C</code> flag to create a label for our key for easy identification, and it&rsquo;s typical to set it to your email address. When the command runs, it’ll prompt you to enter a path and passphrase, but the default path is fine, and since we won’t be setting up a passphrase, you can just press “enter” for both. This will store both the private and public keys in the <code>~/.ssh/</code> directory, and they will be named according to the type of encryption used, the default being RSA authentication. Your private key will be stored in a file called <code>id_rsa</code>, while <code>id_rsa.pub</code> will hold your public key.</p>
 
 <p>We&rsquo;ll then need to add the newly generated keys to <code>ssh-agent</code>, which is a program that caches your private key and provides it to the SSH client program on your behalf. You can do so with the following command:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>ssh-add ~/.ssh/id_rsa
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>bash
+ssh-add ~/.ssh/id_rsa
+</code></p>
 
 <p>It&rsquo;ll then ask you for a passphrase, but since we didn&rsquo;t set one up, you&rsquo;ll just need to press &ldquo;enter.&rdquo;</p>
 
 <p>Having our keys generated, we’re now ready to copy our public key over to the remote server using the <code>ssh-copy-id</code> command. (If you’re on a Mac, and you don’t have <code>ssh-copy-id</code> installed, you can install it using Homebrew with <code>brew install ssh-copy-id</code>.) Below is the full <code>ssh-copy-id</code> command that will copy our key over to the server:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>ssh-copy-id -i ~/.ssh/id_rsa.pub -p 23523 bob@xxx.xxx.xxx.xxx
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>bash
+ssh-copy-id -i ~/.ssh/id_rsa.pub -p 23523 bob@xxx.xxx.xxx.xxx
+</code></p>
 
 <p>This will create a new file called <code>authorized_keys</code> on your remote server inside the <code>~/.ssh</code> directory and store your public key in it. If you now try to <code>ssh</code> into your server, you should be authenticated and logged in without entering your password.</p>
 
@@ -311,124 +197,7 @@
 <p>Of course, this doesn’t mean our server is “unhackable” by any means, but it is significantly more secure than it was before. You can now sleep more peacefully knowing that any future hackers have at least some of their work cut out for them.</p>
 
 <p>In <a href="/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/">part 2</a>, we’ll start setting up the server by installing the technology stack behind Phindee. If you’d like to be notified when its out, feel free to <a href="http://www.feedblitz.com/f/?sub=927939">subscribe</a>, and you&rsquo;ll get the complete post delivered right to your inbox as soon as it&rsquo;s released.</p>
-</div>
-
-
-  <footer>
-    
-      <div class="sharing">
+]]></content>
+  </entry>
   
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2014/02/27/im-leaving-linode-for-digitalocean/" title="Previous Post: I'm Leaving Linode for DigitalOcean">&laquo; I'm Leaving Linode for DigitalOcean</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/" title="Next Post: Deploying Rails Apps, Part 2: Setting up the Server">Deploying Rails Apps, Part 2: Setting up the Server &raquo;</a>
-      
-    </p>
-  </footer>
-</article>
-
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-  </section>
-
-
-</div>
-
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/">Provisioning a Rails Server Using Chef, Part 1: Introduction to Chef Solo</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/06/30/backup-a-rails-database-with-the-backup-and-whenever-gems/">Backup a Rails Database with the Backup and Whenever Gems</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/05/30/how-to-do-autocomplete-in-rails-using-redis/">How to Do Autocomplete in Rails Using Redis</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/">Deploying Rails Apps, Part 6: Writing Capistrano Tasks</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/">Deploying Rails Apps, Part 5: Configuring Capistrano</a>
-      </li>
-    
-  </ul>
-</section>
-
-
-
-
-
-  
-</aside>
-
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>Copyright &copy; 2014 Vladi Gleba</p>
-<p>Produced in Portland, Oregon. Powered by <a href="http://octopress.org">Octopress</a> and <a href="https://github.com/vladigleba/readify">Readify</a>.</p>
-</footer>
-  
-
-<script type="text/javascript">
-      var disqus_shortname = 'vladigleba';
-      
-        
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://vladigleba.github.io/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/';
-        var disqus_url = 'http://vladigleba.github.io/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/';
-        var disqus_script = 'embed.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-
-
-
-
-
-
-
-
-<!-- Piwik -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://107.170.255.153/piwik/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 1]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-
-</script>
-<noscript><p><img src="http://107.170.255.153/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
-
-</body>
-</html>
+</feed>
