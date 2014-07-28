@@ -3,7 +3,7 @@ layout: post
 title: "Phindee: A New Way to Discover Happy Hours in Downtown Portland"
 date: 2013-11-08 12:59
 comments: true
-categories: [Projects, Rails, Phindee]
+categories: [Projects, Phindee]
 description: Learn how I built Phindee, a new app that helps you easily find happy hours in downtown Portland.
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "Deploying Rails Apps, Part 3: Configuring Unicorn"
 date: 2014-03-21 10:08
 comments: true
-categories: [Rails, Deployment, Phindee]
+categories: [Deployment, Phindee]
 description: Learn how to configure Unicorn and find out how it differs from Passenger and Puma.
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "Backup a Rails Database with the Backup and Whenever Gems"
 date: 2014-06-30 16:07
 comments: true
-categories: [Rails, Databases, Phindee]
+categories: [Databases, Phindee]
 description: Learn how to backup your Rails database with the Backup and Whenever gems.
 ---
 

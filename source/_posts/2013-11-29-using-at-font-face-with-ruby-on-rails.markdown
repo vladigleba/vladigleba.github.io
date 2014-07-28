@@ -3,7 +3,7 @@ layout: post
 title: "Using @font-face with Ruby on Rails"
 date: 2013-11-29 11:35
 comments: true
-categories: [Rails, Design, Phindee]
+categories: [Design, Phindee]
 description: Learn how to use @font-face to add custom fonts to your Ruby on Rails app.
 ---
 

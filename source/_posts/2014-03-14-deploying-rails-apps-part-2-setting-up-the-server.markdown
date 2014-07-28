@@ -3,8 +3,8 @@ layout: post
 title: "Deploying Rails Apps, Part 2: Setting up the Server"
 date: 2014-03-14 09:45
 comments: true
-categories: [Rails, Deployment, Phindee]
-description: Learn how to install Node.js, Nginx, PostgreSQL, rbenv, Ruby, and Bundler.
+categories: [Deployment, Server Provisioning, Phindee]
+description: Learn how to install Node.js, Nginx, PostgreSQL, rbenv, and Ruby, and Bundler.
 ---
 
 In [part 1]({{ root_url }}/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/), I talked about choosing a VPS provider, creating a new Ubuntu instance, and configuring it to be more secure. Now, in part 2, I'll talk about installing the technology stack behind [Phindee](http://phindee.com/): Node.js, Nginx, PostgreSQL, rbenv, Ruby, and Bundler.

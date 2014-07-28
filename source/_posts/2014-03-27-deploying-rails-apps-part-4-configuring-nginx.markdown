@@ -3,7 +3,7 @@ layout: post
 title: "Deploying Rails Apps, Part 4: Configuring Nginx"
 date: 2014-03-27 12:50
 comments: true
-categories: [Rails, Deployment, Phindee]
+categories: [Deployment, Phindee]
 description: Learn how to configure Nginx and make it work with Unicorn.
 ---
 

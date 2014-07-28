@@ -3,7 +3,7 @@ layout: post
 title: "How to Do Autocomplete in Rails Using Redis"
 date: 2014-05-30 10:40
 comments: true
-categories: [Rails, Databases, Phindee]
+categories: [Databases, Phindee]
 description: Learn how to use Redis to add autocomplete functionality to your Rails app.
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "Using MapBox with Ruby on Rails"
 date: 2013-11-14 10:39
 comments: true
-categories: [Rails, Maps, Phindee]
+categories: [Maps, Phindee]
 description: Learn how to use the Mapbox.js library to add custom maps to your Ruby on Rails app. 
 ---
 

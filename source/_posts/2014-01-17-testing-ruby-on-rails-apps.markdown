@@ -3,7 +3,7 @@ layout: post
 title: "Testing Ruby on Rails Apps"
 date: 2014-01-17 12:35
 comments: true
-categories: [Rails, Testing, Phindee]
+categories: [Testing, Phindee]
 description: Learn how to do Test-Driven Development (TDD) and write tests for your Ruby on Rails app.
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "Deploying Rails Apps, Part 6: Writing Capistrano Tasks"
 date: 2014-04-10 08:42
 comments: true
-categories: [Rails, Deployment, Phindee]
+categories: [Deployment, Phindee]
 description: Learn how to write Capistrano tasks to help you automate your deployment.
 ---
 

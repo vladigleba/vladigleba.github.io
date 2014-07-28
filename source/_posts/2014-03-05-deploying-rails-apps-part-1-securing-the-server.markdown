@@ -3,7 +3,7 @@ layout: post
 title: "Deploying Rails Apps, Part 1: Securing the Server"
 date: 2014-03-05 11:18
 comments: true
-categories: [Rails, Deployment, Phindee]
+categories: [Deployment, Security, Phindee]
 description: Learn how to set up groups and privileges, configure SSH access, and enable SSH authentication.
 ---
 
