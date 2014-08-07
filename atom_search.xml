@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-07-28T14:41:00-07:00</updated>
+  <updated>2014-08-07T10:45:54-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -97,12 +97,12 @@
 <p>Here is a brief description of each one:</p>
 
 <ul>
-<li><code>cookbooks</code>: holds recipes written by the community</li>
-<li><code>data_bags</code>: stores sensitive configuration for your infrastructure</li>
-<li><code>environments</code>: contains the environments defined for Chef Server</li>
-<li><code>nodes</code>: stores server-specific information</li>
-<li><code>roles</code>: contains the roles defined for Chef Server</li>
-<li><code>site-cookbooks</code>: holds recipes written by you</li>
+<li><code>/cookbooks</code>: holds recipes written by the community</li>
+<li><code>/data_bags</code>: stores sensitive configuration for your infrastructure</li>
+<li><code>/environments</code>: contains the environments defined for Chef Server</li>
+<li><code>/nodes</code>: stores server-specific information</li>
+<li><code>/roles</code>: contains the roles defined for Chef Server</li>
+<li><code>/site-cookbooks</code>: holds recipes written by you</li>
 </ul>
 
 
@@ -134,11 +134,11 @@
 <p>If you then do an <code>ls</code> inside the cookbook you just created, you&rsquo;ll see what a standard cookbook directory structure looks like. There will be a number of directories listed, but here are the ones you should know about:</p>
 
 <ul>
-<li><code>attributes</code>: stores files that define default values for recipes</li>
-<li><code>files</code>: contains files that are copied and placed on the server</li>
+<li><code>/attributes</code>: stores files that define default values for recipes</li>
+<li><code>/files</code>: contains files that are copied and placed on the server</li>
 <li><code>metadata.rb</code>: stores metadata about your cookbook, like name, version, dependencies, etc.</li>
-<li><code>recipes</code>: stores the recipes that are part of the cookbook</li>
-<li><code>templates</code>: stores ERB (Embedded Ruby) files that are later converted to configuration files</li>
+<li><code>/recipes</code>: stores the recipes that are part of the cookbook</li>
+<li><code>/templates</code>: stores ERB (Embedded Ruby) files that are later converted to configuration files</li>
 </ul>
 
 
@@ -1938,7 +1938,7 @@
 
 <p>Once you decide on a VPS, you’ll then signup for a plan. If you’re just starting out, the cheapest plan available will be enough; otherwise, choose a plan that fits your needs. Once you have an account, you’ll be able to create your server, and typically, you’ll have a list of operating systems to choose from. DigitalOcean offers a wide variety of Linux distributions; I chose the latest 32-bit version of Ubuntu for Phindee, and I recommend you do the same if you&rsquo;re new to deployment.</p>
 
-<p>The reason why I chose the 32-bit version was because it uses less memory than the 64-bit one. This is something you should consider if you chose one of the cheaper plans with a lower amount of memory, but if memory is not an issue, go with the 64-bit since you’ll have better performance (<a href="howtoubuntu.org/how-to-decide-if-you-should-use-32bit-or-64bit-ubuntu">see this page</a> to learn more).</p>
+<p>The reason why I chose the 32-bit version was because it uses less memory than the 64-bit one. This is something you should consider if you chose one of the cheaper plans with a lower amount of memory, but if memory is not an issue, go with the 64-bit since you’ll have better performance (<a href="http://howtoubuntu.org/how-to-decide-if-you-should-use-32bit-or-64bit-ubuntu">see this page</a> to learn more).</p>
 
 <h1>Logging In</h1>
 

@@ -32,18 +32,6 @@
 <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 
   
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-37472806-2']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
 
 </head>
 
@@ -193,12 +181,12 @@
 <p>Here is a brief description of each one:</p>
 
 <ul>
-<li><code>cookbooks</code>: holds recipes written by the community</li>
-<li><code>data_bags</code>: stores sensitive configuration for your infrastructure</li>
-<li><code>environments</code>: contains the environments defined for Chef Server</li>
-<li><code>nodes</code>: stores server-specific information</li>
-<li><code>roles</code>: contains the roles defined for Chef Server</li>
-<li><code>site-cookbooks</code>: holds recipes written by you</li>
+<li><code>/cookbooks</code>: holds recipes written by the community</li>
+<li><code>/data_bags</code>: stores sensitive configuration for your infrastructure</li>
+<li><code>/environments</code>: contains the environments defined for Chef Server</li>
+<li><code>/nodes</code>: stores server-specific information</li>
+<li><code>/roles</code>: contains the roles defined for Chef Server</li>
+<li><code>/site-cookbooks</code>: holds recipes written by you</li>
 </ul>
 
 
@@ -230,11 +218,11 @@
 <p>If you then do an <code>ls</code> inside the cookbook you just created, you&rsquo;ll see what a standard cookbook directory structure looks like. There will be a number of directories listed, but here are the ones you should know about:</p>
 
 <ul>
-<li><code>attributes</code>: stores files that define default values for recipes</li>
-<li><code>files</code>: contains files that are copied and placed on the server</li>
+<li><code>/attributes</code>: stores files that define default values for recipes</li>
+<li><code>/files</code>: contains files that are copied and placed on the server</li>
 <li><code>metadata.rb</code>: stores metadata about your cookbook, like name, version, dependencies, etc.</li>
-<li><code>recipes</code>: stores the recipes that are part of the cookbook</li>
-<li><code>templates</code>: stores ERB (Embedded Ruby) files that are later converted to configuration files</li>
+<li><code>/recipes</code>: stores the recipes that are part of the cookbook</li>
+<li><code>/templates</code>: stores ERB (Embedded Ruby) files that are later converted to configuration files</li>
 </ul>
 
 
