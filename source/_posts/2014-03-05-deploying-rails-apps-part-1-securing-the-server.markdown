@@ -17,7 +17,7 @@ Phindee is currently running on DigitalOcean servers, but there are other option
 
 Once you decide on a VPS, you’ll then signup for a plan. If you’re just starting out, the cheapest plan available will be enough; otherwise, choose a plan that fits your needs. Once you have an account, you’ll be able to create your server, and typically, you’ll have a list of operating systems to choose from. DigitalOcean offers a wide variety of Linux distributions; I chose the latest 32-bit version of Ubuntu for Phindee, and I recommend you do the same if you're new to deployment.
 
-The reason why I chose the 32-bit version was because it uses less memory than the 64-bit one. This is something you should consider if you chose one of the cheaper plans with a lower amount of memory, but if memory is not an issue, go with the 64-bit since you’ll have better performance ([see this page](howtoubuntu.org/how-to-decide-if-you-should-use-32bit-or-64bit-ubuntu) to learn more).
+The reason why I chose the 32-bit version was because it uses less memory than the 64-bit one. This is something you should consider if you chose one of the cheaper plans with a lower amount of memory, but if memory is not an issue, go with the 64-bit since you’ll have better performance ([see this page](http://howtoubuntu.org/how-to-decide-if-you-should-use-32bit-or-64bit-ubuntu) to learn more).
 
 # Logging In
 

@@ -11,7 +11,7 @@ About a month ago, I was in the middle of upgrading the server running [Phindee]
 
 <!-- more -->
 
-But what if I wasn't so lucky and the problem wasn't as easy to fix? What if my server was wrecked and I had to rebuild it from scratch? That would be a nightmare because I would need to provision everything manually&mdash;by hand!  There had to a better way of doing this.
+But what if I wasn't so lucky and the problem wasn't as easy to fix? What if my server was wrecked and I had to rebuild it from scratch? That would be a nightmare because I would need to provision everything manually&mdash;by hand!  There had to be a better way of doing this.
 
 Since my server was running on [DigitalOcean](http://digitalocean.com/), one possible solution was to take a snapshot of it in a fully-provisioned state and use that for future rebuilding. But this would tie me to DigitalOcean, which I love, but I still like having the freedom to switch providers freely if the need arises.
 
@@ -76,12 +76,12 @@ This will create a standard Chef directory structure (referred to as a "kitchen"
 
 Here is a brief description of each one:
 
-- `cookbooks`: holds recipes written by the community
-- `data_bags`: stores sensitive configuration for your infrastructure
-- `environments`: contains the environments defined for Chef Server
-- `nodes`: stores server-specific information
-- `roles`: contains the roles defined for Chef Server
-- `site-cookbooks`: holds recipes written by you
+- `/cookbooks`: holds recipes written by the community
+- `/data_bags`: stores sensitive configuration for your infrastructure
+- `/environments`: contains the environments defined for Chef Server
+- `/nodes`: stores server-specific information
+- `/roles`: contains the roles defined for Chef Server
+- `/site-cookbooks`: holds recipes written by you
 
 Note that some of these directories are only for Chef Server, but they're created anyway because they're part of the standard Chef directory structure.
 
@@ -109,11 +109,11 @@ This creates a cookbook called "phindee" and uses the `-o` option to tell Knife 
 
 If you then do an `ls` inside the cookbook you just created, you'll see what a standard cookbook directory structure looks like. There will be a number of directories listed, but here are the ones you should know about: 
 
-- `attributes`: stores files that define default values for recipes
-- `files`: contains files that are copied and placed on the server
+- `/attributes`: stores files that define default values for recipes
+- `/files`: contains files that are copied and placed on the server
 - `metadata.rb`: stores metadata about your cookbook, like name, version, dependencies, etc.
-- `recipes`: stores the recipes that are part of the cookbook
-- `templates`: stores ERB (Embedded Ruby) files that are later converted to configuration files
+- `/recipes`: stores the recipes that are part of the cookbook
+- `/templates`: stores ERB (Embedded Ruby) files that are later converted to configuration files
 
 The rest of the directories are for advanced Chef setups, and I won't be explaining them here.
 

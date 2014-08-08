@@ -97,7 +97,7 @@ disqus_short_name: vladigleba
 disqus_show_comment_count: true
 
 # Google Analytics
-google_analytics_tracking_id: UA-37472806-2
+google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: false
