@@ -7,7 +7,7 @@ categories: [Server Provisioning, Phindee]
 description:
 ---
 
-In [part 1](), we learned about Chef Solo and used it to create a standard Chef directory structure, along with a standard cookbook directory structure. Now it's time to start writing the recipes that we will run to provision our Rails server and install Nginx, Node.js, PostgreSQL, rbenv, and Redis.
+In [part 1](), we learned about Chef Solo and used it to create a standard Chef directory structure, along with a standard cookbook directory structure. Now it's time to start writing the recipes that we will run to provision our Rails server and install Node.js, PostgreSQL, rbenv, Ruby, Redis, and Nginx.
 
 <!-- more -->
 
@@ -221,7 +221,7 @@ And just like in the two previous recipes, we use the `not_if` guard to make  su
 
 ## Installing Node.js
 
-Next order of business is installing Node.js. Create a `nodejs.rb` file with the following contents:
+Next order of business is installing Node.js. Create a `nodejs.rb` file with the following code:
 
 ``` ruby nodejs.rb
 # variables for node.js
@@ -251,3 +251,168 @@ execute "install node.js" do
   not_if { File.exists?(executable) && `#{node['nodejs']['dir']}/bin/node --version`.chomp == "v#{node['nodejs']['version']}" }
 end
 ```
+
+The first line makes use of [Ohai](http://docs.getchef.com/ohai.html), a tool Chef uses to detect attributes on a node and make them available for use in recipes. We're extracting the type of architecture our node is running on to make sure we download the correct tar file for installing Node.js.
+
+We download the tar file using a resource called [`remote_file`](http://docs.getchef.com/chef/resources.html#remote-file). We use the `source` attribute to specify the source of the tar file, `mode` to specify its mode, and `action` to tell Chef to create the file only if it's not already there. Each resource actually has an `action` attribute assigned to it by default, whether we assign one or not, but not every resource has the same actions. (`remote_file`, for example, has `create`, `create_if_missing`, `delete`, and `touch` actions, while `bash` only has `run` and `nothing` actions.)
+
+After the file is downloaded, we use `execute` to do the install. One interesting thing about this resource is the `not_if` guard, which executes some Ruby code, whereas the previous one only executed shell commands. Guards  can run a shell command specified inside a string, or Ruby code specified inside a block. Ruby code must return either `true` or `false`, while shell commands can return any value (but the guard runs only if a zero is returned). 
+
+So in the code above, we're first executing some Ruby code to determine if a file exists, and then we execute a shell command to output the Node.js version we installed, but this output is processed by Ruby and gets compared with the version we've specified in our attributes file. As a result, Node.js won't be installed if there is a Node.js executable already present on the node that returns the correct version number. (Note that shell commands will be processed by Ruby only if they're specified using backquotes).
+
+## Installing PostgreSQL
+
+Our next recipe will install PostgreSQL. Add the following code to a file called `postgres.rb`:
+
+``` postgres.rb
+package "postgresql"
+package "postgresql-contrib"
+
+# change postgres password
+execute "change postgres password" do
+  user "postgres"
+  command "psql -c \"alter user postgres with password '#{node['db']['root_password']}';\""
+end
+
+# create new postgres user
+execute "create new postgres user" do
+  user "postgres"
+  command "psql -c \"create user #{node['db']['user']['name']} with password '#{node['db']['user']['password']}';\""
+  not_if { `sudo -u postgres psql -tAc \"SELECT * FROM pg_roles WHERE rolname='admin'\" | wc -l`.chomp == "1" }
+end
+
+# create new postgres database
+execute "create new postgres database" do
+  user "postgres"
+  command "psql -c \"create database #{node['app']} owner #{node['db']['user']['name']};\""
+  not_if { `sudo -u postgres psql -tAc \"SELECT * FROM pg_database WHERE datname='#{node['app']}'\" | wc -l`.chomp == "1" }
+end
+```
+
+This recipe is fairly straightforward. We install Postgres using the `package` resource and use `execute` to modify the `postgres` user's password. We also create new user, along with a new database, which is assigned to the newly created user. (Note that we're using the `user` attribute to execute these commands as the `postgres` user, which is necessary because otherwise Postgres would run these commands as `root`, and such a user does not exist in Postgres by default.)
+
+## Installing rbenv and Ruby
+
+It's time to install rbenv and Ruby. Create a new file called `rbenv.rb` and add the following into it:
+
+``` rbenv.rb
+# create .bash_profile file
+cookbook_file "/home/#{node['user']['name']}/.bash_profile" do
+  source "bash_profile"
+  mode 0644
+  owner node['user']['name']
+  group node['group']
+end
+
+# install rbenv
+bash 'install rbenv' do
+  user node['user']['name']
+  cwd "/home/#{node['user']['name']}"
+  code <<-EOH
+    export HOME=/home/#{node['user']['name']}
+    curl -L https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
+  EOH
+  not_if { File.exists?("/home/#{node['user']['name']}/.rbenv/bin/rbenv") }
+end
+
+# install ruby
+version_path = "/home/#{node['user']['name']}/.rbenv/version"
+bash 'install ruby' do
+  user node['user']['name']
+  cwd "/home/#{node['user']['name']}"
+  code <<-EOH
+    export HOME=/home/#{node['user']['name']}
+    export RBENV_ROOT="${HOME}/.rbenv"
+    export PATH="${RBENV_ROOT}/bin:${PATH}"
+    rbenv init -
+
+    rbenv install #{node['ruby']['version']}
+    rbenv global #{node['ruby']['version']}
+    echo 'gem: -–no-ri -–no-rdoc' > .gemrc
+    .rbenv/bin/rbenv exec gem install bundler
+    rbenv rehash
+  EOH
+  not_if { File.exists?(version_path) && `cat #{version_path}`.chomp.split[0] == node['ruby']['version'] }
+end
+```
+
+We're using a new resource here called `cookbook_file`, which takes a file in our recipe and copies it to a specific location on our node. The file were creating is called `bash_profile`, and it contains some code that allows rbenv to initialize itself properly (store it in your cookbook's `/files/default` directory):
+
+``` shell bash_profile
+export RBENV_ROOT="${HOME}/.rbenv"
+
+if [ -d "${RBENV_ROOT}" ]; then
+  export PATH="${RBENV_ROOT}/bin:${PATH}"
+  eval "$(rbenv init -)"
+fi
+```
+
+If you now go back to the `cookbook_file` resource, you'll see that we're copying the file to the user's home directory (since we did not specify a `path` attribute, the resource's name is also the path to the location where it will be stored), and we're using the `mode`, `owner`, and `group` attributes to set the file's mode, owner, and group, respectively.
+
+Afterwards, we're using `bash` to install rbenv. Because we're not doing a system-wide install, we run the rbnev installer under the user we created earlier, and we use the `cwd` attribute to run the install inside the user's home directory. Once that's done, the last `bash` block then uses rbenv to install Ruby itself.
+
+## Installing Redis
+
+Next in line is Redis, so go ahead and create a new file called `redis.rb`:
+
+``` redis.rb
+package "tcl8.5"
+
+# download redis
+remote_file "/home/#{node['user']['name']}/redis-#{node['redis']['version']}.tar.gz" do
+  source "http://download.redis.io/releases/redis-#{node['redis']['version']}.tar.gz"
+  mode 0644
+  action :create_if_missing
+end
+
+# install redis
+bash 'install redis' do
+  cwd "/home/#{node['user']['name']}"
+  code <<-EOH
+    tar xzf redis-#{node['redis']['version']}.tar.gz
+    cd redis-#{node['redis']['version']}
+    make && make install
+  EOH
+  not_if { File.exists?("/usr/local/bin/redis-server") &&
+           `redis-server --version`.chomp.split[2] == "v=#{node['redis']['version']}" }
+end
+
+# install redis server
+execute "curl -L https://gist.githubusercontent.com/vladigleba/28f4f6b4454947c5223e/raw | sh" do
+  cwd "/home/#{node['user']['name']}/redis-#{node['redis']['version']}/utils"
+  not_if "ls /etc/init.d | grep redis"
+end
+```
+
+This recipe doesn't contain any new Chef concepts. It simply downloads Redis using the `remote_file` resource, installs it using the `bash` resource, and installs the Redis server with the `execute` resource.
+
+## Installing Nginx
+
+The last thing left to install is Nginx, and here's the code that will go in a new `nginx.rb` file to do just that:
+
+``` nginx.rb
+package "nginx"
+
+# start nginx
+service "nginx" do
+  supports [:status, :restart]
+  action :start
+end
+
+# set custom nginx config
+template "/etc/nginx/sites-enabled/#{node['app']}" do
+  source "nginx.conf.erb"
+  mode 0644
+  owner node['user']['name']
+  group node['group']
+  notifies :restart, "service[nginx]", :delayed
+end
+
+# remove default nginx config
+default_path = "/etc/nginx/sites-enabled/default"
+execute "rm -f #{default_path}" do
+  only_if { File.exists?(default_path) }
+end
+```
+
+There is only one new Chef concepts here, and that's the `template` resource. What this does is
