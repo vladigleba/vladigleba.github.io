@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-08-12T09:45:44-07:00</updated>
+  <updated>2014-08-12T09:56:24-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -2475,7 +2475,11 @@
 <span class='line-number'>29</span>
 <span class='line-number'>30</span>
 <span class='line-number'>31</span>
-</pre></td><td class='code'><pre><code class='nginx'><span class='line'><span class="k">upstream</span> <span class="s">unicorn</span> <span class="p">{</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+</pre></td><td class='code'><pre><code class='nginx'><span class='line'><span class="k">worker_processes</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">upstream</span> <span class="s">unicorn</span> <span class="p">{</span>
 </span><span class='line'>  <span class="kn">server</span> <span class="s">unix:/tmp/unicorn.phindee.sock</span> <span class="s">fail_timeout=0</span><span class="p">;</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
@@ -2509,7 +2513,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>You might have noticed that the first thing we do is specify the number of workers to run. If you read part 3, this will sound familiar, because Nginx, just like Unicorn, has a master process managing all the workers, and the workers are the ones responsible for processing requests from clients. Unlike Unicorn, Nginx also has a cache loader process that checks and/or populates the cache with metadata, as well a cache manager process that’s responsible for cache expiration. Together, they keep Nginx internals running quickly and efficiently.</p>
+<p>You might have noticed that the first thing we do is tell Nginx to run 1 worker process (the default value). If you read part 3, this will sound familiar, because Nginx, just like Unicorn, has a master process managing all the workers, and the workers are the ones responsible for processing requests from clients. Unlike Unicorn, Nginx also has a cache loader process that checks and/or populates the cache with metadata, as well a cache manager process that’s responsible for cache expiration. Together, they keep Nginx internals running quickly and efficiently.</p>
 
 <h1>A Bit on Workers</h1>
 

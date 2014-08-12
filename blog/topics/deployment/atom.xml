@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Deployment | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/deployment/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-08-12T09:45:44-07:00</updated>
+  <updated>2014-08-12T09:56:24-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -486,7 +486,9 @@ sudo chmod g+w /etc/init.d
 <p>Alright, since there is quite a bit to cover, we’ll jump right in. We’ll start by creating a file called <code>nginx.conf</code> inside our app’s <code>/config</code> directory on our local computer. Here’s how mine looks like:</p>
 
 <p>``` nginx nginx.conf
-upstream unicorn {
+worker_processes 1;</p>
+
+<p>upstream unicorn {
   server unix:/tmp/unicorn.phindee.sock fail_timeout=0;
 }</p>
 
@@ -525,7 +527,7 @@ proxy_pass http://unicorn;
 }
 ```</p>
 
-<p>You might have noticed that the first thing we do is specify the number of workers to run. If you read part 3, this will sound familiar, because Nginx, just like Unicorn, has a master process managing all the workers, and the workers are the ones responsible for processing requests from clients. Unlike Unicorn, Nginx also has a cache loader process that checks and/or populates the cache with metadata, as well a cache manager process that’s responsible for cache expiration. Together, they keep Nginx internals running quickly and efficiently.</p>
+<p>You might have noticed that the first thing we do is tell Nginx to run 1 worker process (the default value). If you read part 3, this will sound familiar, because Nginx, just like Unicorn, has a master process managing all the workers, and the workers are the ones responsible for processing requests from clients. Unlike Unicorn, Nginx also has a cache loader process that checks and/or populates the cache with metadata, as well a cache manager process that’s responsible for cache expiration. Together, they keep Nginx internals running quickly and efficiently.</p>
 
 <h1>A Bit on Workers</h1>
 
