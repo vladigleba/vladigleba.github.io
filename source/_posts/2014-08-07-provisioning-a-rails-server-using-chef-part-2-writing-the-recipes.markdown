@@ -221,7 +221,7 @@ And just like in the two previous recipes, we use the `not_if` guard to make  su
 
 ## Installing Node.js
 
-Next order of business is installing Node.js. Create a `nodejs.rb` file with the following code:
+Next order of business is installing Node.js. Add the following code into a new file called `nodejs.rb`:
 
 ``` ruby nodejs.rb
 # variables for node.js
@@ -262,9 +262,9 @@ So in the code above, we're first executing some Ruby code to determine if a fil
 
 ## Installing PostgreSQL
 
-Our next recipe will install PostgreSQL. Add the following code to a file called `postgres.rb`:
+Our next recipe will install PostgreSQL. Add the following code into a new file called `postgres.rb`:
 
-``` postgres.rb
+``` ruby postgres.rb
 package "postgresql"
 package "postgresql-contrib"
 
@@ -295,7 +295,7 @@ This recipe is fairly straightforward. We install Postgres using the `package` r
 
 It's time to install rbenv and Ruby. Create a new file called `rbenv.rb` and add the following into it:
 
-``` rbenv.rb
+``` ruby rbenv.rb
 # create .bash_profile file
 cookbook_file "/home/#{node['user']['name']}/.bash_profile" do
   source "bash_profile"
@@ -336,7 +336,7 @@ bash 'install ruby' do
 end
 ```
 
-We're using a new resource here called `cookbook_file`, which takes a file in our recipe and copies it to a specific location on our node. The file were creating is called `bash_profile`, and it contains some code that allows rbenv to initialize itself properly (store it in your cookbook's `/files/default` directory):
+We're using a new resource here called [`cookbook_file`](http://docs.getchef.com/chef/resources.html#cookbook-file), which takes a file in our recipe and copies it to a specific location on our node. The file were creating is called `bash_profile`, and it contains some code that allows rbenv to initialize itself properly (store it in your cookbook's `/files/default` directory):
 
 ``` shell bash_profile
 export RBENV_ROOT="${HOME}/.rbenv"
@@ -355,7 +355,7 @@ Afterwards, we're using `bash` to install rbenv. Because we're not doing a syste
 
 Next in line is Redis, so go ahead and create a new file called `redis.rb`:
 
-``` redis.rb
+``` ruby redis.rb
 package "tcl8.5"
 
 # download redis
@@ -390,8 +390,13 @@ This recipe doesn't contain any new Chef concepts. It simply downloads Redis usi
 
 The last thing left to install is Nginx, and here's the code that will go in a new `nginx.rb` file to do just that:
 
-``` nginx.rb
+``` ruby nginx.rb
 package "nginx"
+
+# remove default nginx config
+execute "rm -f #{default_path}" do
+  only_if { File.exists?("/etc/nginx/sites-enabled/default") }
+end
 
 # start nginx
 service "nginx" do
@@ -407,12 +412,182 @@ template "/etc/nginx/sites-enabled/#{node['app']}" do
   group node['group']
   notifies :restart, "service[nginx]", :delayed
 end
+```
 
-# remove default nginx config
-default_path = "/etc/nginx/sites-enabled/default"
-execute "rm -f #{default_path}" do
-  only_if { File.exists?(default_path) }
+There is only one new Chef concept here, and that's the [`template` resource](http://docs.getchef.com/chef/resources.html#template). It's similar to the `cookbook_file` resource in that it copies a file from a cookbook to a location on a node, but it also does much more than that; it allows you to modify the contents of the file by embedding Ruby code into it using ERB (Embedded Ruby) templates, just like you would if you wrote Ruby on Rails views in ERB. All the attributes that are accessible in your recipes are also accessible in template files, and when you combine this with the usual ERB features like conditional statements and blocks, you'll be able to customize your files in any way you want.
+
+Templates are stored in your cookbook's `/templates` directory, so go ahead and create a new file there called `nginx.conf.erb` and add the following into it:
+
+``` erb nginx.conf.erb
+upstream unicorn {
+  server unix:/tmp/unicorn.<%= node['app'] %>.sock fail_timeout=0;
+}
+
+server {
+  server_name www.<%= node['app'] %>.com;
+  return 301 $scheme://<%= node['app'] %>.com$request_uri;
+}
+
+server {
+  listen 80 default deferred;
+  server_name <%= node['app'] %>.com;
+  root /var/www/<%= node['app'] %>/current/public;
+  
+  location ^~ /assets/ {
+    gzip_static on;
+    expires max;
+    add_header Cache-Control public;
+  }
+  
+  try_files $uri/index.html $uri @unicorn;
+  location @unicorn {
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_redirect off;
+    proxy_pass http://unicorn;
+  }
+  
+  error_page 500 502 503 504 /500.html;
+  keepalive_timeout 5;
+}
+```
+
+This is the file we're referencing inside the `template` resource in `nginx.rb`. You'll notice the attributes we specify there are very similar to those specified in the `cookbook_file` resources we wrote earlier. But one thing that's different is we're also using the `notifies` attribute to call `restart` on the previously defined Nginx service, which allows the new configuration file to be loaded in.
+
+## App Setup
+
+Our final recipe does some setup for our Rails application. Here's the code you'll need to add to a new file called `app.rb`:
+
+``` ruby app.rb
+# create www directory
+directory "/var/www" do
+  user node['user']['name']
+  group node['group']
+  mode 0755
+end
+
+# create shared directory structure for app
+path = "/var/www/#{node['app']}/shared/config"
+execute "mkdir -p #{path}" do
+  user node['user']['name']
+  group node['group']
+  creates path
+end
+
+# create database.yml file
+template "#{path}/database.yml" do
+  source "database.yml.erb"
+  mode 0640
+  owner node['user']['name']
+  group node['group']
+end
+
+# set unicorn config
+template "/etc/init.d/unicorn_#{node['app']}" do
+  source "unicorn.sh.erb"
+  mode 0755
+  owner node['user']['name']
+  group node['group']
+end
+
+# add init script link
+execute "update-rc.d unicorn_#{node['app']} defaults" do
+  not_if "ls /etc/rc2.d | grep unicorn_#{node['app']}"
 end
 ```
 
-There is only one new Chef concepts here, and that's the `template` resource. What this does is
+The only new resource here is [`directory`](http://docs.getchef.com/chef/resources.html#directory), which we use to create a new `/var/www` directory for our Rails app. One other new thing is the `creates` attribute inside the second `execute` resource, which is used to prevent the resource from creating the `/var/www/phindee/shared/config` directory if it already exists. If you're wondering why we're using `execute` and not `directory`, it's because it's pretty messy to create recursive directories using `directory`, and this just seems cleaner to me.
+
+And finally, here are the two template files we're referencing inside the two `template` resources above:
+
+``` yml database.yml.erb
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: <%= node['app'] %>
+  pool: 5
+  host: localhost
+  username: <%= node['db']['user']['name'] %>
+  password: <%= node['db']['user']['password'] %>
+```
+``` shell unicorn.sh.erb
+#!/bin/sh
+set -e
+# Example init script, this can be used with nginx, too,
+# since nginx and unicorn accept the same signals
+
+# Feel free to change any of the following variables for your app:
+TIMEOUT=${TIMEOUT-60}
+APP_ROOT=/var/www/<%= node['app'] %>/current
+PID=$APP_ROOT/tmp/pids/unicorn.pid
+CMD="cd $APP_ROOT; ~/.rbenv/bin/rbenv exec bundle exec unicorn -D -c $APP_ROOT/config/unicorn.rb -E production"
+AS_USER=<%= node['user']['name'] %>
+set -u
+
+OLD_PIN="$PID.oldbin"
+
+sig () {
+  test -s "$PID" && kill -$1 `cat $PID`
+}
+
+oldsig () {
+  test -s $OLD_PIN && kill -$1 `cat $OLD_PIN`
+}
+
+run () {
+  if [ "$(id -un)" = "$AS_USER" ]; then
+    eval $1
+  else
+    su -c "$1" - $AS_USER
+  fi
+}
+
+case "$1" in
+start)
+  sig 0 && echo >&2 "Already running" && exit 0
+  run "$CMD"
+  ;;
+stop)
+  sig QUIT && exit 0
+  echo >&2 "Not running"
+  ;;
+force-stop)
+  sig TERM && exit 0
+  echo >&2 "Not running"
+  ;;
+restart|reload)
+  sig HUP && echo reloaded OK && exit 0
+  echo >&2 "Couldn't reload, starting '$CMD' instead"
+  run "$CMD"
+  ;;
+upgrade)
+  if sig USR2 && sleep 2 && sig 0 && oldsig QUIT
+    then
+    n=$TIMEOUT
+    while test -s $OLD_PIN && test $n -ge 0
+    do
+      printf '.' && sleep 1 && n=$(( $n - 1 ))
+    done
+    echo
+
+    if test $n -lt 0 && test -s $OLD_PIN
+    then
+      echo >&2 "$OLD_PIN still exists after $TIMEOUT seconds"
+      exit 1
+    fi
+    exit 0
+  fi
+  echo >&2 "Couldn't upgrade, starting '$CMD' instead"
+  run "$CMD"
+  ;;
+reopen-logs)
+  sig USR1
+  ;;
+*)
+  echo >&2 "Usage: $0 <start|stop|restart|upgrade|force-stop|reopen-logs>"
+  exit 1
+  ;;
+esac
+```
+
+And with that, our recipes are complete! We're now ready to use them to provision our node, and that's what part 3 will be about.
