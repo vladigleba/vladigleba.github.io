@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Phindee | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/phindee/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-08-13T09:59:01-07:00</updated>
+  <updated>2014-08-13T10:16:52-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -1388,9 +1388,9 @@ end
 
 <p>You might already know this, but Capistrano does much of its work with the help of tasks. When we previously ran <code>cap install</code>, we actually invoked a task named <code>install</code> that created various files and directories; if you’re interested, you can see its code <a href="https://github.com/capistrano/capistrano/blob/master/lib/capistrano/tasks/install.rake">on GitHub</a>. Similarly, we can write our own tasks to help us automate various things.</p>
 
-<p>When I was deploying Phindee, I created a file called <code>setup.cap</code> inside the app’s local <code>/lib/capistrano/tasks</code> directory. Go ahead and do the same for your app, and add the following code into it:</p>
+<p>When I was deploying Phindee, I created a file called <code>setup.rake</code> inside the app’s local <code>/lib/capistrano/tasks</code> directory. Go ahead and do the same for your app, and add the following code into it:</p>
 
-<p>``` ruby setup.cap
+<p>``` ruby setup.rake
 namespace :setup do</p>
 
 <p>  desc &ldquo;Upload database.yml file.&rdquo;
@@ -1498,7 +1498,7 @@ cat /var/www/phindee/shared/config/database.yml
 </ul>
 
 
-<p>Typically, you’ll start a task by using an <code>on()</code> method to specify the server on which you want your commands to run. Then you can use any combination of <code>as()</code>, <code>within()</code>, and <code>with()</code> methods, which are repeatable and stackable in any order, to provide additional details. For example, the <code>upload_yml</code> task we ran in <code>setup.cap</code> uses the <code>on()</code> method to specify that the resulting block of code should only be run on the application server. The <code>seed_db</code> task right below it has <em>three</em> parameters that specify how the resulting statement will run; it uses <code>on()</code>, <code>within()</code>, and <code>with()</code> to specify that the statement should only run <em>on</em> the application server, <em>within</em> the path specified, and <em>with</em> certain environment variables set.</p>
+<p>Typically, you’ll start a task by using an <code>on()</code> method to specify the server on which you want your commands to run. Then you can use any combination of <code>as()</code>, <code>within()</code>, and <code>with()</code> methods, which are repeatable and stackable in any order, to provide additional details. For example, the <code>upload_yml</code> task we ran in <code>setup.rake</code> uses the <code>on()</code> method to specify that the resulting block of code should only be run on the application server. The <code>seed_db</code> task right below it has <em>three</em> parameters that specify how the resulting statement will run; it uses <code>on()</code>, <code>within()</code>, and <code>with()</code> to specify that the statement should only run <em>on</em> the application server, <em>within</em> the path specified, and <em>with</em> certain environment variables set.</p>
 
 <p>Obviously, if SSHKit gives you methods to specify certain parameters that must be met before the actual statements are run, it should also give you methods to help you run those statements. That’s exactly what it does, and below are those methods:</p>
 
@@ -1512,7 +1512,7 @@ cat /var/www/phindee/shared/config/database.yml
 </ul>
 
 
-<p>Armed with this knowledge, we’re now better equipped to understand the three tasks in <code>setup.cap</code>.</p>
+<p>Armed with this knowledge, we’re now better equipped to understand the three tasks in <code>setup.rake</code>.</p>
 
 <h1>Task Walk-Through</h1>
 
@@ -1538,9 +1538,9 @@ cat /var/www/phindee/shared/config/database.yml
 
 <h1>Finishing Touches</h1>
 
-<p>We’re almost ready for our deploy. There’s just one more file we need to add to <code>/lib/capistrano/tasks</code> called <code>deploy.cap</code>. Below is the code I have in mine:</p>
+<p>We’re almost ready for our deploy. There’s just one more file we need to add to <code>/lib/capistrano/tasks</code> called <code>deploy.rake</code>. Below is the code I have in mine:</p>
 
-<p>``` ruby deploy.cap
+<p>``` ruby deploy.rake
 namespace :deploy do</p>
 
 <p>  desc &ldquo;Makes sure local git is in sync with remote.&rdquo;

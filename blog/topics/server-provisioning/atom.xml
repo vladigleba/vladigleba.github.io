@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Server Provisioning | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/server-provisioning/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-08-13T09:59:01-07:00</updated>
+  <updated>2014-08-13T10:16:52-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -949,7 +949,7 @@ sudo service nginx start
 <p>We’ll install it with <code>apt-get</code>:</p>
 
 <p><code>bash
-sudo apt-get install postgresql postgresql-contrib
+sudo apt-get install postgresql postgresql-contrib libpq-dev
 </code></p>
 
 <p>We can then start Postgres as the default <code>postgres</code> user with the following command:</p>
@@ -1008,7 +1008,7 @@ sudo nano ~/.bash_profile
 <p>We’re almost ready to install Ruby, but before we do, we first need to install the C compiler and the Make utility, which is needed for the Ruby install. We can do so by installing a package called <code>build-essential</code>, along with some additional packages we’ll need later on:</p>
 
 <p><code>bash
-sudo apt-get install zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libpq-dev
+sudo apt-get install zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev
 </code></p>
 
 <p>With the packages installed, we’re now ready to install Ruby itself.</p>

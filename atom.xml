@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-08-13T09:59:01-07:00</updated>
+  <updated>2014-08-13T10:16:52-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -1869,9 +1869,9 @@
 
 <p>You might already know this, but Capistrano does much of its work with the help of tasks. When we previously ran <code>cap install</code>, we actually invoked a task named <code>install</code> that created various files and directories; if you’re interested, you can see its code <a href="https://github.com/capistrano/capistrano/blob/master/lib/capistrano/tasks/install.rake">on GitHub</a>. Similarly, we can write our own tasks to help us automate various things.</p>
 
-<p>When I was deploying Phindee, I created a file called <code>setup.cap</code> inside the app’s local <code>/lib/capistrano/tasks</code> directory. Go ahead and do the same for your app, and add the following code into it:</p>
+<p>When I was deploying Phindee, I created a file called <code>setup.rake</code> inside the app’s local <code>/lib/capistrano/tasks</code> directory. Go ahead and do the same for your app, and add the following code into it:</p>
 
-<figure class='code'><figcaption><span>setup.cap</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>setup.rake</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -2015,7 +2015,7 @@
 </ul>
 
 
-<p>Typically, you’ll start a task by using an <code>on()</code> method to specify the server on which you want your commands to run. Then you can use any combination of <code>as()</code>, <code>within()</code>, and <code>with()</code> methods, which are repeatable and stackable in any order, to provide additional details. For example, the <code>upload_yml</code> task we ran in <code>setup.cap</code> uses the <code>on()</code> method to specify that the resulting block of code should only be run on the application server. The <code>seed_db</code> task right below it has <em>three</em> parameters that specify how the resulting statement will run; it uses <code>on()</code>, <code>within()</code>, and <code>with()</code> to specify that the statement should only run <em>on</em> the application server, <em>within</em> the path specified, and <em>with</em> certain environment variables set.</p>
+<p>Typically, you’ll start a task by using an <code>on()</code> method to specify the server on which you want your commands to run. Then you can use any combination of <code>as()</code>, <code>within()</code>, and <code>with()</code> methods, which are repeatable and stackable in any order, to provide additional details. For example, the <code>upload_yml</code> task we ran in <code>setup.rake</code> uses the <code>on()</code> method to specify that the resulting block of code should only be run on the application server. The <code>seed_db</code> task right below it has <em>three</em> parameters that specify how the resulting statement will run; it uses <code>on()</code>, <code>within()</code>, and <code>with()</code> to specify that the statement should only run <em>on</em> the application server, <em>within</em> the path specified, and <em>with</em> certain environment variables set.</p>
 
 <p>Obviously, if SSHKit gives you methods to specify certain parameters that must be met before the actual statements are run, it should also give you methods to help you run those statements. That’s exactly what it does, and below are those methods:</p>
 
@@ -2029,7 +2029,7 @@
 </ul>
 
 
-<p>Armed with this knowledge, we’re now better equipped to understand the three tasks in <code>setup.cap</code>.</p>
+<p>Armed with this knowledge, we’re now better equipped to understand the three tasks in <code>setup.rake</code>.</p>
 
 <h1>Task Walk-Through</h1>
 
@@ -2055,9 +2055,9 @@
 
 <h1>Finishing Touches</h1>
 
-<p>We’re almost ready for our deploy. There’s just one more file we need to add to <code>/lib/capistrano/tasks</code> called <code>deploy.cap</code>. Below is the code I have in mine:</p>
+<p>We’re almost ready for our deploy. There’s just one more file we need to add to <code>/lib/capistrano/tasks</code> called <code>deploy.rake</code>. Below is the code I have in mine:</p>
 
-<figure class='code'><figcaption><span>deploy.cap</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>deploy.rake</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -2246,9 +2246,9 @@
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">.</span> <span class="o">.</span> <span class="o">.</span>
 </span><span class='line'>
 </span><span class='line'><span class="n">group</span> <span class="ss">:development</span> <span class="k">do</span>
-</span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;capistrano&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 3.1.0&#39;</span>
+</span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;capistrano&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 3.2.1&#39;</span>
 </span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;capistrano-rails&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 1.1.1&#39;</span>
-</span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;capistrano-bundler&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 1.1.1&#39;</span>
+</span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;capistrano-bundler&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 1.1.2&#39;</span>
 </span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;capistrano-rbenv&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 2.0.2&#39;</span>
 </span><span class='line'><span class="k">end</span>
 </span></code></pre></td></tr></table></div></figure>
@@ -2277,7 +2277,7 @@
 <p>You’ll also see the following line at the end of the file:</p>
 
 <figure class='code'><figcaption><span>Capfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Dir</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;lib/capistrano/tasks/*.cap&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="p">{</span> <span class="o">|</span><span class="n">r</span><span class="o">|</span> <span class="n">import</span> <span class="n">r</span> <span class="p">}</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Dir</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;lib/capistrano/tasks/*.rake&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="p">{</span> <span class="o">|</span><span class="n">r</span><span class="o">|</span> <span class="n">import</span> <span class="n">r</span> <span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -2309,7 +2309,7 @@
 <span class='line-number'>16</span>
 <span class='line-number'>17</span>
 <span class='line-number'>18</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">lock</span> <span class="s2">&quot;3.1.0&quot;</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">lock</span> <span class="s2">&quot;3.2.1&quot;</span>
 </span><span class='line'>
 </span><span class='line'><span class="n">set</span> <span class="ss">:application</span><span class="p">,</span> <span class="s2">&quot;phindee&quot;</span>
 </span><span class='line'><span class="n">set</span> <span class="ss">:repo_url</span><span class="p">,</span> <span class="s2">&quot;git@github.com:vladigleba/phindee.git&quot;</span>
@@ -2791,7 +2791,7 @@
 <p>We’ll install it with <code>apt-get</code>:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo apt-get install postgresql postgresql-contrib
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo apt-get install postgresql postgresql-contrib libpq-dev
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -2859,7 +2859,7 @@
 <p>We’re almost ready to install Ruby, but before we do, we first need to install the C compiler and the Make utility, which is needed for the Ruby install. We can do so by installing a package called <code>build-essential</code>, along with some additional packages we’ll need later on:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo apt-get install zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libpq-dev
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo apt-get install zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev
 </span></code></pre></td></tr></table></div></figure>
 
 

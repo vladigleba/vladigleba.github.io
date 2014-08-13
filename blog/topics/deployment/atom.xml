@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Deployment | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/deployment/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-08-13T09:59:01-07:00</updated>
+  <updated>2014-08-13T10:16:52-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -25,9 +25,9 @@
 
 <p>You might already know this, but Capistrano does much of its work with the help of tasks. When we previously ran <code>cap install</code>, we actually invoked a task named <code>install</code> that created various files and directories; if you’re interested, you can see its code <a href="https://github.com/capistrano/capistrano/blob/master/lib/capistrano/tasks/install.rake">on GitHub</a>. Similarly, we can write our own tasks to help us automate various things.</p>
 
-<p>When I was deploying Phindee, I created a file called <code>setup.cap</code> inside the app’s local <code>/lib/capistrano/tasks</code> directory. Go ahead and do the same for your app, and add the following code into it:</p>
+<p>When I was deploying Phindee, I created a file called <code>setup.rake</code> inside the app’s local <code>/lib/capistrano/tasks</code> directory. Go ahead and do the same for your app, and add the following code into it:</p>
 
-<p>``` ruby setup.cap
+<p>``` ruby setup.rake
 namespace :setup do</p>
 
 <p>  desc &ldquo;Upload database.yml file.&rdquo;
@@ -135,7 +135,7 @@ cat /var/www/phindee/shared/config/database.yml
 </ul>
 
 
-<p>Typically, you’ll start a task by using an <code>on()</code> method to specify the server on which you want your commands to run. Then you can use any combination of <code>as()</code>, <code>within()</code>, and <code>with()</code> methods, which are repeatable and stackable in any order, to provide additional details. For example, the <code>upload_yml</code> task we ran in <code>setup.cap</code> uses the <code>on()</code> method to specify that the resulting block of code should only be run on the application server. The <code>seed_db</code> task right below it has <em>three</em> parameters that specify how the resulting statement will run; it uses <code>on()</code>, <code>within()</code>, and <code>with()</code> to specify that the statement should only run <em>on</em> the application server, <em>within</em> the path specified, and <em>with</em> certain environment variables set.</p>
+<p>Typically, you’ll start a task by using an <code>on()</code> method to specify the server on which you want your commands to run. Then you can use any combination of <code>as()</code>, <code>within()</code>, and <code>with()</code> methods, which are repeatable and stackable in any order, to provide additional details. For example, the <code>upload_yml</code> task we ran in <code>setup.rake</code> uses the <code>on()</code> method to specify that the resulting block of code should only be run on the application server. The <code>seed_db</code> task right below it has <em>three</em> parameters that specify how the resulting statement will run; it uses <code>on()</code>, <code>within()</code>, and <code>with()</code> to specify that the statement should only run <em>on</em> the application server, <em>within</em> the path specified, and <em>with</em> certain environment variables set.</p>
 
 <p>Obviously, if SSHKit gives you methods to specify certain parameters that must be met before the actual statements are run, it should also give you methods to help you run those statements. That’s exactly what it does, and below are those methods:</p>
 
@@ -149,7 +149,7 @@ cat /var/www/phindee/shared/config/database.yml
 </ul>
 
 
-<p>Armed with this knowledge, we’re now better equipped to understand the three tasks in <code>setup.cap</code>.</p>
+<p>Armed with this knowledge, we’re now better equipped to understand the three tasks in <code>setup.rake</code>.</p>
 
 <h1>Task Walk-Through</h1>
 
@@ -175,9 +175,9 @@ cat /var/www/phindee/shared/config/database.yml
 
 <h1>Finishing Touches</h1>
 
-<p>We’re almost ready for our deploy. There’s just one more file we need to add to <code>/lib/capistrano/tasks</code> called <code>deploy.cap</code>. Below is the code I have in mine:</p>
+<p>We’re almost ready for our deploy. There’s just one more file we need to add to <code>/lib/capistrano/tasks</code> called <code>deploy.rake</code>. Below is the code I have in mine:</p>
 
-<p>``` ruby deploy.cap
+<p>``` ruby deploy.rake
 namespace :deploy do</p>
 
 <p>  desc &ldquo;Makes sure local git is in sync with remote.&rdquo;
@@ -330,9 +330,9 @@ sudo service nginx restart
 &hellip;</p>
 
 <p>group :development do
-  gem &lsquo;capistrano&rsquo;, &lsquo;~> 3.1.0&rsquo;
+  gem &lsquo;capistrano&rsquo;, &lsquo;~> 3.2.1&rsquo;
   gem &lsquo;capistrano-rails&rsquo;, &lsquo;~> 1.1.1&rsquo;
-  gem &lsquo;capistrano-bundler&rsquo;, &lsquo;~> 1.1.1&rsquo;
+  gem &lsquo;capistrano-bundler&rsquo;, &lsquo;~> 1.1.2&rsquo;
   gem &lsquo;capistrano-rbenv&rsquo;, &lsquo;~> 2.0.2&rsquo;
 end
 ```</p>
@@ -356,7 +356,7 @@ require 'capistrano/rbenv'
 <p>You’ll also see the following line at the end of the file:</p>
 
 <p><code>ruby Capfile
-Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }
+Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
 </code></p>
 
 <p>This will load any custom tasks from <code>lib/capistrano/tasks</code>, which we will later define.</p>
@@ -370,7 +370,7 @@ Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }
 <p>Below is how my <code>deploy.rb</code> file looks like for Phindee:</p>
 
 <p>``` ruby deploy.rb
-lock &ldquo;3.1.0&rdquo;</p>
+lock &ldquo;3.2.1&rdquo;</p>
 
 <p>set :application, &ldquo;phindee&rdquo;
 set :repo_url, &ldquo;git@github.com:vladigleba/phindee.git&rdquo;</p>
@@ -790,7 +790,7 @@ sudo service nginx start
 <p>We’ll install it with <code>apt-get</code>:</p>
 
 <p><code>bash
-sudo apt-get install postgresql postgresql-contrib
+sudo apt-get install postgresql postgresql-contrib libpq-dev
 </code></p>
 
 <p>We can then start Postgres as the default <code>postgres</code> user with the following command:</p>
@@ -849,7 +849,7 @@ sudo nano ~/.bash_profile
 <p>We’re almost ready to install Ruby, but before we do, we first need to install the C compiler and the Make utility, which is needed for the Ruby install. We can do so by installing a package called <code>build-essential</code>, along with some additional packages we’ll need later on:</p>
 
 <p><code>bash
-sudo apt-get install zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libpq-dev
+sudo apt-get install zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev
 </code></p>
 
 <p>With the packages installed, we’re now ready to install Ruby itself.</p>

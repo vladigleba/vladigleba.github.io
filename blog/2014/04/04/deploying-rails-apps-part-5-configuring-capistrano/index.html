@@ -125,9 +125,9 @@
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">.</span> <span class="o">.</span> <span class="o">.</span>
 </span><span class='line'>
 </span><span class='line'><span class="n">group</span> <span class="ss">:development</span> <span class="k">do</span>
-</span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;capistrano&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 3.1.0&#39;</span>
+</span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;capistrano&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 3.2.1&#39;</span>
 </span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;capistrano-rails&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 1.1.1&#39;</span>
-</span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;capistrano-bundler&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 1.1.1&#39;</span>
+</span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;capistrano-bundler&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 1.1.2&#39;</span>
 </span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;capistrano-rbenv&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 2.0.2&#39;</span>
 </span><span class='line'><span class="k">end</span>
 </span></code></pre></td></tr></table></div></figure>
@@ -156,7 +156,7 @@
 <p>You’ll also see the following line at the end of the file:</p>
 
 <figure class='code'><figcaption><span>Capfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Dir</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;lib/capistrano/tasks/*.cap&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="p">{</span> <span class="o">|</span><span class="n">r</span><span class="o">|</span> <span class="n">import</span> <span class="n">r</span> <span class="p">}</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Dir</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;lib/capistrano/tasks/*.rake&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="p">{</span> <span class="o">|</span><span class="n">r</span><span class="o">|</span> <span class="n">import</span> <span class="n">r</span> <span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -188,7 +188,7 @@
 <span class='line-number'>16</span>
 <span class='line-number'>17</span>
 <span class='line-number'>18</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">lock</span> <span class="s2">&quot;3.1.0&quot;</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">lock</span> <span class="s2">&quot;3.2.1&quot;</span>
 </span><span class='line'>
 </span><span class='line'><span class="n">set</span> <span class="ss">:application</span><span class="p">,</span> <span class="s2">&quot;phindee&quot;</span>
 </span><span class='line'><span class="n">set</span> <span class="ss">:repo_url</span><span class="p">,</span> <span class="s2">&quot;git@github.com:vladigleba/phindee.git&quot;</span>
