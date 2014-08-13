@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Provisioning a Rails Server Using Chef Part 2: Writing the Recipes"
-date: 2014-08-07 19:33
+title: "Provisioning a Rails Server Using Chef, Part 2: Writing the Recipes"
+date: 2014-08-12 09:29
 comments: true
 categories: [Server Provisioning, Phindee]
-description:
+description: Learn how to write recipes in Chef to provision a Rails server and install Node.js, PostgreSQL, rbenv, Ruby, Redis, and Nginx.
 ---
 
-In [part 1](), we learned about Chef Solo and used it to create a standard Chef directory structure, along with our own cookbook. Now it's time to start writing the recipes we will run to provision our Rails server and install Node.js, PostgreSQL, rbenv, Ruby, Redis, and Nginx.
+In [part 1]({{ root_url }}/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/), we learned about Chef Solo and used it to create a standard Chef directory structure, along with our own cookbook. Now it's time to start writing the recipes we will run to provision our Rails server and install Node.js, PostgreSQL, rbenv, Ruby, Redis, and Nginx.
 
 <!-- more -->
 
@@ -69,7 +69,7 @@ One last thing I want to mention is that if you have the same attribute defined 
 
 # Writing Recipes
 
-Now that the attributes are defined, we're ready to start writing the recipes themselves. These recipes do the exact same server setup as the one covered in the ["Deploying Rails Apps" series](), so I won't be explaining the whys behind the things I do here since that's already covered in the series itself. If you've never provisioned a server from scratch before, it's best to read that series first before continuing.
+Now that the attributes are defined, we're ready to start writing the recipes themselves. These recipes do the exact same server setup as the one covered in the ["Deploying Rails Apps" series]({{ root_url }}/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/), so I won't be explaining the whys behind the things I do here since that's already covered in the series itself. If you've never provisioned a server from scratch before, it's best to read that series first before continuing.
 
 ## The First One
 
@@ -424,7 +424,7 @@ end
 
 There is only one new Chef concept here, and that's the [`template` resource](http://docs.getchef.com/chef/resources.html#template). It's similar to the `cookbook_file` resource in that it copies a file from a cookbook to a location on a node, but it also does much more than that; it allows you to modify the contents of the file by embedding Ruby code into it using ERB (Embedded Ruby) templates, just like you would if you wrote Ruby on Rails views in ERB. All the attributes that are accessible in your recipes are also accessible in template files, and when you combine this with the usual ERB features like conditional statements and blocks, you'll be able to customize your files in any way you want.
 
-Templates are stored in your cookbook's `/templates` directory, so go ahead and create a new file there called `nginx.conf.erb` with the following code:
+Templates are stored in your cookbook's `/templates` directory, so go ahead and create a new file there called `nginx.conf.erb` with the following code (note that the syntax for accessing attributes doesn't change):
 
 ``` erb nginx.conf.erb
 upstream unicorn {

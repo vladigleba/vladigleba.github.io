@@ -117,4 +117,4 @@ If you then do an `ls` inside the cookbook you just created, you'll see what a s
 
 The rest of the directories are for advanced Chef setups, and I won't be explaining them here.
 
-With our cookbook created, we're now ready to start writing the recipes that will provision our Rails server, which I'll cover in [part 2]().
+With our cookbook created, we're now ready to start writing the recipes that will provision our Rails server, which I'll cover in [part 2]({{ root_url }}/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/).
