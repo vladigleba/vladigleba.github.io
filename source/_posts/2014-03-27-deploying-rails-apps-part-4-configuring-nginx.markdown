@@ -14,8 +14,6 @@ I talked about how I configured Unicorn for [Phindee](http://phindee.com/) in [p
 Alright, since there is quite a bit to cover, we’ll jump right in. We’ll start by creating a file called `nginx.conf` inside our app’s `/config` directory on our local computer. Here’s how mine looks like:
 
 ``` nginx nginx.conf
-worker_processes 1;
-
 upstream unicorn {
   server unix:/tmp/unicorn.phindee.sock fail_timeout=0;
 }
@@ -49,7 +47,7 @@ server {
 }
 ```
 
-You might have noticed that the first thing we do is tell Nginx to run one worker process (which is generally enough, unless you're serving large amounts of static files). If you read part 3, this will sound familiar, because Nginx, just like Unicorn, has a master process managing all the workers, and the workers are the ones responsible for processing requests from clients. Unlike Unicorn, Nginx also has a cache loader process that checks and/or populates the cache with metadata, as well a cache manager process that’s responsible for cache expiration. Together, they keep Nginx internals running quickly and efficiently.
+Nginx has a master process managing all the workers, just like Unicorn, which are responsible for processing requests from clients. Unlike Unicorn, Nginx also has a cache loader process that checks and/or populates the cache with metadata, as well a cache manager process that’s responsible for cache expiration. Together, they keep Nginx internals running quickly and efficiently.
 
 # A Bit on Workers
 

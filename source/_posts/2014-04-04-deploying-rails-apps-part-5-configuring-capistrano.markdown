@@ -21,9 +21,9 @@ One of the ways the core team was able to keep it so lean was by breaking framew
 . . .
 
 group :development do
-  gem 'capistrano', '~> 3.1.0'
+  gem 'capistrano', '~> 3.2.1'
   gem 'capistrano-rails', '~> 1.1.1'
-  gem 'capistrano-bundler', '~> 1.1.1'
+  gem 'capistrano-bundler', '~> 1.1.2'
   gem 'capistrano-rbenv', '~> 2.0.2'
 end
 ```
@@ -47,7 +47,7 @@ require 'capistrano/rbenv'
 You’ll also see the following line at the end of the file:
 
 ``` ruby Capfile
-Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }
+Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
 ```
 
 This will load any custom tasks from `lib/capistrano/tasks`, which we will later define.
@@ -61,7 +61,7 @@ One cool thing about Capistrano is it’s designed to work with different deploy
 Below is how my `deploy.rb` file looks like for Phindee:
 
 ``` ruby deploy.rb
-lock "3.1.0"
+lock "3.2.1"
 
 set :application, "phindee"
 set :repo_url, "git@github.com:vladigleba/phindee.git"

@@ -110,7 +110,7 @@ Most modern apps need to store some sort of data, and there are a plethora of op
 We’ll install it with `apt-get`:
 
 ``` bash
-sudo apt-get install postgresql postgresql-contrib
+sudo apt-get install postgresql postgresql-contrib libpq-dev
 ```
 
 We can then start Postgres as the default `postgres` user with the following command:
@@ -169,7 +169,7 @@ and copying/pasting the code that was outputted by the message. We’ll then nee
 We’re almost ready to install Ruby, but before we do, we first need to install the C compiler and the Make utility, which is needed for the Ruby install. We can do so by installing a package called `build-essential`, along with some additional packages we’ll need later on:
 
 ``` bash
-sudo apt-get install zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libpq-dev
+sudo apt-get install zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev
 ```
 
 With the packages installed, we’re now ready to install Ruby itself.

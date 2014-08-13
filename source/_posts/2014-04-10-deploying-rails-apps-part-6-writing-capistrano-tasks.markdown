@@ -13,9 +13,9 @@ It’s been a long time coming, but we finally reached the point where we can de
 
 You might already know this, but Capistrano does much of its work with the help of tasks. When we previously ran `cap install`, we actually invoked a task named `install` that created various files and directories; if you’re interested, you can see its code [on GitHub](https://github.com/capistrano/capistrano/blob/master/lib/capistrano/tasks/install.rake). Similarly, we can write our own tasks to help us automate various things.
 
-When I was deploying Phindee, I created a file called `setup.cap` inside the app’s local `/lib/capistrano/tasks` directory. Go ahead and do the same for your app, and add the following code into it:
+When I was deploying Phindee, I created a file called `setup.rake` inside the app’s local `/lib/capistrano/tasks` directory. Go ahead and do the same for your app, and add the following code into it:
 
-``` ruby setup.cap
+``` ruby setup.rake
 namespace :setup do
   
   desc "Upload database.yml file."
@@ -105,7 +105,7 @@ Capistrano 3 uses the Rake DSL (Domain Specific Language), which means if you ev
 - `as()`: specifies the user to run as
 - `with()`: specifies the environment variables to run with
 
-Typically, you’ll start a task by using an `on()` method to specify the server on which you want your commands to run. Then you can use any combination of `as()`, `within()`, and `with()` methods, which are repeatable and stackable in any order, to provide additional details. For example, the `upload_yml` task we ran in `setup.cap` uses the `on()` method to specify that the resulting block of code should only be run on the application server. The `seed_db` task right below it has <em>three</em> parameters that specify how the resulting statement will run; it uses `on()`, `within()`, and `with()` to specify that the statement should only run <em>on</em> the application server, <em>within</em> the path specified, and <em>with</em> certain environment variables set.
+Typically, you’ll start a task by using an `on()` method to specify the server on which you want your commands to run. Then you can use any combination of `as()`, `within()`, and `with()` methods, which are repeatable and stackable in any order, to provide additional details. For example, the `upload_yml` task we ran in `setup.rake` uses the `on()` method to specify that the resulting block of code should only be run on the application server. The `seed_db` task right below it has <em>three</em> parameters that specify how the resulting statement will run; it uses `on()`, `within()`, and `with()` to specify that the statement should only run <em>on</em> the application server, <em>within</em> the path specified, and <em>with</em> certain environment variables set.
 
 Obviously, if SSHKit gives you methods to specify certain parameters that must be met before the actual statements are run, it should also give you methods to help you run those statements. That’s exactly what it does, and below are those methods:
 
@@ -116,7 +116,7 @@ Obviously, if SSHKit gives you methods to specify certain parameters that must b
 - `background()`: runs a command in the background
 - `test()`: can be used for control flow since it works like the `test` command-line utility in Unix and returns false if its expression exits with a non-zero value
 
-Armed with this knowledge, we’re now better equipped to understand the three tasks in `setup.cap`.
+Armed with this knowledge, we’re now better equipped to understand the three tasks in `setup.rake`.
 
 # Task Walk-Through
 
@@ -141,9 +141,9 @@ These three tasks just merely scratch the surface of what’s possible, however.
 
 # Finishing Touches
 
-We’re almost ready for our deploy. There’s just one more file we need to add to `/lib/capistrano/tasks` called `deploy.cap`. Below is the code I have in mine:
+We’re almost ready for our deploy. There’s just one more file we need to add to `/lib/capistrano/tasks` called `deploy.rake`. Below is the code I have in mine:
 
-``` ruby deploy.cap
+``` ruby deploy.rake
 namespace :deploy do
   
   desc "Makes sure local git is in sync with remote."
