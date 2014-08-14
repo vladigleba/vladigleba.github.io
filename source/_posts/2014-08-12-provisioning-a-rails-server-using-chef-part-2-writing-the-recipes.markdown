@@ -599,4 +599,4 @@ reopen-logs)
 esac
 ```
 
-And with that, our recipes are complete! We're now ready to use them to provision our node, and that's exactly what we'll cover in part 3.
+And with that, our recipes are complete! We're now ready to use them to provision our node, and that's exactly what we'll cover in [part 3]({{ root_url }}/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/).
