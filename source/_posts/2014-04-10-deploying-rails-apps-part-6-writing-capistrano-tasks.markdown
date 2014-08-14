@@ -171,12 +171,13 @@ The `check_revision` task checks to make sure we pushed all our local changes to
 
 The second block of code actually creates <em>three</em> separate tasks that will allow us to start, stop, and restart Unicorn from our local computer. We'll run the `restart` task, for example, after Capistrano finishes its deploy so Unicorn picks up the new code. (Note that I created a namespace called `deploy` to contain these tasks since that's what they're related to.) 
 
-But how do we tell Capistrano to run these tasks as part of its deploy? Well, Capistrano provides two callback functions called `before()` and `after()` to help us out, and the code below illustrates how it's done (add it to the end of your `deploy.rb` file):
+But how do we tell Capistrano to run these tasks as part of its deploy? Well, Capistrano provides two callback functions called `before()` and `after()` to help us out, and the code below illustrates how it's done (add it to the end of your `deploy.rake` file):
 
-``` ruby deploy.rb
-. . .
-
+``` ruby deploy.rake
 namespace :deploy do
+
+  . . .
+  
   before :deploy, "deploy:check_revision"
   after :deploy, "deploy:restart"
   after :rollback, "deploy:restart"

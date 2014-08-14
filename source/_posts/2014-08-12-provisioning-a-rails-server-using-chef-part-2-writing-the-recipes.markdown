@@ -34,7 +34,7 @@ Go ahead and create the file now, and add the following code into it (be sure to
 ``` json 123.123.123.123.json
 { 
   "group": "foobars",
-  "port": 11111,
+  "port": 12345,
   
   "user": {
     "name": "bob",
