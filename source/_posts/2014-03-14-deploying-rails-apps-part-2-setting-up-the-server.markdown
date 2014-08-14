@@ -3,7 +3,7 @@ layout: post
 title: "Deploying Rails Apps, Part 2: Setting up the Server"
 date: 2014-03-14 09:45
 comments: true
-categories: [Deployment, Server Provisioning, Phindee]
+categories: [Deployment, Server Provisioning, Phindee, Deployment Series]
 description: Learn how to install Node.js, Nginx, PostgreSQL, rbenv, and Ruby, and Bundler.
 ---
 

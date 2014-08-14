@@ -3,15 +3,17 @@ layout: post
 title: "Provisioning a Rails Server Using Chef, Part 3: Tying It All Together"
 date: 2014-08-13 15:02
 comments: true
-categories: [Server Provisioning, Phindee]
+categories: [Server Provisioning, Deployment, Phindee, Chef Series]
 description: 
 ---
 
 We installed Chef Solo in [part 1]({{ root_url }}/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/), we wrote some recipes in [part 2]({{ root_url }}/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/), and now we'll be tying everything together in part 3. When we're done, we'll not only have a fully provisioned server running your Rails app, but we'll also have an automated way of repeating this process whenever such a need arises in the future.
 
-## Some Groundwork
+<!-- more -->
 
-Before we can run the recipes from part 2, we need to specify exactly which recipes want to run and in what order using what's called a run list. We store the run list in the JSON file located in the `/nodes` directory (I usually add it to top of the file, before all the node-specific attributes, to make it easy to spot). Here's what it looks like:
+# Some Groundwork
+
+Before we can run the recipes from part 2, we need to specify exactly which recipes we want to run and in what order. Chef has something called a run list exactly for this purpose, and we store it in the JSON file located in the `/nodes` directory (I usually add it to the top of the file, before all the node-specific attributes, to make it easy to spot):
 
 ``` json 123.123.123.123.json
 {
@@ -29,12 +31,15 @@ Before we can run the recipes from part 2, we need to specify exactly which reci
   
   . . .
 }
+```
 
 Because Chef executes the run list in the exact order it's specified, it's important to list the recipes that other recipes will depend on first. Some of our recipes, for example, use the user that's created in `users.rb`, so that's why we place that recipe near the top, but recipes that don't depend on any other recipes can be placed anywhere you want. (Note that when referencing the `default.rb` recipe, it's enough to just specify the name of the cookbook it's located in, but in order to run the other recipes, it's necessary to specify the cookbook, along with the recipe's file name.)
 
-By the way, if you ever find yourself not needing/wanting a particular recipe to run, all you need to do is remove that particular recipe from the run list, and Chef won't run it, but do be careful about removing recipes that other recipes depend on because that will create issues.
+By the way, if you ever find yourself not needing a particular recipe to run, all you need to do is remove that recipe from the run list, and Chef won't run it, but do be careful about removing recipes that other recipes depend on because that will cause issues.
 
-With our run list defined, we're now ready to start the provisioning process. Because we'll need to use quite a number of commands to get everything provisioned, it's best to automate this by creating a shell script. I created a file called `setup_vps.sh` inside my app's `/config` directory, and here's the  code it contains:
+# It's Show Time
+
+With our run list defined, we're now ready to start the provisioning process. Because we'll need to use quite a number of commands to get everything provisioned, it's best to automate this by creating a shell script. I created a file called `setup_vps.sh` inside my app's `/config` directory for this purpose:
 
 ``` bash setup_vps.sh
 #!/bin/sh
@@ -62,20 +67,27 @@ knife solo cook root@$IP
 # upload key for user
 ssh-copy-id -i ~/.ssh/id_rsa.pub -p $PORT $USER@$IP
 
-# setup phindee code
+# upload app
 cd ../.. && cap production setup:all
 
 # restart nginx
 ssh -p $PORT -t $USER@$IP 'sudo service nginx restart'
 ```
 
-The first line uploads your public key to the node (server) you're about to provision. (If you don't do this, Chef Solo will ask you to type your password for every command it runs.) The next line installs Chef on our node using the `knife solo prepare` command, while the line after uses `knife solo cook` to execute our run list. When it finishes, our node will be fully provisioned.
+The first line uploads your public key to the node (server) you're about to provision. (If you don't do this, Chef Solo will ask you to type your password for every command it runs.) The next line installs Chef on our node using the `knife solo prepare` command, while the line after that uses `knife solo cook` to execute our run list. When it finishes, our node will be fully provisioned.
 
-The remaining three lines run my Capistrano recipes to deploy my app (if you're not using Capistrano for deployment, feel free to remove them). The third to last line uploads the public key for the Chef-created user (so Capistrano can log in without a password), the next line runs the Capistrano recipes, and the last line restarts Nginx (so the uploaded Rails app is loaded in).
+The remaining three lines run the Capistrano recipes to deploy my app (if you're not using Capistrano for deployment, feel free to remove them). The third to last line uploads the public key for the Chef-created user (so Capistrano can log in without a password), the next line runs the Capistrano recipes, and the last line restarts Nginx (so the uploaded Rails app is loaded in).
 
-Once you run `chmod +x setup_vps.sh` to make the file an executable, you can `cd` into the directory containing the script and run it with `./setup_vps.sh bob 123.123.123.123 12345`, where `bob` is the Chef-created user, `123.123.123.123` is the IP address to the node you just provisioned, and `12345` is its port.
+Once you run `chmod +x setup_vps.sh` to make the file an executable, you can `cd` into the directory containing the script and run it with
 
-In the interest of completeness, below is my `setup.rake` file containing the `all` task that I'm referencing above:
+``` bash
+./setup_vps.sh bob 123.123.123.123 12345
+```
+where `bob` is the Chef-created user, `123.123.123.123` is the IP address of the node you just provisioned, and `12345` is its port. When the script finishes executing, you'll have a fully provisioned server running your Rails app.
+
+# Capistrano Code
+
+In the interest of completeness, here's the Capistrano code I use to deploy my app. First up is my `setup.rake` file containing the `all` task that I'm referencing in `setup_vps.sh`:
 
 ``` ruby setup.rake
 namespace :setup do
@@ -110,9 +122,9 @@ namespace :setup do
 end
 ```
 
-and here's my `deploy.rake` file containing the `start` task that I'm calling in `setup.rake`:
+And here's my `deploy.rake` file containing the `start` task that I'm calling in `setup.rake`:
 
-``` deploy.rake
+``` ruby deploy.rake
 namespace :deploy do
   
   desc "Makes sure local git is in sync with remote."
@@ -163,7 +175,7 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public
 set :keep_releases, 5
 ```
 
-and here's my `deploy/production.rb` file:
+And here's my `deploy/production.rb` file:
 
 ``` ruby production.rb
 set :stage, :production
@@ -172,9 +184,8 @@ set :rails_env, :production
 server "#{fetch(:deploy_user)}@123.123.123.123:12345", roles: %w{web app db}, primary: true
 ```
 
-I won't be explaining the Capistrano code here because that's already covered in parts [5]({{ root_url }}/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/) and [6]({{ root_url }}/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/) of my "Deploying Rails Apps" series, so be sure to check that out if you're new to Capistrano or just need some clarification.
+I won't be explaining the Capistrano code because that's already covered in parts [5]({{ root_url }}/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/) and [6]({{ root_url }}/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/) of my ["Deploying Rails Apps" series]({{ root_url }}/blog/topics/deployment-series/), so be sure to check that out if you're new to Capistrano or just need some clarification. (It's worth noting that Chef actually has a [`deploy`](http://docs.getchef.com/chef/resources.html#deploy) resource that's modeled after Capistrano, but I didn't have time to learn how to implement my existing Capistrano recipes with it. If you're interested though, feel free to give it a try.)
 
-It's worth noting that Chef actually has a [`deploy`](http://docs.getchef.com/chef/resources.html#deploy) resource that's modeled after Capistrano, but I didn't have time to learn how to implement my existing Capistrano recipes with it. If you're interested though, feel free to give it a try.
+I hope this gave you a taste of what Chef can do, although I only scratched the service of what's possible. Chef is a complex tool that can be used to manage entire server infrastructures, and although it might be overkill for managing a single server, it's still a useful tool to learn if you spend a significant amount of time doing server provisioning. It's definitely an improvement over shell scripts because it keeps your code readable and organized. Ultimately though, each tool has its place, and it's up to you to decide what best fits your particular need.
 
-load APP NAME, USER, IP, and PORT from yaml file?
-
+Stay hungry. Stay foolish.

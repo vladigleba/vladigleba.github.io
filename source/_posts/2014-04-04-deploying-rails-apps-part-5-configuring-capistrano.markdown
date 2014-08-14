@@ -3,7 +3,7 @@ layout: post
 title: "Deploying Rails Apps, Part 5: Configuring Capistrano"
 date: 2014-04-04 07:36
 comments: true
-categories: [Deployment, Phindee]
+categories: [Deployment, Phindee, Deployment Series]
 description: Learn how to configure Capistrano for deployment.
 ---
 

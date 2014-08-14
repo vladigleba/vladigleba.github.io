@@ -3,7 +3,7 @@ layout: post
 title: "Provisioning a Rails Server Using Chef, Part 2: Writing the Recipes"
 date: 2014-08-12 09:29
 comments: true
-categories: [Server Provisioning, Phindee]
+categories: [Server Provisioning, Phindee, Chef Series]
 description: Learn how to write recipes in Chef to provision a Rails server and install Node.js, PostgreSQL, rbenv, Ruby, Redis, and Nginx.
 ---
 
@@ -69,7 +69,7 @@ One last thing I want to mention is that if you have the same attribute defined 
 
 # Writing Recipes
 
-Now that the attributes are defined, we're ready to start writing the recipes themselves. These recipes do the exact same server setup as the one covered in the ["Deploying Rails Apps" series]({{ root_url }}/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/), so I won't be explaining the whys behind the things I do here since that's already covered in the series itself. If you've never provisioned a server from scratch before, it's best to read that series first before continuing.
+Now that the attributes are defined, we're ready to start writing the recipes themselves. These recipes do the exact same server setup as the one covered in the ["Deploying Rails Apps" series]({{ root_url }}/blog/topics/deployment-series/), so I won't be explaining the whys behind the things I do here since that's already covered in the series itself. If you've never provisioned a server from scratch before, it's best to read that series first before continuing.
 
 ## The First One
 

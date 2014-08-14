@@ -3,7 +3,7 @@ layout: post
 title: "Provisioning a Rails Server Using Chef, Part 1: Introduction to Chef Solo"
 date: 2014-07-28 14:31
 comments: true
-categories: [Server Provisioning, Phindee]
+categories: [Server Provisioning, Phindee, Chef Series]
 description: Find out why you should use Chef, learn about the differences between Chef Solo and Chef Server, and create your first cookbook.
 ---
 

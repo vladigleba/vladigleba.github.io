@@ -3,7 +3,7 @@ layout: post
 title: "Deploying Rails Apps, Part 6: Writing Capistrano Tasks"
 date: 2014-04-10 08:42
 comments: true
-categories: [Deployment, Phindee]
+categories: [Deployment, Phindee, Deployment Series]
 description: Learn how to write Capistrano tasks to help you automate your deployment.
 ---
 
@@ -258,4 +258,4 @@ If you now open up your favorite browser (I hope it's not Internet Explorer) and
 
 But the most important thing is to not get discouraged. When I set up my production server from scratch for the very first time, it took me a <em>full week</em> (I’m not kidding) to get it working. It was frustrating, discouraging, and is the reason why I decided to write this series, because I didn’t want other people going through the same thing. It doesn't have be that way though, and I hope it won't be.
 
-(If you enjoyed this series, you might also like the ["Provisioning a Rails Server Using Chef" series]({{ root_url }}/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/), which explains how you can use Chef to automate your entire server setup.)
+(If you enjoyed this series, you might also like the ["Provisioning a Rails Server Using Chef" series]({{ root_url }}/blog/topics/chef-series/), which explains how you can use Chef to automate your entire server setup.)
