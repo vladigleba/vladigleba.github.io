@@ -94,7 +94,7 @@ cat /var/www/phindee/shared/config/database.yml
 
 This is obviously a trivial task, but it shows how powerful Capistrano can be. A few keystrokes allowed us to create a specific directory structure on our server and upload a file from our local computer. Neat stuff&mdash;and it will only get better.
 
-Alright, let’s now switch gears and learn about the syntax that made all of this possible.
+All right, let’s now switch gears and learn about the syntax that made all of this possible.
 
 # Understanding SSHKit
 
@@ -190,7 +190,7 @@ I'd like to point out that we're using the callbacks inside a namespace to make 
 
 What we now have is our own custom recipe (a Capistrano term meaning a series of tasks) for deployment. You can similarly write multiple other recipes to help you automate any other tedious work you find yourself doing over and over again.
 
-Alright, having all the necessary tasks defined, we can go ahead and push our code up to GitHub so Capistrano can deploy the latest changes:
+All right, having all the necessary tasks defined, we can go ahead and push our code up to GitHub so Capistrano can deploy the latest changes:
 
 ``` bash
 git add .

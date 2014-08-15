@@ -109,7 +109,7 @@ AllowUsers bob
 
 You could even specify a space-separated list of users here, if you have more than one user in need of login access.
 
-Alright, there is one final line that we’ll add to the end of our file:
+All right, there is one final line that we’ll add to the end of our file:
 
 ``` text sshd_config
 UseDNS no

@@ -11,7 +11,7 @@ I talked about how I configured Unicorn for [Phindee](http://phindee.com/) in [p
 
 <!-- more -->
 
-Alright, since there is quite a bit to cover, we’ll jump right in. We’ll start by creating a file called `nginx.conf` inside our app’s `/config` directory on our local computer. Here’s how mine looks like:
+All right, since there is quite a bit to cover, we’ll jump right in. We’ll start by creating a file called `nginx.conf` inside our app’s `/config` directory on our local computer. Here’s how mine looks like:
 
 ``` nginx nginx.conf
 upstream unicorn {
@@ -89,7 +89,7 @@ Inside the named location, the `proxy_pass` directive does all the heavy lifting
 
 # Last Few Lines
 
-Alright, we’re down to the last two lines. `error_page` makes sure that our app’s `500.html` page is shown for any 500-related errors, while `keepalive_timeout` tells Nginx to retain keep-alive connections (also known as persistent connections) for up to 10 seconds and close them if they exceed that time. The main concern when choosing the amount of time is mobile devices on slow networks, but I think 10 seconds should be enough.
+All right, we’re down to the last two lines. `error_page` makes sure that our app’s `500.html` page is shown for any 500-related errors, while `keepalive_timeout` tells Nginx to retain keep-alive connections (also known as persistent connections) for up to 10 seconds and close them if they exceed that time. The main concern when choosing the amount of time is mobile devices on slow networks, but I think 10 seconds should be enough.
 
 Keep-alive connections, by the way, send multiple HTTP requests in a single connection, as opposed to opening a new connection for each request; in HTTP 1.1, all connections are persistent by default, which means stylesheets, scripts, images, and fonts, for example, would all be sent using a single connection.
 

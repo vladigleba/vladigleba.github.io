@@ -15,7 +15,7 @@ My knowledge of grid systems is limited, but I figured the design was probably b
 
 Disclosure: I don't have a background in design, but I'm always eager to learn more, so if you're a designer, please feel free to contribute!
 
-Alright, on to grids.
+All right, on to grids.
 
 > Spacing and the use of space is what holds a design together. Precise and effective space management can make the difference between an average design and an amazing one. ... How big is the header compared to the navigation bar?  How wide is the photo compared to the sidebar? These ratios are what make or break the balance, emphasis and flow of a design. Additionally . . . we constantly are looking for order and understanding of the world around us. ... Our mind is constantly seeking some reason, pattern or rational for what we are seeing. This is especially true of spacing, sizing and proportions. ... If that unity doesn’t exist it will always feel unpolished. <footer>&mdash;[Ross Johnson](http://3.7designs.co/blog/2010/10/how-to-design-using-the-fibonacci-sequence/)</footer>
 

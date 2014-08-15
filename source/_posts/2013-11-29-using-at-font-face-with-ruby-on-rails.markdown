@@ -13,7 +13,7 @@ When I was working on [Phindee](http://phindee.com/), I struggled with adding cu
 
 I'll be using [Font Squirrel](http://www.fontsquirrel.com/) to generate the necessary font files, but there are other alternatives out there like [Google Fonts](https://www.google.com/fonts/) and [Typekit](http://typekit.com/), which are easier to set up because they host the fonts for you on their own servers. The down side is if their servers go down so do your fonts. With Font Squirrel this is not the case because the fonts live directly on your own servers. This makes the setup a bit more involved, but hey, it's a learning opportunity, and the pay off is well worth it.
 
-Alright, let's get to work.
+All right, let's get to work.
 
 # Setup
 
@@ -23,7 +23,7 @@ Once we have our font files downloaded, we’ll add them to `app/assets/fonts`.
 
 # Declaring Your Fonts
 
-Alright, we’re now ready to declare our fonts. In order to keep our code organized, we’ll add a new `fonts.css.scss` file to `app/assets/stylesheets`, and we’ll make our `@font-face` declarations right inside it. (Note that I use the SASS pre-compiler; hence, the additional `.scss` extension.) 
+All right, we’re now ready to declare our fonts. In order to keep our code organized, we’ll add a new `fonts.css.scss` file to `app/assets/stylesheets`, and we’ll make our `@font-face` declarations right inside it. (Note that I use the SASS pre-compiler; hence, the additional `.scss` extension.) 
 
 Since I downloaded my fonts from Font Squirrel, I already have my font declarations pre-written for me. All I need to do is open the Webfont Kit I downloaded earlier, find the `stylesheet.css` file, and copy and paste the code into the `font.css.scss` file I just created above. If you didn’t use Font Squirrel, you’ll need to write the declarations yourself. You can follow the examples at [fontspring.com](https://www.fontspring.com/blog/the-new-bulletproof-font-face-syntax) for guidance.
 

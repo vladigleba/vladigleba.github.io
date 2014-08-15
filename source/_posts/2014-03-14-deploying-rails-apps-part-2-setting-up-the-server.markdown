@@ -148,7 +148,7 @@ You may be familiar with another Ruby version manager called [RVM](https://rvm.i
 
 rbenv will suite you well if you’re starting out; otherwise, install whatever best meets your needs. By the way, it’s worth mentioning that since rbenv is incompatible with RVM, you won’t be able to run them side by side.
 
-Alright, we can install rbenv like so:
+All right, we can install rbenv like so:
 
 ``` bash
 sudo curl -L https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash

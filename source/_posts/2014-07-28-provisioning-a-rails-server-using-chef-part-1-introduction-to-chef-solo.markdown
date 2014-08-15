@@ -99,7 +99,7 @@ We won't be using data bags, environments, or roles with Chef Solo, so these dir
 
 ## Creating Our Own Cookbook
 
-Alright, with the terms clarified, we're now ready to create our own cookbook. Go ahead and run the following inside the `/chef` directory we created above (replace "phindee" with the name of your app):
+All right, with the terms clarified, we're now ready to create our own cookbook. Go ahead and run the following inside the `/chef` directory we created above (replace "phindee" with the name of your app):
 
 ``` bash
 knife cookbook create phindee -o site-cookbooks

@@ -73,7 +73,7 @@ This creates a class called `SearchSuggestion` with a class method called `seed(
 
 ## Code Walk-Through
 
-Alright, now let’s go over the code. Phindee has a model called `Place` for storing all the places that have a happy hour, and I’m simply looping over each record stored in it. The reason why I’m doing `Place.find_each` instead of `Place.all.each` is the `find_each()` method works in batches of 1000. This means that if I have thousands of records in my database, `find_each()` will load into memory only 1000 at a time, instead of loading them all at once and possibly overwhelming the server, which is the case with `Place.all.each`.
+All right, now let’s go over the code. Phindee has a model called `Place` for storing all the places that have a happy hour, and I’m simply looping over each record stored in it. The reason why I’m doing `Place.find_each` instead of `Place.all.each` is the `find_each()` method works in batches of 1000. This means that if I have thousands of records in my database, `find_each()` will load into memory only 1000 at a time, instead of loading them all at once and possibly overwhelming the server, which is the case with `Place.all.each`.
 
 For each place, I’m using the `upto()` method to loop over the place’s name n times, where n is the number of characters in the name minus 1 (you’ll see why we’re doing minus 1 later). For example, let’s say the place name is “via delizia”. Our n value would be 10 because the length of the name is 11, but minus 1 brings it down to 10, so we would iterate over the name 10 times.
 
@@ -281,5 +281,5 @@ end
 
 If you’re new to Capistrano, feel free to read through an [earlier post]({{ root_url }}/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/) I wrote, which explains what it is and how you can use it. Or if you’re new to deployment in general, you’re welcome to go through my [6-part series]({{ root_url }}/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/), which covers everything from setting up and securing a server to configuring Nginx, Unicorn, and Capistrano.
 
-Alright, that's all I have. Stay hungry. Stay foolish.
+All right, that's all I have. Stay hungry. Stay foolish.
 

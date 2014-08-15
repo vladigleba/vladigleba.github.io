@@ -23,7 +23,7 @@ Besides, MapBox is actually open source, and given a choice, I’ll go with open
 
 # Converting Addresses into Coordinates
 
-Alright, enough of that. Let's start coding.
+All right, enough of that. Let's start coding.
 
 First thing we'll do is convert our addresses into coordinates, which MapBox needs in order to place our markers (pin-drops) on the map. We can do this manually by using the [MapBox Geocoding API](https://www.mapbox.com/developers/api/geocoding/), or we could automate it with the [Geocoder](http://www.rubygeocoder.com/) gem. Because there is a [Railscasts episode](http://railscasts.com/episodes/273-geocoder) covering the gem, I won’t go into any more detail here.
 
@@ -76,7 +76,7 @@ Now that we have the building blocks in place, we’re ready to start working wi
 
 ## Adding the Library Code
 
-Alright, first thing we’ll do is include the MapBox JavaScript API, along with the accompanying CSS code; this will go inside our main application layout file.
+All right, first thing we’ll do is include the MapBox JavaScript API, along with the accompanying CSS code; this will go inside our main application layout file.
 
 ``` html application.html.erb
 <script src="http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.js"></script>
