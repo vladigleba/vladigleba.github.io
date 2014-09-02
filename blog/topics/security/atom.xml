@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Security | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/security/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-08-14T21:29:30-07:00</updated>
+  <updated>2014-09-02T15:00:44-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -196,7 +196,7 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub -p 23523 bob@xxx.xxx.xxx.xxx
 
 <p>Of course, this doesn’t mean our server is “unhackable” by any means, but it is significantly more secure than it was before. You can now sleep more peacefully knowing that any future hackers have at least some of their work cut out for them.</p>
 
-<p>In <a href="{{%20root_url%20}}/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/">part 2</a>, we’ll start setting up the server by installing the technology stack behind Phindee. If you’d like to be notified when its out, feel free to <a href="http://www.feedblitz.com/f/?sub=927939">subscribe</a>, and you&rsquo;ll get the complete post delivered right to your inbox as soon as it&rsquo;s released.</p>
+<p>In <a href="/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/">part 2</a>, we’ll start setting up the server by installing the technology stack behind Phindee. If you’d like to be notified when its out, feel free to <a href="http://www.feedblitz.com/f/?sub=927939">subscribe</a>, and you&rsquo;ll get the complete post delivered right to your inbox as soon as it&rsquo;s released.</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Design | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/design/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-08-14T21:29:30-07:00</updated>
+  <updated>2014-09-02T15:00:44-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -89,7 +89,7 @@ p { font-family: 'action_manregular'; }
 
 <h1>Designed Using a Modular Scale</h1>
 
-<p>Before building Readify, I spent some time studying the designs and the underlying code of the various blogs I follow. I ended up learning <a href="{{%20root_url%20}}/blog/2013/10/22/ways-to-define-a-grid-system/">quite a bit</a>. I read many articles, but the one that resonated with me the most was A List Apart&rsquo;s <cite><a href="http://alistapart.com/articles/more-meaningful-typography/">More Meaningful Typography</a></cite> article; it explained how to use values from a modular scale to build meaningful compositions and achieve visual harmony. I definitely wanted to use this technique with Readify.</p>
+<p>Before building Readify, I spent some time studying the designs and the underlying code of the various blogs I follow. I ended up learning <a href="/blog/2013/10/22/ways-to-define-a-grid-system/">quite a bit</a>. I read many articles, but the one that resonated with me the most was A List Apart&rsquo;s <cite><a href="http://alistapart.com/articles/more-meaningful-typography/">More Meaningful Typography</a></cite> article; it explained how to use values from a modular scale to build meaningful compositions and achieve visual harmony. I definitely wanted to use this technique with Readify.</p>
 
 <p>My modular scale was based on the <a href="http://en.wikipedia.org/wiki/Golden_ratio">golden ratio</a> (1:1.618) and the numbers 20 and 62. I picked the golden ratio because I had just read about it a week earlier when learning about grid systems and was impressed by its occurance in everything from music to architecture to nature. It is known to provide pleasing, visually harmonious proportions, and that&rsquo;s exactly what I wanted for Readify. With regards to picking the two other numbers, 20 was the font size in pixels at which my body text looked most readable, and 62 was the size at which the blog&rsquo;s title looked best. Not very scientific, but it worked.</p>
 
@@ -122,7 +122,7 @@ p { font-family: 'action_manregular'; }
     <link href="http://vladigleba.github.io/blog/2013/10/22/ways-to-define-a-grid-system/"/>
     <updated>2013-10-22T17:32:00-07:00</updated>
     <id>http://vladigleba.github.io/blog/2013/10/22/ways-to-define-a-grid-system</id>
-    <content type="html"><![CDATA[<p>I <a href="{{%20root_url%20}}/blog/2013/10/15/im-diving-in/">started blogging</a> last week. And ever since publishing that first post, I&rsquo;ve been trying to find a suitable design for my blog. I looked at many different blog designs for inspiration, and one of my favorites was Whitney Hess' <cite><a href="http://whitneyhess.com/blog/">Pleasure and Pain</a></cite> blog. I don&rsquo;t know why, but the design just resonates with me. It feels right.</p>
+    <content type="html"><![CDATA[<p>I <a href="/blog/2013/10/15/im-diving-in/">started blogging</a> last week. And ever since publishing that first post, I&rsquo;ve been trying to find a suitable design for my blog. I looked at many different blog designs for inspiration, and one of my favorites was Whitney Hess' <cite><a href="http://whitneyhess.com/blog/">Pleasure and Pain</a></cite> blog. I don&rsquo;t know why, but the design just resonates with me. It feels right.</p>
 
 <!-- more -->
 

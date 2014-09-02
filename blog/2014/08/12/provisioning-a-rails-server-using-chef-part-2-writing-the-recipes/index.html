@@ -759,11 +759,13 @@
 <span class='line-number'>19</span>
 <span class='line-number'>20</span>
 <span class='line-number'>21</span>
+<span class='line-number'>22</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">package</span> <span class="s2">&quot;nginx&quot;</span>
 </span><span class='line'>
 </span><span class='line'><span class="c1"># remove default nginx config</span>
+</span><span class='line'><span class="n">default_path</span> <span class="o">=</span> <span class="s2">&quot;/etc/nginx/sites-enabled/default&quot;</span>
 </span><span class='line'><span class="n">execute</span> <span class="s2">&quot;rm -f </span><span class="si">#{</span><span class="n">default_path</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">do</span>
-</span><span class='line'>  <span class="n">only_if</span> <span class="p">{</span> <span class="no">File</span><span class="o">.</span><span class="n">exists?</span><span class="p">(</span><span class="s2">&quot;/etc/nginx/sites-enabled/default&quot;</span><span class="p">)</span> <span class="p">}</span>
+</span><span class='line'>  <span class="n">only_if</span> <span class="p">{</span> <span class="no">File</span><span class="o">.</span><span class="n">exists?</span><span class="p">(</span><span class="n">default_path</span><span class="p">)</span> <span class="p">}</span>
 </span><span class='line'><span class="k">end</span>
 </span><span class='line'>
 </span><span class='line'><span class="c1"># start nginx</span>
@@ -1131,7 +1133,7 @@
         <a class="basic-alignment left" href="/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/" title="Previous Post: Provisioning a Rails Server Using Chef, Part 1: Introduction to Chef Solo">&laquo; Provisioning a Rails Server Using Chef, Part 1: Introduction to Chef Solo</a>
       
       
-        <a class="basic-alignment right" href="/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/" title="Next Post: Provisioning a Rails Server Using Chef, Part 3: Tying It All Together">Provisioning a Rails Server Using Chef, Part 3: Tying It All Together &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2014/09/02/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/" title="Next Post: Provisioning a Rails Server Using Chef, Part 3: Tying It All Together">Provisioning a Rails Server Using Chef, Part 3: Tying It All Together &raquo;</a>
       
     </p>
   </footer>
@@ -1153,7 +1155,7 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/">Provisioning a Rails Server Using Chef, Part 3: Tying It All Together</a>
+        <a href="/blog/2014/09/02/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/">Provisioning a Rails Server Using Chef, Part 3: Tying It All Together</a>
       </li>
     
       <li class="post">

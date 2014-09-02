@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-08-14T21:29:14-07:00</updated>
+  <updated>2014-09-02T15:00:44-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Provisioning a Rails Server Using Chef, Part 3: Tying It All Together]]></title>
-    <link href="http://vladigleba.github.io/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/"/>
-    <updated>2014-08-13T15:02:00-07:00</updated>
-    <id>http://vladigleba.github.io/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together</id>
+    <link href="http://vladigleba.github.io/blog/2014/09/02/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/"/>
+    <updated>2014-09-02T14:02:00-07:00</updated>
+    <id>http://vladigleba.github.io/blog/2014/09/02/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together</id>
     <content type="html"><![CDATA[<p>We installed Chef Solo in <a href="http://vladigleba.github.io/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/">part 1</a>, we wrote some recipes in <a href="http://vladigleba.github.io/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/">part 2</a>, and now we&rsquo;ll be tying everything together in part 3. When we&rsquo;re done, we&rsquo;ll not only have a fully provisioned server running your Rails app, but we&rsquo;ll also have an automated way of repeating this process whenever such a need arises in the future.</p>
 
 <!-- more -->
@@ -989,11 +989,13 @@
 <span class='line-number'>19</span>
 <span class='line-number'>20</span>
 <span class='line-number'>21</span>
+<span class='line-number'>22</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">package</span> <span class="s2">&quot;nginx&quot;</span>
 </span><span class='line'>
 </span><span class='line'><span class="c1"># remove default nginx config</span>
+</span><span class='line'><span class="n">default_path</span> <span class="o">=</span> <span class="s2">&quot;/etc/nginx/sites-enabled/default&quot;</span>
 </span><span class='line'><span class="n">execute</span> <span class="s2">&quot;rm -f </span><span class="si">#{</span><span class="n">default_path</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">do</span>
-</span><span class='line'>  <span class="n">only_if</span> <span class="p">{</span> <span class="no">File</span><span class="o">.</span><span class="n">exists?</span><span class="p">(</span><span class="s2">&quot;/etc/nginx/sites-enabled/default&quot;</span><span class="p">)</span> <span class="p">}</span>
+</span><span class='line'>  <span class="n">only_if</span> <span class="p">{</span> <span class="no">File</span><span class="o">.</span><span class="n">exists?</span><span class="p">(</span><span class="n">default_path</span><span class="p">)</span> <span class="p">}</span>
 </span><span class='line'><span class="k">end</span>
 </span><span class='line'>
 </span><span class='line'><span class="c1"># start nginx</span>
@@ -1455,7 +1457,7 @@
 
 <h2>Creating Our Own Cookbook</h2>
 
-<p>Alright, with the terms clarified, we&rsquo;re now ready to create our own cookbook. Go ahead and run the following inside the <code>/chef</code> directory we created above (replace &ldquo;phindee&rdquo; with the name of your app):</p>
+<p>All right, with the terms clarified, we&rsquo;re now ready to create our own cookbook. Go ahead and run the following inside the <code>/chef</code> directory we created above (replace &ldquo;phindee&rdquo; with the name of your app):</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>knife cookbook create phindee -o site-cookbooks

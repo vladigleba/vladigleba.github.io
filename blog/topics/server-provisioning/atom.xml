@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Server Provisioning | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/server-provisioning/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-08-14T21:29:30-07:00</updated>
+  <updated>2014-09-02T15:00:44-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[Provisioning a Rails Server Using Chef, Part 3: Tying It All Together]]></title>
-    <link href="http://vladigleba.github.io/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/"/>
-    <updated>2014-08-13T15:02:00-07:00</updated>
-    <id>http://vladigleba.github.io/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together</id>
-    <content type="html"><![CDATA[<p>We installed Chef Solo in <a href="{{%20root_url%20}}/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/">part 1</a>, we wrote some recipes in <a href="{{%20root_url%20}}/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/">part 2</a>, and now we&rsquo;ll be tying everything together in part 3. When we&rsquo;re done, we&rsquo;ll not only have a fully provisioned server running your Rails app, but we&rsquo;ll also have an automated way of repeating this process whenever such a need arises in the future.</p>
+    <link href="http://vladigleba.github.io/blog/2014/09/02/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/"/>
+    <updated>2014-09-02T14:02:00-07:00</updated>
+    <id>http://vladigleba.github.io/blog/2014/09/02/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together</id>
+    <content type="html"><![CDATA[<p>We installed Chef Solo in <a href="/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/">part 1</a>, we wrote some recipes in <a href="/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/">part 2</a>, and now we&rsquo;ll be tying everything together in part 3. When we&rsquo;re done, we&rsquo;ll not only have a fully provisioned server running your Rails app, but we&rsquo;ll also have an automated way of repeating this process whenever such a need arises in the future.</p>
 
 <!-- more -->
 
@@ -220,7 +220,7 @@ set :rails_env, :production</p>
 <p>server &ldquo;#{fetch(:deploy_user)}@123.123.123.123:12345&rdquo;, roles: %w{web app db}, primary: true
 ```</p>
 
-<p>I won&rsquo;t be explaining the Capistrano code because that&rsquo;s already covered in parts <a href="{{%20root_url%20}}/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/">5</a> and <a href="{{%20root_url%20}}/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/">6</a> of my <a href="{{%20root_url%20}}/blog/topics/deployment-series/">&ldquo;Deploying Rails Apps&rdquo; series</a>, so be sure to check that out if you&rsquo;re new to Capistrano or just need some clarification. (It&rsquo;s worth noting that Chef actually has a <a href="http://docs.getchef.com/chef/resources.html#deploy"><code>deploy</code></a> resource that&rsquo;s modeled after Capistrano, but I didn&rsquo;t have time to learn how to implement my existing Capistrano recipes with it. If you&rsquo;re interested though, feel free to give it a try.)</p>
+<p>I won&rsquo;t be explaining the Capistrano code because that&rsquo;s already covered in parts <a href="/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/">5</a> and <a href="/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/">6</a> of my <a href="/blog/topics/deployment-series/">&ldquo;Deploying Rails Apps&rdquo; series</a>, so be sure to check that out if you&rsquo;re new to Capistrano or just need some clarification. (It&rsquo;s worth noting that Chef actually has a <a href="http://docs.getchef.com/chef/resources.html#deploy"><code>deploy</code></a> resource that&rsquo;s modeled after Capistrano, but I didn&rsquo;t have time to learn how to implement my existing Capistrano recipes with it. If you&rsquo;re interested though, feel free to give it a try.)</p>
 
 <p>I hope this gave you a taste of what Chef can do, although I only scratched the service of what&rsquo;s possible. Chef is a complex tool that can be used to manage entire server infrastructures, and although it might be overkill for managing a single server, it&rsquo;s still a useful tool to learn if you spend a significant amount of time doing server provisioning. It&rsquo;s definitely an improvement over shell scripts because it keeps your code readable and organized. Ultimately though, each tool has its place, and it&rsquo;s up to you to decide what best fits your particular need.</p>
 
@@ -233,7 +233,7 @@ set :rails_env, :production</p>
     <link href="http://vladigleba.github.io/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/"/>
     <updated>2014-08-12T09:29:00-07:00</updated>
     <id>http://vladigleba.github.io/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes</id>
-    <content type="html"><![CDATA[<p>In <a href="{{%20root_url%20}}/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/">part 1</a>, we learned about Chef Solo and used it to create a standard Chef directory structure, along with our own cookbook. Now it&rsquo;s time to start writing the recipes we will run to provision our Rails server and install Node.js, PostgreSQL, rbenv, Ruby, Redis, and Nginx.</p>
+    <content type="html"><![CDATA[<p>In <a href="/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/">part 1</a>, we learned about Chef Solo and used it to create a standard Chef directory structure, along with our own cookbook. Now it&rsquo;s time to start writing the recipes we will run to provision our Rails server and install Node.js, PostgreSQL, rbenv, Ruby, Redis, and Nginx.</p>
 
 <!-- more -->
 
@@ -302,7 +302,7 @@ openssl passwd -1 "theplaintextpassword"
 
 <h1>Writing Recipes</h1>
 
-<p>Now that the attributes are defined, we&rsquo;re ready to start writing the recipes themselves. These recipes do the exact same server setup as the one covered in the <a href="{{%20root_url%20}}/blog/topics/deployment-series/">&ldquo;Deploying Rails Apps&rdquo; series</a>, so I won&rsquo;t be explaining the whys behind the things I do here since that&rsquo;s already covered in the series itself. If you&rsquo;ve never provisioned a server from scratch before, it&rsquo;s best to read that series first before continuing.</p>
+<p>Now that the attributes are defined, we&rsquo;re ready to start writing the recipes themselves. These recipes do the exact same server setup as the one covered in the <a href="/blog/topics/deployment-series/">&ldquo;Deploying Rails Apps&rdquo; series</a>, so I won&rsquo;t be explaining the whys behind the things I do here since that&rsquo;s already covered in the series itself. If you&rsquo;ve never provisioned a server from scratch before, it&rsquo;s best to read that series first before continuing.</p>
 
 <h2>The First One</h2>
 
@@ -700,8 +700,9 @@ package &ldquo;nginx&rdquo;</p>
 
 <h1>remove default nginx config</h1>
 
-<p>execute &ldquo;rm -f #{default_path}&rdquo; do
-  only_if { File.exists?(&ldquo;/etc/nginx/sites-enabled/default&rdquo;) }
+<p>default_path = &ldquo;/etc/nginx/sites-enabled/default&rdquo;
+execute &ldquo;rm -f #{default_path}&rdquo; do
+  only_if { File.exists?(default_path) }
 end</p>
 
 <h1>start nginx</h1>
@@ -924,7 +925,7 @@ reopen-logs)
 esac
 ```</p>
 
-<p>And with that, our recipes are complete! We&rsquo;re now ready to use them to provision our node, and that&rsquo;s exactly what we&rsquo;ll cover in <a href="{{%20root_url%20}}/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/">part 3</a>.</p>
+<p>And with that, our recipes are complete! We&rsquo;re now ready to use them to provision our node, and that&rsquo;s exactly what we&rsquo;ll cover in <a href="/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/">part 3</a>.</p>
 ]]></content>
   </entry>
   
@@ -1051,7 +1052,7 @@ knife cookbook create phindee -o site-cookbooks
 
 <p>The rest of the directories are for advanced Chef setups, and I won&rsquo;t be explaining them here.</p>
 
-<p>With our cookbook created, we&rsquo;re now ready to start writing the recipes that will provision our Rails server, which I&rsquo;ll cover in <a href="{{%20root_url%20}}/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/">part 2</a>.</p>
+<p>With our cookbook created, we&rsquo;re now ready to start writing the recipes that will provision our Rails server, which I&rsquo;ll cover in <a href="/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/">part 2</a>.</p>
 ]]></content>
   </entry>
   
@@ -1060,7 +1061,7 @@ knife cookbook create phindee -o site-cookbooks
     <link href="http://vladigleba.github.io/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/"/>
     <updated>2014-03-14T09:45:00-07:00</updated>
     <id>http://vladigleba.github.io/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server</id>
-    <content type="html"><![CDATA[<p>In <a href="{{%20root_url%20}}/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">part 1</a>, I talked about choosing a VPS provider, creating a new Ubuntu instance, and configuring it to be more secure. Now, in part 2, I&rsquo;ll talk about installing the technology stack behind <a href="http://phindee.com/">Phindee</a>: Node.js, Nginx, PostgreSQL, rbenv, Ruby, and Bundler.</p>
+    <content type="html"><![CDATA[<p>In <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">part 1</a>, I talked about choosing a VPS provider, creating a new Ubuntu instance, and configuring it to be more secure. Now, in part 2, I&rsquo;ll talk about installing the technology stack behind <a href="http://phindee.com/">Phindee</a>: Node.js, Nginx, PostgreSQL, rbenv, Ruby, and Bundler.</p>
 
 <!-- more -->
 
@@ -1284,7 +1285,7 @@ gem: --no-rdoc --no-ri
 
 <p>The flags will then be included automatically the next time you install new gems.</p>
 
-<p>And with that, our server setup is now complete! Having installed Node.js, Nginx, PostgreSQL, and rbenv, we’re now ready to start configuring Nginx and Unicorn, which I’ll cover in the <a href="{{%20root_url%20}}/blog/2014/03/21/deploying-rails-apps-part-3-configuring-unicorn/">next post</a>. If you want to be notified when it’s out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and you’ll have the complete post delivered to your inbox as soon as it’s released!</p>
+<p>And with that, our server setup is now complete! Having installed Node.js, Nginx, PostgreSQL, and rbenv, we’re now ready to start configuring Nginx and Unicorn, which I’ll cover in the <a href="/blog/2014/03/21/deploying-rails-apps-part-3-configuring-unicorn/">next post</a>. If you want to be notified when it’s out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and you’ll have the complete post delivered to your inbox as soon as it’s released!</p>
 ]]></content>
   </entry>
   

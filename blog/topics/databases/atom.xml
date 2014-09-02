@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Databases | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/databases/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-08-14T21:29:30-07:00</updated>
+  <updated>2014-09-02T15:00:44-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -543,7 +543,7 @@ end
 end
 ```</p>
 
-<p>If you’re new to Capistrano, feel free to read through an <a href="{{%20root_url%20}}/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/">earlier post</a> I wrote, which explains what it is and how you can use it. Or if you’re new to deployment in general, you’re welcome to go through my <a href="{{%20root_url%20}}/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">6-part series</a>, which covers everything from setting up and securing a server to configuring Nginx, Unicorn, and Capistrano.</p>
+<p>If you’re new to Capistrano, feel free to read through an <a href="/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/">earlier post</a> I wrote, which explains what it is and how you can use it. Or if you’re new to deployment in general, you’re welcome to go through my <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">6-part series</a>, which covers everything from setting up and securing a server to configuring Nginx, Unicorn, and Capistrano.</p>
 
 <p>All right, that&rsquo;s all I have. Stay hungry. Stay foolish.</p>
 ]]></content>
