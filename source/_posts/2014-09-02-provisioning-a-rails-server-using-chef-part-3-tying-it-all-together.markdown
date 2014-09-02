@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Provisioning a Rails Server Using Chef, Part 3: Tying It All Together"
-date: 2014-08-13 15:02
+date: 2014-09-02 14:02
 comments: true
 categories: [Server Provisioning, Deployment, Phindee, Chef Series]
 description: Learn how to use Chef Solo to provision your server.
@@ -37,7 +37,7 @@ Because Chef executes the run list in the exact order it's specified, it's impor
 
 By the way, if you ever find yourself not needing a particular recipe to run, all you need to do is remove that recipe from the run list, and Chef won't run it, but do be careful about removing recipes that other recipes depend on because that will cause issues.
 
-# It's Show Time
+# Show Time
 
 With our run list defined, we're now ready to start the provisioning process. Because we'll need to use quite a number of commands to get everything provisioned, it's best to automate this by creating a shell script. I created a file called `setup_vps.sh` inside my app's `/config` directory for this purpose:
 
@@ -152,7 +152,7 @@ namespace :deploy do
 end
 ```
 
-Below is my `deploy.rb` file:
+Below are my `deploy.rb` and `production.rb` files:
 
 ``` ruby deploy.rb
 lock '3.2.1'
@@ -174,8 +174,6 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public
 
 set :keep_releases, 5
 ```
-
-And here's my `deploy/production.rb` file:
 
 ``` ruby production.rb
 set :stage, :production

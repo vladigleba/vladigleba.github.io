@@ -402,8 +402,9 @@ The last thing left to install is Nginx, and here's the code that will go in a n
 package "nginx"
 
 # remove default nginx config
+default_path = "/etc/nginx/sites-enabled/default"
 execute "rm -f #{default_path}" do
-  only_if { File.exists?("/etc/nginx/sites-enabled/default") }
+  only_if { File.exists?(default_path) }
 end
 
 # start nginx
