@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Provisioning a Rails Server Using Chef, Part 3: Tying It All Together - Hungry and Foolish</title>
+  <meta name="author" content="Vladi Gleba">
+
+  
+  <meta name="description" content="Learn how to use Chef Solo to provision your server.">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://vladigleba.github.io/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Hungry and Foolish" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+
+  
+
+</head>
+
+<body   class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Hungry and Foolish</a></h1>
+  
+    <h2>Utilizing the power of the web for good</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation">  
+  
+    <form method="get" action="/search.html">
+      <fieldset role="search">
+        <input class="search" name="query" type="text" placeholder="Search..." x-webkit-speech />
+      </fieldset>
+    </form>
+  
+  
+<ul class="main-navigation">
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/blog/topics/projects/">Projects</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a title="subscribe via RSS" rel="subscribe-rss" href="http://www.feedblitz.com/f/?sub=927939">Subscribe</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Provisioning a Rails Server Using Chef, Part 3: Tying It All Together</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-13T15:02:00-07:00" pubdate data-updated="true">Aug 13<span>th</span>, 2014</time>
+        
+
+<span class="categories">
+  published in 
+  
+    <a class='category' href='/blog/topics/chef-series/'>Chef Series</a>, <a class='category' href='/blog/topics/deployment/'>Deployment</a>, <a class='category' href='/blog/topics/phindee/'>Phindee</a>, <a class='category' href='/blog/topics/server-provisioning/'>Server Provisioning</a>
+  
+</span>
+
+
+        
+          <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>We installed Chef Solo in <a href="/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/">part 1</a>, we wrote some recipes in <a href="/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/">part 2</a>, and now we&rsquo;ll be tying everything together in part 3. When we&rsquo;re done, we&rsquo;ll not only have a fully provisioned server running your Rails app, but we&rsquo;ll also have an automated way of repeating this process whenever such a need arises in the future.</p>
+
+<!-- more -->
+
+
+<h1>Some Groundwork</h1>
+
+<p>Before we can run the recipes from part 2, we need to specify exactly which recipes we want to run and in what order. Chef has something called a run list exactly for this purpose, and we store it in the JSON file located in the <code>/nodes</code> directory (I usually add it to the top of the file, before all the node-specific attributes, to make it easy to spot):</p>
+
+<figure class='code'><figcaption><span>123.123.123.123.json</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='json'><span class='line'><span class="p">{</span>
+</span><span class='line'>  <span class="nt">&quot;run_list&quot;</span><span class="p">:</span> <span class="p">[</span>
+</span><span class='line'>    <span class="s2">&quot;recipe[phindee]&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="s2">&quot;recipe[phindee::users]&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="s2">&quot;recipe[phindee::ssh]&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="s2">&quot;recipe[phindee::nodejs]&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="s2">&quot;recipe[phindee::postgres]&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="s2">&quot;recipe[phindee::rbenv]&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="s2">&quot;recipe[phindee::redis]&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="s2">&quot;recipe[phindee::nginx]&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="s2">&quot;recipe[phindee::app]&quot;</span>
+</span><span class='line'>  <span class="p">],</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="err">.</span> <span class="err">.</span> <span class="err">.</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Because Chef executes the run list in the exact order it&rsquo;s specified, it&rsquo;s important to list the recipes that other recipes will depend on first. Some of our recipes, for example, use the user that&rsquo;s created in <code>users.rb</code>, so that&rsquo;s why we place that recipe near the top, but recipes that don&rsquo;t depend on any other recipes can be placed anywhere you want. (Note that when referencing the <code>default.rb</code> recipe, it&rsquo;s enough to just specify the name of the cookbook it&rsquo;s located in, but in order to run the other recipes, it&rsquo;s necessary to specify the cookbook, along with the recipe&rsquo;s file name.)</p>
+
+<p>By the way, if you ever find yourself not needing a particular recipe to run, all you need to do is remove that recipe from the run list, and Chef won&rsquo;t run it, but do be careful about removing recipes that other recipes depend on because that will cause issues.</p>
+
+<h1>It&rsquo;s Show Time</h1>
+
+<p>With our run list defined, we&rsquo;re now ready to start the provisioning process. Because we&rsquo;ll need to use quite a number of commands to get everything provisioned, it&rsquo;s best to automate this by creating a shell script. I created a file called <code>setup_vps.sh</code> inside my app&rsquo;s <code>/config</code> directory for this purpose:</p>
+
+<figure class='code'><figcaption><span>setup_vps.sh</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#!/bin/sh</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># check for correct number of arguments</span>
+</span><span class='line'><span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-ne 3 <span class="o">]</span>; <span class="k">then</span>
+</span><span class='line'><span class="k">  </span><span class="nb">echo</span> <span class="s2">&quot;Usage: $0 &lt;user&gt; &lt;ip&gt; &lt;port&gt;&quot;</span>
+</span><span class='line'>  <span class="nb">exit </span>1
+</span><span class='line'><span class="k">fi</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># set variables</span>
+</span><span class='line'><span class="nv">USER</span><span class="o">=</span><span class="nv">$1</span>
+</span><span class='line'><span class="nv">IP</span><span class="o">=</span><span class="nv">$2</span>
+</span><span class='line'><span class="nv">PORT</span><span class="o">=</span><span class="nv">$3</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># upload key for root</span>
+</span><span class='line'>ssh-copy-id -i ~/.ssh/id_rsa.pub root@<span class="nv">$IP</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># install chef</span>
+</span><span class='line'><span class="nb">cd </span>config/chef <span class="o">&amp;&amp;</span> knife solo prepare root@<span class="nv">$IP</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># execute the run list</span>
+</span><span class='line'>knife solo cook root@<span class="nv">$IP</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># upload key for user</span>
+</span><span class='line'>ssh-copy-id -i ~/.ssh/id_rsa.pub -p <span class="nv">$PORT</span> <span class="nv">$USER</span>@<span class="nv">$IP</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># upload app</span>
+</span><span class='line'><span class="nb">cd</span> ../.. <span class="o">&amp;&amp;</span> cap production setup:all
+</span><span class='line'>
+</span><span class='line'><span class="c"># restart nginx</span>
+</span><span class='line'>ssh -p <span class="nv">$PORT</span> -t <span class="nv">$USER</span>@<span class="nv">$IP</span> <span class="s1">&#39;sudo service nginx restart&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The first line uploads your public key to the node (server) you&rsquo;re about to provision. (If you don&rsquo;t do this, Chef Solo will ask you to type your password for every command it runs.) The next line installs Chef on our node using the <code>knife solo prepare</code> command, while the line after that uses <code>knife solo cook</code> to execute our run list. When it finishes, our node will be fully provisioned.</p>
+
+<p>The remaining three lines run the Capistrano recipes to deploy my app (if you&rsquo;re not using Capistrano for deployment, feel free to remove them). The third to last line uploads the public key for the Chef-created user (so Capistrano can log in without a password), the next line runs the Capistrano recipes, and the last line restarts Nginx (so the uploaded Rails app is loaded in).</p>
+
+<p>Once you run <code>chmod +x setup_vps.sh</code> to make the file an executable, you can <code>cd</code> into the directory containing the script and run it with</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>./setup_vps.sh bob 123.123.123.123 12345
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>where <code>bob</code> is the Chef-created user, <code>123.123.123.123</code> is the IP address of the node you just provisioned, and <code>12345</code> is its port. When the script finishes executing, you&rsquo;ll have a fully provisioned server running your Rails app.</p>
+
+<h1>Capistrano Code</h1>
+
+<p>In the interest of completeness, here&rsquo;s the Capistrano code I use to deploy my app. First up is my <code>setup.rake</code> file containing the <code>all</code> task that I&rsquo;m referencing in <code>setup_vps.sh</code>:</p>
+
+<figure class='code'><figcaption><span>setup.rake</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">namespace</span> <span class="ss">:setup</span> <span class="k">do</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">desc</span> <span class="s2">&quot;Runs all tasks.&quot;</span>
+</span><span class='line'>  <span class="n">task</span> <span class="ss">all</span><span class="p">:</span> <span class="o">[</span><span class="ss">:deploy</span><span class="p">,</span> <span class="ss">:seed_postgres</span><span class="p">,</span> <span class="ss">:seed_redis</span><span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">desc</span> <span class="s2">&quot;Seed the main database.&quot;</span>
+</span><span class='line'>  <span class="n">task</span> <span class="ss">:seed_postgres</span> <span class="k">do</span>
+</span><span class='line'>    <span class="n">on</span> <span class="n">roles</span><span class="p">(</span><span class="ss">:app</span><span class="p">)</span> <span class="k">do</span>
+</span><span class='line'>      <span class="n">within</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">current_path</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">do</span>
+</span><span class='line'>        <span class="n">with</span> <span class="n">rails_env</span><span class="p">:</span> <span class="ss">:production</span> <span class="k">do</span>
+</span><span class='line'>          <span class="n">execute</span> <span class="ss">:rake</span><span class="p">,</span> <span class="s2">&quot;db:seed&quot;</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">desc</span> <span class="s1">&#39;Seed the redis database (search suggestions)&#39;</span>
+</span><span class='line'>  <span class="n">task</span> <span class="ss">:seed_redis</span> <span class="k">do</span>
+</span><span class='line'>    <span class="n">on</span> <span class="n">roles</span><span class="p">(</span><span class="ss">:app</span><span class="p">)</span> <span class="k">do</span>
+</span><span class='line'>      <span class="n">within</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">current_path</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">do</span>
+</span><span class='line'>        <span class="n">with</span> <span class="n">rails_env</span><span class="p">:</span> <span class="ss">:production</span> <span class="k">do</span>
+</span><span class='line'>          <span class="n">execute</span> <span class="ss">:rake</span><span class="p">,</span> <span class="s2">&quot;search_suggestions:index&quot;</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">after</span> <span class="s2">&quot;deploy:published&quot;</span><span class="p">,</span> <span class="s2">&quot;deploy:start&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And here&rsquo;s my <code>deploy.rake</code> file containing the <code>start</code> task that I&rsquo;m calling in <code>setup.rake</code>:</p>
+
+<figure class='code'><figcaption><span>deploy.rake</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">namespace</span> <span class="ss">:deploy</span> <span class="k">do</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">desc</span> <span class="s2">&quot;Makes sure local git is in sync with remote.&quot;</span>
+</span><span class='line'>  <span class="n">task</span> <span class="ss">:check_revision</span> <span class="k">do</span>
+</span><span class='line'>    <span class="k">unless</span> <span class="sb">`git rev-parse HEAD`</span> <span class="o">==</span> <span class="sb">`git rev-parse origin/master`</span>
+</span><span class='line'>      <span class="nb">puts</span> <span class="s2">&quot;WARNING: HEAD is not the same as origin/master&quot;</span>
+</span><span class='line'>      <span class="nb">puts</span> <span class="s2">&quot;Run `git push` to sync changes.&quot;</span>
+</span><span class='line'>      <span class="nb">exit</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="sx">%w[start stop restart]</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">command</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">desc</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">command</span><span class="si">}</span><span class="s2"> Unicorn server.&quot;</span>
+</span><span class='line'>    <span class="n">task</span> <span class="n">command</span> <span class="k">do</span>
+</span><span class='line'>      <span class="n">on</span> <span class="n">roles</span><span class="p">(</span><span class="ss">:app</span><span class="p">)</span> <span class="k">do</span>
+</span><span class='line'>        <span class="n">execute</span> <span class="s2">&quot;/etc/init.d/unicorn_</span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:application</span><span class="p">)</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">command</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">before</span> <span class="ss">:deploy</span><span class="p">,</span> <span class="s2">&quot;deploy:check_revision&quot;</span>
+</span><span class='line'>  <span class="n">after</span> <span class="ss">:deploy</span><span class="p">,</span> <span class="s2">&quot;deploy:restart&quot;</span>
+</span><span class='line'>  <span class="n">after</span> <span class="ss">:rollback</span><span class="p">,</span> <span class="s2">&quot;deploy:restart&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Below is my <code>deploy.rb</code> file:</p>
+
+<figure class='code'><figcaption><span>deploy.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">lock</span> <span class="s1">&#39;3.2.1&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">set</span> <span class="ss">:application</span><span class="p">,</span> <span class="s1">&#39;phindee&#39;</span>
+</span><span class='line'><span class="n">set</span> <span class="ss">:repo_url</span><span class="p">,</span> <span class="s1">&#39;git@github.com:vladigleba/phindee.git&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">set</span> <span class="ss">:deploy_to</span><span class="p">,</span> <span class="s2">&quot;/var/www/</span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:application</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="n">set</span> <span class="ss">:deploy_user</span><span class="p">,</span> <span class="s2">&quot;bob&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">set</span> <span class="ss">:rbenv_type</span><span class="p">,</span> <span class="ss">:user</span>
+</span><span class='line'><span class="n">set</span> <span class="ss">:rbenv_ruby</span><span class="p">,</span> <span class="s1">&#39;2.1.0&#39;</span>
+</span><span class='line'><span class="n">set</span> <span class="ss">:rbenv_prefix</span><span class="p">,</span> <span class="s2">&quot;RBENV_ROOT=</span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:rbenv_path</span><span class="p">)</span><span class="si">}</span><span class="s2"> RBENV_VERSION=</span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:rbenv_ruby</span><span class="p">)</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:rbenv_path</span><span class="p">)</span><span class="si">}</span><span class="s2">/bin/rbenv exec&quot;</span>
+</span><span class='line'><span class="n">set</span> <span class="ss">:rbenv_map_bins</span><span class="p">,</span> <span class="sx">%w{rake gem bundle ruby rails}</span>
+</span><span class='line'><span class="n">set</span> <span class="ss">:rbenv_roles</span><span class="p">,</span> <span class="ss">:all</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">set</span> <span class="ss">:linked_files</span><span class="p">,</span> <span class="sx">%w{config/database.yml config/application.yml}</span>
+</span><span class='line'><span class="n">set</span> <span class="ss">:linked_dirs</span><span class="p">,</span> <span class="sx">%w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">set</span> <span class="ss">:keep_releases</span><span class="p">,</span> <span class="mi">5</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And here&rsquo;s my <code>deploy/production.rb</code> file:</p>
+
+<figure class='code'><figcaption><span>production.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">set</span> <span class="ss">:stage</span><span class="p">,</span> <span class="ss">:production</span>
+</span><span class='line'><span class="n">set</span> <span class="ss">:rails_env</span><span class="p">,</span> <span class="ss">:production</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">server</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:deploy_user</span><span class="p">)</span><span class="si">}</span><span class="s2">@123.123.123.123:12345&quot;</span><span class="p">,</span> <span class="ss">roles</span><span class="p">:</span> <span class="sx">%w{web app db}</span><span class="p">,</span> <span class="ss">primary</span><span class="p">:</span> <span class="kp">true</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I won&rsquo;t be explaining the Capistrano code because that&rsquo;s already covered in parts <a href="/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/">5</a> and <a href="/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/">6</a> of my <a href="/blog/topics/deployment-series/">&ldquo;Deploying Rails Apps&rdquo; series</a>, so be sure to check that out if you&rsquo;re new to Capistrano or just need some clarification. (It&rsquo;s worth noting that Chef actually has a <a href="http://docs.getchef.com/chef/resources.html#deploy"><code>deploy</code></a> resource that&rsquo;s modeled after Capistrano, but I didn&rsquo;t have time to learn how to implement my existing Capistrano recipes with it. If you&rsquo;re interested though, feel free to give it a try.)</p>
+
+<p>I hope this gave you a taste of what Chef can do, although I only scratched the service of what&rsquo;s possible. Chef is a complex tool that can be used to manage entire server infrastructures, and although it might be overkill for managing a single server, it&rsquo;s still a useful tool to learn if you spend a significant amount of time doing server provisioning. It&rsquo;s definitely an improvement over shell scripts because it keeps your code readable and organized. Ultimately though, each tool has its place, and it&rsquo;s up to you to decide what best fits your particular need.</p>
+
+<p>Stay hungry. Stay foolish.</p>
+</div>
+
+
+  <footer>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/" title="Previous Post: Provisioning a Rails Server Using Chef, Part 2: Writing the Recipes">&laquo; Provisioning a Rails Server Using Chef, Part 2: Writing the Recipes</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/">Provisioning a Rails Server Using Chef, Part 3: Tying It All Together</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/">Provisioning a Rails Server Using Chef, Part 2: Writing the Recipes</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/">Provisioning a Rails Server Using Chef, Part 1: Introduction to Chef Solo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/06/30/backup-a-rails-database-with-the-backup-and-whenever-gems/">Backup a Rails Database with the Backup and Whenever Gems</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/05/30/how-to-do-autocomplete-in-rails-using-redis/">How to Do Autocomplete in Rails Using Redis</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>Copyright &copy; 2014 Vladi Gleba</p>
+<p>Produced in Portland, Oregon. Powered by <a href="http://octopress.org">Octopress</a> and <a href="https://github.com/vladigleba/readify">Readify</a>.</p>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'vladigleba';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://vladigleba.github.io/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/';
+        var disqus_url = 'http://vladigleba.github.io/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://107.170.255.153/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+
+</script>
+<noscript><p><img src="http://107.170.255.153/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</body>
+</html>

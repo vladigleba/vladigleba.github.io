@@ -187,7 +187,7 @@
 
 <h2>Code Walk-Through</h2>
 
-<p>Alright, now let’s go over the code. Phindee has a model called <code>Place</code> for storing all the places that have a happy hour, and I’m simply looping over each record stored in it. The reason why I’m doing <code>Place.find_each</code> instead of <code>Place.all.each</code> is the <code>find_each()</code> method works in batches of 1000. This means that if I have thousands of records in my database, <code>find_each()</code> will load into memory only 1000 at a time, instead of loading them all at once and possibly overwhelming the server, which is the case with <code>Place.all.each</code>.</p>
+<p>All right, now let’s go over the code. Phindee has a model called <code>Place</code> for storing all the places that have a happy hour, and I’m simply looping over each record stored in it. The reason why I’m doing <code>Place.find_each</code> instead of <code>Place.all.each</code> is the <code>find_each()</code> method works in batches of 1000. This means that if I have thousands of records in my database, <code>find_each()</code> will load into memory only 1000 at a time, instead of loading them all at once and possibly overwhelming the server, which is the case with <code>Place.all.each</code>.</p>
 
 <p>For each place, I’m using the <code>upto()</code> method to loop over the place’s name n times, where n is the number of characters in the name minus 1 (you’ll see why we’re doing minus 1 later). For example, let’s say the place name is “via delizia”. Our n value would be 10 because the length of the name is 11, but minus 1 brings it down to 10, so we would iterate over the name 10 times.</p>
 
@@ -472,7 +472,7 @@
 
 <p>If you’re new to Capistrano, feel free to read through an <a href="/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/">earlier post</a> I wrote, which explains what it is and how you can use it. Or if you’re new to deployment in general, you’re welcome to go through my <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">6-part series</a>, which covers everything from setting up and securing a server to configuring Nginx, Unicorn, and Capistrano.</p>
 
-<p>Alright, that&rsquo;s all I have. Stay hungry. Stay foolish.</p>
+<p>All right, that&rsquo;s all I have. Stay hungry. Stay foolish.</p>
 </div>
 
 
@@ -512,6 +512,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/">Provisioning a Rails Server Using Chef, Part 3: Tying It All Together</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/">Provisioning a Rails Server Using Chef, Part 2: Writing the Recipes</a>
       </li>
     
@@ -525,10 +529,6 @@
     
       <li class="post">
         <a href="/blog/2014/05/30/how-to-do-autocomplete-in-rails-using-redis/">How to Do Autocomplete in Rails Using Redis</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/">Deploying Rails Apps, Part 6: Writing Capistrano Tasks</a>
       </li>
     
   </ul>

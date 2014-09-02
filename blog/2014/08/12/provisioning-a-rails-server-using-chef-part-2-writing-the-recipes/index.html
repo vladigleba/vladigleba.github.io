@@ -90,7 +90,7 @@
 <span class="categories">
   published in 
   
-    <a class='category' href='/blog/topics/phindee/'>Phindee</a>, <a class='category' href='/blog/topics/server-provisioning/'>Server Provisioning</a>
+    <a class='category' href='/blog/topics/chef-series/'>Chef Series</a>, <a class='category' href='/blog/topics/phindee/'>Phindee</a>, <a class='category' href='/blog/topics/server-provisioning/'>Server Provisioning</a>
   
 </span>
 
@@ -154,7 +154,7 @@
 <span class='line-number'>17</span>
 </pre></td><td class='code'><pre><code class='json'><span class='line'><span class="p">{</span>
 </span><span class='line'>  <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;foobars&quot;</span><span class="p">,</span>
-</span><span class='line'>  <span class="nt">&quot;port&quot;</span><span class="p">:</span> <span class="mi">11111</span><span class="p">,</span>
+</span><span class='line'>  <span class="nt">&quot;port&quot;</span><span class="p">:</span> <span class="mi">12345</span><span class="p">,</span>
 </span><span class='line'>
 </span><span class='line'>  <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
 </span><span class='line'>    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;bob&quot;</span><span class="p">,</span>
@@ -192,7 +192,7 @@
 
 <h1>Writing Recipes</h1>
 
-<p>Now that the attributes are defined, we&rsquo;re ready to start writing the recipes themselves. These recipes do the exact same server setup as the one covered in the <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">&ldquo;Deploying Rails Apps&rdquo; series</a>, so I won&rsquo;t be explaining the whys behind the things I do here since that&rsquo;s already covered in the series itself. If you&rsquo;ve never provisioned a server from scratch before, it&rsquo;s best to read that series first before continuing.</p>
+<p>Now that the attributes are defined, we&rsquo;re ready to start writing the recipes themselves. These recipes do the exact same server setup as the one covered in the <a href="/blog/topics/deployment-series/">&ldquo;Deploying Rails Apps&rdquo; series</a>, so I won&rsquo;t be explaining the whys behind the things I do here since that&rsquo;s already covered in the series itself. If you&rsquo;ve never provisioned a server from scratch before, it&rsquo;s best to read that series first before continuing.</p>
 
 <h2>The First One</h2>
 
@@ -1113,7 +1113,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>And with that, our recipes are complete! We&rsquo;re now ready to use them to provision our node, and that&rsquo;s exactly what we&rsquo;ll cover in part 3.</p>
+<p>And with that, our recipes are complete! We&rsquo;re now ready to use them to provision our node, and that&rsquo;s exactly what we&rsquo;ll cover in <a href="/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/">part 3</a>.</p>
 </div>
 
 
@@ -1130,6 +1130,8 @@
       
         <a class="basic-alignment left" href="/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/" title="Previous Post: Provisioning a Rails Server Using Chef, Part 1: Introduction to Chef Solo">&laquo; Provisioning a Rails Server Using Chef, Part 1: Introduction to Chef Solo</a>
       
+      
+        <a class="basic-alignment right" href="/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/" title="Next Post: Provisioning a Rails Server Using Chef, Part 3: Tying It All Together">Provisioning a Rails Server Using Chef, Part 3: Tying It All Together &raquo;</a>
       
     </p>
   </footer>
@@ -1151,6 +1153,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/">Provisioning a Rails Server Using Chef, Part 3: Tying It All Together</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/">Provisioning a Rails Server Using Chef, Part 2: Writing the Recipes</a>
       </li>
     
@@ -1164,10 +1170,6 @@
     
       <li class="post">
         <a href="/blog/2014/05/30/how-to-do-autocomplete-in-rails-using-redis/">How to Do Autocomplete in Rails Using Redis</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/">Deploying Rails Apps, Part 6: Writing Capistrano Tasks</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Maps | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/maps/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-08-13T10:16:52-07:00</updated>
+  <updated>2014-08-14T21:29:30-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -18,7 +18,7 @@
     <link href="http://vladigleba.github.io/blog/2013/11/14/using-mapbox-with-ruby-on-rails/"/>
     <updated>2013-11-14T10:39:00-08:00</updated>
     <id>http://vladigleba.github.io/blog/2013/11/14/using-mapbox-with-ruby-on-rails</id>
-    <content type="html"><![CDATA[<p>Last week <a href="/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/">I wrote about</a> <a href="http://phindee.com/">Phindee</a>, a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that Phindee’s mapping functionality is provided by the <a href="https://www.mapbox.com/mapbox.js/">MapBox JavaScript API</a>, but did not go into any more detail for brevity reasons. I still think it’s an important topic to talk about because I remember having a hard time finding tutorials about integrating MapBox with Ruby on Rails, specifically.</p>
+    <content type="html"><![CDATA[<p>Last week <a href="{{%20root_url%20}}/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/">I wrote about</a> <a href="http://phindee.com/">Phindee</a>, a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that Phindee’s mapping functionality is provided by the <a href="https://www.mapbox.com/mapbox.js/">MapBox JavaScript API</a>, but did not go into any more detail for brevity reasons. I still think it’s an important topic to talk about because I remember having a hard time finding tutorials about integrating MapBox with Ruby on Rails, specifically.</p>
 
 <!-- more -->
 
@@ -35,7 +35,7 @@
 
 <h1>Converting Addresses into Coordinates</h1>
 
-<p>Alright, enough of that. Let&rsquo;s start coding.</p>
+<p>All right, enough of that. Let&rsquo;s start coding.</p>
 
 <p>First thing we&rsquo;ll do is convert our addresses into coordinates, which MapBox needs in order to place our markers (pin-drops) on the map. We can do this manually by using the <a href="https://www.mapbox.com/developers/api/geocoding/">MapBox Geocoding API</a>, or we could automate it with the <a href="http://www.rubygeocoder.com/">Geocoder</a> gem. Because there is a <a href="http://railscasts.com/episodes/273-geocoder">Railscasts episode</a> covering the gem, I won’t go into any more detail here.</p>
 
@@ -91,7 +91,7 @@ end
 
 <h2>Adding the Library Code</h2>
 
-<p>Alright, first thing we’ll do is include the MapBox JavaScript API, along with the accompanying CSS code; this will go inside our main application layout file.</p>
+<p>All right, first thing we’ll do is include the MapBox JavaScript API, along with the accompanying CSS code; this will go inside our main application layout file.</p>
 
 <p>``` html application.html.erb</p>
 

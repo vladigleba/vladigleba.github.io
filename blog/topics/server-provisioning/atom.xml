@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Server Provisioning | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/server-provisioning/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-08-13T10:16:52-07:00</updated>
+  <updated>2014-08-14T21:29:30-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -14,11 +14,226 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Provisioning a Rails Server Using Chef, Part 3: Tying It All Together]]></title>
+    <link href="http://vladigleba.github.io/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/"/>
+    <updated>2014-08-13T15:02:00-07:00</updated>
+    <id>http://vladigleba.github.io/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together</id>
+    <content type="html"><![CDATA[<p>We installed Chef Solo in <a href="{{%20root_url%20}}/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/">part 1</a>, we wrote some recipes in <a href="{{%20root_url%20}}/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/">part 2</a>, and now we&rsquo;ll be tying everything together in part 3. When we&rsquo;re done, we&rsquo;ll not only have a fully provisioned server running your Rails app, but we&rsquo;ll also have an automated way of repeating this process whenever such a need arises in the future.</p>
+
+<!-- more -->
+
+
+<h1>Some Groundwork</h1>
+
+<p>Before we can run the recipes from part 2, we need to specify exactly which recipes we want to run and in what order. Chef has something called a run list exactly for this purpose, and we store it in the JSON file located in the <code>/nodes</code> directory (I usually add it to the top of the file, before all the node-specific attributes, to make it easy to spot):</p>
+
+<p>``` json 123.123.123.123.json
+{
+  &ldquo;run_list&rdquo;: [</p>
+
+<pre><code>"recipe[phindee]",
+"recipe[phindee::users]",
+"recipe[phindee::ssh]",
+"recipe[phindee::nodejs]",
+"recipe[phindee::postgres]",
+"recipe[phindee::rbenv]",
+"recipe[phindee::redis]",
+"recipe[phindee::nginx]",
+"recipe[phindee::app]"
+</code></pre>
+
+<p>  ],</p>
+
+<p>  &hellip;
+}
+```</p>
+
+<p>Because Chef executes the run list in the exact order it&rsquo;s specified, it&rsquo;s important to list the recipes that other recipes will depend on first. Some of our recipes, for example, use the user that&rsquo;s created in <code>users.rb</code>, so that&rsquo;s why we place that recipe near the top, but recipes that don&rsquo;t depend on any other recipes can be placed anywhere you want. (Note that when referencing the <code>default.rb</code> recipe, it&rsquo;s enough to just specify the name of the cookbook it&rsquo;s located in, but in order to run the other recipes, it&rsquo;s necessary to specify the cookbook, along with the recipe&rsquo;s file name.)</p>
+
+<p>By the way, if you ever find yourself not needing a particular recipe to run, all you need to do is remove that recipe from the run list, and Chef won&rsquo;t run it, but do be careful about removing recipes that other recipes depend on because that will cause issues.</p>
+
+<h1>It&rsquo;s Show Time</h1>
+
+<p>With our run list defined, we&rsquo;re now ready to start the provisioning process. Because we&rsquo;ll need to use quite a number of commands to get everything provisioned, it&rsquo;s best to automate this by creating a shell script. I created a file called <code>setup_vps.sh</code> inside my app&rsquo;s <code>/config</code> directory for this purpose:</p>
+
+<p>``` bash setup_vps.sh</p>
+
+<h1>!/bin/sh</h1>
+
+<h1>check for correct number of arguments</h1>
+
+<p>if [ $# -ne 3 ]; then
+  echo &ldquo;Usage: $0 <user> <ip> <port>&rdquo;
+  exit 1
+fi</p>
+
+<h1>set variables</h1>
+
+<p>USER=$1
+IP=$2
+PORT=$3</p>
+
+<h1>upload key for root</h1>
+
+<p>ssh-copy-id -i ~/.ssh/id_rsa.pub root@$IP</p>
+
+<h1>install chef</h1>
+
+<p>cd config/chef &amp;&amp; knife solo prepare root@$IP</p>
+
+<h1>execute the run list</h1>
+
+<p>knife solo cook root@$IP</p>
+
+<h1>upload key for user</h1>
+
+<p>ssh-copy-id -i ~/.ssh/id_rsa.pub -p $PORT $USER@$IP</p>
+
+<h1>upload app</h1>
+
+<p>cd ../.. &amp;&amp; cap production setup:all</p>
+
+<h1>restart nginx</h1>
+
+<p>ssh -p $PORT -t $USER@$IP &lsquo;sudo service nginx restart&rsquo;
+```</p>
+
+<p>The first line uploads your public key to the node (server) you&rsquo;re about to provision. (If you don&rsquo;t do this, Chef Solo will ask you to type your password for every command it runs.) The next line installs Chef on our node using the <code>knife solo prepare</code> command, while the line after that uses <code>knife solo cook</code> to execute our run list. When it finishes, our node will be fully provisioned.</p>
+
+<p>The remaining three lines run the Capistrano recipes to deploy my app (if you&rsquo;re not using Capistrano for deployment, feel free to remove them). The third to last line uploads the public key for the Chef-created user (so Capistrano can log in without a password), the next line runs the Capistrano recipes, and the last line restarts Nginx (so the uploaded Rails app is loaded in).</p>
+
+<p>Once you run <code>chmod +x setup_vps.sh</code> to make the file an executable, you can <code>cd</code> into the directory containing the script and run it with</p>
+
+<p><code>bash
+./setup_vps.sh bob 123.123.123.123 12345
+</code>
+where <code>bob</code> is the Chef-created user, <code>123.123.123.123</code> is the IP address of the node you just provisioned, and <code>12345</code> is its port. When the script finishes executing, you&rsquo;ll have a fully provisioned server running your Rails app.</p>
+
+<h1>Capistrano Code</h1>
+
+<p>In the interest of completeness, here&rsquo;s the Capistrano code I use to deploy my app. First up is my <code>setup.rake</code> file containing the <code>all</code> task that I&rsquo;m referencing in <code>setup_vps.sh</code>:</p>
+
+<p>``` ruby setup.rake
+namespace :setup do</p>
+
+<p>  desc &ldquo;Runs all tasks.&rdquo;
+  task all: [:deploy, :seed_postgres, :seed_redis]</p>
+
+<p>  desc &ldquo;Seed the main database.&rdquo;
+  task :seed_postgres do</p>
+
+<pre><code>on roles(:app) do
+  within "#{current_path}" do
+    with rails_env: :production do
+      execute :rake, "db:seed"
+    end
+  end
+end
+</code></pre>
+
+<p>  end</p>
+
+<p>  desc &lsquo;Seed the redis database (search suggestions)&rsquo;
+  task :seed_redis do</p>
+
+<pre><code>on roles(:app) do
+  within "#{current_path}" do
+    with rails_env: :production do
+      execute :rake, "search_suggestions:index"
+    end
+  end
+end
+</code></pre>
+
+<p>  end</p>
+
+<p>  after &ldquo;deploy:published&rdquo;, &ldquo;deploy:start&rdquo;</p>
+
+<p>end
+```</p>
+
+<p>And here&rsquo;s my <code>deploy.rake</code> file containing the <code>start</code> task that I&rsquo;m calling in <code>setup.rake</code>:</p>
+
+<p>``` ruby deploy.rake
+namespace :deploy do</p>
+
+<p>  desc &ldquo;Makes sure local git is in sync with remote.&rdquo;
+  task :check_revision do</p>
+
+<pre><code>unless `git rev-parse HEAD` == `git rev-parse origin/master`
+  puts "WARNING: HEAD is not the same as origin/master"
+  puts "Run `git push` to sync changes."
+  exit
+end
+</code></pre>
+
+<p>  end</p>
+
+<p>  %w[start stop restart].each do |command|</p>
+
+<pre><code>desc "#{command} Unicorn server."
+task command do
+  on roles(:app) do
+    execute "/etc/init.d/unicorn_#{fetch(:application)} #{command}"
+  end
+end
+</code></pre>
+
+<p>  end</p>
+
+<p>  before :deploy, &ldquo;deploy:check_revision"<br/>
+  after :deploy, "deploy:restart&rdquo;
+  after :rollback, &ldquo;deploy:restart&rdquo;</p>
+
+<p>end
+```</p>
+
+<p>Below is my <code>deploy.rb</code> file:</p>
+
+<p>``` ruby deploy.rb
+lock &lsquo;3.2.1&rsquo;</p>
+
+<p>set :application, &lsquo;phindee&rsquo;
+set :repo_url, &lsquo;git@github.com:vladigleba/phindee.git&rsquo;</p>
+
+<p>set :deploy_to, &ldquo;/var/www/#{fetch(:application}&rdquo;
+set :deploy_user, &ldquo;bob&rdquo;</p>
+
+<p>set :rbenv_type, :user
+set :rbenv_ruby, &lsquo;2.1.0&rsquo;
+set :rbenv_prefix, &ldquo;RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec&rdquo;
+set :rbenv_map_bins, %w{rake gem bundle ruby rails}
+set :rbenv_roles, :all</p>
+
+<p>set :linked_files, %w{config/database.yml config/application.yml}
+set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}</p>
+
+<p>set :keep_releases, 5
+```</p>
+
+<p>And here&rsquo;s my <code>deploy/production.rb</code> file:</p>
+
+<p>``` ruby production.rb
+set :stage, :production
+set :rails_env, :production</p>
+
+<p>server &ldquo;#{fetch(:deploy_user)}@123.123.123.123:12345&rdquo;, roles: %w{web app db}, primary: true
+```</p>
+
+<p>I won&rsquo;t be explaining the Capistrano code because that&rsquo;s already covered in parts <a href="{{%20root_url%20}}/blog/2014/04/04/deploying-rails-apps-part-5-configuring-capistrano/">5</a> and <a href="{{%20root_url%20}}/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/">6</a> of my <a href="{{%20root_url%20}}/blog/topics/deployment-series/">&ldquo;Deploying Rails Apps&rdquo; series</a>, so be sure to check that out if you&rsquo;re new to Capistrano or just need some clarification. (It&rsquo;s worth noting that Chef actually has a <a href="http://docs.getchef.com/chef/resources.html#deploy"><code>deploy</code></a> resource that&rsquo;s modeled after Capistrano, but I didn&rsquo;t have time to learn how to implement my existing Capistrano recipes with it. If you&rsquo;re interested though, feel free to give it a try.)</p>
+
+<p>I hope this gave you a taste of what Chef can do, although I only scratched the service of what&rsquo;s possible. Chef is a complex tool that can be used to manage entire server infrastructures, and although it might be overkill for managing a single server, it&rsquo;s still a useful tool to learn if you spend a significant amount of time doing server provisioning. It&rsquo;s definitely an improvement over shell scripts because it keeps your code readable and organized. Ultimately though, each tool has its place, and it&rsquo;s up to you to decide what best fits your particular need.</p>
+
+<p>Stay hungry. Stay foolish.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Provisioning a Rails Server Using Chef, Part 2: Writing the Recipes]]></title>
     <link href="http://vladigleba.github.io/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/"/>
     <updated>2014-08-12T09:29:00-07:00</updated>
     <id>http://vladigleba.github.io/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes</id>
-    <content type="html"><![CDATA[<p>In <a href="/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/">part 1</a>, we learned about Chef Solo and used it to create a standard Chef directory structure, along with our own cookbook. Now it&rsquo;s time to start writing the recipes we will run to provision our Rails server and install Node.js, PostgreSQL, rbenv, Ruby, Redis, and Nginx.</p>
+    <content type="html"><![CDATA[<p>In <a href="{{%20root_url%20}}/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/">part 1</a>, we learned about Chef Solo and used it to create a standard Chef directory structure, along with our own cookbook. Now it&rsquo;s time to start writing the recipes we will run to provision our Rails server and install Node.js, PostgreSQL, rbenv, Ruby, Redis, and Nginx.</p>
 
 <!-- more -->
 
@@ -46,7 +261,7 @@ default[&lsquo;redis&rsquo;][&lsquo;version&rsquo;]  = &lsquo;2.8.13&rsquo;
 <p>``` json 123.123.123.123.json
 {
   &ldquo;group&rdquo;: &ldquo;foobars&rdquo;,
-  &ldquo;port&rdquo;: 11111,</p>
+  &ldquo;port&rdquo;: 12345,</p>
 
 <p>  &ldquo;user&rdquo;: {</p>
 
@@ -87,7 +302,7 @@ openssl passwd -1 "theplaintextpassword"
 
 <h1>Writing Recipes</h1>
 
-<p>Now that the attributes are defined, we&rsquo;re ready to start writing the recipes themselves. These recipes do the exact same server setup as the one covered in the <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">&ldquo;Deploying Rails Apps&rdquo; series</a>, so I won&rsquo;t be explaining the whys behind the things I do here since that&rsquo;s already covered in the series itself. If you&rsquo;ve never provisioned a server from scratch before, it&rsquo;s best to read that series first before continuing.</p>
+<p>Now that the attributes are defined, we&rsquo;re ready to start writing the recipes themselves. These recipes do the exact same server setup as the one covered in the <a href="{{%20root_url%20}}/blog/topics/deployment-series/">&ldquo;Deploying Rails Apps&rdquo; series</a>, so I won&rsquo;t be explaining the whys behind the things I do here since that&rsquo;s already covered in the series itself. If you&rsquo;ve never provisioned a server from scratch before, it&rsquo;s best to read that series first before continuing.</p>
 
 <h2>The First One</h2>
 
@@ -709,7 +924,7 @@ reopen-logs)
 esac
 ```</p>
 
-<p>And with that, our recipes are complete! We&rsquo;re now ready to use them to provision our node, and that&rsquo;s exactly what we&rsquo;ll cover in part 3.</p>
+<p>And with that, our recipes are complete! We&rsquo;re now ready to use them to provision our node, and that&rsquo;s exactly what we&rsquo;ll cover in <a href="{{%20root_url%20}}/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/">part 3</a>.</p>
 ]]></content>
   </entry>
   
@@ -815,7 +1030,7 @@ cd chef
 
 <h2>Creating Our Own Cookbook</h2>
 
-<p>Alright, with the terms clarified, we&rsquo;re now ready to create our own cookbook. Go ahead and run the following inside the <code>/chef</code> directory we created above (replace &ldquo;phindee&rdquo; with the name of your app):</p>
+<p>All right, with the terms clarified, we&rsquo;re now ready to create our own cookbook. Go ahead and run the following inside the <code>/chef</code> directory we created above (replace &ldquo;phindee&rdquo; with the name of your app):</p>
 
 <p><code>bash
 knife cookbook create phindee -o site-cookbooks
@@ -836,7 +1051,7 @@ knife cookbook create phindee -o site-cookbooks
 
 <p>The rest of the directories are for advanced Chef setups, and I won&rsquo;t be explaining them here.</p>
 
-<p>With our cookbook created, we&rsquo;re now ready to start writing the recipes that will provision our Rails server, which I&rsquo;ll cover in <a href="/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/">part 2</a>.</p>
+<p>With our cookbook created, we&rsquo;re now ready to start writing the recipes that will provision our Rails server, which I&rsquo;ll cover in <a href="{{%20root_url%20}}/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/">part 2</a>.</p>
 ]]></content>
   </entry>
   
@@ -845,7 +1060,7 @@ knife cookbook create phindee -o site-cookbooks
     <link href="http://vladigleba.github.io/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/"/>
     <updated>2014-03-14T09:45:00-07:00</updated>
     <id>http://vladigleba.github.io/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server</id>
-    <content type="html"><![CDATA[<p>In <a href="/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">part 1</a>, I talked about choosing a VPS provider, creating a new Ubuntu instance, and configuring it to be more secure. Now, in part 2, I&rsquo;ll talk about installing the technology stack behind <a href="http://phindee.com/">Phindee</a>: Node.js, Nginx, PostgreSQL, rbenv, Ruby, and Bundler.</p>
+    <content type="html"><![CDATA[<p>In <a href="{{%20root_url%20}}/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/">part 1</a>, I talked about choosing a VPS provider, creating a new Ubuntu instance, and configuring it to be more secure. Now, in part 2, I&rsquo;ll talk about installing the technology stack behind <a href="http://phindee.com/">Phindee</a>: Node.js, Nginx, PostgreSQL, rbenv, Ruby, and Bundler.</p>
 
 <!-- more -->
 
@@ -987,7 +1202,7 @@ create database phindee owner admin;
 
 <p>rbenv will suite you well if you’re starting out; otherwise, install whatever best meets your needs. By the way, it’s worth mentioning that since rbenv is incompatible with RVM, you won’t be able to run them side by side.</p>
 
-<p>Alright, we can install rbenv like so:</p>
+<p>All right, we can install rbenv like so:</p>
 
 <p><code>bash
 sudo curl -L https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
@@ -1069,7 +1284,7 @@ gem: --no-rdoc --no-ri
 
 <p>The flags will then be included automatically the next time you install new gems.</p>
 
-<p>And with that, our server setup is now complete! Having installed Node.js, Nginx, PostgreSQL, and rbenv, we’re now ready to start configuring Nginx and Unicorn, which I’ll cover in the <a href="/blog/2014/03/21/deploying-rails-apps-part-3-configuring-unicorn/">next post</a>. If you want to be notified when it’s out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and you’ll have the complete post delivered to your inbox as soon as it’s released!</p>
+<p>And with that, our server setup is now complete! Having installed Node.js, Nginx, PostgreSQL, and rbenv, we’re now ready to start configuring Nginx and Unicorn, which I’ll cover in the <a href="{{%20root_url%20}}/blog/2014/03/21/deploying-rails-apps-part-3-configuring-unicorn/">next post</a>. If you want to be notified when it’s out, feel free to <a href="http://www.feedblitz.com/f/?Sub=927939&amp;cids=1">subscribe</a>, and you’ll have the complete post delivered to your inbox as soon as it’s released!</p>
 ]]></content>
   </entry>
   

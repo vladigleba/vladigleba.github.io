@@ -90,7 +90,7 @@
 <span class="categories">
   published in 
   
-    <a class='category' href='/blog/topics/deployment/'>Deployment</a>, <a class='category' href='/blog/topics/phindee/'>Phindee</a>
+    <a class='category' href='/blog/topics/deployment/'>Deployment</a>, <a class='category' href='/blog/topics/deployment-series/'>Deployment Series</a>, <a class='category' href='/blog/topics/phindee/'>Phindee</a>
   
 </span>
 
@@ -242,7 +242,7 @@
 
 <p>This is obviously a trivial task, but it shows how powerful Capistrano can be. A few keystrokes allowed us to create a specific directory structure on our server and upload a file from our local computer. Neat stuff&mdash;and it will only get better.</p>
 
-<p>Alright, let’s now switch gears and learn about the syntax that made all of this possible.</p>
+<p>All right, let’s now switch gears and learn about the syntax that made all of this possible.</p>
 
 <h1>Understanding SSHKit</h1>
 
@@ -347,18 +347,20 @@
 
 <p>The second block of code actually creates <em>three</em> separate tasks that will allow us to start, stop, and restart Unicorn from our local computer. We&rsquo;ll run the <code>restart</code> task, for example, after Capistrano finishes its deploy so Unicorn picks up the new code. (Note that I created a namespace called <code>deploy</code> to contain these tasks since that&rsquo;s what they&rsquo;re related to.)</p>
 
-<p>But how do we tell Capistrano to run these tasks as part of its deploy? Well, Capistrano provides two callback functions called <code>before()</code> and <code>after()</code> to help us out, and the code below illustrates how it&rsquo;s done (add it to the end of your <code>deploy.rb</code> file):</p>
+<p>But how do we tell Capistrano to run these tasks as part of its deploy? Well, Capistrano provides two callback functions called <code>before()</code> and <code>after()</code> to help us out, and the code below illustrates how it&rsquo;s done (add it to the end of your <code>deploy.rake</code> file):</p>
 
-<figure class='code'><figcaption><span>deploy.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>deploy.rake</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">.</span> <span class="o">.</span> <span class="o">.</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">namespace</span> <span class="ss">:deploy</span> <span class="k">do</span>
 </span><span class='line'>
-</span><span class='line'><span class="n">namespace</span> <span class="ss">:deploy</span> <span class="k">do</span>
+</span><span class='line'>  <span class="o">.</span> <span class="o">.</span> <span class="o">.</span>
+</span><span class='line'>
 </span><span class='line'>  <span class="n">before</span> <span class="ss">:deploy</span><span class="p">,</span> <span class="s2">&quot;deploy:check_revision&quot;</span>
 </span><span class='line'>  <span class="n">after</span> <span class="ss">:deploy</span><span class="p">,</span> <span class="s2">&quot;deploy:restart&quot;</span>
 </span><span class='line'>  <span class="n">after</span> <span class="ss">:rollback</span><span class="p">,</span> <span class="s2">&quot;deploy:restart&quot;</span>
@@ -372,7 +374,7 @@
 
 <p>What we now have is our own custom recipe (a Capistrano term meaning a series of tasks) for deployment. You can similarly write multiple other recipes to help you automate any other tedious work you find yourself doing over and over again.</p>
 
-<p>Alright, having all the necessary tasks defined, we can go ahead and push our code up to GitHub so Capistrano can deploy the latest changes:</p>
+<p>All right, having all the necessary tasks defined, we can go ahead and push our code up to GitHub so Capistrano can deploy the latest changes:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -456,7 +458,7 @@
 
 <p>But the most important thing is to not get discouraged. When I set up my production server from scratch for the very first time, it took me a <em>full week</em> (I’m not kidding) to get it working. It was frustrating, discouraging, and is the reason why I decided to write this series, because I didn’t want other people going through the same thing. It doesn&rsquo;t have be that way though, and I hope it won&rsquo;t be.</p>
 
-<p>(If you enjoyed this series, you might also like the <a href="/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/">&ldquo;Provisioning a Rails Server Using Chef&rdquo; series</a>, which explains how you can use Chef to automate your entire server setup.)</p>
+<p>(If you enjoyed this series, you might also like the <a href="/blog/topics/chef-series/">&ldquo;Provisioning a Rails Server Using Chef&rdquo; series</a>, which explains how you can use Chef to automate your entire server setup.)</p>
 </div>
 
 
@@ -496,6 +498,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/08/13/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/">Provisioning a Rails Server Using Chef, Part 3: Tying It All Together</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/">Provisioning a Rails Server Using Chef, Part 2: Writing the Recipes</a>
       </li>
     
@@ -509,10 +515,6 @@
     
       <li class="post">
         <a href="/blog/2014/05/30/how-to-do-autocomplete-in-rails-using-redis/">How to Do Autocomplete in Rails Using Redis</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/">Deploying Rails Apps, Part 6: Writing Capistrano Tasks</a>
       </li>
     
   </ul>
