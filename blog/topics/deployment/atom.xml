@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Deployment | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/deployment/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-09-02T15:00:44-07:00</updated>
+  <updated>2014-09-02T15:02:54-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -52,7 +52,7 @@
 
 <p>By the way, if you ever find yourself not needing a particular recipe to run, all you need to do is remove that recipe from the run list, and Chef won&rsquo;t run it, but do be careful about removing recipes that other recipes depend on because that will cause issues.</p>
 
-<h1>It&rsquo;s Show Time</h1>
+<h1>Show Time</h1>
 
 <p>With our run list defined, we&rsquo;re now ready to start the provisioning process. Because we&rsquo;ll need to use quite a number of commands to get everything provisioned, it&rsquo;s best to automate this by creating a shell script. I created a file called <code>setup_vps.sh</code> inside my app&rsquo;s <code>/config</code> directory for this purpose:</p>
 
