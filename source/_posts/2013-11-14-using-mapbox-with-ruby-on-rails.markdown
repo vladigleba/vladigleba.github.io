@@ -76,7 +76,7 @@ Now that we have the building blocks in place, we’re ready to start working wi
 
 ## Adding the Library Code
 
-All right, first thing we’ll do is include the MapBox JavaScript API, along with the accompanying CSS code; this will go inside our main application layout file.
+All right, first thing we’ll do is include the MapBox JavaScript API, along with the accompanying CSS code; this will go inside our main application layout file (be sure to place it <em>before</em> your `javascript_include_tag`).
 
 ``` html application.html.erb
 <script src="http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.js"></script>
