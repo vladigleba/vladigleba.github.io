@@ -32,15 +32,15 @@ This file is great for storing attributes that will be shared with more than one
 Go ahead and create the file now, and add the following code into it (be sure to replace the attributes with your own):
 
 ``` json 123.123.123.123.json
-{ 
+{
   "group": "foobars",
   "port": 12345,
-  
+
   "user": {
     "name": "bob",
     "password": "password-shadow-hash"
   },
-  
+
   "db": {
     "root_password": "secret",
     "user": {
@@ -264,7 +264,7 @@ We download the tar file using a resource called [`remote_file`](http://docs.get
 
 One interesting thing about the `action` attribute is it's actually present in each resource we write, whether we explicitly assign one or not. Not every resource has the same actions though. `remote_file`, for example, has `create`, `create_if_missing`, `delete`, and `touch` actions, while `bash` only has `run` and `nothing` actions. But every resource is assigned a default action, if we don't assign one ourselves (the resource's documentation will specify which action is assigned by default).
 
-After the file is downloaded, we use `execute` to do the install. One interesting thing about this resource is the `not_if` guard, which executes some Ruby code, whereas the previous one only executed shell commands. Guards  can run a shell command specified inside a string, or Ruby code specified inside a block. Ruby code must return either `true` or `false`, while shell commands can return any value, but the guard runs only if a zero is returned (see the [documentation](http://docs.getchef.com/chef/resources.html#guards)). 
+After the file is downloaded, we use `execute` to do the install. One interesting thing about this resource is the `not_if` guard, which executes some Ruby code, whereas the previous one only executed shell commands. Guards  can run a shell command specified inside a string, or Ruby code specified inside a block. Ruby code must return either `true` or `false`, while shell commands can return any value, but the guard runs only if a zero is returned (see the [documentation](http://docs.getchef.com/chef/resources.html#guards)).
 
 So in the code above, we're first executing some Ruby code to determine if a file exists, and then we execute a shell command to output the Node.js version we installed, but this output is processed by Ruby and gets compared with the version we've specified in our attributes file. As a result, Node.js won't be installed if there is a Node.js executable already present on the node that returns the correct version number. (Note that shell commands will be processed by Ruby only if they're specified using backquotes).
 
@@ -286,7 +286,7 @@ end
 execute "create new postgres user" do
   user "postgres"
   command "psql -c \"create user #{node['db']['user']['name']} with password '#{node['db']['user']['password']}';\""
-  not_if { `sudo -u postgres psql -tAc \"SELECT * FROM pg_roles WHERE rolname='admin'\" | wc -l`.chomp == "1" }
+  not_if { `sudo -u postgres psql -tAc \"SELECT * FROM pg_roles WHERE rolname='#{node['db']['user']['name']}'\" | wc -l`.chomp == "1" }
 end
 
 # create new postgres database
@@ -441,13 +441,13 @@ server {
   listen 80 default deferred;
   server_name <%= node['app'] %>.com;
   root /var/www/<%= node['app'] %>/current/public;
-  
+
   location ^~ /assets/ {
     gzip_static on;
     expires max;
     add_header Cache-Control public;
   }
-  
+
   try_files $uri/index.html $uri @unicorn;
   location @unicorn {
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -455,7 +455,7 @@ server {
     proxy_redirect off;
     proxy_pass http://unicorn;
   }
-  
+
   error_page 500 502 503 504 /500.html;
   keepalive_timeout 5;
 }
