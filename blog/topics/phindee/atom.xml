@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Phindee | Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/blog/topics/phindee/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-09-05T10:17:04-07:00</updated>
+  <updated>2014-09-09T14:18:07-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -561,7 +561,7 @@ end</p>
 <p>execute &ldquo;create new postgres user&rdquo; do
   user &ldquo;postgres&rdquo;
   command &ldquo;psql -c \"create user #{node[&lsquo;db&rsquo;][&lsquo;user&rsquo;][&lsquo;name&rsquo;]} with password &lsquo;#{node['db&rsquo;][&lsquo;user&rsquo;][&lsquo;password&rsquo;]}&lsquo;;\&rdquo;&ldquo;
-  not_if { <code>sudo -u postgres psql -tAc \"SELECT * FROM pg_roles WHERE rolname='admin'\" | wc -l</code>.chomp == "1&rdquo; }
+  not_if { <code>sudo -u postgres psql -tAc \"SELECT * FROM pg_roles WHERE rolname='#{node['db']['user']['name']}'\" | wc -l</code>.chomp == "1&rdquo; }
 end</p>
 
 <h1>create new postgres database</h1>

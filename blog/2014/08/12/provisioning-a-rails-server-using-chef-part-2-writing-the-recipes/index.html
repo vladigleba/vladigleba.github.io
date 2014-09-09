@@ -555,7 +555,7 @@
 </span><span class='line'><span class="n">execute</span> <span class="s2">&quot;create new postgres user&quot;</span> <span class="k">do</span>
 </span><span class='line'>  <span class="n">user</span> <span class="s2">&quot;postgres&quot;</span>
 </span><span class='line'>  <span class="n">command</span> <span class="s2">&quot;psql -c </span><span class="se">\&quot;</span><span class="s2">create user </span><span class="si">#{</span><span class="n">node</span><span class="o">[</span><span class="s1">&#39;db&#39;</span><span class="o">][</span><span class="s1">&#39;user&#39;</span><span class="o">][</span><span class="s1">&#39;name&#39;</span><span class="o">]</span><span class="si">}</span><span class="s2"> with password &#39;</span><span class="si">#{</span><span class="n">node</span><span class="o">[</span><span class="s1">&#39;db&#39;</span><span class="o">][</span><span class="s1">&#39;user&#39;</span><span class="o">][</span><span class="s1">&#39;password&#39;</span><span class="o">]</span><span class="si">}</span><span class="s2">&#39;;</span><span class="se">\&quot;</span><span class="s2">&quot;</span>
-</span><span class='line'>  <span class="n">not_if</span> <span class="p">{</span> <span class="sb">`sudo -u postgres psql -tAc </span><span class="se">\&quot;</span><span class="sb">SELECT * FROM pg_roles WHERE rolname=&#39;admin&#39;</span><span class="se">\&quot;</span><span class="sb"> | wc -l`</span><span class="o">.</span><span class="n">chomp</span> <span class="o">==</span> <span class="s2">&quot;1&quot;</span> <span class="p">}</span>
+</span><span class='line'>  <span class="n">not_if</span> <span class="p">{</span> <span class="sb">`sudo -u postgres psql -tAc </span><span class="se">\&quot;</span><span class="sb">SELECT * FROM pg_roles WHERE rolname=&#39;</span><span class="si">#{</span><span class="n">node</span><span class="o">[</span><span class="s1">&#39;db&#39;</span><span class="o">][</span><span class="s1">&#39;user&#39;</span><span class="o">][</span><span class="s1">&#39;name&#39;</span><span class="o">]</span><span class="si">}</span><span class="sb">&#39;</span><span class="se">\&quot;</span><span class="sb"> | wc -l`</span><span class="o">.</span><span class="n">chomp</span> <span class="o">==</span> <span class="s2">&quot;1&quot;</span> <span class="p">}</span>
 </span><span class='line'><span class="k">end</span>
 </span><span class='line'>
 </span><span class='line'><span class="c1"># create new postgres database</span>
@@ -833,13 +833,13 @@
 </span><span class='line'><span class="x">  listen 80 default deferred;</span>
 </span><span class='line'><span class="x">  server_name </span><span class="cp">&lt;%=</span> <span class="n">node</span><span class="o">[</span><span class="s1">&#39;app&#39;</span><span class="o">]</span> <span class="cp">%&gt;</span><span class="x">.com;</span>
 </span><span class='line'><span class="x">  root /var/www/</span><span class="cp">&lt;%=</span> <span class="n">node</span><span class="o">[</span><span class="s1">&#39;app&#39;</span><span class="o">]</span> <span class="cp">%&gt;</span><span class="x">/current/public;</span>
-</span><span class='line'><span class="x">  </span>
+</span><span class='line'>
 </span><span class='line'><span class="x">  location ^~ /assets/ {</span>
 </span><span class='line'><span class="x">    gzip_static on;</span>
 </span><span class='line'><span class="x">    expires max;</span>
 </span><span class='line'><span class="x">    add_header Cache-Control public;</span>
 </span><span class='line'><span class="x">  }</span>
-</span><span class='line'><span class="x">  </span>
+</span><span class='line'>
 </span><span class='line'><span class="x">  try_files $uri/index.html $uri @unicorn;</span>
 </span><span class='line'><span class="x">  location @unicorn {</span>
 </span><span class='line'><span class="x">    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span>
@@ -847,7 +847,7 @@
 </span><span class='line'><span class="x">    proxy_redirect off;</span>
 </span><span class='line'><span class="x">    proxy_pass http://unicorn;</span>
 </span><span class='line'><span class="x">  }</span>
-</span><span class='line'><span class="x">  </span>
+</span><span class='line'>
 </span><span class='line'><span class="x">  error_page 500 502 503 504 /500.html;</span>
 </span><span class='line'><span class="x">  keepalive_timeout 5;</span>
 </span><span class='line'><span class="x">}</span>
