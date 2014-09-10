@@ -4,10 +4,10 @@ title: "Using MapBox with Ruby on Rails"
 date: 2013-11-14 10:39
 comments: true
 categories: [Maps, Phindee]
-description: Learn how to use the Mapbox.js library to add custom maps to your Ruby on Rails app. 
+description: Learn how to use the Mapbox.js library to add custom maps to your Ruby on Rails app.
 ---
 
-Last week [I wrote about]({{ root_url }}/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/) [Phindee](http://phindee.com/), a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that Phindee’s mapping functionality is provided by the [MapBox JavaScript API](https://www.mapbox.com/mapbox.js/), but did not go into any more detail for brevity reasons. I still think it’s an important topic to talk about because I remember having a hard time finding tutorials about integrating MapBox with Ruby on Rails, specifically. 
+Last week [I wrote about]({{ root_url }}/blog/2013/11/08/phindee-a-new-way-to-discover-happy-hours-in-downtown-portland/) [Phindee](http://phindee.com/), a Ruby on Rails app I made to make it easy to discover happy hours in downtown Portland. I quickly mentioned that Phindee’s mapping functionality is provided by the [MapBox JavaScript API](https://www.mapbox.com/mapbox.js/), but did not go into any more detail for brevity reasons. I still think it’s an important topic to talk about because I remember having a hard time finding tutorials about integrating MapBox with Ruby on Rails, specifically.
 
 <!-- more -->
 
@@ -15,7 +15,7 @@ I hope this post fills a bit of that void.
 
 # Why MapBox?
 
-It’s actually quite simple, really. You see, Google is an immense company swimming in cash and dominating virtually every product it has its hands in. Who has the world’s most popular video sharing site? Google. Search engine? Google. How about email service? Google. And mapping service? Google. Whose mobile operating system has the largest market share worldwide? Google’s. Heck, it’s not even a close race in most of these categories. 
+It’s actually quite simple, really. You see, Google is an immense company swimming in cash and dominating virtually every product it has its hands in. Who has the world’s most popular video sharing site? Google. Search engine? Google. How about email service? Google. And mapping service? Google. Whose mobile operating system has the largest market share worldwide? Google’s. Heck, it’s not even a close race in most of these categories.
 
 While this is great for the company, it's not so healthy for the rest of us. Whenever a company lacks competition, the pace of innovation slows, and arrogance towards customers tends to rise. Anytime a majority of our data is concentrated in the hands of a single company, feelings of unease should arise. That’s why whenever a small, promising startup takes on the giant, I will cheer for [the underdog](http://venturebeat.com/2013/10/16/mapbox-heads-into-battle-against-google-maps-with-a-10m-war-chest-from-foundry-group/). And [I’m not the only one](http://www.pcmag.com/article2/0,2817,2401037,00.asp).
 
@@ -38,16 +38,16 @@ Once we have the coordinates, we’re ready to build a JSON object array that wi
 @happy_hours.each do |happy_hour|
   @geojson << {
     type: 'Feature',
-    geometry: { 
-      type: 'Point', 
-      coordinates: [happy_hour.longitude, happy_hour.latitude] 
+    geometry: {
+      type: 'Point',
+      coordinates: [happy_hour.longitude, happy_hour.latitude]
     },
-    properties: { 
+    properties: {
       name: happy_hour.name,
       address: happy_hour.street,
-      :'marker-color' => '#00607d', 
-      :'marker-symbol' => 'circle', 
-      :'marker-size' => 'medium' 
+      :'marker-color' => '#00607d',
+      :'marker-symbol' => 'circle',
+      :'marker-size' => 'medium'
     }
   }
 end
@@ -63,7 +63,7 @@ Because we want Rails to be able to return a JSON object, we’ll need to explic
 
 ``` ruby happy_hours_controller.rb
 respond_to do |format|
-  format.html 
+  format.html
   format.json { render json: @geojson }  # respond with the created JSON object
 end
 ```
@@ -87,10 +87,10 @@ When I wrote this code, the latest version of the MapBox JavaScript API was 1.0.
 
 ## Initializing the Map
 
-Next, we’ll create a free MapBox account and make our own custom-colored map. Once we have the map ready, we’ll open the JavaScript file that corresponds to the controller which contains the two earlier code blocks (mine is called `happy_hours.js.coffee`), and we’ll add a line instantiating the map with the map ID of the custom-colored map we just created.
+Next, we’ll create a free MapBox account and make our own custom-colored map. Once we have the map ready, we’ll open the JavaScript file that corresponds to the controller which contains the two earlier code blocks (mine is called `happy_hours.js.coffee`), and we’ll add a line instantiating the map with the map ID of the custom-colored map we just created (make sure you add this and all subsequent CoffeeScript code inside a `$(document).ready ->` function).
 
 ``` coffeescript happy_hours.js.coffee
-# initialize the map on the 'map' div 
+# initialize the map on the 'map' div
 # with the given map ID, center, and zoom
 map = L.mapbox.map('map', 'your-map-id').setView([45.52086, -122.679523], 14)
 ```
@@ -103,8 +103,8 @@ Okay, now we’re ready to use the JSON objects we created earlier. We’ll make
 
 ``` coffeescript happy_hours.js.coffee
 # get JSON object
-# on success, parse it and 
-# hand it over to MapBox for mapping 
+# on success, parse it and
+# hand it over to MapBox for mapping
 $.ajax
   dataType: 'text'
   url: 'happy_hours/happening_now.json'
@@ -118,7 +118,7 @@ The code above simply sends out an AJAX call to the URL that corresponds to the 
 ## Creating Custom Popups
 
 Now we’ll create our custom popups.
-  
+
 ``` coffeescript happy_hours.js.coffee
 # add custom popups to each marker
 map.featureLayer.on 'layeradd', (e) ->
@@ -148,7 +148,7 @@ If you look at [Phindee](http://phindee.com/), you’ll notice that when you ope
 $('article li').click (e) ->  
   current = $(this)
   currentlyClickedName = current.find('h2').text()
-  
+
   # opens/closes popup for currently clicked happy hour
   map.featureLayer.eachLayer (marker) ->
     if marker.feature.properties.name is currentlyClickedName
@@ -156,6 +156,6 @@ $('article li').click (e) ->
       map._layers[id].openPopup()
 ```
 
-We’re simply adding a `click` event on the sidebar happy hours, extracting the happy hour name, and looping through each marker to find the one with the matching name. Once we find a match, we extract the marker’s ID, and use that ID to open up the popup programmatically by calling Leaflet’s `openPopup()` method. 
+We’re simply adding a `click` event on the sidebar happy hours, extracting the happy hour name, and looping through each marker to find the one with the matching name. Once we find a match, we extract the marker’s ID, and use that ID to open up the popup programmatically by calling Leaflet’s `openPopup()` method.
 
 And that’s all there is to it! Our MapBox integration with Ruby on Rails is now complete, although we only scratched the surface of what's possible. Feel free to take a look at the [MapBox](https://www.mapbox.com/mapbox.js) and [Leaflet](http://leafletjs.com/reference.html) documentation to learn more.
