@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-09-09T14:18:07-07:00</updated>
+  <updated>2014-09-10T12:06:05-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -4066,12 +4066,12 @@
 
 <h2>Initializing the Map</h2>
 
-<p>Next, we’ll create a free MapBox account and make our own custom-colored map. Once we have the map ready, we’ll open the JavaScript file that corresponds to the controller which contains the two earlier code blocks (mine is called <code>happy_hours.js.coffee</code>), and we’ll add a line instantiating the map with the map ID of the custom-colored map we just created.</p>
+<p>Next, we’ll create a free MapBox account and make our own custom-colored map. Once we have the map ready, we’ll open the JavaScript file that corresponds to the controller which contains the two earlier code blocks (mine is called <code>happy_hours.js.coffee</code>), and we’ll add a line instantiating the map with the map ID of the custom-colored map we just created (make sure you add this and all subsequent CoffeeScript code inside a <code>$(document).ready -&gt;</code> function).</p>
 
 <figure class='code'><figcaption><span>happy_hours.js.coffee</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># initialize the map on the &#39;map&#39; div </span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># initialize the map on the &#39;map&#39; div</span>
 </span><span class='line'><span class="c1"># with the given map ID, center, and zoom</span>
 </span><span class='line'><span class="nv">map = </span><span class="nx">L</span><span class="p">.</span><span class="nx">mapbox</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s">&#39;map&#39;</span><span class="p">,</span> <span class="s">&#39;your-map-id&#39;</span><span class="p">).</span><span class="nx">setView</span><span class="p">([</span><span class="mf">45.52086</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.679523</span><span class="p">],</span> <span class="mi">14</span><span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure>
@@ -4093,8 +4093,8 @@
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
 </pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># get JSON object</span>
-</span><span class='line'><span class="c1"># on success, parse it and </span>
-</span><span class='line'><span class="c1"># hand it over to MapBox for mapping </span>
+</span><span class='line'><span class="c1"># on success, parse it and</span>
+</span><span class='line'><span class="c1"># hand it over to MapBox for mapping</span>
 </span><span class='line'><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span>
 </span><span class='line'>  <span class="nv">dataType: </span><span class="s">&#39;text&#39;</span>
 </span><span class='line'>  <span class="nv">url: </span><span class="s">&#39;happy_hours/happening_now.json&#39;</span>
