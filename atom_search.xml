@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry and Foolish]]></title>
   <link href="http://vladigleba.github.io/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-09-10T12:13:21-07:00</updated>
+  <updated>2014-09-10T12:14:36-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -4066,7 +4066,7 @@
 
 <h2>Initializing the Map</h2>
 
-<p>Next, we’ll create a free MapBox account and make our own custom-colored map. Once we have the map ready, we’ll open the JavaScript file that corresponds to the controller which contains the two earlier code blocks (mine is called <code>happy_hours.js.coffee</code>), and we’ll add a line instantiating the map with the map ID of the custom-colored map we just created (make sure you add this and all subsequent CoffeeScript code inside a <code>$(document).ready -&gt;</code> method or it won&rsquo;t load).</p>
+<p>Next, we’ll create a free MapBox account and make our own custom-colored map. Once we have the map ready, we’ll open the JavaScript file that corresponds to the controller which contains the two earlier code blocks (mine is called <code>happy_hours.js.coffee</code>), and we’ll add a line instantiating the map with the map ID of the custom-colored map we just created (make sure you add this and all subsequent CoffeeScript code inside a <code>$(document).ready -&gt;</code> method, or it won&rsquo;t load).</p>
 
 <figure class='code'><figcaption><span>happy_hours.js.coffee</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
