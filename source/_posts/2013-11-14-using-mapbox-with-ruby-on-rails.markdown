@@ -87,7 +87,7 @@ When I wrote this code, the latest version of the MapBox JavaScript API was 1.0.
 
 ## Initializing the Map
 
-Next, we’ll create a free MapBox account and make our own custom-colored map. Once we have the map ready, we’ll open the JavaScript file that corresponds to the controller which contains the two earlier code blocks (mine is called `happy_hours.js.coffee`), and we’ll add a line instantiating the map with the map ID of the custom-colored map we just created (make sure you add this and all subsequent CoffeeScript code inside a `$(document).ready ->` method).
+Next, we’ll create a free MapBox account and make our own custom-colored map. Once we have the map ready, we’ll open the JavaScript file that corresponds to the controller which contains the two earlier code blocks (mine is called `happy_hours.js.coffee`), and we’ll add a line instantiating the map with the map ID of the custom-colored map we just created (make sure you add this and all subsequent CoffeeScript code inside a `$(document).ready ->` method or it won't load).
 
 ``` coffeescript happy_hours.js.coffee
 # initialize the map on the 'map' div
