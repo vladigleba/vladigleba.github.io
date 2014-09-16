@@ -15,6 +15,6 @@ It all started in a 10th grade web design class. I had never seen HTML source co
 
 Throughout high school, I continued learning web development on the side, and once college came around, I decided to study computer science since it was the closest thing to web development I could find.
 
-Computer science expanded my horizons and introduced me to many new things, but apart from internships, my exposure to the web was limited. Now that I'm out of college, I'm back to studying web development full-time; the web is moving fast and there are many cool web technologies I want to learn.
+Computer science expanded my horizons and introduced me to many new things, but apart from internships, my exposure to the web was limited. But now that I'm out of college, I'll be pursuing web development full-time.
 
-I plan on using this blog as means of documenting my progress, and you're welcome to [follow along](http://www.feedblitz.com/f/?Sub=927939&cids=1), if you'd like. My open source work is available on [GitHub](https://github.com/vladigleba), my work history is on [LinkedIn](http://www.linkedin.com/in/vladigleba), while my day-to-day thoughts are on [Twitter](https://twitter.com/vladigleba). And if you'd like to say hello, you're more than welcome to do so at <inquiries@vladigleba.com>.
+I plan on using this blog as a means of documenting my journey, and you're welcome to [follow along](http://www.feedblitz.com/f/?Sub=927939&cids=1), if you'd like. My open source work is available on [GitHub](https://github.com/vladigleba), my work history is on [LinkedIn](http://www.linkedin.com/in/vladigleba), and everything else is on [Twitter](https://twitter.com/vladigleba). And if you'd like to say hello, you're more than welcome to do so at <inquiries@vladigleba.com>.
