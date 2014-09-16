@@ -4,7 +4,7 @@
   <title><![CDATA[Topic: Testing | Vladi Gleba]]></title>
   <link href="http://vladigleba.github.io/blog/topics/testing/atom.xml" rel="self"/>
   <link href="http://vladigleba.github.io/"/>
-  <updated>2014-09-11T19:33:00-07:00</updated>
+  <updated>2014-09-15T23:20:02-07:00</updated>
   <id>http://vladigleba.github.io/</id>
   <author>
     <name><![CDATA[Vladi Gleba]]></name>
@@ -117,7 +117,7 @@ assert_equal humanize_days('3,4,7'), 'monday, wednesday, saturday'
 
 <p>  def setup</p>
 
-<pre><code>@place = places(:thai) 
+<pre><code>@place = places(:thai)
 </code></pre>
 
 <p>  end</p>
@@ -188,7 +188,7 @@ assert_not_nil assigns(:happening_now)
 assert_not_nil assigns(:geojson)
 
 # header
-assert_select '.intro h1', 'phindee' 
+assert_select '.intro h1', 'phindee'
 assert_select '.intro p', /.+/  # regex makes sure element is not empty
 
 # definition list
