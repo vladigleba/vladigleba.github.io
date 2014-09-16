@@ -11,7 +11,7 @@ I started learning Ruby on Rails over a year ago, and as most beginners, I chose
 
 <!-- more -->
 
-To be honest, I was a bit reluctant to pickup testing at first. I knew it was important to test code (and I did that by sprinkling `print` statements all over my code), but it was never a part of my workflow. When I got into the zone, the last thing I wanted to do is slow down and write tests. Over the past couple of days, however, I finally saw the light. And it was glorious.
+To be honest, I was a bit reluctant to pickup testing at first. I knew it was important to test code (and I did that by sprinkling `print` statements all over my code), but it was never a part of my workflow. When I got into the zone, the last thing I wanted to do is slow down and write tests. Over the past couple of days, however, I finally saw the light. And it was glorious. 
 
 Let me share it with you.
 
@@ -19,7 +19,7 @@ Let me share it with you.
 
 Test-driven development (TDD) is an approach to software development in which we first write a test for a desired functionality, then run the test to make sure it fails, and only then do we implement the said functionality. Once implemented, we run the test once more to make sure our implementation behaves the way our test says it should.
 
-We write and run a failing test first for two reasons:
+We write and run a failing test first for two reasons: 
 
 1. it helps guide our implementation due to the fact that we’ve already identified what the result should look like, and
 2. it makes sure that the test is actually covering the functionality we think it is, because it’s easy to write a test that doesn’t really check what we think its checking
@@ -38,7 +38,7 @@ This kind of peace of mind is possible because a test suite catches bugs in your
 
 Let me ask you this: Would you rather run a command that looks for bugs in your code on demand, and tells you exactly where to look if it finds them, or would you rather have your users discover the bugs in production, thereby sending you on a frantic bug-hunting spree? It’s a no brainer, yet all too often we find ourselves discovering bugs in production when they could’ve easily been discovered in development.
 
-The beauty with having a test suite is you write your tests once, and running them on demand is as simple as typing a short command. The amount of time this saves is enormous. Of course, I’m not saying that writing test cases means you’re production environment will be bug free because software is never bug free; but it *will* help you track down *most* bugs *before* they reach production and do so in a fraction of the time it would’ve taken otherwise.
+The beauty with having a test suite is you write your tests once, and running them on demand is as simple as typing a short command. The amount of time this saves is enormous. Of course, I’m not saying that writing test cases means you’re production environment will be bug free because software is never bug free; but it <em>will</em> help you track down <em>most</em> bugs <em>before</em> they reach production and do so in a fraction of the time it would’ve taken otherwise.
 
 ## Better Code
 
@@ -48,7 +48,7 @@ Furthermore, having to write test cases for individual methods has also forced m
 
 # How It’s Done
 
-Now that we’ve covered the benefits, I’d like to show you how easy it is to do the testing. Note that I will be using the testing library called Test Unit that ships by default with Rails, instead of the RSpec framework used by the <cite>Ruby on Rails Tutorial</cite>. (I’ll discuss why a bit later.)
+Now that we’ve covered the benefits, I’d like to show you how easy it is to do the testing. Note that I will be using the testing library called Test Unit that ships by default with Rails, instead of the RSpec framework used by the <cite>Ruby on Rails Tutorial</cite>. (I’ll discuss why a bit later.) 
 
 Rails provides directories for five different categories of tests by default: helper tests, unit tests (directory is called `models`), functional tests (directory is called `controllers`), mailer tests, and integration tests. But before I go into them, I first need to introduce fixtures.
 
@@ -76,13 +76,13 @@ Helper tests are just what they sound like&mdash;they’re tests for your helper
 
 ``` ruby happy_hours_helper_test.rb
   . . .
-
+  
   test 'should return days given integers' do
     assert_equal humanize_days('2'), 'monday'
     assert_equal humanize_days('1-5'), 'sunday-thursday'
     assert_equal humanize_days('3,4,7'), 'monday, wednesday, saturday'
   end
-
+  
   . . .
 ```
 
@@ -96,26 +96,26 @@ Unit tests are there to test your models. The `rails generate model NAME` comman
 
 ``` ruby happy_hour_test.rb
   . . .
-
-  def setup
-    @place = places(:thai)
+  
+  def setup 
+    @place = places(:thai) 
   end
 
   test 'should be invalid if name is missing' do
     @place.name = nil
     assert !@place.valid?
   end
-
+  
   test 'should be invalid if name exceeds max length' do
     @place.name = 'a' * 51
     assert !@place.valid?
   end
-
+  
   test 'should be invalid if name is not unique' do
     identical = @place.dup
     assert !identical.valid?
   end
-
+  
   . . .
 ```
 
@@ -133,7 +133,7 @@ The second test makes sure that a `name` attribute that exceeds the maximum leng
 validates :name, presence: true, length: { maximum: 50 }
 ```
 
-And finally, the third test makes sure that duplicates are not valid, which means it'll look for a `uniqueness` helper set to `true`:
+And finally, the third test makes sure that duplicates are not valid, which means it'll look for a `uniqueness` helper set to `true`: 
 
 ``` ruby place.rb
 validates :name, presence: true, length: { maximum: 50 }, uniqueness: true
@@ -147,31 +147,31 @@ Functional tests are there to test your controllers, although you can also use t
 
 ``` ruby happy_hour_controller_test.rb
   . . .
-
-  test "should get happening_now" do
+  
+  test "should get happening_now" do    
     get :happening_now          # simulates a get request on happening_now action
     assert_response :success    # makes sure response returns with status code 200
-
+    
     # variables
     assert_not_nil assigns(:happening_now)
     assert_not_nil assigns(:geojson)
-
+    
     # header
-    assert_select '.intro h1', 'phindee'
+    assert_select '.intro h1', 'phindee' 
     assert_select '.intro p', /.+/  # regex makes sure element is not empty
-
+    
     # definition list
     assert_select 'article dl img', count: 2  # must be two img elements
-
+    
     # list items
     assert_select 'article li p', /#{humanize_hours(assigns(:happening_now).first.start_time)}/
     assert_select 'article li h2', assigns(:happening_now).first.location.place.name
   end
-
+  
   . . .
 ```
 
-The `assert_not_nil` method makes sure the variable that the `assigns` method retrieves is actually initialized. Note that `:happening_now` and `:geojson` are instance variables inside the controller, but here they're symbols.
+The `assert_not_nil` method makes sure the variable that the `assigns` method retrieves is actually initialized. Note that `:happening_now` and `:geojson` are instance variables inside the controller, but here they're symbols. 
 
 All the other remaining assertions use the `assert_select` method to select an HTML element using the familiar CSS syntax and make sure it’s value is what we expect it to be. As you can see, the method is quite powerful; it can check for a specific string, evaluate a regular expression, and check for a certain number of elements using the `count` method, among [other things](http://api.rubyonrails.org/classes/ActionDispatch/Assertions/SelectorAssertions.html).
 
@@ -194,7 +194,7 @@ One final thing I’d like to mention is the `test/test_helper.rb` file, which h
 
 # Why Not RSpec?
 
-I chose not to use RSpec because I wanted learn about the way testing is done in Rails by default and see how it compares with RSpec. So far, it seems like both approaches are equally capable of doing everything necessary to sufficiently test your code; they just take a different approach with regards to the way you *write* the tests. RSpec's syntax seems more verbose and reads like English, while Test Unit’s syntax is more terse.
+I chose not to use RSpec because I wanted learn about the way testing is done in Rails by default and see how it compares with RSpec. So far, it seems like both approaches are equally capable of doing everything necessary to sufficiently test your code; they just take a different approach with regards to the way you <em>write</em> the tests. RSpec's syntax seems more verbose and reads like English, while Test Unit’s syntax is more terse. 
 
 Currently, I’m leaning towards Test Unit because its terse syntax means less typing, and since it comes baked in with Rails, there is no need to inflate the code base with additional gems. (Rails 4 actually incorporated a library called MiniTest into Test Unit, which now offers support for RSpec-like syntax.)
 

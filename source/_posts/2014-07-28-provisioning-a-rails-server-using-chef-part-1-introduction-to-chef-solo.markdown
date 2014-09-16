@@ -19,7 +19,7 @@ Another solution was to write a script that executed all the commands I ran to p
 
 # Why Chef?
 
-Besides Chef, there is another popular tool you could use to provision your server called [Puppet](https://github.com/puppetlabs/puppet). There are some [good](https://www.quora.com/What-are-the-key-reasons-to-choose-Puppet-over-Chef-or-vice-versa) [articles](http://devopsanywhere.blogspot.com/2011/10/puppet-vs-chef-fight.html) comparing the two, but the main reason why I went with Chef is because Puppet was designed with system administrators in mind, while Chef was designed with developers in mind, and as a developer, Chef is more natural for me to work with because it feels a lot like programming. Each tool has its strengths and weaknesses though, and you should pick the one that best fits *your* needs.
+Besides Chef, there is another popular tool you could use to provision your server called [Puppet](https://github.com/puppetlabs/puppet). There are some [good](https://www.quora.com/What-are-the-key-reasons-to-choose-Puppet-over-Chef-or-vice-versa) [articles](http://devopsanywhere.blogspot.com/2011/10/puppet-vs-chef-fight.html) comparing the two, but the main reason why I went with Chef is because Puppet was designed with system administrators in mind, while Chef was designed with developers in mind, and as a developer, Chef is more natural for me to work with because it feels a lot like programming. Each tool has its strengths and weaknesses though, and you should pick the one that best fits <em>your</em> needs.
 
 You might not even need Puppet or Chef at all. If you just need to provision a single server every now and then, a simple shell script will probably do. I decided to learn Chef because I do server provisioning pretty often, so it'll save me a significant amount of time down the road.
 
@@ -31,7 +31,7 @@ Puppet and Chef also allow you to easily access information about your system, s
 
 Chef comes in two flavors: Chef Solo and Chef Server. Chef Solo is a basically a simpler version of Chef Server because it's designed to be used with a small number of servers. With Chef Solo, you write your recipes on your local computer, upload them to your server(s), and Chef Solo is then called to run them. (A recipe, by the way, is a file containing the commands that will run to provision your server.)
 
-With Chef Server, you still write your recipes on your local computer, but instead of uploading them to the server you want provisioned, you upload them to a server that's specifically dedicated to Chef. This server acts as the main repository of *all* your recipes. The servers you want provisioned will then have a program running on them (referred to as a Chef client) that is in constant communication with your Chef server, and whenever you upload your recipes to Chef server, Chef client will notice this and run them automatically. (Chef Solo is also Chef client; it just doesn't need a Chef server to do its job.)
+With Chef Server, you still write your recipes on your local computer, but instead of uploading them to the server you want provisioned, you upload them to a server that's specifically dedicated to Chef. This server acts as the main repository of <em>all</em> your recipes. The servers you want provisioned will then have a program running on them (referred to as a Chef client) that is in constant communication with your Chef server, and whenever you upload your recipes to Chef server, Chef client will notice this and run them automatically. (Chef Solo is also Chef client; it just doesn't need a Chef server to do its job.)
 
 Since Phindee is running on a single server, I currently have no need for Chef Server; Chef Solo does everything I need it to. Chef is a complex tool, and I found that there is enough new things to learn without the added complexity of Chef Server. If you're new to Chef, this is the route I recommend, even if you intend on using Chef Server, because the learning curve will be much more manageable.
 
@@ -107,7 +107,7 @@ knife cookbook create phindee -o site-cookbooks
 
 This creates a cookbook called "phindee" and uses the `-o` option to tell Knife to store it in the `/site-cookbooks` directory. (Remember, this is the directory for storing our own cookbooks, while the `/cookbooks` directory is for those written by the community. In fact, anything stored in `/cookbooks` won't actually be version controlled.)
 
-If you then do an `ls` inside the cookbook you just created, you'll see what a standard cookbook directory structure looks like. There will be a number of directories listed, but here are the ones you should know about:
+If you then do an `ls` inside the cookbook you just created, you'll see what a standard cookbook directory structure looks like. There will be a number of directories listed, but here are the ones you should know about: 
 
 - `/attributes`: stores files that define default values for recipes
 - `/files`: contains files that are copied and placed on the server

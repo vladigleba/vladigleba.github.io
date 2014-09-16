@@ -7,15 +7,15 @@ categories: [Databases, Phindee]
 description: Learn how to use Redis to add autocomplete functionality to your Rails app.
 ---
 
-A few days ago, I added search functionality to [Phindee](http://phindee.com/) so users can quickly find information about a particular happy hour. Search that is well-done often comes with autocomplete, and Phindee is no exception.
+A few days ago, I added search functionality to [Phindee](http://phindee.com/) so users can quickly find information about a particular happy hour. Search that is well-done often comes with autocomplete, and Phindee is no exception. 
 
 <!-- more -->
 
-Autocomplete in Phindee does a couple of things for the user: 1) it reduces typing, 2) it lets the user quickly know if a specific happy hour is in the database, 3) it allows her to quickly find a particular happy hour that *is* in the database, and 4) it lets him know if the happy hour is currently happening because it will have a green circle next to it if that’s the case.
+Autocomplete in Phindee does a couple of things for the user: 1) it reduces typing, 2) it lets the user quickly know if a specific happy hour is in the database, 3) it allows her to quickly find a particular happy hour that <em>is</em> in the database, and 4) it lets him know if the happy hour is currently happening because it will have a green circle next to it if that’s the case.
 
 What makes this work behind the scenes is an open-source, in-memory, key-value store called [Redis](https://github.com/antirez/redis/). Because it’s in-memory, Redis is fast, which makes it perfect for autocompletion. I’ve known about Redis for a while now, but never had a need to use it, so I’m glad the opportunity finally presented itself. But now that I’ve had a chance to work with it, I’d like to explain how the autocomplete functionality works behind the scenes, and hopefully, teach you a few things for your own projects.
 
-Before we go on, it’s important that you have a basic understanding of Redis. If you’re never used it before, I recommend going through the [interactive tutorial](http://try.redis.io/) on their website; it will help you understand what it’s for, what it can do, and how to use it. Pay special attention to the section on sorted sets because that’s what we’ll be using for autocompletion.
+Before we go on, it’s important that you have a basic understanding of Redis. If you’re never used it before, I recommend going through the [interactive tutorial](http://try.redis.io/) on their website; it will help you understand what it’s for, what it can do, and how to use it. Pay special attention to the section on sorted sets because that’s what we’ll be using for autocompletion. 
 
 # Installing Redis
 
@@ -55,7 +55,7 @@ Next, we’ll create a new file called `search_suggestion.rb` inside the `/app/m
 
 ``` ruby search_suggestion.rb
 class SearchSuggestion
-
+  
   def self.seed
     Place.find_each do |place|
       name = place.name
@@ -65,7 +65,7 @@ class SearchSuggestion
       end
     end
   end
-
+  
 end
 ```
 
@@ -77,9 +77,9 @@ All right, now let’s go over the code. Phindee has a model called `Place` for 
 
 For each place, I’m using the `upto()` method to loop over the place’s name n times, where n is the number of characters in the name minus 1 (you’ll see why we’re doing minus 1 later). For example, let’s say the place name is “via delizia”. Our n value would be 10 because the length of the name is 11, but minus 1 brings it down to 10, so we would iterate over the name 10 times.
 
-On the first iteration, n would be 1 and the `prefix` variable would be set to the string “v” since we’re extracting the characters from 0 to 1. Then the Redis [`ZADD` command](http://redis.io/commands/zadd) is used to create a Sorted Set called “search-suggestions:v” since the variable `prefix` is set to “v” on the first iteration. (I’m prefixing the set name with “search-suggestions” to keep things organized, but this is not strictly necessary).
+On the first iteration, n would be 1 and the `prefix` variable would be set to the string “v” since we’re extracting the characters from 0 to 1. Then the Redis [`ZADD` command](http://redis.io/commands/zadd) is used to create a Sorted Set called “search-suggestions:v” since the variable `prefix` is set to “v” on the first iteration. (I’m prefixing the set name with “search-suggestions” to keep things organized, but this is not strictly necessary). 
 
-Sorted Sets are very similar to Sets because they both store collections of strings, but a Sorted Set also stores an associated score with each string that is then used for sorting. So if we go back to the code, you’ll see that `ZADD` initializes the set “search-suggestions:v” with a score of 1 and a value of “via delizia”&mdash;the place’s full name.
+Sorted Sets are very similar to Sets because they both store collections of strings, but a Sorted Set also stores an associated score with each string that is then used for sorting. So if we go back to the code, you’ll see that `ZADD` initializes the set “search-suggestions:v” with a score of 1 and a value of “via delizia”&mdash;the place’s full name. 
 
 On the second iteration, a new set will be created called “search-suggestions:vi” since we’re now extracting the characters from 0 to 2, and this initializes the variable `prefix` to “vi”.  The set itself is then initialized to a score of 1 and a string of “via delizia”, just like the first time.
 
@@ -129,7 +129,7 @@ But how do we extract values from a set? Well, Redis has a command called [`ZREV
   def self.terms_for(prefix)
     $redis.zrevrange 'search-suggestions:#{prefix.downcase}', 0, 9
   end
-
+  
 . . .
 ```
 
@@ -141,12 +141,12 @@ In order to make it easy for us to seed Redis from the command line, we'll creat
 
 ``` ruby search_suggestions.rake
 namespace :search_suggestions do
-
+  
   desc 'Generate search suggestions'
   task index: :environment do
     SearchSuggestion.seed
   end
-
+  
 end
 ```
 
@@ -204,13 +204,13 @@ We're ready to connect the autocomplete code we just added to our app's HTML. In
 
 In another file, I have the following CoffeeScript code that hooks up the autocomplete widget to the input field I just mentioned above:
 
-``` coffeescript
+``` coffeescript 
 . . .
 
   $('.search-field').autocomplete
     appendTo: '.search-form',
     source: '/search_suggestions'
-
+    
 . . .
 ```
 
@@ -218,7 +218,7 @@ I’m simply calling the jQueryUI-provided `autocomplete()` method on the input 
 
 ## How It Works
 
-If you look at the [documentation](http://api.jqueryui.com/autocomplete/#option-source) for `source`, you’ll see that it can accept the search suggestions as an array of strings, a string pointing to a URL that *returns* an array of strings, or a function with a response callback that also returns an array of strings. We’re using a string pointing to a URL since this fits our needs perfectly.
+If you look at the [documentation](http://api.jqueryui.com/autocomplete/#option-source) for `source`, you’ll see that it can accept the search suggestions as an array of strings, a string pointing to a URL that <em>returns</em> an array of strings, or a function with a response callback that also returns an array of strings. We’re using a string pointing to a URL since this fits our needs perfectly.
 
 This is how it will work. The widget will take whatever is typed in the search field and append it to a variable called “term”, which itself will get appended to the URL path we specified in `source`. Then it’ll make a GET request to the URL and expect our server to respond with the search suggestions rendered as an array of strings in the JSON format. So for example, if the user types in “v”, the widget will make a GET request to “/search_suggestions?term=v”, and it’ll expect the server to respond with something like `["via delizia","vault martini”]`.
 
@@ -240,7 +240,7 @@ This will create a new file called `search_suggestions_controller.rb`. Open it a
   def index
     render json: SearchSuggestion.terms_for(params[:term])
   end
-
+  
 . . .
 ```
 
@@ -252,7 +252,7 @@ Then open your app’s `/config/routes.rb` file and add the following line into 
 . . .
 
   match '/search_suggestions', to: 'search_suggestions#index', via: :get
-
+  
 . . .
 ```
 
@@ -282,3 +282,4 @@ end
 If you’re new to Capistrano, feel free to read through an [earlier post]({{ root_url }}/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/) I wrote, which explains what it is and how you can use it. Or if you’re new to deployment in general, you’re welcome to go through my [6-part series]({{ root_url }}/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/), which covers everything from setting up and securing a server to configuring Nginx, Unicorn, and Capistrano.
 
 All right, that's all I have. Stay hungry. Stay foolish.
+

@@ -7,7 +7,7 @@ categories: [Deployment, Phindee, Deployment Series]
 description: Learn how to configure Capistrano for deployment.
 ---
 
-In the previous four posts, I covered how I went about setting up my server for Phindee and how I configured Unicorn and Nginx. Here in part 5, I will now talk about how I configured Capistrano to actually deploy Phindee.
+In the previous four posts, I covered how I went about setting up my server for Phindee and how I configured Unicorn and Nginx. Here in part 5, I will now talk about how I configured Capistrano to actually deploy Phindee. 
 
 <!-- more -->
 
@@ -95,7 +95,7 @@ The other variable worth mentioning here is `:rbenv_type`. We could set it to `:
 
 Moving on, we’re setting the `:linked_files` variable to an array of strings initialized to `config/database.yml`. This tells Capistrano to store our app’s `config/database.yml` file inside a directory called `/shared`, which is meant for any files we want to persist between deploys. Since the contents of `database.yml` won’t change between deploys, it’s a good idea to store it there.
 
-Similarly, `:linked_dirs` contains *directories* that are meant to persist between deploys, and they too will be stored inside `/shared`. These include directories containing things like log files, Unicorn sockets, and `.pid` files that will all stay the same between deploys.
+Similarly, `:linked_dirs` contains <em>directories</em> that are meant to persist between deploys, and they too will be stored inside `/shared`. These include directories containing things like log files, Unicorn sockets, and `.pid` files that will all stay the same between deploys.
 
 And finally, `:keep_releases` tells Capistrano to only keep the last 5 deploys and discard everything else. This can be useful whenever you need to rollback to a previous release, but you also don't want releases piling up, so it's best not to set this number too high.
 
@@ -110,7 +110,7 @@ set :rails_env, :production
 server 'xxx.xxx.xxx.xxx', user: 'bob', port: 12345, roles: %w{web app db}, primary: true
 ```
 
-As you can see, there isn’t much going on here. We’re first setting the `:stage` variable to `:production` to let Capistrano know that this file is meant for production. We’re also setting the `:rails_env` variable to the same thing to make sure Rails runs in the production environment. But the key line is the last line, which tells Capistrano how to access our VPS server. Make sure you replace the Xs with the IP address of the server you setup in part 1, along with the user and port number it's set up with.
+As you can see, there isn’t much going on here. We’re first setting the `:stage` variable to `:production` to let Capistrano know that this file is meant for production. We’re also setting the `:rails_env` variable to the same thing to make sure Rails runs in the production environment. But the key line is the last line, which tells Capistrano how to access our VPS server. Make sure you replace the Xs with the IP address of the server you setup in part 1, along with the user and port number it's set up with. 
 
 We’re then using the `:roles` variable to let Capistrano know that our database server (PostgreSQL) represented by `db`, web server (Nginx) represented by `web`, and application server (Unicorn) represented by `app` all run on the same machine. Apps with lots of traffic, on the other hand, might have multiple separate physical servers for each of these. Setting `:primary` to `true` then tells Capistrano that this is our primary database server, and Capistrano will run migrations only on the one we designate as `:primary`. Even if we’re running all our servers on the same physical machine, setting `:primary` is still necessary.
 
@@ -144,7 +144,7 @@ We can then give this group write permissions so its members can create director
 sudo chmod g+w /var
 ```
 
-There are two other places where we need to repeat this process. The first is the `/etc/nginx/sites-enabled` directory, which Nginx uses to store its configuration files, and this is where our `config/nginx.conf` file that we created in [part 4]({{ root_url }}/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/) will go. But we actually won’t be storing the file itself there; we’ll create a symlink to it, instead. This will make our deploys easier to manage because we won’t need to add our `nginx.conf` file to the `/etc/nginx/sites-enabled` directory *every* time we deploy. We can simply symlink it since Capistrano will always store our latest deploy code in the same place (`/var/www/phindee/current`).
+There are two other places where we need to repeat this process. The first is the `/etc/nginx/sites-enabled` directory, which Nginx uses to store its configuration files, and this is where our `config/nginx.conf` file that we created in [part 4]({{ root_url }}/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/) will go. But we actually won’t be storing the file itself there; we’ll create a symlink to it, instead. This will make our deploys easier to manage because we won’t need to add our `nginx.conf` file to the `/etc/nginx/sites-enabled` directory <em>every</em> time we deploy. We can simply symlink it since Capistrano will always store our latest deploy code in the same place (`/var/www/phindee/current`).
 
 Same thing is needed for the `config/unicorn_init.sh` file from [part 3]({{ root_url }}/blog/2014/03/21/deploying-rails-apps-part-3-configuring-unicorn/). We’ll need to create a symlink inside `/etc/init.d`, since that’s the directory Linux uses to store all the shell scripts used to manage the various services installed on the system. When we installed Nginx in [part 2]({{ root_url }}/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/), for example, a shell script was automatically installed there to help us manage Nginx, and it will be invoked whenever we run a command like `sudo service nginx restart`. There is nothing like this for Unicorn yet, which is why we need to create a symlink to our `unicorn_init.sh` script to give us similar functionality.
 
@@ -158,6 +158,6 @@ sudo chgrp deployers /etc/init.d
 sudo chmod g+w /etc/init.d
 ```
 
-And now Capistrano should have the necessary permissions to do its work.
+And now Capistrano should have the necessary permissions to do its work. 
 
 Having Capistrano configured, we’re ready to move on and start writing custom tasks to help us deploy our code, and that’s exactly what we’ll do in the [next and last post]({{ root_url }}/blog/2014/04/10/deploying-rails-apps-part-6-writing-capistrano-tasks/) of this series. If you want to be notified when it’s out, feel free to [subscribe](http://www.feedblitz.com/f/?Sub=927939&cids=1), and you'll get it delivered to your inbox as soon as it’s released.

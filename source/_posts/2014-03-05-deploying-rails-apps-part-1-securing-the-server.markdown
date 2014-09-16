@@ -69,7 +69,7 @@ You can then exit the nano text editor by typing "Control-X" and typing "Y" when
 
 Running commands while logged in as `root` is considered bad practice because, as the superuser, `root` can run any and all commands, and since there is no undo functionality in Unix, one accidental bad command and your system can be seriously disrupted. That’s why we created a separate user called `bob`, which will have deployment privileges and nothing else.
 
-But why did we create a `deployers` group and added `bob` into it? Well, first of all, we could’ve avoided creating a group altogether and just added `bob` to the `sudoers` file and given *him* `root` privileges instead. But let’s say I’m working on a project with a friend and she wants to be able to deploy as well. I would have to then add her to the `sudoers` file too (to give her `root` privileges), and the file would keep growing every time a new user with deployment privileges needed to be added. This would be a nightmare to maintain.
+But why did we create a `deployers` group and added `bob` into it? Well, first of all, we could’ve avoided creating a group altogether and just added `bob` to the `sudoers` file and given <em>him</em> `root` privileges instead. But let’s say I’m working on a project with a friend and she wants to be able to deploy as well. I would have to then add her to the `sudoers` file too (to give her `root` privileges), and the file would keep growing every time a new user with deployment privileges needed to be added. This would be a nightmare to maintain.
 
 A better way to go about this is to create a group called `deployers`, give the group `root` privileges, and then add users to this group. This way, whenever I’d need to add new users with deployment privileges, I would just need to add them to the `deployers` group. This keeps the `sudoers` file clean and organized, while allowing me to easily manage the members of the group as well. I could, for example, easily revoke some rights for all members of the `deployers` group at the same time, instead of doing it one user at a time, or I could simply remove a user from the `deployers` group if I discover, for example, that he still creates "1234" passwords for his accounts.
 
@@ -91,7 +91,7 @@ This file contains a number of rules that define who can login to the server and
 Port 22
 ```
 
-and change its port number to the one you picked. Make sure you make a note of the new port number because you’ll need it for future login.
+and change its port number to the one you picked. Make sure you make a note of the new port number because you’ll need it for future login. 
 
 Next, look for another line in the file that looks like this:
 
@@ -99,9 +99,9 @@ Next, look for another line in the file that looks like this:
 PermitRootLogin yes
 ```
 
-and change the “yes” to a “no”; this prevents `root` user login, which means that any potential hackers will need to know the name of one of the users on the server to actually login.
+and change the “yes” to a “no”; this prevents `root` user login, which means that any potential hackers will need to know the name of one of the users on the server to actually login. 
 
-We can even go a step further and define exactly which existing users are able to login. Since I only want `bob` to have login access, I’ll add the following line to the end of the file:
+We can even go a step further and define exactly which existing users are able to login. Since I only want `bob` to have login access, I’ll add the following line to the end of the file: 
 
 ``` text sshd_config
 AllowUsers bob
@@ -133,7 +133,7 @@ Make sure you change the above command to match the user and port number you spe
 
 # Enabling SSH Authentication
 
-The final thing we’ll do to secure our server is enable SSH authentication, which will allow us to use SSH keys to authenticate with the server, instead of the traditional password authentication. This is a more secure approach because password authentication involves sending your password over the network, and this makes it vulnerable to being intercepted and cracked. It’s also more convenient since you won’t need to enter it every time you want to login. But before we move on, I’d like to briefly explain how SSH keys work and what makes them more secure.
+The final thing we’ll do to secure our server is enable SSH authentication, which will allow us to use SSH keys to authenticate with the server, instead of the traditional password authentication. This is a more secure approach because password authentication involves sending your password over the network, and this makes it vulnerable to being intercepted and cracked. It’s also more convenient since you won’t need to enter it every time you want to login. But before we move on, I’d like to briefly explain how SSH keys work and what makes them more secure. 
 
 All SSH keys come in pairs: one private and the other public. The private key is stored locally and needs to be carefully guarded, while the public key is stored on the remote server to which you will be logging in. Anytime you want to connect to the server, it will use the public key to create a challenge, which it will then send over to you, and only you, the holder of the private key, will be able to correctly understand and solve the challenge. Your response is then sent back to the server, and if it’s correct, it’ll grant you access.
 
@@ -167,7 +167,7 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub -p 23523 bob@xxx.xxx.xxx.xxx
 
 This will create a new file called `authorized_keys` on your remote server inside the `~/.ssh` directory and store your public key in it. If you now try to `ssh` into your server, you should be authenticated and logged in without entering your password.
 
-Going through this process might seem a bit tedious and time consuming at first, but after you’ve done it a couple times, it will get easier and hopefully become second nature. Security is important, and the time you spend learning and implementing it is time well spent.
+Going through this process might seem a bit tedious and time consuming at first, but after you’ve done it a couple times, it will get easier and hopefully become second nature. Security is important, and the time you spend learning and implementing it is time well spent. 
 
 # Summary
 
