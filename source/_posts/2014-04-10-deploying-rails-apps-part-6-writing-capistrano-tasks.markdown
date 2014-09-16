@@ -17,7 +17,7 @@ When I was deploying Phindee, I created a file called `setup.rake` inside the ap
 
 ``` ruby setup.rake
 namespace :setup do
-  
+
   desc "Upload database.yml file."
   task :upload_yml do
     on roles(:app) do
@@ -41,12 +41,12 @@ namespace :setup do
   task :symlink_config do
     on roles(:app) do
       execute "rm -f /etc/nginx/sites-enabled/default"
-    
+
       execute "ln -nfs #{current_path}/config/nginx.conf /etc/nginx/sites-enabled/#{fetch(:application)}"
       execute "ln -nfs #{current_path}/config/unicorn_init.sh /etc/init.d/unicorn_#{fetch(:application)}"
    end
   end
-  
+
 end
 ```
 
@@ -76,7 +76,7 @@ We’ll get a feel for how tasks work and what they’re capable of doing by run
 /config/database.yml
 ```
 
-You can see that in addition to ignoring the `database.yml` file, I’m also ignoring lots of other files as well, especially the annoying `.DS_Store` files that the Mac OS loves to create. 
+You can see that in addition to ignoring the `database.yml` file, I’m also ignoring lots of other files as well, especially the annoying `.DS_Store` files that the Mac OS loves to create.
 
 With that out of the way, we can now safely open up `database.yml` and add our database parameters to the file's production section. We’ll only need to modify the `database`, `username`, and `password` keys, and everything else can be left the way it is. Make sure you set these to the database name, username, and password you created in [part 2]({{ root_url }}/blog/2014/03/14/deploying-rails-apps-part-2-setting-up-the-server/).
 
@@ -105,7 +105,7 @@ Capistrano 3 uses the Rake DSL (Domain Specific Language), which means if you ev
 - `as()`: specifies the user to run as
 - `with()`: specifies the environment variables to run with
 
-Typically, you’ll start a task by using an `on()` method to specify the server on which you want your commands to run. Then you can use any combination of `as()`, `within()`, and `with()` methods, which are repeatable and stackable in any order, to provide additional details. For example, the `upload_yml` task we ran in `setup.rake` uses the `on()` method to specify that the resulting block of code should only be run on the application server. The `seed_db` task right below it has <em>three</em> parameters that specify how the resulting statement will run; it uses `on()`, `within()`, and `with()` to specify that the statement should only run <em>on</em> the application server, <em>within</em> the path specified, and <em>with</em> certain environment variables set.
+Typically, you’ll start a task by using an `on()` method to specify the server on which you want your commands to run. Then you can use any combination of `as()`, `within()`, and `with()` methods, which are repeatable and stackable in any order, to provide additional details. For example, the `upload_yml` task we ran in `setup.rake` uses the `on()` method to specify that the resulting block of code should only be run on the application server. The `seed_db` task right below it has *three* parameters that specify how the resulting statement will run; it uses `on()`, `within()`, and `with()` to specify that the statement should only run *on* the application server, *within* the path specified, and *with* certain environment variables set.
 
 Obviously, if SSHKit gives you methods to specify certain parameters that must be met before the actual statements are run, it should also give you methods to help you run those statements. That’s exactly what it does, and below are those methods:
 
@@ -120,7 +120,7 @@ Armed with this knowledge, we’re now better equipped to understand the three t
 
 # Task Walk-Through
 
-The `upload_yml` task, for example, is run on the application server only, and its first statement uses the `execute()` method to run `mkdir -p`, which creates the following directory structure inside `/var`, if it doesn’t already exist: 
+The `upload_yml` task, for example, is run on the application server only, and its first statement uses the `execute()` method to run `mkdir -p`, which creates the following directory structure inside `/var`, if it doesn’t already exist:
 
     ├── www
       └── phindee
@@ -131,7 +131,7 @@ The `shared_path` variable evaluates to `/var/www/phindee/shared`, since it take
 
 The next statement uses `upload()` to upload our `database.yml` file to the directory we just created above. `File.read()` returns the file's contents as a string, which `StringIO.new()` takes and turns into a file. We then use this file as our source and `#{shared_path}/config/database.yml` as our destination. By the way, `upload()` has the bang symbol (!) because that’s how it’s defined in SSHKit, and it's just a convention letting us know that the method will block until it finishes.
 
-The `seed_db` task does exactly what it says&mdash;seeds the database with data by running `rake db:seed`. The `current_path` variable takes the `deploy_to` path and appends `/current` to it, which will result in `/var/www/phindee/current`. This is where the seed statement will run on the application server with the `rails_env` variable set to `:production`. 
+The `seed_db` task does exactly what it says&mdash;seeds the database with data by running `rake db:seed`. The `current_path` variable takes the `deploy_to` path and appends `/current` to it, which will result in `/var/www/phindee/current`. This is where the seed statement will run on the application server with the `rails_env` variable set to `:production`.
 
 But in order to ensure `rake` runs with the proper environment variables set, we have to use `rake` as a symbol and pass `db:seed` as a string; otherwise, the environment variables won't be set. This format will also be necessary whenever you’re running any other Rails-specific commands that rely on certain environment variables being set (see [this section](https://github.com/capistrano/sshkit#the-command-map) of the SSHKit README to learn more).
 
@@ -145,7 +145,7 @@ We’re almost ready for our deploy. There’s just one more file we need to add
 
 ``` ruby deploy.rake
 namespace :deploy do
-  
+
   desc "Makes sure local git is in sync with remote."
   task :check_revision do
     unless `git rev-parse HEAD` == `git rev-parse origin/master`
@@ -163,13 +163,13 @@ namespace :deploy do
       end
     end
   end
-  
+
 end
 ```
 
-The `check_revision` task checks to make sure we pushed all our local changes to the remote master branch; if it finds that our local code is out of sync with the remote, the `exit` statement will cause Capistrano to quit. We'll want to run this task <em>before</em> Capistrano runs its own `deploy` task to make sure we don’t forget to push our local changes up to GitHub when trying to deploy.
+The `check_revision` task checks to make sure we pushed all our local changes to the remote master branch; if it finds that our local code is out of sync with the remote, the `exit` statement will cause Capistrano to quit. We'll want to run this task *before* Capistrano runs its own `deploy` task to make sure we don’t forget to push our local changes up to GitHub when trying to deploy.
 
-The second block of code actually creates <em>three</em> separate tasks that will allow us to start, stop, and restart Unicorn from our local computer. We'll run the `restart` task, for example, after Capistrano finishes its deploy so Unicorn picks up the new code. (Note that I created a namespace called `deploy` to contain these tasks since that's what they're related to.) 
+The second block of code actually creates *three* separate tasks that will allow us to start, stop, and restart Unicorn from our local computer. We'll run the `restart` task, for example, after Capistrano finishes its deploy so Unicorn picks up the new code. (Note that I created a namespace called `deploy` to contain these tasks since that's what they're related to.)
 
 But how do we tell Capistrano to run these tasks as part of its deploy? Well, Capistrano provides two callback functions called `before()` and `after()` to help us out, and the code below illustrates how it's done (add it to the end of your `deploy.rake` file):
 
@@ -177,14 +177,14 @@ But how do we tell Capistrano to run these tasks as part of its deploy? Well, Ca
 namespace :deploy do
 
   . . .
-  
+
   before :deploy, "deploy:check_revision"
   after :deploy, "deploy:restart"
   after :rollback, "deploy:restart"
 end
 ```
 
-We're first using `before()` to tell Capistrano to run our `check_revision` task before it runs its own `deploy` task. Then we use `after()` to make sure Capistrano restarts Unicorn after a `deploy`. Finally, we do the same thing after a `rollback` task, which is a task that simply allows you to rollback to the previous deploy if you don't like the current one, for whatever reason, and it's invoked by running `cap production deploy:rollback`. Of course, we could use these callbacks with <em>any</em> task to run <em>any other</em> task, and this is powerful because it allows us to reuse and extend our code in different ways.
+We're first using `before()` to tell Capistrano to run our `check_revision` task before it runs its own `deploy` task. Then we use `after()` to make sure Capistrano restarts Unicorn after a `deploy`. Finally, we do the same thing after a `rollback` task, which is a task that simply allows you to rollback to the previous deploy if you don't like the current one, for whatever reason, and it's invoked by running `cap production deploy:rollback`. Of course, we could use these callbacks with *any* task to run *any other* task, and this is powerful because it allows us to reuse and extend our code in different ways.
 
 I'd like to point out that we're using the callbacks inside a namespace to make sure Capistrano knows which tasks the callbacks are referencing. This way Capistrano will know to run the `deploy` task, for example, that's defined in its own `deploy` namespace, and not some other task with an identical name defined somewhere else.
 
@@ -231,7 +231,7 @@ When you run `cap production deploy`, you’re actually calling a Capistrano tas
 1. `starting`: creates the directory structure and checks that the GitHub repository is reachable
 2. `updating`: copies the GitHub repository to a new `/releases` directory, adds symlinks pointing to `/shared`, runs Bundler, runs migrations, and compiles assets
 3. `publishing`: symlinks the `/current` directory to the new `/releases` directory
-4. `finishing`: removes old `/releases` directories 
+4. `finishing`: removes old `/releases` directories
 
 If you run `cap -T`, you’ll see all these tasks listed, along with some other tasks that Capistrano runs during a deploy (see the [documentation](http://capistranorb.com/documentation/getting-started/flow/) to learn when they're run). The tasks we defined ourselves will also be listed there, along with their descriptions.
 
@@ -256,6 +256,6 @@ sudo service nginx restart
 
 If you now open up your favorite browser (I hope it's not Internet Explorer) and type your server’s IP address into the address bar, you might see your app; if you you don't, don't worry. Deployment is hard and takes a while to sink in. If things aren’t working, your best bet is to start with the logs and google any errors you find there.
 
-But the most important thing is to not get discouraged. When I set up my production server from scratch for the very first time, it took me a <em>full week</em> (I’m not kidding) to get it working. It was frustrating, discouraging, and is the reason why I decided to write this series, because I didn’t want other people going through the same thing. It doesn't have be that way though, and I hope it won't be.
+But the most important thing is to not get discouraged. When I set up my production server from scratch for the very first time, it took me a *full week* (I’m not kidding) to get it working. It was frustrating, discouraging, and is the reason why I decided to write this series, because I didn’t want other people going through the same thing. It doesn't have be that way though, and I hope it won't be.
 
 (If you enjoyed this series, you might also like the ["Provisioning a Rails Server Using Chef" series]({{ root_url }}/blog/topics/chef-series/), which explains how you can use Chef to automate your entire server setup.)

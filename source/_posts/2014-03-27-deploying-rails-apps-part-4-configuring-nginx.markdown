@@ -34,14 +34,14 @@ server {
     add_header Cache-Control public;
   }
 
-  try_files $uri/index.html $uri @unicorn; 
+  try_files $uri/index.html $uri @unicorn;
   location @unicorn {
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     proxy_set_header Host $http_host;
     proxy_redirect off;
     proxy_pass http://unicorn;
   }
-  
+
   error_page 500 502 503 504 /500.html;
   keepalive_timeout 10;
 }
@@ -65,7 +65,7 @@ The `server` block right below the `upstream` block is there to redirect a reque
 
 # Where the Meat Is
 
-The next `server` block contains the main configuration. The `listen` directive inside it tells Nginx to listen on port 80, and the `server_name` directive right below specifies the domain name that Nginx will try to match, which is "phindee.com" in my case. 
+The next `server` block contains the main configuration. The `listen` directive inside it tells Nginx to listen on port 80, and the `server_name` directive right below specifies the domain name that Nginx will try to match, which is "phindee.com" in my case.
 
 Specifying `default` in the `listen` directive, by the way, tells Nginx to use this server block by default if it can’t find a matching domain name, which means I could technically leave out the `server_name` directive completely, and everything would still work because of `default`, but I like to leave it in for readability. And finally, I added the `deferred` option since I’m running this on Linux, which tells Nginx to use the `TCP_DEFER_ACCEPT` option to [speed up performance](http://www.techrepublic.com/article/take-advantage-of-tcp-ip-options-to-optimize-data-transmission/) by reducing the amount of preliminary work that happens between a client and the server.
 
@@ -75,9 +75,9 @@ Moving along, the `root` directive specifies the directory in which Nginx will l
 
 Just like the `server_name` directive handles requests for domain names, the `location` directive handles requests for specific files and folders. The caret and tilde (^~) tells Nginx to do a regular expression match on `/assets/` and to stop searching as soon as it finds a match (see the [Linode Guide](https://library.linode.com/web-servers/nginx/configuration/basic#sph_location-file-and-folder-configuration) to learn more).
 
-By setting the `gzip_static` directive to `on`, we’re then telling Nginx to look for an already pre-compressed `.gz` file <em>before</em> proceeding to compress it. This prevents Nginx from compressing the same file each time it is requested. 
+By setting the `gzip_static` directive to `on`, we’re then telling Nginx to look for an already pre-compressed `.gz` file *before* proceeding to compress it. This prevents Nginx from compressing the same file each time it is requested. 
 
-The `expires` directive then makes the response cacheable and marks it with an expiry date set to `max`, which is equivalent to December 31st, 2037. This tells browsers and any caching servers to not request these assets again until the specified date. Of course, if we make changes to our stylesheets, for example, Rails will change the filename and browsers will still receive the latest version, which will then also be cached. 
+The `expires` directive then makes the response cacheable and marks it with an expiry date set to `max`, which is equivalent to December 31st, 2037. This tells browsers and any caching servers to not request these assets again until the specified date. Of course, if we make changes to our stylesheets, for example, Rails will change the filename and browsers will still receive the latest version, which will then also be cached.
 
 Using the `expires` directive, however, is an outdated method of specifying caching, and it’s recommended to use `Cache-Control` header instead. The next line in the code does just that through the `add_header` directive. (The reason we include  `expires` is to make things backward-compatible.) It’s possible, by the way, to set `Cache-Control` to either `public` or `private`, and I’m setting it to `public` because we’re caching assets that are meant to be used by everybody, whereas `private` would mean they’re unique to individual users (see [Stack Overflow](http://stackoverflow.com/questions/3492319/private-vs-public-in-cache-control) to learn more).
 

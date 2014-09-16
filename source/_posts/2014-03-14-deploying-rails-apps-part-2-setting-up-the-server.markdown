@@ -49,7 +49,7 @@ We’ll install `postfix` and `telnet` next to enable our Rails app to send emai
 sudo apt-get -y install telnet postfix
 ```
 
-Feel free to just press “enter” through all the prompts and keep all the defaults. 
+Feel free to just press “enter” through all the prompts and keep all the defaults.
 
 Next, we’ll install some useful packages we’ll later need, among them `python-software-properties`, which will allow us to easily add new repositories to the `apt` package handling system:
 
@@ -144,7 +144,7 @@ Having the basics setup, we can now quit Postgres:
 
 [rbenv](https://github.com/sstephenson/rbenv) is a tool that helps you manage the Ruby versions installed on your system, thereby allowing you to easily switch between them. Whenever you want to play with a new version of Rails&mdash;without messing up your current setup&mdash;rbenv will come in handy.
 
-You may be familiar with another Ruby version manager called [RVM](https://rvm.io/). I used it myself for a while, before switching over to rbenv. It’s not that one is “better” than the other; it’s about which one is better suited for <em>your</em> needs. I made the switch because rbenv is more lightweight than RVM, its design feels cleaner, and it has a cool name.
+You may be familiar with another Ruby version manager called [RVM](https://rvm.io/). I used it myself for a while, before switching over to rbenv. It’s not that one is “better” than the other; it’s about which one is better suited for *your* needs. I made the switch because rbenv is more lightweight than RVM, its design feels cleaner, and it has a cool name.
 
 rbenv will suite you well if you’re starting out; otherwise, install whatever best meets your needs. By the way, it’s worth mentioning that since rbenv is incompatible with RVM, you won’t be able to run them side by side.
 
