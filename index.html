@@ -176,11 +176,13 @@
   </footer>
 
   <script>
-    //$(".god").hide();
-    //$("nav button").click(function() {
-      //$("article").hide();
-      //$("article." + $(this).text().lowercase()).show();
-    //});
+    $("article").hide();
+    $("article.bible").show();
+    
+    $("nav button").click(function() {
+      $("article").hide();
+      $("article." + $(this).attr('class')).show();
+    });
   </script>
 
 </body>
