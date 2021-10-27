@@ -34,11 +34,14 @@
     </hgroup>
   </header>
  
-  <nav role="navigation"></nav>
+  <nav role="navigation">
+    <button class="bible" type="button">The Bible</button>
+    <button class="god" type="button">God</button>
+  </nav>
+  
   <div id="main">
     <div id="content">
       <div class="blog-index">
-        
         <article class="bible">
           <header>
             <h1 class="entry-title">Bible</h1>
@@ -101,11 +104,6 @@
               If any man will do his will, he shall know of the doctrine, whether it be of God, or whether I speak of myself. (John 7:17, KJV)
             </p>
           </div>
-          <!--
-          <footer>
-            <a rel="full-article" href="/blog/2014/09/02/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/">Read on</a>
-          </footer>
-          -->
         </article>
         <article class="god">
           <header>
@@ -170,15 +168,6 @@
             </p>
           </div>
         </article>
-            
-  <!--
-  <div class="pagination">
-          <span>1</span>
-          <a href="/blog/page/2">2</a>
-          <a href="/blog/page/3">3</a>
-          <a href="/blog/page/4">4</a>
-          <a class="next" href="/blog/page/2/">Next &rarr;</a>
-  </div> -->
       </div>
     </div>
   </div>
@@ -186,39 +175,13 @@
     <p>Unless otherwise noted, Scripture texts are from the New King James Version of the Bible.</p>
   </footer>
 
-<script type="text/javascript">
-      var disqus_shortname = 'vladigleba';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
--->
-
-<!-- Piwik -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://107.170.255.153/piwik/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 1]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-
-</script>
-<script>
-  $(".god").hide();
-</script>
-<noscript><p><img src="http://107.170.255.153/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
+  <script>
+    $(".god").hide();
+    $("nav button").on("click", function({
+      //$("article").hide();
+      console.log(this.text());
+    });
+  </script>
 
 </body>
 </html>
