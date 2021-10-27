@@ -177,9 +177,9 @@
 
   <script>
     $(".god").hide();
-    $("nav button").on("click", function({
-      //$("article").hide();
-      console.log(this.text());
+    $("nav button").click(function() {
+      $("article").hide();
+      $("article." + lowercase($(this).text())).show();
     });
   </script>
 
