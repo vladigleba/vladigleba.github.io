@@ -176,10 +176,10 @@
   </footer>
 
   <script>
-    $(".god").hide();
+    //$(".god").hide();
     $("nav button").click(function() {
       $("article").hide();
-      $("article." + lowercase($(this).text())).show();
+      $("article." + $(this).text().lowercase()).show();
     });
   </script>
 
