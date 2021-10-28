@@ -178,9 +178,9 @@
     $("article").hide();
     $("article#bible").show();
     
-    $("nav a").click(function() {
-      $("article").hide();
-      $("article#" + $(this).attr('id')).show();
+    $("nav a").click(function(e) {
+      e.preventDefault();      
+      $("article" + $(this).attr('href')).show();
     });
   </script>
 
