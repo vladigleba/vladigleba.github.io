@@ -179,7 +179,8 @@
     $("article#bible").show();
     
     $("nav a").click(function(e) {
-      e.preventDefault();      
+      e.preventDefault(); 
+      $("article").hide();
       $("article" + $(this).attr('href')).show();
     });
   </script>
