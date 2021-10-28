@@ -176,11 +176,11 @@
 
   <script>
     $("article").hide();
-    $("article.bible").show();
+    $("article#bible").show();
     
     $("nav a").click(function() {
       $("article").hide();
-      $("article." + $(this).attr('class')).show();
+      $("article#" + $(this).attr('class')).show();
     });
   </script>
 
