@@ -34,14 +34,14 @@
   </header>
  
   <nav role="navigation">
-    <button class="bible" type="button">The Bible</button>
-    <button class="god" type="button">God</button>
+    <a href="#bible">The Bible</a>
+    <a href="god">God</a>
   </nav>
   
   <div id="main">
     <div id="content">
       <div class="blog-index">
-        <article class="bible">
+        <article id="bible">
           <header>
             <h1 class="entry-title">The Bible</h1>
           </header>
@@ -104,7 +104,7 @@
             </p>
           </div>
         </article>
-        <article class="god">
+        <article id="god">
           <header>
             <h1 class="entry-title">God</h1>
           </header>
@@ -178,7 +178,7 @@
     $("article").hide();
     $("article.bible").show();
     
-    $("nav button").click(function() {
+    $("nav a").click(function() {
       $("article").hide();
       $("article." + $(this).attr('class')).show();
     });
