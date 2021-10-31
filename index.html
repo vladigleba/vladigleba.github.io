@@ -182,6 +182,7 @@
 
   <script>
     $("article").hide();
+    $("article#bible h2").css("color", "#65a672");
     $("article#bible").show();
     
     $("nav a").click(function(e) {
@@ -190,8 +191,9 @@
       const hex = $(this).attr('style').split(':')[1];
       
       $("article").hide();
-      $("article#" + topic).show();
       $("article#" + topic + " h2").css("color", hex);
+      $("article#" + topic).show();
+      $("html").css("border-color", hex);
     });
   </script>
 
