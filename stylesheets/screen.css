@@ -865,9 +865,8 @@ article footer a.basic-alignment.right {
 
 nav > a {
     padding: 0.452rem 0;
-    padding: 9.046px 0;
+    padding: 10px 15px;
     display: inline-block;
-    width: 30%;
     margin:0 auto
 }
 
@@ -923,7 +922,7 @@ nav > a {
         font-size:0.905em
     }
 
-    nav input.search, nav > a {
+    nav input.search {
         width: 45%
     }
 }
@@ -968,7 +967,7 @@ nav > a {
         margin-bottom:1rem
     }
 
-    nav input.search, nav > a {
+    nav input.search {
         width: 65%
     }
 
