@@ -589,8 +589,8 @@ pre.line-numbers {
 }
 
 nav {
-    margin-bottom: 137.069px;
-    margin-bottom:6.853rem
+    margin-bottom: 80px;
+    padding-top: 20px;
 }
 
 nav form {
@@ -895,8 +895,7 @@ nav > a {
 
     nav {
         border-top: none;
-        margin-bottom: 100.316px;
-        margin-bottom: 5.016rem;
+        margin-bottom: 75px;
         overflow:auto
     }
 
