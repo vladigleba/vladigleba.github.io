@@ -185,9 +185,13 @@
     $("article#bible").show();
     
     $("nav a").click(function(e) {
-      e.preventDefault(); 
+      e.preventDefault();
+      const topic = $(this).attr('href').substring(1);
+      const hex = $(this).attr('style').split(':')[1];
+      
       $("article").hide();
-      $("article" + $(this).attr('href')).show();
+      $("article#" + topic).show();
+      $("article#" + topic + " h2").css("color", hex);
     });
   </script>
 
