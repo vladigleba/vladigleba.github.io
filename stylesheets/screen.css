@@ -812,6 +812,8 @@ article p {
 article p cite {
     display: block;
     text-align: right;
+    font-style: normal;
+    font-weight: bold;
 }
 
 article p a {
