@@ -809,6 +809,11 @@ article p {
     text-align:left
 }
 
+article p cite {
+    display: block;
+    text-align: right;
+}
+
 article p a {
     text-decoration:underline
 }
