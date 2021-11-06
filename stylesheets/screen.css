@@ -815,10 +815,10 @@ article p cite {
 article p em {
     background-color: rgba(255, 238, 0, 0.5);
     border-radius: 8px;
-    padding: 2px 8px;
+    padding: 2px 7px 2px 8px;
     font-style: normal;
-    margin-left: -3px;
-    margin-right: -3px;
+    margin-left: -4px;
+    margin-right: -4px;
 }
 
 article p a {
