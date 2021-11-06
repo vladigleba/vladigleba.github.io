@@ -812,6 +812,13 @@ article p cite {
     font-weight: bold;
 }
 
+article p em {
+    background-color: rgba(255, 238, 0, 0.5);
+    border-radius: 8px;
+    padding: 2px 5px;
+    font-style: normal;
+}
+
 article p a {
     text-decoration:underline
 }
