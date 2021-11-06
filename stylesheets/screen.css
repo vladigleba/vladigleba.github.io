@@ -44,10 +44,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display:block
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-    display:block
-}
-
 .highlight table td.code, html .gist .gist-file .gist-syntax .gist-highlight table td.code {
     width:100%
 }
