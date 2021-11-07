@@ -5,7 +5,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border: 0;
     font: inherit;
     font-size: 100%;
-    vertical-align:baseline
+    vertical-align:baseline;
 }
 
 html {
@@ -813,12 +813,9 @@ article p cite {
 }
 
 article p em {
-    background-color: rgba(255, 238, 0, 0.5);
-    border-radius: 8px;
-    padding: 2px 7px 2px 8px;
     font-style: normal;
-    margin-left: -4px;
-    margin-right: -4px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 article p a {
