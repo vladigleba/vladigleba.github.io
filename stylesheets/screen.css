@@ -876,7 +876,7 @@ nav > a {
     padding: 0.452rem 0;
     padding: 10px 15px;
     display: inline-block;
-    margin:0 auto
+    margin: 2px auto
 }
 
 @media screen and (max-width: 1200px) {
