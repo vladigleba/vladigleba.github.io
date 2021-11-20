@@ -812,6 +812,12 @@ article p cite {
     font-weight: bold;
 }
 
+article p cite span {
+    background: rgba(255, 230, 0, 0.55);
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+
 article p em {
     font-style: normal;
     font-weight: bold;
