@@ -744,6 +744,7 @@ article header h1 {
     margin-bottom: 0.173rem;
     line-height: 52.96px;
     line-height:2.648rem
+    text-transform: uppercase;
 }
 
 article header h1 a, article header h1 a:hover {
@@ -772,7 +773,6 @@ article h1 {
 article h2 {
     font-size: 30.56px;
     font-size: 1.528rem;
-    text-transform: uppercase;
     margin-top: 52.358px;
     margin-top: 2.618rem;
     margin-bottom: 9.046px;
