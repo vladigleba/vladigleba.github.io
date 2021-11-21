@@ -813,7 +813,7 @@ article p cite {
 }
 
 article p cite span {
-    background: rgba(255, 230, 0, 0.50);
+    background: rgba(255, 230, 0, 0.45);
     border-radius: 5px;
     padding: 2px 8px;
 }
