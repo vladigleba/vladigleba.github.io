@@ -431,7 +431,10 @@ pre {
     font-family: Menlo, Monaco, "Andale Mono", "Lucida Console", "Courier New", monospace
 }
 
-.sans-serif-font-bold, h1, h2, h3, h4, h5, h6, #blog-archives h2 {
+.sans-serif-font-bold,
+h1, h2, h3, h4, h5, h6,
+#blog-archives h2,
+article section > div {
     font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif
 }
 
@@ -770,13 +773,27 @@ article h1 {
     margin-bottom:1rem
 }
 
-article h2 {
+article h2, article section > div {
     font-size: 30.56px;
     font-size: 1.528rem;
-    margin-top: 52.358px;
-    margin-top: 2.618rem;
     margin-bottom: 9.046px;
     margin-bottom:0.452rem
+}
+
+article section {
+  margin-top: 52.358px;
+  margin-top: 2.618rem;
+}
+
+article section > div {
+  display: block;
+  color: #fff;
+  background: rgba(194, 0, 0, 0.70);
+  border-radius: 30px;
+  width: 53px;
+  height: 40px;
+  padding-top: 12px;
+  margin: 0px auto 20px;
 }
 
 article ul, article ol {
