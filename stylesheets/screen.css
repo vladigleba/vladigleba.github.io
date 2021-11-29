@@ -417,7 +417,7 @@ pre {
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    border-radius: 4px;
+    border-radius: 5px;
     background-color: #65a672;
     color:#fff
 }
@@ -629,8 +629,8 @@ body > header {
 }
 
 body > header h1 {
-    font-size: 62.000px;
-    font-size: 3.1rem;
+    font-size: 62px;
+    font-size: 3.2rem;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 7.640px;
@@ -746,8 +746,12 @@ article header h1 {
     margin-bottom: 3.456px;
     margin-bottom: 0.173rem;
     line-height: 52.96px;
-    line-height:2.648rem;
+    line-height: 2.648rem;
     text-transform: uppercase;
+    display: inline-block;
+    color: #fff;
+    padding: 9px 15px 3px;
+    border-radius: 10px;
 }
 
 article header h1 a, article header h1 a:hover {
@@ -764,13 +768,6 @@ article header p.meta > span:before, article header p.meta > span:after {
     padding: 0 4px;
     padding: 0 0.2rem;
     content: "•"
-}
-
-article h1 {
-    margin-top: 62.000px;
-    margin-top: 3.1rem;
-    margin-bottom: 20px;
-    margin-bottom:1rem
 }
 
 article h2, article section > div {
@@ -826,13 +823,12 @@ article p cite {
     display: block;
     text-align: right;
     font-style: normal;
-    font-weight: bold;
 }
 
-article p cite span {
+article p cite b {
     background: rgba(255, 230, 0, 0.45);
     border-radius: 5px;
-    padding: 2px 8px;
+    padding: 2px 10px;
 }
 
 article p em {
@@ -897,7 +893,7 @@ article footer a.basic-alignment.right {
 
 nav > a {
     padding: 0.452rem 0;
-    padding: 10px 15px;
+    padding: 8px 12px;
     display: inline-block;
     margin: 2px auto
 }
@@ -956,6 +952,11 @@ nav > a {
     nav input.search {
         width: 45%
     }
+
+    article section > div {
+      width: 49px;
+      height: 36px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -991,6 +992,10 @@ nav > a {
     nav ul li + li {
         padding-left: 7.66px;
         padding-left:0.452rem
+    }
+
+    nav > a {
+        padding: 6px 10px;
     }
 
     nav form {
