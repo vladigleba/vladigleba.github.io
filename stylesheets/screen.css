@@ -355,7 +355,7 @@ pre {
     line-height:1.618rem
 }
 
-.font-size-smallest, nav form input.search, body > footer p, article footer > p.meta:first-child {
+.font-size-smallest, nav form input.search, .wrapper > footer p, article footer > p.meta:first-child {
     font-size: 14.637px;
     font-size:0.732rem
 }
@@ -385,7 +385,7 @@ pre {
     margin-bottom:1.618rem
 }
 
-.margin-bottom-larger, body > footer, #blog-archives article {
+.margin-bottom-larger, .wrapper > footer, #blog-archives article {
     margin-bottom: 52.358px;
     margin-bottom:2.618rem
 }
@@ -438,7 +438,7 @@ article section > div {
     font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif
 }
 
-.sans-serif-font, nav ul li, body > header h2, body .pagination, body > footer p, #blog-archives time, #blog-archives footer, article header p.meta, article footer {
+.sans-serif-font, nav ul li, body > header h2, body .pagination, .wrapper > footer p, #blog-archives time, #blog-archives footer, article header p.meta, article footer {
     font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif
 }
 
@@ -447,9 +447,8 @@ article section > div {
 }
 
 html {
-    border-top: 10px solid #65a672;
     font-size: 125%;
-    line-height:1
+    line-height: 1
 }
 
 body {
@@ -457,6 +456,9 @@ body {
     background-color: #fff;
     color: #333;
     text-align: center;
+}
+
+.wrapper, hgroup {
     width: 54%;
     margin:0 auto
 }
@@ -471,7 +473,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color: #65a672;
     text-decoration: none;
     outline: none;
     -webkit-transition: color 0.3s ease;
@@ -589,7 +590,6 @@ pre.line-numbers {
 
 nav {
     margin-bottom: 80px;
-    padding-top: 20px;
 }
 
 nav form {
@@ -614,35 +614,36 @@ nav ul {
 
 nav ul li {
     display: inline;
-    font-weight:bold
+    font-weight: bold;
 }
 
 nav ul li + li {
     padding-left: 23.683px;
-    padding-left:1.184rem
+    padding-left: 1.184rem;
 }
 
 body > header {
-    margin: 84.715px 0 52.358px 0;
-    margin: 4.236rem 0 2.618rem 0;
-    text-align:center
+    margin: 0 0 52.358px 0;
+    margin: 0 0 3rem 0;
+    text-align: left;
+    background: #65a672; /*1F2563*/
+    /*background: linear-gradient(#2f3c8b, #7b4698 65.6%, #d35d8e, #f8a488);*/
+    color: #fff;
+    padding: 40px 0;
 }
 
 body > header h1 {
     font-size: 62px;
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 7.640px;
-    margin-bottom:0.382rem
+    margin-bottom: 0.382rem;
 }
 
-body > header h1 a, body > header h1 a:hover {
-    color:#333
-}
-
-body > header h2 {
-    color:#aaa
+body > header h1 span {
+  color: #fffe6b;
+  text-shadow: #fffe6b 0 0 45px;
 }
 
 body .blog-index > article {
@@ -675,17 +676,17 @@ body .pagination span {
     color:#65a672
 }
 
-body > footer {
+.wrapper > footer {
     clear:both
 }
 
-body > footer p {
+.wrapper > footer p {
     color: #aaa;
     line-height: 20px;
     line-height:1rem
 }
 
-body > footer p a {
+.wrapper > footer p a {
     text-decoration:underline
 }
 
@@ -750,7 +751,7 @@ article header h1 {
     text-transform: uppercase;
     display: inline-block;
     color: #fff;
-    padding: 9px 15px 3px;
+    padding: 8px 15px 3px;
     border-radius: 10px;
 }
 
@@ -931,7 +932,7 @@ nav > a {
         border-top: 2px solid #808080;
         border-bottom: 1px solid #e6e6e6;
         padding: 14.637px 0;
-        padding:0.732rem 0
+        padding: 0.732rem 0
     }
 
     nav ul, nav form {
@@ -967,7 +968,7 @@ nav > a {
 
     body > header h1 {
         font-size: 37.244px;
-        font-size:2.196rem
+        font-size: 2.196rem
     }
 
     body > header h2 {
@@ -1038,7 +1039,8 @@ nav > a {
         font-size: 32.495px;
         font-size: 1.916rem;
         line-height: 37.244px;
-        line-height:2.196rem
+        line-height: 2.196rem;
+        padding: 7px 15px 3px;
     }
 
     article footer > p.meta {
