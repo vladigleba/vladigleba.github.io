@@ -592,6 +592,16 @@ nav {
     margin-bottom: 80px;
 }
 
+nav > a {
+    padding: 0.452rem 0;
+    padding: 8px 14px;
+    margin: .2rem;
+    width: 7rem;
+    height: 2.1rem;
+    text-align: left;
+    display: inline-flex;
+}
+
 nav form {
     float: right;
     margin-top:-106px
@@ -630,6 +640,7 @@ body > header {
     /*background: linear-gradient(#2f3c8b, #7b4698 65.6%, #d35d8e, #f8a488);*/
     color: #fff;
     padding: 40px 0;
+    width: 100%;
 }
 
 body > header h1 {
@@ -892,13 +903,6 @@ article footer a.basic-alignment.right {
     text-align:right
 }
 
-nav > a {
-    padding: 0.452rem 0;
-    padding: 8px 12px;
-    display: inline-block;
-    margin: 2px auto
-}
-
 @media screen and (max-width: 1200px) {
     .wrapper, hgroup {
         width:75%
@@ -957,7 +961,8 @@ nav > a {
 @media screen and (max-width: 480px) {
     body > header h1 {
         font-size: 37.244px;
-        font-size: 2.196rem
+        font-size: 2.196rem;
+        letter-spacing: -1px;
     }
 
     body > header h2 {
@@ -986,6 +991,7 @@ nav > a {
 
     nav > a {
         padding: 6px 10px;
+        margin: 0.15rem;
     }
 
     nav form {
