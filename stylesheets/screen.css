@@ -438,7 +438,7 @@ article section > div {
     font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif
 }
 
-.sans-serif-font, nav ul li, body > header h2, body .pagination, .wrapper > footer p, #blog-archives time, #blog-archives footer, article header p.meta, article footer {
+.sans-serif-font, nav, body > header h2, article header h2, body .pagination, .wrapper > footer p, #blog-archives time, #blog-archives footer, article header p.meta, article footer {
     font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif
 }
 
@@ -456,6 +456,7 @@ body {
     background-color: #fff;
     color: #333;
     text-align: center;
+    width: 100%;
 }
 
 .wrapper, hgroup {
@@ -589,14 +590,14 @@ pre.line-numbers {
 }
 
 nav {
-    margin-bottom: 80px;
+    margin: 3rem 0 6rem;
 }
 
 nav > a {
     padding: 0.452rem 0;
-    padding: 8px 14px;
-    margin: .2rem;
-    width: 7rem;
+    padding: 10px 15px;
+    margin: .2rem .1rem;
+    width: 7.5rem;
     height: 2.1rem;
     text-align: left;
     display: inline-flex;
@@ -633,14 +634,10 @@ nav ul li + li {
 }
 
 body > header {
-    margin: 0 0 52.358px 0;
-    margin: 0 0 3rem 0;
     text-align: left;
-    background: #65a672; /*1F2563*/
-    /*background: linear-gradient(#2f3c8b, #7b4698 65.6%, #d35d8e, #f8a488);*/
+    background: linear-gradient(195deg, #D69078 1%, #d35d8e 10%, #7b4698 30%, #2f3c8b 55%);
     color: #fff;
-    padding: 40px 0;
-    width: 100%;
+    padding: 140px 0;
 }
 
 body > header h1 {
@@ -653,11 +650,11 @@ body > header h1 {
 }
 
 body > header h1 span {
-  color: #fffe6b;
-  text-shadow: #fffe6b 0 0 45px;
+  color: #fff08a;
+  text-shadow: rgba(255, 240, 138, 0.5) 0 0 20px;
 }
 
-body .blog-index > article {
+body .content > article {
     margin-bottom: 137.069px;
     margin-bottom:6.853rem
 }
@@ -752,18 +749,25 @@ body .pagination span {
     content:none
 }
 
+article header {
+  padding: 20px 20px 10px;
+  margin-bottom: 3.456px;
+  margin-bottom: 0.173rem;
+
+}
+
 article header h1 {
-    font-size: 45.959px;
     font-size: 2.298rem;
-    margin-bottom: 3.456px;
-    margin-bottom: 0.173rem;
-    line-height: 52.96px;
-    line-height: 2.648rem;
-    text-transform: uppercase;
-    display: inline-block;
     color: #fff;
-    padding: 8px 15px 3px;
+    display: inline-block;
+    margin-bottom: 0.382rem;
+    text-transform: uppercase;
     border-radius: 10px;
+    padding: 8px 20px 3px;
+}
+
+article header h2 {
+  font-size: 1.184rem;
 }
 
 article header h1 a, article header h1 a:hover {
@@ -802,7 +806,7 @@ article section > div {
   width: 53px;
   height: 40px;
   padding-top: 12px;
-  margin: 0px auto 20px;
+  margin: 0px auto 25px;
 }
 
 article ul, article ol {
@@ -916,13 +920,17 @@ article footer a.basic-alignment.right {
 }
 
 @media screen and (max-width: 750px) {
+    .wrapper, hgroup {
+      width: 95%;
+    }
+
     html {
         font-size:106%
     }
 
     nav {
         border-top: none;
-        margin-bottom: 75px;
+        margin-bottom: 90px;
         overflow:auto
     }
 
@@ -990,8 +998,8 @@ article footer a.basic-alignment.right {
     }
 
     nav > a {
-        padding: 6px 10px;
-        margin: 0.15rem;
+        padding: 8px 12px;
+        margin: .15rem .075rem;
     }
 
     nav form {
@@ -1017,7 +1025,7 @@ article footer a.basic-alignment.right {
         font-size:1.618rem
     }
 
-    .blog-index > article {
+    .content > article {
         margin-bottom: 85.071px !important;
         margin-bottom:5.016rem !important
     }
