@@ -590,7 +590,7 @@ pre.line-numbers {
 }
 
 nav {
-    margin: 3rem 0 6rem;
+    margin: 3rem 0 5rem;
 }
 
 nav > a {
@@ -635,9 +635,9 @@ nav ul li + li {
 
 body > header {
     text-align: left;
-    background: linear-gradient(195deg, #D69078 1%, #d35d8e 10%, #7b4698 30%, #2f3c8b 55%);
+    background: linear-gradient(195deg, #f8a488 5%, #d35d8e 25%, #7b4698 50%, #2f3c8b 90%);
     color: #fff;
-    padding: 140px 0;
+    padding: 170px 0;
 }
 
 body > header h1 {
@@ -750,7 +750,6 @@ body .pagination span {
 }
 
 article header {
-  padding: 20px 20px 10px;
   margin-bottom: 3.456px;
   margin-bottom: 0.173rem;
 
@@ -763,7 +762,7 @@ article header h1 {
     margin-bottom: 0.382rem;
     text-transform: uppercase;
     border-radius: 10px;
-    padding: 8px 20px 3px;
+    padding: 12px 15px 7px;
 }
 
 article header h2 {
