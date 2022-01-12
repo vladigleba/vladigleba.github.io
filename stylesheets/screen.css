@@ -412,19 +412,18 @@ pre {
 }
 
 .button, body .pagination a, nav > a {
-    -webkit-transition: all 0.3s ease;
+    -webkit-transition: all 0.1s ease;
     -webkit-transition-delay: 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.1s ease 0s;
+    -o-transition: all 0.1s ease 0s;
+    transition: all 0.1s ease 0s;
     border-radius: 7px;
-    background-color: #65a672;
     color:#fff
 }
 
 .button:hover, body .pagination a:hover, nav > a:hover {
-    background-color: #538f5f;
-    color:#fff
+    opacity: 0.95;
+    color: #fff;
 }
 
 .code-font, figure.code, pre, article p > code, article li code {
