@@ -634,9 +634,9 @@ nav ul li + li {
 
 body > header {
     text-align: left;
-    background: linear-gradient(195deg, #f8a488 5%, #d35d8e 25%, #7b4698 50%, #2f3c8b 90%);
+    background: linear-gradient(205deg, #f29888 1%, #d35d8e 30%, #7b4698 60%, #2f3c8b 99%);
     color: #fff;
-    padding: 170px 0;
+    padding: 180px 0;
 }
 
 body > header h1 {
@@ -799,7 +799,7 @@ article section {
 article section > div {
   display: block;
   color: #fff;
-  background: rgba(194, 0, 0, 0.70);
+  background: rgba(200, 0, 0, 0.65);
   border-radius: 30px;
   width: 53px;
   height: 40px;
