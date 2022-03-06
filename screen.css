@@ -596,10 +596,19 @@ nav > a {
     padding: 0.452rem 0;
     padding: 10px 15px;
     margin: .2rem .1rem;
-    width: 7.5rem;
+    width: 10.5rem;
     height: 2.1rem;
     text-align: left;
     display: inline-flex;
+}
+
+nav > a > b {
+  font-size: 50px;
+  padding-right: 18px;
+  line-height: 0;
+  position: relative;
+  top: 20px;
+  letter-spacing: -7px;
 }
 
 nav form {
