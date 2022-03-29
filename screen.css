@@ -18,13 +18,26 @@ ol, ul {
 
 table {
     border-collapse: collapse;
-    border-spacing:0
+    border-spacing: 0;
+    text-align: left;
+}
+
+hr {
+  border-top-style: double;
+  border-top-width: 1px;
+  width: 35%;
+  position: relative;
+  top: -25px;
+  border-top-color: rgb(0, 235, 255);
+}
+
+td, th {
+  width: 50%;
 }
 
 caption, th, td {
     text-align: left;
     font-weight: normal;
-    vertical-align:middle
 }
 
 q, blockquote {
@@ -350,7 +363,7 @@ pre {
     width:100%
 }
 
-.default-line-height, article ul, article ol, article p {
+.default-line-height, article ul, article ol, article p, table {
     line-height: 32.360px;
     line-height:1.618rem
 }
@@ -856,19 +869,19 @@ article p.note b {
   text-transform: uppercase;
 }
 
-article p cite {
+article p cite, table cite {
     display: block;
     text-align: right;
     font-style: normal;
 }
 
-article p cite b {
+article p cite b, table cite b {
     background: rgba(255, 230, 0, 0.45);
     border-radius: 5px;
     padding: 2px 10px;
 }
 
-article p em {
+article p em, table em {
     font-style: normal;
     font-weight: bold;
     text-transform: uppercase;
