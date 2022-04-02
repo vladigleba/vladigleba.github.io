@@ -22,15 +22,6 @@ table {
     text-align: left;
 }
 
-hr {
-  border-top-style: double;
-  border-top-width: 1px;
-  width: 35%;
-  position: relative;
-  top: -25px;
-  border-top-color: rgb(0, 235, 255);
-}
-
 td, th {
   width: 50%;
 }
@@ -810,7 +801,7 @@ article h2, article section > div {
     font-size: 30.56px;
     font-size: 1.528rem;
     margin-bottom: 9.046px;
-    margin-bottom:0.452rem
+    margin-bottom: 1.2rem;
 }
 
 article section {
@@ -852,11 +843,14 @@ article ol {
 }
 
 article p {
-    text-align:left
+    text-align: left;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 article p.note {
   font-style: italic;
+  background-color: #fff !important;
 }
 
 article p.note b {
@@ -977,7 +971,13 @@ article footer a.basic-alignment.right {
     nav {
         border-top: none;
         margin-bottom: 90px;
-        overflow:auto
+    }
+
+    nav > a > b {
+      font-size: 45px;
+      top: 17px;
+      padding-right: 15px;
+      left: -2px;
     }
 
     nav ul {
@@ -1031,6 +1031,11 @@ article footer a.basic-alignment.right {
     nav {
         margin-bottom: 32.495px;
         margin-bottom:1.916rem
+    }
+
+    nav > a > b {
+      font-size: 40px;
+      left: 0px;
     }
 
     nav ul {
