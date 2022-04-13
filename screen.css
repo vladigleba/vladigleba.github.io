@@ -957,7 +957,7 @@ article footer a.basic-alignment.right {
 
 @media screen and (max-width: 750px) {
     .wrapper, hgroup {
-      width: 90%;
+      width: 95%;
     }
 
     body > header {
@@ -1010,6 +1010,10 @@ article footer a.basic-alignment.right {
       width: 49px;
       height: 36px;
     }
+
+    article p {
+      padding: 15px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1026,11 +1030,6 @@ article footer a.basic-alignment.right {
     body > header h2 {
         font-size: 15.349px;
         font-size: 1rem
-    }
-
-    nav {
-        margin-bottom: 32.495px;
-        margin-bottom:1.916rem
     }
 
     nav > a > b {
@@ -1053,7 +1052,7 @@ article footer a.basic-alignment.right {
     }
 
     nav > a {
-        padding: 8px 12px;
+        padding: 8px 10px;
         margin: .15rem .075rem;
     }
 
