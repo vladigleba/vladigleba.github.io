@@ -593,7 +593,7 @@ pre.line-numbers {
 }
 
 nav {
-    margin: 3rem 0 5rem;
+    margin: 1.5rem 0 5rem;
 }
 
 nav > a {
@@ -957,11 +957,11 @@ article footer a.basic-alignment.right {
 
 @media screen and (max-width: 750px) {
     .wrapper, hgroup {
-      width: 95%;
+      width: 100%;
     }
 
     body > header {
-      padding: 110px 0;
+      padding: 110px 10px;
     }
 
     html {
@@ -1013,12 +1013,13 @@ article footer a.basic-alignment.right {
 
     article p {
       padding: 15px;
+      border-radius: 0;
     }
 }
 
 @media screen and (max-width: 480px) {
     body > header {
-      padding: 90px 0;
+      padding: 90px 10px;
     }
 
     body > header h1 {
