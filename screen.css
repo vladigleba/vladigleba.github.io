@@ -650,7 +650,7 @@ body > header {
     text-align: left;
     background: linear-gradient(205deg, #f29888 1%, #d35d8e 30%, #7b4698 60%, #2f3c8b 99%);
     color: #fff;
-    padding: 180px 0;
+    padding: 160px 0;
 }
 
 body > header h1 {
@@ -946,7 +946,7 @@ article footer a.basic-alignment.right {
     }
 
     body > header {
-      padding: 150px 0;
+      padding: 140px 0;
     }
 }
 
@@ -956,7 +956,7 @@ article footer a.basic-alignment.right {
     }
 
     body > header {
-      padding: 130px 0;
+      padding: 120px 0;
     }
 }
 
