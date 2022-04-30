@@ -460,6 +460,7 @@ body {
     color: #333;
     text-align: center;
     width: 100%;
+    border-top: 15px solid transparent;
 }
 
 .wrapper, hgroup {
@@ -598,7 +599,7 @@ nav {
 
 nav > a {
     padding: 0.452rem 0;
-    padding: 10px 15px;
+    padding: 10px 14px;
     margin: .2rem .1rem;
     width: 10.5rem;
     height: 2.1rem;
@@ -608,7 +609,7 @@ nav > a {
 
 nav > a > b {
   font-size: 50px;
-  padding-right: 18px;
+  padding-right: 17px;
   line-height: 0;
   position: relative;
   top: 20px;
@@ -797,6 +798,10 @@ article header p.meta > span:before, article header p.meta > span:after {
     content: "•"
 }
 
+article h2 {
+  line-height: 1.8rem;
+}
+
 article h2, article section > div {
     font-size: 30.56px;
     font-size: 1.528rem;
@@ -961,7 +966,7 @@ article footer a.basic-alignment.right {
     }
 
     body > header {
-      padding: 110px 10px;
+      padding: 90px 30px;
     }
 
     html {
@@ -976,7 +981,7 @@ article footer a.basic-alignment.right {
     nav > a > b {
       font-size: 45px;
       top: 17px;
-      padding-right: 15px;
+      padding-right: 14px;
       left: -2px;
     }
 
@@ -1011,15 +1016,24 @@ article footer a.basic-alignment.right {
       height: 36px;
     }
 
+    article h2 {
+      padding: 0 10px;
+    }
+
     article p {
       padding: 15px;
       border-radius: 0;
+    }
+
+    .wrapper > footer p {
+      font-size: 0.8rem;
+      padding: 0 10px;
     }
 }
 
 @media screen and (max-width: 480px) {
     body > header {
-      padding: 90px 10px;
+      padding: 60px 30px;
     }
 
     body > header h1 {
@@ -1098,7 +1112,7 @@ article footer a.basic-alignment.right {
         font-size: 1.916rem;
         line-height: 37.244px;
         line-height: 2.196rem;
-        padding: 6px 15px 3px;
+        padding: 6px 12px 3px;
     }
 
     article footer > p.meta {
