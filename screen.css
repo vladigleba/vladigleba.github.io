@@ -487,10 +487,6 @@ a {
     transition:color 0.3s ease 0s
 }
 
-a:hover {
-    color:#538f5f
-}
-
 #main {
     clear:both
 }
@@ -898,6 +894,15 @@ article p > code, article li code {
 article footer {
     padding-top: 12.361px;
     padding-top:0.618rem
+}
+
+footer a {
+  border: 1px solid #333;
+  position: relative;
+  top: -60px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #333;
 }
 
 article footer > span > a {
