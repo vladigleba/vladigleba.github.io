@@ -359,9 +359,8 @@ pre {
     line-height:1.618rem
 }
 
-.font-size-smallest, nav form input.search, .wrapper > footer p, article footer > p.meta:first-child {
-    font-size: 14.637px;
-    font-size:0.732rem
+.font-size-smallest, nav form input.search, body > footer p, article footer > p.meta:first-child {
+    font-size:0.8rem
 }
 
 .font-size-small, figure.code, pre {
@@ -387,11 +386,6 @@ pre {
 .margin-bottom-large, blockquote, pre, article header, article header p.meta time, article ul, article ol, article p, article footer > p.meta:first-child {
     margin-bottom: 32.360px;
     margin-bottom:1.618rem
-}
-
-.margin-bottom-larger, .wrapper > footer, #blog-archives article {
-    margin-bottom: 52.358px;
-    margin-bottom:2.618rem
 }
 
 .margin-bottom-largest, article {
@@ -441,7 +435,7 @@ article section > div {
     font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif
 }
 
-.sans-serif-font, nav, body > header h2, article header h2, body .pagination, .wrapper > footer p, #blog-archives time, #blog-archives footer, article header p.meta, article footer {
+.sans-serif-font, nav, body > header h2, article header h2, body .pagination, body > footer p, #blog-archives time, #blog-archives footer, article header p.meta, article footer, footer a {
     font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif
 }
 
@@ -601,6 +595,7 @@ nav > a {
     height: 2.1rem;
     text-align: left;
     display: inline-flex;
+    transition: opacity .3s;
 }
 
 nav > a > b {
@@ -693,18 +688,34 @@ body .pagination span {
     color:#65a672
 }
 
-.wrapper > footer {
-    clear:both
+body > footer {
+  color: #fff;
+  padding: 2rem 1rem;
+  line-height: 20px;
+  line-height: 1rem;
 }
 
-.wrapper > footer p {
-    color: #aaa;
-    line-height: 20px;
-    line-height:1rem
+body > footer .notices {
+  padding-top: 2rem;
 }
 
-.wrapper > footer p a {
-    text-decoration:underline
+body > footer .notices i {
+  padding: 0 14px 0 10px;
+}
+
+body > footer a {
+  min-width: 232px;
+  color: #fff;
+  display: inline-block;
+  line-height: 1rem;
+  font-size: 0.8rem;
+  text-decoration: underline;
+  text-align: left;
+  background-color: initial !important;
+}
+
+body > footer a b {
+  font-weight: normal;
 }
 
 #blog-archives {
@@ -896,15 +907,6 @@ article footer {
     padding-top:0.618rem
 }
 
-footer a {
-  border: 1px solid #333;
-  position: relative;
-  top: -60px;
-  border-radius: 5px;
-  padding: 5px 10px;
-  color: #333;
-}
-
 article footer > span > a {
     text-decoration:underline
 }
@@ -974,6 +976,14 @@ article footer a.basic-alignment.right {
       padding: 80px 30px;
     }
 
+    body > footer {
+      padding: 1.8rem 0.9rem;
+    }
+
+    body > footer a {
+      width: 200px;
+    }
+
     html {
         font-size:106%
     }
@@ -1030,8 +1040,7 @@ article footer a.basic-alignment.right {
       border-radius: 0;
     }
 
-    .wrapper > footer p {
-      font-size: 0.8rem;
+    body > footer p {
       padding: 0 10px;
     }
 }
@@ -1050,6 +1059,14 @@ article footer a.basic-alignment.right {
     body > header h2 {
         font-size: 15.349px;
         font-size: 1rem
+    }
+
+    body > footer {
+      padding: 0.8rem 0.25rem;
+    }
+
+    body > footer .notices {
+      padding-top: 1rem;
     }
 
     nav > a > b {
