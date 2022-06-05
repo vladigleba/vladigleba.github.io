@@ -3711,7 +3711,7 @@
               And after these things I heard a great voice of much people in heaven, saying, Alleluia; Salvation, and glory, and honour, and power, unto the Lord our God: <em>for true and righteous are his judgments</em>. <cite><b>Revelation 19:1, 2</b></cite>
             </p>
             <p class="note">
-              <b>Note:</b> The saved from all ages that are in heaven during the 1,000 years will be part of the next phase of the judgment during which they will have all their questions answered about God’s dealings with sin and sinners. They will not be determining who is saved or lost because God will have already determined that, but the cases of all who are lost, including Satan and his angels, will be reviewed, and the fairness of God’s judgment will be confirmed.
+              <b>Note:</b> The saved from all ages that are in heaven during the 1,000 years will be part of the next phase of the judgment during which they will have all their questions answered about God’s dealings with sin and sinners. They will not be determining who is saved or lost because God will have already determined that (see “Judgment”), but the cases of all who are lost, including Satan and his angels, will be reviewed, and the fairness of God’s judgment will be confirmed.
             </p>
           </section>
           <section>
@@ -3730,7 +3730,7 @@
               Marvel not at this: for the hour is coming, in the which all that are in the graves shall hear his voice, and shall come forth; <em>they that have done good, unto the resurrection of life</em>; and <em>they that have done evil, unto the resurrection of damnation</em>. <cite><b>John 5:28, 29</b></cite>
             </p>
             <p class="note">
-              <b>Note:</b> At the end of the 1,000 years the New Jerusalem will descend from heaven with all the saved inside. Jesus will then flatten the Mount of Olives, creating a great plain on which the city will settle. And just like the resurrection of the saved during the second coming of Christ started the 1,000 year period, the end of this period will be marked by a second resurrection, and this one is of the unsaved of all the ages.
+              <b>Note:</b> At the end of the 1,000 years Jesus will return to Earth for the third time, and the New Jerusalem will descend from heaven with all the saved. Jesus will then flatten the Mount of Olives, creating a great plain on which the city will settle. And just like the resurrection of the saved marked the beginning of the 1,000 year period, the end of this period will be marked by a second resurrection, and this one is of the unsaved of all ages.
             </p>
           </section>
           <section>
@@ -3826,6 +3826,18 @@
   </footer>
 
   <script>
+    // set links to centered but left aligned
+    function fixFooterLayout() {
+      const width = $('footer').width();
+      const columnCount = Math.floor(width / 232);
+      const linkCount = $('body > nav a').length;
+      const missing = columnCount - (linkCount % columnCount);
+
+      for (let i = 0; i < missing; i++) {
+        $('.links').append('<a href="" class="empty"></a>');
+      }
+    }
+
     $('article, body > footer').hide();
     $('body').css('margin-top', '-15px');
 
@@ -3867,6 +3879,13 @@
     $('footer a').click(function(e) {
       document.body.scrollTop = document.documentElement.scrollTop = 0;
     });
+
+    fixFooterLayout();
+    $(window).resize(function() {
+      $('a.empty').remove();
+      fixFooterLayout();
+    });
+
   </script>
 
 </body>
