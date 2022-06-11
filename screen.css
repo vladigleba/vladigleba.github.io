@@ -1040,7 +1040,7 @@ article footer a.basic-alignment.right {
     }
 
     body > footer p {
-      padding: 0 10px;
+      padding: 0 15px;
     }
 }
 
@@ -1062,10 +1062,6 @@ article footer a.basic-alignment.right {
 
     body > footer {
       padding: 0.8rem 0.25rem;
-    }
-
-    body > footer a {
-      font-size: 0.78rem;
     }
 
     body > footer .notices {
