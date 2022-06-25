@@ -590,8 +590,8 @@ nav {
 nav > a {
     padding: 0.452rem 0;
     padding: 10px 14px;
-    margin: .2rem .1rem;
-    width: 10.5rem;
+    margin: 3.5px 1.25px;
+    width: 220px;
     height: 2.1rem;
     text-align: left;
     display: inline-flex;
@@ -599,12 +599,12 @@ nav > a {
 }
 
 nav > a > b {
-  font-size: 50px;
+  font-size: 52px;
   padding-right: 17px;
   line-height: 0;
   position: relative;
   top: 20px;
-  letter-spacing: -7px;
+  letter-spacing: -6px;
 }
 
 nav form {
@@ -704,7 +704,7 @@ body > footer .notices i {
 }
 
 body > footer a {
-  width: 232px;
+  width: 230px;
   color: #fff;
   display: inline-block;
   font-size: 0.8rem;
@@ -980,11 +980,11 @@ article footer a.basic-alignment.right {
     }
 
     body > footer a {
-      width: 200px;
+      width: 195px;
     }
 
     html {
-        font-size:106%
+        font-size:108%
     }
 
     nav {
@@ -1068,11 +1068,6 @@ article footer a.basic-alignment.right {
       padding-top: 1rem;
     }
 
-    nav > a > b {
-      font-size: 40px;
-      left: 0px;
-    }
-
     nav ul {
         padding: 12.415px 0;
         padding:0.732rem 0
@@ -1087,32 +1082,9 @@ article footer a.basic-alignment.right {
         padding-left:0.452rem
     }
 
-    nav > a {
-        padding: 8px 9px;
-        margin: .15rem .075rem;
-    }
-
     nav form {
         margin-bottom: 16.96px;
         margin-bottom:1rem
-    }
-
-    nav input.search {
-        width: 65%
-    }
-
-    #blog-archives h2 {
-        font-size: 40.161px;
-        font-size:2.368rem
-    }
-
-    #blog-archives article {
-        margin-left:0
-    }
-
-    #blog-archives article h1 {
-        font-size: 27.441px;
-        font-size:1.618rem
     }
 
     .content > article {
