@@ -596,6 +596,8 @@ nav > a {
     text-align: left;
     display: inline-flex;
     transition: opacity .3s;
+    letter-spacing: -1px;
+    font-weight: bold;
 }
 
 nav > a > b {
