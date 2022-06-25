@@ -954,7 +954,7 @@ article footer a.basic-alignment.right {
     }
 
     body > header {
-      padding: 125px 0;
+      padding: 130px 0;
     }
 }
 
@@ -964,7 +964,7 @@ article footer a.basic-alignment.right {
     }
 
     body > header {
-      padding: 110px 0;
+      padding: 120px 0;
     }
 }
 
@@ -974,7 +974,7 @@ article footer a.basic-alignment.right {
     }
 
     body > header {
-      padding: 95px 30px;
+      padding: 110px 30px;
     }
 
     body > footer {
@@ -1048,7 +1048,7 @@ article footer a.basic-alignment.right {
 
 @media screen and (max-width: 480px) {
     body > header {
-      padding: 80px 30px;
+      padding: 100px 30px;
     }
 
     body > header h1 {
