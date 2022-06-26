@@ -584,7 +584,7 @@ pre.line-numbers {
 }
 
 nav {
-    margin: 1.5rem 0 5rem;
+    margin: 1.5rem 12px 5rem;
 }
 
 nav > a {
@@ -644,6 +644,8 @@ body > header {
     background: linear-gradient(205deg, #f29888 1%, #d35d8e 30%, #7b4698 60%, #2f3c8b 99%);
     color: #fff;
     padding: 140px 0;
+    margin: 15px;
+    border-radius: 8px;
 }
 
 body > header h1 {
@@ -966,6 +968,10 @@ article footer a.basic-alignment.right {
     body > header {
       padding: 120px 0;
     }
+
+    body > header h1 {
+      font-size: 55px;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -975,6 +981,11 @@ article footer a.basic-alignment.right {
 
     body > header {
       padding: 110px 30px;
+      margin: 12px;
+    }
+
+    body > header h1 {
+      font-size: 50px;
     }
 
     body > footer {
@@ -983,10 +994,6 @@ article footer a.basic-alignment.right {
 
     body > footer a {
       width: 195px;
-    }
-
-    html {
-        font-size:108%
     }
 
     nav {
@@ -1049,11 +1056,11 @@ article footer a.basic-alignment.right {
 @media screen and (max-width: 480px) {
     body > header {
       padding: 100px 30px;
+      margin: 10px;
     }
 
     body > header h1 {
-        font-size: 37.244px;
-        font-size: 2.196rem;
+        font-size: 38px;
         letter-spacing: -1px;
     }
 
