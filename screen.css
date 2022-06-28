@@ -639,6 +639,17 @@ nav ul li + li {
     padding-left: 1.184rem;
 }
 
+.collapse {
+  width: 65px;
+  height: 65px;
+  border-radius: 40px;
+  background-color: #e6e6e6;
+  margin: 75px auto;
+  cursor: pointer;
+  display: none;
+  font-size: 50px;
+}
+
 body > header {
     text-align: left;
     background: linear-gradient(205deg, #f29888 1%, #d35d8e 30%, #7b4698 60%, #2f3c8b 99%);
@@ -979,6 +990,10 @@ article footer a.basic-alignment.right {
       width: 100%;
     }
 
+    html {
+      font-size: 110%;
+    }
+
     body > header {
       padding: 110px 30px;
       margin: 12px;
@@ -1012,26 +1027,9 @@ article footer a.basic-alignment.right {
         border-top: 2px solid #808080;
         border-bottom: 1px solid #e6e6e6;
         padding: 14.637px 0;
-        padding: 0.732rem 0
-    }
-
-    nav ul, nav form {
+        padding: 0.732rem 0;
         width: 100%;
         margin:0 auto
-    }
-
-    nav form {
-        margin-bottom: 20.08px;
-        margin-bottom:1.184rem
-    }
-
-    nav form input.search {
-        font-size: 15.349px;
-        font-size:0.905em
-    }
-
-    nav input.search {
-        width: 45%
     }
 
     article section > div {
@@ -1056,7 +1054,6 @@ article footer a.basic-alignment.right {
 @media screen and (max-width: 480px) {
     body > header {
       padding: 100px 30px;
-      margin: 10px;
     }
 
     body > header h1 {
