@@ -591,7 +591,7 @@ nav > a {
     padding: 0.452rem 0;
     padding: 10px 14px;
     margin: 3.5px 1.25px;
-    width: 240px;
+    width: 248px;
     height: 2.1rem;
     text-align: left;
     display: inline-flex;
@@ -1019,11 +1019,6 @@ article footer a.basic-alignment.right {
         padding: 0.732rem 0;
         width: 100%;
         margin:0 auto
-    }
-
-    article section > div {
-      width: 49px;
-      height: 36px;
     }
 
     article h2 {
