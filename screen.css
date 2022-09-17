@@ -591,7 +591,7 @@ nav > a {
     padding: 0.452rem 0;
     padding: 10px 14px;
     margin: 3.5px 1.25px;
-    width: 230px;
+    width: 235px;
     height: 2.1rem;
     text-align: left;
     display: inline-flex;
@@ -990,7 +990,7 @@ article footer a.basic-alignment.right {
       width: 100%;
     }
 
-    html {
+    .wrapper {
       font-size: 110%;
     }
 
@@ -1014,13 +1014,6 @@ article footer a.basic-alignment.right {
     nav {
         border-top: none;
         margin-bottom: 90px;
-    }
-
-    nav > a > b {
-      font-size: 45px;
-      top: 17px;
-      padding-right: 14px;
-      left: -2px;
     }
 
     nav ul {
