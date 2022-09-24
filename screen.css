@@ -591,12 +591,12 @@ nav > a {
     padding: 0.452rem 0;
     padding: 10px 14px;
     margin: 3.5px 1.25px;
-    width: 248px;
+    width: 247px;
     height: 2.1rem;
     text-align: left;
     display: inline-flex;
     transition: opacity .3s;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
     font-weight: bold;
 }
 
