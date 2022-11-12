@@ -1090,12 +1090,20 @@ article footer a.basic-alignment.right {
         margin-right:auto
     }
 
+    article h2 {
+      font-size: 28px;
+    }
+
+    article p {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
     article header h1 {
-        font-size: 32.495px;
-        font-size: 1.916rem;
+        font-size: 34px;
         line-height: 37.244px;
         line-height: 2.196rem;
-        padding: 6px 12px 3px;
+        padding: 4px 12px 1px;
     }
 
     article footer > p.meta {
