@@ -651,7 +651,6 @@ nav ul li + li {
 }
 
 body > header {
-    text-align: left;
     background: linear-gradient(205deg, #f29888 1%, #d35d8e 30%, #7b4698 60%, #2f3c8b 99%);
     color: #fff;
     padding: 180px 0;
