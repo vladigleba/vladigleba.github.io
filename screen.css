@@ -458,7 +458,7 @@ body {
 }
 
 .wrapper, hgroup {
-    width: 54%;
+    width: 55%;
     margin:0 auto
 }
 
@@ -654,7 +654,7 @@ body > header {
     text-align: left;
     background: linear-gradient(205deg, #f29888 1%, #d35d8e 30%, #7b4698 60%, #2f3c8b 99%);
     color: #fff;
-    padding: 160px 0;
+    padding: 180px 0;
     /* margin: 15px;
     border-radius: 8px; */
 }
@@ -705,7 +705,7 @@ body .pagination span {
 
 body > footer {
   color: #fff;
-  padding: 50px 25px;
+  padding: 60px 70px;
   line-height: 20px;
   line-height: 1rem;
 }
@@ -719,7 +719,7 @@ body > footer .notices i {
 }
 
 body > footer a {
-  width: 230px;
+  width: 260px;
   color: #fff;
   display: inline-block;
   font-size: 0.8rem;
@@ -967,7 +967,7 @@ article footer a.basic-alignment.right {
     }
 
     body > header {
-      padding: 150px 0;
+      padding: 170px 0;
     }
 }
 
@@ -977,7 +977,7 @@ article footer a.basic-alignment.right {
     }
 
     body > header {
-      padding: 140px 0;
+      padding: 160px 0;
     }
 
     body > header h1 {
@@ -991,7 +991,7 @@ article footer a.basic-alignment.right {
     }
 
     body > header {
-      padding: 130px 30px;
+      padding: 150px 30px;
       /* margin: 12px; */
     }
 
@@ -1001,10 +1001,6 @@ article footer a.basic-alignment.right {
 
     body > footer {
       padding: 1.8rem 0.9rem;
-    }
-
-    body > footer a {
-      width: 195px;
     }
 
     nav {
@@ -1037,7 +1033,7 @@ article footer a.basic-alignment.right {
 
 @media screen and (max-width: 480px) {
     body > header {
-      padding: 120px 30px;
+      padding: 140px 30px;
     }
 
     body > header h1 {
