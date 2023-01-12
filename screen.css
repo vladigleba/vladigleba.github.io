@@ -409,21 +409,6 @@ pre {
     padding:0 0.28rem
 }
 
-.button, body .pagination a, nav > a {
-    -webkit-transition: all 0.1s ease;
-    -webkit-transition-delay: 0s;
-    -moz-transition: all 0.1s ease 0s;
-    -o-transition: all 0.1s ease 0s;
-    transition: all 0.1s ease 0s;
-    border-radius: 7px;
-    color:#fff
-}
-
-.button:hover, body .pagination a:hover, nav > a:hover {
-    opacity: 0.95;
-    color: #fff;
-}
-
 .code-font, figure.code, pre, article p > code, article li code {
     font-family: Menlo, Monaco, "Andale Mono", "Lucida Console", "Courier New", monospace
 }
@@ -584,7 +569,7 @@ pre.line-numbers {
 }
 
 nav {
-    margin: 15px 12px 5rem;
+    margin: 25px 12px 5rem;
 }
 
 nav > a {
@@ -598,6 +583,12 @@ nav > a {
     transition: opacity .3s;
     letter-spacing: -0.5px;
     font-weight: bold;
+    border-radius: 8px;
+    color:#fff
+}
+
+.button:hover, nav > a:hover {
+    opacity: 0.95;
 }
 
 nav > a > b {
@@ -873,13 +864,13 @@ article p {
 }
 
 article p.note {
-  font-style: italic;
+  /* font-style: italic; */
   background-color: #fff !important;
 }
 
 article p.note b {
   background: rgb(154, 88, 175);
-  border-radius: 5px;
+  border-radius: 6px;
   padding: 2px 10px;
   margin-right: 5px;
   font-style: normal;
@@ -896,7 +887,7 @@ article p cite, table cite {
 
 article p cite b, table cite b {
     background: rgba(255, 230, 0, 0.45);
-    border-radius: 5px;
+    border-radius: 6px;
     padding: 2px 10px;
 }
 
@@ -916,7 +907,8 @@ article p em, table em {
 }
 
 article p a {
-    text-decoration:underline
+    text-decoration:underline;
+    color: rgb(154, 88, 175);
 }
 
 article p > code, article li code {
