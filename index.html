@@ -7350,18 +7350,16 @@
       $('.selected').removeClass();
       $(this).addClass('selected');
 
-      $('nav a').removeClass('animate__zoomIn').addClass('animate__animated animate__fadeOut');
       var category = $(this).text().toLowerCase();
-
-      document.querySelector('nav a').addEventListener('animationend', () => {
+      $('nav').fadeOut('fast', function(e) {
         if (category === 'all') {
-          var selected = $('nav').html(baseNav).find('a').addClass('animate__animated animate__fadeIn');
+          var selected = $('nav').html(baseNav).find('a');
         } else {
-          var selected = $('nav').html(baseNav).find('.' + category).addClass('animate__animated animate__fadeIn');
+          var selected = $('nav').html(baseNav).find('.' + category);
         }
 
         $('nav a').remove();
-        $('nav').append(selected);
+        $('nav').append(selected).fadeIn('fast');
 
         addEventListenersToNavLinks();
       });
