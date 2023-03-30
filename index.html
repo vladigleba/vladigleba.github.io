@@ -16,9 +16,9 @@
   <link rel="canonical" href="http://vladigleba.github.io">
   <link href="/favicon.png" rel="icon">
   <link href="./screen.css" media="screen" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="./atom.xml" rel="alternate" title="Vladi Gleba" type="application/atom+xml">
-  <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans|Corinthia|Fjalla+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans|Corinthia|Fjalla+One|PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
 
   <script src="./javascripts/modernizr-2.0.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
@@ -27,48 +27,56 @@
 <body id="top" class="collapse-sidebar sidebar-footer">
   <header>
     <hgroup class="intro">
-      <h1>Your Word is a <span>lamp</span> to my feet and a <span>light</span> to my path.</h1>
-      <h2>&mdash; Psalm 119:105</h2>
+      <h1>Better than <span>gold</span>, sweeter than <span>honey</span></h1>
+      <h2>Dive into the boundless treasure of the Word that sets its readers free.</h2>
     </hgroup>
   </header>
 
+  <ul class="categories">
+    <li class="selected">All</li>
+    <li>Foundational</li>
+    <li>Practical</li>
+    <li>Prophecy</li>
+  </ul>
+
   <nav>
-    <a href="#bible" style="background-color: #65a672"><b>1</b>The Miracle of God’s Word</a>
-    <a href="#god" style="background-color: #5190b3"><b>2</b>What Is God Like?</a>
-    <a href="#evil" style="background-color: #a66565"><b>3</b>Origin of Evil</a>
-    <a href="#messiah" style="background-color: #6566a6"><b>4</b>Prophecies of the Messiah</a>
-    <a href="#divinity" style="background-color: #6566a6"><b>5</b>Divinity of Christ</a>
-    <a href="#salvation" style="background-color: #8f667e"><b>6</b>How Can I Be Saved?</a>
-    <a href="#confession" style="background-color: #8f667e"><b>7</b>Confession and Forgiveness</a>
-    <a href="#faith" style="background-color: #8f667e"><b>8</b>Walking in Faith</a>
-    <a href="#europe" style="background-color: #65a68d"><b>9</b>Europe’s Future Revealed</a>
-    <a href="#signs" style="background-color: #396088"><b class="x">10</b>Second Coming of Christ</a>
-    <a href="#manner" style="background-color: #396088"><b class="x">11</b>Second Coming of Christ</a>
-    <a href="#sanctuary" style="background-color: #ff8270"><b class="x">12</b>Finding Hope in the Sanctuary</a>
-    <a href="#judgment" style="background-color: #ff8270"><b class="x">13</b>Is There a Judgment?</a>
-    <a href="#1844" style="background-color: #ff8270"><b class="x">14</b>2,300 Day Prophecy</a>
-    <a href="#law" style="background-color: #cd7272"><b class="x">15</b>God’s Law of Love</a>
-    <a href="#sabbath" style="background-color: #cd7272"><b class="x">16</b>Sabbath</a>
-    <a href="#keeping" style="background-color: #cd7272"><b class="x">17</b>Sabbath Keeping</a>
-    <a href="#sunday" style="background-color: #9b72ba"><b class="x">18</b>First Day Texts</a>
-    <a href="#change" style="background-color: #9b72ba"><b class="x">19</b>Change in God’s Law</a>
-    <a href="#health" style="background-color: #489683"><b>20</b>God’s Health Plan</a>
-    <a href="#victory" style="background-color: #489683"><b>21</b>Victory Over Sin</a>
-    <a href="#death" style="background-color: #3d81d4"><b>22</b>Are the Dead Really Dead?</a>
-    <a href="#millennium" style="background-color: #70537c"><b>23</b>1,000 Years of Peace</a>
-    <a href="#hell" style="background-color: #ff6262"><b>24</b>Is Hell Forever?</a>
-    <a href="#heaven" style="background-color: #0071b0"><b>25</b>What Will Heaven Be Like?</a>
-    <a href="#antichrist" style="background-color: #2199a3"><b>26</b>Who Is the Antichrist?</a>
-    <a href="#mark" style="background-color: #2199a3"><b>27</b>Mark of the Beast</a>
-    <a href="#usa" style="background-color: #2199a3"><b>28</b>USA in Bible Prophecy</a>
-    <a href="#babylon" style="background-color: #aa6896"><b>29</b>Fall of Spiritual Babylon</a>
-    <a href="#remnant" style="background-color: #aa6896"><b>30</b>God’s Remnant Church</a>
-    <a href="#cult" style="background-color: #aa6896"><b>31</b>How to Identify a Cult?</a>
-    <a href="#spirit" style="background-color: #217a69"><b>32</b>Holy Spirit</a>
-    <a href="#baptism" style="background-color: #217a69"><b>33</b>Baptism</a>
-    <a href="#prophecy" style="background-color: #7077a2"><b>34</b>Gift of Prophecy</a>
-    <a href="#tithe" style="background-color: #c9758a"><b>35</b>Tithe</a>
-    <a href="#standards" style="background-color: #008b8e"><b>36</b>Christian Standards</a>
+    <a href="#bible" class="foundational" style="background-color: rgb(101,166,114)"><b>1</b>The Miracle of God’s Word</a>
+    <a href="#god" class="foundational" style="background-color: rgb(81,144,179)"><b>2</b>What Is God Like?</a>
+    <a href="#evil" class="foundational" style="background-color: rgb(166,101,101)"><b>3</b>Origin of Evil</a>
+    <a href="#messiah" class="foundational" style="background-color: rgb(101,102,166)"><b>4a</b>Prophecies of the Messiah</a>
+    <a href="#divinity" class="foundational" style="background-color: rgb(101,102,166)"><b>4b</b>Divinity of Christ</a>
+    <a href="#salvation" class="foundational" style="background-color: rgb(143,102,126)"><b>5a</b>How Can I Be Saved?</a>
+    <a href="#confession" class="foundational" style="background-color: rgb(143,102,126)"><b>5b</b>Confession and Forgiveness</a>
+    <a href="#faith" class="foundational" style="background-color: rgb(143,102,126)"><b>5c</b>Walking in Faith</a>
+    <a href="#surrender" class="foundational" style="background-color: rgb(143,102,126)"><i>New</i><b>5d</b>Surrendering the Fight</a>
+    <a href="#europe" class="prophecy" style="background-color: rgb(101,166,141)"><b>6</b>Europe’s Future Revealed</a>
+    <a href="#signs" class="prophecy" style="background-color: rgb(57,96,136)"><b>7a</b>Signs of the Second Coming</a>
+    <a href="#manner" class="prophecy" style="background-color: rgb(57,96,136)"><b>7b</b>Manner of Christ’s Coming</a>
+    <a href="#sanctuary" class="foundational" style="background-color: rgb(255,130,112)"><b>8a</b>Finding Hope in the Sanctuary</a>
+    <a href="#judgment" class="prophecy" style="background-color: rgb(255,130,112)"><b>8b</b>Is There a Judgment?</a>
+    <a href="#1844" class="prophecy" style="background-color: rgb(255,130,112)"><b>8c</b>2,300 Day Prophecy</a>
+    <a href="#law" class="foundational" style="background-color: rgb(205,114,114)"><b>9a</b>God’s Law of Love</a>
+    <a href="#sabbath" class="foundational" style="background-color: rgb(205,114,114)"><b>9b</b>Sabbath</a>
+    <a href="#keeping" class="foundational" style="background-color: rgb(205,114,114)"><b>9c</b>Sabbath Keeping</a>
+    <a href="#sunday" class="foundational" style="background-color: rgb(155,114,186)"><b class="x">10a</b>First Day Texts</a>
+    <a href="#change" class="foundational" style="background-color: rgb(155,114,186)"><b class="x">10b</b>Change in God’s Law</a>
+    <a href="#health" class="practical" style="background-color: rgb(72,150,131)"><b class="x">11a</b>God’s Health Plan</a>
+    <a href="#victory" class="practical" style="background-color: rgb(72,150,131)"><b class="x">11b</b>Victory Over Sin</a>
+    <a href="#death" class="foundational" style="background-color: rgb(112,83,124)"><b class="x">12</b>Are the Dead Really Dead?</a>
+    <a href="#millennium" class="prophecy" style="background-color: rgb(0,139,142)"><b class="x">13</b>1,000 Years of Peace</a>
+    <a href="#hell" class="prophecy" style="background-color: rgb(255,98,98)"><b class="x">14</b>Is Hell Forever?</a>
+    <a href="#heaven" class="prophecy" style="background-color: rgb(0,113,176)"><b class="x">15</b>What Will Heaven Be Like?</a>
+    <a href="#antichrist" class="prophecy" style="background-color: rgb(33,153,163)"><b class="x">16a</b>Who Is the Antichrist?</a>
+    <a href="#mark" class="prophecy" style="background-color: rgb(33,153,163)"><b class="x">16b</b>Mark of the Beast</a>
+    <a href="#usa" class="prophecy" style="background-color: rgb(33,153,163)"><b class="x">16c</b>USA in Bible Prophecy</a>
+    <a href="#babylon" class="prophecy" style="background-color: rgb(170,104,150)"><b class="x">17a</b>Fall of Spiritual Babylon</a>
+    <a href="#remnant" class="prophecy" style="background-color: rgb(170,104,150)"><b class="x">17b</b>God’s Remnant Church</a>
+    <a href="#cult" class="prophecy" style="background-color: rgb(170,104,150)"><b class="x">17c</b>How to Identify a Cult?</a>
+    <a href="#spirit" class="foundational" style="background-color: rgb(33,122,105)"><b class="x">18a</b>Holy Spirit</a>
+    <a href="#baptism" class="foundational" style="background-color: rgb(33,122,105)"><b class="x">18b</b>Baptism</a>
+    <a href="#prophecy" class="prophecy" style="background-color: rgb(112,119,162)"><b class="x">19</b>Gift of Prophecy</a>
+    <a href="#tithe" class="foundational" style="background-color: rgb(201,117,138)"><b>20</b>Tithe</a>
+    <a href="#standards" class="practical" style="background-color: rgb(61,129,212)"><b>21</b>Christian Standards</a>
   </nav> <!-- e99264 b18161 -->
 
   <div class="collapse">&darr;</div>
@@ -1448,6 +1456,233 @@
             </p>
           </section>
         </article>
+        <article id="surrender">
+          <header>
+            <h1 class="entry-title">Surrendering the Fight</h1>
+          </header>
+          <section>
+            <div>1</div>
+            <h2>What is the war of all wars?</h2>
+            <p>
+              To wit, that <em>God was in Christ, reconciling the world unto himself</em>, not imputing their trespasses unto them; and hath <em>committed unto us the word of reconciliation</em>. <cite><b>2 Corinthians 5:19</b></cite>
+            </p>
+            <p>
+              Stand therefore, having your loins girt about with truth, and having on the breastplate of righteousness; and <em>your feet shod with the preparation of the gospel of peace</em>. <cite><b>Ephesians 6:14, 15</b></cite>
+            </p>
+            <p class="note">
+              <b>Note:</b> Ever since Lucifer chose to exercise his freedom of choice to exalt self above God, the dissonant note of selfishness has marred the perfect harmony of God’s government. When Lucifer succeeded in infecting Adam and Eve with this virus of self-exaltation, a war began to rage in the heart of every human being between self and God. The way God has handled this rebellion against Himself and His legitimate authority, by risking everything in order to reconcile the human race back to Himself through the sacrifice of His only Son, Jesus Christ, has shone new light on the justice of His governemnt and the mercy of His character.
+              <br><br>
+              After His ascension, Jesus committed this work of reconciliation, the proclamation of the gospel of peace, to His followers so that every human being would have the opportunity to be reconciled to God, because the truth is every person is at war with his or her Creator, knowingly or unknowingly, until the decision is made to surrender the fight.
+            </p>
+          </section>
+          <section>
+            <div>2</div>
+            <h2>How do I know whom I serve?</h2>
+            <p>
+              Know ye not, that <em>to whom ye yield yourselves servants to obey</em>, his servants ye are to whom ye obey; whether of sin unto death, or of obedience unto righteousness? <cite><b>Romans 6:16</b></cite>
+            </p>
+            <p class="note">
+              <b>Note:</b> The Bible presents only two sides for us to choose from: God or Satan, good or evil, righteousness or sin, selflessness or selfishness, life or death. The side we yield, or surrender, to is the side we choose to serve. Our loving Father, Creator, and Reedemer invites us to surrender our will to Him moment by moment because His will for our lives is better, higher, and grander than our own (<a>Isaiah 55:8, 9</a>).
+            </p>
+          </section>
+          <section>
+            <div>3</div>
+            <h2>Did Jesus demonstrate this concept in His life?</h2>
+            <p>
+              And he went a little further, and fell on his face, and prayed, saying, O my Father, if it be possible, let this cup pass from me: nevertheless <em>not as I will, but as thou wilt</em>. <cite><b>Matthew 26:39</b></cite>
+            </p>
+            <p class="note">
+              <b>Note:</b> Just before His betrayal by Judas, Jesus went through the darkest time of His earthly life while He contemplated the events He had to soon pass through, but even though His humanity shrank from the suffering, humiliation, and the weight of sin He had to bear for every human being, He chose to follow the will of His Father rather than His own. In doing so, He opened the door of blessing, reconciliation, and salvation to every member of the human family.
+            </p>
+          </section>
+          <section>
+            <div>4</div>
+            <h2>How does Paul describe our human condition?</h2>
+            <p>
+              For I know that in me (that is, in my flesh,) dwelleth no good thing: for <em>to will is present with me; but how to perform that which is good I find not.</em> For the good that I would I do not: but the evil which I would not, that I do. <cite><b>Romans 7:18, 19</b></cite>
+            </p>
+            <p class="note">
+              <b>Note:</b> Our fallen human nature makes it natural for us to live for self rather than for God. We may have the <i>desire</i> to live for God but fall short in our <i>ability</i> to do it.
+            </p>
+          </section>
+          <section>
+            <div>5</div>
+            <h2>Is there a solution?</h2>
+            <p>
+              But thanks be to God, which <em>giveth us the victory through our Lord Jesus Christ</em>. <cite><b>1 Corinthians 15:57</b></cite>
+            </p>
+            <p>
+              For we ourselves also were sometimes foolish, disobedient, deceived, serving divers lusts and pleasures, living in malice and envy, hateful, and hating one another. But after that the kindness and love of God our Saviour toward man appeared, not by works of righteousness which we have done, but <em>according to his mercy he saved us, by the washing of regeneration, and renewing of the Holy Ghost; which he shed on us abundantly through Jesus Christ our Saviour</em>; that being justified by his grace, we should be made heirs according to the hope of eternal life. <cite><b>Titus 3:3-7</b></cite>
+            </p>
+            <p>
+              For if ye live after the flesh, ye shall die: but if ye <em>through the Spirit</em> do mortify the deeds of the body, ye shall live. <cite><b>Romans 8:13</b></cite>
+            </p>
+            <p class="note">
+              <b>Note:</b> The good news is Jesus Christ, through the regenerating, renewing power of the Holy Spirit, gives us the ability to experience victory in the battle against self, allowing us to live in harmony with the will of God!
+            </p>
+          </section>
+          <section>
+            <div>6</div>
+            <h2>What does this look like in practice?</h2>
+            <p>
+              There is therefore now no condemnation to them which are <em>in Christ Jesus, who walk not after the flesh, but after the Spirit</em>. <cite><b>Romans 8:1</b></cite>
+            </p>
+            <p>
+              This I say then, <em>Walk in the Spirit, and ye shall not fulfil the lust of the flesh</em>. For the flesh lusteth against the Spirit, and the Spirit against the flesh: and these are contrary the one to the other: so that ye cannot do the things that ye would. But if ye be led of the Spirit, ye are not under the law. <cite><b>Galatians 5:16-18</b></cite>
+            </p>
+            <p class="note">
+              <b>Note:</b> Every day we make a choice whether we are guided by our own desires and inclinations (the flesh) or by the Spirit of God. We receive freedom from the slavery of selfishness and sinfulness only when we choose to walk in the Spirit, being guided by it moment by moment. When this happens, we give God permission to carry out His will in our lives.
+            </p>
+          </section>
+          <section>
+            <div>7</div>
+            <h2>What metaphor did Paul use to describe this?</h2>
+            <p>
+              I am <em>crucified</em> with Christ: nevertheless I live; <em>yet not I, but Christ liveth in me</em>: and the life which I now live in the flesh I live by the faith of the Son of God, who loved me, and gave himself for me. <cite><b>Galatians 2:20</b></cite>
+            </p>
+            <p>
+              But God forbid that I should glory, save in the cross of our Lord Jesus Christ, <em>by whom the world is crucified unto me, and I unto the world</em>. <cite><b>Galatians 6:14</b></cite>
+            </p>
+            <p class="note">
+              <b>Note:</b> We begin walking in the Spirit when we choose to surrender to God, which Paul describes as a crucifixion of, or death to, self. Putting away self, which is in conflict with the Spirit, allows Christ to live His life in us by faith, and we then become a new creation in Jesus (<a>2 Corinthians 5:17</a>)!
+            </p>
+          </section>
+          <section>
+            <div>8</div>
+            <h2>What is a symbol of this death?</h2>
+            <p>
+              Know ye not, that so many of us as were baptized into Jesus Christ were baptized into his death? Therefore <em>we are buried with him by baptism into death</em>: that like as Christ was raised up from the dead by the glory of the Father, even so we also should walk in newness of life. For if we have been planted together in the likeness of his death, we shall be also in the likeness of his resurrection: knowing this, that <em>our old man is crucified with him, that the body of sin might be destroyed, that henceforth we should not serve sin</em>. For he that is dead is freed from sin. <cite><b>Romans 6:3-7</b></cite>
+            </p>
+            <p class="note">
+              <b>Note:</b> The decision to give our life over to Jesus is synonymous we the decision to die to self because that is the only way He can reign on the throne of our heart. Baptism is a beautiful symbol of this burial of self, along with the old life of sin, demonstrated by the submersion into water, <i>and</i> of the resurrection from that burial to a new life in Jesus, demonstrated by the coming out of water (see “Baptism”)!
+            </p>
+          </section>
+          <section>
+            <div>9</div>
+            <h2>Is death to self a one-time occurance?</h2>
+            <p>
+              And he said to them all, If any man will come after me, let him deny himself, and <em>take up his cross daily</em>, and follow me. <cite><b>Luke 9:23</b></cite>
+            </p>
+            <p>
+              I protest by your rejoicing which I have in Christ Jesus our Lord, <em>I die daily</em>. <cite><b>1 Corinthians 15:31</b></cite>
+            </p>
+            <p class="note">
+              <b>Note:</b> Jesus says that those who desire to follow Him will make a daily decision to deny self. Paul echoes this when he says that death to self is a daily occurance for him, not a one-time experience, because it is the consistent connection with Christ that recreates His character in His people.
+            </p>
+          </section>
+          <section>
+            <div>10</div>
+            <h2>What is the process of growth compared to?</h2>
+            <p>
+              For the earth bringeth forth fruit of herself; <em>first the blade, then the ear, after that the full corn</em> in the ear. <cite><b>Mark 4:28</b></cite>
+            </p>
+            <p class="note">
+              <b>Note:</b> Growing in Christ is the work of a lifetime, and it’s truly His work, made possible by a daily surrender to Him. As long as we continue to cooperate with God, He will continue to grow us in grace, leading us into a deeper relationship with Him as He molds our characters to more accurately reflect His own. Receiving the righteous, loving character of Jesus is the greatest privilege and honor of every human being.
+            </p>
+          </section>
+          <section>
+            <div>11</div>
+            <h2>What is God’s reaction when I fall short?</h2>
+            <p>
+              For <em>all have</em> sinned, and <em>come short of the glory of God</em>. <cite><b>Romans 3:23</b></cite>
+            </p>
+            <p>
+              For a just man falleth seven times, and <em>riseth up again</em>: but the wicked shall fall into mischief. <cite><b>Proverbs 24:16</b></cite>
+            </p>
+            <p>
+              My little children, these things write I unto you, that ye sin not. And <em>if any man sin, we have an advocate with the Father, Jesus Christ the righteous</em>: and he is the propitiation for our sins: and not for ours only, but also for the sins of the whole world. <cite><b>1 John 2:1, 2</b></cite>
+            </p>
+            <p class="note">
+              <b>Note:</b> God is gracious and merciful; He does not give up on us when we make mistakes! He is always willing to forgive the repentant person, and Jesus Christ, our Advocate in heaven, is ready to cover our shortcomings with His own righteousness, pleading His own blood on our behalf, when we genuinely repent of our sins. When learning to walk it’s not unusual for a child to fall down, but problems arise when the child stops getting up. Such a state of discouragement is Satan’s ultimate goal. But God is a patient, loving parent, who stoops down to meet us where we are, always ready to lift us back up if we stretch out our hand to Him (<a>Micah 7:7, 8</a>).
+              <br><br>
+              Of course, we don’t want to abuse His grace and become presumptuous by choosing to cling to sin, because the wages of sin is death (<a>Romans 3:23</a>). Sin is so serious that the Father had to give up His own Son to a death on the cross because of it. The repentant sinner who truly loves Jesus and appreciates His sacrifice will develop a hatred of sin.
+            </p>
+          </section>
+          <section>
+            <div>12</div>
+            <h2>What takes place in a fully surrendered life?</h2>
+            <p>
+              For it is God which worketh in you both <em>to will and to do of his good pleasure</em>. <cite><b>Philippians 2:13</b></cite>
+            </p>
+            <p>
+              Know ye not, that to whom ye yield yourselves servants to obey, his servants ye are to whom ye obey; whether of sin unto death, or of <em>obedience</em> unto righteousness? <cite><b>Romans 6:16</b></cite>
+            </p>
+            <p class="note">
+              <b>Note:</b> When we yield ourselves to Christ, He starts living and working in us, giving us both the <i>willingness</i> and the <i>ability</i> to do His will. This is the gospel, the good news of forgiveness, cleansing, and restoration that Jesus has made freely available to anyone who asks for it! If Jesus could restore the demoniac (<a>Mark 5:1-15</a>), He can restore anybody from the most hopeless circumstances.
+            </p>
+          </section>
+          <section>
+            <div>13</div>
+            <h2>How does Jesus live in us?</h2>
+            <p>
+              And I will pray the Father, and <em>he shall give you another Comforter</em>, that he may abide with you for ever; even the Spirit of truth; whom the world cannot receive, because it seeth him not, neither knoweth him: but ye know him; for <em>he dwelleth with you, and shall be in you. I will not leave you comfortless: I will come to you</em>. <cite><b>John 14:16-18</b></cite>
+            </p>
+            <p>
+              Finally, my brethren, be strong in the Lord, and <em>in the power of his might. Put on the whole armour of God</em>, that ye may be able to stand against the wiles of the devil. <cite><b>Ephesians 6:10, 11</b></cite>
+            </p>
+            <p class="note">
+              <b>Note:</b> When Jesus talked about His Father sending the Holy Spirit, He equated the Spirit with His own presence because He said “I will come to you.” We’ve already learned that we have victory over self through Jesus Christ, and now we know He dwells in us through the gift of the Holy Spirit. So it is <i>His</i> power and <i>His</i> armor, not our own, that makes us strong, enabling us to live a life that’s pleasing to Him.
+            </p>
+          </section>
+          <section>
+            <div>14</div>
+            <h2>How can I receive the gift of the Holy Spirit?</h2>
+            <p>
+              <em>Ask, and it shall be given you</em>; seek, and ye shall find; knock, and it shall be opened unto you. <cite><b>Matthew 7:7</b></cite>
+            </p>
+            <p>
+              If ye then, being evil, know how to give good gifts unto your children: <em>how much more shall your heavenly Father give the Holy Spirit to them that ask him?</em> <cite><b>Luke 11:13</b></cite>
+            </p>
+            <p class="note">
+              <b>Note:</b> God is with us, not against us; He wants us to succeed in our Christian walk. His great desire is to give His Spirit to all who recognize their need of Divine help. We just have to ask!
+            </p>
+          </section>
+          <section>
+            <div>15</div>
+            <h2>What is God after?</h2>
+            <p>
+              And be not conformed to this world: but <em>be ye transformed by the renewing of your mind</em>, that ye may prove what is that good, and acceptable, and perfect, will of God. <cite><b>Romans 12:2</b></cite>
+            </p>
+            <p>
+              Then will I sprinkle clean water upon you, and ye shall be clean: <em>from all your filthiness, and from all your idols, will I cleanse you. A new heart also will I give you, and a new spirit will I put within you</em>: and I will take away the stony heart out of your flesh, and I will give you an heart of flesh. And I will put my spirit within you, and <em>cause you to walk in my statutes, and ye shall keep my judgments, and do them</em>. <cite><b>Ezekiel 36:25-27</b></cite>
+            </p>
+            <p class="note">
+              <b>Note:</b> The transformation of character&mdash;the renewal of mind and the purifying of heart&mdash;is what God is after. He cannot do this without our cooperation, without a total surrender of our will to Him, but to those who ask Him to take their life as they cling to His promise and power to transform, Jesus gives the same assurance He gave to the suffering woman, “be of good comfort: thy faith hath made thee whole” (<a>Luke 8:48</a>).
+            </p>
+          </section>
+          <section>
+            <div>16</div>
+            <h2>What other promises do we have?</h2>
+            <p>
+              Being confident of this very thing, that he which hath begun a good work in you <em>will perform it until the day of Jesus Christ</em>. <cite><b>Philippians 1:6</b></cite>
+            </p>
+            <p>
+              Now unto him that <em>is able to keep you from falling, and to present you faultless before the presence of his glory with exceeding joy</em>, to the only wise God our Saviour, be glory and majesty, dominion and power, both now and ever. Amen. <cite><b>Jude 1:24, 25</b></cite>
+            </p>
+            <p>
+              And the very God of peace sanctify you wholly; and I pray God your whole spirit and soul and body be preserved blameless unto the coming of our Lord Jesus Christ. <em>Faithful is he that calleth you, who also will do it</em>. <cite><b>1 Thessalonians 5:23, 24</b></cite>
+            </p>
+            <p class="note">
+              <b>Note:</b> As long as we continue to choose Christ daily, we are complete in Him (<a>Colossians 2:10</a>), who gives us help and power, who has promised to perform the work He has begun in our hearts, and to present us faultless before His glory!
+            </p>
+          </section>
+          <section>
+            <div>17</div>
+            <h2>What is the plan of salvation really about?</h2>
+            <p>
+              And they shall see his face; and <em>his name shall be in their foreheads</em>. <cite><b>Revelation 22:4</b></cite>
+            </p>
+            <p>
+              And the LORD descended in the cloud, and stood with him there, and <em>proclaimed the name of the LORD</em>. And the LORD passed by before him, and proclaimed, The LORD, The LORD God, <em>merciful and gracious, longsuffering, and abundant in goodness and truth, keeping mercy for thousands, forgiving iniquity and transgression and sin, and that will by no means clear the guilty</em>; visiting the iniquity of the fathers upon the children, and upon the children's children, unto the third and to the fourth generation. <cite><b>Exodus 34:5-7</b></cite>
+            </p>
+            <p>
+              Let this <em>mind</em> be in you, <em>which was also in Christ Jesus</em>. <cite><b>Philippians 2:5</b></cite>
+            </p>
+            <p class="note">
+              <b>Note:</b> Salvation goes beyond justification by faith in Jesus and includes sanctification, also by faith. Yes, it’s about the gift of eternal life (<a>John 3:16</a>), but it’s also about total freedom from the degrading power of sin, total restoration of the image of God in fallen humanity. Following Christ goes beyond the knowledge of, and belief in, truth as revealed in His Word. Christianity is the complete, total surrender to the will of God, so that He can write His name&mdash;the attributes of His character&mdash;on our foreheads, a symbol for our mind. Fallen humanity redeemed to reflect the beauty of God’s character is the great aim of the plan of redemption. What an honor!
+            </p>
+          </section>
+        </article>
         <article id="europe">
           <header>
             <h1 class="entry-title">Europe’s Future Revealed</h1>
@@ -1801,7 +2036,7 @@
         </article>
         <article id="manner">
           <header>
-            <h1 class="entry-title">Second Coming of Christ</h1>
+            <h1 class="entry-title">Manner of Christ’s Coming</h1>
           </header>
           <section>
             <div>1</div>
@@ -4095,7 +4330,7 @@
           </section>
           <section>
             <div>18</div>
-            <h2>What did Paul say toward the end of his life?</h2>
+            <h2>What did Paul write at the end of his life?</h2>
             <p>
               <em>I have fought a good fight, I have finished my course, I have kept the faith</em>: henceforth there is laid up for me a crown of righteousness, which the Lord, the righteous judge, shall give me at that day: and not to me only, but unto all them also that love his appearing. <cite><b>2 Timothy 4:7, 8</b></cite>
             </p>
@@ -5628,7 +5863,7 @@
               Then he brought me to the door of the gate of the LORD'S house which was toward the north; and, behold, <em>there sat women weeping for Tammuz</em>. <cite><b>Ezekiel 8:14</b></cite>
             </p>
             <p class="note">
-              <b>Note:</b> Tamuz was the god of food and vegetation worshiped by the Babylonians, who believed he died each year (immortality of the soul), and so his death was mourned. But it wasn’t just Tamuz; they also believed that people went on to exist in another form after death, which led the Babylonians to worship the dead. This teaching, that people continue to live or be conscious after death, has survived and been adopted by spiritual Babylon, and her influence has made it spread to many Christian churches even though the Bible preaches the exact opposite (<a>Ecclesiastes 9:5; Psalm 115:17</a>; see “Are the Dead Really Dead?”).
+              <b>Note:</b> Tamuz was the god of food and vegetation worshiped by the Babylonians, who believed that he died each year when winter arrived but would be resurrected in the spring (immortality of the soul), and so every year his death was mourned. But it wasn’t just Tamuz; they also believed that people went on to exist in another form after death, which led the Babylonians to worship the dead. This teaching, that people continue to live or be conscious after death, has survived and been adopted by spiritual Babylon, and her influence has made it spread to many Christian churches even though the Bible preaches the exact opposite (<a>Ecclesiastes 9:5; Psalm 115:17</a>; see “Are the Dead Really Dead?”).
             </p>
           </section>
           <section>
@@ -6410,7 +6645,7 @@
           </section>
           <section>
             <div>3</div>
-            <h2>How many methods are baptism are there?</h2>
+            <h2>How many methods of baptism are there?</h2>
             <p>
               There is one body, and one Spirit, even as ye are called in one hope of your calling; one Lord, one faith, <em>one baptism</em>, one God and Father of all, who is above all, and through all, and in you all. <cite><b>Ephesians 4:4-6</b></cite>
             </p>
@@ -6472,7 +6707,7 @@
               Jesus answered, Verily, verily, I say unto thee, Except a man be born of water and <em>of the Spirit</em>, he cannot enter into the kingdom of God. <cite><b>John 3:5</b></cite>
             </p>
             <p class="note">
-              <b>Note:</b> In addition to water baptism, every sincere Christian will also receive the baptism of the Holy Spirit because a full immersion in water is not sufficient without being fully immersed by the Holy Spirit. The good news is that God is more than willing to give the Spirit to anyone who asks (<a>Luke 11:13</a>) and desires to be transformed in life and character by His Holy Spirit, who convicts of sin and bestows on us the righteousness of Jesus (<a>John 16:8; Titus 3:3-7</a>). Without the Holy Spirit we cannot change ourselves (<a>Jeremiah 13:23</a>).
+              <b>Note:</b> In addition to water baptism, every sincere Christian will also receive the baptism of the Holy Spirit because a full immersion in water is not sufficient without being fully immersed by the Holy Spirit. The good news is that God is more than willing to give His Spirit to anyone who asks (<a>Luke 11:13</a>) and desires to be transformed in life and character by the Spirit who convicts of sin and bestows on us the righteousness of Jesus (<a>John 16:8; Titus 3:3-7</a>). Without the Holy Spirit we cannot change ourselves (<a>Jeremiah 13:23</a>).
               <br><br>
               Evidence of receiving the baptism of the Spirit includes producing the fruits of the Spirit described in <a>Galatians 5:22, 23</a> as well as receiving His gifts (see question 12 of “Holy Spirit”), both of which enable us to be effective ambassadors for God (<a>2 Corinthians 5:19-21</a>).
             </p>
@@ -7047,6 +7282,43 @@
       }
     }
 
+    // links
+    function addEventListenersToNavLinks() {
+      $('nav a, footer a').click(function(e) {
+        e.preventDefault();
+
+        // animate
+        $('body > header').slideUp('100ms');
+        $('body').animate({'margin-top': '0'});
+        $('body').css('transition', 'border-top-color 100ms linear');
+
+        // update text
+        const topicId = $(this).attr('href').substring(1);
+        //const topicText = $(this).text();
+        const hex = $(this).attr('style').split(';')[0].split(':')[1];
+        $('.intro h1').text($('.intro h1').text());
+        //$('.intro h1').text(topicText);
+
+        $('article').hide();
+
+        // update colors
+        $('article p').css('background-color', hex.substring(0, hex.length-1) + ',0.1)');
+        $('article#' + topicId + ' h2').css('color', hex);
+        $('article h1, body > footer').css('background', hex);
+        $('body').css('border-top-color', hex);
+
+        // show hidden content
+        $('body > footer, article#' + topicId).show();
+
+        // collapse button for smaller screens
+        if ($('body').width() < 750) {
+          $('.collapse').fadeIn();
+          $('nav, .categories').slideUp('slow');
+          $('html').animate({ 'scrollTop': '0' }, '100ms');
+        }
+      });
+    }
+
     $('article, body > footer').hide();
     $('body').css('margin-top', '-15px');
 
@@ -7055,6 +7327,7 @@
     $('body > footer').prepend('<div class="links">' + nav + '</div>');
     $('.links a').each(function() {
       $(this).find('b').append('. ');
+      $(this).find('i').remove();
     });
 
     // create verse link
@@ -7071,44 +7344,34 @@
       }
     });
 
-    // main
-    $('nav a, footer a').click(function(e) {
-      e.preventDefault();
+    // categories hide/show logic
+    const baseNav = $('nav').html();
+    $('.categories  li').click(function(e) {
+      $('.selected').removeClass();
+      $(this).addClass('selected');
 
-      // animate
-      $('body > header').slideUp('100ms');
-      $('body').animate({'margin-top': '0'});
-      $('body').css('transition', 'border-top-color 100ms linear');
+      $('nav a').removeClass('animate__zoomIn').addClass('animate__animated animate__fadeOut');
+      var category = $(this).text().toLowerCase();
 
-      // update text
-      const topicId = $(this).attr('href').substring(1);
-      //const topicText = $(this).text();
-      const hex = $(this).attr('style').split(':')[1];
-      $('.intro h1').text($('.intro h1').text());
-      //$('.intro h1').text(topicText);
+      document.querySelector('nav a').addEventListener('animationend', () => {
+        if (category === 'all') {
+          var selected = $('nav').html(baseNav).find('a').addClass('animate__animated animate__fadeIn');
+        } else {
+          var selected = $('nav').html(baseNav).find('.' + category).addClass('animate__animated animate__fadeIn');
+        }
 
-      $('article').hide();
+        $('nav a').remove();
+        $('nav').append(selected);
 
-      // update colors
-      $('article p').css('background-color', hex + '16');
-      $('article#' + topicId + ' h2').css('color', hex);
-      $('article h1, body > footer').css('background', hex);
-      $('body').css('border-top-color', hex);
-
-      // show hidden content
-      $('body > footer, article#' + topicId).show();
-
-      // collapse button for smaller screens
-      if ($('body').width() < 750) {
-        $('.collapse').fadeIn();
-        $('nav').slideUp('slow');
-        $('html').animate({ 'scrollTop': '0' }, '100ms');
-      }
+        addEventListenersToNavLinks();
+      });
     });
+
+    addEventListenersToNavLinks();
 
     // show nav
     $('.collapse').click(function(e) {
-      $('nav').slideDown('100ms');
+      $('nav, .categories').slideDown('100ms');
       $('.collapse').fadeOut();
     });
 

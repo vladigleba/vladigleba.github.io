@@ -360,7 +360,7 @@ pre {
 }
 
 .font-size-smallest, nav form input.search, body > footer p, article footer > p.meta:first-child {
-    font-size:0.8rem
+    font-size: 0.8rem
 }
 
 .font-size-small, figure.code, pre {
@@ -371,12 +371,6 @@ pre {
 .font-size-medium, nav ul li, #blog-archives time, #blog-archives footer, article header p.meta {
     font-size: 19.359px;
     font-size:0.968rem
-}
-
-body > header h2 {
-    font-size: 2.8rem;
-    margin-top: 15px;
-    font-family: "Corinthia" !important
 }
 
 .font-size-largest, article h1 {
@@ -416,7 +410,7 @@ body > header h2 {
 
 .sans-serif-font-bold,
 h1, h2, h3, h4, h5, h6,
-#blog-archives h2,
+#blog-archives h2, .categories,
 article section > div {
     font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif
 }
@@ -444,8 +438,15 @@ body {
 }
 
 .wrapper, hgroup {
-    width: 55%;
     margin:0 auto
+}
+
+.wrapper {
+  width: 55%;
+}
+
+hgroup {
+  width: 65%;
 }
 
 img {
@@ -569,6 +570,34 @@ pre.line-numbers {
     display:none
 }
 
+ul.categories {
+  padding-top: 40px;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+  line-height: 2.7rem;
+}
+
+ul.categories li {
+  display: inline;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 8px 12px 5px;
+  transition: background-color 0.3s ease 0s;
+}
+
+ul.categories li:hover, .selected {
+  cursor: pointer;
+  background-color: rgb(247, 200, 163);
+}
+
+.animate__animated.animate__zoomIn,
+.animate__animated.animate__zoomOut,
+.animate__animated.animate__fadeIn,
+.animate__animated.animate__fadeOut {
+  --animate-duration: 0.4s;
+  --animate-delay: 0s;
+}
+
 nav, nav > a {
   box-sizing: border-box;
 }
@@ -589,17 +618,18 @@ nav {
 nav > a {
     grid-row: auto / span 1;
     grid-column: auto / span 1;
-
+    transition: display 0.3s east 0s;
     padding: 0.452rem 0;
     padding: 10px 18px;
     /* margin: 3.5px 1.25px;
     width: 265px;
     height: 2.1rem; */
-    transition: opacity .3s;
+    transition: opacity 0.3s ease 0s;
     letter-spacing: -0.7px;
     font-weight: bolder;
     border-radius: 8px;
-    color:#f5f5f5
+    color: #f5f5f5;
+    position: relative;
 }
 
 nav > a.vertical {
@@ -640,7 +670,21 @@ nav > a > b {
 }
 
 nav > a > b.x {
-  letter-spacing: -8px;
+  /* letter-spacing: -8px; */
+}
+
+nav > a > i {
+  font-size: 15px;
+  padding: 2px 7px;
+  background-color: #fff;
+  opacity: 80%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: #000;
+  font-style: normal;
+  position: absolute;
+  right: 0px;
+  top: 8px;
 }
 
 nav form {
@@ -687,7 +731,7 @@ nav ul li + li {
 body > header {
     background: linear-gradient(205deg, #f29888 1%, #d35d8e 30%, #7b4698 60%, #2f3c8b 99%);
     color: #f5f5f5;
-    padding: 130px 0;
+    padding: 140px 0;
     /* margin: 15px;
     border-radius: 8px; */
 }
@@ -697,7 +741,7 @@ body > header h1 {
     font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase; */
-   font-size: 4.5rem;
+   font-size: 90px;
    font-weight: 900;
    margin-bottom: 7.640px;
    margin-bottom: 0.382rem;
@@ -707,6 +751,11 @@ body > header h1 {
 body > header h1 span {
   color: #fff08a;
   text-shadow: rgba(255, 240, 138, 0.5) 0 0 20px;
+}
+
+body > header h2 {
+    font-size: 25px;
+    margin-top: 15px;
 }
 
 body .content > article {
@@ -1013,7 +1062,7 @@ article footer a.basic-alignment.right {
     }
 
     body > header {
-      padding: 120px 0;
+      padding: 130px 0;
     }
 }
 
@@ -1023,7 +1072,7 @@ article footer a.basic-alignment.right {
     }
 
     body > header {
-      padding: 110px 0;
+      padding: 120px 0;
     }
 
     body > header h1 {
@@ -1031,7 +1080,7 @@ article footer a.basic-alignment.right {
     }
 
     body > header h2 {
-      font-size: 45px;
+      font-size: 20px;
     }
 }
 
@@ -1041,7 +1090,7 @@ article footer a.basic-alignment.right {
     }
 
     body > header {
-      padding: 100px 30px;
+      padding: 110px 30px;
       /* margin: 12px; */
     }
 
@@ -1050,7 +1099,7 @@ article footer a.basic-alignment.right {
     }
 
     body > header h2 {
-      font-size: 40px;
+      font-size: 20px;
     }
 
     body > footer {
@@ -1087,16 +1136,16 @@ article footer a.basic-alignment.right {
 
 @media screen and (max-width: 480px) {
     body > header {
-      padding: 90px 30px;
-    }
-
-    body > header h1 {
-        font-size: 50px;
-        letter-spacing: -1px;
+      padding: 100px 30px;
     }
 
     body > header h2 {
-        font-size: 40px;
+      font-size: 18px;
+    }
+
+    ul.categories {
+      font-size: 25px;
+      line-height: 2.5rem;
     }
 
     body > footer {
