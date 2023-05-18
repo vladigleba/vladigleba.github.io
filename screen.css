@@ -756,6 +756,7 @@ body > header h1 span {
 body > header h2 {
     font-size: 25px;
     margin-top: 15px;
+    line-height: 32px;
 }
 
 body .content > article {
@@ -868,23 +869,25 @@ body > footer a b {
 }
 
 article header {
-  margin-bottom: 3.456px;
-  margin-bottom: 0.173rem;
-
+  margin: 0 auto;
+  padding: 40px 30px;
+  border-radius: 10px;
 }
 
 article header h1 {
     font-size: 2.298rem;
-    color: #f5f5f5;
+    background-color: #fff;
     display: inline-block;
-    margin-bottom: 0.382rem;
     text-transform: uppercase;
     border-radius: 10px;
     padding: 12px 15px 7px;
 }
 
 article header h2 {
-  font-size: 1.184rem;
+  font-size: 22px;
+  margin-top: 20px;
+  color: #fff;
+  line-height: 32px;
 }
 
 article header h1 a, article header h1 a:hover {
@@ -903,11 +906,11 @@ article header p.meta > span:before, article header p.meta > span:after {
     content: "•"
 }
 
-article h2 {
+article section h2 {
   line-height: 1.8rem;
 }
 
-article h2, article section > div {
+article section h2, article section > div {
     font-size: 30.56px;
     font-size: 1.528rem;
     margin-bottom: 9.046px;
@@ -1121,8 +1124,12 @@ article footer a.basic-alignment.right {
         margin:0 auto
     }
 
-    article h2 {
+    article section h2 {
       padding: 0 10px;
+    }
+
+    article header {
+      border-radius: 0;
     }
 
     article p {
@@ -1142,6 +1149,11 @@ article footer a.basic-alignment.right {
 
     body > header h2 {
       font-size: 18px;
+    }
+
+    article header h2 {
+      font-size: 18px;
+      line-height: 25px;
     }
 
     ul.categories {
@@ -1189,7 +1201,7 @@ article footer a.basic-alignment.right {
         margin-right:auto
     }
 
-    article h2 {
+    article section h2 {
       font-size: 27px;
     }
 
