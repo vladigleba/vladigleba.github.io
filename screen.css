@@ -408,14 +408,11 @@ pre {
     font-family: Menlo, Monaco, "Andale Mono", "Lucida Console", "Courier New", monospace
 }
 
-.sans-serif-font-bold,
-h1, h2, h3, h4, h5, h6,
-#blog-archives h2, .categories,
-article section > div {
+.sans-serif-font-bold, h1, h2, h3, h4, h5, h6, #blog-archives h2, .categories, article section > div {
     font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif
 }
 
-.sans-serif-font, nav, body > header h2, article header h2, body .pagination, body > footer p, #blog-archives time, #blog-archives footer, article header p.meta, article footer, footer a {
+.sans-serif-font, nav, body > header h2, article header h2, body .pagination, body > footer p, #blog-archives time, #blog-archives footer, article header p.meta, article footer, footer a, .prevNextLinks, .label {
     font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif
 }
 
@@ -571,7 +568,7 @@ pre.line-numbers {
 }
 
 ul.categories {
-  padding-top: 40px;
+  padding-top: 30px;
   font-size: 28px;
   letter-spacing: 0.5px;
   line-height: 2.7rem;
@@ -604,7 +601,7 @@ nav, nav > a {
 
 nav {
   /* margin: 25px 12px 5rem; */
-  padding: 40px 0 100px;
+  padding: 30px 0 100px;
   margin: auto;
   display: grid;
   grid-gap: 2px;
@@ -657,8 +654,8 @@ nav > a.twice {
   color: #404646; */
 }
 
-.button:hover, nav > a:hover {
-    opacity: 0.92;
+.button:hover, nav > a:hover, .prevNextLinks a:hover {
+  opacity: 0.92;
 }
 
 nav > a > b {
@@ -731,7 +728,7 @@ nav ul li + li {
 body > header {
     background: linear-gradient(205deg, #f29888 1%, #d35d8e 30%, #7b4698 60%, #2f3c8b 99%);
     color: #f5f5f5;
-    padding: 140px 0;
+    padding: 120px 0;
     /* margin: 15px;
     border-radius: 8px; */
 }
@@ -755,7 +752,7 @@ body > header h1 span {
 
 body > header h2 {
     font-size: 25px;
-    margin-top: 15px;
+    margin-top: 25px;
     line-height: 32px;
 }
 
@@ -787,6 +784,29 @@ body .pagination span, body .pagination a {
 body .pagination span {
     border: 1px solid #65a672;
     color:#65a672
+}
+
+.prevNextLinks {
+  display: flex;
+  justify-content: space-between;
+  line-height: 22px;
+  margin: 60px 10px 0;
+}
+
+a.prevLink, a.nextLink {
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 10px;
+  margin: 0 5px;
+  transition: opacity 0.3s ease 0s;
+}
+
+a.prevLink {
+  text-align: left;
+}
+
+a.nextLink {
+  text-align: right;
 }
 
 body > footer {
@@ -869,9 +889,10 @@ body > footer a b {
 }
 
 article header {
-  margin: 0 auto;
+  margin: 0 auto 15px;
   padding: 40px 30px;
   border-radius: 10px;
+  display: inline-block;
 }
 
 article header h1 {
@@ -881,6 +902,17 @@ article header h1 {
     text-transform: uppercase;
     border-radius: 10px;
     padding: 12px 15px 7px;
+}
+
+.label {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 6px 12px;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 30px;
 }
 
 article header h2 {
@@ -1065,7 +1097,7 @@ article footer a.basic-alignment.right {
     }
 
     body > header {
-      padding: 130px 0;
+      padding: 110px 0;
     }
 }
 
@@ -1075,7 +1107,7 @@ article footer a.basic-alignment.right {
     }
 
     body > header {
-      padding: 120px 0;
+      padding: 100px 0;
     }
 
     body > header h1 {
@@ -1093,17 +1125,17 @@ article footer a.basic-alignment.right {
     }
 
     body > header {
-      padding: 110px 30px;
+      padding: 90px 30px;
       /* margin: 12px; */
     }
 
     body > header h1 {
-      font-size: 60px;
+      font-size: 65px;
       line-height: 45px;
     }
 
     body > header h2 {
-      font-size: 20px;
+      font-size: 21px;
     }
 
     body > footer {
@@ -1144,15 +1176,15 @@ article footer a.basic-alignment.right {
 
 @media screen and (max-width: 480px) {
     body > header {
-      padding: 100px 30px;
+      padding: 80px 30px;
     }
 
     body > header h2 {
-      font-size: 18px;
+      font-size: 19px;
     }
 
     article header h2 {
-      font-size: 18px;
+      font-size: 19px;
       line-height: 25px;
     }
 
@@ -1203,6 +1235,11 @@ article footer a.basic-alignment.right {
 
     article section h2 {
       font-size: 27px;
+    }
+
+    a.prevLink, a.nextLink {
+      font-size: 18px;
+      padding: 6px 15px 9px;
     }
 
     article p {
