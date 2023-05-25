@@ -793,6 +793,10 @@ body .pagination span {
   margin: 60px 10px 0;
 }
 
+.prevNextLinks.align {
+  justify-content: end;
+}
+
 a.prevLink, a.nextLink {
   color: #fff;
   padding: 8px 18px;
@@ -1139,7 +1143,7 @@ article footer a.basic-alignment.right {
     }
 
     body > footer {
-      padding: 1.8rem 0.9rem;
+      padding: 2.2rem 1rem;
     }
 
     nav {
@@ -1191,14 +1195,6 @@ article footer a.basic-alignment.right {
     ul.categories {
       font-size: 25px;
       line-height: 2.5rem;
-    }
-
-    body > footer {
-      padding: 0.8rem 0.25rem;
-    }
-
-    body > footer .notices {
-      padding-top: 1rem;
     }
 
     nav ul {

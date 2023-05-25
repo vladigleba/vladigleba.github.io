@@ -7717,8 +7717,11 @@
     // create previous and next topic links
     $('nav a').each(function() {
       const topicId = $(this).attr('href').substring(1);
+      let hasPrev = false;
 
       if ($(this).prev().attr('href')) {
+        hasPrev = true;
+
         const styleAttr = $(this).prev().attr('style');
         const previousId = $(this).prev().attr('href').substring(1);
         const previousTopic = $(this).prev().find('span').text();
@@ -7729,6 +7732,11 @@
         const styleAttr = $(this).next().attr('style');
         const nextId = $(this).next().attr('href').substring(1);
         const nextTopic = $(this).next().find('span').text();
+
+        if (!hasPrev) {
+          $('article#' + topicId).append('<div class="prevNextLinks align"></div>');
+        }
+
         $('article#' + topicId + ' .prevNextLinks').append('<a class="nextLink" style="' + styleAttr + '" href="#' + nextId + '">' + nextTopic + ' &rarr;</a>');
       }
     });
