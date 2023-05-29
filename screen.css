@@ -799,7 +799,7 @@ body .pagination span {
 
 a.prevLink, a.nextLink {
   color: #fff;
-  padding: 8px 18px;
+  padding: 8px 15px 7px;
   border-radius: 10px;
   margin: 0 5px;
   transition: opacity 0.3s ease 0s;
@@ -1235,7 +1235,7 @@ article footer a.basic-alignment.right {
 
     a.prevLink, a.nextLink {
       font-size: 18px;
-      padding: 6px 15px 9px;
+      padding: 6px 15px 7px;
     }
 
     article p {
