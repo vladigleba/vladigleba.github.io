@@ -624,7 +624,7 @@ nav > a {
     transition: opacity 0.3s ease 0s;
     letter-spacing: -0.7px;
     font-weight: bolder;
-    border-radius: 8px;
+    border-radius: 10px;
     color: #f5f5f5;
     position: relative;
 }
@@ -961,7 +961,7 @@ article section {
 article section > div {
   display: block;
   color: #000;
-  background: rgba(255, 206, 0, 0.6);
+  background: rgba(255, 206, 0, 0.5);
   border-radius: 30px;
   width: 53px;
   height: 40px;
@@ -1003,12 +1003,11 @@ article p.note {
 }
 
 article p.note b {
-  background: rgb(154, 88, 175);
+  background: rgba(255, 206, 0, 0.5);
   border-radius: 6px;
   padding: 2px 10px;
   margin-right: 5px;
   font-style: normal;
-  color: #f5f5f5;
   text-transform: uppercase;
 }
 
@@ -1016,7 +1015,7 @@ article p cite, table cite {
     display: block;
     text-align: right;
     font-style: normal;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 article p cite b, table cite b {
