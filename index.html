@@ -7688,7 +7688,7 @@
         // update colors
         $('article p').css('background-color', hex.substring(0, hex.length-1) + ',0.1)');
         $('article#' + topicId + ' section h2, article h1').css('color', hex);
-        $('article > header, body > footer').css('background', hex);
+        $('article > header, body > footer, article p cite b').css('background', hex);
         $('body').css('border-top-color', hex);
 
         // show hidden content
