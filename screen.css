@@ -958,10 +958,14 @@ article section {
   margin-top: 3.2rem;
 }
 
+article p.note b,
+article section > div {
+  background: rgb(245, 231, 140);
+}
+
 article section > div {
   display: block;
   color: #000;
-  background: rgba(255, 206, 0, 0.5);
   border-radius: 30px;
   width: 53px;
   height: 40px;
@@ -1003,7 +1007,6 @@ article p.note {
 }
 
 article p.note b {
-  background: rgba(255, 206, 0, 0.5);
   border-radius: 6px;
   padding: 2px 10px;
   margin-right: 5px;
