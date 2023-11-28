@@ -578,7 +578,7 @@ ul.categories li {
   display: inline;
   text-transform: uppercase;
   border-radius: 10px;
-  padding: 8px 12px 5px;
+  padding: 6px 10px 3px;
   transition: background-color 0.3s ease 0s;
 }
 
@@ -600,11 +600,10 @@ nav, nav > a {
 }
 
 nav {
-  /* margin: 25px 12px 5rem; */
-  padding: 30px 0 100px;
+  padding: 40px 0 100px;
   margin: auto;
   display: grid;
-  grid-gap: 2px;
+  grid-gap: 1px;
   grid-template-columns: repeat(auto-fit, 9.6rem);
   grid-auto-rows: 6.1rem;
   grid-auto-flow: dense;
