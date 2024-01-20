@@ -616,14 +616,14 @@ nav > a {
     grid-column: auto / span 1;
     transition: display 0.3s east 0s;
     padding: 0.452rem 0;
-    padding: 10px 18px;
+    padding: 8px 18px;
     /* margin: 3.5px 1.25px;
     width: 265px;
     height: 2.1rem; */
     transition: opacity 0.3s ease 0s;
     letter-spacing: -0.7px;
     font-weight: bolder;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #f5f5f5;
     position: relative;
 }
@@ -661,8 +661,13 @@ nav > a > b {
   font-size: 52px;
   display: block;
   padding-bottom: 5px;
-  letter-spacing: -5px;
+  letter-spacing: -3px;
   margin-left: -8px;
+  font-family: "PT Serif", "Helvetica Neue", Arial, sans-serif
+}
+
+nav > a > span {
+  line-height: 22px;
 }
 
 nav > a > b.x {
@@ -729,7 +734,7 @@ body > header {
     color: #f5f5f5;
     padding: 120px 0;
     margin: 14px;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 body > header h1 {
@@ -997,7 +1002,7 @@ article ol {
 article p {
     text-align: left;
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px 25px;
 }
 
 article p.note {
