@@ -7763,18 +7763,18 @@
 
       // find clicked ones
       var category = $(this).text().toLowerCase();
-      $('nav').fadeOut(400, function(e) {
-        if (category === 'all') {
-          var selected = $('nav').html(baseNav).find('a');
-        } else {
-          var selected = $('nav').html(baseNav).find('.' + category);
-        }
+      $('nav').hide();
 
-        $('nav a').remove();
-        $('nav').append(selected).fadeIn(300);
+      if (category === 'all') {
+        var selected = $('nav').html(baseNav).find('a');
+      } else {
+        var selected = $('nav').html(baseNav).find('.' + category);
+      }
 
-        addEventListenersToNavLinks();
-      });
+      $('nav a').remove();
+      $('nav').append(selected).show();
+
+      addEventListenersToNavLinks();
     });
 
     addEventListenersToNavLinks();
