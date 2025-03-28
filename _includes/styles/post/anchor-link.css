@@ -1,0 +1,40 @@
+.anchor-link {
+  display: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.anchor-link::after {
+  content: url("assets/images/link.svg");
+  display: inline-block;
+  position: relative;
+  bottom: 7px;
+  left: 20px;
+  transform: scale(1.3); 
+  transform-origin: center;
+  filter: brightness(0) saturate(100%); /* Black */
+  transition: filter 0.2s ease;
+}
+
+.anchor-link:hover::after {
+  filter: brightness(0) saturate(100%) invert(34%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(95%) contrast(88%); /* #727272 */
+}
+
+h2:hover .anchor-link,
+h3:hover .anchor-link,
+h4:hover .anchor-link,
+h2:hover .link-copied-message,
+h3:hover .link-copied-message,
+h4:hover .link-copied-message {
+  display: inline-block;
+}
+
+.link-copied-message {
+  font-weight: 600;
+  position: relative;
+  top: -9px;
+  left: 40px;
+  color: black;
+  display: none;
+  font-family: var(--body-font);
+}

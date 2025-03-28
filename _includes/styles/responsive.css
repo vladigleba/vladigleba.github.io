@@ -1,0 +1,200 @@
+/* 2K/QHD monitors */
+@media (max-width: 3840px) {
+  article,
+  article > header > div,
+  body > footer div {
+    width: 50%;
+  }
+}
+
+/* 2K/QHD monitors */
+@media (max-width: 2560px) {
+  article,
+  article > header > div,
+  body > footer div {
+    width: 55%;
+  }
+}
+
+/* Midpoint between 2K and Full HD */
+@media (max-width: 2100px) {
+  article,
+  article > header > div,
+  body > footer div {
+    width: 60%;
+  }
+}
+
+/* Full HD screens */
+@media (max-width: 1920px) {
+  article,
+  article > header > div,
+  body > footer div {
+    width: 65%;
+  }
+}
+
+/* Widescreen monitors */
+@media (max-width: 1600px) {
+  article,
+  article > header > div,
+  body > footer div {
+    width: 70%;
+  }
+}
+
+/* Larger laptops */
+@media (max-width: 1440px) {
+  article,
+  article > header > div,
+  body > footer div {
+    width: 75%;
+  }
+}
+
+/* Small desktops/laptops */
+@media (max-width: 1280px) {
+  article,
+  article > header > div,
+  body > footer div {
+    width: 80%;
+  }
+
+  .wrapper {
+    gap: 0rem;
+  }
+}
+
+/* Large tablets */
+@media (max-width: 1024px) {
+  :root {
+    --font-size: 18px;
+  }
+
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .toc {
+    padding-left: unset;
+    position: unset;
+    margin-left: -10px;
+  }
+
+  .list {
+    padding: 0 20px;
+    column-gap: 20px;
+    grid-template-columns: repeat(auto-fit, 350px);
+  }
+
+  .list li {
+    padding: 10px;
+  }
+}
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+  article,
+  article > header > div,
+  body > footer div {
+    width: 85%;
+  }
+
+  .main-nav li {
+    padding: 4px 8px 2px;
+  }
+
+  article > header {
+    padding: 60px 0 70px;
+    margin-bottom: 10px;
+  }
+
+  article > header h1 {
+    font-size: 45px;
+  }
+
+  body > footer {
+    padding-top: 75px;
+  }
+
+  .next-link {
+    margin-top: 30px;
+  }
+
+  .anchor-link::after {
+    bottom: 4px;
+  }
+
+  .link-copied-message {
+    top: -7px;
+  }
+
+  main > h2 {
+    font-size: 27px;
+  }
+
+  .banner p,
+  article > header p,
+  .main-nav ul {
+    font-size: 20px;
+  }
+
+  .list p,
+  .footnotes,
+  .toc a,
+  body > footer {
+    font-size: 14px;
+  }
+
+  .meta {
+    font-size: 15px;
+  }
+
+  /* home */
+
+  .banner {
+    padding: 100px 0 130px
+  }
+
+  .banner h1 {
+    font-size: 40px;
+  }
+
+  .list {
+    grid-auto-rows: 70px;
+    grid-template-columns: repeat(auto-fit, 290px);
+  }
+
+  .list li {
+    padding: 5px;
+  }
+
+  .list a {
+    font-size: 23px;
+  }
+
+  li.series .tag {
+    font-size: 12px;
+  }
+}
+
+/* Large phones */
+@media (max-width: 640px) {
+  article,
+  article > header > div,
+  body > footer div {
+    width: 90%;
+  }
+
+  /* .list {
+    grid-auto-rows: 70px;
+    grid-template-columns: repeat(auto-fit, 0px);
+  } */
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .main-nav li {
+    padding: 4px 5px 2px;
+  }
+}

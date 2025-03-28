@@ -1,0 +1,29 @@
+.banner {
+  color: black;
+  padding: 170px 0 200px;
+  text-align: center;
+  /* background: linear-gradient(205deg, #f29888 1%, #d35d8e 30%, #7b4698 60%, #2f3c8b 99%);
+  box-shadow: 
+    0 4.5810809135px 22.9054050446px 0 #a4abb71f,
+    0 12.2162160873px 18.3243236542px 0 #6b738424,
+    0 6.1081080437px 7.6351351738px 0 #3e405433; */
+}
+
+.banner .intro {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.banner h1 {
+  font-weight: 600;
+}
+
+.banner h1 span { 
+  color: var(--gray-color);
+  /*color: #fff08a; 
+  text-shadow: rgba(255, 240, 138, 0.5) 0 0 20px; */
+}
+
+.banner p {
+  margin-top: 40px;
+}

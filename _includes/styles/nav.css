@@ -1,0 +1,35 @@
+.main-nav {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+.main-nav ul {
+  margin: 10px 0;
+  padding: 0px 15px;
+  border-radius: 30px;
+  list-style: none;
+  display: flex;
+  gap: 7px;
+  background-color: #f3f3f3;
+  border: 1px solid white;
+}
+
+.main-nav li {
+  text-transform: uppercase;
+  padding: 6px 10px 3px;
+  transition: color 0.15s ease 0s;
+}
+
+.main-nav li:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--hover-color);
+}
+
+.main-nav li a {
+  color: inherit;
+}

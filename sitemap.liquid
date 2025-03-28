@@ -1,0 +1,27 @@
+---
+permalink: /sitemap.xml
+layout: null
+sitemap:
+  ignore: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {%- for item in collections.all %}
+    {%- unless item.data.sitemap.ignore == true %}
+      <url>
+        <loc>https://vladigleba.com{{ item.url }}</loc>
+        {%- if item.data.updated -%}
+          <lastmod>{{ item.data.updated | date: '%Y-%m-%d' }}</lastmod>
+        {%- else -%}
+          <lastmod>{{ item.date | date: '%Y-%m-%d' }}</lastmod>
+        {%- endif -%}
+        {%- if item.data.sitemap.changefreq -%}
+          <changefreq>{{ item.data.sitemap.changefreq }}</changefreq>
+        {%- endif -%}
+        {%- if item.data.sitemap.priority -%}
+          <priority>{{ item.data.sitemap.priority }}</priority>
+        {%- endif -%}
+      </url>
+    {%- endunless %}
+  {%- endfor %}
+</urlset>

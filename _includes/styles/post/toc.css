@@ -1,0 +1,43 @@
+.toc {
+  flex: 0 0 320px; /* Fixed width for ToC */
+  position: sticky;
+  top: 62px;
+  align-self: start;
+  order: 1; /* Moves ToC to the right */
+  margin-top: 42px;
+  padding-left: 50px;
+}
+
+.toc button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.toc h2 {
+  font-size: 21px;
+  margin: 15px 0 8px 10px;
+}
+
+.toc li {
+  padding: 2px 0 4px 10px;
+  line-height: 0.92;
+ }
+
+.toc li.active {
+  font-weight: bold;
+}
+
+.toc li:hover a {
+  color: var(--hover-color);
+}
+
+.toc a {
+  transition: color 0.15s ease 0s;
+}
+
+.toc.collapsed ul {
+  display: none;
+}

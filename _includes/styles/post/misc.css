@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  align-items: flex-start; /* Aligns the top edges */
+  gap: 2rem; /* Space between ToC and content */
+}
+
+article {
+  margin: 0 auto;
+  scroll-padding-top: 100px;
+}
+
+article figcaption,
+article p,
+article ol,
+article ul {
+  line-height: 1.618;
+}
+
+.next-link {
+  border-top: 1px solid black;
+  margin-top: 60px;
+  padding: 2px 0;
+}
+
+sup {
+  font-size: 13px;
+}

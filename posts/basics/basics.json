@@ -1,0 +1,3 @@
+{
+  "permalink": "/basics/{{ page.fileSlug }}/"
+}

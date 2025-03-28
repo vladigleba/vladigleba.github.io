@@ -1,0 +1,11 @@
+.meta span,
+.list p span {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+article,
+article > header > div,
+body > footer div {
+  width: 70%;
+}

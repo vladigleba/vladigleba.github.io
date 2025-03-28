@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+:target {
+  scroll-margin-top: 72px;
+}
+
+ul, ol {
+  padding-left: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-underline-offset: 5px;
+}
+
+html {
+  font-family: var(--body-font);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+}

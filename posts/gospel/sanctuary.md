@@ -1,0 +1,158 @@
+---
+title: Finding Hope in the Sanctuary
+description: First introduced to Moses on Mount Sinai, the sanctuary offers deep insights into God’s plan of salvation.
+color: rgb(128,69,154)
+date: 2025-01-13
+---
+
+## Why did God tell Moses to build a sanctuary?
+
+> And let them make me a sanctuary; *that I may dwell among them*.
+{% ref 'Exodus 25:8' %}
+
+The sanctuary was built so that God could dwell among His people. When Adam and Eve sinned, they lost the closeness they had with their Creator because sin separates us from Him (<a>Isaiah 59:1, 2</a>). Our Creator God is holy, and He cannot dwell in the presence of sin because His holiness is a consuming fire to sin and anyone who cherishes it (<a>Deuteronomy 4:24</a>). In order to remove this barrier created by sin, God told Moses to build a sanctuary so He could again live with His people. His permanent presence in the sanctuary would be a source of comfort to the Israelites as He guided, protected, and provided for them in their journey through life.
+
+## What did the sanctuary reveal?
+
+> *Thy way*, O God, is in the sanctuary: who is so great a God as our God?
+{% ref 'Psalm 77:13' %}
+
+The sanctuary reveals God’s way of dealing with sin and its consequences; it’s His marvelous plan of salvation, the good news, outlined in detail through a variety of symbols and ceremonies.
+
+## What was the central concept taught by the sanctuary?
+
+> And almost all things are by the law purged with blood; and *without shedding of blood is no remission*.
+{% ref 'Hebrews 9:22' %}
+
+> For *the life of the flesh is in the blood*: and I have given it to you upon the altar to make an atonement for your souls: for *it is the blood that maketh an atonement for the soul*.
+{% ref 'Leviticus 17:11' %}
+
+The sanctuary service revolved around the sacrifice of animals, and this taught that blood, a symbol of life, had to be shed to obtain forgiveness of sin. But it wasn’t the blood of the sacrificed animals that provided forgiveness: theirs was merely a symbol that pointed to the only blood that could&mdash;the blood, and life, of the One who was sinned against. Jesus, the Creator of heaven and earth, is the Lamb of God slain from the foundation of the world (<a>Revelation 13:8</a>) who takes away my sins (<a>John 1:29</a>). The sanctuary thus provides a vivid portrayal of the high price of sin. It may seem insignificant to us, but sin ended up costing the very life Jesus, and if it wasn’t for His death on our behalf, it would’ve cost us our lives. Satan makes it look attractive, perhaps even life-giving at times, but the truth is sin always takes life away, while bringing pain, suffering, and, ultimately, death (<a>Romans 6:23</a>).
+
+## Where did Moses get the sanctuary blueprint?
+
+> *According to all that I shew thee*, after the pattern of the tabernacle, and the pattern of all the instruments thereof, even so shall ye make it.
+{% ref 'Exodus 25:9' %}
+
+The blueprint for the sanctuary came from God Himself because, through it, He wanted to teach important lessons about the plan of salvation. Originally it was a portable, tent-like structure made of acacia wood, goat hair, animal skins, silver, and gold, consisting of three areas: the courtyard, the Holy Place, and the Most Holy Place.
+
+The courtyard, the area around the sanctuary, was 75 feet by 150 feet (<a>Exodus 27:18</a>) and fenced with linen cloth attached to 60 evenly spaced pillars of brass (<a>Exodus 27:9-16</a>). This perimiter had only one opening through which the sinner would enter the courtyard. Upon entry, the sinner would walk toward the altar of burnt offering (<a>Exodus 40:6</a>), where his or her animal sacrifice would be consumed by fire. Past the altar, but before the sanctuary entrance, was a laver (basin) for the priests to wash their hands and feet.
+
+The sanctuary itself was made up of two rooms, the Holy Place and the Most Holy Place, and the two were separated by a thick veil (curtain). The sanctuary walls were made of wooden boards overlaid in gold and set in silver sockets (<a>Exodus 26:15-19, 29</a>), while the roof consisted of four coverings: linen, goat hair, ram skin, and badger skin (<a>Exodus 26:1, 7-14</a>). Upon entry into the sanctuary, the first room was the Holy Place, containing a seven-branched candlestick that was kept burning at all times (<a>Exodus 25:31-40</a>), an altar of incense that was also kept consistently burning (<a>Exodus 30:7, 8</a>), and a table of showbread with loaves of bread on it (<a>Exodus 25:30; Leviticus 24:5-9</a>). Past the thick veil was the Most Holy Place, the room where the presence of God resided. It contained the Ark of the Covenant (<a>Exodus 40:3</a>), which had the mercy seat on top of it and two angels, made of pure gold, on top of the mercy seat (<a>Exodus 25:17-22</a>). Inside the ark were the Ten Commandments written with the finger of God (<a>Deuteronomy 10:4, 5</a>).
+
+## Of what was the sanctuary a copy?
+
+> Now this is the main point of the things we are saying: We have such a High Priest, who is seated at the right hand of the throne of the Majesty in the heavens, a Minister *of the sanctuary and of the true tabernacle which the Lord erected, and not man*. For every high priest is appointed to offer both gifts and sacrifices. Therefore it is necessary that this One also have something to offer. For if He were on earth, He would not be a priest, since there are priests who offer the gifts according to the law; *who serve the copy and shadow of the heavenly things*, as Moses was divinely instructed when he was about to make the tabernacle. For He said, “See that you make all things according to the pattern shown you on the mountain.”
+{% ref 'Hebrews 8:1-5' %}
+
+The Hebrew sanctuary was a copy, a “shadow,” of the sanctuary in heaven of which Jesus is the High Priest, offering forgiveness of sins to the repenting sinner. In other words, God’s true sanctuary is the heavenly one, not the earthly one.
+
+## How did a sinner receive forgiveness of sins?
+
+> And he shall lay his hand upon the head of the sin offering, and *slay it for a sin offering* in the place where they kill the burnt offering.
+{% ref 'Leviticus 4:33' %}
+
+A sinner would walk into the courtyard with a sacrificial lamb and approach the altar of burnt offering. Then he would confess his sins onto the lamb by placing his hand on its head (<a>Leviticus 4:29; 5:5</a>), symbolically transferring his sins to the lamb. Because the lamb was now symbolically guilty, it had to pay the penalty of sin&mdash;death, and the sinner would then slay the lamb with his own hand. Obviously, this was not an easy process, but it was intended to show the seriousness of sin. Afterward, the priest either ate part of the animal sacrifice (<a>Leviticus 6:26</a>) or sprinkled some of its blood inside the sanctuary (<a>Leviticus 4:16, 17</a>), depending on the sacrifice offered. This meant the sin was then transferred from the lamb to the priest and then into the sanctuary, and the sinner walked away free from the penalty of sin.
+
+## How do I receive forgiveness of sins?
+
+> The next day John seeth Jesus coming unto him, and saith, *Behold the Lamb of God, which taketh away the sin of the world*.
+{% ref 'John 1:29' %}
+
+The animal sacrifices pointed to the Lamb of God sacrificed in the “courtyard” of this earth on the “altar” of a hill called Calvary. While the Hebrews were forgiven by looking forward, in faith, to the future sacrifice of Jesus, I am forgiven by looking backward, in faith, to what is now a completed sacrifice on the cross on my behalf. When Jesus died, the veil separating the Holy Place from the Most Holy Place in the earthly sanctuary was torn from top to bottom (<a>Matthew 27:51</a>), a divine indication that its services were obsolete from that moment on because the One true and great sacrifice they were all pointing to had been accomplished (<a>Daniel 9:27</a>). Any talk of building a new temple in Jerusalem to reinstitute those services is a denial of Jesus’ sacrificial death on behalf of and for all.
+
+## What did the sanctuary furniture represent?
+
+Every piece of furniture points to Jesus and represents an aspect of His work on my behalf to save me from sin:
+- The altar of burnt offering represents the cross, while the animal represents Jesus, the ultimate sacrifice (<a>John 1:29</a>).
+- The laver points to Jesus as the Living Water cleansing me from sin and giving me a new birth through the Holy Spirit (<a>John 4:10; Titus 3:5</a>)&mdash;of which baptism is a symbol (<a>Romans 6:3-7</a>; see “Baptism”).
+- The candlestick points to Jesus as the Light of the world (<a>John 1:9; 9:5</a>), while its oil represents the Holy Spirit (<a>Zechariah 4:1-6; Revelation 4:5</a>), with whom I am invited to be filled (<a>Luke 11:13</a>).
+- The showbread is a symbol of Jesus being the Bread of Life (<a>John 6:48, 51</a>), which I an invited to internalize by reading His Word&mdash;the Bible (<a>Matthew 4:4</a>).
+- The altar of incense represents the righteousness of Jesus mixed with the prayers of God’s people (<a>Revelation 5:8; 8:3</a>).
+- The ark of the covenant represents God’s throne in heaven (<a>Psalm 80:1</a>), but there is more to it. Because God’s Ten Commandments were inside the ark, it shows how His law of love (see [“God’s Law of Love”](/posts/gospel/law.md)), which is a reflection of His character, is the foundation of His government. But since the mercy seat was over the Ten Commandments, it also represents His mercy being extended, through the blood that was sprinkled on the seat by the priest (<a>Leviticus 16:15, 16</a>), to those who confess and forsake sin after breaking His law. It’s beautiful! And of course, the sprinkled blood was a symbol of Jesus’ blood shed on behalf of all people (<a>Matthew 26:28</a>).
+
+## Do I have a High Priest today?
+
+> But *Christ being come an high priest* of good things to come, by a greater and more perfect tabernacle, not made with hands, that is to say, not of this building; neither by the blood of goats and calves, but *by his own blood he entered in once into the holy place, having obtained eternal redemption for us*.
+{% ref 'Hebrews 9:11, 12' %}
+
+> For there is one God, and *one mediator between God and men, the man Christ Jesus*.
+{% ref '1 Timothy 2:15' %}
+
+The sprinkling of blood by the priest foreshadowed Jesus’ current ministry in the heavenly sanctuary that He started after rising from the dead and returning to heaven. He is now my High Priest, presenting His own blood for my sins so they can be forgiven when I confess them in His name (<a>1 John 1:9</a>). In other words, the salvation process did not end at the cross but continues to this day in the heavenly sanctuary. Just like the priest was the mediator between God and sinners in the earthly sanctuary, Jesus is now our Mediator, the link between our human weakness and God’s divine power, reconciling us to God.
+
+## What does this reconciliation entail?
+
+> Seeing then that *we have a great high priest, that is passed into the heavens, Jesus the Son of God*, let us hold fast our profession.
+{% ref 'Hebrews 4:14' %}
+
+> Wherefore he is able also to save them to the uttermost that come unto God by him, seeing *he ever liveth to make intercession for them*.
+{% ref 'Hebrews 7:25' %}
+
+> Being justified freely by his grace through the redemption that is in Christ Jesus: whom God hath set forth to be a propitiation through faith in his blood, *to declare his righteousness for the remission of sins that are past*, through the forbearance of God.
+{% ref 'Romans 3:24, 25' %}
+
+> Who gave himself for us, that he might *redeem us from all iniquity, and purify unto himself a peculiar people*, zealous of good works.
+{% ref 'Titus 2:14' %}
+
+> For it is *God which worketh in you both to will and to do* of his good pleasure.
+{% ref 'Philippians 2:13' %}
+
+As my High Priest, Jesus accomplishes two amazing miracles when I genuinely confess my sins against Him and fully surrender my heart to Him: His perfect life is first imputed to me (I receive credit for it), allowing Him to wipe my sinful record clean, then its imparted to me (becomes a part of me) through a new birth, enabling me to live a life of victory in the present (<a>John 3:3-6</a>)! These two miracles make me righteous before God, which is something I can never accomplish through my own efforts (<a>Acts 4:12</a>). This is righteousness by faith&mdash;trusting my Savior to do for me and in me what I can never do for and in myself.
+
+## What promises does God give regarding righteousness?
+
+There are several promises God gives me:
+- If I confess my sins, He will forgive them by ascribing Jesus’ sinless life and atoning death to me, thereby removing the death sentence from me and counting me as guiltless (<a>1 John 1:9; Isaiah 1:18; 44:22; 2 Corinthians 5:21</a>).
+- He promises to restore His image in me that was lost in Eden by giving me a new heart (<a>Romans 8:29; Genesis 1:26, 27; Ezekiel 36:25-27</a>).
+- He promises to give me the desire and the power to live righteously (<a>Philippians 2:13; Hebrews 13:20, 21</a>).
+- He will remain faithful to His work of restoring His image in me until I stand before His throne in heaven (<a>Philippians 1:6; Jude 1:24</a>).
+
+## Do I have a role to play in this?
+
+> Not every one that saith unto me, Lord, Lord, shall enter into the kingdom of heaven; but *he that doeth the will of my Father* which is in heaven.
+{% ref 'Matthew 7:21' %}
+
+The promises mentioned above can become a reality only if I give Jesus the permission to perform them by making Him the Ruler of my life, and this commitment needs to be renewed every day (<a>1 Corinthians 15:31; Luke 9:23</a>) because He can continue His work in me only if I continue to cooperate with and remain fully surrendered to Him. This involves choosing to die to self daily because my carnal, selfish nature is naturally in enmity against God (<a>Romans 8:5-9</a>), but Jesus’ life was one of selflessness, so He calls me to follow Him (<a>John 12:26; 1 Peter 2:21</a>) even though the natural desire is to go my own way (<a>Isaiah 53:6</a>).
+
+He compares the surrender of self to getting an eye plucked out or a hand cut off (<a>Matthew 5:29, 30</a>) because sin is addictive and selfishness is natural, but it can and will be overcome, by God’s power (<a>Mark 10:26, 27</a>), in the lives of those whom Jesus calls His own. In another place, He compares His life of self denial to a narrow path (<a>Matthew 7:13, 14</a>), so clearly this is not the path chosen by the majority. This is why a mere profession of faith in a life of conscious rebellion against His law is, ultimately, a shallow profession (<a>1 John 2:3-6</a>). Jesus shares heaven with those who share His selfless character, and this is a miracle only He can perform, but only if I give Him full control of my life (<a>Matthew 19:27</a>).
+
+## What was the Day of Atonement?
+
+> Also on the tenth day of this seventh month there shall be a day of atonement: *it shall be an holy convocation unto you; and ye shall afflict your souls*, and offer an offering made by fire unto the LORD.
+{% ref 'Leviticus 23:27' %}
+
+The Day of Atonement (Yom Kippur) was a yearly occurance and the only time the High Priest entered the Most Holy Place. It was a solemn day of judgment, introspection, and repentance to ensure there was no unconfessed sin in one’s life. Anyone who refused to separate from sin was cut off from the camp of Israel (<a>Leviticus 23:29</a>). During this day the sanctuary was cleansed from the sins that had been trasferred there throughout the year because as the people offered sacrifices for sin, their sin was then symbolically transferred to the lamb, from the lamb to the priest, and, finally, from the priest to the sanctuary itself.
+
+## How was the sanctuary cleansed?
+
+> And he shall *take the two goats, and present them before the LORD* at the door of the tabernacle of the congregation. And Aaron shall cast lots upon the two goats; one lot for the LORD, and the other lot for the scapegoat. And Aaron *shall bring the goat upon which the LORD'S lot fell, and offer him for a sin offering. But the goat, on which the lot fell to be the scapegoat, shall be presented alive before the LORD*, to make an atonement with him, and to let him go for a scapegoat into the wilderness.
+{% ref 'Leviticus 16:7-10' %}
+
+> And this shall be a statute for ever unto you: that in the seventh month, on the tenth day of the month, *ye shall afflict your souls, and do no work at all*, whether it be one of your own country, or a stranger that sojourneth among you: For *on that day shall the priest make an atonement for you, to cleanse you, that ye may be clean from all your sins before the LORD*.
+{% ref 'Leviticus 16:29, 30' %}
+
+Once a year, on the Day of Atonement, two goats were selected. The Lord’s goat was killed as a sacrifice for the sins of God’s people (<a>Leviticus 16:9</a>), and the blood was taken by the high priest into the Most Holy Place and sprinkled upon and before the mercy seat (<a>Leviticus 16:14</a>). This represented the blood of Jesus and the mercy of God available to anyone who chooses to confess and forsake sin. God accepted the sprinkled blood, and the confessed sins of the people were then transferred from the sanctuary to the high priest, who then transferred them to the second goat&mdash;the scapegoat, which represented Satan (<a>Leviticus 16:8</a>). In this manner the sanctuary was cleansed from the sins of the people transferred there throughout the year (<a>Leviticus 16:30</a>).
+
+The scapegoat was then led into the wilderness (<a>Leviticus 16:21, 22</a>) where it died, representing Satan’s punishment for the sins of the world because after Jesus’ Second Coming, Satan will be confined to the uninhabited, desolate wilderness of earth for 1,000 years (<a>Revelation 20:1-3</a>; see “1,000 Years of Peace”), and at the end of this period, he will perish in the lake of fire (<a>Revelation 20:10</a>; see “Is Hell Forever?”).
+
+## What did the Day of Atonement foreshadow?
+
+> It was therefore necessary that *the patterns of things in the heavens should be purified* with these; but the heavenly things themselves with better sacrifices than these.
+{% ref 'Hebrews 9:23' %}
+
+Since the earthly sanctuary and it’s services were a foreshadow of the heavenly sanctuary, the Day of Atonement was pointing to the cleansing of the heavenly sanctuary (see [“2,300 Day Prophecy”](/posts/prophecy/investigative.md)) by the real High Priest, Jesus Christ, the real Mediator between God and man (<a>1 Timothy 2:5</a>) who offers forgiveness and cleansing from sin to anyone who exercises faith in His substitutionary sacrifice.
+
+In the broadest aspect, the Day of Atonement lead to sin being eradicated from the camp of Israel, which pointed to a future time when sin would be eradicated from the universe forever. Then and only then will the atonement be completed and the universe restored to its pre-sin state. The story of the sanctuary, therefore, is far reaching and all-encompassing, covering the entire history of the human race, from the fall of Adam and Eve in Eden to the restoration of the fallen race in the new heavenly Eden!
+
+## What makes Jesus the perfect High Priest?
+
+> Therefore, *in all things He had to be made like His brethren*, that He might be a merciful and faithful High Priest in things pertaining to God, to make propitiation for the sins of the people. *For in that He Himself has suffered, being tempted, He is able to aid those who are tempted*.
+{% ref 'Hebrews 2:17, 18, NKJV' %}
+
+> For we do not have a High Priest who cannot sympathize with our weaknesses, but *was in all points tempted as we are*, yet without sin. Let us therefore come boldly to the throne of grace, that we may obtain mercy and find grace to help in time of need.
+{% ref 'Hebrews 4:15, 16' %}
+
+Because Jesus was born in human flesh, He experienced all of the temptations that we experience, and because He knows what it feels like to wrestle with sin, He is full of mercy and compassion toward anyone who comes to Him in confession and repentence. Because He successfully resisted temptation (<a>1 John 3:5</a>) and gained victory over sin, He is ever ready to help me overcome sin in my own life. He wants me to experience an abundant life (<a>John 10:10</a>) that is free from the power of sin (<a>John 8:31, 31</a>).
+
+The pain, misery, and suffering of sin was never a part of His plan for us. The human race brought it into the world, and the sanctuary shows that God takes it very seriously. His justice cannot excuse it, but, in His mercy, He also takes the burden of providing a way out of it entirely upon Himself, and He gives the remedy&mdash;freely&mdash;to anyone willing to take it. He is our merciful High Priest who shed His own blood so our record of sin could be blotted out. The only question is have you accepted His offer of mercy? Have your sins been covered by the blood of the Lamb?
