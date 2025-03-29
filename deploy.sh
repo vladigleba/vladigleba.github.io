@@ -17,7 +17,7 @@ echo "Cleaning up old files..."
 rm -rf *
 
 echo "Copying new build..."
-cp -r $SOURCE_BRANCH/_site/* .  # Copy built files to root
+git checkout $SOURCE_BRANCH -- _site/*
 
 echo "Deploying to GitHub Pages..."
 git add .
