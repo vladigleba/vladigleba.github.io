@@ -17,7 +17,8 @@ echo "Cleaning up old files..."
 rm -rf *
 
 echo "Copying new build..."
-git checkout $SOURCE_BRANCH -- _site/*
+git checkout $SOURCE_BRANCH -- _site
+mv _site/* .
 
 echo "Deploying to GitHub Pages..."
 git add .
