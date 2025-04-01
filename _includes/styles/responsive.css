@@ -110,7 +110,7 @@
   }
 
   article > header h1 {
-    font-size: 45px;
+    font-size: 42px;
   }
 
   body > footer {
@@ -133,9 +133,12 @@
     font-size: 27px;
   }
 
-  .banner p,
-  article > header p,
   .main-nav ul {
+    font-size: 21px;
+  }
+
+  .banner p,
+  article > header p {
     font-size: 20px;
   }
 
@@ -157,7 +160,7 @@
   }
 
   .banner h1 {
-    font-size: 40px;
+    font-size: 38px;
   }
 
   .list {
