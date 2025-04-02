@@ -1,14 +1,12 @@
 #!/bin/bash
 
-# Exit immediately if any command fails
-set -e
+set -e  # exit immediately if any command fails
 
 PROD_BRANCH="master"
 SOURCE_BRANCH="source"
 CURRENT_TIME_UTC=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
 
 cp -r _site/* ../tmp
-
 git checkout $PROD_BRANCH
 rm -rf *
 mv ../tmp/* .

@@ -146,7 +146,7 @@
   .footnotes,
   .toc a,
   body > footer {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .meta {
@@ -173,7 +173,7 @@
   }
 
   .list a {
-    font-size: 23px;
+    font-size: 24px;
   }
 
   li.series .tag {
