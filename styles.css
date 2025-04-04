@@ -605,14 +605,11 @@ sup {
     font-size: 20px;
   }
 
+  .meta,
   .list p,
   .footnotes,
   .toc a,
   body > footer {
-    font-size: 15px;
-  }
-
-  .meta {
     font-size: 15px;
   }
 
@@ -628,15 +625,15 @@ sup {
 
   .list {
     grid-auto-rows: 70px;
-    grid-template-columns: repeat(auto-fit, 290px);
+    grid-template-columns: repeat(auto-fit, 295px);
   }
 
   .list li {
-    padding: 5px;
+    padding: 2px;
   }
 
   .list a {
-    font-size: 24px;
+    font-size: 25px;
   }
 
   li.series .tag {
@@ -651,11 +648,6 @@ sup {
   body > footer div {
     width: 90%;
   }
-
-  /* .list {
-    grid-auto-rows: 70px;
-    grid-template-columns: repeat(auto-fit, 0px);
-  } */
 }
 
 /* Small phones */
