@@ -17,7 +17,10 @@ main > h2 {
   font-size: 34px;
 }
 
-.banner p,
+.banner p {
+  font-size: 25px;
+}
+
 article > header p,
 .main-nav ul {
   font-size: 23px;

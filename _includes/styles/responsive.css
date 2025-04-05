@@ -147,7 +147,7 @@
   .footnotes,
   .toc a,
   body > footer {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   /* home */
@@ -161,16 +161,15 @@
   }
 
   .list {
-    grid-auto-rows: 70px;
-    grid-template-columns: repeat(auto-fit, 295px);
+    grid-template-columns: repeat(auto-fit, 310px);
   }
 
   .list li {
-    padding: 2px;
+    padding: 0;
   }
 
   .list a {
-    font-size: 25px;
+    font-size: 26px;
   }
 
   li.series .tag {
