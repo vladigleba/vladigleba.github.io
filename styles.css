@@ -70,7 +70,10 @@ main > h2 {
   font-size: 34px;
 }
 
-.banner p,
+.banner p {
+  font-size: 25px;
+}
+
 article > header p,
 .main-nav ul {
   font-size: 23px;
@@ -201,9 +204,8 @@ body > footer div {
   margin-top: 40px;
 }
 .list {
-  list-style-type: none;
+  list-style: none;
   padding: 0 50px;
-  margin: 0 auto;
   display: grid;
   column-gap: 40px;
   grid-template-columns: repeat(auto-fit, 380px);
@@ -610,7 +612,7 @@ sup {
   .footnotes,
   .toc a,
   body > footer {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   /* home */
@@ -624,16 +626,15 @@ sup {
   }
 
   .list {
-    grid-auto-rows: 70px;
-    grid-template-columns: repeat(auto-fit, 295px);
+    grid-template-columns: repeat(auto-fit, 310px);
   }
 
   .list li {
-    padding: 2px;
+    padding: 0;
   }
 
   .list a {
-    font-size: 25px;
+    font-size: 26px;
   }
 
   li.series .tag {
