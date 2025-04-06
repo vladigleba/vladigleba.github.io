@@ -33,7 +33,10 @@ article > header p,
   text-transform: uppercase;
 }
 
-.list p,
+.list p {
+  font-size: 18px;
+}
+
 .footnotes {
   font-size: 17px;
 }
@@ -45,7 +48,7 @@ body > footer {
 
 .link-copied-message,
 li.series .tag {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .meta {

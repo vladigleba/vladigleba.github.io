@@ -84,11 +84,11 @@
   .list {
     padding: 0 20px;
     column-gap: 20px;
-    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-columns: repeat(auto-fit, 354px);
   }
 
   .list li {
-    padding: 10px;
+    padding: 3px;
   }
 }
 
@@ -161,7 +161,10 @@
   }
 
   .list {
-    grid-template-columns: repeat(auto-fit, 310px);
+    padding: 0 10px;
+    column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, 320px);
+    grid-auto-rows: 75px;
   }
 
   .list li {
@@ -169,11 +172,12 @@
   }
 
   .list a {
-    font-size: 26px;
+    font-size: 27px;
   }
 
   li.series .tag {
-    font-size: 12px;
+    font-size: 13px;
+    padding-top: 1.5px;
   }
 }
 
