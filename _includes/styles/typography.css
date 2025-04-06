@@ -33,6 +33,10 @@ article > header p,
   text-transform: uppercase;
 }
 
+.list a {
+  font-size: 30px;
+}
+
 .list p {
   font-size: 18px;
 }

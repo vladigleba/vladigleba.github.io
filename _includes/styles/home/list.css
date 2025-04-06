@@ -47,7 +47,6 @@ li.series .tag {
 }
 
 .list a {
-  font-size: 30px;
   text-decoration: none;
   display: block;
   transition: color 0.15s ease 0s;
