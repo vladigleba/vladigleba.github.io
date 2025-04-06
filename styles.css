@@ -86,6 +86,10 @@ article > header p,
   text-transform: uppercase;
 }
 
+.list a {
+  font-size: 30px;
+}
+
 .list p {
   font-size: 18px;
 }
@@ -255,7 +259,6 @@ li.series .tag {
 }
 
 .list a {
-  font-size: 30px;
   text-decoration: none;
   display: block;
   transition: color 0.15s ease 0s;
@@ -611,7 +614,6 @@ sup {
   }
 
   .meta,
-  .list p,
   .footnotes,
   .toc a,
   body > footer {
@@ -643,9 +645,13 @@ sup {
     font-size: 27px;
   }
 
+  .list p {
+    font-size: 17px;
+  }
+
   li.series .tag {
     font-size: 13px;
-    padding-top: 1.5px;
+    padding-top: 1px;
   }
 }
 
