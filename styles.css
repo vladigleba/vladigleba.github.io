@@ -86,7 +86,10 @@ article > header p,
   text-transform: uppercase;
 }
 
-.list p,
+.list p {
+  font-size: 18px;
+}
+
 .footnotes {
   font-size: 17px;
 }
@@ -98,7 +101,7 @@ body > footer {
 
 .link-copied-message,
 li.series .tag {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .meta {
@@ -208,7 +211,7 @@ body > footer div {
   padding: 0 50px;
   display: grid;
   column-gap: 40px;
-  grid-template-columns: repeat(auto-fit, 380px);
+  grid-template-columns: repeat(auto-fit, 390px);
   grid-auto-rows: 85px;
   grid-auto-flow: dense;
   justify-content: center;
@@ -219,7 +222,7 @@ body > footer div {
   grid-row: auto / span 1;
   grid-column: auto / span 1;
   border-top: 1px solid #e3e3e3;
-  padding: 25px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -241,18 +244,18 @@ li.series {
 }
 
 li.series .tag {
-  font-weight: 600;
+  font-weight: 700;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   border: 1px solid #ccc;
   text-transform: uppercase;
-  padding: 1px 10px;
+  padding: 0px 10px 1px;
   border-radius: 5px;
   color: var(--gray-color);
 }
 
 .list a {
-  font-size: 28px;
+  font-size: 30px;
   text-decoration: none;
   display: block;
   transition: color 0.15s ease 0s;
@@ -444,7 +447,7 @@ sup {
 
 .toc li {
   padding: 2px 0 4px 10px;
-  line-height: 0.92;
+  line-height: 0.95;
  }
 
 .toc li.active {
@@ -549,11 +552,11 @@ sup {
   .list {
     padding: 0 20px;
     column-gap: 20px;
-    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-columns: repeat(auto-fit, 354px);
   }
 
   .list li {
-    padding: 10px;
+    padding: 3px;
   }
 }
 
@@ -626,7 +629,10 @@ sup {
   }
 
   .list {
-    grid-template-columns: repeat(auto-fit, 310px);
+    padding: 0 10px;
+    column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, 320px);
+    grid-auto-rows: 75px;
   }
 
   .list li {
@@ -634,11 +640,12 @@ sup {
   }
 
   .list a {
-    font-size: 26px;
+    font-size: 27px;
   }
 
   li.series .tag {
-    font-size: 12px;
+    font-size: 13px;
+    padding-top: 1.5px;
   }
 }
 
