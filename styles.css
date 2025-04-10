@@ -51,10 +51,6 @@ table {
   border-spacing: 0;
   text-align: left;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-}
-
 .main-nav a,
 .toc nav a {
   text-decoration: none;
@@ -99,7 +95,8 @@ article > header p,
 }
 
 .toc a,
-body > footer {
+body > footer,
+#verse-popup {
   font-size: 16px;
 }
 
@@ -113,7 +110,9 @@ li.series .tag {
 }
 
 figure,
-main p {
+main p,
+main ol,
+main ul {
   font-family: "Literata", Georgia, Times, "Times New Roman", serif;
 }
 
@@ -179,6 +178,16 @@ article,
 article > header > div,
 body > footer div {
   width: 70%;
+}
+
+table {
+  width: 100%;
+  margin: 15px 0;
+}
+
+th, td {
+  width: 25px;
+  text-align: center;
 }
 
 .banner {
@@ -449,7 +458,7 @@ sup {
 }
 
 .toc li {
-  padding: 2px 0 4px 10px;
+  padding: 2.5px 0 5px 10px;
   line-height: 0.95;
  }
 
@@ -467,6 +476,23 @@ sup {
 
 .toc.collapsed ul {
   display: none;
+}
+#verse-popup {
+  position: absolute;
+  display: none;
+  background: rgb(247, 247, 247);
+  border: 1px solid #ccc;
+  padding: 10px 10px 10px 10px;;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-width: 300px;
+  max-height: 250px;
+  overflow-y: auto;
+  border-radius: 5px;
+}
+
+#verse-popup.show {
+  display: block;
 }
 
 /* 2K/QHD monitors */
@@ -614,9 +640,7 @@ sup {
   }
 
   .meta,
-  .footnotes,
-  .toc a,
-  body > footer {
+  .footnotes {
     font-size: 16px;
   }
 
@@ -634,7 +658,7 @@ sup {
     padding: 0 10px;
     column-gap: 10px;
     grid-template-columns: repeat(auto-fit, 320px);
-    grid-auto-rows: 75px;
+    grid-auto-rows: 80px;
   }
 
   .list li {
