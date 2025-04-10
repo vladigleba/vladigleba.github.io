@@ -143,9 +143,7 @@
   }
 
   .meta,
-  .footnotes,
-  .toc a,
-  body > footer {
+  .footnotes {
     font-size: 16px;
   }
 
@@ -163,7 +161,7 @@
     padding: 0 10px;
     column-gap: 10px;
     grid-template-columns: repeat(auto-fit, 320px);
-    grid-auto-rows: 75px;
+    grid-auto-rows: 80px;
   }
 
   .list li {

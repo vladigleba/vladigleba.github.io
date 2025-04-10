@@ -4,8 +4,6 @@ const markdownIt = require('markdown-it');
 const markdownItFootnote = require('markdown-it-footnote');
 const { JSDOM } = require('jsdom');
 const { InputPathToUrlTransformPlugin } = require('@11ty/eleventy');
-const fs = require("fs");
-const path = require("path");
 
 const seriesNames = require('./_data/series-names.json');
 
@@ -21,9 +19,39 @@ module.exports = async (config) => {
   config.addPassthroughCopy('assets');
 
   // shortcodes
-  config.addLiquidShortcode('ref', (citation) =>
+  config.addLiquidShortcode('ct', (citation) =>
     `<figcaption>&mdash; ${ citation }</figcaption>`
   );
+
+  config.addShortcode('rf', (reference, addParens = true) => {
+    const refs = reference.split(';').map(r => r.trim()).filter(Boolean);
+    const links = [];
+    let currentBook = '';
+  
+    refs.forEach(ref => {
+      let fullRef = '';
+      const fullRefMatch = ref.match(/^([1-3]?\s?[A-Za-z]+)\s+(.+)/);
+  
+      if (fullRefMatch) {
+        currentBook = fullRefMatch[1];
+        fullRef = `${currentBook} ${fullRefMatch[2]}`;
+      } else if (currentBook) {
+        fullRef = `${currentBook} ${ref}`;
+      } else {
+        fullRef = ref; // fallback if no current book
+      }
+  
+      const encodedRef = encodeURIComponent(fullRef);
+      const href = `https://bible-api.com/${encodedRef}?translation=kjv`;
+  
+      links.push(
+        `<a href="${href}" class="verse-link" data-reference="${fullRef}" target="_blank" rel="noopener noreferrer">${ref}</a>`
+      );
+    });
+  
+    const joined = links.join('; ');
+    return addParens ? `(${joined})` : joined;
+  });
 
   // filters
   config.addLiquidFilter('toUTCString', (date) => {

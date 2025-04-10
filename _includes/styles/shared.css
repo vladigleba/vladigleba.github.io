@@ -9,3 +9,13 @@ article > header > div,
 body > footer div {
   width: 70%;
 }
+
+table {
+  width: 100%;
+  margin: 15px 0;
+}
+
+th, td {
+  width: 25px;
+  text-align: center;
+}
