@@ -21,10 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!copiedMessage) {
         copiedMessage = document.createElement("span");
         copiedMessage.classList.add("link-copied-message");
-        copiedMessage.textContent = "Link copied!";
+        copiedMessage.textContent = "Link copied";
         link.insertAdjacentElement("afterend", copiedMessage);
 
-        setTimeout(() => copiedMessage.remove(), 2500);
+        setTimeout(() => copiedMessage.remove(), 2000);
       }
     });
   });
@@ -73,9 +73,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Show the pop-up near the clicked link
       document.getElementById("verse-content").innerHTML = link.dataset.verse;
-      const rect = link.getBoundingClientRect();
-      popup.style.top = `${rect.bottom + window.scrollY + 10}px`;
-      popup.style.left = `${rect.left + window.scrollX}px`;
+      const rect = link.getBoundingClientRect();      
+      let left = rect.left + window.scrollX;
+      const top = rect.bottom + window.scrollY + 10;
+
+      // If popup would overflow right edge, shift it left
+      const popupWidth = popup.offsetWidth || 300; // estimated default
+      const maxLeft = window.innerWidth - popupWidth - 10; // 10px margin
+      if (left > maxLeft) left = maxLeft;
+
+      popup.style.top = `${top}px`;
+      popup.style.left = `${left}px`;
       popup.classList.add("show");
     });
   });

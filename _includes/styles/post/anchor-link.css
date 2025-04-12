@@ -1,5 +1,5 @@
 .anchor-link {
-  display: none;
+  display: inline-block;
   cursor: pointer;
   text-decoration: none;
 }
@@ -9,15 +9,15 @@
   display: inline-block;
   position: relative;
   bottom: 7px;
-  left: 20px;
+  left: 15px;
   transform: scale(1.3); 
   transform-origin: center;
-  filter: brightness(0) saturate(100%); /* Black */
+  filter: brightness(0) saturate(100%) invert(36%) sepia(5%) saturate(158%) hue-rotate(178deg) brightness(94%) contrast(89%); /* #6e7781 */
   transition: filter 0.2s ease;
 }
 
 .anchor-link:hover::after {
-  filter: brightness(0) saturate(100%) invert(34%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(95%) contrast(88%); /* #727272 */
+  filter: brightness(0) saturate(100%); /* Black */
 }
 
 h2:hover .anchor-link,
@@ -33,7 +33,7 @@ h4:hover .link-copied-message {
   font-weight: 600;
   position: relative;
   top: -9px;
-  left: 40px;
+  left: 35px;
   color: black;
   display: none;
   font-family: var(--body-font);
