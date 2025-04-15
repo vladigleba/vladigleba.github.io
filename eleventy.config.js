@@ -160,6 +160,10 @@ module.exports = async (config) => {
       link.href = `#${slug}`;
       link.classList.add('anchor-link');
       link.setAttribute('aria-label', 'Copy link');
+      link.innerHTML = `
+        <svg class="link-icon" aria-hidden="true">
+          <use href="/assets/images/icons.svg#link"></use>
+        </svg>`;
       heading.appendChild(link);
 
       const listItem = document.createElement('li');

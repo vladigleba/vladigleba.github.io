@@ -43,7 +43,8 @@ article > header p,
 
 .toc a,
 body > footer,
-#verse-popup {
+#verse-popup,
+.copy-popup {
   font-size: 16px;
 }
 

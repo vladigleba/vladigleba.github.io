@@ -10,17 +10,6 @@ sitemap:
     {%- unless item.data.sitemap.ignore == true %}
       <url>
         <loc>https://vladigleba.com{{ item.url }}</loc>
-        {%- if item.data.updated -%}
-          <lastmod>{{ item.data.updated | date: '%Y-%m-%d' }}</lastmod>
-        {%- else -%}
-          <lastmod>{{ item.date | date: '%Y-%m-%d' }}</lastmod>
-        {%- endif -%}
-        {%- if item.data.sitemap.changefreq -%}
-          <changefreq>{{ item.data.sitemap.changefreq }}</changefreq>
-        {%- endif -%}
-        {%- if item.data.sitemap.priority -%}
-          <priority>{{ item.data.sitemap.priority }}</priority>
-        {%- endif -%}
       </url>
     {%- endunless %}
   {%- endfor %}

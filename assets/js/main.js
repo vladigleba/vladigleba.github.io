@@ -15,17 +15,21 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
       const fullUrl = `${window.location.origin}${window.location.pathname}${link.getAttribute("href")}`;
-      navigator.clipboard.writeText(fullUrl);
-
-      let copiedMessage = link.parentElement.querySelector(".link-copied-message");
-      if (!copiedMessage) {
-        copiedMessage = document.createElement("span");
-        copiedMessage.classList.add("link-copied-message");
-        copiedMessage.textContent = "Link copied";
-        link.insertAdjacentElement("afterend", copiedMessage);
-
-        setTimeout(() => copiedMessage.remove(), 2000);
-      }
+      navigator.clipboard.writeText(fullUrl)
+        .then(() => {
+          const existing = link.querySelector('.copy-popup');
+          if (!existing) {
+            const popup = document.createElement('span');
+            popup.className = 'copy-popup';
+            popup.textContent = 'Link copied';
+            link.appendChild(popup);
+    
+            setTimeout(() => popup.remove(), 2000);
+          }
+        })
+        .catch(err => {
+          console.error('Error copying text: ', err);
+        });
     });
   });
 
