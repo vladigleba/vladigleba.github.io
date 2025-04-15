@@ -96,7 +96,8 @@ article > header p,
 
 .toc a,
 body > footer,
-#verse-popup {
+#verse-popup,
+.copy-popup {
   font-size: 16px;
 }
 
@@ -368,44 +369,23 @@ main figcaption {
   margin-top: -15px;
 }
 .anchor-link {
-  display: inline-block;
-  cursor: pointer;
+  margin-left: 10px;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-}
-
-.anchor-link::after {
-  content: url("assets/images/link.svg");
-  display: inline-block;
   position: relative;
-  bottom: 7px;
-  left: 15px;
-  transform: scale(1.3); 
-  transform-origin: center;
-  filter: brightness(0) saturate(100%) invert(36%) sepia(5%) saturate(158%) hue-rotate(178deg) brightness(94%) contrast(89%); /* #6e7781 */
-  transition: filter 0.2s ease;
 }
 
-.anchor-link:hover::after {
-  filter: brightness(0) saturate(100%); /* Black */
+.anchor-link svg {
+  opacity: 0.5;
+  width: 0.7em;
+  height: 0.7em;
+  fill: currentColor;
 }
 
-h2:hover .anchor-link,
-h3:hover .anchor-link,
-h4:hover .anchor-link,
-h2:hover .link-copied-message,
-h3:hover .link-copied-message,
-h4:hover .link-copied-message {
-  display: inline-block;
-}
-
-.link-copied-message {
-  font-weight: 600;
-  position: relative;
-  top: -9px;
-  left: 35px;
-  color: black;
-  display: none;
-  font-family: var(--body-font);
+.anchor-link svg:hover,
+.anchor-link svg:focus {
+  opacity: 1;
 }
 .wrapper {
   display: flex;
@@ -477,22 +457,38 @@ sup {
 .toc.collapsed ul {
   display: none;
 }
-#verse-popup {
+#verse-popup,
+.copy-popup {
   position: absolute;
-  display: none;
   background: rgb(247, 247, 247);
   border: 1px solid #ccc;
-  padding: 10px 10px 10px 10px;;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   z-index: 1000;
+}
+
+#verse-popup {
+  display: none;
+  padding: 10px 10px 10px 10px;;
   max-width: 300px;
   max-height: 250px;
   overflow-y: auto;
-  border-radius: 5px;
 }
 
 #verse-popup.show {
   display: block;
+}
+
+.copy-popup {
+  font-family: var(--body-font);
+  font-weight: 400;
+  display: block;
+  top: 120%; /* Position below the anchor link */
+  left: 0%;
+  padding: 2px 5px;
+  opacity: 1;
+  text-align: center;
+  min-width: 100px;
 }
 
 /* 2K/QHD monitors */
