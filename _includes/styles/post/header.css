@@ -1,0 +1,29 @@
+article > header {
+  display: inline-block;
+  color: #fff;
+  padding: 90px 0 100px;
+  margin-bottom: 40px;
+  width: 100vw; /* Make the header take the full width of the viewport */
+  margin-left: calc(-50vw + 50%); /* Pull it left by 50vw minus 50% of its container */
+}
+
+article > header > div {
+  margin: 0 auto;
+}
+
+article > header h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+article > header .description {
+  margin-bottom: 30px;
+}
+
+article > header p {
+  font-weight: 500;
+}
+
+article > header a {
+  color: white;
+}

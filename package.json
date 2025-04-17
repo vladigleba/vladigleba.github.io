@@ -1,0 +1,21 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "jsdom": "^26.0.0",
+    "markdown-it-footnote": "^4.0.0",
+    "moment": "^2.30.1",
+    "reading-time": "^1.5.0"
+  },
+  "dependencies": {
+  }
+}

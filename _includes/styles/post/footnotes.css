@@ -1,0 +1,15 @@
+.footnotes-sep {
+  width: 20%;
+  margin-top: 30px;
+  height: 1px;
+  background-color: black;
+  border-style: none;
+}
+
+.footnotes {
+  padding: 15px 0;
+}
+
+.footnotes p {
+  padding: 0;
+}

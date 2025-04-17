@@ -1,0 +1,45 @@
+---
+layout: layouts/base
+---
+
+<style>
+  .main-nav, .main-nav li:hover { color: white; }
+  header h1, main > h2 { color: {{ color }}; }
+  header, .main-nav, .main-nav ul/*, body > footer */ { background-color: {{ color }}; }
+  /*blockquote p,*/ .toc li.active { border-left: 3px solid {{ color }}; }
+</style>
+
+<article>
+  <header>
+    <div>
+      <h1 class="title">{{ title }}</h1>
+      <p class="description">{{ description }}</p>
+      <p class="meta">
+        {{ category }} <span>•</span> {{ length }} min read
+
+        {% if series %} 
+          <span>•</span> “{{ series-names[series] }}” Series 
+          <span>•</span> Part {{ seriesInfo.current }} of {{ seriesInfo.total }}
+        {% endif %}
+      </p>
+
+      {% if series %}
+        {% render "layouts/series-header", series: seriesInfo %}
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="wrapper">
+    {% render "layouts/toc" %}
+
+    <main>
+      {{ content }}
+      
+      {% if next %}
+        <p class="next-link meta">
+          Read next: <a href="{{ next.url }}" rel="next">{{ next.title }}</a>
+        </p>
+      {% endif %}
+    </main>
+  </div>
+</article>

@@ -1,0 +1,19 @@
+.anchor-link {
+  margin-left: 10px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+}
+
+.anchor-link svg {
+  opacity: 0.5;
+  width: 0.7em;
+  height: 0.7em;
+  fill: currentColor;
+}
+
+.anchor-link svg:hover,
+.anchor-link svg:focus {
+  opacity: 1;
+}

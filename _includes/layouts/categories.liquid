@@ -1,0 +1,12 @@
+---
+layout: layouts/base
+pagination:
+  data: categories  # from categories.json
+  size: 1
+  alias: category
+  addAllPagesToCollections: true  # adds to collections.all for sitemap
+permalink: "/{{ category | downcase }}/"
+---
+
+{% render "layouts/banner", title: category, description: categories[category] %}
+{% render "layouts/post-list", groupedPosts: collections.groupedPosts, categoryFilter: category %}

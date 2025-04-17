@@ -1,0 +1,72 @@
+.main-nav a,
+.toc nav a {
+  text-decoration: none;
+}
+
+
+.banner h1,
+article > header h1 {
+  font-size: 60px;
+}
+
+main > h2 {
+  font-size: 34px;
+}
+
+.banner p {
+  font-size: 25px;
+}
+
+article > header p,
+.main-nav ul {
+  font-size: 23px;
+  line-height: 1.3;
+}
+
+.meta {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.list a {
+  font-size: 30px;
+}
+
+.list p {
+  font-size: 18px;
+}
+
+.footnotes {
+  font-size: 17px;
+}
+
+.toc a,
+body > footer,
+#verse-popup,
+.copy-popup {
+  font-size: 16px;
+}
+
+.link-copied-message,
+li.series .tag {
+  font-size: 15px;
+}
+
+.meta {
+  font-family: unset;
+}
+
+figure,
+main p,
+main ol,
+main ul {
+  font-family: "Literata", Georgia, Times, "Times New Roman", serif;
+}
+
+article header h1,
+article main > h2,
+.main-nav ul,
+.list a {
+  font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif;
+}

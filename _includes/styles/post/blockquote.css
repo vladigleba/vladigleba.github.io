@@ -1,0 +1,29 @@
+main blockquote::before {
+  content: "“";
+  font-size: 55px;
+  position: absolute;
+  top: 15px;
+  left: -2px;
+}
+
+main blockquote {
+  padding-top: 15px;
+  margin-left: 2px;
+  position: relative;
+  font-style: italic;
+}
+
+main blockquote p {
+  padding-left: 35px;
+}
+
+main blockquote em {
+  font-weight: 700;
+}
+
+main figcaption {
+  color: var(--gray-color);
+  text-align: right; 
+  padding-bottom: 15px;
+  margin-top: -15px;
+}
