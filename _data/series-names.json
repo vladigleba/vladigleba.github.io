@@ -1,10 +1,34 @@
 {
-  "Messiah": "Jesus, the Messiah",
-  "Salvation": "Understanding Salvation",
-  "SecondComing": "The Second Coming",
-  "Judgment": "The Judgment",
-  "Sabbath": "The Bible Sabbath",
-  "Sunday": "The Counterfeit Sabbath",
-  "Antichrist": "The Antichrist and His Mark",
-  "Babylon": "Coming Out of Babylon"
+  "messiah": {
+    "title": "Jesus, the Messiah",
+    "color": "rgb(101,102,166)"
+  },
+  "salvation": {
+    "title": "Understanding Salvation",
+    "color": "rgb(143,102,126)"
+  },
+  "second-coming": {
+    "title": "The Second Coming",
+    "color": "rgb(57,96,136)"
+  },
+  "judgment": {
+    "title": "The Judgment",
+    "color": "rgb(255,130,112)"
+  },
+  "sabbath": {
+    "title": "The Bible Sabbath",
+    "color": "rgb(205,114,114)"
+  },
+  "sunday": {
+    "title": "The Counterfeit Sabbath",
+    "color": "rgb(155,114,186)"
+  },
+  "antichrist": {
+    "title": "The Antichrist and His Mark",
+    "color": "rgb(33,153,163)"
+  },
+  "babylon": {
+    "title": "Coming Out of Babylon",
+    "color": "rgb(170,104,150)"
+  }
 }

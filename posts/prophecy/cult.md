@@ -1,9 +1,8 @@
 ---
 title: How to Identify a Cult?
 description: Is it possible to be part of a cult and not know it? Discover it’s identifying marks to avoid being fooled.
-color: rgb(170,104,150)
 date: 2025-01-31
-series: Babylon
+series: babylon
 ---
 
 ## Who is the source of truth?

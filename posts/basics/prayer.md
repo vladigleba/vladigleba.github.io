@@ -21,7 +21,7 @@ date: 2025-04-16
 
 The Bible tells us that Jesus, our example, was a man of prayer. If He had a need to pray, how much more do we?
 
-## Does God, the Father, want us to pray?
+## Does God, the Father, want me to pray?
 
 > If ye then, being evil, know how to give good gifts unto your children: how much more shall your heavenly Father *give the Holy Spirit to them that ask him*?
 {% ct 'Luke 11:13' %}

@@ -1,9 +1,8 @@
 ---
 title: God’s Rest Day
 description: A day was set apart by God on the first week of creation. Why? Does it still have significance today?
-color: rgb(205,114,114)
 date: 2025-01-17
-series: Sabbath
+series: sabbath
 ---
 
 ## What is the first angel’s message in Revelation 14?

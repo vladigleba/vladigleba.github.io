@@ -1,9 +1,8 @@
 ---
 title: Prophecies of the Messiah
 description: Learn about the astounding Old Testament prophecies of the Messiah that were fulfilled in the life of Jesus.
-color: rgb(101,102,166)
 date: 2025-01-04
-series: Messiah
+series: messiah
 ---
 
 ## Where was Jesus to be born?

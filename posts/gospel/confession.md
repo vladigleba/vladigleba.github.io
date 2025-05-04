@@ -1,9 +1,8 @@
 ---
 title: Confession and Forgiveness
 description: Confession and forgiveness of sins is central to the plan of salvation. Have you experienced it?
-color: rgb(143,102,126)
 date: 2025-01-07
-series: Salvation
+series: salvation
 ---
 
 ## Is God willing to forgive?

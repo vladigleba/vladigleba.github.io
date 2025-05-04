@@ -1,9 +1,8 @@
 ---
 title: Will I Be Judged?
 description: Am I my own ruler? Or am I responsible to a higher Authority for the way I live my life?
-color: rgb(255,130,112)
 date: 2025-01-14
-series: Judgment
+series: judgment
 ---
 
 ## Has the judgment already begun?

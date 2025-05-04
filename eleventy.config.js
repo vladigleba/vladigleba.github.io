@@ -90,9 +90,9 @@ module.exports = async (config) => {
         if (!seriesEntry) {
           seriesEntry = {
             type: 'series',
-            title: seriesNames[series],
+            title: seriesNames[series]["title"],
             category,
-            color,
+            color: seriesNames[series]["color"],
             posts: [],
           };
 

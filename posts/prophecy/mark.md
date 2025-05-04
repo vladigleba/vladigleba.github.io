@@ -1,9 +1,8 @@
 ---
 title: Mark of the Beast
 description: Is it a barcode? A microchip perhaps? Discover what the Bible really says about this misunderstood mark.
-color: rgb(33,153,163)
 date: 2025-01-28
-series: Antichrist
+series: antichrist
 ---
 
 ## How does the Bible describe the beast?

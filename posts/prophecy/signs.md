@@ -1,9 +1,8 @@
 ---
 title: Signs of the Second Coming
 description: How close are we to the most glorious event in earth’s history? Do you know the signs?
-color: rgb(57,96,136)
 date: 2025-01-11
-series: SecondComing
+series: second-coming
 ---
 
 ## What is the first sign Jesus mentions?

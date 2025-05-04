@@ -1,9 +1,8 @@
 ---
 title: God’s Law Changed
 description: The Bible prophesied a power would arise that would attempt to change God’s law. Has this happened?
-color: rgb(155,114,186)
 date: 2025-01-20
-series: Sunday
+series: sunday
 ---
 
 ## Where is truth found?
