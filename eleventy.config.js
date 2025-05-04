@@ -95,9 +95,11 @@ module.exports = async (config) => {
             color,
             posts: [],
           };
+
           processedSeries.set(series, seriesEntry);
           groupedPosts.push(seriesEntry);
         }
+        
         seriesEntry.posts.push(post);
       } else {
         groupedPosts.push({

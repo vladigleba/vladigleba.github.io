@@ -1,5 +1,5 @@
 ---
-title: Why Does Baptism Matter?
+title: Wny Get Baptized?
 description: Explore what a public commitment to Christ looks like, what it means, and why it matters.
 color: rgb(33,122,105)
 date: 2025-02-03

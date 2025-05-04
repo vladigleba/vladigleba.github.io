@@ -65,7 +65,7 @@ The animal sacrifices pointed to the Lamb of God sacrificed in the “courtyard�
 
 Every piece of furniture points to Jesus and represents an aspect of His work on my behalf to save me from sin:
 - The altar of burnt offering represents the cross, while the animal represents Jesus, the ultimate sacrifice {% rf 'John 1:29' %}.
-- The laver points to Jesus as the Living Water cleansing me from sin and giving me a new birth through the Holy Spirit {% rf 'John 4:10; Titus 3:5' %}&mdash;of which baptism is a symbol ({% rf 'Romans 6:3-7' false %}; see “Baptism”).
+- The laver points to Jesus as the Living Water cleansing me from sin and giving me a new birth through the Holy Spirit {% rf 'John 4:10; Titus 3:5' %}&mdash;of which baptism is a symbol ({% rf 'Romans 6:3-7' false %}; see [“Why Get Baptized?”](/posts/basics/baptism.md)).
 - The candlestick points to Jesus as the Light of the world {% rf 'John 1:9; 9:5' %}, while its oil represents the Holy Spirit {% rf 'Zechariah 4:1-6; Revelation 4:5' %}, with whom I am invited to be filled {% rf 'Luke 11:13' %}.
 - The showbread is a symbol of Jesus being the Bread of Life {% rf 'John 6:48, 51' %}, which I an invited to internalize by reading His Word&mdash;the Bible {% rf 'Matthew 4:4' %}.
 - The altar of incense represents the righteousness of Jesus mixed with the prayers of God’s people {% rf 'Revelation 5:8; 8:3' %}.

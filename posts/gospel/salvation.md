@@ -58,7 +58,7 @@ God did not leave us in our sin, but promised us a path back to life and reconci
 > Jesus saith unto him, *I am the way, the truth, and the life*: no man cometh unto the Father, but by me. 
 {% ct 'John 14:6' %}
 
-There is only one road that leads to salvation from sin, and that road is Jesus. Any other way cannot save us.
+There is only one road that leads to salvation from sin, and that road is Jesus. Any other way&mdash;and there are many&mdash;cannot save us. Many have wondered how Jesus can make such an exclusive claim, considering the number of religions in the world, but it's simple: Jesus is the only one who humbled Himself, came down from the glory of heaven, took on human nature, lived among His creation, and then died for their sins! No other religion has a god like that.
 
 ## How did Jesus redeem us from the condemnation of the law?
 

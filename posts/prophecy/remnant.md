@@ -1,7 +1,7 @@
 ---
 title: God’s Remnant Church
 description: God has a remnant church that will remain loyal to Him till the end. What are its identifying marks?
-color: rgb(199,62,95)
+color: rgb(57,96,136)
 date: 2025-02-01
 ---
 

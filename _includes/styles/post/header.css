@@ -20,6 +20,16 @@ article > header .description {
   margin-bottom: 30px;
 }
 
+article > header .tag span {
+  background-color: white;
+  padding: 0 10px;
+  margin-left: 0;
+}
+
+article > header .meta.series {
+  margin-top: 30px;
+}
+
 article > header p {
   font-weight: 500;
 }

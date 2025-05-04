@@ -23,11 +23,12 @@
 
 li.featured {
   grid-row: auto / span 3;
-  /* background-color: rgb(246,244,239); */
+  background-color: #f9f9f9;
 }
 
 li.featured .description {
   color: black;
+  font-weight: 500;
   margin-top: 20px;
 }
 
@@ -38,12 +39,11 @@ li.series {
 li.series .tag {
   font-weight: 700;
   display: inline-block;
-  margin-bottom: 13px;
-  border: 1px solid #ccc;
+  margin-bottom: 15px;
   text-transform: uppercase;
-  padding: 0px 10px 1px;
-  border-radius: 5px;
-  color: var(--gray-color);
+  padding: 2px 12px 1.5px;
+  background-color: rgb(245, 231, 140, 0.75); /* rgb(219, 51, 52, 0.75); */
+  color: black;
 }
 
 .list a {
