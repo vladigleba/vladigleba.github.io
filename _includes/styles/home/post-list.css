@@ -41,7 +41,7 @@ li.series .tag {
   display: inline-block;
   margin-bottom: 15px;
   text-transform: uppercase;
-  padding: 2px 12px 1.5px;
+  padding: 1.5px 10px 2px;
   background-color: rgb(245, 231, 140, 0.75); /* rgb(219, 51, 52, 0.75); */
   color: black;
 }

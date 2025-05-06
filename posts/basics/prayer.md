@@ -34,9 +34,36 @@ The Bible tells us that Jesus, our example, was a man of prayer. If He had a nee
 
 Jesus made it clear that our heavenly Father wants us to come to Him in prayer. He is more willing to grant our requests than parents are willing to give good gifts to their children. Of course, He doesn't grant every request, but only those that will result in "good things" {% rf 'Matthew 7:11' %}&mdash;that is, those in harmony with His wise and loving will for us.
 
-## What heart posture do I need for prayer?
+## What is the right heart posture for prayer?
 
-- expand on publican and sinner's prayer (Lk. 18): humility, reverence for his holiness and wisdom, our unworthiness
+> And he arose, and came to his father. But when he was yet a great way off, his father saw him, and had compassion, and ran, and fell on his neck, and kissed him. And the son said unto him, *Father, I have sinned against heaven, and in thy sight, and am no more worthy to be called thy son*.
+{% ct 'Luke 15:20, 21' %}
+
+> Two men went up into the temple to pray; the one a Pharisee, and the other a publican. The Pharisee stood and prayed thus with himself, *God, I thank thee, that I am not as other men are*, extortioners, unjust, adulterers, or even as this publican. *I fast twice in the week, I give tithes of all that I possess*. And the publican, standing afar off, would not lift up so much as his eyes unto heaven, but smote upon his breast, saying, *God be merciful to me a sinner*. I tell you, this man went down to his house justified rather than the other: for every one that exalteth himself shall be abased; and he that humbleth himself shall be exalted.
+{% ct 'Luke 18:10-14' %}
+
+> And Jesus answering said unto them, They that are whole need not a physician; but they that are sick. *I came not to call the righteous, but sinners to repentance*.
+{% ct 'Luke 5:31, 32' %}
+
+Being conscious of our true relation to God will lead to prayers that are marked by humility and reverence for Him, including an awareness of His holiness and wisdom, as well as our own unworthiness. It is only through the blood of Christ, shed for our sins, that we have been reconciled to our heavenly Father and enabled to come to Him in prayer. The Pharisee felt self-sufficient, and therefore saw no need for Jesus, but the publican and the prodigal son were keenly aware of their unworthiness. Jesus made it clear that those who believe they are righteous feel no need for Him, but those who recognize they are sinners are the ones He came to make whole.
+
+## How did Daniel and Paul view themselves?
+
+> *We have sinned, and have committed iniquity, and have done wickedly, and have rebelled*, even by departing from thy precepts and from thy judgments.
+{% ct 'Daniel 9:5' %}
+
+> O Lord, *righteousness belongeth unto thee, but unto us confusion of faces*, as at this day; to the men of Judah, and to the inhabitants of Jerusalem, and unto all Israel, that are near, and that are far off, through all the countries whither thou hast driven them, because of their trespass that they have trespassed against thee.
+{% ct 'Daniel 9:7' %}
+
+> O my God, incline thine ear, and hear; open thine eyes, and behold our desolations, and the city which is called by thy name: for *we do not present our supplications before thee for our righteousnesses*, but for thy great mercies.
+{% ct 'Daniel 9:18' %}
+
+> This is a faithful saying, and worthy of all acceptation, that Christ Jesus came into the world to save sinners; *of whom I am chief*.
+{% ct '1 Timothy 1:15' %}
+
+Daniel, after a lifetime of following God, included himself in the sins of his people when praying for God's forgiveness. He did not say, "They have sinned," but, "We have sinned." Likewise, Paul, after spending years of his life preaching, teaching, and building up the early church, did not hesitate to refer to himself as the chief of sinners. He could have said, "Of whom I *was* chief," but he said, "Of whom I *am* chief." 
+
+Today, there is so much emphasis on our identity as sons and daughters of God that calling oneself a sinner is viewed almost as heresy or a perversion of the gospel, but Paul and Daniel would beg to differ. It's true that *in* Christ we are children of God, but let's not forget who we are *apart* from Christ so that we can continue to see the need to cling to Him {% rf '1 Corinthians 10:12' %}.
 
 ## What is one of the keys to effective prayer?
 

@@ -38,9 +38,12 @@ article > header p,
 .toc a,
 body > footer,
 #verse-popup,
-.copy-popup,
-li.series .tag {
+.copy-popup {
   font-size: 16px;
+}
+
+li.series .tag {
+  font-size: 15px;
 }
 
 .meta {
