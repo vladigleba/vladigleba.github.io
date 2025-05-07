@@ -63,7 +63,7 @@ Being conscious of our true relation to God will lead to prayers that are marked
 
 Daniel, after a lifetime of following God, included himself in the sins of his people when praying for God's forgiveness. He did not say, "They have sinned," but, "We have sinned." Likewise, Paul, after spending years of his life preaching, teaching, and building up the early church, did not hesitate to refer to himself as the chief of sinners. He could have said, "Of whom I *was* chief," but he said, "Of whom I *am* chief." 
 
-Today, there is so much emphasis on our identity as sons and daughters of God that calling oneself a sinner is viewed almost as heresy or a perversion of the gospel, but Paul and Daniel would beg to differ. It's true that *in* Christ we are children of God, but let's not forget who we are *apart* from Christ so that we can continue to see the need to cling to Him {% rf '1 Corinthians 10:12' %}.
+Today, there is so much emphasis on our identity as sons and daughters of God that calling oneself a sinner is viewed almost as heresy or a perversion of the gospel, but Paul and Daniel would beg to differ. It's true that *in* Christ we are children of God, but let's not forget who we are *apart* from Christ so that we can continue to see the need to cling to Him {% rf '1 Corinthians 10:12' %}; otherwise, we risk adopting the Pharisaic mindset&mdash;that being God's children we no longer have a need of repentance {% rf '1 John 5:8' %}.
 
 ## What is one of the keys to effective prayer?
 
@@ -129,6 +129,21 @@ Besides praying for His glory, His kingdom, and His will, God also cares about o
 Praying for others is another crucial part of our prayer life. When we pray for someone else, God receives the legal right to work in that person's life&mdash;a right He otherwise would not have if we had not prayed. Why is this? Since God values each person's freedom of choice, He cannot work against someone's will, especially if a person is resistant to Him, but when another person starts interceding, that changes everything. It opens the door for God to work in the resistant person's life out of respect to the intercessor.
 
 Intercessory prayer, however, is not limited just to those resistant to God. Jesus prayed for Peter&mdash;one of His own disciples&mdash;because He saw a blind spot in Peter's life that Peter was unaware of. Moses prayed for the Israelites {% rf 'Numbers 21:7' %} and for his brother Aaron {% rf 'Deuteronomy 9:20' %}, and Job prayed for his friends {% rf 'Job 42:10' %}. Just like Jesus intercedes for us in the heavenly sanctuary {% rf 'Hebrews 7:25' %}, as His followers, we are called to intercede for others.
+
+## What does intercessory prayer require?
+
+> Praying always with all prayer and supplication in the Spirit, and watching thereunto *with all perseverance* and supplication for all saints.
+{% ct 'Ephesians 6:18' %}
+
+> And he spake a parable unto them to this end, that men ought always to pray, and *not to faint*.
+{% ct 'Luke 18:1' %}
+
+> Pray *without ceasing*.
+{% ct '1 Thessalonians 5:17' %}
+
+Praying for others often involves praying for a change of heart, and this usually takes time. God honors everyone's free will, but He also honors the prayers of others, so even if a person resists Him initially, there is hope, as long as those praying are willing to persevere and be patient. It may take years&mdash;or even decades&mdash;for a change of heart to take place, but that is nothing compared with eternity.
+
+All good things take time and effort, and prayer is no different. Rushed prayers lack power because they don't mean much to us, but prayers that produce results take time and effort. It would be wise for us to preface every important decision or action in our life with much prayer. Jesus would sometimes pray all night, such as before ordaining the twelve apostles {% rf 'Luke 6:12, 13' %}. As our prayer life develops, spending time communing with our Father becomes a delight, no matter how long it takes.
 
 ## What is the first component of an effective prayer?
 
@@ -263,7 +278,7 @@ The best places for prayer are quiet and free from distractions, allowing us to 
 
 Jesus associated the repetition of words and phrases with heathenism {% rf 'Acts 19:34; 1 Kings 18:26' %}, thereby making it clear that such practices have no place in the life of a Christian. The same is true of breath prayers and the popular practice of "entering the silence," which involves emptying the mind&mdash;in reality, turning off the brain&mdash;which is one of the quickest ways to enter an altered state of consciousness. All of these paths lead to mysticism and open the door to the influence of malevolent powers. (For more information, see Howard Peth's book, *The Dangers of Contemplative Prayer*.)
 
-God wants us to be fully engaged when talking to Him, as we would be when talking to a friend, with our minds fully alert and our reasoning powers fully intact {% rf 'Isaiah 1:18' %}. Prayer should be fervent, fresh, and from the heart. If our hearts are not in it, we probably shouldn't be praying it. Prayers that mean a lot to us mean a lot to God.
+God wants us to be fully engaged when talking to Him, as we would be when talking to a friend, with our minds fully alert and our reasoning powers fully intact {% rf 'Isaiah 1:18' %}. Prayer should be fervent, fresh, and from the heart. If our hearts are not in it, we probably shouldn't be praying it. Prayers that don't mean a lot to us don't mean a lot to God.
 
 ## Is praying aloud a good idea?
 
@@ -292,13 +307,3 @@ PRAY is an easy to remember acronym that can bring structure to our prayers. It 
 {% ct '1 Chronicles 16:12' %}
 
 Because it's easy to forget the way God has answered our prayers in the past, it's wise to write it down and revisit it from time to time. Rehearsing His blessings will do wonders to strength our faith in Him.
-
-## Notes
-
-add after intercession: 
-- perserverance when praying for heart change (widow parable, Lk. 18) 1 Th. 5:17
-- a prayer life after God’s desire that produces results requires time and efort. Every important act of His life was prefaced by a lengthy communion with God. Prayed all night prior to ordaining the twelve (Lk 6:12)
-
-add to faith article:
-- presumption as counterfeit of faith
-- Together we confess: By grace alone, in faith in Christ's saving work and not because of any merit on our part, we are accepted by God and receive the Holy Spirit, who renews our hearts while equipping and calling us to good works.

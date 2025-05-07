@@ -457,8 +457,9 @@ sup {
   font-weight: bold;
 }
 
-.toc li:hover a {
-  color: var(--hover-color);
+.toc li:hover {
+  background-color: #f3f3f3;
+  border-radius: 5px;
 }
 
 .toc a {

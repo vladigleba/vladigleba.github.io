@@ -121,6 +121,12 @@ Those who have the faith of Jesus also keep the commandments of God because Jesu
 
 Obedience shows the genuineness of my faith. Put another way, my faith is confirmed, or justified, to me by my works. They are evidence for me, not God, since He already knows my genuine heart {% rf 'Psalm 139:1-4' %}, but I do need the evidence because it’s easy to deceive myself about my true condition {% rf 'Jeremiah 17:9, 10' %}.
 
+## What is the counterfeit to faith?
+
+- presumption as counterfeit of faith
+
+- Together we confess: By grace alone, in faith in Christ's saving work and not because of any merit on our part, we are accepted by God and receive the Holy Spirit, who renews our hearts while equipping and calling us to good works.
+
 ## How do I overcome?
 
 > For whatsoever is born of God overcometh the world: and this is the victory that overcometh the world, *even our faith*.
