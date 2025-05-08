@@ -73,7 +73,7 @@ module.exports = async (config) => {
       post.data.category = category;
 
       // reading time
-      const stats = readingTime(post.rawInput, { wordsPerMinute: 225 });
+      const stats = readingTime(post.rawInput, { wordsPerMinute: 220 });
       post.data.length = Math.floor(stats.minutes);
   
       // next link
