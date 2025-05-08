@@ -93,10 +93,28 @@ Forsaking my way implies turning around and going in the opposite direction&mdas
 
 ## How exactly am I saved from my sins?
 
-> For *by grace* are ye saved *through faith*; and that not of yourselves: *it is the gift of God*. 
-{% ct 'Ephesians 2:8' %}
+> For *by grace* are ye saved *through faith*; and that not of yourselves: *it is the gift of God*. Not of works, lest any man should boast.
+{% ct 'Ephesians 2:8, 9' %}
 
-There is nothing I can do to earn salvation; it is a free gift that I receive through faith in His love, His forgiveness, and His victory on the cross.
+> Therefore we conclude that a man is *justified by faith without the deeds of the law*.
+{% ct 'Romans 3:28' %}
+
+> Therefore being *justified by faith*, we have peace with God through our Lord Jesus Christ: by whom also we *have access by faith into this grace* wherein we stand, and rejoice in hope of the glory of God.
+{% ct 'Romans 5:1, 2' %}
+
+> But that no man is justified by the law in the sight of God, it is evident: for, *The just shall live by faith*.
+{% ct 'Galatians 3:11' %}
+
+There is nothing I can do to earn salvation; it is a free gift that I receive by grace through faith in His love, His forgiveness, and His victory on the cross. The Protestant Reformation brought this marvelous truth to light after centuries of a counterfeit method of salvation focused on works. Sadly, however, Protestantism has begun to drift away from its original position.
+
+In 1999, the Catholic and Lutheran churches issued a *Joint Declaration on the Doctrine of Justification*, which includes this key statement: "By grace alone, in faith in Christ's saving work and not because of any merit on our part, we are accepted by God..." Note that "by grace alone" is not the same as "by faith alone." While it is true that we are saved by grace, that grace is appropriated by faith&mdash;without faith, there can be no grace. The joint statement elevates grace over faith, while the Bible emphasizes faith. This difference may not seem significant at first, but it becomes critical when understood in light of Catholic teaching that the Church is the dispenser of grace from the treasury of merit, which includes Christ's good works, along with those of Mary and the saints.
+
+## Are we saved by Christ's saving work?
+
+Romans 3:25; 5:9; Ep. 1:7; Col. 1:14; Hebrews 9:22
+
+The Bible is clear that it's not Christ's saving work that saves us, but His blood. His "saving work" is a reference to the treasury of merit, which is then available to be dispensed by the Church to atone for sins. The Bible, however, teaches that it's Christ's blood shed on the cross that saves us because without shedding of blood there is no remission of sins.
+
 
 ## What happens once I accept God’s free gift?
 

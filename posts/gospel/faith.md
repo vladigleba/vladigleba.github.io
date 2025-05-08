@@ -123,9 +123,13 @@ Obedience shows the genuineness of my faith. Put another way, my faith is confir
 
 ## What is the counterfeit to faith?
 
-- presumption as counterfeit of faith
+> Then the devil taketh him up into the holy city, and setteth him on a pinnacle of the temple, and saith unto him, If thou be the Son of God, cast thyself down: for it is written, He shall give his angels charge concerning thee: and in their hands they shall bear thee up, lest at any time thou dash thy foot against a stone. Jesus said unto him, It is written again, *Thou shalt not tempt the Lord thy God*.
+{% ct 'Matthew 4:5-7' %}
 
-- Together we confess: By grace alone, in faith in Christ's saving work and not because of any merit on our part, we are accepted by God and receive the Holy Spirit, who renews our hearts while equipping and calling us to good works.
+> Behold, *I give unto you power to tread on serpents and scorpions*, and over all the power of the enemy: and nothing shall by any means hurt you.
+{% ct 'Luke 10:19' %}
+
+The counterfeit of faith is presumption, which tends to put God to the test under contrived and unnatural circumstances, often for selfish motives. Satan tempted Jesus to cast Himself down to prove His divinity by perverting a promise from {% rf 'Psalm 91:12' false %}, but this promise wasn not made for deliberate, voluntary, self-created dangers. Even though Jesus gave His disciples power over serpents and scorpions, they were not supposed to go looking for them intentionally to prove their faith.
 
 ## How do I overcome?
 
