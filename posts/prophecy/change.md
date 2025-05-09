@@ -10,7 +10,7 @@ series: sunday
 > Sanctify them through thy truth: *thy word is truth*.
 {% ct 'John 17:17' %}
 
-Truth is revealed in the Bible, the Word of God (see [“Can I Trust the Bible?](/posts/basics/bible.md)).
+Truth is revealed in the Bible, the Word of God (see [“Can I Trust the Bible?”](/posts/basics/bible.md)).
 
 ## What advice does the Bible give regarding truth?
 
