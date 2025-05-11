@@ -27,33 +27,44 @@ In Revelation 14 there are three angels proclaiming a message to the people of t
 > For by him [Jesus] were all things created, that are in heaven, and that are in earth, visible and invisible, whether they be thrones, or dominions, or principalities, or powers: *all things were created by him, and for him*: and he is before all things, and *by him all things consist*.
 {% ct 'Colossians 1:16, 17' %}
 
-God the Father created all things by His Son Jesus, and by Him it is all sustained!
+God the Father created all things by His Son Jesus, who was fulfilling the will of His Father, and by Him it all consists and holds together!
 
 ## Which commandment identifies the Creator God?
 
 > Remember the sabbath day, to keep it holy. Six days shalt thou labour, and do all thy work: but the seventh day is the sabbath of the LORD thy God: in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates: *for in six days the LORD made heaven and earth, the sea, and all that in them is, and rested the seventh day*: wherefore the LORD blessed the sabbath day, and hallowed it.
 {% ct 'Exodus 20:8-11' %}
 
-The fourth commandment begins with the word “remember” because God knew His Sabbath would be forgotten. It also identifies God as the Creator of everything, and every created human being is invited to show his or her acknowledgment of this by resting on the Sabbath day, just like He rested on the seventh day as an example for us. The fourth commandment also identifies God as the author of the other nine and gives the reason for His authority&mdash;Creator of heaven and earth. In other words, the whole Decalogue gets its authority from the fourth commandment; remove it, and anyone could have given the other nine. Without the fourth commandment the entire Decalogue loses its authority over human life.
+The fourth commandment begins with the word “remember” because God knew His Sabbath would be forgotten. It then identifies Him as the Creator of all things, thus laying the foundation for the invitation to all people to acknowledge Him as Creator by resting on the Sabbath day, just as He rested on the seventh day as an example for us.
+
+Moreover, the fourth commandment contains the three basic elements of a seal: name ("the Lord"), title ("your God"), and territory ("heaven and earth)." This uniquely identifies God as the author of the other nine commandments and provides the reason for His authority. In other words, the authority of all Ten Commandments rests on the fourth. Without it, any being could claim authorship of the other nine, and thus the Decalogue would lose its divine authority and rightful claim over our lives.
 
 ## What else can I learn about the Sabbath from Genesis 2?
 
 > Thus the heavens and the earth were finished, and all the host of them. And on the seventh day God ended his work which he had made; and he rested on the seventh day from all his work which he had made. And *God blessed the seventh day, and sanctified it*: because that in it he had rested from all his work which God created and made.
 {% ct 'Genesis 2:1-3' %}
 
-The reason why the fourth commandment invites me to keep the Sabbath day holy is because God blessed this specific day and sanctified it. The word used in the original text is “qadash,” which means “to be set apart or consecrated.” In other words, the seventh day, is special to God and unlike any of the other six days of the week.
+The reason why the fourth commandment invites me to keep the Sabbath day holy is because God blessed this specific day and sanctified it. The word used in the original text is *qadash*, which means “to be set apart or consecrated.” In other words, the seventh day, is special to God and unlike any of the other six days of the week.
 
 ## Who is the Sabbath really for?
 
 > And he said unto them, *The sabbath was made for man*, and not man for the sabbath: therefore the Son of man is Lord also of the sabbath.
 {% ct 'Mark 2:27, 28' %}
 
+The Sabbath was made for us. When God created it, He did not need the rest it provided, because God does not get tired. Nor had He worked in the way we undertand labor, since apart from forming Adam and Eve, all of His prior creation was spoken into existence.
+
 ## Why was it given to us?
 
 > Moreover also I gave them my sabbaths, *to be a sign* between me and them, that they *might know that I am the LORD that sanctify them*. ... And hallow my sabbaths; and they shall be a sign between me and you, *that ye may know that I am the LORD your God*.
 {% ct 'Ezekiel 20:12, 20' %}
 
-The Sabbath is a sign of my acknowledgment that 1) God is Lord because He created it in six literal days {% rf 'Exodus 20:8, 11' %} and 2) He is Lord of my life because He’s the One who redeems and sanctifies me. In Eden God rested on the seventh day from His word of creation, and in the tomb Jesus rested on the same day from His work of redemption. Thus the Sabbath is a memorial of these two things, a weekly rest in Jesus where despite having a plethora of things to do, I still put them aside to connect with and honor Him. The Sabbath is also a beautiful weekly reminder that I am saved by faith in His completed work on the cross, instead of my own works.
+> And remember that thou wast a servant in the land of Egypt, and *that the LORD thy God brought thee out thence through a mighty hand and by a stretched out arm*: therefore the LORD thy God commanded thee to keep the sabbath day.
+{% ct 'Deuteronomy 5:15' %}
+
+The Sabbath is a sign of my acknowledgment that:
+1. God is Lord because He created this world in six consecutive, literal, 24-hour days {% rf 'Exodus 20:8, 11' %}. The Sabbath is a weekly reminder that I have a Creator God who wants to have a relationship with me. This means that I am not self-created, I am not god, I have no divinity within me, and I did not come about by accident through a long process of evolution. My life has meaning and purpose.
+2. God is Lord of my life because He is the One who redeems and sanctifies me. In the Bible, the Israelites’ literal bondage in Egypt symbolizes the spiritual bondage of sin from which God delivers me. Thus, the Sabbath is a weekly reminder that, in Jesus, victory over sin is available to all, and that I am not saved by my own works, but by faith in His completed work on the cross on my behalf. 
+
+In Eden, God rested on the seventh day from His work of creation, and in the tomb, Jesus rested on the same day from His work of redemption. Therefore, the Sabbath serves as a memorial of both acts. It is a weekly rest in Jesus, during which I set aside my secular work and worldly duties to connect with and honor Him&mdash;no matter how busy life may become.
 
 ## Did Jesus keep the Sabbath?
 
