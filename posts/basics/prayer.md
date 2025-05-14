@@ -21,7 +21,7 @@ date: 2025-04-16
 
 The Bible tells us that Jesus, our example, was a man of prayer. If He had a need to pray, how much more do we?
 
-## Does God, the Father, want me to pray?
+## Does God the Father want me to pray?
 
 > If ye then, being evil, know how to give good gifts unto your children: how much more shall your heavenly Father *give the Holy Spirit to them that ask him*?
 {% ct 'Luke 11:13' %}
@@ -32,7 +32,7 @@ The Bible tells us that Jesus, our example, was a man of prayer. If He had a nee
 > O thou that *hearest prayer*, unto thee shall all flesh come.
 {% ct 'Psalm 65:2' %}
 
-Jesus made it clear that our heavenly Father wants us to come to Him in prayer. He is more willing to grant our requests than parents are willing to give good gifts to their children. Of course, He doesn't grant every request, but only those that will result in "good things" {% rf 'Matthew 7:11' %}&mdash;that is, those in harmony with His wise and loving will for us.
+Jesus made it clear that our heavenly Father wants us to come to Him in prayer. He is more willing to grant our requests than parents are to give good gifts to their children. Of course, He doesn't grant every request, but only those that will result in "good things" {% rf 'Matthew 7:11' %}&mdash;that is, those in harmony with His wise and loving will for us.
 
 ## What is the right heart posture for prayer?
 
@@ -45,7 +45,7 @@ Jesus made it clear that our heavenly Father wants us to come to Him in prayer. 
 > And Jesus answering said unto them, They that are whole need not a physician; but they that are sick. *I came not to call the righteous, but sinners to repentance*.
 {% ct 'Luke 5:31, 32' %}
 
-Being conscious of our true relation to God will lead to prayers that are marked by humility and reverence for Him, including an awareness of His holiness and wisdom, as well as our own unworthiness. It is only through the blood of Christ, shed for our sins, that we have been reconciled to our heavenly Father and enabled to come to Him in prayer. The Pharisee felt self-sufficient, and therefore saw no need for Jesus, but the publican and the prodigal son were keenly aware of their unworthiness. Jesus made it clear that those who believe they are righteous feel no need for Him, but those who recognize they are sinners are the ones He came to make whole.
+Being aware of our true relationship to God leads to prayers rooted in humility and reverence for Him&mdash;a consciousness of His holiness and wisdom, as well as our own unworthiness. It is only through the blood of Christ, shed for our sins, that we have been reconciled to our heavenly Father and enabled to come to Him in prayer. The Pharisee felt self-sufficient and therefore saw no need of Jesus, but the publican and the prodigal son were keenly aware of their unworthiness. Jesus made it clear that those who believe *they* are righteous feel little need of *His* righteousness, but those who recognize they are sinners are the ones He came to make whole {% rf 'Luke 8:48' %}.
 
 ## How did Daniel and Paul view themselves?
 
@@ -61,9 +61,9 @@ Being conscious of our true relation to God will lead to prayers that are marked
 > This is a faithful saying, and worthy of all acceptation, that Christ Jesus came into the world to save sinners; *of whom I am chief*.
 {% ct '1 Timothy 1:15' %}
 
-Daniel, after a lifetime of following God, included himself in the sins of his people when praying for God's forgiveness. He did not say, "They have sinned," but, "We have sinned." Likewise, Paul, after spending years of his life preaching, teaching, and building up the early church, did not hesitate to refer to himself as the chief of sinners. He could have said, "Of whom I *was* chief," but he said, "Of whom I *am* chief." 
+Daniel, after a lifetime of following God, included himself in the sins of his people when praying for God's forgiveness. He did not say, "They have sinned," but, "We have sinned." Likewise, Paul, after many fruitful years of preaching, teaching, and building up the early church, did not hesitate to call himself the chief of sinners. He could have said, "Of whom I *was* chief," but he said, "Of whom I *am* chief." 
 
-Today, there is so much emphasis on our identity as sons and daughters of God that calling oneself a sinner is viewed almost as heresy or a perversion of the gospel, but Paul and Daniel would beg to differ. It's true that *in* Christ we are children of God, but let's not forget who we are *apart* from Christ so that we can continue to see the need to cling to Him {% rf '1 Corinthians 10:12' %}; otherwise, we risk adopting the Pharisaic mindset&mdash;that being God's children we no longer have a need of repentance {% rf '1 John 5:8' %}.
+Today, there is so much emphasis on our identity as sons and daughters of God that calling oneself a sinner is almost viewed as heresy or a perversion of the gospel, but Paul and Daniel would beg to differ. It is true that *in* Christ we are children of God, but let us not forget who we are *apart* from Christ, so we never lose sight of our need to continually cling to Him {% rf '1 Corinthians 10:12' %}; otherwise, we risk adopting the Pharisaic mindset&mdash;that being God's children we no longer have a need of repentance {% rf '1 John 5:8' %}.
 
 ## What is one of the keys to effective prayer?
 
@@ -79,9 +79,9 @@ Today, there is so much emphasis on our identity as sons and daughters of God th
 > If I regard *iniquity* in my heart, the *Lord will not hear me*.
 {% ct 'Psalm 66:18' %}
 
-It's crucial to be fully surrendered to His will for our prayers to be effective. If there is anything in our life that is out of harmony with His will&mdash;any sin that He has convicted us about&mdash;it's crucial that we humble ourselves, repent, and forsake it. If the desire to do this is not there, we can ask Him to give it to us {% rf 'Acts 5:31; Philippains 2:13' %}. The unconverted human heart is naturally drawn to sin, so it's God alone who can give us a hatred for it {% rf 'Genesis 3:15' %}. Willful rebellion in the life is so serious that, according to {% rf 'Proverbs 28:9' false %}, it makes one's prayer an abomination to God. Paul echoes this sentinment when he says that God will not be mocked {% rf 'Galatians 6:7' %} as He sees our hearts and knows when we are harboring willful hypocrisy or pretense toward Him.
+It's crucial to be fully surrendered to His will for our prayers to be effective. If there is anything in our lives that is out of harmony with His will&mdash;any sin He has convicted us about&mdash;it's crucial that we humble ourselves, repent, and forsake it. If the desire to do this is lacking, we can ask Him to give it to us {% rf 'Acts 5:31; Philippians 2:13' %}. The unconverted human heart is naturally drawn to sin, so it is God alone who can give us a hatred for it {% rf 'Genesis 3:15' %}. Willful rebellion is so serious that, according to {% rf 'Proverbs 28:9' false %}, it makes one's prayer an abomination to God. Paul echoes this sentiment when he says that God will not be mocked {% rf 'Galatians 6:7' %}, for He sees our hearts and knows when we are harboring willful hypocrisy or pretense toward Him.
 
-God will never force His will upon us, which is why surrender starts with the *willingness* to follow His will. It's a choice we consciously make, giving Him permission to activate His will and power in our lives.
+God will never force His will upon us, which is why surrender begins with the *willingness* to follow His will. It's a choice we consciously make, giving Him permission to activate His will and power in our lives.
 
 ## What should my prayers be focused on?
 
@@ -91,7 +91,7 @@ God will never force His will upon us, which is why surrender starts with the *w
 > After this manner therefore pray ye: Our Father which art in heaven, *Hallowed be thy name. Thy kingdom come. Thy will be done* in earth, as it is in heaven.
 {% ct 'Matthew 6:9, 10' %}
 
-It's easy for our prayers to become self-focused and selfish, but Christ teaches us to seek first His kingdom and His righteousness. This is later reinforced in His model prayer: "Hallowed be thy name. Thy kingdom come. Thy will be done." Below are some difficult&mdash;but necessary&mdash;questions we can ask to help us understand where we stand: 
+It is easy for our prayers to become self-focused and selfish, but Christ teaches us to seek first His kingdom and His righteousness. This is later reinforced in His model prayer: "Hallowed be thy name. Thy kingdom come. Thy will be done." Below are some difficult&mdash;but necessary&mdash;questions we can ask to help us understand where we stand: 
 
 1. Is my primary focus on bringing glory and honor to His holy name rather than my own? 
 1. Am I preparing for and investing in His kingdom of righteousness&mdash;which, by the way, starts in our hearts now {% rf 'Luke 17:20, 21' %}&mdash;or am I more concerned with expanding my own personal, earthly empire?
@@ -113,7 +113,7 @@ One author shared the following insight on praying Jesus' model prayer:
 > *Come unto me*, all ye that labour and are heavy laden, and I will give you rest.
 {% ct 'Matthew 11:28' %}
 
-Besides praying for His glory, His kingdom, and His will, God also cares about our personal lives and invites us to bring to Him anything that brings worry, trouble, or heaviness into our hearts. He is our loving, heavenly Father who is deeply interested in the burdens we are carrying, and He wants to help!
+Besides praying for His glory, His kingdom, and His will, God also cares about our personal lives and invites us to bring to Him anything that causes worry, trouble, or heaviness in our hearts. He is our loving heavenly Father who is deeply interested in the burdens we carry, and He wants to help!
 
 ## What does the Bible teach about intercessory prayer?
 
@@ -126,9 +126,9 @@ Besides praying for His glory, His kingdom, and His will, God also cares about o
 > And the Lord said, Simon, Simon, behold, Satan hath desired to have you, that he may sift you as wheat: but *I have prayed for thee, that thy faith fail not*: and when thou art converted, strengthen thy brethren.
 {% ct 'Luke 22:31,32' %}
 
-Praying for others is another crucial part of our prayer life. When we pray for someone else, God receives the legal right to work in that person's life&mdash;a right He otherwise would not have if we had not prayed. Why is this? Since God values each person's freedom of choice, He cannot work against someone's will, especially if a person is resistant to Him, but when another person starts interceding, that changes everything. It opens the door for God to work in the resistant person's life out of respect to the intercessor.
+Praying for others is another crucial part of our prayer life. When we pray for someone else, God receives the legal right to work in that person's life&mdash;a right He might not otherwise have if we had not prayed. Why is this? Since God values each person's freedom of choice, He does not work against someone's will, especially if that person is resistant to Him, but when another person begins interceding, it changes everything. It opens the door for God to work in the resistant person's life out of respect for the intercessor's prayer.
 
-Intercessory prayer, however, is not limited just to those resistant to God. Jesus prayed for Peter&mdash;one of His own disciples&mdash;because He saw a blind spot in Peter's life that Peter was unaware of. Moses prayed for the Israelites {% rf 'Numbers 21:7' %} and for his brother Aaron {% rf 'Deuteronomy 9:20' %}, and Job prayed for his friends {% rf 'Job 42:10' %}. Just like Jesus intercedes for us in the heavenly sanctuary {% rf 'Hebrews 7:25' %}, as His followers, we are called to intercede for others.
+Intercessory prayer, however, is not limited to those who are resistant to God. Jesus prayed for Peter&mdash;one of His own disciples&mdash;because He saw a blind spot in Peter's life that Peter was unaware of. Moses prayed for the Israelites {% rf 'Numbers 21:7' %} and for his brother Aaron {% rf 'Deuteronomy 9:20' %}, and Job prayed for his friends {% rf 'Job 42:10' %}. Just as Jesus intercedes for us in the heavenly sanctuary {% rf 'Hebrews 7:25' %}, we, as His followers, are called to intercede for others.
 
 ## What does intercessory prayer require?
 
@@ -141,30 +141,33 @@ Intercessory prayer, however, is not limited just to those resistant to God. Jes
 > Pray *without ceasing*.
 {% ct '1 Thessalonians 5:17' %}
 
-Praying for others often involves praying for a change of heart, and this usually takes time. God honors everyone's free will, but He also honors the prayers of others, so even if a person resists Him initially, there is hope, as long as those praying are willing to persevere and be patient. It may take years&mdash;or even decades&mdash;for a change of heart to take place, but that is nothing compared with eternity.
+> Now she that is a widow indeed, and desolate, trusteth in God, and *continueth in supplications and prayers night and day*. But she that liveth in pleasure is dead while she liveth.
+{% ct '1 Timothy 5:5, 6' %}
 
-All good things take time and effort, and prayer is no different. Rushed prayers lack power because they don't mean much to us, but prayers that produce results take time and effort. It would be wise for us to preface every important decision or action in our life with much prayer. Jesus would sometimes pray all night, such as before ordaining the twelve apostles {% rf 'Luke 6:12, 13' %}. As our prayer life develops, spending time communing with our Father becomes a delight, no matter how long it takes.
+Praying for others often involves asking God for a change of heart, and this usually takes time. God honors everyone's free will, but He also honors the prayers of others, so even if a person resists Him initially, there is still hope, as long as those praying are willing to persevere and be patient. It may take years&mdash;or even decades&mdash;for a change of heart to take place, but that is nothing compared with eternity.
 
-## What is the first component of an effective prayer?
+All good things take time and effort, and prayer is no different. Rushed prayers often lack power because they don't mean much to us, but prayers that produce results take time and effort. It would be wise for us to preface every important decision or action in our lives with much prayer. Jesus Himself sometimes prayed all night, such as before ordaining the twelve apostles {% rf 'Luke 6:12, 13' %}. As our prayer life develops, spending time communing with our Father becomes a delight, no matter how long it takes.
+
+## What is the first step to an effective prayer?
 
 > *Ask*, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you. For *every one that asketh receiveth*; and he that seeketh findeth; and to him that knocketh it shall be opened.
 {% ct 'Matthew 7:7, 8' %}
 
-This might seem obvious, but simply bringing our request to God, asking Him to be involved in resolving it is the first part of an effective prayer. God is a Gentleman {% rf 'Revelation 3:20' %}: He will not be involved where He is not desired or welcomed. He respects our free will too much to force His way into our lives without our permission. By the way, the best things to ask for are those that are in harmony with His will as revealed in His Word. If we can find a verse in the Bible showing that our request is in accordance with His will, we can have confidence we are on the right track.
+This might seem obvious, but simply bringing our request to God&mdash;asking Him to be involved in resolving it&mdash;is the first step toward effective prayer. God is a Gentleman {% rf 'Revelation 3:20' %}; He will not involve Himself where He is not desired or welcomed. He respects our free will too much to force His way into our lives without our permission. By the way, the best things to ask for are those that are in harmony with His will as revealed in His Word. If we can find a verse in the Bible showing that our request aligns with His will, we can have confidence that we are on the right track.
 
-## What is the second component?
+## What is the second step?
 
 > And Jesus answering saith unto them, *Have faith in God*. For verily I say unto you, That whosoever shall say unto this mountain, Be thou removed, and be thou cast into the sea; and *shall not doubt in his heart, but shall believe* that those things which he saith shall come to pass; he shall have whatsoever he saith. Therefore I say unto you, What things soever ye desire, when ye pray, *believe that ye receive them, and ye shall have them*.
 {% ct 'Mark 11:22-24' %}
 
-Faith is the hand that reaches out to God, taking Him at His word. One of the ways, among many, that God is different from us is His word has creative power to accomplish what He pleases {% rf 'Isaiah 55:11' %}. When we speak, our words have no power to create something out of thin air. But when God speaks, things happen {% rf 'Genesis 1:3' %}; if He has promised something, we can count on Him to keep that promise {% rf 'Numbers 23:19' %}&mdash;and there is a promise in the Bible for all of our needs.
+Faith is the hand that reaches out to God, taking Him at His word. One of the many ways God is different from us is that His word has creative power to accomplish what He pleases {% rf 'Isaiah 55:11' %}. When we speak, our words have no power to create something out of nothing, but when God speaks, things happen {% rf 'Genesis 1:3' %}; if He has promised something, we can count on Him to keep that promise {% rf 'Numbers 23:19' %}&mdash;and there is a promise in the Bible for all of our needs.
  
 But what if our faith is weak? The Bible tells us that:
 1. God has given every person a measure of faith {% rf 'Romans 12:3' %}.
 1. We can ask Him to increase our faith {% rf 'Mark 9:24' %}, and He will likely give us opportunities to exercise it.
-1. Faith comes by hearing, and hearing by the Word of God {% rf 'Romans 10:17' %}. In other words, we grow in faith as we get to know Him more through the study of His word and prayer.
+1. Faith comes by hearing, and hearing by the Word of God {% rf 'Romans 10:17' %}. In other words, we grow in faith as we get to know Him more through the study of His Word and through prayer.
 
-So why is faith so important to God? Well, it's the foundation of our relationship with Him. There is nothing more pleasing to a father than a child coming to him in confidence, full of trust in his love and power. Our heavenly Father delights when we come to Him in prayer, trusting that He will hear and answer our request in His time and way. (For a more detailed study on faith, see [“Walking in Faith”](../gospel/faith.md).)
+So why is faith so important to God? Well, it's the foundation of our relationship with Him. There is nothing more pleasing to a father than a child coming to him in confidence, full of trust in his love and power. Our heavenly Father delights when we come to Him in prayer, trusting that He will hear and answer our requests in His time and way. (For a more detailed study on faith, see [“Walking in Faith”](../gospel/faith.md).)
 
 ## What is the third component?
 
@@ -174,11 +177,11 @@ So why is faith so important to God? Well, it's the foundation of our relationsh
 > And when he had consulted with the people, he appointed singers unto the LORD, and that should praise the beauty of holiness, as they went out before the army, and to say, Praise the LORD; for his mercy endureth for ever. And *when they began to sing and to praise*, the LORD set ambushments against the children of Ammon, Moab, and mount Seir, which were come against Judah; and *they were smitten*.
 {% ct '2 Chronicles 20:21, 22' %}
 
-When Jesus raised Lazarus, He thanked God for hearing His prayer *before* the resurrection occured. Likewise, when the Israelites went to war under Jehoshaphat they praised God *before* the battle even began. Thanking God before we have His answer is closely related with the second concept we just discussed&mdash;faith; it is further evidence of a trusting confidence in His love. It is natural to give thanks for something already received, but giving thanks ahead of time takes faith. However, if we know our request is in harmony with His will, as revealed in the Bible, we can be confident that He will answer it. Knowing God's will for us will require some Bible study, but there is power in finding a promise in His Word pertaining to our request, presenting it to Him in prayer, and then claiming it, in the name of His beloved Son, by faith, and thanking Him for it. In Jesus, all of God's promises are sure {% rf '2 Corinthians 1:20' %}.
+When Jesus raised Lazarus, He thanked God for hearing His prayer *before* the resurrection occurred. Likewise, when the Israelites went to war under Jehoshaphat, they praised God *before* the battle even began. Thanking God before we receive His answer is closely related to the concept we just discussed&mdash;faith; it is further evidence of a trusting confidence in His love. It is natural to give thanks for something already received, but giving thanks in advance requires faith. However, if we know our request is in harmony with His will, as revealed in the Bible, we can be confident that He will answer it. Knowing God's will for us will requires Bible study, but there is power in finding a promise in His Word that pertains to our request, presenting it to Him in prayer, and then claiming it&mdash;in the name of His beloved Son&mdash;by faith, and thanking Him for it. In Jesus, all of God's promises are sure {% rf '2 Corinthians 1:20' %}.
 
-Obviously, how and when God answers our prayer is up to Him; He may say "Yes," or He may say "Wait" if the timing may not be quite right, thereby giving us a chance to practice patience. "No" is a perfectly legitimate answer too, even though it may not be what we wanted. In such a case we can rest knowing that He sees the end from the beginning and always has our best interest in mind, knowing what is best for us better than we do ourselves.
+Obviously, how and when God answers our prayers is up to Him. He may say "Yes," or He may say "Wait" if the timing is not quite right, thereby giving us a chance to practice patience. "No" is a perfectly legitimate answer too, even though it may not be what we wanted. In such cases, we can rest in the assurance that He sees the end from the beginning and always has our best interests in mind&mdash;knowing what is best for us better than we do ourselves.
 
-The three parts of an effective prayer can be easily remembered with the ABC acronym: ask (A), believe (B), and claim (C). Author Glen Coon expounds on these in greater detail in his book, *The ABCs of Bible Prayer*.
+The three parts of an effective prayer can be easily remembered with the ABC acronym: Ask (A), Believe (B), and Claim (C). Author Glen Coon expounds on these in greater detail in his book *The ABCs of Bible Prayer*.
 
 ## Why do we pray in Jesus' name?
 

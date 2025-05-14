@@ -61,8 +61,8 @@ The Sabbath was made for us. When God created it, He did not need the rest it pr
 {% ct 'Deuteronomy 5:15' %}
 
 The Sabbath is a sign of my acknowledgment that:
-1. God is Lord because He created this world in six consecutive, literal, 24-hour days {% rf 'Exodus 20:8, 11' %}. The Sabbath is a weekly reminder that I have a Creator God who wants to have a relationship with me. This means that I am not self-created, I am not god, I have no divinity within me, and I did not come about by accident through a long process of evolution. My life has meaning and purpose.
-2. God is Lord of my life because He is the One who redeems and sanctifies me. In the Bible, the Israelites’ literal bondage in Egypt symbolizes the spiritual bondage of sin from which God delivers me. Thus, the Sabbath is a weekly reminder that, in Jesus, victory over sin is available to all, and that I am not saved by my own works, but by faith in His completed work on the cross on my behalf. 
+1. God is Lord because He created this world in six consecutive, literal, 24-hour days {% rf 'Exodus 20:8, 11' %}. The Sabbath is a weekly reminder that I have a Creator who desires to have a relationship with me. This truth carries several important implications: I am not self-created; I am not a god, nor can I become one; I possess no inherent divinity&mdash;no inner godhood or divine spark; I do not have an immortal soul, for only God is immortal {% rf '1 Timothy 6:15, 16' %}; and I did not come into existence by accident or through a long process of evolution. My life has meaning and purpose.
+2. God is Lord of my life because He is the One who redeems and sanctifies me. In the Bible, the Israelite bondage in Egypt symbolizes the spiritual bondage of sin from which God delivers me. Therefore, the Sabbath is a weekly reminder that, in Jesus, victory over sin is available to all. After all, Jesus would not have told the woman caught in adultery to “go and sin no more” if that were impossible {% rf 'John 8:11' %}. Moreover, the Sabbath is a sign that I am not saved by my own works, but by faith in His completed work on the cross, as well as His ongoing work as my Intercessor in the heavenly sanctuary (see ["Finding Hope in the Sanctuary"](../gospel/sanctuary.md#do-i-have-a-high-priest-today)).
 
 In Eden, God rested on the seventh day from His work of creation, and in the tomb, Jesus rested on the same day from His work of redemption. Therefore, the Sabbath serves as a memorial of both acts. It is a weekly rest in Jesus, during which I set aside my secular work and worldly duties to connect with and honor Him&mdash;no matter how busy life may become.
 
@@ -70,6 +70,17 @@ In Eden, God rested on the seventh day from His work of creation, and in the tom
 
 > And he came to Nazareth, where he had been brought up: and, *as his custom was, he went into the synagogue on the sabbath day*, and stood up for to read.
 {% ct 'Luke 4:16' %}
+
+> And came down to Capernaum, a city of Galilee, and taught them on the sabbath days.
+{% ct 'Luke 4:31' %}
+
+> And they went into Capernaum; and straightway *on the sabbath day he entered into the synagogue*, and taught.
+{% ct 'Mark 1:21' %}
+
+> And *when the sabbath day was come, he began to teach in the synagogue*: and many hearing him were astonished, saying, From whence hath this man these things? and what wisdom is this which is given unto him, that even such mighty works are wrought by his hands?
+{% ct 'Mark 6:2' %}
+
+Luke tells us that going to the synagogue on the Sabbath day was a habit, not just an occasional occurrence, for Jesus.
 
 ## Did His followers keep it?
 
@@ -102,7 +113,7 @@ Jesus warned about the destruction of Jerusalem by Rome, which occured in A.D. 7
 > But when they departed from Perga, they came to Antioch in Pisidia, and *went into the synagogue on the Sabbath day*, and sat down.
 {% ct 'Acts 13:14' %}
 
-The apostles of Christ kept the Sabbath themselves and taught others to do the same, including the converted Gentiles.
+Christ's apostles kept the Sabbath themselves and taught others to do the same, including the converted Gentiles.
 
 ## On what day was John, the Revelator, in the Spirit?
 
@@ -117,7 +128,10 @@ The apostles of Christ kept the Sabbath themselves and taught others to do the s
 > And hallow *my sabbaths*; and they shall be a sign between me and you, that ye may know that I am the LORD your God.
 {% ct 'Ezekiel 20:20' %}
 
-God is Lord of the Sabbath, the seventh day {% rf 'Exodus 8:11' %}. Notice that He calls these days “My Sabbaths,” meaning it’s His special day that He blessed and sanctified to be a sign between Him and me of His creative, redeeming, and sanctifying power! The Sabbath is a day of rest from works, and as such, it is a beautiful symbol of righteousness by faith as we are saved by the righteousness of Jesus, not our works.
+> Speak thou also unto the children of Israel, saying, Verily *my sabbaths* ye shall keep: for it is a sign between me and you throughout your generations; that ye may know that I am the LORD that doth sanctify you.
+{% ct 'Exodus 31:13' %}
+
+God is Lord of the Sabbath, the seventh day {% rf 'Exodus 20:11' %}. Notice that He calls these days “My Sabbaths,” meaning it is His special day, which He blessed and sanctified to be a sign between Him and His people of His creative, redeeming, and sanctifying power.
 
 ## Does God change His ways?
 
@@ -130,11 +144,17 @@ God is Lord of the Sabbath, the seventh day {% rf 'Exodus 8:11' %}. Notice that 
 > My covenant will I not break, *nor alter the thing that is gone out of my lips*.
 {% ct 'Psalm 89:34' %}
 
-God is not a fallable man that He makes mistakes, changes His mind, or changes His commandments. And that is good news because it means His righteous and loving character will never change!
+> And it is easier for heaven and earth to pass, *than one tittle of the law to fail*.
+{% ct 'Luke 16:17' %}
+
+> Heaven and earth shall pass away: but *my words shall not pass away*.
+{% ct 'Luke 21:33' %}
+
+God is not a fallible man who makes mistakes, changes His mind, or alters His commandments. The Decalogue is a transcript of His character (see ["God's Law of Love"](../gospel/law.md#what-is-gods-law-a-reflection-of)) and, as such, it can never be altered, which is good news, because it means His righteous and loving character will never change! Although some have claimed that His commandments have been altered&mdash;and the Bible predicted such attempts&mdash;the truth remains that His commandments are unchangeable (see ["God's Law Changed"](../prophecy/change.md)).
 
 ## Will the Sabbath be kept in heaven?
 
 > For as the new heavens and the new earth, which I will make, shall remain before me, saith the LORD, so shall your seed and your name remain. And it shall come to pass, that from one new moon to another, and *from one sabbath to another, shall all flesh come to worship before me*, saith the LORD.
 {% ct 'Isaiah 66:22, 23' %}
 
-The Sabbath will continue to be kept in heaven as a beautiful, weekly reminder of God’s power that redeemed the saints from a world of sin and sanctified them for a new life heaven.
+The Sabbath will continue to be kept in heaven as a beautiful weekly testament to God’s power to fully redeem fallen humanity from a world of sin and to sanctify them for a new life in heaven. In heaven, it will also take on a new dimension as a memorial of His power to redeem the world itself from the curse of sin after He recreates it anew!
