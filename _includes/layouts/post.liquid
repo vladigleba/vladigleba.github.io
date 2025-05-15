@@ -22,14 +22,12 @@ layout: layouts/base
         <span>{{ category }}</span>
         <span>{{ length }} min read</span>
       </p>
-      <p class="meta series">
-        {% if series %} 
+      {% if series %} 
+        <p class="meta series">
           “{{ series-names[series]["title"] }}” Series <span>•</span> 
           Part {{ seriesInfo.current }} of {{ seriesInfo.total }}
-        {% endif %}
-      </p>
+        </p>
 
-      {% if series %}
         {% render "layouts/series-header", series: seriesInfo %}
       {% endif %}
     </div>

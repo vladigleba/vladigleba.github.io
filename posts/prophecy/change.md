@@ -88,7 +88,7 @@ Daniel prophesied a power would arise that would magnify itself even against God
 
 This is an echo of Paul’s warning about men arising “speaking perverse things.” Again, here’s a power that would challenge God’s authority, persecute His followers, and change times and laws (see ["Who Is the Antichrist?"](./antichrist.md)). There is only one commandment that is both a time and a law: the fourth one. 
 
-The first seeds for its change were planted during Constantine’s conversion to Christianity in 312 A.D. when he passed a law declaring Sunday, which was the pagan day of sun worship, as the day of rest across the Roman Empire. That seed took root in 363 A.D. when the Council of Laodicea urged Christians to keep Sunday as their rest day, while prohibiting them from resting on Saturday, the seventh day Sabbath. Thus, the fourth commandment of God was changed&mdash;from honoring the seventh-day Sabbath established at creation to honoring the first day, Sunday&mdash;and the rest is history (see ["The Mark of the Beast"](./mark.md)).
+The first seeds for its change were planted during Constantine’s conversion to Christianity in 312 A.D. when he passed a law declaring Sunday, which was the pagan day of sun worship, as the day of rest across the Roman Empire. That seed took root in 363 A.D. when the Council of Laodicea urged Christians to keep Sunday as their rest day, while prohibiting them from resting on Saturday, the seventh day Sabbath. Thus, the fourth commandment of God was changed&mdash;from honoring the seventh-day Sabbath established at creation to honoring Sunday&mdash;and the rest is history (see ["The Mark of the Beast"](./mark.md)).
 
 ## Did Jesus warn about this?
 

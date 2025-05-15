@@ -19,7 +19,7 @@ date: 2025-02-01
 > For the husband is the head of the wife, even as *Christ is the head of the church*: and he is the saviour of the body.
 {% ct 'Ephesians 5:23' %}
 
-Jesus established His church upon Himself, the Rock. Paul makes it clear that Jesus is also the foundation, as well as the head of the church. Moreover, He is the only Mediator between God and man {% rf '1 Timothy 2:5' %}. The word used for Peter in {% rf 'Matthew 16:18' false %} is “Petros,” which refers to a detached stone that can be moved around. Peter was a mere man who later ended up denying Christ {% rf 'Matthew 26:69-75' %}, so he could not be the foundation of the church. The word for “Rock” in {% rf 'Matthew 16:18' false %} is “petra,” which refers to an immovable mass of rock&mdash;a solid foundation&mdash;Jesus Christ Himself.
+Jesus established His church upon Himself&mdash;the Rock {% rf 'Psalm 62:6' %}. Paul makes it clear that Jesus is also the foundation as well as the head of the church. Moreover, He is the only Mediator between God and man {% rf '1 Timothy 2:5' %}. The word used for Peter in {% rf 'Matthew 16:18' false %} is “Petros,” which refers to a stone that can be moved around. Peter was a mere man who later ended up denying Christ {% rf 'Matthew 26:69-75' %} and was rebuked by Paul {% rf 'Galatians 2:11' %}, so he could not be the foundation of the church. The word for “Rock” in {% rf 'Matthew 16:18' false %} is “petra,” which refers to an immovable mass of rock&mdash;a solid foundation&mdash;Jesus Christ Himself {% rf 'Ephesians 2:19-22; 1 Peter 2:5-7' %}.
 
 ## Was there a church after His ascension?
 

@@ -194,9 +194,9 @@ The three parts of an effective prayer can be easily remembered with the ABC acr
 > And in that day ye shall ask me nothing. Verily, verily, I say unto you, Whatsoever ye shall ask the Father in my name, he will give it you. Hitherto have ye asked nothing in my name: ask, and ye shall receive, that your joy may be full.
 {% ct 'John 16:23,24' %}
 
-In Adam and Eve's rejection of God in the garden, the human race separated itself from its Maker, but He immediately promised them that in His Son, Jesus, He would provide a path to reconciliation for anyone who wanted it {% rf 'Genesis 3:15' %}. This promise was later illustrated to Jacob in the dream of the ladder, symbolizing Jesus, that united heaven and earth {% rf 'Genesis 28:12' %}. 
+In Adam and Eve's rejection of God in the garden, the human race separated itself from its Maker, but God immediately promised that, in His Son Jesus, He would provide them, and anyone who desired it, a path to reconciliation {% rf 'Genesis 3:15' %}. This promise was later illustrated to Jacob in the dream of a ladder, symbolizing Jesus, that united heaven and earth {% rf 'Genesis 28:12' %}. 
 
-Adam and Eve's rejection is played out in the life of every person because all have sinned {% rf 'Romans 3:23' %}, and so apart from Christ&mdash;who alone offered His perfect life on the cross to pay for our sins&mdash;we have nothing to recommend us to God. Our rejection of Him has rendered us unworthy to even come to Him in prayer, but Jesus turned that completely around! In His name we can "come boldly unto throne of grace, that we may obtain mercy, and find grace to help in time of need" {% rf 'Hebrews 4:16' %} because, when we accept Him as our Redeemer and Lord, He covers the shame of our sins with His perfect righteousness {% rf 'Isaiah 61:10' %}, and God calls us His children once more {% rf '1 John 3:1' %}! (For more information, see ["How Can I Be Saved"](/posts/gospel/salvation.md).)
+Adam and Eve's rejection is replayed in the life of every person, for all have sinned {% rf 'Romans 3:23' %}. Apart from Christ&mdash;who alone lived a perfect life and offered it on the cross to pay for our sins&mdash;we have nothing to commend us to God. Our sins have made us unworthy of our Father {% rf 'Luke 15:21' %}, but Jesus has given us a second chance! When we pray in His name, we are enabled to "come boldly unto the throne of grace, that we may obtain mercy, and find grace to help in time of need" {% rf 'Hebrews 4:16' %} because, when we accept Him as our Redeemer and Lord, He covers the shame of our sins with His perfect righteousness {% rf 'Isaiah 61:10' %}, and God calls us His children once more {% rf '1 John 3:1' %}! (For more information, see ["How Can I Be Saved"](/posts/gospel/salvation.md).)
 
 ## How important is gratitude?
 
@@ -212,7 +212,7 @@ Adam and Eve's rejection is played out in the life of every person because all h
 > In *every thing give thanks*: for this is the will of God in Christ Jesus concerning you.
 {% ct '1 Thessalonians. 5:18 ' %}
 
-The Bible teaches that every good thing comes from our Father {% rf 'James 1:17' %}, so praise, gratitude, and thanksgiving have a place in every prayer. There will be circumstances where they may be harder to find, but Paul tells us that "all things work together for good to those who love God" {% rf 'Romans 8:28' %}. Note that he doesn't say "some things" or "most" but "all." This means that God will use even the greatest tragedy for good&mdash;just look at the cross, with Jesus hanging there rejected and crucified by His own people whom He came to save. Nothing we will ever experience comes to close to what He experienced on the cross. He took the sword first and blunted its edge for us.
+The Bible teaches that every good thing comes from our Father {% rf 'James 1:17' %}, so praise, gratitude, and thanksgiving have a place in every prayer. There will be circumstances in which these may be harder to express, but Paul tells us that "all things work together for good to those who love God" {% rf 'Romans 8:28' %}. Note that he doesn't say "some things" or "most things," but "all." This means that God will use even the greatest tragedy for good&mdash;just look at the cross, where Jesus hung, rejected and crucified by the very people He came to save. Nothing we will ever experience comes close to what He endured on the cross. He took the sword first and blunted its edge for us.
 
 ## What is the purpose of prayer?
 
@@ -228,7 +228,7 @@ The Bible teaches that every good thing comes from our Father {% rf 'James 1:17'
 > Behold, I stand at the door, and knock: if any man hear my voice, and open the door, *I will come in to him, and will sup with him, and he with me*.
 {% ct 'Revelation 3:20' %}
 
-Prayer leads us into harmony with the mind of Jesus as well as into deeper fellowship with Him. It's said that we are the sum of the people we hang out with because the more time we spend with them the more we imitate them. Prayer, along with Bible study, is how we spend time with Jesus. Bible study is how He talks to us, and prayer is how we talk to Him. In the absence of daily, quality time, every relationship will fall apart, including our relationship with Christ.
+Prayer leads us into harmony with the mind of Jesus and into deeper fellowship with Him. It is said that we are the sum of the people we spend the most time with because we often begin to imitate them. Prayer, along with Bible study, is how we spend time with Jesus. Bible study is how He speaks to us, and prayer is how we speak to Him. Without daily, quality time, every relationship will eventually fall apart&mdash;including our relationship with Christ.
 
 ## What role does prayer play in resisting temptation?
 
@@ -244,9 +244,9 @@ Prayer leads us into harmony with the mind of Jesus as well as into deeper fello
 > But the end of all things is at hand: *be ye therefore sober, and watch unto prayer*.
 {% ct '1 Peter 4:7' %}
 
-When we are tempted, the last thing we want to do is pray, but connecting with God in that crucial time is key, and it's best to continue praying until the temptation passes. As long we hold on to God we cannot be overcome. Praying *before* the temptation comes, as is demonstrated in Jesus' model prayer for us, is also wise: "and lead us not into temptation, but deliver us from evil" {% rf 'Matthew 6:13' %}. If we are willing to be vigilant and not put ourselves in situations we know will tempt us, God will do His part to help us. The good news is there is a way of escape out of every temptation as God will never allow us to be temptated beyond what we are able to bear {% rf '1 Corinthians 10:13' %}.
+When we are tempted, the last thing we often want to do is pray, but connecting with God in that crucial moment is key, and it's best to continue praying until the temptation passes. As long as we hold on to God, we cannot be overcome. Praying *before* the temptation comes, as demonstrated in Jesus' model prayer, is also wise: "and lead us not into temptation, but deliver us from evil" {% rf 'Matthew 6:13' %}. If we are willing to be vigilant and avoid situations we know will tempt us, God will do His part to help us. The good news is there is a way of escape from every temptation, as God will never allow us to be tempted beyond what we are able to bear {% rf '1 Corinthians 10:13' %}.
 
-Had Jesus' disciples heeded His call to watch and pray in Gethsemane, there is no doubt that they would have been strengthened to better endure what was about to come upon Him. And poor Peter&mdash;would he have denied His Lord if he had spent that time in prayer instead of sleeping?
+Had Jesus' disciples heeded His call to watch and pray in Gethsemane, there is no doubt they would have been strengthened to better endure what was about to come upon both Him and them. And poor Peter&mdash;would he have denied his Lord if he had spent that time in prayer instead of sleeping?
 
 ## Should prayer enable laziness?
 
@@ -256,7 +256,7 @@ Had Jesus' disciples heeded His call to watch and pray in Gethsemane, there is n
 > And when the dew that lay was gone up, behold, upon the face of the wilderness there lay a small round thing, as small as the hoar frost on the ground. And when the children of Israel saw it, they said one to another, It is manna: for they wist not what it was. And Moses said unto them, This is the bread which the LORD hath given you to eat. This is the thing which the LORD hath commanded, *Gather of it every man according to his eating*, an omer for every man, according to the number of your persons; take ye every man for them which are in his tents.
 {% ct 'Exodus 16:14-16' %}
 
-When God provided manna for the Israelites, it didn't simply fall into their mouths; they still had to go out and gather it. God wants us to cooperate with Him by investing ourselves in the process; otherwise, we risk becoming lazy with His blessings. The simple truth is that He will never do for us what we can do for ourselves, but once we have done our part, He will do what we *cannot* do.
+When God provided manna for the Israelites, it didn't simply fall into their mouths; they still had to go out and gather it. God wants us to cooperate with Him by investing ourselves in the process; otherwise, we risk becoming lazy with His blessings. The simple truth is that He will never do for us what we can do for ourselves, but once we have done our part, He will do what we cannot.
 
 ## What kind of environment is best suited for prayer?
 
@@ -266,7 +266,7 @@ When God provided manna for the Israelites, it didn't simply fall into their mou
 > And in the morning, rising up a great while before day, he went out, and departed into a *solitary place*, and there prayed.
 {% ct 'Mark 1:35' %}
 
-The best places for prayer are quiet and free from distractions, allowing us to be fully focused on communing with our heavenly Father. In contrast, the Pharisees of Christ's day loved to pray publicly so they could be seen by others, but Christ wants us to seek Him humbly and in private. Of course, there is a time and place for corporate prayer&mdash;such as a church service or a small group&mdash;but our personal prayers should be just between us and God.
+The best places for prayer are quiet and free from distractions, allowing us to focus fully on communing with our heavenly Father. In contrast, the Pharisees of Jesus' day loved to pray publicly in order to be seen by others, but Christ calls us to seek Him humbly and in private. Of course, there is a time and place for corporate prayer&mdash;such as a church service or a small group&mdash;but our personal prayers should be between us and God alone.
 
 ## Should my prayers be repetitive?
 
@@ -279,9 +279,9 @@ The best places for prayer are quiet and free from distractions, allowing us to 
 > Confess your faults one to another, and pray one for another, that ye may be healed. The *effectual fervent prayer* of a righteous man availeth much.
 {% ct 'James 5:16' %}
 
-Jesus associated the repetition of words and phrases with heathenism {% rf 'Acts 19:34; 1 Kings 18:26' %}, thereby making it clear that such practices have no place in the life of a Christian. The same is true of breath prayers and the popular practice of "entering the silence," which involves emptying the mind&mdash;in reality, turning off the brain&mdash;which is one of the quickest ways to enter an altered state of consciousness. All of these paths lead to mysticism and open the door to the influence of malevolent powers. (For more information, see Howard Peth's book, *The Dangers of Contemplative Prayer*.)
+Jesus associated the repetition of words and phrases with paganism {% rf 'Acts 19:34; 1 Kings 18:26' %}, thereby making it clear that such practices have no place in the life of a Christian. The same is true of "breath prayers" and the popular practice of "entering the silence," which often involves emptying the mind, meaning the reasoning faculties are effectively disengaged, which is one of the quickest ways to enter an altered state of consciousness. Such practices often lead to mysticism and open the door to the influence of malevolent spiritual powers. (For more information, see Howard Peth's book *The Dangers of Contemplative Prayer*.)
 
-God wants us to be fully engaged when talking to Him, as we would be when talking to a friend, with our minds fully alert and our reasoning powers fully intact {% rf 'Isaiah 1:18' %}. Prayer should be fervent, fresh, and from the heart. If our hearts are not in it, we probably shouldn't be praying it. Prayers that don't mean a lot to us don't mean a lot to God.
+God desires that we be fully engaged when we speak with Him&mdash;as we would be when talking to a close friend&mdash;with our minds alert and our reasoning intact {% rf 'Isaiah 1:18' %}. Prayer should be fresh, fervent, and from the heart. If our hearts are not in it, we probably should not be praying it. Prayers that do not mean much to us are unlikely to mean much to God.
 
 ## Is praying aloud a good idea?
 

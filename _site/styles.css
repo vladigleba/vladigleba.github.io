@@ -312,7 +312,7 @@ article > header h1 {
 }
 
 article > header .description {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 article > header .tag span {
@@ -322,7 +322,7 @@ article > header .tag span {
 }
 
 article > header .meta.series {
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 article > header p {
