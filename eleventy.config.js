@@ -73,7 +73,7 @@ module.exports = async (config) => {
       post.data.category = category;
 
       // reading time
-      const stats = readingTime(post.rawInput, { wordsPerMinute: 225 });
+      const stats = readingTime(post.rawInput, { wordsPerMinute: 220 });
       post.data.length = Math.floor(stats.minutes);
   
       // next link
@@ -90,14 +90,16 @@ module.exports = async (config) => {
         if (!seriesEntry) {
           seriesEntry = {
             type: 'series',
-            title: seriesNames[series],
+            title: seriesNames[series]["title"],
             category,
-            color,
+            color: seriesNames[series]["color"],
             posts: [],
           };
+
           processedSeries.set(series, seriesEntry);
           groupedPosts.push(seriesEntry);
         }
+        
         seriesEntry.posts.push(post);
       } else {
         groupedPosts.push({

@@ -1,9 +1,8 @@
 ---
 title: How Can I Be Saved?
 description: Because all have sinned, all are sitting on death row, whether we realize it or not. There is hope though! But only if I ask Jesus to intervene.
-color: rgb(143,102,126)
 date: 2025-01-06
-series: Salvation
+series: salvation
 featured: true
 ---
 
@@ -58,7 +57,7 @@ God did not leave us in our sin, but promised us a path back to life and reconci
 > Jesus saith unto him, *I am the way, the truth, and the life*: no man cometh unto the Father, but by me. 
 {% ct 'John 14:6' %}
 
-There is only one road that leads to salvation from sin, and that road is Jesus. Any other way cannot save us.
+There is only one road that leads to salvation from sin, and that road is Jesus. Any other way&mdash;and there are many&mdash;cannot save us. Many have wondered how Jesus can make such an exclusive claim, considering the number of religions in the world, but it's simple: Jesus is the only one who humbled Himself, came down from the glory of heaven, took on human nature, lived among His creation, and then died for their sins! No other religion has a god like that.
 
 ## How did Jesus redeem us from the condemnation of the law?
 
@@ -94,10 +93,34 @@ Forsaking my way implies turning around and going in the opposite direction&mdas
 
 ## How exactly am I saved from my sins?
 
-> For *by grace* are ye saved *through faith*; and that not of yourselves: *it is the gift of God*. 
-{% ct 'Ephesians 2:8' %}
+> For *by grace* are ye saved *through faith*; and that not of yourselves: *it is the gift of God*. Not of works, lest any man should boast.
+{% ct 'Ephesians 2:8, 9' %}
 
-There is nothing I can do to earn salvation; it is a free gift that I receive through faith in His love, His forgiveness, and His victory on the cross.
+> Therefore we conclude that a man is *justified by faith without the deeds of the law*.
+{% ct 'Romans 3:28' %}
+
+> Therefore being *justified by faith*, we have peace with God through our Lord Jesus Christ: by whom also we *have access by faith into this grace* wherein we stand, and rejoice in hope of the glory of God.
+{% ct 'Romans 5:1, 2' %}
+
+> But that no man is justified by the law in the sight of God, it is evident: for, *The just shall live by faith*.
+{% ct 'Galatians 3:11' %}
+
+There is nothing I can do to earn salvation; it is a free gift that I receive by grace through faith in His love, His forgiveness, and His victory on the cross. The Protestant Reformation brought this marvelous truth to light after centuries of a counterfeit method of salvation focused on works. Sadly, however, Protestantism has begun to drift away from its original position.
+
+In 1999, the Catholic and Lutheran churches issued a *Joint Declaration on the Doctrine of Justification*, which includes this key statement: "By grace alone, in faith in Christ's saving work and not because of any merit on our part, we are accepted by God..." Note that "by grace alone" is not the same as "by faith alone." While it is true that we are saved by grace, that grace is appropriated by faith&mdash;without faith, there can be no grace. The joint statement elevates grace over faith, while the Bible emphasizes faith. This difference may not seem significant at first, but it becomes critical when viewed through the lens of Catholic teaching, which holds that the Church is the dispenser of grace from the treasury of merit, which includes not only Christ’s good works but also those of Mary and the saints.
+
+## Am I saved by Christ's saving work?
+
+> And almost all things are by the law purged with blood; and *without shedding of blood is no remission*.
+{% ct 'Hebrews 9:22' %}
+
+> In whom we have redemption *through his blood, the forgiveness of sins*, according to the riches of his grace.
+{% ct 'Ephesians 1:7' %}
+
+> Whom God hath set forth to be *a propitiation through faith in his blood*, to declare his righteousness for the remission of sins that are past, through the forbearance of God.
+{% ct 'Romans 3:25' %}
+
+The Bible is clear that it is not Christ's works that save me, but His shed blood. In the *Joint Declaration*, the phrase "faith in Christ's saving work" refers to the treasury of merit, which the Church dispenses to atone for sin; however, the Bible teaches that without the shedding of *blood* there is no remission of sin. The truth is Christ died for each person individually {% rf 'Galatians 2:20' %}. His death paid the penalty for my sins&mdash;the penalty that I was supposed to pay&mdash;while His righteous life satisfies the claims of the law upon me, namely, perfect righteousness, which my life could never meet {% rf 'Romans 5:9, 10' %}.
 
 ## What happens once I accept God’s free gift?
 

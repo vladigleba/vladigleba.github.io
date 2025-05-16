@@ -138,66 +138,66 @@ God promises to help me keep His commandments because He knows that I cannot ove
 
 ## What are the Ten Commandments?
 
-> *First:* I am the LORD thy God, which have brought thee out of the land of Egypt, out of the house of bondage. Thou shalt have no other gods before me.
+> [*First:*] I am the LORD thy God, which have brought thee out of the land of Egypt, out of the house of bondage. Thou shalt have no other gods before me.
 {% ct 'Exodus 20:2, 3' %}
 
-> *Second:* Thou shalt not make unto thee any graven image, or any likeness of any thing that is in heaven above, or that is in the earth beneath, or that is in the water under the earth: Thou shalt not bow down thyself to them, nor serve them: for I the LORD thy God am a jealous God, visiting the iniquity of the fathers upon the children unto the third and fourth generation of them that hate me; and shewing mercy unto thousands of them that love me, and keep my commandments.
+> [*Second:*] Thou shalt not make unto thee any graven image, or any likeness of any thing that is in heaven above, or that is in the earth beneath, or that is in the water under the earth: Thou shalt not bow down thyself to them, nor serve them: for I the LORD thy God am a jealous God, visiting the iniquity of the fathers upon the children unto the third and fourth generation of them that hate me; and shewing mercy unto thousands of them that love me, and keep my commandments.
 {% ct 'Exodus 20:4-6' %}
 
-> *Third:* Thou shalt not take the name of the LORD thy God in vain; for the LORD will not hold him guiltless that taketh his name in vain.
+> [*Third:*] Thou shalt not take the name of the LORD thy God in vain; for the LORD will not hold him guiltless that taketh his name in vain.
 {% ct 'Exodus 20:7' %}
 
-> *Fourth:* Remember the sabbath day, to keep it holy. Six days shalt thou labour, and do all thy work: but the seventh day is the sabbath of the LORD thy God: in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates: For in six days the LORD made heaven and earth, the sea, and all that in them is, and rested the seventh day: wherefore the LORD blessed the sabbath day, and hallowed it.
+> [*Fourth:*] Remember the sabbath day, to keep it holy. Six days shalt thou labour, and do all thy work: but the seventh day is the sabbath of the LORD thy God: in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates: For in six days the LORD made heaven and earth, the sea, and all that in them is, and rested the seventh day: wherefore the LORD blessed the sabbath day, and hallowed it.
 {% ct 'Exodus 20:8-11' %}
 
-> *Fifth:* Honour thy father and thy mother: that thy days may be long upon the land which the LORD thy God giveth thee.
+> [*Fifth:*] Honour thy father and thy mother: that thy days may be long upon the land which the LORD thy God giveth thee.
 {% ct 'Exodus 20:12' %}
 
-> *Sixth:* Thou shalt not kill.
+> [*Sixth:*] Thou shalt not kill.
 {% ct 'Exodus 20:13' %}
 
-> *Seventh:* Thou shalt not commit adultery.
+> [*Seventh:*] Thou shalt not commit adultery.
 {% ct 'Exodus 20:14' %}
 
-> *Eight:* Thou shalt not steal.
+> [*Eight:*] Thou shalt not steal.
 {% ct 'Exodus 20:15' %}
 
-> *Ninth:* Thou shalt not bear false witness against thy neighbour.
+> [*Ninth:*] Thou shalt not bear false witness against thy neighbour.
 {% ct 'Exodus 20:16' %}
 
-> *Tenth:* Thou shalt not covet thy neighbour's house, thou shalt not covet thy neighbour's wife, nor his manservant, nor his maidservant, nor his ox, nor his ass, nor any thing that is thy neighbour's.
+> [*Tenth:*] Thou shalt not covet thy neighbour's house, thou shalt not covet thy neighbour's wife, nor his manservant, nor his maidservant, nor his ox, nor his ass, nor any thing that is thy neighbour's.
 {% ct 'Exodus 20:17' %}
 
 ## Did they change in the New Testament?
 
-> *First:* Then saith Jesus unto him, Get thee hence, Satan: for it is written, Thou shalt worship the Lord thy God, and him only shalt thou serve.
+> [*First:*] Then saith Jesus unto him, Get thee hence, Satan: for it is written, Thou shalt worship the Lord thy God, and him only shalt thou serve.
 {% ct 'Matthew 4:10' %}
 
-> *Second:* Little children, keep yourselves from idols.
+> [*Second:*] Little children, keep yourselves from idols.
 {% ct '1 John 5:21' %}
 
-> *Third:* Let as many servants as are under the yoke count their own masters worthy of all honour, that the name of God and his doctrine be not blasphemed.
+> [*Third:*] Let as many servants as are under the yoke count their own masters worthy of all honour, that the name of God and his doctrine be not blasphemed.
 {% ct '1 Timothy 6:1' %}
 
-> *Fourth:* For he spake in a certain place of the seventh day on this wise, And God did rest the seventh day from all his works. ... There remaineth therefore a rest to the people of God. For he that is entered into his rest, he also hath ceased from his own works, as God did from his.
+> [*Fourth:*] For he spake in a certain place of the seventh day on this wise, And God did rest the seventh day from all his works. ... There remaineth therefore a rest to the people of God. For he that is entered into his rest, he also hath ceased from his own works, as God did from his.
 {% ct 'Hebrews 4:4, 9, 10' %}
 
-> *Fifth:* Honour thy father and thy mother.
+> [*Fifth:*] Honour thy father and thy mother.
 {% ct 'Matthew 19:19' %}
 
-> *Sixth:* Thou shalt not kill.
+> [*Sixth:*] Thou shalt not kill.
 {% ct 'Romans 13:9' %}
 
-> *Seventh:* Thou shalt not commit adultery.
+> [*Seventh:*] Thou shalt not commit adultery.
 {% ct 'Romans 13:9' %}
 
-> *Eight:* Thou shalt not steal.
+> [*Eight:*] Thou shalt not steal.
 {% ct 'Romans 13:9' %}
 
-> *Ninth:* Thou shalt not bear false witness.
+> [*Ninth:*] Thou shalt not bear false witness.
 {% ct 'Romans 13:9' %}
 
-> *Tenth:* Thou shalt not covet.
+> [*Tenth:*] Thou shalt not covet.
 {% ct 'Romans 7:7' %}
 
 ## Is it possible for the law to change?
@@ -215,76 +215,76 @@ The fact that Jesus had to die on the cross to pay for the penalty of lawlessnes
 
 ## What is God’s law a reflection of?
 
-> *GOD:* And Jesus said unto him, Why callest thou me good? none is *good*, save one, that is, God.
+> [*God is good:*] And Jesus said unto him, Why callest thou me good? none is *good*, save one, that is, God.
 {% ct 'Luke 18:19' %}
 
-> *LAW:* But we know that the law is *good*, if a man use it lawfully.
+> [*Law is good:*] But we know that the law is *good*, if a man use it lawfully.
 {% ct '1 Timothy 1:8' %}
 
-> *GOD:* But the LORD of hosts shall be exalted in judgment, and God that is *holy* shall be sanctified in righteousness.
+> [*God is holy:*] But the LORD of hosts shall be exalted in judgment, and God that is *holy* shall be sanctified in righteousness.
 {% ct 'Isaiah 5:16' %}
 
-> *LAW:* Wherefore the law is holy, and the commandment *holy*, and just, and good.
+> [*Law is holy:*] Wherefore the law is holy, and the commandment *holy*, and just, and good.
 {% ct 'Romans 7:12' %}
 
-> *GOD:* Be ye therefore perfect, even as your Father which is in heaven is *perfect*.
+> [*God is perfect:*] Be ye therefore perfect, even as your Father which is in heaven is *perfect*.
 {% ct 'Matthew 5:48' %}
 
-> *LAW:* The law of the LORD is *perfect*, converting the soul: the testimony of the LORD is sure, making wise the simple.
+> [*Law is perfect:*] The law of the LORD is *perfect*, converting the soul: the testimony of the LORD is sure, making wise the simple.
 {% ct 'Psalms 19:7' %}
 
-> *GOD:* And every man that hath this hope in him purifieth himself, even as he [Christ] is *pure*.
+> [*God is pure:*] And every man that hath this hope in him purifieth himself, even as he [Christ] is *pure*.
 {% ct '1 John 3:3' %}
 
-> *LAW:* The commandment of the LORD is *pure*, enlightening the eyes.
+> [*Law is pure:*] The commandment of the LORD is *pure*, enlightening the eyes.
 {% ct 'Psalms 19:8' %}
 
-> *GOD:* He is the Rock, his work is perfect: for all his ways are judgment: a God of truth and without iniquity, *just* and right is he.
+> [*God is just:*] He is the Rock, his work is perfect: for all his ways are judgment: a God of truth and without iniquity, *just* and right is he.
 {% ct 'Deuteronomy 32:4' %}
 
-> *LAW:* Wherefore the law is holy, and the commandment holy, and *just*, and good.
+> [*Law is just:*] Wherefore the law is holy, and the commandment holy, and *just*, and good.
 {% ct 'Romans 7:12' %}
 
-> *GOD:* He that hath received his testimony hath set to his seal that God is *true*.
+> [*God is true:*] He that hath received his testimony hath set to his seal that God is *true*.
 {% ct 'John 3:33' %}
 
-> *LAW:* The judgments of the LORD are *true* and righteous altogether.
+> [*Law is true:*] The judgments of the LORD are *true* and righteous altogether.
 {% ct 'Psalms 19:9' %}
 
-> *GOD:* For they drank of that  *spiritual* Rock that followed them: and that Rock was Christ.
+> [*God is spiritual:*] For they drank of that  *spiritual* Rock that followed them: and that Rock was Christ.
 {% ct '1 Corinthians 10:4' %}
 
-> *LAW:* For we know that the law is *spiritual*: but I am carnal, sold under sin.
+> [*Law is spiritual:*] For we know that the law is *spiritual*: but I am carnal, sold under sin.
 {% ct 'Romans 7:14' %}
 
-> *GOD:* In his days Judah shall be saved, and Israel shall dwell safely: and this is his name whereby he shall be called, THE LORD OUR *RIGHTEOUSNESS*.
+> [*God is righteousness:*] In his days Judah shall be saved, and Israel shall dwell safely: and this is his name whereby he shall be called, THE LORD OUR *RIGHTEOUSNESS*.
 {% ct 'Jeremiah 23:6' %}
 
-> *LAW:* My tongue shall speak of thy word: for all thy commandments are *righteousness*.
+> [*Law is righteousness:*] My tongue shall speak of thy word: for all thy commandments are *righteousness*.
 {% ct 'Psalms 119:172' %}
 
-> *GOD:* God is *faithful*, by whom ye were called unto the fellowship of his Son Jesus Christ our Lord.
+> [*God is faithful:*] God is *faithful*, by whom ye were called unto the fellowship of his Son Jesus Christ our Lord.
 {% ct '1 Corinthians 1:9' %}
 
-> *LAW:* All thy commandments are *faithful*.
+> [*Law is faithful:*] All thy commandments are *faithful*.
 {% ct 'Psalms 119:86' %}
 
-> *GOD:* He that loveth not knoweth not God; for God is *love*.
+> [*God is love:*] He that loveth not knoweth not God; for God is *love*.
 {% ct '1 John 4:8' %}
 
-> *LAW:* Love worketh no ill to his neighbour: therefore *love* is the fulfilling of the law.
+> [*Law is love:*] Love worketh no ill to his neighbour: therefore *love* is the fulfilling of the law.
 {% ct 'Romans 13:10' %}
 
-> *GOD:* Every good gift and every perfect gift is from above, and cometh down from the Father of lights, with whom is *no variableness, neither shadow of turning*.
+> [*God is unchangeable:*] Every good gift and every perfect gift is from above, and cometh down from the Father of lights, with whom is *no variableness, neither shadow of turning*.
 {% ct 'James 1:17' %}
 
-> *LAW:* For verily I say unto you, Till heaven and earth pass, *one jot or one tittle shall in no wise pass from the law*, till all be fulfilled.
+> [*Law is unchangeable:*] For verily I say unto you, Till heaven and earth pass, *one jot or one tittle shall in no wise pass from the law*, till all be fulfilled.
 {% ct 'Matthew 5:18' %}
 
-> *GOD:* And Abraham planted a grove in Beersheba, and called there on the name of the LORD, the *everlasting* God.
+> [*God is everlasting:*] And Abraham planted a grove in Beersheba, and called there on the name of the LORD, the *everlasting* God.
 {% ct 'Genesis 21:33' %}
 
-> *LAW:* The works of his hands are verity and judgment; all his commandments are sure. They stand fast *for ever and ever*, and are done in truth and uprightness.
+> [*Law is everlasting:*] The works of his hands are verity and judgment; all his commandments are sure. They stand fast *for ever and ever*, and are done in truth and uprightness.
 {% ct 'Psalms 111:7, 8' %}
 
 The Ten Commandments are a reflection of God’s character in written form, and Jesus demonstrated what it  looks like in human form. Through the law and Jesus’ life we may better comprehend God’s character. Because God cannot change, neither can His law.

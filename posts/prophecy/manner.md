@@ -1,9 +1,8 @@
 ---
 title: Manner of Christ’s Coming
 description: Will His coming be a secret, or does the Bible tell a different story? The truth may shock you.
-color: rgb(57,96,136)
 date: 2025-01-12
-series: SecondComing
+series: second-coming
 ---
 
 ## What promise did Jesus make prior to His crucifixion?

@@ -17,7 +17,17 @@ article > header h1 {
 }
 
 article > header .description {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+}
+
+article > header .tag span {
+  background-color: white;
+  padding: 0 10px 0.5px;
+  margin-left: 0;
+}
+
+article > header .meta.series {
+  margin-top: 35px;
 }
 
 article > header p {

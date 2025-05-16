@@ -1,9 +1,8 @@
 ---
 title: Confession and Forgiveness
 description: Confession and forgiveness of sins is central to the plan of salvation. Have you experienced it?
-color: rgb(143,102,126)
 date: 2025-01-07
-series: Salvation
+series: salvation
 ---
 
 ## Is God willing to forgive?
@@ -64,7 +63,7 @@ There is no sin too powerful for God, but He cannot do anything against my will 
 > He will turn again, he will have compassion upon us; he will *subdue our iniquities*; and thou wilt *cast all their sins* into the depths of the sea. 
 {% ct 'Micah 7:19' %}
 
-<b>Note: </b> God wants to free me from the power of sin because sin hurts me. He can also give me the power to be free because I cannot change myself, just like a leopard cannot change his spots, but He can! He promises to give a new heart and a new spirit to those who ask Him.
+God wants to free me from the power of sin because sin hurts me. He can also give me the power to be free because I cannot change myself, just like a leopard cannot change his spots, but He can! He promises to give a new heart and a new spirit to those who ask Him.
 
 ## Why can I receive forgiveness?
 

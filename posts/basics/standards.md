@@ -1,7 +1,7 @@
 ---
 title: Christian Standards
 description: Discover why followers of Christ are called to live differently and what that means practically.
-color: rgb(38, 105, 133)
+color: rgb(201,117,138)
 date: 2025-02-06
 ---
 

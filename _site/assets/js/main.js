@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll(".anchor-link").forEach(link => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
+
       const fullUrl = `${window.location.origin}${window.location.pathname}${link.getAttribute("href")}`;
       navigator.clipboard.writeText(fullUrl)
         .then(() => {
@@ -23,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
             popup.className = 'copy-popup';
             popup.textContent = 'Link copied';
             link.appendChild(popup);
-    
             setTimeout(() => popup.remove(), 2000);
           }
         })
@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // track TOC
-  const tocLinks = document.querySelectorAll(".toc a");
   const headings = document.querySelectorAll("main h2, main h3, main h4");
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -75,13 +74,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
-      // Show the pop-up near the clicked link
+      // show the pop-up near the clicked link
       document.getElementById("verse-content").innerHTML = link.dataset.verse;
       const rect = link.getBoundingClientRect();      
       let left = rect.left + window.scrollX;
       const top = rect.bottom + window.scrollY + 10;
 
-      // If popup would overflow right edge, shift it left
+      // if popup would overflow right edge, shift it left
       const popupWidth = popup.offsetWidth || 300; // estimated default
       const maxLeft = window.innerWidth - popupWidth - 10; // 10px margin
       if (left > maxLeft) left = maxLeft;
@@ -92,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Close pop-up when clicking outside
+  // close pop-up when clicking outside
   document.addEventListener("click", (e) => {
     if (!popup.contains(e.target) && !e.target.classList.contains("verse-link")) {
       popup.classList.remove("show");

@@ -1,9 +1,8 @@
 ---
 title: Walking in Faith
 description: Faith is a central theme in the Bible, but what is it really? Does God want us to have blind faith?
-color: rgb(143,102,126)
 date: 2025-01-08
-series: Salvation
+series: salvation
 ---
 
 ## What is faith?
@@ -121,6 +120,16 @@ Those who have the faith of Jesus also keep the commandments of God because Jesu
 {% ct 'Matthew 7:16, 17, 20-23' %}
 
 Obedience shows the genuineness of my faith. Put another way, my faith is confirmed, or justified, to me by my works. They are evidence for me, not God, since He already knows my genuine heart {% rf 'Psalm 139:1-4' %}, but I do need the evidence because it’s easy to deceive myself about my true condition {% rf 'Jeremiah 17:9, 10' %}.
+
+## What is the counterfeit to faith?
+
+> Then the devil taketh him up into the holy city, and setteth him on a pinnacle of the temple, and saith unto him, If thou be the Son of God, cast thyself down: for it is written, He shall give his angels charge concerning thee: and in their hands they shall bear thee up, lest at any time thou dash thy foot against a stone. Jesus said unto him, It is written again, *Thou shalt not tempt the Lord thy God*.
+{% ct 'Matthew 4:5-7' %}
+
+> Behold, *I give unto you power to tread on serpents and scorpions*, and over all the power of the enemy: and nothing shall by any means hurt you.
+{% ct 'Luke 10:19' %}
+
+The counterfeit of faith is presumption, which tends to put God to the test under contrived and unnatural circumstances, often for selfish motives. Satan tempted Jesus to cast Himself down to prove His divinity by perverting a promise from {% rf 'Psalm 91:12' false %}, but this promise wasn not made for deliberate, voluntary, self-created dangers. Even though Jesus gave His disciples power over serpents and scorpions, they were not supposed to go looking for them intentionally to prove their faith.
 
 ## How do I overcome?
 

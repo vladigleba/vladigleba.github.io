@@ -1,7 +1,7 @@
 ---
 title: Finances, God’s Way
 description: Financial investment advice in the Bible? Discover God’s plan for managing our finances wisely.
-color: rgb(201,117,138)
+color: rgb(38, 105, 133)
 date: 2025-02-05
 ---
 

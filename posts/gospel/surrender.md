@@ -1,9 +1,8 @@
 ---
 title: Surrendering the Fight
 description: Knowingly or unknowingly, every person on earth is waging a losing war, and surrender is the only way out.
-color: rgb(143,102,126)
 date: 2025-01-09
-series: Salvation
+series: salvation
 ---
 
 ## What is the war of all wars?

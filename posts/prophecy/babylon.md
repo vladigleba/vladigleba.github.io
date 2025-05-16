@@ -1,9 +1,8 @@
 ---
 title: Are You Part of Babylon?
 description: Revelation warns about it, and the plagues are poured out on it. What does Babylon represent?
-color: rgb(170,104,150)
 date: 2025-01-30
-series: Babylon
+series: babylon
 ---
 
 ## What is the origin of Babylon?

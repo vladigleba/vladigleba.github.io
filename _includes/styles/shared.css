@@ -1,7 +1,12 @@
 .meta span,
 .list p span {
-  margin-left: 3px;
-  margin-right: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+li.series .tag,
+article > header .tag span {
+  border-radius: 5px;
 }
 
 article,

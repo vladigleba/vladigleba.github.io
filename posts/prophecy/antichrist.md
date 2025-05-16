@@ -1,9 +1,8 @@
 ---
 title: Who Is the Antichrist?
 description: Discover the truth about the entity that places itself in place of, and in opposition to, Christ Himself.
-color: rgb(33,153,163)
 date: 2025-01-27
-series: Antichrist
+series: antichrist
 ---
 
 ## What does Daniel see coming up out of the sea?

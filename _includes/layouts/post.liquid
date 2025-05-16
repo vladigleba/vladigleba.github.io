@@ -2,10 +2,14 @@
 layout: layouts/base
 ---
 
+{% if series %} 
+  {% assign color = series-names[series]["color"] %}
+{% endif %}
+
 <style>
   .main-nav, .main-nav li:hover { color: white; }
-  header h1, main > h2 { color: {{ color }}; }
-  header, .main-nav, .main-nav ul/*, body > footer */ { background-color: {{ color }}; }
+  header h1, main > h2, .tag span { color: {{ color }}; }
+  header, .main-nav, .main-nav ul { background-color: {{ color }}; }
   /*blockquote p,*/ .toc li.active { border-left: 3px solid {{ color }}; }
 </style>
 
@@ -14,16 +18,16 @@ layout: layouts/base
     <div>
       <h1 class="title">{{ title }}</h1>
       <p class="description">{{ description }}</p>
-      <p class="meta">
-        {{ category }} <span>•</span> {{ length }} min read
-
-        {% if series %} 
-          <span>•</span> “{{ series-names[series] }}” Series 
-          <span>•</span> Part {{ seriesInfo.current }} of {{ seriesInfo.total }}
-        {% endif %}
+      <p class="meta tag">
+        <span>{{ category }}</span>
+        <span>{{ length }} min read</span>
       </p>
+      {% if series %} 
+        <p class="meta series">
+          “{{ series-names[series]["title"] }}” Series <span>•</span> 
+          Part {{ seriesInfo.current }} of {{ seriesInfo.total }}
+        </p>
 
-      {% if series %}
         {% render "layouts/series-header", series: seriesInfo %}
       {% endif %}
     </div>
@@ -31,7 +35,6 @@ layout: layouts/base
 
   <div class="wrapper">
     {% render "layouts/toc" %}
-
     <main>
       {{ content }}
       

@@ -1,9 +1,8 @@
 ---
 title: God’s Law Changed
 description: The Bible prophesied a power would arise that would attempt to change God’s law. Has this happened?
-color: rgb(57,96,136)
 date: 2025-01-20
-series: Sunday
+series: sunday
 ---
 
 ## Where is truth found?
@@ -11,7 +10,7 @@ series: Sunday
 > Sanctify them through thy truth: *thy word is truth*.
 {% ct 'John 17:17' %}
 
-Truth is revealed in the Bible, the Word of God (see [“Can I Trust the Bible?](/posts/basics/bible.md)).
+Truth is revealed in the Bible, the Word of God (see [“Can I Trust the Bible?”](/posts/basics/bible.md)).
 
 ## What advice does the Bible give regarding truth?
 
@@ -87,7 +86,9 @@ Daniel prophesied a power would arise that would magnify itself even against God
 > And he shall *speak great words against the most High*, and shall *wear out the saints* of the most High, and *think to change times and laws*: and they shall be given into his hand until a time and times and the dividing of time.
 {% ct 'Daniel 7:25' %}
 
-This is an echo of Paul’s warning about men arising “speaking perverse things.” Again, here’s a power that would challenge God’s authority, persecute His followers, and change times and laws. There is only one commandment that is both a time and a law: the fourth one. The first seeds for its change were planted during Constantine’s conversion to Christianity in 312 A.D. when he passed a law declaring Sunday, which was the pagan day of sun worship, as the day of rest across the Roman Empire. That seed took root in 363 A.D. when the Council of Laodicea urged Christians to keep Sunday as their rest day, while prohibiting them from resting on Saturday, the seventh day Sabbath, and the rest is history.
+This is an echo of Paul’s warning about men arising “speaking perverse things.” Again, here’s a power that would challenge God’s authority, persecute His followers, and change times and laws (see ["Who Is the Antichrist?"](./antichrist.md)). There is only one commandment that is both a time and a law: the fourth one. 
+
+The first seeds for its change were planted during Constantine’s conversion to Christianity in 312 A.D. when he passed a law declaring Sunday, which was the pagan day of sun worship, as the day of rest across the Roman Empire. That seed took root in 363 A.D. when the Council of Laodicea urged Christians to keep Sunday as their rest day, while prohibiting them from resting on Saturday, the seventh day Sabbath. Thus, the fourth commandment of God was changed&mdash;from honoring the seventh-day Sabbath established at creation to honoring Sunday&mdash;and the rest is history (see ["The Mark of the Beast"](./mark.md)).
 
 ## Did Jesus warn about this?
 
@@ -95,6 +96,13 @@ This is an echo of Paul’s warning about men arising “speaking perverse thing
 {% ct 'Matthew 15:6-9' %}
 
 The elevation of human-made commandments and tradition above the truth of the Bible was already a problem in Jesus’ time, and He warned against such hypocrisy.
+
+## How many lawgivers are there?
+
+> There is *one lawgiver*, who is able to save and to destroy: who art thou that judgest another?
+{% ct 'James 4:12' %}
+
+There is only one Lawgiver&mdash;God; however, as we have seen, there is a second entity claiming to be a lawgiver. Jesus warned, "And fear not them which kill the body, but are not able to kill the soul: but rather fear him [God] which is able to destroy both soul and body in hell" {% rf 'Matthew 10:28' %}. One can kill the body, but the Other has power to raise it from the dead {% rf '1 Thessalonians 4:16; 1 Corinthians 15:52' %}. Whom would you rather obey?
 
 ## What role will the law play in the last days?
 
@@ -104,11 +112,12 @@ The elevation of human-made commandments and tradition above the truth of the Bi
 > Bind up the testimony, *seal the law* among my disciples.
 {% ct 'Isaiah 8:16' %}
 
-In the last days there will be a sealing of God’s people in their foreheads, and Isaiah says it’s the law that’s sealed among His people. The sealing of the law in the forehead is God’s people making an unwavering decision in their mind to honor the authority of God’s law in their life as supreme and above the laws of men, no matter the cost.
+In the last days there will be a sealing of God’s people in their foreheads, and Isaiah says it’s the law that’s sealed among His people. This sealing of the law in the forehead is God’s people making an unwavering decision in their mind to honor the authority of God’s law in their life as supreme and above the laws of men, no matter the cost.
+
 
 ## What is said about the saints?
 
 > Saying with a loud voice, Fear God, and give glory to him; for the hour of his judgment is come: and *worship him that made heaven, and earth, and the sea, and the fountains of waters*. ... Here is the patience of the saints: here are *they that keep the commandments of God, and the faith of Jesus*.
 {% ct 'Revelation 14:7, 12' %}
 
-There will be a call in the last days to worship God, the Creator of the universe, which implies there will be another power vying to be worshiped as well. This call is a reference to the last part of the fourth commandment where keeping the Sabbath is identified as a sign and an acknowledgment that God is the Creator of all. Could the worship of God by keeping His seventh day Sabbath constitute the seal of God in the last days? Verse 12 leaves no room for doubt when it says the saints will be keeping the faith of Jesus, who kept the seventh day Sabbath, and the commandments of God, which include the fourth. May we be found faithful in our stand for Jesus.
+There will be a call in the last days to worship God, the Creator of the universe, which implies there will be another power vying to be worshiped as well. This call is a reference to the last part of the fourth commandment where keeping the Sabbath is identified as a sign and an acknowledgment that God is the Creator of all. Could the worship of God by keeping His seventh day Sabbath constitute the seal of God in the last days? Verse 12 leaves no room for doubt when it says the saints will be keeping the commandments of God and the faith of Jesus, who Himself kept the commandments, including the fourth (see ["God's Rest Day"](../basics/sabbath.md#did-jesus-keep-the-sabbath)). May we be found faithful in our stand for Jesus.
