@@ -65,7 +65,7 @@ Daniel, after a lifetime of following God, included himself in the sins of his p
 
 Today, there is so much emphasis on our identity as sons and daughters of God that calling oneself a sinner is almost viewed as heresy or a perversion of the gospel, but Paul and Daniel would beg to differ. It is true that *in* Christ we are children of God, but let us not forget who we are *apart* from Christ, so we never lose sight of our need to continually cling to Him {% rf '1 Corinthians 10:12' %}; otherwise, we risk adopting the Pharisaic mindset&mdash;that being God's children we no longer have a need of repentance {% rf '1 John 5:8' %}.
 
-## What is one of the keys to effective prayer?
+## Anything else regarding heart posture?
 
 > And this is the confidence that we have in him, that, *if we ask any thing according to his will*, he heareth us: And if we know that he hear us, whatsoever we ask, we know that we have the petitions that we desired of him.
 {% ct '1 John 5:14, 15' %}
@@ -115,7 +115,7 @@ One author shared the following insight on praying Jesus' model prayer:
 
 Besides praying for His glory, His kingdom, and His will, God also cares about our personal lives and invites us to bring to Him anything that causes worry, trouble, or heaviness in our hearts. He is our loving heavenly Father who is deeply interested in the burdens we carry, and He wants to help!
 
-## What does the Bible teach about intercessory prayer?
+## What about intercessory prayer?
 
 > Praying always with all prayer and supplication in the Spirit, and watching thereunto *with all perseverance and supplication for all saints*.
 {% ct 'Ephesians 6:18' %}
@@ -169,7 +169,7 @@ But what if our faith is weak? The Bible tells us that:
 
 So why is faith so important to God? Well, it's the foundation of our relationship with Him. There is nothing more pleasing to a father than a child coming to him in confidence, full of trust in his love and power. Our heavenly Father delights when we come to Him in prayer, trusting that He will hear and answer our requests in His time and way. (For a more detailed study on faith, see [“Walking in Faith”](../gospel/faith.md).)
 
-## What is the third component?
+## What is the third step?
 
 > Then they took away the stone from the place where the dead was laid. And Jesus lifted up his eyes, and said, Father, *I thank thee that thou hast heard me*. And I knew that thou hearest me always: but because of the people which stand by I said it, that they may believe that thou hast sent me. And when he thus had spoken, he cried with a loud voice, Lazarus, come forth. And he that was dead came forth...
 {% ct 'John 11:41-44' %}
@@ -279,9 +279,9 @@ The best places for prayer are quiet and free from distractions, allowing us to 
 > Confess your faults one to another, and pray one for another, that ye may be healed. The *effectual fervent prayer* of a righteous man availeth much.
 {% ct 'James 5:16' %}
 
-Jesus associated the repetition of words and phrases with paganism {% rf 'Acts 19:34; 1 Kings 18:26' %}, thereby making it clear that such practices have no place in the life of a Christian. The same is true of "breath prayers" and the popular practice of "entering the silence," which often involves emptying the mind, meaning the reasoning faculties are effectively disengaged, which is one of the quickest ways to enter an altered state of consciousness. Such practices often lead to mysticism and open the door to the influence of malevolent spiritual powers. (For more information, see Howard Peth's book *The Dangers of Contemplative Prayer*.)
+Jesus associated the repetition of words and phrases with paganism {% rf 'Acts 19:34; 1 Kings 18:26' %}, thereby making it clear that such practices have no place in the life of a Christian. The same is true of "breath prayers" and the popular practice of "entering the silence," which often involves emptying the mind&mdash;disengaging the reasoning faculties&mdash;which is one of the quickest ways to enter an altered state of consciousness. Such practices often lead to mysticism and can open the door to the influence of malevolent spiritual powers. (For more information, see Howard Peth's book *The Dangers of Contemplative Prayer*.)
 
-God desires that we be fully engaged when we speak with Him&mdash;as we would be when talking to a close friend&mdash;with our minds alert and our reasoning intact {% rf 'Isaiah 1:18' %}. Prayer should be fresh, fervent, and from the heart. If our hearts are not in it, we probably should not be praying it. Prayers that do not mean much to us are unlikely to mean much to God.
+God desires that we be fully engaged when we speak with Him&mdash;just as we would be when talking to a close friend&mdash;with our minds alert and our reasoning intact {% rf 'Isaiah 1:18' %}. Prayer should be fresh, fervent, and from the heart. If our hearts are not in it, we probably should not be praying it. Prayers that do not mean much to us are unlikely to mean much to God.
 
 ## Is praying aloud a good idea?
 
@@ -291,15 +291,15 @@ God desires that we be fully engaged when we speak with Him&mdash;as we would be
 > And he went a little further, and fell on his face, and prayed, *saying*, O my Father, if it be possible, let this cup pass from me: nevertheless not as I will, but as thou wilt.
 {% ct 'Matthew 26:39' %}
 
-Jesus often prayed aloud, even in His personal prayers; otherwise, they wouldn't have been heard by His disciples and later written down for us. Praying aloud helps us stay more focused and engaged, much like we would be when talking to a friend, but, of course, make sure only God can hear you.
+Jesus often prayed aloud, even in His personal prayers&mdash;otherwise, His disciples wouldn't have heard them and recorded them for us. Praying aloud helps us stay more focused and engaged; however, we should be careful to maintain our privacy, ensuring that only God can hear us.
 
 ## What is the PRAY acronym?
 
-PRAY is an easy to remember acronym that can bring structure to our prayers. It stands for the following:
-- *Praise*: acknowledging God's goodness
-- *Repent*: confessing sins He has convicted us about
-- *Ask*: presenting our requests to Him and interceding for others 
-- *Yield*: surrendering ourselves to Him in faith, whether it be our will, mind, heart, body, plans, abilities, or resources
+PRAY is an easy-to-remember acronym that can bring structure to our prayers. It stands for:
+- *Praise* - acknowledging God's goodness.
+- *Repent* - confessing sins He has convicted us about.
+- *Ask* - presenting our requests to Him and interceding for others.
+- *Yield* - surrendering ourselves to Him in faith&mdash;our will, mind, heart, body, plans, abilities, and resources.
 
 ## Should I document God's answers?
 
@@ -309,4 +309,4 @@ PRAY is an easy to remember acronym that can bring structure to our prayers. It 
 > *Remember his marvellous works that he hath done*, His wonders, and the judgments of his mouth.
 {% ct '1 Chronicles 16:12' %}
 
-Because it's easy to forget the way God has answered our prayers in the past, it's wise to write it down and revisit it from time to time. Rehearsing His blessings will do wonders to strength our faith in Him.
+Because it's easy to forget how God has answered our prayers in the past, it's wise to write them down and revisit them from time to time. Rehearsing His blessings will do wonders to strengthen our faith in Him.
