@@ -129,7 +129,7 @@ Sin leads to separation from the Giver of life, which leads to death.
 
 Ever since the fall, the human race no longer has true freedom and has become a slave to sin and, ultimately, to death.
 
-## Is there any hope of escaping the power of death?
+## Is there hope of escaping the power of death?
 
 > And I will put enmity between you and the woman, and between your seed and her Seed; *He shall bruise your head*, and you shall bruise His heel.
 {% ct 'Genesis 3:15, NKJV' %}

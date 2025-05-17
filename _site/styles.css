@@ -176,6 +176,7 @@ body > footer div {
 li.series .tag,
 article > header .tag span {
   border-radius: 5px;
+  line-height: 1;
 }
 
 article,
@@ -271,7 +272,6 @@ li.series .tag {
   padding: 3px 10px;
   background-color: rgb(245, 231, 140, 0.75); /* rgb(219, 51, 52, 0.75); */
   color: black;
-  line-height: 1;
 }
 
 .list a {
