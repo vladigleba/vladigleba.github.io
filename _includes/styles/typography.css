@@ -20,8 +20,11 @@ main > h2 {
   font-size: 25px;
 }
 
-article > header p,
 .main-nav ul {
+  font-size: 24px;
+}
+
+article > header p {
   font-size: 23px;
   line-height: 1.3;
 }

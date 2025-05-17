@@ -86,10 +86,6 @@
     column-gap: 20px;
     grid-template-columns: repeat(auto-fit, 354px);
   }
-
-  .list li {
-    padding: 3px;
-  }
 }
 
 /* Tablets and smaller screens */
@@ -98,10 +94,6 @@
   article > header > div,
   body > footer div {
     width: 85%;
-  }
-
-  .main-nav li {
-    padding: 4px 8px 2px;
   }
 
   article > header {
@@ -130,7 +122,7 @@
   }
 
   .main-nav ul {
-    font-size: 22px;
+    font-size: 21px;
   }
 
   .banner p,
@@ -157,11 +149,7 @@
     padding: 0 10px;
     column-gap: 10px;
     grid-template-columns: repeat(auto-fit, 320px);
-    grid-auto-rows: 80px;
-  }
-
-  .list li {
-    padding: 0;
+    grid-auto-rows: 125px;
   }
 
   .list a {
@@ -174,6 +162,10 @@
 
   li.series .tag {
     font-size: 13px;
+  }
+
+  body > footer {
+    font-size: 15px;
   }
 }
 
@@ -189,6 +181,6 @@
 /* Small phones */
 @media (max-width: 480px) {
   .main-nav li {
-    padding: 4px 5px 2px;
+    padding: 6px 5px 3px;
   }
 }

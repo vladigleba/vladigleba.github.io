@@ -73,8 +73,11 @@ main > h2 {
   font-size: 25px;
 }
 
-article > header p,
 .main-nav ul {
+  font-size: 24px;
+}
+
+article > header p {
   font-size: 23px;
   line-height: 1.3;
 }
@@ -230,7 +233,7 @@ th, td {
   display: grid;
   column-gap: 40px;
   grid-template-columns: repeat(auto-fit, 390px);
-  grid-auto-rows: 85px;
+  grid-auto-rows: 135px;
   grid-auto-flow: dense;
   justify-content: center;
   text-align: center;
@@ -243,25 +246,22 @@ th, td {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   color: var(--gray-color);
 }
 
 li.featured {
-  grid-row: auto / span 3;
+  grid-row: auto / span 2;
   background-color: #f9f9f9;
   border-radius: 10px;
   text-align: center;
+  justify-content: center;
 }
 
 li.featured .description {
   color: black;
   font-weight: 500;
   margin-top: 20px;
-}
-
-li.series {
-  grid-row: auto / span 2;
 }
 
 li.series .tag {
@@ -323,7 +323,7 @@ article > header .description {
 
 article > header .tag span {
   background-color: white;
-  padding: 0 10px;
+  padding: 0 10px 0.5px;
   margin-left: 0;
 }
 
@@ -598,10 +598,6 @@ sup {
     column-gap: 20px;
     grid-template-columns: repeat(auto-fit, 354px);
   }
-
-  .list li {
-    padding: 3px;
-  }
 }
 
 /* Tablets and smaller screens */
@@ -610,10 +606,6 @@ sup {
   article > header > div,
   body > footer div {
     width: 85%;
-  }
-
-  .main-nav li {
-    padding: 4px 8px 2px;
   }
 
   article > header {
@@ -642,7 +634,7 @@ sup {
   }
 
   .main-nav ul {
-    font-size: 22px;
+    font-size: 21px;
   }
 
   .banner p,
@@ -669,11 +661,7 @@ sup {
     padding: 0 10px;
     column-gap: 10px;
     grid-template-columns: repeat(auto-fit, 320px);
-    grid-auto-rows: 80px;
-  }
-
-  .list li {
-    padding: 0;
+    grid-auto-rows: 125px;
   }
 
   .list a {
@@ -686,6 +674,10 @@ sup {
 
   li.series .tag {
     font-size: 13px;
+  }
+
+  body > footer {
+    font-size: 15px;
   }
 }
 
@@ -701,6 +693,6 @@ sup {
 /* Small phones */
 @media (max-width: 480px) {
   .main-nav li {
-    padding: 4px 5px 2px;
+    padding: 6px 5px 3px;
   }
 }

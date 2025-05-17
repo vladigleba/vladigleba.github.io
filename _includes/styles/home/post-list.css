@@ -4,7 +4,7 @@
   display: grid;
   column-gap: 40px;
   grid-template-columns: repeat(auto-fit, 390px);
-  grid-auto-rows: 85px;
+  grid-auto-rows: 135px;
   grid-auto-flow: dense;
   justify-content: center;
   text-align: center;
@@ -17,25 +17,22 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   color: var(--gray-color);
 }
 
 li.featured {
-  grid-row: auto / span 3;
+  grid-row: auto / span 2;
   background-color: #f9f9f9;
   border-radius: 10px;
   text-align: center;
+  justify-content: center;
 }
 
 li.featured .description {
   color: black;
   font-weight: 500;
   margin-top: 20px;
-}
-
-li.series {
-  grid-row: auto / span 2;
 }
 
 li.series .tag {
