@@ -8,8 +8,7 @@ const { InputPathToUrlTransformPlugin } = require('@11ty/eleventy');
 const seriesNames = require('./_data/series-names.json');
 
 module.exports = async (config) => {
-  const md = markdownIt({ html: true, linkify: true })
-    .use(markdownItFootnote);
+  const md = markdownIt({ html: true, linkify: true }).use(markdownItFootnote);
   config.setLibrary('md', md);
 
   // plugins
