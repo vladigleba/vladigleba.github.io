@@ -20,7 +20,7 @@ featured: true
 > Who his own self bare our sins in his own body on the tree, that we, *being dead to sins, should live unto righteousness*: by whose stripes ye were healed.
 {% ct '1 Peter 2:24' %}
 
-Before sin entered the world, Adam and Eve communicated with God face to face. Once they allowed sin to enter their hearts, it separated them from their Creator because sin cannot exist in the presence of a holy God&mdash;His presence is a consuming fire to those who cherish sin {% rf 'Deuteronomy 4:24' %}. The Father then sent His Son not only to pay the penalty for sin on our behalf, but also to save us from our sins. He wants to forgive and cleanse us from any and all unrighteousness so that we may be dead to sin and alive to righteousness!
+Before sin entered the world, Adam and Eve communicated with God face to face. Once they allowed sin to enter their hearts, it separated them from their Creator because sin cannot exist in the presence of a holy God—His presence is a consuming fire to those who cherish sin {% rf 'Deuteronomy 4:24' %}. The Father then sent His Son not only to pay the penalty for sin on our behalf, but also to save us from our sins. He wants to forgive and cleanse us from any and all unrighteousness so that we may be dead to sin and alive to righteousness!
 
 ## What is the first step to victory over sin?
 

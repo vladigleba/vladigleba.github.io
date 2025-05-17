@@ -76,7 +76,7 @@ Because heaven is a place where righteousness dwells, any person who clings to s
 > He that is unjust, let him be unjust still: and *he which is filthy, let him be filthy still: and he that is righteous, let him be righteous still*: and he that is holy, let him be holy still. And, behold, I come quickly; and my reward is with me, to give every man according as his work shall be.
 {% ct 'Revelation 22:11, 12' %}
 
-When Jesus returns there will be only two groups of people&mdash;the saved and the lost. It will also be too late to change sides because He returns with His reward, meaning the judgment has already happened and every person’s case has been decided.
+When Jesus returns there will be only two groups of people—the saved and the lost. It will also be too late to change sides because He returns with His reward, meaning the judgment has already happened and every person’s case has been decided.
 
 ## How does Revelation portray Jesus when He returns?
 

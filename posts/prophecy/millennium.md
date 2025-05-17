@@ -81,7 +81,7 @@ The angels under Satan’s command whom he managed to deceive in heaven and pers
 > And the *earth was without form, and void*; and *darkness* was upon the face of the deep.
 {% ct 'Genesis 1:2' %}
 
-The earthquake and hailstorm at Jesus’ second coming will return the earth to its original state&mdash;a dark and disorganized place unsuitable for life.
+The earthquake and hailstorm at Jesus’ second coming will return the earth to its original state—a dark and disorganized place unsuitable for life.
 
 ## What do the saved do in heaven?
 

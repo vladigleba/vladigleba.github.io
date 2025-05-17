@@ -17,7 +17,7 @@ Faith is what reaches out and grasps things not seen that are backed up by evide
 > But without faith it is impossible to please him: for *he that cometh to God must believe that he is*, and *that he is a rewarder of them that diligently seek him*.
 {% ct 'Hebrews 11:6' %}
 
-Faith is the means by which my journey with Jesus starts. It is the hand of faith that reaches out to grasp the outstretched hand of God. He is always ready and eager to help those who come to Him, but I must first believe in Him and His goodness. This faith is based on plentiful evidence, but the evidence does not remove the need for faith altogether. There will always be room for doubt for those who want to doubt simply because the finite human mind cannot fully grasp an everlasting, infinite God. Thus the need for faith: God said it&mdash;I believe it.
+Faith is the means by which my journey with Jesus starts. It is the hand of faith that reaches out to grasp the outstretched hand of God. He is always ready and eager to help those who come to Him, but I must first believe in Him and His goodness. This faith is based on plentiful evidence, but the evidence does not remove the need for faith altogether. There will always be room for doubt for those who want to doubt simply because the finite human mind cannot fully grasp an everlasting, infinite God. Thus the need for faith: God said it—I believe it.
 
 ## How many have faith?
 
@@ -47,7 +47,7 @@ Even if my faith is weak and small as a tiny seed, I can exercise the faith that
 > Another parable put he forth unto them, saying, The kingdom of heaven is *like to a grain of mustard seed*, which a man took, and sowed in his field: which indeed is the least of all seeds: but *when it is grown, it is the greatest among herbs, and becometh a tree*, so that the birds of the air come and lodge in the branches thereof.
 {% ct 'Matthew 13:31, 32' %}
 
-Faith is primarily based on the evidence of truth revealed in the Word of God, the Bible. Like a seed that is watered by the rain, faith grows whenever it is watered with the truth of His Word and that truth is then internalized&mdash;received and allowed to take root in the heart. With my cooperation, God can take the small seed of faith and make it grow into a tall tree.
+Faith is primarily based on the evidence of truth revealed in the Word of God, the Bible. Like a seed that is watered by the rain, faith grows whenever it is watered with the truth of His Word and that truth is then internalized—received and allowed to take root in the heart. With my cooperation, God can take the small seed of faith and make it grow into a tall tree.
 
 ## What role does faith have in prayer?
 

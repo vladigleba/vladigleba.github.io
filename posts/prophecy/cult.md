@@ -50,7 +50,7 @@ Revelation 6 outlines the history of God’s church with four symbolic horses. I
 
 - *Black horse:* The third horse is black, and since it’s the opposite of white (purity), it represents corruption. This period lasted from A.D. 313 to A.D. 538. It was a time when Christianity was accepted by the state, which led to the introduction of various false, pagan doctrines and practices that ended up corrupting the church. The pair of scales in the rider’s hand represent judgment {% rf 'Daniel 5:24-28' %}.
 
-- *Pale horse:* The fourth and final horse is pale (near death), and the rider is called Death. This can only point to the period of the Dark Ages when Satan tried to extinguish the truths taught by Jesus and recorded in His Word {% rf 'Acts 20:28-30; 2 Thessalonians 2:1-10' %}. This phase spans from A.D. 538 to 1517&mdash;the start of the Reformation.
+- *Pale horse:* The fourth and final horse is pale (near death), and the rider is called Death. This can only point to the period of the Dark Ages when Satan tried to extinguish the truths taught by Jesus and recorded in His Word {% rf 'Acts 20:28-30; 2 Thessalonians 2:1-10' %}. This phase spans from A.D. 538 to 1517—the start of the Reformation.
 
 ## What else does the Bible say about this last period?
 
@@ -103,7 +103,7 @@ Cults will often pressure their members in order to coerce them into submission.
 > Beware lest any man spoil you through philosophy and vain deceit, after the tradition of men, after the rudiments of the world, and not after Christ. *For in him dwelleth all the fulness of the Godhead bodily*.
 {% ct 'Colossians 2:8, 9' %}
 
-The fourth identifier of cults is their denial that Jesus is the divine Son of God&mdash;a central truth of the plan of salvation. The Bible plainly teaches that salvation is a gift from God {% rf 'Ephesians 2:8' %} since God the Father gave His Son {% rf 'John 3:16' %}, and God the Son gave Himself, of His own free will {% rf 'John 10:17, 18' %}, on the cross for humanity. Incidentally, this denial of Christ’s divinity is almost a necessity as it opens the way for a human being to become the cult’s Messiah-like leader.
+The fourth identifier of cults is their denial that Jesus is the divine Son of God—a central truth of the plan of salvation. The Bible plainly teaches that salvation is a gift from God {% rf 'Ephesians 2:8' %} since God the Father gave His Son {% rf 'John 3:16' %}, and God the Son gave Himself, of His own free will {% rf 'John 10:17, 18' %}, on the cross for humanity. Incidentally, this denial of Christ’s divinity is almost a necessity as it opens the way for a human being to become the cult’s Messiah-like leader.
 
 ## What is the final identifier?
 

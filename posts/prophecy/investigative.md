@@ -110,7 +110,7 @@ Once Jesus died and ascended to heaven, His earthly ministry ended, but He confi
 > For he is not a Jew, which is one outwardly; neither is that circumcision, which is outward in the flesh: But *he is a Jew, which is one inwardly; and circumcision is that of the heart*, in the spirit, and not in the letter; whose praise is not of men, but of God.
 {% ct 'Romans 2:28, 29' %}
 
-God’s people are now those of any nation who choose to accept and serve Him, becoming spiritual Jews&mdash;spiritual descendants of Abraham, fulfilling the promise God gave to Abraham that in him all the families of the earth would be blessed {% rf 'Genesis 12:1-3' %}. But, of course, spiritual Jews also include any Jewish person who individually accepts Jesus as Lord and Savior.
+God’s people are now those of any nation who choose to accept and serve Him, becoming spiritual Jews—spiritual descendants of Abraham, fulfilling the promise God gave to Abraham that in him all the families of the earth would be blessed {% rf 'Genesis 12:1-3' %}. But, of course, spiritual Jews also include any Jewish person who individually accepts Jesus as Lord and Savior.
 
 ## What happens at the end of the 2,300 year prophecy?
 
@@ -157,7 +157,7 @@ After Jesus takes the saved to heaven, they will participate in the second phase
 > But why dost thou judge thy brother? or why dost thou set at nought thy brother? for *we shall all stand before the judgment seat of Christ*. For it is written, As I live, saith the Lord, every knee shall bow to me, and every tongue shall confess to God. So then *every one of us shall give account of himself to God*.
 {% ct 'Romans 14:10-12' %}
 
-The third phase of the judgment is for the lost of all ages, and it takes place after the 1,000 years (see [“1,000 Years of Peace”](/posts/prophecy/millennium.md#what-happens-at-the-end-of-the-1000-years)). Every lost soul will look back on his or her life and remember God’s patient calls to repentance&mdash;the numerous convictions of the Holy Spirit that were repeatedly refused. The books will be opened and God’s attempts to save every person will be made plain. The lost will understand that God did everything He could to save them, and every person will fall on their knees, including Satan and his angels, in confession that God has been just and fair in His dealing with every soul {% rf 'Philippians 2:10, 11; Romans 14:11' %}. The lost will realize they can only blame their own resistance to God’s pleadings of mercy {% rf 'Hosea 13:9' %}, and they acknowledge His love, mercy, and justice, clearing Him of all false accusations.
+The third phase of the judgment is for the lost of all ages, and it takes place after the 1,000 years (see [“1,000 Years of Peace”](/posts/prophecy/millennium.md#what-happens-at-the-end-of-the-1000-years)). Every lost soul will look back on his or her life and remember God’s patient calls to repentance—the numerous convictions of the Holy Spirit that were repeatedly refused. The books will be opened and God’s attempts to save every person will be made plain. The lost will understand that God did everything He could to save them, and every person will fall on their knees, including Satan and his angels, in confession that God has been just and fair in His dealing with every soul {% rf 'Philippians 2:10, 11; Romans 14:11' %}. The lost will realize they can only blame their own resistance to God’s pleadings of mercy {% rf 'Hosea 13:9' %}, and they acknowledge His love, mercy, and justice, clearing Him of all false accusations.
 
 ## What happens next?
 

@@ -26,7 +26,7 @@ The Holy Spirit is part of the Godhead, also referred to as the Trinity, that co
 > And he that searcheth the hearts knoweth what is the *mind of the Spirit*, because he maketh intercession for the saints according to the will of God.
 {% ct 'Romans 8:27' %}
 
-Peter made it clear that the Holy Spirit is not only God, but He can also be lied to, which means He’s a Person with a personality, not an impersonal “force.” Paul confirmed this when he stated that the Spirit has a mind. Jesus, also, referred to the Spirit as “He”&mdash;an individual Being who works in harmony with the Godhead.
+Peter made it clear that the Holy Spirit is not only God, but He can also be lied to, which means He’s a Person with a personality, not an impersonal “force.” Paul confirmed this when he stated that the Spirit has a mind. Jesus, also, referred to the Spirit as “He”—an individual Being who works in harmony with the Godhead.
 
 ## What did Jesus promise before His ascension?
 
@@ -87,7 +87,7 @@ God wants us to be filled, or baptized, with the Holy Spirit. The word “filled
 > *Let this mind be in you*, which was also in Christ Jesus.
 {% ct 'Philippians 2:5' %}
 
-All I need to do to receive the Holy Spirit is ask God for it! He wants to bestow the Holy Spirit on all, but He will not do it against anyone’s will, which is why I need to ask. Asking only comes after there’s been a realization of my need of the Spirit, which means there is a heart that’s surrendered to God, dead to self, willing to receive. Paul uses the word “let” to describe the process of receiving the mind of Christ, meaning there is a willingness to yield&mdash;to surrender&mdash;to the sanctifying work of the Holy Spirit. And it truly is His work, not ours, because we cannot change ourselves, but we must be willing to cooperate with Him.
+All I need to do to receive the Holy Spirit is ask God for it! He wants to bestow the Holy Spirit on all, but He will not do it against anyone’s will, which is why I need to ask. Asking only comes after there’s been a realization of my need of the Spirit, which means there is a heart that’s surrendered to God, dead to self, willing to receive. Paul uses the word “let” to describe the process of receiving the mind of Christ, meaning there is a willingness to yield—to surrender—to the sanctifying work of the Holy Spirit. And it truly is His work, not ours, because we cannot change ourselves, but we must be willing to cooperate with Him.
 
 ## What happens when one is filled with the Spirit?
 

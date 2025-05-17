@@ -49,7 +49,7 @@ When a person dies, the body returns to dust, and the spirit returns to God.
 > For as *the body without the spirit is dead*, so faith without works is dead also.
 {% ct 'James 2:26' %}
 
-The spirit that returns to God is simply the breath of life, without which the body dies. In other words, the process described in {% rf 'Ecclesiastes 12:7' false %} is the opposite of what happened in {% rf 'Genesis 2:7' false %}. If a soul is a combination of two things&mdash;the body and the breath of life (spirit)&mdash;then the soul ceases to exist when the body returns to dust and the breath returns to God. The soul does not go anywhere; it simply ceases to exist. As an illustration, consider what is needed for light: there needs to be an electrical current and a bulb. As soon as the electrical current is turned off, the light simply ceases to exist. It is the same with the soul.
+The spirit that returns to God is simply the breath of life, without which the body dies. In other words, the process described in {% rf 'Ecclesiastes 12:7' false %} is the opposite of what happened in {% rf 'Genesis 2:7' false %}. If a soul is a combination of two things—the body and the breath of life (spirit)—then the soul ceases to exist when the body returns to dust and the breath returns to God. The soul does not go anywhere; it simply ceases to exist. As an illustration, consider what is needed for light: there needs to be an electrical current and a bulb. As soon as the electrical current is turned off, the light simply ceases to exist. It is the same with the soul.
 
 ## What else does the Bible about the soul?
 
@@ -130,7 +130,7 @@ Because Jesus, His Redeemer, conquered death, Job will one day be able to see Hi
 > Jesus saith unto her, Touch me not; for *I am not yet ascended to my Father*: but go to my brethren, and say unto them, I ascend unto my Father, and your Father; and to my God, and your God.
 {% ct 'John 20:17' %}
 
-Jesus could not have gone to heaven after His death because on Sunday morning He told Mary He hadn’t yet ascended to His Father. It’s a little know fact, but the original Bible text did not have any punctuation. It was added centuries later by translators who could have placed the comma before the word “today” due to their own beliefs about death. The better place for the comma would be after the word “today” because then it would be in harmony with all the other Bible texts regarding death. Jesus was promising the thief on the cross that day&mdash;when it did not look like He could save anyone&mdash;that he would be with Him in Paradise one day when He returns to take all of His children home to heaven.
+Jesus could not have gone to heaven after His death because on Sunday morning He told Mary He hadn’t yet ascended to His Father. It’s a little know fact, but the original Bible text did not have any punctuation. It was added centuries later by translators who could have placed the comma before the word “today” due to their own beliefs about death. The better place for the comma would be after the word “today” because then it would be in harmony with all the other Bible texts regarding death. Jesus was promising the thief on the cross that day—when it did not look like He could save anyone—that he would be with Him in Paradise one day when He returns to take all of His children home to heaven.
 
 ## Who did Saul see in Endor then?
 

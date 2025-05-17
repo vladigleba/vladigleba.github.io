@@ -59,7 +59,7 @@ In the Bible, the day does not actually start and end at midnight; it starts fro
 > If thou turn away thy foot from the sabbath, from doing thy pleasure on my holy day; and *call the sabbath a delight*, the holy of the LORD, honourable; and *shalt honour him, not doing thine own ways, nor finding thine own pleasure, nor speaking thine own words*: then shalt thou *delight thyself in the LORD*; and I will cause thee to ride upon the high places of the earth, and feed thee with the heritage of Jacob thy father: for the mouth of the LORD hath spoken it.
 {% ct 'Isaiah 58:13, 14' %}
 
-The Sabbath becomes a delight when it is centered around Jesus&mdash;when we put away our own pursuits and rest from the cares of life in order to focus on the eternal things of God. It’s a special day to reflect on, honor, and connect with Him. Simply put, it’s a day to delight in Him.
+The Sabbath becomes a delight when it is centered around Jesus—when we put away our own pursuits and rest from the cares of life in order to focus on the eternal things of God. It’s a special day to reflect on, honor, and connect with Him. Simply put, it’s a day to delight in Him.
 
 ## What can we learn from the experience of Nehemiah?
 

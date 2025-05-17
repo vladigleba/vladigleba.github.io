@@ -30,7 +30,7 @@ My body belongs to God because 1) He created it, and 2) He redeemed it at the cr
 > I beseech you therefore, brethren, by the mercies of God, *that ye present your bodies a living sacrifice, holy, acceptable unto God*, which is your reasonable service. And be not conformed to this world: but *be ye transformed by the renewing of your mind*, that ye may prove what is that good, and acceptable, and perfect, will of God.
 {% ct 'Romans 12:1, 2' %}
 
-God calls on me to present my body as a living and holy sacrifice to Him&mdash;my Maker and Redeemer. Then I am to be transformed by the renewing of my mind (note the tight connection between the body and mind). Once more, Jesus does not just want to forgive my sins; He wants to cleanse, heal, and restore His image in me by wholly transforming me!
+God calls on me to present my body as a living and holy sacrifice to Him—my Maker and Redeemer. Then I am to be transformed by the renewing of my mind (note the tight connection between the body and mind). Once more, Jesus does not just want to forgive my sins; He wants to cleanse, heal, and restore His image in me by wholly transforming me!
 
 ## In what things am I to bring God glory? How?
 

@@ -26,7 +26,7 @@ If God could save every single person, without infringing on their freedom to ch
 > Take heed unto yourselves, lest ye forget the covenant of the LORD your God, which he made with you, and make you a graven image, or the likeness of any thing, which the LORD thy God hath forbidden thee. *For the LORD thy God is a consuming fire*, even a jealous God.
 {% ct 'Deuteronomy 4:23, 24' %}
 
-God is love, but He is also holy. He loves the sinner and has made ample provision for salvation from sin, because sin, and anyone who chooses to cling to it, cannot exist in the presence of a holy God&mdash;He is a consuming fire to it.
+God is love, but He is also holy. He loves the sinner and has made ample provision for salvation from sin, because sin, and anyone who chooses to cling to it, cannot exist in the presence of a holy God—He is a consuming fire to it.
 
 ## What does the Bible say about the wicked?
 
@@ -39,7 +39,7 @@ God is love, but He is also holy. He loves the sinner and has made ample provisi
 > For, behold, *the day cometh, that shall burn as an oven; and all the proud, yea, and all that do wickedly, shall be stubble: and the day that cometh shall burn them up*, saith the LORD of hosts, that it shall leave them neither root nor branch. But unto you that fear my name shall the Sun of righteousness arise with healing in his wings; and ye shall go forth, and grow up as calves of the stall. And ye shall tread down the wicked; for they *shall be ashes* under the soles of your feet in the day that I shall do this, saith the LORD of hosts.
 {% ct 'Malachi 4:1-3' %}
 
-Because the wicked choose to cling to sin, which, at its core, is selfishness and in complete opposition to the government of love, God has no other choice but to destroy them. The Bible calls this a strange act because God has no pleasure in the death of the wicked; these are people for whom He died, but because they refuse to turn from their path of sin and destruction, He must respect their choice and leave them to its consequences so that the curse of sin&mdash;the misery, suffering, and ruin&mdash;can be finally blotted out. Note also that Malachi says the fire will burn them up and turn them into ashes, meaning they will not burn in hell forever.
+Because the wicked choose to cling to sin, which, at its core, is selfishness and in complete opposition to the government of love, God has no other choice but to destroy them. The Bible calls this a strange act because God has no pleasure in the death of the wicked; these are people for whom He died, but because they refuse to turn from their path of sin and destruction, He must respect their choice and leave them to its consequences so that the curse of sin—the misery, suffering, and ruin—can be finally blotted out. Note also that Malachi says the fire will burn them up and turn them into ashes, meaning they will not burn in hell forever.
 
 ## What does the Psalmist have to say?
 
@@ -59,7 +59,7 @@ These verses are clear that the wicked will cease to exist after the fire finish
 > And these shall go away into everlasting punishment: but the righteous into life eternal.
 {% ct 'Matthew 25:46' %}
 
-The word “everlasting” here refers to the eternal consequences of the punishment&mdash;it is final.
+The word “everlasting” here refers to the eternal consequences of the punishment—it is final.
 
 ## How is the fire of Sodom and Gomorrha described?
 
@@ -69,7 +69,7 @@ The word “everlasting” here refers to the eternal consequences of the punish
 > And *turning the cities of Sodom and Gomorrha into ashes* condemned them with an overthrow, making them an ensample unto those that after should live ungodly.
 {% ct '2 Peter 2:6' %}
 
-The fire that destroyed Sodom and Gomorrha was an eternal fire too, but, obviously, the cities are no longer burning. The Bible is referring to the eternal consequences of the fire, which turned the cities into ashes&mdash;never to exist again.
+The fire that destroyed Sodom and Gomorrha was an eternal fire too, but, obviously, the cities are no longer burning. The Bible is referring to the eternal consequences of the fire, which turned the cities into ashes—never to exist again.
 
 ## Doesn’t the Bible talk about unquenchable fire?
 

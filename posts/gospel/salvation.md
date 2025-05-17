@@ -57,7 +57,7 @@ God did not leave us in our sin, but promised us a path back to life and reconci
 > Jesus saith unto him, *I am the way, the truth, and the life*: no man cometh unto the Father, but by me. 
 {% ct 'John 14:6' %}
 
-There is only one road that leads to salvation from sin, and that road is Jesus. Any other way&mdash;and there are many&mdash;cannot save us. Many have wondered how Jesus can make such an exclusive claim, considering the number of religions in the world, but it's simple: Jesus is the only one who humbled Himself, came down from the glory of heaven, took on human nature, lived among His creation, and then died for their sins! No other religion has a god like that.
+There is only one road that leads to salvation from sin, and that road is Jesus. Any other way—and there are many—cannot save us. Many have wondered how Jesus can make such an exclusive claim, considering the number of religions in the world, but it's simple: Jesus is the only one who humbled Himself, came down from the glory of heaven, took on human nature, lived among His creation, and then died for their sins! No other religion has a god like that.
 
 ## How did Jesus redeem us from the condemnation of the law?
 
@@ -84,7 +84,7 @@ The penalty for sin is death, and Christ's death on the cross paid that penalty 
 > Let the wicked *forsake his way*, and the unrighteous man his thoughts: and let him return unto the LORD, and he will have mercy upon him; and to our God, for he will abundantly pardon. 
 {% ct 'Isaiah 55:7' %}
 
-Forsaking my way implies turning around and going in the opposite direction&mdash;from running away from God toward sin to running away from sin toward God. If I repent and have a desire to leave sin behind, the promise is I will receive forgiveness.
+Forsaking my way implies turning around and going in the opposite direction—from running away from God toward sin to running away from sin toward God. If I repent and have a desire to leave sin behind, the promise is I will receive forgiveness.
 
 ## Is there a sin too powerful for God?
 
@@ -107,7 +107,7 @@ Forsaking my way implies turning around and going in the opposite direction&mdas
 
 There is nothing I can do to earn salvation; it is a free gift that I receive by grace through faith in His love, His forgiveness, and His victory on the cross. The Protestant Reformation brought this marvelous truth to light after centuries of a counterfeit method of salvation focused on works. Sadly, however, Protestantism has begun to drift away from its original position.
 
-In 1999, the Catholic and Lutheran churches issued a *Joint Declaration on the Doctrine of Justification*, which includes this key statement: "By grace alone, in faith in Christ's saving work and not because of any merit on our part, we are accepted by God..." Note that "by grace alone" is not the same as "by faith alone." While it is true that we are saved by grace, that grace is appropriated by faith&mdash;without faith, there can be no grace. The joint statement elevates grace over faith, while the Bible emphasizes faith. This difference may not seem significant at first, but it becomes critical when viewed through the lens of Catholic teaching, which holds that the Church is the dispenser of grace from the treasury of merit, which includes not only Christ’s good works but also those of Mary and the saints.
+In 1999, the Catholic and Lutheran churches issued a *Joint Declaration on the Doctrine of Justification*, which includes this key statement: "By grace alone, in faith in Christ's saving work and not because of any merit on our part, we are accepted by God..." Note that "by grace alone" is not the same as "by faith alone." While it is true that we are saved by grace, that grace is appropriated by faith—without faith, there can be no grace. The joint statement elevates grace over faith, while the Bible emphasizes faith. This difference may not seem significant at first, but it becomes critical when viewed through the lens of Catholic teaching, which holds that the Church is the dispenser of grace from the treasury of merit, which includes not only Christ’s good works but also those of Mary and the saints.
 
 ## Am I saved by Christ's saving work?
 
@@ -120,7 +120,7 @@ In 1999, the Catholic and Lutheran churches issued a *Joint Declaration on the D
 > Whom God hath set forth to be *a propitiation through faith in his blood*, to declare his righteousness for the remission of sins that are past, through the forbearance of God.
 {% ct 'Romans 3:25' %}
 
-The Bible is clear that it is not Christ's works that save me, but His shed blood. In the *Joint Declaration*, the phrase "faith in Christ's saving work" refers to the treasury of merit, which the Church dispenses to atone for sin; however, the Bible teaches that without the shedding of *blood* there is no remission of sin. The truth is Christ died for each person individually {% rf 'Galatians 2:20' %}. His death paid the penalty for my sins&mdash;the penalty that I was supposed to pay&mdash;while His righteous life satisfies the claims of the law upon me, namely, perfect righteousness, which my life could never meet {% rf 'Romans 5:9, 10' %}.
+The Bible is clear that it is not Christ's works that save me, but His shed blood. In the *Joint Declaration*, the phrase "faith in Christ's saving work" refers to the treasury of merit, which the Church dispenses to atone for sin; however, the Bible teaches that without the shedding of *blood* there is no remission of sin. The truth is Christ died for each person individually {% rf 'Galatians 2:20' %}. His death paid the penalty for my sins—the penalty that I was supposed to pay—while His righteous life satisfies the claims of the law upon me, namely, perfect righteousness, which my life could never meet {% rf 'Romans 5:9, 10' %}.
 
 ## What happens once I accept God’s free gift?
 
@@ -152,7 +152,7 @@ Christ’s death on the cross restored the rift that occured between God and the
 > Behold, I stand at the door, and knock: *if any man hear my voice, and open the door*, I will come in to him, and will sup with him, and he with me. 
 {% ct 'Revelation 3:20' %}
 
-God’s way of salvation has always been about respecting freedom of choice. He gave Satan the option to rebel, and He did not immediately destroy him when he did. God permitted Adam and Eve to rebel too. Likewise, I am free to choose whether I want to serve Him or not. Jesus wants to save every person {% rf '1 Timothy 2:3, 4' %}&mdash;He wants me to choose Him&mdash;but He will not force Himself on anyone. In fact, this is a daily choice; I can choose, anytime, to leave Christ and go in another direction, which is why it’s imperative to reaffirm my decision and recommit myself to Him on a daily basis {% rf 'Luke 9:23' %}. Every single day is a gift from my Creator, and it’s my privilege to give it back to Him.
+God’s way of salvation has always been about respecting freedom of choice. He gave Satan the option to rebel, and He did not immediately destroy him when he did. God permitted Adam and Eve to rebel too. Likewise, I am free to choose whether I want to serve Him or not. Jesus wants to save every person {% rf '1 Timothy 2:3, 4' %}—He wants me to choose Him—but He will not force Himself on anyone. In fact, this is a daily choice; I can choose, anytime, to leave Christ and go in another direction, which is why it’s imperative to reaffirm my decision and recommit myself to Him on a daily basis {% rf 'Luke 9:23' %}. Every single day is a gift from my Creator, and it’s my privilege to give it back to Him.
 
 ## What does it mean to accept Jesus as Savior and as Lord?
 

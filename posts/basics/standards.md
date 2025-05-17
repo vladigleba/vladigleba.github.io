@@ -67,7 +67,7 @@ Living in a world of sin brings pressure to conform to its ways, to be squeezed 
 > But we all, with open face *beholding as in a glass the glory of the Lord, are changed into the same image from glory to glory*, even as by the Spirit of the Lord.
 {% ct '2 Corinthians 3:18' %}
 
-Thoughts turn into words, which turn into actions, which turn into habits, which become a part of character. Satan knows that we become what we repeatedly behold, which is why he has a myriad of ways to influence our thoughts through our five senses, but especially sight and hearing. Because we become what we see and hear, we are invited to behold the glory of God’s character by daily reading His letter to us&mdash;the Bible&mdash;so that we may become more like Him.
+Thoughts turn into words, which turn into actions, which turn into habits, which become a part of character. Satan knows that we become what we repeatedly behold, which is why he has a myriad of ways to influence our thoughts through our five senses, but especially sight and hearing. Because we become what we see and hear, we are invited to behold the glory of God’s character by daily reading His letter to us—the Bible—so that we may become more like Him.
 
 ## What guidance does God give regarding our thoughts?
 
@@ -135,14 +135,14 @@ God’s counsel regarding clothing, which applies to both men and women, is mode
 > While they behold your chaste conversation coupled with fear. Whose adorning let it not be that outward adorning of plaiting the hair, and of wearing of gold, or of putting on of apparel; *but let it be the hidden man of the heart, in that which is not corruptible, even the ornament of a meek and quiet spirit, which is in the sight of God of great price*.
 {% ct '1 Peter 3:2-4' %}
 
-The ornaments God desires His people to wear are not outward ones; rather, it’s the adornment of the heart&mdash;possessing a character that reflects Jesus.
+The ornaments God desires His people to wear are not outward ones; rather, it’s the adornment of the heart—possessing a character that reflects Jesus.
 
 ## What does God say about jewelry?
 
 > Moreover the LORD saith, Because the daughters of Zion are haughty, and walk with stretched forth necks and wanton eyes, walking and mincing as they go, and making a tinkling with their feet. Therefore the Lord will smite with a scab the crown of the head of the daughters of Zion, and the LORD will discover their secret parts. *In that day the Lord will take away the bravery of their tinkling ornaments about their feet, and their cauls, and their round tires like the moon, the chains, and the bracelets, and the mufflers, the bonnets, and the ornaments of the legs, and the headbands, and the tablets, and the earrings, the rings, and nose jewels*, the changeable suits of apparel, and the mantles, and the wimples, and the crisping pins, the glasses, and the fine linen, and the hoods, and the vails. And it shall come to pass, that instead of sweet smell there shall be stink; and instead of a girdle a rent; and instead of well set hair baldness; and instead of a stomacher a girding of sackcloth; and burning instead of beauty.
 {% ct 'Isaiah 3:16-24' %}
 
-God clearly shows His displeasure when His people, referred to as daughters of Zion, adorn themselves on the outside and lack the adornment that truly matters&mdash;the adornment of character.
+God clearly shows His displeasure when His people, referred to as daughters of Zion, adorn themselves on the outside and lack the adornment that truly matters—the adornment of character.
 
 ## What is jewelry associated with in the Bible?
 
