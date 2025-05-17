@@ -238,7 +238,7 @@ th, td {
 .list li {
   grid-row: auto / span 1;
   grid-column: auto / span 1;
-  border-top: 1px solid #e3e3e3;
+  /* border-top: 1px solid #e3e3e3; */
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -249,6 +249,8 @@ th, td {
 li.featured {
   grid-row: auto / span 3;
   background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
 }
 
 li.featured .description {
@@ -264,7 +266,7 @@ li.series {
 li.series .tag {
   font-weight: 700;
   display: inline-block;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   padding: 3px 10px;
   background-color: rgb(245, 231, 140, 0.75); /* rgb(219, 51, 52, 0.75); */
@@ -684,7 +686,6 @@ sup {
 
   li.series .tag {
     font-size: 13px;
-    padding-top: 1px;
   }
 }
 
