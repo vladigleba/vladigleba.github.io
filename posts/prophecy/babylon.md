@@ -13,17 +13,17 @@ series: babylon
 > The king spake, and said, *Is not this great Babylon, that I have built* for the house of the kingdom *by the might of my power, and for the honour of my majesty*?
 {% ct 'Daniel 4:30' %}
 
-The word “Babylon” originated at the Tower of Babel because it was the place where God confounded language, leading to confusion and bringing construction to a halt. “Babylon” and “Babel” both mean “confusion.” Later on in the 600s BC, the pagan kingdom of Babylon arose (see [“Europe’s Future Revealed”](/posts/prophecy/europe.md)) and developed into an economic and religious center of the world. Its religion was characterized by idolatry, ancestor worship, and sun worship, and it became an enemy of God’s people, Israel {% rf 'Jeremiah 39:6, 7; 50:29-34; 51:34' %}. Babylon was also marked by a boastful and prideful spirit, as seen in the Babylonian king’s boastful remark in {% rf 'Daniel 4:30' false %}. In fact, in {% rf 'Isaiah 14:4-22' false %}, God uses Babylon as a symbol of Satan due to its pride and wickedness.
+The word “Babylon” originated at the Tower of Babel because it was the place where God confounded language, leading to confusion and bringing construction to a halt. “Babylon” and “Babel” both mean “confusion.” Later on in the 600s BC, the pagan kingdom of Babylon arose (see [“Europe’s Future Revealed”](/posts/prophecy/europe.md)) and developed into an economic and religious center of the world. Its religion was characterized by idolatry, ancestor worship, and sun worship, and it became an enemy of God’s people, Israel {% rf 'Jeremiah 39:6-7; 50:29-34; 51:34' %}. Babylon was also marked by a boastful and prideful spirit, as seen in the Babylonian king’s boastful remark in {% rf 'Daniel 4:30' false %}. In fact, in {% rf 'Isaiah 14:4-22' false %}, God uses Babylon as a symbol of Satan due to its pride and wickedness.
 
 ## What kind of legacy did ancient Babylon leave behind?
 
 > Babylon hath been a golden cup in the LORD's hand, that made all the earth drunken: *the nations have drunken of her wine; therefore the nations are mad*. Babylon is suddenly fallen and destroyed: howl for her; take balm for her pain, if so be she may be healed.
-{% ct 'Jeremiah 51:7, 8' %}
+{% ct 'Jeremiah 51:7-8' %}
 
 > Then they *brought the golden vessels that were taken out of the temple of the house of God which was at Jerusalem; and the king, and his princes, his wives, and his concubines, drank in them*. They drank wine, and praised the gods of gold, and of silver, of brass, of iron, of wood, and of stone.
-{% ct 'Daniel 5:3, 4' %}
+{% ct 'Daniel 5:3-4' %}
 
-Because of its power and influence in the world, Babylon made drunk, or confused, the nations of the world with its false pagan teachings, and due to its refusal to turn from its wickedness, idolatry, and persecution of God’s people, God allowed it to be destroyed {% rf 'Daniel 4:30; Jeremiah 51:24, 47' %} by the Medo-Persians. On the night of its fall, the king of Babylon threw a party, during which he desecrated the holy vessels stolen from the temple of God in Jerusalem by drinking wine out of them and using them for the unholy worship of false gods. He ended up perishing that very night {% rf 'Daniel 5:30' %}. The Bible makes it clear in {% rf 'Isaiah 13:19, 20' false %} that ancient Babylon would never be rebuilt or inhabited again, so the Babylon of the book of Revelation is not a literal Babylon, but a spiritual one.
+Because of its power and influence in the world, Babylon made drunk, or confused, the nations of the world with its false pagan teachings, and due to its refusal to turn from its wickedness, idolatry, and persecution of God’s people, God allowed it to be destroyed {% rf 'Daniel 4:30; Jeremiah 51:24, 47' %} by the Medo-Persians. On the night of its fall, the king of Babylon threw a party, during which he desecrated the holy vessels stolen from the temple of God in Jerusalem by drinking wine out of them and using them for the unholy worship of false gods. He ended up perishing that very night {% rf 'Daniel 5:30' %}. The Bible makes it clear in {% rf 'Isaiah 13:19-20' false %} that ancient Babylon would never be rebuilt or inhabited again, so the Babylon of the book of Revelation is not a literal Babylon, but a spiritual one.
 
 ## How does Revelation describe Babylon?
 
@@ -54,12 +54,12 @@ The Bible gives seven characteristics to describe Babylon:
 {% ct 'Ephesians 5:31-33' %}
 
 > Let us be glad and rejoice, and give honour to him: for the marriage of the Lamb is come, and *his wife hath made herself ready*. And to her was granted that she should be arrayed in fine linen, clean and white: for the fine linen is the righteousness of saints.
-{% ct 'Revelation 19:7, 8' %}
+{% ct 'Revelation 19:7-8' %}
 
 > Son of man, *cause Jerusalem to know her abominations* ... But thou didst trust in thine own beauty, and *playedst the harlot* because of thy renown, and pouredst out thy fornications on every one that passed by; his it was.
 {% ct 'Ezekiel 16:2, 15' %}
 
-In the Bible a woman represents the church. A pure woman is a pure church that is faithful to Jesus, while an impure woman, or a harlot, is an unfaithful, or fallen, church. In {% rf 'Revelation 19:7, 8' false %} the true church is portrayed as Christ’s bride, and her members are covered by and reflect the righteousness of Jesus.
+In the Bible a woman represents the church. A pure woman is a pure church that is faithful to Jesus, while an impure woman, or a harlot, is an unfaithful, or fallen, church. In {% rf 'Revelation 19:7-8' false %} the true church is portrayed as Christ’s bride, and her members are covered by and reflect the righteousness of Jesus.
 
 ## Who does the harlot represent?
 
@@ -91,7 +91,7 @@ There is no other earthly power that fulfills all of these characteristics. Many
 {% ct 'Revelation 17:5' %}
 
 > Ye therefore, beloved, seeing ye know these things before, beware lest ye also, *being led away with the error of the wicked, fall from your own stedfastness*. But grow in grace, and in the knowledge of our Lord and Saviour Jesus Christ. To him be glory both now and for ever.
-{% ct '2 Peter 3:17, 18' %}
+{% ct '2 Peter 3:17-18' %}
 
 > Jesus saith unto him, *I am the way, the truth, and the life*: no man cometh unto the Father, but by me.
 {% ct 'John 14:6' %}
@@ -124,7 +124,7 @@ Whenever a church unites with the world, it results in a turning away from Bible
 ## What other powers are part of Babylon?
 
 > And I saw *three unclean spirits* like frogs come out of the mouth of the *dragon*, and out of the mouth of the *beast*, and out of the mouth of the *false prophet*. For they are the spirits of devils, working miracles, which go forth unto the kings of the earth and of the whole world, to gather them to the battle of that great day of God Almighty.
-{% ct 'Revelation 16:13, 14' %}
+{% ct 'Revelation 16:13-14' %}
 
 > And after these things I saw another angel come down from heaven, having great power; and the earth was lightened with his glory. And he cried mightily with a strong voice, saying, *Babylon the great is fallen, is fallen, and is become the habitation of devils, and the hold of every foul spirit, and a cage of every unclean and hateful bird*. For all nations have drunk of the wine of the wrath of her fornication, and the kings of the earth have committed fornication with her, and the merchants of the earth are waxed rich through the abundance of her delicacies.
 {% ct 'Revelation 18:1-3' %}
@@ -136,7 +136,7 @@ The second power, the beast, represents the papacy (see [“Mark of the Beast”
 ## What will unite these powers?
 
 > And I saw *three unclean spirits* like frogs come out of the mouth of the dragon, and out of the mouth of the beast, and out of the mouth of the false prophet. For *they are the spirits of devils, working miracles*, which go forth unto the kings of the earth and of the whole world, to gather them to the battle of that great day of God Almighty.
-{% ct 'Revelation 16:13, 14' %}
+{% ct 'Revelation 16:13-14' %}
 
 > And the light of a candle shall shine no more at all in thee; and the voice of the bridegroom and of the bride shall be heard no more at all in thee: for thy merchants were the great men of the earth; for *by thy sorceries were all nations deceived*.
 {% ct 'Revelation 18:23' %}
@@ -145,10 +145,10 @@ The second power, the beast, represents the papacy (see [“Mark of the Beast”
 {% ct 'Matthew 24:24' %}
 
 > Now the Spirit speaketh expressly, that in the latter times some shall depart from the faith, *giving heed to seducing spirits, and doctrines of devils*; speaking lies in hypocrisy; having their conscience seared with a hot iron.
-{% ct '1 Timothy 4:1, 2' %}
+{% ct '1 Timothy 4:1-2' %}
 
 > For such are false apostles, deceitful workers, *transforming themselves into the apostles of Christ*. And no marvel; for *Satan himself is transformed into an angel of light*.
-{% ct '2 Corinthians 11:13, 14' %}
+{% ct '2 Corinthians 11:13-14' %}
 
 What the three powers of {% rf 'Revelation 16:13' false %} have in common are the unclean spirits that come out of their mouths, and according to {% rf 'Revelation 16:14' false %}, these are spirits of devils working through miracles and sorcery. This is an echo of Christ’s warning about false Christs and false prophets working miracles, which means we can expect a counterfeit religious revival, supported by miracles, sorcery, and spiritism, just before Christ’s coming. Spiritism, a doctrine of Satan first introduced in Eden when he told Eve she would “not surely die” {% rf 'Genesis 3:4' %}, is the belief that the dead are alive and can contact the living.
 
@@ -204,7 +204,7 @@ Jesus’ answer to every deception Satan threw at Him was to quote the Bible. (N
 > And *this gospel of the kingdom shall be preached in all the world for a witness unto all nations*; and then shall the end come.
 {% ct 'Matthew 24:14' %}
 
-In the Bible, angels symbolize messengers or messages. Because God wants everyone to come to the knowledge of the truth so that they can be saved {% rf '1 Timothy 2:3, 4' %}, He will have a remnant people, portrayed in the three angels’ messages of {% rf 'Revelation 14:6-14' false %}, who will stand for Bible truth and expose the false gospel of Babylon {% rf 'Galatians 1:8-12' %}, calling people to worship and obey Him, not only in spirit but also in truth. God’s message of truth will be so powerful that it will illuminate the whole world with His glory, so that every person, instead of being deceived, will be well-informed when making a decision regarding who to worship.
+In the Bible, angels symbolize messengers or messages. Because God wants everyone to come to the knowledge of the truth so that they can be saved {% rf '1 Timothy 2:3-4' %}, He will have a remnant people, portrayed in the three angels’ messages of {% rf 'Revelation 14:6-14' false %}, who will stand for Bible truth and expose the false gospel of Babylon {% rf 'Galatians 1:8-12' %}, calling people to worship and obey Him, not only in spirit but also in truth. God’s message of truth will be so powerful that it will illuminate the whole world with His glory, so that every person, instead of being deceived, will be well-informed when making a decision regarding who to worship.
 
 ## Am I lost if I’m currently in Babylon?
 

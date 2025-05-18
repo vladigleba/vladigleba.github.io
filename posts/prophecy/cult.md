@@ -17,7 +17,7 @@ series: babylon
 {% ct 'John 8:32' %}
 
 > *Through thy precepts I get understanding*: therefore I hate every false way. *Thy word is a lamp unto my feet*, and a light unto my path.
-{% ct 'Psalm 119:104, 105' %}
+{% ct 'Psalm 119:104-105' %}
 
 Jesus is truth, and His Word to us, the Bible, is truth. It’s the Light that illuminates the path of life, that exposes the various lies of the world, and any message that is contrary to it is not from God. The truth of Jesus has the power to sanctify and set me free from deception and sin, but this also means that lies have the power to corrupt and bring me into bondage.
 
@@ -61,7 +61,7 @@ Revelation 6 outlines the history of God’s church with four symbolic horses. I
 {% ct '2 Thessalonians 2:3-7' %}
 
 > Beloved, when I gave all diligence to write unto you of the common salvation, it was needful for me to write unto you, and exhort you that *ye should earnestly contend for the faith which was once delivered unto the saints*. For there are certain men crept in unawares, who were before of old ordained to this condemnation, ungodly men, turning the grace of our God into lasciviousness, and denying the only Lord God, and our Lord Jesus Christ.
-{% ct 'Jude 1:3, 4' %}
+{% ct 'Jude 1:3-4' %}
 
 Daniel predicted a time when truth would be cast down, and Paul wrote about a falling away that would occur before the second coming of Christ, marked by a religious system rising up that would oppose and exalt itself above God Himself (see [“Who Is the Antichrist?”](/posts/prophecy/antichrist.md)). This was also echoed by Jude, who encouraged his readers to contend earnestly for the unadulterated faith of the apostolic church. God used the Reformation movement to restore a lot of the truths that were cast to the ground, but this warfare against biblical truth has not ceased. The words of Paul and Jude are as relevant today as they were during the Dark Ages.
 
@@ -98,24 +98,24 @@ Cults will often pressure their members in order to coerce them into submission.
 ## What is the fourth identifying mark?
 
 > Beloved, when I gave all diligence to write unto you of the common salvation, it was needful for me to write unto you, and exhort you that ye should earnestly contend for the faith which was once delivered unto the saints. For there are certain men crept in unawares, who were before of old ordained to this condemnation, ungodly men, turning the grace of our God into lasciviousness, and *denying the only Lord God, and our Lord Jesus Christ*.
-{% ct 'Colossians 2:8, 9' %}
+{% ct 'Colossians 2:8-9' %}
 
 > Beware lest any man spoil you through philosophy and vain deceit, after the tradition of men, after the rudiments of the world, and not after Christ. *For in him dwelleth all the fulness of the Godhead bodily*.
-{% ct 'Colossians 2:8, 9' %}
+{% ct 'Colossians 2:8-9' %}
 
-The fourth identifier of cults is their denial that Jesus is the divine Son of God—a central truth of the plan of salvation. The Bible plainly teaches that salvation is a gift from God {% rf 'Ephesians 2:8' %} since God the Father gave His Son {% rf 'John 3:16' %}, and God the Son gave Himself, of His own free will {% rf 'John 10:17, 18' %}, on the cross for humanity. Incidentally, this denial of Christ’s divinity is almost a necessity as it opens the way for a human being to become the cult’s Messiah-like leader.
+The fourth identifier of cults is their denial that Jesus is the divine Son of God—a central truth of the plan of salvation. The Bible plainly teaches that salvation is a gift from God {% rf 'Ephesians 2:8' %} since God the Father gave His Son {% rf 'John 3:16' %}, and God the Son gave Himself, of His own free will {% rf 'John 10:17-18' %}, on the cross for humanity. Incidentally, this denial of Christ’s divinity is almost a necessity as it opens the way for a human being to become the cult’s Messiah-like leader.
 
 ## What is the final identifier?
 
 > And the *woman which hath an husband that believeth not, and if he be pleased to dwell with her, let her not leave him*. For the unbelieving husband is sanctified by the wife, and the unbelieving wife is sanctified by the husband: else were your children unclean; but now are they holy.
-{% ct '1 Corinthians 7:13, 14' %}
+{% ct '1 Corinthians 7:13-14' %}
 
 Cults will often pressure their followers to leave their families because such separation makes it possible to have more control over their followers. The Bible does not teach this. Paul says that, if possible, a believing wife should not separate from an unbelieving husband. Jesus, too, after healing the demoniac, told him to go home to his friends to share what He had done for him even though the man wanted to follow Jesus {% rf 'Mark 5:18-20' %}. Instead of leaving his family and friends, Jesus wanted him to first reach them with the good news of the gospel!
 
 ## What counsel did Jesus give about the light of His truth?
 
 > Then Jesus said unto them, Yet a little while is the light with you. *Walk while ye have the light, lest darkness come upon you*: for he that walketh in darkness knoweth not whither he goeth. *While ye have light, believe in the light, that ye may be the children of light*.
-{% ct 'John 12:35, 36' %}
+{% ct 'John 12:35-36' %}
 
 > *To the law and to the testimony*: if they speak not according to this word, it is because there is no light in them.
 {% ct 'Isaiah 8:20' %}
@@ -138,6 +138,6 @@ God has always had a people who cling to biblical truth, refusing to compromise 
 {% ct 'Matthew 24:14' %}
 
 > And I saw another angel fly in the midst of heaven, *having the everlasting gospel to preach unto them that dwell on the earth, and to every nation, and kindred, and tongue, and people*, saying with a loud voice, Fear God, and give glory to him; for the hour of his judgment is come: and worship him that made heaven, and earth, and the sea, and the fountains of waters.
-{% ct 'Revelation 14:6, 7' %}
+{% ct 'Revelation 14:6-7' %}
 
-God still had a people during the Dark Ages, like the Waldenses, Albigenses, and Huguenots, who faithfully preserved and followed the truth of His Word, which earned them only a life of relentless persecution, but this did not move them {% rf 'Acts 20:23, 24' %} because they counted the truth of God’s Word more precious than life itself. When the Reformation began, the truth was unshackled and made even more accessible to the masses. Now with modern technologies like the radio, television, and the internet, the gospel is being, and will continue to be, preached all over the world until everyone has heard the good news of Jesus Christ’s love!
+God still had a people during the Dark Ages, like the Waldenses, Albigenses, and Huguenots, who faithfully preserved and followed the truth of His Word, which earned them only a life of relentless persecution, but this did not move them {% rf 'Acts 20:23-24' %} because they counted the truth of God’s Word more precious than life itself. When the Reformation began, the truth was unshackled and made even more accessible to the masses. Now with modern technologies like the radio, television, and the internet, the gospel is being, and will continue to be, preached all over the world until everyone has heard the good news of Jesus Christ’s love!

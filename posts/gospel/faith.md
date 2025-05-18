@@ -32,10 +32,10 @@ Fatih is like a muscle; every person has been given a measure of it. Some neglec
 {% ct 'Luke 17:5' %}
 
 > Jesus said unto him, If thou canst believe, all things are possible to him that believeth. And straightway the father of the child cried out, and said with tears, *Lord, I believe; help thou mine unbelief*.
-{% ct 'Mark 9:23, 24' %}
+{% ct 'Mark 9:23-24' %}
 
 > Then came the disciples to Jesus apart, and said, Why could not we cast him out? And Jesus said unto them, Because of your unbelief: for verily I say unto you, *If ye have faith as a grain of mustard seed*, ye shall say unto this mountain, Remove hence to yonder place; and it shall remove; and nothing shall be impossible unto you.
-{% ct 'Matthew 17:19, 20' %}
+{% ct 'Matthew 17:19-20' %}
 
 Even if my faith is weak and small as a tiny seed, I can exercise the faith that I do have, and ask God to increase it, believing in His power to do so, and it will be done.
 
@@ -45,7 +45,7 @@ Even if my faith is weak and small as a tiny seed, I can exercise the faith that
 {% ct 'Romans 10:17' %}
 
 > Another parable put he forth unto them, saying, The kingdom of heaven is *like to a grain of mustard seed*, which a man took, and sowed in his field: which indeed is the least of all seeds: but *when it is grown, it is the greatest among herbs, and becometh a tree*, so that the birds of the air come and lodge in the branches thereof.
-{% ct 'Matthew 13:31, 32' %}
+{% ct 'Matthew 13:31-32' %}
 
 Faith is primarily based on the evidence of truth revealed in the Word of God, the Bible. Like a seed that is watered by the rain, faith grows whenever it is watered with the truth of His Word and that truth is then internalized—received and allowed to take root in the heart. With my cooperation, God can take the small seed of faith and make it grow into a tall tree.
 
@@ -90,7 +90,7 @@ The Bible shows God is willing to forgive anyone who is truly repentant. When th
 ## How important is faith in salvation?
 
 > *For by grace are ye saved through faith*; and that not of yourselves: it is the gift of God: not of works, lest any man should boast.
-{% ct 'Ephesians 2:8, 9' %}
+{% ct 'Ephesians 2:8-9' %}
 
 Salvation is only through faith. I am made righteous by faith in Jesus’ love as expressed in His willingness to forgive my sins and clothe me with His righteousness. I am also sanctified by faith in His power to save me from my sins. Salvation is completely of God; it is a gift. Faith is the means by which I reach out to Him and recieve that gift.
 
@@ -117,9 +117,9 @@ Those who have the faith of Jesus also keep the commandments of God because Jesu
 {% ct 'James 2:17-20' %}
 
 > Do men gather grapes of thorns, or figs of thistles? Even so *every good tree bringeth forth good fruit; but a corrupt tree bringeth forth evil fruit*. ... Wherefore *by their fruits ye shall know them*. Not every one that saith unto me, Lord, Lord, shall enter into the kingdom of heaven; but *he that doeth the will of my Father* which is in heaven. Many will say to me in that day, Lord, Lord, have we not prophesied in thy name? and in thy name have cast out devils? and in thy name done many wonderful works? And then will I profess unto them, I never knew you: depart from me, ye that work iniquity.
-{% ct 'Matthew 7:16, 17, 20-23' %}
+{% ct 'Matthew 7:16-17, 20-23' %}
 
-Obedience shows the genuineness of my faith. Put another way, my faith is confirmed, or justified, to me by my works. They are evidence for me, not God, since He already knows my genuine heart {% rf 'Psalm 139:1-4' %}, but I do need the evidence because it’s easy to deceive myself about my true condition {% rf 'Jeremiah 17:9, 10' %}.
+Obedience shows the genuineness of my faith. Put another way, my faith is confirmed, or justified, to me by my works. They are evidence for me, not God, since He already knows my genuine heart {% rf 'Psalm 139:1-4' %}, but I do need the evidence because it’s easy to deceive myself about my true condition {% rf 'Jeremiah 17:9-10' %}.
 
 ## What is the counterfeit to faith?
 

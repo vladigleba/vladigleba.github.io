@@ -11,7 +11,7 @@ date: 2025-01-25
 {% ct '2 Peter 3:9' %}
 
 > For this is good and acceptable in the sight of God our Savior, *who desires all men to be saved and to come to the knowledge of the truth*.
-{% ct '1 Timothy 2:3, 4, NKJV' %}
+{% ct '1 Timothy 2:3-4, NKJV' %}
 
 If God could save every single person, without infringing on their freedom to choose, He would, but this He does not do, because He respects every person’s free will. Instead, He knocks patiently at the door of every heart {% rf 'Revelation 3:20' %}, waiting to be let in.
 
@@ -21,10 +21,10 @@ If God could save every single person, without infringing on their freedom to ch
 {% ct 'Jeremiah 31:3' %}
 
 > But *as he which hath called you is holy, so be ye holy* in all manner of conversation; because it is written, Be ye holy; for I am holy.
-{% ct '1 Peter 1:15, 16' %}
+{% ct '1 Peter 1:15-16' %}
 
 > Take heed unto yourselves, lest ye forget the covenant of the LORD your God, which he made with you, and make you a graven image, or the likeness of any thing, which the LORD thy God hath forbidden thee. *For the LORD thy God is a consuming fire*, even a jealous God.
-{% ct 'Deuteronomy 4:23, 24' %}
+{% ct 'Deuteronomy 4:23-24' %}
 
 God is love, but He is also holy. He loves the sinner and has made ample provision for salvation from sin, because sin, and anyone who chooses to cling to it, cannot exist in the presence of a holy God—He is a consuming fire to it.
 
@@ -74,7 +74,7 @@ The fire that destroyed Sodom and Gomorrha was an eternal fire too, but, obvious
 ## Doesn’t the Bible talk about unquenchable fire?
 
 > I indeed baptize you with water unto repentance: but he that cometh after me is mightier than I, whose shoes I am not worthy to bear: he shall baptize you with the Holy Ghost, and with fire: whose fan is in his hand, and he will throughly purge his floor, and gather his wheat into the garner; but *he will burn up the chaff with unquenchable fire*.
-{% ct 'Matthew 3:11, 12' %}
+{% ct 'Matthew 3:11-12' %}
 
 The fire is unquenchable in the sense that nothing can put it out until it finishes its work.
 
@@ -124,14 +124,14 @@ The Bible says the fire comes down on earth at the end of the 1,000 year period 
 {% ct '2 Peter 2:4' %}
 
 > Thine heart was lifted up because of thy beauty, thou hast corrupted thy wisdom by reason of thy brightness: I will cast thee to the ground, I will lay thee before kings, that they may behold thee. Thou hast defiled thy sanctuaries by the multitude of thine iniquities, by the iniquity of thy traffick; therefore *will I bring forth a fire from the midst of thee, it shall devour thee, and I will bring thee to ashes* upon the earth in the sight of all them that behold thee.
-{% ct 'Ezekiel 28:17, 18' %}
+{% ct 'Ezekiel 28:17-18' %}
 
 The fire cleanses the earth from all traces of sin, and so the fallen angels, including Satan, will also be destroyed by it, turning them to ashes, because the entire rebellion against God started with Satan and the angels he managed to deceive (see [“Origin of Evil”](/posts/gospel/evil.md)).
 
 ## Is everyone punished equally?
 
 >  And that servant, which knew his lord's will, and prepared not himself, neither did according to his will, shall be beaten with many stripes. But he that knew not, and did commit things worthy of stripes, shall be beaten with few stripes. *For unto whomsoever much is given, of him shall be much required*: and to whom men have committed much, of him they will ask the more.
-{% ct 'Luke 12:47, 48' %}
+{% ct 'Luke 12:47-48' %}
 
 > And, behold, I come quickly; and my reward is with me, *to give every man according as his work shall be*.
 {% ct 'Revelation 22:12' %}
@@ -150,14 +150,14 @@ The punishment is according to a person’s deeds. Those who are guilty of henio
 {% ct 'Isaiah 47:14' %}
 
 > For the day of the LORD is near upon all the heathen: as thou hast done, it shall be done unto thee: thy reward shall return upon thine own head. For as ye have drunk upon my holy mountain, so shall all the heathen drink continually, yea, they shall drink, and they shall swallow down, and *they shall be as though they had not been*.
-{% ct 'Obadiah 15, 16' %}
+{% ct 'Obadiah 1:15-16' %}
 
 Hell cannot burn forever because the wages of sin are death, not eternal torment for a short life of sin. How cruel would that be! This eternal hell teaching goes all the way back to the Garden of Eden where Satan told Eve she would surely not die {% rf 'Genesis 3:4' %} even though God clearly said that sin brings death {% rf 'Genesis 2:17' %}. But make no mistake, Jesus would rather die on the cross Himself than watch His creation destroyed by fire; nevertheless, He also respects every person’s freedom of choice, and in an effort to purge the world from the misery of sin, it is, ultimately, an act of love to bring the rebellion to an end. And so the fire will burn out once it finishes its work, and there will be not a coal left to warm at. Satan, his angels, and the wicked will cease to exist, never to live again.
 
 ## What happens once it goes out?
 
 > Looking for and hasting unto the coming of the day of God, wherein the heavens being on fire shall be dissolved, and the elements shall melt with fervent heat? Nevertheless we, according to his promise, look for *new heavens and a new earth, wherein dwelleth righteousness*.
-{% ct '2 Peter 3:12, 13' %}
+{% ct '2 Peter 3:12-13' %}
 
 > And *I saw a new heaven and a new earth: for the first heaven and the first earth were passed away*; and there was no more sea. And I John saw the holy city, new Jerusalem, coming down from God out of heaven, prepared as a bride adorned for her husband. And I heard a great voice out of heaven saying, Behold, the tabernacle of God is with men, and he will dwell with them, and they shall be his people, and God himself shall be with them, and be their God. And *God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away*.
 {% ct 'Revelation 21:1-4' %}

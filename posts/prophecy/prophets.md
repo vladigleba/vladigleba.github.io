@@ -14,18 +14,18 @@ date: 2025-02-04
 {% ct 'Amos 3:7' %}
 
 > Remember the former things of old: for I am God, and there is none else; I am God, and there is none like me, *declaring the end from the beginning, and from ancient times the things that are not yet done*, saying, My counsel shall stand, and I will do all my pleasure.
-{% ct 'Isaiah 46:9, 10' %}
+{% ct 'Isaiah 46:9-10' %}
 
 God has chosen to use prophets to speak to humanity on His behalf; they share His messages and make His will known. Before significant events unfold, God reveals His intentions to the world through them, so that the human family is warned and prepared.
 
-For example, He used Noah to warn the world about the flood {% rf '2 Peter 2:5' %}, while Jeremiah warned Israel about their 70-year captivity in Babylon {% rf 'Jeremiah 25:11' %}. Regarding the coming of the Messiah, Isaiah announced that Jesus would would be born of a virgin {% rf 'Isaiah 7:14' %}, Micah said He would be born in Bethlehem {% rf 'Micah 5:2' %}, and Daniel prophesied that He would be “cut off” or killed {% rf 'Daniel 9:26' %}. Later, God used John the Baptist to announce that His coming was near {% rf 'John 1:23-27' %}. After Jesus’ ascension, Paul announced that Jesus would return a second time {% rf '1 Thessalonians 4:16, 17' %}, and given the importance of His return, we can expect the gift of prophecy to be evident again in the last days to warn and prepare the world.
+For example, He used Noah to warn the world about the flood {% rf '2 Peter 2:5' %}, while Jeremiah warned Israel about their 70-year captivity in Babylon {% rf 'Jeremiah 25:11' %}. Regarding the coming of the Messiah, Isaiah announced that Jesus would would be born of a virgin {% rf 'Isaiah 7:14' %}, Micah said He would be born in Bethlehem {% rf 'Micah 5:2' %}, and Daniel prophesied that He would be “cut off” or killed {% rf 'Daniel 9:26' %}. Later, God used John the Baptist to announce that His coming was near {% rf 'John 1:23-27' %}. After Jesus’ ascension, Paul announced that Jesus would return a second time {% rf '1 Thessalonians 4:16-17' %}, and given the importance of His return, we can expect the gift of prophecy to be evident again in the last days to warn and prepare the world.
 
 ## What warning did Jesus give about prophets?
 
 > And *many false prophets shall rise, and shall deceive many*. And because iniquity shall abound, the love of many shall wax cold. ... For there shall *arise false Christs, and false prophets*, and shall shew great signs and wonders; insomuch that, if it were possible, they shall deceive the very elect.
 {% ct 'Matthew 24:11, 24' %}
 
-Jesus said there will be many false prophets in the last days deceiving people with signs and wonders. The working of miracles, therefore, is not sufficient evidence of a genuine prophet {% rf 'Revelation 13:13, 14; 16:14' %}. But it’s important to note that Jesus did not say that all prophets will be false ones. Since He warned about false ones, there must be genuine ones too.
+Jesus said there will be many false prophets in the last days deceiving people with signs and wonders. The working of miracles, therefore, is not sufficient evidence of a genuine prophet {% rf 'Revelation 13:13-14; 16:14' %}. But it’s important to note that Jesus did not say that all prophets will be false ones. Since He warned about false ones, there must be genuine ones too.
 
 ## What false prophets are condemned in the Bible?
 
@@ -50,9 +50,9 @@ The Bible clearly teaches that the dead cannot be contacted, and any supposed co
 {% ct 'Ephesians 4:8, 11-15' %}
 
 > Now ye are the body of Christ, and members in particular. And *God hath set some in the church*, first apostles, *secondarily prophets*, thirdly teachers, after that miracles, then gifts of healings, helps, governments, diversities of tongues.
-{% ct '1 Corinthians 12:27, 28' %}
+{% ct '1 Corinthians 12:27-28' %}
 
-While a prophet can at times edify the public, Paul tells us that prophecy is one of Jesus’ gifts to His church intended to edify its members in their Christian walk as well as to equip them in the work of ministry to others. These gifts are vital to His church and will remain with her until Jesus returns. But it’s also important to emphasize that while the gift of prophecy is a tremendous blessing, it’s not meant to add to, replace, or minimize the Word of God {% rf 'Revelation 22:18, 19; Proverbs 30:5, 6' %}. It’s true that God has used prophets to clarify His Word, but He never used them to originate new beliefs that cannot be supported by the Bible. The genuine gift of prophecy always elevates, and is in harmony with, God’s Word {% rf 'Matthew 4:4' %}.
+While a prophet can at times edify the public, Paul tells us that prophecy is one of Jesus’ gifts to His church intended to edify its members in their Christian walk as well as to equip them in the work of ministry to others. These gifts are vital to His church and will remain with her until Jesus returns. But it’s also important to emphasize that while the gift of prophecy is a tremendous blessing, it’s not meant to add to, replace, or minimize the Word of God {% rf 'Revelation 22:18-19; Proverbs 30:5-6' %}. It’s true that God has used prophets to clarify His Word, but He never used them to originate new beliefs that cannot be supported by the Bible. The genuine gift of prophecy always elevates, and is in harmony with, God’s Word {% rf 'Matthew 4:4' %}.
 
 ## Why is the gift of prophecy absent from most churches?
 
@@ -67,14 +67,14 @@ When God’s people knowingly rebel against His holy law, He withdraws the proph
 {% ct '1 Corinthians 12:7-11' %}
 
 > Knowing this first, that *no prophecy of the scripture is of any private interpretation*. For the prophecy came not in old time by the will of man: but *holy men of God spake as they were moved by the Holy Ghost*.
-{% ct '2 Peter 1:20, 21' %}
+{% ct '2 Peter 1:20-21' %}
 
 Jesus gives the gift of prophecy through the Holy Spirit, who distributes it to His people as He wills. In his second epistle, Peter tells us that it’s the Spirit who enables and empowers God’s prophets to speak on His behalf.
 
 ## Will the gift of prophecy be evident in the last days?
 
 > And it shall come to pass afterward, that *I will pour out my spirit upon all flesh*; and your sons and your daughters shall *prophesy*, your old men shall *dream dreams*, your young men shall *see visions*. And also upon the servants and upon the handmaids in those days will I pour out my spirit.
-{% ct 'Joel 2:28, 29' %}
+{% ct 'Joel 2:28-29' %}
 
 This prophecy was partially fulfilled when the Holy Spirit was poured out during Pentecost {% rf 'Acts 2:1-4' %}, empowering Jesus’ disciples to take the good news of His great sacrifice for sinners to the entire world. The prophecy will be fully fulfilled in the last days when the Holy Spirit empowers Christ’s followers to warn and prepare the world for His glorious return.
 
@@ -123,7 +123,7 @@ God speaks to His prophets through visions, dreams, and face to face.
 
 During a vision from God the true prophet will have the following physical characteristics, although they may not be present all at once:
 - Initially losing physical strength {% rf 'Daniel 10:17' %}.
-- Later receiving supernatural strength {% rf 'Daniel 10:18, 19' %}.
+- Later receiving supernatural strength {% rf 'Daniel 10:18-19' %}.
 - No breath in the body {% rf 'Daniel 10:17' %}.
 - Able to speak {% rf 'Daniel 10:17' %}.
 - Eyes wide open {% rf 'Numbers 24:4' %}.
@@ -132,13 +132,13 @@ During a vision from God the true prophet will have the following physical chara
 ## What else happens to the genuine prophet?
 
 > Also I heard the voice of the Lord, saying, Whom shall I send, and who will go for us? Then said I, Here am I; send me. And he said, *Go, and tell this people*, Hear ye indeed, but understand not; and see ye indeed, but perceive not.
-{% ct 'Isaiah 6:8, 9' %}
+{% ct 'Isaiah 6:8-9' %}
 
 > Then the word of the LORD came unto me, saying, Before I formed thee in the belly I knew thee; and before thou camest forth out of the womb I sanctified thee, and *I ordained thee a prophet unto the nations*. Then said I, Ah, Lord GOD! behold, I cannot speak: for I am a child. But the LORD said unto me, Say not, I am a child: for *thou shalt go to all that I shall send thee, and whatsoever I command thee thou shalt speak*.
 {% ct 'Jeremiah 1:4-7' %}
 
 > Then answered Amos, and said to Amaziah, I was no prophet, neither was I a prophet's son; but I was an herdman, and a gatherer of sycomore fruit: and the LORD took me as I followed the flock, and the LORD said unto me, *Go, prophesy unto my people Israel*.
-{% ct 'Amos 7:14, 15' %}
+{% ct 'Amos 7:14-15' %}
 
 A genuine prophet is called to service by God.
 
@@ -148,23 +148,23 @@ A genuine prophet is called to service by God.
 {% ct 'Deuteronomy 13:1-4' %}
 
 > And when they shall say unto you, Seek unto them that have familiar spirits, and unto wizards that peep, and that mutter: should not a people seek unto their God? for the living to the dead? *To the law and to the testimony: if they speak not according to this word, it is because there is no light in them*.
-{% ct 'Isaiah 8:19, 20' %}
+{% ct 'Isaiah 8:19-20' %}
 
 The true prophet will always speak in harmony with and obedience to God’s will as revealed in His Word and in His commandments. Anyone speaking contrary to God’s will cannot be His prophet.
 
 ## What other test does the Bible provide?
 
 > The prophets that have been before me and before thee of old prophesied both against many countries, and against great kingdoms, of war, and of evil, and of pestilence. The prophet which prophesieth of peace, *when the word of the prophet shall come to pass, then shall the prophet be known, that the LORD hath truly sent him*.
-{% ct 'Jeremiah 28:8, 9' %}
+{% ct 'Jeremiah 28:8-9' %}
 
 The genuine prophet’s predictions always come to pass if they are not conditional.
 
 ## What is the fifth test?
 
 > Beware of false prophets, which come to you in sheep’s clothing, but inwardly they are ravening wolves. *Ye shall know them by their fruits*. Do men gather grapes of thorns, or figs of thistles?
-{% ct 'Matthew 7:15, 16' %}
+{% ct 'Matthew 7:15-16' %}
 
-The life of a genuine prophet will reveal the character of Jesus and the fruits of the Spirit {% rf 'Galatians 5:22, 23' %}.
+The life of a genuine prophet will reveal the character of Jesus and the fruits of the Spirit {% rf 'Galatians 5:22-23' %}.
 
 ## What is the final test?
 

@@ -8,17 +8,17 @@ date: 2025-02-02
 ## Is the Holy Spirit part of the Godhead?
 
 > Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and *of the Holy Ghost*: teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world. Amen.
-{% ct 'Matthew 28:19, 20' %}
+{% ct 'Matthew 28:19-20' %}
 
 > The grace of the Lord Jesus Christ, and the love of God, and the *communion of the Holy Ghost*, be with you all.
 {% ct '2 Corinthians 13:14' %}
 
-The Holy Spirit is part of the Godhead, also referred to as the Trinity, that consists of three distinct Persons: the Father, the Son, and the Holy Spirit. These three Persons are united in perfect harmony as one God {% rf 'Isaiah 46:9' %}. In the Old Testament there are multiple instances where this unity in plurality is shown {% rf 'Genesis 1:26; 3:22; 11:7; Isaiah 6:8' %}. Another example is Jesus’ baptism, when all three members of the Godhead were present: the Son of God was baptized, the Father spoke, and the Holy Spirit descended {% rf 'Matthew 3:16, 17' %}.
+The Holy Spirit is part of the Godhead, also referred to as the Trinity, that consists of three distinct Persons: the Father, the Son, and the Holy Spirit. These three Persons are united in perfect harmony as one God {% rf 'Isaiah 46:9' %}. In the Old Testament there are multiple instances where this unity in plurality is shown {% rf 'Genesis 1:26; 3:22; 11:7; Isaiah 6:8' %}. Another example is Jesus’ baptism, when all three members of the Godhead were present: the Son of God was baptized, the Father spoke, and the Holy Spirit descended {% rf 'Matthew 3:16-17' %}.
 
 ## Is the Holy Spirit a person?
 
 > But Peter said, Ananias, why hath Satan filled thine heart *to lie to the Holy Ghost*, and to keep back part of the price of the land? Whiles it remained, was it not thine own? and after it was sold, was it not in thine own power? why hast thou conceived this thing in thine heart? *thou hast not lied unto men, but unto God*.
-{% ct 'Acts 5:3, 4' %}
+{% ct 'Acts 5:3-4' %}
 
 > Howbeit *when he, the Spirit* of truth, is come, he will guide you into all truth: for he shall not speak of himself; but whatsoever he shall hear, that shall he speak: and he will shew you things to come.
 {% ct 'John 16:13' %}
@@ -34,7 +34,7 @@ Peter made it clear that the Holy Spirit is not only God, but He can also be lie
 {% ct 'John 16:7' %}
 
 > And I will pray the Father, and *he shall give you another Comforter, that he may abide with you for ever*. Even the Spirit of truth; whom the world cannot receive, because it seeth him not, neither knoweth him: but ye know him; for *he dwelleth with you, and shall be in you. I will not leave you comfortless: I will come to you*.
-{% ct 'John 14:16, 17' %}
+{% ct 'John 14:16-17' %}
 
 > And he that keepeth his commandments dwelleth in him, and he in him. And hereby we know that he abideth in us, *by the Spirit which he hath given us*.
 {% ct '1 John 3:24' %}
@@ -44,7 +44,7 @@ Jesus promised that after His ascension He would send us the Comforter, the Holy
 ## What is the Holy Spirit’s role?
 
 > Howbeit when he, the Spirit of truth, is come, *he will guide you into all truth*: for he shall not speak of himself; but whatsoever he shall hear, that shall he speak: and he will shew you things to come. He shall glorify me: for he shall receive of mine, and shall shew it unto you.
-{% ct 'John 16:13, 14' %}
+{% ct 'John 16:13-14' %}
 
 > But the Comforter, which is the Holy Ghost, whom the Father will send in my name, *he shall teach you all things*, and bring all things to your remembrance, whatsoever I have said unto you.
 {% ct 'John 14:26' %}
@@ -63,9 +63,9 @@ Paul tells us that spiritual things are spiritually discerned {% rf '1 Corinthia
 {% ct 'John 15:26' %}
 
 > Likewise the Spirit also *helpeth our infirmities: for we know not what we should pray for as we ought: but the Spirit itself maketh intercession for us* with groanings which cannot be uttered. And he that searcheth the hearts knoweth what is the mind of the Spirit, because he maketh intercession for the saints according to the will of God.
-{% ct 'Romans 8:26, 27' %}
+{% ct 'Romans 8:26-27' %}
 
-The Holy Spirit reproves, or brings conviction, of sin, of righteousness, and of judgment. In other words, He identifies what is right and wrong in the sight of God, enabling us to experience spiritual growth and an increased love of God, His righteousness, and holy living. Put simply, the Holy Spirit is the catalyst that brings power, victory, and life to the Christian walk. These life changes might seem impossible to us, but, if we are willing to cooperate with the Holy Spirit, nothing is impossible to God {% rf 'Mark 10:26, 27; Philippians 2:13' %}.
+The Holy Spirit reproves, or brings conviction, of sin, of righteousness, and of judgment. In other words, He identifies what is right and wrong in the sight of God, enabling us to experience spiritual growth and an increased love of God, His righteousness, and holy living. Put simply, the Holy Spirit is the catalyst that brings power, victory, and life to the Christian walk. These life changes might seem impossible to us, but, if we are willing to cooperate with the Holy Spirit, nothing is impossible to God {% rf 'Mark 10:26-27; Philippians 2:13' %}.
 
 The Holy Spirit also testifies of Jesus, revealing His character and truth to us, which, if received, has the power to sanctify our own characters {% rf 'John 14:6; 17:17' %}. And whenever we pray, it’s the Holy Spirit who inspires our petitions, if we let Him, so that they are in accordance to God’s will.
 
@@ -105,10 +105,10 @@ A life that is filled with the Holy Spirit will produce the fruits of the Spirit
 {% ct 'Genesis 1:2' %}
 
 > *A new heart also will I give you, and a new spirit will I put within you*: and I will take away the stony heart out of your flesh, and I will give you an heart of flesh. And *I will put my spirit within you, and cause you to walk in my statutes, and ye shall keep my judgments, and do them*.
-{% ct 'Ezekiel 36:26, 27' %}
+{% ct 'Ezekiel 36:26-27' %}
 
 > Not by works of righteousness which we have done, but according to his mercy he saved us, *by the washing of regeneration, and renewing of the Holy Ghost*; which he shed on us abundantly through Jesus Christ our Saviour.
-{% ct 'Titus 3:5, 6' %}
+{% ct 'Titus 3:5-6' %}
 
 > Jesus answered, Verily, verily, I say unto thee, *Except a man be born of water and of the Spirit, he cannot enter into the kingdom of God*. That which is born of the flesh is flesh; and that which is born of the Spirit is spirit. Marvel not that I said unto thee, Ye must be born again. The wind bloweth where it listeth [wishes], and thou hearest the sound thereof, but canst not tell whence it cometh, and whither it goeth: so is every one that is born of the Spirit.
 {% ct 'John 3:5-8' %}
@@ -126,7 +126,7 @@ Just like the Holy Spirit participated in the work of creation on that first wee
 > Then Peter said unto them, Repent, and be baptized every one of you in the name of Jesus Christ for the remission of sins, *and ye shall receive the gift of the Holy Ghost*.
 {% ct 'Acts 2:38' %}
 
-Jesus’ promise to send the Holy Spirit was fulfilled on the Day of Pentecost when the disciples were filled, or baptized, with the Spirit, receiving various supernatural gifts that enabled them to proclaim the gospel with power. Peter made it clear that God’s genuine followers today are also prepared for service through the same outpouring of the Holy Spirit {% rf 'Ephesians 4:11-13' %} when they repent and are baptized (see [“Why Does Baptism Matter?”](/posts/basics/baptism.md)). And just like the outpouring during Pentecost, there will be another outpouring of the Spirit in the last days, just before Christ’s return, that will enable God’s followers to preach the gospel with power and give the final warning to the world {% rf 'Acts 3:19-21; Joel 2:28, 29' %}.
+Jesus’ promise to send the Holy Spirit was fulfilled on the Day of Pentecost when the disciples were filled, or baptized, with the Spirit, receiving various supernatural gifts that enabled them to proclaim the gospel with power. Peter made it clear that God’s genuine followers today are also prepared for service through the same outpouring of the Holy Spirit {% rf 'Ephesians 4:11-13' %} when they repent and are baptized (see [“Why Does Baptism Matter?”](/posts/basics/baptism.md)). And just like the outpouring during Pentecost, there will be another outpouring of the Spirit in the last days, just before Christ’s return, that will enable God’s followers to preach the gospel with power and give the final warning to the world {% rf 'Acts 3:19-21; Joel 2:28-29' %}.
 
 ## Will the Spirit participate in the resurrection?
 
@@ -179,16 +179,16 @@ In 1 Corinthians Paul sheds more light on the subject. He emphasizes that tongue
 
 Because the Holy Spirit is a Person, He can be grieved, and when this happens, He stops striving with us, meaning He stops convicting us of sin and of righteousness, no longer leading us to abandon the things that are offensive to God (sins of commission) or to do what is right in the sight of God, which can turn into sins of omission, if refused. Grieving away the Holy Spirit is a frightful position to be in because once He ceases to invite a person to come to Christ there is no hope of salvation left.
 
-The Bible compares the Holy Spirit’s revelations of Bible truth with receiving light. As the Holy Spirit guides us into an understanding of Bible truth, and we choose to walk in that revealed light, God will continue giving us more light {% rf 'Proverbs 4:18, 19' %}, but a persistent rejection of revealed truth can lead to the extinguishing of light, leaving us in the spiritual darkness of error {% rf 'John 12:35' %}. Paul describes this process as quenching the Spirit {% rf '1 Thessalonians 5:19' %}, similar to how water quenches fire.
+The Bible compares the Holy Spirit’s revelations of Bible truth with receiving light. As the Holy Spirit guides us into an understanding of Bible truth, and we choose to walk in that revealed light, God will continue giving us more light {% rf 'Proverbs 4:18-19' %}, but a persistent rejection of revealed truth can lead to the extinguishing of light, leaving us in the spiritual darkness of error {% rf 'John 12:35' %}. Paul describes this process as quenching the Spirit {% rf '1 Thessalonians 5:19' %}, similar to how water quenches fire.
 
-In fact, Paul later warns that this quenching can lead to a delusion where error is accepted as truth {% rf '2 Thessalonians 2:10-12' %}, which leads to the experience described in {% rf 'Matthew 7:22, 23' false %} where Jesus says “I never knew you” to those who thought they were saved but, actually, were lost because they had quenched the Spirit.
+In fact, Paul later warns that this quenching can lead to a delusion where error is accepted as truth {% rf '2 Thessalonians 2:10-12' %}, which leads to the experience described in {% rf 'Matthew 7:22-23' false %} where Jesus says “I never knew you” to those who thought they were saved but, actually, were lost because they had quenched the Spirit.
 
 In {% rf 'Matthew 7:21' false %} Jesus says only those who do the will of His Father will enter the kingdom of heaven, so any teaching of “salvation in sin“ is not from God because it rejects the need of Jesus (as does “salvation by works“). A genuine acceptance of Jesus as Lord and Savior, that is motivated by love and gratitute, always leads to a changed lifestyle that is in harmony with His will, which is salvation *from* sin by faith in Jesus’ power to forgive, save, and transform {% rf '2 Corinthians 5:17; John 14:15' %}. Who choose to obey Him because we *are* saved, not *to be* saved.
 
 ## What is blasphemy against the Holy Spirit?
 
 > Wherefore I say unto you, All manner of sin and blasphemy shall be forgiven unto men: but the *blasphemy against the Holy Ghost shall not be forgiven unto men*. And whosoever speaketh a word against the Son of man, it shall be forgiven him: but whosoever speaketh against the Holy Ghost, it shall not be forgiven him, neither in this world, neither in the world to come.
-{% ct 'Matthew 12:31, 32' %}
+{% ct 'Matthew 12:31-32' %}
 
 We’ve learned that one of the roles of the Holy Spirit is to convict us of sin, and the Bible makes it clear that any sin that is confessed will be forgiven by Jesus {% rf '1 John 1:9' %}. Blasphemy against the Holy Spirit, which cannot be forgiven, also known as the unpardonable sin, is a continual resisting or rejection of the Holy Spirit’s convicting, converting power, which leads to sins that are left unconfessed and, therefore, cannot be forgiven. This is why David, after committing the sin of adultery and murder, prayed that God would not take His Holy Spirit from him {% rf 'Psalm 51:11' %} because he knew that only the Spirit was able to lead him to repentance and a transformation of heart.
 
@@ -225,6 +225,6 @@ Being Christ’s personal representative on earth, the Holy Spirit’s ministry 
 {% ct 'Romans 8:14' %}
 
 > My sheep hear my voice, and I know them, and they follow me: and I give unto them eternal life; and they shall never perish, *neither shall any man pluck them out of my hand*.
-{% ct 'John 10:27, 28' %}
+{% ct 'John 10:27-28' %}
 
 As we commit our lives to Jesus and follow His Spirit’s leading, we become sons and daughters of God. His promise to us is He will keep us on course, leading us to His kingdom!

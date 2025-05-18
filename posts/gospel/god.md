@@ -31,10 +31,10 @@ It may be hard for our finite minds to comprehend, but God is infinite; He alway
 ## Does God know the future?
 
 > Remember the former things of old: for I am God, and there is none else; I am God, and there is none like me, *declaring the end from the beginning*, and from ancient times the things that are not yet done, saying, My counsel shall stand, and I will do all my pleasure.
-{% ct 'Isaiah 46:9, 10' %}
+{% ct 'Isaiah 46:9-10' %}
 
 > My frame was not hidden from You, when I was made in secret, and skillfully wrought in the lowest parts of the earth. Your eyes saw my substance, being yet unformed. And *in Your book they all were written, the days fashioned for me, when as yet there were none of them*.
-{% ct 'Psalm 139:15, 16, NKJV' %}
+{% ct 'Psalm 139:15-16, NKJV' %}
 
 > Surely the Lord GOD will do nothing, but *he revealeth his secret unto his servants the prophets*.
 {% ct 'Amos 3:7' %}
@@ -50,7 +50,7 @@ Not only does God know the future, but He also likes to reveal it ahead of time 
 {% ct 'Isaiah 46:9' %}
 
 > “*To whom will you compare me? Or who is my equal*?” says the Holy One. Lift up your eyes and look to the heavens: Who created all these? He who brings out the starry host one by one and calls forth each of them by name. Because of his great power and mighty strength, not one of them is missing.
-{% ct 'Isaiah 40:25, 26, NIV' %}
+{% ct 'Isaiah 40:25-26, NIV' %}
 
 Satan wants to be like God, but he too is a created being (see [“Origin of Evil”](/posts/gospel/evil.md)).
 
@@ -67,12 +67,12 @@ All God has to do is speak and atoms are immediately created in obedience to His
 ## Do the galaxies have anything to say about Him?
 
 > The *heavens declare the glory of God*; the *skies proclaim the work of his hands*. Day after day they pour forth speech; night after night they reveal knowledge.
-{% ct 'Psalm 19:1, 2, NIV' %}
+{% ct 'Psalm 19:1-2, NIV' %}
 
 ## What is God like?
 
 > And the LORD passed by before him, and proclaimed, The LORD, The LORD God, *merciful and gracious, longsuffering, and abundant in goodness and truth, keeping mercy for thousands, forgiving iniquity and transgression and sin, and that will by no means clear the guilty*; visiting the iniquity of the fathers upon the children, and upon the children's children, unto the third and to the fourth generation.
-{% ct 'Exodus 34:6, 7' %}
+{% ct 'Exodus 34:6-7' %}
 
 ## What does the psalmist say belongs to God?
 
@@ -102,7 +102,7 @@ The fact that the Creator and King of the universe cares about you personally is
 {% ct 'Hebrews 13:5' %}
 
 > Can a woman forget her sucking child, that she should not have compassion on the son of her womb? yea, they may forget, *yet will I not forget thee*. Behold, I have graven thee upon the palms of my hands.
-{% ct 'Isaiah 49:15, 16' %}
+{% ct 'Isaiah 49:15-16' %}
 
 > That Christ may dwell in your hearts by faith; that ye, being rooted and grounded in love, may be able to comprehend with all saints what is the breadth, and length, and depth, and height; and to *know the love of Christ, which passeth knowledge*, that ye might be filled with all the fulness of God.
 {% ct 'Ephesians 3:17-19' %}

@@ -35,7 +35,7 @@ No one is born pure in heart, hungering and thirsting after rigtheousness becaus
 {% ct 'Revelation 21:1-5' %}
 
 > And *there shall be no more curse*: but the throne of God and of the Lamb shall be in it; and *his servants shall serve him: and they shall see his face*; and his name shall be in their foreheads.
-{% ct 'Revelation 22:3, 4' %}
+{% ct 'Revelation 22:3-4' %}
 
 > For thus saith the LORD that created the heavens; God himself that formed the earth and made it; he hath established it, *he created it not in vain, he formed it to be inhabited*: I am the LORD; and there is none else.
 {% ct 'Isaiah 45:18' %}
@@ -43,7 +43,7 @@ No one is born pure in heart, hungering and thirsting after rigtheousness becaus
 > And thou, O tower of the flock, the strong hold of the daughter of Zion, *unto thee shall it come, even the first dominion; the kingdom shall come to the daughter of Jerusalem*.
 {% ct 'Micah 4:8' %}
 
-As one of the most hope-filled passages in the entire Bible, {% rf 'Revelation 21:3, 4' %} adds a lot more color to what Peter meant when he said that righteousness will dwell there. And because sin and its curse will be abolished {% rf 'Genesis 3:17-19' %}, God will be able to dwell among His children, never to be separated again! They will be able to commune with Him the way Adam and Eve did before sin entered the world: face-to-face! These passages also tell us that God did not create earth just to watch it be destroyed by sin. No, He will abolish sin, recreate earth, and make it even more glorious than it was in Eden! He will do the work which Adam, Eve, and their offspring would have done had they never sinned—to populate and build up the earth {% rf 'Genesis 1:28' %}. God will fill the earth with the people He redeemed, and He will establish the New Jerusalem as its capital!
+As one of the most hope-filled passages in the entire Bible, {% rf 'Revelation 21:3-4' %} adds a lot more color to what Peter meant when he said that righteousness will dwell there. And because sin and its curse will be abolished {% rf 'Genesis 3:17-19' %}, God will be able to dwell among His children, never to be separated again! They will be able to commune with Him the way Adam and Eve did before sin entered the world: face-to-face! These passages also tell us that God did not create earth just to watch it be destroyed by sin. No, He will abolish sin, recreate earth, and make it even more glorious than it was in Eden! He will do the work which Adam, Eve, and their offspring would have done had they never sinned—to populate and build up the earth {% rf 'Genesis 1:28' %}. God will fill the earth with the people He redeemed, and He will establish the New Jerusalem as its capital!
 
 ## What kind of bodies will the saved have?
 
@@ -108,17 +108,17 @@ Vast oceans and deserts make up a large portion of the earth’s surface today, 
 ## What will the New Jerusalem be like?
 
 > And the city lieth *foursquare*, and the length is as large as the breadth: and he measured the city with the reed, twelve thousand furlongs. The *length and the breadth and the height of it are equal*. And *he measured the wall thereof, an hundred and forty and four cubits*, according to the measure of a man, that is, of the angel.
-{% ct 'Revelation 21:16, 17' %}
+{% ct 'Revelation 21:16-17' %}
 
 > And the building of the *wall of it was of jasper*: and the *city was pure gold*, like unto clear glass. And the *foundations of the wall of the city were garnished with all manner of precious stones*. The first foundation was jasper; the second, sapphire; the third, a chalcedony; the fourth, an emerald; the fifth, sardonyx; the sixth, sardius; the seventh, chrysolite; the eighth, beryl; the ninth, a topaz; the tenth, a chrysoprasus; the eleventh, a jacinth; the twelfth, an amethyst. And the twelve gates were twelve pearls; *every several gate was of one pearl*: and the *street of the city was pure gold*, as it were transparent glass.
 {% ct 'Revelation 21:18-21' %}
 
-The city is arranged in a square with its width, length, and height equal. The distance around it is 12,000 furlongs or 1,500 miles (1 furlong is 1/8 of a mile), which means it’s 375 miles long each side! The streets are of pure gold, and the walls are 144 cubits or 216 feet of solid jasper—nearly 20 stories high—with 12 gates total, and each gate is of a single pearl. The city also has 12 foundations with each one of a different precious stone and color, so from a distance it will look like it’s resting upon a rainbow! When the New Jerusalem descends from heaven at the end of the 1,000 years (see [“1,000 Years of Peace”](/posts/prophecy/millennium.md)), it will rest on a great plain created for it by Jesus after He flattens the Mount of Olives {% rf 'Zechariah 14:4, 5' %}.
+The city is arranged in a square with its width, length, and height equal. The distance around it is 12,000 furlongs or 1,500 miles (1 furlong is 1/8 of a mile), which means it’s 375 miles long each side! The streets are of pure gold, and the walls are 144 cubits or 216 feet of solid jasper—nearly 20 stories high—with 12 gates total, and each gate is of a single pearl. The city also has 12 foundations with each one of a different precious stone and color, so from a distance it will look like it’s resting upon a rainbow! When the New Jerusalem descends from heaven at the end of the 1,000 years (see [“1,000 Years of Peace”](/posts/prophecy/millennium.md)), it will rest on a great plain created for it by Jesus after He flattens the Mount of Olives {% rf 'Zechariah 14:4-5' %}.
 
 ## What about the food and water supply?
 
 > And he shewed me *a pure river of water of life*, clear as crystal, proceeding out of the throne of God and of the Lamb. In the midst of the street of it, and on either side of the river, was there *the tree of life, which bare twelve manner of fruits, and yielded her fruit every month*: and the leaves of the tree were for the healing of the nations.
-{% ct 'Revelation 22:1, 2' %}
+{% ct 'Revelation 22:1-2' %}
 
 The city is watered by the river of life that flows from the throne of God, while the tree of life produces a different kind of fruit each month! In addition to this, the saved will also plant their own food at the homes they build {% rf 'Isaiah 65:21' %}. Since there will be no death there, the diet will be what it was before Adam and Eve sinned: fruits, grains, and nuts {% rf 'Gensis 1:29' %}. Sustained by the fruit and leaves of the tree of life, the saved will experience unfailing youth and vigor throughout eternity!
 
@@ -138,7 +138,7 @@ The joy, bliss, and glory of heaven will be beyond our wildest dreams; in fact, 
 ## What does Revelation say about the saved?
 
 > *He that overcometh shall inherit all things*; and I will be his God, and he shall be my son. But the fearful, and unbelieving, and the abominable, and murderers, and whoremongers, and sorcerers, and idolaters, and all liars, shall have their part in the lake which burneth with fire and brimstone: which is the second death.
-{% ct 'Revelation 21:7, 8' %}
+{% ct 'Revelation 21:7-8' %}
 
 > And *they overcame him by the blood of the Lamb*, and by the word of their testimony; and they loved not their lives unto the death.
 {% ct 'Revelation 12:11' %}
@@ -154,10 +154,10 @@ Those who overcome sin will inherit all things. And how do they overcome? By the
 ## What am I to do while waiting for God’s literal kingdom?
 
 > In those days came John the Baptist, preaching in the wilderness of Judaea, and saying, *Repent ye: for the kingdom of heaven is at hand*.
-{% ct 'Matthew 3:1, 2' %}
+{% ct 'Matthew 3:1-2' %}
 
 > And when he was demanded of the Pharisees, when the kingdom of God should come, he answered them and said, The kingdom of God cometh not with observation: neither shall they say, Lo here! or, lo there! for, behold, *the kingdom of God is within you*.
-{% ct 'Luke 17:20, 21' %}
+{% ct 'Luke 17:20-21' %}
 
 > But *seek ye first the kingdom of God, and his righteousness*; and all these things shall be added unto you.
 {% ct 'Matthew 6:33' %}

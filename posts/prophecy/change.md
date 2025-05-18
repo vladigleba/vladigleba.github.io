@@ -40,7 +40,7 @@ God wrote the Ten Commandments Himself on tablets of stone to illustrate their u
 ## What did Jesus say about the law?
 
 > Think not that I am come to destroy the law, or the prophets: *I am not come to destroy, but to fulfil*. For verily I say unto you, till heaven and earth pass, *one jot or one tittle shall in no wise pass from the law*, till all be fulfilled.
-{% ct 'Matthew 5:17, 18' %}
+{% ct 'Matthew 5:17-18' %}
 
 > And *it is easier for heaven and earth to pass*, than one tittle of the law to fail.
 {% ct 'Luke 16:17' %}

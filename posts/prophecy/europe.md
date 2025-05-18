@@ -80,14 +80,14 @@ Aptly symbolized by a head of gold, Babylon was one of the most extravagant king
 {% ct 'Daniel 5:28' %}
 
 > In that night was Belshazzar the king of the Chaldeans slain. And *Darius the Median took the kingdom*, being about threescore and two years old.
-{% ct 'Daniel 5:30, 31' %}
+{% ct 'Daniel 5:30-31' %}
 
 Babylon was conquered by Cyrus in 539 B.C., which made the kingdom of Medo-Persia the next ruling power. During their reign, all taxes had to be paid in silver.
 
 ## Did the Bible predict how Babylon would fall?
 
 > That saith to the deep, Be dry, and I will *dry up thy rivers*: that saith of *Cyrus*, He is my shepherd, and shall perform all my pleasure: even saying to Jerusalem, Thou shalt be built; and to the temple, Thy foundation shall be laid.
-{% ct 'Isaiah 44:27, 28' %}
+{% ct 'Isaiah 44:27-28' %}
 
 > Thus saith the LORD to his anointed, to *Cyrus*, whose right hand I have holden, to subdue nations before him; and I will loose the loins of kings, to open before him the two leaved gates; and *the gates shall not be shut*. 
 {% ct 'Isaiah 45:1' %}
@@ -104,7 +104,7 @@ Each succeeding mineral is less valuable, but more enduring than the one prior.
 ## According to Daniel 8, what kingdom is this?
 
 > The ram which thou sawest having two horns are the kings of Media and Persia. And the rough goat is the *king of Grecia*: and the great horn that is between his eyes is the first king.
-{% ct 'Daniel 8:20, 21' %}
+{% ct 'Daniel 8:20-21' %}
 
 Alexander the Great conquered the Medes and Persians at the battle of Arbela in 331 B.C., which made the brass kingdom of Greece the next dominant world power. The armor of the Greek soldiers was all bronze.
 
@@ -118,7 +118,7 @@ The iron monarchy of Rome conquered the Greeks in 168 B.C. and was the world pow
 ## What kind of kingdom did the feet and toes represent?
 
 > And whereas thou sawest the feet and toes, part of potters' clay, and part of iron, the *kingdom shall be divided*; but there shall be in it of the strength of the iron, forasmuch as thou sawest the iron mixed with miry clay. And as the toes of the feet were part of iron, and part of clay, so the *kingdom shall be partly strong, and partly broken*.
-{% ct 'Daniel 2:41, 42' %}
+{% ct 'Daniel 2:41-42' %}
 
 After the Roman empire crumled in A.D. 476, it was divided by barbarian tribes into numerous kingdoms symbolized by the toes on the image, seven of which exist today: the Ostrogoths (gone), Visigoths (Spain), Franks (France), Vandals (gone), Alemannians (Germany), Sueves (Portugal), Anglo-Saxons (England), Heruli (gone), and Lombards (Italy). The toes being partly of iron and partly of clay means some would be stronger than others.
 
@@ -139,7 +139,7 @@ The stone cut without hands represents the kingdom of heaven, which will replace
 ## Do the Psalms say anything about Christ’s kingdom?
 
 > Ask of Me, and *I will give You the nations for Your inheritance*, and the ends of the earth for Your possession. You shall break them with a rod of iron; *You shall dash them to pieces like a potter’s vessel*.
-{% ct 'Psalm 2:8, 9, NKJV' %}
+{% ct 'Psalm 2:8-9, NKJV' %}
 
 ## What hope does the Bible give us?
 

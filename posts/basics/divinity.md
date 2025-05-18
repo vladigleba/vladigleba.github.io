@@ -17,7 +17,7 @@ series: messiah
 
 ## What did Jesus say about His divinity?
 
-> And now, O Father, *glorify thou me with thine own self with the glory which I had with thee before the world was*. &hellip; Father, I will that they also, whom thou hast given me, be with me where I am; *that they may behold my glory, which thou hast given me*: for thou lovedst me before the foundation of the world.
+> And now, O Father, *glorify thou me with thine own self with the glory which I had with thee before the world was*. ... Father, I will that they also, whom thou hast given me, be with me where I am; *that they may behold my glory, which thou hast given me*: for thou lovedst me before the foundation of the world.
 {% ct 'John 17:5, 24' %}
 
 The Father shares His glory with His Son, Jesus, and it has always been this way.
@@ -37,7 +37,7 @@ Jesus used this expression to reveal Himself to Moses as “the Self-existing On
 ## Does Paul corroborate this?
 
 > *For by him were all things created*, that are in heaven, and that are in earth, visible and invisible, whether they be thrones, or dominions, or principalities, or powers: all things were created by him, and for him: and *he is before all things, and by him all things consist*.
-{% ct 'Colossians 1:16, 17' %}
+{% ct 'Colossians 1:16-17' %}
 
 Not only is Jesus the Self-existing One, but He is also the Creator of all things!
 

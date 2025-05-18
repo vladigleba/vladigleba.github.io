@@ -14,7 +14,7 @@ series: second-coming
 {% ct 'Matthew 24:24' %}
 
 > For such are false apostles, deceitful workers, transforming themselves into the apostles of Christ. And no marvel; for *Satan himself is transformed into an angel of light*.
-{% ct '2 Corinthians 11:13, 14' %}
+{% ct '2 Corinthians 11:13-14' %}
 
 Jesus is emphasizing that deception will not only be prevelant in the lead-up to His coming, but it will also be powerful because it will be accompanied by signs and wonders. And it’s not just people who can pretend to be something they’re not, but Satan himself can appear as an angel of light.
 
@@ -28,7 +28,7 @@ The interest in psychics, channelers, spiritists, and the occult will only conti
 ## What is another sign?
 
 > And ye shall hear of *wars and rumours of wars*: see that ye be not troubled: for all these things must come to pass, but the end is not yet. For nation shall rise against nation, and kingdom against kingdom: and *there shall be famines, and pestilences, and earthquakes, in divers places*.
-{% ct 'Matthew 24:6, 7' %}
+{% ct 'Matthew 24:6-7' %}
 
 > All these are the *beginning of birth pains*.
 {% ct 'Matthew 24:8, NIV' %}
@@ -50,7 +50,7 @@ The human race now have the ability to destroy the earth through weapons of mass
 ## What sign does Paul give in one of his letters?
 
 > For yourselves know perfectly that the day of the Lord so cometh as a thief in the night. *For when they shall say, Peace and safety; then sudden destruction cometh upon them*, as travail upon a woman with child; and they shall not escape.
-{% ct '1 Thessalonians 5:2, 3' %}
+{% ct '1 Thessalonians 5:2-3' %}
 
 This is related to the previous sign of fear about the future because when there will be talk of peace and safety, the reality that follows will be the opposite.
 

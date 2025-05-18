@@ -16,7 +16,7 @@ series: sabbath
 {% ct 'Exodus 20:11' %}
 
 > And it shall come to pass, if thou shalt hearken diligently unto the voice of the LORD thy God, to observe and to do all his commandments which I command thee this day, that the LORD thy God will set thee on high above all nations of the earth: and *all these blessings shall come on thee, and overtake thee*, if thou shalt hearken unto the voice of the LORD thy God. ... But it shall come to pass, if thou wilt not hearken unto the voice of the LORD thy God, to observe to do all his commandments and his statutes which I command thee this day; that all these curses shall come upon thee, and overtake thee.
-{% ct 'Deuteronomy 28:1, 2, 15' %}
+{% ct 'Deuteronomy 28:1-2, 15' %}
 
 The Sabbath was not made to be a burden, but a blessing to the human race, and those who keep it partake in the blessing on a weekly basis. In Deuteronomy 28 God also pronounces other blessings on those who keep His commandments, including the fourth.
 
@@ -57,7 +57,7 @@ In the Bible, the day does not actually start and end at midnight; it starts fro
 ## What insight does Isaiah give?
 
 > If thou turn away thy foot from the sabbath, from doing thy pleasure on my holy day; and *call the sabbath a delight*, the holy of the LORD, honourable; and *shalt honour him, not doing thine own ways, nor finding thine own pleasure, nor speaking thine own words*: then shalt thou *delight thyself in the LORD*; and I will cause thee to ride upon the high places of the earth, and feed thee with the heritage of Jacob thy father: for the mouth of the LORD hath spoken it.
-{% ct 'Isaiah 58:13, 14' %}
+{% ct 'Isaiah 58:13-14' %}
 
 The Sabbath becomes a delight when it is centered around Jesus—when we put away our own pursuits and rest from the cares of life in order to focus on the eternal things of God. It’s a special day to reflect on, honor, and connect with Him. Simply put, it’s a day to delight in Him.
 

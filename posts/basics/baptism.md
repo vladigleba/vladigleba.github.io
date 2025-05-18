@@ -8,7 +8,7 @@ date: 2025-02-03
 ## What instruction did Jesus give His disciples?
 
 > Go ye therefore, and teach all nations, *baptizing them in the name of the Father, and of the Son, and of the Holy Ghost*: teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world.
-{% ct 'Matthew 28:19, 20' %}
+{% ct 'Matthew 28:19-20' %}
 
 > He that *believeth and is baptized shall be saved*; but he that believeth not shall be damned.
 {% ct 'Mark 16:16' %}
@@ -21,12 +21,12 @@ Just before Jesus ascended to heaven, He gave His disciples the “Great Commiss
 {% ct 'John 3:5' %}
 
 > That if thou shalt *confess with thy mouth the Lord Jesus*, and shalt believe in thine heart that God hath raised him from the dead, thou shalt be saved. For with the heart man believeth unto righteousness; and *with the mouth confession is made unto salvation*.
-{% ct 'Romans 10:9, 10' %}
+{% ct 'Romans 10:9-10' %}
 
 > For as many of you as have been *baptized into Christ have put on Christ*.
 {% ct 'Galatians 3:27' %}
 
-During His conversation with Nicodemus, Jesus made it clear that all Christians need to be baptized. Salvation is a gift from God that is received through faith in Jesus Christ {% rf 'Ephesians 2:8, 9' %}, and Paul, in his letter to the Romans, says that faith is demonstrated through a public confession of Jesus. When we are baptized we are making a public confession that we have “put on Christ”—accepted Him, as Lord and Savior, into our hearts, which, in turn, gives us a new name and a new identity: follower of Christ, son or daughter of God!
+During His conversation with Nicodemus, Jesus made it clear that all Christians need to be baptized. Salvation is a gift from God that is received through faith in Jesus Christ {% rf 'Ephesians 2:8-9' %}, and Paul, in his letter to the Romans, says that faith is demonstrated through a public confession of Jesus. When we are baptized we are making a public confession that we have “put on Christ”—accepted Him, as Lord and Savior, into our hearts, which, in turn, gives us a new name and a new identity: follower of Christ, son or daughter of God!
 
 ## How many methods of baptism are there?
 
@@ -44,14 +44,14 @@ The Bible is clear there is only one true baptism, and the word itself is a clue
 {% ct 'Matthew 3:13-17' %}
 
 > And it came to pass in those days, that Jesus came from Nazareth of Galilee, and was baptized of John in Jordan. And straightway *coming up out of the water*, he saw the heavens opened, and the Spirit like a dove descending upon him.
-{% ct 'Mark 1:9, 10' %}
+{% ct 'Mark 1:9-10' %}
 
 John the Baptist chose an area with lots of water because he practiced the biblical form of baptism by full immersion. Matthew and Mark make it clear that this is the baptism that Jesus, our example in all things, received when they describe Him coming up out of the water, meaning He had to go into the water to be baptized.
 
 ## Are there other examples of baptism?
 
 > And he commanded the chariot to stand still: and *they went down both into the water*, both Philip and the eunuch; and he baptized him. And when *they were come up out of the water*, the Spirit of the Lord caught away Philip, that the eunuch saw him no more: and he went on his way rejoicing.
-{% ct 'Acts 8:38, 39' %}
+{% ct 'Acts 8:38-39' %}
 
 The Bible gives the example of Philip and the eunuch to show that Jesus’ disciples did not change the method of baptism after His ascension. Both Philip and the eunuch went down into the water, and after Philip baptized the eunuch, they came up out of the water. This matches the description and form of baptism that Jesus received.
 
@@ -80,12 +80,12 @@ Baptism to a Christian is what a wedding is to a marriage, and using the correct
 
 In addition to water baptism, every sincere Christian will also receive the baptism of the Holy Spirit because a full immersion in water is not sufficient without being fully immersed by the Holy Spirit. The good news is that God is more than willing to give His Spirit to anyone who asks {% rf 'Luke 11:13' %} and desires to be transformed in life and character by the Spirit who convicts of sin and bestows on us the righteousness of Jesus {% rf 'John 16:8; Titus 3:3-7' %}. Without the Holy Spirit we cannot change ourselves {% rf 'Jeremiah 13:23' %}.
 
-Evidence of receiving the baptism of the Spirit includes producing the fruits of the Spirit described in {% rf 'Galatians 5:22, 23' false %} as well as receiving His gifts (see [“Holy Spirit”](/posts/basics/spirit.md#what-are-the-gifts-of-the-holy-spirit)), both of which enable us to be effective ambassadors for God {% rf '2 Corinthians 5:19-21' %}.
+Evidence of receiving the baptism of the Spirit includes producing the fruits of the Spirit described in {% rf 'Galatians 5:22-23' false %} as well as receiving His gifts (see [“Holy Spirit”](/posts/basics/spirit.md#what-are-the-gifts-of-the-holy-spirit)), both of which enable us to be effective ambassadors for God {% rf '2 Corinthians 5:19-21' %}.
 
 ## How do I know if I’m ready for baptism?
 
 > Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: *teaching them to observe all things whatsoever I have commanded you*: and, lo, I am with you alway, even unto the end of the world.
-{% ct 'Matthew 28:19, 20' %}
+{% ct 'Matthew 28:19-20' %}
 
 > He that *believeth* and is baptized shall be saved; but he that believeth not shall be damned.
 {% ct 'Mark 16:16' %}
@@ -94,7 +94,7 @@ Evidence of receiving the baptism of the Spirit includes producing the fruits of
 {% ct 'Acts 2:38' %}
 
 > For if we have been planted together in the likeness of his death, we shall be also in the likeness of his resurrection: knowing this, that *our old man is crucified with him, that the body of sin might be destroyed, that henceforth we should not serve sin*.
-{% ct 'Romans 6:5, 6' %}
+{% ct 'Romans 6:5-6' %}
 
 Like marriage, baptism is a public commitment to Jesus as my personal Savior {% rf 'Acts 8:37' %}, so it’s important to first get to know Him and understand His teachings. This is in the commission Jesus gave His disciples just before His ascension—to share His teachings in all the world and to baptize those who accept them and believe in Him. Naturally, His teachings will bring conviction of sin, leading the genuine believer to repent of past sins {% rf 'Acts 5:31' %} and choose to no longer serve sin by dying to self through the power of the Holy Spirit. This experience is known as being born of the Spirit, and if it’s present in a believer’s life then that person is ready to make the exciting, yet serious, public commitment to be faithful to Jesus even to the point of death.
 
@@ -117,7 +117,7 @@ It’s important to note that we are not saved by baptism as salvation is by gra
 ## What is baptism connected with?
 
 > *Then they that gladly received his word were baptized*: and the same day there were added unto them about three thousand souls. And they *continued stedfastly in the apostles' doctrine and fellowship, and in breaking of bread, and in prayers*. ... And they, *continuing daily with one accord in the temple*, and breaking bread from house to house, did eat their meat with gladness and singleness of heart, praising God, and having favour with all the people. And *the Lord added to the church daily such as should be saved*.
-{% ct 'Acts 2:41, 42, 46, 47' %}
+{% ct 'Acts 2:41-42, 46-47' %}
 
 > And *He is the head of the body, the church*, who is the beginning, the firstborn from the dead, that in all things He may have the preeminence.
 {% ct 'Colossians 1:18' %}
@@ -157,6 +157,6 @@ When the Holy Spirit brings conviction to the heart, one of Satan’s most effec
 {% ct 'Luke 15:7' %}
 
 > In that day it shall be said to Jerusalem: “Do not fear; Zion, let not your hands be weak. The Lord your God in your midst, the Mighty One, will save; *He will rejoice over you with gladness*, He will quiet you with His love, *He will rejoice over you with singing*.”
-{% ct 'Zephaniah 3:16, 17, NKJV' %}
+{% ct 'Zephaniah 3:16-17, NKJV' %}
 
 Not only is there joy in heaven over every repenting sinner, but Zephaniah tells us that God Himself rejoices in song over His people! The truth is we have the ability to make heaven rejoice, and stepping into the waters of baptism to make a public commitment to Jesus is bound to bring melodies of joy to the heavenly courts.

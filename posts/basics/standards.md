@@ -25,7 +25,7 @@ Love for one’s spouse leads to a desire to please. That which is pleasing is p
 ## What does pleasing God bring?
 
 > If ye keep my commandments, ye shall abide in my love; even as I have kept my Father's commandments, and abide in his love. These things have I spoken unto you, *that my joy might remain in you, and that your joy might be full*.
-{% ct 'John 15:10, 11' %}
+{% ct 'John 15:10-11' %}
 
 > The thief cometh not, but for to steal, and to kill, and to destroy: I am come that *they might have life, and that they might have it more abundantly*.
 {% ct 'John 10:10' %}
@@ -55,7 +55,7 @@ Every sin falls into one of three categories: 1) the lust of the flesh, 2) the l
 ## What does Paul say about conformity?
 
 > I beseech you therefore, brethren, by the mercies of God, that ye present your bodies a living sacrifice, holy, acceptable unto God, which is your reasonable service. And *be not conformed to this world: but be ye transformed by the renewing of your mind*, that ye may prove what is that good, and acceptable, and perfect, will of God.
-{% ct 'Romans 12:1, 2' %}
+{% ct 'Romans 12:1-2' %}
 
 Living in a world of sin brings pressure to conform to its ways, to be squeezed into its mold, but God’s goal is to transform us by renewing our minds through the truth of His Word {% rf 'John 17:17' %}.
 
@@ -72,7 +72,7 @@ Thoughts turn into words, which turn into actions, which turn into habits, which
 ## What guidance does God give regarding our thoughts?
 
 > And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus. Finally, brethren, whatsoever things are *true*, whatsoever things are *honest*, whatsoever things are *just*, whatsoever things are *pure*, whatsoever things are *lovely*, whatsoever things are *of good report*; *if there be any virtue, and if there be any praise, think on these things*.
-{% ct 'Philippians 4:7, 8' %}
+{% ct 'Philippians 4:7-8' %}
 
 > Casting down imaginations, and every high thing that exalteth itself against the knowledge of God, and *bringing into captivity every thought to the obedience of Christ*.
 {% ct '2 Corinthians 10:5' %}
@@ -119,14 +119,14 @@ Instead of beholding vanity or violence, which are displeasing to God, we are in
 {% ct 'Proverbs 12:15' %}
 
 > *Be not wise in thine own eyes: fear the LORD, and depart from evil*. It shall be health to thy navel, and marrow to thy bones.
-{% ct 'Proverbs 3:7, 8' %}
+{% ct 'Proverbs 3:7-8' %}
 
 Sin has so perverted our sensibility to what is right and wrong that, without God drawing a clear distinction between the two in His Word, we are incapable of making the distinction ourselves. The key question He would like us to ask is will this music, movie, TV show, or book honor You?
 
 ## What principles does God give regarding clothing?
 
 > In like manner also, that the women adorn themselves *in modest apparel, with propriety and moderation*, not with braided hair or gold or pearls or costly clothing, but, which is proper for women professing godliness, with good works.
-{% ct '1 Timothy 2:9, 10, NKJV' %}
+{% ct '1 Timothy 2:9-10, NKJV' %}
 
 God’s counsel regarding clothing, which applies to both men and women, is modesty, propriety, and moderation. The key word is moderation, which means we are to avoid expensive clothes, but we are not to dress in sackcloth either. Our clothing should be clean, neat, and modest.
 
@@ -195,7 +195,7 @@ Many try to follow Christ while staying as close as possible to the world, but a
 ## What if changing my habits feels overwhelming?
 
 > And they were astonished out of measure, saying among themselves, Who then can be saved? And Jesus looking upon them saith, *With men it is impossible, but not with God: for with God all things are possible*.
-{% ct 'Mark 10:26, 27' %}
+{% ct 'Mark 10:26-27' %}
 
 > *Sanctify them through thy truth*: thy word is truth.
 {% ct 'John 17:17' %}

@@ -1,7 +1,7 @@
 ---
 title: Victory Over Sin
 description: Is it possible to have victory over the power of sin, or is forgiveness of sin all there is to salvation?
-color: rgb(242, 84, 122)
+color: rgb(242,84,122)
 date: 2025-01-22
 featured: true
 ---
@@ -38,7 +38,7 @@ Sin is a choice, an act of the will because the devil cannot force anyone to sin
 {% ct 'Mark 11:22-24' %}
 
 > And this is the confidence that we have in him, that, *if we ask any thing according to his will, he heareth us*. And if we know that he hear us, whatsoever we ask, we know that we have the petitions that we desired of him. 
-{% ct '1 John 5:14, 15' %}
+{% ct '1 John 5:14-15' %}
 
 The Bible is clear that it’s God will for me to have victory over sin. The Bible also says anything that I ask in faith according to His will He will do, and Paul even encourages me to thank God for the victory He gives me through Jesus. Just like the Israelites gave a loud shout of victory before the walls of Jericho came down {% rf 'Joshua 6:16' %}, I can claim that victory by faith and thank God for it. Faith in the power of God is crucial; it is the difference between merely asking for victory and believing it. The victory is a gift that needs to be received and accepted. So after saying “No, I choose to serve Christ,” my second response to temptation can be “Thank you God for the victory that is mine through Jesus.”
 
@@ -68,7 +68,7 @@ Sin occurs when the door of the mind is opened, and it’s then let inside and e
 ## How did Jesus meet temptation?
 
 > And when the tempter came to him, he said, If thou be the Son of God, command that these stones be made bread. But he answered and said, *It is written*, Man shall not live by bread alone, but by every word that proceedeth out of the mouth of God.
-{% ct 'Matthew 4:3, 4' %}
+{% ct 'Matthew 4:3-4' %}
 
 > For *the word of God is living and powerful, and sharper than any two-edged sword*, piercing even to the division of soul and spirit, and of joints and marrow, and is a discerner of the thoughts and intents of the heart.
 {% ct 'Hebrews 4:12, NKJV' %}
@@ -142,7 +142,7 @@ The more time I spend thinking about what Jesus did for me on the cross, the mor
 {% ct 'Revelation 3:21' %}
 
 > The four and twenty elders fall down before him that sat on the throne, and worship him that liveth for ever and ever, and *cast their crowns before the throne, saying, Thou art worthy, O Lord, to receive glory and honour and power*: for thou hast created all things, and for thy pleasure they are and were created.
-{% ct 'Revelation 4:10, 11' %}
+{% ct 'Revelation 4:10-11' %}
 
 There is power in what Jesus did on the cross because Revelation says the saints overcame Satan by the blood of Jesus Christ. He gives them the victory, and then He grants them to sit on His throne! This is an echo of how the Father treated His prodigal son. Such treatment is completely undeserved, but He does it anyway out of His immeasurable love for His children. No wonder the saints in heaven will cast their crowns before His throne in worship and adoration saying that He is worthy to receive glory, honor, and power.
 

@@ -9,12 +9,12 @@ featured: true
 ## How much of the Bible is inspired? By whom? For what purpose?
 
 > *All* Scripture is given *by inspiration of God*, and is profitable *for doctrine, for reproof, for correction, for instruction in righteousness*, that the man of God may be perfect, throughly furnished unto all good works.
-{% ct '2 Timothy 3:16, 17' %}
+{% ct '2 Timothy 3:16-17' %}
 
 ## How did it maintain its miraculous unity?
 
 > Knowing this first, that no prophecy of the scripture is of any private interpretation. For the prophecy came not in old time by the will of man: but holy men of God spake *as they were moved by the Holy Ghost*.
-{% ct '2 Peter 1:20, 21' %}
+{% ct '2 Peter 1:20-21' %}
 
 The Bible was written over a period of 1,500 years by about 40 different authors whose education and background varied greatly. The Bible’s unity under these circumstances is astonishing and can only be explained by divine inspiration.
 
@@ -26,7 +26,7 @@ The Bible was written over a period of 1,500 years by about 40 different authors
 ## But hasn’t it been corrupted over the ages?
 
 > The words of the LORD are *pure words*, as silver tried in a furnace of earth, purified seven times. Thou shalt keep them, O LORD, thou shalt *preserve them* from this generation for ever.
-{% ct 'Psalm 12:6, 7' %}
+{% ct 'Psalm 12:6-7' %}
 
 God’s word is truth, and He will ensure it stays that way.
 
@@ -36,7 +36,7 @@ God’s word is truth, and He will ensure it stays that way.
 {% ct 'Matthew 24:35' %}
 
 > For all flesh is as grass, and all the glory of man as the flower of grass. The grass withereth, and the flower thereof falleth away: but *the word of the LORD endureth for ever*. And this is the word which by the gospel is preached unto you.
-{% ct '1 Peter 1:24, 25' %}
+{% ct '1 Peter 1:24-25' %}
 
 ## Why did God give us the Scriptures?
 
@@ -44,7 +44,7 @@ God’s word is truth, and He will ensure it stays that way.
 {% ct 'Romans 15:4' %}
 
 > For this is good and acceptable in the sight of God our Savior, *who will have all men to be saved, and to come unto the knowledge of the truth*.
-{% ct '1 Timothy 2:3, 4' %}
+{% ct '1 Timothy 2:3-4' %}
 
 > And that from a child thou hast known the holy scriptures, which are able *to make thee wise unto salvation* through faith which is in Christ Jesus.
 {% ct '2 Timothy 3:15' %}
@@ -95,14 +95,14 @@ Jesus is the spiritual bread that brings everlasting life, and we “eat” it w
 ## Why should I ask for the Holy Spirit’s guidance?
 
 > Which things also we speak, not in the words which man's wisdom teacheth, but which the Holy Ghost teacheth; comparing spiritual things with spiritual. But the natural man receiveth not the things of the Spirit of God: for they are foolishness unto him: neither can he know them, *because they are spiritually discerned*.
-{% ct '1 Corinthians 2:13, 14' %}
+{% ct '1 Corinthians 2:13-14' %}
 
 Because spiritual things are spiritually discerned and because the Bible is full of stories with symbolism, I need the Holy Spirit to open my spiritual eyes and help me bring these stories to life. Humility and a teachable attitude is also a crucial part of it.
 
 ## How should I study the Bible?
 
 > Whom shall he teach knowledge? and whom shall he make to understand doctrine? them that are weaned from the milk, and drawn from the breasts. For precept must be upon precept, *precept upon precept; line upon line*, line upon line; *here a little, and there a little*.
-{% ct 'Isaiah 28:9, 10' %}
+{% ct 'Isaiah 28:9-10' %}
 
 God is not a God of contradiction or confusion, so it’s important to not take verses out of context and build a doctrine based on a verse or two. When studying a particular topic, it’s critical to identify as many verses as possible dealing with the topic and to let the Bible clarify itself on what seem, due to our misunderstanding, like contradictory ones.
 

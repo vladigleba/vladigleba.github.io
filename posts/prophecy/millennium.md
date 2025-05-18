@@ -22,7 +22,7 @@ The promise was repeated by the two angels who appeared to His disciples during 
 ## What will happen during Jesus’ second coming?
 
 > For the Lord himself shall descend from heaven with a shout, with the voice of the archangel, and with the trump of God: and *the dead in Christ shall rise first: then we which are alive and remain shall be caught up together with them in the clouds, to meet the Lord in the air*: and so shall we ever be with the Lord.
-{% ct '1 Thessalonians 4:16, 17' %}
+{% ct '1 Thessalonians 4:16-17' %}
 
 > I am he that liveth, and was dead; and, behold, I am alive for evermore, amen; and *have the keys of hell and of death*.
 {% ct 'Revelation 1:18' %}
@@ -55,7 +55,7 @@ Because sin cannot exist in the presence of a holy God, to everyone who didn’t
 ## What happens to Satan at this time?
 
 > And I saw an angel come down from heaven, having the key of the bottomless pit and a great chain in his hand. And *he laid hold on the dragon, that old serpent, which is the Devil, and Satan, and bound him a thousand years*.
-{% ct 'Revelation 20:1, 2' %}
+{% ct 'Revelation 20:1-2' %}
 
 The chain described here is a symbolic chain of circumstances because Satan will be confined to planet earth without anyone to tempt or deceive since the saved are in heaven and the unsaved are dead, and for the first time since his rebellion in heaven, he is deprived of his power. This will be his fate for 1,000 years. It is interesting to note that the Greek word for “bottomless pit” is “abussos,” or abyss, and it is the same word used in {% rf 'Genesis 1:2' %} for the word “deep,” meaning the earth will resemble its original state during this time.
 
@@ -89,10 +89,10 @@ The earthquake and hailstorm at Jesus’ second coming will return the earth to 
 {% ct 'Revelation 20:4' %}
 
 > Do ye not know that the *saints shall judge the world*? and if the world shall be judged by you, are ye unworthy to judge the smallest matters? Know ye not that *we shall judge angels*? how much more things that pertain to this life?
-{% ct '1 Corinthians 6:2, 3' %}
+{% ct '1 Corinthians 6:2-3' %}
 
 > And after these things I heard a great voice of much people in heaven, saying, Alleluia; Salvation, and glory, and honour, and power, unto the Lord our God: *for true and righteous are his judgments*.
-{% ct 'Revelation 19:1, 2' %}
+{% ct 'Revelation 19:1-2' %}
 
 The saved from all ages that are in heaven during the 1,000 years will be part of the next phase of the judgment during which they will have all their questions answered about God’s dealings with sin and sinners. They will not be determining who is saved or lost because God will have already determined that (see [“Is There a Judgment?”](/posts/prophecy/judgment.md)), but the cases of all who are lost, including Satan and his angels, will be reviewed, and the fairness of God’s judgment will be confirmed.
 
@@ -102,13 +102,13 @@ The saved from all ages that are in heaven during the 1,000 years will be part o
 {% ct 'Revelation 21:2' %}
 
 > And his feet shall stand in that day upon the mount of Olives, which is before Jerusalem on the east, and *the mount of Olives shall cleave in the midst thereof toward the east and toward the west, and there shall be a very great valley*; and half of the mountain shall remove toward the north, and half of it toward the south. ... and the *LORD my God shall come, and all the saints with thee*. ... And the *LORD shall be king over all the earth*: in that day shall there be one LORD, and his name one.
-{% ct 'Zechariah 14:4, 5, 9' %}
+{% ct 'Zechariah 14:4-5, 9' %}
 
 > But the *rest of the dead lived not again until the thousand years were finished*. This is the first resurrection.
 {% ct 'Revelation 20:5' %}
 
 > Marvel not at this: for the hour is coming, in the which all that are in the graves shall hear his voice, and shall come forth; *they that have done good, unto the resurrection of life*; and *they that have done evil, unto the resurrection of damnation*.
-{% ct 'John 5:28, 29' %}
+{% ct 'John 5:28-29' %}
 
 At the end of the 1,000 years Jesus will return to earth for the third time, and the New Jerusalem will descend from heaven with all the saved. Jesus will then flatten the Mount of Olives, creating a great plain on which the city will settle. And just like the resurrection of the saved marked the beginning of the 1,000 year period, the end of this period will be marked by a second resurrection, and this one is of the unsaved of all ages.
 
@@ -122,13 +122,13 @@ After the second resurrection, Satan will be free once again to deceive and mani
 ## What happens next?
 
 > And *shall go out to deceive the nations* which are in the four quarters of the earth, Gog and Magog, to gather them together to battle: the number of whom is as the sand of the sea. And they went up on the breadth of the earth, and *compassed the camp of the saints about, and the beloved city*.
-{% ct 'Revelation 20:8, 9' %}
+{% ct 'Revelation 20:8-9' %}
 
 > And *I saw a great white throne, and him that sat on it*, from whose face the earth and the heaven fled away; and there was found no place for them. And *I saw the dead, small and great, stand before God; and the books were opened*: and another book was opened, which is the book of life: and the *dead were judged out of those things which were written in the books, according to their works*.
-{% ct 'Revelation 20:11, 12' %}
+{% ct 'Revelation 20:11-12' %}
 
 > For there is *nothing covered, that shall not be revealed; neither hid, that shall not be known*. Therefore whatsoever ye have spoken in darkness shall be heard in the light; and that which ye have spoken in the ear in closets shall be proclaimed upon the housetops.
-{% ct 'Luke 12:2, 3' %}
+{% ct 'Luke 12:2-3' %}
 
 Satan manages to deceive the wicked, who realize they are shut out of the New Jerusalem, and persuades them to surround the city and attempt to capture it. But God’s throne will suddenly appear, bringing the attack to a halt and beginning the final phase of the judgment. The wicked will see their life pass before them and realize that God did everything He could to save them from their life of sin, but they did not heed Him, and without the sacrifice of Jesus covering their sins, they are left to pay for their own sins.
 
@@ -138,17 +138,17 @@ Satan manages to deceive the wicked, who realize they are shut out of the New Je
 {% ct 'Romans 14:11' %}
 
 > That *at the name of Jesus every knee should bow*, of things in heaven, and things in earth, and things under the earth; and that *every tongue should confess that Jesus Christ is Lord*, to the glory of God the Father.
-{% ct 'Philippians 2:10, 11' %}
+{% ct 'Philippians 2:10-11' %}
 
 All the wicked bow before God as they acknowledge that He has been fair, just, and longsuffering. After this acknowledgment, the controversy between good and evil will be settled, and it will be safe to eliminate sin and those who chose to cling to it.
 
 ## What happens to them?
 
 >  And they went up on the breadth of the earth, and compassed the camp of the saints about, and the beloved city: and *fire came down from God out of heaven, and devoured them*. And the *devil that deceived them was cast into the lake of fire* and brimstone, where the beast and the false prophet are, and shall be tormented day and night for ever and ever.
-{% ct 'Revelation 20:9, 10' %}
+{% ct 'Revelation 20:9-10' %}
 
 > And death and hell were cast into the lake of fire. This is the second death. And whosoever was not found written in the book of life was *cast into the lake of fire*.
-{% ct 'Revelation 20:14, 15' %}
+{% ct 'Revelation 20:14-15' %}
 
 > Say unto them, As I live, saith the Lord GOD, *I have no pleasure in the death of the wicked*; but that the wicked turn from his way and live: *turn ye, turn ye from your evil ways; for why will ye die*, O house of Israel?
 {% ct 'Ezekiel 33:11' %}
@@ -164,6 +164,6 @@ Fire then falls upon the wicked, as well as Satan and his angels, forming a lake
 {% ct '2 Peter 3:13' %}
 
 >  And *I saw a new heaven and a new earth*: for the first heaven and the first earth were passed away; and there was no more sea. ... And I heard a great voice out of heaven saying, Behold, the tabernacle of God is with men, and he will dwell with them, and they shall be his people, and *God himself shall be with them, and be their God*. And *God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away*. 
-{% ct 'Revelation 21:1, 3, 4' %}
+{% ct 'Revelation 21:1, 3-4' %}
 
 God then creates a new heavens (atmosphere) and a new earth in which righteousness dwells! Everything that Adam and Eve lost will be restored, and the redeemed of all ages will live in perfect love, joy, and peace throughout eternity with God!

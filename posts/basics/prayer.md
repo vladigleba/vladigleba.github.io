@@ -37,13 +37,13 @@ Jesus made it clear that our heavenly Father wants us to come to Him in prayer. 
 ## What is the right heart posture for prayer?
 
 > And he arose, and came to his father. But when he was yet a great way off, his father saw him, and had compassion, and ran, and fell on his neck, and kissed him. And the son said unto him, *Father, I have sinned against heaven, and in thy sight, and am no more worthy to be called thy son*.
-{% ct 'Luke 15:20, 21' %}
+{% ct 'Luke 15:20-21' %}
 
 > Two men went up into the temple to pray; the one a Pharisee, and the other a publican. The Pharisee stood and prayed thus with himself, *God, I thank thee, that I am not as other men are*, extortioners, unjust, adulterers, or even as this publican. *I fast twice in the week, I give tithes of all that I possess*. And the publican, standing afar off, would not lift up so much as his eyes unto heaven, but smote upon his breast, saying, *God be merciful to me a sinner*. I tell you, this man went down to his house justified rather than the other: for every one that exalteth himself shall be abased; and he that humbleth himself shall be exalted.
 {% ct 'Luke 18:10-14' %}
 
 > And Jesus answering said unto them, They that are whole need not a physician; but they that are sick. *I came not to call the righteous, but sinners to repentance*.
-{% ct 'Luke 5:31, 32' %}
+{% ct 'Luke 5:31-32' %}
 
 Being aware of our true relationship to God leads to prayers rooted in humility and reverence for Him—a consciousness of His holiness and wisdom, as well as our own unworthiness. It is only through the blood of Christ, shed for our sins, that we have been reconciled to our heavenly Father and enabled to come to Him in prayer. The Pharisee felt self-sufficient and therefore saw no need of Jesus, but the publican and the prodigal son were keenly aware of their unworthiness. Jesus made it clear that those who believe *they* are righteous feel little need of *His* righteousness, but those who recognize they are sinners are the ones He came to make whole {% rf 'Luke 8:48' %}.
 
@@ -68,7 +68,7 @@ Today, there is so much emphasis on our identity as sons and daughters of God th
 ## Anything else regarding heart posture?
 
 > And this is the confidence that we have in him, that, *if we ask any thing according to his will*, he heareth us: And if we know that he hear us, whatsoever we ask, we know that we have the petitions that we desired of him.
-{% ct '1 John 5:14, 15' %}
+{% ct '1 John 5:14-15' %}
 
 > And he went a little further, and fell on his face, and prayed, saying, O my Father, if it be possible, let this cup pass from me: nevertheless *not as I will, but as thou wilt*.
 {% ct 'Matthew 26:39 ' %}
@@ -89,12 +89,12 @@ God will never force His will upon us, which is why surrender begins with the *w
 {% ct 'Matthew 6:33' %}
 
 > After this manner therefore pray ye: Our Father which art in heaven, *Hallowed be thy name. Thy kingdom come. Thy will be done* in earth, as it is in heaven.
-{% ct 'Matthew 6:9, 10' %}
+{% ct 'Matthew 6:9-10' %}
 
 It is easy for our prayers to become self-focused and selfish, but Christ teaches us to seek first His kingdom and His righteousness. This is later reinforced in His model prayer: “Hallowed be thy name. Thy kingdom come. Thy will be done.” Below are some difficult—but necessary—questions we can ask to help us understand where we stand: 
 
 1. Is my primary focus on bringing glory and honor to His holy name rather than my own? 
-1. Am I preparing for and investing in His kingdom of righteousness—which, by the way, starts in our hearts now {% rf 'Luke 17:20, 21' %}—or am I more concerned with expanding my own personal, earthly empire?
+1. Am I preparing for and investing in His kingdom of righteousness—which, by the way, starts in our hearts now {% rf 'Luke 17:20-21' %}—or am I more concerned with expanding my own personal, earthly empire?
 1. Am I seeking His will in my daily life, or am I pursuing my own wants and desires above all else?
 
 One author shared the following insight on praying Jesus’ model prayer:
@@ -142,16 +142,16 @@ Intercessory prayer, however, is not limited to those who are resistant to God. 
 {% ct '1 Thessalonians 5:17' %}
 
 > Now she that is a widow indeed, and desolate, trusteth in God, and *continueth in supplications and prayers night and day*. But she that liveth in pleasure is dead while she liveth.
-{% ct '1 Timothy 5:5, 6' %}
+{% ct '1 Timothy 5:5-6' %}
 
 Praying for others often involves asking God for a change of heart, and this usually takes time. God honors everyone’s free will, but He also honors the prayers of others, so even if a person resists Him initially, there is still hope, as long as those praying are willing to persevere and be patient. It may take years—or even decades—for a change of heart to take place, but that is nothing compared with eternity.
 
-All good things take time and effort, and prayer is no different. Rushed prayers often lack power because they don’t mean much to us, but prayers that produce results take time and effort. It would be wise for us to preface every important decision or action in our lives with much prayer. Jesus Himself sometimes prayed all night, such as before ordaining the twelve apostles {% rf 'Luke 6:12, 13' %}. As our prayer life develops, spending time communing with our Father becomes a delight, no matter how long it takes.
+All good things take time and effort, and prayer is no different. Rushed prayers often lack power because they don’t mean much to us, but prayers that produce results take time and effort. It would be wise for us to preface every important decision or action in our lives with much prayer. Jesus Himself sometimes prayed all night, such as before ordaining the twelve apostles {% rf 'Luke 6:12-13' %}. As our prayer life develops, spending time communing with our Father becomes a delight, no matter how long it takes.
 
 ## What is the first step to an effective prayer?
 
 > *Ask*, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you. For *every one that asketh receiveth*; and he that seeketh findeth; and to him that knocketh it shall be opened.
-{% ct 'Matthew 7:7, 8' %}
+{% ct 'Matthew 7:7-8' %}
 
 This might seem obvious, but simply bringing our request to God—asking Him to be involved in resolving it—is the first step toward effective prayer. God is a Gentleman {% rf 'Revelation 3:20' %}; He will not involve Himself where He is not desired or welcomed. He respects our free will too much to force His way into our lives without our permission. By the way, the best things to ask for are those that are in harmony with His will as revealed in His Word. If we can find a verse in the Bible showing that our request aligns with His will, we can have confidence that we are on the right track.
 
@@ -175,7 +175,7 @@ So why is faith so important to God? Well, it’s the foundation of our relation
 {% ct 'John 11:41-44' %}
 
 > And when he had consulted with the people, he appointed singers unto the LORD, and that should praise the beauty of holiness, as they went out before the army, and to say, Praise the LORD; for his mercy endureth for ever. And *when they began to sing and to praise*, the LORD set ambushments against the children of Ammon, Moab, and mount Seir, which were come against Judah; and *they were smitten*.
-{% ct '2 Chronicles 20:21, 22' %}
+{% ct '2 Chronicles 20:21-22' %}
 
 When Jesus raised Lazarus, He thanked God for hearing His prayer *before* the resurrection occurred. Likewise, when the Israelites went to war under Jehoshaphat, they praised God *before* the battle even began. Thanking God before we receive His answer is closely related to the concept we just discussed—faith; it is further evidence of a trusting confidence in His love. It is natural to give thanks for something already received, but giving thanks in advance requires faith. However, if we know our request is in harmony with His will, as revealed in the Bible, we can be confident that He will answer it. Knowing God’s will for us will requires Bible study, but there is power in finding a promise in His Word that pertains to our request, presenting it to Him in prayer, and then claiming it—in the name of His beloved Son—by faith, and thanking Him for it. In Jesus, all of God’s promises are sure {% rf '2 Corinthians 1:20' %}.
 
@@ -207,7 +207,7 @@ Adam and Eve’s rejection is replayed in the life of every person, for all have
 {% ct 'Colossians 4:2 ' %}
 
 > *I thank my God* upon every remembrance of you, always in every prayer of mine for you all *making request with joy*.
-{% ct 'Philippians 1:3, 4 ' %}
+{% ct 'Philippians 1:3-4 ' %}
 
 > In *every thing give thanks*: for this is the will of God in Christ Jesus concerning you.
 {% ct '1 Thessalonians. 5:18 ' %}

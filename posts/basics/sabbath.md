@@ -8,7 +8,7 @@ series: sabbath
 ## What is the first angel’s message in Revelation 14?
 
 > And I saw another angel fly in the midst of heaven, having the everlasting gospel to preach unto them that dwell on the earth, and to every nation, and kindred, and tongue, and people, saying with a loud voice, Fear God, and give glory to him; for the hour of his judgment is come: and *worship him that made heaven, and earth, and the sea, and the fountains of waters*.
-{% ct 'Revelation 14:6, 7' %}
+{% ct 'Revelation 14:6-7' %}
 
 In Revelation 14 there are three angels proclaiming a message to the people of the world in the last days, and the first angel’s message is a call to worship the Creator God and give glory to Him.
 
@@ -17,7 +17,7 @@ In Revelation 14 there are three angels proclaiming a message to the people of t
 > “You are worthy, O Lord, to receive glory and honor and power; for *You created all things*, and *by Your will they exist* and were created.”
 {% ct 'Revelation 4:11, NKJV' %}
 
-{% rf 'Revelation 14:6, 7' false %} is an echo of the verse above, which explains that God is worthy to receive glory, honor, and power because He is the Author of all life.
+{% rf 'Revelation 14:6-7' false %} is an echo of the verse above, which explains that God is worthy to receive glory, honor, and power because He is the Author of all life.
 
 ## How did God create?
 
@@ -25,7 +25,7 @@ In Revelation 14 there are three angels proclaiming a message to the people of t
 {% ct 'Ephesians 3:9' %}
 
 > For by him [Jesus] were all things created, that are in heaven, and that are in earth, visible and invisible, whether they be thrones, or dominions, or principalities, or powers: *all things were created by him, and for him*: and he is before all things, and *by him all things consist*.
-{% ct 'Colossians 1:16, 17' %}
+{% ct 'Colossians 1:16-17' %}
 
 God the Father created all things by His Son Jesus, who was fulfilling the will of His Father, and by Him it all consists and holds together!
 
@@ -48,7 +48,7 @@ The reason why the fourth commandment invites me to keep the Sabbath day holy is
 ## Who is the Sabbath really for?
 
 > And he said unto them, *The sabbath was made for man*, and not man for the sabbath: therefore the Son of man is Lord also of the sabbath.
-{% ct 'Mark 2:27, 28' %}
+{% ct 'Mark 2:27-28' %}
 
 The Sabbath was made for us. When God created it, He did not need the rest it provided, because God does not get tired. Nor had He worked in the way we undertand labor, since apart from forming Adam and Eve, all of His prior creation was spoken into existence.
 
@@ -61,7 +61,7 @@ The Sabbath was made for us. When God created it, He did not need the rest it pr
 {% ct 'Deuteronomy 5:15' %}
 
 The Sabbath is a sign of my acknowledgment that:
-1. God is Lord because He created this world in six consecutive, literal, 24-hour days {% rf 'Exodus 20:8, 11' %}. The Sabbath is a weekly reminder that I have a Creator who desires to have a relationship with me. This truth carries several important implications: I am not self-created; I am not a god, nor can I become one; I possess no inherent divinity—no inner godhood or divine spark; I do not have an immortal soul, for only God is immortal {% rf '1 Timothy 6:15, 16' %}; and I did not come into existence by accident or through a long process of evolution. My life has meaning and purpose.
+1. God is Lord because He created this world in six consecutive, literal, 24-hour days {% rf 'Exodus 20:8, 11' %}. The Sabbath is a weekly reminder that I have a Creator who desires to have a relationship with me. This truth carries several important implications: I am not self-created; I am not a god, nor can I become one; I possess no inherent divinity—no inner godhood or divine spark; I do not have an immortal soul, for only God is immortal {% rf '1 Timothy 6:15-16' %}; and I did not come into existence by accident or through a long process of evolution. My life has meaning and purpose.
 2. God is Lord of my life because He is the One who redeems and sanctifies me. In the Bible, the Israelites' bondage in Egypt symbolizes the spiritual bondage of sin from which God delivers me. Therefore, the Sabbath is a weekly reminder that, in Jesus, victory over sin is available to all. After all, Jesus would not have told the woman caught in adultery to “go and sin no more” if that were impossible {% rf 'John 8:11' %}. Moreover, the Sabbath is a sign that I am not saved by my own works, but by faith in His completed work on the cross, as well as His ongoing work as my Intercessor in the heavenly sanctuary (see ["Finding Hope in the Sanctuary"](../gospel/sanctuary.md#do-i-have-a-high-priest-today)).
 
 In Eden, God rested on the seventh day from His work of creation, and in the tomb, Jesus rested on the same day from His work of redemption. Therefore, the Sabbath serves as a memorial of both acts. It is a weekly rest in Jesus, during which I set aside my secular work and worldly duties to connect with and honor Him—no matter how busy life may become.
@@ -155,6 +155,6 @@ God is not a fallible man who makes mistakes, changes His mind, or alters His co
 ## Will the Sabbath be kept in heaven?
 
 > For as the new heavens and the new earth, which I will make, shall remain before me, saith the LORD, so shall your seed and your name remain. And it shall come to pass, that from one new moon to another, and *from one sabbath to another, shall all flesh come to worship before me*, saith the LORD.
-{% ct 'Isaiah 66:22, 23' %}
+{% ct 'Isaiah 66:22-23' %}
 
 The Sabbath will continue to be kept in heaven as a beautiful weekly testament to God’s power to fully redeem fallen humanity from a world of sin and to sanctify them for a new life in heaven. In heaven, it will also take on a new dimension as a memorial of His power to redeem the world itself from the curse of sin after He recreates it anew!

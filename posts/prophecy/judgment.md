@@ -8,7 +8,7 @@ series: judgment
 ## Has the judgment already begun?
 
 > And I saw another angel fly in the midst of heaven, having the everlasting gospel to preach unto them that dwell on the earth, and to every nation, and kindred, and tongue, and people, saying with a loud voice, Fear God, and give glory to him; *for the hour of his judgment is come*: and worship him that made heaven, and earth, and the sea, and the fountains of waters.
-{% ct 'Revelation 14:6, 7' %}
+{% ct 'Revelation 14:6-7' %}
 
 > And, behold, I come quickly; and my reward is with me, *to give every man according as his work shall be*.
 {% ct 'Revelation 22:12' %}
@@ -28,7 +28,7 @@ Every person who has ever lived on planet earth will be judged. Furthermore, eac
 ## Who else is part of the judgment?
 
 > I beheld till the thrones were cast down, and *the Ancient of Days did sit*, whose garment was white as snow, and the hair of his head like the pure wool: his throne was like the fiery flame, and his wheels as burning fire. A fiery stream issued and came forth from before him: thousand thousands ministered unto him, and ten thousand times ten thousand stood before him: the *judgment was set, and the books were opened*.
-{% ct 'Daniel 7:9, 10' %}
+{% ct 'Daniel 7:9-10' %}
 
 > For the Father judgeth no man, but hath *committed all judgment unto the Son*.
 {% ct 'John 5:22' %}
@@ -37,14 +37,14 @@ Every person who has ever lived on planet earth will be judged. Furthermore, eac
 {% ct '1 John 2:1' %}
 
 > And the great dragon was cast out, that old serpent, called *the Devil, and Satan*, which deceiveth the whole world: he was cast out into the earth ... for *the accuser of our brethren* is cast down, which accused them before our God day and night.
-{% ct 'Revelation 12:9, 10' %}
+{% ct 'Revelation 12:9-10' %}
 
 God the Father, the Ancient of Days, presides over the judgment, while Jesus is the Judge, as well as our Advocate! Satan is our only accusser, declaring that we don’t deserve to be saved any more than he does.
 
 ## Is it possible to hide anything from God?
 
 > Let us hear the conclusion of the whole matter: Fear God, and keep his commandments: for this is the whole duty of man. For *God shall bring every work into judgment, with every secret thing*, whether it be good, or whether it be evil.
-{% ct 'Ecclesiastes 12:13, 14' %}
+{% ct 'Ecclesiastes 12:13-14' %}
 
 > But I say unto you, That *every idle word that men shall speak, they shall give account thereof* in the day of judgment.
 {% ct 'Matthew 12:36' %}
@@ -104,7 +104,7 @@ Even though all have sinned, every person has hope of forgiveness! God the Fathe
 ## What role does Jesus play in this?
 
 > But this man, because he continueth ever, hath an unchangeable priesthood. Wherefore he is able also to save them to the uttermost that come unto God by him, seeing *he ever liveth to make intercession for them*.
-{% ct 'Hebrews 7:24, 25' %}
+{% ct 'Hebrews 7:24-25' %}
 
 > For we have not an high priest which cannot be touched with the feeling of our infirmities; but was *in all points tempted like as we are, yet without sin*. Let us therefore come boldly unto the throne of grace, that we may obtain mercy, and find grace to help in time of need.
 {% ct 'Hebrews 4:15-16' %}
@@ -114,7 +114,7 @@ Because Jesus understands us and can sympathize with our weaknesses, He also int
 ## What role does the Holy Spirit play?
 
 > Nevertheless I tell you the truth; It is expedient for you that I go away: for if I go not away, the Comforter will not come unto you; but if I depart, I will send him unto you. And when he is come, *he will reprove the world of sin*, and of righteousness, and of judgment.
-{% ct 'John 16:7, 8' %}
+{% ct 'John 16:7-8' %}
 
 > But the Comforter, which is the Holy Ghost, whom the Father will send in my name, he shall teach you all things, and *bring all things to your remembrance*, whatsoever I have said unto you.
 {% ct 'John 14:26' %}

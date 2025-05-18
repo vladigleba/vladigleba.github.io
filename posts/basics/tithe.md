@@ -1,7 +1,7 @@
 ---
 title: Finances, God’s Way
 description: Financial investment advice in the Bible? Discover God’s plan for managing our finances wisely.
-color: rgb(38, 105, 133)
+color: rgb(38,105,133)
 date: 2025-02-05
 ---
 
@@ -52,7 +52,7 @@ When the Israelites entered the Promised Land, the tribe of Levi received certai
 ## What about the ministers of today?
 
 > Do ye not know that they which minister about holy things live of the things of the temple? and they which wait at the altar are partakers with the altar? Even so hath the Lord ordained that *they which preach the gospel should live of the gospel*.
-{% ct '1 Corinthians 9:13, 14' %}
+{% ct '1 Corinthians 9:13-14' %}
 
 > Bring ye all the tithes into the storehouse, *that there may be meat [food] in mine house*, and prove me now herewith, saith the LORD of hosts, if I will not open you the windows of heaven, and pour you out a blessing, that there shall not be room enough to receive it.
 {% ct 'Malachi 3:10' %}
@@ -60,7 +60,7 @@ When the Israelites entered the Promised Land, the tribe of Levi received certai
 > For the Scripture says, “You shall not muzzle an ox while it treads out the grain,” and, “The *laborer is worthy of his wages*.”
 {% ct '1 Timothy 5:18, NKJV' %}
 
-Paul is clear that tithing is still God’s method of supporting the ministers of today as they dedicate their lives to the preaching of the gospel. This gives every follower of Jesus the privilege to participate in the blessing of spreading the gospel throughout the world. God confirms this in the book of Malachi when He invites His followers to bring their tithe into His storehouse so that it could be provisioned with food for the priests ministering in the temple {% rf 'Nehemiah 10:37, 38' %}. Today’s equivalent of the storehouse would be the church, which then uses the tithe to support its pastors. By the way, Malachi makes it clear that the tithe is to be used solely for the work of ministry, nothing else.
+Paul is clear that tithing is still God’s method of supporting the ministers of today as they dedicate their lives to the preaching of the gospel. This gives every follower of Jesus the privilege to participate in the blessing of spreading the gospel throughout the world. God confirms this in the book of Malachi when He invites His followers to bring their tithe into His storehouse so that it could be provisioned with food for the priests ministering in the temple {% rf 'Nehemiah 10:37-38' %}. Today’s equivalent of the storehouse would be the church, which then uses the tithe to support its pastors. By the way, Malachi makes it clear that the tithe is to be used solely for the work of ministry, nothing else.
 
 Some may also wonder whether tithing comes out of pre- or post-tax income, but the truth is that it’s not possible to actually outgive God {% rf 'Luke 6:38' %}, so if the government gets a cut from our gross then certainly our heavenly Father deserves better than what is left after tax.
 
@@ -120,7 +120,7 @@ The Bible says the poor will always be with us {% rf 'John 12:8' %}, so just as 
 > But God be thanked, that ye were the servants of sin, but *ye have obeyed from the heart* that form of doctrine which was delivered you.
 {% ct 'Romans 6:17' %}
 
-Obedience with tithing, as with the Ten Commandments, is not a form righteousness by works because the Bible is clear that we are saved by faith only {% rf 'Ephesians 2:8, 9' %}. We obey not to *be* saved but because we *are* saved by the grace and mercy of God that is freely available to all. When His love for us awakens a love for Him then it is only natural to want to please the person we genuinely love. Of course, this desire and ability to obey God comes only through the work of the Holy Spirit upon the heart, which Paul so eloquently explains in {% rf 'Romans 8:4-9' false %}. Such obedience can only be righteousness by faith because it is not our own, but it is evidence that love for God reigns supreme in the heart.
+Obedience with tithing, as with the Ten Commandments, is not a form righteousness by works because the Bible is clear that we are saved by faith only {% rf 'Ephesians 2:8-9' %}. We obey not to *be* saved but because we *are* saved by the grace and mercy of God that is freely available to all. When His love for us awakens a love for Him then it is only natural to want to please the person we genuinely love. Of course, this desire and ability to obey God comes only through the work of the Holy Spirit upon the heart, which Paul so eloquently explains in {% rf 'Romans 8:4-9' false %}. Such obedience can only be righteousness by faith because it is not our own, but it is evidence that love for God reigns supreme in the heart.
 
 ## Could the tithing system be abused?
 
@@ -148,4 +148,4 @@ Where there are people there will be room for dishonesty, but human weakness is 
 > If ye know these things, *happy are ye if ye do them*.
 {% ct 'John 13:17' %}
 
-Jesus invites us to store treasure in heaven, not on earth, because our hearts are tightly linked with our investments. The heart focused on accumulating more and more money becomes greedy and covetous, but if the focus is on sharing the good news of Jesus then it becomes generous, loving, and joyful. Many people make the things of the world their first priority, and they still worry about their future, but Jesus asks His followers to do the opposite—to seek first His kingdom and His righteousness, and the promise is He will take care of everything else. So let’s trust Him fully and seek His will in everything we do {% rf 'Proverbs 3:5, 6' %}, including how we use our time and talents, because, in the end, His ways are always higher than our own {% rf 'Isaiah 55:8, 9' %}.
+Jesus invites us to store treasure in heaven, not on earth, because our hearts are tightly linked with our investments. The heart focused on accumulating more and more money becomes greedy and covetous, but if the focus is on sharing the good news of Jesus then it becomes generous, loving, and joyful. Many people make the things of the world their first priority, and they still worry about their future, but Jesus asks His followers to do the opposite—to seek first His kingdom and His righteousness, and the promise is He will take care of everything else. So let’s trust Him fully and seek His will in everything we do {% rf 'Proverbs 3:5-6' %}, including how we use our time and talents, because, in the end, His ways are always higher than our own {% rf 'Isaiah 55:8-9' %}.

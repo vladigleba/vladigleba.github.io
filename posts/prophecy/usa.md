@@ -12,7 +12,7 @@ featured: true
 {% ct 'Amos 3:7' %}
 
 > For this is good and acceptable in the sight of God our Savior, *who desires all men to be saved and to come to the knowledge of the truth*.
-{% ct '1 Timothy 2:3, 4' %}
+{% ct '1 Timothy 2:3-4' %}
 
 The beautiful thing about God’s character is that He does not just know the future, but He also likes to reveal it ahead of time to strengthen our faith in Him and prepare us for what is to come. He does not want anyone to be lost due to a lack of knowledge about eternal realities, and He often uses prophets to bring such things to the attention of His people. John, the revelator, is one such prophet to whom God has revealed events that will transpire near the close of earth’s history.
 
@@ -88,7 +88,7 @@ As the leader of the international movement to force allegiance to the papacy, t
 {% ct 'Daniel 3:14' %}
 
 > If it be so, *our God whom we serve is able to deliver us from the burning fiery furnace*, and he will deliver us out of thine hand, O king. But if not, be it known unto thee, O king, that *we will not serve thy gods, nor worship the golden image which thou hast set up*.
-{% ct 'Daniel 3:17, 18' %}
+{% ct 'Daniel 3:17-18' %}
 
 A very similar scenario played out in Babylon during the reign of Nebuchadnezzar. It also involved a universal command forcing all to worship an image, along with the death penalty for those who refused. Most went along, but there was a small group of friends who refused to compromise by violating God’s commandments. Their love for God was stronger than death {% rf 'Revelation 12:11' %}, and they chose to remain faithful to Him by the grace of God.
 
@@ -113,13 +113,13 @@ Some possibilities include: terrorism, civil unrest, crime, a major economic cra
 ## Will there be a false religious revival?
 
 > And he *doeth great wonders, so that he maketh fire come down from heaven on the earth in the sight of men, and deceiveth them that dwell on the earth by the means of those miracles* which he had power to do in the sight of the beast; saying to them that dwell on the earth, that they should make an image to the beast, which had the wound by a sword, and did live.
-{% ct 'Revelation 13:13, 14' %}
+{% ct 'Revelation 13:13-14' %}
 
 > Then if any man shall say unto you, Lo, here is Christ, or there; believe it not. For there *shall arise false Christs, and false prophets, and shall shew great signs and wonders*; insomuch that, if it were possible, they shall deceive the very elect.
-{% ct 'Matthew 24:23, 24' %}
+{% ct 'Matthew 24:23-24' %}
 
 > And I saw three unclean spirits like frogs come out of the mouth of the dragon, and out of the mouth of the beast, and out of the mouth of the false prophet. For *they are the spirits of devils, working miracles*, which go forth unto the kings of the earth and of the whole world, to gather them to the battle of that great day of God Almighty.
-{% ct 'Revelation 16:13, 14' %}
+{% ct 'Revelation 16:13-14' %}
 
 With world conditions turning unbearable, a global movement of turning back to God, with all joining in worship on Sunday, will be presented as the only solution. The movement will be supported by signs, wonders, and miracles performed by the power of Satan, resulting in a counterfeit revival in which every person will be encouraged, and later, forced, to participate by keeping the papacy’s counterfeit “holy” day—Sunday, instead of God’s true and holy seventh-day Sabbath, instituted since the creation of the world.
 
@@ -131,12 +131,12 @@ These signs and wonders will be so convincing that Satan will attempt to deceive
 {% ct '2 Corinthians 11:13-15' %}
 
 > Then if any man shall say unto you, Lo, here is Christ, or there; *believe it not*. For there *shall arise false Christs, and false prophets, and shall shew great signs and wonders*; insomuch that, if it were possible, they shall deceive the very elect.
-{% ct 'Matthew 24:23, 24' %}
+{% ct 'Matthew 24:23-24' %}
 
 > Ye are of your father the devil, and the lusts of your father ye will do. He was a murderer from the beginning, and abode not in the truth, because there is no truth in him. When he speaketh a lie, he speaketh of his own: for *he is a liar, and the father of it*.
 {% ct 'John 8:44' %}
 
-Satan himself will appear as an angel of light and claim to be Christ. He could also claim to have changed the Sabbath to Sunday and urge the world to move forward with honoring his counterfeit Sunday. The Bible says the deception will be effective and many will be deceived {% rf 'Revelation 13:3' %}, except God’s true followers who put everything to the test of Scripture {% rf 'Isaiah 8:19, 20; 2 Timothy 2:15' %}. The Bible clearly says God’s law cannot change {% rf 'Luke 16:17; 21:33' %}, and Jesus will not touch the earth at His second coming but remain in the clouds to meet His people in the air {% rf '1 Thessalonians 4:16, 17' %}.
+Satan himself will appear as an angel of light and claim to be Christ. He could also claim to have changed the Sabbath to Sunday and urge the world to move forward with honoring his counterfeit Sunday. The Bible says the deception will be effective and many will be deceived {% rf 'Revelation 13:3' %}, except God’s true followers who put everything to the test of Scripture {% rf 'Isaiah 8:19-20; 2 Timothy 2:15' %}. The Bible clearly says God’s law cannot change {% rf 'Luke 16:17; 21:33' %}, and Jesus will not touch the earth at His second coming but remain in the clouds to meet His people in the air {% rf '1 Thessalonians 4:16-17' %}.
 
 ## Will there be a genuine revival too?
 
@@ -149,7 +149,7 @@ Satan himself will appear as an angel of light and claim to be Christ. He could 
 
 As Satan is working to deceive the world into believing that they must compromise with error by casting aside God’s Sabbath to keep a counterfeit day He never appointed, God will have a people who will give a powerful, three-point message to the entire world, symbolized by the three angels of Revelation 14, to unmask the deceptions of Satan so that every person alive will be well-informed regarding God’s Sabbath, and warned against receiving the beast’s mark, the counterfeit Sunday, because this decision will have eternal consequences.
 
-Those who choose to obey and worship the beast through his man-made “holy” day will receive his mark and will cut themselves off from God’s love and mercy, and by extension, shut themselves out of His eternal kingdom. There will also be those who will join God’s side and choose to worship Him on His holy day, and Jesus’ sacrifice on the cross will cover their sins through faith and transform them into His obedient followers, sealing them for eternity {% rf 'Revelation 7:2, 3' %}.
+Those who choose to obey and worship the beast through his man-made “holy” day will receive his mark and will cut themselves off from God’s love and mercy, and by extension, shut themselves out of His eternal kingdom. There will also be those who will join God’s side and choose to worship Him on His holy day, and Jesus’ sacrifice on the cross will cover their sins through faith and transform them into His obedient followers, sealing them for eternity {% rf 'Revelation 7:2-3' %}.
 
 ## Who is the false prophet of Revelation 16:13?
 

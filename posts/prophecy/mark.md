@@ -78,7 +78,7 @@ To summarize, there is no other power in history that could fit all 11 of these 
 {% ct 'Ezekiel 20:12' %}
 
 > Wherefore the children of Israel shall keep the sabbath, to *observe the sabbath throughout their generations, for a perpetual covenant. It is a sign between me and the children of Israel for ever*: for in six days the LORD made heaven and earth, and on the seventh day he rested, and was refreshed.
-{% ct 'Exodus 31:16, 17' %}
+{% ct 'Exodus 31:16-17' %}
 
 > Remember the sabbath day, to keep it holy. Six days shalt thou labour, and do all thy work: but the seventh day is the sabbath of *the LORD thy God*: in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates. For in six days *the LORD made heaven and earth, the sea, and all that in them is*, and rested the seventh day: wherefore the LORD blessed the sabbath day, and hallowed it.
 {% ct 'Exodus 20:8-11' %}
@@ -122,7 +122,7 @@ We learned previously that one of the characteristics of the papacy would be try
 {% ct 'Malachi 2:7-9' %}
 
 > That this is a rebellious people, lying children, *children that will not hear the law of the LORD*: which say to the seers, See not; and to the prophets, *Prophesy not unto us right things, speak unto us smooth things, prophesy deceits*.
-{% ct 'Isaiah 30:9, 10' %}
+{% ct 'Isaiah 30:9-10' %}
 
 > The earth mourneth and fadeth away, the world languisheth and fadeth away, the haughty people of the earth do languish. The earth also is defiled under the inhabitants thereof; *because they have transgressed the laws, changed the ordinance, broken the everlasting covenant. Therefore hath the curse devoured the earth, and they that dwell therein are desolate*: therefore the inhabitants of the earth are burned, and few men left.
 {% ct 'Isaiah 24:4-6' %}
@@ -151,20 +151,20 @@ The forehead is the location of the frontal lobe, the area of the brain responsi
 ## Does anyone have the mark of the beast now?
 
 > And *he causeth all*, both small and great, rich and poor, free and bond, to receive a mark in their right hand, or in their foreheads: and *that no man might buy or sell, save he that had the mark*, or the name of the beast, or the number of his name.
-{% ct 'Revelation 13:16, 17' %}
+{% ct 'Revelation 13:16-17' %}
 
 No one will have the mark of the beast until Sunday worship is enforced by law. A time will come when the issue of Sunday worship will be so prominent that those who don’t go along will be cut off from the financial system, unable to buy or sell. When Sunday keeping is enforced by law that is when those who worship on the papacy’s counterfeit holy day will receive her mark, but those who follow Jesus and obey Him will worship on Satuday, His holy Sabbath day, and receive His mark. But waiting until the end to keep the true Sabbath is a mistake. Anyone who hopes to refuse the beasts’s mark in the future should keep Jesus’ true Sabbath now, and whoever decides to obey Him will receive His power to do so {% rf 'Acts 5:32' %}. Without Him, I can do nothing {% rf 'John 15:5' %}, but with Him all things are possible {% rf 'Mark 10:27' %}.
 
 ## What message does God give the world in the last days?
 
 > *If thou turn away thy foot from the sabbath, from doing thy pleasure on my holy day; and call the sabbath a delight, the holy of the LORD, honourable; and shalt honour him*, not doing thine own ways, nor finding thine own pleasure, nor speaking thine own words: *then shalt thou delight thyself in the LORD*; and I will cause thee to ride upon the high places of the earth, and feed thee with the heritage of Jacob thy father: for the mouth of the LORD hath spoken it.
-{% ct 'Isaiah 58:13, 14' %}
+{% ct 'Isaiah 58:13-14' %}
 
 > Saying with a loud voice, Fear God, and give glory to him; for the hour of his judgment is come: and *worship him that made* heaven, and earth, and the sea, and the fountains of waters.
 {% ct 'Revelation 14:7' %}
 
 > And the third angel followed them, saying with a loud voice, *If any man worship the beast and his image, and receive his mark in his forehead, or in his hand, the same shall drink of the wine of the wrath of God*, which is poured out without mixture into the cup of his indignation; and he shall be tormented with fire and brimstone in the presence of the holy angels, and in the presence of the Lamb.
-{% ct 'Revelation 14:9, 10' %}
+{% ct 'Revelation 14:9-10' %}
 
 God is asking His people to stop trampling on His holy day so He can bless them; in fact, the Sabbath itself is a blessing and a delight to those who keep it. Obviously, it’s an important issue to God, so much so that the three-point message He gives to all the earth in the last days {% rf 'Revelation 14:6-11' %} begins with a call to worship God, the Creator, and it’s then culminated by a prominent warning against worshiping the beast and receiving his mark because it will be a life-or-death issue. The conflict between God and Lucifer started in heaven over the issue of worship because Lucifer wanted to be worshiped like the Creator God (see [“Origin of Evil”](/posts/gospel/evil.md)), and it’s clear that worship will be central in the last days too. Will I worship the Creator God by observing His Sabbath or the beast by observing his counterfeit Sunday? Some may think it’s just a day, but it was also just a fruit that Adam and Eve ate in the garden of Eden. The day reveals the condition of the heart—either one that’s completely surrendered to Jesus or one that’s in rebellion against Him.
 
@@ -187,19 +187,19 @@ The highest form worship is obedience; whom we obey is whom we worship and serve
 {% ct 'Matthew 7:21-23, NKJV' %}
 
 > This people draweth nigh unto me with their mouth, and honoureth me with their lips; but their heart is far from me. But *in vain they do worship me, teaching for doctrines the commandments of men*.
-{% ct 'Matthew 15:8, 9' %}
+{% ct 'Matthew 15:8-9' %}
 
 > And he said unto them, Full well *ye reject the commandment of God, that ye may keep your own tradition*.
 {% ct 'Mark 7:9' %}
 
 > For as the body without the spirit is dead, so *faith without works is dead* also.
 
-People can claim to worship God, but their trampling of God’s law (lawlessness) will tell a different story because their deeds will be contrary to their profession. Any worship of God that elevates man-made laws above and contrary to the law of God is false worship, and it’s especially dangerous when this is propogated by a religious system. Now this isn’t anything new, or exclusive to Roman Catholicism, because the Jewish leaders of Jesus’ day were guilty of it too. Anyone, regardless of his or her faith, can fall into it, because the human heart is deceitful and hard to decipher {% rf 'Jeremiah 17:9' %}. That’s why James says that faith without works (obedience) is dead. While I’m not saved by my obedience (salvation is only by the righteousness of Jesus), obedience is evidence that I am saved, and it’s primarily evidence for me because God already knows the true condition of my heart {% rf 'Psalm 139:23, 24' %}.
+People can claim to worship God, but their trampling of God’s law (lawlessness) will tell a different story because their deeds will be contrary to their profession. Any worship of God that elevates man-made laws above and contrary to the law of God is false worship, and it’s especially dangerous when this is propogated by a religious system. Now this isn’t anything new, or exclusive to Roman Catholicism, because the Jewish leaders of Jesus’ day were guilty of it too. Anyone, regardless of his or her faith, can fall into it, because the human heart is deceitful and hard to decipher {% rf 'Jeremiah 17:9' %}. That’s why James says that faith without works (obedience) is dead. While I’m not saved by my obedience (salvation is only by the righteousness of Jesus), obedience is evidence that I am saved, and it’s primarily evidence for me because God already knows the true condition of my heart {% rf 'Psalm 139:23-24' %}.
 
 ## Who did John see in God’s eternal kingdom?
 
 > Saying, Hurt not the earth, neither the sea, nor the trees, *till we have sealed the servants of our God in their foreheads*. And I heard the number of them which were sealed: and there were sealed an hundred and forty and four thousand of all the tribes of the children of Israel.
-{% ct 'Revelation 7:3, 4' %}
+{% ct 'Revelation 7:3-4' %}
 
 > And I saw as it were a sea of glass mingled with fire: and them *that had gotten the victory over the beast, and over his image, and over his mark, and over the number of his name*, stand on the sea of glass, having the harps of God.
 {% ct 'Revelation 15:2' %}

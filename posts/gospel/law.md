@@ -8,10 +8,10 @@ date: 2025-01-16
 ## How does the Bible describe the law of God?
 
 > The works of his hands are verity and judgment; all his commandments are sure. *They stand fast for ever and ever*, and are *done in truth and uprightness*.
-{% ct 'Psalm 111:7, 8' %}
+{% ct 'Psalm 111:7-8' %}
 
 > The law of the LORD is *perfect*, converting the soul: the testimony of the LORD is *sure*, making wise the simple. The statutes of the LORD are *right*, rejoicing the heart: the commandment of the LORD is *pure*, enlightening the eyes.
-{% ct 'Psalm 19:7, 8' %}
+{% ct 'Psalm 19:7-8' %}
 
 Every government has laws to ensure order and protection for its citizens. It is no different with the King of the universe and His government, except His law is eternal, true, upright, perfect, sure, right, and pure. God’s dominion knows no bounds, and His law, therefore, is universal as well, so even though it’s mostly neglected on earth, it is still binding.
 
@@ -24,7 +24,7 @@ Every government has laws to ensure order and protection for its citizens. It is
 {% ct 'Deuteronomy 6:24' %}
 
 > My son, forget not my law; but let thine heart keep my commandments: *for length of days, and long life, and peace, shall they add to thee*.
-{% ct 'Proverbs 3:1, 2' %}
+{% ct 'Proverbs 3:1-2' %}
 
 > Let us hear the conclusion of the whole matter: *fear God, and keep his commandments: for this is the whole duty of man*.
 {% ct 'Ecclesiastes 12:13' %}
@@ -66,7 +66,7 @@ Because Jesus is the Creator God, He was able to take the condemnation of the la
 {% ct 'Romans 6:15' %}
 
 > Think not that I am come to destroy the law, or the prophets: *I am not come to destroy, but to fulfil*. For verily I say unto you, Till heaven and earth pass, one jot or one tittle shall in no wise pass from the law, till all be fulfilled.
-{% ct 'Matthew 5:17, 18' %}
+{% ct 'Matthew 5:17-18' %}
 
 If you were caught speeding and the police officer wanted to give you a hefty fine, but decided to give you a warning instead, would you then go screeching out back on the highway to break the speed limit again? No, you would carefully watch your speed. Jesus’ death on the cross was an act of mercy and forgiveness for those who accept it, not a license to live lawlessly.
 
@@ -81,7 +81,7 @@ If you were caught speeding and the police officer wanted to give you a hefty fi
 ## What does sin do?
 
 > Behold, the LORD'S hand is not shortened, that it cannot save; neither his ear heavy, that it cannot hear: But *your iniquities have separated between you and your God*, and your sins have hid his face from you, that he will not hear.
-{% ct 'Isaiah 59:1, 2' %}
+{% ct 'Isaiah 59:1-2' %}
 
 > *For the wages of sin is death*; but the gift of God is eternal life through Jesus Christ our Lord.
 {% ct 'Romans 6:23' %}
@@ -107,13 +107,13 @@ Since selfishness is at the root of sin, and sin is the breaking of His law, the
 ## What is one of the purposes of the law?
 
 > He who says, “I know Him,” and does not keep His commandments, is a liar, and the truth is not in him. But whoever keeps His word, truly the love of God is perfected in him. *By this we know that we are in Him*.
-{% ct '1 John 2:4, 5, NKJV' %}
+{% ct '1 John 2:4-5, NKJV' %}
 
 > Not every one that saith unto me, Lord, Lord, shall enter into the kingdom of heaven; but *he that doeth the will of my Father which is in heaven*. Many will say to me in that day, Lord, Lord, have we not prophesied in thy name? and in thy name have cast out devils? and in thy name done many wonderful works? And then will I profess unto them, *I never knew you: depart from me, ye that work iniquity*.
 {% ct 'Matthew 7:21-23' %}
 
 > The *heart is deceitful above all things*, and desperately wicked: who can know it? *I the LORD search the heart*, I try the reins, even to give every man according to his ways, and according to the fruit of his doings.
-{% ct 'Jeremiah 17:9, 10' %}
+{% ct 'Jeremiah 17:9-10' %}
 
 > O LORD, *thou hast searched me, and known me*. Thou knowest my downsitting and mine uprising, thou understandest my thought afar off. Thou compassest my path and my lying down, and *art acquainted with all my ways*. For there is not a word in my tongue, but, lo, O LORD, thou knowest it altogether.
 {% ct 'Psalm 139:1-4' %}
@@ -139,7 +139,7 @@ God promises to help me keep His commandments because He knows that I cannot ove
 ## What are the Ten Commandments?
 
 > [*First:*] I am the LORD thy God, which have brought thee out of the land of Egypt, out of the house of bondage. Thou shalt have no other gods before me.
-{% ct 'Exodus 20:2, 3' %}
+{% ct 'Exodus 20:2-3' %}
 
 > [*Second:*] Thou shalt not make unto thee any graven image, or any likeness of any thing that is in heaven above, or that is in the earth beneath, or that is in the water under the earth: Thou shalt not bow down thyself to them, nor serve them: for I the LORD thy God am a jealous God, visiting the iniquity of the fathers upon the children unto the third and fourth generation of them that hate me; and shewing mercy unto thousands of them that love me, and keep my commandments.
 {% ct 'Exodus 20:4-6' %}
@@ -180,7 +180,7 @@ God promises to help me keep His commandments because He knows that I cannot ove
 {% ct '1 Timothy 6:1' %}
 
 > [*Fourth:*] For he spake in a certain place of the seventh day on this wise, And God did rest the seventh day from all his works. ... There remaineth therefore a rest to the people of God. For he that is entered into his rest, he also hath ceased from his own works, as God did from his.
-{% ct 'Hebrews 4:4, 9, 10' %}
+{% ct 'Hebrews 4:4, 9-10' %}
 
 > [*Fifth:*] Honour thy father and thy mother.
 {% ct 'Matthew 19:19' %}
@@ -285,7 +285,7 @@ The fact that Jesus had to die on the cross to pay for the penalty of lawlessnes
 {% ct 'Genesis 21:33' %}
 
 > [*Law is everlasting:*] The works of his hands are verity and judgment; all his commandments are sure. They stand fast *for ever and ever*, and are done in truth and uprightness.
-{% ct 'Psalms 111:7, 8' %}
+{% ct 'Psalms 111:7-8' %}
 
 The Ten Commandments are a reflection of God’s character in written form, and Jesus demonstrated what it  looks like in human form. Through the law and Jesus’ life we may better comprehend God’s character. Because God cannot change, neither can His law.
 

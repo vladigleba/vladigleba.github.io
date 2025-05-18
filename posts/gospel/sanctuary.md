@@ -10,7 +10,7 @@ date: 2025-01-13
 > And let them make me a sanctuary; *that I may dwell among them*.
 {% ct 'Exodus 25:8' %}
 
-The sanctuary was built so that God could dwell among His people. When Adam and Eve sinned, they lost the closeness they had with their Creator because sin separates us from Him {% rf 'Isaiah 59:1, 2' %}. Our Creator God is holy, and He cannot dwell in the presence of sin because His holiness is a consuming fire to sin and anyone who cherishes it {% rf 'Deuteronomy 4:24' %}. In order to remove this barrier created by sin, God told Moses to build a sanctuary so He could again live with His people. His permanent presence in the sanctuary would be a source of comfort to the Israelites as He guided, protected, and provided for them in their journey through life.
+The sanctuary was built so that God could dwell among His people. When Adam and Eve sinned, they lost the closeness they had with their Creator because sin separates us from Him {% rf 'Isaiah 59:1-2' %}. Our Creator God is holy, and He cannot dwell in the presence of sin because His holiness is a consuming fire to sin and anyone who cherishes it {% rf 'Deuteronomy 4:24' %}. In order to remove this barrier created by sin, God told Moses to build a sanctuary so He could again live with His people. His permanent presence in the sanctuary would be a source of comfort to the Israelites as He guided, protected, and provided for them in their journey through life.
 
 ## What did the sanctuary reveal?
 
@@ -38,7 +38,7 @@ The blueprint for the sanctuary came from God Himself because, through it, He wa
 
 The courtyard, the area around the sanctuary, was 75 feet by 150 feet {% rf 'Exodus 27:18' %} and fenced with linen cloth attached to 60 evenly spaced pillars of brass {% rf 'Exodus 27:9-16' %}. This perimiter had only one opening through which the sinner would enter the courtyard. Upon entry, the sinner would walk toward the altar of burnt offering {% rf 'Exodus 40:6' %}, where his or her animal sacrifice would be consumed by fire. Past the altar, but before the sanctuary entrance, was a laver (basin) for the priests to wash their hands and feet.
 
-The sanctuary itself was made up of two rooms, the Holy Place and the Most Holy Place, and the two were separated by a thick veil (curtain). The sanctuary walls were made of wooden boards overlaid in gold and set in silver sockets {% rf 'Exodus 26:15-19, 29' %}, while the roof consisted of four coverings: linen, goat hair, ram skin, and badger skin {% rf 'Exodus 26:1, 7-14' %}. Upon entry into the sanctuary, the first room was the Holy Place, containing a seven-branched candlestick that was kept burning at all times {% rf 'Exodus 25:31-40' %}, an altar of incense that was also kept consistently burning {% rf 'Exodus 30:7, 8' %}, and a table of showbread with loaves of bread on it {% rf 'Exodus 25:30; Leviticus 24:5-9' %}. Past the thick veil was the Most Holy Place, the room where the presence of God resided. It contained the Ark of the Covenant {% rf 'Exodus 40:3' %}, which had the mercy seat on top of it and two angels, made of pure gold, on top of the mercy seat {% rf 'Exodus 25:17-22' %}. Inside the ark were the Ten Commandments written with the finger of God {% rf 'Deuteronomy 10:4, 5' %}.
+The sanctuary itself was made up of two rooms, the Holy Place and the Most Holy Place, and the two were separated by a thick veil (curtain). The sanctuary walls were made of wooden boards overlaid in gold and set in silver sockets {% rf 'Exodus 26:15-19, 29' %}, while the roof consisted of four coverings: linen, goat hair, ram skin, and badger skin {% rf 'Exodus 26:1, 7-14' %}. Upon entry into the sanctuary, the first room was the Holy Place, containing a seven-branched candlestick that was kept burning at all times {% rf 'Exodus 25:31-40' %}, an altar of incense that was also kept consistently burning {% rf 'Exodus 30:7-8' %}, and a table of showbread with loaves of bread on it {% rf 'Exodus 25:30; Leviticus 24:5-9' %}. Past the thick veil was the Most Holy Place, the room where the presence of God resided. It contained the Ark of the Covenant {% rf 'Exodus 40:3' %}, which had the mercy seat on top of it and two angels, made of pure gold, on top of the mercy seat {% rf 'Exodus 25:17-22' %}. Inside the ark were the Ten Commandments written with the finger of God {% rf 'Deuteronomy 10:4-5' %}.
 
 ## Of what was the sanctuary a copy?
 
@@ -52,7 +52,7 @@ The Hebrew sanctuary was a copy, a “shadow,” of the sanctuary in heaven of w
 > And he shall lay his hand upon the head of the sin offering, and *slay it for a sin offering* in the place where they kill the burnt offering.
 {% ct 'Leviticus 4:33' %}
 
-A sinner would walk into the courtyard with a sacrificial lamb and approach the altar of burnt offering. Then he would confess his sins onto the lamb by placing his hand on its head {% rf 'Leviticus 4:29; 5:5' %}, symbolically transferring his sins to the lamb. Because the lamb was now symbolically guilty, it had to pay the penalty of sin—death, and the sinner would then slay the lamb with his own hand. Obviously, this was not an easy process, but it was intended to show the seriousness of sin. Afterward, the priest either ate part of the animal sacrifice {% rf 'Leviticus 6:26' %} or sprinkled some of its blood inside the sanctuary {% rf 'Leviticus 4:16, 17' %}, depending on the sacrifice offered. This meant the sin was then transferred from the lamb to the priest and then into the sanctuary, and the sinner walked away free from the penalty of sin.
+A sinner would walk into the courtyard with a sacrificial lamb and approach the altar of burnt offering. Then he would confess his sins onto the lamb by placing his hand on its head {% rf 'Leviticus 4:29; 5:5' %}, symbolically transferring his sins to the lamb. Because the lamb was now symbolically guilty, it had to pay the penalty of sin—death, and the sinner would then slay the lamb with his own hand. Obviously, this was not an easy process, but it was intended to show the seriousness of sin. Afterward, the priest either ate part of the animal sacrifice {% rf 'Leviticus 6:26' %} or sprinkled some of its blood inside the sanctuary {% rf 'Leviticus 4:16-17' %}, depending on the sacrifice offered. This meant the sin was then transferred from the lamb to the priest and then into the sanctuary, and the sinner walked away free from the penalty of sin.
 
 ## How do I receive forgiveness of sins?
 
@@ -69,12 +69,12 @@ Every piece of furniture points to Jesus and represents an aspect of His work on
 - The candlestick points to Jesus as the Light of the world {% rf 'John 1:9; 9:5' %}, while its oil represents the Holy Spirit {% rf 'Zechariah 4:1-6; Revelation 4:5' %}, with whom I am invited to be filled {% rf 'Luke 11:13' %}.
 - The showbread is a symbol of Jesus being the Bread of Life {% rf 'John 6:48, 51' %}, which I an invited to internalize by reading His Word—the Bible {% rf 'Matthew 4:4' %}.
 - The altar of incense represents the righteousness of Jesus mixed with the prayers of God’s people {% rf 'Revelation 5:8; 8:3' %}.
-- The ark of the covenant represents God’s throne in heaven {% rf 'Psalm 80:1' %}, but there is more to it. Because God’s Ten Commandments were inside the ark, it shows how His law of love (see [“God’s Law of Love”](/posts/gospel/law.md)), which is a reflection of His character, is the foundation of His government. But since the mercy seat was over the Ten Commandments, it also represents His mercy being extended, through the blood that was sprinkled on the seat by the priest {% rf 'Leviticus 16:15, 16' %}, to those who confess and forsake sin after breaking His law. It’s beautiful! And of course, the sprinkled blood was a symbol of Jesus’ blood shed on behalf of all people {% rf 'Matthew 26:28' %}.
+- The ark of the covenant represents God’s throne in heaven {% rf 'Psalm 80:1' %}, but there is more to it. Because God’s Ten Commandments were inside the ark, it shows how His law of love (see [“God’s Law of Love”](/posts/gospel/law.md)), which is a reflection of His character, is the foundation of His government. But since the mercy seat was over the Ten Commandments, it also represents His mercy being extended, through the blood that was sprinkled on the seat by the priest {% rf 'Leviticus 16:15-16' %}, to those who confess and forsake sin after breaking His law. It’s beautiful! And of course, the sprinkled blood was a symbol of Jesus’ blood shed on behalf of all people {% rf 'Matthew 26:28' %}.
 
 ## Do I have a High Priest today?
 
 > But *Christ being come an high priest* of good things to come, by a greater and more perfect tabernacle, not made with hands, that is to say, not of this building; neither by the blood of goats and calves, but *by his own blood he entered in once into the holy place, having obtained eternal redemption for us*.
-{% ct 'Hebrews 9:11, 12' %}
+{% ct 'Hebrews 9:11-12' %}
 
 > For there is one God, and *one mediator between God and men, the man Christ Jesus*.
 {% ct '1 Timothy 2:15' %}
@@ -90,7 +90,7 @@ The sprinkling of blood by the priest foreshadowed Jesus’ current ministry in 
 {% ct 'Hebrews 7:25' %}
 
 > Being justified freely by his grace through the redemption that is in Christ Jesus: whom God hath set forth to be a propitiation through faith in his blood, *to declare his righteousness for the remission of sins that are past*, through the forbearance of God.
-{% ct 'Romans 3:24, 25' %}
+{% ct 'Romans 3:24-25' %}
 
 > Who gave himself for us, that he might *redeem us from all iniquity, and purify unto himself a peculiar people*, zealous of good works.
 {% ct 'Titus 2:14' %}
@@ -104,8 +104,8 @@ As my High Priest, Jesus accomplishes two amazing miracles when I genuinely conf
 
 There are several promises God gives me:
 - If I confess my sins, He will forgive them by ascribing Jesus’ sinless life and atoning death to me, thereby removing the death sentence from me and counting me as guiltless {% rf '1 John 1:9; Isaiah 1:18; 44:22; 2 Corinthians 5:21' %}.
-- He promises to restore His image in me that was lost in Eden by giving me a new heart {% rf 'Romans 8:29; Genesis 1:26, 27; Ezekiel 36:25-27' %}.
-- He promises to give me the desire and the power to live righteously {% rf 'Philippians 2:13; Hebrews 13:20, 21' %}.
+- He promises to restore His image in me that was lost in Eden by giving me a new heart {% rf 'Romans 8:29; Genesis 1:26-27; Ezekiel 36:25-27' %}.
+- He promises to give me the desire and the power to live righteously {% rf 'Philippians 2:13; Hebrews 13:20-21' %}.
 - He will remain faithful to His work of restoring His image in me until I stand before His throne in heaven {% rf 'Philippians 1:6; Jude 1:24' %}.
 
 ## Do I have a role to play in this?
@@ -115,7 +115,7 @@ There are several promises God gives me:
 
 The promises mentioned above can become a reality only if I give Jesus the permission to perform them by making Him the Ruler of my life, and this commitment needs to be renewed every day {% rf '1 Corinthians 15:31; Luke 9:23' %} because He can continue His work in me only if I continue to cooperate with and remain fully surrendered to Him. This involves choosing to die to self daily because my carnal, selfish nature is naturally in enmity against God {% rf 'Romans 8:5-9' %}, but Jesus’ life was one of selflessness, so He calls me to follow Him {% rf 'John 12:26; 1 Peter 2:21' %} even though the natural desire is to go my own way {% rf 'Isaiah 53:6' %}.
 
-He compares the surrender of self to getting an eye plucked out or a hand cut off {% rf 'Matthew 5:29, 30' %} because sin is addictive and selfishness is natural, but it can and will be overcome, by God’s power {% rf 'Mark 10:26, 27' %}, in the lives of those whom Jesus calls His own. In another place, He compares His life of self denial to a narrow path {% rf 'Matthew 7:13, 14' %}, so clearly this is not the path chosen by the majority. This is why a mere profession of faith in a life of conscious rebellion against His law is, ultimately, a shallow profession {% rf '1 John 2:3-6' %}. Jesus shares heaven with those who share His selfless character, and this is a miracle only He can perform, but only if I give Him full control of my life {% rf 'Matthew 19:27' %}.
+He compares the surrender of self to getting an eye plucked out or a hand cut off {% rf 'Matthew 5:29-30' %} because sin is addictive and selfishness is natural, but it can and will be overcome, by God’s power {% rf 'Mark 10:26-27' %}, in the lives of those whom Jesus calls His own. In another place, He compares His life of self denial to a narrow path {% rf 'Matthew 7:13-14' %}, so clearly this is not the path chosen by the majority. This is why a mere profession of faith in a life of conscious rebellion against His law is, ultimately, a shallow profession {% rf '1 John 2:3-6' %}. Jesus shares heaven with those who share His selfless character, and this is a miracle only He can perform, but only if I give Him full control of my life {% rf 'Matthew 19:27' %}.
 
 ## What was the Day of Atonement?
 
@@ -130,11 +130,11 @@ The Day of Atonement (Yom Kippur) was a yearly occurance and the only time the H
 {% ct 'Leviticus 16:7-10' %}
 
 > And this shall be a statute for ever unto you: that in the seventh month, on the tenth day of the month, *ye shall afflict your souls, and do no work at all*, whether it be one of your own country, or a stranger that sojourneth among you: For *on that day shall the priest make an atonement for you, to cleanse you, that ye may be clean from all your sins before the LORD*.
-{% ct 'Leviticus 16:29, 30' %}
+{% ct 'Leviticus 16:29-30' %}
 
 Once a year, on the Day of Atonement, two goats were selected. The Lord’s goat was killed as a sacrifice for the sins of God’s people {% rf 'Leviticus 16:9' %}, and the blood was taken by the high priest into the Most Holy Place and sprinkled upon and before the mercy seat {% rf 'Leviticus 16:14' %}. This represented the blood of Jesus and the mercy of God available to anyone who chooses to confess and forsake sin. God accepted the sprinkled blood, and the confessed sins of the people were then transferred from the sanctuary to the high priest, who then transferred them to the second goat—the scapegoat, which represented Satan {% rf 'Leviticus 16:8' %}. In this manner the sanctuary was cleansed from the sins of the people transferred there throughout the year {% rf 'Leviticus 16:30' %}.
 
-The scapegoat was then led into the wilderness {% rf 'Leviticus 16:21, 22' %} where it died, representing Satan’s punishment for the sins of the world because after Jesus’ Second Coming, Satan will be confined to the uninhabited, desolate wilderness of earth for 1,000 years ({% rf 'Revelation 20:1-3' false %}; see “1,000 Years of Peace”), and at the end of this period, he will perish in the lake of fire ({% rf 'Revelation 20:10' false %}; see “Is Hell Forever?”).
+The scapegoat was then led into the wilderness {% rf 'Leviticus 16:21-22' %} where it died, representing Satan’s punishment for the sins of the world because after Jesus’ Second Coming, Satan will be confined to the uninhabited, desolate wilderness of earth for 1,000 years ({% rf 'Revelation 20:1-3' false %}; see “1,000 Years of Peace”), and at the end of this period, he will perish in the lake of fire ({% rf 'Revelation 20:10' false %}; see “Is Hell Forever?”).
 
 ## What did the Day of Atonement foreshadow?
 
@@ -148,11 +148,11 @@ In the broadest aspect, the Day of Atonement lead to sin being eradicated from t
 ## What makes Jesus the perfect High Priest?
 
 > Therefore, *in all things He had to be made like His brethren*, that He might be a merciful and faithful High Priest in things pertaining to God, to make propitiation for the sins of the people. *For in that He Himself has suffered, being tempted, He is able to aid those who are tempted*.
-{% ct 'Hebrews 2:17, 18, NKJV' %}
+{% ct 'Hebrews 2:17-18, NKJV' %}
 
 > For we do not have a High Priest who cannot sympathize with our weaknesses, but *was in all points tempted as we are*, yet without sin. Let us therefore come boldly to the throne of grace, that we may obtain mercy and find grace to help in time of need.
-{% ct 'Hebrews 4:15, 16' %}
+{% ct 'Hebrews 4:15-16' %}
 
-Because Jesus was born in human flesh, He experienced all of the temptations that we experience, and because He knows what it feels like to wrestle with sin, He is full of mercy and compassion toward anyone who comes to Him in confession and repentence. Because He successfully resisted temptation {% rf '1 John 3:5' %} and gained victory over sin, He is ever ready to help me overcome sin in my own life. He wants me to experience an abundant life {% rf 'John 10:10' %} that is free from the power of sin {% rf 'John 8:31, 31' %}.
+Because Jesus was born in human flesh, He experienced all of the temptations that we experience, and because He knows what it feels like to wrestle with sin, He is full of mercy and compassion toward anyone who comes to Him in confession and repentence. Because He successfully resisted temptation {% rf '1 John 3:5' %} and gained victory over sin, He is ever ready to help me overcome sin in my own life. He wants me to experience an abundant life {% rf 'John 10:10' %} that is free from the power of sin {% rf 'John 8:31-31' %}.
 
 The pain, misery, and suffering of sin was never a part of His plan for us. The human race brought it into the world, and the sanctuary shows that God takes it very seriously. His justice cannot excuse it, but, in His mercy, He also takes the burden of providing a way out of it entirely upon Himself, and He gives the remedy—freely—to anyone willing to take it. He is our merciful High Priest who shed His own blood so our record of sin could be blotted out. The only question is have you accepted His offer of mercy? Have your sins been covered by the blood of the Lamb?

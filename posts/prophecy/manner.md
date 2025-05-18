@@ -35,7 +35,7 @@ Christ’s second coming will not be a silent or secret event; it will be imposs
 ## Will it be audible? What else will take place?
 
 > For the Lord himself shall descend from heaven *with a shout, with the voice of the archangel, and with the trump of God*: and the *dead in Christ shall rise first*: then we which are alive and remain shall be *caught up together with them in the clouds*, to meet the Lord in the air: and so shall we ever be with the Lord.
-{% ct '1 Thessalonians 4:16, 17' %}
+{% ct '1 Thessalonians 4:16-17' %}
 
 Those who died in Christ will be resurrected and, together with those who are alive and ready for Christ, will be caught up to meet Him in the air. Because He will not touch the earth, His second coming will not be an earth appearance, but a sky appearance.
 
@@ -74,7 +74,7 @@ Because heaven is a place where righteousness dwells, any person who clings to s
 ## Will there be a third group of people?
 
 > He that is unjust, let him be unjust still: and *he which is filthy, let him be filthy still: and he that is righteous, let him be righteous still*: and he that is holy, let him be holy still. And, behold, I come quickly; and my reward is with me, to give every man according as his work shall be.
-{% ct 'Revelation 22:11, 12' %}
+{% ct 'Revelation 22:11-12' %}
 
 When Jesus returns there will be only two groups of people—the saved and the lost. It will also be too late to change sides because He returns with His reward, meaning the judgment has already happened and every person’s case has been decided.
 

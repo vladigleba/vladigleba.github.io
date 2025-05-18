@@ -47,20 +47,20 @@ These prophecies came from different time periods and different prophets, but th
 ## Who would betray Him?
 
 > *For it was not an enemy that reproached me*; then I could have borne it: neither was it he that hated me that did magnify himself against me; then I would have hid myself from him: But it was thou, a man mine equal, my guide, and *mine acquaintance*.
-{% ct 'Psalm 55:12, 13' %}
+{% ct 'Psalm 55:12-13' %}
 
 > Yea, *mine own familiar friend, in whom I trusted, which did eat of my bread*, hath lifted up his heel against me.
 {% ct 'Psalm 41:9' %}
 
 > When Jesus had said these things, He was troubled in spirit, and testified and said, “Most assuredly, I say to you, *one of you will betray Me*.” Then the disciples looked at one another, perplexed about whom He spoke. &hellip; Jesus answered, “*It is he to whom I shall give a piece of bread* when I have dipped it.” And having dipped the bread, He gave it to Judas Iscariot, the son of Simon.
-{% ct 'John 13:21, 22, 26, NKJV' %}
+{% ct 'John 13:21-22, 26, NKJV' %}
 
 Jesus was betrayed by a friend, one of His own disciples, and even the act that initiated the betrayal was accurately foretold—the eating of bread.
 
 ## How much would He be sold for?
 
 > And I said unto them, If ye think good, give me my price; and if not, forbear. So they weighed for my price *thirty pieces of silver*. And the LORD said unto me, Cast it unto the potter: a goodly price that I was prised at of them. And I took the thirty pieces of silver, and *cast them to the potter in the house of the LORD*.
-{% ct 'Zechariah 11:12, 13' %}
+{% ct 'Zechariah 11:12-13' %}
 
 > Then Judas, which had betrayed him, when he saw that he was condemned, repented himself, and brought again the *thirty pieces of silver* to the chief priests and elders, Saying, I have sinned in that I have betrayed the innocent blood. And they said, What is that to us? see thou to that. And *he cast down the pieces of silver in the temple*, and departed, and went and hanged himself. And the chief priests took the silver pieces, and said, It is not lawful for to put them into the treasury, because it is the price of blood. And they took counsel, and *bought with them the potter’s field*, to bury strangers in.
 {% ct 'Matthew 27:3-7' %}
@@ -81,7 +81,7 @@ Jesus was sold for thirty pieces of silver, the price of a slave, but not only w
 {% ct 'Psalm 22:16' %}
 
 > And when they were come to the place, which is called Calvary, *there they crucified him*, and the malefactors, one on the right hand, and the other on the left. Then said Jesus, Father, forgive them; for they know not what they do.
-{% ct 'Luke 23:33, 34' %}
+{% ct 'Luke 23:33-34' %}
 
 ## What about His clothing?
 
@@ -105,7 +105,7 @@ Jesus was sold for thirty pieces of silver, the price of a slave, but not only w
 {% ct 'Deuteronomy 16:1' %}
 
 > Your lamb shall be without blemish, a male of the first year: ye shall take it out from the sheep, or from the goats: And ye shall keep it up until the *fourteenth day of the same month*: and the whole assembly of the congregation of Israel shall kill it in the *evening*.
-{% ct 'Exodus 12:5, 6' %}
+{% ct 'Exodus 12:5-6' %}
 
 > Purge out therefore the old leaven, that ye may be a new lump, as ye are unleavened. *For even Christ our passover is sacrificed for us*.
 {% ct '1 Corinthians 5:7' %}
@@ -118,7 +118,7 @@ In an incredible fulfillment of prophecy, Jesus, the Passover lamb to whom all t
 {% ct 'Psalm 34:20' %}
 
 > Then came the soldiers, and brake the legs of the first, and of the other which was crucified with him. But when they came to Jesus, and saw that he was dead already, *they brake not his legs*.
-{% ct 'John 19:32, 33' %}
+{% ct 'John 19:32-33' %}
 
 ## What was said about His grave?
 

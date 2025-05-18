@@ -9,7 +9,7 @@ featured: true
 ## How did God demonstrate His love toward us?
 
 > He that loveth not knoweth not God; for God is love. In this was manifested the love of God toward us, because that *God sent his only begotten Son into the world, that we might live through him*. 
-{% ct '1 John 4:8, 9' %}
+{% ct '1 John 4:8-9' %}
 
 ## What was God’s desire for Adam and Eve?
 
@@ -45,7 +45,7 @@ All have succumbed to sin because once Adam and Eve sinned, it weakend their hum
 ## Is there a solution to our predicament?
 
 > Therefore as by the offence of one, judgment came upon all men to condemnation; even so *by the righteousness of one the free gift came upon all men unto justification of life*. For as by one man's disobedience many were made sinners, so by the obedience of one many shall be made righteous. 
-{% ct 'Romans 5:18, 19' %}
+{% ct 'Romans 5:18-19' %}
 
 God did not leave us in our sin, but promised us a path back to life and reconciliation with Him by offering His Son, Jesus Christ, as a substitute for us so we could be justified and made righteous by His perfect life.
 
@@ -72,7 +72,7 @@ Christ took our sins upon Himself and suffered their penalty on our behalf.
 ## What did this curse involve?
 
 > Thou hast put all things in subjection under his feet. For in that he put all in subjection under him, he left nothing that is not put under him. But now we see not yet all things put under him. But we see Jesus, *who was made a little lower than the angels for the suffering of death*, crowned with glory and honour; that he by the grace of God *should taste death for every man*. 
-{% ct 'Hebrews 2:8, 9' %}
+{% ct 'Hebrews 2:8-9' %}
 
 The penalty for sin is death, and Christ's death on the cross paid that penalty for every single person.
 
@@ -94,13 +94,13 @@ Forsaking my way implies turning around and going in the opposite direction—fr
 ## How exactly am I saved from my sins?
 
 > For *by grace* are ye saved *through faith*; and that not of yourselves: *it is the gift of God*. Not of works, lest any man should boast.
-{% ct 'Ephesians 2:8, 9' %}
+{% ct 'Ephesians 2:8-9' %}
 
 > Therefore we conclude that a man is *justified by faith without the deeds of the law*.
 {% ct 'Romans 3:28' %}
 
 > Therefore being *justified by faith*, we have peace with God through our Lord Jesus Christ: by whom also we *have access by faith into this grace* wherein we stand, and rejoice in hope of the glory of God.
-{% ct 'Romans 5:1, 2' %}
+{% ct 'Romans 5:1-2' %}
 
 > But that no man is justified by the law in the sight of God, it is evident: for, *The just shall live by faith*.
 {% ct 'Galatians 3:11' %}
@@ -120,7 +120,7 @@ In 1999, the Catholic and Lutheran churches issued a *Joint Declaration on the D
 > Whom God hath set forth to be *a propitiation through faith in his blood*, to declare his righteousness for the remission of sins that are past, through the forbearance of God.
 {% ct 'Romans 3:25' %}
 
-The Bible is clear that it is not Christ's works that save me, but His shed blood. In the *Joint Declaration*, the phrase "faith in Christ's saving work" refers to the treasury of merit, which the Church dispenses to atone for sin; however, the Bible teaches that without the shedding of *blood* there is no remission of sin. The truth is Christ died for each person individually {% rf 'Galatians 2:20' %}. His death paid the penalty for my sins—the penalty that I was supposed to pay—while His righteous life satisfies the claims of the law upon me, namely, perfect righteousness, which my life could never meet {% rf 'Romans 5:9, 10' %}.
+The Bible is clear that it is not Christ's works that save me, but His shed blood. In the *Joint Declaration*, the phrase "faith in Christ's saving work" refers to the treasury of merit, which the Church dispenses to atone for sin; however, the Bible teaches that without the shedding of *blood* there is no remission of sin. The truth is Christ died for each person individually {% rf 'Galatians 2:20' %}. His death paid the penalty for my sins—the penalty that I was supposed to pay—while His righteous life satisfies the claims of the law upon me, namely, perfect righteousness, which my life could never meet {% rf 'Romans 5:9-10' %}.
 
 ## What happens once I accept God’s free gift?
 
@@ -152,7 +152,7 @@ Christ’s death on the cross restored the rift that occured between God and the
 > Behold, I stand at the door, and knock: *if any man hear my voice, and open the door*, I will come in to him, and will sup with him, and he with me. 
 {% ct 'Revelation 3:20' %}
 
-God’s way of salvation has always been about respecting freedom of choice. He gave Satan the option to rebel, and He did not immediately destroy him when he did. God permitted Adam and Eve to rebel too. Likewise, I am free to choose whether I want to serve Him or not. Jesus wants to save every person {% rf '1 Timothy 2:3, 4' %}—He wants me to choose Him—but He will not force Himself on anyone. In fact, this is a daily choice; I can choose, anytime, to leave Christ and go in another direction, which is why it’s imperative to reaffirm my decision and recommit myself to Him on a daily basis {% rf 'Luke 9:23' %}. Every single day is a gift from my Creator, and it’s my privilege to give it back to Him.
+God’s way of salvation has always been about respecting freedom of choice. He gave Satan the option to rebel, and He did not immediately destroy him when he did. God permitted Adam and Eve to rebel too. Likewise, I am free to choose whether I want to serve Him or not. Jesus wants to save every person {% rf '1 Timothy 2:3-4' %}—He wants me to choose Him—but He will not force Himself on anyone. In fact, this is a daily choice; I can choose, anytime, to leave Christ and go in another direction, which is why it’s imperative to reaffirm my decision and recommit myself to Him on a daily basis {% rf 'Luke 9:23' %}. Every single day is a gift from my Creator, and it’s my privilege to give it back to Him.
 
 ## What does it mean to accept Jesus as Savior and as Lord?
 
@@ -166,7 +166,7 @@ Accepting Jesus as Lord, on the other hand, means surrendering my will to Him, t
 ## What is God’s desire for me?
 
 > For this is good and acceptable in the sight of God our Savior, *who desires all men to be saved* and to come to the knowledge of the truth. 
-{% ct '1 Timothy 2:3, 4, NKJV' %}
+{% ct '1 Timothy 2:3-4, NKJV' %}
 
 > For God so loved the world, that he gave his only begotten Son, *that whosoever believeth in him should not perish, but have everlasting life*. 
 {% ct 'John 3:16' %}

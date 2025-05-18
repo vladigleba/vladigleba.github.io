@@ -1,7 +1,7 @@
 ---
 title: Origin of Evil
 description: If God is in control, why is there so much evil in the world? How did it begin, and when will it end?
-color: rgb(170, 98, 98)
+color: rgb(170,98,98)
 date: 2025-01-03
 ---
             
@@ -96,7 +96,7 @@ In order to deceive Eve, Satan mixed in some truth with his lie when he said she
 {% ct 'Genesis 3:8' %}
 
 > Behold, the LORD'S hand is not shortened, that it cannot save; neither his ear heavy, that it cannot hear: But *your iniquities have separated between you and your God*, and your sins have hid his face from you, that he will not hear.
-{% ct 'Isaiah 59:1, 2' %}
+{% ct 'Isaiah 59:1-2' %}
 
 As soon as Adam and Eve sinned, they hid from God for the first time. Sin leads to separation from God because sin cannot exist in the presence of a holy God without being consumed by it. A chasm was now formed between the Giver of life and His creation, and the process of death had commenced.
 
@@ -145,7 +145,7 @@ Once Adam and Eve fell, God did not leave them in their hopeless condition but g
 {% ct 'Romans 5:17-19' %}
 
 > Being justified freely by his grace through the redemption that is in Christ Jesus: Whom God hath set forth to be a propitiation through faith in his blood, *to declare his righteousness for the remission of sins* that are past, through the forbearance of God.
-{% ct 'Romans 3:24, 25' %}
+{% ct 'Romans 3:24-25' %}
 
 Christ’s perfect life gives us the ability to be free from the bondage of sin and it’s penalty of death! By paying for our sins, Jesus made it possible for anyone who receives this free gift by faith through repentance of sins to be forgiven and declared righteous before God!
 
@@ -159,7 +159,7 @@ God in His love and mercy does not leave us in our hopeless condition. He gave H
 ## Will Satan live forever?
 
 > Thine heart was lifted up because of thy beauty, thou hast corrupted thy wisdom by reason of thy brightness: I will cast thee to the ground, I will lay thee before kings, that they may behold thee. Thou hast defiled thy sanctuaries by the multitude of thine iniquities, by the iniquity of thy traffick; therefore *will I bring forth a fire from the midst of thee, it shall devour thee, and I will bring thee to ashes* upon the earth in the sight of all them that behold thee.
-{% ct 'Ezekiel 28:17, 18' %}
+{% ct 'Ezekiel 28:17-18' %}
 
 ## What will God do once evil is eradicated?
 

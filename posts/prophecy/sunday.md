@@ -18,7 +18,7 @@ The Ten Commandments, which the Sabbath is a part of, were written by the finger
 {% ct 'Genesis 2:1-3' %}
 
 > For as the new heavens and the new earth, which I will make, shall remain before me, saith the LORD, so shall your seed and your name remain. And it shall come to pass, that from one new moon to another, and *from one sabbath to another, shall all flesh come to worship before me*, saith the LORD.
-{% ct 'Isaiah 66:22, 23' %}
+{% ct 'Isaiah 66:22-23' %}
 
 The seventh day Sabbath, from Friday sunset to Saturday sunset, was set apart, blessed, and sanctified on the very first week of creation, long before there was a Jewish nation, and it will be kept even in heaven.
 
@@ -97,7 +97,7 @@ Here Paul is asking each person to put money aside for the needy, privately, onc
 ## What did Jesus say about the law?
 
 > Think not that I am come to destroy the law, or the prophets: *I am not come to destroy, but to fulfil*. For verily I say unto you, till heaven and earth pass, *one jot or one tittle shall in no wise pass from the law*, till all be fulfilled.
-{% ct 'Matthew 5:17, 18' %}
+{% ct 'Matthew 5:17-18' %}
 
 There are no verses in the Bible of Jesus changing the fourth commandment to mean observing Sunday instead of Saturday, nor did He tell others to do so later on. On the contrary, His mission was to fulfill the law, to uphold and expand it beyond the “letter” of the law to include the “spirit” of the law, as well. (For example, He expanded the sin of adultery to also include lust of the heart in {% rf 'Matthew 5:28' false %}.)
 
@@ -114,6 +114,6 @@ It was a heart filled with love for His Father that enabled Jesus to fulfill the
 {% ct 'Romans 8:4' %}
 
 > *Ask, and it shall be given you*; seek, and ye shall find; knock, and it shall be opened unto you: *For every one that asketh receiveth*; and he that seeketh findeth; and to him that knocketh it shall be opened.
-{% ct 'Matthew 7:7, 8' %}
+{% ct 'Matthew 7:7-8' %}
 
 If my heart is actuated by love for Jesus and filled with the Holy Spirit then the law can be fulfilled in my life too. I just have to ask Him and have faith that He can and will do it.

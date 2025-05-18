@@ -21,14 +21,14 @@ Jesus wants to sanctify me wholly, including mind, body, and spirit. He did not 
 ## Does my body actually belong to me?
 
 > What? know ye not that *your body is the temple of the Holy Ghost* which is in you, which ye have of God, and *ye are not your own? For ye are bought with a price*: therefore glorify God in your body, and in your spirit, which are God's.
-{% ct '1 Corinthians 6:19, 20' %}
+{% ct '1 Corinthians 6:19-20' %}
 
 My body belongs to God because 1) He created it, and 2) He redeemed it at the cross. It is to be a temple of the Holy Spirit, enabling me to bring Him glory in my body and spirit!
 
 ## What does God invite me to do with my body?
 
 > I beseech you therefore, brethren, by the mercies of God, *that ye present your bodies a living sacrifice, holy, acceptable unto God*, which is your reasonable service. And be not conformed to this world: but *be ye transformed by the renewing of your mind*, that ye may prove what is that good, and acceptable, and perfect, will of God.
-{% ct 'Romans 12:1, 2' %}
+{% ct 'Romans 12:1-2' %}
 
 God calls on me to present my body as a living and holy sacrifice to Him—my Maker and Redeemer. Then I am to be transformed by the renewing of my mind (note the tight connection between the body and mind). Once more, Jesus does not just want to forgive my sins; He wants to cleanse, heal, and restore His image in me by wholly transforming me!
 
@@ -41,7 +41,7 @@ God calls on me to present my body as a living and holy sacrifice to Him—my Ma
 {% ct 'Philippians 3:19' %}
 
 > *Ask, and it shall be given you*; seek, and ye shall find; knock, and it shall be opened unto you: for every one that asketh receiveth; and he that seeketh findeth; and to him that knocketh it shall be opened.
-{% ct 'Matthew 7:7, 8' %}
+{% ct 'Matthew 7:7-8' %}
 
 Paul invites me to bring God glory in everything that I do, including the things I eat and drink. This is a high standard that I cannot reach in my own power, but God has made ample provision for this to become a reality in my life by the grace and power of Christ, as long as I do not frustrate His grace with a perverse will. If I ask Jesus to help me live a life that glorifies Him then He will gladly answer that prayer. And because God is love {% rf '1 John 4:8' %}, His glory is my good.
 
@@ -64,10 +64,10 @@ The Bible is clear and direct in its condemnation of wine and other alcoholic be
 ## Why should I not consume alcohol?
 
 > It is not for kings, O Lemuel, *it is not for kings to drink wine; nor for princes strong drink*: lest they drink, and forget the law, and pervert the judgment of any of the afflicted.
-{% ct 'Proverbs 31:4, 5' %}
+{% ct 'Proverbs 31:4-5' %}
 
 > And they sung a new song, saying, Thou art worthy to take the book, and to open the seals thereof: for thou wast slain, and hast redeemed us to God by thy blood out of every kindred, and tongue, and people, and nation; and hast *made us unto our God kings and priests*: and we shall reign on the earth.
-{% ct 'Revelation 5:9, 10' %}
+{% ct 'Revelation 5:9-10' %}
 
 > Wherefore *gird up the loins of your mind, be sober*, and hope to the end for the grace that is to be brought unto you at the revelation of Jesus Christ.
 {% ct '1 Peter 1:13' %}
@@ -96,7 +96,7 @@ The original diet in Eden was a whole foods diet composed of plants that yield s
 {% ct 'Genesis 7:2' %}
 
 > *Every moving thing that lives shall be food for you*. I have given you all things, even as the green herbs. But *you shall not eat flesh with its life, that is, its blood*.
-{% ct 'Genesis 9:3, 4, NKJV' %}
+{% ct 'Genesis 9:3-4, NKJV' %}
 
 Meat was added to the diet after the flood because when Noah stepped off the ark all the vegetation had been destroyed. But God made a distinction between clean and unclean animals because seven pairs of every clean animal came onto the ark and only two pairs of the unclean, so Noah and his family were allowed to eat every clean animal, as long as the blood was drained.
 
@@ -151,6 +151,6 @@ God cannot save those who knowingly go down the path of destruction, nor does He
 ## What promise does the Bible give?
 
 > For we have not a high priest which cannot be touched with the feeling of our infirmities; but *was in all points tempted like as we are*, yet without sin. Let us therefore *come boldly unto the throne of grace, that we may obtain mercy, and find grace* to help in time of need.
-{% ct 'Hebrews 4:15, 16' %}
+{% ct 'Hebrews 4:15-16' %}
 
 Jesus knows my struggles because He experienced them Himself, and so He bids me to come to His throne that I may receive mercy and grace to meet them with boldness and overcome.

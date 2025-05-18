@@ -8,7 +8,7 @@ series: salvation
 ## Is God willing to forgive?
 
 > Who is a God like unto thee, that *pardoneth* iniquity, and *passeth by* the transgression of the remnant of his heritage? He retaineth not his anger for ever, because he *delighteth in mercy*. He will turn again, he will *have compassion* upon us; he will *subdue* our iniquities; and thou wilt *cast all their sins into the depths of the sea*. 
-{% ct 'Micah 7:18, 19' %}
+{% ct 'Micah 7:18-19' %}
 
 > For I will be *merciful to their unrighteousness*, and their sins and their iniquities will I remember no more. 
 {% ct 'Hebrews 8:12' %}
@@ -38,20 +38,20 @@ God will never refuse to forgive a person who is truly sorry and genuinely asks 
 ## How does God want me to live after I've been forgiven?
 
 > When Jesus had lifted up himself, and saw none but the woman, he said unto her, Woman, where are those thine accusers? hath no man condemned thee? She said, No man, Lord. And Jesus said unto her, Neither do I condemn thee: *go, and sin no more*. 
-{% ct 'John 8:10, 11' %}
+{% ct 'John 8:10-11' %}
 
 Jesus doesn’t just want to forgive my sins; He wants to cleanse me from my sins and restore His image in me by transforming my life.
 
 ## How can He give me victory over all of my sins?
 
 > *Ask, and it shall be given you*; seek, and ye shall find; knock, and it shall be opened unto you: *for every one that asketh receiveth*; and he that seeketh findeth; and to him that knocketh it shall be opened. 
-{% ct 'Matthew 7:7, 8' %}
+{% ct 'Matthew 7:7-8' %}
 
 > And this is the confidence that we have in him, that, *if we ask any thing according to his will, he heareth us*. 
 {% ct '1 John 5:14' %}
 
 > What shall we then say to these things? *If God be for us, who can be against us*? He that spared not His own Son, but delivered Him up for us all, *how shall He not with Him also freely give us all things*? 
-{% ct 'Romans 8:31, 32' %}
+{% ct 'Romans 8:31-32' %}
 
 There is no sin too powerful for God, but He cannot do anything against my will either. If I confess my sins and ask Him to give me victory over them, believing that He is powerful enough to do it, He will do it according to my faith.
 
@@ -73,7 +73,7 @@ God wants to free me from the power of sin because sin hurts me. He can also giv
 ## Who ended up paying for my sins?
 
 >   Who hath delivered us from the power of darkness, and hath translated us into the kingdom of his dear Son: *in whom we have redemption through his blood*, even the forgiveness of sins. 
-{% ct 'Colossians 1:13, 14' %}
+{% ct 'Colossians 1:13-14' %}
 
 I can be forgiven because Christ already paid for my sins on the cross and redeemed me from them. All I have to do is ask.
 

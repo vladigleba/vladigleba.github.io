@@ -11,7 +11,7 @@ series: salvation
 {% ct '2 Corinthians 5:19' %}
 
 > Stand therefore, having your loins girt about with truth, and having on the breastplate of righteousness; and *your feet shod with the preparation of the gospel of peace*.
-{% ct 'Ephesians 6:14, 15' %}
+{% ct 'Ephesians 6:14-15' %}
 
 Ever since Lucifer chose to exercise his freedom of choice to exalt self above God, the dissonant note of selfishness has marred the perfect harmony of God’s government. When Lucifer succeeded in infecting Adam and Eve with this virus of self-exaltation, a war began to rage in the heart of every human being between self and God. The way God has handled this rebellion against Himself and His legitimate authority, by risking everything in order to reconcile the human race back to Himself through the sacrifice of His only Son, Jesus Christ, has shone new light on the justice of His governemnt and the mercy of His character.
 
@@ -22,7 +22,7 @@ After His ascension, Jesus committed this work of reconciliation, the proclamati
 > Know ye not, that *to whom ye yield yourselves servants to obey*, his servants ye are to whom ye obey; whether of sin unto death, or of obedience unto righteousness?
 {% ct 'Romans 6:16' %}
 
-The Bible presents only two sides for us to choose from: God or Satan, good or evil, righteousness or sin, selflessness or selfishness, life or death. The side we yield, or surrender, to is the side we choose to serve. Our loving Father, Creator, and Reedemer invites us to surrender our will to Him moment by moment because His will for our lives is better, higher, and grander than our own {% rf 'Isaiah 55:8, 9' %}.
+The Bible presents only two sides for us to choose from: God or Satan, good or evil, righteousness or sin, selflessness or selfishness, life or death. The side we yield, or surrender, to is the side we choose to serve. Our loving Father, Creator, and Reedemer invites us to surrender our will to Him moment by moment because His will for our lives is better, higher, and grander than our own {% rf 'Isaiah 55:8-9' %}.
 
 ## Did Jesus demonstrate this concept in His life?
 
@@ -34,7 +34,7 @@ Just before His betrayal by Judas, Jesus went through the darkest time of His ea
 ## How does Paul describe our human condition?
 
 > For I know that in me (that is, in my flesh,) dwelleth no good thing: for *to will is present with me; but how to perform that which is good I find not.* For the good that I would I do not: but the evil which I would not, that I do.
-{% ct 'Romans 7:18, 19' %}
+{% ct 'Romans 7:18-19' %}
 
 Our fallen human nature makes it natural for us to live for self rather than for God. We may have the *desire* to live for God but fall short in our *ability* to do it.
 
@@ -107,9 +107,9 @@ Growing in Christ is the work of a lifetime, and it’s truly His work, made pos
 {% ct 'Proverbs 24:16' %}
 
 > My little children, these things write I unto you, that ye sin not. And *if any man sin, we have an advocate with the Father, Jesus Christ the righteous*: and he is the propitiation for our sins: and not for ours only, but also for the sins of the whole world.
-{% ct '1 John 2:1, 2' %}
+{% ct '1 John 2:1-2' %}
 
-God is gracious and merciful; He does not give up on us when we make mistakes! He is always willing to forgive the repentant person, and Jesus Christ, our Advocate in heaven, is ready to cover our shortcomings with His own righteousness, pleading His own blood on our behalf, when we genuinely repent of our sins. When learning to walk it’s not unusual for a child to fall down, but problems arise when the child stops getting up. Such a state of discouragement is Satan’s ultimate goal. But God is a patient, loving parent, who stoops down to meet us where we are, always ready to lift us back up if we stretch out our hand to Him {% rf 'Micah 7:7, 8' %}.
+God is gracious and merciful; He does not give up on us when we make mistakes! He is always willing to forgive the repentant person, and Jesus Christ, our Advocate in heaven, is ready to cover our shortcomings with His own righteousness, pleading His own blood on our behalf, when we genuinely repent of our sins. When learning to walk it’s not unusual for a child to fall down, but problems arise when the child stops getting up. Such a state of discouragement is Satan’s ultimate goal. But God is a patient, loving parent, who stoops down to meet us where we are, always ready to lift us back up if we stretch out our hand to Him {% rf 'Micah 7:7-8' %}.
 
 Of course, we don’t want to abuse His grace and become presumptuous by choosing to cling to sin, because the wages of sin is death {% rf 'Romans 3:23' %}. Sin is so serious that the Father had to give up His own Son to a death on the cross because of it. The repentant sinner who truly loves Jesus and appreciates His sacrifice will develop a hatred of sin.
 
@@ -129,7 +129,7 @@ When we yield ourselves to Christ, He starts living and working in us, giving us
 {% ct 'John 14:16-18' %}
 
 > Finally, my brethren, be strong in the Lord, and *in the power of his might. Put on the whole armour of God*, that ye may be able to stand against the wiles of the devil.
-{% ct 'Ephesians 6:10, 11' %}
+{% ct 'Ephesians 6:10-11' %}
 
 When Jesus talked about His Father sending the Holy Spirit, He equated the Spirit with His own presence because He said “I will come to you.” We’ve already learned that we have victory over self through Jesus Christ, and now we know He dwells in us through the gift of the Holy Spirit. So it is *His* power and *His* armor, not our own, that makes us strong, enabling us to live a life that’s pleasing to Him.
 
@@ -159,10 +159,10 @@ The transformation of character—the renewal of mind and the purifying of heart
 {% ct 'Philippians 1:6' %}
 
 > Now unto him that *is able to keep you from falling, and to present you faultless before the presence of his glory with exceeding joy*, to the only wise God our Saviour, be glory and majesty, dominion and power, both now and ever. Amen.
-{% ct 'Jude 1:24, 25' %}
+{% ct 'Jude 1:24-25' %}
 
 > And the very God of peace sanctify you wholly; and I pray God your whole spirit and soul and body be preserved blameless unto the coming of our Lord Jesus Christ. *Faithful is he that calleth you, who also will do it*.
-{% ct '1 Thessalonians 5:23, 24' %}
+{% ct '1 Thessalonians 5:23-24' %}
 
 As long as we continue to choose Christ daily, we are complete in Him {% rf 'Colossians 2:10' %}, who gives us help and power, who has promised to perform the work He has begun in our hearts, and to present us faultless before His glory!
 
