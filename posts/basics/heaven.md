@@ -7,10 +7,10 @@ date: 2025-01-26
 
 ## What promise did Jesus make about heaven?
 
-> Let not your heart be troubled: ye believe in God, believe also in me. *In my Father's house are many mansions*: if it were not so, I would have told you. *I go to prepare a place for you*. And if I go and prepare a place for you, *I will come again, and receive you unto myself; that where I am, there ye may be also*.
+> Let not your heart be troubled: ye believe in God, believe also in me. *In my Father’s house are many mansions*: if it were not so, I would have told you. *I go to prepare a place for you*. And if I go and prepare a place for you, *I will come again, and receive you unto myself; that where I am, there ye may be also*.
 {% ct 'John 14:1-3' %}
 
-After His resurrection, Jesus returned to heaven to prepare it for His children’s arrival, and a day will come when He will return for them in order to bring them to heaven and dwell with Him for all eternity (see [“Manner of Christ's Coming”](/posts/prophecy/manner.md)).
+After His resurrection, Jesus returned to heaven to prepare it for His children’s arrival, and a day will come when He will return for them in order to bring them to heaven and dwell with Him for all eternity (see [“Manner of Christ’s Coming”](/posts/prophecy/manner.md)).
 
 ## What insight does Peter give?
 
@@ -21,10 +21,10 @@ Unlike life on earth now, heaven will be a place where righteousness dwells. Sin
 
 ## What kind of people will be there?
 
-> Blessed are the *poor in spirit*: for theirs is the kingdom of heaven. Blessed are they that *mourn*: for they shall be comforted. Blessed are the *meek*: for they shall inherit the earth. Blessed are they which do *hunger and thirst after righteousness*: for they shall be filled. Blessed are the *merciful*: for they shall obtain mercy. Blessed are the *pure in heart*: for they shall see God. Blessed are the *peacemakers*: for they shall be called the children of God. Blessed are they which are *persecuted for righteousness' sake*: for theirs is the kingdom of heaven. Blessed are ye, when men shall revile you, and persecute you, and shall say all manner of evil against you falsely, for my sake. Rejoice, and be exceeding glad: for great is your reward in heaven: for so persecuted they the prophets which were before you.
+> Blessed are the *poor in spirit*: for theirs is the kingdom of heaven. Blessed are they that *mourn*: for they shall be comforted. Blessed are the *meek*: for they shall inherit the earth. Blessed are they which do *hunger and thirst after righteousness*: for they shall be filled. Blessed are the *merciful*: for they shall obtain mercy. Blessed are the *pure in heart*: for they shall see God. Blessed are the *peacemakers*: for they shall be called the children of God. Blessed are they which are *persecuted for righteousness’ sake*: for theirs is the kingdom of heaven. Blessed are ye, when men shall revile you, and persecute you, and shall say all manner of evil against you falsely, for my sake. Rejoice, and be exceeding glad: for great is your reward in heaven: for so persecuted they the prophets which were before you.
 {% ct 'Matthew 5:3-12' %}
 
-> Jesus answered and said unto him, Verily, verily, I say unto thee, *Except a man be born again, he cannot see the kingdom of God*. Nicodemus saith unto him, How can a man be born when he is old? can he enter the second time into his mother's womb, and be born? Jesus answered, Verily, verily, I say unto thee, *Except a man be born of water and of the Spirit, he cannot enter into the kingdom of God*.
+> Jesus answered and said unto him, Verily, verily, I say unto thee, *Except a man be born again, he cannot see the kingdom of God*. Nicodemus saith unto him, How can a man be born when he is old? can he enter the second time into his mother’s womb, and be born? Jesus answered, Verily, verily, I say unto thee, *Except a man be born of water and of the Spirit, he cannot enter into the kingdom of God*.
 {% ct 'John 3:3' %}
 
 No one is born pure in heart, hungering and thirsting after rigtheousness because all have sinned {% rf 'Romans 3:23' %}. This is why Jesus said that no one can see the kingdom of God without being born again of the Spirit. So even though all have sinned, some, after learning about the love of Jesus, choose to put an end to the rebellion against Him in their lives. They make peace with Him by reaching out and taking His hand of mercy that offers forgiveness and imparts grace into their lives, restoring them into His image and fitting them for heaven. They surrender their hearts to Him and become the blessed ones of Matthew 5 who have been transformed by His love and made citizens of His kingdom {% rf 'Philippians 3:20' %}.
@@ -75,7 +75,7 @@ In addition to having a mansion in the New Jerusalem built by Jesus {% rf 'John 
 
 ## Will there be predation and killing?
 
-> The *wolf and the lamb shall feed together*, and the lion shall eat straw like the bullock: and dust shall be the serpent's meat. *They shall not hurt nor destroy* in all my holy mountain, saith the LORD.
+> The *wolf and the lamb shall feed together*, and the lion shall eat straw like the bullock: and dust shall be the serpent’s meat. *They shall not hurt nor destroy* in all my holy mountain, saith the LORD.
 {% ct 'Isaiah 65:25' %}
 
 > The wolf will live with the lamb, and the leopard will lie down with the goat; the calf and young lion and fatling will be together, and a little child will lead them. The cow will graze with the bear, their young will lie down together, and the lion will eat straw like the ox. The infant will play by the cobra’s den, and the toddler will reach into the viper’s nest. *They will neither harm nor destroy* on all My holy mountain, for the earth will be full of the knowledge of the LORD as the sea is full of water.
@@ -97,7 +97,7 @@ There will be no death in heaven, which means no predatory behavior either.
 > But they that wait upon the LORD shall renew their strength; they shall *mount up with wings as eagles*; they shall *run, and not be weary; and they shall walk, and not faint*.
 {% ct 'Isaiah 40:31' %}
 
-> And there shall *in no wise enter into it any thing that defileth, neither whatsoever worketh abomination, or maketh a lie*: but they which are written in the Lamb's book of life.
+> And there shall *in no wise enter into it any thing that defileth, neither whatsoever worketh abomination, or maketh a lie*: but they which are written in the Lamb’s book of life.
 {% ct 'Revelation 21:27' %}
 
 > *Violence shall no more be heard in thy land, wasting nor destruction within thy borders*; but thou shalt call thy walls Salvation, and thy gates Praise. The sun shall be no more thy light by day; neither for brightness shall the moon give light unto thee: but *the LORD shall be unto thee an everlasting light*, and thy God thy glory. Thy sun shall no more go down; neither shall thy moon withdraw itself: for the LORD shall be thine everlasting light, and the days of thy mourning shall be ended. *Thy people also shall be all righteous*: they shall inherit the land for ever, the branch of my planting, the work of my hands, that I may be glorified.

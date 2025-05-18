@@ -36,7 +36,7 @@ God the Father created all things by His Son Jesus, who was fulfilling the will 
 
 The fourth commandment begins with “remember” because God knew His Sabbath would be forgotten. It then identifies Him as the Creator of all things, thus laying the foundation for the invitation to all people to acknowledge Him as Creator by resting on the Sabbath day, just as He rested on the seventh day as an example for us.
 
-Moreover, the fourth commandment contains the three basic elements of a seal: name ("the Lord"), title ("your God"), and territory ("heaven and earth)." This uniquely identifies God as the author of the other nine commandments and provides the reason for His authority. In other words, the authority of all Ten Commandments rests on the fourth. Without it, any being could claim authorship of the other nine, and thus the Decalogue would lose its divine authority and rightful claim over our lives.
+Moreover, the fourth commandment contains the three basic elements of a seal: name (“the Lord”), title (“your God”), and territory (“heaven and earth).” This uniquely identifies God as the author of the other nine commandments and provides the reason for His authority. In other words, the authority of all Ten Commandments rests on the fourth. Without it, any being could claim authorship of the other nine, and thus the Decalogue would lose its divine authority and rightful claim over our lives.
 
 ## What else can I learn about the Sabbath from Genesis 2?
 
@@ -54,7 +54,7 @@ The Sabbath was made for us. When God created it, He did not need the rest it pr
 
 ## Why was it given to us?
 
-> Moreover also I gave them my sabbaths, *to be a sign* between me and them, that they *might know that I am the LORD that sanctify them*. ... And hallow my sabbaths; and they shall be a sign between me and you, *that ye may know that I am the LORD your God*.
+> Moreover also I gave them my sabbaths, *to be a sign* between me and them, that they *might know that I am the LORD that sanctify them*. … And hallow my sabbaths; and they shall be a sign between me and you, *that ye may know that I am the LORD your God*.
 {% ct 'Ezekiel 20:12, 20' %}
 
 > And remember that thou wast a servant in the land of Egypt, and *that the LORD thy God brought thee out thence through a mighty hand and by a stretched out arm*: therefore the LORD thy God commanded thee to keep the sabbath day.
@@ -62,7 +62,7 @@ The Sabbath was made for us. When God created it, He did not need the rest it pr
 
 The Sabbath is a sign of my acknowledgment that:
 1. God is Lord because He created this world in six consecutive, literal, 24-hour days {% rf 'Exodus 20:8, 11' %}. The Sabbath is a weekly reminder that I have a Creator who desires to have a relationship with me. This truth carries several important implications: I am not self-created; I am not a god, nor can I become one; I possess no inherent divinity—no inner godhood or divine spark; I do not have an immortal soul, for only God is immortal {% rf '1 Timothy 6:15-16' %}; and I did not come into existence by accident or through a long process of evolution. My life has meaning and purpose.
-2. God is Lord of my life because He is the One who redeems and sanctifies me. In the Bible, the Israelites' bondage in Egypt symbolizes the spiritual bondage of sin from which God delivers me. Therefore, the Sabbath is a weekly reminder that, in Jesus, victory over sin is available to all. After all, Jesus would not have told the woman caught in adultery to “go and sin no more” if that were impossible {% rf 'John 8:11' %}. Moreover, the Sabbath is a sign that I am not saved by my own works, but by faith in His completed work on the cross, as well as His ongoing work as my Intercessor in the heavenly sanctuary (see ["Finding Hope in the Sanctuary"](../gospel/sanctuary.md#do-i-have-a-high-priest-today)).
+2. God is Lord of my life because He is the One who redeems and sanctifies me. In the Bible, the Israelites’ bondage in Egypt symbolizes the spiritual bondage of sin from which God delivers me. Therefore, the Sabbath is a weekly reminder that, in Jesus, victory over sin is available to all. After all, Jesus would not have told the woman caught in adultery to “go and sin no more” if that were impossible {% rf 'John 8:11' %}. Moreover, the Sabbath is a sign that I am not saved by my own works, but by faith in His completed work on the cross, as well as His ongoing work as my Intercessor in the heavenly sanctuary (see [“Finding Hope in the Sanctuary”](../gospel/sanctuary.md#do-i-have-a-high-priest-today)).
 
 In Eden, God rested on the seventh day from His work of creation, and in the tomb, Jesus rested on the same day from His work of redemption. Therefore, the Sabbath serves as a memorial of both acts. It is a weekly rest in Jesus, during which I set aside my secular work and worldly duties to connect with and honor Him—no matter how busy life may become.
 
@@ -113,11 +113,11 @@ Jesus warned about the destruction of Jerusalem by Rome, which occured in A.D. 7
 > But when they departed from Perga, they came to Antioch in Pisidia, and *went into the synagogue on the Sabbath day*, and sat down.
 {% ct 'Acts 13:14' %}
 
-Christ's apostles kept the Sabbath themselves and taught others to do the same, including the converted Gentiles.
+Christ’s apostles kept the Sabbath themselves and taught others to do the same, including the converted Gentiles.
 
 ## On what day was John, the Revelator, in the Spirit?
 
-> I was in the Spirit *on the Lord's day*, and heard behind me a great voice, as of a trumpet.
+> I was in the Spirit *on the Lord’s day*, and heard behind me a great voice, as of a trumpet.
 {% ct 'Revelation 1:10' %}
 
 ## What is the Lord’s Day?
@@ -150,7 +150,7 @@ God is Lord of the Sabbath, the seventh day {% rf 'Exodus 20:11' %}. Notice that
 > Heaven and earth shall pass away: but *my words shall not pass away*.
 {% ct 'Luke 21:33' %}
 
-God is not a fallible man who makes mistakes, changes His mind, or alters His commandments. The Decalogue is a transcript of His character (see ["God's Law of Love"](../gospel/law.md#what-is-gods-law-a-reflection-of)) and, as such, it can never be altered, which is good news, because it means His righteous and loving character will never change! Although some have claimed that His commandments have been altered—and the Bible predicted such attempts—the truth remains that His commandments are unchangeable (see ["God's Law Changed"](../prophecy/change.md)).
+God is not a fallible man who makes mistakes, changes His mind, or alters His commandments. The Decalogue is a transcript of His character (see [“God’s Law of Love”](../gospel/law.md#what-is-gods-law-a-reflection-of)) and, as such, it can never be altered, which is good news, because it means His righteous and loving character will never change! Although some have claimed that His commandments have been altered—and the Bible predicted such attempts—the truth remains that His commandments are unchangeable (see [“God’s Law Changed”](../prophecy/change.md)).
 
 ## Will the Sabbath be kept in heaven?
 

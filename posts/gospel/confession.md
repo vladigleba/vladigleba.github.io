@@ -35,7 +35,7 @@ Forsaking my way implies turning around and going in the opposite direction. I g
 
 God will never refuse to forgive a person who is truly sorry and genuinely asks Him for forgiveness.
 
-## How does God want me to live after I've been forgiven?
+## How does God want me to live after I’ve been forgiven?
 
 > When Jesus had lifted up himself, and saw none but the woman, he said unto her, Woman, where are those thine accusers? hath no man condemned thee? She said, No man, Lord. And Jesus said unto her, Neither do I condemn thee: *go, and sin no more*. 
 {% ct 'John 8:10-11' %}
@@ -89,7 +89,7 @@ I can be forgiven because Christ already paid for my sins on the cross and redee
 
 ## Could receiving forgiveness affect my health?
 
-> Bless the LORD, O my soul, and forget not all his benefits: *who forgiveth all thine iniquities; who healeth all thy diseases*; who redeemeth thy life from destruction; who crowneth thee with lovingkindness and tender mercies; who satisfieth thy mouth with good things; so that thy youth is renewed like the eagle's. 
+> Bless the LORD, O my soul, and forget not all his benefits: *who forgiveth all thine iniquities; who healeth all thy diseases*; who redeemeth thy life from destruction; who crowneth thee with lovingkindness and tender mercies; who satisfieth thy mouth with good things; so that thy youth is renewed like the eagle’s. 
 {% ct 'Psalm 103:2-5' %}
 
 Carrying feelings of guilt is not good for my health, but knowing I’ve been forgiven can bring both physical and mental healing.
@@ -106,7 +106,7 @@ Every sin which I genuinely repent of and confess to Christ wil be forgiven.
 
 ## Does God want me to forgive others once He has forgiven me?
 
-> And *be ye kind* one to another, *tenderhearted, forgiving one another*, even as God for Christ's sake hath forgiven you. 
+> And *be ye kind* one to another, *tenderhearted, forgiving one another*, even as God for Christ’s sake hath forgiven you. 
 {% ct 'Ephesians 4:32' %}
 
 > Now instead, you ought to *forgive and comfort* him, so that he will not be overwhelmed by excessive sorrow. I urge you, therefore, to *reaffirm your love* for him. Another reason I wrote you was to see if you would stand the test and be obedient in everything. 

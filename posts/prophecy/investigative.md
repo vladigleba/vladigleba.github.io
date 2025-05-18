@@ -101,7 +101,7 @@ Once Jesus died and ascended to heaven, His earthly ministry ended, but He confi
 
 ## Who are God’s chosen people now?
 
-> For as many of you as have been baptized into Christ have put on Christ. *There is neither Jew nor Greek, there is neither bond nor free, there is neither male nor female: for ye are all one in Christ Jesus*. And if ye be Christ's, then *are ye Abraham's seed, and heirs according to the promise*.
+> For as many of you as have been baptized into Christ have put on Christ. *There is neither Jew nor Greek, there is neither bond nor free, there is neither male nor female: for ye are all one in Christ Jesus*. And if ye be Christ’s, then *are ye Abraham’s seed, and heirs according to the promise*.
 {% ct 'Galatians 3:27-29' %}
 
 > For the scripture saith, Whosoever believeth on him shall not be ashamed. *For there is no difference between the Jew and the Greek: for the same Lord over all is rich unto all that call upon him*. For whosoever shall call upon the name of the Lord shall be saved.

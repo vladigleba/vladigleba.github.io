@@ -7,7 +7,7 @@ series: second-coming
 
 ## What promise did Jesus make prior to His crucifixion?
 
-> Let not your heart be troubled: ye believe in God, believe also in me. In my Father's house are many mansions: if it were not so, I would have told you. I go to prepare a place for you. And if I go and prepare a place for you, *I will come again, and receive you unto myself*; that where I am, there ye may be also.
+> Let not your heart be troubled: ye believe in God, believe also in me. In my Father’s house are many mansions: if it were not so, I would have told you. I go to prepare a place for you. And if I go and prepare a place for you, *I will come again, and receive you unto myself*; that where I am, there ye may be also.
 {% ct 'John 14:1-3' %}
 
 ## In what manner will He come back?
@@ -87,5 +87,5 @@ Because He has won the war with Satan, Jesus comes back as a victorious King sur
 
 ## What invitation does Revelation give us?
 
-> And the Spirit and the bride say, Come. And let him that heareth say, Come. And let him that is athirst come. And *whosoever will, let him take the water of life freely*. ... He which testifieth these things saith, Surely I come quickly. Amen. Even so, come, Lord Jesus.
+> And the Spirit and the bride say, Come. And let him that heareth say, Come. And let him that is athirst come. And *whosoever will, let him take the water of life freely*. … He which testifieth these things saith, Surely I come quickly. Amen. Even so, come, Lord Jesus.
 {% ct 'Revelation 22:17, 20' %}

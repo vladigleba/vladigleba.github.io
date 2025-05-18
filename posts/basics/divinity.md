@@ -17,7 +17,7 @@ series: messiah
 
 ## What did Jesus say about His divinity?
 
-> And now, O Father, *glorify thou me with thine own self with the glory which I had with thee before the world was*. ... Father, I will that they also, whom thou hast given me, be with me where I am; *that they may behold my glory, which thou hast given me*: for thou lovedst me before the foundation of the world.
+> And now, O Father, *glorify thou me with thine own self with the glory which I had with thee before the world was*. … Father, I will that they also, whom thou hast given me, be with me where I am; *that they may behold my glory, which thou hast given me*: for thou lovedst me before the foundation of the world.
 {% ct 'John 17:5, 24' %}
 
 The Father shares His glory with His Son, Jesus, and it has always been this way.

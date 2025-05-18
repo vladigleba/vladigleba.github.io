@@ -116,7 +116,7 @@ It’s important to note that we are not saved by baptism as salvation is by gra
 
 ## What is baptism connected with?
 
-> *Then they that gladly received his word were baptized*: and the same day there were added unto them about three thousand souls. And they *continued stedfastly in the apostles' doctrine and fellowship, and in breaking of bread, and in prayers*. ... And they, *continuing daily with one accord in the temple*, and breaking bread from house to house, did eat their meat with gladness and singleness of heart, praising God, and having favour with all the people. And *the Lord added to the church daily such as should be saved*.
+> *Then they that gladly received his word were baptized*: and the same day there were added unto them about three thousand souls. And they *continued stedfastly in the apostles’ doctrine and fellowship, and in breaking of bread, and in prayers*. … And they, *continuing daily with one accord in the temple*, and breaking bread from house to house, did eat their meat with gladness and singleness of heart, praising God, and having favour with all the people. And *the Lord added to the church daily such as should be saved*.
 {% ct 'Acts 2:41-42, 46-47' %}
 
 > And *He is the head of the body, the church*, who is the beginning, the firstborn from the dead, that in all things He may have the preeminence.
@@ -129,7 +129,7 @@ When the disciples started proclaiming the teachings of Jesus, those who believe
 
 ## Can a person be rebaptized?
 
-> He said unto them, Have ye received the Holy Ghost since ye believed? And they said unto him, We have not so much as heard whether there be any Holy Ghost. And he said unto them, Unto what then were ye baptized? And they said, Unto John's baptism. Then said Paul, John verily baptized with the baptism of repentance, saying unto the people, that they should believe on him which should come after him, that is, on Christ Jesus. *When they heard this, they were baptized in the name of the Lord Jesus*.
+> He said unto them, Have ye received the Holy Ghost since ye believed? And they said unto him, We have not so much as heard whether there be any Holy Ghost. And he said unto them, Unto what then were ye baptized? And they said, Unto John’s baptism. Then said Paul, John verily baptized with the baptism of repentance, saying unto the people, that they should believe on him which should come after him, that is, on Christ Jesus. *When they heard this, they were baptized in the name of the Lord Jesus*.
 {% ct 'Acts 19:2-5' %}
 
 Ideally, baptism is a one-time experience, but there are exceptions. Rebaptism can be appropriate when new truth is discovered, which was the case with the group of believers who were baptized by John, but who had never heard of the Holy Spirit. After they learned this life-changing truth, they were so impacted by it that they decided to get rebaptized. Another circumstance when rebaptism is appropriate is when a person desires to return to Jesus after turning away from Him. Baptism is a marriage ceremony with Jesus, so if genuine love has been rekindled in the heart, and it’s accompanied by the commitment to be faithful through thick and thin, it can be appropriate to make a new public pledge to Jesus.

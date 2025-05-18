@@ -24,7 +24,7 @@ Love for one’s spouse leads to a desire to please. That which is pleasing is p
 
 ## What does pleasing God bring?
 
-> If ye keep my commandments, ye shall abide in my love; even as I have kept my Father's commandments, and abide in his love. These things have I spoken unto you, *that my joy might remain in you, and that your joy might be full*.
+> If ye keep my commandments, ye shall abide in my love; even as I have kept my Father’s commandments, and abide in his love. These things have I spoken unto you, *that my joy might remain in you, and that your joy might be full*.
 {% ct 'John 15:10-11' %}
 
 > The thief cometh not, but for to steal, and to kill, and to destroy: I am come that *they might have life, and that they might have it more abundantly*.
@@ -34,7 +34,7 @@ God has given us certain principles because, as our Creator, He knows what is be
 
 ## Do we have a responsibility as Christians?
 
-> Now then *we are ambassadors for Christ*, as though God did beseech you by us: we pray you in Christ's stead, be ye reconciled to God.
+> Now then *we are ambassadors for Christ*, as though God did beseech you by us: we pray you in Christ’s stead, be ye reconciled to God.
 {% ct '2 Corinthians 5:20' %}
 
 > Now when they saw the boldness of Peter and John, and perceived that they were unlearned and ignorant men, they marvelled; and *they took knowledge of them, that they had been with Jesus*.
@@ -89,7 +89,7 @@ Besides music, there is a second avenue into our mind: the things we watch. Do t
 
 ## Is there a guide for choosing what to watch?
 
-> Now the works of the flesh are manifest, which are these; *adultery, fornication, uncleanness, lasciviousness, idolatry, witchcraft, hatred, variance, emulations, wrath, strife, seditions, heresies, envyings, murders, drunkenness, revellings, and such like*: of the which I tell you before, as I have also told you in time past, that they which do such things shall not inherit the kingdom of God. But *the fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith, meekness, temperance*: against such there is no law. And they that are Christ's have crucified the flesh with the affections and lusts.
+> Now the works of the flesh are manifest, which are these; *adultery, fornication, uncleanness, lasciviousness, idolatry, witchcraft, hatred, variance, emulations, wrath, strife, seditions, heresies, envyings, murders, drunkenness, revellings, and such like*: of the which I tell you before, as I have also told you in time past, that they which do such things shall not inherit the kingdom of God. But *the fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith, meekness, temperance*: against such there is no law. And they that are Christ’s have crucified the flesh with the affections and lusts.
 {% ct 'Galatians 5:19-24' %}
 
 The above list makes it clear there is little in modern entertainment that is fit for a Christian to watch.

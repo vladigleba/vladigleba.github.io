@@ -15,7 +15,7 @@ series: sabbath
 > For in six days the LORD made heaven and earth, the sea, and all that in them is, and rested the seventh day: wherefore *the LORD blessed the sabbath day*, and hallowed it.
 {% ct 'Exodus 20:11' %}
 
-> And it shall come to pass, if thou shalt hearken diligently unto the voice of the LORD thy God, to observe and to do all his commandments which I command thee this day, that the LORD thy God will set thee on high above all nations of the earth: and *all these blessings shall come on thee, and overtake thee*, if thou shalt hearken unto the voice of the LORD thy God. ... But it shall come to pass, if thou wilt not hearken unto the voice of the LORD thy God, to observe to do all his commandments and his statutes which I command thee this day; that all these curses shall come upon thee, and overtake thee.
+> And it shall come to pass, if thou shalt hearken diligently unto the voice of the LORD thy God, to observe and to do all his commandments which I command thee this day, that the LORD thy God will set thee on high above all nations of the earth: and *all these blessings shall come on thee, and overtake thee*, if thou shalt hearken unto the voice of the LORD thy God. … But it shall come to pass, if thou wilt not hearken unto the voice of the LORD thy God, to observe to do all his commandments and his statutes which I command thee this day; that all these curses shall come upon thee, and overtake thee.
 {% ct 'Deuteronomy 28:1-2, 15' %}
 
 The Sabbath was not made to be a burden, but a blessing to the human race, and those who keep it partake in the blessing on a weekly basis. In Deuteronomy 28 God also pronounces other blessings on those who keep His commandments, including the fourth.

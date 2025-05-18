@@ -7,7 +7,7 @@ series: babylon
 
 ## What is the origin of Babylon?
 
-> And they said, Go to, let us build us a city and a tower, whose top may reach unto heaven; and let us make us a name, lest we be scattered abroad upon the face of the whole earth. And the LORD came down to see the city and the tower, which the children of men builded. And the LORD said, Behold, the people is one, and they have all one language; and this they begin to do: and now nothing will be restrained from them, which they have imagined to do. Go to, let us go down, and there confound their language, that they may not understand one another's speech. So the LORD scattered them abroad from thence upon the face of all the earth: and they left off to build the city. *Therefore is the name of it called Babel; because the LORD did there confound the language of all the earth*: and from thence did the LORD scatter them abroad upon the face of all the earth.
+> And they said, Go to, let us build us a city and a tower, whose top may reach unto heaven; and let us make us a name, lest we be scattered abroad upon the face of the whole earth. And the LORD came down to see the city and the tower, which the children of men builded. And the LORD said, Behold, the people is one, and they have all one language; and this they begin to do: and now nothing will be restrained from them, which they have imagined to do. Go to, let us go down, and there confound their language, that they may not understand one another’s speech. So the LORD scattered them abroad from thence upon the face of all the earth: and they left off to build the city. *Therefore is the name of it called Babel; because the LORD did there confound the language of all the earth*: and from thence did the LORD scatter them abroad upon the face of all the earth.
 {% ct 'Genesis 11:4-9' %}
 
 > The king spake, and said, *Is not this great Babylon, that I have built* for the house of the kingdom *by the might of my power, and for the honour of my majesty*?
@@ -17,7 +17,7 @@ The word “Babylon” originated at the Tower of Babel because it was the place
 
 ## What kind of legacy did ancient Babylon leave behind?
 
-> Babylon hath been a golden cup in the LORD's hand, that made all the earth drunken: *the nations have drunken of her wine; therefore the nations are mad*. Babylon is suddenly fallen and destroyed: howl for her; take balm for her pain, if so be she may be healed.
+> Babylon hath been a golden cup in the LORD’s hand, that made all the earth drunken: *the nations have drunken of her wine; therefore the nations are mad*. Babylon is suddenly fallen and destroyed: howl for her; take balm for her pain, if so be she may be healed.
 {% ct 'Jeremiah 51:7-8' %}
 
 > Then they *brought the golden vessels that were taken out of the temple of the house of God which was at Jerusalem; and the king, and his princes, his wives, and his concubines, drank in them*. They drank wine, and praised the gods of gold, and of silver, of brass, of iron, of wood, and of stone.
@@ -56,7 +56,7 @@ The Bible gives seven characteristics to describe Babylon:
 > Let us be glad and rejoice, and give honour to him: for the marriage of the Lamb is come, and *his wife hath made herself ready*. And to her was granted that she should be arrayed in fine linen, clean and white: for the fine linen is the righteousness of saints.
 {% ct 'Revelation 19:7-8' %}
 
-> Son of man, *cause Jerusalem to know her abominations* ... But thou didst trust in thine own beauty, and *playedst the harlot* because of thy renown, and pouredst out thy fornications on every one that passed by; his it was.
+> Son of man, *cause Jerusalem to know her abominations* … But thou didst trust in thine own beauty, and *playedst the harlot* because of thy renown, and pouredst out thy fornications on every one that passed by; his it was.
 {% ct 'Ezekiel 16:2, 15' %}
 
 In the Bible a woman represents the church. A pure woman is a pure church that is faithful to Jesus, while an impure woman, or a harlot, is an unfaithful, or fallen, church. In {% rf 'Revelation 19:7-8' false %} the true church is portrayed as Christ’s bride, and her members are covered by and reflect the righteousness of Jesus.
@@ -73,7 +73,7 @@ The Bible gives seven characteristics to identify the harlot of Revelation 17 as
 
 1. *She is sitting on a beast.* A beast represents a kingdom or nation {% rf 'Daniel 7:23' %}, so the fact that she is sitting on the beast represents not just the union of church and state (though they remain separate entities), but power over the state and its policies. This was fulfilled in the Dark Ages when the papacy united with, and exercised power over, the state to implement her policies and persecute people who disagreed with her teachings. This will be repeated again in the last days (see [“USA in Bible Prophecy”](/posts/prophecy/usa.md)).
 
-1. *She has worldwide influence.* Her influence is not limited to just one civil government. Her sitting on many waters {% rf 'Revelation 17:1, 15' %}, which represent people and nations, shows her influence and power over them, and {% rf 'Revelation 17:18' false %} confirms this again by saying that she reigns “over the kings of the earth.” The papacy fulfills this point too. According to historian Alexander Flick, by the 13th century the pope was “at least in theory ... the ruler of the whole world in temporal and spiritual affairs.”[^2]
+1. *She has worldwide influence.* Her influence is not limited to just one civil government. Her sitting on many waters {% rf 'Revelation 17:1, 15' %}, which represent people and nations, shows her influence and power over them, and {% rf 'Revelation 17:18' false %} confirms this again by saying that she reigns “over the kings of the earth.” The papacy fulfills this point too. According to historian Alexander Flick, by the 13th century the pope was “at least in theory … the ruler of the whole world in temporal and spiritual affairs.”[^2]
 
 1. *The beast she’s sitting on has seven heads and ten horns.* The seven heads are seven mountains {% rf 'Revelation 17:9' %}, and Rome, the headquarters of the papacy, is known, and has been referred to by classical writers, as the City of Seven Hills. The ten horns represent the ten barbarian tribes that arose after the fall of the Roman Empire (see [“Europe’s Future Revealed”](/posts/prophecy/europe.md)).
 
@@ -83,7 +83,7 @@ There is no other earthly power that fulfills all of these characteristics. Many
 
 [^1]: John A. O’Brien, The Faith of Millions (Huntington, IN: Our Sunday Visitor, Inc., 1974), p. 401.
 [^2]: Alexander Flick, The Rise of the Mediaeval Church (New York: Burt Franklin, 1959), 575.
-[^3]: George Eldon Ladd, The Blessed Hope (Grand Rapids, MI: William B. Eerdman's Publishing Co., 1956), pp. 32-34.
+[^3]: George Eldon Ladd, The Blessed Hope (Grand Rapids, MI: William B. Eerdman’s Publishing Co., 1956), pp. 32-34.
 
 ## Who are the harlot daughters?
 
@@ -116,7 +116,7 @@ Just as the harlot represents a fallen church, her daughters also represent fall
 > And the woman was arrayed in purple and scarlet colour, and *decked with gold and precious stones and pearls, having a golden cup* in her hand full of abominations and filthiness of her fornication.
 {% ct 'Revelation 17:4' %}
 
-> For all nations have drunk of the wine of the wrath of her fornication, and the kings of the earth have committed fornication with her, and the *merchants of the earth are waxed rich through the abundance of her delicacies*. ... And they cast dust on their heads, and cried, weeping and wailing, saying, Alas, alas, that great city, *wherein were made rich all that had ships in the sea by reason of her costliness*! for in one hour is she made desolate.
+> For all nations have drunk of the wine of the wrath of her fornication, and the kings of the earth have committed fornication with her, and the *merchants of the earth are waxed rich through the abundance of her delicacies*. … And they cast dust on their heads, and cried, weeping and wailing, saying, Alas, alas, that great city, *wherein were made rich all that had ships in the sea by reason of her costliness*! for in one hour is she made desolate.
 {% ct 'Revelation 18:3, 19' %}
 
 Whenever a church unites with the world, it results in a turning away from Bible truth. In {% rf 'Daniel 8:9-12' false %} the little horn of {% rf 'Daniel 7:8' false %}, representing the papacy (see [“Who Is the Antichrist?”](/posts/prophecy/antichrist.md)), is mentioned again, and the text says it casts truth to the ground and prospers. As the papacy replaced Bible truth with its own tradition and pagan teachings, it opened up the way to practices, like the selling of indulgences, that allowed it to acquire incredible wealth. In {% rf 'Revelation 18:11-13' false %} this is confirmed when she’s mentioned as trafficking in the “souls of men” or, in other words, treating people as merchandise. No wonder she is decked with all kinds of expensive jewelry and holds a golden cup in {% rf 'Revelation 17:4' false %}. The next chapter then talks about ships in the sea and merchants being made rich because of her—a reference to economic advantages that lead to prosperity through some form of a partnership or alliance with her. Could this apply to large, global corporations, for example?
@@ -156,7 +156,7 @@ Incidentally, Catholicism prays to Mary and other dead saints; apostate Protesta
 
 ## What did ancient Babylon believe about death?
 
-> Then he brought me to the door of the gate of the LORD'S house which was toward the north; and, behold, *there sat women weeping for Tammuz*.
+> Then he brought me to the door of the gate of the LORD’S house which was toward the north; and, behold, *there sat women weeping for Tammuz*.
 {% ct 'Ezekiel 8:14' %}
 
 Tamuz was the god of food and vegetation worshiped by the Babylonians, who believed that he died each year when winter arrived but would be resurrected in the spring (immortality of the soul), and so every year his death was mourned. But it wasn’t just Tamuz; they also believed that people went on to exist in another form after death, which led the Babylonians to worship the dead. This teaching, that people continue to live or be conscious after death, has survived and been adopted by spiritual Babylon, and her influence has made it spread to many Christian churches even though the Bible preaches the exact opposite ({% rf 'Ecclesiastes 9:5; Psalm 115:17' false %}; see [“Are the Dead Really Dead?”](/posts/basics/death.md)).
@@ -169,13 +169,13 @@ Tamuz was the god of food and vegetation worshiped by the Babylonians, who belie
 > And he brought me into the inner court of the LORD’S house, and, behold, at the door of the temple of the LORD, between the porch and the altar, were about five and twenty men, with their backs toward the temple of the LORD, and their faces toward the east; and *they worshipped the sun toward the east*.
 {% ct 'Ezekiel 8:16' %}
 
-The worship of graven images was also a practice of ancient Babylonians that has been adopted by spiritual Babylon even though God clearly forbids it in the second commandment {% rf 'Exodus 20:4-6' %}. Ancient Babylonians practiced sun worship too, and it managed to corrupt some of God’s very own people. The practice has been adopted by spiritual Babylon through the keeping of Sunday—the day of the sun—as the day of worship instead of the seventh-day Sabbath as outlined in the fourth commandment {% rf 'Exodus 20:8-11' %}. Many are unaware of the pagan origin of Sunday-keeping, which is why God has a message for the last days calling people to worship Him according to His commandments (see [“God's Rest Day”](/posts/basics/sabbath.md)). Incidentally, the false teaching that the law of God has been changed or repealed is also propogated by spiritual Babylon even though the Bible clearly teaches the law cannot be changed ({% rf 'Luke 16:17' false %}; see [“God’s Law Changed”](/posts/prophecy/change.md)).
+The worship of graven images was also a practice of ancient Babylonians that has been adopted by spiritual Babylon even though God clearly forbids it in the second commandment {% rf 'Exodus 20:4-6' %}. Ancient Babylonians practiced sun worship too, and it managed to corrupt some of God’s very own people. The practice has been adopted by spiritual Babylon through the keeping of Sunday—the day of the sun—as the day of worship instead of the seventh-day Sabbath as outlined in the fourth commandment {% rf 'Exodus 20:8-11' %}. Many are unaware of the pagan origin of Sunday-keeping, which is why God has a message for the last days calling people to worship Him according to His commandments (see [“God’s Rest Day”](/posts/basics/sabbath.md)). Incidentally, the false teaching that the law of God has been changed or repealed is also propogated by spiritual Babylon even though the Bible clearly teaches the law cannot be changed ({% rf 'Luke 16:17' false %}; see [“God’s Law Changed”](/posts/prophecy/change.md)).
 
 One other particularly destructive pagan teaching that has caused many people to turn away from God is the belief that sinners burn eternally in hell—an echo of Satan’s original “you shall not surely die” lie in Eden and a contradiction of God’s word ({% rf 'Genesis 2:17; 3:4' false %}; see [“Is Hell Forever?”](/posts/basics/hell.md)).
 
 ## What is God’s message to people in Babylon?
 
-> *Flee out of the midst of Babylon*, and deliver every man his soul: be not cut off in her iniquity; for this is the time of the LORD'S vengeance; he will render unto her a recompence.
+> *Flee out of the midst of Babylon*, and deliver every man his soul: be not cut off in her iniquity; for this is the time of the LORD’S vengeance; he will render unto her a recompence.
 {% ct 'Jeremiah 51:6' %}
 
 > And after these things I saw another angel come down from heaven, having great power; and the earth was lightened with his glory. And he cried mightily with a strong voice, saying, Babylon the great is fallen, is fallen, and is become the habitation of devils, and the hold of every foul spirit, and a cage of every unclean and hateful bird. For all nations have drunk of the wine of the wrath of her fornication, and the kings of the earth have committed fornication with her, and the merchants of the earth are waxed rich through the abundance of her delicacies. And I heard another voice from heaven, saying, *Come out of her, my people, that ye be not partakers of her sins, and that ye receive not of her plagues*. For her sins have reached unto heaven, and God hath remembered her iniquities.
@@ -188,7 +188,7 @@ The false teachings previously mentioned are some of the key doctrines, the wine
 
 ## How did Jesus unmask Satan’s lies in the wilderness?
 
-> But he answered and said, *It is written*, Man shall not live by bread alone, but by every word that proceedeth out of the mouth of God. ... Jesus said unto him, *It is written again*, Thou shalt not tempt the Lord thy God. ... Then saith Jesus unto him, Get thee hence, Satan: *for it is written*, Thou shalt worship the Lord thy God, and him only shalt thou serve.
+> But he answered and said, *It is written*, Man shall not live by bread alone, but by every word that proceedeth out of the mouth of God. … Jesus said unto him, *It is written again*, Thou shalt not tempt the Lord thy God. … Then saith Jesus unto him, Get thee hence, Satan: *for it is written*, Thou shalt worship the Lord thy God, and him only shalt thou serve.
 {% ct 'Matthew 4:4, 7, 10' %}
 
 > *To the law and to the testimony*: if they speak not according to this word, it is because there is no light in them.
@@ -215,7 +215,7 @@ Absolutely not. This is made clear in God’s call to “Come out of her, my peo
 
 ## Can I stay in Babylon in order to reform her?
 
-> And I heard another voice from heaven, saying, Come out of her, my people, *that ye be not partakers of her sins, and that ye receive not of her plagues*. ... Therefore shall her plagues come in one day, death, and mourning, and famine; and *she shall be utterly burned with fire*: for strong is the Lord God who judgeth her.
+> And I heard another voice from heaven, saying, Come out of her, my people, *that ye be not partakers of her sins, and that ye receive not of her plagues*. … Therefore shall her plagues come in one day, death, and mourning, and famine; and *she shall be utterly burned with fire*: for strong is the Lord God who judgeth her.
 {% ct 'Revelation 18:4, 8' %}
 
 > Whosoever committeth sin transgresseth also the law: for *sin is the transgression of the law*.

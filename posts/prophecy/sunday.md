@@ -34,7 +34,7 @@ Because all have sinned, everyone is in need of the sanctifying power of Christ,
 
 ## What does the Bible say about unbelief and the seventh day?
 
-> For he spake in a certain place of the seventh day on this wise, and God did rest the seventh day from all his works. And in this place again, If they shall enter into my rest. Seeing therefore it remaineth that some must enter therein, and *they to whom it was first preached entered not in because of unbelief* ... There remaineth therefore a rest to the people of God. For he that is entered into his rest, he also hath ceased from his own works, as God did from his. *Let us labour therefore to enter into that rest, lest any man fall after the same example of unbelief*.
+> For he spake in a certain place of the seventh day on this wise, and God did rest the seventh day from all his works. And in this place again, If they shall enter into my rest. Seeing therefore it remaineth that some must enter therein, and *they to whom it was first preached entered not in because of unbelief* … There remaineth therefore a rest to the people of God. For he that is entered into his rest, he also hath ceased from his own works, as God did from his. *Let us labour therefore to enter into that rest, lest any man fall after the same example of unbelief*.
 {% ct 'Hebrews 4:4-6, 9-11' %}
 
 The book of Hebrews says there was unbelief about resting on the seventh day, but to deny this day is to deny salvation by faith. Because I cannot sanctify or save myself, I am invited to cease from trying to be saved by my own works and rest in the righteous life of Jesus on my behalf. Resting on the seventh day of the week, as God did in {% rf 'Genesis 2:1-3' false %}, is an acknowledgment of this sublime truth.

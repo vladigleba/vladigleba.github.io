@@ -13,14 +13,14 @@ date: 2025-01-10
 > 
 > The king answered and said, I know of certainty that ye would gain the time, because ye see the thing is gone from me. But if ye will not make known unto me the dream, there is but one decree for you: for ye have prepared lying and corrupt words to speak before me, till the time be changed: therefore tell me the dream, and I shall know that ye can shew me the interpretation thereof.
 > 
-> The Chaldeans answered before the king, and said, There is not a man upon the earth that can shew the king's matter: therefore there is no king, lord, nor ruler, that asked such things at any magician, or astrologer, or Chaldean. And *it is a rare thing that the king requireth, and there is none other that can shew it before the king, except the gods*, whose dwelling is not with flesh.
+> The Chaldeans answered before the king, and said, There is not a man upon the earth that can shew the king’s matter: therefore there is no king, lord, nor ruler, that asked such things at any magician, or astrologer, or Chaldean. And *it is a rare thing that the king requireth, and there is none other that can shew it before the king, except the gods*, whose dwelling is not with flesh.
 > 
 > For this cause *the king was angry and very furious, and commanded to destroy all the wise men of Babylon*.
 {% ct 'Daniel 2:1-13' %}
 
 ## Who then appeared before the king? What did he request?
 
-> And the decree went forth that the wise men should be slain; and they sought Daniel and his fellows to be slain. ... Then *Daniel went in, and desired of the king that he would give him time*, and that he would shew the king the interpretation.
+> And the decree went forth that the wise men should be slain; and they sought Daniel and his fellows to be slain. … Then *Daniel went in, and desired of the king that he would give him time*, and that he would shew the king the interpretation.
 {% ct 'Daniel 2:13, 16' %}
 
 Daniel and his friends were also under the death sentence that the king pronounced on the wise men, so when he heard about it, he quickly went to the king to ask for more time.
@@ -32,7 +32,7 @@ Daniel and his friends were also under the death sentence that the king pronounc
 
 ## Who did Daniel give credit to?
 
-> Daniel answered and said, *Blessed be the name of God for ever and ever: for wisdom and might are his*: and he changeth the times and the seasons: he removeth kings, and setteth up kings: he giveth wisdom unto the wise, and knowledge to them that know understanding: He revealeth the deep and secret things: he knoweth what is in the darkness, and the light dwelleth with him. *I thank thee, and praise thee, O thou God of my fathers*, who hast given me wisdom and might, and hast made known unto me now what we desired of thee: *for thou hast now made known unto us the king's matter*.
+> Daniel answered and said, *Blessed be the name of God for ever and ever: for wisdom and might are his*: and he changeth the times and the seasons: he removeth kings, and setteth up kings: he giveth wisdom unto the wise, and knowledge to them that know understanding: He revealeth the deep and secret things: he knoweth what is in the darkness, and the light dwelleth with him. *I thank thee, and praise thee, O thou God of my fathers*, who hast given me wisdom and might, and hast made known unto me now what we desired of thee: *for thou hast now made known unto us the king’s matter*.
 {% ct 'Daniel 2:20-23' %}
 
 God saved their life by revealing the king’s dream and its interpratation, and Daniel gave God all the credit.
@@ -54,7 +54,7 @@ The dream was an answer to the king wondering what the future would hold for his
 
 ## What did it look like?
 
-> This image's *head was of fine gold*, his *breast and his arms of silver*, his *belly and his thighs of brass*, his *legs of iron*, his *feet part of iron and part of clay*.
+> This image’s *head was of fine gold*, his *breast and his arms of silver*, his *belly and his thighs of brass*, his *legs of iron*, his *feet part of iron and part of clay*.
 {% ct 'Daniel 2:32-33' %}
 
 ## What happened to it?
@@ -117,7 +117,7 @@ The iron monarchy of Rome conquered the Greeks in 168 B.C. and was the world pow
 
 ## What kind of kingdom did the feet and toes represent?
 
-> And whereas thou sawest the feet and toes, part of potters' clay, and part of iron, the *kingdom shall be divided*; but there shall be in it of the strength of the iron, forasmuch as thou sawest the iron mixed with miry clay. And as the toes of the feet were part of iron, and part of clay, so the *kingdom shall be partly strong, and partly broken*.
+> And whereas thou sawest the feet and toes, part of potters’ clay, and part of iron, the *kingdom shall be divided*; but there shall be in it of the strength of the iron, forasmuch as thou sawest the iron mixed with miry clay. And as the toes of the feet were part of iron, and part of clay, so the *kingdom shall be partly strong, and partly broken*.
 {% ct 'Daniel 2:41-42' %}
 
 After the Roman empire crumled in A.D. 476, it was divided by barbarian tribes into numerous kingdoms symbolized by the toes on the image, seven of which exist today: the Ostrogoths (gone), Visigoths (Spain), Franks (France), Vandals (gone), Alemannians (Germany), Sueves (Portugal), Anglo-Saxons (England), Heruli (gone), and Lombards (Italy). The toes being partly of iron and partly of clay means some would be stronger than others.

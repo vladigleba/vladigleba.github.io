@@ -95,7 +95,7 @@ In order to deceive Eve, Satan mixed in some truth with his lie when he said she
 > And they heard the voice of the LORD God walking in the garden in the cool of the day: and Adam and his wife *hid themselves from the presence of the LORD God* amongst the trees of the garden.
 {% ct 'Genesis 3:8' %}
 
-> Behold, the LORD'S hand is not shortened, that it cannot save; neither his ear heavy, that it cannot hear: But *your iniquities have separated between you and your God*, and your sins have hid his face from you, that he will not hear.
+> Behold, the LORD’S hand is not shortened, that it cannot save; neither his ear heavy, that it cannot hear: But *your iniquities have separated between you and your God*, and your sins have hid his face from you, that he will not hear.
 {% ct 'Isaiah 59:1-2' %}
 
 As soon as Adam and Eve sinned, they hid from God for the first time. Sin leads to separation from God because sin cannot exist in the presence of a holy God without being consumed by it. A chasm was now formed between the Giver of life and His creation, and the process of death had commenced.
@@ -141,7 +141,7 @@ Once Adam and Eve fell, God did not leave them in their hopeless condition but g
 
 ## How can I go from death to justification of life?
 
-> For if by one man's offence death reigned by one; much more *they which receive abundance of grace and of the gift of righteousness shall reign in life by one, Jesus Christ*. Therefore as by the offence of one judgment came upon all men to condemnation; even so by the righteousness of one the *free gift came upon all men unto justification of life*. For as by one man's disobedience many were made sinners, so *by the obedience of one shall many be made righteous*.
+> For if by one man’s offence death reigned by one; much more *they which receive abundance of grace and of the gift of righteousness shall reign in life by one, Jesus Christ*. Therefore as by the offence of one judgment came upon all men to condemnation; even so by the righteousness of one the *free gift came upon all men unto justification of life*. For as by one man’s disobedience many were made sinners, so *by the obedience of one shall many be made righteous*.
 {% ct 'Romans 5:17-19' %}
 
 > Being justified freely by his grace through the redemption that is in Christ Jesus: Whom God hath set forth to be a propitiation through faith in his blood, *to declare his righteousness for the remission of sins* that are past, through the forbearance of God.

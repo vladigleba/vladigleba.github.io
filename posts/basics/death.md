@@ -66,7 +66,7 @@ A person’s soul or spirit cannot go to heaven or hell after death because the 
 
 ## Where is King David now?
 
-> Men and brethren, let me freely speak unto you of the patriarch David, that *he is both dead and buried*, and his sepulchre is with us unto this day. ... For *David is not ascended into the heavens*: but he saith himself, The LORD said unto my Lord, Sit thou on my right hand.
+> Men and brethren, let me freely speak unto you of the patriarch David, that *he is both dead and buried*, and his sepulchre is with us unto this day. … For *David is not ascended into the heavens*: but he saith himself, The LORD said unto my Lord, Sit thou on my right hand.
 {% ct 'Acts 2:29, 34' %}
 
 ## Is conscious thought possible after death?

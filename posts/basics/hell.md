@@ -100,7 +100,7 @@ The fire is unquenchable in the sense that nothing can put it out until it finis
 > Then his master shall bring him unto the judges; he shall also bring him to the door, or unto the door post; and his master shall bore his ear through with an aul; and *he shall serve him for ever*.
 {% ct 'Exodus 21:6' %}
 
-> But Hannah went not up; for she said unto her husband, I will not go up until the child be weaned, and then I will bring him, that he may appear before the LORD, and *there abide for ever*. ... Therefore also I have lent him to the LORD; *as long as he liveth* he shall be lent to the LORD. And he worshipped the LORD there.
+> But Hannah went not up; for she said unto her husband, I will not go up until the child be weaned, and then I will bring him, that he may appear before the LORD, and *there abide for ever*. … Therefore also I have lent him to the LORD; *as long as he liveth* he shall be lent to the LORD. And he worshipped the LORD there.
 {% ct '1 Samuel 1:22, 28' %}
 
 The Greek word for “for ever” in {% rf 'Revelation 20:10' false %} is “aion.” It’s where the word “eon” comes from. In the Bible it’s often used to indicate an unspecified period of time. In {% rf 'Exodus 21:6' false %} it represents the life of a slave, and in {% rf '1 Samuel 1:22, 28' false %} it means as long as Samuel lives; likewise, in {% rf 'Revelation 20:10' false %} it means the torment lasts until death brings it to an end.
@@ -130,7 +130,7 @@ The fire cleanses the earth from all traces of sin, and so the fallen angels, in
 
 ## Is everyone punished equally?
 
->  And that servant, which knew his lord's will, and prepared not himself, neither did according to his will, shall be beaten with many stripes. But he that knew not, and did commit things worthy of stripes, shall be beaten with few stripes. *For unto whomsoever much is given, of him shall be much required*: and to whom men have committed much, of him they will ask the more.
+>  And that servant, which knew his lord’s will, and prepared not himself, neither did according to his will, shall be beaten with many stripes. But he that knew not, and did commit things worthy of stripes, shall be beaten with few stripes. *For unto whomsoever much is given, of him shall be much required*: and to whom men have committed much, of him they will ask the more.
 {% ct 'Luke 12:47-48' %}
 
 > And, behold, I come quickly; and my reward is with me, *to give every man according as his work shall be*.

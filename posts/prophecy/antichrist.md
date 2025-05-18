@@ -26,7 +26,7 @@ The sea represents densely populated areas.
 
 ## What was the first beast Daniel saw?
 
-> The *first was like a lion*, and had eagle's wings: I beheld till the wings thereof were plucked, and it was lifted up from the earth, and made stand upon the feet as a man, and a man's heart was given to it.
+> The *first was like a lion*, and had eagle’s wings: I beheld till the wings thereof were plucked, and it was lifted up from the earth, and made stand upon the feet as a man, and a man’s heart was given to it.
 {% ct 'Daniel 7:4' %}
 
 > The *king of Babylon* hath heard the report of them, and his hands waxed feeble: anguish took hold of him, and pangs as of a woman in travail. Behold, *he shall come up like a lion* from the swelling of Jordan unto the habitation of the strong: but I will make them suddenly run away from her: and who is a chosen man, that I may appoint over her? for who is like me? and who will appoint me the time? and who is that shepherd that will stand before me?
@@ -97,7 +97,7 @@ Historians would be able to quickly identify the power being described because t
 
 1. *It would uproot three kingdoms.* Most of the 10 kingdoms of Western Europe supported the papacy, but three of them did not: the Heruli, the Ostrogoths, and the Vandals. These had to be destroyed before the papacy could rise to power. The Heruli were eradicated in 493, the Vandals in 534, and the power of the Ostrogoths was curtailed in 538.
 
-1. *It would emerge from the fourth kingdom—the pagan Roman Empire.* The papacy is a continuation of the pagan Roman Empire, and historians attest to this. “The mighty Catholic Church was little more than the Roman Empire baptized. ... The very capital of the old Roman Empire became the capital of the Christian empire. The office of Pontifex Maximus was continued in that of the pope.”[^1] “Whatever Roman elements the barbarians and Arians left ... [came] under the protection of the Bishop of Rome, who was the chief person there after the emperor’s disappearance. ... The Roman church ... pushed itself into the place of the Roman World-Empire, of which it is the actual continuation.”[^2]
+1. *It would emerge from the fourth kingdom—the pagan Roman Empire.* The papacy is a continuation of the pagan Roman Empire, and historians attest to this. “The mighty Catholic Church was little more than the Roman Empire baptized. … The very capital of the old Roman Empire became the capital of the Christian empire. The office of Pontifex Maximus was continued in that of the pope.”[^1] “Whatever Roman elements the barbarians and Arians left … [came] under the protection of the Bishop of Rome, who was the chief person there after the emperor’s disappearance. … The Roman church … pushed itself into the place of the Roman World-Empire, of which it is the actual continuation.”[^2]
 
 1. *It would make war with the saints.* It is no secret that the Roman Catholic church killed millions of people whose religious convictions differed from hers, especially during the Dark Ages. “That the Church of Rome has shed more innocent blood than any other institution that has ever existed among mankind, will be questioned by no Protestant who has a competent knowledge of history.”[^3]
 

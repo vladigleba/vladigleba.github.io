@@ -7,7 +7,7 @@ date: 2025-01-24
 
 ## What did Jesus promise before ascending to heaven?
 
-> Let not your heart be troubled: ye believe in God, believe also in me. In my Father's house are many mansions: if it were not so, I would have told you. *I go to prepare a place for you*. And if I go and prepare a place for you, *I will come again, and receive you unto myself; that where I am, there ye may be also*.
+> Let not your heart be troubled: ye believe in God, believe also in me. In my Father’s house are many mansions: if it were not so, I would have told you. *I go to prepare a place for you*. And if I go and prepare a place for you, *I will come again, and receive you unto myself; that where I am, there ye may be also*.
 {% ct 'John 14:1-3' %}
 
 Jesus said He would go to heaven to prepare a place there for His children, but He promised He would then come back again to take them up to heaven to live there with Him!
@@ -101,7 +101,7 @@ The saved from all ages that are in heaven during the 1,000 years will be part o
 > And I John *saw the holy city, new Jerusalem, coming down from God out of heaven*, prepared as a bride adorned for her husband.
 {% ct 'Revelation 21:2' %}
 
-> And his feet shall stand in that day upon the mount of Olives, which is before Jerusalem on the east, and *the mount of Olives shall cleave in the midst thereof toward the east and toward the west, and there shall be a very great valley*; and half of the mountain shall remove toward the north, and half of it toward the south. ... and the *LORD my God shall come, and all the saints with thee*. ... And the *LORD shall be king over all the earth*: in that day shall there be one LORD, and his name one.
+> And his feet shall stand in that day upon the mount of Olives, which is before Jerusalem on the east, and *the mount of Olives shall cleave in the midst thereof toward the east and toward the west, and there shall be a very great valley*; and half of the mountain shall remove toward the north, and half of it toward the south. … and the *LORD my God shall come, and all the saints with thee*. … And the *LORD shall be king over all the earth*: in that day shall there be one LORD, and his name one.
 {% ct 'Zechariah 14:4-5, 9' %}
 
 > But the *rest of the dead lived not again until the thousand years were finished*. This is the first resurrection.
@@ -163,7 +163,7 @@ Fire then falls upon the wicked, as well as Satan and his angels, forming a lake
 > Nevertheless we, according to his promise, *look for new heavens and a new earth, wherein dwelleth righteousness*.
 {% ct '2 Peter 3:13' %}
 
->  And *I saw a new heaven and a new earth*: for the first heaven and the first earth were passed away; and there was no more sea. ... And I heard a great voice out of heaven saying, Behold, the tabernacle of God is with men, and he will dwell with them, and they shall be his people, and *God himself shall be with them, and be their God*. And *God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away*. 
+>  And *I saw a new heaven and a new earth*: for the first heaven and the first earth were passed away; and there was no more sea. … And I heard a great voice out of heaven saying, Behold, the tabernacle of God is with men, and he will dwell with them, and they shall be his people, and *God himself shall be with them, and be their God*. And *God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away*. 
 {% ct 'Revelation 21:1, 3-4' %}
 
 God then creates a new heavens (atmosphere) and a new earth in which righteousness dwells! Everything that Adam and Eve lost will be restored, and the redeemed of all ages will live in perfect love, joy, and peace throughout eternity with God!

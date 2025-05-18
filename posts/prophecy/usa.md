@@ -101,7 +101,7 @@ The papacy has emerged to become the strongest religio-political power in the wo
 
 ## How influential is the United States today?
 
-The United States is regarded as the world’s center of influence. Even though it does face challenges to its power from countries such as China and Russia, it continues to dominate the world. “What ultimately makes the difference between war and peace ... is not good intentions, or strong words, or a grand coalition. It is the capability, credibility, and global reach of American hard power.”[^4] “The United States is and remains the one indispensable nation. That has been true for the century passed and it will be true for the century to come.”[^5] Bible prophecy is clear that the United States will continue to remain an influential world power in the last days.
+The United States is regarded as the world’s center of influence. Even though it does face challenges to its power from countries such as China and Russia, it continues to dominate the world. “What ultimately makes the difference between war and peace … is not good intentions, or strong words, or a grand coalition. It is the capability, credibility, and global reach of American hard power.”[^4] “The United States is and remains the one indispensable nation. That has been true for the century passed and it will be true for the century to come.”[^5] Bible prophecy is clear that the United States will continue to remain an influential world power in the last days.
 
 [^4]: Senator John McCain, November 15, 2014
 [^5]: President Barack Obama, May 28, 2014

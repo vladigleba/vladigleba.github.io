@@ -49,7 +49,7 @@ Jesus promised that after His ascension He would send us the Comforter, the Holy
 > But the Comforter, which is the Holy Ghost, whom the Father will send in my name, *he shall teach you all things*, and bring all things to your remembrance, whatsoever I have said unto you.
 {% ct 'John 14:26' %}
 
-> Now we have received, not the spirit of the world, but the spirit which is of God; *that we might know the things that are freely given to us of God*. Which things also we speak, not in the words which man's wisdom teacheth, but which the Holy Ghost teacheth; comparing spiritual things with spiritual. But *the natural man receiveth not the things of the Spirit of God: for they are foolishness unto him: neither can he know them, because they are spiritually discerned*.
+> Now we have received, not the spirit of the world, but the spirit which is of God; *that we might know the things that are freely given to us of God*. Which things also we speak, not in the words which man’s wisdom teacheth, but which the Holy Ghost teacheth; comparing spiritual things with spiritual. But *the natural man receiveth not the things of the Spirit of God: for they are foolishness unto him: neither can he know them, because they are spiritually discerned*.
 {% ct '1 Corinthians 2:12-14' %}
 
 Paul tells us that spiritual things are spiritually discerned {% rf '1 Corinthians 2:14' %}, so one of the roles of the Holy Spirit is to teach and guide those studying the Bible into an understanding of its beautiful, freely given, truths because the Bible was written under the inspiration of the Spirit {% rf '2 Timothy 3:16; 2 Peter 1:21' %}. Without the aid of the Spirit, the Bible cannot be understood, which is why it’s crucial to pray for the Holy Spirit’s guidance whenever we read it. Notice also that John says the Spirit does not speak independently of Jesus; on the contrary, He’s in harmony with the teachings of Jesus, working to give us an understanding of them.
@@ -91,7 +91,7 @@ All I need to do to receive the Holy Spirit is ask God for it! He wants to besto
 
 ## What happens when one is filled with the Spirit?
 
-> But the *fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith, meekness, temperance*: against such there is no law. And they that are Christ's have *crucified the flesh with the affections and lusts*. If we live in the Spirit, let us also walk in the Spirit. Let us not be desirous of vain glory, provoking one another, envying one another.
+> But the *fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith, meekness, temperance*: against such there is no law. And they that are Christ’s have *crucified the flesh with the affections and lusts*. If we live in the Spirit, let us also walk in the Spirit. Let us not be desirous of vain glory, provoking one another, envying one another.
 {% ct 'Galatians 5:22-26' %}
 
 > This I say then, Walk in the Spirit, and ye shall *not fulfil the lust of the flesh*.
@@ -133,7 +133,7 @@ Jesus’ promise to send the Holy Spirit was fulfilled on the Day of Pentecost w
 > But if the Spirit of him that raised up Jesus from the dead dwell in you, *he that raised up Christ from the dead shall also quicken your mortal bodies by his Spirit that dwelleth in you*.
 {% ct 'Romans 8:11' %}
 
-The Holy Spirit will participate in the resurrection of God’s faithful followers, just like He participated in the resurrection of Christ. If we are Christ’s, there is no need to fear death because Jesus, who conquered death, will resurrect His people through the power of the Holy Spirit at His second coming (see [“Manner of Christ's Coming”](/posts/prophecy/manner.md)).
+The Holy Spirit will participate in the resurrection of God’s faithful followers, just like He participated in the resurrection of Christ. If we are Christ’s, there is no need to fear death because Jesus, who conquered death, will resurrect His people through the power of the Holy Spirit at His second coming (see [“Manner of Christ’s Coming”](/posts/prophecy/manner.md)).
 
 ## What are the gifts of the Holy Spirit?
 
@@ -157,7 +157,7 @@ The Holy Spirit bestows various spiritual gifts on believers to edify the member
 > And they were all amazed and marvelled, saying one to another, Behold, are not all these which speak Galilaeans? And *how hear we every man in our own tongue, wherein we were born*? Parthians, and Medes, and Elamites, and the dwellers in Mesopotamia, and in Judaea, and Cappadocia, in Pontus, and Asia, Phrygia, and Pamphylia, in Egypt, and in the parts of Libya about Cyrene, and strangers of Rome, Jews and proselytes, Cretes and Arabians, we do hear them speak in our tongues the wonderful works of God.
 {% ct 'Acts 2:4-11' %}
 
-> So likewise ye, except ye *utter by the tongue words easy to be understood*, how shall it be known what is spoken? for ye shall speak into the air. ... Yet in the church I had rather speak five words with my understanding, that by my voice I might teach others also, *than ten thousand words in an unknown tongue*. ...
+> So likewise ye, except ye *utter by the tongue words easy to be understood*, how shall it be known what is spoken? for ye shall speak into the air. … Yet in the church I had rather speak five words with my understanding, that by my voice I might teach others also, *than ten thousand words in an unknown tongue*. …
 >
 > If any man speak in an unknown tongue, let it be by two, or at the most by three, and that by course; and *let one interpret*. But *if there be no interpreter, let him keep silence in the church*; and let him speak to himself, and to God. Let the prophets speak two or three, and let the other judge. If any thing be revealed to another that sitteth by, let the first hold his peace. For ye may all prophesy one by one, that all may learn, and all may be comforted. And the spirits of the prophets are subject to the prophets. *For God is not the author of confusion*, but of peace, as in all churches of the saints.
 {% ct '1 Corinthians 14:9, 19, 27-33' %}

@@ -33,7 +33,7 @@ God is also the true owner of all the wealth of the world, and it is He who give
 
 ## What percentage of income belongs to the Lord?
 
-> And all the tithe of the land, whether of the seed of the land, or of the fruit of the tree, is the LORD'S: it is holy unto the LORD. ... And concerning the tithe of the herd, or of the flock, even of whatsoever passeth under the rod, *the tenth shall be holy unto the LORD*.
+> And all the tithe of the land, whether of the seed of the land, or of the fruit of the tree, is the LORD’S: it is holy unto the LORD. … And concerning the tithe of the herd, or of the flock, even of whatsoever passeth under the rod, *the tenth shall be holy unto the LORD*.
 {% ct 'Leviticus 27:30, 32' %}
 
 The Bible says that a tenth of our income belongs to God (the word “tithe” means “a tenth”). This means that when we tithe we aren’t making a gift but are simply returning what already belongs to Him. Tithing, perhaps more than anything else, tends to reveal the true posture of our heart, because when it truly belongs to Him, tithe is returned cheerfully {% rf '2 Corinthians 9:7' %}, out of love and gratitude for Him and as an act of faith that He will continue to take care of us in the future.
@@ -76,14 +76,14 @@ Here Jesus pointed out that it is possible to do the right thing and still have 
 > And Melchizedek king of Salem brought forth bread and wine: and he was the priest of the most high God. And he blessed him, and said, Blessed be Abram of the most high God, possessor of heaven and earth, and blessed be the most high God, which hath delivered thine enemies into thy hand. *And he gave him tithes of all*.
 {% ct 'Genesis 14:20' %}
 
-> And this stone, which I have set for a pillar, shall be God's house: and *of all that thou shalt give me I will surely give the tenth unto thee*.
+> And this stone, which I have set for a pillar, shall be God’s house: and *of all that thou shalt give me I will surely give the tenth unto thee*.
 {% ct 'Genesis 28:22' %}
 
 Genesis tells us that tithing was practiced by Abram and Jacob before the existance of the Israelite nation, which means that God gives everyone the privilege to honor Him by returning a tenth of His blessings. This also means that tithing was not abolished at the cross because it was never limited to the laws and ordinances of Moses.
 
 ## Can I chose where my tithe goes?
 
-> And all the tithe of the land, whether of the seed of the land, or of the fruit of the tree, *is the LORD'S: it is holy unto the LORD*.
+> And all the tithe of the land, whether of the seed of the land, or of the fruit of the tree, *is the LORD’S: it is holy unto the LORD*.
 {% ct 'Leviticus 27:30' %}
 
 God has claimed the tithe as His own, reserving it for the work of ministry {% rf 'Malachi 3:10' %}, and He has called it holy, so the decision to use it for another purpose, such as charitable giving, is not for us to make.
@@ -124,7 +124,7 @@ Obedience with tithing, as with the Ten Commandments, is not a form righteousnes
 
 ## Could the tithing system be abused?
 
-> Then saith one of his disciples, Judas Iscariot, Simon's son, which should betray him, Why was not this ointment sold for three hundred pence, and given to the poor? This he said, *not that he cared for the poor; but because he was a thief, and had the bag, and bare what was put therein*.
+> Then saith one of his disciples, Judas Iscariot, Simon’s son, which should betray him, Why was not this ointment sold for three hundred pence, and given to the poor? This he said, *not that he cared for the poor; but because he was a thief, and had the bag, and bare what was put therein*.
 {% ct 'John 12:4-6' %}
 
 Where there are people there will be room for dishonesty, but human weakness is not an excuse for us not to be faithful to God. After all, Judas, one of Christ’s own disciples, was a thief. Remember, Christ commended the poor widow who gave all that she had to a church whose leaders would later crucify Him {% rf 'Mark 12:41-44' %}, but He still honored her because she gave out of love and faithfulness to Him {% rf 'Hebrews 7:8' %}. Our part is to be faithful to God, but once the money leaves our hands, it becomes His responsibility to deal with any potential misuse of His funds.

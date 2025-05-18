@@ -13,14 +13,14 @@ date: 2025-01-21
 > And the very God of peace *sanctify you wholly*; and I pray God *your whole spirit and soul and body be preserved blameless* unto the coming of our Lord Jesus Christ.
 {% ct '1 Thessalonians 5:23' %}
 
-> And when he saw their faith, he said unto him, Man, *thy sins are forgiven thee*. ... But that ye may know that the Son of man hath power upon earth to forgive sins, (he said unto the sick of the palsy,) *I say unto thee, Arise, and take up thy couch*, and go into thine house.
+> And when he saw their faith, he said unto him, Man, *thy sins are forgiven thee*. … But that ye may know that the Son of man hath power upon earth to forgive sins, (he said unto the sick of the palsy,) *I say unto thee, Arise, and take up thy couch*, and go into thine house.
 {% ct 'Luke 5:20, 24' %}
 
 Jesus wants to sanctify me wholly, including mind, body, and spirit. He did not just forgive the sins of the paralytic, but He also healed him from the disease, and He wants the same complete healing for me as well.
 
 ## Does my body actually belong to me?
 
-> What? know ye not that *your body is the temple of the Holy Ghost* which is in you, which ye have of God, and *ye are not your own? For ye are bought with a price*: therefore glorify God in your body, and in your spirit, which are God's.
+> What? know ye not that *your body is the temple of the Holy Ghost* which is in you, which ye have of God, and *ye are not your own? For ye are bought with a price*: therefore glorify God in your body, and in your spirit, which are God’s.
 {% ct '1 Corinthians 6:19-20' %}
 
 My body belongs to God because 1) He created it, and 2) He redeemed it at the cross. It is to be a temple of the Holy Spirit, enabling me to bring Him glory in my body and spirit!
@@ -137,10 +137,10 @@ The subject of Peter’s vision was people, not animals. God was telling him tha
 
 ## What does Isaiah say about ignoring dietary laws?
 
-> I am sought of them that asked not for me; I am found of them that sought me not: I said, Behold me, behold me, unto a nation that was not called by my name. *I have spread out my hands all the day unto a rebellious people, which walketh in a way that was not good, after their own thoughts*; a people that provoketh me to anger continually to my face; that sacrificeth in gardens, and burneth incense upon altars of brick; which remain among the graves, and lodge in the monuments, *which eat swine's flesh, and broth of abominable things is in their vessels*; which say, Stand by thyself, come not near to me; for I am holier than thou. These are a smoke in my nose, a fire that burneth all the day.
+> I am sought of them that asked not for me; I am found of them that sought me not: I said, Behold me, behold me, unto a nation that was not called by my name. *I have spread out my hands all the day unto a rebellious people, which walketh in a way that was not good, after their own thoughts*; a people that provoketh me to anger continually to my face; that sacrificeth in gardens, and burneth incense upon altars of brick; which remain among the graves, and lodge in the monuments, *which eat swine’s flesh, and broth of abominable things is in their vessels*; which say, Stand by thyself, come not near to me; for I am holier than thou. These are a smoke in my nose, a fire that burneth all the day.
 {% ct 'Isaiah 65:1-5' %}
 
-> For, behold, the LORD will come with fire, and with his chariots like a whirlwind, to render his anger with fury, and his rebuke with flames of fire. For by fire and by his sword will the LORD plead with all flesh: and the slain of the LORD shall be many. They that sanctify themselves, and purify themselves in the gardens behind one tree in the midst, *eating swine's flesh, and the abomination, and the mouse, shall be consumed together*, saith the LORD.
+> For, behold, the LORD will come with fire, and with his chariots like a whirlwind, to render his anger with fury, and his rebuke with flames of fire. For by fire and by his sword will the LORD plead with all flesh: and the slain of the LORD shall be many. They that sanctify themselves, and purify themselves in the gardens behind one tree in the midst, *eating swine’s flesh, and the abomination, and the mouse, shall be consumed together*, saith the LORD.
 {% ct 'Isaiah 66:15-17' %}
 
 > Say unto them, As I live, saith the Lord GOD, *I have no pleasure in the death of the wicked*; but that the wicked turn from his way and live: *turn ye, turn ye from your evil ways; for why will ye die, O house of Israel*?

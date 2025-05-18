@@ -36,7 +36,7 @@ Every person who has ever lived on planet earth will be judged. Furthermore, eac
 > My little children, these things write I unto you, that ye sin not. And if any man sin, *we have an advocate with the Father, Jesus Christ the righteous*.
 {% ct '1 John 2:1' %}
 
-> And the great dragon was cast out, that old serpent, called *the Devil, and Satan*, which deceiveth the whole world: he was cast out into the earth ... for *the accuser of our brethren* is cast down, which accused them before our God day and night.
+> And the great dragon was cast out, that old serpent, called *the Devil, and Satan*, which deceiveth the whole world: he was cast out into the earth … for *the accuser of our brethren* is cast down, which accused them before our God day and night.
 {% ct 'Revelation 12:9-10' %}
 
 God the Father, the Ancient of Days, presides over the judgment, while Jesus is the Judge, as well as our Advocate! Satan is our only accusser, declaring that we don’t deserve to be saved any more than he does.
@@ -60,7 +60,7 @@ God the Father, the Ancient of Days, presides over the judgment, while Jesus is 
 > And I saw the dead, small and great, stand before God; and the books were opened: and another book was opened, which is the book of life: and *the dead were judged out of those things which were written in the books, according to their works*.
 {% ct 'Revelation 20:12' %}
 
-> And there shall in no wise enter into it any thing that defileth, neither whatsoever worketh abomination, or maketh a lie: *but they which are written in the Lamb's book of life*.
+> And there shall in no wise enter into it any thing that defileth, neither whatsoever worketh abomination, or maketh a lie: *but they which are written in the Lamb’s book of life*.
 {% ct 'Revelation 21:27' %}
 
 > For though thou wash thee with nitre, and take thee much soap, yet *thine iniquity is marked before me*, saith the Lord GOD.

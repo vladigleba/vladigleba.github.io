@@ -22,7 +22,7 @@ For example, He used Noah to warn the world about the flood {% rf '2 Peter 2:5' 
 
 ## What warning did Jesus give about prophets?
 
-> And *many false prophets shall rise, and shall deceive many*. And because iniquity shall abound, the love of many shall wax cold. ... For there shall *arise false Christs, and false prophets*, and shall shew great signs and wonders; insomuch that, if it were possible, they shall deceive the very elect.
+> And *many false prophets shall rise, and shall deceive many*. And because iniquity shall abound, the love of many shall wax cold. … For there shall *arise false Christs, and false prophets*, and shall shew great signs and wonders; insomuch that, if it were possible, they shall deceive the very elect.
 {% ct 'Matthew 24:11, 24' %}
 
 Jesus said there will be many false prophets in the last days deceiving people with signs and wonders. The working of miracles, therefore, is not sufficient evidence of a genuine prophet {% rf 'Revelation 13:13-14; 16:14' %}. But it’s important to note that Jesus did not say that all prophets will be false ones. Since He warned about false ones, there must be genuine ones too.
@@ -46,7 +46,7 @@ The Bible clearly teaches that the dead cannot be contacted, and any supposed co
 
 ## What else does the Bible say about prophets?
 
-> Wherefore he saith, When he ascended up on high, he led captivity captive, and *gave gifts unto men*. ... And he gave some, apostles; and *some, prophets*; and some, evangelists; and some, pastors and teachers; *for the perfecting of the saints, for the work of the ministry, for the edifying of the body of Christ: till we all come in the unity of the faith, and of the knowledge of the Son of God, unto a perfect man, unto the measure of the stature of the fulness of Christ*: that we henceforth be no more children, tossed to and fro, and carried about with every wind of doctrine, by the sleight of men, and cunning craftiness, whereby they lie in wait to deceive; but speaking the truth in love, may grow up into him in all things, which is the head, even Christ.
+> Wherefore he saith, When he ascended up on high, he led captivity captive, and *gave gifts unto men*. … And he gave some, apostles; and *some, prophets*; and some, evangelists; and some, pastors and teachers; *for the perfecting of the saints, for the work of the ministry, for the edifying of the body of Christ: till we all come in the unity of the faith, and of the knowledge of the Son of God, unto a perfect man, unto the measure of the stature of the fulness of Christ*: that we henceforth be no more children, tossed to and fro, and carried about with every wind of doctrine, by the sleight of men, and cunning craftiness, whereby they lie in wait to deceive; but speaking the truth in love, may grow up into him in all things, which is the head, even Christ.
 {% ct 'Ephesians 4:8, 11-15' %}
 
 > Now ye are the body of Christ, and members in particular. And *God hath set some in the church*, first apostles, *secondarily prophets*, thirdly teachers, after that miracles, then gifts of healings, helps, governments, diversities of tongues.
@@ -137,7 +137,7 @@ During a vision from God the true prophet will have the following physical chara
 > Then the word of the LORD came unto me, saying, Before I formed thee in the belly I knew thee; and before thou camest forth out of the womb I sanctified thee, and *I ordained thee a prophet unto the nations*. Then said I, Ah, Lord GOD! behold, I cannot speak: for I am a child. But the LORD said unto me, Say not, I am a child: for *thou shalt go to all that I shall send thee, and whatsoever I command thee thou shalt speak*.
 {% ct 'Jeremiah 1:4-7' %}
 
-> Then answered Amos, and said to Amaziah, I was no prophet, neither was I a prophet's son; but I was an herdman, and a gatherer of sycomore fruit: and the LORD took me as I followed the flock, and the LORD said unto me, *Go, prophesy unto my people Israel*.
+> Then answered Amos, and said to Amaziah, I was no prophet, neither was I a prophet’s son; but I was an herdman, and a gatherer of sycomore fruit: and the LORD took me as I followed the flock, and the LORD said unto me, *Go, prophesy unto my people Israel*.
 {% ct 'Amos 7:14-15' %}
 
 A genuine prophet is called to service by God.

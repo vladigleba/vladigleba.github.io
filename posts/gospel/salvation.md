@@ -44,7 +44,7 @@ All have succumbed to sin because once Adam and Eve sinned, it weakend their hum
 
 ## Is there a solution to our predicament?
 
-> Therefore as by the offence of one, judgment came upon all men to condemnation; even so *by the righteousness of one the free gift came upon all men unto justification of life*. For as by one man's disobedience many were made sinners, so by the obedience of one many shall be made righteous. 
+> Therefore as by the offence of one, judgment came upon all men to condemnation; even so *by the righteousness of one the free gift came upon all men unto justification of life*. For as by one man’s disobedience many were made sinners, so by the obedience of one many shall be made righteous. 
 {% ct 'Romans 5:18-19' %}
 
 God did not leave us in our sin, but promised us a path back to life and reconciliation with Him by offering His Son, Jesus Christ, as a substitute for us so we could be justified and made righteous by His perfect life.
@@ -57,7 +57,7 @@ God did not leave us in our sin, but promised us a path back to life and reconci
 > Jesus saith unto him, *I am the way, the truth, and the life*: no man cometh unto the Father, but by me. 
 {% ct 'John 14:6' %}
 
-There is only one road that leads to salvation from sin, and that road is Jesus. Any other way—and there are many—cannot save us. Many have wondered how Jesus can make such an exclusive claim, considering the number of religions in the world, but it's simple: Jesus is the only one who humbled Himself, came down from the glory of heaven, took on human nature, lived among His creation, and then died for their sins! No other religion has a god like that.
+There is only one road that leads to salvation from sin, and that road is Jesus. Any other way—and there are many—cannot save us. Many have wondered how Jesus can make such an exclusive claim, considering the number of religions in the world, but it’s simple: Jesus is the only one who humbled Himself, came down from the glory of heaven, took on human nature, lived among His creation, and then died for their sins! No other religion has a god like that.
 
 ## How did Jesus redeem us from the condemnation of the law?
 
@@ -74,7 +74,7 @@ Christ took our sins upon Himself and suffered their penalty on our behalf.
 > Thou hast put all things in subjection under his feet. For in that he put all in subjection under him, he left nothing that is not put under him. But now we see not yet all things put under him. But we see Jesus, *who was made a little lower than the angels for the suffering of death*, crowned with glory and honour; that he by the grace of God *should taste death for every man*. 
 {% ct 'Hebrews 2:8-9' %}
 
-The penalty for sin is death, and Christ's death on the cross paid that penalty for every single person.
+The penalty for sin is death, and Christ’s death on the cross paid that penalty for every single person.
 
 ## How can I receive forgiveness of my sins?
 
@@ -107,9 +107,9 @@ Forsaking my way implies turning around and going in the opposite direction—fr
 
 There is nothing I can do to earn salvation; it is a free gift that I receive by grace through faith in His love, His forgiveness, and His victory on the cross. The Protestant Reformation brought this marvelous truth to light after centuries of a counterfeit method of salvation focused on works. Sadly, however, Protestantism has begun to drift away from its original position.
 
-In 1999, the Catholic and Lutheran churches issued a *Joint Declaration on the Doctrine of Justification*, which includes this key statement: "By grace alone, in faith in Christ's saving work and not because of any merit on our part, we are accepted by God..." Note that "by grace alone" is not the same as "by faith alone." While it is true that we are saved by grace, that grace is appropriated by faith—without faith, there can be no grace. The joint statement elevates grace over faith, while the Bible emphasizes faith. This difference may not seem significant at first, but it becomes critical when viewed through the lens of Catholic teaching, which holds that the Church is the dispenser of grace from the treasury of merit, which includes not only Christ’s good works but also those of Mary and the saints.
+In 1999, the Catholic and Lutheran churches issued a *Joint Declaration on the Doctrine of Justification*, which includes this key statement: “By grace alone, in faith in Christ’s saving work and not because of any merit on our part, we are accepted by God …” Note that “by grace alone” is not the same as “by faith alone.” While it is true that we are saved by grace, that grace is appropriated by faith—without faith, there can be no grace. The joint statement elevates grace over faith, while the Bible emphasizes faith. This difference may not seem significant at first, but it becomes critical when viewed through the lens of Catholic teaching, which holds that the Church is the dispenser of grace from the treasury of merit, which includes not only Christ’s good works but also those of Mary and the saints.
 
-## Am I saved by Christ's saving work?
+## Am I saved by Christ’s saving work?
 
 > And almost all things are by the law purged with blood; and *without shedding of blood is no remission*.
 {% ct 'Hebrews 9:22' %}
@@ -120,7 +120,7 @@ In 1999, the Catholic and Lutheran churches issued a *Joint Declaration on the D
 > Whom God hath set forth to be *a propitiation through faith in his blood*, to declare his righteousness for the remission of sins that are past, through the forbearance of God.
 {% ct 'Romans 3:25' %}
 
-The Bible is clear that it is not Christ's works that save me, but His shed blood. In the *Joint Declaration*, the phrase "faith in Christ's saving work" refers to the treasury of merit, which the Church dispenses to atone for sin; however, the Bible teaches that without the shedding of *blood* there is no remission of sin. The truth is Christ died for each person individually {% rf 'Galatians 2:20' %}. His death paid the penalty for my sins—the penalty that I was supposed to pay—while His righteous life satisfies the claims of the law upon me, namely, perfect righteousness, which my life could never meet {% rf 'Romans 5:9-10' %}.
+The Bible is clear that it is not Christ’s works that save me, but His shed blood. In the *Joint Declaration*, the phrase “faith in Christ’s saving work” refers to the treasury of merit, which the Church dispenses to atone for sin; however, the Bible teaches that without the shedding of *blood* there is no remission of sin. The truth is Christ died for each person individually {% rf 'Galatians 2:20' %}. His death paid the penalty for my sins—the penalty that I was supposed to pay—while His righteous life satisfies the claims of the law upon me, namely, perfect righteousness, which my life could never meet {% rf 'Romans 5:9-10' %}.
 
 ## What happens once I accept God’s free gift?
 

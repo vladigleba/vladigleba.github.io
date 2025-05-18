@@ -39,15 +39,15 @@ The Bible often operates on the principle of repetition where previously covered
 
 1. *It is the composite of the four beasts of Daniel 7.* The beast is the composite of these beasts {% rf 'Daniel 7:4-7' %} because it incorporates various beliefs and practices from all four empires, and the papacy fits this point too. “In a certain respect, she [the papacy] has copied her organization from that of the Roman Empire, has preserved and made fruitful the philosophical intuitions of Socrates, Plato, and Aristotle, borrowed from both Barbarians and the Byzantine Roman Empire, but always remains herself, thoroughly digesting all elements drawn from external sources.”[^1]
 
-1. *The dragon gives it power and authority.* The dragon can be identified by reading {% rf 'Revelation 12:1-6' false %} where it talks about a pregnant woman about to deliver and the dragon hoping to devour the baby at birth; however, the child evades the dragon by being caught up to heaven. This is an obvious reference to Jesus, whom Herod tried to kill by slaying all the babies in Bethlehem {% rf 'Matthew 2:16' %}. Herod was acting under his authority as a king of Rome, so the dragon represents pagan Rome, but the real power behind Herod’s plot was the devil {% rf 'Revelation 12:7-9' %} who likes to act through various governments to move his ugly work forward. The Roman Empire eventually fell in 476, and its power and capital city were inherited by the papacy. “The Roman Church ... pushed itself into the place of the Roman World-Empire, of which it is the actual continuation. ... The Pope ... is Caesar's successor.”[^2] “The mighty Catholic Church was little more than the Roman Empire baptised. Rome was transformed as well as converted. The very capital of the old Empire became the capital of the Christian Empire. The office of Pontifex Maximus was continued in that of Pope.”[^3]
+1. *The dragon gives it power and authority.* The dragon can be identified by reading {% rf 'Revelation 12:1-6' false %} where it talks about a pregnant woman about to deliver and the dragon hoping to devour the baby at birth; however, the child evades the dragon by being caught up to heaven. This is an obvious reference to Jesus, whom Herod tried to kill by slaying all the babies in Bethlehem {% rf 'Matthew 2:16' %}. Herod was acting under his authority as a king of Rome, so the dragon represents pagan Rome, but the real power behind Herod’s plot was the devil {% rf 'Revelation 12:7-9' %} who likes to act through various governments to move his ugly work forward. The Roman Empire eventually fell in 476, and its power and capital city were inherited by the papacy. “The Roman Church … pushed itself into the place of the Roman World-Empire, of which it is the actual continuation. … The Pope … is Caesar’s successor.”[^2] “The mighty Catholic Church was little more than the Roman Empire baptised. Rome was transformed as well as converted. The very capital of the old Empire became the capital of the Christian Empire. The office of Pontifex Maximus was continued in that of Pope.”[^3]
 
-1. *It receives a deadly wound.* This prophecy was fulfilled when Napoleon's general, Alexander Berthier, took Pope Pius VI captive in 1798. When the pope died in 1799, “half Europe thought ... that without the Pope the Papacy was dead.”[^4]
+1. *It receives a deadly wound.* This prophecy was fulfilled when Napoleon’s general, Alexander Berthier, took Pope Pius VI captive in 1798. When the pope died in 1799, “half Europe thought … that without the Pope the Papacy was dead.”[^4]
 
 1. *Its deadly wound is healed.* The power and influence of the papacy has been increasing steadily over the years, and today she is not only one of the most powerful religious organizations in the world, but she has strong political influence as well. When the wound is completely healed, {% rf 'Revelation 13:3' false %} says the entire world will give homage to it.
 
 1. *It becomes a strong political power.* {% rf 'Revelation 13:7' false %} says the papacy will have political power and influence over all of the nations of the world. The papacy’s political rise started when Italian dictator Benito Mussolini signed a treaty with the Vatican establishing it as a political state and protecting it from interference by the Italian government. Even though Vatican City is the smallest country in the world, it now has ambassadors (called “papal nuncios”) in every part of the globe. In 1984, it established diplomatic relations with the United States, and in 2015 Pope Francis spoke to a joint session of the U.S. Congress for the first time ever. No doubt, the wound has been healing.
 
-1. *It becomes a strong religious power.* {% rf 'Revelation 13:8' false %} says the papacy will be worshiped, which implies religious power and influence, by the entire world. Today the pope is respected by faiths across the religious spectrum. In 2014 Francis led an ecumenical worship service that was attended by Anglican, Lutheran, Methodist, and Orthodox representatives. He has also hosted a prayer summit at the Vatican with Israeli and Palesinian leaders. Cardinal Timothy Dolan had this to say: “The more he tries to de-emphasize the prestige and the power of the papacy, ... the more people pay attention to him.”[^5]
+1. *It becomes a strong religious power.* {% rf 'Revelation 13:8' false %} says the papacy will be worshiped, which implies religious power and influence, by the entire world. Today the pope is respected by faiths across the religious spectrum. In 2014 Francis led an ecumenical worship service that was attended by Anglican, Lutheran, Methodist, and Orthodox representatives. He has also hosted a prayer summit at the Vatican with Israeli and Palesinian leaders. Cardinal Timothy Dolan had this to say: “The more he tries to de-emphasize the prestige and the power of the papacy, … the more people pay attention to him.”[^5]
 
 1. *It speaks blasphemy against God.* Blasphemy is defined as claiming to forgive sins {% rf 'Luke 5:21' %} and claiming to be God {% rf 'John 10:33' %}. The papacy fits these points because her priests claim to forgive sins and the popes claim to be Christ (see [“Who Is the Antichrist?”](/posts/prophecy/antichrist.md#what-power-fits-these-characteristics)).
 
@@ -70,7 +70,7 @@ To summarize, there is no other power in history that could fit all 11 of these 
 [^3]: Alexander Clarence Flick, The Rise of the Mediaeval Church (reprint: New York, Burt Franklin, 1959), pp. 148, 149.
 [^4]: Joseph Rickaby, “The Modern Papacy,” Lectures on the History of Religion, Lecture 24, (London: Catholic Truth Society, 1910), p. 1.
 [^5]: CBS This Morning, September 22, 2015
-[^6]: “Answers to Readers' Questions,” Our Sunday Visitor, Nov. 15, 1914.
+[^6]: “Answers to Readers’ Questions,” Our Sunday Visitor, Nov. 15, 1914.
 
 ## What is God’s sign of authority?
 
@@ -94,7 +94,7 @@ Here is another quote: “The church is above the Bible, and this transference o
 The papacy itself is saying that it “changed” the Sabbath from Saturday to Sunday, the pagan day of sun worship, and virtually all churches accepted the new holy day. Therefore, it claims that this act is the mark of her power and authority.
 
 [^7]: Stephen Keenan, A Doctrinal Catechism [FRS No. 7.], (3rd American ed., rev.: New York, Edward Dunigan & Bro., 1876), p. 174.
-[^8]: Peter Geiermann, The Convert's Catechism of Catholic Doctrine (St. Louis, B. Herder Book Co., 1957 ed.), p. 50.
+[^8]: Peter Geiermann, The Convert’s Catechism of Catholic Doctrine (St. Louis, B. Herder Book Co., 1957 ed.), p. 50.
 [^9]: The Catholic Record (London, Ontario, Canada, Sept. 1, 1923).
 [^10]: Extract from a letter written by the Chancellor of Cardinal Gibbons (November 11, 1895).
 
@@ -118,7 +118,7 @@ We learned previously that one of the characteristics of the papacy would be try
 
 ## What warnings does God give regarding His law?
 
->  *For the priest's lips should keep knowledge, and they should seek the law at his mouth: for he is the messenger of the LORD of hosts. But ye are departed out of the way; ye have caused many to stumble at the law*; ye have corrupted the covenant of Levi, saith the LORD of hosts. Therefore have I also made you contemptible and base before all the people, according as ye have not kept my ways, but have been partial in the law.
+>  *For the priest’s lips should keep knowledge, and they should seek the law at his mouth: for he is the messenger of the LORD of hosts. But ye are departed out of the way; ye have caused many to stumble at the law*; ye have corrupted the covenant of Levi, saith the LORD of hosts. Therefore have I also made you contemptible and base before all the people, according as ye have not kept my ways, but have been partial in the law.
 {% ct 'Malachi 2:7-9' %}
 
 > That this is a rebellious people, lying children, *children that will not hear the law of the LORD*: which say to the seers, See not; and to the prophets, *Prophesy not unto us right things, speak unto us smooth things, prophesy deceits*.
@@ -127,7 +127,7 @@ We learned previously that one of the characteristics of the papacy would be try
 > The earth mourneth and fadeth away, the world languisheth and fadeth away, the haughty people of the earth do languish. The earth also is defiled under the inhabitants thereof; *because they have transgressed the laws, changed the ordinance, broken the everlasting covenant. Therefore hath the curse devoured the earth, and they that dwell therein are desolate*: therefore the inhabitants of the earth are burned, and few men left.
 {% ct 'Isaiah 24:4-6' %}
 
-> *Her priests have violated my law, and have profaned mine holy things: they have put no difference between the holy and profane*, neither have they shewed difference between the unclean and the clean, and *have hid their eyes from my sabbaths, and I am profaned among them*. ... Therefore have I poured out mine indignation upon them; I have consumed them with the fire of my wrath: their own way have I recompensed upon their heads, saith the Lord GOD.
+> *Her priests have violated my law, and have profaned mine holy things: they have put no difference between the holy and profane*, neither have they shewed difference between the unclean and the clean, and *have hid their eyes from my sabbaths, and I am profaned among them*. … Therefore have I poured out mine indignation upon them; I have consumed them with the fire of my wrath: their own way have I recompensed upon their heads, saith the Lord GOD.
 {% ct 'Ezekiel 22:26, 31' %}
 
 God warns religious leaders who ignore His law and say that some commandments do not matter because such actions cause many people to stumble, but He also warns people who do not desire to learn about the law and want smooth fables to be preached, instead. Why? Because changing or refusing to follow God’s law has real consequences, including tragedy and upheaval on the earth. And this is not because God delights in heartache and misery, but because His law of love is there to protect from it. When it’s continually ignored, He will eventually stop pleading and let the consequences of rebellion play out. God cares about the truth being preached because He does not want anyone to be deceived, and so Ezekiel warns that those who teach there is no difference between sacred things, such as God’s holy day, and common things, such as Sunday, will one day face His indignation.
@@ -211,7 +211,7 @@ Those who have refused the mark of the beast and have God’s seal, instead, wil
 
 ## What does Jesus say about following Him?
 
-> And *other sheep I have, which are not of this fold*: them also I must bring, and they shall hear my voice; and there shall be one fold, and one shepherd. ... *My sheep hear my voice, and I know them, and they follow me*.
+> And *other sheep I have, which are not of this fold*: them also I must bring, and they shall hear my voice; and there shall be one fold, and one shepherd. … *My sheep hear my voice, and I know them, and they follow me*.
 {% ct 'John 10:16, 27' %}
 
 > Then spake Jesus again unto them, saying, I am the light of the world: *he that followeth me shall not walk in darkness, but shall have the light of life*.

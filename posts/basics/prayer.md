@@ -171,7 +171,7 @@ So why is faith so important to God? Well, it’s the foundation of our relation
 
 ## What is the third step?
 
-> Then they took away the stone from the place where the dead was laid. And Jesus lifted up his eyes, and said, Father, *I thank thee that thou hast heard me*. And I knew that thou hearest me always: but because of the people which stand by I said it, that they may believe that thou hast sent me. And when he thus had spoken, he cried with a loud voice, Lazarus, come forth. And he that was dead came forth...
+> Then they took away the stone from the place where the dead was laid. And Jesus lifted up his eyes, and said, Father, *I thank thee that thou hast heard me*. And I knew that thou hearest me always: but because of the people which stand by I said it, that they may believe that thou hast sent me. And when he thus had spoken, he cried with a loud voice, Lazarus, come forth. And he that was dead came forth …
 {% ct 'John 11:41-44' %}
 
 > And when he had consulted with the people, he appointed singers unto the LORD, and that should praise the beauty of holiness, as they went out before the army, and to say, Praise the LORD; for his mercy endureth for ever. And *when they began to sing and to praise*, the LORD set ambushments against the children of Ammon, Moab, and mount Seir, which were come against Judah; and *they were smitten*.

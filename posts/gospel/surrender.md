@@ -69,7 +69,7 @@ Every day we make a choice whether we are guided by our own desires and inclinat
 > But God forbid that I should glory, save in the cross of our Lord Jesus Christ, *by whom the world is crucified unto me, and I unto the world*.
 {% ct 'Galatians 6:14' %}
 
-> And they that are Christ's have *crucified the flesh with the affections and lusts*.
+> And they that are Christ’s have *crucified the flesh with the affections and lusts*.
 {% ct 'Galatians 5:24' %}
 
 We begin walking in the Spirit when we choose to surrender to God, which Paul describes as a crucifixion of, or death to, self. Putting away self, which is in conflict with the Spirit, allows Christ to live His life in us by faith, and we then become a new creation in Jesus {% rf '2 Corinthians 5:17' %}!
@@ -171,7 +171,7 @@ As long as we continue to choose Christ daily, we are complete in Him {% rf 'Col
 > And they shall see his face; and *his name shall be in their foreheads*.
 {% ct 'Revelation 22:4' %}
 
-> And the LORD descended in the cloud, and stood with him there, and *proclaimed the name of the LORD*. And the LORD passed by before him, and proclaimed, The LORD, The LORD God, *merciful and gracious, longsuffering, and abundant in goodness and truth, keeping mercy for thousands, forgiving iniquity and transgression and sin, and that will by no means clear the guilty*; visiting the iniquity of the fathers upon the children, and upon the children's children, unto the third and to the fourth generation.
+> And the LORD descended in the cloud, and stood with him there, and *proclaimed the name of the LORD*. And the LORD passed by before him, and proclaimed, The LORD, The LORD God, *merciful and gracious, longsuffering, and abundant in goodness and truth, keeping mercy for thousands, forgiving iniquity and transgression and sin, and that will by no means clear the guilty*; visiting the iniquity of the fathers upon the children, and upon the children’s children, unto the third and to the fourth generation.
 {% ct 'Exodus 34:5-7' %}
 
 > Let this *mind* be in you, *which was also in Christ Jesus*.

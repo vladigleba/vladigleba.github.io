@@ -126,7 +126,7 @@ The Day of Atonement (Yom Kippur) was a yearly occurance and the only time the H
 
 ## How was the sanctuary cleansed?
 
-> And he shall *take the two goats, and present them before the LORD* at the door of the tabernacle of the congregation. And Aaron shall cast lots upon the two goats; one lot for the LORD, and the other lot for the scapegoat. And Aaron *shall bring the goat upon which the LORD'S lot fell, and offer him for a sin offering. But the goat, on which the lot fell to be the scapegoat, shall be presented alive before the LORD*, to make an atonement with him, and to let him go for a scapegoat into the wilderness.
+> And he shall *take the two goats, and present them before the LORD* at the door of the tabernacle of the congregation. And Aaron shall cast lots upon the two goats; one lot for the LORD, and the other lot for the scapegoat. And Aaron *shall bring the goat upon which the LORD’S lot fell, and offer him for a sin offering. But the goat, on which the lot fell to be the scapegoat, shall be presented alive before the LORD*, to make an atonement with him, and to let him go for a scapegoat into the wilderness.
 {% ct 'Leviticus 16:7-10' %}
 
 > And this shall be a statute for ever unto you: that in the seventh month, on the tenth day of the month, *ye shall afflict your souls, and do no work at all*, whether it be one of your own country, or a stranger that sojourneth among you: For *on that day shall the priest make an atonement for you, to cleanse you, that ye may be clean from all your sins before the LORD*.

@@ -80,7 +80,7 @@ If you were caught speeding and the police officer wanted to give you a hefty fi
 
 ## What does sin do?
 
-> Behold, the LORD'S hand is not shortened, that it cannot save; neither his ear heavy, that it cannot hear: But *your iniquities have separated between you and your God*, and your sins have hid his face from you, that he will not hear.
+> Behold, the LORD’S hand is not shortened, that it cannot save; neither his ear heavy, that it cannot hear: But *your iniquities have separated between you and your God*, and your sins have hid his face from you, that he will not hear.
 {% ct 'Isaiah 59:1-2' %}
 
 > *For the wages of sin is death*; but the gift of God is eternal life through Jesus Christ our Lord.
@@ -165,7 +165,7 @@ God promises to help me keep His commandments because He knows that I cannot ove
 > [*Ninth:*] Thou shalt not bear false witness against thy neighbour.
 {% ct 'Exodus 20:16' %}
 
-> [*Tenth:*] Thou shalt not covet thy neighbour's house, thou shalt not covet thy neighbour's wife, nor his manservant, nor his maidservant, nor his ox, nor his ass, nor any thing that is thy neighbour's.
+> [*Tenth:*] Thou shalt not covet thy neighbour’s house, thou shalt not covet thy neighbour’s wife, nor his manservant, nor his maidservant, nor his ox, nor his ass, nor any thing that is thy neighbour’s.
 {% ct 'Exodus 20:17' %}
 
 ## Did they change in the New Testament?
@@ -179,7 +179,7 @@ God promises to help me keep His commandments because He knows that I cannot ove
 > [*Third:*] Let as many servants as are under the yoke count their own masters worthy of all honour, that the name of God and his doctrine be not blasphemed.
 {% ct '1 Timothy 6:1' %}
 
-> [*Fourth:*] For he spake in a certain place of the seventh day on this wise, And God did rest the seventh day from all his works. ... There remaineth therefore a rest to the people of God. For he that is entered into his rest, he also hath ceased from his own works, as God did from his.
+> [*Fourth:*] For he spake in a certain place of the seventh day on this wise, And God did rest the seventh day from all his works. … There remaineth therefore a rest to the people of God. For he that is entered into his rest, he also hath ceased from his own works, as God did from his.
 {% ct 'Hebrews 4:4, 9-10' %}
 
 > [*Fifth:*] Honour thy father and thy mother.
@@ -294,13 +294,13 @@ The Ten Commandments are a reflection of God’s character in written form, and 
 > And *the dragon was wroth with the woman*, and went to make war with the remnant of her seed, *which keep the commandments of God*, and have the testimony of Jesus Christ.
 {% ct 'Revelation 12:17' %}
 
-> Jesus replied, “And *why do you break the command of God for the sake of your tradition*? ... Thus you nullify the word of God for the sake of your tradition. You hypocrites! Isaiah prophesied correctly about you: ‘These people honor Me with their lips, but their hearts are far from Me. *They worship Me in vain; they teach as doctrine the precepts of men*.’
+> Jesus replied, “And *why do you break the command of God for the sake of your tradition*? … Thus you nullify the word of God for the sake of your tradition. You hypocrites! Isaiah prophesied correctly about you: ‘These people honor Me with their lips, but their hearts are far from Me. *They worship Me in vain; they teach as doctrine the precepts of men*.’
 {% ct 'Matthew 15:3, 6-9' %}
 
 > It is time for thee, LORD, to work: *for they have made void thy law*.
 {% ct 'Psalm 119:126' %}
 
-The devil’s war against God and His law started in the courts of heaven and has been raging ever since here on Earth. Is it any surprise that the devil would try to persuade people that God's law is no longer binding and even go as far as persecuting those who keep it?
+The devil’s war against God and His law started in the courts of heaven and has been raging ever since here on Earth. Is it any surprise that the devil would try to persuade people that God’s law is no longer binding and even go as far as persecuting those who keep it?
 
 ## What does Revelation say about the saints?
   

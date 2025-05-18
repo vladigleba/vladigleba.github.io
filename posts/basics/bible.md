@@ -94,7 +94,7 @@ Jesus is the spiritual bread that brings everlasting life, and we “eat” it w
 
 ## Why should I ask for the Holy Spirit’s guidance?
 
-> Which things also we speak, not in the words which man's wisdom teacheth, but which the Holy Ghost teacheth; comparing spiritual things with spiritual. But the natural man receiveth not the things of the Spirit of God: for they are foolishness unto him: neither can he know them, *because they are spiritually discerned*.
+> Which things also we speak, not in the words which man’s wisdom teacheth, but which the Holy Ghost teacheth; comparing spiritual things with spiritual. But the natural man receiveth not the things of the Spirit of God: for they are foolishness unto him: neither can he know them, *because they are spiritually discerned*.
 {% ct '1 Corinthians 2:13-14' %}
 
 Because spiritual things are spiritually discerned and because the Bible is full of stories with symbolism, I need the Holy Spirit to open my spiritual eyes and help me bring these stories to life. Humility and a teachable attitude is also a crucial part of it.

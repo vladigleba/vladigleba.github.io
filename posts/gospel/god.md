@@ -71,12 +71,12 @@ All God has to do is speak and atoms are immediately created in obedience to His
 
 ## What is God like?
 
-> And the LORD passed by before him, and proclaimed, The LORD, The LORD God, *merciful and gracious, longsuffering, and abundant in goodness and truth, keeping mercy for thousands, forgiving iniquity and transgression and sin, and that will by no means clear the guilty*; visiting the iniquity of the fathers upon the children, and upon the children's children, unto the third and to the fourth generation.
+> And the LORD passed by before him, and proclaimed, The LORD, The LORD God, *merciful and gracious, longsuffering, and abundant in goodness and truth, keeping mercy for thousands, forgiving iniquity and transgression and sin, and that will by no means clear the guilty*; visiting the iniquity of the fathers upon the children, and upon the children’s children, unto the third and to the fourth generation.
 {% ct 'Exodus 34:6-7' %}
 
 ## What does the psalmist say belongs to God?
 
-> The *earth* is the LORD'S, and the fulness thereof; the world, and *they that dwell therein*.
+> The *earth* is the LORD’S, and the fulness thereof; the world, and *they that dwell therein*.
 {% ct 'Psalm 24:1' %}
 
 Everything and everyone created belongs to the Creator first and foremost.

@@ -31,7 +31,7 @@ Long before Jesus was born, the prophet Micah foretold that Jesus would be born 
 > I shall see him, but not now: I shall behold him, but not nigh: *there shall come a Star out of Jacob*, and a Sceptre shall rise out of Israel.
 {% ct 'Numbers 24:17' %}
 
-> Judah, thou art he whom thy brethren shall praise: thy hand shall be in the neck of thine enemies; thy father's children shall bow down before thee. Judah is a lion's whelp: from the prey, my son, thou art gone up: he stooped down, he couched as a lion, and as an old lion; who shall rouse him up? *The sceptre shall not depart from Judah*, nor a lawgiver from between his feet, *until Shiloh come*; and unto him shall the gathering of the people be.
+> Judah, thou art he whom thy brethren shall praise: thy hand shall be in the neck of thine enemies; thy father’s children shall bow down before thee. Judah is a lion’s whelp: from the prey, my son, thou art gone up: he stooped down, he couched as a lion, and as an old lion; who shall rouse him up? *The sceptre shall not depart from Judah*, nor a lawgiver from between his feet, *until Shiloh come*; and unto him shall the gathering of the people be.
 {% ct 'Genesis 49:8-10' %}
 
 > Behold, the days come, saith the Lord, that *I will raise unto David a righteous Branch*, and a King shall reign and prosper, and shall execute judgment and justice in the earth.
@@ -125,7 +125,7 @@ In an incredible fulfillment of prophecy, Jesus, the Passover lamb to whom all t
 > And His grave was assigned with wicked men, yet *He was with a rich man in His death*, because He had done no violence, nor was there any deceit in His mouth.
 {% ct 'Isaiah 53:9, NASB' %}
 
-> When the even was come, *there came a rich man of Arimathaea*, named Joseph, who also himself was Jesus' disciple: He went to Pilate, and begged the body of Jesus. Then Pilate commanded the body to be delivered. And when Joseph had taken the body, he wrapped it in a clean linen cloth, And *laid it in his own new tomb*, which he had hewn out in the rock: and he rolled a great stone to the door of the sepulchre, and departed.
+> When the even was come, *there came a rich man of Arimathaea*, named Joseph, who also himself was Jesus’ disciple: He went to Pilate, and begged the body of Jesus. Then Pilate commanded the body to be delivered. And when Joseph had taken the body, he wrapped it in a clean linen cloth, And *laid it in his own new tomb*, which he had hewn out in the rock: and he rolled a great stone to the door of the sepulchre, and departed.
 {% ct 'Matthew 27:57-60' %}
 
 ## Would He remain in the grave forever?

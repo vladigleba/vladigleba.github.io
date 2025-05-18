@@ -86,9 +86,9 @@ Daniel prophesied a power would arise that would magnify itself even against God
 > And he shall *speak great words against the most High*, and shall *wear out the saints* of the most High, and *think to change times and laws*: and they shall be given into his hand until a time and times and the dividing of time.
 {% ct 'Daniel 7:25' %}
 
-This is an echo of Paul’s warning about men arising “speaking perverse things.” Again, here’s a power that would challenge God’s authority, persecute His followers, and change times and laws (see ["Who Is the Antichrist?"](./antichrist.md)). There is only one commandment that is both a time and a law: the fourth one. 
+This is an echo of Paul’s warning about men arising “speaking perverse things.” Again, here’s a power that would challenge God’s authority, persecute His followers, and change times and laws (see [“Who Is the Antichrist?”](./antichrist.md)). There is only one commandment that is both a time and a law: the fourth one. 
 
-The first seeds for its change were planted during Constantine’s conversion to Christianity in 312 A.D. when he passed a law declaring Sunday, which was the pagan day of sun worship, as the day of rest across the Roman Empire. That seed took root in 363 A.D. when the Council of Laodicea urged Christians to keep Sunday as their rest day, while prohibiting them from resting on Saturday, the seventh day Sabbath. Thus, the fourth commandment of God was changed—from honoring the seventh-day Sabbath established at creation to honoring Sunday—and the rest is history (see ["The Mark of the Beast"](./mark.md)).
+The first seeds for its change were planted during Constantine’s conversion to Christianity in 312 A.D. when he passed a law declaring Sunday, which was the pagan day of sun worship, as the day of rest across the Roman Empire. That seed took root in 363 A.D. when the Council of Laodicea urged Christians to keep Sunday as their rest day, while prohibiting them from resting on Saturday, the seventh day Sabbath. Thus, the fourth commandment of God was changed—from honoring the seventh-day Sabbath established at creation to honoring Sunday—and the rest is history (see [“The Mark of the Beast”](./mark.md)).
 
 ## Did Jesus warn about this?
 
@@ -102,7 +102,7 @@ The elevation of human-made commandments and tradition above the truth of the Bi
 > There is *one lawgiver*, who is able to save and to destroy: who art thou that judgest another?
 {% ct 'James 4:12' %}
 
-There is only one Lawgiver—God; however, as we have seen, there is a second entity claiming to be a lawgiver. Jesus warned, "And fear not them which kill the body, but are not able to kill the soul: but rather fear him [God] which is able to destroy both soul and body in hell" {% rf 'Matthew 10:28' %}. One can kill the body, but the Other has power to raise it from the dead {% rf '1 Thessalonians 4:16; 1 Corinthians 15:52' %}. Whom would you rather obey?
+There is only one Lawgiver—God; however, as we have seen, there is a second entity claiming to be a lawgiver. Jesus warned, “And fear not them which kill the body, but are not able to kill the soul: but rather fear him [God] which is able to destroy both soul and body in hell” {% rf 'Matthew 10:28' %}. One can kill the body, but the Other has power to raise it from the dead {% rf '1 Thessalonians 4:16; 1 Corinthians 15:52' %}. Whom would you rather obey?
 
 ## What role will the law play in the last days?
 
@@ -117,7 +117,7 @@ In the last days there will be a sealing of God’s people in their foreheads, a
 
 ## What is said about the saints?
 
-> Saying with a loud voice, Fear God, and give glory to him; for the hour of his judgment is come: and *worship him that made heaven, and earth, and the sea, and the fountains of waters*. ... Here is the patience of the saints: here are *they that keep the commandments of God, and the faith of Jesus*.
+> Saying with a loud voice, Fear God, and give glory to him; for the hour of his judgment is come: and *worship him that made heaven, and earth, and the sea, and the fountains of waters*. … Here is the patience of the saints: here are *they that keep the commandments of God, and the faith of Jesus*.
 {% ct 'Revelation 14:7, 12' %}
 
-There will be a call in the last days to worship God, the Creator of the universe, which implies there will be another power vying to be worshiped as well. This call is a reference to the last part of the fourth commandment where keeping the Sabbath is identified as a sign and an acknowledgment that God is the Creator of all. Could the worship of God by keeping His seventh day Sabbath constitute the seal of God in the last days? Verse 12 leaves no room for doubt when it says the saints will be keeping the commandments of God and the faith of Jesus, who Himself kept the commandments, including the fourth (see ["God's Rest Day"](../basics/sabbath.md#did-jesus-keep-the-sabbath)). May we be found faithful in our stand for Jesus.
+There will be a call in the last days to worship God, the Creator of the universe, which implies there will be another power vying to be worshiped as well. This call is a reference to the last part of the fourth commandment where keeping the Sabbath is identified as a sign and an acknowledgment that God is the Creator of all. Could the worship of God by keeping His seventh day Sabbath constitute the seal of God in the last days? Verse 12 leaves no room for doubt when it says the saints will be keeping the commandments of God and the faith of Jesus, who Himself kept the commandments, including the fourth (see [“God’s Rest Day”](../basics/sabbath.md#did-jesus-keep-the-sabbath)). May we be found faithful in our stand for Jesus.
