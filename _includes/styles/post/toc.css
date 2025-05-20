@@ -27,6 +27,7 @@
 
 .toc li.active a {
   font-weight: bold;
+  color: black;
 }
 
 .toc li:hover {
@@ -35,6 +36,7 @@
 }
 
 .toc a {
+  color: var(--gray-color);
   font-weight: 500;
   transition: color 0.15s ease 0s;
 }

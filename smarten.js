@@ -9,12 +9,11 @@ function isMarkdown(filePath) {
 }
 
 function smartenQuotes(text) {
-  // Fix apostrophes in contractions and possessives: always use right single quote ’
-  // Matches words with internal apostrophes (e.g., don't, Severus', he's)
+  // Apostrophes (possessive uses positive lookahead (?=) to ensure it's followed by whitespace)
   text = text.replace(/(\w)'(\w)/g, '$1’$2'); // contractions like don’t, he’s
-  text = text.replace(/(\w)'(?=\s|$)/g, '$1’'); // possessive at end of word, e.g. Jesus'
+  text = text.replace(/(\w)'(?=\s|$)/g, '$1’'); // possessive at end of word, e.g. Severus'
 
-  // Replace standalone double quotes with smart quotes (toggle)
+  // Double quotes
   let isDoubleOpen = true;
   text = text.replace(/"/g, () => {
     const char = isDoubleOpen ? '“' : '”';
@@ -22,11 +21,10 @@ function smartenQuotes(text) {
     return char;
   });
 
-  // Replace single quotes used as quotations (not apostrophes)
-  // Toggle single quotes only if they're surrounded by whitespace or punctuation (approximate)
-  let isSingleOpen = true;
+  // Single quotes used as quotations
+  // Only if they're surrounded by whitespace or parentheses, brackets, or braces
+  // Uses negative lookahead (?!) to ensure not followed by a word character
   text = text.replace(/(^|[\s\(\[\{])'(.*?)'(?!\w)/g, (match, before, content) => {
-    // Surrounding single quotes - replace with opening and closing quotes
     return before + '‘' + content + '’';
   });
 
@@ -34,8 +32,6 @@ function smartenQuotes(text) {
 }
 
 function replaceTypography(text) {
-  // Protect frontmatter delimiter lines `---`
-  // Replace them temporarily with placeholders so they're untouched
   const fmDelimiter = '---';
   const fmPlaceholder = '@@FRONTMATTER_DELIMITER@@';
 
@@ -67,7 +63,7 @@ function replaceTypography(text) {
   // Standard ellipses
   text = text.replace(/\.{3}/g, '…');
 
-  // Smart quotes with improved apostrophe handling
+  // Smart quotes with apostrophe handling
   text = smartenQuotes(text);
 
   // Restore shortcodes
