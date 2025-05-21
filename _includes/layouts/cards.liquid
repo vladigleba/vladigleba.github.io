@@ -1,26 +1,38 @@
 <ol class="list">
   {% for item in groupedPosts %}
     {% if not categoryFilter or item.category == categoryFilter %}
-      
       {% if item.type == "series" %}
         <li class="series">
           <div><span class="tag">Series</span></div>
-          <a style="color: {{ item.color }}" href="{{ item.posts[0].url }}">{{ item.title }}</a>
+          <a style="color: {{ item.color }}" href="{{ item.posts[0].url }}">
+            {{ item.title }}
+          </a>
           <p>{{ item.category }} <span>•</span> {{ item.posts.size }} parts</p>
         </li>
       {% else %}
         {% assign data = item.post.data %}
         {% assign featured = data.featured %}
+        {% assign latest = item.latest %}
 
-        <li {% if featured %} class="featured" {% endif %}>
-          <a style="color: {{ data.color }}" href="{{ item.post.url }}">{{ data.title }}</a>
+        <li
+          {% if featured %} class="featured"
+          {% elsif latest %} class="latest" style="background-color: {{ data.color }}"
+          {% endif %}
+        >
+          {% if latest %}
+            <div><span class="tag" style="color: {{ data.color }}">Latest</span></div>
+          {% endif %}
+
+          <a style="color: {{ data.color }}" href="{{ item.post.url }}">
+            {{ data.title }}
+          </a>
           <p>{{ item.category }} <span>•</span> {{ data.length }} min read</p>
-          {% if featured %}
+
+          {% if featured or latest %}
             <p class="description">{{ data.description }}</p>
           {% endif %}
         </li>
       {% endif %}
-      
     {% endif %}
   {% endfor %}
 </ol>

@@ -83,7 +83,6 @@
 
   .list {
     padding: 0 20px;
-    column-gap: 20px;
     grid-template-columns: repeat(auto-fit, 354px);
   }
 }
@@ -148,6 +147,7 @@
   .list {
     padding: 0 10px;
     column-gap: 10px;
+    row-gap: 10px;
     grid-template-columns: repeat(auto-fit, 320px);
     grid-auto-rows: 125px;
   }
@@ -160,7 +160,7 @@
     font-size: 17px;
   }
 
-  li.series .tag {
+  li .tag {
     font-size: 13px;
   }
 

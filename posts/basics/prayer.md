@@ -1,6 +1,6 @@
 ---
 title: Keys to Effective Prayer
-description: Prayer is a fundamental part of every Christian’s life. What principles does the Bible provide to bring new life into our prayers?
+description: Prayer is foundational to the Christian walk. Are there biblical principles that can make our prayers more effective?
 color: rgb(199,62,95)
 date: 2025-04-16
 ---
@@ -248,7 +248,7 @@ When we are tempted, the last thing we often want to do is pray, but connecting 
 
 Had Jesus’ disciples heeded His call to watch and pray in Gethsemane, there is no doubt they would have been strengthened to better endure what was about to come upon both Him and them. And poor Peter—would he have denied his Lord if he had spent that time in prayer instead of sleeping?
 
-## Should prayer enable laziness?
+## Does prayer enable laziness?
 
 > *Give us* this day our daily bread.
 {% ct 'Matthew 6:11' %}

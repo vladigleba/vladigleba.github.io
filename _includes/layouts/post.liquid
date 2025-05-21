@@ -4,6 +4,7 @@ layout: layouts/base
 
 {% if series %} 
   {% assign color = series-names[series]["color"] %}
+  {% assign seriesTitle = series-names[series]["title"] %}
 {% endif %}
 
 <style>
@@ -16,20 +17,15 @@ layout: layouts/base
 <article>
   <header>
     <div>
-      <h1 class="title">{{ title }}</h1>
-      <p class="description">{{ description }}</p>
-      <p class="meta tag">
-        <span>{{ category }}</span>
-        <span>{{ length }} min read</span>
-      </p>
-      {% if series %} 
-        <p class="meta series">
-          “{{ series-names[series]["title"] }}” Series <span>•</span> 
-          Part {{ seriesInfo.current }} of {{ seriesInfo.total }}
-        </p>
-
-        {% render "layouts/series-header", series: seriesInfo %}
-      {% endif %}
+      {% render "layouts/header", 
+        title: title,
+        description: description,
+        category: category,
+        length: length,
+        isSeries: series, 
+        series: seriesInfo, 
+        seriesTitle: seriesTitle 
+      %}
     </div>
   </header>
 

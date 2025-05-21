@@ -9,4 +9,4 @@ permalink: "/{{ category | downcase }}/"
 ---
 
 {% render "layouts/banner", title: category, description: categories[category] %}
-{% render "layouts/post-list", groupedPosts: collections.groupedPosts, categoryFilter: category %}
+{% render "layouts/cards", groupedPosts: collections.groupedPosts, categoryFilter: category %}

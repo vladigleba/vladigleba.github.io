@@ -3,6 +3,7 @@ title: Origin of Evil
 description: If God is in control, why is there so much evil in the world? How did it begin, and when will it end?
 color: rgb(170,98,98)
 date: 2025-01-03
+featured: true
 ---
             
 ## Is God evil?

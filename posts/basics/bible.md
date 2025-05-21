@@ -3,7 +3,6 @@ title: Can I Trust the Bible?
 description: Is the Bible a fable, or is it the most trustworthy document we have ever possessed?
 color: rgb(101,166,114)
 date: 2025-01-01
-featured: true
 ---
 
 ## How much of the Bible is inspired? By whom? For what purpose?

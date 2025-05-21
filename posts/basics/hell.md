@@ -3,6 +3,7 @@ title: Is Hell Forever?
 description: Will a just and loving God torture people in a never ending hell for only a lifetime of sin?
 color: rgb(255,98,98)
 date: 2025-01-25
+featured: true
 ---
 
 ## How many does Jesus want to save?

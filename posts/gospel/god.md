@@ -3,6 +3,7 @@ title: What Is God Like?
 description: The amount of misconceptions and flat out lies about God is astounding. What is the truth about His character?
 color: rgb(81,144,179)
 date: 2025-01-02
+featured: true
 ---
 
 ## Does God have a beginning or end?
