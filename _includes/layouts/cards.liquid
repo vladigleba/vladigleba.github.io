@@ -8,6 +8,13 @@
             {{ item.title }}
           </a>
           <p>{{ item.category }} <span>•</span> {{ item.posts.size }} parts</p>
+          {% comment %} 
+          <p class="description">
+            {% for post in item.posts %}
+              <span>{{ post.data.title }} <span>•</span> {{ post.data.length }} min read</span>
+            {% endfor %}
+          </p> 
+          {% endcomment %}
         </li>
       {% else %}
         {% assign data = item.post.data %}
@@ -21,6 +28,8 @@
         >
           {% if latest %}
             <div><span class="tag" style="color: {{ data.color }}">Latest</span></div>
+          {% elsif featured %}
+            <div><span class="tag">Featured</span></div>
           {% endif %}
 
           <a style="color: {{ data.color }}" href="{{ item.post.url }}">

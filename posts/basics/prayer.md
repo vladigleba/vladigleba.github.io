@@ -5,7 +5,7 @@ color: rgb(199,62,95)
 date: 2025-04-16
 ---
 
-## Should I be praying?
+## Should I be praying more?
 
 > And he withdrew himself into the wilderness, and *prayed*.
 {% ct 'Luke 5:16' %}

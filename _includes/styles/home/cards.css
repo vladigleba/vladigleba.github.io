@@ -32,17 +32,27 @@ li.latest {
 
 li.latest,
 li.latest a,
-li.latest .description {
+li.latest .description,
+li.featured .tag {
   color: white !important;
 }
 
 li.latest .tag {
   background-color: white;
+}
+
+li.latest .tag,
+li.featured .tag {
   margin-bottom: 20px;
 }
 
 li.featured {
   background-color: #f9f9f9;
+
+  .tag {
+    background-color: var(--hover-color);
+    opacity: 0.8;
+  }
 }
 
 li .description {
