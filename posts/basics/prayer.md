@@ -167,7 +167,7 @@ But what if our faith is weak? The Bible tells us that:
 1. We can ask Him to increase our faith {% rf 'Mark 9:24' %}, and He will likely give us opportunities to exercise it.
 1. Faith comes by hearing, and hearing by the Word of God {% rf 'Romans 10:17' %}. In other words, we grow in faith as we get to know Him more through the study of His Word and through prayer.
 
-So why is faith so important to God? Well, it’s the foundation of our relationship with Him. There is nothing more pleasing to a father than a child coming to him in confidence, full of trust in his love and power. Our heavenly Father delights when we come to Him in prayer, trusting that He will hear and answer our requests in His time and way. (For a more detailed study on faith, see [“Walking in Faith”](../gospel/faith.md).)
+So why is faith so important to God? Well, it’s the foundation of our relationship with Him. There is nothing more pleasing to a father than a child coming to him in confidence, full of trust in his love and power. Our heavenly Father delights when we come to Him in prayer, trusting that He will hear and answer our requests in His time and way. (For a more detailed study on faith, see [“Walking in Faith”](/posts/gospel/faith.md).)
 
 ## What is the third step?
 

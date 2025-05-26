@@ -449,6 +449,7 @@ article ul {
 
 sup {
   font-size: 13px;
+  font-weight: 500;
 }
 .toc {
   flex: 0 0 320px; /* Fixed width for ToC */

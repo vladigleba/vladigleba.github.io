@@ -127,6 +127,7 @@ module.exports = async (config) => {
       first.latest = true;
     }
 
+    //printPostsByLength(posts);
     return groupedPosts;
   });
 
@@ -187,5 +188,14 @@ module.exports = async (config) => {
     const filePath = path.replace(/\\/g, '/'); // for Windows
     const rawCategory = filePath.split('/')[2];
     return rawCategory.charAt(0).toUpperCase() + rawCategory.slice(1);
+  }
+
+  function printPostsByLength(posts) {
+    posts
+      .slice() // create shallow copy to avoid mutating original
+      .sort((a, b) => b.data.length - a.data.length)
+      .forEach((post, index) =>
+        console.log(`${index + 1}. ${post.data.title} - ${post.data.length}m`)
+      );
   }
 };

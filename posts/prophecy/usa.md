@@ -170,7 +170,7 @@ The false prophet works miracles before the beast to deceive those who end up re
 {% ct 'Revelation 19:19' %}
 
 > *These have one mind, and shall give their power and strength unto the beast. These shall make war with the Lamb, and the Lamb shall overcome them*: for he is Lord of lords, and King of kings: and they that are with him are called, and chosen, and faithful.
-{% ct 'Revelation 17:12-14' %}
+{% ct 'Revelation 17:13-14' %}
 
 The battle of Armageddon is the final battle that’s fought on earth between Christ and Satan. It’s mentioned in the context of the beast and the false prophet, meaning it will be initiated by them, involving all the nations of the world in a united fight against Jesus and His people, with the goal of destroying all who refuse to worship the beast. But God will intervene.
 
