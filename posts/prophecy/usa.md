@@ -14,7 +14,7 @@ featured: true
 > For this is good and acceptable in the sight of God our Savior, *who desires all men to be saved and to come to the knowledge of the truth*.
 {% ct '1 Timothy 2:3-4' %}
 
-The beautiful thing about God’s character is that He does not just know the future, but He also likes to reveal it ahead of time to strengthen our faith in Him and prepare us for what is to come. He does not want anyone to be lost due to a lack of knowledge about eternal realities, and He often uses prophets to bring such things to the attention of His people. John, the revelator, is one such prophet to whom God has revealed events that will transpire near the close of earth’s history.
+The beautiful thing about God’s character is that He not only knows the future, but also chooses to reveal it in advance to strengthen our faith and prepare us for what is to come. He does not want anyone to be lost because of a lack of knowledge about eternal realities, so He often speaks through prophets to make these truths known to His people. John the Revelator is one such prophet, to whom God revealed events that will unfold near the close of earth’s history.
 
 ## What power is symbolized first in Revelation 13?
 
@@ -23,44 +23,48 @@ The beautiful thing about God’s character is that He does not just know the fu
 > And it was given unto him to make war with the saints, and to overcome them: and power was given him over all kindreds, and tongues, and nations. And all that dwell upon the earth shall worship him, whose names are not written in the book of life of the Lamb slain from the foundation of the world. If any man have an ear, let him hear. He that leadeth into captivity shall go into captivity: he that killeth with the sword must be killed with the sword. Here is the patience and the faith of the saints.
 {% ct 'Revelation 13:1-10' %}
 
-As we already learned in a previous study, the beast that came out of the sea is the Roman papacy, which had influence and power in the world for 42 months. The papacy received a deadly wound at the end of this period in 1798 when the pope was taken captive by Napoleon’s General Berthier (see [“Mark of the Beast”](/posts/prophecy/mark.md)).
+As we learned in a previous study, the beast that rose from the sea represents the Roman papacy, which held influence and power over the world for 42 months. The papacy received a deadly wound at the end of this period in 1798, when Pope Pius VI was taken captive by Napoleon Bonaparte’s general, Louis-Alexandre Berthier (see [“Mark of the Beast”](/posts/prophecy/mark.md)).
 
 ## What is the second power symbolized in Revelation 13?
 
 > And I beheld another beast *coming up out of the earth*; and he had two horns like a lamb, and he spake as a dragon.
 {% ct 'Revelation 13:11' %}
 
-Verse 10 talked about the papal captivity that took place in 1798, and this second power is also seen emerging around that time. There is only one power that fits this time frame—the United States. It declared its independence in 1776, adopted the Constitution in 1787 and the Bill of Rights in 1791, and was recognized as a world power by 1798. An important detail mentioned in verse 11 is that it would arise “out of the earth,” as opposed to the sea. From {% rf 'Revelation 17:5' false %}, we know the sea represents areas of the world with large populations; therefore, the earth represents the opposite—an area that is sparsely populated. In other words, this second power could not arise out of the crowded nations of the Old World; it had to come out of a sparsely populated continent, which matches perfectly with the United States.
+{% rf 'Revelation 13:10' false %} refers to the papal captivity that occurred in 1798, and the second beast is seen emerging around the same time. There is only one power that fits this time frame--the United States. It declared its independence in 1776, adopted the Constitution in 1787, and ratified the Bill of Rights in 1791. By 1798, it was recognized as a rising global power. A key detail in verse 11 is that this power arises “out of the earth,” in contrast to the first beast, which came “out of the sea.” According to {% rf 'Revelation 17:15' false %}, the sea symbolizes large, densely populated areas; therefore, the earth represents the opposite--a sparsely populated region. This means the second beast could not emerge from the crowded nations of the Old World; instead, it had to rise from a less populated part of the world--perfectly matching the emergence of the United States.
 
 ## How is it distinguished from other nations?
 
 > And I beheld another beast coming up out of the earth; and he had *two horns like a lamb*, and he spake as a dragon.
 {% ct 'Revelation 13:11' %}
 
-Horns represent kings, kingdoms, or governments {% rf 'Daniel 7:24; 8:21' %}. In this case, they represent the two governing principles of the United States: civil and religious liberty. These principles have also been described as republicanism (a government without a king) and Protestantism (a church without a pope). Unlike other nations described in Daniel and Revelation, this one is distinguished by an absence of crowns, signifying a republican form of government, as opposed to a monarchy. Throughout history, it was also common for nations to tax people to support a state religion and oppress religious dissidents. The pilgrims on the Mayflower, as well as many other settlers that followed, were fleeing religious persecution, and so the United States was established with an entirely new mindset: the separation of church and state.
+Horns represent kings, kingdoms, or governments {% rf 'Daniel 7:24; 8:21' %}. In this case, they symbolize the two governing principles of the United States: civil and religious liberty. These principles have also been described as republicanism (a government without a king) and Protestantism (a church without a pope). Unlike other nations described in Daniel and Revelation, this one is distinguished by the absence of crowns, signifying a republican form of government as opposed to a monarchy. Throughout history, it was common for nations to tax citizens to support a state religion and to oppress religious dissenters. The pilgrims on the Mayflower, as well as many other settlers who followed, were fleeing religious persecution, and so the United States was founded with an entirely new mindset: the separation of church and state.
 
 ## Will the United States experience a change?
 
 > And I beheld another beast coming up out of the earth; and he had two horns like a lamb, and he *spake as a dragon*.
 {% ct 'Revelation 13:11' %}
 
-We learn in {% rf 'Revelation 20:2' false %} that the dragon is Satan, who uses various earthly powers to persecute and destroy God’s people {% rf 'Revelation 12:13' %}. Since his rebellion in heaven, his aim has been to be like God—to usurp God and force people to worship him instead {% rf 'Isaiah 14:12-14' %}. So what does it mean for a nation to speak like a dragon? A nation “speaks” through its legislation, so to speak like a dragon means there will come a day when the United States, under the influence of Satan, will pass laws enforcing false worship.
+{% rf 'Revelation 20:2' false %} identifies the dragon as Satan, who uses various earthly powers to persecute and destroy God’s people {% rf 'Revelation 12:13' %}. Since his rebellion in heaven, Satan’s aim has been to be like God—to usurp His authority and compel people to worship him instead {% rf 'Isaiah 14:12-14' %}. So what does it mean for a nation to speak like a dragon? A nation “speaks” through its laws and legislative actions, so to speak like a dragon means that a time will come when the United States, under Satan’s influence, will enact laws enforcing false worship.
 
 ## Does the Bible give more details?
 
 > And he *exerciseth all the power of the first beast* before him, and *causeth the earth and them which dwell therein to worship the first beast*, whose deadly wound was healed. And he *doeth great wonders, so that he maketh fire come down from heaven on the earth* in the sight of men, and *deceiveth them that dwell on the earth by the means of those miracles* which he had power to do in the sight of the beast; saying to them that dwell on the earth, that they should make an image to the beast, which had the wound by a sword, and did live.
 {% ct 'Revelation 13:12-14' %}
 
-The United States will exercise all the power of the first beast, the papacy, meaning it will imitate it, becoming a persecuting power and forcing people to go against their conscience. The verse goes on to say that the United States will use its power to lead the other nations of the world in forcing allegiance to the papacy. The question of worship will be the central issue in the last days. Will it be my Creator and Redeemer, Jesus Christ, or the antichrist? Every person will make a decision to worship one or the other.
+The United States will exercise all the authority of the first beast, the papacy, meaning it will imitate its actions, becoming a persecuting power that compels individuals to act against their conscience. The passage goes on to say that the United States will use its influence to lead other nations to do the same. Clearly, worship will be the central issue in the last days. Every individual will be faced with the question: *Will I worship my Creator and Redeemer, Jesus Christ, or the antichrist?*
 
-The call to align with the antichrist will appear genuinely spiritual and will be backed up by miracles, deceiving many, and those who refuse to go along will be made to appear divisive, stubborn, legalistic, and unpatriotic. All of this may seem shocking and outlandish, but Jesus does not lie and His words never fail {% rf 'Titus 1:2' %}. He tells us these things ahead of time, so that when they do come to pass, we may believe {% rf 'John 14:29' %}.
+The call to align with the antichrist will *appear* genuinely spiritual, being backed by miracles that will deceive many. Religious fanaticism will run high, causing those who refuse to comply to be labeled divisive, stubborn, legalistic, and unpatriotic. Though this may seem shocking and outlandish, Jesus does not lie, and His words never fail {% rf 'Titus 1:2' %}. He reveals these things ahead of time so that when they do come to pass, we may believe {% rf 'John 14:29' %}.
 
 ## Any other details?
 
-> And deceiveth them that dwell on the earth by the means of those miracles which he had power to do in the sight of the beast; saying to them that dwell on the earth, that they should *make an image to the beast*, which had the wound by a sword, and did live.
-{% ct 'Revelation 13:14' %}
+> And deceiveth them that dwell on the earth by the means of those miracles which he had power to do in the sight of the beast; saying to them that dwell on the earth, that they should *make an image to the beast*, which had the wound by a sword, and did live. And he had power to give life unto the image of the beast, that the image of the beast should both speak, and cause that as many as would not worship the image of the beast should be killed.
+{% ct 'Revelation 13:14-15' %}
 
-The United States will make an image to the beast (imitate it) by legislating religious worship and forcing people to obey them or face imprisonment and, ultimately, death. This is a copy (an image) of the church-state form of government employed by the papacy during the Middle Ages, when millions were killed for their faith. The United States will abandon its principle regarding the separation of church and state and, instead, combine civil government and apostate Protestantism in an unholy union to use its influence and power to support the papacy. Protestant America will appear spiritual and trustworthy, but it will be satanic in its conduct—a lamb-like beast {% rf 'Revelation 13:11' %}. With the coming together of church and state, an image to the beast will have formed, and the United States will then influence all the other countries of the world to follow its example, culminating in the entire world making an image to the beast and worshiping it.
+Abandoning its foundational principle of church-state separation, the United States will instead form an unholy union between civil government and apostate Protestantism. In doing so, it will make an image to the beast by establishing a copy of the church-state system used by the papacy during the Middle Ages, when millions were killed for their faith. These actions will appear spiritual, patriotic, and beneficial to society, but they will be satanic in nature--fitly represented by the lamb-like beast {% rf 'Revelation 13:11' %}. With apostate Protestantism in control of the government, religious legislation will soon follow {% rf 'Revelation 13:15' %}. It will begin mildly but will eventually escalate, forcing people to comply or face persecution and, ultimately, death. Once this church-state union is formed domestically, the U.S. will pressure other nations to follow its example, leading the entire world to wonder after the beast {% rf 'Revelation 13:3' %}.
+
+There is one astounding detail worth mentioning: the deceptive miracle-working described above is a religious activity, meaning it is carried out by the apostate Protestant side of the church-state union. These miracles then give power to persuade those who dwell on the earth to make an image to the beast. Note that it is the *people* dwelling on the *earth*--the same location from which the second beast, symbolizing the U.S., arose--who make an image to the beast. This points to the inhabitants of the U.S. and suggests a representative form of government, one that is "of the people, by the people, and for the people."[^1] In other words, it will be the people, urged on by the apostate Protestant churches, who will demand religious laws from their representatives in Congress.
+
+[^1]: Abraham Lincoln, *Gettysburg Address*, November 19, 1863.
 
 ## What will this ultimately lead to?
 
@@ -70,11 +74,11 @@ The United States will make an image to the beast (imitate it) by legislating re
 > And the dragon was wroth with the woman, and *went to make war with the remnant of her seed, which keep the commandments of God, and have the testimony of Jesus Christ*.
 {% ct 'Revelation 12:17' %}
 
-Worshiping and obeying the beast will result in receiving the mark of the beast through the keeping of Sunday as a false holy day (see [“Mark of the Beast”](/posts/prophecy/mark.md)), as opposed to worshiping and obeying Jesus and receiving His mark by keeping Saturday, the seventh-day Sabbath. Those who choose to worship the beast will have chosen to obey the word of a human being, as opposed to the word of their Creator, Jesus Christ. The papacy testifies to this itself: “The church changed Sabbath to Sunday and all the world bows down and worships upon that day in silent obedience to the mandates of the Catholic Church.”[^1]
+Worshiping and obeying the beast will result in receiving the mark of the beast through the keeping of Sunday as a false holy day (see [“Mark of the Beast”](/posts/prophecy/mark.md)), as opposed to worshiping and obeying Jesus and receiving His mark by keeping the seventh-day Sabbath. Those who choose to worship the beast will have chosen to obey the word of a human being rather than the word of their Creator, Jesus Christ. The papacy testifies to this itself: “The church changed Sabbath to Sunday and all the world bows down and worships upon that day in silent obedience to the mandates of the Catholic Church.”[^2]
 
-As the leader of the international movement to force allegiance to the papacy, the United States will proceed to punish those who refuse to go along with its Sunday legislation by denying them the ability to buy or sell; eventually, it will impose a death sentence, which will become global. Despite all of this, the Bible promises that God will protect His people, and their food and water will be sure {% rf 'Isaiah 33:16; Psalm 34:7' %}.
+As the leader of the international movement to enforce allegiance to the papacy, the United States will proceed to punish those who refuse to comply with its Sunday legislation by denying them the ability to buy or sell. Eventually, it will impose a death sentence, which will become global. Despite all this, the Bible promises that God will protect His people, and their food and water will be sure {% rf 'Isaiah 33:16; Psalm 34:7' %}.
 
-[^1]: Hartford Weekly Call, February 22, 1884.
+[^2]: *Hartford Weekly Call*, February 22, 1884.
 
 ## Has something similar happened in the past?
 
@@ -90,21 +94,30 @@ As the leader of the international movement to force allegiance to the papacy, t
 > If it be so, *our God whom we serve is able to deliver us from the burning fiery furnace*, and he will deliver us out of thine hand, O king. But if not, be it known unto thee, O king, that *we will not serve thy gods, nor worship the golden image which thou hast set up*.
 {% ct 'Daniel 3:17-18' %}
 
-A very similar scenario played out in Babylon during the reign of Nebuchadnezzar. It also involved a universal command forcing all to worship an image, along with the death penalty for those who refused. Most went along, but there was a small group of friends who refused to compromise by violating God’s commandments. Their love for God was stronger than death {% rf 'Revelation 12:11' %}, and they chose to remain faithful to Him by the grace of God.
+A very similar scenario played out in Babylon during the reign of Nebuchadnezzar. It also involved a universal command forcing all to worship an image, with the death penalty for those who refused. Most complied, but a small group of friends refused to compromise by violating God’s commandments. Their love for God was stronger than death {% rf 'Revelation 12:11' %}, and they chose to remain faithful to Him by His grace.
+
+## Has the U.S. passed religious legislation before?
+
+In 1888, Senator Henry Blair proposed a bill that sought to establish Sunday as a national day of rest, which was fortunately defeated; nevertheless, a turning point came just four years later. In the landmark 1892 case *Church of the Holy Trinity v. United States*, the Supreme Court declared the United States a Christian nation, thereby setting a precedent that would justify future religious legislation. [^3] That same year, Congress passed legislation requiring the World’s Columbian Exposition to close on Sundays in honor of Sunday observance, a mandate endorsed by President Benjamin Harrison, who made government funding for the fair conditional on Sunday closure. As a result, only 101 years after the ratification of the First Amendment, which established the separation of church and state, all three branches of the United States government had effectively repudiated that principle. Today, many states already have “blue laws” that restrict commerce on Sundays, based on the Supreme Court's 1961 ruling in *McGowan v. Maryland*, which held that such laws do not violate the First Amendment.
+
+[^3]: This was done despite the 1797 Treaty of Tripoli--signed by President George Washington and approved by the U.S. Senate--which, in Article 11, declared that “the government of the United States is not in any sense founded upon the Christian religion.”
 
 ## How influential is the papacy today?
 
-The papacy has emerged to become the strongest religio-political power in the world. Almost every leading country has an official ambassador at the Vatican, including the United States. During Francis’ 2015 visit to the United States, President Obama personally welcomed the pope, and the White House said this was a symbol of the high level of respect America has for him.[^2] The visit also marked the first ever address by a pope to a joint session of Congress in American history. Besides the papacy’s political influence, its religious influence is also unparalleled, spanning  across the religious spectrum. For example, in 2014 Francis presided over an ecumenical worship service, attended by Orthodox, Anglican, Lutheran, Methodist, and other Christian representatives, at which he put out a call for Christian unity.[^3] According to Bible prophecy, the papacy’s influence will only increase as we approach the last days.
+The papacy has emerged as the most powerful religio-political entity in the world. Nearly every major country maintains an official ambassador to the Vatican, including the United States. During Pope Francis’ 2015 visit to the U.S., President Obama personally welcomed him, with the White House describing the event as a symbol of the high level of respect America holds for the pontiff.[^4] The visit also marked the first time in American history that a pope addressed a joint session of Congress.
 
-[^2]: Irish Daily Mail, September 23, 2015
-[^3]: Catholic Herald, January 27, 2014
+In addition to its political influence, the papacy’s religious influence is likewise unparalleled, spanning  across the religious spectrum. For instance, in 2014, Francis presided over an ecumenical worship service attended by representatives from the Orthodox, Anglican, Lutheran, Methodist, and other Christian traditions, during which he called for greater Christian unity.[^5] Throughout his pontificate, Francis has consistently sought to build bridges with those outside the Christian faith as well. Such efforts have elevated the papacy's global influence--an influence that, according to Bible prophecy, will continue to grow in the days to come.[^6]
+
+[^4]: *Irish Daily Mail*, September 23, 2015
+[^5]: *Catholic Herald*, January 27, 2014
+[^6]: Of course, there is nothing inherently wrong with unity. After all, Jesus teaches us to love our neighbors--even our enemies--and He prayed for unity among His disciples {% rf 'Matthew 22:39; 5:44; John 17:11' %}. Unity is indeed biblical, so long as it is not built on the compromise of truth as revealed in God’s Word. Unfortunately, this is often not the case (see ["How Can I Be Saved"](/posts/gospel/salvation.md#how-exactly-am-i-saved-from-my-sins)).
 
 ## How influential is the United States today?
 
-The United States is regarded as the world’s center of influence. Even though it does face challenges to its power from countries such as China and Russia, it continues to dominate the world. “What ultimately makes the difference between war and peace … is not good intentions, or strong words, or a grand coalition. It is the capability, credibility, and global reach of American hard power.”[^4] “The United States is and remains the one indispensable nation. That has been true for the century passed and it will be true for the century to come.”[^5] Bible prophecy is clear that the United States will continue to remain an influential world power in the last days.
+The United States is regarded as the world’s center of influence. Even though it does face challenges to its power from countries such as China and Russia, it continues to dominate the world. “What ultimately makes the difference between war and peace … is not good intentions, or strong words, or a grand coalition. It is the capability, credibility, and global reach of American hard power.”[^7] “The United States is and remains the one indispensable nation. That has been true for the century passed and it will be true for the century to come.”[^8] Bible prophecy is clear that the United States will continue to remain an influential world power in the last days.
 
-[^4]: Senator John McCain, November 15, 2014
-[^5]: President Barack Obama, May 28, 2014
+[^7]: Senator John McCain, remarks upon receiving the Peace through Strength Award at the Reagan National Defense Forum, Simi Valley, CA, November 15, 2014.
+[^8]: Barack Obama, speech at the U.S. Military Academy, West Point, NY, May 28, 2014.
 
 ## What can cause a worldwide religious law to be passed?
 
