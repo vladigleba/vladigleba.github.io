@@ -1,6 +1,6 @@
 ---
 title: Europe’s Future Revealed
-description: A remarkable prophecy about the rise and fall of kingdoms. What does the future of Europe look like?
+description: Discover a remarkable prophecy about the rise and fall of kingdoms. What does the future of Europe look like?
 color: rgb(101,166,141)
 date: 2025-01-10
 featured: true
@@ -130,7 +130,7 @@ Unlike the head, chest, thighs, and legs—each made of a single metal—the fee
 
 When the Christian church started apostatizing, it sought to regain the power of the apostolic church by uniting with civil government to enforce its laws against heretics. The Edict of Milan in 313 AD opened the door for the union of church and state that, in God's eyes, cannot be legitimately joined {% rf 'Daniel 2:43' %}. Because this union is illegitimate, it will disintegrate at Christ’s second coming, symbolized by the stone cut without hands that crushes the image to powder {% rf 'Daniel 2:34' %}. The only legitimate union of God’s church is with Jesus Christ, who is described as her Husband {% rf 'Ephesians 5:25' %} and the Rock upon which she is built {% rf 'Ephesians 2:19-22; Matthew 7:24-25' %}. With such a sure Foundation, she has no need for protection or support from civil power to ensure her survival.
 
-## What else is significant about the mixture of iron and clay?
+## What else is significant about the iron and clay mixture?
 
 The iron-clay mixture in the feet forms the base upon which the entire image stands. This suggests that the blending of religion and government is, unfortunately, a fundamental feature throughout history, and that the union of apostate Christianity with civil power, specifically, is the culmination—the climax—toward which history has been trending.[^1] Under the Babylonian, Medo-Persian, Grecian, and Roman empires, religion was deeply intertwined with the state, so much so that it became a civic duty rather than merely a personal matter. What is especially notable about the iron-clay mixture in the feet is that it represents a power professing to be God’s church—one that ought to know better, especially since Jesus Himself said that His kingdom is not of this world {% rf 'John 18:36' %}.
 
