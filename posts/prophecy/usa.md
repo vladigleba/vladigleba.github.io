@@ -206,7 +206,7 @@ The symbolic Euphrates River will dry up, meaning that popular support for the b
 > I am the vine, ye are the branches: He that abideth in me, and I in him, the same bringeth forth much fruit: for *without me ye can do nothing*.
 {% ct 'John 15:5' %}
 
-Jesus will help me identify and avoid deception if I test every teaching by the Bible {% rf 'Psalm 119:104' %}, follow truth as He reveals it to me, and stay close to Him on a daily basis through prayer and the reading of His Good Book—the Bible. The battle is His, and it has already been won on a hill called Calvary where Christ died to pay for my sins. The only question is have I given Him my heart and joined His winning side?
+Jesus will help me identify and avoid deception if I test every teaching by the Bible {% rf 'Psalm 119:104' %}, willingly follow the truth as He reveals it to me, and stay close to Him daily through prayer and the reading of His Word. While the battle may appear to be against Christ's followers, ultimately it is against Him. The battle is His, and it has already been won on a hill called Calvary. The only question is: have I given Him my heart and joined His winning side?
 
 ## What promise does the Bible give?
 
@@ -215,4 +215,4 @@ Jesus will help me identify and avoid deception if I test every teaching by the 
 > Because thou hast made the LORD, which is my refuge, even the most High, thy habitation; there shall no evil befall thee, neither shall any plague come nigh thy dwelling. *For he shall give his angels charge over thee, to keep thee in all thy ways*. They shall bear thee up in their hands, lest thou dash thy foot against a stone. Thou shalt tread upon the lion and adder: the young lion and the dragon shalt thou trample under feet. Because he hath set his love upon me, therefore will I deliver him: I will set him on high, because he hath known my name. *He shall call upon me, and I will answer him: I will be with him in trouble; I will deliver him*, and honour him. With long life will I satisfy him, and shew him my salvation.
 {% ct 'Psalm 91' %}
 
-God promises that His truth will be our shield from the arrows of deception, keeping us on the narrow path of righteousness that leads into His eternal kingdom.
+God promises that His truth will be our shield against the arrows of deception, keeping us on the narrow path of righteousness that leads to His eternal kingdom.
