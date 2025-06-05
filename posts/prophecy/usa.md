@@ -1,6 +1,6 @@
 ---
 title: USA in Bible Prophecy
-description: Will the nation that has become a beacon of freedom to the rest of the world continue to uphold liberty?
+description: Will the nation that has become a beacon of freedom to the world continue to uphold the cause of liberty?
 color: rgb(143,69,69)
 date: 2025-01-29
 featured: true

@@ -1,6 +1,6 @@
 ---
 title: Europe’s Future Revealed
-description: Discover a remarkable prophecy about the rise and fall of kingdoms. What does the future of Europe look like?
+description: Delve into a remarkable prophecy about the rise and fall of kingdoms. What does the future hold for Europe?
 color: rgb(101,166,141)
 date: 2025-01-10
 featured: true
@@ -134,9 +134,9 @@ When the Christian church started apostatizing, it sought to regain the power of
 
 ## What else is significant about the iron and clay mixture?
 
-The iron-clay mixture in the feet forms the base upon which the entire image stands. This suggests that the blending of religion and government is, unfortunately, a fundamental feature throughout history, and that the union of apostate Christianity with civil power, specifically, is the culmination—the climax—toward which history has been trending.[^2] Under the Babylonian, Medo-Persian, Grecian, and Roman empires, religion was deeply intertwined with the state, so much so that it became a civic duty rather than merely a personal matter. What is especially notable about the iron-clay mixture in the feet is that it represents a power professing to be God’s church—one that ought to know better, especially since Jesus Himself said that His kingdom is not of this world {% rf 'John 18:36' %}.
+The iron-clay mixture in the feet forms the base upon which the entire image stands. This suggests that the blending of religion and government is, unfortunately, a fundamental feature throughout history, and that the union of apostate Christianity with civil power, specifically, is the culmination toward which history has been trending.[^2] Under the Babylonian, Medo-Persian, Grecian, and Roman empires, religion was deeply intertwined with the state, so much so that it became a civic duty rather than merely a personal matter. What is especially notable about the iron-clay mixture in the feet is that it represents a power professing to be God’s church—one that ought to know better, especially since Jesus Himself said that His kingdom is not of this world {% rf 'John 18:36' %}.
 
-In the pagan empires mentioned above, the state was supreme over religion, using religion to support its authority. However, under the papal government symbolized by the feet, this pattern was reversed: religion was elevated above the state, using the state for its support. Thus, the mingling of religion and government in the pagan empires served as a precursor to the ultimate form of this union under the papacy.
+In the pagan empires mentioned above, the state was supreme over religion, using religion to support its authority. However, under the papal government symbolized by the feet, this pattern was reversed: religion was elevated above the state, using the *state* for its support. Thus, the mingling of religion and government in the pagan empires served as a precursor to the ultimate form of this union under the papacy.
 
 Although Constantine began blending church and state in 313 AD with the Edict of Milan,[^3] the church did not gain total supremacy over the state until 538 AD, when the last barbarian tribe opposing the papacy—the Ostrogoths—was overthrown. With this achieved, Justinian’s decree of 533 AD, which elevated the pope to headship over all churches and appointed him the corrector of all heresies, could be fully enforced.
 
@@ -144,16 +144,16 @@ It is remarkable that, instead of clean break between the metals, the iron found
 
 Under this new arrangement, the pope not only assumed the imperial title of the Caesars but also claimed the religious title *Vicar of Christ*, asserting himself as the successor of Peter and the head of all churches. Thus, the Roman Catholic Church is a union of church and state, symbolized by the iron and clay, with the state subservient to the church—a complete reversal of the pattern seen in the previous empires.
 
-[^2]: The United States was the first nation to break this trend because of its Constitution; however, even this would prove to be only temporary, as prophecy predicts a future union of church and state in the United States prior to the Second Coming of Christ (see [“USA in Bible Prophecy”](/posts/prophecy/usa.md)). This will not be the first occurrence either, as the Supreme Court’s landmark 1892 decision in *Church of the Holy Trinity v. United States* declared the United States a Christian nation. Moreover, that same year, Congress passed legislation to close the World’s Columbian Exposition in honor of Sunday observance, which was also endorsed by President Benjamin Harrison, who made government funding for the fair conditional on Sunday closure. As a result, only 101 years after the ratification of the First Amendment, which established the separation of church and state, all three branches of the United States government had effectively repudiated that principle.
+[^2]: The United States was the first nation to break this trend because of its Constitution; however, even this would prove to be only temporary, as prophecy predicts a future union of church and state in the United States prior to the Second Coming of Christ (see [“USA in Bible Prophecy”](/posts/prophecy/usa.md)). This will not be the first occurrence either, as the Supreme Court’s landmark 1892 decision in *Church of the Holy Trinity v. United States* declared the United States a Christian nation. Moreover, that same year, Congress passed legislation to close the World’s Columbian Exposition on Sundays in honor of Sunday observance, which was also approved by President Benjamin Harrison. As a result, only 101 years after the ratification of the First Amendment, which established the separation of church and state, all three branches of the United States government had repudiated it.
 
-[^3]: The Edict of Milan ordered that church property confiscated under the edicts of Diocletian be restored to Christians, which sparked controversy over which groups of believers qualified as Christians. A year after the Edict of Milan, Constantine called the Council of Arles to address the issue, and the council affirmed the Catholic Church as the representative of orthodox Christianity.
+[^3]: The Edict of Milan ordered that church property confiscated under the edicts of Diocletian be restored to Christians, which sparked controversy over which groups of believers qualified as Christians. A year after the Edict of Milan, Constantine convened the Council of Arles to address the issue, and the council affirmed the Catholic Church as the representative of orthodox Christianity.
 
 ## What is represented by the toes?
 
 > And the *ten horns* out of this kingdom are *ten kings* that shall arise: and another shall rise after them; and he shall be diverse from the first, and he shall subdue three kings.
 {% ct 'Daniel 7:24' %}
 
-The prophecy of Daniel 2 is expanded in Daniel 7: just as the image in Daniel 2 has ten toes, so the fourth beast in Daniel 7 has ten horns. Eighteen distinct tribes played a role in the destruction of the Western Roman Empire,[^4] but exaclty ten--no more, no less--remained when the Empire finally collapsed in AD 476, just as the Bible had predicted by the ten toes of Daniel 2 and the ten horns of Daniel 7. Three of the ten were destroyed (see ["Who Is the Antichrist?"](/posts/prophecy/antichrist.md#what-power-fits-these-characteristics)), but the seven remaining would give rise to the modern nations of Europe: Visigoths (Spain), Franks (France), Alemanni (Germany), Suevi (Portugal), Anglo-Saxons (England), Burgundians (Switzerland), Lombards (Italy), Heruli (destroyed in 493 AD), Vandals (destroyed in 534 AD), and Ostrogoths (destroyed in 538 AD).
+The prophecy of Daniel 2 is expanded in Daniel 7: just as the image in Daniel 2 has ten toes, so the fourth beast in Daniel 7 has ten horns. Eighteen distinct tribes played a role in the destruction of the Western Roman Empire,[^4] but exactly ten--no more, no less--remained when the Empire finally collapsed in AD 476, just as the Bible had predicted by the ten toes. Three of the ten were destroyed (see ["Who Is the Antichrist?"](/posts/prophecy/antichrist.md#what-power-fits-these-characteristics)), but the seven remaining would give rise to the modern nations of Europe: Visigoths (Spain), Franks (France), Alemanni (Germany), Suevi (Portugal), Anglo-Saxons (England), Burgundians (Switzerland), Lombards (Italy), Heruli (destroyed in 493 AD), Vandals (destroyed in 534 AD), and Ostrogoths (destroyed in 538 AD).
 
 [^4]: The eighteen tribes were the Alemanni, Alans, Angles, Burgundians, Franks, Gepids, Heruli, Huns, Jutes, Lombards, Ostrogoths, Rugians, Saxons, Sciri, Suevi, Thuringians, Vandals, and Visigoths.
 
@@ -165,17 +165,20 @@ Since the toes are the final portion of the image, the national divisions they s
 
 ## What happens next?
 
-> And in the days of these kings shall the God of heaven set up *a kingdom, which shall never be destroyed*: and the kingdom shall not be left to other people, but it shall break in pieces and consume all these kingdoms, and *it shall stand for ever*. Forasmuch as thou sawest that the stone was cut out of the mountain without hands, and that it brake in pieces the iron, the brass, the clay, the silver, and the gold; the great God hath made known to the king what shall come to pass hereafter: and the dream is certain, and the interpretation thereof sure.
+> And in the days of these kings shall the God of heaven set up *a kingdom, which shall never be destroyed*: and the kingdom shall not be left to other people, but *it shall break in pieces and consume all these kingdoms, and it shall stand for ever*. Forasmuch as thou sawest that the stone was cut out of the mountain without hands, and that it brake in pieces the iron, the brass, the clay, the silver, and the gold; the great God hath made known to the king what shall come to pass hereafter: and the dream is certain, and the interpretation thereof sure.
 {% ct 'Daniel 2:44-45' %}
 
-The stone cut without hands represents the kingdom of heaven, which will replace all earthly kingdoms at Christ’s return and establish His eternal reign. Since the stone strikes the image at its feet, this indicates that Jesus will return during the time of the divided nations.
+The stone cut without hands represents the kingdom of heaven, which will replace all earthly kingdoms at Christ’s return and establish His eternal reign. Since the stone strikes the image at its feet, this indicates that Jesus will return during the time of the divided nations. Some have misinterpeted Christ's kingdom in these passages to mean the earthly, millennial kingdom of His church, but this cannot be because the Bible teaches that the earth will be completely destroyed at His Second Coming (see ["1,000 Years of Peace"](/posts/prophecy/millennium.md#what-happens-to-planet-earth)).
 
-## Do the Psalms say anything about Christ’s kingdom?
+## Are there other Bible references to Christ’s kingdom?
 
 > Ask of Me, and *I will give You the nations for Your inheritance*, and the ends of the earth for Your possession. You shall break them with a rod of iron; *You shall dash them to pieces like a potter’s vessel*.
 {% ct 'Psalm 2:8-9, NKJV' %}
 
-David, under divine inspiration, makes a direct reference to {% rf 'Daniel 2:34' false %}—a prophecy that would not be written for several centuries!
+> Jesus saith unto them, Did ye never read in the scriptures, The stone which the builders rejected, the same is become the head of the corner: this is the Lord's doing, and it is marvellous in our eyes? Therefore say I unto you, The kingdom of God shall be taken from you, and given to a nation bringing forth the fruits thereof. And whosoever shall fall on this stone shall be broken: but *on whomsoever it shall fall, it will grind him to powder*.
+{% ct 'Matthew 21:42-44' %}
+
+In Psalm 2, David, under divine inspiration, foreshadowed the prophecy of {% rf 'Daniel 2:34' false %}--centuries before it was revealed. Jesus also compared Himself to the Stone that would grind to powder those upon whom it falls--a reference to those who reject His mercy. In contrast, those who fall on the Stone of their own accord will be broken; that is, when they encounter the reality of His love, they are humbled and choose to surrender their pride and self-righteousness to Him {% rf 'Matthew 5:5' %}.
 
 ## What hope does the Bible give us?
 
@@ -184,5 +187,8 @@ David, under divine inspiration, makes a direct reference to {% rf 'Daniel 2:34'
 
 > Nevertheless we, according to his promise, *look for new heavens and a new earth, wherein dwelleth righteousness*.
 {% ct '2 Peter 3:13' %}
+
+> And I saw *a new heaven and a new earth*: for the first heaven and the first earth were passed away; and there was no more sea. And I John saw the holy city, new Jerusalem, coming down from God out of heaven, prepared as a bride adorned for her husband. And I heard a great voice out of heaven saying, Behold, the tabernacle of God is with men, and he will dwell with them, and they shall be his people, and God himself shall be with them, and be their God. And *God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away*.
+{% ct 'Revelation 21:1-4' %}
 
 Our world of pain, suffering, and evil will not last forever; it will be replaced by Christ’s glorious new kingdom, in which righteousness dwells.
