@@ -75,6 +75,9 @@ The angels under Satan’s command whom he managed to deceive in heaven and pers
 
 ## What happens to planet Earth?
 
+> And the seventh angel poured out his vial into the air; and there came a great voice out of the temple of heaven, from the throne, saying, It is done. And there were voices, and thunders, and lightnings; and there was *a great earthquake*, such as was not since men were upon the earth, so mighty an earthquake, and so great. And the great city was divided into three parts, and the cities of the nations fell: and great Babylon came in remembrance before God, to give unto her the cup of the wine of the fierceness of his wrath. And *every island fled away, and the mountains were not found*. And there fell upon men *a great hail* out of heaven, every stone about the weight of a talent: and men blasphemed God because of the plague of the hail; for the plague thereof was exceeding great.
+{% ct 'Revelation 16:17-21' %}
+
 > I beheld the earth, and, lo, *it was without form, and void; and the heavens, and they had no light*. I beheld the mountains, and, lo, they trembled, and all the hills moved lightly. I beheld, and, lo, *there was no man, and all the birds of the heavens were fled*. I beheld, and, lo, the *fruitful place was a wilderness, and all the cities thereof were broken down* at the presence of the LORD, and by his fierce anger. For thus hath the LORD said, The *whole land shall be desolate*; yet will I not make a full end.
 {% ct 'Jeremiah 4:23-27' %}
 
