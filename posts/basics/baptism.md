@@ -80,7 +80,7 @@ Baptism to a Christian is what a wedding is to a marriage, and using the correct
 
 In addition to water baptism, every sincere Christian will also receive the baptism of the Holy Spirit because a full immersion in water is not sufficient without being fully immersed by the Holy Spirit. The good news is that God is more than willing to give His Spirit to anyone who asks {% rf 'Luke 11:13' %} and desires to be transformed in life and character by the Spirit who convicts of sin and bestows on us the righteousness of Jesus {% rf 'John 16:8; Titus 3:3-7' %}. Without the Holy Spirit we cannot change ourselves {% rf 'Jeremiah 13:23' %}.
 
-Evidence of receiving the baptism of the Spirit includes producing the fruits of the Spirit described in {% rf 'Galatians 5:22-23' false %} as well as receiving His gifts (see [“Holy Spirit”](/posts/basics/spirit.md#what-are-the-gifts-of-the-holy-spirit)), both of which enable us to be effective ambassadors for God {% rf '2 Corinthians 5:19-21' %}.
+Evidence of receiving the baptism of the Spirit includes producing the fruits of the Spirit described in {% rf 'Galatians 5:22-23' false %} as well as receiving [His gifts](/posts/basics/spirit.md#what-are-the-gifts-of-the-holy-spirit), both of which enable us to be effective ambassadors for God {% rf '2 Corinthians 5:19-21' %}.
 
 ## How do I know if I’m ready for baptism?
 
@@ -139,7 +139,7 @@ Ideally, baptism is a one-time experience, but there are exceptions. Rebaptism c
 > Then the *eleven disciples* went away into Galilee, into a mountain where Jesus had appointed them. And when they saw him, they worshipped him: but some doubted. And Jesus came and spake unto them, saying, All power is given unto me in heaven and in earth. *Go ye therefore, and teach all nations, baptizing them* in the name of the Father, and of the Son, and of the Holy Ghost: teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world.
 {% ct 'Matthew 28:16-20' %}
 
-Jesus gave the authority to baptize only to His disciples, whom He commissioned to faithfully teach all the truths He had commanded them. When the Holy Spirit leads a person to receive baptism, it’s crucial to seek a church that teaches all the aspects of truth that Jesus had taught (see [“God’s Remnant Church”](/posts/prophecy/remnant.md)).
+Jesus gave the authority to baptize only to His disciples, whom He commissioned to faithfully teach all the truths He had commanded them. Therefore, when the Holy Spirit leads someone to seek baptism, it is essential to [find a church](/posts/prophecy/remnant.md) that teaches all the aspects of truth that Jesus taught.
 
 ## Is it wise to put off baptism?
 
