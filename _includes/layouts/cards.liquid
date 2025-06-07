@@ -4,17 +4,8 @@
       {% if item.type == "series" %}
         <li class="series">
           <div><span class="tag">Series</span></div>
-          <a style="color: {{ item.color }}" href="{{ item.posts[0].url }}">
-            {{ item.title }}
-          </a>
+          <a style="color: {{ item.color }}" href="{{ item.posts[0].url }}">{{ item.title }}</a>
           <p>{{ item.category }} <span>•</span> {{ item.posts.size }} parts</p>
-          {% comment %} 
-          <p class="description">
-            {% for post in item.posts %}
-              <span>{{ post.data.title }} <span>•</span> {{ post.data.length }} min read</span>
-            {% endfor %}
-          </p> 
-          {% endcomment %}
         </li>
       {% else %}
         {% assign data = item.post.data %}
@@ -32,11 +23,8 @@
             <div><span class="tag">Featured</span></div>
           {% endif %}
 
-          <a style="color: {{ data.color }}" href="{{ item.post.url }}">
-            {{ data.title }}
-          </a>
+          <a style="color: {{ data.color }}" href="{{ item.post.url }}">{{ data.title }}</a>
           <p>{{ item.category }} <span>•</span> {{ data.length }} min read</p>
-
           {% if featured or latest %}
             <p class="description">{{ data.description }}</p>
           {% endif %}

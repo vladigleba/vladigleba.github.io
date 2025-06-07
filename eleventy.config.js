@@ -9,6 +9,17 @@ const seriesNames = require('./_data/series-names.json');
 
 module.exports = async (config) => {
   const md = markdownIt({ html: true, linkify: true }).use(markdownItFootnote);
+
+  // handle external links
+  md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
+    const href = tokens[idx].attrGet('href');
+    if (href && /^https?:\/\//.test(href)) {
+      tokens[idx].attrSet('target', '_blank');
+      tokens[idx].attrSet('rel', 'noopener noreferrer');
+    }
+    return self.renderToken(tokens, idx, options);
+  };
+
   config.setLibrary('md', md);
 
   // plugins
