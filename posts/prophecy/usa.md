@@ -110,7 +110,7 @@ In addition to its political influence, the papacy’s religious influence is li
 
 [^4]: *Irish Daily Mail*, September 23, 2015
 [^5]: *Catholic Herald*, January 27, 2014
-[^6]: Of course, there is nothing inherently wrong with unity. After all, Jesus teaches us to love our neighbors—even our enemies—and He prayed for unity among His disciples {% rf 'Matthew 22:39; 5:44; John 17:11' %}. Unity is indeed biblical, so long as it is not built on the compromise of truth as revealed in God’s Word. Unfortunately, this is often not the case (see [“How Can I Be Saved”](/posts/gospel/salvation.md#how-exactly-am-i-saved-from-my-sins)).
+[^6]: Of course, there is nothing inherently wrong with unity. After all, Jesus teaches us to love our neighbors—even our enemies—and He prayed for unity among His disciples {% rf 'Matthew 22:39; 5:44; John 17:11' %}. Unity is indeed biblical, so long as it is not built on the compromise of truth as revealed in God’s Word. Unfortunately, this is often [not the case](/posts/gospel/salvation.md#how-exactly-am-i-saved-from-my-sins).
 
 ## How influential is the United States today?
 
