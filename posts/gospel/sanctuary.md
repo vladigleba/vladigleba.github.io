@@ -65,7 +65,7 @@ The animal sacrifices pointed to the Lamb of God sacrificed in the “courtyard�
 
 Every piece of furniture points to Jesus and represents an aspect of His work on my behalf to save me from sin:
 - The altar of burnt offering represents the cross, while the animal represents Jesus, the ultimate sacrifice {% rf 'John 1:29' %}.
-- The laver points to Jesus as the Living Water cleansing me from sin and giving me a new birth through the Holy Spirit {% rf 'John 4:10; Titus 3:5' %}—of which baptism is a symbol ({% rf 'Romans 6:3-7' false %}; see [“Why Get Baptized?”](/posts/basics/baptism.md)).
+- The laver points to Jesus as the Living Water cleansing me from sin and giving me a new birth through the Holy Spirit {% rf 'John 4:10; Titus 3:5' %}—of which [baptism](/posts/basics/baptism.md) is a symbol {% rf 'Romans 6:3-7' %}.
 - The candlestick points to Jesus as the Light of the world {% rf 'John 1:9; 9:5' %}, while its oil represents the Holy Spirit {% rf 'Zechariah 4:1-6; Revelation 4:5' %}, with whom I am invited to be filled {% rf 'Luke 11:13' %}.
 - The showbread is a symbol of Jesus being the Bread of Life {% rf 'John 6:48, 51' %}, which I an invited to internalize by reading His Word—the Bible {% rf 'Matthew 4:4' %}.
 - The altar of incense represents the righteousness of Jesus mixed with the prayers of God’s people {% rf 'Revelation 5:8; 8:3' %}.
@@ -134,7 +134,7 @@ The Day of Atonement (Yom Kippur) was a yearly occurance and the only time the H
 
 Once a year, on the Day of Atonement, two goats were selected. The Lord’s goat was killed as a sacrifice for the sins of God’s people {% rf 'Leviticus 16:9' %}, and the blood was taken by the high priest into the Most Holy Place and sprinkled upon and before the mercy seat {% rf 'Leviticus 16:14' %}. This represented the blood of Jesus and the mercy of God available to anyone who chooses to confess and forsake sin. God accepted the sprinkled blood, and the confessed sins of the people were then transferred from the sanctuary to the high priest, who then transferred them to the second goat—the scapegoat, which represented Satan {% rf 'Leviticus 16:8' %}. In this manner the sanctuary was cleansed from the sins of the people transferred there throughout the year {% rf 'Leviticus 16:30' %}.
 
-The scapegoat was then led into the wilderness {% rf 'Leviticus 16:21-22' %} where it died, representing Satan’s punishment for the sins of the world because after Jesus’ Second Coming, Satan will be confined to the uninhabited, desolate wilderness of earth for 1,000 years ({% rf 'Revelation 20:1-3' false %}; see “1,000 Years of Peace”), and at the end of this period, he will perish in the lake of fire ({% rf 'Revelation 20:10' false %}; see “Is Hell Forever?”).
+The scapegoat was then led into the wilderness {% rf 'Leviticus 16:21-22' %} where it died, representing Satan’s punishment for the sins of the world because after Jesus’ Second Coming, Satan will be confined to the uninhabited, desolate wilderness of earth for [1,000 years](/posts/prophecy/millennium.md) {% rf 'Revelation 20:1-3' %}, and at the end of this period, he will perish in the [lake of fire](/posts/basics/hell.md) {% rf 'Revelation 20:10' %}.
 
 ## What did the Day of Atonement foreshadow?
 
