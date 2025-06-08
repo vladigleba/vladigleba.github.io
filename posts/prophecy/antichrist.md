@@ -32,7 +32,7 @@ The sea represents densely populated areas.
 > The *king of Babylon* hath heard the report of them, and his hands waxed feeble: anguish took hold of him, and pangs as of a woman in travail. Behold, *he shall come up like a lion* from the swelling of Jordan unto the habitation of the strong: but I will make them suddenly run away from her: and who is a chosen man, that I may appoint over her? for who is like me? and who will appoint me the time? and who is that shepherd that will stand before me?
 {% ct 'Jeremiah 50:43-44' %}
 
-The first beast coming up out of the sea was like a lion, which represented the kingdom of Babylon. In Daniel 2, the first kingdom represented by the head of gold was also Babylon (see [“Europe’s Future Revealed”](/posts/prophecy/europe.md)). The Bible operates on the principle of repetition where previously covered subjects are repeated and new details added, and so Daniel 7 covers the same kingdoms as Daniel 2, but adds more details to each.
+The first beast coming up out of the sea was like a lion, which represented the kingdom of Babylon. In [Daniel 2](/posts/prophecy/europe.md), the first kingdom represented by the head of gold was also Babylon. The Bible operates on the principle of repetition where previously covered subjects are repeated and new details added, and so Daniel 7 covers the same kingdoms as Daniel 2, but adds more details to each.
 
 ## What was the second beast?
 
@@ -56,7 +56,7 @@ The Medo-Persian empire was then conquered by Greece, which is symbolized by a l
 > And the *ten horns out of this kingdom are ten kings that shall arise*: and another shall rise after them; and he shall be diverse from the first, and he shall subdue three kings.
 {% ct 'Daniel 7:24' %}
 
-Greece was eventually conquered by the Roman Empire, which is symbolized by the fourth beast with 10 horns. The 10 horns represent the 10 kingdoms into which Rome was eventually split by the barbarian tribes: Visigoths (Spain), Anglo-Saxons (England), Franks (France), Alemani (Germany), Burgundians (Switzerland), Lombards (Italy), Suevi (Portugal), Heruli, Ostrogoths, and Vandals. These are the same kingdoms that were represented by the 10 toes of the image in {% rf 'Daniel 2:41-44' false %} (see [“Europe’s Future Revealed”](/posts/prophecy/europe.md#what-is-represented-by-the-toes)).
+Greece was eventually conquered by the Roman Empire, which is symbolized by the fourth beast with 10 horns. The 10 horns represent the 10 kingdoms into which Rome was eventually split by the barbarian tribes: Visigoths (Spain), Anglo-Saxons (England), Franks (France), Alemani (Germany), Burgundians (Switzerland), Lombards (Italy), Suevi (Portugal), Heruli, Ostrogoths, and Vandals. These are the same kingdoms that were represented by the [ten toes](/posts/prophecy/europe.md#what-is-represented-by-the-toes) of the image in {% rf 'Daniel 2:41-44' false %}.
 
 ## What happens next?
 

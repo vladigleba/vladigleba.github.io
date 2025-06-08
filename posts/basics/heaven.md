@@ -10,7 +10,7 @@ date: 2025-01-26
 > Let not your heart be troubled: ye believe in God, believe also in me. *In my Father’s house are many mansions*: if it were not so, I would have told you. *I go to prepare a place for you*. And if I go and prepare a place for you, *I will come again, and receive you unto myself; that where I am, there ye may be also*.
 {% ct 'John 14:1-3' %}
 
-After His resurrection, Jesus returned to heaven to prepare it for His children’s arrival, and a day will come when He will return for them in order to bring them to heaven and dwell with Him for all eternity (see [“Manner of Christ’s Coming”](/posts/prophecy/manner.md)).
+After His resurrection, Jesus returned to heaven to prepare it for His children’s arrival, and a day will come when [He will return](/posts/prophecy/manner.md) for them in order to bring them to heaven and dwell with Him for all eternity.
 
 ## What insight does Peter give?
 
@@ -113,7 +113,7 @@ Vast oceans and deserts make up a large portion of the earth’s surface today, 
 > And the building of the *wall of it was of jasper*: and the *city was pure gold*, like unto clear glass. And the *foundations of the wall of the city were garnished with all manner of precious stones*. The first foundation was jasper; the second, sapphire; the third, a chalcedony; the fourth, an emerald; the fifth, sardonyx; the sixth, sardius; the seventh, chrysolite; the eighth, beryl; the ninth, a topaz; the tenth, a chrysoprasus; the eleventh, a jacinth; the twelfth, an amethyst. And the twelve gates were twelve pearls; *every several gate was of one pearl*: and the *street of the city was pure gold*, as it were transparent glass.
 {% ct 'Revelation 21:18-21' %}
 
-The city is arranged in a square with its width, length, and height equal. The distance around it is 12,000 furlongs or 1,500 miles (1 furlong is 1/8 of a mile), which means it’s 375 miles long each side! The streets are of pure gold, and the walls are 144 cubits or 216 feet of solid jasper—nearly 20 stories high—with 12 gates total, and each gate is of a single pearl. The city also has 12 foundations with each one of a different precious stone and color, so from a distance it will look like it’s resting upon a rainbow! When the New Jerusalem descends from heaven at the end of the 1,000 years (see [“1,000 Years of Peace”](/posts/prophecy/millennium.md)), it will rest on a great plain created for it by Jesus after He flattens the Mount of Olives {% rf 'Zechariah 14:4-5' %}.
+The city is arranged in a square with its width, length, and height equal. The distance around it is 12,000 furlongs or 1,500 miles (1 furlong is 1/8 of a mile), which means it’s 375 miles long each side! The streets are of pure gold, and the walls are 144 cubits or 216 feet of solid jasper—nearly 20 stories high—with 12 gates total, and each gate is of a single pearl. The city also has 12 foundations with each one of a different precious stone and color, so from a distance it will look like it’s resting upon a rainbow! When the New Jerusalem descends from heaven at the end of the [1,000 years](/posts/prophecy/millennium.md), it will rest on a great plain created for it by Jesus after He flattens the Mount of Olives {% rf 'Zechariah 14:4-5' %}.
 
 ## What about the food and water supply?
 

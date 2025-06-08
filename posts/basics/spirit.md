@@ -126,14 +126,14 @@ Just like the Holy Spirit participated in the work of creation on that first wee
 > Then Peter said unto them, Repent, and be baptized every one of you in the name of Jesus Christ for the remission of sins, *and ye shall receive the gift of the Holy Ghost*.
 {% ct 'Acts 2:38' %}
 
-Jesus’ promise to send the Holy Spirit was fulfilled on the Day of Pentecost when the disciples were filled, or baptized, with the Spirit, receiving various supernatural gifts that enabled them to proclaim the gospel with power. Peter made it clear that God’s genuine followers today are also prepared for service through the same outpouring of the Holy Spirit {% rf 'Ephesians 4:11-13' %} when they repent and are baptized (see [“Why Does Baptism Matter?”](/posts/basics/baptism.md)). And just like the outpouring during Pentecost, there will be another outpouring of the Spirit in the last days, just before Christ’s return, that will enable God’s followers to preach the gospel with power and give the final warning to the world {% rf 'Acts 3:19-21; Joel 2:28-29' %}.
+Jesus’ promise to send the Holy Spirit was fulfilled on the Day of Pentecost when the disciples were filled, or baptized, with the Spirit, receiving various supernatural gifts that enabled them to proclaim the gospel with power. Peter made it clear that God’s genuine followers today are also prepared for service through the same outpouring of the Holy Spirit {% rf 'Ephesians 4:11-13' %} when they repent and [are baptized](/posts/basics/baptism.md). And just like the outpouring during Pentecost, there will be another outpouring of the Spirit in the last days, just before Christ’s return, that will enable God’s followers to preach the gospel with power and give the final warning to the world {% rf 'Acts 3:19-21; Joel 2:28-29' %}.
 
 ## Will the Spirit participate in the resurrection?
 
 > But if the Spirit of him that raised up Jesus from the dead dwell in you, *he that raised up Christ from the dead shall also quicken your mortal bodies by his Spirit that dwelleth in you*.
 {% ct 'Romans 8:11' %}
 
-The Holy Spirit will participate in the resurrection of God’s faithful followers, just like He participated in the resurrection of Christ. If we are Christ’s, there is no need to fear death because Jesus, who conquered death, will resurrect His people through the power of the Holy Spirit at His second coming (see [“Manner of Christ’s Coming”](/posts/prophecy/manner.md)).
+The Holy Spirit will participate in the resurrection of God’s faithful followers, just like He participated in the resurrection of Christ. If we are Christ’s, there is no need to fear death because Jesus, who conquered death, will resurrect His people through the power of the Holy Spirit at His [second coming](/posts/prophecy/manner.md).
 
 ## What are the gifts of the Holy Spirit?
 

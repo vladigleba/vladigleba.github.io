@@ -117,7 +117,7 @@ The Greek word for “for ever” in {% rf 'Revelation 20:10' false %} is “aio
 > And they went up on the breadth of the earth, and compassed the camp of the saints about, and the beloved city: and *fire came down from God out of heaven, and devoured them*.
 {% ct 'Revelation 20:9' %}
 
-The Bible says the fire comes down on earth at the end of the 1,000 year period when the wicked are raised from the dead and Satan deceives them, for the last time, to make an attempt to capture the New Jerusalem (see [“1,000 Years of Peace”](/posts/prophecy/millennium.md)). This is referred to as “the end of the world” in other Bible passages because it is God’s final act of cleansing the world of sin. This also means there is no one burning in hell now. The Bible makes it clear that the dead are in their graves waiting for the resurrection: the saved are waiting for the first resurrection at the second coming of Christ (see [“Are the Dead Really Dead?”](/posts/basics/death.md)), while the lost are waiting for the second resurrection at the end of the 1,000 years.
+The Bible says the fire comes down on earth at the end of the [1,000 year period](/posts/prophecy/millennium.md) when the wicked are raised from the dead and Satan deceives them, for the last time, to make an attempt to capture the New Jerusalem. This is referred to as “the end of the world” in other Bible passages because it is God’s final act of cleansing the world of sin. This also means there is no one burning in hell now. The Bible makes it clear that the dead are [in their graves](/posts/basics/death.md) waiting for the resurrection: the saved are waiting for the first resurrection at the second coming of Christ, while the lost are waiting for the second resurrection at the end of the 1,000 years.
 
 ## Who else will be destroyed?
 
@@ -127,7 +127,7 @@ The Bible says the fire comes down on earth at the end of the 1,000 year period 
 > Thine heart was lifted up because of thy beauty, thou hast corrupted thy wisdom by reason of thy brightness: I will cast thee to the ground, I will lay thee before kings, that they may behold thee. Thou hast defiled thy sanctuaries by the multitude of thine iniquities, by the iniquity of thy traffick; therefore *will I bring forth a fire from the midst of thee, it shall devour thee, and I will bring thee to ashes* upon the earth in the sight of all them that behold thee.
 {% ct 'Ezekiel 28:17-18' %}
 
-The fire cleanses the earth from all traces of sin, and so the fallen angels, including Satan, will also be destroyed by it, turning them to ashes, because the entire rebellion against God started with Satan and the angels he managed to deceive (see [“Origin of Evil”](/posts/gospel/evil.md)).
+The fire cleanses the earth from all traces of sin, and so the fallen angels, including Satan, will also be destroyed by it, turning them to ashes, because the entire rebellion against God [started with Satan](/posts/gospel/evil.md) and the angels he managed to deceive.
 
 ## Is everyone punished equally?
 

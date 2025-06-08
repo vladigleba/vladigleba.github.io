@@ -42,7 +42,7 @@ Satan rebelled against God’s law in heaven because he didn’t want to be rest
 > But we are all as an unclean thing, and *all our righteousnesses are as filthy rags*; and we all do fade as a leaf; and our iniquities, like the wind, have taken us away.
 {% ct 'Isaiah 64:6' %}
 
-When James is talking about the law, he is referring to the Ten Commandments, and he actually says it’s not enough to keep some or even most of them. Breaking even one is breaking them all. Consequently, there is no human being who hasn’t been condemned by the law, which is the standard during the judgment (see [“Is There a Judgment?”](/posts/prophecy/judgment.md)).
+When James is talking about the law, he is referring to the Ten Commandments, and he actually says it’s not enough to keep some or even most of them. Breaking even one is breaking them all. Consequently, there is no human being who hasn’t been condemned by the law, which is the standard during [the judgment](/posts/prophecy/judgment.md).
 
 ## Does God leave me in my condemned state?
 

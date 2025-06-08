@@ -10,7 +10,7 @@ series: sunday
 > Sanctify them through thy truth: *thy word is truth*.
 {% ct 'John 17:17' %}
 
-Truth is revealed in the Bible, the Word of God (see [“Can I Trust the Bible?”](/posts/basics/bible.md)).
+Truth is revealed in the Bible, the [Word of God](/posts/basics/bible.md).
 
 ## What advice does the Bible give regarding truth?
 
@@ -45,7 +45,7 @@ God wrote the Ten Commandments Himself on tablets of stone to illustrate their u
 > And *it is easier for heaven and earth to pass*, than one tittle of the law to fail.
 {% ct 'Luke 16:17' %}
 
-Because Jesus cannot change, His law cannot change either since it is a reflection of His character (see [“God’s Law of Love”](/posts/gospel/law.md)).
+Because Jesus cannot change, His law cannot change either since it is a [reflection of His character](/posts/gospel/law.md).
 
 ## What’s part of the law? When was it established?
 
@@ -86,9 +86,9 @@ Daniel prophesied a power would arise that would magnify itself even against God
 > And he shall *speak great words against the most High*, and shall *wear out the saints* of the most High, and *think to change times and laws*: and they shall be given into his hand until a time and times and the dividing of time.
 {% ct 'Daniel 7:25' %}
 
-This is an echo of Paul’s warning about men arising “speaking perverse things.” Again, here’s a power that would challenge God’s authority, persecute His followers, and change times and laws (see [“Who Is the Antichrist?”](/posts/prophecy/antichrist.md)). There is only one commandment that is both a time and a law: the fourth one. 
+This is an echo of Paul’s warning about men arising “speaking perverse things.” Again, here’s [a power](/posts/prophecy/antichrist.md) that would challenge God’s authority, persecute His followers, and change times and laws. There is only one commandment that is both a time and a law: the fourth one. 
 
-The first seeds for its change were planted during Constantine’s conversion to Christianity in 312 A.D. when he passed a law declaring Sunday, which was the pagan day of sun worship, as the day of rest across the Roman Empire. That seed took root in 363 A.D. when the Council of Laodicea urged Christians to keep Sunday as their rest day, while prohibiting them from resting on Saturday, the seventh day Sabbath. Thus, the fourth commandment of God was changed—from honoring the seventh-day Sabbath established at creation to honoring Sunday—and the rest is history (see [“The Mark of the Beast”](/posts/prophecy/mark.md)).
+The first seeds for its change were planted during Constantine’s conversion to Christianity in 312 A.D. when he passed a law declaring Sunday, which was the pagan day of sun worship, as the day of rest across the Roman Empire. That seed took root in 363 A.D. when the Council of Laodicea urged Christians to keep Sunday as their rest day, while prohibiting them from resting on Saturday, the seventh day Sabbath. Thus, the fourth commandment of God was changed—from honoring the seventh-day Sabbath established at creation to [honoring Sunday](/posts/prophecy/mark.md)—and the rest is history.
 
 ## Did Jesus warn about this?
 
@@ -120,4 +120,4 @@ In the last days there will be a sealing of God’s people in their foreheads, a
 > Saying with a loud voice, Fear God, and give glory to him; for the hour of his judgment is come: and *worship him that made heaven, and earth, and the sea, and the fountains of waters*. … Here is the patience of the saints: here are *they that keep the commandments of God, and the faith of Jesus*.
 {% ct 'Revelation 14:7, 12' %}
 
-There will be a call in the last days to worship God, the Creator of the universe, which implies there will be another power vying to be worshiped as well. This call is a reference to the last part of the fourth commandment where keeping the Sabbath is identified as a sign and an acknowledgment that God is the Creator of all. Could the worship of God by keeping His seventh day Sabbath constitute the seal of God in the last days? Verse 12 leaves no room for doubt when it says the saints will be keeping the commandments of God and the faith of Jesus, who Himself kept the commandments, including the fourth (see [“God’s Rest Day”](/posts/basics/sabbath.md#did-jesus-keep-the-sabbath)). May we be found faithful in our stand for Jesus.
+There will be a call in the last days to worship God, the Creator of the universe, which implies there will be another power vying to be worshiped as well. This call is a reference to the last part of the fourth commandment where keeping the Sabbath is identified as a sign and an acknowledgment that God is the Creator of all. Could the worship of God by keeping His seventh day Sabbath constitute the seal of God in the last days? Verse 12 leaves no room for doubt when it says the saints will be keeping the commandments of God and the faith of Jesus, who Himself kept the commandments, [including the fourth](/posts/basics/sabbath.md#did-jesus-keep-the-sabbath). May we be found faithful in our stand for Jesus.

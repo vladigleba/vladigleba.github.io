@@ -23,7 +23,7 @@ The beautiful thing about God’s character is that He not only knows the future
 > And it was given unto him to make war with the saints, and to overcome them: and power was given him over all kindreds, and tongues, and nations. And all that dwell upon the earth shall worship him, whose names are not written in the book of life of the Lamb slain from the foundation of the world. If any man have an ear, let him hear. He that leadeth into captivity shall go into captivity: he that killeth with the sword must be killed with the sword. Here is the patience and the faith of the saints.
 {% ct 'Revelation 13:1-10' %}
 
-As we learned in a previous study, the beast that rose from the sea represents the Roman papacy, which held influence and power over the world for 42 months. The papacy received a deadly wound at the end of this period in 1798, when Pope Pius VI was taken captive by Napoleon Bonaparte’s general, Louis-Alexandre Berthier (see [“Mark of the Beast”](/posts/prophecy/mark.md)).
+As we learned in a previous study, the beast that rose from the sea represents the Roman papacy, which held influence and power over the world for 42 months. The papacy received a [deadly wound](/posts/prophecy/mark.md) at the end of this period in 1798, when Pope Pius VI was taken captive by Napoleon Bonaparte’s general, Louis-Alexandre Berthier.
 
 ## What is the second power symbolized in Revelation 13?
 
@@ -74,7 +74,7 @@ There are a couple of additional details worth noting. The deceptive miracle-wor
 > And the dragon was wroth with the woman, and *went to make war with the remnant of her seed, which keep the commandments of God, and have the testimony of Jesus Christ*.
 {% ct 'Revelation 12:17' %}
 
-Worshiping and obeying the beast will result in receiving the mark of the beast through the keeping of Sunday as a false holy day (see [“Mark of the Beast”](/posts/prophecy/mark.md)), as opposed to worshiping and obeying Jesus and receiving His mark by keeping the seventh-day Sabbath. Those who choose to worship the beast will have chosen to obey the word of a human being rather than the word of their Creator, Jesus Christ. The papacy testifies to this itself: “The church changed Sabbath to Sunday and all the world bows down and worships upon that day in silent obedience to the mandates of the Catholic Church.”[^2]
+Worshiping and obeying the beast will result in receiving the [mark of the beast](/posts/prophecy/mark.md) through the keeping of Sunday as a false holy day, as opposed to worshiping and obeying Jesus and receiving His mark by keeping the seventh-day Sabbath. Those who choose to worship the beast will have chosen to obey the word of a human being rather than the word of their Creator, Jesus Christ. The papacy testifies to this itself: “The church changed Sabbath to Sunday and all the world bows down and worships upon that day in silent obedience to the mandates of the Catholic Church.”[^2]
 
 As the leader of the international movement to enforce allegiance to the papacy, the United States will proceed to punish those who refuse to comply with its Sunday legislation by denying them the ability to buy or sell. Eventually, it will impose a death sentence, which will become global. Despite all this, the Bible promises that God will protect His people, and their food and water will be sure {% rf 'Isaiah 33:16; Psalm 34:7' %}.
 
@@ -108,8 +108,8 @@ The papacy has emerged as the most powerful religio-political entity in the worl
 
 In addition to its political influence, the papacy’s religious influence is likewise unparalleled, spanning  across the religious spectrum. For instance, in 2014, Francis presided over an ecumenical worship service attended by representatives from the Orthodox, Anglican, Lutheran, Methodist, and other Christian traditions, during which he called for greater Christian unity.[^5] Throughout his pontificate, Francis has consistently sought to build bridges with those outside the Christian faith as well. Such efforts have elevated the papacy’s global influence—an influence that, according to Bible prophecy, will continue to grow in the days to come.[^6]
 
-[^4]: *Irish Daily Mail*, September 23, 2015
-[^5]: *Catholic Herald*, January 27, 2014
+[^4]: *Irish Daily Mail*, September 23, 2015.
+[^5]: *Catholic Herald*, January 27, 2014.
 [^6]: Of course, there is nothing inherently wrong with unity. After all, Jesus teaches us to love our neighbors—even our enemies—and He prayed for unity among His disciples {% rf 'Matthew 22:39; 5:44; John 17:11' %}. Unity is indeed biblical, so long as it is not built on the compromise of truth as revealed in God’s Word. Unfortunately, this is often [not the case](/posts/gospel/salvation.md#how-exactly-am-i-saved-from-my-sins).
 
 ## How influential is the United States today?
@@ -176,7 +176,7 @@ As Satan works to deceive the world into compromising with error by casting asid
 
 The false prophet works miracles to deceive people into receiving the beast’s mark and worshiping his image. This miracle-working carries a spiritual connotation, as does the term *false prophet*. The lamb-like beast of {% rf 'Revelation 13:11-18' false %} (representing the United States) also performs miracles {% rf 'Revelation 13:13-14' %}, and thus appears spiritual and trustworthy. In reality, however, it sets itself against God’s commandments by lending its power and influence to promote the Sunday-keeping movement on behalf of the papacy. The false prophet, therefore, represents the religious aspect—apostate Protestantism—of the lamb-like beast.
 
-It is called the false prophet because of Protestantism’s acceptance and propagation of the Preterist and Futurist interpretations of prophecy, both of which are false. The Protestant Reformers—such as John Wycliffe, John Huss, Martin Luther, William Tyndale, Nicholas Ridley, Thomas Cranmer, and John Knox—all held to the Historicist view, which identifies the Antichrist as the papacy (see [“Who Is the Antichrist?”](/posts/prophecy/antichrist.md)); however, both Preterism and Futurism divert attention *away* from the papacy.[^11] Sadly, Protestantism has rejected the view of its founders and has thus become the false prophet.
+It is called the false prophet because of Protestantism’s acceptance and propagation of the Preterist and Futurist interpretations of prophecy, both of which are false. The Protestant Reformers—such as John Wycliffe, John Huss, Martin Luther, William Tyndale, Nicholas Ridley, Thomas Cranmer, and John Knox—all held to the Historicist view, which identifies the [Antichrist](/posts/prophecy/antichrist.md) as the papacy; however, both Preterism and Futurism divert attention *away* from the papacy.[^11] Sadly, Protestantism has rejected the view of its founders and has thus become the false prophet.
 
 [^11]: Incidentally, both interpretations were introduced by Roman Catholic Jesuits: Preterism by Luis de Alcázar and Futurism by Francisco Ribera. Preterism holds that the prophecies of Revelation were fulfilled in the past, prior to the rise of the papacy, while Futurism teaches that the Antichrist—understood as a future *individual*—will appear after the literal rebuilding of the Third Temple in Jerusalem. Futurism is especially popular in conservative religious circles in Washington, D.C., and appears to be influencing, at least in part, national policy regarding Israel.
 

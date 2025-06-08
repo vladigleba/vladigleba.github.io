@@ -40,7 +40,7 @@ It may be hard for our finite minds to comprehend, but God is infinite; He alway
 > Surely the Lord GOD will do nothing, but *he revealeth his secret unto his servants the prophets*.
 {% ct 'Amos 3:7' %}
 
-Not only does God know the future, but He also likes to reveal it ahead of time to strengthen our faith in Him and prepare us for what is to come (see [“Europe’s Future Revealed”](/posts/prophecy/europe.md)).
+Not only does God know the future, but He also likes to [reveal it](/posts/prophecy/europe.md) ahead of time to strengthen our faith in Him and prepare us for what is to come.
 
 ## Are there any other gods?
 
@@ -53,7 +53,7 @@ Not only does God know the future, but He also likes to reveal it ahead of time 
 > “*To whom will you compare me? Or who is my equal*?” says the Holy One. Lift up your eyes and look to the heavens: Who created all these? He who brings out the starry host one by one and calls forth each of them by name. Because of his great power and mighty strength, not one of them is missing.
 {% ct 'Isaiah 40:25-26, NIV' %}
 
-Satan wants to be like God, but he too is a created being (see [“Origin of Evil”](/posts/gospel/evil.md)).
+Satan wants to [be like God](/posts/gospel/evil.md), but he too is a created being.
 
 ## How did God create the universe?
 

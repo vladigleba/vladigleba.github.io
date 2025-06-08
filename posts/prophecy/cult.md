@@ -63,7 +63,7 @@ Revelation 6 outlines the history of God’s church with four symbolic horses. I
 > Beloved, when I gave all diligence to write unto you of the common salvation, it was needful for me to write unto you, and exhort you that *ye should earnestly contend for the faith which was once delivered unto the saints*. For there are certain men crept in unawares, who were before of old ordained to this condemnation, ungodly men, turning the grace of our God into lasciviousness, and denying the only Lord God, and our Lord Jesus Christ.
 {% ct 'Jude 1:3-4' %}
 
-Daniel predicted a time when truth would be cast down, and Paul wrote about a falling away that would occur before the second coming of Christ, marked by a religious system rising up that would oppose and exalt itself above God Himself (see [“Who Is the Antichrist?”](/posts/prophecy/antichrist.md)). This was also echoed by Jude, who encouraged his readers to contend earnestly for the unadulterated faith of the apostolic church. God used the Reformation movement to restore a lot of the truths that were cast to the ground, but this warfare against biblical truth has not ceased. The words of Paul and Jude are as relevant today as they were during the Dark Ages.
+Daniel predicted a time when truth would be cast down, and Paul wrote about a falling away that would occur before the second coming of Christ, marked by a religious system rising up that would [oppose and exalt](/posts/prophecy/antichrist.md) itself above God Himself. This was also echoed by Jude, who encouraged his readers to contend earnestly for the unadulterated faith of the apostolic church. God used the Reformation movement to restore a lot of the truths that were cast to the ground, but this warfare against biblical truth has not ceased. The words of Paul and Jude are as relevant today as they were during the Dark Ages.
 
 ## What did Jesus warn about in the last days?
 
@@ -130,7 +130,7 @@ The Bible is the great Light {% rf 'Psalm 119:105' %}, which we have the privile
 > Here is the patience of the saints: here are they that *keep the commandments of God, and the faith of Jesus*.
 {% ct 'Revelation 14:12' %}
 
-God has always had a people who cling to biblical truth, refusing to compromise with man-made traditions, and this will be the case in the last days too, when God will have loyal followers who keep the faith and the testimony of Jesus, including His Ten Commandments (see [“God’s Remnant Church”](/posts/prophecy/remnant.md)).
+God has always had a people who cling to biblical truth, refusing to compromise with man-made traditions, and this will be the case in the last days too, when God will have [loyal followers](/posts/prophecy/remnant.md) who keep the faith and the testimony of Jesus, including His Ten Commandments.
 
 ## Will the truth ever be conquered by darkness?
 

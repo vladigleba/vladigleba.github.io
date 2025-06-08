@@ -97,7 +97,7 @@ The earthquake and hailstorm at Jesus’ second coming will return the earth to 
 > And after these things I heard a great voice of much people in heaven, saying, Alleluia; Salvation, and glory, and honour, and power, unto the Lord our God: *for true and righteous are his judgments*.
 {% ct 'Revelation 19:1-2' %}
 
-The saved from all ages that are in heaven during the 1,000 years will be part of the next phase of the judgment during which they will have all their questions answered about God’s dealings with sin and sinners. They will not be determining who is saved or lost because God will have already determined that (see [“Is There a Judgment?”](/posts/prophecy/judgment.md)), but the cases of all who are lost, including Satan and his angels, will be reviewed, and the fairness of God’s judgment will be confirmed.
+The saved from all ages that are in heaven during the 1,000 years will be part of the next phase of the judgment during which they will have all their questions answered about God’s dealings with sin and sinners. They will not be determining who is saved or lost because God will have [already determined](/posts/prophecy/judgment.md) that, but the cases of all who are lost, including Satan and his angels, will be reviewed, and the fairness of God’s judgment will be confirmed.
 
 ## What happens at the end of the 1,000 years?
 

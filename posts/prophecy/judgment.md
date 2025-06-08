@@ -13,7 +13,7 @@ series: judgment
 > And, behold, I come quickly; and my reward is with me, *to give every man according as his work shall be*.
 {% ct 'Revelation 22:12' %}
 
-In {% rf 'Acts 24:25' false %} Paul talks about a coming judgment, meaning it had not happened yet. In Revelation 14, on the other hand, there are three angels proclaiming a message to the people of the world in the last days, and the first angel’s message is that the judgment has begun. So the judgment begins in the last days, which we are living in (see [“2,300 Day Prophecy”](/posts/prophecy/investigative.md)). When Jesus comes back to earth He’s bringing a reward with Him, which means the judgment has already taken place to decide who will be saved and what their reward will be.
+In {% rf 'Acts 24:25' false %} Paul talks about a coming judgment, meaning it had not happened yet. In Revelation 14, on the other hand, there are three angels proclaiming a message to the people of the world in the last days, and the first angel’s message is that the judgment has begun. So the judgment [begins in the last days](/posts/prophecy/investigative.md), which we are living in. When Jesus comes back to earth He’s bringing a reward with Him, which means the judgment has already taken place to decide who will be saved and what their reward will be.
 
 ## Who will be judged?
 

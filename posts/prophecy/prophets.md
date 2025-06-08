@@ -42,7 +42,7 @@ The Bible specifically names the following types of false prophets:
 - Spiritist (claims to talk to the dead)
 - Witch (mentioned in KJV, a psychic)
 
-The Bible clearly teaches that the dead cannot be contacted, and any supposed communication with the dead is an abomination to God because such communication is actually with evil spirits masquerading as the dead (see [“Are the Dead Really Dead?”](/posts/basics/death.md)).
+The Bible clearly teaches that the dead [cannot be contacted](/posts/basics/death.md), and any supposed communication with the dead is an abomination to God because such communication is actually with evil spirits masquerading as the dead).
 
 ## What else does the Bible say about prophets?
 
@@ -59,7 +59,7 @@ While a prophet can at times edify the public, Paul tells us that prophecy is on
 > Her gates are sunk into the ground; he hath destroyed and broken her bars: her king and her princes are among the Gentiles: *the law is no more; her prophets also find no vision from the LORD*.
 {% ct 'Lamentations 2:9' %}
 
-When God’s people knowingly rebel against His holy law, He withdraws the prophetic gift because the gifts of the Spirit are for those who genuinely desire to live a life of complete surrender to Him—a life that’s in harmony with and in obedience to His teachings, summarized in His law {% rf 'Matthew 22:36-40' %}. This principle explains why God sent a prophet once His remnant church emerged in the 1800s that kept, and still keeps, all of His commandments, including the seventh-day Sabbath observed by Jesus (see [“God’s Rest Day”](/posts/basics/sabbath.md)). God also knows exactly when His people are in need of warning, counsel, and guidance, and when that time comes, He lovingly sends them a prophet to strengthen them {% rf 'Proverbs 29:18' %}.
+When God’s people knowingly rebel against His holy law, He withdraws the prophetic gift because the gifts of the Spirit are for those who genuinely desire to live a life of complete surrender to Him—a life that’s in harmony with and in obedience to His teachings, summarized in His law {% rf 'Matthew 22:36-40' %}. This principle explains why God sent a prophet once His remnant church emerged in the 1800s that kept, and still keeps, all of His commandments, including the [seventh-day Sabbath](/posts/basics/sabbath.md) observed by Jesus. God also knows exactly when His people are in need of warning, counsel, and guidance, and when that time comes, He lovingly sends them a prophet to strengthen them {% rf 'Proverbs 29:18' %}.
 
 ## Who empowers prophets to speak on God’s behalf?
 
@@ -86,7 +86,7 @@ This prophecy was partially fulfilled when the Holy Spirit was poured out during
 > And I fell at his feet to worship him. And he said unto me, See thou do it not: I am thy fellowservant, and of thy brethren that have the testimony of Jesus: worship God: for *the testimony of Jesus is the spirit of prophecy*.
 {% ct 'Revelation 19:10' %}
 
-The remnant of Revelation 12 is God’s church in the last days (see [“God’s Remnant Church”](/posts/prophecy/remnant.md)), and it has two characteristics: keeps God’s commandments and has the testimony of Jesus Christ, which, according to Revelation 19, is the spirit of prophecy. This is another clue that the gift of prophecy will be evident in the last days prior to Jesus’ return; in fact, it’s one of the identifying marks of the remnant church. Paul confirms this in {% rf '1 Corinthians 1:4-7' false %} where he says that the church waiting for His return will not lack any of the gifts of the Spirit. Just as God sent John the Baptist to prepare the world for Jesus’ first coming, He will send the gift of prophecy to His last-day commandment-keeping church to prepare the world (and itself) for Jesus’ second coming.
+The [remnant](/posts/prophecy/remnant.md) of Revelation 12 is God’s church in the last days, and it has two characteristics: keeps God’s commandments and has the testimony of Jesus Christ, which, according to Revelation 19, is the spirit of prophecy. This is another clue that the gift of prophecy will be evident in the last days prior to Jesus’ return; in fact, it’s one of the identifying marks of the remnant church. Paul confirms this in {% rf '1 Corinthians 1:4-7' false %} where he says that the church waiting for His return will not lack any of the gifts of the Spirit. Just as God sent John the Baptist to prepare the world for Jesus’ first coming, He will send the gift of prophecy to His last-day commandment-keeping church to prepare the world (and itself) for Jesus’ second coming.
 
 Incidentally, since the testimony of Jesus is the spirit of prophecy then the words of His prophets are special messages from Jesus to us. Bringing reproach upon His prophets is the same as bringing reproach upon Jesus because He is the One who sends them.
 

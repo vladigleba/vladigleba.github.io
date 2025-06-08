@@ -79,7 +79,7 @@ We begin walking in the Spirit when we choose to surrender to God, which Paul de
 > Know ye not, that so many of us as were baptized into Jesus Christ were baptized into his death? Therefore *we are buried with him by baptism into death*: that like as Christ was raised up from the dead by the glory of the Father, even so we also should walk in newness of life. For if we have been planted together in the likeness of his death, we shall be also in the likeness of his resurrection: knowing this, that *our old man is crucified with him, that the body of sin might be destroyed, that henceforth we should not serve sin*. For he that is dead is freed from sin.
 {% ct 'Romans 6:3-7' %}
 
-The decision to give our life over to Jesus is synonymous we the decision to die to self because that is the only way He can reign on the throne of our heart. Baptism is a beautiful symbol of this burial of self, along with the old life of sin, demonstrated by the submersion into water, *and* of the resurrection from that burial to a new life in Jesus, demonstrated by the coming out of water (see [“Why Does Baptism Matter?”](/posts/basics/baptism.md)).
+The decision to give our life over to Jesus is synonymous we the decision to die to self because that is the only way He can reign on the throne of our heart. [Baptism](/posts/basics/baptism.md) is a beautiful symbol of this burial of self, along with the old life of sin, demonstrated by the submersion into water, *and* of the resurrection from that burial to a new life in Jesus, demonstrated by the coming out of water.
 
 ## Is death to self a one-time occurance?
 
