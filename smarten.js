@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Usage: node smarten.js path/to/file-or-folder
+// Usage: node smarten.js path/to/file-or-folder [-d]
 
 const fs = require('fs');
 const path = require('path');
@@ -31,7 +31,7 @@ function smartenQuotes(text) {
   return text;
 }
 
-function replaceTypography(text) {
+function replaceTypography(text, debugMode = false) {
   const fmDelimiter = '---';
   const fmPlaceholder = '@@FRONTMATTER_DELIMITER@@';
 
@@ -66,15 +66,16 @@ function replaceTypography(text) {
   // Smart quotes with apostrophe handling
   text = smartenQuotes(text);
 
+  // Debug mode: print and exit
+  if (debugMode) {
+    console.log('--- Debug Output ---\n');
+    console.log(text);
+    process.exit(0);
+  }
+
   // Restore shortcodes
   placeholders.forEach((ph, i) => {
     text = text.replace(ph, shortcodes[i]);
-  });
-
-  // Smarten markdown link labels only (not URLs)
-  text = text.replace(/\[(.*?)\]\((.*?)\)/g, (match, label, url) => {
-    const smartLabel = smartenQuotes(label.replace(/--/g, '—'));
-    return `[${smartLabel}](${url})`;
   });
 
   // Restore frontmatter delimiters
@@ -83,7 +84,7 @@ function replaceTypography(text) {
   return text;
 }
 
-function processFile(filePath) {
+function processFile(filePath, debugMode = false) {
   if (!isMarkdown(filePath)) {
     console.error(`❌ Only .md files are supported: ${filePath}`);
     return; // don't exit whole process, just skip this file
@@ -91,15 +92,17 @@ function processFile(filePath) {
 
   try {
     const content = fs.readFileSync(filePath, 'utf8');
-    const updated = replaceTypography(content);
-    fs.writeFileSync(filePath, updated, 'utf8');
-    console.log(`✅ Processed file: ${filePath}`);
+    const updated = replaceTypography(content, debugMode);
+    if (!debugMode) {
+      fs.writeFileSync(filePath, updated, 'utf8');
+      console.log(`✅ Processed file: ${filePath}`);
+    }
   } catch (err) {
     console.error(`❌ Failed to process ${filePath}: ${err.message}`);
   }
 }
 
-function processPath(inputPath) {
+function processPath(inputPath, debugMode = false) {
   if (!fs.existsSync(inputPath)) {
     console.error(`❌ Path does not exist: ${inputPath}`);
     process.exit(1);
@@ -108,8 +111,12 @@ function processPath(inputPath) {
   const stats = fs.statSync(inputPath);
 
   if (stats.isFile()) {
-    processFile(inputPath);
+    processFile(inputPath, debugMode);
   } else if (stats.isDirectory()) {
+    if (debugMode) {
+      console.error('❌ Debug mode only supports a single file.');
+      process.exit(1);
+    }
     const entries = fs.readdirSync(inputPath);
     entries.forEach(entry => {
       const fullPath = path.join(inputPath, entry);
@@ -126,10 +133,13 @@ function processPath(inputPath) {
 }
 
 // Get file or folder path from command-line args
-const inputPath = process.argv[2];
+const args = process.argv.slice(2); // ignore first two args (node and script name)
+const debugMode = args.includes('-d');
+const inputPath = args.find(arg => arg !== '-d');
+
 if (!inputPath) {
-  console.error('Usage: node smarten.js path/to/file-or-folder');
+  console.error('Usage: node smarten.js path/to/file-or-folder [-d]');
   process.exit(1);
 }
 
-processPath(inputPath);
+processPath(inputPath, debugMode);

@@ -244,6 +244,10 @@ th, td {
   color: var(--gray-color);
 }
 
+/*
+featured and latest
+*/
+
 li.featured,
 li.latest {
   grid-row: auto / span 2;
@@ -252,36 +256,20 @@ li.latest {
   justify-content: center;
 }
 
+li.featured .tag,
 li.latest,
 li.latest a,
-li.latest .description,
-li.featured .tag {
+li.latest .description {
   color: white !important;
-}
-
-li.latest .tag {
-  background-color: white;
-}
-
-li.latest .tag,
-li.featured .tag {
-  margin-bottom: 20px;
 }
 
 li.featured {
   background-color: #f9f9f9;
-
-  .tag {
-    background-color: var(--hover-color);
-    opacity: 0.8;
-  }
 }
 
-li .description {
-  color: black;
-  font-weight: 500;
-  margin-top: 20px;
-}
+/* 
+tag
+*/
 
 li .tag {
   font-weight: 700;
@@ -293,6 +281,24 @@ li .tag {
   color: black;
 }
 
+li.featured .tag {
+  background-color: var(--hover-color);
+  opacity: 0.8;
+}
+
+li.latest .tag {
+  background-color: white;
+}
+
+li.featured .tag,
+li.latest .tag {
+  margin-bottom: 20px;
+}
+
+/* 
+link and description
+*/
+
 .list a {
   text-decoration: none;
   display: block;
@@ -301,6 +307,12 @@ li .tag {
 
 .list a:hover {
   opacity: 0.85;
+}
+
+li .description {
+  color: black;
+  font-weight: 500;
+  margin-top: 20px;
 }
 
 .footnotes-sep {
@@ -375,7 +387,7 @@ main p {
   padding: 15px 0px;
 }
 main blockquote::before {
-  content: "“";
+  content: "\201c";
   font-size: 50px;
   position: absolute;
   top: 15px;
@@ -509,7 +521,7 @@ sup {
 
 #verse-popup {
   display: none;
-  padding: 10px 10px 10px 10px;;
+  padding: 10px 10px 10px 10px;
   max-width: 300px;
   max-height: 250px;
   overflow-y: auto;

@@ -1,5 +1,5 @@
 main blockquote::before {
-  content: "“";
+  content: "\201c";
   font-size: 50px;
   position: absolute;
   top: 15px;
