@@ -236,7 +236,6 @@ th, td {
 .list li {
   grid-row: auto / span 1;
   grid-column: auto / span 1;
-  /* border-top: 1px solid #e3e3e3; */
   padding: 25px;
   display: flex;
   flex-direction: column;
