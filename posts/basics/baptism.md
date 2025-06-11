@@ -5,7 +5,7 @@ color: rgb(33,122,105)
 date: 2025-02-03
 ---
 
-## What instruction did Jesus give His disciples?
+## What did Jesus tell His disciples before His ascension?
 
 > Go ye therefore, and teach all nations, *baptizing them in the name of the Father, and of the Son, and of the Holy Ghost*: teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world.
 {% ct 'Matthew 28:19-20' %}
@@ -13,11 +13,11 @@ date: 2025-02-03
 > He that *believeth and is baptized shall be saved*; but he that believeth not shall be damned.
 {% ct 'Mark 16:16' %}
 
-Just before Jesus ascended to heaven, He gave His disciples the “Great Commission”—to take the gospel to the whole world by sharing His teachings and encouraging those who accept Him to get baptized. In fact, the book of Mark makes an inextricable connection between believing in Jesus and being baptized, which shows that baptism is a integral part of the Christian experience.
+Just before Jesus ascended to heaven, He gave His disciples the “Great Commission”—to take the gospel to the world by sharing His teachings and encouraging those who accept Him to be baptized. In fact, the book of Mark makes an inextricable connection between believing in Jesus and being baptized, which shows that baptism is an integral part of the Christian experience.
 
-## Why is baptism so important?
+## Why is baptism important?
 
-> Jesus answered, Verily, verily, I say unto thee, *Except a man be born of water and of the Spirit*, he cannot enter into the kingdom of God.
+> Jesus answered, Verily, verily, I say unto thee, Except a man be *born of water and of the Spirit, he cannot enter into the kingdom of God*.
 {% ct 'John 3:5' %}
 
 > That if thou shalt *confess with thy mouth the Lord Jesus*, and shalt believe in thine heart that God hath raised him from the dead, thou shalt be saved. For with the heart man believeth unto righteousness; and *with the mouth confession is made unto salvation*.
@@ -26,14 +26,14 @@ Just before Jesus ascended to heaven, He gave His disciples the “Great Commiss
 > For as many of you as have been *baptized into Christ have put on Christ*.
 {% ct 'Galatians 3:27' %}
 
-During His conversation with Nicodemus, Jesus made it clear that all Christians need to be baptized. Salvation is a gift from God that is received through faith in Jesus Christ {% rf 'Ephesians 2:8-9' %}, and Paul, in his letter to the Romans, says that faith is demonstrated through a public confession of Jesus. When we are baptized we are making a public confession that we have “put on Christ”—accepted Him, as Lord and Savior, into our hearts, which, in turn, gives us a new name and a new identity: follower of Christ, son or daughter of God!
+During His conversation with Nicodemus, Jesus made it clear that baptism is a privilege that all Christians are called to experience. Salvation is a gift from God, received through faith in Jesus Christ {% rf 'Ephesians 2:8-9' %}, and such faith is demonstrated through a public confession of Him {% rf 'Romans 10:9-10' %}. When we are baptized, we are making a public confession that we have “put on Christ”—that we have accepted Him as Lord and Savior into our hearts and have received a new name and a new identity: follower of Christ, son or daughter of God! By making a public stand for Christ, we also become His witnesses to others, inspiring them to do the same in their own lives.
 
 ## How many methods of baptism are there?
 
 > There is one body, and one Spirit, even as ye are called in one hope of your calling; one Lord, one faith, *one baptism*, one God and Father of all, who is above all, and through all, and in you all.
 {% ct 'Ephesians 4:4-6' %}
 
-The Bible is clear there is only one true baptism, and the word itself is a clue as to what it is. The word “baptize” comes from the Greek word “baptizo,” which means “to immerse,” “to submerge,” or “to dip under.” It might be shocking to some, but the Bible never describes baptism using the words “sprinkle” or “pour.” It’s a full immersion in water.
+The Bible declares that there is only one true baptism, and the word itself offers a clue as to what it involves. The term “baptize” comes from the Greek word *baptizō*, which means “to immerse,” “to submerge,” or “to dip under.” This might come as a surprise to some, but the Bible never describes baptism using the words “sprinkle” or “pour.” Biblical bapstism is a full immersion in water.
 
 ## How was Jesus baptized?
 
@@ -46,14 +46,14 @@ The Bible is clear there is only one true baptism, and the word itself is a clue
 > And it came to pass in those days, that Jesus came from Nazareth of Galilee, and was baptized of John in Jordan. And straightway *coming up out of the water*, he saw the heavens opened, and the Spirit like a dove descending upon him.
 {% ct 'Mark 1:9-10' %}
 
-John the Baptist chose an area with lots of water because he practiced the biblical form of baptism by full immersion. Matthew and Mark make it clear that this is the baptism that Jesus, our example in all things, received when they describe Him coming up out of the water, meaning He had to go into the water to be baptized.
+John the Baptist chose an area with plenty of water because he practiced the biblical form of baptism--full immersion. Both Matthew and Mark make it clear that this was the type of baptism Jesus received, as they describe Him “coming up out of the water,” indicating that He had first gone down into the water to be baptized.
 
 ## Are there other examples of baptism?
 
 > And he commanded the chariot to stand still: and *they went down both into the water*, both Philip and the eunuch; and he baptized him. And when *they were come up out of the water*, the Spirit of the Lord caught away Philip, that the eunuch saw him no more: and he went on his way rejoicing.
 {% ct 'Acts 8:38-39' %}
 
-The Bible gives the example of Philip and the eunuch to show that Jesus’ disciples did not change the method of baptism after His ascension. Both Philip and the eunuch went down into the water, and after Philip baptized the eunuch, they came up out of the water. This matches the description and form of baptism that Jesus received.
+The Bible gives the example of Philip and the Ethiopian eunuch to show that Jesus’ disciples did not change the method of baptism after His ascension. Both Philip and the eunuch went down into the water, and after Philip baptized him, they came up out of the water. This mirrors the description and form of baptism that Jesus Himself received.
 
 ## What does baptism represent?
 
@@ -69,9 +69,12 @@ The Bible gives the example of Philip and the eunuch to show that Jesus’ disci
 > That *ye put off concerning the former conversation the old man*, which is corrupt according to the deceitful lusts; and be renewed in the spirit of your mind; and *that ye put on the new man*, which after God is created in righteousness and true holiness.
 {% ct 'Ephesians 4:22-24' %}
 
-Baptism is a symbol of cleansing from sin, which every person needs as all have sinned {% rf 'Romans 3:23' %}, but more specifically, it symbolizes the death and burial of the old life of sin, while being born to a new life in Jesus! In other words, it’s a symbol of Jesus’ death, burial, and resurrection because as we exprience His selfless love for us, it motivates us 1) to die to sin in our own life, which involves dying to self, 2) to bury it under the water in baptism, and 3) to arise to a new life in Jesus by the power of His Holy Spirit. It’s a beautiful, powerful symbol of how Jesus’ death, burial, and resurrection replaced our old identity with an entirely new one in Him!
+Generally speaking, baptism is a symbol of cleansing from sin, which every person needs, as all have sinned {% rf 'Romans 3:23' %}. More specifically, it symbolizes the death and burial of the old life of sin and the birth of a new life in Jesus. In other words, it represents Jesus’ death, burial, and resurrection. As we experience His selfless love for us, we are motivated:
+1. to die to sin in our own lives, which involves dying to self, 
+2. to bury that old life under the water in baptism, and 
+3. to rise to a new life in Jesus by the power of His Holy Spirit. 
 
-Baptism to a Christian is what a wedding is to a marriage, and using the correct form of baptism matters because any other form destroys the beautiful symbolism and meaning of baptism by immersion. All other forms symbolize a vastly different spiritual reality—one that does not entail a burial of the old life. Biblical baptism illustrates that the Christian life is more than just being a better person; it’s a complete crucifixion of the old life {% rf 'Galatians 2:20; 6:14' %}. Any failure to fully surrender every aspect of one’s life to Jesus leads to a baptism where the person is, in a sense, “buried alive,” which is a robbery of the rich blessings that Jesus wants every believer to experience {% rf 'John 15:11' %}.
+Baptism is a beautiful and powerful symbol of how Jesus’ death, burial, and resurrection replace our old identity with a completely new one in Him. Using the correct form of baptism matters because any other form undermines the symbolism and meaning of baptism by immersion. Alternative forms portray a vastly different spiritual reality—one that does not reflect the burial of the old life. Biblical baptism illustrates that the Christian life is not merely about becoming a better person; it is about the complete crucifixion of the old self {% rf 'Galatians 2:20; 6:14' %}. A failure to fully surrender every area of life to Jesus results in a baptism where, in a sense, the person is “buried alive”—a distortion that robs the believer of the rich blessings Jesus longs to give {% rf 'John 15:11' %}.
 
 ## What else accompanies water baptism?
 
@@ -96,7 +99,7 @@ Evidence of receiving the baptism of the Spirit includes producing the fruits of
 > For if we have been planted together in the likeness of his death, we shall be also in the likeness of his resurrection: knowing this, that *our old man is crucified with him, that the body of sin might be destroyed, that henceforth we should not serve sin*.
 {% ct 'Romans 6:5-6' %}
 
-Like marriage, baptism is a public commitment to Jesus as my personal Savior {% rf 'Acts 8:37' %}, so it’s important to first get to know Him and understand His teachings. This is in the commission Jesus gave His disciples just before His ascension—to share His teachings in all the world and to baptize those who accept them and believe in Him. Naturally, His teachings will bring conviction of sin, leading the genuine believer to repent of past sins {% rf 'Acts 5:31' %} and choose to no longer serve sin by dying to self through the power of the Holy Spirit. This experience is known as being born of the Spirit, and if it’s present in a believer’s life then that person is ready to make the exciting, yet serious, public commitment to be faithful to Jesus even to the point of death.
+Baptism to the Christian is what a wedding is to a marriage--a public declaration of commitment, except in baptism it's a commitment to Jesus as my personal Savior {% rf 'Acts 8:37' %}, so it’s important to first get to know Him and understand His teachings. This is in the commission Jesus gave His disciples just before His ascension—to share His teachings in all the world and to baptize those who accept them and believe in Him. Naturally, His teachings will bring conviction of sin, leading the genuine believer to repent of past sins {% rf 'Acts 5:31' %} and choose to no longer serve sin by dying to self through the power of the Holy Spirit. This experience is known as being born of the Spirit, and if it’s present in a believer’s life then that person is ready to make the exciting, yet serious, public commitment to be faithful to Jesus even to the point of death.
 
 Incidentally, this means that infant baptism in not appropriate because an infant is not mature enough to understand the pre-requisites or make the commitment. After all, Jesus Himself was baptized as an adult. Instead of being baptized, infants can be dedicated to God by their parents, as Jesus was {% rf 'Luke 2:21-39' %}, while the parents also dedicate themselves to do what they can to raise a child who knows and loves God—who will one day make that commitment in baptism. The Bible, however, does not specify an appropriate age to be baptized because every person’s spiritual experience and maturity is different.
 
@@ -160,3 +163,5 @@ When the Holy Spirit brings conviction to the heart, one of Satan’s most effec
 {% ct 'Zephaniah 3:16-17, NKJV' %}
 
 Not only is there joy in heaven over every repenting sinner, but Zephaniah tells us that God Himself rejoices in song over His people! The truth is we have the ability to make heaven rejoice, and stepping into the waters of baptism to make a public commitment to Jesus is bound to bring melodies of joy to the heavenly courts.
+
+Rom 1:16; 2 Ti. 1:12; Lk. 12:8,9
