@@ -167,7 +167,7 @@ But what if our faith is weak? The Bible tells us that:
 1. We can ask Him to increase our faith {% rf 'Mark 9:24' %}, and He will likely give us opportunities to exercise it.
 1. Faith comes by hearing, and hearing by the Word of God {% rf 'Romans 10:17' %}. In other words, we grow in faith as we get to know Him more through the study of His Word and through prayer.
 
-So why is faith so important to God? Well, it’s the foundation of our relationship with Him. There is nothing more pleasing to a father than a child coming to him in confidence, full of trust in his love and power. Our heavenly Father delights when we come to Him in prayer, trusting that He will hear and answer our requests in His time and way. (For a more detailed study on faith, see [“Walking in Faith”](/posts/gospel/faith.md).)
+So why is faith so important to God? Well, [it is the foundation](/posts/gospel/faith.md) of our relationship with Him. There is nothing more pleasing to a father than a child coming to him in confidence, full of trust in his love and power. Our heavenly Father delights when we come to Him in prayer, trusting that He will hear and answer our requests in His time and way.
 
 ## What is the third step?
 
@@ -196,7 +196,7 @@ The three parts of an effective prayer can be easily remembered with the ABC acr
 
 In Adam and Eve’s rejection of God in the garden, the human race separated itself from its Maker, but God immediately promised that, in His Son Jesus, He would provide them, and anyone who desired it, a path to reconciliation {% rf 'Genesis 3:15' %}. This promise was later illustrated to Jacob in the dream of a ladder, symbolizing Jesus, that united heaven and earth {% rf 'Genesis 28:12' %}. 
 
-Adam and Eve’s rejection is replayed in the life of every person, for all have sinned {% rf 'Romans 3:23' %}. Apart from Christ—who alone lived a perfect life and offered it on the cross to pay for our sins—we have nothing to commend us to God. Our sins have made us unworthy of our Father {% rf 'Luke 15:21' %}, but Jesus has given us a second chance! When we pray in His name, we are enabled to “come boldly unto the throne of grace, that we may obtain mercy, and find grace to help in time of need” {% rf 'Hebrews 4:16' %} because, when we accept Him as our Redeemer and Lord, He covers the shame of our sins with His perfect righteousness {% rf 'Isaiah 61:10' %}, and God calls us His children once more {% rf '1 John 3:1' %}! (For more information, see [“How Can I Be Saved”](/posts/gospel/salvation.md).)
+Adam and Eve’s rejection is replayed in the life of every person, for all have sinned {% rf 'Romans 3:23' %}. Apart from Christ—who alone lived a perfect life and offered it on the cross to pay for our sins—we have nothing to commend us to God. Our sins have made us unworthy of our Father {% rf 'Luke 15:21' %}, but Jesus has given us [a second chance](/posts/gospel/salvation.md)! When we pray in His name, we are enabled to “come boldly unto the throne of grace, that we may obtain mercy, and find grace to help in time of need” {% rf 'Hebrews 4:16' %} because, when we accept Him as our Redeemer and Lord, He covers the shame of our sins with His perfect righteousness {% rf 'Isaiah 61:10' %}, and God calls us His children once more {% rf '1 John 3:1' %}!
 
 ## How important is gratitude?
 

@@ -6,7 +6,7 @@
 
 li .tag,
 article > header .tag span {
-  border-radius: 5px;
+  border-radius: var(--default-radius);
   line-height: 1;
 }
 

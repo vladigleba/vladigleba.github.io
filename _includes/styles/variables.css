@@ -4,4 +4,5 @@
   --body-font: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   --gray-color: #727272;
   --hover-color: rgb(79, 86, 105);
+  --default-radius: 8px;
 }
