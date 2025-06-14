@@ -2,6 +2,7 @@ body > footer {
   padding: 150px 0 50px;
   text-align: center;
   color: #999;
+  line-height: 1.4;
 }
 
 body > footer > div {
