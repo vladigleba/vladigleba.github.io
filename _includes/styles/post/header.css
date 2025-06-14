@@ -22,7 +22,7 @@ article > header .description {
 
 article > header .tag span {
   background-color: white;
-  padding: 0 10px 0.5px;
+  padding: 0 12px 0.5px;
   margin-left: 0;
 }
 
@@ -32,6 +32,7 @@ article > header .meta.series {
 
 article > header p {
   font-weight: 500;
+  line-height: var(--line-height);
 }
 
 article > header a {

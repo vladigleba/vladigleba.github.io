@@ -12,7 +12,7 @@ article > header .tag span {
 
 article,
 article > header > div,
-body > footer div {
+body > footer > div {
   width: 70%;
 }
 
