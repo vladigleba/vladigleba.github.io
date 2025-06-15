@@ -10,7 +10,7 @@
 
 #verse-popup {
   display: none;
-  padding: 8px 14px;
+  padding: 8px 12px;
   max-width: 300px;
   max-height: 250px;
   overflow-y: auto;
