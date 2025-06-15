@@ -4,6 +4,7 @@
   margin-right: 5px;
 }
 
+.copy-popup,
 li .tag,
 article > header .tag span {
   border-radius: var(--default-radius);
