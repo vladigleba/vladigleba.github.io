@@ -181,7 +181,7 @@ module.exports = async (config) => {
       link.classList.add('anchor-link');
       link.setAttribute('aria-label', 'Copy link');
       link.innerHTML = `
-        <svg class="link-icon" aria-hidden="true">
+        <svg aria-hidden="true">
           <use href="/assets/images/icons.svg#link"></use>
         </svg>`;
       heading.appendChild(link);
