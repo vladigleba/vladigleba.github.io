@@ -7,6 +7,7 @@
   --hover-color: rgb(79, 86, 105);
   --default-radius: 12px;
   --hover-background: #f7f7f7;
+  --tag-horizontal-padding: 12px;
 }
 
 * {
@@ -168,12 +169,21 @@ body > footer {
 body > footer > div {
   margin: 0 auto;
 }
+
+.last-updated {
+  display: inline-block;
+  padding: 2px var(--tag-horizontal-padding) 4px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: var(--default-radius);
+}
 .meta span,
 .list p span {
   margin-left: 5px;
   margin-right: 5px;
 }
 
+.last-updated,
 .copy-popup,
 li .tag,
 article > header .tag span {
@@ -274,7 +284,7 @@ li .tag {
   display: inline-block;
   margin-bottom: 10px;
   text-transform: uppercase;
-  padding: 3px 12px;
+  padding: 3px var(--tag-horizontal-padding);
   background-color: rgb(245, 231, 140, 0.75); /* rgb(219, 51, 52, 0.75); */
   color: black;
 }
@@ -352,7 +362,7 @@ article > header .description {
 
 article > header .tag span {
   background-color: white;
-  padding: 0 12px 0.5px;
+  padding: 0 var(--tag-horizontal-padding) 0.5px;
   margin-left: 0;
 }
 
@@ -424,9 +434,8 @@ main figcaption {
 
 .anchor-link svg {
   opacity: 0.5;
-  width: 0.7em;
+  width: 0.75em;
   height: 0.7em;
-  fill: currentColor;
 }
 
 .anchor-link svg:hover,
@@ -488,14 +497,13 @@ sup {
   line-height: 0.95;
  }
 
-.toc li.active a {
-  font-weight: bold;
+.toc li.active a,
+.toc li:hover a {
   color: black;
 }
 
-.toc li:hover {
-  background-color: var(--hover-background);
-  border-radius: var(--default-radius);
+.toc li.active a {
+  font-weight: bold;
 }
 
 .toc a {
@@ -510,16 +518,16 @@ sup {
 #verse-popup,
 .copy-popup {
   position: absolute;
-  background: rgb(247, 247, 247);
+  background-color: rgb(247, 247, 247);
   border: 1px solid #ccc;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
   border-radius: var(--default-radius);
   z-index: 1000;
 }
 
 #verse-popup {
   display: none;
-  padding: 8px 12px;
+  padding: 8px var(--tag-horizontal-padding);
   max-width: 300px;
   max-height: 250px;
   overflow-y: auto;
@@ -532,14 +540,13 @@ sup {
 .copy-popup {
   font-family: var(--body-font);
   font-weight: 400;
-  display: block;
   top: 120%;
   left: 50%;
   transform: translate(-50%);
-  padding: 2px 0 4px;
+  padding: 2px var(--tag-horizontal-padding) 4px;
   opacity: 1;
   text-align: center;
-  min-width: 112px;
+  white-space: nowrap;
 }
 
 /* 2K/QHD monitors */
@@ -656,10 +663,6 @@ sup {
     margin-top: 30px;
   }
 
-  .anchor-link::after {
-    bottom: 4px;
-  }
-
   main > h2 {
     font-size: 27px;
   }
@@ -725,6 +728,6 @@ sup {
 /* Small phones */
 @media (max-width: 480px) {
   .main-nav li {
-    padding: 6px 5px 3px;
+    padding: 4px 5px 2px;
   }
 }

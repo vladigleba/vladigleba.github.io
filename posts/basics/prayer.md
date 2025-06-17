@@ -258,7 +258,7 @@ Had Jesus’ disciples heeded His call to watch and pray in Gethsemane, there is
 
 When God provided manna for the Israelites, it didn’t simply fall into their mouths; they still had to go out and gather it. God wants us to cooperate with Him by investing ourselves in the process; otherwise, we risk becoming lazy with His blessings. The simple truth is that He will never do for us what we can do for ourselves, but once we have done our part, He will do what we cannot.
 
-## What kind of environment is best suited for prayer?
+## What is the ideal environment for prayer?
 
 > But thou, when thou prayest, *enter into thy closet*, and when thou hast *shut thy door*, pray to thy Father which is in secret; and thy Father which seeth in secret shall reward thee openly.
 {% ct 'Matthew 6:6' %}

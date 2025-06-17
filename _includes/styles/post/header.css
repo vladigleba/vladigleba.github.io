@@ -22,7 +22,7 @@ article > header .description {
 
 article > header .tag span {
   background-color: white;
-  padding: 0 12px 0.5px;
+  padding: 0 var(--tag-horizontal-padding) 0.5px;
   margin-left: 0;
 }
 

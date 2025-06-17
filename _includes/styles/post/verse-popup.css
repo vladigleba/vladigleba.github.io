@@ -1,16 +1,16 @@
 #verse-popup,
 .copy-popup {
   position: absolute;
-  background: rgb(247, 247, 247);
+  background-color: rgb(247, 247, 247);
   border: 1px solid #ccc;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
   border-radius: var(--default-radius);
   z-index: 1000;
 }
 
 #verse-popup {
   display: none;
-  padding: 8px 12px;
+  padding: 8px var(--tag-horizontal-padding);
   max-width: 300px;
   max-height: 250px;
   overflow-y: auto;
@@ -23,12 +23,11 @@
 .copy-popup {
   font-family: var(--body-font);
   font-weight: 400;
-  display: block;
   top: 120%;
   left: 50%;
   transform: translate(-50%);
-  padding: 2px 0 4px;
+  padding: 2px var(--tag-horizontal-padding) 4px;
   opacity: 1;
   text-align: center;
-  min-width: 112px;
+  white-space: nowrap;
 }

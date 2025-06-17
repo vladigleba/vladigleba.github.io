@@ -112,10 +112,6 @@
     margin-top: 30px;
   }
 
-  .anchor-link::after {
-    bottom: 4px;
-  }
-
   main > h2 {
     font-size: 27px;
   }
@@ -181,6 +177,6 @@
 /* Small phones */
 @media (max-width: 480px) {
   .main-nav li {
-    padding: 6px 5px 3px;
+    padding: 4px 5px 2px;
   }
 }

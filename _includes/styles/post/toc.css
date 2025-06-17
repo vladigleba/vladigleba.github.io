@@ -25,14 +25,13 @@
   line-height: 0.95;
  }
 
-.toc li.active a {
-  font-weight: bold;
+.toc li.active a,
+.toc li:hover a {
   color: black;
 }
 
-.toc li:hover {
-  background-color: var(--hover-background);
-  border-radius: var(--default-radius);
+.toc li.active a {
+  font-weight: bold;
 }
 
 .toc a {

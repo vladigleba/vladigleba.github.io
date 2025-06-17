@@ -112,7 +112,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const now = new Date();
     now.setHours(0,0,0,0);
     date.setHours(0,0,0,0);
-
     const diffDays = Math.round((now - date) / (1000 * 60 * 60 * 24));
 
     // Remove "on" if needed
@@ -121,18 +120,18 @@ document.addEventListener('DOMContentLoaded', () => {
       textNode.textContent = textNode.textContent.replace('on ', '');
     }
 
-    // Remove spaces
-    const heyEl = document.querySelector('footer .hey');
-    if (heyEl) {
-      heyEl.textContent = heyEl.textContent.replace(/\s+/g, '');
-    }
-
     if (diffDays === 0) {
       timeEl.textContent = 'today';
     } else if (diffDays === 1) {
       timeEl.textContent = 'yesterday';
     } else if (diffDays > 1 && diffDays <= 7) {
       timeEl.textContent = `${diffDays} days ago`;
+    }
+
+    // Remove spaces
+    const heyEl = document.querySelector('footer .hey');
+    if (heyEl) {
+      heyEl.textContent = heyEl.textContent.replace(/\s+/g, '');
     }
   };
   updateFooterTime();
