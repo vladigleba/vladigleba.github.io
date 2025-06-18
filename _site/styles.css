@@ -6,7 +6,7 @@
   --gray-color: #727272;
   --hover-color: rgb(79, 86, 105);
   --default-radius: 12px;
-  --hover-background: #f7f7f7;
+  --light-background: #f7f7f7;
   --tag-horizontal-padding: 12px;
 }
 
@@ -272,7 +272,7 @@ li.latest .description {
 }
 
 li.featured {
-  background-color: var(--hover-background);
+  background-color: var(--light-background);
 }
 
 /* 
@@ -547,6 +547,15 @@ sup {
   opacity: 1;
   text-align: center;
   white-space: nowrap;
+}
+
+.copy-popup svg {
+  margin-left: -3px;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  margin-right: 2px;
+  color: #17612a;
 }
 
 /* 2K/QHD monitors */

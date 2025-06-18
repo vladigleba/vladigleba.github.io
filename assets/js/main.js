@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             popup.className = 'copy-popup';
             popup.textContent = 'Link copied';
             link.appendChild(popup);
-            setTimeout(() => popup.remove(), 2000);
+            setTimeout(() => popup.remove(), 2500);
           }
         })
         .catch(err => {

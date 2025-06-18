@@ -41,7 +41,7 @@ li.latest .description {
 }
 
 li.featured {
-  background-color: var(--hover-background);
+  background-color: var(--light-background);
 }
 
 /* 

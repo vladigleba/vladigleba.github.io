@@ -31,3 +31,12 @@
   text-align: center;
   white-space: nowrap;
 }
+
+.copy-popup svg {
+  margin-left: -3px;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  margin-right: 2px;
+  color: #17612a;
+}
