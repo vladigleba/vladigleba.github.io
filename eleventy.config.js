@@ -4,6 +4,9 @@ const markdownIt = require('markdown-it');
 const markdownItFootnote = require('markdown-it-footnote');
 const { JSDOM } = require('jsdom');
 const { InputPathToUrlTransformPlugin } = require('@11ty/eleventy');
+const CleanCSS = require('clean-css');
+const fs = require('fs');
+const path = require('path');
 
 const seriesNames = require('./_data/series-names.json');
 
@@ -32,6 +35,11 @@ module.exports = async (config) => {
   config.addLiquidShortcode('ct', (citation) =>
     `<figcaption>&mdash; ${ citation }</figcaption>`
   );
+
+  config.addLiquidShortcode('inlineNavCSS', () => {
+    const navCssPath = path.join(__dirname, '_includes', 'styles', 'nav.css');
+    return fs.readFileSync(navCssPath, 'utf8');
+  });
 
   config.addShortcode('rf', (reference, addParens = true) => {
     const refs = reference.split(';').map(r => r.trim()).filter(Boolean);
@@ -67,6 +75,17 @@ module.exports = async (config) => {
   config.addLiquidFilter('toUTCString', (date) => {
     const utc = date.toUTCString();
     return moment.utc(utc).format('MMMM Do YYYY');
+  });
+
+  config.addFilter('cssmin', code => new CleanCSS({}).minify(code).styles);
+
+  config.addLiquidFilter('absoluteUrl', (url) => {
+    if (!url) return '';
+    const base = 'http://vladigleba.com';
+    if (url.startsWith('http://') || url.startsWith('https://')) return url;
+    
+    // no double slashes at the end of base
+    return base.replace(/\/$/, '') + (url.startsWith('/') ? url : '/' + url);
   });
 
   // collections

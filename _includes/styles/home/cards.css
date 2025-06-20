@@ -1,6 +1,5 @@
 .list {
   list-style: none;
-  padding: 0 50px;
   display: grid;
   column-gap: 20px;
   row-gap: 20px;

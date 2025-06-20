@@ -5,6 +5,7 @@ sitemap:
   ignore: true
 ---
 
+{% capture all_css %}
 {% render "styles/variables.css" %}
 {% render "styles/reset.css" %}
 {% render "styles/typography.css" %}
@@ -25,3 +26,5 @@ sitemap:
 {% render "styles/post/verse-popup.css" %}
 
 {% render "styles/responsive.css" %}
+{% endcapture %}
+{{ all_css | cssmin }}

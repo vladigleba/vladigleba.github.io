@@ -17,5 +17,6 @@
     "reading-time": "^1.5.0"
   },
   "dependencies": {
+    "clean-css": "^5.3.3"
   }
 }

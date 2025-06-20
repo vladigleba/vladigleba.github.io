@@ -1,0 +1,60 @@
+<title>{{ meta_title }}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ meta_description }}">
+<link rel="canonical" href="http://vladigleba.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" as="style">
+<link href="/styles.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+
+<style>
+  {% inlineNavCSS %} /* critical nav styles inlined for performance */
+</style>
+
+{% if is_article %}
+  <meta property="og:type" content="article">
+{% else %}
+  <meta property="og:type" content="website">
+{% endif %}
+
+<meta property="og:title" content="{{ meta_title }}">
+<meta property="og:description" content="{{ meta_description }}">
+<meta property="og:url" content="{{ page_url | absoluteUrl }}">
+<meta property="og:site_name" content="The Truth Will Make You Free">
+<meta property="og:image" content="{{ '/assets/images/social-default.png' | absoluteUrl }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ meta_title }}">
+<meta name="twitter:description" content="{{ meta_description }}">
+<meta name="twitter:image" content="{{ '/assets/images/social-default.png' | absoluteUrl }}">
+
+{% if is_article %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "{{ meta_title }}",
+      "description": "{{ meta_description }}",
+      "author": {
+        "@type": "Person",
+        "name": "Vladi Gleba"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page_url | absoluteUrl }}"
+      }
+    }
+  </script>
+{% else %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "{{ page_url | absoluteUrl }}",
+      "name": "{{ meta_title }}",
+      "description": "{{ meta_description }}"
+    }
+  </script>
+{% endif %}
