@@ -5,14 +5,14 @@
   transform: translate(-50%, -50%);
   width: 80vw;
   max-width: 900px;
-  height: 320px;
+  height: 200px;
   z-index: 0;
   pointer-events: none;
   filter: blur(48px);
   /* background: #e6cab6; */
   background: linear-gradient(180deg, #b8a6d6 0%, #ffcea6 100%);
-  opacity: 0.25;
-  border-radius: 50%;
+  opacity: 0.5;
+  border-radius: 100%;
 }
 
 .banner {
