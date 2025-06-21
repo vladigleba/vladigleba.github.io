@@ -7,8 +7,7 @@ const { InputPathToUrlTransformPlugin } = require('@11ty/eleventy');
 const CleanCSS = require('clean-css');
 const fs = require('fs');
 const path = require('path');
-
-const seriesNames = require('./_data/series-names.json');
+const site = require('./_data/site.json');
 
 module.exports = async (config) => {
   const md = markdownIt({ html: true, linkify: true }).use(markdownItFootnote);
@@ -81,7 +80,7 @@ module.exports = async (config) => {
 
   config.addLiquidFilter('absoluteUrl', (url) => {
     if (!url) return '';
-    const base = 'http://vladigleba.com';
+    const base = site.url;
     if (url.startsWith('http://') || url.startsWith('https://')) return url;
     
     // no double slashes at the end of base
@@ -119,9 +118,9 @@ module.exports = async (config) => {
         if (!seriesEntry) {
           seriesEntry = {
             type: 'series',
-            title: seriesNames[series]["title"],
+            title: site.series[series]["title"],
             category,
-            color: seriesNames[series]["color"],
+            color: site.series[series]["color"],
             posts: [],
           };
 

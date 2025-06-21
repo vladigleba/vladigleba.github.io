@@ -9,7 +9,7 @@ sitemap:
   {%- for item in collections.all %}
     {%- unless item.data.sitemap.ignore == true %}
       <url>
-        <loc>https://vladigleba.com{{ item.url }}</loc>
+        <loc>{{ site.url }}{{ item.url }}</loc>
       </url>
     {%- endunless %}
   {%- endfor %}

@@ -3,8 +3,8 @@ layout: layouts/base
 ---
 
 {% if series %} 
-  {% assign color = series-names[series]["color"] %}
-  {% assign seriesTitle = series-names[series]["title"] %}
+  {% assign color = site.series[series]['color'] %}
+  {% assign series_title = site.series[series]['title'] %}
 {% endif %}
 
 <style>
@@ -17,20 +17,20 @@ layout: layouts/base
 <article>
   <header>
     <div>
-      {% render "layouts/header", 
+      {% render 'layouts/header',
         title: title,
         description: description,
         category: category,
         length: length,
         isSeries: series, 
         series: seriesInfo, 
-        seriesTitle: seriesTitle 
+        series_title: series_title 
       %}
     </div>
   </header>
 
   <div class="wrapper">
-    {% render "layouts/toc" %}
+    {% render 'layouts/toc' %}
     <main>
       {{ content }}
       

@@ -1,12 +1,25 @@
 ---
 layout: layouts/base
 pagination:
-  data: categories  # from categories.json
+  data: site.categories  # from site.json
   size: 1
   alias: category
   addAllPagesToCollections: true  # adds to collections.all for sitemap
-permalink: "/{{ category | downcase }}/"
+permalink: '/{{ category | downcase }}/'
+eleventyComputed:
+  title: '{{ category }}'
+  description: '{{ site.categories[category] }}'
 ---
 
-{% render "layouts/banner", title: category, description: categories[category] %}
-{% render "layouts/cards", groupedPosts: collections.groupedPosts, categoryFilter: category %}
+{% assign show_blur_bg = true %}
+
+{% render 'layouts/banner',
+   title: category,
+   description: site.categories[category],
+   show_blur_bg: show_blur_bg
+%}
+
+{% render 'layouts/cards',
+   groupedPosts: collections.groupedPosts,
+   categoryFilter: category
+%}

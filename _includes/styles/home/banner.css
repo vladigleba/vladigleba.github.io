@@ -1,4 +1,23 @@
+.blur-bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  max-width: 900px;
+  height: 320px;
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(48px);
+  /* background: #e6cab6; */
+  background: linear-gradient(180deg, #b8a6d6 0%, #ffcea6 100%);
+  opacity: 0.25;
+  border-radius: 50%;
+}
+
 .banner {
+  position: relative;
+  z-index: 1;
   color: black;
   padding: 200px 0 230px;
   text-align: center;
@@ -7,6 +26,8 @@
 .banner .intro {
   margin: 0 auto;
   width: 75%;
+  position: relative;
+  z-index: 2; /* ensure text is above the blur */
 }
 
 .banner h1 {

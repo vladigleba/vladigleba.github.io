@@ -2,10 +2,10 @@
 layout: layouts/base
 ---
 
-{% render "layouts/banner", 
-   title: "Better than gold", 
-   subtitle: "sweeter than honey", 
-   description: "The Truth will make you free." 
+{% render 'layouts/banner',
+   title: 'Better than gold',
+   subtitle: 'sweeter than honey',
+   description: site.title
 %}
 
-{% render "layouts/cards", groupedPosts: collections.groupedPosts %}
+{% render 'layouts/cards', groupedPosts: collections.groupedPosts %}

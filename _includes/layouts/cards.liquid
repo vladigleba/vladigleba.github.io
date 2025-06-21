@@ -1,7 +1,7 @@
 <ol class="list">
   {% for item in groupedPosts %}
     {% if not categoryFilter or item.category == categoryFilter %}
-      {% if item.type == "series" %}
+      {% if item.type == 'series' %}
         <li class="series">
           <div><span class="tag">Series</span></div>
           <a style="color: {{ item.color }}" href="{{ item.posts[0].url }}">{{ item.title }}</a>

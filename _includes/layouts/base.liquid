@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% assign meta_title = title | default: 'The Truth Will Make You Free' %}
-    {% assign meta_description = description | default: 'What can the Bible teach us today?' %}
-    {% assign categories = 'basics,gospel,prophecy' | split: ',' %}
+    {% assign meta_title = title | default: site.title %}
+    {% assign meta_description = description | default: site.description %}
+
+    {% assign categories = '' %}
+    {% for cat in site.categories %}
+      {% assign categories = categories | append: cat[0] | append: ',' %}
+    {% endfor %}
+    {% assign categories = categories | downcase | split: ',' %}
     {% assign url_parts = page.url | split: '/' %}
+
     {% assign is_article = false %}
     {% if url_parts.size > 2 and categories contains url_parts[1] %}
       {% assign is_article = true %}
     {% endif %}
 
     {% render 'layouts/meta', 
+       default_title: site.title,
        meta_title: meta_title, 
        meta_description: meta_description,
+       author: site.author,
        is_article: is_article,
-       page_url: page.url
+       page_url: page.url,
+       url: site.url
     %}
   </head>
 
   <body id="top">
-    {% render "layouts/nav" %}
-
+    {% render 'layouts/nav' %}
     {{ content }}
-    
-    {% render "layouts/footer", lastUpdated: lastUpdated %}
-
+    {% render 'layouts/footer', last_updated: last-updated %}
     <script src="/assets/js/main.js" defer></script>
   </body>
 </html>

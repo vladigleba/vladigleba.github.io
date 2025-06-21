@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="{{ meta_description }}">
-<link rel="canonical" href="http://vladigleba.com">
+<link rel="canonical" href="{{ url }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" as="style">
@@ -23,7 +23,7 @@
 <meta property="og:title" content="{{ meta_title }}">
 <meta property="og:description" content="{{ meta_description }}">
 <meta property="og:url" content="{{ page_url | absoluteUrl }}">
-<meta property="og:site_name" content="The Truth Will Make You Free">
+<meta property="og:site_name" content="{{ default_title }}">
 <meta property="og:image" content="{{ '/assets/images/social-default.png' | absoluteUrl }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ meta_title }}">
@@ -39,7 +39,7 @@
       "description": "{{ meta_description }}",
       "author": {
         "@type": "Person",
-        "name": "Vladi Gleba"
+        "name": "{{ author }}"
       },
       "mainEntityOfPage": {
         "@type": "WebPage",

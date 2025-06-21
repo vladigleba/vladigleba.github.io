@@ -1,0 +1,45 @@
+{
+  "title": "The Truth will make you free.",
+  "description": "Better than gold, sweeter than honey, the Truth will make you free.",
+  "author": "Vladi Gleba",
+  "url": "https://vladigleba.com",
+  "categories": {
+    "Basics": "Explore the most essential and impactful truths of the Bible.",
+    "Gospel": "Discover the good news about salvation from sin and the end of evil.",
+    "Prophecy": "Experience hope and peace that comes from the Bible alone."
+  },
+  "series": {
+    "messiah": {
+      "title": "Jesus, the Messiah",
+      "color": "rgb(101,102,166)"
+    },
+    "salvation": {
+      "title": "Understanding Salvation",
+      "color": "rgb(143,102,126)"
+    },
+    "secondComing": {
+      "title": "The Second Coming",
+      "color": "rgb(57,96,136)"
+    },
+    "judgment": {
+      "title": "The Judgment",
+      "color": "rgb(255,130,112)"
+    },
+    "sabbath": {
+      "title": "The Bible Sabbath",
+      "color": "rgb(205,114,114)"
+    },
+    "sunday": {
+      "title": "The Counterfeit Sabbath",
+      "color": "rgb(155,114,186)"
+    },
+    "antichrist": {
+      "title": "The Antichrist’s Mark",
+      "color": "rgb(33,153,163)"
+    },
+    "babylon": {
+      "title": "Coming Out of Babylon",
+      "color": "rgb(170,104,150)"
+    }
+  }
+}
