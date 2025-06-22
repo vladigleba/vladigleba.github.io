@@ -11,12 +11,11 @@ eleventyComputed:
   description: '{{ site.categories[category] }}'
 ---
 
-{% assign show_blur_bg = true %}
-
 {% render 'layouts/banner',
    title: category,
-   description: site.categories[category],
-   show_blur_bg: show_blur_bg
+   description: site.categories[category].description,
+   show_blur_bg: true,
+   glow_color: site.categories[category].color
 %}
 
 {% render 'layouts/cards',

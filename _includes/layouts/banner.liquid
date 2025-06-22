@@ -1,7 +1,6 @@
 <header class="banner">
-{% comment %} {% assign show_blur_bg = show_blur_bg | default: true %} {% endcomment %}
   {% if show_blur_bg %}
-    <div class="blur-bg"></div>
+    <div class="blur-bg" style="background: {{ glow_color }};"></div>
   {% endif %}
   <hgroup class="intro">
     <h1>{{ title }}<br><span>{{ subtitle }}</span></h1>

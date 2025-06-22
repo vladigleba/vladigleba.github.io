@@ -3,8 +3,8 @@ layout: layouts/base
 ---
 
 {% if series %} 
-  {% assign color = site.series[series]['color'] %}
-  {% assign series_title = site.series[series]['title'] %}
+  {% assign color = site.series[series].color %}
+  {% assign series_title = site.series[series].title %}
 {% endif %}
 
 <style>

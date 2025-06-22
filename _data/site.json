@@ -4,9 +4,18 @@
   "author": "Vladi Gleba",
   "url": "https://vladigleba.com",
   "categories": {
-    "Basics": "Explore the most essential and impactful truths of the Bible.",
-    "Gospel": "Discover the good news about salvation from sin and the end of evil.",
-    "Prophecy": "Experience hope and peace that comes from the Bible alone."
+    "Basics": {
+      "description": "Explore the most essential and impactful truths of the Bible.",
+      "color": "#b785c4"
+    },
+    "Gospel": {
+      "description": "Discover the good news about salvation from sin and the end of evil.",
+      "color": "#dd8663"
+    },
+    "Prophecy": {
+      "description": "Experience hope and peace that comes from the Bible alone.",
+      "color": "#b84950"
+    }
   },
   "series": {
     "messiah": {
