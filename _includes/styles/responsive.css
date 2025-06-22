@@ -128,6 +128,11 @@
     font-size: 21px;
   }
 
+  .blur-bg {
+    top: 34%;
+    width: 300px;
+  }
+
   .banner p,
   article > header p {
     font-size: 20px;

@@ -1,10 +1,10 @@
 .blur-bg {
   position: absolute;
   left: 50%;
-  top: 42%;
+  top: 41%;
   transform: translate(-50%, -50%);
   width: 450px;
-  height: 30px;
+  height: 20px;
   z-index: 0;
   pointer-events: none;
   filter: blur(50px);
