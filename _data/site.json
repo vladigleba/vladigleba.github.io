@@ -6,15 +6,15 @@
   "categories": {
     "Basics": {
       "description": "Explore the most essential and impactful truths of the Bible.",
-      "color": "#b785c4"
+      "color": "#0091ff"
     },
     "Gospel": {
       "description": "Discover the good news about salvation from sin and the end of evil.",
-      "color": "#dd8663"
+      "color": "#007951"
     },
     "Prophecy": {
       "description": "Experience hope and peace that comes from the Bible alone.",
-      "color": "#b84950"
+      "color": "#ff00a6"
     }
   },
   "series": {

@@ -1,8 +1,8 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg-gradient" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0%" stop-color="#ffe7d2"/> <!-- bottom -->
-      <stop offset="100%" stop-color="#e6e1f0"/> <!-- top -->
+      <stop offset="0%" stop-color="#ffe7d2"/>
+      <stop offset="100%" stop-color="#e6e1f0"/>
     </linearGradient>
     <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#d1d5db" flood-opacity="0.25"/>
@@ -13,7 +13,13 @@
   <g filter="url(#softShadow)">
     <rect x="80" y="90" width="1040" height="450" rx="32" fill="#fff"/>
   </g>
-  <text x="50%" y="38%" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif" font-size="72" fill="#111" font-weight="bold">Better than gold</text>
-  <text x="50%" y="52%" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif" font-size="64" fill="#888" font-weight="normal">sweeter than honey</text>
-  <text x="50%" y="68%" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif" font-size="32" fill="#111">The Truth will make you free.</text>
+  <!-- "The Truth" on the same line, with correct font sizes and visibility -->
+  <text x="50%" y="48%" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif">
+    <tspan font-size="32" font-weight="normal" fill="#111">The </tspan>
+    <tspan font-family="'Open Sans', Arial, sans-serif" font-size="124" font-weight="bold" fill="#111">Truth</tspan>
+  </text>
+  <text x="50%" y="62%" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif" font-weight="bold">
+    <tspan font-size="58" fill="#111">will make you </tspan>
+    <tspan font-size="88" fill="#111">free</tspan>
+  </text>
 </svg>

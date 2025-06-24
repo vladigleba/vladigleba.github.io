@@ -9,7 +9,7 @@
   pointer-events: none;
   filter: blur(50px);
   opacity: 1;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .banner {
@@ -25,10 +25,6 @@
   width: 75%;
   position: relative;
   z-index: 2; /* ensure text is above the blur */
-}
-
-.banner h1 {
-  font-weight: 600;
 }
 
 .banner h1 span { 

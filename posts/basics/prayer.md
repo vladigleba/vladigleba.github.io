@@ -291,7 +291,10 @@ God desires that we be fully engaged when we speak with Him—just as we would b
 > And he went a little further, and fell on his face, and prayed, *saying*, O my Father, if it be possible, let this cup pass from me: nevertheless not as I will, but as thou wilt.
 {% ct 'Matthew 26:39' %}
 
-Jesus often prayed aloud, even in His personal prayers—otherwise, His disciples wouldn’t have heard them and recorded them for us. Praying aloud helps us stay more focused and engaged; however, we should be careful to maintain our privacy, ensuring that only God can hear us.
+> And at midnight Paul and Silas *prayed*, and sang praises unto God: and the prisoners *heard them*.
+{% ct 'Acts 16:25' %}
+
+Jesus often prayed aloud, even in His personal prayers; otherwise, His disciples would not have heard them and recorded them for us. Paul and Silas also prayed aloud after they were imprisoned, and their witness for God led to the jailer's conversion {% rf 'Acts 16:29-30' %}. Even in private, personal prayers between us and God, praying audibly can be helpful  because it keeps us more focused and engaged. However, we should be careful to maintain our privacy in these moments, ensuring that only God hears us.
 
 ## What is the PRAY acronym?
 

@@ -8,8 +8,14 @@ article > header h1 {
   font-size: 60px;
 }
 
+.banner h1 {
+  letter-spacing: -2px;
+  font-weight: 600;
+}
+
 main > h2 {
   font-size: 34px;
+  letter-spacing: -0.5px;
 }
 
 .list a {
