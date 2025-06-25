@@ -13,7 +13,7 @@ article > header h1 {
   font-weight: 600;
 }
 
-main > h2 {
+.content h2 {
   font-size: 34px;
   letter-spacing: -0.5px;
 }
@@ -62,14 +62,14 @@ li .tag {
 }
 
 figure,
-main p,
-main ol,
-main ul {
+.content p,
+.content ol,
+.content ul {
   font-family: "Literata", Georgia, Times, "Times New Roman", serif;
 }
 
 article header h1,
-article main > h2,
+article .content h2,
 .main-nav ul,
 .list a {
   font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif;

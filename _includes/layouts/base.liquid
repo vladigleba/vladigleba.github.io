@@ -28,8 +28,13 @@
   </head>
 
   <body id="top">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     {% render 'layouts/nav' %}
-    {{ content }}
+
+    <main id="main-content" tabindex="-1">
+      {{ content }}
+    </main>
+
     {% render 'layouts/footer', last_updated: last-updated %}
     <script src="/assets/js/core.js" defer></script>
   </body>

@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // track TOC
-  const headings = document.querySelectorAll('main h2, main h3, main h4');
+  const headings = document.querySelectorAll('.content h2, .content h3, .content h4');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {

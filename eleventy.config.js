@@ -166,7 +166,7 @@ module.exports = async (config) => {
 
     const dom = new JSDOM(content);
     const document = dom.window.document;
-    const main = document.querySelector('main');
+    const main = document.querySelector('.content');
     if (!main) return content;
 
     // wrap blockquote/figcaption with figure
@@ -207,6 +207,24 @@ module.exports = async (config) => {
       const listItem = document.createElement('li');
       listItem.innerHTML = `<a href="#${slug}">${heading.textContent}</a>`;
       tocList.appendChild(listItem);
+    });
+
+    // wrap h2 and all following siblings until next h2 or p.next-link in section
+    main.querySelectorAll('h2').forEach(h2 => {
+      let current = h2.nextElementSibling;
+      const toWrap = [];
+
+      while (current && !(current.tagName === 'H2' || (current.tagName === 'P' && current.classList.contains('next-link')))) {
+        toWrap.push(current);
+        current = current.nextElementSibling;
+      }
+
+      if (toWrap.length > 0) {
+        const section = document.createElement('section');
+        h2.parentNode.insertBefore(section, h2);
+        section.appendChild(h2);
+        toWrap.forEach(el => section.appendChild(el));
+      }
     });
 
     return dom.serialize();

@@ -1,4 +1,4 @@
-main blockquote::before {
+.content blockquote::before {
   content: "\201c";
   font-size: 50px;
   position: absolute;
@@ -6,22 +6,22 @@ main blockquote::before {
   left: -2px;
 }
 
-main blockquote {
+.content blockquote {
   padding-top: 15px;
   margin-left: 2px;
   position: relative;
   font-style: italic;
 }
 
-main blockquote p {
+.content blockquote p {
   padding-left: 30px;
 }
 
-main blockquote em {
+.content blockquote em {
   font-weight: 700;
 }
 
-main figcaption {
+.content figcaption {
   color: var(--gray-color);
   text-align: right; 
   padding-bottom: 15px;

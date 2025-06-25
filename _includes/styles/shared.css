@@ -27,3 +27,25 @@ th, td {
   width: 25px;
   text-align: center;
 }
+
+.skip-link {
+  background-color: #fff;
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 100;
+  padding: 0.5em 1em;
+  transition: left 0.2s; /* animate left position on focus */
+}
+
+.skip-link:focus {
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+  outline: 2px solid #222;
+  overflow: visible;
+}

@@ -1,7 +1,7 @@
 .wrapper {
   display: flex;
-  align-items: flex-start; /* Aligns the top edges */
-  gap: 2rem; /* Space between ToC and content */
+  align-items: flex-start; /* aligns the top edges */
+  gap: 2rem; /* space between ToC and content */
 }
 
 article {

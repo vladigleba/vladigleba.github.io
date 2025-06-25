@@ -9,7 +9,7 @@ layout: layouts/base
 
 <style>
   .main-nav, .main-nav li:hover { color: white; }
-  header h1, main > h2, .tag span { color: {{ color }}; }
+  header h1, .content h2, .tag span { color: {{ color }}; }
   header, .main-nav, .main-nav ul { background-color: {{ color }}; }
   /*blockquote p,*/ .toc li.active { border-left: 4px solid {{ color }}; }
 </style>
@@ -31,7 +31,7 @@ layout: layouts/base
 
   <div class="wrapper">
     {% render 'layouts/toc' %}
-    <main>
+    <section class="content">
       {{ content }}
       
       {% if next %}
@@ -39,6 +39,6 @@ layout: layouts/base
           Read next: <a href="{{ next.url }}" rel="next">{{ next.title }}</a>
         </p>
       {% endif %}
-    </main>
+    </section>
   </div>
 </article>

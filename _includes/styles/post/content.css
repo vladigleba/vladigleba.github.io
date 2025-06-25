@@ -1,0 +1,17 @@
+.content {
+  flex: 1; /* expands to fill available space */
+  order: 0; /* ensures .content comes first visually */
+}
+
+.content h2 {
+  margin-top: 60px;
+}
+
+.content ul, 
+.content ol {
+  padding-bottom: 15px;
+}
+
+.content p {
+  padding: 15px 0px;
+}
