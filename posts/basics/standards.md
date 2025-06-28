@@ -77,7 +77,10 @@ Thoughts turn into words, which turn into actions, which turn into habits, which
 > Casting down imaginations, and every high thing that exalteth itself against the knowledge of God, and *bringing into captivity every thought to the obedience of Christ*.
 {% ct '2 Corinthians 10:5' %}
 
-The list Paul provides on the kind of thoughts we are to think about has implications on what a Christian will choose to avoid:
+> Now the works of the flesh are manifest, which are these; *adultery, fornication, uncleanness, lasciviousness, idolatry, witchcraft, hatred, variance, emulations, wrath, strife, seditions, heresies, envyings, murders, drunkenness, revellings, and such like*: of the which I tell you before, as I have also told you in time past, that they which do such things shall not inherit the kingdom of God. But *the fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith, meekness, temperance*: against such there is no law. And they that are Christ’s have crucified the flesh with the affections and lusts.
+{% ct 'Galatians 5:19-24' %}
+
+The above verses makes it clear there is little in modern entertainment that is fit for a Christian to watch. The list Paul provides in Philippians on the kind of thoughts we are to think about has implications on what a Christian will choose to avoid:
 - Dishonesty: lying, cheating, stealing, betrayal, or injustice.
 - Impurity: profanity, pornography, fornication, adultery, homosexuality, and watching or listening to anything that’s debasing.
 
@@ -87,14 +90,7 @@ Besides music, there is a second avenue into our mind: the things we watch. Do t
 
 [^1]: Newsweek, “Violence, Reel to Reel”, Dec. 11, 1995, p. 47.
 
-## Is there a guide for choosing what to watch?
-
-> Now the works of the flesh are manifest, which are these; *adultery, fornication, uncleanness, lasciviousness, idolatry, witchcraft, hatred, variance, emulations, wrath, strife, seditions, heresies, envyings, murders, drunkenness, revellings, and such like*: of the which I tell you before, as I have also told you in time past, that they which do such things shall not inherit the kingdom of God. But *the fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith, meekness, temperance*: against such there is no law. And they that are Christ’s have crucified the flesh with the affections and lusts.
-{% ct 'Galatians 5:19-24' %}
-
-The above list makes it clear there is little in modern entertainment that is fit for a Christian to watch.
-
-## What other guidance does the Bible give?
+## Any other guidance?
 
 > The LORD trieth the righteous: but the wicked and *him that loveth violence his soul hateth*.
 {% ct 'Psalm 11:5' %}
@@ -107,7 +103,7 @@ The above list makes it clear there is little in modern entertainment that is fi
 
 Instead of beholding vanity or violence, which are displeasing to God, we are invited to have the mind of Christ. It may seem like a high standard, but nothing is impossible to God {% rf 'Mark 10:27' %}. We can never accomplish it through our own power, but if we ask Him for it, He will give us a complete transformation of mind {% rf '1 Corinthians 6:9-11' %}.
 
-## Are we able to make our own judgments on what is right?
+## Am I able to decide what is right?
 
 > *Ye shall not do* after all the things that we do here this day, *every man whatsoever is right in his own eyes*.
 {% ct 'Deuteronomy 12:8' %}
@@ -202,7 +198,7 @@ Many try to follow Christ while staying as close as possible to the world, but a
 
 Changing our tastes and habits is often overwhelming, and the truth is we cannot do it ourselves, but if we are *willing* to change and have faith in *God’s* power to do it, He will give us a love for the pure, holy, and righteous. What He needs from us is a willingness to separate from the things of the world and a desire to draw close to Him by spending more time with Him in His Word, through which He can then sanctify us {% rf 'John 17:17' %}. The more time we spend with Him, the more we will love Him, and the more we will want to please Him. Having our consent, He will then have the freedom to change us into His image {% rf '2 Corinthians 3:18' %}, and people will take notice that we had been with Jesus {% rf 'Acts 4:13' %}.
 
-## What does Jesus want for my life?
+## What is Jesus' desire for me?
 
 > *Ye are the light of the world*. A city that is set on an hill cannot be hid.
 {% ct 'Matthew 5:14' %}

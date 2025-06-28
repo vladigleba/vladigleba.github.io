@@ -120,21 +120,24 @@ God’s people are now those of any nation who choose to accept and serve Him, b
 > It was therefore necessary that *the patterns of things in the heavens should be purified with these*; but the heavenly things themselves with better sacrifices than these.
 {% ct 'Hebrews 9:23' %}
 
+> And I saw another angel fly in the midst of heaven, having the everlasting gospel to preach unto them that dwell on the earth, and to every nation, and kindred, and tongue, and people, saying with a loud voice, Fear God, and give glory to him; *for the hour of his judgment is come*: and worship him that made heaven, and earth, and the sea, and the fountains of waters.
+{% ct 'Revelation 14:6-7' %}
+
 After the 490 year prophecy ended in A.D. 34, there were 1,810 years remaining in the 2,300 year one (2,300 minus 490), which means it ended in 1844. According to Daniel, this was the year when the cleansing of the sanctuary began. We’ve already learned that when the system of animal sacrifices was made obsolete by the death of Jesus, the veil of the temple was torn by the divine hand of God. Shortly after, the temple itself was destroyed by the Romans in A.D. 70 and never rebuilt, so the sanctuary that is cleansed can only be the heavenly one, of which the earthly one was a symbol.
 
 The cleansing of the earthly sanctuary always occured on the [Day of Atonement](/posts/gospel/sanctuary.md#what-was-the-day-of-atonement) (to “atone” means to be “at one” with God), which was a time of judgment during which God’s people examined their souls to make sure all of their sins were confessed, forsaken, and symbolically “blotted out” from the sanctuary; likewise, the heavenly judgment began in 1844 and the sins of God’s people began to be removed from the books of heaven {% rf 'Daniel 7:10' %}. In other words, prior to 1844, confessed and forsaken sins were forgiven by God because of Jesus’ substitutionary sacrifice on the sinners behalf, but they remained on the books. After 1844, when the heavenly judgment began, God started to blot out even the very record of those confessed sins {% rf 'Acts 3:19' %}!
 
-## What happens at the end of the 2,300 year prophecy?
-
-> And I saw another angel fly in the midst of heaven, having the everlasting gospel to preach unto them that dwell on the earth, and to every nation, and kindred, and tongue, and people, saying with a loud voice, Fear God, and give glory to him; *for the hour of his judgment is come*: and worship him that made heaven, and earth, and the sea, and the fountains of waters.
-{% ct 'Revelation 14:6-7' %}
+## Who is being judged first?
 
 > For the time is come that *judgment must begin at the house of God*: and if it first begin at us, what shall the end be of them that obey not the gospel of God?
 {% ct '1 Peter 4:17' %}
 
-The heavenly judgment that began in 1844 is the “pre-advent judgment,” the first phase, since it occurs before the second coming of Christ. Jesus returns with His reward {% rf 'Revelation 22:11-12' %}, which means those who are saved have been identified and their reward determined. Just like in the earthly Day of Atonement judgment there was a separation of the unrepentant from the camp of Israel before sin was removed from the sanctuary {% rf 'Leviticus 23:29' %}, so in the heavenly sanctuary there is an identification of who is saved and who is lost during the pre-advent judgment before sin is removed from the universe.
+> And to the others he said in mine hearing, Go ye after him through the city, and smite: let not your eye spare, neither have ye pity: slay utterly old and young, both maids, and little children, and women: but come not near any man upon whom is the mark; and *begin at my sanctuary*. Then they began at the ancient men which were before the house.
+{% ct 'Ezekiel 9:5-6' %}
 
-This is why Peter says the judgment begins with the “house of God,” meaning the people of God. Anyone who has claimed to be a Christian, alive or dead, will be examined during this judgment. And it’s already in session, which is why we are called to put away our sins and be “at one” with God. We are the temple of God now that there is no longer an earthly sanctuary. It’s us that God wants to cleanse from sin because His desire is to abide in us through His Holy Spirit {% rf '1 Corinthians 6:19-20' %}.
+In the Bible judgment always begins with God's people. The heavenly judgment that began in 1844 is the “pre-advent judgment,” the first phase, since it occurs before the second coming of Christ. Jesus returns with His reward {% rf 'Revelation 22:11-12' %}, which means those who are saved have been identified and their reward determined. Just like in the earthly Day of Atonement judgment there was a separation of the unrepentant from the camp of Israel before sin was removed from the sanctuary {% rf 'Leviticus 23:29' %}, so in the heavenly sanctuary there is an identification of who is saved and who is lost during the pre-advent judgment.
+
+This is why Peter says the judgment begins with the “house of God,” meaning the people of God. Anyone who has claimed to be a Christian, alive or dead, will be examined during this judgment. And it’s already in session {% rf 'Revelation 14:7' %}, which is why we are called to put away our sins and be “at one” with God. We are the temple of God now that there is no longer an earthly sanctuary. It’s us that God wants to cleanse from sin because His desire is to abide in us through His Holy Spirit {% rf '1 Corinthians 6:19-20' %}.
 
 ## When is the second phase of the judgment?
 

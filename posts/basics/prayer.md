@@ -21,7 +21,7 @@ date: 2025-04-16
 
 The Bible tells us that Jesus, our example, was a man of prayer. If He had a need to pray, how much more do we?
 
-## Does God the Father want me to pray?
+## How does God feel about prayer?
 
 > If ye then, being evil, know how to give good gifts unto your children: how much more shall your heavenly Father *give the Holy Spirit to them that ask him*?
 {% ct 'Luke 11:13' %}
@@ -65,7 +65,7 @@ Daniel, after a lifetime of following God, included himself in the sins of his p
 
 Today, there is so much emphasis on our identity as sons and daughters of God that calling oneself a sinner is almost viewed as heresy or a perversion of the gospel, but Paul and Daniel would beg to differ. It is true that *in* Christ we are children of God, but let us not forget who we are *apart* from Christ, so we never lose sight of our need to continually cling to Him {% rf '1 Corinthians 10:12' %}; otherwise, we risk adopting the Pharisaic mindset—that being God’s children we no longer have a need of repentance {% rf '1 John 5:8' %}.
 
-## Anything else regarding heart posture?
+## Anything else on heart posture?
 
 > And this is the confidence that we have in him, that, *if we ask any thing according to his will*, he heareth us: And if we know that he hear us, whatsoever we ask, we know that we have the petitions that we desired of him.
 {% ct '1 John 5:14-15' %}
@@ -102,7 +102,7 @@ One author shared the following insight on praying Jesus’ model prayer:
 > I cannot say ‘our’ if I live only for myself. I cannot say ‘Father’ if I do not endeavor each day to act like his child. I cannot say ‘who art in heaven’ if I’m laying up no treasures there. I cannot say ‘hallowed be thy name’ if I am not striving for holiness. I cannot say ‘thy kingdom come’ if I’m not seeking to hasten the blessed hope. I cannot say ‘thy will be done’ if I am disobedient to his word. I cannot say ‘in earth as it is in heaven’ if I’ll not serve him here and now. I cannot say ‘give us this day our daily bread’ if I am selfishly hoarding for the fu-ture. I cannot say ‘forgive us our debts’ if I harbor a grudge against anyone. I cannot say ‘lead us not into temptation’ if I deliberately place myself in its path. I cannot say ‘deliver us from evil’ if I do not long for holiness. I cannot say ‘thine is the kingdom’ if I do not give Jesus the throne of my heart. I cannot attribute to him ‘the power’ if I fear what men may do. I cannot ascribe to him ‘the glory’ if I’m seeking for my own honor. I cannot say ‘forever’ if I’m living only for temporary earthly rewards.
 {% ct 'Unknown' %}
 
-## What are some things I can pray about?
+## What things can I pray about?
 
 > Casting *all your care* upon him; for he careth for you.
 {% ct '1 Peter 5:7 ' %}

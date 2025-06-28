@@ -25,21 +25,21 @@ The beautiful thing about God’s character is that He not only knows the future
 
 As we learned in a previous study, the beast that rose from the sea represents the Roman papacy, which held influence and power over the world for 42 months. The papacy received a [deadly wound](/posts/prophecy/mark.md) at the end of this period in 1798, when Pope Pius VI was taken captive by Napoleon Bonaparte’s general, Louis-Alexandre Berthier.
 
-## What is the second power symbolized in Revelation 13?
+## What power is symbolized next?
 
 > And I beheld another beast *coming up out of the earth*; and he had two horns like a lamb, and he spake as a dragon.
 {% ct 'Revelation 13:11' %}
 
 {% rf 'Revelation 13:10' false %} refers to the papal captivity that occurred in 1798, and the second beast is seen emerging around the same time. There is only one power that fits this time frame—the United States. It declared its independence in 1776, adopted the Constitution in 1787, and ratified the Bill of Rights in 1791. By 1798, it was recognized as a rising global power. A key detail in verse 11 is that this power arises “out of the earth,” in contrast to the first beast, which came “out of the sea.” According to {% rf 'Revelation 17:15' false %}, the sea symbolizes large, densely populated areas; therefore, the earth represents the opposite—a sparsely populated region. This means the second beast could not emerge from the crowded nations of the Old World; instead, it had to rise from a less populated part of the world—perfectly matching the emergence of the United States.
 
-## How is it distinguished from other nations?
+## What makes the U.S. unique?
 
 > And I beheld another beast coming up out of the earth; and he had *two horns like a lamb*, and he spake as a dragon.
 {% ct 'Revelation 13:11' %}
 
 Horns represent kings, kingdoms, or governments {% rf 'Daniel 7:24; 8:21' %}. In this case, they symbolize the two governing principles of the United States: civil and religious liberty. These principles have also been described as republicanism (a government without a king) and Protestantism (a church without a pope). Unlike other nations described in Daniel and Revelation, this one is distinguished by the absence of crowns, signifying a republican form of government as opposed to a monarchy. Throughout history, it was common for nations to tax citizens to support a state religion and to oppress religious dissenters. The pilgrims on the Mayflower, as well as many other settlers who followed, were fleeing religious persecution, and so the United States was founded with an entirely new mindset: the separation of church and state.
 
-## Will the United States experience a change?
+## Will the U.S. experience a change?
 
 > And I beheld another beast coming up out of the earth; and he had two horns like a lamb, and he *spake as a dragon*.
 {% ct 'Revelation 13:11' %}
@@ -102,7 +102,7 @@ In 1888, Senator Henry Blair proposed a bill that sought to establish Sunday as 
 
 [^3]: This was done despite the 1797 Treaty of Tripoli—signed by President George Washington and approved by the U.S. Senate—which, in Article 11, declared that “the government of the United States is not in any sense founded upon the Christian religion.”
 
-## How influential is the papacy today?
+## How influential is the papacy?
 
 The papacy has emerged as the most powerful religio-political entity in the world. Nearly every major country maintains an official ambassador to the Vatican, including the United States. During Pope Francis’ 2015 visit to the U.S., President Obama personally welcomed him, with the White House describing the event as a symbol of the high level of respect America holds for the pontiff.[^4] The visit also marked the first time in American history that a pope addressed a joint session of Congress.
 
@@ -112,7 +112,7 @@ In addition to its political influence, the papacy’s religious influence is li
 [^5]: *Catholic Herald*, January 27, 2014.
 [^6]: Of course, there is nothing inherently wrong with unity. After all, Jesus teaches us to love our neighbors—even our enemies—and He prayed for unity among His disciples {% rf 'Matthew 22:39; 5:44; John 17:11' %}. Unity is indeed biblical, so long as it is not built on the compromise of truth as revealed in God’s Word. Unfortunately, this is often [not the case](/posts/gospel/salvation.md#how-exactly-am-i-saved-from-my-sins).
 
-## How influential is the United States today?
+## How influential is the U.S. today?
 
 Few would dispute that the United States is a global leader and a fulcrum of influence. Although it faces challenges to its power from countries such as China and Russia, it continues to dominate the global stage. “What ultimately makes the difference between war and peace … is not good intentions, or strong words, or a grand coalition. It is the capability, credibility, and global reach of American hard power.”[^7] “The United States is and remains the one indispensable nation. That has been true for the century past, and it will be true for the century to come.”[^8] Contrary to the belief that the United States will lose its elevated standing and become merely one among several strong nations, Bible prophecy indicates that this simply cannot be. The United States will remain a leading world power until the Second Coming of Christ.
 
@@ -153,7 +153,7 @@ These signs and wonders will be so convincing that Satan will attempt to deceive
 
 There will be reports of a dazzling angel claiming to be Jesus, but in reality, it will be Satan impersonating Him. The fallen angel could quote Scripture, perform miracles, and even claim to have changed the Sabbath to Sunday in order to urge the world to honor his counterfeit day. The Bible says the deception will be so effective that the whole world will be deceived by it {% rf 'Revelation 13:3' %}—except for God’s true followers, who will test everything by Scripture {% rf 'Isaiah 8:19-20; 2 Timothy 2:15' %}. They will know that God’s law cannot change {% rf 'Luke 16:17; 21:33' %}. Moreover, they will recognize it is not Jesus, because according to the Bible, He will not touch the earth at His second coming but will remain in the clouds to meet His people in the air {% rf '1 Thessalonians 4:16-17' %}.
 
-## Will there be a genuine revival too?
+## Will there be a genuine revival?
 
 > And I saw another angel fly in the midst of heaven, *having the everlasting gospel to preach unto them that dwell on the earth, and to every nation, and kindred, and tongue, and people*, saying with a loud voice, *Fear God, and give glory to him; for the hour of his judgment is come: and worship him that made* heaven, and earth, and the sea, and the fountains of waters.
 >

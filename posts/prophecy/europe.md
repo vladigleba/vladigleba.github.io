@@ -40,7 +40,7 @@ Daniel asked his friends to join him in prayer, seeking God to reveal the dream,
 
 God saved their lives by revealing the king’s dream and its interpretation, and Daniel gave God all the credit.
 
-## What was the purpose of the dream?
+## What was the dream's purpose?
 
 > But there is a God in heaven that revealeth secrets, and *maketh known to the king Nebuchadnezzar what shall be in the latter days*.
 {% ct 'Daniel 2:28' %}
@@ -50,15 +50,10 @@ God saved their lives by revealing the king’s dream and its interpretation, an
 
 The dream was God’s answer to the king’s wondering about what the future would hold for his kingdom.
 
-## What did the king see in his dream?
+## What did the king see?
 
-> Thou, O king, sawest, and behold *a great image*. This great image, whose brightness was excellent, stood before thee; and the form thereof was terrible.
-{% ct 'Daniel 2:31' %}
-
-## What did it look like?
-
-> This image’s *head was of fine gold*, his *breast and his arms of silver*, his *belly and his thighs of brass*, his *legs of iron*, his *feet part of iron and part of clay*.
-{% ct 'Daniel 2:32-33' %}
+> Thou, O king, sawest, and behold *a great image*. This great image, whose brightness was excellent, stood before thee; and the form thereof was terrible. This image’s *head was of fine gold*, his *breast and his arms of silver*, his *belly and his thighs of brass*, his *legs of iron*, his *feet part of iron and part of clay*.
+{% ct 'Daniel 2:31-33' %}
 
 ## What happened to it?
 
@@ -97,19 +92,19 @@ Babylon was conquered by Cyrus in 539 BC, making the Medo-Persian Empire the nex
 
 In one of the most astoundingly detailed prophecies, God not only explicitly named Cyrus through His prophet Isaiah but also predicted the manner in which he would conquer Babylon—more than 150 years before it happened! According to the ancient historian Herodotus, when Cyrus surrounded Babylon, his armies diverted the Euphrates River that flowed through the city, allowing them to pass under the city’s walls by walking on the riverbed. Babylon also had street gates that controlled access to the river, but that night, the gates were left open!
 
-## What kingdom would come next?
+## What would come next?
 
 > And after thee shall arise another kingdom inferior to thee, and *another third kingdom of brass*, which shall bear rule over all the earth.
 {% ct 'Daniel 2:39' %}
 
 After the silver kingdom symbolizing Medo-Persia, a third kingdom—represented by bronze—would arise. Notably, each succeeding metal in the statue is less valuable but more enduring than the one before it.
 
-## According to Daniel 8, what kingdom is this?
+## What kingdom was this?
 
 > The ram which thou sawest having two horns are the kings of Media and Persia. And the rough goat is the *king of Grecia*: and the great horn that is between his eyes is the first king.
 {% ct 'Daniel 8:20-21' %}
 
-After a series of campaigns, Alexander the Great delivered a decisive blow to the Persian Empire at the Battle of Arbela in 331 BC, making the kingdom of Greece the next dominant world power. Notably, the armor of Greek soldiers was made entirely of bronze.
+Daniel 8 is a parallel prophecy that repeats and expands on the one in Daniel 2, and it identifies Greece as the empire that would succeed Medo-Persia. After a series of campaigns, Alexander the Great delivered a decisive blow to the Persian Empire at the Battle of Arbela in 331 BC, making the kingdom of Greece the next dominant world power. Notably, the armor of Greek soldiers was made entirely of bronze.
 
 ## How is the fourth kingdom described?
 
