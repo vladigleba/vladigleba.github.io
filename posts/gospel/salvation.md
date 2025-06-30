@@ -6,19 +6,19 @@ series: salvation
 featured: true
 ---
 
-## How did God demonstrate His love toward us?
+## How did God demonstrate His love?
 
 > He that loveth not knoweth not God; for God is love. In this was manifested the love of God toward us, because that *God sent his only begotten Son into the world, that we might live through him*. 
 {% ct '1 John 4:8-9' %}
 
-## What was God’s desire for Adam and Eve?
+## What did God desire for Adam and Eve?
 
 > So God created man in his own image, in the image of God created he him; male and female created he them. And *God blessed them*, and God said unto them, Be fruitful, and multiply, and replenish the earth, and subdue it: and have dominion over the fish of the sea, and over the fowl of the air, and over every living thing that moveth upon the earth. And God said, Behold, I have given you every herb bearing seed, which is upon the face of all the earth, and every tree, in the which is the fruit of a tree yielding seed; to you it shall be for meat. And to every beast of the earth, and to every fowl of the air, and to every thing that creepeth upon the earth, wherein there is life, I have given every green herb for meat: and it was so. And *God saw every thing that he had made, and, behold, it was very good*. And the evening and the morning were the sixth day. 
 {% ct 'Genesis 1:27-31' %}
 
 God did all He could to give Adam and Eve the very best start. Everything He made was very good and designed to bless and make their life in the garden a joyful and invigorating experience.
 
-## What change occured once they sinned?
+## What changed once they sinned?
 
 > And they heard the voice of the LORD God walking in the garden in the cool of the day: and Adam and his wife *hid themselves from the presence of the LORD God* amongst the trees of the garden. 
 {% ct 'Genesis 3:8' %}
@@ -35,7 +35,7 @@ Sin introduced feelings of shame and guilt into Adam and Eve’s life, which cre
 
 Sin started the process of decay and death on the earth that would affect not just Adam and Eve, but every other living thing on it. Death was now a part of life becase they were separated from the Giver of life. Furthermore, the Bible defines sin as the transgression of God’s law, and the penalty for breaking it is death.
 
-## Is there anyone who has not sinned?
+## How many have sinned?
 
 > For *all* have sinned, and come short of the glory of God. 
 {% ct 'Romans 3:23' %}
@@ -91,7 +91,7 @@ Forsaking my way implies turning around and going in the opposite direction—fr
 > If we confess our sins, he is faithful and just to forgive us our sins, and to *cleanse us from all unrighteousness*. 
 {% ct '1 John 1:9' %}
 
-## How exactly am I saved from my sins?
+## How exactly am I saved?
 
 > For *by grace* are ye saved *through faith*; and that not of yourselves: *it is the gift of God*. Not of works, lest any man should boast.
 {% ct 'Ephesians 2:8-9' %}
@@ -136,7 +136,7 @@ Once I turn away from my sins and accept Jesus as my Lord and Saviour, I’m no 
 
 Christ’s death on the cross restored the rift that occured between God and the human race when Adam and Eve sinned, and we can now once again be called sons and daughters of God!
 
-## Is it possible to know that I have eternal life?
+## Can I know that I have eternal life?
 
 > And this is the record, that God hath given to us eternal life, and this life is in his Son. *He that hath the Son hath life*; and he that hath not the Son of God hath not life. These things have I written unto you that believe on the name of the Son of God; *that ye may know that ye have eternal life*, and that ye may believe on the name of the Son of God. 
 {% ct '1 John 5:11-13' %}
@@ -154,7 +154,7 @@ Christ’s death on the cross restored the rift that occured between God and the
 
 God’s way of salvation has always been about respecting freedom of choice. He gave Satan the option to rebel, and He did not immediately destroy him when he did. God permitted Adam and Eve to rebel too. Likewise, I am free to choose whether I want to serve Him or not. Jesus wants to save every person {% rf '1 Timothy 2:3-4' %}—He wants me to choose Him—but He will not force Himself on anyone. In fact, this is a daily choice; I can choose, anytime, to leave Christ and go in another direction, which is why it’s imperative to reaffirm my decision and recommit myself to Him on a daily basis {% rf 'Luke 9:23' %}. Every single day is a gift from my Creator, and it’s my privilege to give it back to Him.
 
-## What does it mean to accept Jesus as Savior and as Lord?
+## What does it mean to accept Jesus as Savior and Lord?
 
 > But grow in grace, and in the knowledge of *our Lord and Saviour Jesus Christ*. To him be glory both now and for ever. Amen. 
 {% ct '2 Peter 3:18' %}

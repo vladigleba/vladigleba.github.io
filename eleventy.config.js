@@ -149,7 +149,7 @@ module.exports = async (config) => {
       });
     });
 
-    // Make last item first
+    // make last item first
     if (groupedPosts.length > 1) {
       groupedPosts.unshift(groupedPosts.pop());
       const first = groupedPosts[0];

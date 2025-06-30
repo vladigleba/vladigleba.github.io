@@ -15,7 +15,7 @@ series: messiah
 
 Long before Jesus was born, the prophet Micah foretold that Jesus would be born in the town of Bethlehem.
 
-## What was said about the manner of His conception?
+## What would be the manner of His conception?
 
 > Therefore the Lord himself shall give you a sign; Behold, a *virgin shall conceive, and bear a son*, and shall call his name Immanuel.
 {% ct 'Isaiah 7:14' %}
@@ -70,7 +70,7 @@ Jesus was betrayed by a friend, one of His own disciples, and even the act that 
 
 Jesus was sold for thirty pieces of silver, the price of a slave, but not only was the amount accurately foretold, but also Judas’ act of throwing the money into the temple, as well as that money subsequently going to a potter!
 
-## What was said about the way He would suffer?
+## How would He suffer?
 
 > Surely He hath borne our griefs, and carried our sorrows: yet we did esteem Him stricken, smitten of God, and afflicted. But He was *wounded* for our transgressions, He was *bruised* for our iniquities: the chastisement of our peace was upon Him; and *with His stripes we are healed*. All we like sheep have gone astray; we have turned every one to his own way; and the Lord hath laid on Him the iniquity of us all. *He was oppressed, and He was afflicted, yet He opened not His mouth*: He is brought as a lamb to the slaughter, and as a sheep before her shearers is dumb, so He openeth not His mouth.
 {% ct 'Isaiah 53:4-7' %}

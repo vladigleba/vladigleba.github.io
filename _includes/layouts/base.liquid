@@ -30,12 +30,26 @@
   <body id="top">
     <a href="#main-content" class="skip-link">Skip to main content</a>
     {% render 'layouts/nav' %}
-
+   
     <main id="main-content" tabindex="-1">
       {{ content }}
     </main>
 
     {% render 'layouts/footer', last_updated: last-updated %}
+    <script>document.body.classList.add('js-enabled');</script>
+    <script>
+      if (
+        'serviceWorker' in navigator &&
+        location.hostname !== 'localhost' &&
+        location.hostname !== '127.0.0.1'
+      ) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(err => {
+            console.warn('Service worker registration failed:', err);
+          });
+        });
+      }
+    </script>
     <script src="/assets/js/core.js" defer></script>
   </body>
 </html>

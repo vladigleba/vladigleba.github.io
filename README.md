@@ -4,17 +4,18 @@ This is a static blog (no server-side code) built with [11ty](https://www.11ty.d
 
 ## Features
 - Fast static site generation with 11ty
-- Modern and responsive user interface for all screen sizes using plain CSS
+- Modern and responsive user interface for all screen sizes
 - Reader-friendly typography
 - Modular layouts using Liquid templates
 - Markdown-based posts with footnote support
-- Posts can be grouped into series
-- Automatic table of contents and anchor link generation for headings with copy-to-clipboard button for each
-- Folder-based category groupings
+- Folder-based category groupings for posts
+- Series groupings for posts
+- Automatic table of contents and anchor link generation for headings with copy-to-clipboard buttons
 - Reading time estimates
 - Last-updated tag in footer with relative date
 - SEO-friendly (semantic HTML, sitemap, robots.txt, meta tags, Open Graph, Twitter cards, JSON-LD)
 - Accessible keyboard navigation and screen reader support (skip links, ARIA attributes)
+- Offline support via service workers
 - Automatic deployment to [GitHub Pages](https://pages.github.com) via [GitHub Actions](https://github.com/features/actions)
 
 ## Structure
