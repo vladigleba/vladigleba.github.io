@@ -18,10 +18,10 @@
     
     
 
-    <title>Gospel</title>
+    <title>The Truth will make you free.</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="[object Object]">
+<meta name="description" content="Better than gold, sweeter than honey, the Truth will make you free.">
 <link rel="canonical" href="https://vladigleba.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -36,14 +36,14 @@
   <meta property="og:type" content="website">
 
 
-<meta property="og:title" content="Gospel">
-<meta property="og:description" content="[object Object]">
-<meta property="og:url" content="https://vladigleba.com/gospel/">
+<meta property="og:title" content="The Truth will make you free.">
+<meta property="og:description" content="Better than gold, sweeter than honey, the Truth will make you free.">
+<meta property="og:url" content="https://vladigleba.com/offline/">
 <meta property="og:site_name" content="The Truth will make you free.">
 <meta property="og:image" content="https://vladigleba.com/assets/images/social-default.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Gospel">
-<meta name="twitter:description" content="[object Object]">
+<meta name="twitter:title" content="The Truth will make you free.">
+<meta name="twitter:description" content="Better than gold, sweeter than honey, the Truth will make you free.">
 <meta name="twitter:image" content="https://vladigleba.com/assets/images/social-default.png">
 
 
@@ -51,9 +51,9 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "url": "https://vladigleba.com/gospel/",
-      "name": "Gospel",
-      "description": "[object Object]"
+      "url": "https://vladigleba.com/offline/",
+      "name": "The Truth will make you free.",
+      "description": "Better than gold, sweeter than honey, the Truth will make you free."
     }
   </script>
 
@@ -84,160 +84,26 @@
       
 <header class="banner">
   
-    <div class="blur-bg" style="background: #009c17;"></div>
-  
   <hgroup class="intro">
-    <h1>Gospel<br><span></span></h1>
-    <p>Discover the good news about salvation from sin and the end of evil.</p>
+    <h1>No internet!<br><span></span></h1>
+    <p>Please check your connection and try again.</p>
   </hgroup>
 </header>
 
 
-<ol class="list">
-  
-    
-  
-    
-  
-    
-      
-        
-        
-        
+<script>
+  // redirect to previous page when back online
+  const prev = sessionStorage.getItem('offline-prev') || '/';
+  window.addEventListener('online', () => {
+    window.location.replace(prev);
+  });
 
-        <li class="featured">
-          
-            <div><span class="tag">Featured</span></div>
-          
+  // store previous page if not already on /offline/
+  if (!window.location.pathname.startsWith('/offline')) {
+    sessionStorage.setItem('offline-prev', window.location.pathname);
+  }
+</script>
 
-          <a style="color: rgb(81,144,179)" href="/gospel/god/">What Is God Like?</a>
-          <p>Gospel <span>•</span> 6 min read</p>
-          
-            <p class="description">The amount of misconceptions and flat out lies about God is astounding. What is the truth about His character?</p>
-          
-        </li>
-      
-    
-  
-    
-      
-        
-        
-        
-
-        <li class="featured">
-          
-            <div><span class="tag">Featured</span></div>
-          
-
-          <a style="color: rgb(170,98,98)" href="/gospel/evil/">Origin of Evil</a>
-          <p>Gospel <span>•</span> 13 min read</p>
-          
-            <p class="description">If God is in control, why is there so much evil in the world? How did it begin, and when will it end?</p>
-          
-        </li>
-      
-    
-  
-    
-  
-    
-      
-        <li class="series">
-          <div><span class="tag">Series</span></div>
-          <a style="color: rgb(143,102,126)" href="/gospel/salvation/">Understanding Salvation</a>
-          <p>Gospel <span>•</span> 4 parts</p>
-        </li>
-      
-    
-  
-    
-  
-    
-  
-    
-      
-        
-        
-        
-
-        <li>
-          
-
-          <a style="color: rgb(128,69,154)" href="/gospel/sanctuary/">The Gospel in the Sanctuary</a>
-          <p>Gospel <span>•</span> 17 min read</p>
-          
-        </li>
-      
-    
-  
-    
-  
-    
-      
-        
-        
-        
-
-        <li>
-          
-
-          <a style="color: rgb(77,104,129)" href="/gospel/law/">God’s Law of Love</a>
-          <p>Gospel <span>•</span> 17 min read</p>
-          
-        </li>
-      
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      
-        
-        
-        
-
-        <li>
-          
-
-          <a style="color: rgb(242,84,122)" href="/gospel/victory/">Victory Over Sin</a>
-          <p>Gospel <span>•</span> 12 min read</p>
-          
-        </li>
-      
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-</ol>
     </main>
 
     <footer role="contentinfo">

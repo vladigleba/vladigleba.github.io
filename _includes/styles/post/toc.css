@@ -21,7 +21,7 @@
 }
 
 .toc li {
-  padding: 2px 5px 5px 10px;
+  padding: 4px 5px 7px 10px;
   line-height: 0.95;
  }
 
@@ -36,7 +36,7 @@
 
 .toc a {
   color: var(--gray-color);
-  font-weight: 500;
+  font-weight: 600;
   transition: color 0.15s ease 0s;
 }
 

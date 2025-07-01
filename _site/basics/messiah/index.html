@@ -86,7 +86,7 @@
   </ul>
 </nav>
 
-
+   
     <main id="main-content" tabindex="-1">
       
  
@@ -96,8 +96,8 @@
 
 <style>
   .main-nav, .main-nav li:hover { color: white; }
-  header h1, .content h2, .tag span { color: rgb(101,102,166); }
-  header, .main-nav, .main-nav ul { background-color: rgb(101,102,166); }
+  header h1, .content h2, .tag span, figcaption { color: rgb(101,102,166); }
+  header, .main-nav, .main-nav ul, .content figure::before { background-color: rgb(101,102,166); }
   /*blockquote p,*/ .toc li.active { border-left: 4px solid rgb(101,102,166); }
 </style>
 
@@ -148,7 +148,7 @@
     <ul><li><a href="#where-was-jesus-to-be-born">Where was Jesus to be born?
         
           
-        </a></li><li><a href="#what-was-said-about-the-manner-of-his-conception">What was said about the manner of His conception?
+        </a></li><li><a href="#what-would-be-the-manner-of-his-conception">What would be the manner of His conception?
         
           
         </a></li><li><a href="#what-lineage-would-he-come-from">What lineage would He come from?
@@ -163,7 +163,7 @@
         </a></li><li><a href="#how-much-would-he-be-sold-for">How much would He be sold for?
         
           
-        </a></li><li><a href="#what-was-said-about-the-way-he-would-suffer">What was said about the way He would suffer?
+        </a></li><li><a href="#how-would-he-suffer">How would He suffer?
         
           
         </a></li><li><a href="#what-would-happen-to-his-hands-and-feet">What would happen to his hands and feet?
@@ -204,7 +204,7 @@
 
 
 
-<section><h2 id="what-was-said-about-the-manner-of-his-conception">What was said about the manner of His conception?<a href="#what-was-said-about-the-manner-of-his-conception" class="anchor-link" aria-label="Copy link">
+<section><h2 id="what-would-be-the-manner-of-his-conception">What would be the manner of His conception?<a href="#what-would-be-the-manner-of-his-conception" class="anchor-link" aria-label="Copy link">
         <svg aria-hidden="true">
           <use href="/assets/images/icons.svg#link"></use>
         </svg></a></h2><figure><blockquote>
@@ -279,7 +279,7 @@
 
 
 
-<section><h2 id="what-was-said-about-the-way-he-would-suffer">What was said about the way He would suffer?<a href="#what-was-said-about-the-way-he-would-suffer" class="anchor-link" aria-label="Copy link">
+<section><h2 id="how-would-he-suffer">How would He suffer?<a href="#how-would-he-suffer" class="anchor-link" aria-label="Copy link">
         <svg aria-hidden="true">
           <use href="/assets/images/icons.svg#link"></use>
         </svg></a></h2><figure><blockquote>
@@ -398,11 +398,25 @@
         hey @ vladigleba . com
       </div>
       <div class="last-updated">
-        Last updated on <time datetime="2025-06-25T00:22:34.011Z">June 24, 2025</time>
+        Last updated on <time datetime="2025-07-01T04:14:24.334Z">June 30, 2025</time>
       </div>
     <p></p>
   </div>
 </footer>
+    <script>document.body.classList.add('js-enabled');</script>
+    <script>
+      if (
+        'serviceWorker' in navigator &&
+        location.hostname !== 'localhost' &&
+        location.hostname !== '127.0.0.1'
+      ) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(err => {
+            console.warn('Service worker registration failed:', err);
+          });
+        });
+      }
+    </script>
     <script src="/assets/js/core.js" defer=""></script>
   
 

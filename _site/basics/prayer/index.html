@@ -86,15 +86,15 @@
   </ul>
 </nav>
 
-
+   
     <main id="main-content" tabindex="-1">
       
 
 
 <style>
   .main-nav, .main-nav li:hover { color: white; }
-  header h1, .content h2, .tag span { color: rgb(199,62,95); }
-  header, .main-nav, .main-nav ul { background-color: rgb(199,62,95); }
+  header h1, .content h2, .tag span, figcaption { color: rgb(199,62,95); }
+  header, .main-nav, .main-nav ul, .content figure::before { background-color: rgb(199,62,95); }
   /*blockquote p,*/ .toc li.active { border-left: 4px solid rgb(199,62,95); }
 </style>
 
@@ -119,7 +119,7 @@
     <ul><li><a href="#should-i-be-praying-more">Should I be praying more?
         
           
-        </a></li><li><a href="#does-god-the-father-want-me-to-pray">Does God the Father want me to pray?
+        </a></li><li><a href="#how-does-god-feel-about-prayer">How does God feel about prayer?
         
           
         </a></li><li><a href="#what-is-the-right-heart-posture-for-prayer">What is the right heart posture for prayer?
@@ -128,13 +128,13 @@
         </a></li><li><a href="#how-did-daniel-and-paul-view-themselves">How did Daniel and Paul view themselves?
         
           
-        </a></li><li><a href="#anything-else-regarding-heart-posture">Anything else regarding heart posture?
+        </a></li><li><a href="#anything-else-on-heart-posture">Anything else on heart posture?
         
           
         </a></li><li><a href="#what-should-my-prayers-be-focused-on">What should my prayers be focused on?
         
           
-        </a></li><li><a href="#what-are-some-things-i-can-pray-about">What are some things I can pray about?
+        </a></li><li><a href="#what-things-can-i-pray-about">What things can I pray about?
         
           
         </a></li><li><a href="#what-about-intercessory-prayer">What about intercessory prayer?
@@ -207,7 +207,7 @@
 
 
 
-<section><h2 id="does-god-the-father-want-me-to-pray">Does God the Father want me to pray?<a href="#does-god-the-father-want-me-to-pray" class="anchor-link" aria-label="Copy link">
+<section><h2 id="how-does-god-feel-about-prayer">How does God feel about prayer?<a href="#how-does-god-feel-about-prayer" class="anchor-link" aria-label="Copy link">
         <svg aria-hidden="true">
           <use href="/assets/images/icons.svg#link"></use>
         </svg></a></h2><figure><blockquote>
@@ -263,7 +263,7 @@
 
 
 
-<section><h2 id="anything-else-regarding-heart-posture">Anything else regarding heart posture?<a href="#anything-else-regarding-heart-posture" class="anchor-link" aria-label="Copy link">
+<section><h2 id="anything-else-on-heart-posture">Anything else on heart posture?<a href="#anything-else-on-heart-posture" class="anchor-link" aria-label="Copy link">
         <svg aria-hidden="true">
           <use href="/assets/images/icons.svg#link"></use>
         </svg></a></h2><figure><blockquote>
@@ -308,7 +308,7 @@
 
 
 
-<section><h2 id="what-are-some-things-i-can-pray-about">What are some things I can pray about?<a href="#what-are-some-things-i-can-pray-about" class="anchor-link" aria-label="Copy link">
+<section><h2 id="what-things-can-i-pray-about">What things can I pray about?<a href="#what-things-can-i-pray-about" class="anchor-link" aria-label="Copy link">
         <svg aria-hidden="true">
           <use href="/assets/images/icons.svg#link"></use>
         </svg></a></h2><figure><blockquote>
@@ -589,11 +589,25 @@
         hey @ vladigleba . com
       </div>
       <div class="last-updated">
-        Last updated on <time datetime="2025-06-25T00:22:34.011Z">June 24, 2025</time>
+        Last updated on <time datetime="2025-07-01T04:14:24.334Z">June 30, 2025</time>
       </div>
     <p></p>
   </div>
 </footer>
+    <script>document.body.classList.add('js-enabled');</script>
+    <script>
+      if (
+        'serviceWorker' in navigator &&
+        location.hostname !== 'localhost' &&
+        location.hostname !== '127.0.0.1'
+      ) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(err => {
+            console.warn('Service worker registration failed:', err);
+          });
+        });
+      }
+    </script>
     <script src="/assets/js/core.js" defer=""></script>
   
 

@@ -1,28 +1,40 @@
-.content blockquote::before {
-  content: "\201c";
-  font-size: 50px;
+.content figure::before {
+  content: '';
   position: absolute;
-  top: 15px;
-  left: -2px;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  /* background: linear-gradient(90deg, #667eea, #764ba2); */
+  border-radius: 16px 16px 0 0;
 }
 
-.content blockquote {
-  padding-top: 15px;
-  margin-left: 2px;
+.content figure {
   position: relative;
-  font-style: italic;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--default-radius);
+  padding: 0.5rem 1.5em;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.08);
+  font-weight: 600;
+  margin: 0.8rem 0;
 }
 
-.content blockquote p {
-  padding-left: 30px;
+.content figure + figure {
+  margin-top: 1.5rem;
 }
 
-.content blockquote em {
-  font-weight: 700;
+.content figure em {
+  font-style: unset;
+  background: linear-gradient(120deg, rgba(255, 238, 88, 0.4) 0%, rgba(255, 235, 59, 0.3) 100%);
+  /* background: linear-gradient(120deg, rgba(255, 193, 7, 0.25) 0%, rgba(255, 235, 59, 0.25) 100%); */
+  padding: 0px 7px 3px;
+  border-radius: var(--default-radius);
+  /* font-weight: 600; */
+  position: relative;
+  box-shadow: 0 0 20px rgba(255, 235, 59, 0.2);
 }
 
 .content figcaption {
-  color: var(--gray-color);
   text-align: right; 
   padding-bottom: 15px;
   margin-top: -15px;

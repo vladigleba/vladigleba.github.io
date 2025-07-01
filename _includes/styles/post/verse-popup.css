@@ -21,7 +21,7 @@
 }
 
 .copy-popup {
-  font-family: var(--body-font);
+  font-family: var(--default-font);
   font-weight: 400;
   top: 120%;
   left: 50%;

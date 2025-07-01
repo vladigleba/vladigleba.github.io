@@ -27,8 +27,11 @@
   z-index: 2; /* ensure text is above the blur */
 }
 
-.banner h1 span { 
-  color: var(--gray-color);
+.banner h1 span {
+  background: linear-gradient(120deg, rgb(167, 139, 250) 0%, rgb(236, 72, 153) 100%) padding-box text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .banner p {

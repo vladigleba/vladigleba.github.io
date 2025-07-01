@@ -4,7 +4,8 @@
 }
 
 .content h2 {
-  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 15px;
 }
 
 .content ul, 

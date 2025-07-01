@@ -9,8 +9,8 @@ layout: layouts/base
 
 <style>
   .main-nav, .main-nav li:hover { color: white; }
-  header h1, .content h2, .tag span { color: {{ color }}; }
-  header, .main-nav, .main-nav ul { background-color: {{ color }}; }
+  header h1, .content h2, .tag span, figcaption { color: {{ color }}; }
+  header, .main-nav, .main-nav ul, .content figure::before { background-color: {{ color }}; }
   /*blockquote p,*/ .toc li.active { border-left: 4px solid {{ color }}; }
 </style>
 

@@ -26,7 +26,7 @@ a {
 }
 
 html {
-  font-family: var(--body-font);
+  font-family: var(--default-font);
   font-size: var(--font-size);
   line-height: var(--line-height);
   scroll-behavior: smooth;

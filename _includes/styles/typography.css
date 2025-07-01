@@ -8,6 +8,11 @@ article > header h1 {
   font-size: 60px;
 }
 
+.banner p,
+article > header p {
+  font-size: 25px;
+}
+
 .banner h1 {
   letter-spacing: -2px;
   font-weight: 600;
@@ -22,11 +27,6 @@ article > header h1 {
   font-size: 30px;
 }
 
-.banner p,
-article > header p {
-  font-size: 25px;
-}
-
 .main-nav ul {
   font-size: 24px;
 }
@@ -35,11 +35,17 @@ article > header p {
   font-size: 22px;
 }
 
+.content figcaption {
+  font-size: 19px;
+  font-weight: 700;
+}
+
 .meta,
 .list p {
   font-size: 18px;
 }
 
+header .tag,
 .footnotes {
   font-size: 17px;
 }
@@ -61,7 +67,6 @@ li .tag {
   text-transform: uppercase;
 }
 
-figure,
 .content p,
 .content ol,
 .content ul {

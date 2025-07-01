@@ -1,9 +1,5 @@
----
-permalink: /sw.js
-eleventyExcludeFromCollections: true
----
 
-const CACHE_NAME = 'vgb-site-cache-{{ cache-version }}';
+const CACHE_NAME = 'vgb-site-cache-1751343264333';
 const ASSETS_TO_CACHE = [
   '/',
   '/styles.css',

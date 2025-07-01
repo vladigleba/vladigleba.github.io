@@ -13,10 +13,11 @@ article figcaption,
 article p,
 article ol,
 article ul {
-  line-height: 1.618;
+  line-height: 1.67;
 }
 
-.next-link {
+.content .next-link {
+  font-family: unset;
   border-top: 1px solid black;
   margin-top: 60px;
   padding: 2px 0;

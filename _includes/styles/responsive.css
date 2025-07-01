@@ -116,7 +116,7 @@
     padding-top: 75px;
   }
 
-  .next-link {
+  .content .next-link {
     margin-top: 30px;
   }
 
@@ -139,8 +139,17 @@
   }
 
   .meta,
+  .content figcaption,
   .footnotes {
     font-size: 16px;
+  }
+
+  header .tag {
+    font-size: 15px;
+  }
+
+  header .tag  span {
+    padding-bottom: 1px !important;
   }
 
   /* home */

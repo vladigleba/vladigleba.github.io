@@ -8,7 +8,6 @@
 .copy-popup,
 li .tag,
 article > header .tag span {
-  border-radius: var(--default-radius);
   line-height: 1;
 }
 

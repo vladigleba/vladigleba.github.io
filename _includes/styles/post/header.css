@@ -18,21 +18,19 @@ article > header h1 {
 
 article > header .description {
   margin-bottom: 35px;
+  font-weight: 500;
+  line-height: var(--line-height);
 }
 
 article > header .tag span {
   background-color: white;
   padding: 0 var(--tag-horizontal-padding) 0.5px;
   margin-left: 0;
+  border-radius: var(--default-radius);
 }
 
 article > header .meta.series {
-  margin-top: 35px;
-}
-
-article > header p {
-  font-weight: 500;
-  line-height: var(--line-height);
+  margin-top: 30px;
 }
 
 article > header a {
