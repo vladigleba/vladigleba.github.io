@@ -32,8 +32,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-mask-image: linear-gradient(black, black);
-  /* display: inline-block;  or block */
+  display: inline-block;  /*or block */
 }
 
 .banner p {
