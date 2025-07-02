@@ -3,11 +3,14 @@
 <p class="meta tag">
   <span>{{ category }}</span>
   <span>{{ length }} min read</span>
+  <span>
+    Updated <time datetime="{{ updated | toISOString }}">{{ updated | toUTCString }}</time>
+  </span>
 </p>
 
 {% if isSeries %}
   <p class="meta series">
-    “{{ series_title }}” Series <span>•</span> Part {{ series.current }} of {{ series.total }}
+    Series: {{ series_title }} <span>•</span> Part {{ series.current }} of {{ series.total }}
   </p>
 
   <nav aria-label="Series navigation">

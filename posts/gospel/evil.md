@@ -38,7 +38,7 @@ Lucifer means “light bearer”, and he was one of God’s angels.
 
 In Ezekiel 28 Lucifer is symbolized as the “prince of Tyre,” and we learn that he was created perfect. He was also a covering cherub, which means he had a high position in heaven and was next to God’s very presence. It’s unknown how long perfection existed in heaven, but eventually evil was born in Lucifer’s heart because he aall of God’s angels had freedom of choice. This is a risk God willingly took because genuine love cannot exist without a free will.
 
-## How did he taint his perfect heart?
+## How did he taint his heart?
 
 > By the multitude of thy merchandise they have filled the midst of thee with violence, and thou hast sinned: therefore I will cast thee as profane out of the mountain of God: and I will destroy thee, O covering cherub, from the midst of the stones of fire. *Thine heart was lifted up because of thy beauty*, thou hast corrupted thy wisdom *by reason of thy brightness*: I will cast thee to the ground, I will lay thee before kings, that they may behold thee.
 {% ct 'Ezekiel 28:16-17' %}
@@ -115,7 +115,7 @@ Once the human heart was corrupted with sin, the door was opened up to the influ
 
 Sin leads to separation from the Giver of life, which leads to death.
 
-## How many are under the power of death?
+## How many are subject to death?
 
 > Wherefore, as by one man sin entered into the world, and death by sin; and so *death passed upon all men*, for that all have sinned.
 {% ct 'Romans 5:12' %}
@@ -169,7 +169,7 @@ God in His love and mercy does not leave us in our hopeless condition. He gave H
 
 There will come a day when Satan will be destroyed and his flawed kingdom will come to an end. It will be replaced by an earth that will be even more glorious than the Garden of Eden, and we will once again be able to talk to God face to face!
 
-## Will evil rise up again?
+## Will evil rise again?
 
 > What do ye imagine against the LORD? he will make an utter end: *affliction shall not rise up the second time*.
 {% ct 'Nahum 1:9' %}

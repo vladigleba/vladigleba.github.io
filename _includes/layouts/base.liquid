@@ -23,7 +23,9 @@
        author: site.author,
        is_article: is_article,
        page_url: page.url,
-       url: site.url
+       url: site.url,
+       date: date,
+       updated: updated,
     %}
   </head>
 
@@ -36,8 +38,8 @@
     </main>
 
     {% render 'layouts/footer', last_updated: last-updated %}
-    <script>document.body.classList.add('js-enabled');</script>
     <script>
+      document.body.classList.add('js-enabled');
       if (
         'serviceWorker' in navigator &&
         location.hostname !== 'localhost' &&

@@ -10,14 +10,8 @@ sitemap:
 %}
 
 <script>
-  // redirect to previous page when back online
-  const prev = sessionStorage.getItem('offline-prev') || '/';
+  // redirect to home page when back online
   window.addEventListener('online', () => {
-    window.location.replace(prev);
+    window.location.replace('/');
   });
-
-  // store previous page if not already on /offline/
-  if (!window.location.pathname.startsWith('/offline')) {
-    sessionStorage.setItem('offline-prev', window.location.pathname);
-  }
 </script>

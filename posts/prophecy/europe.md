@@ -40,7 +40,7 @@ Daniel asked his friends to join him in prayer, seeking God to reveal the dream,
 
 God saved their lives by revealing the king’s dream and its interpretation, and Daniel gave God all the credit.
 
-## What was the dream's purpose?
+## What was the dream’s purpose?
 
 > But there is a God in heaven that revealeth secrets, and *maketh known to the king Nebuchadnezzar what shall be in the latter days*.
 {% ct 'Daniel 2:28' %}
@@ -106,7 +106,7 @@ After the silver kingdom symbolizing Medo-Persia, a third kingdom—represented 
 
 Daniel 8 is a parallel prophecy that repeats and expands on the one in Daniel 2, and it identifies Greece as the empire that would succeed Medo-Persia. After a series of campaigns, Alexander the Great delivered a decisive blow to the Persian Empire at the Battle of Arbela in 331 BC, making the kingdom of Greece the next dominant world power. Notably, the armor of Greek soldiers was made entirely of bronze.
 
-## How is the fourth kingdom described?
+## What is the fourth kingdom like?
 
 > And the fourth kingdom shall be *strong as iron*: forasmuch as iron breaketh in pieces and subdueth all things: and as iron that breaketh all these, shall it break in pieces and bruise.
 {% ct 'Daniel 2:40' %}
@@ -177,7 +177,7 @@ The stone cut without hands represents Christ’s eternal kingdom, which will re
 
 In Psalm 2, David, under divine inspiration, foreshadowed the prophecy of {% rf 'Daniel 2:34' false %}—centuries before it was revealed. Jesus also compared Himself to the Stone that would grind to powder those upon whom it falls—a reference to those who reject His mercy. In contrast, those who fall on the Stone of their own accord will be broken; that is, when they encounter the reality of His love, they are humbled and choose to surrender their pride and self-righteousness to Him {% rf 'Matthew 5:5' %}.
 
-## What hope does the Bible give us?
+## What hope does the Bible give?
 
 > For the grace of God that bringeth salvation hath appeared to all men, teaching us that, denying ungodliness and worldly lusts, we should live soberly, righteously, and godly, in this present world; *looking for that blessed hope, and the glorious appearing of the great God and our Saviour Jesus Christ*.
 {% ct 'Titus 2:11-13' %}

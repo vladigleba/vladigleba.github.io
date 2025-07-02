@@ -21,7 +21,7 @@ date: 2025-04-16
 
 The Bible tells us that Jesus, our example, was a man of prayer. If He had a need to pray, how much more do we?
 
-## How does God feel about prayer?
+## Does God hear my prayers?
 
 > If ye then, being evil, know how to give good gifts unto your children: how much more shall your heavenly Father *give the Holy Spirit to them that ask him*?
 {% ct 'Luke 11:13' %}
@@ -258,10 +258,10 @@ Had Jesus’ disciples heeded His call to watch and pray in Gethsemane, there is
 
 When God provided manna for the Israelites, it didn’t simply fall into their mouths; they still had to go out and gather it. God wants us to cooperate with Him by investing ourselves in the process; otherwise, we risk becoming lazy with His blessings. The simple truth is that He will never do for us what we can do for ourselves, but once we have done our part, He will do what we cannot.
 
-## What is the ideal environment for prayer?
+## Where should I pray?
 
-> But thou, when thou prayest, *enter into thy closet*, and when thou hast *shut thy door*, pray to thy Father which is in secret; and thy Father which seeth in secret shall reward thee openly.
-{% ct 'Matthew 6:6' %}
+> But you, when you pray, *go into your room*, and when you have *shut your door*, pray to your Father who is in the secret place; and your Father who sees in secret will reward you openly.
+{% ct 'Matthew 6:6, NKJV' %}
 
 > And in the morning, rising up a great while before day, he went out, and departed into a *solitary place*, and there prayed.
 {% ct 'Mark 1:35' %}
@@ -294,7 +294,7 @@ God desires that we be fully engaged when we speak with Him—just as we would b
 > And at midnight Paul and Silas *prayed*, and sang praises unto God: and the prisoners *heard them*.
 {% ct 'Acts 16:25' %}
 
-Jesus often prayed aloud, even in His personal prayers; otherwise, His disciples would not have heard them and recorded them for us. Paul and Silas also prayed aloud after they were imprisoned, and their witness for God led to the jailer's conversion {% rf 'Acts 16:29-30' %}. Even in private, personal prayers between us and God, praying audibly can be helpful  because it keeps us more focused and engaged. However, we should be careful to maintain our privacy in these moments, ensuring that only God hears us.
+Jesus often prayed aloud, even in His personal prayers; otherwise, His disciples would not have heard them and recorded them for us. Paul and Silas also prayed aloud after they were imprisoned, and their witness for God led to the jailer’s conversion {% rf 'Acts 16:29-30' %}. Even in private, personal prayers between us and God, praying audibly can be helpful  because it keeps us more focused and engaged. However, we should be careful to maintain our privacy in these moments, ensuring that only God hears us.
 
 ## What is the PRAY acronym?
 

@@ -8,9 +8,10 @@ layout: layouts/base
 {% endif %}
 
 <style>
+  .main-nav ul { background: rgba(255, 255, 255, 0.15); }
   .main-nav, .main-nav li:hover { color: white; }
-  header h1, .content h2, .tag span, figcaption { color: {{ color }}; }
-  header, .main-nav, .main-nav ul, .content figure::before { background-color: {{ color }}; }
+  header h1, .content h2, figcaption { color: {{ color }}; }
+  header, .main-nav, .content figure::before { background-color: {{ color }}; }
   /*blockquote p,*/ .toc li.active { border-left: 4px solid {{ color }}; }
 </style>
 
@@ -24,7 +25,8 @@ layout: layouts/base
         length: length,
         isSeries: series, 
         series: seriesInfo, 
-        series_title: series_title 
+        series_title: series_title,
+        updated: updated,
       %}
     </div>
   </header>
@@ -33,7 +35,7 @@ layout: layouts/base
     {% render 'layouts/toc' %}
     <section class="content">
       {{ content }}
-      
+
       {% if next %}
         <p class="next-link meta">
           Read next: <a href="{{ next.url }}" rel="next">{{ next.title }}</a>

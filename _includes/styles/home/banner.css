@@ -3,11 +3,11 @@
   left: 50%;
   top: 41%;
   transform: translate(-50%, -50%);
-  width: 450px;
+  width: 400px;
   height: 20px;
   z-index: 0;
   pointer-events: none;
-  filter: blur(50px);
+  filter: blur(40px);
   opacity: 1;
   border-radius: 50%;
 }
@@ -32,6 +32,8 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-mask-image: linear-gradient(black, black);
+  /* display: inline-block;  or block */
 }
 
 .banner p {

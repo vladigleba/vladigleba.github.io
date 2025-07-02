@@ -208,7 +208,7 @@ The symbolic Euphrates River will dry up, meaning that popular support for the b
 
 Jesus will help me identify and avoid deception if I test every teaching by the Bible {% rf 'Psalm 119:104' %}, willingly follow the truth as He reveals it to me, and stay close to Him daily through prayer and the reading of His Word. While the battle may appear to be against Christ’s followers, ultimately it is against Him. The battle is His, and it has already been won on a hill called Calvary. The only question is: have I given Him my heart and joined His winning side?
 
-## What promise does the Bible give?
+## What does the Bible promise?
 
 > He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty. I will say of the LORD, *He is my refuge and my fortress: my God; in him will I trust*. Surely he shall deliver thee from the snare of the fowler, and from the noisome pestilence. He shall cover thee with his feathers, and under his wings shalt thou trust: *his truth shall be thy shield and buckler*. Thou shalt not be afraid for the terror by night; nor for the arrow that flieth by day; nor for the pestilence that walketh in darkness; nor for the destruction that wasteth at noonday. A thousand shall fall at thy side, and ten thousand at thy right hand; but it shall not come nigh thee. Only with thine eyes shalt thou behold and see the reward of the wicked.
 >

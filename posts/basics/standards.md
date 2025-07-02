@@ -32,7 +32,7 @@ Love for one’s spouse leads to a desire to please. That which is pleasing is p
 
 God has given us certain principles because, as our Creator, He knows what is best for us. The enemy tries to portray these principles as legalistic and dull, because he wants us to stay away from them, but the truth is following them brings fullness of joy into the life. They are for our own good {% rf 'Deuteronomy 6:24' %}, safeguarding us from the danger of sin {% rf 'Psalm 119:11' %}, while also giving us the opportunity to express our love for Christ as we follow His example {% rf 'John 14:15' %}.
 
-## Do we have a responsibility as Christians?
+## What is my responsibility as a Christian?
 
 > Now then *we are ambassadors for Christ*, as though God did beseech you by us: we pray you in Christ’s stead, be ye reconciled to God.
 {% ct '2 Corinthians 5:20' %}
@@ -45,14 +45,14 @@ God has given us certain principles because, as our Creator, He knows what is be
 
 Those who become followers of Christ become His ambassadors, representing Him wherever they go, whether in the family, at school, at work, or on vacation. Words and actions not only testify if the heart belongs to Christ, but they also have an influence on others. Jesus gave a solemn warning to Christians who are indifferent to their own example and influence {% rf 'Matthew 18:6' %} as did Paul {% rf 'Romans 14:7, 13' %}. When people saw the conduct of Peter and John it was obvious to them that they were different because they had been with Jesus. May our walk with Christ transform us in like manner to reflect His character to those we come in contact with {% rf 'Matthew 5:16' %}.
 
-## How should I deal with worldliness?
+## Does the Bible speak about worldliness?
 
 > *Love not the world, neither the things that are in the world. If any man love the world, the love of the Father is not in him*. For all that is in the world, the lust of the flesh, and the lust of the eyes, and the pride of life, is not of the Father, but is of the world. And the world passeth away, and the lust thereof: but he that doeth the will of God abideth for ever.
 {% ct '1 John 2:15-17' %}
 
 Every sin falls into one of three categories: 1) the lust of the flesh, 2) the lust of the eyes, or 3) the pride of life. These are the avenues through which Satan works to awaken in us a love for the world. Because we cannot serve two masters {% rf 'Matthew 6:24' %}, a love for the world decreases our love for God, whose principles are the exact opposite of those in the world, which is why James says that lovers of the world become enemies of God {% rf 'James 4:4' %}. We are called to be unspotted from the world {% rf 'James 1:27' %} because the world, and its principles, will pass away, but the principles of God are eternal.
 
-## What does Paul say about conformity?
+## What about conformity?
 
 > I beseech you therefore, brethren, by the mercies of God, that ye present your bodies a living sacrifice, holy, acceptable unto God, which is your reasonable service. And *be not conformed to this world: but be ye transformed by the renewing of your mind*, that ye may prove what is that good, and acceptable, and perfect, will of God.
 {% ct 'Romans 12:1-2' %}
@@ -69,9 +69,9 @@ Living in a world of sin brings pressure to conform to its ways, to be squeezed 
 
 Thoughts turn into words, which turn into actions, which turn into habits, which become a part of character. Satan knows that we become what we repeatedly behold, which is why he has a myriad of ways to influence our thoughts through our five senses, but especially sight and hearing. Because we become what we see and hear, we are invited to behold the glory of God’s character by daily reading His letter to us—the Bible—so that we may become more like Him.
 
-## What guidance does God give regarding our thoughts?
+## What should I think about?
 
-> And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus. Finally, brethren, whatsoever things are *true*, whatsoever things are *honest*, whatsoever things are *just*, whatsoever things are *pure*, whatsoever things are *lovely*, whatsoever things are *of good report*; *if there be any virtue, and if there be any praise, think on these things*.
+> And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus. Finally, brethren, whatsoever things are *true*, whatsoever things are *honest*, whatsoever things are *just*, whatsoever things are *pure*, whatsoever things are *lovely*, whatsoever things are *of good report; if there be any virtue, and if there be any praise, think on these things*.
 {% ct 'Philippians 4:7-8' %}
 
 > Casting down imaginations, and every high thing that exalteth itself against the knowledge of God, and *bringing into captivity every thought to the obedience of Christ*.
@@ -198,7 +198,7 @@ Many try to follow Christ while staying as close as possible to the world, but a
 
 Changing our tastes and habits is often overwhelming, and the truth is we cannot do it ourselves, but if we are *willing* to change and have faith in *God’s* power to do it, He will give us a love for the pure, holy, and righteous. What He needs from us is a willingness to separate from the things of the world and a desire to draw close to Him by spending more time with Him in His Word, through which He can then sanctify us {% rf 'John 17:17' %}. The more time we spend with Him, the more we will love Him, and the more we will want to please Him. Having our consent, He will then have the freedom to change us into His image {% rf '2 Corinthians 3:18' %}, and people will take notice that we had been with Jesus {% rf 'Acts 4:13' %}.
 
-## What is Jesus' desire for me?
+## What is Jesus’ desire for me?
 
 > *Ye are the light of the world*. A city that is set on an hill cannot be hid.
 {% ct 'Matthew 5:14' %}

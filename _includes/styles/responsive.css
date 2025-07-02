@@ -129,7 +129,7 @@
   }
 
   .blur-bg {
-    top: 34%;
+    top: 33%;
     width: 300px;
   }
 
@@ -146,10 +146,6 @@
 
   header .tag {
     font-size: 15px;
-  }
-
-  header .tag  span {
-    padding-bottom: 1px !important;
   }
 
   /* home */

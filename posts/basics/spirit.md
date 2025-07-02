@@ -69,7 +69,7 @@ The Holy Spirit reproves, or brings conviction, of sin, of righteousness, and of
 
 The Holy Spirit also testifies of Jesus, revealing His character and truth to us, which, if received, has the power to sanctify our own characters {% rf 'John 14:6; 17:17' %}. And whenever we pray, it’s the Holy Spirit who inspires our petitions, if we let Him, so that they are in accordance to God’s will.
 
-## To what extent do I need the Holy Spirit?
+## To what extent do I need the Spirit?
 
 > And be not drunk with wine, wherein is excess; but *be filled with the Spirit*.
 {% ct 'Ephesians 5:18' %}
@@ -135,7 +135,7 @@ Jesus’ promise to send the Holy Spirit was fulfilled on the Day of Pentecost w
 
 The Holy Spirit will participate in the resurrection of God’s faithful followers, just like He participated in the resurrection of Christ. If we are Christ’s, there is no need to fear death because Jesus, who conquered death, will resurrect His people through the power of the Holy Spirit at His [second coming](/posts/prophecy/manner.md).
 
-## What are the gifts of the Holy Spirit?
+## What are the gifts of the Spirit?
 
 > Now there are diversities of gifts, but the same Spirit. And there are differences of administrations, but the same Lord. And there are diversities of operations, but it is the same God which worketh all in all. But the manifestation of the Spirit is given to every man to profit withal.
 >

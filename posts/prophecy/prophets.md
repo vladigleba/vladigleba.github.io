@@ -152,7 +152,7 @@ A genuine prophet is called to service by God.
 
 The true prophet will always speak in harmony with and obedience to God’s will as revealed in His Word and in His commandments. Anyone speaking contrary to God’s will cannot be His prophet.
 
-## What other test does the Bible provide?
+## What is another test?
 
 > The prophets that have been before me and before thee of old prophesied both against many countries, and against great kingdoms, of war, and of evil, and of pestilence. The prophet which prophesieth of peace, *when the word of the prophet shall come to pass, then shall the prophet be known, that the LORD hath truly sent him*.
 {% ct 'Jeremiah 28:8-9' %}

@@ -1,0 +1,35 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Build Eleventy Site",
+			"command": "npx @11ty/eleventy",
+			"group": "build",
+			"problemMatcher": [
+				"$tsc"
+			]
+		},
+		{
+			"label": "Serve Eleventy Site",
+			"type": "shell",
+			"command": "npm run serve",
+			"group": "test",
+			"problemMatcher": []
+		},
+		{
+			"label": "Watch Eleventy Site",
+			"type": "shell",
+			"command": "npm run watch",
+			"group": "test",
+			"problemMatcher": []
+		},
+		{
+			"label": "Clean Eleventy Output",
+			"type": "shell",
+			"command": "npm run clean",
+			"group": "none",
+			"problemMatcher": []
+		}
+	]
+}

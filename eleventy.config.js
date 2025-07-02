@@ -7,6 +7,7 @@ const { InputPathToUrlTransformPlugin } = require('@11ty/eleventy');
 const CleanCSS = require('clean-css');
 const fs = require('fs');
 const path = require('path');
+const childProcess = require('child_process');
 const site = require('./_data/site.json');
 
 module.exports = async (config) => {
@@ -72,8 +73,16 @@ module.exports = async (config) => {
 
   // filters
   config.addLiquidFilter('toUTCString', (date) => {
+    if (!date) return '';
     const utc = date.toUTCString();
-    return moment.utc(utc).format('MMMM Do YYYY');
+    return moment.utc(utc).format('MMMM D, YYYY');
+  });
+
+  config.addLiquidFilter('toISOString', (date) => {
+    if (!date) return '';
+    const d = new Date(date);
+    if (isNaN(d)) return '';
+    return d.toISOString();
   });
 
   config.addFilter('cssmin', code => new CleanCSS({}).minify(code).styles);
@@ -103,6 +112,15 @@ module.exports = async (config) => {
       // reading time
       const stats = readingTime(post.rawInput, { wordsPerMinute: 220 });
       post.data.length = Math.floor(stats.minutes);
+
+      // last modified date (from git)
+      try {
+        const gitCmd = `git log -1 --format=%cI -- "${post.inputPath}"`;
+        const gitDate = childProcess.execSync(gitCmd, { encoding: 'utf8' }).trim();
+        post.data.updated = gitDate ? new Date(gitDate) : null;
+      } catch (err) {
+        post.data.updated = null;
+      }
   
       // next link
       if (index < posts.length - 1) {

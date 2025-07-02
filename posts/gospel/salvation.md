@@ -86,7 +86,7 @@ The penalty for sin is death, and Christ’s death on the cross paid that penalt
 
 Forsaking my way implies turning around and going in the opposite direction—from running away from God toward sin to running away from sin toward God. If I repent and have a desire to leave sin behind, the promise is I will receive forgiveness.
 
-## Is there a sin too powerful for God?
+## Is any sin too great for God?
 
 > If we confess our sins, he is faithful and just to forgive us our sins, and to *cleanse us from all unrighteousness*. 
 {% ct '1 John 1:9' %}
@@ -136,7 +136,7 @@ Once I turn away from my sins and accept Jesus as my Lord and Saviour, I’m no 
 
 Christ’s death on the cross restored the rift that occured between God and the human race when Adam and Eve sinned, and we can now once again be called sons and daughters of God!
 
-## Can I know that I have eternal life?
+## Can I know I have eternal life?
 
 > And this is the record, that God hath given to us eternal life, and this life is in his Son. *He that hath the Son hath life*; and he that hath not the Son of God hath not life. These things have I written unto you that believe on the name of the Son of God; *that ye may know that ye have eternal life*, and that ye may believe on the name of the Son of God. 
 {% ct '1 John 5:11-13' %}
