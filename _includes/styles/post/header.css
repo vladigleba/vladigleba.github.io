@@ -25,7 +25,7 @@ article > header .description {
 article > header .tag span {
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.25);
-  padding: 3px var(--tag-horizontal-padding) 3.5px;
+  padding: 3px var(--tag-horizontal-padding) 4px;
   border-radius: var(--default-radius);
   white-space: nowrap;
   margin: 3px 3px 4px 0;

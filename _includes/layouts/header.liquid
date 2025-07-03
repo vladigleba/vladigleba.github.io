@@ -4,7 +4,7 @@
   <span>{{ category }}</span>
   <span>{{ length }} min read</span>
   <span>
-    Updated <time datetime="{{ updated | toISOString }}">{{ updated | toUTCString }}</time>
+    Updated <time datetime="{{ updated | toISO }}">{{ updated | toLocal }}</time>
   </span>
 </p>
 

@@ -41,8 +41,8 @@
         "@type": "Person",
         "name": "{{ author }}"
       },
-      "datePublished": "{{ date | toISOString }}",
-      "dateModified": "{{ updated | toISOString }}",
+      "datePublished": "{{ date | toISO }}",
+      "dateModified": "{{ updated | toISO }}",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "{{ page_url | absoluteUrl }}"

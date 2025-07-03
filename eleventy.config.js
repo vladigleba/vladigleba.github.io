@@ -72,13 +72,12 @@ module.exports = async (config) => {
   });
 
   // filters
-  config.addLiquidFilter('toUTCString', (date) => {
+  config.addLiquidFilter('toLocal', (date) => {
     if (!date) return '';
-    const utc = date.toUTCString();
-    return moment.utc(utc).format('MMMM D, YYYY');
+    return moment(date).local().format('MMMM D, YYYY');
   });
 
-  config.addLiquidFilter('toISOString', (date) => {
+  config.addLiquidFilter('toISO', (date) => {
     if (!date) return '';
     const d = new Date(date);
     if (isNaN(d)) return '';
