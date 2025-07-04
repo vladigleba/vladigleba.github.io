@@ -99,35 +99,33 @@ if (document.body.classList.contains('js-enabled')) {
       }
     });
 
-    // update footer <time> element to show relative date if within last 7 days
+    // show relative date if within last 7 days
     const updateFooterTime = () => {
-      const container = document.querySelector('footer .last-updated');
-      if (!container) return;
-      const timeEl = container.querySelector('time[datetime]');
-      if (!timeEl) return;
-      const dateStr = timeEl.getAttribute('datetime');
-      if (!dateStr) return;
-      const date = new Date(dateStr);
-      if (isNaN(date)) return;
+      const updateTimeInContainer = (container) => {
+        if (!container) return;
+        const timeEl = container.querySelector('time[datetime]');
+        if (!timeEl) return;
+        const dateStr = timeEl.getAttribute('datetime');
+        if (!dateStr) return;
+        const date = new Date(dateStr);
+        if (isNaN(date)) return;
 
-      const now = new Date();
-      now.setHours(0,0,0,0);
-      date.setHours(0,0,0,0);
-      const diffDays = Math.round((now - date) / (1000 * 60 * 60 * 24));
+        const now = new Date();
+        now.setHours(0,0,0,0);
+        date.setHours(0,0,0,0);
+        const diffDays = Math.round((now - date) / (1000 * 60 * 60 * 24));
 
-      // Remove "on" if needed
-      const textNode = container.firstChild;
-      if (diffDays >= 0 && diffDays <= 7 && textNode && textNode.nodeType === Node.TEXT_NODE) {
-        textNode.textContent = textNode.textContent.replace('on ', '');
-      }
+        if (diffDays === 0) {
+          timeEl.textContent = 'today';
+        } else if (diffDays === 1) {
+          timeEl.textContent = 'yesterday';
+        } else if (diffDays > 1 && diffDays <= 7) {
+          timeEl.textContent = `${diffDays} days ago`;
+        }
+      };
 
-      if (diffDays === 0) {
-        timeEl.textContent = 'today';
-      } else if (diffDays === 1) {
-        timeEl.textContent = 'yesterday';
-      } else if (diffDays > 1 && diffDays <= 7) {
-        timeEl.textContent = `${diffDays} days ago`;
-      }
+      updateTimeInContainer(document.querySelector('footer .last-updated'));
+      updateTimeInContainer(document.querySelector('header .post-last-updated'));
 
       // Remove spaces
       const heyEl = document.querySelector('footer .hey');
