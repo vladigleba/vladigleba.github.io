@@ -230,7 +230,7 @@ The Bible teaches that every good thing comes from our Father {% rf 'James 1:17'
 
 Prayer leads us into harmony with the mind of Jesus and into deeper fellowship with Him. It is said that we are the sum of the people we spend the most time with because we often begin to imitate them. Prayer, along with Bible study, is how we spend time with Jesus. Bible study is how He speaks to us, and prayer is how we speak to Him. Without daily, quality time, every relationship will eventually fall apart—including our relationship with Christ.
 
-## What role does prayer play in resisting temptation?
+## Does prayer help resist temptation?
 
 > *Watch ye and pray, lest ye enter into temptation*. The spirit truly is ready, but the flesh is weak.
 {% ct 'Mark 14:38' %}

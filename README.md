@@ -7,12 +7,11 @@ This is a static blog (no server-side code) built with [11ty](https://www.11ty.d
 - Modern and responsive user interface for all screen sizes
 - Reader-friendly typography
 - Modular layouts using Liquid templates
-- Markdown-based posts with footnote support
+- Markdown-based posts with footnote support and proper typographic punctuation
 - Folder-based category groupings for posts
 - Series groupings for posts
-- Automatic table of contents and anchor link generation for headings with copy-to-clipboard buttons
-- Reading time estimates
-- Last-updated tag in footer with relative date
+- Table of contents and anchor link generation for headings with copy-to-clipboard functionality
+- Reading time estimates and last-updated tags (with relative dates) for posts
 - SEO-friendly (semantic HTML, sitemap, robots.txt, meta tags, Open Graph, Twitter cards, JSON-LD)
 - Accessible keyboard navigation and screen reader support (skip links, ARIA attributes)
 - Offline support via service workers

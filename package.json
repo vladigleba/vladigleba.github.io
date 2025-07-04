@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "serve": "npx @11ty/eleventy --serve",
     "watch": "npx @11ty/eleventy --watch",
+    "serve": "node smarten.js posts && npx @11ty/eleventy --serve",
     "clean": "rm -rf _site"
   },
   "keywords": [],
