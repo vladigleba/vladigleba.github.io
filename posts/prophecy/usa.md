@@ -6,7 +6,7 @@ date: 2025-01-29
 featured: true
 ---
 
-## Does God like to reveal the future?
+## Is God open about the future?
 
 > Surely the Lord GOD will do nothing, but *he revealeth his secret* unto his servants the prophets.
 {% ct 'Amos 3:7' %}

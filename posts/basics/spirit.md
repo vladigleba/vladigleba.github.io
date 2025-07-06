@@ -54,7 +54,7 @@ Jesus promised that after His ascension He would send us the Comforter, the Holy
 
 Paul tells us that spiritual things are spiritually discerned {% rf '1 Corinthians 2:14' %}, so one of the roles of the Holy Spirit is to teach and guide those studying the Bible into an understanding of its beautiful, freely given, truths because the Bible was written under the inspiration of the Spirit {% rf '2 Timothy 3:16; 2 Peter 1:21' %}. Without the aid of the Spirit, the Bible cannot be understood, which is why it’s crucial to pray for the Holy Spirit’s guidance whenever we read it. Notice also that John says the Spirit does not speak independently of Jesus; on the contrary, He’s in harmony with the teachings of Jesus, working to give us an understanding of them.
 
-## What else does the Holy Spirit do?
+## What else does the Spirit do?
 
 > And when he is come, he will *reprove the world of sin, and of righteousness, and of judgment*.
 {% ct 'John 16:8' %}
