@@ -60,3 +60,17 @@
     }
   </script>
 {% endif %}
+
+<script>
+  if (
+    location.hostname !== 'localhost' &&
+    location.hostname !== '127.0.0.1' &&
+    (!navigator.doNotTrack || navigator.doNotTrack === '0')
+  ) {
+    var s = document.createElement('script');
+    s.defer = true;
+    s.setAttribute('data-website-id', 'dd2fe86a-abe1-4240-869c-fbe22064287d');
+    s.src = 'https://cloud.umami.is/script.js';
+    document.head.appendChild(s);
+  }
+</script>

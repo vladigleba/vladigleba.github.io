@@ -58,6 +58,19 @@
   </script>
 
 
+<script>
+  if (
+    location.hostname !== 'localhost' &&
+    location.hostname !== '127.0.0.1' &&
+    (!navigator.doNotTrack || navigator.doNotTrack === '0')
+  ) {
+    var s = document.createElement('script');
+    s.defer = true;
+    s.setAttribute('data-website-id', 'dd2fe86a-abe1-4240-869c-fbe22064287d');
+    s.src = 'https://cloud.umami.is/script.js';
+    document.head.appendChild(s);
+  }
+</script>
   </head>
 
   <body id="top">
@@ -328,7 +341,7 @@
         hey @ vladigleba . com
       </div>
       <div class="last-updated">
-        Last updated <time datetime="2025-07-04T18:43:59.058Z">July 4, 2025</time>
+        Last updated <time datetime="2025-07-07T02:23:54.704Z">July 6, 2025</time>
       </div>
     <p></p>
   </div>
