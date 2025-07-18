@@ -15,6 +15,7 @@ This is a static blog (no server-side code) built with [11ty](https://www.11ty.d
 - SEO-friendly (semantic HTML, sitemap, robots.txt, meta tags, Open Graph, Twitter cards, JSON-LD)
 - Accessible keyboard navigation and screen reader support (skip links, ARIA attributes)
 - Offline support via service workers
+- RSS feed
 - Privacy-friendly analytics via [Umami](https://umami.is)
 - Automatic deployment to [GitHub Pages](https://pages.github.com) via [GitHub Actions](https://github.com/features/actions)
 
