@@ -11,10 +11,17 @@
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 
+<!-- security -->
+<meta http-equiv='Content-Security-Policy' content="default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://cloud.umami.is; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta name='referrer' content='strict-origin-when-cross-origin'>
+<meta http-equiv='Permissions-Policy' content="geolocation=(), camera=(), microphone=(), payment=()">
+<meta http-equiv='X-Content-Type-Options' content='nosniff'>
+
 {% comment %} <style>
   {% inlineNavCSS %} /* critical nav styles inlined for performance */
 </style> {% endcomment %}
 
+<!-- meta tags for SEO -->
 {% if is_article %}
   <meta property="og:type" content="article">
 {% else %}
@@ -62,6 +69,7 @@
   </script>
 {% endif %}
 
+<!-- analytics -->
 <script>
   if (
     location.hostname !== 'localhost' &&

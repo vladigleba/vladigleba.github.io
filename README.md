@@ -18,6 +18,7 @@ This is a static blog (no server-side code) built with [11ty](https://www.11ty.d
 - RSS feed
 - Privacy-friendly analytics via [Umami](https://umami.is)
 - Automatic deployment to [GitHub Pages](https://pages.github.com) via [GitHub Actions](https://github.com/features/actions)
+- Security meta tags (CSP, referrer policy, X-Frame-Options, Permissions Policy, X-Content-Type-Options) for enhanced protection
 
 ## Structure
 - `_data/` - site data (JSON, JS)
