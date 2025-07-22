@@ -133,13 +133,12 @@
     font-size: 20px;
   }
 
-  .meta,
   .content figcaption,
   .footnotes {
     font-size: 16px;
   }
 
-  header .tag {
+  .meta {
     font-size: 15px;
   }
 

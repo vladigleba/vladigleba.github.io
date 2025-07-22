@@ -40,12 +40,11 @@ article > header p {
   font-weight: 700;
 }
 
-.meta,
 .list p {
   font-size: 18px;
 }
 
-header .tag,
+.meta,
 .footnotes {
   font-size: 17px;
 }
@@ -62,9 +61,7 @@ li .tag {
 }
 
 .meta {
-  font-family: unset;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 .content p,

@@ -9,23 +9,25 @@
 </p>
 
 {% if isSeries %}
-  <p class="meta series">
-    Series: {{ series_title }} <span>•</span> Part {{ series.current }} of {{ series.total }}
-  </p>
+  <div class="series-links">
+    <p class="meta series">
+      Series: {{ series_title }} <span>•</span> Part {{ series.current }} of {{ series.total }}
+    </p>
 
-  <nav aria-label="Series navigation">
-    <ol class="series-links meta">
-      {% for post in series.posts %}
-        <li>
-          {% if series.current != forloop.index %}
-            <a href="{{ post.url }}">{{ post.data.title }}</a>
-          {% else %}
-            {{ post.data.title }}
-          {% endif %}
+    <nav aria-label="Series navigation">
+      <ol class="meta">
+        {% for post in series.posts %}
+          <li>
+            {% if series.current != forloop.index %}
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            {% else %}
+              {{ post.data.title }}
+            {% endif %}
 
-          <span>•</span> {{ post.data.length }} min read
-        </li>
-      {% endfor %}
-    </ol>
-  </nav>
+            <span>•</span> {{ post.data.length }} min read
+          </li>
+        {% endfor %}
+      </ol>
+    </nav>
+  </div>
 {% endif %}

@@ -8,7 +8,7 @@
       </div>
       
       <div class="last-updated">
-        Last updated <time datetime="{{ last_updated.raw }}">{{ last_updated.formatted }}</time>
+        Last updated <time datetime="{{ 'now' | date: '%Y-%m-%dT%H:%M:%S.%3NZ' }}">{{ 'now' | date: '%B %-d, %Y' }}</time>
       </div>
     </p>
   </div>

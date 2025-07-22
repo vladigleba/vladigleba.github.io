@@ -3,7 +3,7 @@ permalink: /sw.js
 eleventyExcludeFromCollections: true
 ---
 
-const CACHE_NAME = 'vgb-site-cache-{{ cache-version }}';
+const CACHE_NAME = 'vgb-site-cache-' + Date.now().toString();
 const ASSETS_TO_CACHE = [
   '/',
   '/styles.css',
