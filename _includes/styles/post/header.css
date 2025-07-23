@@ -23,8 +23,7 @@ article > header .description {
 }
 
 article > header .tag span {
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 1);
   padding: 3px var(--tag-horizontal-padding) 4px;
   border-radius: var(--default-radius);
   white-space: nowrap;
@@ -44,3 +43,7 @@ article > header .series-links {
 article > header a {
   color: white;
 }
+
+/* article > header ol.meta {
+  font-weight: 500;
+} */
