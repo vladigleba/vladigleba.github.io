@@ -96,6 +96,10 @@ module.exports = async (config) => {
   });
 
   // collections
+  config.addCollection("singlePosts", collectionApi =>
+    collectionApi.getFilteredByGlob("posts/**/*.md")
+  );
+
   config.addCollection('groupedPosts', (collectionApi) => {
     const groupedPosts = [];
     const processedSeries = new Map();

@@ -1,7 +1,11 @@
 ---
 permalink: /feed.xml
 layout: null
+sitemap:
+  ignore: true
 ---
+{%- assign latest_post = collections.singlePosts | sort: "date" | last -%}
+
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
@@ -9,18 +13,16 @@ layout: null
     <link>{{ site.url }}</link>
     <description>{{ site.description }}</description>
     <language>en</language>
-    <lastBuildDate>{{ "now" | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+    <lastBuildDate>{{ latest_post.date | date: '%a, %d %b %Y %H:%M:%S %z' }}</lastBuildDate>
     <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-    {% for post in collections.all reversed %}
-      {% if post.inputPath contains '/posts/' and post.inputPath contains '.md' %}
+    {% for post in collections.singlePosts reversed %}
       <item>
         <title>{{ post.data.title }}</title>
         <link>{{ site.url }}{{ post.url }}</link>
         <guid>{{ site.url }}{{ post.url }}</guid>
         <description><![CDATA[{{ post.data.description | escape }}]]></description>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <pubDate>{{ post.date | date: '%a, %d %b %Y %H:%M:%S %z' }}</pubDate>
       </item>
-      {% endif %}
     {% endfor %}
   </channel>
 </rss>
