@@ -27,8 +27,7 @@
   font-style: unset;
   background: linear-gradient(120deg, rgba(255, 238, 88, 0.4) 0%, rgba(255, 235, 59, 0.3) 100%);
   /* background: linear-gradient(120deg, rgba(255, 193, 7, 0.25) 0%, rgba(255, 235, 59, 0.25) 100%); */
-  padding: 0px 7px 3px;
-  border-radius: var(--default-radius);
+  padding: 0 0 3px;
   position: relative;
   box-shadow: 0 0 20px rgba(255, 235, 59, 0.2);
 }
