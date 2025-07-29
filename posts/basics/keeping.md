@@ -85,12 +85,22 @@ We can clearly see that buying, selling, and conducting business to generate inc
 
 Jesus continued to heal people on the Sabbath, contrary to the tradition of the religious leaders of that day. Ministering to the sick, needy, and discouraged by relieving their suffering, whether physical, emotional, or spiritual, is what makes the Sabbath a delight.
 
+## Any other activities?
+
+> Remember the sabbath day, to keep it holy. Six days shalt thou labour, and do all thy work: But the seventh day is the sabbath of the LORD thy God: in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates: For in six days the LORD *made heaven and earth, the sea, and all that in them is*, and rested the seventh day: wherefore the LORD blessed the sabbath day, and hallowed it.
+{% ct 'Exodus 20:8-11' %}
+
+> And on the sabbath we went out of the city *by a river side*, where prayer was wont to be made; and we sat down, and spake unto the women which resorted thither.
+{% ct 'Acts 16:13' %}
+
+Since the Sabbath is a memorial of God as Creator, spending time in nature in contemplation of His wonderous works--and the power of His word that created those works--can be an incredibly inspiring Sabbath activity. The Word that took a dark earth, without form and void {% rf 'Genesis 1:2' %}, and brought it to life has the same the power today to recreate our broken characters to reflect His image {% rf 'John 6:63; 1 Peter 1:25' %}. We receive that power into our lives when we receive the promises of God in His Word, the Bible, by faith {% rf 'Ezekiel 36:25-27; Jeremiah 31:33; 2 Corinthians 5:17; Galatians 3:22' %}.
+
 ## For whom was the Sabbath instituted?
 
 > And it came to pass, that he went through the corn fields on the sabbath day; and his disciples began, as they went, to pluck the ears of corn. And the Pharisees said unto him, Behold, why do they on the sabbath day that which is not lawful? And he said unto them, Have ye never read what David did, when he had need, and was an hungred, he, and they that were with him? How he went into the house of God in the days of Abiathar the high priest, and did eat the shewbread, which is not lawful to eat but for the priests, and gave also to them which were with him? And he said unto them, *The sabbath was made for man, and not man for the sabbath*: therefore the Son of man is Lord also of the sabbath.
 {% ct 'Mark 2:23-28' %}
 
-The Pharisees had so many additional man-made rules to ensure the Sabbath was kept holy that they turned it into a burden, but Jesus did not follow these rules. He only followed God’s rules, which are there to ensure the Sabbath is a delight. In fact, He made it quite clear that the Sabbath was made for us, and not the other way around.
+The Pharisees had so many additional man-made rules to ensure the Sabbath was kept holy that they turned it into a burden, but Jesus did not follow these rules. He only followed God’s rules, which are there to ensure the Sabbath is a delight. In fact, He made it quite clear that the Sabbath was made for us, and not the other way around. (For a more in-depth look into keeping the Sabbath holy, see Doug Batchelor's book [*How to Keep the Sabbath Holy*](https://www.amazingfacts.org/media-library/book/e/26000/t/how-to-keep-the-sabbath-holy).)
 
 ## Will God provide for my needs?
 
@@ -102,7 +112,21 @@ The Pharisees had so many additional man-made rules to ensure the Sabbath was ke
 
 It may be tempting to worry about lost income on the Sabbath, but just as God miraculously provided a double portion of bread for the Israelites on Friday to ensure they had enough for Saturday, He will also provide for our needs today when we choose to honor Him by resting on His holy day.
 
+## How can an unholy person keep the Sabbath holy?
+
+> For I am not ashamed of the gospel of Christ: for it is the power of God unto salvation *to every one that believeth*; to the Jew first, and also to the Greek. For therein is the righteousness of God revealed from faith to faith: as it is written, *The just shall live by faith*.
+{% ct 'Romans 1:16-17' %}
+
+> ... for whatsoever is *not of faith is sin*.
+{% ct 'Romans 14:23' %}
+
+>  I am crucified with Christ: nevertheless I live; *yet not I, but Christ liveth in me*: and the life which I now live in the flesh I live *by the faith of the Son of God*, who loved me, and gave himself for me.
+{% ct 'Galatians 2:20' %}
+
+The only way the Sabbath can be kept holy is in Christ and [by faith](/posts/gospel/faith.md). Without Christ living in us by faith, we are completely incapable of keeping it holy. According to Paul, it is not even our own faith that does this, but Christ's faith working in us! No wonder Revelation speaks of a group of God's loyal people who will keep the commandments of God and the faith of Jesus {% rf 'Revelation 14:12' %}. Keeping His commandments without the faith of Jesus is like asking a plant to grow without the sun. The latter is the enabling power for the former.
+
 ## What promise does Jesus give me?
 
 > *Come unto me*, all ye that labour and are heavy laden, and *I will give you rest*. Take my yoke upon you, and learn of me; for I am meek and lowly in heart: and ye shall find rest unto your souls. *For my yoke is easy, and my burden is light*.
 {% ct 'Matthew 11:28-30' %}
+
