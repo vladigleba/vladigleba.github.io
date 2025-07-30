@@ -10,6 +10,8 @@ series: sabbath
 > *Blessed is the man* that doeth this, and the son of man that layeth hold on it; that keepeth the sabbath from polluting it, and keepeth his hand from doing any evil.
 {% ct 'Isaiah 56:2' %}
 
+Our heavenly Father pronounces a blessing on everyone who chooses to keep His Sabbath holy.
+
 ## Is this confirmed elsewhere?
 
 > For in six days the LORD made heaven and earth, the sea, and all that in them is, and rested the seventh day: wherefore *the LORD blessed the sabbath day*, and hallowed it.
@@ -18,14 +20,14 @@ series: sabbath
 > And it shall come to pass, if thou shalt hearken diligently unto the voice of the LORD thy God, to observe and to do all his commandments which I command thee this day, that the LORD thy God will set thee on high above all nations of the earth: and *all these blessings shall come on thee, and overtake thee*, if thou shalt hearken unto the voice of the LORD thy God. … But it shall come to pass, if thou wilt not hearken unto the voice of the LORD thy God, to observe to do all his commandments and his statutes which I command thee this day; that all these curses shall come upon thee, and overtake thee.
 {% ct 'Deuteronomy 28:1-2, 15' %}
 
-The Sabbath was not made to be a burden, but a blessing to the human race, and those who keep it partake in the blessing on a weekly basis. In Deuteronomy 28, God pronounces more blessings on those who keep His commandments, including the fourth.
+The Sabbath was not made to be a burden, but a blessing to the human race. Those who keep it partake of that blessing on a weekly basis. In Deuteronomy 28, God pronounces additional blessings on those who keep His commandments, including the fourth.
 
 ## How is the Sabbath to be kept?
 
 > Remember the sabbath day, to keep it holy. Six days shalt thou labour, and do all thy work: but the seventh day is the sabbath of the LORD thy God: in it *thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates*: for in six days the LORD made heaven and earth, the sea, and all that in them is, and rested the seventh day: wherefore the LORD blessed the sabbath day, and hallowed it.
 {% ct 'Exodus 20:8-11' %}
 
-The Sabbath was instituted to provide rest and refuge in and through Christ {% rf 'Matthew 11:28-30' %}. It’s a special weekly blessing to everyone who chooses to rest from their works by trusting in Him. We may have a long list of things to do, but we can still put them aside in order to have time to connect with God and acknowledge His supremacy in our lives. This rest from work extends to everyone “within our gates,” meaning under our authority.
+The Sabbath was instituted to provide rest and refuge in and through Christ {% rf 'Matthew 11:28-30' %}. It is a special weekly blessing for everyone who chooses to rest from their works by trusting in Him. We may have a long list of things to do, but we can still set them aside in order to have time to connect with God and acknowledge His supremacy in our lives. This rest from work extends to everyone “within our gates,” meaning those under our authority.
 
 ## How did Jesus keep it?
 
@@ -41,14 +43,14 @@ The Sabbath was instituted to provide rest and refuge in and through Christ {% r
 > And it came to pass also *on another sabbath, that he entered into the synagogue and taught*: and there was a man whose right hand was withered.
 {% ct 'Luke 6:6' %}
 
-Looking to Jesus as our example in all things, we learn that Sabbath keeping is also about gathering together with other believers for worship, spiritual nourishment, and fellowship. The verses above also tell us that teaching was an important part of the synagogue experience, meaning it was much more than a weekly social club. It was a place for Bible study that enabled the worshippers to learn, share, and become grounded in the truth {% rf '2 Timothy 2:15' %}.
+Looking to Jesus as our example in all things, we learn that Sabbath keeping also involves gathering with other believers for worship, spiritual nourishment, and fellowship. The verses above also show that teaching was a vital part of the synagogue experience, meaning it was far more than a casual weekly social gathering. It was a place for studying Scripture, where worshippers could learn, share, and become grounded in the truth {% rf '2 Timothy 2:15' %}.
 
 ## Was this the case in the Old Testament too?
 
 > Six days shall work be done: but the seventh day is the sabbath of rest, *an holy convocation*; ye shall do no work therein: it is the sabbath of the LORD in all your dwellings.
 {% ct 'Leviticus 23:3' %}
 
-Not only is the Sabbath a time to convene together with other believers, but this convening is called holy.
+Not only is the Sabbath a time to convene with other believers, but this convening is called holy. Corporate praise and worship of God, praying with and for one another {% rf 'Acts 16:13' %}, Bible study, and fellowship (especially when we use it to share our experiences with God) are all integral parts of the Sabbath that contribute to making it a delight.
 
 ## When does the Sabbath start and end?
 
@@ -117,13 +119,15 @@ It may be tempting to worry about lost income on the Sabbath, but just as God mi
 > For I am not ashamed of the gospel of Christ: for it is the power of God unto salvation *to every one that believeth*; to the Jew first, and also to the Greek. For therein is the righteousness of God revealed from faith to faith: as it is written, *The just shall live by faith*.
 {% ct 'Romans 1:16-17' %}
 
-> ... for whatsoever is *not of faith is sin*.
+> ... for whatsoever *is not of faith is sin*.
 {% ct 'Romans 14:23' %}
 
 >  I am crucified with Christ: nevertheless I live; *yet not I, but Christ liveth in me*: and the life which I now live in the flesh I live *by the faith of the Son of God*, who loved me, and gave himself for me.
 {% ct 'Galatians 2:20' %}
 
-The only way the Sabbath can be kept holy is in Christ and [by faith](/posts/gospel/faith.md). Without Christ living in us by faith, we are completely incapable of keeping it holy. According to Paul, it is not even our own faith that does this, but Christ's faith working in us! No wonder Revelation speaks of a group of God's loyal people who will keep the commandments of God and the faith of Jesus {% rf 'Revelation 14:12' %}. Keeping His commandments without the faith of Jesus is like asking a plant to grow without the sun. The latter is the enabling power for the former.
+The only way the Sabbath can be kept holy is in Christ and [by faith](/posts/gospel/faith.md). Without Christ living in us by faith, we are completely incapable of keeping it holy. According to Paul, it is not even our own faith that does this, but Christ's faith working in us! No wonder Revelation speaks of a group of God's loyal people who will keep the commandments of God and the faith of Jesus {% rf 'Revelation 14:12' %}. Keeping His commandments in any way other than by faith is like asking a plant to grow without the sun--it is impossible.
+
+In {% rf 'Jeremiah 31:33' false %}, God promised to write His law in our hearts. Do we believe Him? If He said it, He will do it! Have we asked Him to do it, claimed His promise, and thanked Him for doing it *before* we see any results? This is faith--taking God at His Word because He cannot lie {% rf 'Numbers 23:19' %}. Of course, we always have the freedom to interfere with and disrupt this process, for example, by filling our minds with things that glamorize sin, but if we cooperate with Him, He will finish the work that He started in us {% rf 'Hebrews 12:2; Jude 1:24-25' %}, and will be able to genuinely say, "I delight to do thy will, O my God: yea, thy law is within my heart" {% rf 'Psalm 40:8' %}.
 
 ## What promise does Jesus give me?
 
