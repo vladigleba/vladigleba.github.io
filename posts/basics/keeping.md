@@ -50,7 +50,7 @@ Looking to Jesus as our example in all things, we learn that Sabbath keeping als
 > Six days shall work be done: but the seventh day is the sabbath of rest, *an holy convocation*; ye shall do no work therein: it is the sabbath of the LORD in all your dwellings.
 {% ct 'Leviticus 23:3' %}
 
-Not only is the Sabbath a time to convene with other believers, but this convening is called holy. Corporate praise and worship of God, praying with and for one another {% rf 'Acts 16:13' %}, Bible study, and fellowship (especially when we use it to share our experiences with God) are all integral parts of the Sabbath that contribute to making it a delight.
+Not only is the Sabbath a time to convene with other believers, but this convening is called holy. Corporate praise and worship of God, praying with and for one another {% rf 'Acts 16:13' %}, Bible study, and fellowship (especially when we use it to share our experiences with God) are all integral parts of making the Sabbath a delight.
 
 ## When does the Sabbath start and end?
 
@@ -60,16 +60,16 @@ Not only is the Sabbath a time to convene with other believers, but this conveni
 > And God called the light Day, and the darkness he called Night. And *the evening and the morning were the first day*.
 {% ct 'Genesis 1:5' %}
 
-In the Bible, the day does not actually start and end at midnight; it starts from sunset and lasts until the next day’s sunset. In the Genesis account each day includes the prior evening as well, so since the Sabbath is the seventh day of the week, it would start from sunset on Friday and last until sunset on Saturday.
+In the Bible, a day does not begin and end at midnight; it starts at sunset and continues until the following sunset. In the Genesis account, each day includes the prior evening as well, so since the Sabbath is the seventh day of the week, it begins at sunset on Friday and ends at sunset on Saturday.
 
 ## What insight does Isaiah give?
 
 > If thou turn away thy foot from the sabbath, from doing thy pleasure on my holy day; and *call the sabbath a delight*, the holy of the LORD, honourable; and *shalt honour him, not doing thine own ways, nor finding thine own pleasure, nor speaking thine own words*: then shalt thou *delight thyself in the LORD*; and I will cause thee to ride upon the high places of the earth, and feed thee with the heritage of Jacob thy father: for the mouth of the LORD hath spoken it.
 {% ct 'Isaiah 58:13-14' %}
 
-The Sabbath becomes a delight when it is centered around Jesus—when we put away our own pursuits and rest from the cares of life in order to focus on the eternal things of God. It’s a special day to reflect on, honor, and connect with Him. Simply put, it’s a day to delight in Him.
+The Sabbath becomes a delight when Jesus is at its center—when we put away our own pursuits and rest from the cares of life to focus on the eternal things of God. It’s a special day to reflect on, honor, and connect with Him. Simply put, it is a day to delight in Him.
 
-The motivation behind Sabbath-keeping is crucial because it determines if it becomes a delight or a burden. Only when we keep it out of love for Christ--rather than duty--are we enabled to deny self and still call the Sabbath a delight. The truly born-again follower of Christ transitions from an attitude of "Don't tell me what to do" to "What would You have me do?"
+The motivation behind Sabbath-keeping is crucial because it determines whether the day becomes a delight or a burden. Only when we keep it out of love for Christ--rather than duty--are we enabled to deny self and still call the Sabbath a delight. The truly born-again follower of Christ transitions from an attitude of "Don't tell me what to do" to "What would You have me do?"
 
 ## What can we learn from the experience of Nehemiah?
 
@@ -78,14 +78,14 @@ The motivation behind Sabbath-keeping is crucial because it determines if it bec
 > And it came to pass, that when the gates of Jerusalem began to be dark before the sabbath, I commanded that the gates should be shut, and charged that they should not be opened till after the sabbath: and some of my servants set I at the gates, that there should no burden be brought in on the sabbath day. So the merchants and sellers of all kind of ware lodged without Jerusalem once or twice. Then I testified against them, and said unto them, Why lodge ye about the wall? if ye do so again, I will lay hands on you. *From that time forth came they no more on the sabbath. And I commanded the Levites that they should cleanse themselves, and that they should come and keep the gates, to sanctify the sabbath day*.
 {% ct 'Nehemiah 13:15-22' %}
 
-We can clearly see that buying, selling, and conducting business to generate income are activities that profane the Sabbath day. Now this can pose a challenge for some professions; it wouldn’t be right to abandon people requiring medical care on the Sabbath, for example, but as far as it is possible, we should seek to rest from secular activities in order to honor our Creator.
+We can clearly see that buying, selling, and conducting business to generate income are activities that profane the Sabbath day. This can pose a challenge for some professions; for example, it would not be right to abandon those in need of medical care on the Sabbath for example. However, as far as possible, we should seek to rest from secular activities in order to honor our Creator.
 
 ## What activities are encouraged on the Sabbath?
 
 > And he said unto them, What man shall there be among you, that shall have one sheep, and if it fall into a pit on the sabbath day, will he not lay hold on it, and lift it out? How much then is a man better than a sheep? Wherefore *it is lawful to do well on the sabbath days*. Then saith he to the man, Stretch forth thine hand. And he stretched it forth; and it was restored whole, like as the other.
 {% ct 'Matthew 12:11-13' %}
 
-Jesus continued to heal people on the Sabbath, contrary to the tradition of the religious leaders of that day. Ministering to the sick, needy, and discouraged by relieving their suffering, whether physical, emotional, or spiritual, is what makes the Sabbath a delight.
+Jesus continued to heal on the Sabbath, contrary to the traditions of the religious leaders of His time. Ministering to the sick, the needy, and the discouraged--by relieving their physical, emotional, or spiritual suffering--extends the blessing and delight of the Sabbath beyond ourselves to others.
 
 ## Any other activities?
 
@@ -95,14 +95,14 @@ Jesus continued to heal people on the Sabbath, contrary to the tradition of the 
 > And on the sabbath we went out of the city *by a river side*, where prayer was wont to be made; and we sat down, and spake unto the women which resorted thither.
 {% ct 'Acts 16:13' %}
 
-Since the Sabbath is a memorial of God as Creator, spending time in nature in contemplation of His wonderous works--and the power of His word that created those works--can be an incredibly inspiring Sabbath activity. The Word that took a dark earth, without form and void {% rf 'Genesis 1:2' %}, and brought it to life has the same the power today to recreate our broken characters to reflect His image {% rf 'John 6:63; 1 Peter 1:25' %}. We receive that power into our lives when we receive the promises of God in His Word, the Bible, by faith {% rf 'Ezekiel 36:25-27; Jeremiah 31:33; 2 Corinthians 5:17; Galatians 3:22' %}.
+Since the Sabbath is a memorial of God as Creator and Redeemer, spending time in nature contemplating His wondrous works--and the power of His word that created them--can be an incredibly inspiring Sabbath activity. The Word that took a dark, formless earth {% rf 'Genesis 1:2' %} and brought it to life still has the same power today to recreate our broken characters in His image {% rf 'John 6:63; 1 Peter 1:25' %}. We receive His redeeming power into our lives when we simply claim His promises by faith {% rf 'Ezekiel 36:25-27; Jeremiah 31:33; 2 Corinthians 5:17; Galatians 3:22' %}.
 
 ## For whom was the Sabbath instituted?
 
 > And it came to pass, that he went through the corn fields on the sabbath day; and his disciples began, as they went, to pluck the ears of corn. And the Pharisees said unto him, Behold, why do they on the sabbath day that which is not lawful? And he said unto them, Have ye never read what David did, when he had need, and was an hungred, he, and they that were with him? How he went into the house of God in the days of Abiathar the high priest, and did eat the shewbread, which is not lawful to eat but for the priests, and gave also to them which were with him? And he said unto them, *The sabbath was made for man, and not man for the sabbath*: therefore the Son of man is Lord also of the sabbath.
 {% ct 'Mark 2:23-28' %}
 
-The Pharisees had so many additional man-made rules to ensure the Sabbath was kept holy that they turned it into a burden, but Jesus did not follow these rules. He only followed God’s rules, which are there to ensure the Sabbath is a delight. In fact, He made it quite clear that the Sabbath was made for us, and not the other way around. (For a more in-depth look into keeping the Sabbath holy, see Doug Batchelor's book [*How to Keep the Sabbath Holy*](https://www.amazingfacts.org/media-library/book/e/26000/t/how-to-keep-the-sabbath-holy).)
+The Pharisees added so many man-made rules in an effort to protect the Sabbath's holiness that they turned it into a burden. But Jesus did not follow their rules--He followed His Father's will regarding proper Sabbath-keeping. In fact, Jesus clarified that the Sabbath was made for us, not the other way around (For a more in-depth look at how to keep the Sabbath holy, see Doug Batchelor's book [*How to Keep the Sabbath Holy*](https://www.amazingfacts.org/media-library/book/e/26000/t/how-to-keep-the-sabbath-holy).)
 
 ## Will God provide for my needs?
 
