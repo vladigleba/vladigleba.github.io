@@ -85,7 +85,7 @@ We can clearly see that buying, selling, and conducting business to generate inc
 > And he said unto them, What man shall there be among you, that shall have one sheep, and if it fall into a pit on the sabbath day, will he not lay hold on it, and lift it out? How much then is a man better than a sheep? Wherefore *it is lawful to do well on the sabbath days*. Then saith he to the man, Stretch forth thine hand. And he stretched it forth; and it was restored whole, like as the other.
 {% ct 'Matthew 12:11-13' %}
 
-Jesus continued to heal on the Sabbath, contrary to the traditions of the religious leaders of His time. Ministering to the sick, the needy, and the discouraged—by relieving their physical, emotional, or spiritual suffering—extends the blessing and delight of the Sabbath beyond ourselves to others.
+Jesus continued to heal on the Sabbath, contrary to the traditions of the religious leaders of His time. Ministry to the sick, the needy, and the discouraged—by relieving their physical, emotional, or spiritual suffering—extends the blessing and delight of the Sabbath beyond ourselves to others.
 
 ## Any other activities?
 
@@ -117,7 +117,7 @@ The Pharisees added so many man-made rules in an effort to protect the Sabbath�
 >  I am crucified with Christ: nevertheless I live; *yet not I, but Christ liveth in me*: and the life which I now live in the flesh I live *by the faith of the Son of God*, who loved me, and gave himself for me.
 {% ct 'Galatians 2:20' %}
 
-The only way the Sabbath can be kept holy is in Christ and [by faith](/posts/gospel/faith.md). Without Christ living in us by faith, we are completely incapable of keeping it holy. According to Paul, it is not even our own faith that enables this, but Christ’s faith working in us! No wonder Revelation speaks of a group of God’s faithful people who “keep the commandments of God and the faith of Jesus” {% rf 'Revelation 14:12' %}. Trying to keep His commandments in any way other than by faith is like asking a plant to grow without sunlight—an impossibility.
+The only way the Sabbath can be kept holy is in Christ and [by faith](/posts/gospel/faith.md). Without Christ living in us by faith, through His Spirit {% rf 'John 14:17' %}, we are completely incapable of keeping it holy. According to Paul, it is not even our own faith that enables this, but Christ’s faith working in us! No wonder Revelation speaks of a group of God’s faithful people who “keep the commandments of God and the faith of Jesus” {% rf 'Revelation 14:12' %}. Trying to keep His commandments in any way other than by faith is like asking a plant to grow without sunlight—an impossibility.
 
 In {% rf 'Jeremiah 31:33' false %}, God promised to write His law in our hearts. Do we believe Him? If He said it, He will fulfill it; we just have to ask! Have we asked Him, claimed His promise by faith, and thanked Him for doing it—even *before* we see any results? This is faith: taking God at His Word because He cannot lie {% rf 'Numbers 23:19' %}. Of course, we always have the freedom to interfere with or disrupt this process by filling our minds with things that glamorize sin. But if we choose to cooperate with Him, He will complete the work He began in us {% rf 'Hebrews 12:2; Jude 1:24-25' %}, and we will be able to genuinely say, “I delight to do thy will, O my God: yea, thy law is within my heart” {% rf 'Psalm 40:8' %}.
 

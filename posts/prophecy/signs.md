@@ -16,14 +16,16 @@ series: secondComing
 > For such are false apostles, deceitful workers, transforming themselves into the apostles of Christ. And no marvel; for *Satan himself is transformed into an angel of light*.
 {% ct '2 Corinthians 11:13-14' %}
 
-Jesus is emphasizing that deception will not only be prevelant in the lead-up to His coming, but it will also be powerful because it will be accompanied by signs and wonders. And it’s not just people who can pretend to be something they’re not, but Satan himself can appear as an angel of light.
+Jesus is emphasizing that deception will not only be prevelant in the lead-up to His coming, but it will also be powerful because it will be accompanied by signs and wonders. And it is not just people who can pretend to be something they are not, but Satan himself can appear as an angel of light. Jim Jones and David Koresh are examples of false prophets who claimed to be Christ, but it actually goes deeper than that.
 
-## Does the Bible say anything about spiritism?
+Over the past few decades, the New Age teachings of pantheism (all is God) and panentheism (God is in all) have been creeping into Christianity, leading some to believe that they are god. This is a continuation of the serpent's original lie, "ye shall be as gods" {% rf 'Genesis 3:5' %}, and a fulfillment of Christ's prophecy that many would say "I am Christ" {% rf 'Matthew 24:5' %}. Anybody who teaches that a human being can become god, or even Christ, is spreading deception because the truth is Jesus never promised us deity. He promised us eternal life {% rf 'Romans 6:23' %}, yes, but never deity. We are His created beings; He is our Creator God.
+
+## What about spiritism?
 
 > Now the Spirit speaketh expressly, that in the latter times some shall depart from the faith, *giving heed to seducing spirits*, and doctrines of devils.
 {% ct '1 Timothy 4:1' %}
 
-The interest in psychics, channelers, spiritists, and the occult will only continue to grow.
+The interest in psychics, channelers, spiritists, and the occult is as old as time, but it will insensify in the final days of earth's history. These practices are alive in Christianity as well through the meditative techniques of spiritual formation, which allegedly enable the practitioners to come into God's presence--and even hear His voice--on demand.
 
 ## What is another sign?
 
