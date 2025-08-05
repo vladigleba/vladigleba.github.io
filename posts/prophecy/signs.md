@@ -18,14 +18,14 @@ series: secondComing
 
 Jesus is emphasizing that deception will not only be prevelant in the lead-up to His coming, but it will also be powerful because it will be accompanied by signs and wonders. And it is not just people who can pretend to be something they are not, but Satan himself can appear as an angel of light. Jim Jones and David Koresh are examples of false prophets who claimed to be Christ, but it actually goes deeper than that.
 
-Over the past few decades, the New Age teachings of pantheism (all is God) and panentheism (God is in all) have been creeping into Christianity, leading some to believe that they are god. This is a continuation of the serpent's original lie, "ye shall be as gods" {% rf 'Genesis 3:5' %}, and a fulfillment of Christ's prophecy that many would say "I am Christ" {% rf 'Matthew 24:5' %}. Anybody who teaches that a human being can become god, or even Christ, is spreading deception because the truth is Jesus never promised us deity. He promised us eternal life {% rf 'Romans 6:23' %}, yes, but never deity. We are His created beings; He is our Creator God.
+Over the past few decades, the New Age teachings of pantheism (all is God) and panentheism (God is in all) have been creeping into Christianity, leading some to believe that they are actually god. This is a continuation of the serpent's original lie, "ye shall be as gods" {% rf 'Genesis 3:5' %}, and a fulfillment of Christ's prophecy that many would say "I am Christ" {% rf 'Matthew 24:5' %}. Anybody who teaches that a human being can become god, or even Christ, is spreading deception because the truth is Jesus never promised us deity. He promised us eternal life {% rf 'Romans 6:23' %}, yes, but never deity. We are His created beings; He is our Creator God.
 
 ## What about spiritism?
 
 > Now the Spirit speaketh expressly, that in the latter times some shall depart from the faith, *giving heed to seducing spirits*, and doctrines of devils.
 {% ct '1 Timothy 4:1' %}
 
-The interest in psychics, channelers, spiritists, and the occult is as old as time, but it will insensify in the final days of earth's history. These practices are alive in Christianity as well through the meditative techniques of spiritual formation, which allegedly enable the practitioners to come into God's presence--and even hear His voice--on demand.
+The interest in psychics, channelers, spiritists, and the occult is as old as time, but it will insensify in the final days of earth's history. Surprisingly, these practices are alive in Christianity as well through the meditative techniques of spiritual formation, which allegedly enable the practitioner to come into God's presence--and even hear His voice--on demand. This is achieved through an altered state of consciousness, known as "entering the silence," in which all thinking is suppressed, resulting in a trance-like, meditative state--the same state that witches, psychics, and channelers enter when they do their work. When this state is reached, the mind is opened to the influence of evil supernatural forces. (For more information, see Howard Peth’s book *The Dangers of Contemplative Prayer*.)
 
 ## What is another sign?
 
@@ -42,19 +42,21 @@ While wars, rumors of wars, famines, epidemics, and earthquakes have always been
 > And the nations were angry, and thy wrath is come, and the time of the dead, that they should be judged, and that thou shouldest give reward unto thy servants the prophets, and to the saints, and them that fear thy name, small and great; and *shouldest destroy them which destroy the earth*.
 {% ct 'Revelation 11:18' %}
 
-The human race now have the ability to destroy the earth through weapons of mass destruction, such as the atomic bomb.
+The human race now have the ability to destroy the earth through weapons of mass destruction, such as the atomic bomb, and through weather modification techniques known as geoengineering.
 
 ## How will people feel about the future?
 
 > *Men’s hearts failing them for fear*, and for looking after those things which are coming on the earth: for the powers of heaven shall be shaken.
 {% ct 'Luke 21:26' %}
 
+Those without God as their anchor will be in a frightful psychological state as things on earth become increasingly unstable. Such a state, on a societal level, makes people easy to control and manipulate--a fertile ground for tyranny and scape-goat-seeking narratives, which can easily lead to previously unimaginable humanitarian atrocities. The Bible predicts [this will happen](../prophecy/usa.md) just before Christ's Second Coming.
+
 ## What sign does Paul give in one of his letters?
 
 > For yourselves know perfectly that the day of the Lord so cometh as a thief in the night. *For when they shall say, Peace and safety; then sudden destruction cometh upon them*, as travail upon a woman with child; and they shall not escape.
 {% ct '1 Thessalonians 5:2-3' %}
 
-This is related to the previous sign of fear about the future because when there will be talk of peace and safety, the reality that follows will be the opposite.
+This is related to the previous sign of apprehension about the future because as nations attempt to bring stability, they will make promises of peace and safety, but according to the Bible, the reality that follows will be the opposite.
 
 ## How will people treat each other?
 
@@ -63,6 +65,8 @@ This is related to the previous sign of fear about the future because when there
 
 > This know also, that in the last days perilous times shall come. For men shall be *lovers of their own selves, covetous, boasters, proud, blasphemers, disobedient to parents, unthankful, unholy, Without natural affection, trucebreakers, false accusers, incontinent, fierce, despisers of those that are good, traitors, heady, highminded, lovers of pleasures more than lovers of God; having a form of godliness, but denying the power thereof*: from such turn away.
 {% ct '2 Timothy 3:1-5' %}
+
+As the world becomes bitter and angry, Christ's followers will be known for their love.
 
 ## What will people be preoccupied with?
 
