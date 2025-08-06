@@ -49,7 +49,7 @@ The human race now have the ability to destroy the earth through weapons of mass
 > *Men’s hearts failing them for fear*, and for looking after those things which are coming on the earth: for the powers of heaven shall be shaken.
 {% ct 'Luke 21:26' %}
 
-Those without God as their anchor will be in a frightful psychological state as things on earth become increasingly unstable. Such a state, on a societal level, makes people easy to control and manipulate--a fertile ground for tyranny and scape-goat-seeking narratives, which can easily lead to previously unimaginable humanitarian atrocities. The Bible predicts [this will happen](../prophecy/usa.md) just before Christ's Second Coming.
+Those without God as their anchor will be in a frightful psychological state as things on earth become increasingly unstable. Such a state, on a societal level, makes people easy to control and manipulate--a fertile ground for tyranny and scape-goat-seeking narratives, which can easily lead to previously unimaginable atrocities. The Bible predicts [this will happen](../prophecy/usa.md) just before Christ's Second Coming.
 
 ## What sign does Paul give in one of his letters?
 
@@ -66,7 +66,7 @@ This is related to the previous sign of apprehension about the future because as
 > This know also, that in the last days perilous times shall come. For men shall be *lovers of their own selves, covetous, boasters, proud, blasphemers, disobedient to parents, unthankful, unholy, Without natural affection, trucebreakers, false accusers, incontinent, fierce, despisers of those that are good, traitors, heady, highminded, lovers of pleasures more than lovers of God; having a form of godliness, but denying the power thereof*: from such turn away.
 {% ct '2 Timothy 3:1-5' %}
 
-As the world becomes bitter and angry, Christ's followers will be known for their love.
+As the love of many grows cold, evil will begin to assert itself in the lives of thoses who have rejected God. When the restraining power of God leaves through persistent rejection {% rf 'Romans 1:28' %}, human behavior will begin to resemble that of the pre-flood world when every thought was only evil continually {% rf 'Genesis 6:5' %}. But this trend will not be universal. Communities of genuine followers of Chirst will exist throughout the world who  reflect His character and who will be known for their love--which is actually the love of God manifested in them {% rf 'John 13:35; 1 John 2:5' %}. Thus, in the end, there will be only two classes of people: those who give themselves over to sin, selfishness, and evil and those who give themselves over to God's loving mercy and enabling grace. Whether we realize it or not, the decisions we make on a daily basis are bringing us closer to one of these groups.
 
 ## What will people be preoccupied with?
 
@@ -76,7 +76,7 @@ As the world becomes bitter and angry, Christ's followers will be known for thei
 > But *as the days of Noe were, so shall also the coming of the Son of man be*. For as in the days that were before the flood they were eating and drinking, marrying and giving in marriage, until the day that Noe entered into the ark, and knew not until the flood came, and took them all away; so shall also the coming of the Son of man be.
 {% ct 'Matthew 24:37-39' %}
 
-There’s nothing wrong with marriage as it was instituted and blessed by God, and it’s impossible to survive without nourishing our bodies. The point is in Noah’s days most people ignored him. Life is busy, and it’s easy to get preoccupied with temporal things and neglect spiritual things. Where do our own priorities stand?
+Obviously, there is nothing wrong with marriage because it was instituted and blessed by God Himself. Moreover, it is impossible to survive without nourishing our bodies, so we must eat, which means we must work, and for the majority of people, work consumes the largest portion of their lives. Most are busy just trying to survive, so in the absence of intentionality, it is easy to neglect spiritual things and become preoccupied with temporal ones. But Christ's words still quietly ring in the background: "seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you." {% rf 'Matthew 6:33' %}. In Noah’s days most people ignored his invitations to come into the ark because they were too busy doing other things. Where do our priorities stand?
 
 ## Are there any socioeconomic signs?
 
