@@ -18,14 +18,14 @@ series: secondComing
 
 Jesus is emphasizing that deception will not only be prevelant in the lead-up to His coming, but it will also be powerful because it will be accompanied by signs and wonders. And it is not just people who can pretend to be something they are not, but Satan himself can appear as an angel of light. Jim Jones and David Koresh are examples of false prophets who claimed to be Christ, but it actually goes deeper than that.
 
-Over the past few decades, the New Age teachings of pantheism (all is God) and panentheism (God is in all) have been creeping into Christianity, leading some to believe that they are actually god. This is a continuation of the serpent's original lie, "ye shall be as gods" {% rf 'Genesis 3:5' %}, and a fulfillment of Christ's prophecy that many would say "I am Christ" {% rf 'Matthew 24:5' %}. Anybody who teaches that a human being can become god, or even Christ, is spreading deception because the truth is Jesus never promised us deity. He promised us eternal life {% rf 'Romans 6:23' %}, yes, but never deity. We are His created beings; He is our Creator God.
+Over the past few decades, the New Age teachings of pantheism (all is God) and panentheism (God is in all) have been creeping into Christianity, leading some to believe that they are actually god. This is a continuation of the serpent’s original lie, “ye shall be as gods” {% rf 'Genesis 3:5' %}, and a fulfillment of Christ’s prophecy that many would say “I am Christ” {% rf 'Matthew 24:5' %}. Anybody who teaches that a human being can become god, or even Christ, is spreading deception because the truth is Jesus never promised us deity. He promised us eternal life {% rf 'Romans 6:23' %}, yes, but never deity. We are His created beings; He is our Creator God.
 
 ## What about spiritism?
 
 > Now the Spirit speaketh expressly, that in the latter times some shall depart from the faith, *giving heed to seducing spirits*, and doctrines of devils.
 {% ct '1 Timothy 4:1' %}
 
-The interest in psychics, channelers, spiritists, and the occult is as old as time, but it will insensify in the final days of earth's history. Surprisingly, these practices are alive in Christianity as well through the meditative techniques of spiritual formation, which allegedly enable the practitioner to come into God's presence--and even hear His voice--on demand. This is achieved through an altered state of consciousness, known as "entering the silence," in which all thinking is suppressed, resulting in a trance-like, meditative state--the same state that witches, psychics, and channelers enter when they do their work. When this state is reached, the mind is opened to the influence of evil supernatural forces. (For more information, see Howard Peth’s book *The Dangers of Contemplative Prayer*.)
+The interest in psychics, channelers, spiritists, and the occult is as old as time, but it will insensify in the final days of earth’s history. Surprisingly, these practices are alive in Christianity as well through the meditative techniques of spiritual formation, which allegedly enable the practitioner to come into God’s presence—and even hear His voice—on demand. This is achieved through an altered state of consciousness, known as “entering the silence,” in which all thinking is suppressed, resulting in a trance-like, meditative state—the same state that witches, psychics, and channelers enter when they do their work. When this state is reached, the mind is opened to the influence of evil supernatural forces. (For more information, see Howard Peth’s book *The Dangers of Contemplative Prayer*.)
 
 ## What is another sign?
 
@@ -49,7 +49,7 @@ The human race now have the ability to destroy the earth through weapons of mass
 > *Men’s hearts failing them for fear*, and for looking after those things which are coming on the earth: for the powers of heaven shall be shaken.
 {% ct 'Luke 21:26' %}
 
-Those without God as their anchor will be in a frightful psychological state as things on earth become increasingly unstable. Such a state, on a societal level, makes people easy to control and manipulate--a fertile ground for tyranny and scape-goat-seeking narratives, which can easily lead to previously unimaginable atrocities. The Bible predicts [this will happen](../prophecy/usa.md) just before Christ's Second Coming.
+Those without God as their anchor will be in a frightful psychological state as things on earth become increasingly unstable. Such a state, on a societal level, makes people easy to control and manipulate—a fertile ground for tyranny and scape-goat-seeking narratives, which can easily lead to previously unimaginable atrocities. The Bible predicts [this will happen](../prophecy/usa.md) just before Christ’s Second Coming.
 
 ## What sign does Paul give in one of his letters?
 
@@ -66,7 +66,7 @@ This is related to the previous sign of apprehension about the future because as
 > This know also, that in the last days perilous times shall come. For men shall be *lovers of their own selves, covetous, boasters, proud, blasphemers, disobedient to parents, unthankful, unholy, Without natural affection, trucebreakers, false accusers, incontinent, fierce, despisers of those that are good, traitors, heady, highminded, lovers of pleasures more than lovers of God; having a form of godliness, but denying the power thereof*: from such turn away.
 {% ct '2 Timothy 3:1-5' %}
 
-As the love of many grows cold, evil will begin to assert itself in the lives of thoses who have rejected God. When the restraining power of God leaves through persistent rejection {% rf 'Romans 1:28' %}, human behavior will begin to resemble that of the pre-flood world when every thought was only evil continually {% rf 'Genesis 6:5' %}. But this trend will not be universal. Communities of genuine followers of Chirst will exist throughout the world who  reflect His character and who will be known for their love--which is actually the love of God manifested in them {% rf 'John 13:35; 1 John 2:5' %}. Thus, in the end, there will be only two classes of people: those who give themselves over to sin, selfishness, and evil and those who give themselves over to God's loving mercy and enabling grace. Whether we realize it or not, the decisions we make on a daily basis are bringing us closer to one of these groups.
+As the love of many grows cold, evil will begin to assert itself in the lives of thoses who have rejected God. When the restraining power of God leaves through persistent rejection {% rf 'Romans 1:28' %}, human behavior will begin to resemble that of the pre-flood world when every thought was only evil continually {% rf 'Genesis 6:5' %}. But this trend will not be universal. Communities of genuine followers of Chirst will exist throughout the world who  reflect His character and who will be known for their love—which is actually the love of God manifested in them {% rf 'John 13:35; 1 John 2:5' %}. Thus, in the end, there will be only two classes of people: those who give themselves over to sin, selfishness, and evil and those who give themselves over to God’s loving mercy and enabling grace. Whether we realize it or not, the decisions we make on a daily basis are bringing us closer to one of these groups.
 
 ## What will people be preoccupied with?
 
@@ -76,28 +76,31 @@ As the love of many grows cold, evil will begin to assert itself in the lives of
 > But *as the days of Noe were, so shall also the coming of the Son of man be*. For as in the days that were before the flood they were eating and drinking, marrying and giving in marriage, until the day that Noe entered into the ark, and knew not until the flood came, and took them all away; so shall also the coming of the Son of man be.
 {% ct 'Matthew 24:37-39' %}
 
-Obviously, there is nothing wrong with marriage because it was instituted and blessed by God Himself. Moreover, it is impossible to survive without nourishing our bodies, so we must eat, which means we must work, and for the majority of people, work consumes the largest portion of their lives. Most are busy just trying to survive, so in the absence of intentionality, it is easy to neglect spiritual things and become preoccupied with temporal ones. But Christ's words still quietly ring in the background: "seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you." {% rf 'Matthew 6:33' %}. In Noah’s days most people ignored his invitations to come into the ark because they were too busy doing other things. Where do our priorities stand?
+Obviously, there is nothing wrong with marriage because it was instituted and blessed by God Himself. Moreover, it is impossible to survive without nourishing our bodies; we must eat, which means we must work, and for the majority of people, work consumes the largest part of their lives. Most are busy trying to survive, so in the absence of intentionality, it is easy to become preoccupied with the temporal to the neglect of the spiritual. But Christ’s words, nonetheless, quietly ring in the background: “seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you.” {% rf 'Matthew 6:33' %}. In Noah’s days most people ignored his invitations to come into the ark because they were too busy doing other things. Where do our priorities stand?
 
 ## Are there any socioeconomic signs?
 
 > Go to now, ye rich men, weep and howl for your miseries that shall come upon you. *Your riches are corrupted*, and your garments are motheaten. Your gold and silver is cankered; and the rust of them shall be a witness against you, and shall eat your flesh as it were fire. Ye have heaped treasure together for the last days. Behold, the *hire of the labourers who have reaped down your fields, which is of you kept back by fraud, crieth*: and the cries of them which have reaped are entered into the ears of the Lord of sabaoth. Ye have lived in pleasure on the earth, and been wanton; ye have nourished your hearts, as in a day of slaughter.
 {% ct 'James 5:1-5' %}
 
-Rising wealth inequality, fraud, and trouble between capital and labor will continue to be prominent until the coming of Christ.
+The gap between rich and poor, coupled with corruption, fraud, and disputes between employers and workers, will only continue to rise as we draw nearer to the coming of Christ.
 
 ## What is one of the positive signs?
 
 > And *this gospel of the kingdom shall be preached in all the world* for a witness unto all nations; and then shall the end come.
 {% ct 'Matthew 24:14' %}
 
-What was once an impossible task is now a reality! With the rise of media, like television, radio, and the internet, the gospel is now going out to the entire world. Everyone will be exposed to it before He returns.
+With the rapid advancement in communication technology over the past few decades--such as television, radio, and the internet--the gospel is now being preached in the remotest corners of the globe. What once seemed an impossible task is now a reality! The Bible teaches that religious revivals, both [genuine](/posts/prophecy/usa.md#will-there-be-a-genuine-revival) and [counterfeit](/posts/prophecy/usa.md#will-there-be-a-false-religious-revival), will spread across the world and religious discussions will take center stage [on national levels](/posts/prophecy/usa.md) just prior to Christ's return. Religion, generally, and the enforcement of God's law, specifically, will be on everyone's mind.
 
 ## What is God’s desire for the human race?
 
 > The Lord is not slack concerning his promise, as some men count slackness; but is *longsuffering to us-ward, not willing that any should perish, but that all should come to repentance*.
 {% ct '2 Peter 3:9' %}
 
-God does not want anyone to be surprised by and unprepared for His coming; His desire is for every single person to be saved.
+> Say unto them, As I live, saith the Lord GOD, *I have no pleasure in the death of the wicked*; but that the wicked turn from his way and live: *turn ye, turn ye from your evil ways; for why will ye die*, O house of Israel?
+{% ct 'Ezekiel 33:11' %}
+
+God does not want anyone to be surprised by and unprepared for His coming. His desire is for every single person to be saved, so He is patient with us, giving us repeated opportunities and every needed blessing {% rf 'Ephesians 1:3-4' %} to ensure we can become His sons and daughters. But His patience is not infinite {% rf 'Genesis 6:3' %}, or the misery of sin would never end. One day, the door to reconciliation with our Maker will close forever. May it not be said of any of us: "The harvest is past, the summer is ended, and we are not saved" {% rf 'Jeremiah 8:20' %}. Let us make the most of every God-given opportunity and blessing.
 
 ## What advice and promise does the Bible give?
 
@@ -110,4 +113,4 @@ God does not want anyone to be surprised by and unprepared for His coming; His d
 > I will say of the LORD, *He is my refuge and my fortress: my God; in him will I trust*. Surely *he shall deliver thee* from the snare of the fowler, and from the noisome pestilence. He shall cover thee with his feathers, and under his wings shalt thou trust: *his truth shall be thy shield and buckler*.
 {% ct 'Psalm 91:2-4' %}
 
-Those who watch for signs of Christ’s coming and pray that He will help them to be ready to meet Him won’t be disappointed. His truth will protect them from deception, and God will be with them every step of the way, no matter what happens.
+Those who watch for signs of Christ’s coming and earnestly pray that He will help them to be ready to meet Him will experience His unfailing faithfulness and enabling grace. His truth will protect them from deception, and He will be with them every step of the way, no matter what happens around them.
