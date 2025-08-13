@@ -16,9 +16,9 @@ series: secondComing
 > For such are false apostles, deceitful workers, transforming themselves into the apostles of Christ. And no marvel; for *Satan himself is transformed into an angel of light*.
 {% ct '2 Corinthians 11:13-14' %}
 
-Jesus is emphasizing that deception will not only be prevelant in the lead-up to His coming, but it will also be powerful because it will be accompanied by signs and wonders. And it is not just people who can pretend to be something they are not, but Satan himself can appear as an angel of light. Jim Jones and David Koresh are examples of false prophets who claimed to be Christ, but it actually goes deeper than that.
+Jesus emphasizes that deception will not only be prevalent in the lead-up to His coming, but also powerful, as it will be accompanied by signs and wonders. Beyond people claiming to be false Christs, Satan himself can appear as an angel of light. Jim Jones and David Koresh are examples of false prophets who claimed to be Christ, but the danger runs even deeper than that.
 
-Over the past few decades, the New Age teachings of pantheism (all is God) and panentheism (God is in all) have been creeping into Christianity, leading some to believe that they are actually god. This is a continuation of the serpent’s original lie, “ye shall be as gods” {% rf 'Genesis 3:5' %}, and a fulfillment of Christ’s prophecy that many would say “I am Christ” {% rf 'Matthew 24:5' %}. Anybody who teaches that a human being can become god, or even Christ, is spreading deception because the truth is Jesus never promised us deity. He promised us eternal life {% rf 'Romans 6:23' %}, yes, but never deity. We are His created beings; He is our Creator God.
+Over the past few decades, the New Age teachings of pantheism (all is God) and panentheism (God is in all) have been creeping into Christianity, leading some to believe that they are actually god. This is a continuation of the serpent’s original lie, “ye shall be as gods” {% rf 'Genesis 3:5' %}, and a fulfillment of Christ’s prophecy that many would say “I am Christ” {% rf 'Matthew 24:5' %}. Anybody who teaches that a human being can become god, or even Christ, spreads deception because the truth is Jesus never promised us deity. He promised us eternal life {% rf 'Romans 6:23' %}, yes, but never deity. We are and will alawys be His created beings; He is our Creator God.
 
 ## What about spiritism?
 
@@ -83,14 +83,14 @@ Obviously, there is nothing wrong with marriage because it was instituted and bl
 > Go to now, ye rich men, weep and howl for your miseries that shall come upon you. *Your riches are corrupted*, and your garments are motheaten. Your gold and silver is cankered; and the rust of them shall be a witness against you, and shall eat your flesh as it were fire. Ye have heaped treasure together for the last days. Behold, the *hire of the labourers who have reaped down your fields, which is of you kept back by fraud, crieth*: and the cries of them which have reaped are entered into the ears of the Lord of sabaoth. Ye have lived in pleasure on the earth, and been wanton; ye have nourished your hearts, as in a day of slaughter.
 {% ct 'James 5:1-5' %}
 
-The gap between rich and poor, coupled with corruption, fraud, and disputes between employers and workers, will only continue to rise as we draw nearer to the coming of Christ.
+The gap between rich and poor, coupled with corruption, fraud, and disputes between employers and workers, will only continue to rise as we draw nearer to the coming of Christ. As the Holy Spirit is repeatedly resisted and withdrawn, people are left to the control of their carnal nature, whose chief aim has always been the preservation and exaltation of self.
 
 ## What is one of the positive signs?
 
 > And *this gospel of the kingdom shall be preached in all the world* for a witness unto all nations; and then shall the end come.
 {% ct 'Matthew 24:14' %}
 
-With the rapid advancement in communication technology over the past few decades--such as television, radio, and the internet--the gospel is now being preached in the remotest corners of the globe. What once seemed an impossible task is now a reality! The Bible teaches that religious revivals, both [genuine](/posts/prophecy/usa.md#will-there-be-a-genuine-revival) and [counterfeit](/posts/prophecy/usa.md#will-there-be-a-false-religious-revival), will spread across the world and religious discussions will take center stage [on national levels](/posts/prophecy/usa.md) just prior to Christ's return. Religion, generally, and the enforcement of God's law, specifically, will be on everyone's mind.
+With the rapid advancement in communication technology over the past few decades—such as television, radio, and the internet—the gospel is now being preached in the remotest corners of the globe. What once seemed an impossible task is now a reality! The Bible teaches that religious revivals, both [genuine](/posts/prophecy/usa.md#will-there-be-a-genuine-revival) and [counterfeit](/posts/prophecy/usa.md#will-there-be-a-false-religious-revival), will spread across the world and religious discussions will take center stage [on national levels](/posts/prophecy/usa.md) just prior to Christ’s return. Religion, generally, and the enforcement of God’s law, specifically, will be on everyone’s mind.
 
 ## What is God’s desire for the human race?
 
@@ -100,7 +100,7 @@ With the rapid advancement in communication technology over the past few decades
 > Say unto them, As I live, saith the Lord GOD, *I have no pleasure in the death of the wicked*; but that the wicked turn from his way and live: *turn ye, turn ye from your evil ways; for why will ye die*, O house of Israel?
 {% ct 'Ezekiel 33:11' %}
 
-God does not want anyone to be surprised by and unprepared for His coming. His desire is for every single person to be saved, so He is patient with us, giving us repeated opportunities and every needed blessing {% rf 'Ephesians 1:3-4' %} to ensure we can become His sons and daughters. But His patience is not infinite {% rf 'Genesis 6:3' %}, or the misery of sin would never end. One day, the door to reconciliation with our Maker will close forever. May it not be said of any of us: "The harvest is past, the summer is ended, and we are not saved" {% rf 'Jeremiah 8:20' %}. Let us make the most of every God-given opportunity and blessing.
+God does not want anyone to be surprised by and unprepared for His coming. His desire is for every single person to be saved, so He is patient with us, giving us repeated opportunities and every needed blessing {% rf 'Ephesians 1:3-4' %} to ensure we can become His sons and daughters. But His patience is not infinite {% rf 'Genesis 6:3' %}, or the misery of sin would never end. One day, the door to reconciliation with our Maker will close forever. May it not be said of any of us: “The harvest is past, the summer is ended, and we are not saved” {% rf 'Jeremiah 8:20' %}. Let us make the most of every God-given opportunity and blessing.
 
 ## What advice and promise does the Bible give?
 
@@ -113,4 +113,4 @@ God does not want anyone to be surprised by and unprepared for His coming. His d
 > I will say of the LORD, *He is my refuge and my fortress: my God; in him will I trust*. Surely *he shall deliver thee* from the snare of the fowler, and from the noisome pestilence. He shall cover thee with his feathers, and under his wings shalt thou trust: *his truth shall be thy shield and buckler*.
 {% ct 'Psalm 91:2-4' %}
 
-Those who watch for signs of Christ’s coming and earnestly pray that He will help them to be ready to meet Him will experience His unfailing faithfulness and enabling grace. His truth will protect them from deception, and He will be with them every step of the way, no matter what happens around them.
+Those who watch for the signs of Christ’s coming, and earnestly pray that He will prepare them for it, will experience His unfailing faithfulness and enabling grace. If receieved and obeyed, His truth will protect them from deception, and He will be with them every step of the way, no matter what happens around them.
