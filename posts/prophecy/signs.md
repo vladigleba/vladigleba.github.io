@@ -18,7 +18,7 @@ series: secondComing
 
 Jesus emphasizes that deception will not only be prevalent in the lead-up to His coming, but also powerful, as it will be accompanied by signs and wonders. Beyond people claiming to be false Christs, Satan himself can appear as an angel of light. Jim Jones and David Koresh are examples of false prophets who claimed to be Christ, but the danger runs even deeper than that.
 
-Over the past few decades, the New Age teachings of pantheism (all is God) and panentheism (God is in all) have been creeping into Christianity, leading some to believe that they are actually god. These teachings build upon the serpent’s original lie, “ye shall be as gods” {% rf 'Genesis 3:5' %}, and fulfill Christ’s prophecy that many would say, “I am Christ” {% rf 'Matthew 24:5' %}. Anyone who teaches that a human being can become god--or even Christ--spreads deception, because the truth is Jesus never promised us deity. He promised us eternal life {% rf 'Romans 6:23' %}, yes, but never deity. We are and will always be His created beings; He is our Creator God.
+Over the past few decades, the New Age teachings of pantheism (all is God) and panentheism (God is in all) have been creeping into Christianity, leading some to believe that they are actually god. These teachings build upon the serpent’s original lie, “ye shall be as gods” {% rf 'Genesis 3:5' %}, and fulfill Christ’s prophecy that many would say, “I am Christ” {% rf 'Matthew 24:5' %}. Anyone who teaches that a human being can become god—or even Christ—spreads deception, because the truth is Jesus never promised us deity. He promised us eternal life {% rf 'Romans 6:23' %}, yes, but never deity. We are and will always be His created beings; He is our Creator God.
 
 ## What about spiritism?
 
@@ -35,14 +35,14 @@ The interest in psychics, channelers, spiritists, and the occult is as old as ti
 > All these are the *beginning of birth pains*.
 {% ct 'Matthew 24:8, NIV' %}
 
-While wars, rumors of wars, famines, epidemics, and earthquakes have always existed, Jesus likened them to birth pains--which increase in frequency and intensity over time--to emphasize that these signs will follow the same pattern.
+While wars, rumors of wars, famines, epidemics, and earthquakes have always existed, Jesus likened them to birth pains—which increase in frequency and intensity over time—to emphasize that these signs will follow the same pattern.
 
 ## Is there a surprising sign in Revelation?
 
 > And the nations were angry, and thy wrath is come, and the time of the dead, that they should be judged, and that thou shouldest give reward unto thy servants the prophets, and to the saints, and them that fear thy name, small and great; and *shouldest destroy them which destroy the earth*.
 {% ct 'Revelation 11:18' %}
 
-Humanity now possesses the power to destroy the earth--through weapons of mass destruction like the atomic bomb and by tampering with weather modification techniques like geoengineering.
+Humanity now possesses the power to destroy the earth—through weapons of mass destruction like the atomic bomb and by tampering with weather modification techniques like geoengineering.
 
 ## How will people feel about the future?
 
@@ -83,14 +83,14 @@ Obviously, there is nothing wrong with marriage; after all, it was instituted an
 > Go to now, ye rich men, weep and howl for your miseries that shall come upon you. *Your riches are corrupted*, and your garments are motheaten. Your gold and silver is cankered; and the rust of them shall be a witness against you, and shall eat your flesh as it were fire. Ye have heaped treasure together for the last days. Behold, the *hire of the labourers who have reaped down your fields, which is of you kept back by fraud, crieth*: and the cries of them which have reaped are entered into the ears of the Lord of sabaoth. Ye have lived in pleasure on the earth, and been wanton; ye have nourished your hearts, as in a day of slaughter.
 {% ct 'James 5:1-5' %}
 
-The gap between rich and poor, coupled with corruption, fraud, and disputes between employers and workers, will continue to widen as we draw nearer to the coming of Christ. As the Holy Spirit is repeatedly resisted and withdrawn, people are left to the control of their carnal nature, whose chief aim has always been self-preservation and self-exaltation.
+The gap between rich and poor, coupled with corruption, fraud, and disputes between employers and workers, will continue to widen as we draw nearer to the coming of Christ. As the Holy Spirit is repeatedly resisted and withdrawn, people are left to the control of their carnal nature, whose chief aim has always been preservation and exaltation of self.
 
 ## What is one of the positive signs?
 
 > And *this gospel of the kingdom shall be preached in all the world* for a witness unto all nations; and then shall the end come.
 {% ct 'Matthew 24:14' %}
 
-With the rapid advancement in communication technology over the past few decades—such as television, radio, and the internet—the gospel is now being preached in the remotest corners of the globe. What once seemed an impossible task is now a reality! The Bible teaches that religious revivals, both [genuine](/posts/prophecy/usa.md#will-there-be-a-genuine-revival) and [counterfeit](/posts/prophecy/usa.md#will-there-be-a-false-religious-revival), will spread across the world and religious discussions will take center stage [on national levels](/posts/prophecy/usa.md) just prior to Christ’s return. Religion, generally, and the enforcement of God’s law, specifically, will be on everyone’s mind.
+With the rapid advancement of communication technology over the past decades—such as television, radio, and the internet—the gospel is now being preached to even the remotest corners of the globe. What once seemed an impossible task has now become a reality. The Bible teaches that religious revivals—both [genuine](/posts/prophecy/usa.md#will-there-be-a-genuine-revival) and [counterfeit](/posts/prophecy/usa.md#will-there-be-a-false-religious-revival)—will spread across the world, and religious discussions will take center stage, resonating through the legislative halls and judicial courtrooms of nations just prior to Christ’s return. Religion in general, and the enforcement of God’s law in particular, will be on everyone’s mind.
 
 ## What is God’s desire for the human race?
 
@@ -100,7 +100,7 @@ With the rapid advancement in communication technology over the past few decades
 > Say unto them, As I live, saith the Lord GOD, *I have no pleasure in the death of the wicked*; but that the wicked turn from his way and live: *turn ye, turn ye from your evil ways; for why will ye die*, O house of Israel?
 {% ct 'Ezekiel 33:11' %}
 
-God does not want anyone to be surprised by and unprepared for His coming. His desire is for every single person to be saved, so He is patient with us, giving us repeated opportunities and every needed blessing {% rf 'Ephesians 1:3-4' %} to ensure we can become His sons and daughters. But His patience is not infinite {% rf 'Genesis 6:3' %}, or the misery of sin would never end. One day, the door to reconciliation with our Maker will close forever. May it not be said of any of us: “The harvest is past, the summer is ended, and we are not saved” {% rf 'Jeremiah 8:20' %}. Let us make the most of every God-given opportunity and blessing.
+God does not want anyone to be caught off guard or unprepared for His coming. His desire is that every person be saved, so He is patient with us, granting repeated opportunities and every spiritual blessing {% rf 'Ephesians 1:3-4' %} we need to become His sons and daughters. Yet His patience is not infinite {% rf 'Genesis 6:3' %}, for if it were, the misery of sin would never end. One day, the door to reconciliation with our Maker will close forever. May it never be said of us: “The harvest is past, the summer is ended, and we are not saved” {% rf 'Jeremiah 8:20' %}. Let us make the most of every God-given opportunity and blessing.
 
 ## What advice and promise does the Bible give?
 
@@ -113,4 +113,4 @@ God does not want anyone to be surprised by and unprepared for His coming. His d
 > I will say of the LORD, *He is my refuge and my fortress: my God; in him will I trust*. Surely *he shall deliver thee* from the snare of the fowler, and from the noisome pestilence. He shall cover thee with his feathers, and under his wings shalt thou trust: *his truth shall be thy shield and buckler*.
 {% ct 'Psalm 91:2-4' %}
 
-Those who watch for the signs of Christ’s coming, and earnestly pray that He will prepare them for it, will experience His unfailing faithfulness and enabling grace. If receieved and obeyed, His truth will protect them from deception, and He will be with them every step of the way, no matter what happens around them.
+Those who watch for the signs of Christ’s coming and earnestly pray that He will prepare them for it will experience His unfailing faithfulness and enabling grace. If received and obeyed, His truth will protect them from deception, and He will be with them every step of the way, no matter what happens around them.
