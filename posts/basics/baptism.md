@@ -26,7 +26,7 @@ Just before Jesus ascended to heaven, He gave His disciples the “Great Commiss
 > For as many of you as have been *baptized into Christ have put on Christ*.
 {% ct 'Galatians 3:27' %}
 
-During His conversation with Nicodemus, Jesus made it clear that baptism is a privilege that all Christians are called to experience. Salvation is a gift from God, received through faith in Jesus Christ {% rf 'Ephesians 2:8-9' %}, and this faith is demonstrated through a public, unashamed confession of Him {% rf 'Romans 10:9-10; Luke 12:8-9; 2 Timothy 1:12' %}. When we are baptized, we are making a public confession that we have “put on Christ”—that we have accepted Him as Lord and Savior into our hearts and have received a new name and a new identity: follower of Christ, son or daughter of God! By making a public stand for Christ, we also become His witnesses to others, inspiring them to do the same in their own lives.
+During His conversation with Nicodemus, Jesus made it clear that baptism is a privilege that all Christians are called to experience. Salvation is a gift from God, received through faith in Jesus Christ {% rf 'Ephesians 2:8-9' %}, and this faith is demonstrated through a public, unashamed confession of Him {% rf 'Romans 10:9-10; Luke 12:8-9; 2 Timothy 1:12' %}. At baptism, we make an open declaration to all present that we have accepted Him as Lord and Savior, been clothed with the robe of His righteousness {% rf 'Galatians 3:27; Isaiah 61:10' %}, and have taken on a new name and identity: follower of Christ, son or daughter of God! By making a public stand for Christ, we also become His witnesses to others, inspiring them to do the same in their own lives.
 
 ## How many methods of baptism are there?
 

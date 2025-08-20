@@ -16,14 +16,16 @@ series: secondComing
 > For such are false apostles, deceitful workers, transforming themselves into the apostles of Christ. And no marvel; for *Satan himself is transformed into an angel of light*.
 {% ct '2 Corinthians 11:13-14' %}
 
-Jesus is emphasizing that deception will not only be prevelant in the lead-up to His coming, but it will also be powerful because it will be accompanied by signs and wonders. And it’s not just people who can pretend to be something they’re not, but Satan himself can appear as an angel of light.
+Jesus emphasizes that deception will not only be prevalent in the lead-up to His coming, but also powerful, as it will be accompanied by signs and wonders. Beyond people claiming to be false Christs, Satan himself can appear as an angel of light. Jim Jones and David Koresh are examples of false prophets who claimed to be Christ, but the danger runs even deeper than that.
 
-## Does the Bible say anything about spiritism?
+Over the past few decades, the New Age teachings of pantheism (all is God) and panentheism (God is in all) have been creeping into Christianity, leading some to believe that they are actually god. These teachings build upon the serpent’s original lie, “ye shall be as gods” {% rf 'Genesis 3:5' %}, and fulfill Christ’s prophecy that many would say, “I am Christ” {% rf 'Matthew 24:5' %}. Anyone who teaches that a human being can become god—or even Christ—spreads deception, because the truth is Jesus never promised us deity. He promised us eternal life {% rf 'Romans 6:23' %}, yes, but never deity. We are and will always be His created beings; He is our Creator God.
+
+## Will there be an interest in spiritism?
 
 > Now the Spirit speaketh expressly, that in the latter times some shall depart from the faith, *giving heed to seducing spirits*, and doctrines of devils.
 {% ct '1 Timothy 4:1' %}
 
-The interest in psychics, channelers, spiritists, and the occult will only continue to grow.
+The interest in psychics, channelers, spiritists, and the occult is as old as time, but it will intensify in the final days of earth’s history. Surprisingly, these practices are alive in Christianity as well through the meditative techniques of spiritual formation, which allegedly enable the practitioner to come into God’s presence—and even hear His voice—on demand. This is achieved through an altered state of consciousness, known as “entering the silence,” in which all thinking is suppressed, resulting in a trance-like, meditative state—the same state that witches, psychics, and channelers enter when they do their work. When this state is reached, the mind is opened to the influence of evil supernatural forces. The truth is God never asks us to suspend our reasoning powers when we pray or study His Word; on the contrary, He wants us to be fully engaged {% rf 'Isaiah 1:18' %}. (For more information, see Howard Peth’s book *The Dangers of Contemplative Prayer*.)
 
 ## What is another sign?
 
@@ -33,26 +35,28 @@ The interest in psychics, channelers, spiritists, and the occult will only conti
 > All these are the *beginning of birth pains*.
 {% ct 'Matthew 24:8, NIV' %}
 
-While wars, rumors of wars, famines, epidemics, and earthquakes have always been around, Jesus compares them to birth pains, which get more frequent and more intense with time.
+While wars, rumors of wars, famines, epidemics, and earthquakes have always existed, Jesus likened them to birth pains—which increase in frequency and intensity over time—to emphasize that these signs will follow the same pattern.
 
 ## Is there a surprising sign in Revelation?
 
 > And the nations were angry, and thy wrath is come, and the time of the dead, that they should be judged, and that thou shouldest give reward unto thy servants the prophets, and to the saints, and them that fear thy name, small and great; and *shouldest destroy them which destroy the earth*.
 {% ct 'Revelation 11:18' %}
 
-The human race now have the ability to destroy the earth through weapons of mass destruction, such as the atomic bomb.
+Humanity now possesses the power to destroy the earth—through weapons of mass destruction like the atomic bomb and by tampering with weather modification techniques like geoengineering.
 
 ## How will people feel about the future?
 
 > *Men’s hearts failing them for fear*, and for looking after those things which are coming on the earth: for the powers of heaven shall be shaken.
 {% ct 'Luke 21:26' %}
 
+Those without God as their anchor will find themselves in a fearful and anxious state as the world becomes increasingly chaotic. Such a state, on a societal level, makes people easy to control and manipulate—a fertile ground for tyranny and scapegoat-seeking narratives, which can easily lead to previously unimaginable atrocities. The Bible predicts [this will happen](../prophecy/usa.md) just before Christ’s Second Coming.
+
 ## What sign does Paul give in one of his letters?
 
 > For yourselves know perfectly that the day of the Lord so cometh as a thief in the night. *For when they shall say, Peace and safety; then sudden destruction cometh upon them*, as travail upon a woman with child; and they shall not escape.
 {% ct '1 Thessalonians 5:2-3' %}
 
-This is related to the previous sign of fear about the future because when there will be talk of peace and safety, the reality that follows will be the opposite.
+This is related to the previous sign of apprehension about the future, because as nations attempt to bring stability, they will make promises of peace and safety, but according to the Bible, the reality that follows will be the opposite.
 
 ## How will people treat each other?
 
@@ -62,6 +66,8 @@ This is related to the previous sign of fear about the future because when there
 > This know also, that in the last days perilous times shall come. For men shall be *lovers of their own selves, covetous, boasters, proud, blasphemers, disobedient to parents, unthankful, unholy, Without natural affection, trucebreakers, false accusers, incontinent, fierce, despisers of those that are good, traitors, heady, highminded, lovers of pleasures more than lovers of God; having a form of godliness, but denying the power thereof*: from such turn away.
 {% ct '2 Timothy 3:1-5' %}
 
+As the love of many grows cold, evil will begin to assert itself in the lives of those who have rejected God. When the restraining power of God departs through persistent rejection {% rf 'Romans 1:28' %}, human behavior will begin to resemble that of the pre-flood world, when every thought was only evil continually {% rf 'Genesis 6:5' %}. But this trend will not be universal. Communities of genuine followers of Christ will exist throughout the world who reflect His character. Specifically, they will be known for their love—which is, in fact, the love of God manifested in them {% rf 'John 13:35; 1 John 2:5' %}. Thus, in the end, there will be only two classes of people: those who give themselves over to sin, selfishness, and evil, and those who give themselves over to God’s loving mercy and enabling grace. Whether we realize it or not, the decisions we make on a daily basis are bringing us closer to one of these groups.
+
 ## What will people be preoccupied with?
 
 > And take heed to yourselves, lest at any time your hearts be overcharged with *surfeiting, and drunkenness, and cares of this life*, and so that day come upon you unawares.
@@ -70,28 +76,46 @@ This is related to the previous sign of fear about the future because when there
 > But *as the days of Noe were, so shall also the coming of the Son of man be*. For as in the days that were before the flood they were eating and drinking, marrying and giving in marriage, until the day that Noe entered into the ark, and knew not until the flood came, and took them all away; so shall also the coming of the Son of man be.
 {% ct 'Matthew 24:37-39' %}
 
-There’s nothing wrong with marriage as it was instituted and blessed by God, and it’s impossible to survive without nourishing our bodies. The point is in Noah’s days most people ignored him. Life is busy, and it’s easy to get preoccupied with temporal things and neglect spiritual things. Where do our own priorities stand?
+Obviously, there is nothing wrong with marriage; after all, it was instituted and blessed by God Himself. Likewise, it is impossible to survive without nourishing our bodies; we must eat, which means we must work, and for the majority of people, work consumes the largest part of their lives. Most are busy trying to survive, so in the absence of intentionality, it is easy to become preoccupied with the temporal at the expense of the spiritual. Yet Christ’s words quietly ring in the background: “Seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you” {% rf 'Matthew 6:33' %}. In Noah’s days, most people ignored his invitations to come into the ark because they were too busy doing other things. Where do our priorities stand?
 
 ## Are there any socioeconomic signs?
 
 > Go to now, ye rich men, weep and howl for your miseries that shall come upon you. *Your riches are corrupted*, and your garments are motheaten. Your gold and silver is cankered; and the rust of them shall be a witness against you, and shall eat your flesh as it were fire. Ye have heaped treasure together for the last days. Behold, the *hire of the labourers who have reaped down your fields, which is of you kept back by fraud, crieth*: and the cries of them which have reaped are entered into the ears of the Lord of sabaoth. Ye have lived in pleasure on the earth, and been wanton; ye have nourished your hearts, as in a day of slaughter.
 {% ct 'James 5:1-5' %}
 
-Rising wealth inequality, fraud, and trouble between capital and labor will continue to be prominent until the coming of Christ.
+The gap between rich and poor, coupled with corruption, fraud, and disputes between employers and workers, will continue to widen as we draw nearer to the coming of Christ. As the Holy Spirit is repeatedly resisted and withdrawn, people are left to the control of their carnal nature, whose chief aim has always been preservation and exaltation of self.
 
 ## What is one of the positive signs?
 
 > And *this gospel of the kingdom shall be preached in all the world* for a witness unto all nations; and then shall the end come.
 {% ct 'Matthew 24:14' %}
 
-What was once an impossible task is now a reality! With the rise of media, like television, radio, and the internet, the gospel is now going out to the entire world. Everyone will be exposed to it before He returns.
+With the rapid advancement of communication technology over the past decades—such as television, radio, and the internet—the gospel is now being preached to even the remotest corners of the globe. What once seemed an impossible task has now become a reality. The Bible teaches that religious revivals—both [genuine](/posts/prophecy/usa.md#will-there-be-a-genuine-revival) and [counterfeit](/posts/prophecy/usa.md#will-there-be-a-false-religious-revival)—will spread across the world, and religious discussions will take center stage, resonating through the legislative halls and judicial courtrooms of nations just prior to Christ’s return. Religion in general, and the enforcement of God’s law in particular, will be on everyone’s mind.
+
+## What specific signs have already been fulfilled?
+
+> And I beheld when he had opened the sixth seal, and, lo, there was *a great earthquake*; and *the sun became black as sackcloth of hair, and the moon became as blood*; and *the stars of heaven fell* unto the earth, even as a fig tree casteth her untimely figs, when she is shaken of a mighty wind.
+{% ct 'Revelation 6:12-13' %}
+
+Before the [heavenly judgment began in 1844](/posts/prophecy/investigative.md), three specific signs were fulfilled in the exact sequence outlined in Revelation 6. The first (“a great earthquake”) was fulfilled by the Great Lisbon Earthquake of November 1, 1755. The shaking lasted for about six minutes and was so powerful that it was felt across Europe and North Africa, generating tsunami waves that reached as far as the Caribbean.[^1] The second sign (“the sun became black as sackcloth of hair, and the moon became as blood”) was fulfilled by the New England Dark Day of May 19, 1780. The sun was so completely darkened that candles were required from noon onward, and later that evening, the moon appeared red.[^2] The final sign (“the stars of heaven fell”) was fulfilled by the Great Leonids meteor shower of November 13, 1833. Witnesses reported that the meteors fell like rain and that no words could describe their splendor.[^3][^4] Jesus prophesied that all three signs will occur again just prior to His Second Coming {% rf 'Matthew 24:29-30; Mark 13:24-26; Luke 21:25' %}.
+
+[^1]: Charles Lyell, a Scottish geologist, desribed the earthquake’s power: “In no part of the volcanic region of southern Europe has so tremendous an earthquake occurred in modern times as that which began on the 1st of November, 1755, at Lisbon. A sound of thunder was heard underground, and immediately afterward a violent shock threw down the greater part of that city. In the course of about six minutes, sixty thousand persons perished. The sea first retired, and laid the bar dry; it then rolled in, rising fifty feet above its ordinary level. The mountains of Arrabida, Estrella, Julio, Marvan, and Cintra, being some of the largest in Portugal, were impetuously shaken, as it were from their very foundations; and some of them opened at their summits, which were split and rent in a wonderful manner, huge masses of them being thrown down into the subjacent valleys. Flames are related to have issued from these mountains, which are supposed to have been electric; they are also said to have smoked; but vast clouds of dust may have given rise to this appearance.” —Sir Charles Lyell, *Principles of Geology*, p. 495.
+
+[^2]: An eyewitness in Massachusetts described the scene: “Fear, anxiety, and awe gradually filled the minds of the people. Women stood at the door, looking out upon the dark landscape; men returned from their labor in the fields; the carpenter left his tools, the blacksmith his forge, the tradesman his counter. Schools were dismissed, and tremblingly the children fled homeward. Travelers put up at the nearest farmhouse. ‘What is coming?’ queried every lip and heart. It seemed as if a hurricane was about to dash across the land, or as if it was the day of the consummation of all things. Candles were used; and hearth fires shone as brightly as on a moonless evening in autumn…. Fowls retired to their roosts and went to sleep, cattle gathered at the pasture bars and lowed, frogs peeped, birds sang their evening songs, and bats flew about. But the human knew that night had not come.” —*The Essex Antiquarian*, April 1899, vol. 3, no. 4, pp. 53-54.
+
+[^3]: “Its sublimity and awful beauty still linger in many minds. … Never did rain fall much thicker than the meteors fell toward the earth; east, west, north, and south, it was the same. In a word, the whole heavens seemed in motion.” —R. M. Devens, *American Progress; or, The Great Events of the Greatest Century*, ch. 28, pars. 1-5.
+
+[^4]: “No language, indeed, can come up to the splendor of that magnificent display; … no one who did not witness it can form an adequate conception of its glory. It seemed as if the whole starry heavens had congregated at one point near the zenith, and were simultaneously shooting forth, with the velocity of lightning, to every part of the horizon; and yet they were not exhausted—thousands swiftly followed in the tracks of thousands, as if created for the occasion.” —F. Reed, *Christian Advocate and Journal*, Dec. 13, 1833.
 
 ## What is God’s desire for the human race?
 
 > The Lord is not slack concerning his promise, as some men count slackness; but is *longsuffering to us-ward, not willing that any should perish, but that all should come to repentance*.
 {% ct '2 Peter 3:9' %}
 
-God does not want anyone to be surprised by and unprepared for His coming; His desire is for every single person to be saved.
+> Say unto them, As I live, saith the Lord GOD, *I have no pleasure in the death of the wicked*; but that the wicked turn from his way and live: *turn ye, turn ye from your evil ways; for why will ye die*, O house of Israel?
+{% ct 'Ezekiel 33:11' %}
+
+God does not want anyone to be caught off guard or unprepared for His coming. His desire is that every person be saved, so He is patient with us, granting repeated opportunities and every spiritual blessing {% rf 'Ephesians 1:3-4' %} we need to become His sons and daughters. Yet His patience is not infinite {% rf 'Genesis 6:3' %}, for if it were, the misery of sin would never end. One day, the door to reconciliation with our Maker will close forever. May it never be said of us: “The harvest is past, the summer is ended, and we are not saved” {% rf 'Jeremiah 8:20' %}. Let us make the most of every God-given opportunity and blessing.
 
 ## What advice and promise does the Bible give?
 
@@ -104,4 +128,4 @@ God does not want anyone to be surprised by and unprepared for His coming; His d
 > I will say of the LORD, *He is my refuge and my fortress: my God; in him will I trust*. Surely *he shall deliver thee* from the snare of the fowler, and from the noisome pestilence. He shall cover thee with his feathers, and under his wings shalt thou trust: *his truth shall be thy shield and buckler*.
 {% ct 'Psalm 91:2-4' %}
 
-Those who watch for signs of Christ’s coming and pray that He will help them to be ready to meet Him won’t be disappointed. His truth will protect them from deception, and God will be with them every step of the way, no matter what happens.
+Those who watch for the signs of Christ’s coming and earnestly pray that He will prepare them for it will experience His unfailing faithfulness and enabling grace. If received and obeyed, His truth will protect them from deception, and He will be with them every step of the way, no matter what happens around them.
