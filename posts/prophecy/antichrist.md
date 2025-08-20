@@ -113,7 +113,7 @@ There is no other organization but the papacy that fits all nine of the characte
 
 [^1]: Alexander Clarence Flick, The Rise of the Medieval Church, 148, 149.
 [^2]: Adolf Harnack, What is Christianity? (New York: Putnam, second edition, revised, 1901), 269, 270.
-[^3]: ]W. E. H. Lecky, History of the Rise and Influence of the Spirit of Rationalism in Europe, Volume 2, 40.
+[^3]: W. E. H. Lecky, History of the Rise and Influence of the Spirit of Rationalism in Europe, Volume 2, 40.
 [^4]: Amplified Bible, La Habra, CA: The Lockman Foundation, 2015.
 [^5]: Joseph Deharbe, S.J., A Complete Catechism of the Catholic Religion (New York: Schwartz, Kirwin & Fauss, 1924), 279.
 [^6]: Pope Leo XIII, Encyclical Letter “The Reunion of Christendom” (dated June 20, 1894) trans. in The Great Encyclical Letters of Pope Leo XIII (New York: Benziger, 1903), 304.
