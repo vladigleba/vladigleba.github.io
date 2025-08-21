@@ -10,21 +10,28 @@
 
 {% if isSeries %}
   <div class="series-links">
-    <p class="meta series">
+    <h2 class="meta series">
       Series: {{ series_title }} <span>•</span> Part {{ series.current }} of {{ series.total }}
-    </p>
+    </h2>
 
     <nav aria-label="Series navigation">
       <ol class="meta">
         {% for post in series.posts %}
           <li>
-            {% if series.current != forloop.index %}
-              <a href="{{ post.url }}">{{ post.data.title }}</a>
-            {% else %}
-              {{ post.data.title }}
-            {% endif %}
-
-            <span>•</span> {{ post.data.length }} min read
+            <a 
+              href="{{ post.url }}" 
+              class="series-item" 
+              {% if series.current == forloop.index %}
+                aria-current="page"
+              {% endif %}
+            >
+              <span class="series-left">
+                {{ forloop.index }}. {{ post.data.title }}
+              </span>
+              <span class="series-right">
+                {{ post.data.length }} min read
+              </span>
+            </a>
           </li>
         {% endfor %}
       </ol>
