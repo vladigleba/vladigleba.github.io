@@ -34,7 +34,7 @@ article > header .tag span {
 
 article > header .series-links {
   margin-top: 40px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.075);
   border-radius: var(--default-radius);
   display: inline-block;
   padding: 0.4rem 0.7rem;
@@ -69,15 +69,13 @@ article > header .series-item .series-right {
   white-space: nowrap;
 }
 
-article > header .series-item[aria-current="page"] {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
+article > header .series-item[aria-current="page"],
 article > header .series-item:not([aria-current="page"]):hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 article > header .meta.series {
   font-weight: 700;
-  margin-bottom: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
