@@ -50,7 +50,7 @@ article > header .series-links ol {
 article > header .series-item {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 3.25rem;
   text-decoration: none;
   color: inherit;
   transition: background-color 0.15s ease;
