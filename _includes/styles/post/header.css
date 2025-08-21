@@ -5,6 +5,7 @@ article > header {
   margin-bottom: 40px;
   width: 100vw; /* Make the header take the full width of the viewport */
   margin-left: calc(-50vw + 50%); /* Pull it left by 50vw minus 50% of its container */
+  text-align: center;
 }
 
 article > header > div {
@@ -32,12 +33,18 @@ article > header .tag span {
 }
 
 article > header .series-links {
-  margin-top: 30px;
-  /* background: rgba(255, 255, 255, 0.125);
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.125);
   border-radius: var(--default-radius);
   display: inline-block;
-  padding: 0.2rem 0.7rem 0.4rem;
-  border: 1px solid rgba(255, 255, 255, 0.25); */
+  padding: 0.4rem 0.7rem 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+article > header .series-links ol {
+  list-style-position: inside;
+  padding-left: 0;
+  text-align: left;
 }
 
 article > header a {
@@ -46,4 +53,5 @@ article > header a {
 
 article > header .meta.series {
   font-weight: 700;
+  margin-bottom: 3px;
 }
