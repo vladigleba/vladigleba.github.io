@@ -5,17 +5,19 @@ date: 2025-01-12
 series: secondComing
 ---
 
-## What promise did Jesus make prior to His crucifixion?
+## What did Jesus promise prior to His crucifixion?
 
 > Let not your heart be troubled: ye believe in God, believe also in me. In my Father’s house are many mansions: if it were not so, I would have told you. I go to prepare a place for you. And if I go and prepare a place for you, *I will come again, and receive you unto myself*; that where I am, there ye may be also.
 {% ct 'John 14:1-3' %}
 
-## In what manner will He come back?
+When Jesus speaks, His word cannot fail; it will be fulfilled. Just as light appeared when He said, “Let there be light,” in the same way we can be certain that Jesus is coming back for His people, simply because He said so.
+
+## How will He come back?
 
 > And when he had spoken these things, while they beheld, he was taken up; and a cloud received him out of their sight. And while they looked stedfastly toward heaven as he went up, behold, two men stood by them in white apparel; which also said, Ye men of Galilee, why stand ye gazing up into heaven? this same Jesus, which is taken up from you into heaven, *shall so come in like manner as ye have seen him go into heaven*.
 {% ct 'Acts 1:9-11' %}
 
-Jesus will return in a bodily and personal manner, just like He left.
+Jesus will return in a visible, bodily, personal manner, just like He left.
 
 ## Will it be possible to miss His coming?
 

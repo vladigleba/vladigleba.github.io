@@ -103,6 +103,10 @@
     width: 85%;
   }
 
+  article > header .series-links {
+    min-width: unset;
+  }
+
   article > header {
     padding: 60px 0 70px;
     margin-bottom: 10px;
