@@ -28,7 +28,7 @@ article > header .tag span {
   padding: 3px var(--tag-horizontal-padding) 4px;
   border-radius: var(--default-radius);
   white-space: nowrap;
-  margin: 10px 10px 10px 0;
+  margin: 5px 10px 5px 0;
   display: inline-block;
 }
 

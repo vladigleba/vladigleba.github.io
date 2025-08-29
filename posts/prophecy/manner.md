@@ -17,36 +17,37 @@ When Jesus speaks, His word cannot fail; it will be fulfilled. Just as light app
 > And when he had spoken these things, while they beheld, he was taken up; and a cloud received him out of their sight. And while they looked stedfastly toward heaven as he went up, behold, two men stood by them in white apparel; which also said, Ye men of Galilee, why stand ye gazing up into heaven? this same Jesus, which is taken up from you into heaven, *shall so come in like manner as ye have seen him go into heaven*.
 {% ct 'Acts 1:9-11' %}
 
-Jesus will return in a visible, bodily, personal manner, just like He left.
+Jesus will return in a visible, bodily, and personal manner, just as He left. In other words, He will come literally--in a body of flesh and bones.
 
 ## Will it be possible to miss His coming?
 
-> Our God shall come, and shall not keep silence: a fire shall devour before him, and *it shall be very tempestuous round about him*.
-{% ct 'Psalm 50:3' %}
+> Behold, he cometh with clouds; and *every eye shall see him*, and they also which pierced him: and all kindreds of the earth shall wail because of him. Even so, Amen.
+{% ct 'Revelation 1:7' %}
 
 > For *as the lightning cometh out of the east, and shineth even unto the west*; so shall also the coming of the Son of man be.
 {% ct 'Matthew 24:27' %}
 
-Christ’s second coming will not be a silent or secret event; it will be impossible to miss.
+> Our God shall come, and shall not keep silence: a fire shall devour before him, and it shall be *very tempestuous round about him*.
+{% ct 'Psalm 50:3' %}
 
-## How many will see it?
+> For the Lord himself shall *descend from heaven with a shout*, with the voice of the archangel, and with the trump of God: and the dead in Christ shall rise first.
+{% ct '1 Thessalonians 4:16' %}
 
-> Behold, he cometh with clouds; and *every eye shall see him*, and they also which pierced him: and all kindreds of the earth shall wail because of him.
-{% ct 'Revelation 1:7' %}
+Contrary to the popular but unbiblical teaching of a secret rapture, Christ’s Second Coming will be anything but silent or secret. It will be, in fact, the most awe-inspiring, thunderous, and radiant event in Earth’s history--utterly impossible to miss.
 
-## Will it be audible? What else will take place?
+## What else will take place?
 
-> For the Lord himself shall descend from heaven *with a shout, with the voice of the archangel, and with the trump of God*: and the *dead in Christ shall rise first*: then we which are alive and remain shall be *caught up together with them in the clouds*, to meet the Lord in the air: and so shall we ever be with the Lord.
+> For the Lord himself shall descend from heaven with a shout, with the voice of the archangel, and with the trump of God: and the *dead in Christ shall rise first*: then we which are alive and remain shall be *caught up together with them in the clouds, to meet the Lord in the air*: and so shall we ever be with the Lord.
 {% ct '1 Thessalonians 4:16-17' %}
 
-Those who died in Christ will be resurrected and, together with those who are alive and ready for Christ, will be caught up to meet Him in the air. Because He will not touch the earth, His second coming will not be an earth appearance, but a sky appearance.
+Those who died in Christ will be resurrected and, together with those who are alive and prepared for His return, will be caught up to meet Him in the air. Because He will not touch the earth, His coming will not be an earthly appearance, but one in the sky--an important detail that helps us identify counterfeit Christs {% rf 'Matthew 24:4-5' %}. Put simply, if anyone--even an angel--appears on the earth and claims to be Christ, we can be certain this is contrary to Scripture, for Paul plainly states that the redeemed will meet Jesus in the air, meaning He will remain in the clouds above the earth.
 
 ## What kind of bodies will the saved have?
 
 > Behold, I shew you a mystery; We shall not all sleep, but we shall all be changed, in a moment, in the twinkling of an eye, at the last trump: for the trumpet shall sound, and *the dead shall be raised incorruptible, and we shall be changed. For this corruptible must put on incorruption, and this mortal must put on immortality*. So when this corruptible shall have put on incorruption, and this mortal shall have put on immortality, then shall be brought to pass the saying that is written, Death is swallowed up in victory.
 {% ct '1 Corinthians 15:51-54' %}
 
-Those who meet the Lord in the air will receive new immortal bodies.
+The redeemed--both the living and the resurrected--will receive new, perfect, glorified, and immortal bodies at Jesus' coming.
 
 ## What will those who are ready for Christ say?
 
