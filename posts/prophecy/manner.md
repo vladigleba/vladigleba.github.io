@@ -17,7 +17,7 @@ When Jesus speaks, His word cannot fail; it will be fulfilled. Just as light app
 > And when he had spoken these things, while they beheld, he was taken up; and a cloud received him out of their sight. And while they looked stedfastly toward heaven as he went up, behold, two men stood by them in white apparel; which also said, Ye men of Galilee, why stand ye gazing up into heaven? this same Jesus, which is taken up from you into heaven, *shall so come in like manner as ye have seen him go into heaven*.
 {% ct 'Acts 1:9-11' %}
 
-Jesus will return in a visible, bodily, and personal manner, just as He left. In other words, He will come literally--in a body of flesh and bones.
+Jesus will return in a visible, bodily, and personal manner, just as He left. In other words, He will come literally—in a body of flesh and bones.
 
 ## Will it be possible to miss His coming?
 
@@ -33,21 +33,21 @@ Jesus will return in a visible, bodily, and personal manner, just as He left. In
 > For the Lord himself shall *descend from heaven with a shout*, with the voice of the archangel, and with the trump of God: and the dead in Christ shall rise first.
 {% ct '1 Thessalonians 4:16' %}
 
-Contrary to the popular but unbiblical teaching of a secret rapture, Christ’s Second Coming will be anything but silent or secret. It will be, in fact, the most awe-inspiring, thunderous, and radiant event in Earth’s history--utterly impossible to miss.
+Contrary to the popular but unbiblical teaching of a secret rapture, Christ’s Second Coming will be anything but silent or secret. It will be, in fact, the most awe-inspiring, thunderous, and radiant event in Earth’s history—utterly impossible to miss.
 
 ## What else will take place?
 
 > For the Lord himself shall descend from heaven with a shout, with the voice of the archangel, and with the trump of God: and the *dead in Christ shall rise first*: then we which are alive and remain shall be *caught up together with them in the clouds, to meet the Lord in the air*: and so shall we ever be with the Lord.
 {% ct '1 Thessalonians 4:16-17' %}
 
-Those who died in Christ will be resurrected and, together with those who are alive and prepared for His return, will be caught up to meet Him in the air. Because He will not touch the earth, His coming will not be an earthly appearance, but one in the sky--an important detail that helps us identify counterfeit Christs {% rf 'Matthew 24:4-5' %}. Put simply, if anyone--even an angel--appears on the earth and claims to be Christ, we can be certain this is contrary to Scripture, for Paul plainly states that the redeemed will meet Jesus in the air, meaning He will remain in the clouds above the earth.
+Those who died in Christ will be resurrected and, together with those who are alive and prepared for His return, will be caught up to meet Him in the air. Because He will not touch the earth, His coming will not be an earthly appearance, but one in the sky—an important detail that helps us identify counterfeit Christs {% rf 'Matthew 24:4-5' %}. Put simply, if anyone—even an angel—appears on the earth and claims to be Christ, we can be certain this is contrary to Scripture, for Paul plainly states that the redeemed will meet Jesus in the air, meaning He will remain in the clouds above the earth.
 
 ## What kind of bodies will the saved have?
 
 > Behold, I shew you a mystery; We shall not all sleep, but we shall all be changed, in a moment, in the twinkling of an eye, at the last trump: for the trumpet shall sound, and *the dead shall be raised incorruptible, and we shall be changed. For this corruptible must put on incorruption, and this mortal must put on immortality*. So when this corruptible shall have put on incorruption, and this mortal shall have put on immortality, then shall be brought to pass the saying that is written, Death is swallowed up in victory.
 {% ct '1 Corinthians 15:51-54' %}
 
-The redeemed--both the living and the resurrected--will receive new, perfect, glorified, and immortal bodies at Jesus' coming.
+The redeemed—both the living and the resurrected—will receive new, perfect, glorified, and immortal bodies at Jesus’ coming.
 
 ## What will those who are ready for Christ say?
 
