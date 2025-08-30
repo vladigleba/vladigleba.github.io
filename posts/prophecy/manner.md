@@ -40,7 +40,7 @@ Contrary to the popular but unbiblical teaching of a secret rapture, Christ’s 
 > For the Lord himself shall descend from heaven with a shout, with the voice of the archangel, and with the trump of God: and the *dead in Christ shall rise first*: then we which are alive and remain shall be *caught up together with them in the clouds, to meet the Lord in the air*: and so shall we ever be with the Lord.
 {% ct '1 Thessalonians 4:16-17' %}
 
-Those who died in Christ will be resurrected and, together with those who are alive and prepared for His return, will be caught up to meet Him in the air. Because He will not touch the earth, His coming will not be an earthly appearance, but one in the sky—an important detail that helps us identify counterfeit Christs {% rf 'Matthew 24:4-5' %}. Put simply, if anyone—even an angel—appears on the earth and claims to be Christ, we can be certain this is contrary to Scripture, for Paul plainly states that the redeemed will meet Jesus in the air, meaning He will remain in the clouds above the earth.
+The Bible teaches that those who died in Christ will be resurrected and, together with those who are alive and prepared for His return, will be caught up to meet Him in the air. Because He will not touch the earth, His coming will not be an earthly appearance, but one in the sky—an important detail that helps us identify counterfeit Christs {% rf 'Matthew 24:4-5' %}. Put simply, if anyone—even an angel—appears on the earth and claims to be Christ, we can be certain this is contrary to Scripture, for Paul plainly states that the redeemed will meet Jesus in the air, meaning He will remain in the clouds above the earth.
 
 ## What kind of bodies will the saved have?
 
@@ -49,12 +49,14 @@ Those who died in Christ will be resurrected and, together with those who are al
 
 The redeemed—both the living and the resurrected—will receive new, perfect, glorified, and immortal bodies at Jesus’ coming.
 
-## What will those who are ready for Christ say?
+## How will the saved respond?
 
-> And it shall be said in that day, Lo, *this is our God; we have waited for him, and he will save us*: this is the LORD; we have waited for him, *we will be glad and rejoice in his salvation*.
+> And it shall be said in that day, Lo, *this is our God; we have waited for him, and he will save us: this is the LORD*; we have waited for him, *we will be glad and rejoice in his salvation*.
 {% ct 'Isaiah 25:9' %}
 
-## What will those who are left behind say?
+Christ’s coming will either be the best day of one’s life or the worst. Those who have loved Him enough to surrender their hearts to Him and submit to His will, through the power of the Holy Spirit, will rejoice at His appearing because He has become their best Friend and Lord of their lives.
+
+## How will the lost respond?
 
 > And the heaven departed as a scroll when it is rolled together; and every mountain and island were moved out of their places. And the kings of the earth, and the great men, and the rich men, and the chief captains, and the mighty men, and every bondman, and every free man, *hid themselves* in the dens and in the rocks of the mountains; and said to the mountains and rocks, *Fall on us, and hide us from the face of him that sitteth on the throne, and from the wrath of the Lamb*: for the great day of his wrath is come; and who shall be able to stand?
 {% ct 'Revelation 6:14-17' %}
@@ -62,9 +64,11 @@ The redeemed—both the living and the resurrected—will receive new, perfect, 
 > And then shall that Wicked be revealed, whom the Lord shall consume with the spirit of his mouth, and shall *destroy with the brightness of his coming*.
 {% ct '2 Thessalonians 2:8' %}
 
-Those who are left behind are destroyed by the brightness of His coming because any person who clings to sin cannot live in the presence of a holy God. To them His coming is a terrifying experience.
+In contrast to those who are saved, the lost—who had a superficial Christianity that never moved beyond mere profession, never surrendering all that they had and were to Him {% rf 'Matthew 7:21-23' %}—will not experience any peace or joy at Christ’s coming. To them, His coming will be a terrifying experience, so much so that they will seek death rather than face their Creator. Because they have chosen to cling to sin, they will be destroyed by the brightness of His coming, for anyone who holds on to sin cannot live in the presence of a holy God.
 
-## But why must they be kept out of heaven?
+Sin will be destroyed by Christ one way or another, because it is a manifestation of selfishness, which has no place in His kingdom of love. The only question is: will we be destroyed with it? He can either purge us *from* our sins now, as we invite Him to take over our lives, or He will purge us along *with* our sins at His coming. But how can we be washed now? By His Word! When we read the Bible, it begins to read us {% rf 'Hebrews 4:2' %}, bringing conviction that, if yielded to, will cleanse us from sin {% rf 'Ephesians 5:26' %}. But if we neglect it, that same conviction will come at His appearing—at which point it will be too late to do anything about it. Now is the time to come to know Christ through His Word and to be transformed by His grace.
+
+## Why must the lost be kept out of heaven?
 
 > He answered and said unto them, He that soweth the good seed is the Son of man; the field is the world; the good seed are the children of the kingdom; but the tares are the children of the wicked one; the enemy that sowed them is the devil; the harvest is the end of the world; and the reapers are the angels. As therefore the tares are gathered and burned in the fire; so shall it be in the end of this world. The Son of man shall send forth his angels, and *they shall gather out of his kingdom all things that offend, and them which do iniquity*; and shall cast them into a furnace of fire: there shall be wailing and gnashing of teeth. Then shall the righteous shine forth as the sun in the kingdom of their Father. Who hath ears to hear, let him hear.
 {% ct 'Matthew 13:37-43' %}
