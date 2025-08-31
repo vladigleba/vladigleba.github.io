@@ -76,7 +76,7 @@ Sin will be destroyed by Christ one way or another, because it is a manifestatio
 > Nevertheless we, according to his promise, look for new heavens and a new earth, *wherein dwelleth righteousness*.
 {% ct '2 Peter 3:13' %}
 
-> And there shall in no wise enter into it *any thing that defileth, neither whatsoever worketh abomination, or maketh a lie*: but they which are written in the Lamb's book of life.
+> And there shall in no wise enter into it *any thing that defileth, neither whatsoever worketh abomination, or maketh a lie*: but they which are written in the Lamb’s book of life.
 {% ct 'Revelation 21:27' %}
 
 Because heaven is a place where righteousness dwells, any person who clings to sin cannot be happy there.
