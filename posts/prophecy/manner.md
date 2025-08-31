@@ -54,7 +54,7 @@ The redeemed—both the living and the resurrected—will receive new, perfect, 
 > And it shall be said in that day, Lo, *this is our God; we have waited for him, and he will save us: this is the LORD*; we have waited for him, *we will be glad and rejoice in his salvation*.
 {% ct 'Isaiah 25:9' %}
 
-Christ’s coming will either be the best day of one’s life or the worst. Those who have loved Him enough to surrender their hearts to Him and submit to His will, through the power of the Holy Spirit, will rejoice at His appearing because He has become their best Friend and Lord of their lives.
+Christ’s coming will either be the best day of one’s life or the worst. Those who have loved Him enough to surrender their hearts to Him and submit to His will, through the power of the Holy Spirit {% rf '1 Corinthians 6:11' %}, will rejoice at His appearing because He has become their best Friend and Lord of their lives.
 
 ## How will the lost respond?
 
@@ -64,9 +64,9 @@ Christ’s coming will either be the best day of one’s life or the worst. Thos
 > And then shall that Wicked be revealed, whom the Lord shall consume with the spirit of his mouth, and shall *destroy with the brightness of his coming*.
 {% ct '2 Thessalonians 2:8' %}
 
-In contrast to those who are saved, the lost—who had a superficial Christianity that never moved beyond mere profession, never surrendering all that they had and were to Him {% rf 'Matthew 7:21-23' %}—will not experience any peace or joy at Christ’s coming. To them, His coming will be a terrifying experience, so much so that they will seek death rather than face their Creator. Because they have chosen to cling to sin, they will be destroyed by the brightness of His coming, for anyone who holds on to sin cannot live in the presence of a holy God.
+In contrast to those who are saved, the lost—who had a superficial Christianity that never moved beyond mere profession, never surrendering all that they had and were to Him {% rf 'Matthew 7:21-23' %}—will experience no peace or joy at Christ’s coming. To them, His coming will be a terrifying experience, so much so that they will seek death rather than face their Creator. Because they have chosen to cling to sin, they will be destroyed by the brightness of His coming, for anyone who holds on to sin cannot live in the presence of a holy God.
 
-Sin will be destroyed by Christ one way or another, because it is a manifestation of selfishness, which has no place in His kingdom of love. The only question is: will we be destroyed with it? He can either purge us *from* our sins now, as we invite Him to take over our lives, or He will purge us along *with* our sins at His coming. But how can we be washed now? By His Word! When we read the Bible, it begins to read us {% rf 'Hebrews 4:2' %}, bringing conviction that, if yielded to, will cleanse us from sin {% rf 'Ephesians 5:26' %}. But if we neglect it, that same conviction will come at His appearing—at which point it will be too late to do anything about it. Now is the time to come to know Christ through His Word and to be transformed by His grace.
+Sin will be destroyed by Christ one way or another, because it is a manifestation of selfishness, which has no place in His kingdom of love. The only question is: will we be destroyed with it? He can either purge us *from* our sins now {% rf 'Malachi 3:3' %}, as we invite Him to take over our lives, or He will purge us along *with* our sins at His coming. But how can we be washed now? By His Word! When we read the Bible, it begins to read us {% rf 'Hebrews 4:2' %}, bringing conviction that, if yielded to, will cleanse us from sin {% rf 'Ephesians 5:26' %}. But if we neglect it, that same conviction will come at His appearing—at which point it will be too late to do anything about it. Now is the time to come to know Christ through His Word and to be transformed by His grace.
 
 ## Why must the lost be kept out of heaven?
 
@@ -75,6 +75,9 @@ Sin will be destroyed by Christ one way or another, because it is a manifestatio
 
 > Nevertheless we, according to his promise, look for new heavens and a new earth, *wherein dwelleth righteousness*.
 {% ct '2 Peter 3:13' %}
+
+> And there shall in no wise enter into it *any thing that defileth, neither whatsoever worketh abomination, or maketh a lie*: but they which are written in the Lamb's book of life.
+{% ct 'Revelation 21:27' %}
 
 Because heaven is a place where righteousness dwells, any person who clings to sin cannot be happy there.
 
