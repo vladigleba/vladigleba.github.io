@@ -79,23 +79,31 @@ Sin will be destroyed by Christ one way or another, because it is a manifestatio
 > And there shall in no wise enter into it *any thing that defileth, neither whatsoever worketh abomination, or maketh a lie*: but they which are written in the Lamb’s book of life.
 {% ct 'Revelation 21:27' %}
 
-Because heaven is a place where righteousness dwells, any person who clings to sin cannot be happy there.
+Because heaven is a place where righteousness dwells, anyone who clings to sin cannot be happy there. Excluding those who have repeatedly resisted God's wooing grace and chosen to persist in sin is, in fact, an act of mercy toward the unconverted, for heaven would be a place of torment to those who have no longing for righteousness. It also secures the eternal peace and happiness of the citizens of God's everlasting kingdom, for the removal of sin means the end of the pain, suffering, and misery that it always brings.
 
 ## Will there be a third group of people?
 
 > He that is unjust, let him be unjust still: and *he which is filthy, let him be filthy still: and he that is righteous, let him be righteous still*: and he that is holy, let him be holy still. And, behold, I come quickly; and my reward is with me, to give every man according as his work shall be.
 {% ct 'Revelation 22:11-12' %}
 
-When Jesus returns there will be only two groups of people—the saved and the lost. It will also be too late to change sides because He returns with His reward, meaning the judgment has already happened and every person’s case has been decided.
+> When the Son of man shall come in his glory, and all the holy angels with him, then shall he sit upon the throne of his glory: and before him shall be gathered all nations: and *he shall separate them one from another*, as a shepherd divideth his sheep from the goats: and *he shall set the sheep on his right hand, but the goats on the left*.
+{% ct 'Matthew 25:31-33' %}
+
+When Jesus returns, there will be only two groups of people—the saved and the lost. By then, it will be too late to change sides, for He will return with His reward, showing that judgment has already taken place and every case has been decided. In fact, the citizens of God's eternal kingdom will have been determined when probation closes, which happens before His Second Coming--just as the door of Noah's ark was shut seven days before the rain began {% rf 'Genesis 7:10' %}.
 
 ## How is Jesus portrayed when He returns?
 
 > And I saw heaven opened, and behold a white horse; and he that sat upon him was called Faithful and True, and in righteousness he doth judge and make war. His eyes were as a flame of fire, and *on his head were many crowns*; and he had a name written, that no man knew, but he himself. And he was clothed with a vesture dipped in blood: and his name is called The Word of God. And *the armies which were in heaven followed him upon white horses*, clothed in fine linen, white and clean. And out of his mouth goeth a sharp sword, that with it he should smite the nations: and he shall rule them with a rod of iron: and he treadeth the winepress of the fierceness and wrath of Almighty God. And he hath on his vesture and on his thigh a name written, *KING OF KINGS, AND LORD OF LORDS*.
 {% ct 'Revelation 19:11-16' %}
 
-Because He has won the war with Satan, Jesus comes back as a victorious King surrounded by His angelic army.
+Because He has triumphed over Satan, Jesus will return as the victorious King, accompanied by the innumerable host of His angelic army.
 
 ## What invitation does Revelation give us?
 
 > And the Spirit and the bride say, Come. And let him that heareth say, Come. And let him that is athirst come. And *whosoever will, let him take the water of life freely*. … He which testifieth these things saith, Surely I come quickly. Amen. Even so, come, Lord Jesus.
 {% ct 'Revelation 22:17, 20' %}
+
+> While it is said, *Today if ye will hear his voice, harden not your hearts*, as in the provocation.
+{% ct 'Hebrews 3:15' %}
+
+One day the door of mercy will close forever; one day the summer will end and the harvest will pass {% rf 'Jeremiah 8:20' %}. People will then run to and fro seeking salvation, but it will be too late {% rf 'Amos 8:11-12' %}. There is no reason to end in such a tragedy, yet there is not a moment to lose. Today is the day of salvation.
