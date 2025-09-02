@@ -79,7 +79,7 @@ Sin will be destroyed by Christ one way or another, because it is a manifestatio
 > And there shall in no wise enter into it *any thing that defileth, neither whatsoever worketh abomination, or maketh a lie*: but they which are written in the Lamb’s book of life.
 {% ct 'Revelation 21:27' %}
 
-Because heaven is a place where righteousness dwells, anyone who clings to sin cannot be happy there. Excluding those who have repeatedly resisted God's wooing grace and chosen to persist in sin is, in fact, an act of mercy toward the unconverted, for heaven would be a place of torment to those who have no longing for righteousness. It also secures the eternal peace and happiness of the citizens of God's everlasting kingdom, for the removal of sin means the end of the pain, suffering, and misery that it always brings.
+Because heaven is a place where righteousness dwells, anyone who clings to sin cannot be happy there. Excluding those who have repeatedly resisted God’s wooing grace and chosen to persist in sin is, in fact, an act of mercy toward the unconverted, for heaven would be a place of torment to those who have no longing for righteousness. It also secures the eternal peace and happiness of the citizens of God’s everlasting kingdom, for the removal of sin means the end of the pain, suffering, and misery that it always brings.
 
 ## Will there be a third group of people?
 
@@ -89,7 +89,7 @@ Because heaven is a place where righteousness dwells, anyone who clings to sin c
 > When the Son of man shall come in his glory, and all the holy angels with him, then shall he sit upon the throne of his glory: and before him shall be gathered all nations: and *he shall separate them one from another*, as a shepherd divideth his sheep from the goats: and *he shall set the sheep on his right hand, but the goats on the left*.
 {% ct 'Matthew 25:31-33' %}
 
-When Jesus returns, there will be only two groups of people—the saved and the lost. By then, it will be too late to change sides, for He will return with His reward, showing that judgment has already taken place and every case has been decided. In fact, the citizens of God's eternal kingdom will have been determined when probation closes, which happens before His Second Coming--just as the door of Noah's ark was shut seven days before the rain began {% rf 'Genesis 7:10' %}.
+When Jesus returns, there will be only two groups of people—the saved and the lost. By then, it will be too late to change sides, for He will return with His reward, showing that judgment has already taken place and every case has been decided. In fact, the citizens of God’s eternal kingdom will have been determined when probation closes, which happens before His Second Coming—just as the door of Noah’s ark was shut seven days before the rain began {% rf 'Genesis 7:10' %}.
 
 ## How is Jesus portrayed when He returns?
 
