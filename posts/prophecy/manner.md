@@ -10,7 +10,7 @@ series: secondComing
 > Let not your heart be troubled: ye believe in God, believe also in me. In my Father’s house are many mansions: if it were not so, I would have told you. I go to prepare a place for you. And if I go and prepare a place for you, *I will come again, and receive you unto myself*; that where I am, there ye may be also.
 {% ct 'John 14:1-3' %}
 
-When Jesus speaks, His word cannot fail; it will be fulfilled. Just as light appeared when He said, “Let there be light,” in the same way we can be certain that Jesus is coming back for His people, simply because He said so.
+When Jesus speaks, His word cannot fail; it will be fulfilled. Just as light appeared when He said, “Let there be light,” we can be just as certain that Jesus is coming back for His people to take them to heaven with Him—simply because He said so.
 
 ## How will He come back?
 
@@ -35,7 +35,7 @@ Jesus will return in a visible, bodily, and personal manner, just as He left. In
 
 Contrary to the popular but unbiblical teaching of a secret rapture, Christ’s second coming will be anything but silent or secret.[^1] It will be, in fact, the most awe-inspiring, thunderous, and radiant event in Earth’s history—utterly impossible to miss.
 
-[^1]: Proponents of the secret rapture theory believe the rapture will be followed by a seven-year tribulation, during which those who were not taken to heaven will have another opportunity to repent and be saved. But why would God offer such a second chance? This makes Him appear extremely unfair, granting one group a new opportunity for salvation while denying it to others. Furthermore, the theory provides false security to those who wish to continue in sin, as they may presume they can repent during the tribulation. How devastating will it be when they realize there is no second chance and that they have squandered the only one they had?
+[^1]: Proponents of the secret rapture theory believe the rapture will be followed by a seven-year tribulation, during which those who were not taken to heaven will have another opportunity to repent and be saved. But offering such a second chance makes God appear arbitrary and unfair, granting one group a new opportunity for salvation while denying it to others. Furthermore, the theory provides false security to those who wish to continue in sin, as they may presume they can repent during the tribulation. How devastating will it be when they realize there is no second chance and that they have squandered the only one they had?
 
 ## What else will take place?
 
@@ -48,6 +48,9 @@ The Bible teaches that those who died in Christ will be resurrected and, togethe
 
 > Behold, I shew you a mystery; We shall not all sleep, but we shall all be changed, in a moment, in the twinkling of an eye, at the last trump: for the trumpet shall sound, and *the dead shall be raised incorruptible, and we shall be changed. For this corruptible must put on incorruption, and this mortal must put on immortality*. So when this corruptible shall have put on incorruption, and this mortal shall have put on immortality, then shall be brought to pass the saying that is written, Death is swallowed up in victory.
 {% ct '1 Corinthians 15:51-54' %}
+
+> … we look for the Saviour, the Lord Jesus Christ: Who shall *change our vile body, that it may be fashioned like unto his glorious body*, according to the working whereby he is able even to subdue all things unto himself.
+{% ct 'Philippians 3:20-21' %}
 
 The redeemed—both the living and the resurrected—will receive new, perfect, glorified, and immortal bodies at Jesus’ coming.
 
@@ -105,20 +108,32 @@ Because He has triumphed over Satan, Jesus will return as the victorious King, a
 > And the seventh angel poured out his vial into the air; and there came a great voice out of the temple of heaven, from the throne, saying, It is done. And there were voices, and thunders, and lightnings; and *there was a great earthquake*, such as was not since men were upon the earth, so mighty an earthquake, and so great. And the great city was divided into three parts, and the cities of the nations fell: and great Babylon came in remembrance before God, to give unto her the cup of the wine of the fierceness of his wrath. And *every island fled away, and the mountains were not found. And there fell upon men a great hail* out of heaven, every stone about the weight of a talent: and men blasphemed God because of the plague of the hail; for the plague thereof was exceeding great.
 {% ct 'Revelation 16:17-21' %}
 
+> I beheld the earth, and, lo, *it was without form, and void*; and the heavens, and they had no light. I beheld the mountains, and, lo, they trembled, and all the hills moved lightly. I beheld, and, lo, *there was no man, and all the birds of the heavens were fled*. I beheld, and, lo, the *fruitful place was a wilderness*, and *all the cities thereof were broken down* at the presence of the LORD, and by his fierce anger. For thus hath the LORD said, *The whole land shall be desolate*; yet will I not make a full end.
+{% ct 'Jeremiah 4:23-27' %}
+
 > And then shall that Wicked be revealed, whom the Lord shall consume with the spirit of his mouth, and *shall destroy with the brightness of his coming*: even him, whose coming is after the working of Satan with all power and signs and lying wonders, and with all deceivableness of unrighteousness in them that perish; because they received not the love of the truth, that they might be saved.
 {% ct '2 Thessalonians 2:8-10' %}
 
-> Thus saith the LORD of hosts, Behold, evil shall go forth from nation to nation, and a great whirlwind shall be raised up from the coasts of the earth. And the *slain of the LORD shall be at that day from one end of the earth even unto the other end of the earth: they shall not be lamented, neither gathered, nor buried; they shall be dung upon the ground*.
+> Thus saith the LORD of hosts, Behold, evil shall go forth from nation to nation, and a great whirlwind shall be raised up from the coasts of the earth. And the *slain of the LORD shall be at that day from one end of the earth even unto the other end of the earth: they shall not be lamented, neither gathered, nor buried*; they shall be dung upon the ground.
 {% ct 'Jeremiah 25:32-33' %}
 
-The Bible teaches that just before Christ’s return, during the outpouring of the seven last plagues described in Revelation 16, the earth will be totally devastated and rendered uninhabitable. Those of the lost who survive the plagues will be slain by the brightness of His glory, and since Christ will take the redeemed to heaven, the earth will, for the first time since creation week, be completely devoid of all life. Jeremiah vividly portrays this scene of desolation, making it evident that there can be [no earthly millennium](/posts/prophecy/millennium.md) following the destruction that accompanies Christ’s return.
+The Bible teaches that just before Christ’s return, during the outpouring of the seven last plagues described in Revelation 16, the earth will be totally devastated and rendered uninhabitable.[^2] Those of the lost who survive the plagues will be slain by the brightness of His glory, and since Christ will take the redeemed to heaven, the earth will, for the first time since creation week, be completely devoid of all life. Jeremiah vividly portrays this scene of desolation, making it evident that there can be no earthly millennium following the destruction that accompanies Christ’s return.[^3] A [heavenly millennium](/posts/prophecy/millennium.md) is the only logical option left, and it is the one the Bible teaches.
+
+[^2]: Could it be that part of the reason the earth is completely destroyed at Christ’s coming is that it was being worshiped?
+[^3]: The belief in an earthly millennium after Christ’s coming is known as dispensational premillennialism. Postmillennialism is another view of an earthly millennium, in which Christ’s coming occurs *after* a period in which Christian ethics prevail throughout the world. This view is also unbiblical, because Christ said that His kingdom is not of this world {% rf 'John 18:36; Luke 17:20-21' %}.
 
 ## What invitation does Revelation give us?
 
 > And the Spirit and the bride say, Come. And let him that heareth say, Come. And let him that is athirst come. And *whosoever will, let him take the water of life freely*. … He which testifieth these things saith, Surely I come quickly. Amen. Even so, come, Lord Jesus.
 {% ct 'Revelation 22:17, 20' %}
 
+> Behold, I stand at the door, and knock: *if any man hear my voice, and open the door, I will come in to him*, and will sup with him, and he with me.
+{% ct 'Revelation 3:20' %}
+
+> But *as many as received him, to them gave he power to become the sons of God*, even to them that believe on his name.
+{% ct 'John 1:12' %}
+
 > While it is said, *Today if ye will hear his voice, harden not your hearts*, as in the provocation.
 {% ct 'Hebrews 3:15' %}
 
-One day the door of mercy will close forever; one day the summer will end and the harvest will pass {% rf 'Jeremiah 8:20' %}. People will then run to and fro seeking salvation, but it will be too late {% rf 'Amos 8:11-12' %}. There is no reason to end in such a tragedy, yet there is not a moment to lose. Today is the day of salvation.
+One day the door of mercy will close forever; one day the summer will end and the harvest will pass {% rf 'Jeremiah 8:20' %}. People will then run to and fro seeking salvation, but it will be too late {% rf 'Amos 8:11-12' %}. There is no reason to end in such a tragedy, yet there is not a moment to lose {% rf 'Matthew 24:44; Luke 21:34-35' %}. Today is the [day of salvation](/posts/gospel/salvation.md).
