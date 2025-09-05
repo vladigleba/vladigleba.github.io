@@ -40,15 +40,8 @@ Because Jesus conquered death, all those who died in Him throughout the ages wil
 > *In flaming fire* taking vengeance on them that know not God, and that obey not the gospel of our Lord Jesus Christ.
 {% ct '2 Thessalonians 1:8' %}
 
-> And then shall that Wicked be revealed, whom the Lord shall consume with the spirit of his mouth, and *shall destroy with the brightness of his coming*.
-{% ct '2 Thessalonians 2:8' %}
-
-> And I saw heaven opened, and behold a white horse; and he that sat upon him was called Faithful and True, and in righteousness he doth judge and make war. *His eyes were as a flame of fire*, and on his head were many crowns; and he had a name written, that no man knew, but he himself. And he was clothed with a vesture dipped in blood: and his name is called The Word of God. And the armies which were in heaven followed him upon white horses, clothed in fine linen, white and clean. And out of his mouth goeth a sharp sword, that with it he should smite the nations: and he shall rule them with a rod of iron: and he treadeth the winepress of the fierceness and wrath of Almighty God. And he hath on his vesture and on his thigh a name written, KING OF KINGS, AND LORD OF LORDS.
->
-> And I saw an angel standing in the sun; and he cried with a loud voice, saying to all the fowls that fly in the midst of heaven, Come and gather yourselves together unto the supper of the great God; that ye may eat the flesh of kings, and the flesh of captains, and the flesh of mighty men, and the flesh of horses, and of them that sit on them, and the flesh of all men, both free and bond, both small and great.
->
-> And I saw the beast, and the kings of the earth, and their armies, gathered together to make war against him that sat on the horse, and against his army. And the beast was taken, and with him the false prophet that wrought miracles before him, with which he deceived them that had received the mark of the beast, and them that worshipped his image. These both were cast alive *into a lake of fire* burning with brimstone. And *the remnant were slain with the sword of him that sat upon the horse, which sword proceeded out of his mouth: and all the fowls were filled with their flesh*.
-{% ct 'Revelation 19:11-21' %}
+> And then shall that Wicked be revealed, whom the Lord shall consume with the spirit of his mouth, and *shall destroy with the brightness of his coming*: even him, whose coming is after the working of Satan with all power and signs and lying wonders, and with all deceivableness of unrighteousness in them that perish; because they received not the love of the truth, that they might be saved.
+{% ct '2 Thessalonians 2:8-10' %}
 
 Because sin cannot exist in the presence of a holy God, to everyone who didn’t accept Jesus’ sacrifice on their behalf so He could cover their sins the second coming will be like a consuming fire because they will have to pay for their sins themselves. Revelation 19 uses symbolic imagery to describe how they will be destroyed by the brightness of His holy presence.
 
@@ -66,7 +59,7 @@ The chain described here is a symbolic chain of circumstances because Satan will
 
 The angels under Satan’s command whom he managed to deceive in heaven and persuade to join him in his rebellion against God will also be confined to planet earth during this 1,000 year period.
 
-## What happens to the unsaved?
+## What happens to the lost?
 
 > And the slain of the LORD shall be at that day from one end of the earth even unto the other end of the earth: *they shall not be lamented, neither gathered, nor buried*; they shall be dung upon the ground.
 {% ct 'Jeremiah 25:33' %}
@@ -81,10 +74,7 @@ The angels under Satan’s command whom he managed to deceive in heaven and pers
 > I beheld the earth, and, lo, *it was without form, and void; and the heavens, and they had no light*. I beheld the mountains, and, lo, they trembled, and all the hills moved lightly. I beheld, and, lo, *there was no man, and all the birds of the heavens were fled*. I beheld, and, lo, the *fruitful place was a wilderness, and all the cities thereof were broken down* at the presence of the LORD, and by his fierce anger. For thus hath the LORD said, The *whole land shall be desolate*; yet will I not make a full end.
 {% ct 'Jeremiah 4:23-27' %}
 
-> And the *earth was without form, and void*; and *darkness* was upon the face of the deep.
-{% ct 'Genesis 1:2' %}
-
-The earthquake and hailstorm at Jesus’ second coming will return the earth to its original state—a dark and disorganized place unsuitable for life.
+The earthquake and hailstorm at Jesus’ second coming will return the earth to its original state—a dark and disorganized place unsuitable for life {% rf 'Genesis 1:2' %}.
 
 ## What do the saved do in heaven?
 
