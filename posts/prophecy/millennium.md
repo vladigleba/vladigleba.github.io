@@ -74,7 +74,23 @@ The angels under Satan’s command whom he managed to deceive in heaven and pers
 > I beheld the earth, and, lo, *it was without form, and void; and the heavens, and they had no light*. I beheld the mountains, and, lo, they trembled, and all the hills moved lightly. I beheld, and, lo, *there was no man, and all the birds of the heavens were fled*. I beheld, and, lo, the *fruitful place was a wilderness, and all the cities thereof were broken down* at the presence of the LORD, and by his fierce anger. For thus hath the LORD said, The *whole land shall be desolate*; yet will I not make a full end.
 {% ct 'Jeremiah 4:23-27' %}
 
+> But with righteousness shall he judge the poor, and reprove with equity for the meek of the earth: and he shall *smite the earth with the rod of his mouth*, and with the breath of his lips shall he slay the wicked.
+{% ct 'Isaiah 11:4' %}
+
 The earthquake and hailstorm at Jesus’ second coming will return the earth to its original state—a dark and disorganized place unsuitable for life {% rf 'Genesis 1:2' %}.
+
+## Will Christ establish an earthly millennium?
+
+> Jesus answered, *My kingdom is not of this world*: if my kingdom were of this world, then would my servants fight, that I should not be delivered to the Jews: *but now is my kingdom not from hence*.
+{% ct 'John 18:36' %}
+
+> And when he was demanded of the Pharisees, when the kingdom of God should come, he answered them and said, *The kingdom of God cometh not with observation*: neither shall they say, Lo here! or, lo there! for, behold, *the kingdom of God is within you*.
+{% ct 'Luke 17:21-21' %}
+
+> For *when they shall say, Peace and safety; then sudden destruction cometh upon them*, as travail upon a woman with child; and they shall not escape.
+{% ct '1 Thessalonians 5:3' %}
+
+Scripture’s portrayal of the earth’s desolation shows that the belief in an earthly millennium following Christ’s return (known as dispensational premillennialism) is unbiblical. Another view, postmillennialism, holds that Christ will return *after* a millennial period in which Christianity prevails throughout the world, particularly at the governmental level. This perspective is often held by Christian nationalists, but it too is unbiblical, for Christ declared that His kingdom is not of this world. In fact, when describing the end of the world, Jesus never spoke of a period of universal peace; after warning of nations in distress and people’s hearts failing from fear, He went directly to His coming in glory {% rf 'Luke 21:25-27' %}. A heavenly millennium, therefore, is the only view that is consistent with all of Scripture.
 
 ## What do the saved do in heaven?
 

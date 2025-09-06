@@ -33,16 +33,17 @@ Jesus will return in a visible, bodily, and personal manner, just as He left. In
 > For the Lord himself shall *descend from heaven with a shout*, with the voice of the archangel, and with the trump of God: and the dead in Christ shall rise first.
 {% ct '1 Thessalonians 4:16' %}
 
-Contrary to the popular but unbiblical teaching of a secret rapture, Christ’s second coming will be anything but silent or secret.[^1] It will be, in fact, the most awe-inspiring, thunderous, and radiant event in Earth’s history—utterly impossible to miss.
+Contrary to the popular but unbiblical teaching of a secret rapture,[^1][^2] Christ’s second coming will be anything but silent or secret. It will be, in fact, the most awe-inspiring, thunderous, and radiant event in Earth’s history—utterly impossible to miss.
 
 [^1]: Proponents of the secret rapture theory believe the rapture will be followed by a seven-year tribulation, during which those who were not taken to heaven will have another opportunity to repent and be saved. But offering such a second chance makes God appear arbitrary and unfair, granting one group a new opportunity for salvation while denying it to others. Furthermore, the theory provides false security to those who wish to continue in sin, as they may presume they can repent during the tribulation. How devastating will it be when they realize there is no second chance and that they have squandered the only one they had?
+[^2]: {% rf 'Luke 17:34-36' false %} is often cited as biblical evidence of a secret rapture, yet the context shows that Jesus was referring to the judgments in the days of Noah and Lot {% rf 'Luke 17:26-29' %}. In each case, a few were “taken” to safety while the rest were “left” to be destroyed: Noah and his family escaped safely in the ark, while Lot and his daughters fled the doomed city. Jesus warned that the same pattern will be repeated at His coming {% rf 'Luke 17:30' %}: the saved will be gathered to meet Him in the air {% rf '1 Thessalonians 4:16-17' %}, while the lost will be destroyed by the brightness of His coming {% rf '2 Thessalonians 2:8' %}.
 
 ## What else will take place?
 
 > For the Lord himself shall descend from heaven with a shout, with the voice of the archangel, and with the trump of God: and the *dead in Christ shall rise first*: then we which are alive and remain shall be *caught up together with them in the clouds, to meet the Lord in the air*: and so shall we ever be with the Lord.
 {% ct '1 Thessalonians 4:16-17' %}
 
-The Bible teaches that those who died in Christ will be resurrected and, together with those who are alive and prepared for His return, will be caught up to meet Him in the air. Because He will not touch the earth, His coming will not be an earthly appearance, but one in the sky—an important detail that helps us identify counterfeit Christs {% rf 'Matthew 24:4-5' %}. Put simply, if anyone—even an angel—appears on the earth and claims to be Christ, we can be certain this is contrary to Scripture, for Paul plainly states that the redeemed will meet Jesus in the air, meaning He will remain in the clouds above the earth.
+The Bible teaches that those who have died in Christ will be resurrected, and together with the living who are ready for His return, will be caught up to meet Him in the air to spend a [thousand years in heaven](/posts/prophecy/millennium.md). Because He remains in the air and does not touch the earth, His coming will not be an earthly appearance, but one in the sky—an important detail that helps us identify counterfeit christs {% rf 'Matthew 24:4-5' %}. Put simply, if anyone—even an angel—appears on the earth and claims to be Christ, we can be certain this is contrary to Scripture, for Paul plainly states that the redeemed will meet Jesus in the air, meaning He will remain in the clouds above the earth.
 
 ## What kind of bodies will the saved have?
 
@@ -65,9 +66,6 @@ Christ’s coming will either be the best day of one’s life or the worst. Thos
 
 > And the heaven departed as a scroll when it is rolled together; and every mountain and island were moved out of their places. And the kings of the earth, and the great men, and the rich men, and the chief captains, and the mighty men, and every bondman, and every free man, *hid themselves* in the dens and in the rocks of the mountains; and said to the mountains and rocks, *Fall on us, and hide us from the face of him that sitteth on the throne, and from the wrath of the Lamb*: for the great day of his wrath is come; and who shall be able to stand?
 {% ct 'Revelation 6:14-17' %}
-
-> And then shall that Wicked be revealed, whom the Lord shall consume with the spirit of his mouth, and shall *destroy with the brightness of his coming*.
-{% ct '2 Thessalonians 2:8' %}
 
 In contrast to those who are saved, the lost—who had a superficial Christianity that never moved beyond mere profession, never surrendering all that they had and were to Him {% rf 'Matthew 7:21-23' %}—will experience no peace or joy at Christ’s coming. To them, His coming will be a terrifying experience, so much so that they will seek death rather than face their Creator. Because they have chosen to cling to sin, they will be destroyed by the brightness of His coming, for anyone who holds on to sin cannot live in the presence of a holy God.
 
@@ -103,7 +101,7 @@ When Jesus returns, there will be only two groups of people—the saved and the 
 
 Because He has triumphed over Satan, Jesus will return as the victorious King, accompanied by the innumerable host of His angelic army.
 
-## Will Jesus establish an earthly millennium?
+## What happens to the earth and the lost?
 
 > And the seventh angel poured out his vial into the air; and there came a great voice out of the temple of heaven, from the throne, saying, It is done. And there were voices, and thunders, and lightnings; and *there was a great earthquake*, such as was not since men were upon the earth, so mighty an earthquake, and so great. And the great city was divided into three parts, and the cities of the nations fell: and great Babylon came in remembrance before God, to give unto her the cup of the wine of the fierceness of his wrath. And *every island fled away, and the mountains were not found. And there fell upon men a great hail* out of heaven, every stone about the weight of a talent: and men blasphemed God because of the plague of the hail; for the plague thereof was exceeding great.
 {% ct 'Revelation 16:17-21' %}
@@ -114,13 +112,12 @@ Because He has triumphed over Satan, Jesus will return as the victorious King, a
 > And then shall that Wicked be revealed, whom the Lord shall consume with the spirit of his mouth, and *shall destroy with the brightness of his coming*: even him, whose coming is after the working of Satan with all power and signs and lying wonders, and with all deceivableness of unrighteousness in them that perish; because they received not the love of the truth, that they might be saved.
 {% ct '2 Thessalonians 2:8-10' %}
 
-> Thus saith the LORD of hosts, Behold, evil shall go forth from nation to nation, and a great whirlwind shall be raised up from the coasts of the earth. And the *slain of the LORD shall be at that day from one end of the earth even unto the other end of the earth: they shall not be lamented, neither gathered, nor buried*; they shall be dung upon the ground.
-{% ct 'Jeremiah 25:32-33' %}
+> And the *slain of the LORD shall be at that day from one end of the earth even unto the other end of the earth: they shall not be lamented, neither gathered, nor buried*; they shall be dung upon the ground.
+{% ct 'Jeremiah 25:33' %}
 
-The Bible teaches that just before Christ’s return, during the outpouring of the seven last plagues described in Revelation 16, the earth will be totally devastated and rendered uninhabitable.[^2] Those of the lost who survive the plagues will be slain by the brightness of His glory, and since Christ will take the redeemed to heaven, the earth will, for the first time since creation week, be completely devoid of all life. Jeremiah vividly portrays this scene of desolation, making it evident that there can be no earthly millennium following the destruction that accompanies Christ’s return.[^3] A [heavenly millennium](/posts/prophecy/millennium.md) is the only logical option left, and it is the one the Bible teaches.
+The Bible teaches that just before Christ’s return, during the outpouring of the seven last plagues described in Revelation 16, the earth will be utterly devastated and rendered uninhabitable.[^3] Those of the lost who survive the plagues will be slain by the brightness of His glory, and since Christ will take the redeemed to heaven, the earth will, for the first time since creation week, be completely devoid of all life. This desolation makes the belief in an [earthly millennium](/posts/prophecy/millennium.md#will-christ-establish-an-earthly-millennium) following Christ’s return an impossibility.
 
-[^2]: Could it be that part of the reason the earth is completely destroyed at Christ’s coming is that it was being worshiped?
-[^3]: The belief in an earthly millennium after Christ’s coming is known as dispensational premillennialism. Postmillennialism is another view of an earthly millennium, in which Christ’s coming occurs *after* a period in which Christian ethics prevail throughout the world. This view is also unbiblical, because Christ said that His kingdom is not of this world {% rf 'John 18:36; Luke 17:20-21' %}.
+[^3]: Could it be that part of the reason the earth is completely destroyed at Christ’s coming is that it was being worshiped?
 
 ## What invitation does Revelation give us?
 

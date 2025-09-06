@@ -3,7 +3,7 @@
   position: absolute;
   background-color: rgb(250, 250, 250);
   border: 1px solid #ccc;
-  box-shadow: 0 0 32px rgba(102, 126, 234, 0.08);
+  box-shadow: 0 0 32px rgba(102, 126, 234, 0.15);
   border-radius: var(--default-radius);
   z-index: 1000;
 }
