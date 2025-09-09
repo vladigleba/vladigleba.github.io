@@ -20,9 +20,21 @@ Jesus emphasizes that deception will not only be prevalent in the lead-up to His
 
 Over the past few decades, the New Age teachings of pantheism (all is God) and panentheism (God is in all) have been creeping into Christianity, leading some to believe that they are actually god. These teachings build upon the serpent’s original lie, “ye shall be as gods” {% rf 'Genesis 3:5' %}, and fulfill Christ’s prophecy that many would say, “I am Christ” {% rf 'Matthew 24:5' %}. Anyone who teaches that a human being can become god—or even Christ—spreads deception, because the truth is Jesus never promised us deity. He promised us eternal life {% rf 'Romans 6:23' %}, yes, but never deity. We are and will always be His created beings; He is our Creator God.
 
-## Will there be an interest in spiritism?
+## Will there be a rise in skepticism?
 
-> Now the Spirit speaketh expressly, that in the latter times some shall depart from the faith, *giving heed to seducing spirits*, and doctrines of devils.
+> Knowing this first, that *there shall come in the last days scoffers, walking after their own lusts*, and saying, Where is the promise of his coming? for since the fathers fell asleep, all things continue as they were from the beginning of the creation. For this they willingly are ignorant of, that by the word of God the heavens were of old, and the earth standing out of the water and in the water: whereby the world that then was, being overflowed with water, perished.
+{% ct '2 Peter 3:3-6' %}
+
+> For the time will come when *they will not endure sound doctrine*; but after their own lusts shall they heap to themselves teachers, having itching ears; and *they shall turn away their ears from the truth, and shall be turned unto fables*.
+{% ct '2 Timothy 4:3-4' %}
+
+It is incredible how Paul, after mentioning scoffers, goes back to the Genesis account—specifically the creation week, which identifies God as the Creator of the world, and the worldwide flood. A denial of both of these accounts lays the foundation for many false but widely held views today, such as Darwinian evolution, progressive creationism, and atheism. Perhaps the clearest example of the fulfillment of these verses, however, is the rise of higher criticism, which denies that the Bible is a divinely inspired book altogether.
+
+Efforts to undermine the authority of the Bible are alive in Christian churches too. Proponents of mysticism, for example, emphasize a subjective, experiential Christianity over one that is based on the objective and authoritative Word of God. This is a modern equivalent of another effort to undermine Scripture that reaches back thousands of years: the elevation of church tradition above Scripture, which, incidentally, was one of the rallying cries of the Reformation—*sola scriptura* (“Scripture alone”).
+
+## What about spiritism?
+
+> Now the Spirit speaketh expressly, that in the latter times some shall depart from the faith, *giving heed to seducing spirits, and doctrines of devils*.
 {% ct '1 Timothy 4:1' %}
 
 The interest in psychics, channelers, spiritists, and the occult is as old as time, but it will intensify in the final days of earth’s history. Surprisingly, these practices are alive in Christianity as well through the meditative techniques of spiritual formation, which allegedly enable the practitioner to come into God’s presence—and even hear His voice—on demand. This is achieved through an altered state of consciousness, known as “entering the silence,” in which all thinking is suppressed, resulting in a trance-like, meditative state—the same state that witches, psychics, and channelers enter when they do their work. When this state is reached, the mind is opened to the influence of evil supernatural forces. The truth is God never asks us to suspend our reasoning powers when we pray or study His Word; on the contrary, He wants us to be fully engaged {% rf 'Isaiah 1:18' %}. (For more information, see Howard Peth’s book *The Dangers of Contemplative Prayer*.)
@@ -66,7 +78,7 @@ This is related to the previous sign of apprehension about the future, because a
 > This know also, that in the last days perilous times shall come. For men shall be *lovers of their own selves, covetous, boasters, proud, blasphemers, disobedient to parents, unthankful, unholy, Without natural affection, trucebreakers, false accusers, incontinent, fierce, despisers of those that are good, traitors, heady, highminded, lovers of pleasures more than lovers of God; having a form of godliness, but denying the power thereof*: from such turn away.
 {% ct '2 Timothy 3:1-5' %}
 
-As the love of many grows cold, evil will begin to assert itself in the lives of those who have rejected God. When the restraining power of God departs through persistent rejection {% rf 'Romans 1:28' %}, human behavior will begin to resemble that of the pre-flood world, when every thought was only evil continually {% rf 'Genesis 6:5' %}. But this trend will not be universal. Communities of genuine followers of Christ will exist throughout the world who reflect His character. Specifically, they will be known for their love—which is, in fact, the love of God manifested in them {% rf 'John 13:35; 1 John 2:5' %}. Thus, in the end, there will be only two classes of people: those who give themselves over to sin, selfishness, and evil, and those who give themselves over to God’s loving mercy and enabling grace. Whether we realize it or not, the decisions we make on a daily basis are bringing us closer to one of these groups.
+As the love of many grows cold, lawlessness will assert itself in society, driven by selfishness in the hearts of those who have rejected God. When the restraining power of God departs through persistent rejection {% rf 'Romans 1:28' %}, human behavior will begin to resemble that of the pre-flood world, when every thought was only evil continually {% rf 'Genesis 6:5' %}. But this trend will not be universal. Communities of genuine followers of Christ will exist throughout the world who reflect His character. Specifically, they will be known for their love—which is, in fact, the love of God manifested in them {% rf 'John 13:35; 1 John 2:5' %}. Thus, in the end, there will be only two classes of people: those who give themselves over to sin, selfishness, and evil, and those who give themselves over to God’s loving mercy and enabling grace. Whether we realize it or not, the decisions we make on a daily basis are bringing us closer to one of these groups.
 
 ## What will people be preoccupied with?
 
