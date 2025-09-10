@@ -100,40 +100,26 @@ module.exports = async (config) => {
     collectionApi.getFilteredByGlob("posts/**/*.md")
   );
 
+  config.addCollection('standalonePosts', (collectionApi) => {
+    const posts = collectionApi.getFilteredByGlob('posts/*/*.md');
+    posts.forEach(post => processPost(post));
+    addNextLinks(posts);
+    return makeLastPostFirst(posts);
+  });
+
   config.addCollection('groupedPosts', (collectionApi) => {
     const groupedPosts = [];
     const processedSeries = new Map();
     const posts = collectionApi.getFilteredByGlob('posts/*/*.md');
 
-    posts.forEach((post, index) => {
-      const { series, color } = post.data;
+    posts.forEach(post => processPost(post));
+    addNextLinks(posts);
+    const orderedPosts = makeLastPostFirst(posts);
 
-      // category
-      const category = getCategoryFromPath(post.inputPath);
-      post.data.category = category;
-
-      // reading time
-      const stats = readingTime(post.rawInput, { wordsPerMinute: 220 });
-      post.data.length = Math.floor(stats.minutes);
-
-      // last modified date (from git)
-      try {
-        const gitCmd = `git log -1 --format=%cI -- "${post.inputPath}"`;
-        const gitDate = childProcess.execSync(gitCmd, { encoding: 'utf8' }).trim();
-        post.data.updated = gitDate ? new Date(gitDate) : null;
-      } catch (err) {
-        post.data.updated = null;
-      }
-  
-      // next link
-      if (index < posts.length - 1) {
-        post.data.next = {
-          url: posts[index + 1].url,
-          title: posts[index + 1].data.title,
-        };
-      }
+    orderedPosts.forEach(post => {
+      const { series } = post.data;
+      const category = post.data.category;
       
-      // grouping by series
       if (series) {
         let seriesEntry = processedSeries.get(series);
         if (!seriesEntry) {
@@ -159,7 +145,7 @@ module.exports = async (config) => {
       }
     });
 
-    // seriesInfo
+    // series info
     processedSeries.forEach((series) => {
       series.posts.forEach((post, index) => {
         post.data.seriesInfo = {
@@ -170,14 +156,6 @@ module.exports = async (config) => {
       });
     });
 
-    // make last item first
-    if (groupedPosts.length > 1) {
-      groupedPosts.unshift(groupedPosts.pop());
-      const first = groupedPosts[0];
-      first.latest = true;
-    }
-
-    //printPostsByLength(posts);
     return groupedPosts;
   });
 
@@ -252,6 +230,49 @@ module.exports = async (config) => {
   });
 
   // functions
+  function makeLastPostFirst(posts) {
+    if (!Array.isArray(posts)) return posts;
+    const arr = [...posts];
+    if (arr.length > 1) {
+      arr.unshift(arr.pop());
+      arr[0].data = arr[0].data || {};
+      arr[0].data.latest = true;
+    }
+    return arr;
+  }
+
+  function addNextLinks(posts) {
+    if (!Array.isArray(posts)) return;
+    posts.forEach((post, index) => {
+      if (index < posts.length - 1) {
+        post.data.next = {
+          url: posts[index + 1].url,
+          title: posts[index + 1].data.title,
+        };
+      }
+    });
+  }
+
+  function processPost(post) {
+    // category
+    post.data.category = getCategoryFromPath(post.inputPath);
+
+    // reading time
+    const stats = readingTime(post.rawInput, { wordsPerMinute: 220 });
+    post.data.length = Math.floor(stats.minutes);
+
+    // last modified date (from git)
+    try {
+      const gitCmd = `git log -1 --format=%cI -- "${post.inputPath}"`;
+      const gitDate = childProcess.execSync(gitCmd, { encoding: 'utf8' }).trim();
+      post.data.updated = gitDate ? new Date(gitDate) : null;
+    } catch (err) {
+      post.data.updated = null;
+    }
+
+    return post;
+  }
+
   function getCategoryFromPath(path) {
     const filePath = path.replace(/\\/g, '/'); // for Windows
     const rawCategory = filePath.split('/')[2];

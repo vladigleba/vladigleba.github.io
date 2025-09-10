@@ -10,7 +10,7 @@
       {% else %}
         {% assign data = item.post.data %}
         {% assign featured = data.featured %}
-        {% assign latest = item.latest %}
+        {% assign latest = data.latest %}
 
         <li
           {% if featured %} class="featured"
