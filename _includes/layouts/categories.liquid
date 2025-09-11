@@ -19,5 +19,7 @@ eleventyComputed:
 
 {% render 'layouts/cards',
    groupedPosts: collections.groupedPosts,
-   categoryFilter: category
+   standalonePosts: collections.standalonePosts,
+   categoryFilter: category,
+   site: site.series
 %}

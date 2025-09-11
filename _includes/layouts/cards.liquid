@@ -1,35 +1,33 @@
-<ol class="list">
-  {% for item in groupedPosts %}
-    {% if not categoryFilter or item.category == categoryFilter %}
-      {% if item.type == 'series' %}
-        <li class="series">
-          <div><span class="tag">Series</span></div>
-          <a style="color: {{ item.color }}" href="{{ item.posts[0].url }}">{{ item.title }}</a>
-          <p>{{ item.category }} <span>•</span> {{ item.posts.size }} parts</p>
-        </li>
-      {% else %}
-        {% assign data = item.post.data %}
-        {% assign featured = data.featured %}
-        {% assign latest = data.latest %}
+<div class="posts-view">
+  <div class="switch-wrapper">
+    <span class="switch-label">Group by series</span>
+    <label class="switch" for="posts-view-switch">
+      <input id="posts-view-switch" type="checkbox" aria-label="Toggle posts view" />
+      <span class="slider" aria-hidden="true"></span>
+    </label>
+  </div>
 
-        <li
-          {% if featured %} class="featured"
-          {% elsif latest %} class="latest" style="background-color: {{ data.color }}"
-          {% endif %}
-        >
-          {% if latest %}
-            <div><span class="tag" style="color: {{ data.color }}">Latest</span></div>
-          {% elsif featured %}
-            <div><span class="tag">Featured</span></div>
-          {% endif %}
-
-          <a style="color: {{ data.color }}" href="{{ item.post.url }}">{{ data.title }}</a>
-          <p>{{ item.category }} <span>•</span> {{ data.length }} min read</p>
-          {% if featured or latest %}
-            <p class="description">{{ data.description }}</p>
-          {% endif %}
-        </li>
+  <ol class="list series-list">
+    {% for item in groupedPosts %}
+      {% if not categoryFilter or item.category == categoryFilter %}
+        {% if item.type == 'series' %}
+          <li class="series">
+            <div><span class="tag">Series</span></div>
+            <a style="color: {{ item.color }}" href="{{ item.posts[0].url }}">{{ item.title }}</a>
+            <p>{{ item.category }} <span>•</span> {{ item.posts.size }} parts</p>
+          </li>
+        {% else %}
+          {% render 'layouts/card-standalone', post: item.post, site: site %}
+        {% endif %}
       {% endif %}
-    {% endif %}
-  {% endfor %}
-</ol>
+    {% endfor %}
+  </ol>
+
+  <ol class="list standalone-list" style="display:none">
+    {% for post in standalonePosts %}
+      {% if not categoryFilter or post.data.category == categoryFilter %}
+        {% render 'layouts/card-standalone', post: post, site: site %}
+      {% endif %}
+    {% endfor %}
+  </ol>
+</div>

@@ -102,7 +102,15 @@ module.exports = async (config) => {
 
   config.addCollection('standalonePosts', (collectionApi) => {
     const posts = collectionApi.getFilteredByGlob('posts/*/*.md');
-    posts.forEach(post => processPost(post));
+    posts.forEach(post => {
+      processPost(post);
+
+      if ((!post.data.color) && post.data.series) {
+        const seriesKey = post.data.series;
+        post.data.color = site.series[seriesKey].color;
+      }
+    });
+
     addNextLinks(posts);
     return makeLastPostFirst(posts);
   });

@@ -27,7 +27,7 @@
 .main-nav li:hover {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.125);
-  color: var(--hover-color);
+  color: var(--darker-gray-color);
 }
 
 .main-nav li a {

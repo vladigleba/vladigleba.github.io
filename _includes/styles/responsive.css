@@ -168,7 +168,8 @@
     font-size: 28px;
   }
 
-  .list p {
+  .list p,
+  .switch-label {
     font-size: 17px;
   }
 

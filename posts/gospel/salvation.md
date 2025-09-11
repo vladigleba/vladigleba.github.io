@@ -3,7 +3,6 @@ title: How Can I Be Saved?
 description: Because all have sinned, all are sitting on death row, whether we realize it or not. There is hope though! But only if I ask Jesus to intervene.
 date: 2025-01-06
 series: salvation
-featured: true
 ---
 
 ## How did God demonstrate His love?

@@ -40,7 +40,8 @@ article > header p {
   font-weight: 700;
 }
 
-.list p {
+.list p,
+.switch-label {
   font-size: 18px;
 }
 

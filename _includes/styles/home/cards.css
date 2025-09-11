@@ -57,12 +57,16 @@ li .tag {
   color: black;
 }
 
+li.standalone .tag {
+  color: var(--lighter-gray-color);
+}
+
 li.series .tag {
   background-color: rgb(245, 231, 140, 0.75); /* rgb(219, 51, 52, 0.75); */
 }
 
 li.featured .tag {
-  background-color: var(--hover-color);
+  background-color: var(--darker-gray-color);
   opacity: 0.8;
 }
 

@@ -1,7 +1,7 @@
 body > footer {
   padding: 150px 0 50px;
   text-align: center;
-  color: #999;
+  color: var(--lighter-gray-color);
   line-height: 1.4;
 }
 

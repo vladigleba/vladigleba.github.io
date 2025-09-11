@@ -134,5 +134,43 @@ if (document.body.classList.contains('js-enabled')) {
       }
     };
     updateFooterTime();
+
+    // posts view toggle (series vs standalone)
+    const POSTS_VIEW_KEY = 'postsViewPreference';
+    const postsViewSwitch = document.getElementById('posts-view-switch');
+    const STANDALONE = 'standalone';
+    const SERIES = 'series';
+    const seriesList = document.querySelector('.series-list');
+    const standaloneList = document.querySelector('.standalone-list');
+
+    // update UI: show/hide lists based on view
+    const applyView = (view) => {
+      if (!seriesList || !standaloneList) return;
+      const isStandalone = view === STANDALONE;
+      seriesList.style.display = isStandalone ? 'none' : '';
+      standaloneList.style.display = isStandalone ? '' : 'none';
+
+      // update checked state (checked = grouped by series)
+      if (postsViewSwitch) postsViewSwitch.checked = !isStandalone;
+    };
+
+    // init from localStorage (default to series grouping)
+    const stored = (() => {
+      try { 
+        return localStorage.getItem(POSTS_VIEW_KEY); 
+      } catch (e) { 
+        return null; 
+      }
+    })();
+    applyView(stored === STANDALONE ? STANDALONE : SERIES);
+
+    // add event listener
+    if (postsViewSwitch) {
+      postsViewSwitch.addEventListener('change', (e) => {
+        const view = e.target.checked ? SERIES : STANDALONE;
+        try { localStorage.setItem(POSTS_VIEW_KEY, view); } catch (err) {}
+        applyView(view);
+      });
+    }
   });
 }

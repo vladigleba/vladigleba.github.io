@@ -8,4 +8,8 @@ layout: layouts/base
    description: site.title
 %}
 
-{% render 'layouts/cards', groupedPosts: collections.groupedPosts %}
+{% render 'layouts/cards',
+   groupedPosts: collections.groupedPosts,
+   standalonePosts: collections.standalonePosts,
+   site: site.series
+%}
