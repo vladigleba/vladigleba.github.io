@@ -74,7 +74,7 @@ module.exports = async (config) => {
   // filters
   config.addLiquidFilter('toLocal', (date) => {
     if (!date) return '';
-    return moment(date).local().format('MMMM D, YYYY');
+    return moment(date).local().format('MMM D, YYYY');
   });
 
   config.addLiquidFilter('toISO', (date) => {
