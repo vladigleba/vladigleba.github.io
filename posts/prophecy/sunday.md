@@ -7,30 +7,30 @@ series: sunday
 
 ## Is the Sabbath temporary or perpetual?
 
-> Wherefore the children of Israel shall keep the sabbath, to observe the sabbath throughout their generations, for a *perpetual covenant*. It is a sign between me and the children of Israel *for ever*: for in six days the LORD made heaven and earth, and on the seventh day he rested, and was refreshed. And he gave unto Moses, when he had made an end of communing with him upon mount Sinai, two tables of testimony, *tables of stone*, written with the finger of God.
+> Wherefore the children of Israel shall keep the sabbath, to observe the sabbath throughout their generations, *for a perpetual covenant. It is a sign between me and the children of Israel for ever*: for in six days the LORD made heaven and earth, and on the seventh day he rested, and was refreshed. And he gave unto Moses, when he had made an end of communing with him upon mount Sinai, two tables of testimony, *tables of stone*, written with the finger of God.
 {% ct 'Exodus 31:16-18' %}
 
-The Ten Commandments, which the Sabbath is a part of, were written by the finger of God on tablets of stone, instead of a material subject to decay, like wood or clay, as a testament to their timelessness. This is in contrast to Jesus writing the sins of the woman caught in adultery in the dust {% rf 'John 8:1-11' %}, as a beautiful testament to God’s willingness to forgive anyone who repents.
+The Ten Commandments, of which the Sabbath is a part, were written by the finger of God on tablets of stone rather than on materials subject to decay, such as wood or clay, as a testament to their timelessness. In contrast, Jesus wrote the sins of the woman caught in adultery in the dust {% rf 'John 8:1-11' %}, a beautiful testament to God’s willingness to forgive all who repent. Sin is temporary and will be [blotted out](/posts/prophecy/millennium.md) of the universe, but the law that God desires to write in our hearts is eternal {% rf 'Jeremiah 31:33; Matthew 5:17-18' %}.
 
 ## Wasn’t the Sabbath for the Jewish people only?
 
-> Thus the heavens and the earth were finished, and all the host of them. And on the seventh day God ended his work which he had made; and *he rested on the seventh day* from all his work which he had made. And *God blessed the seventh day, and sanctified it*: because that in it he had rested from all his work which God created and made.
+> Thus the heavens and the earth were finished, and all the host of them. And on the seventh day God ended his work which he had made; and he rested on the seventh day from all his work which he had made. And *God blessed the seventh day, and sanctified it: because that in it he had rested from all his work which God created and made*.
 {% ct 'Genesis 2:1-3' %}
 
 > For as the new heavens and the new earth, which I will make, shall remain before me, saith the LORD, so shall your seed and your name remain. And it shall come to pass, that from one new moon to another, and *from one sabbath to another, shall all flesh come to worship before me*, saith the LORD.
 {% ct 'Isaiah 66:22-23' %}
 
-The seventh day Sabbath, from Friday sunset to Saturday sunset, was set apart, blessed, and sanctified on the very first week of creation, long before there was a Jewish nation, and it will be kept even in heaven.
+The seventh-day Sabbath was set apart, blessed, and sanctified in the very first week of creation, long before there was a Jewish nation, and it will be kept even in heaven as a testament to God as our Creator and Redeemer. The Sabbath was instituted in Eden for all humanity, and as long as we are His creation, whom He has redeemed, so long will the Sabbath stand.
 
 ## How many need sanctification?
 
 > For *all have sinned*, and come short of the glory of God.
 {% ct 'Romans 3:23' %}
 
-> Moreover also I gave them my sabbaths, to be a sign between me and them, that *they might know that I am the LORD that sanctify them*.
+> Moreover also I gave them my sabbaths, to be a sign between me and them, that they might know that *I am the LORD that sanctify them*.
 {% ct 'Ezekiel 20:12' %}
 
-Because all have sinned, everyone is in need of the sanctifying power of Christ, which the Sabbath is a sign of, so naturally, the Sabbath is a perpetual sign for everyone.
+Because all have sinned, all need the sanctifying power of Christ—of which the Sabbath is a sign—so the Sabbath is naturally a perpetual sign for all humanity.
 
 ## What does the Bible say about unbelief and the seventh day?
 

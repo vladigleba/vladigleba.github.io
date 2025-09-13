@@ -10,6 +10,9 @@ series: sunday
 > Sanctify them through thy truth: *thy word is truth*.
 {% ct 'John 17:17' %}
 
+> Seeing *ye have purified your souls in obeying the truth through the Spirit* unto unfeigned love of the brethren, see that ye love one another with a pure heart fervently: being born again, not of corruptible seed, but of incorruptible, *by the word of God, which liveth and abideth for ever*. For all flesh is as grass, and all the glory of man as the flower of grass. The grass withereth, and the flower thereof falleth away: but the word of the Lord endureth for ever. And *this is the word which by the gospel is preached unto you*.
+{% ct '1 Peter 1:22-25' %}
+
 Truth is revealed in the Bible, the [Word of God](/posts/basics/bible.md).
 
 ## What advice does the Bible give regarding truth?
