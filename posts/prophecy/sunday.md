@@ -30,7 +30,7 @@ The seventh-day Sabbath was set apart, blessed, and sanctified in the very first
 > Moreover also I gave them my sabbaths, to be a sign between me and them, that they might know that *I am the LORD that sanctify them*.
 {% ct 'Ezekiel 20:12' %}
 
-Because all have sinned, all need the sanctifying power of Christ—of which the Sabbath is a sign—so the Sabbath is naturally a perpetual sign for all humanity.
+Because all have sinned, all need the sanctifying power of Christ—of which the Sabbath is a sign; therefore, it cannot be a sign for the Jewish nation only, for sin is no respecter of persons, just as God’s power to sanctify is no respecter of sinners. As God set the Sabbath apart as a day for Himself, so He sets us apart as a people for Himself {% rf '1 Peter 2:9; 2 Corinthians 6:17-18' %}.
 
 ## What does the Bible say about unbelief and the seventh day?
 
