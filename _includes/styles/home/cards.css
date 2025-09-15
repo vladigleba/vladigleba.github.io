@@ -51,11 +51,16 @@ li .tag {
   border-radius: var(--default-radius);
   font-weight: 700;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-transform: uppercase;
   padding: 3px var(--tag-horizontal-padding);
   color: black;
 }
+
+/* li:not(.latest, .featured) {
+  border: 1px solid #ccc;
+  border-radius: var(--default-radius);
+} */
 
 li.series .tag {
   background-color: rgb(245, 231, 140, 0.75); /* rgb(219, 51, 52, 0.75); */
@@ -70,9 +75,10 @@ li.latest .tag {
   background-color: white;
 }
 
+li.series .tag,
 li.featured .tag,
 li.latest .tag {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 /* 
