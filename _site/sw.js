@@ -1,5 +1,5 @@
 
-const CACHE_NAME = 'vgb-site-cache-1757909005810';
+const CACHE_NAME = 'vgb-site-cache-1757997177771';
 const ASSETS_TO_CACHE = [
   '/',
   '/styles.css',

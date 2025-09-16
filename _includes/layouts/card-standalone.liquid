@@ -25,8 +25,8 @@
 
   <a style="color: {{ color }}" href="{{ post.url }}">{{ data.title }}</a>
   <p>
-    {{ data.category }} <span>•</span> {{ data.length }} min read{% comment %} <span>•</span>
-     <time datetime="{{ data.updated | toISO }}">{{ data.updated | toLocal }}</time> {% endcomment %}
+    {{ data.category }} <span>•</span> {{ data.length }} min read <span>•</span> 
+    <time datetime="{{ data.updated | toISO }}">{{ data.updated | toLocal }}</time>
   </p>
   {% if featured or latest %}
     <p class="description">{{ data.description }}</p>
