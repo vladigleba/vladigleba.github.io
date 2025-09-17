@@ -91,7 +91,13 @@
 
   .list {
     padding: 0 20px;
-    grid-template-columns: repeat(auto-fit, 354px);
+    grid-template-columns: repeat(auto-fit, 380px);
+  }
+
+  article,
+  article > header > div,
+  body > footer > div {
+    width: 85%;
   }
 }
 
@@ -100,7 +106,7 @@
   article,
   article > header > div,
   body > footer > div {
-    width: 85%;
+    width: 90%;
   }
 
   article > header .series-links {
@@ -160,7 +166,7 @@
     padding: 0 10px;
     column-gap: 10px;
     row-gap: 10px;
-    grid-template-columns: repeat(auto-fit, 320px);
+    grid-template-columns: repeat(auto-fit, 370px);
     grid-auto-rows: 125px;
   }
 
@@ -187,7 +193,7 @@
   article,
   article > header > div,
   body > footer > div {
-    width: 90%;
+    width: 95%;
   }
 }
 

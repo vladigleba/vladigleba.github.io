@@ -44,6 +44,8 @@ The Sabbath is a memorial of God as both Creator and Redeemer. Just as He rested
 > And that day was the preparation, and the sabbath drew on. And the women also, which came with him from Galilee, followed after, and beheld the sepulchre, and how his body was laid. And they returned, and prepared spices and ointments; and *rested the sabbath day according to the commandment*.
 {% ct 'Luke 23:54-56' %}
 
+The Bible points out that, since it was the Day of Preparation (Friday) and the Sabbath was about to [begin at sunset](/posts/basics/keeping.md#when-does-the-sabbath-start-and-end), Jesus’ followers were so concerned about keeping the Sabbath that they even stopped their labor of love in preparing the body of their beloved Savior for burial. They rested on the Sabbath, as commanded, and returned early on Sunday morning to resume their unfinished work.
+
 ## What happened on the first day?
 
 > Now upon the *first day of the week*, very early in the morning, *they came unto the sepulchre*, bringing the spices which they had prepared, and certain others with them.
@@ -58,10 +60,17 @@ The Sabbath is a memorial of God as both Creator and Redeemer. Just as He rested
 > The *first day of the week cometh Mary Magdalene early, when it was yet dark, unto the sepulchre*, and seeth the stone taken away from the sepulchre.
 {% ct 'John 20:1' %}
 
-> Now when Jesus was risen early the *first day of the week, he appeared first to Mary Magdalene*, out of whom he had cast seven devils.
+It is important to note that Jesus’ followers returned to the tomb because they still had unfinished burial work to complete. Since they brought spices with them, it is evident they did not expect to find Him resurrected, so their Sunday morning labor of love was not an act of honoring His resurrection but rather a continuation of their burial work.
+
+## Did Jesus command the keeping of Sunday?
+
+> Now when Jesus was risen early the *first day of the week, he appeared first to Mary Magdalene*, out of whom he had cast seven devils. And she went and told them that had been with him, as they mourned and wept.
 {% ct 'Mark 16:9' %}
 
-Jesus’ followers were so concerned about the Sabbath that they even stopped their labor of love in preparing His body for burial, kept the Sabbath, and returned to resume their unfinished work early Sunday morning. Notice there is no mention of them keeping the first day, Sunday, holy in honor of Jesus’ resurrection, nor is there a command by Jesus to do so. When He appeared to Mary Magdalene that morning there was no talk of Sunday keeping at all.
+> Jesus saith unto her, Woman, why weepest thou? whom seekest thou? She, supposing him to be the gardener, saith unto him, Sir, if thou have borne him hence, tell me where thou hast laid him, and I will take him away. Jesus saith unto her, Mary. She turned herself, and saith unto him, Rabboni; which is to say, Master. *Jesus saith unto her, Touch me not; for I am not yet ascended to my Father: but go to my brethren, and say unto them, I ascend unto my Father, and your Father; and to my God, and your God*. Mary Magdalene came and told the disciples that she had seen the Lord, and that he had spoken these things unto her.
+{% ct 'John 20:15-18' %}
+
+After His resurrection, Jesus had multiple opportunities to instruct His followers to keep Sunday as the new Sabbath in honor of His resurrection, but this He never did. When He appeared to Mary Magdalene that morning, there was no mention of Sunday at all. Considering the many Old Testament passages in which God Himself commands the observance of the seventh-day Sabbath, one would reasonably expect at least one verse in the New Testament where Jesus—or His Father—commands His followers to keep Sunday instead. Yet no such verse exists.
 
 ## What was instituted in honor of Jesus’ resurrection?
 
