@@ -72,29 +72,32 @@ It is important to note that Jesus’ followers returned to the tomb because the
 
 After His resurrection, Jesus had multiple opportunities to instruct His followers to keep Sunday as the new Sabbath in honor of His resurrection, but this He never did. When He appeared to Mary Magdalene that morning, there was no mention of Sunday at all. Considering the many Old Testament passages in which God Himself commands the observance of the seventh-day Sabbath, one would reasonably expect at least one verse in the New Testament where Jesus—or His Father—commands His followers to keep Sunday instead. Yet no such verse exists.
 
-## What was instituted in honor of Jesus’ resurrection?
+## How do we honor Jesus’ resurrection?
 
-> Know ye not, that so many of us as were baptized into Jesus Christ were baptized into his death? Therefore *we are buried with him by baptism into death: that like as Christ was raised up from the dead by the glory of the Father, even so we also should walk in newness of life*. For if we have been planted together in the likeness of his death, we shall be also in the likeness of his resurrection: knowing this, *that our old man is crucified with him, that the body of sin might be destroyed, that henceforth we should not serve sin*.
-{% ct 'Romans 6:3-5' %}
+> Know ye not, that so many of us as were baptized into Jesus Christ were baptized into his death? Therefore *we are buried with him by baptism into death: that like as Christ was raised up from the dead by the glory of the Father, even so we also should walk in newness of life*. For if we have been planted together in the likeness of his death, we shall be also in the likeness of his resurrection: knowing this, that *our old man is crucified with him, that the body of sin might be destroyed, that henceforth we should not serve sin*. For he that is dead is freed from sin. Now if we be dead with Christ, we believe that we shall also live with him.
+{% ct 'Romans 6:3-8' %}
 
-Jesus instituted baptism in honor of His resurrection, which serves as a symbol of death to sin and the start of a new life in and for Christ.
+Jesus instituted [baptism by immersion](/posts/basics/baptism.md) as a symbol of His death, burial, and resurrection. In baptism, a person goes briefly under the water, representing death to sin and burial with Christ, and then rises out of the water to a new life in and for Christ.
 
 ## Didn’t the disciples break bread on the first day?
 
 > And upon the *first day of the week, when the disciples came together to break bread*, Paul preached unto them, ready to depart on the morrow; and continued his speech until midnight.
 {% ct 'Acts 20:7' %}
 
-> And they, *continuing daily with one accord in the temple, and breaking bread from house to house*, did eat their meat with gladness and singleness of heart.
-{% ct 'Acts 2:46' %}
+> And they continued stedfastly in the apostles' doctrine and fellowship, and *in breaking of bread*, and in prayers. ... And they, *continuing daily with one accord in the temple, and breaking bread from house to house*, did eat their meat with gladness and singleness of heart.
+{% ct 'Acts 2:42, 46' %}
 
-The meeting where bread was broken on the first day of the week occured because Paul was leaving the next day; apart from that, the meeting had no special significance because the early Christians broke bread daily. Nothing in these passages indicates that they considered the first day holy.
+The meeting in which bread was broken on the first day of the week occurred because Paul was leaving the next day. Apart from this unique circumstance, the meeting had no special significance, since the early Christians broke bread daily. Nothing in these passages indicates that they regarded the first day as holy.
 
 ## What about John 20:19?
 
-> Then the same day at evening, *being the first day of the week*, when the doors were shut where the disciples were assembled for fear of the Jews, *came Jesus and stood in the midst*, and saith unto them, Peace be unto you. And when he had so said, he shewed unto them his hands and his side. Then were the disciples glad, when they saw the Lord. Then said Jesus to them again, Peace be unto you: as my Father hath sent me, even so send I you.
-{% ct 'John 20:19-21' %}
+> Mary Magdalene came and told the disciples that she had seen the Lord, and that he had spoken these things unto her. Then *the same day at evening, being the first day of the week*, when the doors were shut where the disciples were assembled for fear of the Jews, *came Jesus and stood in the midst*, and saith unto them, Peace be unto you. And when he had so said, he shewed unto them his hands and his side. Then were the disciples glad, when they saw the Lord. Then said Jesus to them again, Peace be unto you: as my Father hath sent me, even so send I you.
+{% ct 'John 20:18-21' %}
 
-Here Jesus appears to His disciples in person, but once again, He makes no mention of the need to gather together on Sunday in honor of His resurrection.
+> Afterward he appeared unto the eleven as they sat at meat, and upbraided them with their unbelief and hardness of heart, *because they believed not them which had seen him after he was risen*.
+{% ct 'Mark 16:14' %}
+
+Mark tells us that after Jesus' disciples heard He had risen, they did not at first believe the reports, so later that same day He appeared to them in person. Since they did not believe He had risen, they could not have gathered to honor His resurrection. Moreover, after He appeared, He had the perfect opportunity to declare Sunday holy, but—just as in His interaction with Mary—He did not do so. Finally, according to the Bible, days begin at sunset {% rf 'Genesis 1:5' %}; thus, biblically—and for the Jews—this Sunday evening gathering would actually have been Monday.
 
 ## How about 1 Corinthians 16:2?
 

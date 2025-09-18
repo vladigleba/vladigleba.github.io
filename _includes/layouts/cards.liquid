@@ -12,9 +12,9 @@
       {% if not categoryFilter or item.category == categoryFilter %}
         {% if item.type == 'series' %}
           <li class="series">
-            <div><span class="tag">Series</span></div>
+            <div><span class="tag" style="color: {{ item.color }}">{{ item.posts.size }}-part Series</span></div>
             <a style="color: {{ item.color }}" href="{{ item.posts[0].url }}">{{ item.title }}</a>
-            <p>{{ item.category }} <span>•</span> {{ item.posts.size }} parts</p>
+            <p>{{ item.category }}</p>
           </li>
         {% else %}
           {% render 'layouts/card-standalone', post: item.post, site: site %}
