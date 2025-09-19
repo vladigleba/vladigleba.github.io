@@ -84,11 +84,10 @@ Jesus instituted [baptism by immersion](/posts/basics/baptism.md) as a symbol of
 > And upon the *first day of the week, when the disciples came together to break bread*, Paul preached unto them, ready to depart on the morrow; and continued his speech until midnight.
 {% ct 'Acts 20:7' %}
 
-> And they continued stedfastly in the apostles' doctrine and fellowship, and *in breaking of bread*, and in prayers. ... And they, *continuing daily with one accord in the temple, and breaking bread from house to house*, did eat their meat with gladness and singleness of heart.
+> And they continued stedfastly in the apostles’ doctrine and fellowship, and *in breaking of bread*, and in prayers. … And they, *continuing daily with one accord in the temple, and breaking bread from house to house*, did eat their meat with gladness and singleness of heart.
 {% ct 'Acts 2:42, 46' %}
 
-The meeting in which bread was broken on the first day of the week occurred because Paul was leaving the next day. Apart from this unique circumstance, the meeting had no special significance, since the early Christians broke bread daily. Nothing in these passages indicates that they regarded the first day as holy.
-
+The meeting in which bread was broken on the first day of the week occurred because Paul was leaving the next day. Apart from this unique circumstance, the meeting had no special significance, since the early Christians broke bread daily.
 ## What about John 20:19?
 
 > Mary Magdalene came and told the disciples that she had seen the Lord, and that he had spoken these things unto her. Then *the same day at evening, being the first day of the week*, when the doors were shut where the disciples were assembled for fear of the Jews, *came Jesus and stood in the midst*, and saith unto them, Peace be unto you. And when he had so said, he shewed unto them his hands and his side. Then were the disciples glad, when they saw the Lord. Then said Jesus to them again, Peace be unto you: as my Father hath sent me, even so send I you.
@@ -97,14 +96,14 @@ The meeting in which bread was broken on the first day of the week occurred beca
 > Afterward he appeared unto the eleven as they sat at meat, and upbraided them with their unbelief and hardness of heart, *because they believed not them which had seen him after he was risen*.
 {% ct 'Mark 16:14' %}
 
-Mark tells us that after Jesus' disciples heard He had risen, they did not at first believe the reports, so later that same day He appeared to them in person. Since they did not believe He had risen, they could not have gathered to honor His resurrection. Moreover, after He appeared, He had the perfect opportunity to declare Sunday holy, but—just as in His interaction with Mary—He did not do so. Finally, according to the Bible, days begin at sunset {% rf 'Genesis 1:5' %}; thus, biblically—and for the Jews—this Sunday evening gathering would actually have been Monday.
+Mark tells us that after Jesus’ disciples heard He had risen, they did not at first believe the reports, so later that same day He appeared to them in person. Since they did not believe He had risen, they could not have gathered to honor His resurrection. Moreover, after He appeared, He had the perfect opportunity to declare Sunday holy, but—just as in His interaction with Mary—He did not do so. Finally, according to the Bible, days begin at sunset {% rf 'Genesis 1:5' %}; thus, biblically—and for the Jews—this Sunday evening gathering would actually have been Monday.
 
 ## How about 1 Corinthians 16:2?
 
 > Now concerning the collection for the saints, as I have given order to the churches of Galatia, even so do ye. Upon the *first day of the week let every one of you lay by him in store*, as God hath prospered him, that there be no gatherings when I come. And when I come, whomsoever ye shall approve by your letters, them will I send to bring your liberality unto Jerusalem.
 {% ct '1 Corinthians 16:1-3' %}
 
-Here Paul is asking each person to put money aside for the needy, privately, once the Sabbath is over, so it would be ready when he comes. There is no mention of Sunday as a holy day.
+Here Paul is asking each person to put money aside for the needy, privately, once the Sabbath is over, so it would be ready when he comes. Nothing in these passages indicates that they regarded the first day holy.
 
 ## What did Jesus say about the law?
 
