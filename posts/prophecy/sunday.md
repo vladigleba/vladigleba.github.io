@@ -100,17 +100,30 @@ Mark tells us that after Jesus’ disciples heard He had risen, they did not at 
 
 ## How about 1 Corinthians 16:2?
 
-> Now concerning the collection for the saints, as I have given order to the churches of Galatia, even so do ye. Upon the *first day of the week let every one of you lay by him in store*, as God hath prospered him, that there be no gatherings when I come. And when I come, whomsoever ye shall approve by your letters, them will I send to bring your liberality unto Jerusalem.
+> Now concerning the collection for the saints, as I have given order to the churches of Galatia, even so do ye. Upon the *first day of the week let every one of you lay by him in store, as God hath prospered him, that there be no gatherings when I come*. And when I come, whomsoever ye shall approve by your letters, them will I send to bring your liberality unto Jerusalem.
 {% ct '1 Corinthians 16:1-3' %}
 
-Here Paul is asking each person to put money aside for the needy, privately, once the Sabbath is over, so it would be ready when he comes. Nothing in these passages indicates that they regarded the first day holy.
+In this passage, Paul is encouraging the Corinthians to remember their fellow believers in Judea, who were experiencing a famine {% rf 'Acts 11:27-30' %}, by putting money aside on Sunday, the day when financial matters were typically settled, after the Sabbath had passed, so that the funds would be ready when he visited them. The money was to be set aside privately, according to each person’s financial ability, and on a weekly basis rather than in a one-time donation, in order to encourage systematic giving. Nothing in these passages indicates that a worship gathering occurred on Sunday or that these offerings were collected during such a service.
 
-## What did Jesus say about the law?
+## What about Romans 14:5-6?
+
+> *One man esteemeth one day above another: another esteemeth every day alike. Let every man be fully persuaded in his own mind*. He that regardeth the day, regardeth it unto the Lord; and he that regardeth not the day, to the Lord he doth not regard it. He that eateth, eateth to the Lord, for he giveth God thanks; and he that eateth not, to the Lord he eateth not, and giveth God thanks.
+{% ct 'Romans 14:5-6' %}
+
+Looking at the context, verse 1 shows that Paul is addressing “doubtful disputations” {% rf 'Romans 14:1' %}, meaning issues of personal preference related to ceremonial practices. Verses 2 and 3 offer further insight: the controversy was actually about fasting {% rf 'Romans 14:2-3, 6' %}. Some Jewish Christians thought all believers were obligated to fast on specific days; by contrast, Gentile Christians, who were unfamiliar with such ceremonial observances, had a different view. Seeking reconciliation, Paul urged them to stop passing judgment on one another in these matters. The Sabbath, however, cannot be considered a “doubtful disputation,” since it is not part of the ceremonial law; rather, it belongs to God’s unchanging, moral law—the Ten Commandments—established at creation.
+
+## What did Jesus teach about the law?
 
 > Think not that I am come to destroy the law, or the prophets: *I am not come to destroy, but to fulfil*. For verily I say unto you, till heaven and earth pass, *one jot or one tittle shall in no wise pass from the law*, till all be fulfilled.
 {% ct 'Matthew 5:17-18' %}
 
-There are no verses in the Bible of Jesus changing the fourth commandment to mean observing Sunday instead of Saturday, nor did He tell others to do so later on. On the contrary, His mission was to fulfill the law, to uphold and expand it beyond the “letter” of the law to include the “spirit” of the law, as well. (For example, He expanded the sin of adultery to also include lust of the heart in {% rf 'Matthew 5:28' false %}.)
+There are no verses in the Bible showing that Jesus changed the fourth commandment to mean observing Sunday instead of Saturday, nor did He instruct others to do so later on. On the contrary, His mission was to fulfill the law and to uphold and expand it beyond the mere “letter” of the law to include the “spirit” of the law as well. For instance, Jesus expanded the commandment against adultery to include lust {% rf 'Matthew 5:28' %} and the commandment against murder to include hatred {% rf 'Matthew 5:21-22' %}.
+
+Law is the foundation of all government—both on earth and in heaven. Since Jesus does not change, His government, and therefore, His law, cannot change; otherwise, the wisdom, authority, and stability of His rule would immediately come into question. After all, if one of His commandments can change, why not the other nine? Most people agree with His prohibitions against having other gods, idolatry, blasphemy, dishonoring parents, murder, theft, adultery, bearing false witness, or covetousness. But what about the fourth commandment? Many acknowledge the need for weekly rest, yet the specific day on which to rest is often regarded as a matter of personal opinion.
+
+The Sabbath commandment is the only one that establishes God’s authority to give the other nine—by the simple fact that we are the created and He is the Creator. Furthermore, without the fourth commandment, anyone could have given the other nine. The Sabbath, therefore, stands as [His signature](/posts/basics/sabbath.md#which-commandment-identifies-the-creator-god) upon the entire Decalogue.
+
+But does God really care about the day we honor? Yes, He does. Did He care about the tree from which Eve ate? Most definitely. Does He mean what He says? Absolutely. Ultimately, the day we choose to honor is both a test of obedience and a question of authority: whose authority will I acknowledge and submit to—God’s or someone else’s? It is a simple yet profound decision that every person must make.
 
 ## How is the law fulfilled?
 
