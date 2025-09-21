@@ -124,20 +124,3 @@ Law is the foundation of all government—both on earth and in heaven. Since Jes
 The Sabbath commandment is the only one that establishes God’s authority to give the other nine—by the simple fact that we are the created and He is the Creator. Furthermore, without the fourth commandment, anyone could have given the other nine. The Sabbath, therefore, stands as [His signature](/posts/basics/sabbath.md#which-commandment-identifies-the-creator-god) upon the entire Decalogue.
 
 But does God really care about the day we honor? Yes, He does. Did He care about the tree from which Eve ate? Most definitely. Does He mean what He says? Absolutely. Ultimately, the day we choose to honor is both a test of obedience and a question of authority: whose authority will I acknowledge and submit to—God’s or someone else’s? It is a simple yet profound decision that every person must make.
-
-## How is the law fulfilled?
-
-> Love worketh no ill to his neighbour: therefore *love is the fulfilling of the law*.
-{% ct 'Romans 13:10' %}
-
-It was a heart filled with love for His Father that enabled Jesus to fulfill the law in His life.
-
-## Can the law be fulfilled in my life?
-
-> That the righteousness of the law *might be fulfilled in us*, who walk not after the flesh, but after the Spirit.
-{% ct 'Romans 8:4' %}
-
-> *Ask, and it shall be given you*; seek, and ye shall find; knock, and it shall be opened unto you: *For every one that asketh receiveth*; and he that seeketh findeth; and to him that knocketh it shall be opened.
-{% ct 'Matthew 7:7-8' %}
-
-If my heart is actuated by love for Jesus and filled with the Holy Spirit then the law can be fulfilled in my life too. I just have to ask Him and have faith that He can and will do it.
