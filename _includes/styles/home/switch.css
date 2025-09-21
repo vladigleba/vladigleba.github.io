@@ -7,7 +7,7 @@
 }
 
 .switch-label {
-  font-weight: 600;
+  font-weight: 500;
   color: var(--gray-color);
   user-select: none;
 }
