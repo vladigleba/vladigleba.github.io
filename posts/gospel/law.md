@@ -104,6 +104,13 @@ Sin cannot exist in the presence of a holy God because at the root of sin is sel
 
 Since selfishness is at the root of sin, and sin is the breaking of His law, then the law is really a law of love, dealing with my relationship with God (the first four commandments) and my neighbor (the last six). That’s why Jesus said that the entire law hangs on loving God and loving my neighbor. When there is genuine love present in a relationship then pleasing that person ceases to become a burden; in fact, without love for Jesus it’s not possible to keep His law.
 
+## Can the law be fulfilled in my life?
+
+> For what the law could not do, in that it was weak through the flesh, God sending his own Son in the likeness of sinful flesh, and for sin, condemned sin in the flesh: *that the righteousness of the law might be fulfilled in us*, who walk not after the flesh, but after the Spirit.
+{% ct 'Romans 8:3-4' %}
+
+If my heart is motivated by love for Jesus and filled with the Holy Spirit, then the law can be fulfilled in my life in Christ by faith. When I ask Him in faith, believing that He can and will accomplish it, He makes it a reality. Apart from His abiding presence in me {% rf 'John 15:14-15' %}, the law will never be fulfilled in my life, no matter how hard I try. Christ works in me when I surrender fully to Him—when I choose daily to die to self and pray, “Not my will, but Yours be done” {% rf 'Matthew 26:39' %}.
+
 ## What is one of the purposes of the law?
 
 > He who says, “I know Him,” and does not keep His commandments, is a liar, and the truth is not in him. But whoever keeps His word, truly the love of God is perfected in him. *By this we know that we are in Him*.
@@ -118,7 +125,7 @@ Since selfishness is at the root of sin, and sin is the breaking of His law, the
 > O LORD, *thou hast searched me, and known me*. Thou knowest my downsitting and mine uprising, thou understandest my thought afar off. Thou compassest my path and my lying down, and *art acquainted with all my ways*. For there is not a word in my tongue, but, lo, O LORD, thou knowest it altogether.
 {% ct 'Psalm 139:1-4' %}
 
-God knows me better than I know myself, and He knows if I truly love Him. The Ten Commandments are really a mirror for me that shows my genuine condition; they provide evidence letting me know if I truly love Him because it can be easy to deceive myself. Jesus says there will be people who served Him and thought they loved Him, but their lawlessness will say otherwise.
+God knows me better than I know myself, and He knows if I truly love Him. The Ten Commandments are really a mirror that shows my genuine condition; they provide evidence letting me know if I truly love Him because it can be easy to deceive myself. Jesus says there will be people who served Him and thought they loved Him, but their lawlessness will say otherwise.
 
 ## What promise does God give me?
 
