@@ -70,7 +70,7 @@ It is important to note that Jesus’ followers returned to the tomb because the
 > Jesus saith unto her, Woman, why weepest thou? whom seekest thou? She, supposing him to be the gardener, saith unto him, Sir, if thou have borne him hence, tell me where thou hast laid him, and I will take him away. Jesus saith unto her, Mary. She turned herself, and saith unto him, Rabboni; which is to say, Master. *Jesus saith unto her, Touch me not; for I am not yet ascended to my Father: but go to my brethren, and say unto them, I ascend unto my Father, and your Father; and to my God, and your God*. Mary Magdalene came and told the disciples that she had seen the Lord, and that he had spoken these things unto her.
 {% ct 'John 20:15-18' %}
 
-After His resurrection, Jesus had multiple opportunities to instruct His followers to keep Sunday as the new Sabbath in honor of His resurrection, but this He never did. When He appeared to Mary Magdalene that morning, there was no mention of Sunday at all. Considering the many Old Testament passages in which God Himself commands the observance of the seventh-day Sabbath, one would reasonably expect at least one verse in the New Testament where Jesus—or His Father—commands His followers to keep Sunday instead. Yet no such verse exists.
+After His resurrection, Jesus had multiple opportunities to instruct His followers to keep Sunday as the new Sabbath in honor of His resurrection, but this He never did. When He appeared to Mary Magdalene that morning, there was no mention of Sunday at all. Considering the many Old Testament passages in which God directly commands the observance of the seventh-day Sabbath, one would reasonably expect at least one verse in the New Testament where Jesus—or His Father—commands His followers to keep Sunday instead. Yet no such verse exists. All we have is alleged circumstantial evidence, which, when closely examined, falls apart as well.
 
 ## How do we honor Jesus’ resurrection?
 
@@ -88,6 +88,7 @@ Jesus instituted [baptism by immersion](/posts/basics/baptism.md) as a symbol of
 {% ct 'Acts 2:42, 46' %}
 
 The meeting in which bread was broken on the first day of the week occurred because Paul was leaving the next day. Apart from this unique circumstance, the meeting had no special significance, since the early Christians broke bread daily.
+
 ## What about John 20:19?
 
 > Mary Magdalene came and told the disciples that she had seen the Lord, and that he had spoken these things unto her. Then *the same day at evening, being the first day of the week*, when the doors were shut where the disciples were assembled for fear of the Jews, *came Jesus and stood in the midst*, and saith unto them, Peace be unto you. And when he had so said, he shewed unto them his hands and his side. Then were the disciples glad, when they saw the Lord. Then said Jesus to them again, Peace be unto you: as my Father hath sent me, even so send I you.

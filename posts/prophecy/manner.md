@@ -30,7 +30,7 @@ Jesus will return in a visible, bodily, and personal manner, just as He left. In
 > Our God shall come, and shall not keep silence: a fire shall devour before him, and it shall be *very tempestuous round about him*.
 {% ct 'Psalm 50:3' %}
 
-> For the Lord himself shall *descend from heaven with a shout*, with the voice of the archangel, and with the trump of God: and the dead in Christ shall rise first.
+> For the Lord himself shall descend from heaven *with a shout*, with the voice of the archangel, and with the trump of God: and the dead in Christ shall rise first.
 {% ct '1 Thessalonians 4:16' %}
 
 Contrary to the popular but unbiblical teaching of a secret rapture,[^1][^2] Christ’s second coming will be anything but silent or secret. It will be, in fact, the most awe-inspiring, thunderous, and radiant event in Earth’s history—utterly impossible to miss.
@@ -40,10 +40,12 @@ Contrary to the popular but unbiblical teaching of a secret rapture,[^1][^2] Chr
 
 ## What else will take place?
 
-> For the Lord himself shall descend from heaven with a shout, with the voice of the archangel, and with the trump of God: and the *dead in Christ shall rise first*: then we which are alive and remain shall be *caught up together with them in the clouds, to meet the Lord in the air*: and so shall we ever be with the Lord.
+> For the Lord himself shall *descend from heaven* with a shout, with the voice of the archangel, and with the trump of God: and the *dead in Christ shall rise first*: then we which are alive and remain shall be *caught up together with them in the clouds, to meet the Lord in the air*: and so shall we ever be with the Lord.
 {% ct '1 Thessalonians 4:16-17' %}
 
-The Bible teaches that those who have died in Christ will be resurrected, and together with the living who are ready for His return, will be caught up to meet Him in the air to spend a [thousand years in heaven](/posts/prophecy/millennium.md). Because He remains in the air and does not touch the earth, His coming will not be an earthly appearance, but one in the sky—an important detail that helps us identify counterfeit christs {% rf 'Matthew 24:4-5' %}. Put simply, if anyone—even an angel—appears on the earth and claims to be Christ, we can be certain this is contrary to Scripture, for Paul plainly states that the redeemed will meet Jesus in the air, meaning He will remain in the clouds above the earth.
+The Bible teaches that those who have died in Christ will be resurrected, and together with the living who are ready for His return, will be caught up to meet Him in the air to spend a [thousand years in heaven](/posts/prophecy/millennium.md). Because He remains in the air and does not touch the earth, His coming will not be an earthly appearance, but one in the sky—an important detail that helps us identify counterfeit christs {% rf 'Matthew 24:4-5' %}. Put simply, if anyone—even an angel—appears on the earth and claims to be Christ, we can be certain this contradicts Scripture, for Paul plainly states that the redeemed will meet Jesus in the air, meaning He will remain in the clouds above the earth.
+
+This is confirmed by the two angels’ declaration at Christ’s ascension: “This same Jesus, which is taken up from you into heaven, shall so come in like manner as ye have seen him go into heaven” {% rf 'Acts 1:11' %}. In other words, just as He ascended into heaven, He will likewise descend from heaven at His Second Coming.
 
 ## What kind of bodies will the saved have?
 

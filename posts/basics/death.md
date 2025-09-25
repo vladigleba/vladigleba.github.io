@@ -63,7 +63,7 @@ The spirit that returns to God is simply the breath of life, without which the b
 > For *all have sinned*, and come short of the glory of God.
 {% ct 'Romans 3:23' %}
 
-A person’s soul or spirit cannot go to heaven or hell after death because the Bible is clear that the soul that sins shall die. Why is this the case? Because the wages of sin are death, and all have sinned.
+A person’s soul or spirit does not go to heaven or hell at death, for the Bible plainly declares, “The soul that sinneth, it shall die.” Why is this so? Because the wages of sin are death, and all have sinned. Moreover, before His ascension, Jesus assured His disciples, “I will come again, and receive you unto Myself” (John 14:2–3). {% rf 'John 14:2-3' %}. Notice that He did not say they would come to Him at death, but rather that *He would come to them* at His Second Coming.
 
 ## Where is King David now?
 
