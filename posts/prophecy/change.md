@@ -7,23 +7,32 @@ series: sunday
 
 ## Where is truth found?
 
+> > Jesus saith unto him, *I am the way, the truth, and the life*: no man cometh unto the Father, but by me.
+{% ct 'John 14:6' %}
+
+> *God is not a man, that he should lie*; neither the son of man, that he should repent: hath he said, and shall he not do it? or hath he spoken, and shall he not make it good?
+{% ct 'Numbers 23:19' %}
+
 > Sanctify them through thy truth: *thy word is truth*.
 {% ct 'John 17:17' %}
 
 > Seeing *ye have purified your souls in obeying the truth through the Spirit* unto unfeigned love of the brethren, see that ye love one another with a pure heart fervently: being born again, not of corruptible seed, but of incorruptible, *by the word of God, which liveth and abideth for ever*. For all flesh is as grass, and all the glory of man as the flower of grass. The grass withereth, and the flower thereof falleth away: but the word of the Lord endureth for ever. And *this is the word which by the gospel is preached unto you*.
 {% ct '1 Peter 1:22-25' %}
 
-Truth is revealed in the Bible, the [Word of God](/posts/basics/bible.md).
+Truth is personified in Jesus and revealed in His Word, [the Bible](/posts/basics/bible.md). Apart from the small number who were able to see and hear it embodied in Jesus, truth is preserved for the rest of us in the written records of the Old and New Testaments. It may seem unfair, but we must remember that the majority rejected Him, not realizing that He was indeed the Messiah, the Son of God. Let us also remember the words of Jesus Himself to the unbelieving Thomas: “Because thou hast seen me, thou hast believed; blessed are they that have not seen, and yet have believed” {% rf 'John 20:29' %}.
 
-## What advice does the Bible give regarding truth?
+## What else can we learn about truth?
 
-> Buy the truth, and *sell it not*; also wisdom, and instruction, and understanding.
+> Ho, *every one that thirsteth, come ye to the waters, and he that hath no money; come ye, buy, and eat; yea, come, buy wine and milk without money and without price*. Wherefore do ye spend money for that which is not bread? and your labour for that which satisfieth not? hearken diligently unto me, and eat ye that which is good, and let your soul delight itself in fatness. Incline your ear, and come unto me: hear, and your soul shall live; and I will make an everlasting covenant with you, even the sure mercies of David.
+{% ct 'Isaiah 55:1-3' %}
+
+> *Buy the truth, and sell it not*; also wisdom, and instruction, and understanding.
 {% ct 'Proverbs 23:23' %}
 
 > Again, the kingdom of heaven is like unto a merchant man, seeking goodly pearls: who, *when he had found one pearl of great price, went and sold all that he had, and bought it*.
 {% ct 'Matthew 13:45' %}
 
-Some are willing to sacrifice everything for the truth they find in God’s Word, but could personal gain, convenience, or even persecution cause others to sell the truth?
+Truth is a free gift that can be obtained “without money and without price” by the poorest and the richest; yet, because we live in a world where good and evil are at war, error and deception strive for supremacy over truth. Due to Satan’s incessant warfare against it, truth often brings reproach, inconvenience, and sacrifice into the lives of those who, having found it in God’s Word, consider it better than gold and sweeter than honey. Some are willing to sacrifice everything for it, while personal gain, convenience, or even persecution causes others to abandon it.
 
 ## Does Jesus change?
 
