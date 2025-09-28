@@ -67,7 +67,7 @@ Since Jesus cannot change, His law cannot change either, for it is a [reflection
 > *Thus the heavens and the earth were finished*, and all the host of them. And on the seventh day God ended his work which he had made; and he rested on the seventh day from all his work which he had made. And *God blessed the seventh day, and sanctified it: because that in it he had rested from all his work which God created and made*.
 {% ct 'Genesis 2:1-3' %}
 
-Part of the Ten Commandments God gave to Moses on Mount Sinai is the fourth commandment, established at the end of the very first week of creation. The seventh-day Sabbath is a monument of time, both a weekly reminder of our Creator God and a weekly testimony of our allegiance to Him. Unlike a physical one, a time-based monument is universally accessible to all, regardless of location, thus eliminating the need for expensive pilgrimages, for it simply comes to us.
+Part of the Ten Commandments that God gave to Moses on Mount Sinai is the seventh-day Sabbath, although God sanctified the day in the very first week of creation. The fourth commandment is a monument in time—a weekly reminder of our Creator God and an opportunity to acknowledge Him as Lord of our lives. The beauty of a time-based monument is its universal accessibility to all, regardless of location, who choose to receive its blessing of rest in God.
 
 ## Did Jesus keep it? Was it kept after His ascension?
 
