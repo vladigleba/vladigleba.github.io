@@ -5,7 +5,7 @@ date: 2025-01-20
 series: sunday
 ---
 
-## Where is truth found?
+## What is truth?
 
 > > Jesus saith unto him, *I am the way, the truth, and the life*: no man cometh unto the Father, but by me.
 {% ct 'John 14:6' %}
@@ -19,7 +19,7 @@ series: sunday
 > Seeing *ye have purified your souls in obeying the truth through the Spirit* unto unfeigned love of the brethren, see that ye love one another with a pure heart fervently: being born again, not of corruptible seed, but of incorruptible, *by the word of God, which liveth and abideth for ever*. For all flesh is as grass, and all the glory of man as the flower of grass. The grass withereth, and the flower thereof falleth away: but the word of the Lord endureth for ever. And *this is the word which by the gospel is preached unto you*.
 {% ct '1 Peter 1:22-25' %}
 
-Truth is personified in Jesus and revealed in His Word, [the Bible](/posts/basics/bible.md). Apart from the small number who were able to see and hear it embodied in Jesus, truth is preserved for the rest of us in the written records of the Old and New Testaments. It may seem unfair, but we must remember that the majority rejected Him, not realizing that He was indeed the Messiah, the Son of God. Let us also remember the words of Jesus Himself to the unbelieving Thomas: “Because thou hast seen me, thou hast believed; blessed are they that have not seen, and yet have believed” {% rf 'John 20:29' %}.
+Truth is personified in Jesus and revealed in His Word, [the Bible](/posts/basics/bible.md). Apart from the small number who were able to see and hear it embodied in Jesus, truth is preserved for the rest of us in the Old and New Testaments. It may seem unfair, but we must remember that the majority rejected Him, not realizing that He was indeed the Messiah, the Son of God. Let us also remember the words of Jesus Himself to the unbelieving Thomas: “Because thou hast seen me, thou hast believed; blessed are they that have not seen, and yet have believed” {% rf 'John 20:29' %}.
 
 ## What else can we learn about truth?
 
@@ -32,22 +32,19 @@ Truth is personified in Jesus and revealed in His Word, [the Bible](/posts/basic
 > Again, the kingdom of heaven is like unto a merchant man, seeking goodly pearls: who, *when he had found one pearl of great price, went and sold all that he had, and bought it*.
 {% ct 'Matthew 13:45' %}
 
-Truth is a free gift that can be obtained “without money and without price” by the poorest and the richest; yet, because we live in a world where good and evil are at war, error and deception strive for supremacy over truth. Due to Satan’s incessant warfare against it, truth often brings reproach, inconvenience, and sacrifice into the lives of those who, having found it in God’s Word, consider it better than gold and sweeter than honey. Some are willing to sacrifice everything for it, while personal gain, convenience, or even persecution causes others to abandon it.
+Truth is a free gift that can be obtained “without money and without price” by the poorest and the richest; yet, because we live in a world where good and evil are at war, error and deception strive for supremacy over truth. Due to Satan’s incessant warfare against it, truth often brings reproach, inconvenience, and sacrifice into the lives of those who, having found it in God’s Word, consider it better than gold and sweeter than honey. Some are willing to sacrifice everything for it, while personal gain, convenience, or persecution causes others to abandon it.
 
 ## Does Jesus change?
 
 > Jesus Christ the *same yesterday, and to day, and for ever*.
 {% ct 'Hebrews 13:8' %}
 
-> My covenant will I not break, nor *alter the thing that is gone out of my lips*.
-{% ct 'Psalm 89:34' %}
-
 ## What were the Ten Commandments written on?
 
-> And he gave unto Moses, when he had made an end of communing with him upon mount Sinai, two tables of testimony, *tables of stone*, written with the finger of God.
+> And he gave unto Moses, when he had made an end of communing with him upon mount Sinai, two tables of testimony, *tables of stone, written with the finger of God*.
 {% ct 'Exodus 31:18' %}
 
-God wrote the Ten Commandments Himself on tablets of stone to illustrate their unchanging, eternal nature.
+God wrote the Ten Commandments Himself on tablets of stone to demonstrate their unchanging and eternal nature.
 
 ## What did Jesus say about the law?
 
@@ -57,9 +54,12 @@ God wrote the Ten Commandments Himself on tablets of stone to illustrate their u
 > And *it is easier for heaven and earth to pass*, than one tittle of the law to fail.
 {% ct 'Luke 16:17' %}
 
-Because Jesus cannot change, His law cannot change either since it is a [reflection of His character](/posts/gospel/law.md).
+> My covenant will I not break, nor *alter the thing that is gone out of my lips*.
+{% ct 'Psalm 89:34' %}
 
-## What’s part of the law? When was it established?
+Since Jesus cannot change, His law cannot change either, for it is a [reflection of His character](/posts/gospel/law.md#what-is-gods-law-a-reflection-of). Scripture declares that He is love {% rf '1 John 4:8' %}, and love is the fulfillment of His law {% rf 'Romans 13:10; Matthew 22:37-40' %}.
+
+## What is part of His law? When was it established?
 
 > *Remember the sabbath day, to keep it holy*. Six days shalt thou labour, and do all thy work: but the seventh day is the sabbath of the LORD thy God: in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates: *for in six days the LORD made heaven and earth, the sea, and all that in them is, and rested the seventh day: wherefore the LORD blessed the sabbath day, and hallowed it*.
 {% ct 'Exodus 20:8-11' %}
@@ -67,7 +67,7 @@ Because Jesus cannot change, His law cannot change either since it is a [reflect
 > *Thus the heavens and the earth were finished*, and all the host of them. And on the seventh day God ended his work which he had made; and he rested on the seventh day from all his work which he had made. And *God blessed the seventh day, and sanctified it: because that in it he had rested from all his work which God created and made*.
 {% ct 'Genesis 2:1-3' %}
 
-Part of the Ten Commandments given to Moses on Mount Sinai was the fourth commandment regarding the seventh day Sabbath, but the Sabbath was actually established at the end of the very first week of creation. It was to be a monument of time, a weekly reminder to the human race of their Creator God and a weekly testimony of their allegiance to Him. Unlike a physical monument, this was a universally accessible one that any person could honor, regardless of his or her location.
+Part of the Ten Commandments God gave to Moses on Mount Sinai is the fourth commandment, established at the end of the very first week of creation. The seventh-day Sabbath is a monument of time, both a weekly reminder of our Creator God and a weekly testimony of our allegiance to Him. Unlike a physical one, a time-based monument is universally accessible to all, regardless of location, thus eliminating the need for expensive pilgrimages, for it simply comes to us.
 
 ## Did Jesus keep it? Was it kept after His ascension?
 
