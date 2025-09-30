@@ -69,45 +69,64 @@ Since Jesus cannot change, His law cannot change either, for it is a [reflection
 
 Part of the Ten Commandments that God gave to Moses on Mount Sinai is the seventh-day Sabbath, although God sanctified the day in the very first week of creation. The fourth commandment is a monument in time—a weekly reminder of our Creator God and an opportunity to acknowledge Him as Lord of our lives. The beauty of a time-based monument is its universal accessibility to all, regardless of location, who choose to receive its blessing of rest in God.
 
-## Did Jesus keep it? Was it kept after His ascension?
+## Did Jesus keep it?
 
 > And he came to Nazareth, where he had been brought up: and, *as his custom was, he went into the synagogue on the sabbath day*, and stood up for to read.
 {% ct 'Luke 4:16' %}
 
+> And it came to pass also *on another sabbath, that he entered into the synagogue and taught*: and there was a man whose right hand was withered.
+{% ct 'Luke 6:6' %}
+
+> And they went into Capernaum; and *straightway on the sabbath day he entered into the synagogue*, and taught.
+{% ct 'Mark 1:21' %}
+
+## Was it kept after His ascension?
+
+> But when they departed from Perga, they came to Antioch in Pisidia, and *went into the synagogue on the sabbath day*, and sat down.
+{% ct 'Acts 13:14' %}
+
 > And when the Jews were gone out of the synagogue, the *Gentiles besought that these words might be preached to them the next sabbath*. Now when the congregation was broken up, many of the Jews and religious proselytes followed Paul and Barnabas: who, speaking to them, persuaded them to continue in the grace of God. And *the next sabbath day came almost the whole city together to hear the word of God*.
 {% ct 'Acts 13:42-44' %}
 
-In the Biblical context the Sabbath is always used in reference to the seventh day. God defined it as the seventh day Sabbath when He first instituted it, and it has been so since. Jesus kept it, His followers kept it, and it continued to be kept by the believers after His ascension.
+> And from thence to Philippi, which is the chief city of that part of Macedonia, and a colony: and we were in that city abiding certain days. And *on the sabbath we went out of the city by a river side*, where prayer was wont to be made; and we sat down, and spake unto the women which resorted thither.
+{% ct 'Acts 16:12-13' %}
+
+> After these things Paul departed from Athens, and came to Corinth; … And *he reasoned in the synagogue every sabbath*, and persuaded the Jews and the Greeks.
+{% ct 'Acts 18:1,4' %}
+
+In the Bible, the weekly Sabbath refers to the seventh day of the week {% rf 'Exodus 20:10' %}. Scripture testifies that Jesus Himself kept it, and His apostles continued to keep it after His ascension.
 
 ## What warning did Paul give?
 
 > Take heed therefore unto yourselves, and to all the flock, over the which the Holy Ghost hath made you overseers, to feed the church of God, which he hath purchased with his own blood. For I know this, that *after my departing shall grievous wolves enter in among you*, not sparing the flock. *Also of your own selves shall men arise, speaking perverse things, to draw away disciples after them*. Therefore watch, and remember, that by the space of three years I ceased not to warn every one night and day with tears.
 {% ct 'Acts 20:28-31' %}
 
-Paul warned that people would arise within the church, meaning they would profess to be believers, speaking perverse things and drawing other believers away after themselves.
+Paul warned that people would arise within the church—professing to be Christians—who would speak perverse things to draw believers away from the truth.
 
 ## Was this prophesied in advance?
 
 > And out of one of them came forth a little horn, which waxed exceeding great, toward the south, and toward the east, and toward the pleasant land. And it waxed great, even to the host of heaven; and it cast down some of the host and of the stars to the ground, and stamped upon them. Yea, *he magnified himself even to the prince of the host*, and by him the daily sacrifice was taken away, and the place of his sanctuary was cast down. And an host was given him against the daily sacrifice by reason of transgression, and *it cast down the truth to the ground*; and it practised, and prospered.
 {% ct 'Daniel 8:9-12' %}
 
-Daniel prophesied a power would arise that would magnify itself even against God Himself to the point of trampling on the truth of the Bible, and it would be successful in doing these things.
+Daniel prophesied that a power, symbolized by a little horn, would arise and exalt itself in opposition to God’s authority, trampling on the truths of the Bible.
 
 ## Does Daniel have additional details?
 
-> And he shall *speak great words against the most High*, and shall *wear out the saints* of the most High, and *think to change times and laws*: and they shall be given into his hand until a time and times and the dividing of time.
-{% ct 'Daniel 7:25' %}
+> And the ten horns out of this kingdom are ten kings that shall arise: and another shall rise after them; and he shall be diverse from the first, and he shall subdue three kings. And he shall *speak great words against the most High*, and shall *wear out the saints* of the most High, and *think to change times and laws*: and they shall be given into his hand until a time and times and the dividing of time.
+{% ct 'Daniel 7:24-25' %}
 
-This is an echo of Paul’s warning about men arising “speaking perverse things.” Again, here’s [a power](/posts/prophecy/antichrist.md) that would challenge God’s authority, persecute His followers, and change times and laws. There is only one commandment that is both a time and a law: the fourth one. 
+This verse echoes Paul’s warning about men arising “speaking perverse things,” as it describes [a power](/posts/prophecy/antichrist.md) that would “speak great words against the most High.” This power, again symbolized by a horn,[^1] would challenge God’s authority, persecute His followers for 1,260 years, and seek to change times and laws. There is only one commandment that is both a law and a measure of time: the fourth. 
 
-The first seeds for its change were planted during Constantine’s conversion to Christianity in 312 A.D. when he passed a law declaring Sunday, which was the pagan day of sun worship, as the day of rest across the Roman Empire. That seed took root in 363 A.D. when the Council of Laodicea urged Christians to keep Sunday as their rest day, while prohibiting them from resting on Saturday, the seventh day Sabbath. Thus, the fourth commandment of God was changed—from honoring the seventh-day Sabbath established at creation to [honoring Sunday](/posts/prophecy/mark.md)—and the rest is history.
+The first seeds of its alteration were planted when Constantine converted to Christianity in 312 AD, for after becoming Emperor, he granted Christian bishops influence in the legislative process. Under their guidance, he soon passed the first Sunday law in 321 AD, declaring Sunday—the pagan day of sun worship—the official day of rest across the Roman Empire. This was reinforced in 363 AD, when the Council of Laodicea urged Christians to observe Sunday as their rest day while prohibiting them from resting on Saturday. Thus, the fourth commandment of God was effectively changed—from honoring the biblical seventh-day Sabbath established at creation to observing Sunday—and the rest is history.
+
+[^1]: This is the same power as the one described in {% rf 'Daniel 8:9-12' false %}, except that in {% rf 'Daniel 7:24-25' false %} it rises out of the ten tribes that divided the Roman Empire, whereas in Daniel 8 it rises out of one of the four Grecian kingdoms (Pergamum) that emerged after the death of Alexander the Great. Because Roman religion (Mithraism) and culture were largely borrowed from Greece, it is not contradictory to say that this power emerged from both the Grecian and Roman Empires.
 
 ## Did Jesus warn about this?
 
 > Thus have *ye made the commandment of God of none effect by your tradition*. Ye hypocrites, well did Esaias prophesy of you, saying, This people draweth nigh unto me with their mouth, and honoureth me with their lips; but their heart is far from me. But in vain they do worship me, *teaching for doctrines the commandments of men*.
 {% ct 'Matthew 15:6-9' %}
 
-The elevation of human-made commandments and tradition above the truth of the Bible was already a problem in Jesus’ time, and He warned against such hypocrisy.
+The elevation of human-made commandments and traditions above the truth of the Bible was already a problem in Jesus’ time, and He warned against such hypocrisy.
 
 ## How many lawgivers are there?
 
@@ -125,7 +144,6 @@ There is only one Lawgiver—God; however, as we have seen, there is a second en
 {% ct 'Isaiah 8:16' %}
 
 In the last days there will be a sealing of God’s people in their foreheads, and Isaiah says it’s the law that’s sealed among His people. This sealing of the law in the forehead is God’s people making an unwavering decision in their mind to honor the authority of God’s law in their life as supreme and above the laws of men, no matter the cost.
-
 
 ## What is said about the saints?
 
