@@ -25,7 +25,7 @@ The beautiful thing about God’s character is that He not only knows the future
 
 As we learned in a previous study, the beast that rose from the sea represents the Roman papacy, which held influence and power over the world for 42 months. The papacy received a [deadly wound](/posts/prophecy/mark.md) at the end of this period in 1798, when Pope Pius VI was taken captive by Napoleon Bonaparte’s general, Louis-Alexandre Berthier.
 
-By the way, the beast represented in {% rf 'Revelation 13:2' false %} is a conglomerate of the [four beasts](/posts/prophecy/antichrist.md) described in {% rf 'Daniel 7:2-8' false %}, because Romanism has adopted the works-based religion of Babylon, the Persian system of government (based on the structure of Mithraism), the philosophy of Greece (for example, natural law and the elevation of reason), and the legal system of Rome (for example, canon law).
+By the way, the beast represented in {% rf 'Revelation 13:2' false %} is a conglomerate of the [four beasts](/posts/prophecy/antichrist.md) described in {% rf 'Daniel 7:2-8' false %}, because Catholicism has adopted the works-based religion of Babylon, the Persian system of government (based on the structure of Mithraism), the philosophy of Greece (for example, natural law and the elevation of reason), and the legal system of Rome (for example, canon law).
 
 ## What power is symbolized next?
 
