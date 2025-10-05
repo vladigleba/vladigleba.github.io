@@ -10,7 +10,7 @@ series: sunday
 > Wherefore the children of Israel shall keep the sabbath, to observe the sabbath throughout their generations, *for a perpetual covenant. It is a sign between me and the children of Israel for ever*: for in six days the LORD made heaven and earth, and on the seventh day he rested, and was refreshed. And he gave unto Moses, when he had made an end of communing with him upon mount Sinai, two tables of testimony, *tables of stone*, written with the finger of God.
 {% ct 'Exodus 31:16-18' %}
 
-The Ten Commandments, of which the Sabbath is a part, were written by the finger of God on tablets of stone rather than on materials subject to decay, such as wood or clay, as a testament to their timelessness. In contrast, Jesus wrote the sins of the woman caught in adultery in the dust {% rf 'John 8:1-11' %}, a beautiful testament to God’s willingness to forgive all who repent. Sin is temporary and will be [blotted out](/posts/prophecy/millennium.md) of the universe, but the law that God desires to write in our hearts is eternal {% rf 'Jeremiah 31:33; Matthew 5:17-18' %}.
+The Ten Commandments, of which the Sabbath is a part, were written by the finger of God on tablets of stone rather than on materials subject to decay, such as wood or clay, as a testament to their timelessness {% rf 'Matthew 5:17-18' %}.
 
 ## Wasn’t the Sabbath for the Jewish people only?
 
