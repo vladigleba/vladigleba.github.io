@@ -121,21 +121,33 @@ In fact, Mithraism was the Persian name for Babylonian sun worship, for Mithra w
 
 There is only one commandment that is both a law and a measure of time: the fourth. The first seeds of its alteration were planted when Constantine converted to Christianity in 312 AD, for after becoming Emperor, he granted Christian bishops influence in the legislative process. Under their guidance, he soon passed the first Sunday law in 321 AD, declaring Sunday—the pagan day of sun worship—the official day of rest across the Roman Empire. This was reinforced in 363 AD, when the Council of Laodicea urged Christians to observe Sunday as their rest day while prohibiting them from resting on Saturday. Thus, the fourth commandment of God was effectively changed—from honoring the biblical seventh-day Sabbath established at creation to observing Sunday—and the rest is history.
 
-[^1]: Murl Vance, “The Counterfeit Memorial,” *Signs of the Times*, July 29, 1940.
+[^1]: Murl Vance, “The Counterfeit Memorial,” *Signs of the Times*, July 29, 1940, p. 4
 
 ## Did Jesus warn about this?
 
 > Thus have *ye made the commandment of God of none effect by your tradition*. Ye hypocrites, well did Esaias prophesy of you, saying, This people draweth nigh unto me with their mouth, and honoureth me with their lips; but their heart is far from me. But in vain they do worship me, *teaching for doctrines the commandments of men*.
 {% ct 'Matthew 15:6-9' %}
 
-The elevation of human-made commandments and traditions above the truth of the Bible was already a problem in Jesus’ time, and He warned against such hypocrisy.
+The elevation of human-made commandments and traditions above the truth of the Bible was already a problem in Jesus’ time, and He warned against it. Why? Because it is idolatry. Idolatry is traditionally defined as the worship of idols—human-made images. In the same way, Sunday sacredness is a human-made tradition. Just as God did not create the sun as an object of worship, He did not establish the first day as a day of worship; therefore, there is no real difference between worshiping the object and venerating the day.
+
+## What else was changed besides the fourth commandment?
+
+> And he shall speak great words against the most High, and shall wear out the saints of the most High, and think to change *times and laws*: and they shall be given into his hand until a time and times and the dividing of time.
+{% ct 'Daniel 7:25' %}
+
+The word “laws” is plural, and indeed the Sabbath commandment was not the only one that was changed. The Catholic Church removed the second commandment, which prohibits the worship of images, and divided the tenth commandment into two. However, it is the alteration of the fourth commandment that stands out most, because the Sabbath is the [mark of God’s authority](/posts/basics/sabbath.md#which-commandment-identifies-the-creator-god), identifying Him as the Creator. Naturally, this raises the question: What is the Catholic Church’s mark of authority?
+
+> Now in the matter of Sabbath observance the Protestant rule of Faith is utterly unable to explain the substitution of the Christian Sunday for the Jewish Saturday. It has been changed. The Bible still teaches that the Sabbath or Saturday should be kept holy. There is no authority in the New Testament for the substitution of Sunday for Saturday. Surely it is an important matter. It stands there in the Bible as one of the Ten Commandments of God. *There is no authority in the Bible for abrogating this Commandment, or for transferring its observance to another day of the week.* …
+>
+> We have in the authoritative voice of the Church the voice of Christ Himself. *The Church is above the Bible; and this transference of Sabbath observance from Saturday to Sunday is proof positive of that fact.* Deny the authority of the Church and you have no adequate or reasonable explanation or justification for the substitution of Sunday for Saturday in the Third—Protestant Fourth—Commandment of God.
+{% ct '"Sabbath Observance," The Catholic Record, September 1, 1923, p. 4.' %}
 
 ## How many lawgivers are there?
 
 > There is *one lawgiver*, who is able to save and to destroy: who art thou that judgest another?
 {% ct 'James 4:12' %}
 
-There is only one Lawgiver—God; however, as we have seen, there is a second entity claiming to be a lawgiver. Jesus warned, “And fear not them which kill the body, but are not able to kill the soul: but rather fear him [God] which is able to destroy both soul and body in hell” {% rf 'Matthew 10:28' %}. One can kill the body, but the Other has power to raise it from the dead {% rf '1 Thessalonians 4:16; 1 Corinthians 15:52' %}. Whom would you rather obey?
+There is only one Lawgiver—God; however, we have learned there is a second entity claiming to be a lawgiver. Jesus warned, “And fear not them which kill the body, but are not able to kill the soul: but rather fear him [God] which is able to destroy both soul and body in hell” {% rf 'Matthew 10:28' %}. One can kill the body, but the Other has power to raise it from the dead {% rf '1 Thessalonians 4:16; 1 Corinthians 15:52' %}. Whom would you rather obey?
 
 ## What role will the law play in the last days?
 
