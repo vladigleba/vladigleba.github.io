@@ -34,9 +34,7 @@ God the Father created all things by His Son Jesus, who was fulfilling the will 
 > Remember the sabbath day, to keep it holy. Six days shalt thou labour, and do all thy work: but the seventh day is the sabbath of the LORD thy God: in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates: *for in six days the LORD made heaven and earth, the sea, and all that in them is, and rested the seventh day*: wherefore the LORD blessed the sabbath day, and hallowed it.
 {% ct 'Exodus 20:8-11' %}
 
-The fourth commandment begins with “remember” because God knew His Sabbath would be forgotten. It then identifies Him as the Creator of all things, thus laying the foundation for the invitation to all people to acknowledge Him as Creator by resting on the Sabbath day, just as He rested on the seventh day as an example for us.
-
-Moreover, the fourth commandment contains the three basic elements of a seal: name (“the Lord”), title (“your God”), and territory (“heaven and earth).” This uniquely identifies God as the author of the other nine commandments and provides the reason for His authority. In other words, the authority of all Ten Commandments rests on the fourth. Without it, any being could claim authorship of the other nine, and thus the Decalogue would lose its divine authority and rightful claim over our lives.
+The fourth commandment begins with the word “remember” because God knew His Sabbath would be forgotten. It then identifies Him as the Creator of all things, thus providing the reason He has a claim to our worship, which all who rest on the Sabbath day acknowledge. The Sabbath commandment also contains the three basic elements of a seal: name (“the Lord”), title (“your God”), and territory (“heaven and earth”). This uniquely identifies God as the author of the other nine commandments and establishes His authority. In other words, the authority of the Decalogue rests on the fourth commandment; without it, anyone could claim authorship of the other nine.
 
 ## What else can I learn about the Sabbath from Genesis 2?
 
