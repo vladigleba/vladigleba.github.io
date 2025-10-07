@@ -180,6 +180,11 @@
     font-size: 17px;
   }
 
+  .control-wrapper {
+    gap: 10px;
+    max-width: 370px;
+  }
+
   li .tag {
     font-size: 14px;
   }

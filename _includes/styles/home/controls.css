@@ -2,9 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 30px;
+  gap: 20px;
+  margin: 0 auto 35px;
   flex-wrap: wrap;
+  background: rgb(248, 248, 248);
+  padding: 10px 0;
+  border-radius: var(--default-radius);
+  border: 1px solid rgb(229, 229, 229);
+  max-width: 540px;
 }
 
 /* toggle control */
@@ -14,10 +19,9 @@
   gap: 12px;
 }
 
+.posts-sort select,
 .switch-label {
   font-weight: 500;
-  color: var(--gray-color);
-  user-select: none;
 }
 
 .switch {
@@ -38,10 +42,10 @@
   position: absolute;
   cursor: pointer;
   inset: 0;
-  background-color: #e6e6e6;
+  background-color: rgb(209, 213, 219);
   border-radius: 999px;
   transition: background-color 180ms ease, box-shadow 180ms ease;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.06);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px inset;
 }
 
 .switch .slider::before {
@@ -49,11 +53,11 @@
   position: absolute;
   height: 21px;
   width: 21px;
-  left: 3px;
+  left: 4px;
   top: 3px;
   background: white;
   border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px;
   transition: transform 180ms cubic-bezier(.2,.9,.3,1);
 }
 
@@ -63,7 +67,7 @@
 }
 
 .switch input:checked + .slider::before {
-  transform: translateX(25px);
+  transform: translateX(23px);
 }
 
 .switch input:focus + .slider {
@@ -72,23 +76,24 @@
 
 /* sort control */
 .posts-sort {
-  display: none;
-  margin-left: 0;
+  display: inline-flex;
   align-items: center;
   gap: 12px;
-  margin-top: 12px;
-}
-
-.posts-sort.show {
-  display: inline-flex;
-  margin-top: 0;
   margin-left: 8px;
 }
 
+.posts-sort select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: rgb(248, 248, 248);
+}
+
 .posts-sort select {
+  -webkit-appearance: none;
+  appearance: none;
   font-family: inherit;
-  padding: 6px 10px;
-  border-radius: var(--default-radius);
-  border: 1px solid var(--light-border, #d0d0d0);
-  color: var(--gray-color);
+  padding: 2px 30px 3px 12px;
+  border-radius: 6px;
+  border: 1px solid rgb(209, 213, 219);
+  background: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") right 0.4rem center no-repeat white;
 }

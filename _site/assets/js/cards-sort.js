@@ -60,15 +60,12 @@
     const list = document.querySelector(STANDALONE_LIST);
     if (!select || !switchEl || !sortWrapper || !list) return;
 
-    // show/hide sort control depending on toggle state
-    function updateSortControlVisibility() {
-      const grouped = switchEl.checked; // when checked we group by series
-      sortWrapper.classList.toggle('show', !grouped); // show sort when not grouped
+    function updateSortControl() {
+      select.disabled = switchEl.checked; // disable select when grouped
     }
 
-    // add listener for toggle switch
-    updateSortControlVisibility();
-    switchEl.addEventListener('change', updateSortControlVisibility);
+    updateSortControl();
+    switchEl.addEventListener('change', updateSortControl);
 
     // record original order in data-reading-order if not present
     Array.from(list.children).forEach((child, idx) => {
@@ -89,7 +86,7 @@
       select.value = saved;
       sortListBy(list, saved);
       if (liveRegion) liveRegion.textContent = `Sorted by ${select.options[select.selectedIndex].text}`;
-      updateSortControlVisibility(); // ensure visibility reflects current switch state
+      updateSortControl(); // ensure visibility reflects current switch state
     }
 
     // sort on select change

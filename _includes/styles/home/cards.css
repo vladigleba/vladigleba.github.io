@@ -84,9 +84,3 @@ link and description
 .list a:hover {
   opacity: 0.85;
 }
-
-li .description {
-  color: black;
-  font-weight: 500;
-  margin-top: 20px;
-}
