@@ -20,9 +20,7 @@
   color: var(--gray-color);
 }
 
-/*
-featured and latest
-*/
+/* featured and latest */
 
 li.featured,
 li.latest {
@@ -33,19 +31,11 @@ li.latest {
 }
 
 li.featured .tag,
-li.latest,
-li.latest a,
-li.latest .description {
+li.latest .tag {
   color: white !important;
 }
 
-li.featured {
-  background-color: var(--light-background);
-}
-
-/* 
-tag
-*/
+/* tag */
 
 li .tag {
   border-radius: var(--default-radius);
@@ -53,7 +43,7 @@ li .tag {
   display: inline-block;
   margin-bottom: 8px;
   text-transform: uppercase;
-  padding: 1.5px var(--tag-horizontal-padding);
+  padding: 2px var(--tag-horizontal-padding);
   color: black;
 }
 
@@ -67,13 +57,7 @@ li.featured .tag {
   opacity: 0.8;
 }
 
-li.latest .tag {
-  background-color: white;
-}
-
-/* 
-link and description
-*/
+/* link and description */
 
 .list a {
   text-decoration: none;
