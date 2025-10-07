@@ -2,7 +2,7 @@
 title: Divinity of Christ
 description: Is Jesus God, or was He just a prophet?  What evidence does the Bible give regarding His divinity?
 date: 2025-01-05
-series: messiah
+series: Messiah
 ---
 
 ## What is another name for Jesus? What does it mean?

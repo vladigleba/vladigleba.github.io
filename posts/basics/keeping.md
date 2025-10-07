@@ -2,7 +2,7 @@
 title: Keeping the Sabbath
 description: Discover biblical guidance on keeping God’s seventh-day Sabbath the way He intended it.
 date: 2025-01-18
-series: sabbath
+series: Sabbath
 ---
 
 ## What does Isaiah say about keeping the Sabbath?

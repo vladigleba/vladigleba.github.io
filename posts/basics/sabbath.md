@@ -2,7 +2,7 @@
 title: God’s Holy Rest Day
 description: A day was set apart by God on the first week of creation. Why? Does it still have significance today?
 date: 2025-01-17
-series: sabbath
+series: Sabbath
 ---
 
 ## What is the first angel’s message in Revelation 14?

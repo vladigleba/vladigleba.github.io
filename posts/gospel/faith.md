@@ -2,7 +2,7 @@
 title: Walking in Faith
 description: Faith is a central theme in the Bible, but what is it really? Does God want us to have blind faith?
 date: 2025-01-08
-series: salvation
+series: Salvation
 ---
 
 ## What is faith?

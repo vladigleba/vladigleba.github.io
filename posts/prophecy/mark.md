@@ -2,7 +2,7 @@
 title: The Mark of the Beast
 description: Is it a barcode? A microchip perhaps? Discover what the Bible really says about this misunderstood mark.
 date: 2025-01-28
-series: antichrist
+series: Antichrist
 ---
 
 ## How does the Bible describe the beast?

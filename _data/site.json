@@ -18,35 +18,35 @@
     }
   },
   "series": {
-    "messiah": {
+    "Messiah": {
       "title": "Jesus, the Messiah",
       "color": "rgb(101,102,166)"
     },
-    "salvation": {
+    "Salvation": {
       "title": "Understanding Salvation",
       "color": "rgb(143,102,126)"
     },
-    "secondComing": {
+    "SecondComing": {
       "title": "Second Coming",
       "color": "rgb(57,96,136)"
     },
-    "judgment": {
+    "Judgment": {
       "title": "Facing Judgment",
       "color": "rgb(255,121,100)"
     },
-    "sabbath": {
+    "Sabbath": {
       "title": "Bible Sabbath",
       "color": "rgb(205,114,114)"
     },
-    "sunday": {
+    "Sunday": {
       "title": "Counterfeit Sabbath",
       "color": "rgb(155,114,186)"
     },
-    "antichrist": {
+    "Antichrist": {
       "title": "Antichrist’s Mark",
       "color": "rgb(33,153,163)"
     },
-    "babylon": {
+    "Babylon": {
       "title": "Coming Out of Babylon",
       "color": "rgb(170,104,150)"
     }

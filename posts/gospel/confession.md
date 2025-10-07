@@ -2,7 +2,7 @@
 title: Receiving Forgiveness
 description: Confession and forgiveness of sins is central to the plan of salvation. Have you experienced it?
 date: 2025-01-07
-series: salvation
+series: Salvation
 ---
 
 ## Is God willing to forgive?
