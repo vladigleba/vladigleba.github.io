@@ -26,7 +26,7 @@ featured and latest
 
 li.featured,
 li.latest {
-  grid-row: auto / span 2;
+  /* grid-row: auto / span 2; */
   border-radius: var(--default-radius);
   text-align: center;
   justify-content: center;
@@ -51,9 +51,9 @@ li .tag {
   border-radius: var(--default-radius);
   font-weight: 700;
   display: inline-block;
-  margin-bottom: 2px;
+  margin-bottom: 8px;
   text-transform: uppercase;
-  padding: 3px var(--tag-horizontal-padding);
+  padding: 1.5px var(--tag-horizontal-padding);
   color: black;
 }
 
@@ -69,11 +69,6 @@ li.featured .tag {
 
 li.latest .tag {
   background-color: white;
-}
-
-li.featured .tag,
-li.latest .tag {
-  margin-bottom: 20px;
 }
 
 /* 

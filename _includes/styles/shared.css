@@ -48,3 +48,12 @@ th, td {
   outline: 2px solid #222;
   overflow: visible;
 }
+
+/* utility: visually hidden but accessible to screen readers */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}

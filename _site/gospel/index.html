@@ -113,12 +113,27 @@
 
 
 <div class="posts-view">
-  <div class="switch-wrapper">
-    <span class="switch-label">Group by series</span>
-    <label class="switch" for="posts-view-switch">
-      <input id="posts-view-switch" type="checkbox" aria-label="Toggle posts view">
-      <span class="slider" aria-hidden="true"></span>
-    </label>
+  <div class="control-wrapper">
+    <div class="posts-toggle">
+      <span class="switch-label">Group by series</span>
+      <label class="switch" for="posts-view-switch">
+        <input id="posts-view-switch" type="checkbox" aria-label="Toggle posts view">
+        <span class="slider" aria-hidden="true"></span>
+      </label>
+    </div>
+    
+    <div class="posts-sort">
+      <label class="switch-label" for="posts-sort-select">Sort by</label>
+      <select id="posts-sort-select" aria-label="Sort posts">
+        <option value="reading">Reading order</option>
+        <option value="updated">Recently updated</option>
+        <option value="shortest">Shortest</option>
+        <option value="longest">Longest</option>
+      </select>
+
+      <!-- live region for screen readers -->
+      <div id="posts-sort-live" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+    </div>
   </div>
 
   <ol class="list series-list">
@@ -146,9 +161,6 @@
     Gospel <span>•</span> 6 min read <span>•</span> 
     <time datetime="2025-06-08T03:01:02.000Z">Jun 7, 2025</time>
   </p>
-  
-    <p class="description">The amount of misconceptions and flat out lies about God is astounding. What is the truth about His character?</p>
-  
 </li>
 
         
@@ -173,9 +185,6 @@
     Gospel <span>•</span> 13 min read <span>•</span> 
     <time datetime="2025-07-02T04:32:45.000Z">Jul 1, 2025</time>
   </p>
-  
-    <p class="description">If God is in control, why is there so much evil in the world? How did it begin, and when will it end?</p>
-  
 </li>
 
         
@@ -214,7 +223,6 @@
     Gospel <span>•</span> 17 min read <span>•</span> 
     <time datetime="2025-06-08T03:01:02.000Z">Jun 7, 2025</time>
   </p>
-  
 </li>
 
         
@@ -239,7 +247,6 @@
     Gospel <span>•</span> 18 min read <span>•</span> 
     <time datetime="2025-09-23T04:02:34.000Z">Sep 22, 2025</time>
   </p>
-  
 </li>
 
         
@@ -268,7 +275,6 @@
     Gospel <span>•</span> 12 min read <span>•</span> 
     <time datetime="2025-05-21T03:04:45.000Z">May 20, 2025</time>
   </p>
-  
 </li>
 
         
@@ -302,7 +308,7 @@
     
   </ol>
 
-  <ol class="list standalone-list" style="display:none">
+  <ol class="list standalone-list">
     
       
     
@@ -326,9 +332,6 @@
     Gospel <span>•</span> 6 min read <span>•</span> 
     <time datetime="2025-06-08T03:01:02.000Z">Jun 7, 2025</time>
   </p>
-  
-    <p class="description">The amount of misconceptions and flat out lies about God is astounding. What is the truth about His character?</p>
-  
 </li>
 
       
@@ -351,9 +354,6 @@
     Gospel <span>•</span> 13 min read <span>•</span> 
     <time datetime="2025-07-02T04:32:45.000Z">Jul 1, 2025</time>
   </p>
-  
-    <p class="description">If God is in control, why is there so much evil in the world? How did it begin, and when will it end?</p>
-  
 </li>
 
       
@@ -370,7 +370,7 @@
 
 
 
-<li class="standalone">
+<li class="standalone" data-updated="2025-09-11T04:37:00.000Z" data-length="11">
   
     <div><span class="tag" style="color: rgb(143,102,126)">
       Understanding Salvation: 1 of 4
@@ -382,7 +382,6 @@
     Gospel <span>•</span> 11 min read <span>•</span> 
     <time datetime="2025-09-11T04:37:00.000Z">Sep 10, 2025</time>
   </p>
-  
 </li>
 
       
@@ -395,7 +394,7 @@
 
 
 
-<li class="standalone">
+<li class="standalone" data-updated="2025-09-11T04:37:00.000Z" data-length="5">
   
     <div><span class="tag" style="color: rgb(143,102,126)">
       Understanding Salvation: 2 of 4
@@ -407,7 +406,6 @@
     Gospel <span>•</span> 5 min read <span>•</span> 
     <time datetime="2025-09-11T04:37:00.000Z">Sep 10, 2025</time>
   </p>
-  
 </li>
 
       
@@ -420,7 +418,7 @@
 
 
 
-<li class="standalone">
+<li class="standalone" data-updated="2025-05-18T18:30:53.000Z" data-length="9">
   
     <div><span class="tag" style="color: rgb(143,102,126)">
       Understanding Salvation: 3 of 4
@@ -432,7 +430,6 @@
     Gospel <span>•</span> 9 min read <span>•</span> 
     <time datetime="2025-05-18T18:30:53.000Z">May 18, 2025</time>
   </p>
-  
 </li>
 
       
@@ -445,7 +442,7 @@
 
 
 
-<li class="standalone">
+<li class="standalone" data-updated="2025-06-08T03:01:02.000Z" data-length="13">
   
     <div><span class="tag" style="color: rgb(143,102,126)">
       Understanding Salvation: 4 of 4
@@ -457,7 +454,6 @@
     Gospel <span>•</span> 13 min read <span>•</span> 
     <time datetime="2025-06-08T03:01:02.000Z">Jun 7, 2025</time>
   </p>
-  
 </li>
 
       
@@ -484,7 +480,6 @@
     Gospel <span>•</span> 17 min read <span>•</span> 
     <time datetime="2025-06-08T03:01:02.000Z">Jun 7, 2025</time>
   </p>
-  
 </li>
 
       
@@ -509,7 +504,6 @@
     Gospel <span>•</span> 18 min read <span>•</span> 
     <time datetime="2025-09-23T04:02:34.000Z">Sep 22, 2025</time>
   </p>
-  
 </li>
 
       
@@ -540,7 +534,6 @@
     Gospel <span>•</span> 12 min read <span>•</span> 
     <time datetime="2025-05-21T03:04:45.000Z">May 20, 2025</time>
   </p>
-  
 </li>
 
       
@@ -589,7 +582,7 @@
       </div>
       
       <div class="last-updated">
-        Last updated <time datetime="2025-10-05T09:15:35.768Z">October 5, 2025</time>
+        Last updated <time datetime="2025-10-06T18:51:49.883Z">October 6, 2025</time>
       </div>
     <p></p>
   </div>
@@ -609,5 +602,6 @@
       }
     </script>
     <script src="/assets/js/core.js" defer=""></script>
+    <script src="/assets/js/cards-sort.js" defer=""></script>
   </body>
 </html>

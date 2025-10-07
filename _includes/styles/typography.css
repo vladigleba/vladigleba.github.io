@@ -40,6 +40,7 @@ article > header p {
   font-weight: 700;
 }
 
+.posts-sort select,
 .list p,
 .switch-label {
   font-size: 18px;

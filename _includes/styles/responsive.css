@@ -173,7 +173,8 @@
   .list a {
     font-size: 28px;
   }
-
+  
+  .posts-sort select,
   .list p,
   .switch-label {
     font-size: 17px;

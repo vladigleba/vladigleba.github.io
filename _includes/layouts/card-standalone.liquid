@@ -9,6 +9,8 @@
   {% if featured %} class="featured"
   {% elsif latest %} class="latest" style="background-color: {{ color }}"
   {% elsif seriesInfo %} class="standalone"
+  data-updated="{{ data.updated | toISO }}"
+  data-length="{{ data.length | default: 0 }}"
   {% endif %}
 >
   {% if latest %}
@@ -28,7 +30,4 @@
     {{ data.category }} <span>•</span> {{ data.length }} min read <span>•</span> 
     <time datetime="{{ data.updated | toISO }}">{{ data.updated | toLocal }}</time>
   </p>
-  {% if featured or latest %}
-    <p class="description">{{ data.description }}</p>
-  {% endif %}
 </li>

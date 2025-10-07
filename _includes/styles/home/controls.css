@@ -1,9 +1,17 @@
-.switch-wrapper {
+.control-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+/* toggle control */
+.posts-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .switch-label {
@@ -60,4 +68,27 @@
 
 .switch input:focus + .slider {
   box-shadow: 0 0 0 3px rgba(0,0,0,0.08);
+}
+
+/* sort control */
+.posts-sort {
+  display: none;
+  margin-left: 0;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.posts-sort.show {
+  display: inline-flex;
+  margin-top: 0;
+  margin-left: 8px;
+}
+
+.posts-sort select {
+  font-family: inherit;
+  padding: 6px 10px;
+  border-radius: var(--default-radius);
+  border: 1px solid var(--light-border, #d0d0d0);
+  color: var(--gray-color);
 }

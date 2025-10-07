@@ -142,6 +142,9 @@ The word “laws” is plural, and indeed the Sabbath commandment was not the on
 > We have in the authoritative voice of the Church the voice of Christ Himself. *The Church is above the Bible; and this transference of Sabbath observance from Saturday to Sunday is proof positive of that fact.* Deny the authority of the Church and you have no adequate or reasonable explanation or justification for the substitution of Sunday for Saturday in the Third—Protestant Fourth—Commandment of God.
 {% ct '"Sabbath Observance," The Catholic Record, September 1, 1923, p. 4.' %}
 
+> Of course *the Catholic Church claims that the change was her act*. It could not have been otherwise, as none in those days would have dreamed of doing anything, in matters spiritual, ecclesiastical and religious without her. *This act is a mark of her ecclesiastical power and authority in religious matters.*
+{% ct 'C. F. Thomas, Chancellor of Cardinal Gibbons, letter, October 28, 1895.' %}
+
 ## How many lawgivers are there?
 
 > There is *one lawgiver*, who is able to save and to destroy: who art thou that judgest another?

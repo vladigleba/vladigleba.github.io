@@ -113,12 +113,27 @@
 
 
 <div class="posts-view">
-  <div class="switch-wrapper">
-    <span class="switch-label">Group by series</span>
-    <label class="switch" for="posts-view-switch">
-      <input id="posts-view-switch" type="checkbox" aria-label="Toggle posts view">
-      <span class="slider" aria-hidden="true"></span>
-    </label>
+  <div class="control-wrapper">
+    <div class="posts-toggle">
+      <span class="switch-label">Group by series</span>
+      <label class="switch" for="posts-view-switch">
+        <input id="posts-view-switch" type="checkbox" aria-label="Toggle posts view">
+        <span class="slider" aria-hidden="true"></span>
+      </label>
+    </div>
+    
+    <div class="posts-sort">
+      <label class="switch-label" for="posts-sort-select">Sort by</label>
+      <select id="posts-sort-select" aria-label="Sort posts">
+        <option value="reading">Reading order</option>
+        <option value="updated">Recently updated</option>
+        <option value="shortest">Shortest</option>
+        <option value="longest">Longest</option>
+      </select>
+
+      <!-- live region for screen readers -->
+      <div id="posts-sort-live" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+    </div>
   </div>
 
   <ol class="list series-list">
@@ -154,9 +169,6 @@
     Prophecy <span>•</span> 18 min read <span>•</span> 
     <time datetime="2025-07-02T04:32:45.000Z">Jul 1, 2025</time>
   </p>
-  
-    <p class="description">Delve into a remarkable prophecy about the rise and fall of kingdoms. What does the future hold for Europe?</p>
-  
 </li>
 
         
@@ -219,7 +231,6 @@
     Prophecy <span>•</span> 14 min read <span>•</span> 
     <time datetime="2025-09-06T04:34:20.000Z">Sep 5, 2025</time>
   </p>
-  
 </li>
 
         
@@ -260,9 +271,6 @@
     Prophecy <span>•</span> 28 min read <span>•</span> 
     <time datetime="2025-10-01T04:14:42.000Z">Sep 30, 2025</time>
   </p>
-  
-    <p class="description">Will the nation that has become a beacon of freedom to the world continue to uphold the cause of liberty?</p>
-  
 </li>
 
         
@@ -295,7 +303,6 @@
     Prophecy <span>•</span> 15 min read <span>•</span> 
     <time datetime="2025-06-08T03:01:02.000Z">Jun 7, 2025</time>
   </p>
-  
 </li>
 
         
@@ -322,7 +329,6 @@
     Prophecy <span>•</span> 16 min read <span>•</span> 
     <time datetime="2025-07-02T04:32:45.000Z">Jul 1, 2025</time>
   </p>
-  
 </li>
 
         
@@ -334,7 +340,7 @@
     
   </ol>
 
-  <ol class="list standalone-list" style="display:none">
+  <ol class="list standalone-list">
     
       
     
@@ -374,9 +380,6 @@
     Prophecy <span>•</span> 18 min read <span>•</span> 
     <time datetime="2025-07-02T04:32:45.000Z">Jul 1, 2025</time>
   </p>
-  
-    <p class="description">Delve into a remarkable prophecy about the rise and fall of kingdoms. What does the future hold for Europe?</p>
-  
 </li>
 
       
@@ -389,7 +392,7 @@
 
 
 
-<li class="standalone">
+<li class="standalone" data-updated="2025-09-09T04:18:29.000Z" data-length="14">
   
     <div><span class="tag" style="color: rgb(57,96,136)">
       Second Coming: 1 of 2
@@ -401,7 +404,6 @@
     Prophecy <span>•</span> 14 min read <span>•</span> 
     <time datetime="2025-09-09T04:18:29.000Z">Sep 8, 2025</time>
   </p>
-  
 </li>
 
       
@@ -414,7 +416,7 @@
 
 
 
-<li class="standalone">
+<li class="standalone" data-updated="2025-09-25T03:09:32.000Z" data-length="13">
   
     <div><span class="tag" style="color: rgb(57,96,136)">
       Second Coming: 2 of 2
@@ -426,7 +428,6 @@
     Prophecy <span>•</span> 13 min read <span>•</span> 
     <time datetime="2025-09-25T03:09:32.000Z">Sep 24, 2025</time>
   </p>
-  
 </li>
 
       
@@ -441,7 +442,7 @@
 
 
 
-<li class="standalone">
+<li class="standalone" data-updated="2025-06-08T03:01:02.000Z" data-length="10">
   
     <div><span class="tag" style="color: rgb(255,121,100)">
       Facing Judgment: 1 of 2
@@ -453,7 +454,6 @@
     Prophecy <span>•</span> 10 min read <span>•</span> 
     <time datetime="2025-06-08T03:01:02.000Z">Jun 7, 2025</time>
   </p>
-  
 </li>
 
       
@@ -466,7 +466,7 @@
 
 
 
-<li class="standalone">
+<li class="standalone" data-updated="2025-08-28T03:21:27.000Z" data-length="21">
   
     <div><span class="tag" style="color: rgb(255,121,100)">
       Facing Judgment: 2 of 2
@@ -478,7 +478,6 @@
     Prophecy <span>•</span> 21 min read <span>•</span> 
     <time datetime="2025-08-28T03:21:27.000Z">Aug 27, 2025</time>
   </p>
-  
 </li>
 
       
@@ -497,7 +496,7 @@
 
 
 
-<li class="standalone">
+<li class="standalone" data-updated="2025-10-05T04:59:23.000Z" data-length="12">
   
     <div><span class="tag" style="color: rgb(155,114,186)">
       Counterfeit Sabbath: 1 of 2
@@ -509,7 +508,6 @@
     Prophecy <span>•</span> 12 min read <span>•</span> 
     <time datetime="2025-10-05T04:59:23.000Z">Oct 4, 2025</time>
   </p>
-  
 </li>
 
       
@@ -522,7 +520,7 @@
 
 
 
-<li class="standalone">
+<li class="standalone" data-updated="2025-10-05T16:16:37.000Z" data-length="14">
   
     <div><span class="tag" style="color: rgb(155,114,186)">
       Counterfeit Sabbath: 2 of 2
@@ -532,9 +530,8 @@
   <a style="color: rgb(155,114,186)" href="/prophecy/change/">God’s Law Changed</a>
   <p>
     Prophecy <span>•</span> 14 min read <span>•</span> 
-    <time datetime="2025-10-03T03:24:45.000Z">Oct 2, 2025</time>
+    <time datetime="2025-10-05T16:16:37.000Z">Oct 5, 2025</time>
   </p>
-  
 </li>
 
       
@@ -559,7 +556,6 @@
     Prophecy <span>•</span> 14 min read <span>•</span> 
     <time datetime="2025-09-06T04:34:20.000Z">Sep 5, 2025</time>
   </p>
-  
 </li>
 
       
@@ -578,7 +574,7 @@
 
 
 
-<li class="standalone">
+<li class="standalone" data-updated="2025-08-20T02:40:45.000Z" data-length="14">
   
     <div><span class="tag" style="color: rgb(33,153,163)">
       Antichrist’s Mark: 1 of 2
@@ -590,7 +586,6 @@
     Prophecy <span>•</span> 14 min read <span>•</span> 
     <time datetime="2025-08-20T02:40:45.000Z">Aug 19, 2025</time>
   </p>
-  
 </li>
 
       
@@ -603,7 +598,7 @@
 
 
 
-<li class="standalone">
+<li class="standalone" data-updated="2025-06-08T03:01:02.000Z" data-length="24">
   
     <div><span class="tag" style="color: rgb(33,153,163)">
       Antichrist’s Mark: 2 of 2
@@ -615,7 +610,6 @@
     Prophecy <span>•</span> 24 min read <span>•</span> 
     <time datetime="2025-06-08T03:01:02.000Z">Jun 7, 2025</time>
   </p>
-  
 </li>
 
       
@@ -638,9 +632,6 @@
     Prophecy <span>•</span> 28 min read <span>•</span> 
     <time datetime="2025-10-01T04:14:42.000Z">Sep 30, 2025</time>
   </p>
-  
-    <p class="description">Will the nation that has become a beacon of freedom to the world continue to uphold the cause of liberty?</p>
-  
 </li>
 
       
@@ -653,7 +644,7 @@
 
 
 
-<li class="standalone">
+<li class="standalone" data-updated="2025-06-08T03:01:02.000Z" data-length="24">
   
     <div><span class="tag" style="color: rgb(170,104,150)">
       Coming Out of Babylon: 1 of 2
@@ -665,7 +656,6 @@
     Prophecy <span>•</span> 24 min read <span>•</span> 
     <time datetime="2025-06-08T03:01:02.000Z">Jun 7, 2025</time>
   </p>
-  
 </li>
 
       
@@ -678,7 +668,7 @@
 
 
 
-<li class="standalone">
+<li class="standalone" data-updated="2025-06-08T03:01:02.000Z" data-length="12">
   
     <div><span class="tag" style="color: rgb(170,104,150)">
       Coming Out of Babylon: 2 of 2
@@ -690,7 +680,6 @@
     Prophecy <span>•</span> 12 min read <span>•</span> 
     <time datetime="2025-06-08T03:01:02.000Z">Jun 7, 2025</time>
   </p>
-  
 </li>
 
       
@@ -711,7 +700,6 @@
     Prophecy <span>•</span> 15 min read <span>•</span> 
     <time datetime="2025-06-08T03:01:02.000Z">Jun 7, 2025</time>
   </p>
-  
 </li>
 
       
@@ -736,7 +724,6 @@
     Prophecy <span>•</span> 16 min read <span>•</span> 
     <time datetime="2025-07-02T04:32:45.000Z">Jul 1, 2025</time>
   </p>
-  
 </li>
 
       
@@ -759,7 +746,7 @@
       </div>
       
       <div class="last-updated">
-        Last updated <time datetime="2025-10-05T09:15:35.801Z">October 5, 2025</time>
+        Last updated <time datetime="2025-10-06T18:51:49.918Z">October 6, 2025</time>
       </div>
     <p></p>
   </div>
@@ -779,5 +766,6 @@
       }
     </script>
     <script src="/assets/js/core.js" defer=""></script>
+    <script src="/assets/js/cards-sort.js" defer=""></script>
   </body>
 </html>
