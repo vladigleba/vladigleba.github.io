@@ -178,6 +178,7 @@ if (document.body.classList.contains('js-enabled')) {
     const SWITCH_ID = 'posts-view-switch';
     const STANDALONE_LIST = '.standalone-list';
     const SORT_CONTAINER = '.posts-sort';
+    const STORAGE_KEY = 'posts-sort';
 
     function parseUpdated(el) {
       const s = el.getAttribute('data-updated');
@@ -248,7 +249,6 @@ if (document.body.classList.contains('js-enabled')) {
       });
 
       // apply saved selection from localStorage if present and announce
-      const STORAGE_KEY = 'posts-sort';
       const liveRegion = document.getElementById('posts-sort-live');
       const saved = (function () {
         try {

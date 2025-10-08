@@ -198,8 +198,9 @@
   }
 
   .control-wrapper {
+    max-width: 350px;
     gap: 10px;
-    max-width: 370px;
+    flex-wrap: wrap;  
   }
 }
 
