@@ -200,6 +200,7 @@ module.exports = async (config) => {
         .replace(/^-+|-+$/g, '');       // Remove leading/trailing hyphens
 
       heading.id = slug;
+      heading.setAttribute('tabindex', '-1'); // make heading programmatically focusable
 
       const link = document.createElement('a');
       link.href = `#${slug}`;

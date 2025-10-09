@@ -11,14 +11,24 @@ if (document.body.classList.contains('js-enabled')) {
       });
     }
 
-    // copy heading anchor links
+    function announceToLiveRegion(message) {
+      const liveRegion = document.getElementById('posts-sort-live');
+      if (liveRegion) {
+        liveRegion.textContent = '';
+        liveRegion.textContent = message;
+      }
+    }
+
+    // copy heading anchor links to clipboard
     document.querySelectorAll('.anchor-link').forEach(link => {
-      link.addEventListener('click', (e) => {
+      const copyHandler = (e) => {
         e.preventDefault();
 
         const fullUrl = `${window.location.origin}${window.location.pathname}${link.getAttribute('href')}`;
         navigator.clipboard.writeText(fullUrl)
           .then(() => {
+
+            // visual feedback
             const existing = link.querySelector('.copy-popup');
             if (!existing) {
               const popup = document.createElement('span');
@@ -27,22 +37,46 @@ if (document.body.classList.contains('js-enabled')) {
               link.appendChild(popup);
               setTimeout(() => popup.remove(), 2500);
             }
+
+            // announce to assistive tech
+            announceToLiveRegion('Link copied');
           })
           .catch(err => {
             console.error('Error copying text: ', err);
           });
+      };
+
+      link.addEventListener('click', copyHandler);
+
+      // ensure spacebar activates link like a button for keyboard users
+      link.addEventListener('keydown', (e) => {
+        if (e.key === ' ' || e.key === 'Spacebar') {
+          e.preventDefault();
+          copyHandler(e);
+        }
       });
     });
 
     // track TOC
     const headings = document.querySelectorAll('.content h2, .content h3, .content h4');
+
+    // helper to set aria-current on a TOC link only when it changes
+    const setActiveTocLink = (link) => {
+      const existing = document.querySelector('.toc a[aria-current="true"]');
+      if (existing && existing !== link) existing.removeAttribute('aria-current');
+      if (link && link.getAttribute('aria-current') !== 'true') link.setAttribute('aria-current', 'true');
+    };
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           document.querySelectorAll('.toc li').forEach((li) => li.classList.remove('active'));
           const id = entry.target.id;
           const activeLink = document.querySelector(`.toc a[href="#${id}"]`);
-          if (activeLink) activeLink.closest('li')?.classList.add('active');
+          if (activeLink) {
+            activeLink.closest('li')?.classList.add('active');
+            setActiveTocLink(activeLink);
+          }
         }
       });
     },
@@ -52,6 +86,28 @@ if (document.body.classList.contains('js-enabled')) {
     });
 
     headings.forEach((heading) => observer.observe(heading));
+
+    // focus the element referenced by the fragment and update aria-current on TOC links
+    const focusFragmentTarget = () => {
+      const hash = location.hash;
+      if (!hash) return;
+      const id = hash.slice(1);
+      const target = document.getElementById(id);
+      if (!target) return;
+
+      try {
+        target.focus({ preventScroll: true });
+      } catch (e) {
+        target.focus();
+      }
+
+      const tocLink = document.querySelector(`.toc a[href="#${id}"]`);
+      setActiveTocLink(tocLink);
+    };
+
+    // handle initial load and subsequent hash changes (clicks/back/forward)
+    focusFragmentTarget();
+    window.addEventListener('hashchange', focusFragmentTarget);
 
     // verse fetching
     const popup = document.createElement('div');
@@ -150,8 +206,16 @@ if (document.body.classList.contains('js-enabled')) {
       seriesList.style.display = isStandalone ? 'none' : '';
       standaloneList.style.display = isStandalone ? '' : 'none';
 
+      // ensure content is removed from the accessibility tree when hidden
+      seriesList.setAttribute('aria-hidden', isStandalone ? 'true' : 'false');
+      standaloneList.setAttribute('aria-hidden', isStandalone ? 'false' : 'true');
+
       // update checked state (checked = grouped by series)
       if (postsViewSwitch) postsViewSwitch.checked = !isStandalone;
+
+      // announce change for screen reader users
+      announceToLiveRegion(isStandalone ? 'Showing standalone posts' : 'Showing posts grouped by series');
+
     };
 
     // init from localStorage (default to series grouping)
@@ -249,7 +313,6 @@ if (document.body.classList.contains('js-enabled')) {
       });
 
       // apply saved selection from localStorage if present and announce
-      const liveRegion = document.getElementById('posts-sort-live');
       const saved = (function () {
         try {
           return localStorage.getItem(STORAGE_KEY);
@@ -260,7 +323,9 @@ if (document.body.classList.contains('js-enabled')) {
       if (saved) {
         select.value = saved;
         sortListBy(list, saved);
-        if (liveRegion) liveRegion.textContent = `Sorted by ${select.options[select.selectedIndex].text}`;
+
+        // announce change for assistive tech users
+        announceToLiveRegion(`Sorted by ${select.options[select.selectedIndex].text}`);
         updateSortControl(); // ensure visibility reflects current switch state
       }
 
