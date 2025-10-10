@@ -4,7 +4,7 @@
   column-gap: 20px;
   row-gap: 20px;
   grid-template-columns: repeat(auto-fit, 390px);
-  grid-auto-rows: 135px;
+  grid-auto-rows: 140px;
   grid-auto-flow: dense;
   justify-content: center;
   text-align: center;
@@ -13,11 +13,24 @@
 .list li {
   grid-row: auto / span 1;
   grid-column: auto / span 1;
-  padding: 25px;
+  padding: 25px 25px 0 25px;
   display: flex;
   flex-direction: column;
   justify-content: end;
   color: var(--gray-color);
+}
+
+.series-bar {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.series-segment {
+  flex: 1;
+  height: 5px;
+  background: #e0e0e0;
+  border-radius: 3px;
 }
 
 /* featured and latest */
@@ -26,8 +39,6 @@ li.featured,
 li.latest {
   /* grid-row: auto / span 2; */
   border-radius: var(--default-radius);
-  text-align: center;
-  justify-content: center;
 }
 
 li.featured .tag,

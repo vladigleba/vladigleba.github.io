@@ -31,9 +31,10 @@ if (document.body.classList.contains('js-enabled')) {
             // visual feedback
             const existing = link.querySelector('.copy-popup');
             if (!existing) {
-              const popup = document.createElement('span');
+              const popup = document.createElement('div');
               popup.className = 'copy-popup';
-              popup.textContent = 'Link copied';
+              popup.innerHTML = '<div class="checkmark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div><span>Link copied</span>';
+              
               link.appendChild(popup);
               setTimeout(() => popup.remove(), 2500);
             }
@@ -124,10 +125,10 @@ if (document.body.classList.contains('js-enabled')) {
           try {
             const response = await fetch(`https://bible-api.com/${encodeURIComponent(reference)}?translation=kjv`);
             const data = await response.json();
-            link.dataset.verse = `<strong>${reference}</strong> - ${data.text.trim()}`;
+            link.dataset.verse = `<strong>${reference}</strong><br>${data.text.trim()}`;
             link.dataset.loaded = 'true';
           } catch {
-            link.dataset.verse = `<strong>${reference}</strong> - Verse not found.`;
+            link.dataset.verse = `<strong>${reference}</strong><br>Verse not found.`;
           }
         }
 

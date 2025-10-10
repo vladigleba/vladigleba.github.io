@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.anchor-link svg {
+.anchor-link > svg {
   opacity: 0.5;
   width: 0.75em;
   height: 0.7em;
