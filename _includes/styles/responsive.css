@@ -135,7 +135,7 @@
   }
 
   .main-nav ul {
-    font-size: 21px;
+    font-size: 22px;
   }
 
   .banner p,
@@ -199,7 +199,7 @@
 
   .control-wrapper {
     max-width: 350px;
-    gap: 10px;
+    gap: 8px;
     flex-wrap: wrap;  
   }
 }
@@ -207,6 +207,6 @@
 /* Small phones */
 @media (max-width: 480px) {
   .main-nav li {
-    padding: 4px 5px 2px;
+    padding: 6px 6px 4px;
   }
 }
