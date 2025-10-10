@@ -119,7 +119,7 @@ This verse echoes Paul’s warning about men arising “speaking perverse things
 
 In fact, Mithraism was the Persian name for Babylonian sun worship, for Mithra was the Persian god of light, who, under the Roman Empire, was identified with the sun god *Sol Invictus*, the invincible or unconquerable sun. This sun worship was later Christianized when Catholicism declared Sunday holy in honor of Christ’s resurrection—a day long associated with pagan sun worship, not only in Mithraism but also in the religion of ancient Babylon.[^1] Thus, there is a direct line of continuity between the religions of Babylon, Persia, Greece, Rome, and Catholicism—a progression symbolically illustrated in the [image of Daniel 2](/posts/prophecy/europe.md).
 
-There is only one commandment that is both a law and a measure of time: the fourth. The first seeds of its alteration were planted when Constantine converted to Christianity in 312 AD, for after becoming Emperor, he granted Christian bishops influence in the legislative process. Under their guidance, he soon passed the first Sunday law in 321 AD, declaring Sunday—the pagan day of sun worship—the official day of rest across the Roman Empire. This was reinforced in 363 AD, when the Council of Laodicea urged Christians to observe Sunday as their rest day while prohibiting them from resting on Saturday. Thus, the fourth commandment of God was effectively changed—from honoring the biblical seventh-day Sabbath established at creation to observing Sunday—and the rest is history.
+There is only one commandment that is both a law and a measure of time: the fourth. The first seeds of its alteration were planted when Constantine converted to Christianity in 312 AD, for after becoming Emperor, he granted Christian bishops influence in the legislative process. Under their guidance, he soon passed the first Sunday law in 321 AD, declaring Sunday—the pagan day of sun worship—the official day of rest across the Roman Empire. This was reinforced in 364 AD, when the Council of Laodicea urged Christians to observe Sunday as their rest day while prohibiting them from resting on Saturday. Thus, the fourth commandment of God was effectively changed—from honoring the biblical seventh-day Sabbath established at creation to observing Sunday—and the rest is history.
 
 [^1]: Murl Vance, “The Counterfeit Memorial,” *Signs of the Times*, July 29, 1940, p. 4
 
@@ -137,13 +137,28 @@ The elevation of human-made commandments and traditions above the truth of the B
 
 The word “laws” is plural, and indeed the Sabbath commandment was not the only one that was changed. The Catholic Church removed the second commandment, which prohibits the worship of images, and divided the tenth commandment into two. However, it is the alteration of the fourth commandment that stands out most, because the Sabbath is the [mark of God’s authority](/posts/basics/sabbath.md#which-commandment-identifies-the-creator-god), identifying Him as the Creator. Naturally, this raises the question: What is the Catholic Church’s mark of authority?
 
+## What is the Catholic Church’s mark of authority?
+
 > Now in the matter of Sabbath observance the Protestant rule of Faith is utterly unable to explain the substitution of the Christian Sunday for the Jewish Saturday. It has been changed. The Bible still teaches that the Sabbath or Saturday should be kept holy. There is no authority in the New Testament for the substitution of Sunday for Saturday. Surely it is an important matter. It stands there in the Bible as one of the Ten Commandments of God. *There is no authority in the Bible for abrogating this Commandment, or for transferring its observance to another day of the week.* …
 >
-> We have in the authoritative voice of the Church the voice of Christ Himself. *The Church is above the Bible; and this transference of Sabbath observance from Saturday to Sunday is proof positive of that fact.* Deny the authority of the Church and you have no adequate or reasonable explanation or justification for the substitution of Sunday for Saturday in the Third—Protestant Fourth—Commandment of God.
+> We have in the authoritative voice of the Church the voice of Christ Himself. *The Church is above the Bible; and this transference of Sabbath observance from Saturday to Sunday is proof positive of that fact. Deny the authority of the Church and you have no adequate or reasonable explanation or justification for the substitution of Sunday for Saturday in the Third—Protestant Fourth—Commandment of God.*
 {% ct '"Sabbath Observance," The Catholic Record, September 1, 1923, p. 4.' %}
 
 > Of course *the Catholic Church claims that the change was her act*. It could not have been otherwise, as none in those days would have dreamed of doing anything, in matters spiritual, ecclesiastical and religious without her. *This act is a mark of her ecclesiastical power and authority in religious matters.*
 {% ct 'C. F. Thomas, Chancellor of Cardinal Gibbons, letter, October 28, 1895.' %}
+
+> The Church changed the observance of the Sabbath to Sunday by right of the divine, infallible authority given to her by her founder, Jesus Christ. *The Protestant, claiming the Bible to be the only guide of faith, has no warrant for observing Sunday. In this matter the Seventh-day Adventist is the only consistent Protestant.*
+{% ct 'The Catholic Universe Bulletin, August 14, 1942, p. 4.' %}
+
+> If Protestants would follow the Bible, they would worship God on the Sabbath Day. *In keeping the Sunday they are following a law of the Catholic Church.*
+{% ct 'Albert Smith, Chancellor of Cardinal Gibbons, letter, February 10, 1920.' %}
+
+> My brethren, look about you upon the various wrangling sects and denominations. Show me one that claims, or possesses the power to make laws binding on the conscience. *There’s but one on the face of the earth—the Catholic Church—that has the power to make laws binding upon the conscience, binding before God, binding under pain of hell fire.* Take for instance the day we celebrate—Sunday. What right have the Protestant churches to observe that, day? None whatever. … Sunday is not the Sabbath according to the Bible and the record of time. Every one knows that Sunday is the first day of the week, while Saturday is the seventh day and the Sabbath, the day consecrated as a day of rest. It is so recognized in all civilized nations.
+>
+> I have repeatedly offered $1000 to any one who will furnish any proof from the Bible that Sunday is the day we are bound to keep, and no one has called for the money. If any person in this town will show me any scripture for it I will, tomorrow evening, publicly acknowledge it and thank him for it. *It was the holy Catholic Church that changed the day of rest from Saturday to Sunday, the first day of the week.* And it not only compelled all to keep Sunday, but at the Council of Laodicea, A. D. 364, anathematized those who kept the Sabbath and urged all persons to labor on the seventh day under the penalty of anathema.
+>
+> Which church does the whole civilized world obey? Protestants … profess great reverence for the Bible, and yet *by their solemn act of keeping Sunday they acknowledge the power of the Catholic Church. The Bible says, ‘Remember the Sabbath day, to keep it holy,’ but the Catholic Church says, ‘No, keep the first day of the week,’ and the whole world bows in obedience.*
+{% ct 'Catholic Priest T. Enright, lecture at Harlan, Iowa, December 15, 1889.' %}
 
 ## How many lawgivers are there?
 
