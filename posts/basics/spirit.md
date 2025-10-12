@@ -1,8 +1,8 @@
 ---
 title: The Holy Spirit
 description: He might be the least understood member of the Godhead, but He plays a crucial role in every person’s salvation.
-color: rgb(97,121,177)
 date: 2025-02-02
+series: Baptism
 ---
 
 ## Is the Holy Spirit part of the Godhead?

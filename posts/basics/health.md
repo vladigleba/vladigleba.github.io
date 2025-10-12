@@ -1,8 +1,8 @@
 ---
 title: God’s Health Plan
 description: Jesus wants to redeem me from sin. Does He have a plan to redeem my health as well?
-color: rgb(0,152,121)
 date: 2025-01-21
+series: Healing
 ---
 
 ## Does Jesus care about my health?

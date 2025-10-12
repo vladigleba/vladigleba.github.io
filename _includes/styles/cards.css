@@ -33,7 +33,7 @@
   border-radius: 3px;
 }
 
-/* featured and latest */
+/* tag */
 
 li.featured,
 li.latest {
@@ -45,8 +45,6 @@ li.featured .tag,
 li.latest .tag {
   color: white !important;
 }
-
-/* tag */
 
 li .tag {
   border-radius: var(--default-radius);
@@ -66,6 +64,11 @@ li .tag {
 li.featured .tag {
   background-color: var(--darker-gray-color);
   opacity: 0.8;
+}
+
+li.standalone .tag {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* link and description */
