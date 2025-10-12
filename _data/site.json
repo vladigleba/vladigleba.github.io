@@ -42,7 +42,7 @@
       "title": "The Counterfeit Sabbath",
       "color": "rgb(155,114,186)"
     },
-    "Antichrist": {
+    "Mark": {
       "title": "The Antichrist’s Mark",
       "color": "rgb(33,153,163)"
     },
@@ -57,6 +57,26 @@
     "Healing": {
       "title": "Made Whole by Christ",
       "color": "rgb(242,84,122)"
+    },
+    "Remnant": {
+      "title": "A Prophetic Movement",
+      "color": "rgb(57,96,136)"
+    },
+    "Life": {
+      "title": "The Christian Life",
+      "color": "rgb(199,62,95)"
+    },
+    "Heaven": {
+      "title": "Heavenly Realities",
+      "color": "rgb(0,113,176)"
+    },
+    "Deception": {
+      "title": "Mainstream Deceptions",
+      "color": "rgb(255,98,98)"
+    },
+    "Controversy": {
+      "title": "The Great Controversy",
+      "color": "rgb(170,98,98)"
     }
   }
 }

@@ -1,8 +1,8 @@
 ---
 title: Christian Standards
 description: Discover why followers of Christ are called to live differently and what that means practically.
-color: rgb(201,117,138)
-date: 2025-02-06
+date: 2025-02-05
+series: Life
 ---
 
 ## What is the primary motivator in a Christian’s life?

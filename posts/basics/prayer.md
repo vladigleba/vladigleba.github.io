@@ -1,8 +1,8 @@
 ---
 title: Keys to Effective Prayer
 description: Prayer is foundational to the Christian walk. Are there biblical principles that can make our prayers more effective?
-color: rgb(199,62,95)
 date: 2025-04-16
+series: Life
 ---
 
 ## Should I be praying more?

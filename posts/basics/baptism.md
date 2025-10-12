@@ -1,7 +1,7 @@
 ---
 title: Why Get Baptized?
 description: Explore what a public commitment to Christ looks like, what it means, and why it matters.
-date: 2025-02-03
+date: 2025-02-02
 series: Baptism
 ---
 

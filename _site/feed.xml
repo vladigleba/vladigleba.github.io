@@ -17,23 +17,23 @@
       </item>
     
       <item>
-        <title>Christian Standards</title>
-        <link>https://vladigleba.com/basics/standards/</link>
-        <guid>https://vladigleba.com/basics/standards/</guid>
-        <description><![CDATA[Discover why followers of Christ are called to live differently and what that means practically.]]></description>
-        <pubDate>Wed, 05 Feb 2025 16:00:00 -0800</pubDate>
-      </item>
-    
-      <item>
         <title>Finances, God’s Way</title>
         <link>https://vladigleba.com/basics/tithe/</link>
         <guid>https://vladigleba.com/basics/tithe/</guid>
         <description><![CDATA[Financial investment advice in the Bible? Discover God’s plan for managing our finances wisely.]]></description>
+        <pubDate>Wed, 05 Feb 2025 16:00:00 -0800</pubDate>
+      </item>
+    
+      <item>
+        <title>Christian Standards</title>
+        <link>https://vladigleba.com/basics/standards/</link>
+        <guid>https://vladigleba.com/basics/standards/</guid>
+        <description><![CDATA[Discover why followers of Christ are called to live differently and what that means practically.]]></description>
         <pubDate>Tue, 04 Feb 2025 16:00:00 -0800</pubDate>
       </item>
     
       <item>
-        <title>God’s Gift of Prophecy</title>
+        <title>The Gift of Prophecy</title>
         <link>https://vladigleba.com/prophecy/prophets/</link>
         <guid>https://vladigleba.com/prophecy/prophets/</guid>
         <description><![CDATA[False prophets are on the rise. Learn how to tell the difference between a false and a true prophet of God.]]></description>
@@ -41,11 +41,19 @@
       </item>
     
       <item>
+        <title>God’s Remnant Church</title>
+        <link>https://vladigleba.com/prophecy/remnant/</link>
+        <guid>https://vladigleba.com/prophecy/remnant/</guid>
+        <description><![CDATA[God has a remnant church that will remain loyal to Him till the end. What are its identifying marks?]]></description>
+        <pubDate>Sun, 02 Feb 2025 16:00:00 -0800</pubDate>
+      </item>
+    
+      <item>
         <title>Why Get Baptized?</title>
         <link>https://vladigleba.com/basics/baptism/</link>
         <guid>https://vladigleba.com/basics/baptism/</guid>
         <description><![CDATA[Explore what a public commitment to Christ looks like, what it means, and why it matters.]]></description>
-        <pubDate>Sun, 02 Feb 2025 16:00:00 -0800</pubDate>
+        <pubDate>Sat, 01 Feb 2025 16:00:00 -0800</pubDate>
       </item>
     
       <item>
@@ -53,14 +61,6 @@
         <link>https://vladigleba.com/basics/spirit/</link>
         <guid>https://vladigleba.com/basics/spirit/</guid>
         <description><![CDATA[He might be the least understood member of the Godhead, but He plays a crucial role in every person’s salvation.]]></description>
-        <pubDate>Sat, 01 Feb 2025 16:00:00 -0800</pubDate>
-      </item>
-    
-      <item>
-        <title>God’s Remnant Church</title>
-        <link>https://vladigleba.com/prophecy/remnant/</link>
-        <guid>https://vladigleba.com/prophecy/remnant/</guid>
-        <description><![CDATA[God has a remnant church that will remain loyal to Him till the end. What are its identifying marks?]]></description>
         <pubDate>Fri, 31 Jan 2025 16:00:00 -0800</pubDate>
       </item>
     
@@ -105,19 +105,11 @@
       </item>
     
       <item>
-        <title>What Will Heaven Be Like?</title>
-        <link>https://vladigleba.com/basics/heaven/</link>
-        <guid>https://vladigleba.com/basics/heaven/</guid>
-        <description><![CDATA[Heaven is real, accessible to all, and more glorious than anything we have seen, heard, or imagined.]]></description>
-        <pubDate>Sat, 25 Jan 2025 16:00:00 -0800</pubDate>
-      </item>
-    
-      <item>
         <title>Is Hell Forever?</title>
         <link>https://vladigleba.com/basics/hell/</link>
         <guid>https://vladigleba.com/basics/hell/</guid>
         <description><![CDATA[Will a just and loving God torture people in a never ending hell for only a lifetime of sin?]]></description>
-        <pubDate>Fri, 24 Jan 2025 16:00:00 -0800</pubDate>
+        <pubDate>Sat, 25 Jan 2025 16:00:00 -0800</pubDate>
       </item>
     
       <item>
@@ -125,6 +117,14 @@
         <link>https://vladigleba.com/basics/death/</link>
         <guid>https://vladigleba.com/basics/death/</guid>
         <description><![CDATA[It started with a lie in the Garden of Eden, and it’s still being told today. Will you be fooled?]]></description>
+        <pubDate>Fri, 24 Jan 2025 16:00:00 -0800</pubDate>
+      </item>
+    
+      <item>
+        <title>What Will Heaven Be Like?</title>
+        <link>https://vladigleba.com/basics/heaven/</link>
+        <guid>https://vladigleba.com/basics/heaven/</guid>
+        <description><![CDATA[Heaven is real, accessible to all, and more glorious than anything we have seen, heard, or imagined.]]></description>
         <pubDate>Thu, 23 Jan 2025 16:00:00 -0800</pubDate>
       </item>
     

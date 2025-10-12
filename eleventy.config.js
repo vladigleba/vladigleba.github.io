@@ -111,8 +111,7 @@ module.exports = async (config) => {
       }
     });
 
-    addNextLinks(posts);
-    return makeLastPostFirst(posts);
+    return addNextLinks(posts);
   });
 
   config.addCollection('groupedPosts', (collectionApi) => {
@@ -121,8 +120,7 @@ module.exports = async (config) => {
     const posts = collectionApi.getFilteredByGlob('posts/*/*.md');
 
     posts.forEach(post => processPost(post));
-    addNextLinks(posts);
-    const orderedPosts = makeLastPostFirst(posts);
+    const orderedPosts = addNextLinks(posts);;
 
     orderedPosts.forEach(post => {
       const { series } = post.data;
@@ -239,17 +237,6 @@ module.exports = async (config) => {
   });
 
   // functions
-  function makeLastPostFirst(posts) {
-    if (!Array.isArray(posts)) return posts;
-    const arr = [...posts];
-    if (arr.length > 1) {
-      arr.unshift(arr.pop());
-      arr[0].data = arr[0].data || {};
-      arr[0].data.latest = true;
-    }
-    return arr;
-  }
-
   function addNextLinks(posts) {
     if (!Array.isArray(posts)) return;
     posts.forEach((post, index) => {
@@ -260,6 +247,8 @@ module.exports = async (config) => {
         };
       }
     });
+
+    return posts;
   }
 
   function processPost(post) {

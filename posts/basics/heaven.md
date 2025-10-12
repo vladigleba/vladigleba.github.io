@@ -1,8 +1,8 @@
 ---
 title: What Will Heaven Be Like?
 description: Heaven is real, accessible to all, and more glorious than anything we have seen, heard, or imagined.
-color: rgb(0,113,176)
-date: 2025-01-26
+date: 2025-01-24
+series: Heaven
 ---
 
 ## What promise did Jesus make about heaven?

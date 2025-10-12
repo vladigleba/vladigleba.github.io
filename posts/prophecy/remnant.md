@@ -1,8 +1,8 @@
 ---
 title: God’s Remnant Church
 description: God has a remnant church that will remain loyal to Him till the end. What are its identifying marks?
-color: rgb(57,96,136)
-date: 2025-02-01
+date: 2025-02-03
+series: Remnant
 ---
 
 ## Jesus established His church upon what foundation?

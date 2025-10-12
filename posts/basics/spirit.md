@@ -1,7 +1,7 @@
 ---
 title: The Holy Spirit
 description: He might be the least understood member of the Godhead, but He plays a crucial role in every person’s salvation.
-date: 2025-02-02
+date: 2025-02-01
 series: Baptism
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: God’s Gift of Prophecy
+title: The Gift of Prophecy
 description: False prophets are on the rise. Learn how to tell the difference between a false and a true prophet of God.
-color: rgb(99,99,144)
 date: 2025-02-04
+series: Remnant
 ---
 
 ## What is one of the ways God speaks to humanity?
