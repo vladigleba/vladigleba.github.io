@@ -57,7 +57,10 @@ God wrote the Ten Commandments Himself on tablets of stone to demonstrate their 
 > My covenant will I not break, nor *alter the thing that is gone out of my lips*.
 {% ct 'Psalm 89:34' %}
 
-Since Jesus cannot change, His law cannot change either, for it is a [reflection of His character](/posts/gospel/law.md#what-is-gods-law-a-reflection-of). Scripture declares that He is love {% rf '1 John 4:8' %}, and love is the fulfillment of His law {% rf 'Romans 13:10; Matthew 22:37-40' %}.
+> For *I am the LORD, I change not*; therefore ye sons of Jacob are not consumed.
+{% ct 'Malachi 3:6' %}
+
+Since Jesus cannot change, His law cannot change either, for it is a [reflection of His character](/posts/gospel/law.md#what-is-gods-law-a-reflection-of). If His law could be changed, the Father would have never sent His Son to die for our sins on Calvary.
 
 ## What is part of His law? When was it established?
 
@@ -165,21 +168,24 @@ The word “laws” is plural, and indeed the Sabbath commandment was not the on
 > There is *one lawgiver*, who is able to save and to destroy: who art thou that judgest another?
 {% ct 'James 4:12' %}
 
-There is only one Lawgiver—God; however, we have learned there is a second entity claiming to be a lawgiver. Jesus warned, “And fear not them which kill the body, but are not able to kill the soul: but rather fear him [God] which is able to destroy both soul and body in hell” {% rf 'Matthew 10:28' %}. One can kill the body, but the Other has power to raise it from the dead {% rf '1 Thessalonians 4:16; 1 Corinthians 15:52' %}. Whom would you rather obey?
+There is only one Lawgiver—God. Yet we have learned that there exists a religious power claiming to be a lawgiver as well, one that considers itself justified in altering the law of God Himself, thereby placing its authority above His. Jesus warned, “And fear not them which kill the body, but are not able to kill the soul: but rather fear him [God] which is able to destroy both soul and body in hell” {% rf 'Matthew 10:28' %}. The Church can kill the body (as it did to millions during the Dark Ages), but God has power to raise it from the dead {% rf '1 Thessalonians 4:16; 1 Corinthians 15:52' %}. Whom, then, would you rather obey?
+
+> Reason and sense demand the acceptance of one or the other of these alternatives: either Protestantism and the keeping holy of Saturday, or Catholicity and the keeping holy of Sunday. *Compromise is impossible.*
+{% ct 'John Cardinal Gibbons, The Catholic Mirror, December 23, 1893.' %}
 
 ## What role will the law play in the last days?
 
 > And after these things I saw four angels standing on the four corners of the earth, holding the four winds of the earth, that the wind should not blow on the earth, nor on the sea, nor on any tree. And I saw another angel ascending from the east, having the seal of the living God: and he cried with a loud voice to the four angels, to whom it was given to hurt the earth and the sea, saying, Hurt not the earth, neither the sea, nor the trees, *till we have sealed the servants of our God in their foreheads*.
 {% ct 'Revelation 7:1-3' %}
 
-> Bind up the testimony, *seal the law* among my disciples.
+> Bind up the testimony, *seal the law among my disciples*.
 {% ct 'Isaiah 8:16' %}
 
-In the last days there will be a sealing of God’s people in their foreheads, and Isaiah says it’s the law that’s sealed among His people. This sealing of the law in the forehead is God’s people making an unwavering decision in their mind to honor the authority of God’s law in their life as supreme and above the laws of men, no matter the cost.
+In the last days, there will be a sealing of God’s people in their foreheads, which, according to Isaiah, refers to God’s law. When God’s people are sealed, they make an unwavering decision to honor the authority of His law in their lives as supreme—above the laws of men—no matter the cost. Their hearts are so knit with their Father’s that they would rather die than disobey their Maker {% rf 'Revelation 12:11' %}.
 
 ## What is said about the saints?
 
 > Saying with a loud voice, Fear God, and give glory to him; for the hour of his judgment is come: and *worship him that made heaven, and earth, and the sea, and the fountains of waters*. … Here is the patience of the saints: here are *they that keep the commandments of God, and the faith of Jesus*.
 {% ct 'Revelation 14:7, 12' %}
 
-There will be a call in the last days to worship God, the Creator of the universe, which implies there will be another power vying to be worshiped as well. This call is a reference to the last part of the fourth commandment where keeping the Sabbath is identified as a sign and an acknowledgment that God is the Creator of all. Could the worship of God by keeping His seventh day Sabbath constitute the seal of God in the last days? Verse 12 leaves no room for doubt when it says the saints will be keeping the commandments of God and the faith of Jesus, who Himself kept the commandments, [including the fourth](/posts/basics/sabbath.md#did-jesus-keep-the-sabbath). May we be found faithful in our stand for Jesus.
+There will be a call in the last days to worship God, the Creator of the universe, which implies there will be another power vying to be worshiped as well. This call includes a reference to the last part of the fourth commandment where keeping the Sabbath is identified as a sign and an acknowledgment that God is the Creator of all. The seventh-day Sabbath, therefore, will constitute the seal of God in the last days. Verse 12 leaves no room for doubt when it says the saints will be keeping—by God’s grace—not only His commandments, but also the faith of Jesus.

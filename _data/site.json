@@ -27,7 +27,7 @@
       "color": "rgb(143,102,126)"
     },
     "SecondComing": {
-      "title": "Second Coming",
+      "title": "The Second Coming",
       "color": "rgb(57,96,136)"
     },
     "Judgment": {
@@ -35,20 +35,28 @@
       "color": "rgb(255,121,100)"
     },
     "Sabbath": {
-      "title": "Bible Sabbath",
+      "title": "The Bible Sabbath",
       "color": "rgb(205,114,114)"
     },
     "Sunday": {
-      "title": "Counterfeit Sabbath",
+      "title": "The Counterfeit Sabbath",
       "color": "rgb(155,114,186)"
     },
     "Antichrist": {
-      "title": "Antichrist’s Mark",
+      "title": "The Antichrist’s Mark",
       "color": "rgb(33,153,163)"
     },
     "Babylon": {
       "title": "Coming Out of Babylon",
       "color": "rgb(170,104,150)"
+    },
+    "Baptism": {
+      "title": "Baptized by the Spirit",
+      "color": "rgb(97,121,177)"
+    },
+    "Healing": {
+      "title": "Made Whole by Christ",
+      "color": "rgb(0,152,121)"
     }
   }
 }

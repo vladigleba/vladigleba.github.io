@@ -207,6 +207,6 @@
 /* Small phones */
 @media (max-width: 480px) {
   .main-nav li {
-    padding: 6px 6px 4px;
+    padding: 5px 6px 3px;
   }
 }

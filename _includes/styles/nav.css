@@ -15,12 +15,12 @@
   display: flex;
   gap: 7px;
   background-color: #f0f0f0;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .main-nav li {
   text-transform: uppercase;
-  padding: 6px 12.5px 4px;
+  padding: 5px 12.5px 3px;
   transition: color 0.15s ease 0s;
 }
 
