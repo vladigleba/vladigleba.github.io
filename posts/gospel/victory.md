@@ -1,7 +1,7 @@
 ---
 title: Victory Over Sin
 description: Is it possible to have victory over the power of sin, or is forgiveness of sin all there is to salvation?
-date: 2025-01-22
+date: 2025-01-24
 series: Healing
 ---
 

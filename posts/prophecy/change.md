@@ -1,7 +1,7 @@
 ---
 title: God’s Law Changed
 description: The Bible prophesied a power would arise that would attempt to change God’s law. Has this happened?
-date: 2025-01-20
+date: 2025-01-22
 series: Sunday
 ---
 

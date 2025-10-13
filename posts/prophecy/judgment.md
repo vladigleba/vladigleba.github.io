@@ -1,7 +1,7 @@
 ---
 title: Will I Be Judged?
 description: Am I my own ruler? Or am I responsible to a higher Authority for the way I live my life?
-date: 2025-01-14
+date: 2025-01-16
 series: Judgment
 ---
 

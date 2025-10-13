@@ -1,7 +1,7 @@
 ---
 title: God’s Health Plan
 description: Jesus wants to redeem me from sin. Does He have a plan to redeem my health as well?
-date: 2025-01-21
+date: 2025-01-23
 series: Healing
 ---
 

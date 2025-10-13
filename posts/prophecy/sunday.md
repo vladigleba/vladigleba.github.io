@@ -1,7 +1,7 @@
 ---
 title: First Day Texts
 description: Does the Bible have evidence of the Sabbath being changed? Explore the texts mentioning the first day to find out.
-date: 2025-01-19
+date: 2025-01-21
 series: Sunday
 ---
 
