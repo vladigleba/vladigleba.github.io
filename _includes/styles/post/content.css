@@ -8,6 +8,10 @@
   padding-bottom: 15px;
 }
 
+.content h2:focus {
+  outline: 1px dashed transparent;
+}
+
 .content ul, 
 .content ol {
   padding-bottom: 15px;

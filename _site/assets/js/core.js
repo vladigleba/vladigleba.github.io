@@ -33,8 +33,11 @@ if (document.body.classList.contains('js-enabled')) {
             if (!existing) {
               const popup = document.createElement('div');
               popup.className = 'copy-popup';
-              popup.innerHTML = '<div class="checkmark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div><span>Link copied</span>';
-              
+              popup.innerHTML = `
+                <div class="checkmark">
+                  <svg><use href="/assets/images/icons.svg#check"></use></svg>
+                </div>
+                <span>Link copied</span>`;
               link.appendChild(popup);
               setTimeout(() => popup.remove(), 2500);
             }

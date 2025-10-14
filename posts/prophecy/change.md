@@ -60,7 +60,7 @@ God wrote the Ten Commandments Himself on tablets of stone to demonstrate their 
 > For *I am the LORD, I change not*; therefore ye sons of Jacob are not consumed.
 {% ct 'Malachi 3:6' %}
 
-Since Jesus cannot change, His law cannot change either, for it is a [reflection of His character](/posts/gospel/law.md#what-is-gods-law-a-reflection-of). If His law could be changed, the Father would have never sent His Son to die for our sins on Calvary.
+Since Jesus cannot change, His law cannot change either, for it is a [reflection of His character](/posts/gospel/law.md#what-is-gods-law-a-reflection-of). If His law could be changed, the Father would have never sent His Son to die for our sins on Calvary. His very death testifies that the law is as unchangeable as God Himself. Often, it is claimed that because of Jesus’ death we are no longer under the law but under grace. But which of the Ten Commandments do we no longer need? Since Jesus died for our sins, are we free to have other gods, bow down to images, blaspheme God’s name, desecrate the Sabbath, dishonor our parents, murder, commit adultery, steal, lie, and covet? [Of course not.](/posts/gospel/law.md#does-that-mean-we-are-now-free-to-break-it)
 
 ## What is part of His law? When was it established?
 
@@ -181,11 +181,13 @@ There is only one Lawgiver—God. Yet we have learned that there exists a religi
 > Bind up the testimony, *seal the law among my disciples*.
 {% ct 'Isaiah 8:16' %}
 
-In the last days, there will be a sealing of God’s people in their foreheads, which, according to Isaiah, refers to God’s law. When God’s people are sealed, they make an unwavering decision to honor the authority of His law in their lives as supreme—above the laws of men—no matter the cost. Their hearts are so knit with their Father’s that they would rather die than disobey their Maker {% rf 'Revelation 12:11' %}.
+In the last days, there will be a sealing of God’s people in their foreheads, which, according to Isaiah, refers to God’s law. When God’s people are sealed, they make an unwavering decision to honor the authority of His law as supreme—above the laws of men—no matter the cost. Their hearts are so knit with their Father’s that they would rather die than disobey their Maker {% rf 'Revelation 12:11' %}.
 
 ## What is said about the saints?
 
 > Saying with a loud voice, Fear God, and give glory to him; for the hour of his judgment is come: and *worship him that made heaven, and earth, and the sea, and the fountains of waters*. … Here is the patience of the saints: here are *they that keep the commandments of God, and the faith of Jesus*.
 {% ct 'Revelation 14:7, 12' %}
 
-There will be a call in the last days to worship God, the Creator of the universe, which implies there will be another power vying to be worshiped as well. This call includes a reference to the last part of the fourth commandment where keeping the Sabbath is identified as a sign and an acknowledgment that God is the Creator of all. The seventh-day Sabbath, therefore, will constitute the seal of God in the last days. Verse 12 leaves no room for doubt when it says the saints will be keeping—by God’s grace—not only His commandments, but also the faith of Jesus.
+Since there will be a call in the last days to worship God, the Creator of the universe, this implies that another power will also be seeking worship. The call includes a reference to the final part of the fourth commandment, which identifies the Sabbath as the sign that God is the Creator of all. Because Isaiah connects the sealing with the commandments, the seventh-day Sabbath, therefore, will constitute the seal of God in the last days.
+
+The other power seeking worship will have its own seal—Sunday—as a sign of allegiance. Just as God used the eating of a tree to test Adam and Eve in Eden, so He will use the observance of a day to test the final generation living on earth. {% rf 'Revelation 14:12' false %} leaves no room for doubt, declaring that the saints will, by God’s grace, be keeping His commandments and the faith of Jesus.
