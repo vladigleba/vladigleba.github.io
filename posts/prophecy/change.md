@@ -60,7 +60,9 @@ God wrote the Ten Commandments Himself on tablets of stone to demonstrate their 
 > For *I am the LORD, I change not*; therefore ye sons of Jacob are not consumed.
 {% ct 'Malachi 3:6' %}
 
-Since Jesus cannot change, His law cannot change either, for it is a [reflection of His character](/posts/gospel/law.md#what-is-gods-law-a-reflection-of). If His law could be changed, the Father would have never sent His Son to die for our sins on Calvary. His very death testifies that the law is as unchangeable as God Himself. Often, it is claimed that because of Jesus’ death we are no longer under the law but under grace. But which of the Ten Commandments do we no longer need? Since Jesus died for our sins, are we free to have other gods, bow down to images, blaspheme God’s name, desecrate the Sabbath, dishonor our parents, murder, commit adultery, steal, lie, and covet? [Of course not.](/posts/gospel/law.md#does-that-mean-we-are-now-free-to-break-it)
+Since Jesus cannot change, His law cannot change either, for it [reflects His holy and unchanging character](/posts/gospel/law.md#what-is-gods-law-a-reflection-of). Consequently, God could not alter His holy law and still remain the infinitely holy God that He is. Moreover, if His law could have been modified, the Father would have never needed to send His Son to die for our sins on Calvary. Christ’s death stands as eternal testimony that the law is as immutable as God Himself.
+
+It is often claimed that because of Jesus’ death, we are no longer under the law but under grace. But which of the Ten Commandments do we no longer need? Since Jesus died for our sins, are we now free to have other gods, bow down to images, blaspheme God’s name, desecrate His Sabbath, dishonor our parents, murder, commit adultery, steal, lie, and covet? [Of course not.](/posts/gospel/law.md#does-that-mean-we-are-now-free-to-break-it) Each of these commandments remains as relevant today as when they were first proclaimed on Mount Sinai.
 
 ## What is part of His law? When was it established?
 
@@ -138,7 +140,9 @@ The elevation of human-made commandments and traditions above the truth of the B
 > And he shall speak great words against the most High, and shall wear out the saints of the most High, and think to change *times and laws*: and they shall be given into his hand until a time and times and the dividing of time.
 {% ct 'Daniel 7:25' %}
 
-The word “laws” is plural, and indeed the Sabbath commandment was not the only one that was changed. The Catholic Church removed the second commandment, which prohibits the worship of images, and divided the tenth commandment into two. However, it is the alteration of the fourth commandment that stands out most, because the Sabbath is the [mark of God’s authority](/posts/basics/sabbath.md#which-commandment-identifies-the-creator-god), identifying Him as the Creator. Naturally, this raises the question: What is the Catholic Church’s mark of authority?
+The word “laws” is plural, and indeed the Sabbath commandment was not the only one that was changed. The Catholic Church removed the second commandment, which prohibits the worship of images, and divided the tenth commandment into two.[^2] However, it is the alteration of the fourth commandment that stands out most, because the Sabbath is the [mark of God’s authority](/posts/basics/sabbath.md#which-commandment-identifies-the-creator-god), identifying Him as the Creator. Naturally, this raises the question: What is the Catholic Church’s mark of authority?
+
+[^2]: Incidentally, Catholicism teaches that the pope is infallible when he speaks *ex cathedra*—from his authoritative position—yet at the same time asserts that God, the Creator of all, could somehow alter His own divine law. How can this be?
 
 ## What is the Catholic Church’s mark of authority?
 
@@ -162,6 +166,17 @@ The word “laws” is plural, and indeed the Sabbath commandment was not the on
 >
 > Which church does the whole civilized world obey? Protestants … profess great reverence for the Bible, and yet *by their solemn act of keeping Sunday they acknowledge the power of the Catholic Church. The Bible says, ‘Remember the Sabbath day, to keep it holy,’ but the Catholic Church says, ‘No, keep the first day of the week,’ and the whole world bows in obedience.*
 {% ct 'Catholic Priest T. Enright, lecture at Harlan, Iowa, December 15, 1889.' %}
+
+## What question does the papacy ask Protestants?
+
+> Protestants have repeatedly asked the papacy, “How could you dare to change God’s law?” But the question posed to Protestants by the Catholic church is even more penetrating.
+> 
+> Here it is officially: You will tell me that Saturday was the Jewish Sabbath, but that the Christian Sabbath has been changed to Sunday. Changed! but by whom? *Who has authority to change an express commandment of Almighty God? When God has spoken and said, Thou shalt keep holy the seventh day, who shall dare to say, Nay, thou mayest work and do all manner of worldly business on the seventh day; but thou shalt keep holy the first day in its stead?*
+>
+> This is a most important question, which I know not how you can answer. You are a Protestant, and you profess to go by the Bible and the Bible only; and *yet in so important a matter as the observance of one day in seven as a holy day, you go against the plain letter of the Bible, and put another day in the place of that day which the Bible has commanded.*
+> 
+> The command to keep holy the seventh day is one of the ten commandments; *you believe that the other nine are still binding; who gave you authority to tamper with the fourth?* If you are consistent with your own principles, if you really follow the Bible and the Bible only, you ought to be able to produce some portion of the New Testament in which this fourth commandment is expressly altered.
+{% ct "Library of Christian Doctrine: Why Don't You Keep Holy the Sabbath-Day? (London: Burns and Oates, Ltd.), pp. 3, 4." %}
 
 ## How many lawgivers are there?
 

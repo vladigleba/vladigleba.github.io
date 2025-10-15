@@ -3,6 +3,7 @@
   "description": "Better than gold, sweeter than honey, the Truth will make you free.",
   "author": "Vladi Gleba",
   "url": "https://vladigleba.com",
+  "useCustomReadingOrder": false,
   "categories": {
     "Basics": {
       "description": "Explore the most essential truths of the Bible.",

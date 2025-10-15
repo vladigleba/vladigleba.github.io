@@ -1,8 +1,9 @@
 ---
 title: Origin of Evil
 description: If God is in control, why is there so much evil in the world? How did it begin, and when will it end?
-date: 2025-01-03
+date: 2021-11-02
 series: Controversy
+order: 300
 ---
             
 ## Is God evil?

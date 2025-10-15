@@ -1,8 +1,9 @@
 ---
 title: What Is God Like?
 description: The amount of misconceptions and flat out lies about God is astounding. What is the truth about His character?
-date: 2025-01-02
+date: 2021-10-26
 series: Controversy
+order: 200
 ---
 
 ## Does God have a beginning or end?

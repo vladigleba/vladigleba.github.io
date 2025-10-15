@@ -1,8 +1,9 @@
 ---
 title: Messianic Prophecies
 description: Learn about the astounding Old Testament prophecies of the Messiah that were fulfilled in the life of Jesus.
-date: 2025-01-04
+date: 2021-11-13
 series: Messiah
+order: 400
 ---
 
 ## Where was Jesus to be born?
