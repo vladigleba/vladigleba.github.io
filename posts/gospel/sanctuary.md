@@ -3,6 +3,7 @@ title: The Gospel in the Sanctuary
 description: First introduced to Moses on Mount Sinai, the sanctuary offers deep insights into God’s plan of salvation.
 color: rgb(128,69,154)
 date: 2025-01-15
+order: 1500
 ---
 
 ## Why did God tell Moses to build a sanctuary?

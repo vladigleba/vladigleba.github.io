@@ -3,6 +3,7 @@ title: God’s Remnant Church
 description: God has a remnant church that will remain loyal to Him till the end. What are its identifying marks?
 date: 2025-02-03
 series: Remnant
+order: 3400
 ---
 
 ## Jesus established His church upon what foundation?

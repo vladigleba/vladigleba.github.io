@@ -3,6 +3,7 @@ title: 1,000 Years of Peace
 description: Find out who stays behind and what happens on earth, as well as in heaven, during the millennium.
 date: 2025-01-13
 series: SecondComing
+order: 1300
 ---
 
 ## What did Jesus promise before ascending to heaven?

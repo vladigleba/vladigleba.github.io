@@ -111,7 +111,7 @@ module.exports = async (config) => {
       }
     });
 
-    return addNextLinks(posts);
+    return addNextLinks(sortPosts(posts));
   });
 
   config.addCollection('groupedPosts', (collectionApi) => {
@@ -120,7 +120,7 @@ module.exports = async (config) => {
     const posts = collectionApi.getFilteredByGlob('posts/*/*.md');
 
     posts.forEach(post => processPost(post));
-    const orderedPosts = addNextLinks(posts);;
+    const orderedPosts = addNextLinks(sortPosts(posts));
 
     orderedPosts.forEach(post => {
       const { series } = post.data;
@@ -220,7 +220,12 @@ module.exports = async (config) => {
       let current = h2.nextElementSibling;
       const toWrap = [];
 
-      while (current && !(current.tagName === 'H2' || (current.tagName === 'P' && current.classList.contains('next-link')))) {
+      while (current) {
+        const isH2 = current.tagName === 'H2';
+        const isNextLink = current.tagName === 'P' && current.classList.contains('next-link');
+        
+        if (isH2 || isNextLink) break;
+        
         toWrap.push(current);
         current = current.nextElementSibling;
       }
@@ -237,6 +242,21 @@ module.exports = async (config) => {
   });
 
   // functions
+  function sortPosts(posts) {
+    if (!Array.isArray(posts)) return posts;
+    
+    // sort by custom order; if undefined, append to end (infinity)
+    if (site.useCustomReadingOrder) {
+      return posts.sort((a, b) => {
+        const orderA = a.data.order ?? Infinity;
+        const orderB = b.data.order ?? Infinity;
+        return orderA - orderB;
+      });
+    }
+
+    return posts;
+  }
+
   function addNextLinks(posts) {
     if (!Array.isArray(posts)) return;
     posts.forEach((post, index) => {

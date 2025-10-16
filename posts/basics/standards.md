@@ -3,6 +3,7 @@ title: Christian Standards
 description: Discover why followers of Christ are called to live differently and what that means practically.
 date: 2025-02-05
 series: Life
+order: 3600
 ---
 
 ## What is the primary motivator in a Christian’s life?

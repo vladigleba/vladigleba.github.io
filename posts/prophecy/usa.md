@@ -3,6 +3,7 @@ title: USA in Bible Prophecy
 description: Will the nation that has become a beacon of freedom to the world continue to uphold the cause of liberty?
 date: 2025-01-29
 series: Mark
+order: 2900
 ---
 
 ## Is God open about the future?

@@ -1,8 +1,9 @@
 ---
 title: Will I Be Judged?
 description: Am I my own ruler? Or am I responsible to a higher Authority for the way I live my life?
-date: 2025-01-16
+date: 2022-03-06
 series: Judgment
+order: 1600
 ---
 
 ## Has the judgment already begun?

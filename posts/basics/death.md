@@ -3,6 +3,7 @@ title: Are the Dead Really Dead?
 description: It started with a lie in the Garden of Eden, and it’s still being told today. Will you be fooled?
 date: 2025-01-25
 series: Deception
+order: 2500
 ---
 
 ## How did Jesus describe sleep?

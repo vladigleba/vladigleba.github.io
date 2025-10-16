@@ -3,6 +3,7 @@ title: Surrendering the Fight
 description: Knowingly or unknowingly, every person on earth is waging a losing war, and surrender is the only way out.
 date: 2025-01-09
 series: Salvation
+order: 900
 ---
 
 ## What is the war of all wars?

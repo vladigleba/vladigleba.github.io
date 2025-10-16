@@ -1,8 +1,9 @@
 ---
 title: First Day Texts
 description: Does the Bible have evidence of the Sabbath being changed? Explore the texts mentioning the first day to find out.
-date: 2025-01-21
+date: 2022-04-12
 series: Sunday
+order: 2100
 ---
 
 ## Is the Sabbath temporary or perpetual?

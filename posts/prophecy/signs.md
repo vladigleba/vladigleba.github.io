@@ -3,6 +3,7 @@ title: Signs of Christ’s Coming
 description: How close are we to the most glorious event in earth’s history? Do you know the signs?
 date: 2025-01-11
 series: SecondComing
+order: 1100
 ---
 
 ## What is the first sign Jesus mentions?

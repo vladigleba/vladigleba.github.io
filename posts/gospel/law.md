@@ -2,7 +2,8 @@
 title: God’s Law of Love
 description: The book of James calls it the royal law of liberty. Can it even be kept? Or is obedience legalism?
 color: rgb(77,104,129)
-date: 2025-01-18
+date: 2022-03-28
+order: 1800
 ---
 
 ## How does the Bible describe the law of God?

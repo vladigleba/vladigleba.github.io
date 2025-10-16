@@ -3,6 +3,7 @@ title: The 2,300 Day Prophecy
 description: A prophecy that stretches into the 19th century with implications for people living today. Are you aware of it?
 date: 2025-01-17
 series: Judgment
+order: 1700
 ---
 
 ## What does Daniel see in chapter eight?

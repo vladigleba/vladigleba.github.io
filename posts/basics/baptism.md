@@ -3,6 +3,7 @@ title: Why Get Baptized?
 description: Explore what a public commitment to Christ looks like, what it means, and why it matters.
 date: 2025-02-02
 series: Baptism
+order: 3300
 ---
 
 ## What did Jesus tell His disciples before His ascension?

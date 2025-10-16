@@ -3,6 +3,7 @@ title: How Will Christ Come?
 description: Will His coming be a secret, or does the Bible tell a different story? The truth may shock you.
 date: 2025-01-12
 series: SecondComing
+order: 1200
 ---
 
 ## What did Jesus promise prior to His crucifixion?

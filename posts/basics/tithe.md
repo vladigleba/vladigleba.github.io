@@ -3,6 +3,7 @@ title: Finances, God’s Way
 description: Financial investment advice in the Bible? Discover God’s plan for managing our finances wisely.
 date: 2025-02-06
 series: Life
+order: 3700
 ---
 
 ## Who is the true owner of everything on earth?

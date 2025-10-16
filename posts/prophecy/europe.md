@@ -2,7 +2,8 @@
 title: Europe’s Future Revealed
 description: Delve into a remarkable prophecy about the rise and fall of kingdoms. What does the future hold for Europe?
 color: rgb(101,166,141)
-date: 2025-01-10
+date: 2022-01-07
+order: 1000
 ---
 
 ## How does the story start?

@@ -1,8 +1,9 @@
 ---
 title: God’s Law Changed
 description: The Bible prophesied a power would arise that would attempt to change God’s law. Has this happened?
-date: 2025-01-22
+date: 2022-04-23
 series: Sunday
+order: 2200
 ---
 
 ## What is truth?
@@ -124,9 +125,10 @@ This verse echoes Paul’s warning about men arising “speaking perverse things
 
 In fact, Mithraism was the Persian name for Babylonian sun worship, for Mithra was the Persian god of light, who, under the Roman Empire, was identified with the sun god *Sol Invictus*, the invincible or unconquerable sun. This sun worship was later Christianized when Catholicism declared Sunday holy in honor of Christ’s resurrection—a day long associated with pagan sun worship, not only in Mithraism but also in the religion of ancient Babylon.[^1] Thus, there is a direct line of continuity between the religions of Babylon, Persia, Greece, Rome, and Catholicism—a progression symbolically illustrated in the [image of Daniel 2](/posts/prophecy/europe.md).
 
-There is only one commandment that is both a law and a measure of time: the fourth. The first seeds of its alteration were planted when Constantine converted to Christianity in 312 AD, for after becoming Emperor, he granted Christian bishops influence in the legislative process. Under their guidance, he soon passed the first Sunday law in 321 AD, declaring Sunday—the pagan day of sun worship—the official day of rest across the Roman Empire. This was reinforced in 364 AD, when the Council of Laodicea urged Christians to observe Sunday as their rest day while prohibiting them from resting on Saturday. Thus, the fourth commandment of God was effectively changed—from honoring the biblical seventh-day Sabbath established at creation to observing Sunday—and the rest is history.
+There is only one commandment that is both a law and a measure of time: the fourth.[^2] The first seeds of its alteration were planted when Constantine converted to Christianity in 312 AD, for after becoming Emperor, he granted Christian bishops influence in the legislative process. Under their guidance, he soon passed the first Sunday law in 321 AD, declaring Sunday—the pagan day of sun worship—the official day of rest across the Roman Empire. This was reinforced in 364 AD, when the Council of Laodicea urged Christians to observe Sunday as their rest day while prohibiting them from resting on Saturday. Thus, the fourth commandment of God was effectively changed—from honoring the biblical seventh-day Sabbath established at creation to observing Sunday—and the rest is history.
 
 [^1]: Murl Vance, “The Counterfeit Memorial,” *Signs of the Times*, July 29, 1940, p. 4
+[^2]: The term “times” in “think to change times and laws” also applies to prophetic times—the method of prophetic interpretation in particular. The historicist method, championed by the Protestant Reformers, has largely been abandoned in favor of the preterist and futurist methods, introduced by the Roman Catholic Jesuits Luis de Alcazar and Francisco Ribera. Alcazar proposed that the prophecies of Daniel and Revelation were fulfilled in the past (preterism), while Ribera suggested they will be fulfilled in the future (futurism). Historicism, on the other hand, views prophecy as relevant throughout church history, tracing it to specific historical events, nations, and movements. The preterist and futurist methods were introduced mainly to counter the historicist method and to divert attention away from Catholicism as a major power in end-time prophetic scenarios, since historicism unequivocally identifies the Roman Catholic Church [as the sea beast](/posts/prophecy/mark.md) of Revelation 13.
 
 ## Did Jesus warn about this?
 
@@ -140,9 +142,9 @@ The elevation of human-made commandments and traditions above the truth of the B
 > And he shall speak great words against the most High, and shall wear out the saints of the most High, and think to change *times and laws*: and they shall be given into his hand until a time and times and the dividing of time.
 {% ct 'Daniel 7:25' %}
 
-The word “laws” is plural, and indeed the Sabbath commandment was not the only one that was changed. The Catholic Church removed the second commandment, which prohibits the worship of images, and divided the tenth commandment into two.[^2] However, it is the alteration of the fourth commandment that stands out most, because the Sabbath is the [mark of God’s authority](/posts/basics/sabbath.md#which-commandment-identifies-the-creator-god), identifying Him as the Creator. Naturally, this raises the question: What is the Catholic Church’s mark of authority?
+The word “laws” is plural, and indeed the Sabbath commandment was not the only one that was changed. The Catholic Church removed the second commandment, which prohibits the worship of images, and divided the tenth commandment into two.[^3] However, it is the alteration of the fourth commandment that stands out most, because the Sabbath is the [mark of God’s authority](/posts/basics/sabbath.md#which-commandment-identifies-the-creator-god), identifying Him as the Creator. To alter it, therefore, is to directly challenge God’s authority. This naturally raises the following question: What is the Catholic Church’s mark of authority?
 
-[^2]: Incidentally, Catholicism teaches that the pope is infallible when he speaks *ex cathedra*—from his authoritative position—yet at the same time asserts that God, the Creator of all, could somehow alter His own divine law. How can this be?
+[^3]: Incidentally, Catholicism teaches that the pope is infallible when he speaks *ex cathedra*—from his authoritative position—yet at the same time asserts that God, the Creator of all, could somehow alter His own divine law. How can this be?
 
 ## What is the Catholic Church’s mark of authority?
 
