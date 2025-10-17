@@ -114,6 +114,19 @@ In this passage, Paul is encouraging the Corinthians to remember their fellow be
 
 Looking at the context, verse 1 shows that Paul is addressing “doubtful disputations” {% rf 'Romans 14:1' %}, meaning issues of personal preference related to ceremonial practices. Verses 2 and 3 offer further insight: the controversy was actually about fasting {% rf 'Romans 14:2-3, 6' %}. Some Jewish Christians thought all believers were obligated to fast on specific days; by contrast, Gentile Christians, who were unfamiliar with such ceremonial observances, had a different view. Seeking reconciliation, Paul urged them to stop passing judgment on one another in these matters. The Sabbath, however, cannot be considered a “doubtful disputation,” since it is not part of the ceremonial law; rather, it belongs to God’s unchanging, moral law—the Ten Commandments—established at creation.
 
+## What is the Lord’s day?
+
+> I was in the Spirit *on the Lord’s day*, and heard behind me a great voice, as of a trumpet.
+{% ct 'Revelation 1:10' %}
+
+> And he said unto them, The sabbath was made for man, and not man for the sabbath:  Therefore *the Son of man is Lord also of the sabbath*.
+{% ct 'Mark 2:27-28' %}
+
+> But *the seventh day is the sabbath of the LORD* thy God: in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates.
+{% ct 'Exodus 20:10' %}
+
+Biblically, there is only one day that the Lord God claims as His own—the seventh-day Sabbath. Jesus affirmed this, and the fourth commandment clearly identifies it as such. Unfortunately, “the Lord’s day” is widely misinterpreted as referring to Sunday, even though there is no Scriptural evidence to support this.
+
 ## What did Jesus teach about the law?
 
 > Think not that I am come to destroy the law, or the prophets: *I am not come to destroy, but to fulfil*. For verily I say unto you, till heaven and earth pass, *one jot or one tittle shall in no wise pass from the law*, till all be fulfilled.
