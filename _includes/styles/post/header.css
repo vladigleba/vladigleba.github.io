@@ -56,7 +56,7 @@ article > header .series-item {
   color: inherit;
   transition: background-color 0.15s ease;
   margin: 0 -0.7rem;
-  padding: 0.15rem 0.7rem;
+  padding: 0.25rem 0.7rem;
 }
 
 article > header .series-item .series-left {
@@ -89,8 +89,8 @@ article > header .series-item:not([aria-current="page"]):hover {
 article > header .meta.series {
   display: flex;
   justify-content: space-between;
-  font-weight: 800;
-  padding: 0 0.7rem 0.4rem;
+  font-weight: 700;
+  padding: 0.1rem 0.7rem 0.5rem;
   margin: 0 -0.7rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }

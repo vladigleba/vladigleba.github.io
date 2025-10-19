@@ -51,8 +51,8 @@
 }
 
 .checkmark svg {
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   position: relative;
-  top: 1px;
+  top: 0.5px;
 }

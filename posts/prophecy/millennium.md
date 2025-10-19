@@ -31,7 +31,7 @@ The promise was repeated by the two angels who appeared to His disciples during 
 > And there were voices, and thunders, and lightnings; and *there was a great earthquake, such as was not since men were upon the earth, so mighty an earthquake, and so great*. And the great city was divided into three parts, and the cities of the nations fell: and great Babylon came in remembrance before God, to give unto her the cup of the wine of the fierceness of his wrath. And *every island fled away, and the mountains were not found. And there fell upon men a great hail out of heaven, every stone about the weight of a talent*: and men blasphemed God because of the plague of the hail; for the plague thereof was exceeding great.
 {% ct 'Revelation 16:18-21' %}
 
-Because Jesus conquered death, all those who died in Him throughout the ages will be resurrected at His coming and, together with the righteous who remained alive, will be taken up to live with Him in heaven, never to be separated from Him again! But the earth will be destroyed by the most devastating earthquake and hailstorm since the creation of Adam and Eve. Revelation says the hail will weigh about a talent, which is about 75 pounds, and the earthquake will cause every island as well as the mountains to move out of its place!
+Because Jesus conquered death, all those who died in Him throughout the ages will be resurrected at His coming and, together with the righteous who remained alive, will be taken up to live with Him in heaven, never to be separated from Him again! However, the earth will be destroyed by the most devastating earthquake and hailstorm since the creation. Revelation says the hail will weigh about a talent—about 75 pounds—and the earthquake will cause every island as well as the mountains to move out of its place.
 
 ## How will the unrighteous experience His coming?
 
@@ -44,14 +44,14 @@ Because Jesus conquered death, all those who died in Him throughout the ages wil
 > And then shall that Wicked be revealed, whom the Lord shall consume with the spirit of his mouth, and *shall destroy with the brightness of his coming*: even him, whose coming is after the working of Satan with all power and signs and lying wonders, and with all deceivableness of unrighteousness in them that perish; because they received not the love of the truth, that they might be saved.
 {% ct '2 Thessalonians 2:8-10' %}
 
-Because sin cannot exist in the presence of a holy God, to everyone who didn’t accept Jesus’ sacrifice on their behalf so He could cover their sins the second coming will be like a consuming fire because they will have to pay for their sins themselves. Revelation 19 uses symbolic imagery to describe how they will be destroyed by the brightness of His holy presence.
+Because sin cannot exist in the presence of a holy God, to everyone who did not accept Jesus’ sacrifice on their behalf, so He could cover their sins, the second coming will be like a consuming fire because they will have to pay for their sins themselves. {% rf 'Revelation 19:11-21' false %} uses symbolic imagery to describe how they will be destroyed by the brightness of His holy presence.
 
 ## What happens to Satan at this time?
 
 > And I saw an angel come down from heaven, having the key of the bottomless pit and a great chain in his hand. And *he laid hold on the dragon, that old serpent, which is the Devil, and Satan, and bound him a thousand years*.
 {% ct 'Revelation 20:1-2' %}
 
-The chain described here is a symbolic chain of circumstances because Satan will be confined to planet earth without anyone to tempt or deceive since the saved are in heaven and the unsaved are dead, and for the first time since his rebellion in heaven, he is deprived of his power. This will be his fate for 1,000 years. It is interesting to note that the Greek word for “bottomless pit” is “abussos,” or abyss, and it is the same word used in {% rf 'Genesis 1:2' %} for the word “deep,” meaning the earth will resemble its original state during this time.
+The chain described here is a symbolic chain of circumstances because Satan will be confined to planet earth without anyone to tempt or deceive, for the saved will be in heaven and the unsaved will be dead. For the first time since his rebellion in heaven, he is deprived of his power, and this will be his fate for 1,000 years. It is interesting to note that the Greek word for “bottomless pit” is “abussos” (abyss)—the same word used in {% rf 'Genesis 1:2' false %} for the word “deep”. In other words, the earth will resemble its original state during this time.
 
 ## Who else is bound with him?
 
@@ -65,7 +65,7 @@ The angels under Satan’s command whom he managed to deceive in heaven and pers
 > And the slain of the LORD shall be at that day from one end of the earth even unto the other end of the earth: *they shall not be lamented, neither gathered, nor buried*; they shall be dung upon the ground.
 {% ct 'Jeremiah 25:33' %}
 
- The second coming of Jesus kills the unrighteous due to the brightness and holiness of His presence, and they remain dead during the 1,000 years, meaning they will not have an opportunity to repent because the time to do so has run out.
+ The brightness of Jesus’ coming—His glorious, holy presence—kills the unrighteous, and they remain dead during the 1,000 years. They will have no opportunity to repent because the time to do so has run out.
 
 ## What happens to planet Earth?
 
@@ -104,7 +104,7 @@ Scripture’s portrayal of the earth’s desolation shows that the belief in an 
 > And after these things I heard a great voice of much people in heaven, saying, Alleluia; Salvation, and glory, and honour, and power, unto the Lord our God: *for true and righteous are his judgments*.
 {% ct 'Revelation 19:1-2' %}
 
-The saved from all ages that are in heaven during the 1,000 years will be part of the next phase of the judgment during which they will have all their questions answered about God’s dealings with sin and sinners. They will not be determining who is saved or lost because God will have [already determined](/posts/prophecy/judgment.md) that, but the cases of all who are lost, including Satan and his angels, will be reviewed, and the fairness of God’s judgment will be confirmed.
+The saved from all ages that are in heaven during the 1,000 years will be part of the next phase of the judgment during which they will have all their questions answered about God’s dealings with sin and sinners. They will not be determining who is saved or lost, for God will have [already determined](/posts/prophecy/judgment.md) that, but the cases of all who are lost, including Satan and his angels, will be reviewed, and the fairness of God’s judgment will be confirmed.
 
 ## What happens at the end of the 1,000 years?
 
@@ -120,7 +120,7 @@ The saved from all ages that are in heaven during the 1,000 years will be part o
 > Marvel not at this: for the hour is coming, in the which all that are in the graves shall hear his voice, and shall come forth; *they that have done good, unto the resurrection of life*; and *they that have done evil, unto the resurrection of damnation*.
 {% ct 'John 5:28-29' %}
 
-At the end of the 1,000 years Jesus will return to earth for the third time, and the New Jerusalem will descend from heaven with all the saved. Jesus will then flatten the Mount of Olives, creating a great plain on which the city will settle. And just like the resurrection of the saved marked the beginning of the 1,000 year period, the end of this period will be marked by a second resurrection, and this one is of the unsaved of all ages.
+At the end of the 1,000 years Jesus will return to earth for the third time, and the New Jerusalem will descend from heaven with all the saved. Jesus will then flatten the Mount of Olives, creating a great plain on which the city will settle. And just like the resurrection of the saved marked the beginning of the 1,000 year period, the end of this period will be marked by the resurrection of the unsaved of all ages.
 
 ## What happens to Satan?
 
@@ -140,7 +140,7 @@ After the second resurrection, Satan will be free once again to deceive and mani
 > For there is *nothing covered, that shall not be revealed; neither hid, that shall not be known*. Therefore whatsoever ye have spoken in darkness shall be heard in the light; and that which ye have spoken in the ear in closets shall be proclaimed upon the housetops.
 {% ct 'Luke 12:2-3' %}
 
-Satan manages to deceive the wicked, who realize they are shut out of the New Jerusalem, and persuades them to surround the city and attempt to capture it. But God’s throne will suddenly appear, bringing the attack to a halt and beginning the final phase of the judgment. The wicked will see their life pass before them and realize that God did everything He could to save them from their life of sin, but they did not heed Him, and without the sacrifice of Jesus covering their sins, they are left to pay for their own sins.
+Satan manages to deceive the wicked, who realize they are shut out of the New Jerusalem, and persuades them to surround the city and attempt to capture it. But God’s throne will suddenly appear, bringing the attack to a halt and beginning the final phase of the judgment. The wicked will see their life pass before them and realize that God did everything He could to save them from their life of sin, but they resisted Him, and without the sacrifice of Jesus covering their sins, they are left to pay for their own sins.
 
 ## How will they respond?
 
@@ -150,7 +150,7 @@ Satan manages to deceive the wicked, who realize they are shut out of the New Je
 > That *at the name of Jesus every knee should bow*, of things in heaven, and things in earth, and things under the earth; and that *every tongue should confess that Jesus Christ is Lord*, to the glory of God the Father.
 {% ct 'Philippians 2:10-11' %}
 
-All the wicked bow before God as they acknowledge that He has been fair, just, and longsuffering. After this acknowledgment, the controversy between good and evil will be settled, and it will be safe to eliminate sin and those who chose to cling to it.
+All the wicked, including Satan—the original instigator of the long rebellion against God’s government—and his angels, bow before God as they acknowledge that He has been fair, just, and longsuffering. This acknowledgment settles the great controversy between good and evil, and it will be safe to eliminate sin and those who chose to cling to it.
 
 ## What happens to them?
 
@@ -163,7 +163,7 @@ All the wicked bow before God as they acknowledge that He has been fair, just, a
 > Say unto them, As I live, saith the Lord GOD, *I have no pleasure in the death of the wicked*; but that the wicked turn from his way and live: *turn ye, turn ye from your evil ways; for why will ye die*, O house of Israel?
 {% ct 'Ezekiel 33:11' %}
 
-Fire then falls upon the wicked, as well as Satan and his angels, forming a lake of fire all around the New Jerusalem. This is the second death from which there is no resurrection, marking the end of the controversy between God and Satan, good and evil. For the God of love {% rf '1 John 4:8' %}, this will be a difficult thing to watch because every single person who is destroyed is one whom He loved and for whom Jesus died. He did everything He could to save them, but they persistently rejected Him, and so He has no other option left. Once there is nothing but ashes left {% rf 'Malachi 4:3' %}, the fire will go out, and the universe will finally be free from sin.
+Fire then falls upon the wicked, Satan, and his angels, forming a lake of fire all around the New Jerusalem. This is the second death from which there is no resurrection, marking the end of the controversy between God and Satan, good and evil. For the God of love {% rf '1 John 4:8' %}, this will be a difficult thing to watch because every single person who is destroyed is one whom He loved and for whom Jesus died. He did everything He could to save them, but they persistently rejected Him, and so He has no other option left. Once there is nothing but ashes left {% rf 'Malachi 4:3' %}, the fire will go out, and the universe will finally be free from sin.
 
 ## What happens once the fire goes out?
 
@@ -176,4 +176,4 @@ Fire then falls upon the wicked, as well as Satan and his angels, forming a lake
 >  And *I saw a new heaven and a new earth*: for the first heaven and the first earth were passed away; and there was no more sea. … And I heard a great voice out of heaven saying, Behold, the tabernacle of God is with men, and he will dwell with them, and they shall be his people, and *God himself shall be with them, and be their God*. And *God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away*. 
 {% ct 'Revelation 21:1, 3-4' %}
 
-God then creates a new heavens (atmosphere) and a new earth in which righteousness dwells! Everything that Adam and Eve lost will be restored, and the redeemed of all ages will live in perfect love, joy, and peace throughout eternity with God!
+God then creates a new heaven (atmosphere) and a new earth in which righteousness dwells. Everything that Adam and Eve lost will be restored, and the redeemed of all ages will live in perfect love, joy, and peace throughout eternity with God!

@@ -1,7 +1,7 @@
 ---
 title: Are You Part of Babylon?
 description: Revelation warns about it, and the plagues are poured out on it. What does Babylon represent?
-date: 2025-01-30
+date: 2022-10-19
 series: Babylon
 order: 3000
 ---

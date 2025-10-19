@@ -1,7 +1,7 @@
 ---
 title: How to Identify a Cult?
 description: Is it possible to be part of a cult and not know it? Discover it’s identifying marks to avoid being fooled.
-date: 2025-01-31
+date: 2022-12-18
 series: Babylon
 order: 3100
 ---

@@ -1,7 +1,7 @@
 ---
 title: Who Is the Antichrist?
 description: Discover the truth about the entity that places itself in place of, and in opposition to, Christ Himself.
-date: 2025-01-27
+date: 2022-07-17
 series: Mark
 order: 2700
 ---

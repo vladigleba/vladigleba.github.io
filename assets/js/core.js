@@ -35,7 +35,7 @@ if (document.body.classList.contains('js-enabled')) {
               popup.className = 'copy-popup';
               popup.innerHTML = `
                 <div class="checkmark">
-                  <svg><use href="/assets/images/icons.svg#check"></use></svg>
+                  <svg><use href="/assets/images/icons.svg#checkmark"></use></svg>
                 </div>
                 <span>Link copied</span>`;
               link.appendChild(popup);

@@ -49,11 +49,17 @@ th, td {
   overflow: visible;
 }
 
-/* utility: visually hidden but accessible to screen readers */
+/* visually hidden but accessible to screen readers */
+
 .visually-hidden {
   position: absolute !important;
   height: 1px; width: 1px;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
+}
+
+.content h2:focus,
+#posts-sort-select:focus {
+  outline: 1px dashed transparent;
 }

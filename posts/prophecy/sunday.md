@@ -114,16 +114,28 @@ In this passage, Paul is encouraging the Corinthians to remember their fellow be
 
 Looking at the context, verse 1 shows that Paul is addressing “doubtful disputations” {% rf 'Romans 14:1' %}, meaning issues of personal preference related to ceremonial practices. Verses 2 and 3 offer further insight: the controversy was actually about fasting {% rf 'Romans 14:2-3, 6' %}. Some Jewish Christians thought all believers were obligated to fast on specific days; by contrast, Gentile Christians, who were unfamiliar with such ceremonial observances, had a different view. Seeking reconciliation, Paul urged them to stop passing judgment on one another in these matters. The Sabbath, however, cannot be considered a “doubtful disputation,” since it is not part of the ceremonial law; rather, it belongs to God’s unchanging, moral law—the Ten Commandments—established at creation.
 
+## How about Colossians 2:16-17?
+
+> *Let no man therefore judge you* in meat, or in drink, or in respect of a holyday [festival], or of the new moon, *or of the sabbath days*: which are a shadow of things to come; but the body is of Christ.
+{% ct 'Colossians 2:16-17' %}
+
+The fact that the passage mentions food, drink, festivals, and new moons in connection with “sabbath days” indicates that, once again, it is referring to the ceremonial laws. These are described as “a shadow of things to come” because they all pointed forward to Christ. When the veil of the temple was supernaturally torn from top to bottom at Christ’s death, God signified that these ceremonial laws had met their fulfillment in His Son and were no longer needed {% rf 'Ephesians 2:14-15' %}, for the great sacrifice to which they all pointed had been made.
+
+In contrast to the Ten Commandments, which were written by God Himself on stone and placed *inside* the ark of the covenant {% rf 'Deuteronomy 10:3-5' %}, the ceremonial laws were written by Moses on parchment and placed *beside* the ark {% rf 'Deuteronomy 31:24-26' %}. The “sabbath days” mentioned as part of the ceremonial law refer to the yearly sabbaths described in {% rf 'Leviticus 23:24-38' false %}, not the weekly Sabbath that is part of the moral law. These annual sabbaths fell on specific days of the month each year (for example, the first, ninth, tenth, or fifteenth day), yet they were still called sabbaths because the people were to rest from their work on those days.
+
 ## What is the Lord’s day?
 
 > I was in the Spirit *on the Lord’s day*, and heard behind me a great voice, as of a trumpet.
 {% ct 'Revelation 1:10' %}
 
-> And he said unto them, The sabbath was made for man, and not man for the sabbath:  Therefore *the Son of man is Lord also of the sabbath*.
+> And he said unto them, The sabbath was made for man, and not man for the sabbath: Therefore *the Son of man is Lord also of the sabbath*.
 {% ct 'Mark 2:27-28' %}
 
 > But *the seventh day is the sabbath of the LORD* thy God: in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates.
 {% ct 'Exodus 20:10' %}
+
+> Six days shall work be done: but *the seventh day is the sabbath of rest*, a holy convocation; ye shall do no work therein: *it is the sabbath of the LORD* in all your dwellings.
+{% ct 'Leviticus 23:3' %}
 
 Biblically, there is only one day that the Lord God claims as His own—the seventh-day Sabbath. Jesus affirmed this, and the fourth commandment clearly identifies it as such. Unfortunately, “the Lord’s day” is widely misinterpreted as referring to Sunday, even though there is no Scriptural evidence to support this.
 
