@@ -1,7 +1,7 @@
 ---
 title: Surrendering the Fight
 description: Knowingly or unknowingly, every person on earth is waging a losing war, and surrender is the only way out.
-date: 2025-01-09
+date: 2023-03-29
 series: Salvation
 order: 900
 ---

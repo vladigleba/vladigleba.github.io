@@ -25,6 +25,12 @@
         <loc>https://vladigleba.com/prophecy/europe/</loc>
       </url>
       <url>
+        <loc>https://vladigleba.com/prophecy/manner/</loc>
+      </url>
+      <url>
+        <loc>https://vladigleba.com/prophecy/signs/</loc>
+      </url>
+      <url>
         <loc>https://vladigleba.com/prophecy/judgment/</loc>
       </url>
       <url>
@@ -88,15 +94,6 @@
         <loc>https://vladigleba.com/prophecy/cult/</loc>
       </url>
       <url>
-        <loc>https://vladigleba.com/gospel/surrender/</loc>
-      </url>
-      <url>
-        <loc>https://vladigleba.com/prophecy/signs/</loc>
-      </url>
-      <url>
-        <loc>https://vladigleba.com/prophecy/manner/</loc>
-      </url>
-      <url>
         <loc>https://vladigleba.com/basics/spirit/</loc>
       </url>
       <url>
@@ -106,13 +103,13 @@
         <loc>https://vladigleba.com/prophecy/prophets/</loc>
       </url>
       <url>
-        <loc>https://vladigleba.com/basics/standards/</loc>
-      </url>
-      <url>
         <loc>https://vladigleba.com/basics/tithe/</loc>
       </url>
       <url>
-        <loc>https://vladigleba.com/basics/prayer/</loc>
+        <loc>https://vladigleba.com/gospel/surrender/</loc>
+      </url>
+      <url>
+        <loc>https://vladigleba.com/basics/standards/</loc>
       </url>
       <url>
         <loc>https://vladigleba.com/</loc>
@@ -125,6 +122,9 @@
       </url>
       <url>
         <loc>https://vladigleba.com/prophecy/</loc>
+      </url>
+      <url>
+        <loc>https://vladigleba.com/basics/prayer/</loc>
       </url>
       <url>
         <loc>https://vladigleba.com/.github/prompts/research.prompt/</loc>

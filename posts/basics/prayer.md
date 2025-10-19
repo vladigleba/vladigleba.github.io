@@ -1,7 +1,7 @@
 ---
 title: Keys to Effective Prayer
 description: Prayer is foundational to the Christian walk. Are there biblical principles that can make our prayers more effective?
-date: 2025-04-16
+date: 2025-05-15
 series: Life
 order: 3800
 ---
@@ -72,7 +72,7 @@ Today, there is so much emphasis on our identity as sons and daughters of God th
 {% ct '1 John 5:14-15' %}
 
 > And he went a little further, and fell on his face, and prayed, saying, O my Father, if it be possible, let this cup pass from me: nevertheless *not as I will, but as thou wilt*.
-{% ct 'Matthew 26:39 ' %}
+{% ct 'Matthew 26:39' %}
 
 > And whatsoever we ask, we receive of him, because we *keep his commandments*, and *do those things that are pleasing in his sight*.
 {% ct '1 John 3:22' %}
@@ -100,7 +100,7 @@ It is easy for our prayers to become self-focused and selfish, but Christ teache
 
 One author shared the following insight on praying Jesus’ model prayer:[^1]
 
-> I cannot say ‘our’ if I live only for myself. I cannot say ‘Father’ if I do not endeavor each day to act like his child. I cannot say ‘who art in heaven’ if I’m laying up no treasures there. I cannot say ‘hallowed be thy name’ if I am not striving for holiness. I cannot say ‘thy kingdom come’ if I’m not seeking to hasten the blessed hope. I cannot say ‘thy will be done’ if I am disobedient to his word. I cannot say ‘in earth as it is in heaven’ if I’ll not serve him here and now. I cannot say ‘give us this day our daily bread’ if I am selfishly hoarding for the fu-ture. I cannot say ‘forgive us our debts’ if I harbor a grudge against anyone. I cannot say ‘lead us not into temptation’ if I deliberately place myself in its path. I cannot say ‘deliver us from evil’ if I do not long for holiness. I cannot say ‘thine is the kingdom’ if I do not give Jesus the throne of my heart. I cannot attribute to him ‘the power’ if I fear what men may do. I cannot ascribe to him ‘the glory’ if I’m seeking for my own honor. I cannot say ‘forever’ if I’m living only for temporary earthly rewards.
+> I cannot say ‘our’ if I live only for myself. I cannot say ‘Father’ if I do not endeavor each day to act like his child. I cannot say ‘who art in heaven’ if I’m laying up no treasures there. I cannot say ‘hallowed be thy name’ if I am not striving for holiness. I cannot say ‘thy kingdom come’ if I’m not seeking to hasten the blessed hope. I cannot say ‘thy will be done’ if I am disobedient to his word. I cannot say ‘in earth as it is in heaven’ if I’ll not serve him here and now. I cannot say ‘give us this day our daily bread’ if I am selfishly hoarding for the future. I cannot say ‘forgive us our debts’ if I harbor a grudge against anyone. I cannot say ‘lead us not into temptation’ if I deliberately place myself in its path. I cannot say ‘deliver us from evil’ if I do not long for holiness. I cannot say ‘thine is the kingdom’ if I do not give Jesus the throne of my heart. I cannot attribute to him ‘the power’ if I fear what men may do. I cannot ascribe to him ‘the glory’ if I’m seeking for my own honor. I cannot say ‘forever’ if I’m living only for temporary earthly rewards.
 {% ct 'Unknown' %}
 
 [^1]: Quoted by Doug Batchelor, *Teach Us to Pray* (Roseville, CA: Amazing Facts, 2005), p. 30.
@@ -108,10 +108,10 @@ One author shared the following insight on praying Jesus’ model prayer:[^1]
 ## What things can I pray about?
 
 > Casting *all your care* upon him; for he careth for you.
-{% ct '1 Peter 5:7 ' %}
+{% ct '1 Peter 5:7' %}
 
 > Cast *thy burden* upon the LORD, and he shall sustain thee: He shall never suffer the righteous to be moved.
-{% ct 'Psalm 55:22 ' %}
+{% ct 'Psalm 55:22' %}
 
 > *Come unto me*, all ye that labour and are heavy laden, and I will give you rest.
 {% ct 'Matthew 11:28' %}
@@ -180,7 +180,7 @@ So why is faith so important to God? Well, [it is the foundation](/posts/gospel/
 > And when he had consulted with the people, he appointed singers unto the LORD, and that should praise the beauty of holiness, as they went out before the army, and to say, Praise the LORD; for his mercy endureth for ever. And *when they began to sing and to praise*, the LORD set ambushments against the children of Ammon, Moab, and mount Seir, which were come against Judah; and *they were smitten*.
 {% ct '2 Chronicles 20:21-22' %}
 
-When Jesus raised Lazarus, He thanked God for hearing His prayer *before* the resurrection occurred. Likewise, when the Israelites went to war under Jehoshaphat, they praised God *before* the battle even began. Thanking God before we receive His answer is closely related to the concept we just discussed—faith; it is further evidence of a trusting confidence in His love. It is natural to give thanks for something already received, but giving thanks in advance requires faith. However, if we know our request is in harmony with His will, as revealed in the Bible, we can be confident that He will answer it. Knowing God’s will for us will requires Bible study, but there is power in finding a promise in His Word that pertains to our request, presenting it to Him in prayer, and then claiming it—in the name of His beloved Son—by faith, and thanking Him for it. In Jesus, all of God’s promises are sure {% rf '2 Corinthians 1:20' %}.
+When Jesus raised Lazarus, He thanked God for hearing His prayer *before* the resurrection occurred. Likewise, when the Israelites went to war under Jehoshaphat, they praised God *before* the battle even began. Thanking God before we receive His answer is closely related to the concept we just discussed—faith; it is further evidence of a trusting confidence in His love. It is natural to give thanks for something already received, but giving thanks in advance requires faith. However, if we know our request is in harmony with His will, as revealed in the Bible, we can be confident that He will answer it. Knowing God’s will for us requires Bible study, but there is power in finding a promise in His Word that pertains to our request, presenting it to Him in prayer, and then claiming it—in the name of His beloved Son—by faith, and thanking Him for it. In Jesus, all of God’s promises are sure {% rf '2 Corinthians 1:20' %}.
 
 Obviously, how and when God answers our prayers is up to Him. He may say “Yes,” or He may say “Wait” if the timing is not quite right, thereby giving us a chance to practice patience. “No” is a perfectly legitimate answer too, even though it may not be what we wanted. In such cases, we can rest in the assurance that He sees the end from the beginning and always has our best interests in mind—knowing what is best for us better than we do ourselves.
 
@@ -207,13 +207,13 @@ Adam and Eve’s rejection is replayed in the life of every person, for all have
 {% ct 'Colossians 3:15-17' %}
 
 > Continue in prayer, and watch in the same *with thanksgiving*.
-{% ct 'Colossians 4:2 ' %}
+{% ct 'Colossians 4:2' %}
 
 > *I thank my God* upon every remembrance of you, always in every prayer of mine for you all *making request with joy*.
-{% ct 'Philippians 1:3-4 ' %}
+{% ct 'Philippians 1:3-4' %}
 
 > In *every thing give thanks*: for this is the will of God in Christ Jesus concerning you.
-{% ct '1 Thessalonians. 5:18 ' %}
+{% ct '1 Thessalonians. 5:18' %}
 
 The Bible teaches that every good thing comes from our Father {% rf 'James 1:17' %}, so praise, gratitude, and thanksgiving have a place in every prayer. There will be circumstances in which these may be harder to express, but Paul tells us that “all things work together for good to those who love God” {% rf 'Romans 8:28' %}. Note that he doesn’t say “some things” or “most things,” but “all.” This means that God will use even the greatest tragedy for good—just look at the cross, where Jesus hung, rejected and crucified by the very people He came to save. Nothing we will ever experience comes close to what He endured on the cross. He took the sword first and blunted its edge for us.
 

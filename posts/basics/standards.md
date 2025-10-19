@@ -1,7 +1,7 @@
 ---
 title: Christian Standards
 description: Discover why followers of Christ are called to live differently and what that means practically.
-date: 2025-02-05
+date: 2023-04-19
 series: Life
 order: 3600
 ---

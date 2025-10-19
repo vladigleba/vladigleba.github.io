@@ -1,7 +1,7 @@
 ---
 title: The Gift of Prophecy
 description: False prophets are on the rise. Learn how to tell the difference between a false and a true prophet of God.
-date: 2025-02-04
+date: 2023-02-22
 series: Remnant
 order: 3500
 ---

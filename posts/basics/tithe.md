@@ -1,7 +1,7 @@
 ---
 title: Finances, God’s Way
 description: Financial investment advice in the Bible? Discover God’s plan for managing our finances wisely.
-date: 2025-02-06
+date: 2023-03-15
 series: Life
 order: 3700
 ---
