@@ -2,7 +2,7 @@
 title: Signs of Christ’s Coming
 description: How close are we to the most glorious event in earth’s history? Do you know the signs?
 date: 2022-02-16
-series: SecondComing
+series: Coming
 order: 1100
 ---
 
