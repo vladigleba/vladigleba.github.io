@@ -4,6 +4,8 @@
   "author": "Vladi Gleba",
   "url": "https://vladigleba.com",
   "useCustomReadingOrder": true,
+  "showSearch": false,
+  "showLatestCard": false,
   "categories": {
     "Basics": {
       "description": "Explore the most essential truths of the Bible.",

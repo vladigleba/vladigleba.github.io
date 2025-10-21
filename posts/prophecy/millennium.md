@@ -11,14 +11,10 @@ order: 1300
 > Let not your heart be troubled: ye believe in God, believe also in me. In my Father’s house are many mansions: if it were not so, I would have told you. *I go to prepare a place for you*. And if I go and prepare a place for you, *I will come again, and receive you unto myself; that where I am, there ye may be also*.
 {% ct 'John 14:1-3' %}
 
-Jesus said He would go to heaven to prepare a place there for His children, but He promised He would then come back again to take them up to heaven to live there with Him!
-
-## Was this promise repeated during His ascension?
-
 > And when he had spoken these things, while they beheld, he was taken up; and a cloud received him out of their sight. And while they looked stedfastly toward heaven as he went up, behold, two men stood by them in white apparel; which also said, Ye men of Galilee, why stand ye gazing up into heaven? *this same Jesus, which is taken up from you into heaven, shall so come in like manner as ye have seen him go into heaven*.
 {% ct 'Acts 1:9-11' %}
 
-The promise was repeated by the two angels who appeared to His disciples during Jesus’ ascension. They said He would return in the same bodily, personal manner as they saw Him ascending into heaven.
+Jesus said He was going to heaven to prepare a place for His followers—promising that He would come again to take them to be with Him there. This promise was reaffirmed by the two angels who appeared to His disciples at His ascension. They said that Jesus would return in the same bodily and personal manner as they had seen Him go into heaven.
 
 ## What will happen during Jesus’ second coming?
 
@@ -31,7 +27,9 @@ The promise was repeated by the two angels who appeared to His disciples during 
 > And there were voices, and thunders, and lightnings; and *there was a great earthquake, such as was not since men were upon the earth, so mighty an earthquake, and so great*. And the great city was divided into three parts, and the cities of the nations fell: and great Babylon came in remembrance before God, to give unto her the cup of the wine of the fierceness of his wrath. And *every island fled away, and the mountains were not found. And there fell upon men a great hail out of heaven, every stone about the weight of a talent*: and men blasphemed God because of the plague of the hail; for the plague thereof was exceeding great.
 {% ct 'Revelation 16:18-21' %}
 
-Because Jesus conquered death, all those who died in Him throughout the ages will be resurrected at His coming and, together with the righteous who remained alive, will be taken up to live with Him in heaven, never to be separated from Him again! However, the earth will be destroyed by the most devastating earthquake and hailstorm since the creation. Revelation says the hail will weigh about a talent—about 75 pounds—and the earthquake will cause every island as well as the mountains to move out of its place.
+Because Jesus conquered death, all who have accepted His great sacrifice on their behalf and have died in Him will be resurrected at His coming. Together with the righteous who remain alive, they will be taken up to live with Him in heaven, never to be separated from Him again.
+
+The earth, on the other hand, will be devastated by the most catastrophic earthquake and hailstorm since creation. Revelation says that the hailstones will each weigh about a talent—about 75 pounds—and that the earthquake will cause the islands and mountains to move out of their places.
 
 ## How will the unrighteous experience His coming?
 
@@ -44,7 +42,20 @@ Because Jesus conquered death, all those who died in Him throughout the ages wil
 > And then shall that Wicked be revealed, whom the Lord shall consume with the spirit of his mouth, and *shall destroy with the brightness of his coming*: even him, whose coming is after the working of Satan with all power and signs and lying wonders, and with all deceivableness of unrighteousness in them that perish; because they received not the love of the truth, that they might be saved.
 {% ct '2 Thessalonians 2:8-10' %}
 
-Because sin cannot exist in the presence of a holy God, to everyone who did not accept Jesus’ sacrifice on their behalf, so He could cover their sins, the second coming will be like a consuming fire because they will have to pay for their sins themselves. {% rf 'Revelation 19:11-21' false %} uses symbolic imagery to describe how they will be destroyed by the brightness of His holy presence.
+Because sin cannot exist in the presence of a holy God, the second coming will be a consuming fire to all who have rejected Jesus’ sacrifice on their behalf. Their rejection means they have never confessed their sins to Him, making Him unable to forgive and cover them by His perfect righteousness. As a consequence, they will have to pay for their sins themselves.
+
+## How does Jesus cleanse us from sin?
+
+> How much more shall the blood of Christ, who *through the eternal Spirit* offered himself without spot to God, *purge your conscience from dead works* to serve the living God?
+{% ct 'Hebrews 9:14' %}
+
+> When the Lord shall have *washed away the filth* of the daughters of Zion, and shall have purged the blood of Jerusalem from the midst thereof by the spirit of judgment, and *by the spirit of burning*.
+{% ct 'Isaiah 4:4' %}
+
+> And such were some of you: but *ye are washed, but ye are sanctified, but ye are justified* in the name of the Lord Jesus, and *by the Spirit* of our God.
+{% ct '1 Corinthians 6:11' %}
+
+To reject Jesus is to reject the convictions of the Holy Spirit upon the mind, through whom He works to purge us from sin. This is why the two travelers to Emmaus felt their hearts “burning” with conviction after Jesus explained the Scriptures to them {% rf 'Luke 24:32' %}. It also explains why the Holy Spirit appeared in the form of fire when He came upon the apostles at Pentecost {% rf 'Acts 2:3-4' %}. Because the lost have rejected the promptings of the Holy Spirit, the second coming will bring destruction upon them, for Christ’s glorious holiness is a consuming fire to all whose sins have not already been purged by the indwelling presence of His Holy Spirit.
 
 ## What happens to Satan at this time?
 
