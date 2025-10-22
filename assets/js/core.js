@@ -311,11 +311,6 @@ if (document.body.classList.contains('js-enabled')) {
       updateSortControl();
       switchEl.addEventListener('change', updateSortControl);
 
-      // record original order in data-reading-order if not present
-      Array.from(list.children).forEach((child, idx) => {
-        if (!child.hasAttribute('data-reading-order')) child.setAttribute('data-reading-order', idx);
-      });
-
       // apply saved selection from localStorage if present and announce
       const saved = (function () {
         try {

@@ -11,9 +11,15 @@ const childProcess = require('child_process');
 const site = require('./_data/site.json');
 
 module.exports = async (config) => {
-  const md = markdownIt({ html: true, linkify: true }).use(markdownItFootnote);
 
-  // handle external links
+  /*
+    settings
+  */
+
+  //#region
+
+  // markdown settings and external links handling
+  const md = markdownIt({ html: true, linkify: true }).use(markdownItFootnote);
   md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
     const href = tokens[idx].attrGet('href');
     if (href && /^https?:\/\//.test(href)) {
@@ -22,7 +28,6 @@ module.exports = async (config) => {
     }
     return self.renderToken(tokens, idx, options);
   };
-
   config.setLibrary('md', md);
 
   // plugins
@@ -31,16 +36,26 @@ module.exports = async (config) => {
   // copy
   config.addPassthroughCopy('assets');
 
-  // shortcodes
-  config.addLiquidShortcode('ct', (citation) =>
-    `<figcaption>&mdash; ${ citation }</figcaption>`
-  );
+  //#endregion
 
+  /* 
+    shortcodes
+  */
+
+  //#region
+
+  // inlineNavCSS
   config.addLiquidShortcode('inlineNavCSS', () => {
     const navCssPath = path.join(__dirname, '_includes', 'styles', 'nav.css');
     return fs.readFileSync(navCssPath, 'utf8');
   });
 
+  // cite
+  config.addLiquidShortcode('ct', (citation) =>
+    `<figcaption>&mdash; ${ citation }</figcaption>`
+  );
+
+  // reference
   config.addShortcode('rf', (reference, addParens = true) => {
     const refs = reference.split(';').map(r => r.trim()).filter(Boolean);
     const links = [];
@@ -70,13 +85,22 @@ module.exports = async (config) => {
     const joined = links.join('; ');
     return addParens ? `(${joined})` : joined;
   });
+  
+  //#endregion
 
-  // filters
+  /*
+    filters
+  */
+
+  //#region
+
+  // toLocal
   config.addLiquidFilter('toLocal', (date) => {
     if (!date) return '';
     return moment(date).local().format('MMM D, YYYY');
   });
 
+  // toISO
   config.addLiquidFilter('toISO', (date) => {
     if (!date) return '';
     const d = new Date(date);
@@ -84,8 +108,10 @@ module.exports = async (config) => {
     return d.toISOString();
   });
 
+  // cssmin
   config.addFilter('cssmin', code => new CleanCSS({}).minify(code).styles);
 
+  // absoluteUrl
   config.addLiquidFilter('absoluteUrl', (url) => {
     if (!url) return '';
     const base = site.url;
@@ -95,11 +121,20 @@ module.exports = async (config) => {
     return base.replace(/\/$/, '') + (url.startsWith('/') ? url : '/' + url);
   });
 
-  // collections
-  config.addCollection("singlePosts", collectionApi =>
+  //#endregion
+
+  /* 
+    collections
+  */
+
+  //#region
+  
+  // simplePosts
+  config.addCollection("simplePosts", collectionApi =>
     collectionApi.getFilteredByGlob("posts/**/*.md")
   );
 
+  // standalonePosts
   config.addCollection('standalonePosts', (collectionApi) => {
     const posts = collectionApi.getFilteredByGlob('posts/*/*.md');
     posts.forEach(post => {
@@ -114,6 +149,7 @@ module.exports = async (config) => {
     return addNextLinks(sortPosts(posts));
   });
 
+  // groupedPosts
   config.addCollection('groupedPosts', (collectionApi) => {
     const groupedPosts = [];
     const processedSeries = new Map();
@@ -165,7 +201,15 @@ module.exports = async (config) => {
     return groupedPosts;
   });
 
-  // transform
+  //#endregion
+
+  /*
+    transforms
+  */
+
+  //#region
+
+  // modifyHtml
   config.addTransform('modifyHtml', async (content, outputPath) => {
     if (!(outputPath && outputPath.endsWith('.html'))) return content;
 
@@ -241,7 +285,14 @@ module.exports = async (config) => {
     return dom.serialize();
   });
 
-  // functions
+  //#endregion
+
+  /*
+    functions
+  */
+
+  //#region
+
   function sortPosts(posts) {
     if (!Array.isArray(posts)) return posts;
     
@@ -296,4 +347,6 @@ module.exports = async (config) => {
     const rawCategory = filePath.split('/')[2];
     return rawCategory.charAt(0).toUpperCase() + rawCategory.slice(1);
   }
+
+  //#endregion
 };

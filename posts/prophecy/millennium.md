@@ -62,34 +62,34 @@ To reject Jesus is to reject the convictions of the Holy Spirit upon the mind, t
 > And I saw an angel come down from heaven, having the key of the bottomless pit and a great chain in his hand. And *he laid hold on the dragon, that old serpent, which is the Devil, and Satan, and bound him a thousand years*.
 {% ct 'Revelation 20:1-2' %}
 
-The chain described here is a symbolic chain of circumstances because Satan will be confined to planet earth without anyone to tempt or deceive, for the saved will be in heaven and the unsaved will be dead. For the first time since his rebellion in heaven, he is deprived of his power, and this will be his fate for 1,000 years. It is interesting to note that the Greek word for “bottomless pit” is “abussos” (abyss)—the same word used in {% rf 'Genesis 1:2' false %} for the word “deep”. In other words, the earth will resemble its original state during this time.
+The chain described here is a symbolic chain of circumstances, representing Satan’s confinement to the desolate earth, where he will have no one to tempt or deceive—for the saved will be in heaven, and the lost will be dead. For the first time since his rebellion in heaven, he will be completely deprived of his power—a condition that will last for a thousand years. It is noteworthy that the Greek word translated “bottomless pit” is *abussos* (abyss)—the same word used in {% rf 'Genesis 1:2' false %} for “deep”. In other words, during this period, the earth will return to a chaotic, uninhabited state similar to its condition before Creation.
 
 ## Who else is bound with him?
 
 > For if God spared not the *angels that sinned*, but cast them down to hell, and *delivered them into chains of darkness, to be reserved unto judgment*.
 {% ct '2 Peter 2:4' %}
 
-The angels under Satan’s command whom he managed to deceive in heaven and persuade to join him in his rebellion against God will also be confined to planet earth during this 1,000 year period.
+The fallen angels under Satan’s command—whom he first persuaded, by deception, to join his rebellion against God in heaven—will also be confined to the desolate earth with him. They will have ample time to reflect on their actions as they behold the devastation surrounding them—a constant reminder of the woeful consequences their rebellion has brought.
 
 ## What happens to the lost?
 
 > And the slain of the LORD shall be at that day from one end of the earth even unto the other end of the earth: *they shall not be lamented, neither gathered, nor buried*; they shall be dung upon the ground.
 {% ct 'Jeremiah 25:33' %}
 
- The brightness of Jesus’ coming—His glorious, holy presence—kills the unrighteous, and they remain dead during the 1,000 years. They will have no opportunity to repent because the time to do so has run out.
+ The brightness of Jesus’ coming—His glorious and holy presence—will destroy the lost, who will remain dead for the entire millennium. Contrary to the popular secret rapture theory, which teaches that the lost will have a second chance to repent, they will have no such opportunity—for they will be dead, and the door of mercy will have closed forever.
 
 ## What happens to planet Earth?
 
 > And the seventh angel poured out his vial into the air; and there came a great voice out of the temple of heaven, from the throne, saying, It is done. And there were voices, and thunders, and lightnings; and there was *a great earthquake*, such as was not since men were upon the earth, so mighty an earthquake, and so great. And the great city was divided into three parts, and the cities of the nations fell: and great Babylon came in remembrance before God, to give unto her the cup of the wine of the fierceness of his wrath. And *every island fled away, and the mountains were not found*. And there fell upon men *a great hail* out of heaven, every stone about the weight of a talent: and men blasphemed God because of the plague of the hail; for the plague thereof was exceeding great.
 {% ct 'Revelation 16:17-21' %}
 
+> Therefore *I will shake the heavens, and the earth shall remove out of her place*, in the wrath of the LORD of hosts, and in the day of his fierce anger.
+{% ct 'Isaiah 13:13' %}
+
 > I beheld the earth, and, lo, *it was without form, and void; and the heavens, and they had no light*. I beheld the mountains, and, lo, they trembled, and all the hills moved lightly. I beheld, and, lo, *there was no man, and all the birds of the heavens were fled*. I beheld, and, lo, the *fruitful place was a wilderness, and all the cities thereof were broken down* at the presence of the LORD, and by his fierce anger. For thus hath the LORD said, The *whole land shall be desolate*; yet will I not make a full end.
 {% ct 'Jeremiah 4:23-27' %}
 
-> But with righteousness shall he judge the poor, and reprove with equity for the meek of the earth: and he shall *smite the earth with the rod of his mouth*, and with the breath of his lips shall he slay the wicked.
-{% ct 'Isaiah 11:4' %}
-
-The earthquake and hailstorm at Jesus’ second coming will return the earth to its original state—a dark and disorganized place unsuitable for life {% rf 'Genesis 1:2' %}.
+The destruction at Jesus’ second coming will return the earth to its original state—a dark, barren place, unsuitable for life {% rf 'Genesis 1:2' %}. The fact that the earth will actually be moved from its current position likely explains why the heavens will have no light.
 
 ## Will Christ establish an earthly millennium?
 
@@ -102,7 +102,7 @@ The earthquake and hailstorm at Jesus’ second coming will return the earth to 
 > For *when they shall say, Peace and safety; then sudden destruction cometh upon them*, as travail upon a woman with child; and they shall not escape.
 {% ct '1 Thessalonians 5:3' %}
 
-Scripture’s portrayal of the earth’s desolation shows that the belief in an earthly millennium following Christ’s return (known as dispensational premillennialism) is unbiblical. Another view, postmillennialism, holds that Christ will return *after* a millennial period in which Christianity prevails throughout the world, particularly at the governmental level. This perspective is often held by Christian nationalists, but it too is unbiblical, for Christ declared that His kingdom is not of this world. In fact, when describing the end of the world, Jesus never spoke of a period of universal peace; after warning of nations in distress and people’s hearts failing from fear, He went directly to His coming in glory {% rf 'Luke 21:25-27' %}. A heavenly millennium, therefore, is the only view that is consistent with all of Scripture.
+Scripture’s portrayal of the earth’s desolation shows that the belief in an earthly millennium following Christ’s return (known as dispensational premillennialism) is unbiblical. Another view, postmillennialism, holds that Christ will return *after* a millennial period in which Christianity prevails—particularly at the governmental level—throughout the world. This perspective is often embraced by Christian nationalists, but it too is unbiblical, for Christ declared that His kingdom is not of this world. In fact, when describing the end of the world, Jesus never spoke of a period of universal peace; after warning of nations in distress and people’s hearts failing from fear, He went directly to His coming in glory {% rf 'Luke 21:25-27' %}. A heavenly millennium, therefore, is the only view that is consistent with all of Scripture.
 
 ## What do the saved do in heaven?
 
@@ -112,10 +112,12 @@ Scripture’s portrayal of the earth’s desolation shows that the belief in an 
 > Do ye not know that the *saints shall judge the world*? and if the world shall be judged by you, are ye unworthy to judge the smallest matters? Know ye not that *we shall judge angels*? how much more things that pertain to this life?
 {% ct '1 Corinthians 6:2-3' %}
 
-> And after these things I heard a great voice of much people in heaven, saying, Alleluia; Salvation, and glory, and honour, and power, unto the Lord our God: *for true and righteous are his judgments*.
+> And after these things *I heard a great voice of much people in heaven*, saying, Alleluia; Salvation, and glory, and honour, and power, unto the Lord our God: *for true and righteous are his judgments*.
 {% ct 'Revelation 19:1-2' %}
 
-The saved from all ages that are in heaven during the 1,000 years will be part of the next phase of the judgment during which they will have all their questions answered about God’s dealings with sin and sinners. They will not be determining who is saved or lost, for God will have [already determined](/posts/prophecy/judgment.md) that, but the cases of all who are lost, including Satan and his angels, will be reviewed, and the fairness of God’s judgment will be confirmed.
+The saved from all ages will participate in the next phase of judgment, during which all their questions about God’s dealings with sin and sinners will be answered. They will not determine who is saved or lost, for God will have already decided that during the [first phase](/posts/prophecy/investigative.md#who-is-being-judged-first); rather, they will review the cases of all who are lost—including Satan and his angels.
+
+Perhaps they will wonder why some people they expected to be there are missing, while others they did not expect are present. Maybe certain perplexing events or trying circumstances in their own lives caused them to question why God allowed these things to happen. To all of these perplexities—and more—God will provide perfectly satisfying answers, confirming the fairness of His judgment and motivating the redeemed to praise Him all the more for His infinite wisdom, love, and mercy.
 
 ## What happens at the end of the 1,000 years?
 

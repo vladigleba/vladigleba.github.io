@@ -12,6 +12,7 @@
   {% endif %}
   data-updated="{{ data.updated | toISO }}"
   data-length="{{ data.length | default: 0 }}"
+  data-reading-order="{{ data.order | default: 0 }}"
 >
   {% if latest %}
     <div><span class="tag" style="background-color: {{ color }}">Latest</span></div>
