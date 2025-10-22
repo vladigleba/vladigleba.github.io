@@ -1,7 +1,12 @@
 if (document.body.classList.contains('js-enabled')) {
   document.addEventListener('DOMContentLoaded', () => {
 
-    // collapse table of contents
+    /*
+    collapse table of contents
+    */
+
+    //#region
+
     const toc = document.querySelector('.toc');
     const toggleBtn = document.getElementById('toggle-toc');
     if (toc && toggleBtn) {
@@ -11,6 +16,14 @@ if (document.body.classList.contains('js-enabled')) {
       });
     }
 
+    //#endregion
+
+    /*
+    copy heading anchor links to clipboard
+    */
+
+    //#region
+
     function announceToLiveRegion(message) {
       const liveRegion = document.getElementById('posts-sort-live');
       if (liveRegion) {
@@ -19,14 +32,12 @@ if (document.body.classList.contains('js-enabled')) {
       }
     }
 
-    // copy heading anchor links to clipboard
     document.querySelectorAll('.anchor-link').forEach(link => {
       const copyHandler = (e) => {
         e.preventDefault();
 
         const fullUrl = `${window.location.origin}${window.location.pathname}${link.getAttribute('href')}`;
-        navigator.clipboard.writeText(fullUrl)
-          .then(() => {
+        navigator.clipboard.writeText(fullUrl).then(() => {
 
             // visual feedback
             const existing = link.querySelector('.copy-popup');
@@ -61,8 +72,13 @@ if (document.body.classList.contains('js-enabled')) {
       });
     });
 
-    // track TOC
-    const headings = document.querySelectorAll('.content h2, .content h3, .content h4');
+    //#endregion
+
+    /*
+    table of contents
+    */
+
+    //#region
 
     // helper to set aria-current on a TOC link only when it changes
     const setActiveTocLink = (link) => {
@@ -71,6 +87,7 @@ if (document.body.classList.contains('js-enabled')) {
       if (link && link.getAttribute('aria-current') !== 'true') link.setAttribute('aria-current', 'true');
     };
 
+    // observer
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -89,9 +106,10 @@ if (document.body.classList.contains('js-enabled')) {
       threshold: 1 
     });
 
+    const headings = document.querySelectorAll('.content h2, .content h3, .content h4');
     headings.forEach((heading) => observer.observe(heading));
 
-    // focus the element referenced by the fragment and update aria-current on TOC links
+    // focus the referenced element referenced and update aria-current on TOC links
     const focusFragmentTarget = () => {
       const hash = location.hash;
       if (!hash) return;
@@ -113,7 +131,15 @@ if (document.body.classList.contains('js-enabled')) {
     focusFragmentTarget();
     window.addEventListener('hashchange', focusFragmentTarget);
 
-    // verse fetching
+    //#endregion
+
+    /*
+    verse fetching
+    */
+
+    //#region
+
+    // build skeleton
     const popup = document.createElement('div');
     popup.id = 'verse-popup';
     popup.innerHTML = `<p id="verse-content"></p>`;
@@ -123,6 +149,7 @@ if (document.body.classList.contains('js-enabled')) {
       link.addEventListener('click', async (e) => {
         e.preventDefault();
 
+        // build popup
         const reference = link.dataset.reference;
         if (!link.dataset.loaded) {
           try {
@@ -159,6 +186,14 @@ if (document.body.classList.contains('js-enabled')) {
       }
     });
 
+    //#endregion
+
+    /*
+    relative dates
+    */
+
+    //#region
+
     // show relative date if within last 7 days
     const updateFooterTime = () => {
       const updateTimeInContainer = (container) => {
@@ -187,13 +222,21 @@ if (document.body.classList.contains('js-enabled')) {
       updateTimeInContainer(document.querySelector('footer .last-updated'));
       updateTimeInContainer(document.querySelector('header .post-last-updated'));
 
-      // Remove spaces
+      // remove spaces
       const heyEl = document.querySelector('footer .hey');
       if (heyEl) {
         heyEl.textContent = heyEl.textContent.replace(/\s+/g, '');
       }
     };
     updateFooterTime();
+
+    //#endregion
+
+    /*
+    group by series toggle
+    */
+
+    //#region
 
     // posts view toggle (series vs standalone)
     const POSTS_VIEW_KEY = 'postsViewPreference';
@@ -241,7 +284,14 @@ if (document.body.classList.contains('js-enabled')) {
       });
     }
 
-    // posts cards sort
+    //#endregion
+
+    /*
+    sort by dropdown
+    */
+
+    //#region
+
     const SELECTOR = '#posts-sort-select';
     const SWITCH_ID = 'posts-view-switch';
     const STANDALONE_LIST = '.standalone-list';
@@ -349,5 +399,7 @@ if (document.body.classList.contains('js-enabled')) {
       // defensive: don't let this break the rest of core.js
       console.error('Error initializing cards sort:', e);
     }
+
+    //#endregion
   });
 }

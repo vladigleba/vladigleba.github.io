@@ -13,7 +13,7 @@ const site = require('./_data/site.json');
 module.exports = async (config) => {
 
   /*
-    settings
+  settings
   */
 
   //#region
@@ -39,7 +39,7 @@ module.exports = async (config) => {
   //#endregion
 
   /* 
-    shortcodes
+  shortcodes
   */
 
   //#region
@@ -89,7 +89,7 @@ module.exports = async (config) => {
   //#endregion
 
   /*
-    filters
+  filters
   */
 
   //#region
@@ -124,7 +124,7 @@ module.exports = async (config) => {
   //#endregion
 
   /* 
-    collections
+  collections
   */
 
   //#region
@@ -204,7 +204,7 @@ module.exports = async (config) => {
   //#endregion
 
   /*
-    transforms
+  transforms
   */
 
   //#region
@@ -288,7 +288,7 @@ module.exports = async (config) => {
   //#endregion
 
   /*
-    functions
+  functions
   */
 
   //#region
