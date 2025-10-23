@@ -128,11 +128,6 @@ module.exports = async (config) => {
   */
 
   //#region
-  
-  // simplePosts
-  config.addCollection("simplePosts", collectionApi =>
-    collectionApi.getFilteredByGlob("posts/**/*.md")
-  );
 
   // standalonePosts
   config.addCollection('standalonePosts', (collectionApi) => {

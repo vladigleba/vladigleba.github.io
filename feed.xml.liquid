@@ -4,7 +4,9 @@ layout: null
 sitemap:
   ignore: true
 ---
-{%- assign latest_post = collections.simplePosts | sort: "date" | last -%}
+
+{%- assign posts_by_date = collections.standalonePosts | sort: "date" | reverse -%}
+{%- assign latest_post = posts_by_date | first -%}
 
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -15,7 +17,7 @@ sitemap:
     <language>en</language>
     <lastBuildDate>{{ latest_post.date | date: '%a, %d %b %Y %H:%M:%S %z' }}</lastBuildDate>
     <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-    {% for post in collections.simplePosts reversed %}
+    {% for post in posts_by_date %}
       <item>
         <title>{{ post.data.title }}</title>
         <link>{{ site.url }}{{ post.url }}</link>
