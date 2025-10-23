@@ -3,6 +3,10 @@
   margin-bottom: 15px;
 }
 
+.count p {
+  font-weight: 700;
+}
+
 .list {
   list-style: none;
   display: grid;
