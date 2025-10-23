@@ -119,7 +119,7 @@ The saved from all ages will participate in the next phase of judgment, during w
 
 Perhaps they will wonder why some people they expected to be there are missing, while others they did not expect are present. Maybe certain perplexing events or trying circumstances in their own lives caused them to question why God allowed these things to happen. To all of these perplexities—and more—God will provide perfectly satisfying answers, confirming the fairness of His judgment and motivating the redeemed to praise Him all the more for His infinite wisdom, love, and mercy.
 
-## What happens at the end of the 1,000 years?
+## What happens at the end of the millennium?
 
 > And I John *saw the holy city, new Jerusalem, coming down from God out of heaven*, prepared as a bride adorned for her husband.
 {% ct 'Revelation 21:2' %}
@@ -133,14 +133,14 @@ Perhaps they will wonder why some people they expected to be there are missing, 
 > Marvel not at this: for the hour is coming, in the which all that are in the graves shall hear his voice, and shall come forth; *they that have done good, unto the resurrection of life*; and *they that have done evil, unto the resurrection of damnation*.
 {% ct 'John 5:28-29' %}
 
-At the end of the 1,000 years Jesus will return to earth for the third time, and the New Jerusalem will descend from heaven with all the saved. Jesus will then flatten the Mount of Olives, creating a great plain on which the city will settle. And just like the resurrection of the saved marked the beginning of the 1,000 year period, the end of this period will be marked by the resurrection of the unsaved of all ages.
+Once the second phase of the judgment concludes at the end of the 1,000 years, Jesus will return to earth for the third time, bringing with Him all the redeemed and the glorious New Jerusalem. He will then level the Mount of Olives, creating a vast plain on which the city will rest. At that time, the second resurrection will occur—this time of the lost from all ages. Just as the resurrection of the saved marked the beginning of the millennium, so the resurrection of the lost will mark its close. For the first time in history, all who have ever lived since the creation of Adam and Eve will be gathered together—a vast, numberless multitude—for the third and final phase of the judgment.
 
 ## What happens to Satan?
 
 > And when the thousand years are expired, *Satan shall be loosed out of his prison*.
 {% ct 'Revelation 20:7' %}
 
-After the second resurrection, Satan will be free once again to deceive and manipulate the unsaved.
+After the second resurrection, Satan will once again be free to deceive and manipulate the newly resurrected lost.
 
 ## What happens next?
 
@@ -153,7 +153,7 @@ After the second resurrection, Satan will be free once again to deceive and mani
 > For there is *nothing covered, that shall not be revealed; neither hid, that shall not be known*. Therefore whatsoever ye have spoken in darkness shall be heard in the light; and that which ye have spoken in the ear in closets shall be proclaimed upon the housetops.
 {% ct 'Luke 12:2-3' %}
 
-Satan manages to deceive the wicked, who realize they are shut out of the New Jerusalem, and persuades them to surround the city and attempt to capture it. But God’s throne will suddenly appear, bringing the attack to a halt and beginning the final phase of the judgment. The wicked will see their life pass before them and realize that God did everything He could to save them from their life of sin, but they resisted Him, and without the sacrifice of Jesus covering their sins, they are left to pay for their own sins.
+As the lost behold the glories of the New Jerusalem and realize that they are shut out of it, Satan succeeds in deceiving them one final time, persuading them to surround the city in a desperate attempt to capture it. After all, among the lost are great military leaders from every age—commanders who have never known defeat. But suddenly God’s throne appears, halting their attack and inaugurating the final phase of the judgment. The wicked will then see the record of their lives unfold before them and recognize that God did everything possible to draw them to Himself—to save them from their sins and prepare them to dwell in His holy presence. Yet they resisted Him, and without the sacrifice of Jesus covering their sins, they are left to bear the penalty for their own sins.
 
 ## How will they respond?
 
@@ -163,7 +163,7 @@ Satan manages to deceive the wicked, who realize they are shut out of the New Je
 > That *at the name of Jesus every knee should bow*, of things in heaven, and things in earth, and things under the earth; and that *every tongue should confess that Jesus Christ is Lord*, to the glory of God the Father.
 {% ct 'Philippians 2:10-11' %}
 
-All the wicked, including Satan—the original instigator of the long rebellion against God’s government—and his angels, bow before God as they acknowledge that He has been fair, just, and longsuffering. This acknowledgment settles the great controversy between good and evil, and it will be safe to eliminate sin and those who chose to cling to it.
+All the lost—including Satan, the original instigator of the long rebellion against God’s government—and his angels bow before God in acknowledgment that He has been perfectly just yet merciful, fair yet loving. All present—the saved and the lost, the fallen and unfallen angels, and even Satan himself—realize there was no justification or excuse for sin, and their confession settles the great controversy between good and evil in the minds of all, bringing it to a close. The universe can now be safely cleansed of the virus of sin, including all who, regrettably, chose to persistently cling to it.
 
 ## What happens to them?
 

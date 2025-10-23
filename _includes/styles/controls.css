@@ -22,6 +22,10 @@
   padding: 8.5px 25px;
 }
 
+.count p {
+  font-weight: 700;
+}
+
 .posts-sort select,
 .switch-label {
   font-weight: 500;
@@ -65,7 +69,7 @@
 }
 
 .switch input:checked + .slider {
-  background-color: #28a745; /* green when ON */
+  background: var(--gradient);
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.12);
 }
 

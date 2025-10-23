@@ -176,7 +176,8 @@
   
   .posts-sort select,
   .list p,
-  .switch-label {
+  .switch-label,
+  .count {
     font-size: 17px;
   }
 

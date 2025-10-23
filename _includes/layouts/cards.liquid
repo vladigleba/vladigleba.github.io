@@ -1,31 +1,49 @@
 <div class="posts-view">
+  {% assign articleCount = 0 %}
+  {% assign seriesCount = 0 %}
+  {% assign filteredGroupedPosts = "" | split: "" %}
+
+  {% for item in groupedPosts %}
+    {% if not categoryFilter or item.category == categoryFilter %}
+      {% assign filteredGroupedPosts = filteredGroupedPosts | push: item %}
+      {% if item.type == 'series' %}
+        {% assign seriesCount = seriesCount | plus: 1 %}
+        {% assign articleCount = articleCount | plus: item.posts.size %}
+      {% else %}
+        {% assign articleCount = articleCount | plus: 1 %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  <div class="count">
+    <p>{{ articleCount }} articles <span>•</span> {{ seriesCount }} series</p>
+  </div>
+
   {% render 'layouts/controls' %}
 
   <ol class="list series-list">
-    {% for item in groupedPosts %}
-      {% if not categoryFilter or item.category == categoryFilter %}
-        {% if item.type == 'series' %}
-          <li class="series">
-            <div>
-              <span class="tag" style="color: {{ item.color }}">
-                {{ item.posts.size }}-part Series
-              </span>
-            </div>
-            
-            <a style="color: {{ item.color }}" href="{{ item.posts[0].url }}">
-              {{ item.title }}
-            </a>
-            <p>{{ item.category }}</p>
+    {% for item in filteredGroupedPosts %}
+      {% if item.type == 'series' %}
+        <li class="series">
+          <div>
+            <span class="tag" style="color: {{ item.color }}">
+              {{ item.posts.size }}-part Series
+            </span>
+          </div>
+          
+          <a style="color: {{ item.color }}" href="{{ item.posts[0].url }}">
+            {{ item.title }}
+          </a>
+          <p>{{ item.category }}</p>
 
-            <div class="series-bar">
-              {% for post in item.posts %}
-                <div class="series-segment" style="background: {{ item.color }}"></div>
-              {% endfor %}
-            </div>
-          </li>
-        {% else %}
-          {% render 'layouts/card-standalone', post: item.post, site: site %}
-        {% endif %}
+          <div class="series-bar">
+            {% for post in item.posts %}
+              <div class="series-segment" style="background: {{ item.color }}"></div>
+            {% endfor %}
+          </div>
+        </li>
+      {% else %}
+        {% render 'layouts/card-standalone', post: item.post, site: site %}
       {% endif %}
     {% endfor %}
   </ol>

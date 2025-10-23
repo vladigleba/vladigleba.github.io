@@ -5,7 +5,7 @@
 
 .banner h1,
 article > header h1 {
-  font-size: 65px;
+  font-size: 64px;
 }
 
 .banner p,
@@ -42,7 +42,8 @@ article > header p {
 
 .posts-sort select,
 .list p,
-.switch-label {
+.switch-label,
+.count {
   font-size: 18px;
 }
 
