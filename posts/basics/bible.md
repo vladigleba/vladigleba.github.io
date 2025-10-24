@@ -1,14 +1,14 @@
 ---
 title: Can I Trust the Bible?
 description: Is the Bible a fable, or is it the most trustworthy document we have ever possessed?
-color: rgb(101,166,114)
+color: rgb(92, 161, 106)
 date: 2021-10-24
 order: 100
 ---
 
 ## How much of the Bible is inspired? By whom? For what purpose?
 
-> *All* Scripture is given *by inspiration of God*, and is profitable *for doctrine, for reproof, for correction, for instruction in righteousness*, that the man of God may be perfect, throughly furnished unto all good works.
+> *All* Scripture is given *by inspiration of God*, and is profitable *for doctrine, for reproof, for correction, for instruction in righteousness*, that the man of God may be perfect, thoroughly furnished unto all good works.
 {% ct '2 Timothy 3:16-17' %}
 
 ## How did it maintain its miraculous unity?

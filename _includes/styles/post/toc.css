@@ -35,7 +35,7 @@
 }
 
 .toc a {
-  color: var(--gray-color);
+  color: var(--darker-gray-color);
   font-weight: 600;
   transition: color 0.15s ease 0s;
 }

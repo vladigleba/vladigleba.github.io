@@ -165,7 +165,7 @@ As the lost behold the glories of the New Jerusalem and realize that they are sh
 
 All the lost—including Satan, the original instigator of the long rebellion against God’s government—and his angels bow before God in acknowledgment that He has been perfectly just yet merciful, fair yet loving. All present—the saved and the lost, the fallen and unfallen angels, and even Satan himself—realize there was no justification or excuse for sin, and their confession settles the great controversy between good and evil in the minds of all, bringing it to a close. The universe can now be safely cleansed of the virus of sin, including all who, regrettably, chose to persistently cling to it.
 
-## What happens to them?
+## What happens to the lost?
 
 >  And they went up on the breadth of the earth, and compassed the camp of the saints about, and the beloved city: and *fire came down from God out of heaven, and devoured them*. And the *devil that deceived them was cast into the lake of fire* and brimstone, where the beast and the false prophet are, and shall be tormented day and night for ever and ever.
 {% ct 'Revelation 20:9-10' %}
@@ -176,7 +176,7 @@ All the lost—including Satan, the original instigator of the long rebellion ag
 > Say unto them, As I live, saith the Lord GOD, *I have no pleasure in the death of the wicked*; but that the wicked turn from his way and live: *turn ye, turn ye from your evil ways; for why will ye die*, O house of Israel?
 {% ct 'Ezekiel 33:11' %}
 
-Fire then falls upon the wicked, Satan, and his angels, forming a lake of fire all around the New Jerusalem. This is the second death from which there is no resurrection, marking the end of the controversy between God and Satan, good and evil. For the God of love {% rf '1 John 4:8' %}, this will be a difficult thing to watch because every single person who is destroyed is one whom He loved and for whom Jesus died. He did everything He could to save them, but they persistently rejected Him, and so He has no other option left. Once there is nothing but ashes left {% rf 'Malachi 4:3' %}, the fire will go out, and the universe will finally be free from sin.
+What follows next is an act in which God takes no pleasure: fire will begin to fall from heaven upon the lost, Satan, and his angels, forming a lake of fire all around the New Jerusalem. This is the second death, from which there is no resurrection. For the God of love {% rf '1 John 4:8' %}, this will be a painful experience to endure, because every person destroyed is one whom He created and loved more deeply than any parent could love a child. He did everything possible to save them, but they persistently rejected Him, leaving Him no other choice. The time has come to eradicate sin, for it cannot continue to exist unchecked, perpetuating pain, misery, and death throughout eternity. The Bible does not specify how long the fire will burn, but eventually [it will go out](/posts/basics/hell.md), and when it does, the universe will at last be free from sin—forever {% rf 'Nahum 1:9' %}.
 
 ## What happens once the fire goes out?
 
@@ -189,4 +189,4 @@ Fire then falls upon the wicked, Satan, and his angels, forming a lake of fire a
 >  And *I saw a new heaven and a new earth*: for the first heaven and the first earth were passed away; and there was no more sea. … And I heard a great voice out of heaven saying, Behold, the tabernacle of God is with men, and he will dwell with them, and they shall be his people, and *God himself shall be with them, and be their God*. And *God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away*. 
 {% ct 'Revelation 21:1, 3-4' %}
 
-God then creates a new heaven (atmosphere) and a new earth in which righteousness dwells. Everything that Adam and Eve lost will be restored, and the redeemed of all ages will live in perfect love, joy, and peace throughout eternity with God!
+Once the last flickering flame goes out, God proceeds to create a new heaven (atmosphere) and a new earth—in which righteousness dwells. Unlike the first creation, which no human eyes beheld, this second creation will be witnessed by all the redeemed. Everything that Adam and Eve lost will be restored, and the redeemed will live in the presence of God in perfect harmony, unutterable joy, and ever-deepening love for God and one another for all eternity.

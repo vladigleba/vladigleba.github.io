@@ -34,11 +34,10 @@ article > header .tag span {
 
 article > header .series-links {
   margin-top: 40px;
-  background: rgba(255, 255, 255, 0.075);
+  background: rgba(255, 255, 255, 0.085);
   border-radius: var(--default-radius);
   display: inline-block;
   padding: 0.4rem 0.7rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
   min-width: 500px;
 }
 
@@ -92,5 +91,5 @@ article > header .meta.series {
   font-weight: 700;
   padding: 0.1rem 0.7rem 0.5rem;
   margin: 0 -0.7rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.125);
 }

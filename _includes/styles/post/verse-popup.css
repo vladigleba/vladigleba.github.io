@@ -2,9 +2,8 @@
 .copy-popup {
   position: absolute;
   background-color: white;
-  border: 1px solid #eee;
   padding: 10px 14px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
   border-radius: var(--default-radius);
   z-index: 1000;
 }

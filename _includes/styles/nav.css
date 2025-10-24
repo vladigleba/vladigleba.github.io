@@ -14,8 +14,7 @@
   list-style: none;
   display: flex;
   gap: 7px;
-  background-color: #f0f0f0;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: var(--light-background);
 }
 
 .main-nav li {
