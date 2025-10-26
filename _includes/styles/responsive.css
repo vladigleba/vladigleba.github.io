@@ -3,7 +3,7 @@
   article,
   article > header > div,
   body > footer > div {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -16,7 +16,7 @@
   article,
   article > header > div,
   body > footer > div {
-    width: 55%;
+    width: 64%;
   }
 }
 
@@ -29,7 +29,7 @@
   article,
   article > header > div,
   body > footer > div {
-    width: 60%;
+    width: 68%;
   }
 }
 
@@ -38,7 +38,7 @@
   article,
   article > header > div,
   body > footer > div {
-    width: 65%;
+    width: 72%;
   }
 }
 
@@ -47,7 +47,7 @@
   article,
   article > header > div,
   body > footer > div {
-    width: 70%;
+    width: 76%;
   }
 }
 
@@ -56,7 +56,7 @@
   article,
   article > header > div,
   body > footer > div {
-    width: 75%;
+    width: 80%;
   }
 }
 
@@ -65,7 +65,7 @@
   article,
   article > header > div,
   body > footer > div {
-    width: 80%;
+    width: 84%;
   }
 
   .wrapper {
@@ -83,10 +83,18 @@
     flex-direction: column-reverse;
   }
 
+  .control-wrapper {
+    max-width: 350px;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
   .toc {
-    padding-left: unset;
-    position: unset;
-    margin-left: -10px;
+    position: relative;
+    margin: 25px auto;
+    top: 15px;
   }
 
   .list {
@@ -97,7 +105,7 @@
   article,
   article > header > div,
   body > footer > div {
-    width: 85%;
+    width: 88%;
   }
 }
 
@@ -106,11 +114,11 @@
   article,
   article > header > div,
   body > footer > div {
-    width: 90%;
+    width: 92%;
   }
 
   article > header .series-links {
-    min-width: unset;
+    min-width: 400px;
   }
 
   article > header {
@@ -120,6 +128,15 @@
 
   article > header h1 {
     font-size: 42px;
+  }
+
+  .toc {
+    padding: 15px 10px;
+    top: 30px;
+  }
+
+  .toc h2 {
+    font-size: 20px;
   }
 
   body > footer {
@@ -195,13 +212,7 @@
   article,
   article > header > div,
   body > footer > div {
-    width: 95%;
-  }
-
-  .control-wrapper {
-    max-width: 350px;
-    gap: 8px;
-    flex-wrap: wrap;  
+    width: 96%;
   }
 }
 
@@ -209,5 +220,9 @@
 @media (max-width: 480px) {
   .main-nav li {
     padding: 5px 6px 3px;
+  }
+
+  article > header .series-links {
+    min-width: unset;
   }
 }

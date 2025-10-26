@@ -4,9 +4,9 @@
   --default-font: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   --lighter-gray-color: #999;
   --gray-color: #727272;
-  --darker-gray-color: rgb(79, 86, 105);
+  --darker-gray-color: rgb(69, 77, 97);
   --default-radius: 12px;
-  --light-background: #f1f5f9; /* #f8fafc #f1f5f9 */
+  --light-background: #f3f7fa; /* #f8fafc #f1f5f9 */
   --tag-horizontal-padding: 10px;
   --gradient: linear-gradient(90deg, rgb(255, 117, 102) 0%, rgb(148, 56, 179) 100%);
 }

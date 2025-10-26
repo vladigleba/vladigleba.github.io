@@ -2,14 +2,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
   margin: 0 auto 20px;
   flex-wrap: nowrap;
   background: var(--light-background);
   border-radius: var(--default-radius);
-  padding: 10px 25px;
+  padding: 12px 25px;
   width: fit-content;
   color: var(--darker-gray-color);
+}
+
+.count p {
+  font-weight: 700;
 }
 
 .posts-toggle,

@@ -95,7 +95,7 @@ I can be forgiven because Christ already paid for my sins on the cross and redee
 
 Carrying feelings of guilt is not good for my health, but knowing I’ve been forgiven can bring both physical and mental healing.
 
-## But what if I’ve committed many sins?
+## But what if I’m guilty of many sins?
 
 > This is a faithful saying, and worthy of all acceptation, that Christ Jesus came into the world *to save sinners; of whom I am chief*. 
 {% ct '1 Timothy 1:15' %}

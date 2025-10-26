@@ -1,11 +1,14 @@
 .toc {
-  flex: 0 0 320px; /* Fixed width for ToC */
+  flex: 0 0 350px; /* Fixed width */
   position: sticky;
-  top: 62px;
+  top: 80px;
   align-self: start;
   order: 1; /* Moves ToC to the right */
   margin-top: 42px;
-  padding-left: 50px;
+  margin-left: 50px;
+  background: var(--light-background);
+  border-radius: var(--default-radius);
+  padding: 15px 18px;
 }
 
 .toc button {
@@ -17,7 +20,7 @@
 }
 
 .toc h2 {
-  margin: 15px 0 8px 10px;
+  margin: 0 0 5px 10px;
 }
 
 .toc li {

@@ -5,6 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 9;
+  color: var(--darker-gray-color);
 }
 
 .main-nav ul {
@@ -20,13 +21,12 @@
 .main-nav li {
   text-transform: uppercase;
   padding: 5px 12.5px 3px;
-  transition: color 0.15s ease 0s;
 }
 
 .main-nav li:hover {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.125);
-  color: var(--darker-gray-color);
+  color: black;
 }
 
 .main-nav li a {

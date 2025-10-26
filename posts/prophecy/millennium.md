@@ -31,7 +31,7 @@ Because Jesus conquered death, all who have accepted His great sacrifice on thei
 
 The earth, on the other hand, will be devastated by the most catastrophic earthquake and hailstorm since creation. Revelation says that the hailstones will each weigh about a talent—about 75 pounds—and that the earthquake will cause the islands and mountains to move out of their places.
 
-## How will the unrighteous experience His coming?
+## How will the lost experience His coming?
 
 > For the Lord thy God *is a consuming fire*, even a jealous God.
 {% ct 'Deuteronomy 4:24' %}
@@ -42,7 +42,7 @@ The earth, on the other hand, will be devastated by the most catastrophic earthq
 > And then shall that Wicked be revealed, whom the Lord shall consume with the spirit of his mouth, and *shall destroy with the brightness of his coming*: even him, whose coming is after the working of Satan with all power and signs and lying wonders, and with all deceivableness of unrighteousness in them that perish; because they received not the love of the truth, that they might be saved.
 {% ct '2 Thessalonians 2:8-10' %}
 
-Because sin cannot exist in the presence of a holy God, the second coming will be a consuming fire to all who have rejected Jesus’ sacrifice on their behalf. Their rejection means they have never confessed their sins to Him, making Him unable to forgive and cover them by His perfect righteousness. As a consequence, they will have to pay for their sins themselves.
+Because sin cannot exist in the presence of a holy God, the second coming will be a consuming fire to all who have rejected Jesus’ sacrifice on their behalf. Their rejection means they have never confessed their sins to Him, leaving Him unable to forgive and cover them with His perfect righteousness. As a result, they must bear the penalty for their sins themselves—the wages of which is death {% rf 'Romans 6:23' %}.
 
 ## How does Jesus cleanse us from sin?
 
@@ -55,12 +55,12 @@ Because sin cannot exist in the presence of a holy God, the second coming will b
 > And such were some of you: but *ye are washed, but ye are sanctified, but ye are justified* in the name of the Lord Jesus, and *by the Spirit* of our God.
 {% ct '1 Corinthians 6:11' %}
 
-To reject Jesus is to reject the convictions of the Holy Spirit upon the mind, through whom He works to purge us from sin. This is why the two travelers to Emmaus felt their hearts “burning” with conviction after Jesus explained the Scriptures to them {% rf 'Luke 24:32' %}. It also explains why the Holy Spirit appeared in the form of fire when He came upon the apostles at Pentecost {% rf 'Acts 2:3-4' %}. Because the lost have rejected the promptings of the Holy Spirit, the second coming will bring destruction upon them, for Christ’s glorious holiness is a consuming fire to all whose sins have not already been purged by the indwelling presence of His Holy Spirit.
+To reject Jesus is to reject the convictions of the Holy Spirit upon the mind, through whom He works to purge us from sin. This is why the two travelers to Emmaus felt their hearts “burning” with conviction after Jesus explained the Scriptures to them {% rf 'Luke 24:32' %}. It also explains why the Holy Spirit appeared in the form of fire when He came upon the apostles at Pentecost {% rf 'Acts 2:3-4' %}. Because the lost have rejected the promptings of the Holy Spirit, the second coming will bring destruction upon them, for Christ’s glorious holiness is a consuming fire to all whose sins have not already been purged by the indwelling presence of His Holy Spirit {% rf 'Psalm 50:3-4' %}.
 
 ## What happens to Satan at this time?
 
-> And I saw an angel come down from heaven, having the key of the bottomless pit and a great chain in his hand. And *he laid hold on the dragon, that old serpent, which is the Devil, and Satan, and bound him a thousand years*.
-{% ct 'Revelation 20:1-2' %}
+> And I saw an angel come down from heaven, having the key of the bottomless pit and a great chain in his hand. And *he laid hold on the dragon, that old serpent, which is the Devil, and Satan, and bound him a thousand years*. And cast him into the bottomless pit, and shut him up, and set a seal upon him, that he should deceive the nations no more, till the thousand years should be fulfilled: and after that he must be loosed a little season. … And when the thousand years are expired, Satan shall be loosed out of his prison.
+{% ct 'Revelation 20:1-3, 7' %}
 
 The chain described here is a symbolic chain of circumstances, representing Satan’s confinement to the desolate earth, where he will have no one to tempt or deceive—for the saved will be in heaven, and the lost will be dead. For the first time since his rebellion in heaven, he will be completely deprived of his power—a condition that will last for a thousand years. It is noteworthy that the Greek word translated “bottomless pit” is *abussos* (abyss)—the same word used in {% rf 'Genesis 1:2' false %} for “deep”. In other words, during this period, the earth will return to a chaotic, uninhabited state similar to its condition before Creation.
 
@@ -69,7 +69,12 @@ The chain described here is a symbolic chain of circumstances, representing Sata
 > For if God spared not the *angels that sinned*, but cast them down to hell, and *delivered them into chains of darkness, to be reserved unto judgment*.
 {% ct '2 Peter 2:4' %}
 
+> And it shall come to pass in that day, that the LORD shall *punish the host of the high ones that are on high*, and the kings of the earth upon the earth. And they shall be gathered together, as prisoners are gathered in the pit, and *shall be shut up in the prison*, and after many days shall they be visited.
+{% ct 'Isaiah 24:21-22' %}
+
 The fallen angels under Satan’s command—whom he first persuaded, by deception, to join his rebellion against God in heaven—will also be confined to the desolate earth with him. They will have ample time to reflect on their actions as they behold the devastation surrounding them—a constant reminder of the woeful consequences their rebellion has brought.
+
+By the way, the parallels between {% rf 'Isaiah 24:21-22' false %} and {% rf 'Revelation 20:1-3' false %} are remarkable. Both passages use the words “pit” and “prison” and refer to an extended period of time: “when the thousand years are expired, Satan shall be loosed out of his prison,” and “after many days shall they be visited.” Together, they provide a textbook example of allowing Scripture to interpret itself, for the “many days” in Isaiah correspond to the thousand years in Revelation.
 
 ## What happens to the lost?
 
@@ -127,7 +132,7 @@ Perhaps they will wonder why some people they expected to be there are missing, 
 > And his feet shall stand in that day upon the mount of Olives, which is before Jerusalem on the east, and *the mount of Olives shall cleave in the midst thereof toward the east and toward the west, and there shall be a very great valley*; and half of the mountain shall remove toward the north, and half of it toward the south. … and the *LORD my God shall come, and all the saints with thee*. … And the *LORD shall be king over all the earth*: in that day shall there be one LORD, and his name one.
 {% ct 'Zechariah 14:4-5, 9' %}
 
-> But the *rest of the dead lived not again until the thousand years were finished*. This is the first resurrection.
+> But the *rest of the dead lived not again until the thousand years were finished*.
 {% ct 'Revelation 20:5' %}
 
 > Marvel not at this: for the hour is coming, in the which all that are in the graves shall hear his voice, and shall come forth; *they that have done good, unto the resurrection of life*; and *they that have done evil, unto the resurrection of damnation*.
@@ -165,7 +170,7 @@ As the lost behold the glories of the New Jerusalem and realize that they are sh
 
 All the lost—including Satan, the original instigator of the long rebellion against God’s government—and his angels bow before God in acknowledgment that He has been perfectly just yet merciful, fair yet loving. All present—the saved and the lost, the fallen and unfallen angels, and even Satan himself—realize there was no justification or excuse for sin, and their confession settles the great controversy between good and evil in the minds of all, bringing it to a close. The universe can now be safely cleansed of the virus of sin, including all who, regrettably, chose to persistently cling to it.
 
-## What happens to the lost?
+## What then happens to the lost?
 
 >  And they went up on the breadth of the earth, and compassed the camp of the saints about, and the beloved city: and *fire came down from God out of heaven, and devoured them*. And the *devil that deceived them was cast into the lake of fire* and brimstone, where the beast and the false prophet are, and shall be tormented day and night for ever and ever.
 {% ct 'Revelation 20:9-10' %}
@@ -189,4 +194,4 @@ What follows next is an act in which God takes no pleasure: fire will begin to f
 >  And *I saw a new heaven and a new earth*: for the first heaven and the first earth were passed away; and there was no more sea. … And I heard a great voice out of heaven saying, Behold, the tabernacle of God is with men, and he will dwell with them, and they shall be his people, and *God himself shall be with them, and be their God*. And *God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away*. 
 {% ct 'Revelation 21:1, 3-4' %}
 
-Once the last flickering flame goes out, God proceeds to create a new heaven (atmosphere) and a new earth—in which righteousness dwells. Unlike the first creation, which no human eyes beheld, this second creation will be witnessed by all the redeemed. Everything that Adam and Eve lost will be restored, and the redeemed will live in the presence of God in perfect harmony, unutterable joy, and ever-deepening love for God and one another for all eternity.
+Once the last smoldering coal goes out, God will create a new heaven and a new earth—where righteousness dwells. Unlike the first creation, which no human eyes beheld, this second creation will be witnessed by all the redeemed. God will speak, and the barren earth will be transformed into a lush garden teeming with life {% rf 'Psalm 33:6' %}. Everything Adam and Eve lost—and more—will be restored, and the redeemed will live in the presence of God in perfect harmony, indescribable joy, and ever-deepening love for Him and for one another through the ceaseless ages of eternity.

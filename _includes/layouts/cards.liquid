@@ -15,11 +15,7 @@
     {% endif %}
   {% endfor %}
 
-  <div class="count">
-    <p>{{ articleCount }} articles <span>•</span> {{ seriesCount }} series</p>
-  </div>
-
-  {% render 'layouts/controls' %}
+  {% render 'layouts/controls', articleCount: articleCount, seriesCount: seriesCount %}
 
   <ol class="list series-list">
     {% for item in filteredGroupedPosts %}
