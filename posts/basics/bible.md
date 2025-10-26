@@ -23,7 +23,7 @@ The Bible was written over a period of 1,500 years by about 40 different authors
 > *Thy word is true from the beginning*, and every one of thy righteous judgments endureth for ever.
 {% ct 'Psalm 119:160' %}
 
-## But hasn’t it been corrupted over the ages?
+## Hasn’t it been corrupted over the ages?
 
 > The words of the LORD are *pure words*, as silver tried in a furnace of earth, purified seven times. Thou shalt keep them, O LORD, thou shalt *preserve them* from this generation for ever.
 {% ct 'Psalm 12:6-7' %}
