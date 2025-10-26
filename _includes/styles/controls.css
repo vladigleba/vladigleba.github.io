@@ -12,10 +12,6 @@
   color: var(--darker-gray-color);
 }
 
-.count p {
-  font-weight: 700;
-}
-
 .posts-toggle,
 .posts-sort {
   display: inline-flex;
@@ -23,12 +19,17 @@
   gap: 12px;
 }
 
-/* toggle control */
+.count p b {
+  font-weight: 800;
+}
 
 .posts-sort select,
-.switch-label {
+.switch-label,
+.count p {
   font-weight: 600;
 }
+
+/* toggle control */
 
 .switch {
   display: inline-block;

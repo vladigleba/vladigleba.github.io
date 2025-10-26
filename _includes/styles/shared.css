@@ -1,8 +1,8 @@
 .meta span,
 .list p span,
 .count p span {
-  margin-left: 2px;
-  margin-right: 2px;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 .last-updated,
