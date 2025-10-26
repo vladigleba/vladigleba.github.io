@@ -13,7 +13,7 @@ order: 2100
 
 The Ten Commandments, of which the Sabbath is a part, were written by the finger of God on tablets of stone rather than on materials subject to decay, such as wood or clay, as a testament to their timelessness {% rf 'Matthew 5:17-18' %}.
 
-## Wasn’t the Sabbath for the Jewish people only?
+## Was the Sabbath for the Jewish people only?
 
 > Thus the heavens and the earth were finished, and all the host of them. And on the seventh day God ended his work which he had made; and he rested on the seventh day from all his work which he had made. And *God blessed the seventh day, and sanctified it: because that in it he had rested from all his work which God created and made*.
 {% ct 'Genesis 2:1-3' %}

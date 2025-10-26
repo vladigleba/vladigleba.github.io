@@ -19,7 +19,7 @@ order: 2300
 
 Jesus wants to sanctify me wholly, including mind, body, and spirit. He did not just forgive the sins of the paralytic, but He also healed him from the disease, and He wants the same complete healing for me as well.
 
-## Does my body actually belong to me?
+## Does my body belong to me?
 
 > What? know ye not that *your body is the temple of the Holy Ghost* which is in you, which ye have of God, and *ye are not your own? For ye are bought with a price*: therefore glorify God in your body, and in your spirit, which are God’s.
 {% ct '1 Corinthians 6:19-20' %}
