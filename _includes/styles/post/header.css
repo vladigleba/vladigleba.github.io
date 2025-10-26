@@ -37,7 +37,7 @@ article > header .series-links {
   background: rgba(255, 255, 255, 0.085);
   border-radius: var(--default-radius);
   display: inline-block;
-  padding: 8.5px 15px;
+  padding: 8px 15px;
   min-width: 500px;
 }
 
@@ -89,7 +89,7 @@ article > header .meta.series {
   display: flex;
   justify-content: space-between;
   font-weight: 700;
-  padding: 0 15px 8.5px;
+  padding: 0 15px 8px;
   margin: 0 -0.7rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.125);
 }
