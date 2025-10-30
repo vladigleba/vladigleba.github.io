@@ -87,9 +87,8 @@
 }
 
 .posts-sort select:disabled {
-  opacity: 0.6;
+  opacity: 0.2;
   cursor: not-allowed;
-  background-color: var(--light-background);
 }
 
 .posts-sort select {
