@@ -202,7 +202,14 @@ In the last days, there will be a sealing of God’s people in their foreheads, 
 
 It is noteworthy that in the Bible, God’s Ten Commandments are linked with His name because they reflect His character. Therefore, God’s servants being sealed in their foreheads is synonymous with His name being written there {% rf 'Revelation 14:1; 22:4' %}. The harlot who rides the beast in {% rf 'Revelation 17:5' false %} also bears a name on her forehead that stands in direct contrast to God’s holy name: “MYSTERY, BABYLON THE GREAT, THE MOTHER OF HARLOTS AND ABOMINATIONS OF THE EARTH”.
 
-Why is the name written on the forehead? Paul explains in {% rf 'Philippians 2:5' false %}, “Let this mind be in you, which was also in Christ Jesus.” To be sealed with His name is to possess His mind—a mind that delights to do the Father’s will, as revealed in His law {% rf 'John 8:29' %}. This is accomplished only by faith in God’s promises {% rf 'Jeremiah 31:33; Ephesians 2:8' %} and through the transforming power of the Holy Spirit working in us {% rf 'Titus 3:5' %}. Those who are sealed with His name are clothed with the righteousness of Christ, symbolized in Revelation by the white robe washed in the blood of the Lamb and freely offered to all {% rf 'Revelation 7:9, 14; 3:18' %}. 
+Why is the name written on the forehead? Paul explains in {% rf 'Philippians 2:5' false %}, “Let this mind be in you, which was also in Christ Jesus.” To be sealed with His name is to possess His mind—a mind that delights to do the Father’s will, as revealed in His law {% rf 'John 8:29' %}. This is accomplished only by faith in God’s promises {% rf 'Jeremiah 31:33; Ephesians 2:8' %} and through the transforming power of the Holy Spirit working in us {% rf 'Titus 3:5' %}. Those who are sealed with His name are clothed with the righteousness of Christ, symbolized in Revelation by the white robe washed in the blood of the Lamb and freely offered to all {% rf 'Revelation 7:9, 14; 3:18' %}.
+
+Jesus asks each of us, “Wilt thou be made whole?” {% rf 'John 5:6' %}. Do we have the faith of the leper who said to Him, “Lord, if thou wilt, thou canst make me clean” {% rf 'Matthew 8:2' %}? If we do, Jesus will cleanse us—immediately—from the guilt, shame, and defilement of sin.
+
+> And Jesus put forth his hand, and touched him, saying, *I will; be thou clean*. And *immediately* his leprosy was cleansed.
+{% ct 'Matthew 8:3' %}
+
+If our faith is lacking, we can exercise the faith we do have as we ask for more: “Lord, I believe; help thou mine unbelief” {% rf 'Mark 9:24' %}.
 
 ## What is said about the saints?
 
@@ -211,4 +218,4 @@ Why is the name written on the forehead? Paul explains in {% rf 'Philippians 2:5
 
 The final invitation in the last days to worship God includes a reference to the latter part of the fourth commandment, which identifies the Sabbath [as the sign](/posts/basics/sabbath.md#which-commandment-identifies-the-creator-god) that God is the Creator of all. Those who respond to this call will be sealed with His law, of which the seventh-day Sabbath is the distinguishing sign.
 
-The call to worship God implies that another power will also seek worship, bearing its own counterfeit seal—the altered Ten Commandments—of which Sunday will be [the mark](/posts/prophecy/mark.md). Just as God used the eating of a tree to test Adam and Eve in Eden, so He will use the observance of a day to test the final generation living on earth. {% rf 'Revelation 14:12' false %} leaves no room for doubt, declaring that the saints will, by God’s grace, keep His commandments and the faith of Jesus.
+The call to worship God implies that another power will also seek worship, bearing its own counterfeit seal—the altered Ten Commandments—of which Sunday will [be the mark](/posts/prophecy/mark.md). Just as God used the eating of a tree to test Adam and Eve in Eden, so He will use the observance of a day to test the final generation living on earth. {% rf 'Revelation 14:12' false %} leaves no room for doubt, declaring that the saints will, by God’s grace, keep His commandments and the faith of Jesus.

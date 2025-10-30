@@ -148,31 +148,44 @@ if (document.body.classList.contains('js-enabled')) {
     document.querySelectorAll('.verse-link').forEach(link => {
       link.addEventListener('click', async (e) => {
         e.preventDefault();
-
+        
         // build popup
         const reference = link.dataset.reference;
         if (!link.dataset.loaded) {
           try {
             const response = await fetch(`https://bible-api.com/${encodeURIComponent(reference)}?translation=kjv`);
             const data = await response.json();
-            link.dataset.verse = `<strong>${reference}</strong><br>${data.text.trim()}`;
+            
+            // format verses with verse numbers
+            let formattedText;
+            if (data.verses && data.verses.length > 1) {
+              // multi-verse passage: show verse numbers
+              formattedText = data.verses.map(v => 
+                `<b>${v.verse}</b> ${v.text.trim()}`
+              ).join(' ');
+            } else {
+              // single verse: no verse number
+              formattedText = data.text.trim();
+            }
+            
+            link.dataset.verse = `<strong>${reference}</strong><br>${formattedText}`;
             link.dataset.loaded = 'true';
           } catch {
             link.dataset.verse = `<strong>${reference}</strong><br>Verse not found.`;
           }
         }
-
+        
         // show the pop-up near the clicked link
         document.getElementById('verse-content').innerHTML = link.dataset.verse;
         const rect = link.getBoundingClientRect();      
         let left = rect.left + window.scrollX;
         const top = rect.bottom + window.scrollY + 10;
-
+        
         // if popup would overflow right edge, shift it left
         const popupWidth = popup.offsetWidth || 300; // estimated default
         const maxLeft = window.innerWidth - popupWidth - 10; // 10px margin
         if (left > maxLeft) left = maxLeft;
-
+        
         popup.style.top = `${top}px`;
         popup.style.left = `${left}px`;
         popup.classList.add('show');

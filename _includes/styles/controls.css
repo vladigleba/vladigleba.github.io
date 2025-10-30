@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 55px;
   margin: 0 auto 20px;
   flex-wrap: nowrap;
   background: var(--light-background);
@@ -100,6 +100,10 @@
   border-radius: 6px;
   border: 1px solid #e5e7eb;
   background-color: white;
+}
+
+.posts-sort select option {
+  color: black;
 }
 
 .select-arrow {

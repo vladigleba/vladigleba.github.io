@@ -14,20 +14,42 @@ order: 200
 > I am Alpha and Omega, the beginning and the ending, saith the LORD, *which is, and which was, and which is to come*, the Almighty.
 {% ct 'Revelation 1:8' %}
 
-It may be hard for our finite minds to comprehend, but God is infinite; He always has been and always will be.
+It may be hard for our finite minds to comprehend—especially since none of us are exempt from death—but God is infinite; He always has been and always will be.
 
-## Will His name ever cease to be blessed?
+## Does God know all things?
 
-> Daniel answered and said, Blessed be the name of God *for ever and ever*: for wisdom and might are his.
-{% ct 'Daniel 2:20' %}
+> Great is our Lord, and of great power: *his understanding is infinite*.
+{% ct 'Psalm 147:5' %}
 
-## Who is the source of all true wisdom?
+> Dost thou know the balancings of the clouds, the wondrous works of him *which is perfect in knowledge*?
+{% ct 'Job 37:16' %}
 
-> And he changeth the times and the seasons: he removeth kings, and setteth up kings: *he giveth wisdom* unto the wise, and *knowledge* to them that know understanding.
+> For if our heart condemn us, God is greater than our heart, and *knoweth all things*.
+{% ct '1 John 3:20' %}
+
+## Does God know my thoughts?
+
+> O LORD, thou hast searched me, and known me. Thou knowest my downsitting and mine uprising, *thou understandest my thought afar off*. Thou compassest [comprehend] my path and my lying down, and *art acquainted with all my ways*. For there is not a word in my tongue, but, lo, O LORD, *thou knowest it altogether*.
+{% ct 'Psalm 139:1-4' %}
+
+> And thou, Solomon my son, know thou the God of thy father, and serve him with a perfect heart and with a willing mind: for *the LORD searcheth all hearts, and understandeth all the imaginations of the thoughts*: if thou seek him, he will be found of thee; but if thou forsake him, he will cast thee off for ever.
+{% ct '1 Chronicles 28:9' %}
+
+> I the LORD *search the heart*, I try the reins, even to give every man according to his ways, and according to the fruit of his doings.
+{% ct 'Jeremiah 17:10' %}
+
+Just as there is no sin in our lives that God is not aware of, so there is no sorrow that escapes His notice. He is acquainted with it all: our shame, guilt, disappointments, and wounds.
+
+## Who is the source of all wisdom?
+
+> And he changeth the times and the seasons: he removeth kings, and setteth up kings: *he giveth wisdom unto the wise, and knowledge to them that know understanding*.
 {% ct 'Daniel 2:21' %}
 
 > If any of you lacks wisdom, let him ask of God, *who gives to all liberally* and without reproach, and it will be given to him.
 {% ct 'James 1:5, NKJV' %}
+
+> For the LORD *giveth wisdom*: out of his mouth *cometh knowledge and understanding*.
+{% ct 'Proverbs 2:6' %}
 
 ## Does God know the future?
 
@@ -65,7 +87,7 @@ Satan wants to [be like God](/posts/gospel/evil.md), but he too is a created bei
 
 All God has to do is speak and atoms are immediately created in obedience to His word! And after its been created, all of nature is just as eager to obey her Maker.
 
-## Do the galaxies have anything to say about Him?
+## Do the heavens have anything to say about Him?
 
 > The *heavens declare the glory of God*; the *skies proclaim the work of his hands*. Day after day they pour forth speech; night after night they reveal knowledge.
 {% ct 'Psalm 19:1-2, NIV' %}
@@ -114,3 +136,8 @@ It’s said that the bond between mother and child is the strongest human bond t
 
 > *I will bless the LORD at all times*: his praise shall continually be in my mouth. My soul shall make her boast in the LORD: the humble shall hear thereof, and be glad. O *magnify the LORD with me, and let us exalt his name together*. I sought the LORD, and he heard me, and delivered me from all my fears.
 {% ct 'Psalm 34:1-4' %}
+
+## Will His name ever cease to be blessed?
+
+> Daniel answered and said, Blessed be the name of God *for ever and ever*: for wisdom and might are his.
+{% ct 'Daniel 2:20' %}
