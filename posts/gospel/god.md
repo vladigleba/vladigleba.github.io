@@ -38,7 +38,7 @@ It may be hard for our finite minds to comprehend—especially since none of us 
 > I the LORD *search the heart*, I try the reins, even to give every man according to his ways, and according to the fruit of his doings.
 {% ct 'Jeremiah 17:10' %}
 
-Just as there is no sin in our lives that God is not aware of, so there is no sorrow that escapes His notice. He is acquainted with it all: our shame, guilt, disappointments, and wounds.
+Just as there is no sin in our lives that God is not aware of, so there is no sorrow that escapes His notice. He is acquainted with it all: every wound, disappointment, injustice, or abuse.
 
 ## Who is the source of all wisdom?
 
