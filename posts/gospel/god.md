@@ -27,6 +27,8 @@ It may be hard for our finite minds to comprehend—especially since none of us 
 > For if our heart condemn us, God is greater than our heart, and *knoweth all things*.
 {% ct '1 John 3:20' %}
 
+God is omniscient in the fullest sense of the word.
+
 ## Does God know my thoughts?
 
 > O LORD, thou hast searched me, and known me. Thou knowest my downsitting and mine uprising, *thou understandest my thought afar off*. Thou compassest [comprehend] my path and my lying down, and *art acquainted with all my ways*. For there is not a word in my tongue, but, lo, O LORD, *thou knowest it altogether*.
@@ -38,9 +40,9 @@ It may be hard for our finite minds to comprehend—especially since none of us 
 > I the LORD *search the heart*, I try the reins, even to give every man according to his ways, and according to the fruit of his doings.
 {% ct 'Jeremiah 17:10' %}
 
-Just as there is no sin in our lives that God is not aware of, so there is no sorrow that escapes His notice. He is acquainted with it all: every wound, disappointment, injustice, or abuse.
+As our Creator, God knows us better than we know ourselves. Just as there is no sin in our lives that God does not see, so there is no sorrow that He does not notice. He is acquainted with it all—every wound, disappointment, injustice, and abuse. Yet He is not merely aware; He longs to heal our wounds {% rf 'Isaiah 53:5; Jeremiah 30:17; 33:6' %}, restore what was lost {% rf 'Isaiah 43:18-19; 51:3; Joel 2:25' %}, comfort our sorrows {% rf 'Psalm 147:3; Isaiah 57:18' %}, make right every wrong {% rf 'Romans 12:19' %}, forgive every confessed sin {% rf 'Psalm 103:2-4; 1 John 1:9' %}, cleanse every defilement {% rf 'Ezekiel 36:25' %}, and set us free from every addiction {% rf 'Luke 4:18' %}. He who created the heavens and the earth by the power of His Word {% rf 'Genesis 1:1; Psalm 33:6' %} has the same power to recreate us by that same Word {% rf '1 Peter 1:23; 2 Corinthians 5:17' %}—the Bible—but only if we let Him {% rf 'Revelation 3:20' %}.
 
-## Who is the source of all wisdom?
+## Is He the source of all true human wisdom?
 
 > And he changeth the times and the seasons: he removeth kings, and setteth up kings: *he giveth wisdom unto the wise, and knowledge to them that know understanding*.
 {% ct 'Daniel 2:21' %}
@@ -50,6 +52,8 @@ Just as there is no sin in our lives that God is not aware of, so there is no so
 
 > For the LORD *giveth wisdom*: out of his mouth *cometh knowledge and understanding*.
 {% ct 'Proverbs 2:6' %}
+
+After Adam and Eve ate from the tree of the knowledge of good and evil, the human race was exposed to the knowledge of evil—with all its pain, misery, and suffering—which was never God’s design. Yet all genuinely good human wisdom comes from Him, and therefore we have no reason to glory in ourselves {% rf '2 Corinthians 10:17; Galatians 6:14' %}.
 
 ## Does God know the future?
 
