@@ -57,14 +57,17 @@ After Adam and Eve ate from the tree of the knowledge of good and evil, the huma
 
 ## Does God know the future?
 
-> Remember the former things of old: for I am God, and there is none else; I am God, and there is none like me, *declaring the end from the beginning*, and from ancient times the things that are not yet done, saying, My counsel shall stand, and I will do all my pleasure.
+> Remember the former things of old: for I am God, and there is none else; I am God, and there is none like me, *declaring the end from the beginning, and from ancient times the things that are not yet done*, saying, My counsel shall stand, and I will do all my pleasure.
 {% ct 'Isaiah 46:9-10' %}
+
+> Surely the Lord GOD will do nothing, but *he revealeth his secret unto his servants the prophets*.
+{% ct 'Amos 3:7' %}
 
 > My frame was not hidden from You, when I was made in secret, and skillfully wrought in the lowest parts of the earth. Your eyes saw my substance, being yet unformed. And *in Your book they all were written, the days fashioned for me, when as yet there were none of them*.
 {% ct 'Psalm 139:15-16, NKJV' %}
 
-> Surely the Lord GOD will do nothing, but *he revealeth his secret unto his servants the prophets*.
-{% ct 'Amos 3:7' %}
+> *Before I formed thee in the belly I knew thee*; and before thou camest forth out of the womb I sanctified thee, and I ordained thee a prophet unto the nations.
+{% ct 'Jeremiah 1:5' %}
 
 Not only does God know the future, but He also likes to [reveal it](/posts/prophecy/europe.md) ahead of time to strengthen our faith in Him and prepare us for what is to come.
 
