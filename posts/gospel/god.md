@@ -40,7 +40,7 @@ God is omniscient in the fullest sense of the word.
 > I the LORD *search the heart*, I try the reins, even to give every man according to his ways, and according to the fruit of his doings.
 {% ct 'Jeremiah 17:10' %}
 
-As our Creator, God knows us better than we know ourselves. Just as there is no sin in our lives that God does not see, so there is no sorrow that He does not notice. He is acquainted with it all—every wound, disappointment, injustice, and abuse. Yet He is not merely aware; He longs to heal our wounds {% rf 'Isaiah 53:5; Jeremiah 30:17; 33:6' %}, restore what was lost {% rf 'Isaiah 43:18-19; 51:3; Joel 2:25' %}, comfort our sorrows {% rf 'Psalm 147:3; Isaiah 57:18' %}, make right every wrong {% rf 'Romans 12:19' %}, forgive every confessed sin {% rf 'Psalm 103:2-4; 1 John 1:9' %}, cleanse every defilement {% rf 'Ezekiel 36:25' %}, and set us free from every addiction {% rf 'Luke 4:18' %}. He who created the heavens and the earth by the power of His Word {% rf 'Genesis 1:1; Psalm 33:6' %} has the same power to recreate us by that same Word {% rf '1 Peter 1:23; 2 Corinthians 5:17' %}—the Bible—but only if we let Him {% rf 'Revelation 3:20' %}.
+As our Creator, God knows us better than we know ourselves. Just as there is no sin in our lives that God does not see, so there is no sorrow that He does not notice. He is acquainted with it all—every wound, disappointment, injustice, and abuse. Yet He is not merely aware; He longs to heal our wounds {% rf 'Isaiah 53:5; Jeremiah 30:17; 33:6' %}, restore what was lost {% rf 'Isaiah 43:18-19; 51:3; Joel 2:25' %}, comfort our sorrows {% rf 'Psalm 147:3; Isaiah 57:18' %}, make right every wrong {% rf 'Romans 12:19' %}, forgive every confessed sin {% rf 'Psalm 103:2-4; 1 John 1:9' %}, cleanse every defilement {% rf 'Ezekiel 36:25' %}, and set us free from every addiction {% rf 'Luke 4:18' %}. He who created the heavens and the earth by the power of His Word {% rf 'Genesis 1:1; Psalm 33:6' %} has the same power to recreate us by that same Word {% rf '1 Peter 1:23; 2 Corinthians 5:17' %}, the Bible, but only if we let Him {% rf 'Revelation 3:20' %}.
 
 ## Is He the source of all true human wisdom?
 
@@ -53,7 +53,7 @@ As our Creator, God knows us better than we know ourselves. Just as there is no 
 > For the LORD *giveth wisdom*: out of his mouth *cometh knowledge and understanding*.
 {% ct 'Proverbs 2:6' %}
 
-After Adam and Eve ate from the tree of the knowledge of good and evil, the human race was exposed to the knowledge of evil—with all its pain, misery, and suffering—which was never God’s design. Yet all genuinely good human wisdom comes from Him, and therefore we have no reason to glory in ourselves {% rf '2 Corinthians 10:17; Galatians 6:14' %}.
+After Adam and Eve ate from the tree of the knowledge of good and evil, humanity became exposed to the knowledge of evil—with all its pain, misery, and suffering—which was never God’s design. Yet even all genuinely good human wisdom is not inherently ours, but His--a profound truth that removes any temptation to glory in ourselves {% rf '2 Corinthians 10:17; Galatians 6:14' %}.
 
 ## Does God know the future?
 
