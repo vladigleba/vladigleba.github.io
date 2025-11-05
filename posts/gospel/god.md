@@ -53,7 +53,7 @@ As our Creator, God knows us better than we know ourselves. Just as there is no 
 > For the LORD *giveth wisdom*: out of his mouth *cometh knowledge and understanding*.
 {% ct 'Proverbs 2:6' %}
 
-After Adam and Eve ate from the tree of the knowledge of good and evil, humanity became exposed to the knowledge of evil—with all its pain, misery, and suffering—which was never God’s design. Yet even all genuinely good human wisdom is not inherently ours, but His--a profound truth that removes any temptation to glory in ourselves {% rf '2 Corinthians 10:17; Galatians 6:14' %}.
+After Adam and Eve ate from the tree of the knowledge of good and evil, humanity became exposed to the knowledge of evil—with all its pain, misery, and suffering—which was never God’s design. Yet even all genuinely good human wisdom is not inherently ours, but His—a profound truth that removes any temptation to glory in ourselves {% rf '2 Corinthians 10:17; Galatians 6:14' %}.
 
 ## Does God know the future?
 
@@ -69,11 +69,43 @@ After Adam and Eve ate from the tree of the knowledge of good and evil, humanity
 > *Before I formed thee in the belly I knew thee*; and before thou camest forth out of the womb I sanctified thee, and I ordained thee a prophet unto the nations.
 {% ct 'Jeremiah 1:5' %}
 
-Not only does God know the future, but He also likes to [reveal it](/posts/prophecy/europe.md) ahead of time to strengthen our faith in Him and prepare us for what is to come.
+Not only does God know the future, but He also [reveals it beforehand](/posts/prophecy/europe.md)—to strengthen our faith in Him and to prepare us for what is to come. The Bible is full of prophecy for this very reason.
 
-## Are there any other gods?
+## What comfort does God’s foreknowledge bring?
 
-> Tell ye, and bring them near; yea, let them take counsel together: who hath declared this from ancient time? who hath told it from that time? have not I the LORD? and *there is no God else beside me*; a just God and a Saviour; there is none beside me.
+> Forasmuch as ye know that ye were not redeemed with corruptible things, as silver and gold, from your vain conversation received by tradition from your fathers; but with the precious blood of Christ, as of a lamb without blemish and without spot: *who verily was foreordained before the foundation of the world*, but was manifest in these last times for you.
+{% ct '1 Peter 1:18-20' %}
+
+> And all that dwell upon the earth shall worship him, whose names are not written in the book of life of the *Lamb slain from the foundation of the world*.
+{% ct 'Revelation 13:8' %}
+
+> Who hath saved us, and called us with a holy calling, not according to our works, but according to his own purpose and grace, which was *given us in Christ Jesus before the world began*, but is now made manifest by the appearing of our Saviour Jesus Christ, who hath abolished death, and hath brought life and immortality to light through the gospel:
+{% ct '2 Timothy 1:9-10' %}
+
+Because God is never caught off guard by any development, Satan’s rebellion in heaven was doomed from the start {% rf 'Ezekiel 28:17-19' %}, for God foresaw it and was prepared for it. He was likewise prepared for humanity’s fall, for Peter writes that Christ “was foreordained before the foundation of the world” {% rf '1 Peter 1:18-20' %}, meaning that before Adam and Eve sinned, Christ had already offered Himself as their surety. This is exceedingly good news, because no matter how unconquerable evil, sin, and death may now appear, God’s love, righteousness, and life will ultimately triumph {% rf '1 Corinthians 15:54-57' %}.
+
+## Does God predestine who is saved?
+
+> I call heaven and earth to record this day against you, that *I have set before you life and death, blessing and cursing: therefore choose life*, that both thou and thy seed may live: that thou mayest love the LORD thy God, and that thou mayest obey his voice, and that thou mayest cleave unto him: for he is thy life, and the length of thy days: that thou mayest dwell in the land which the LORD sware unto thy fathers, to Abraham, to Isaac, and to Jacob, to give them.
+{% ct 'Deuteronomy 30:19-20' %}
+
+> And if it seem evil unto you to serve the LORD, *choose you this day whom ye will serve*; whether the gods which your fathers served that were on the other side of the flood, or the gods of the Amorites, in whose land ye dwell: but as for me and my house, we will serve the LORD.
+{% ct 'Joshua 24:15' %}
+
+> And Elijah came unto all the people, and said, How long halt ye *between two opinions? if the LORD be God, follow him: but if Baal, then follow him*. And the people answered him not a word.
+{% ct '1 Kings 18:21' %}
+
+God’s foreknowledge does not negate anyone’s freedom of choice. He respects free will, even when He knows it will cost Him everything; after all, He knew Satan would rebel against Him, yet [He still created him](/posts/gospel/evil.md). Why? Because God is love, and a foundational element of love is freedom of choice—freedom that always carries the risk that the one being loved may choose not to reciprocate.
+
+Love is often expressed most vividly under trying circumstances. If God had created only angels whom He knew would remain loyal to Him, He would have limited Himself to a love that lacked depth—one that had never been “tried in the fire.” And a shallow expression of love can awaken only the same love in return. But God desires to reveal a love that “passeth knowledge” {% rf 'Ephesians 3:19' %}. Satan’s fall provided God an opportunity to display a love—by offering His Son for the sins of a rebellious world—that would never have been possible otherwise. This love, in turn, awakens a far greater love and devotion, not only from the redeemed human race but also from the angels who remained loyal to Him.
+
+God’s respect for freedom of choice dismantles the idea of predestination—of God predetermining who will be saved or lost.[^1] Imagine a pilot flying over a long, dark, one-way tunnel as two cars enter from opposite ends—both without headlights. The pilot knows disaster will soon follow, but his foreknowledge in no way impedes or imposes itself upon the drivers’ choice to enter that tunnel. Predestination is a dangerous teaching because it can lead people to live as though their decisions and actions do not matter, believing their destiny has already been determined. Scripture, however, teaches the exact opposite: our words and actions do matter, for we will be [held accountable](/posts/prophecy/judgment.md) for them {% rf 'Matthew 12:36; Romans 14:12; Revelation 22:12' %}.
+
+[^1]: Jacobus Arminius was a 16th-century Dutch Reformer who rediscovered the biblical teaching of free will, now known as Arminianism. He rejected both the Calvinist doctrine of predestination and the idea that all will ultimately be saved (Universalism).
+
+## How many gods are there?
+
+> Tell ye, and bring them near; yea, let them take counsel together: who hath declared this from ancient time? who hath told it from that time? have not I the LORD? and *there is no God else beside me*; a just God and a Saviour; *there is none beside me*.
 {% ct 'Isaiah 45:21' %}
 
 > Remember the former things of old: for *I am God, and there is none else; I am God, and there is none like me*.
@@ -82,7 +114,7 @@ Not only does God know the future, but He also likes to [reveal it](/posts/proph
 > “*To whom will you compare me? Or who is my equal*?” says the Holy One. Lift up your eyes and look to the heavens: Who created all these? He who brings out the starry host one by one and calls forth each of them by name. Because of his great power and mighty strength, not one of them is missing.
 {% ct 'Isaiah 40:25-26, NIV' %}
 
-Satan wants to [be like God](/posts/gospel/evil.md), but he too is a created being.
+There are countless gods across the world’s religions, but the Bible declares that there is only one true God. Though Satan desires to [be like God](/posts/gospel/evil.md) {% rf 'Isaiah 14:14' %}, he remains a created being. He especially covets the worship that belongs to God alone, which is why, just before the second coming of Christ, the great test that will divide all humanity into two groups will [revolve around worship](/posts/prophecy/usa.md).
 
 ## How did God create the universe?
 
