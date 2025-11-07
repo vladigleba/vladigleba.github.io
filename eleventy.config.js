@@ -334,6 +334,15 @@ module.exports = async (config) => {
       post.data.updated = null;
     }
 
+    // number of questions (H2 headings)
+    let source = post.rawInput;
+    if (source) {
+      const matches = source.match(/^##\s.+$/gm) || [];
+      post.data.questions = matches.length;
+    } else {
+      post.data.questions = 0;
+    }
+
     return post;
   }
 

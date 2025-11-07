@@ -1,6 +1,7 @@
 <div class="posts-view">
   {% assign articleCount = 0 %}
   {% assign seriesCount = 0 %}
+  {% assign questionsCount = 0 %}
   {% assign filteredGroupedPosts = "" | split: "" %}
 
   {% for item in groupedPosts %}
@@ -9,13 +10,17 @@
       {% if item.type == 'series' %}
         {% assign seriesCount = seriesCount | plus: 1 %}
         {% assign articleCount = articleCount | plus: item.posts.size %}
+        {% for p in item.posts %}
+          {% assign questionsCount = questionsCount | plus: p.data.questions %}
+        {% endfor %}
       {% else %}
         {% assign articleCount = articleCount | plus: 1 %}
+        {% assign questionsCount = questionsCount | plus: item.post.data.questions %}
       {% endif %}
     {% endif %}
   {% endfor %}
 
-  {% render 'layouts/controls', articleCount: articleCount, seriesCount: seriesCount %}
+  {% render 'layouts/controls', articleCount: articleCount, seriesCount: seriesCount, questionsCount: questionsCount %}
 
   <ol class="list series-list">
     {% for item in filteredGroupedPosts %}
