@@ -83,14 +83,6 @@
     flex-direction: column-reverse;
   }
 
-  .control-wrapper {
-    max-width: 365px;
-    gap: 8px;
-    flex-wrap: wrap;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-
   .toc {
     position: relative;
     margin: 25px auto;
@@ -111,6 +103,11 @@
 
 /* Tablets and smaller screens */
 @media (max-width: 768px) {
+  .control-wrapper {
+    max-width: 365px;
+    padding: 15px 25px;
+  }
+
   article,
   article > header > div,
   body > footer > div {
@@ -126,7 +123,8 @@
     margin-bottom: 10px;
   }
 
-  article > header h1 {
+  article > header h1,
+  .banner h1  {
     font-size: 42px;
   }
 
@@ -173,10 +171,6 @@
 
   .banner {
     padding: 100px 0 130px
-  }
-
-  .banner h1 {
-    font-size: 38px;
   }
 
   .list {

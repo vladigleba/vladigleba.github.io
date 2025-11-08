@@ -1,14 +1,14 @@
 .control-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 35px;
+  gap: 12px;
   margin: 0 auto 20px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   background: var(--light-background);
   border-radius: var(--default-radius);
-  padding: 12px 35px;
-  width: fit-content;
+  padding: 15px 35px;
+  max-width: 610px;
   color: var(--darker-gray-color);
 }
 
@@ -17,6 +17,10 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
+}
+
+.count p {
+  text-align: center;
 }
 
 .count p b {
