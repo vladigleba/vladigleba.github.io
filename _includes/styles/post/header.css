@@ -34,7 +34,7 @@ article > header .tag span {
 
 article > header .series-links {
   margin-top: 40px;
-  background: rgba(255, 255, 255, 0.085);
+  background: rgba(255, 255, 255, 0.09);
   border-radius: var(--default-radius);
   display: inline-block;
   padding: 10px 20px;
