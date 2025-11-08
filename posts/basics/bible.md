@@ -1,7 +1,7 @@
 ---
 title: Can I Trust the Bible?
 description: Is the Bible a fable, or is it the most trustworthy document we have ever possessed?
-color: rgb(92, 161, 106)
+color: rgb(86, 152, 99)
 date: 2021-10-24
 order: 100
 ---

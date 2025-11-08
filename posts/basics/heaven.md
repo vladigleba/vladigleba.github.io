@@ -1,7 +1,7 @@
 ---
 title: What Will Heaven Be Like?
 description: Heaven is real, accessible to all, and more glorious than anything we have seen, heard, or imagined.
-color: rgb(81,144,179)
+color: rgb(66, 138, 177)
 date: 2022-06-24
 order: 1400
 ---

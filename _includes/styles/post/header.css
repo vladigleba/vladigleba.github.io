@@ -37,7 +37,7 @@ article > header .series-links {
   background: rgba(255, 255, 255, 0.085);
   border-radius: var(--default-radius);
   display: inline-block;
-  padding: 8px 15px;
+  padding: 10px 20px;
   min-width: 500px;
 }
 
@@ -54,8 +54,8 @@ article > header .series-item {
   text-decoration: none;
   color: inherit;
   transition: background-color 0.15s ease;
-  margin: 0 -0.7rem;
-  padding: 0.25rem 0.7rem;
+  margin: 0 -20px;
+  padding: 5px 20px;
 }
 
 article > header .series-item .series-left {

@@ -2,12 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 55px;
+  gap: 30px;
   margin: 0 auto 20px;
   flex-wrap: nowrap;
   background: var(--light-background);
   border-radius: var(--default-radius);
-  padding: 12px 25px;
+  padding: 12px 30px;
   width: fit-content;
   color: var(--darker-gray-color);
 }

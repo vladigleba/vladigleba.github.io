@@ -151,7 +151,7 @@ Praying for others often involves asking God for a change of heart, and this usu
 
 All good things take time and effort, and prayer is no different. Rushed prayers often lack power because they don’t mean much to us, but prayers that produce results take time and effort. It would be wise for us to preface every important decision or action in our lives with much prayer. Jesus Himself sometimes prayed all night, such as before ordaining the twelve apostles {% rf 'Luke 6:12-13' %}. As our prayer life develops, spending time communing with our Father becomes a delight, no matter how long it takes.
 
-## What is the first step to an effective prayer?
+## What is the first step to effective prayer?
 
 > *Ask*, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you. For *every one that asketh receiveth*; and he that seeketh findeth; and to him that knocketh it shall be opened.
 {% ct 'Matthew 7:7-8' %}
