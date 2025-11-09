@@ -21,7 +21,7 @@ order: 300
 
 God cannot be the originator of evil because that is contrary to His character of love. It was an enemy of God that was responsible for the birth of evil.
 
-## What was Satan’s name before he sinned?
+## What was Satan’s original name?
 
 > How art thou fallen from heaven, O *Lucifer*, son of the morning! how art thou cut down to the ground, which didst weaken the nations!
 {% ct 'Isaiah 14:12' %}
@@ -101,7 +101,7 @@ In order to deceive Eve, Satan mixed in some truth with his lie when he said she
 
 As soon as Adam and Eve sinned, they hid from God for the first time. Sin leads to separation from God because sin cannot exist in the presence of a holy God without being consumed by it. A chasm was now formed between the Giver of life and His creation, and the process of death had commenced.
 
-## What affect did sin have on the human heart?
+## What did sin do to the human heart?
 
 > The heart is *deceitful* above all things, and desperately *wicked*; who can know it?
 {% ct 'Jeremiah 17:9' %}
@@ -130,7 +130,7 @@ Sin leads to separation from the Giver of life, which leads to death.
 
 Ever since the fall, the human race no longer has true freedom and has become a slave to sin and, ultimately, to death.
 
-## Is there hope of escaping the power of death?
+## Is there hope of escaping death?
 
 > And I will put enmity between you and the woman, and between your seed and her Seed; *He shall bruise your head*, and you shall bruise His heel.
 {% ct 'Genesis 3:15, NKJV' %}
