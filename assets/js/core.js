@@ -25,7 +25,7 @@ if (document.body.classList.contains('js-enabled')) {
     //#region
 
     function announceToLiveRegion(message) {
-      const liveRegion = document.getElementById('posts-sort-live');
+      const liveRegion = document.getElementById('site-live');
       if (liveRegion) {
         liveRegion.textContent = '';
         liveRegion.textContent = message;
@@ -40,10 +40,10 @@ if (document.body.classList.contains('js-enabled')) {
         navigator.clipboard.writeText(fullUrl).then(() => {
 
             // visual feedback
-            const existing = link.querySelector('.copy-popup');
+            const existing = link.querySelector('.copy-toast');
             if (!existing) {
               const popup = document.createElement('div');
-              popup.className = 'copy-popup';
+              popup.className = 'copy-toast';
               popup.innerHTML = `
                 <div class="checkmark">
                   <svg><use href="/assets/images/icons.svg#checkmark"></use></svg>
@@ -134,17 +134,69 @@ if (document.body.classList.contains('js-enabled')) {
     //#endregion
 
     /*
-    verse fetching
+    popup generation (verses and footnotes)
     */
 
     //#region
 
     // build skeleton
     const popup = document.createElement('div');
-    popup.id = 'verse-popup';
-    popup.innerHTML = `<p id="verse-content"></p>`;
+    popup.id = 'dialog-popup';
+    popup.setAttribute('role', 'dialog');
+    popup.setAttribute('aria-hidden', 'true');
+    popup.tabIndex = -1; // allow programmatic focus
+    popup.innerHTML = `<p id="dialog-content"></p>`;
     document.body.appendChild(popup);
 
+    let _lastFocused = null; // shared state for popup
+
+    // close popup helper
+    const closePopup = () => {
+      if (!popup.classList.contains('show')) return;
+      popup.classList.remove('show');
+      popup.setAttribute('aria-hidden', 'true');
+      // restore focus to previously focused element
+      try { _lastFocused?.focus(); } catch (e) {}
+    };
+
+    // allow closing with Esc key for keyboard users
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' || e.key === 'Esc') {
+        closePopup();
+      }
+    });
+
+    // helper to position and show popup
+    const showPopup = (html, trigger) => {
+      if (!html) return;
+      document.getElementById('dialog-content').innerHTML = html;
+
+      // position near trigger
+      const rect = trigger.getBoundingClientRect();
+      let left = rect.left + window.scrollX;
+      const top = rect.bottom + window.scrollY + 10;
+      const popupWidth = popup.offsetWidth || 325; // estimated default
+      const maxLeft = window.innerWidth - popupWidth - 10; // 10px margin
+      if (left > maxLeft) left = maxLeft;
+
+      popup.style.top = `${top}px`;
+      popup.style.left = `${left}px`;
+
+      // set aria label depending on trigger
+      let label = 'Popup';
+      if (trigger.classList.contains('verse-link')) label = 'Verse';
+      else if (trigger.closest && trigger.closest('.footnote-ref')) label = 'Footnote';
+      popup.setAttribute('aria-label', label);
+
+      // show and make accessible
+      _lastFocused = document.activeElement;
+      popup.classList.add('show');
+      popup.setAttribute('aria-hidden', 'false');
+      try { popup.focus({ preventScroll: true }); } catch (e) { popup.focus(); }
+      announceToLiveRegion(`${label} opened`);
+    };
+
+    // verse popup handling
     document.querySelectorAll('.verse-link').forEach(link => {
       link.addEventListener('click', async (e) => {
         e.preventDefault();
@@ -164,39 +216,63 @@ if (document.body.classList.contains('js-enabled')) {
                 `<b>${v.verse}</b> ${v.text.trim()}`
               ).join(' ');
             } else {
-              // single verse: no verse number
-              formattedText = data.text.trim();
+              formattedText = data.text.trim(); // single verse: no verse number
             }
             
             link.dataset.verse = `<strong>${reference}</strong><br>${formattedText}`;
             link.dataset.loaded = 'true';
+            announceToLiveRegion(`Verse loaded: ${reference}`);
           } catch {
             link.dataset.verse = `<strong>${reference}</strong><br>Verse not found.`;
+            announceToLiveRegion(`Verse not found: ${reference}`);
           }
         }
         
-        // show the pop-up near the clicked link
-        document.getElementById('verse-content').innerHTML = link.dataset.verse;
-        const rect = link.getBoundingClientRect();      
-        let left = rect.left + window.scrollX;
-        const top = rect.bottom + window.scrollY + 10;
-        
-        // if popup would overflow right edge, shift it left
-        const popupWidth = popup.offsetWidth || 300; // estimated default
-        const maxLeft = window.innerWidth - popupWidth - 10; // 10px margin
-        if (left > maxLeft) left = maxLeft;
-        
-        popup.style.top = `${top}px`;
-        popup.style.left = `${left}px`;
-        popup.classList.add('show');
+        showPopup(link.dataset.verse, link);
       });
     });
 
-    // close pop-up when clicking outside
+    // close popup on outside click
     document.addEventListener('click', (e) => {
-      if (!popup.contains(e.target) && !e.target.classList.contains('verse-link')) {
+      const target = e.target;
+      if (!popup.contains(target) && !target.closest('.verse-link') && !target.closest('.footnote-ref')) {
         popup.classList.remove('show');
       }
+    });
+
+    // footnote popup handling
+    document.querySelectorAll('.footnote-ref a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        // resolve footnote id from href (e.g. #fn1)
+        const href = link.getAttribute('href') || '';
+        const id = href.charAt(0) === '#' ? href.slice(1) : href;
+        const foot = document.getElementById(id);
+
+        let html = '';
+        if (foot) {
+          // clone so we can remove the backref without touching original
+          const clone = foot.cloneNode(true);
+          const back = clone.querySelector('.footnote-backref');
+          if (back) back.remove();
+   
+          // get content
+          const p = clone.querySelector('p');
+          const contentHtml = p.innerHTML.trim();
+
+          // extract footnote number from id
+          const numMatch = id.match(/(\d+)/);
+          const num = numMatch ? numMatch[1] : '';
+          html = `<strong>Footnote ${num}</strong><br>${contentHtml}`;
+          announceToLiveRegion(`Footnote ${num} opened`);
+        } else {
+          html = '<strong>Footnote</strong><br>Not found.';
+          announceToLiveRegion('Footnote not found');
+        }
+
+        showPopup(html, link);
+      });
     });
 
     //#endregion
@@ -401,7 +477,7 @@ if (document.body.classList.contains('js-enabled')) {
         }
         sortListBy(list, val);
 
-        if (liveRegion) liveRegion.textContent = `Sorted by ${e.target.options[e.target.selectedIndex].text}`;
+        announceToLiveRegion(`Sorted by ${e.target.options[e.target.selectedIndex].text}`);
       });
     }
 

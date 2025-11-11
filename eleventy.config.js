@@ -262,9 +262,11 @@ module.exports = async (config) => {
       while (current) {
         const isH2 = current.tagName === 'H2';
         const isNextLink = current.tagName === 'P' && current.classList.contains('next-link');
-        
-        if (isH2 || isNextLink) break;
-        
+        const isFootnotesHr = current.tagName === 'HR' && current.classList.contains('footnotes-sep');
+        const isFootnotesSection = current.classList && current.classList.contains('footnotes');
+
+        if (isH2 || isNextLink || isFootnotesHr || isFootnotesSection) break;
+
         toWrap.push(current);
         current = current.nextElementSibling;
       }

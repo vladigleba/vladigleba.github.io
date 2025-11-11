@@ -1,5 +1,5 @@
-#verse-popup,
-.copy-popup {
+#dialog-popup,
+.copy-toast {
   position: absolute;
   background-color: white;
   padding: 10px 14px;
@@ -8,23 +8,23 @@
   z-index: 1000;
 }
 
-#verse-popup {
+#dialog-popup {
   display: none;
-  max-width: 300px;
+  max-width: 325px;
   max-height: 250px;
   overflow-y: auto;
 }
 
-#verse-popup strong {
+#dialog-popup strong {
   margin-bottom: 2px;
   display: inline-block;
 }
 
-#verse-popup.show {
+#dialog-popup.show {
   display: block;
 }
 
-.copy-popup {
+.copy-toast {
   font-family: var(--default-font);
   font-weight: 400;
   top: -30%;
