@@ -175,7 +175,7 @@ if (document.body.classList.contains('js-enabled')) {
       const rect = trigger.getBoundingClientRect();
       let left = rect.left + window.scrollX;
       const top = rect.bottom + window.scrollY + 10;
-      const popupWidth = popup.offsetWidth || 325; // estimated default
+      const popupWidth = popup.offsetWidth || 350; // estimated default
       const maxLeft = window.innerWidth - popupWidth - 10; // 10px margin
       if (left > maxLeft) left = maxLeft;
 

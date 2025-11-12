@@ -66,10 +66,16 @@ After Adam and Eve ate from the tree of the knowledge of good and evil, humanity
 > My frame was not hidden from You, when I was made in secret, and skillfully wrought in the lowest parts of the earth. Your eyes saw my substance, being yet unformed. And *in Your book they all were written, the days fashioned for me, when as yet there were none of them*.
 {% ct 'Psalm 139:15-16, NKJV' %}
 
-> *Before I formed thee in the belly I knew thee*; and before thou camest forth out of the womb I sanctified thee, and I ordained thee a prophet unto the nations.
+> *Before I formed thee in the belly I knew thee*; and before thou camest forth out of the womb I sanctified thee, and *I ordained thee a prophet unto the nations*.
 {% ct 'Jeremiah 1:5' %}
 
 Not only does God know the future, but He also [reveals it beforehand](/posts/prophecy/europe.md)—to strengthen our faith in Him and to prepare us for what is to come. The Bible is full of prophecy for this very reason.
+
+But God’s foreknowledge has a personal dimension as well, for He knows our individual futures and prepares and equips us to face whatever trials may come our way. More than that, He walks with us through them {% rf 'Isaiah 43:1-2' %}, just as He walked through the fiery furnace with the three Hebrew worthies {% rf 'Daniel 3:22-25' %}, and just as He was in the boat with His disciples during the storm on the sea {% rf 'Mark 4:37-40' %}. As long as Jesus was with them, they were safe, for it was impossible for Him who made the sea to perish in it.[^1]
+
+When storms come into our own lives, we can rest in the promise that He will never allow us to be tempted beyond what we can bear {% rf '1 Corinthians 10:13' %}, and that whatever He does allow, He will ultimately work out for our good {% rf 'Romans 8:28' %}.
+
+[^1]: Waggoner, E. J. [“Carest Thou Not That We Perish?”](https://m.egwwritings.org/en/book/1544.683#683) The Signs of the Times, vol. 17, no. 38, 21 Sept. 1891.
 
 ## What comfort does God’s foreknowledge bring?
 
@@ -99,9 +105,9 @@ God’s foreknowledge does not negate anyone’s freedom of choice. He respects 
 
 Love is often expressed most vividly under trying circumstances. If God had created only angels whom He knew would remain loyal to Him, He would have limited Himself to a love that lacked depth—one that had never been “tried in the fire.” And a shallow expression of love can awaken only the same love in return. But God desires to reveal a love that “passeth knowledge” {% rf 'Ephesians 3:19' %}. Satan’s fall provided God an opportunity to display a love—by offering His Son for the sins of a rebellious world—that would never have been possible otherwise. This love, in turn, awakens a far greater love and devotion, not only from the redeemed human race but also from the angels who remained loyal to Him.
 
-God’s respect for freedom of choice dismantles the idea of predestination—of God predetermining who will be saved or lost.[^1] Imagine a pilot flying over a long, dark, one-way tunnel as two cars enter from opposite ends—both without headlights. The pilot knows disaster will soon follow, but his foreknowledge in no way impedes or imposes itself upon the drivers’ choice to enter that tunnel. Predestination is a dangerous teaching because it can lead people to live as though their decisions and actions do not matter, believing their destiny has already been determined. Scripture, however, teaches the exact opposite: our words and actions do matter, for we will be [held accountable](/posts/prophecy/judgment.md) for them {% rf 'Matthew 12:36; Romans 14:12; Revelation 22:12' %}.
+God’s respect for freedom of choice dismantles the idea of predestination—of God predetermining who will be saved or lost.[^2] Imagine a pilot flying over a long, dark, one-way tunnel as two cars enter from opposite ends—both without headlights. The pilot knows disaster will soon follow, but his foreknowledge in no way impedes or imposes itself upon the drivers’ choice to enter that tunnel. Predestination is a dangerous teaching because it can lead people to live as though their decisions and actions do not matter, believing their destiny has already been determined. Scripture, however, teaches the exact opposite: our words and actions do matter, for we will be [held accountable](/posts/prophecy/judgment.md) for them {% rf 'Matthew 12:36; Romans 14:12; Revelation 22:12' %}.
 
-[^1]: Jacobus Arminius was a 16th-century Dutch Reformer who rediscovered the biblical teaching of free will, now known as Arminianism. He rejected both the Calvinist doctrine of predestination and the idea that all will ultimately be saved (Universalism).
+[^2]: Jacobus Arminius was a 16th-century Dutch Reformer who rediscovered the biblical teaching of free will, now known as Arminianism. He rejected both the Calvinist doctrine of predestination and the idea that all will ultimately be saved (Universalism).
 
 ## How many gods are there?
 
@@ -114,11 +120,11 @@ God’s respect for freedom of choice dismantles the idea of predestination—of
 > “*To whom will you compare me? Or who is my equal*?” says the Holy One. Lift up your eyes and look to the heavens: Who created all these? He who brings out the starry host one by one and calls forth each of them by name. Because of his great power and mighty strength, not one of them is missing.
 {% ct 'Isaiah 40:25-26, NIV' %}
 
-There are countless gods across the world’s religions, but the Bible declares that there is only one true God,[^2] and that one fallen angel—Satan—competes with Him for the worship of humanity. Though Satan aspires to [be like God](/posts/gospel/evil.md) {% rf 'Isaiah 14:12-14' %}, he is—and will always remain—a created being {% rf 'Ezekiel 28:15' %}. Since Satan especially covets the worship that belongs to God alone (though not His character, interestingly enough), it is unsurprising that, just before the second coming of Christ, the great test that will divide all humanity into two groups will [revolve around worship](/posts/prophecy/usa.md).
+There are countless gods across the world’s religions, but the Bible declares that there is only one true God,[^3] and that one fallen angel—Satan—competes with Him for the worship of humanity. Though Satan aspires to [be like God](/posts/gospel/evil.md) {% rf 'Isaiah 14:12-14' %}, he is—and will always remain—a created being {% rf 'Ezekiel 28:15' %}. Since Satan especially covets the worship that belongs to God alone (though not His character, interestingly enough), it is unsurprising that, just before the second coming of Christ, the great test that will divide all humanity into two groups will [revolve around worship](/posts/prophecy/usa.md).
 
 God’s exclusive claim to divinity completely extinguishes the idea that mankind possesses inherent divinity or could attain it through practices such as yoga, mantra recitation, energy healing, or various Eastern meditation techniques. We are—and always will be—created beings. God does promise to [bestow His character](/posts/basics/change.md#what-role-will-the-law-play-in-the-last-days) upon His followers (and what an honor that is), but we will never be divine—not even in heaven. The redeemed will live forever in heaven, not because they are immortal, but because God, who alone is immortal {% rf '1 Timothy 6:15-16' %}, sustains their life.
 
-[^2]: God’s declaration that He is the only true God may seem politically incorrect in an ecumenical world trending toward unity among religions. After all, what gives Him the right to make such a bold and exclusive claim? The answer is simple: Jesus is the only God who died for His creation. What other god set aside his divine nature, took on the nature of his created beings, and died at their hands and for their sins? There is only One.
+[^3]: God’s declaration that He is the only true God may seem politically incorrect in an ecumenical world trending toward unity among religions. After all, what gives Him the right to make such a bold and exclusive claim? The answer is simple: Jesus is the only God who died for His creation. What other god set aside his divine nature, took on the nature of his created beings, and died at their hands and for their sins? There is only One.
 
 ## How did God create the universe?
 

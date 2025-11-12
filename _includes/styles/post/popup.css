@@ -10,9 +10,10 @@
 
 #dialog-popup {
   display: none;
-  max-width: 325px;
+  max-width: 350px;
   max-height: 250px;
   overflow-y: auto;
+  line-height: 1.4;
 }
 
 #dialog-popup strong {
@@ -25,7 +26,6 @@
 }
 
 .copy-toast {
-  font-family: var(--default-font);
   font-weight: 400;
   top: -30%;
   left: 50%;
@@ -35,6 +35,11 @@
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.copy-toast span {
+  position: relative;
+  top: -2px;
 }
 
 .checkmark {

@@ -60,7 +60,7 @@ The dream was God’s answer to the king’s wondering about what the future wou
 > Thou sawest till that *a stone was cut out without hands, which smote the image* upon his feet that were of iron and clay, and *brake them to pieces*. Then was the iron, the clay, the brass, the silver, and the gold, broken to pieces together, and became like the chaff of the summer threshing floors; and the wind carried them away, that no place was found for them: and the *stone that smote the image became a great mountain, and filled the whole earth*.
 {% ct 'Daniel 2:34-35' %}
 
-## Who was represented by the head of gold?
+## Who did the head of gold represent?
 
 > This is the dream; and we will tell the interpretation thereof before the king. Thou, O king, art a king of kings: for the God of heaven hath given thee a kingdom, power, and strength, and glory. And wheresoever the children of men dwell, the beasts of the field and the fowls of the heaven hath he given into thine hand, and hath made thee ruler over them all. *Thou art this head of gold*.
 {% ct 'Daniel 2:36-38' %}
@@ -72,7 +72,7 @@ Aptly symbolized by a head of gold, Babylon was one of the most extravagant king
 > And *after thee shall arise another kingdom* inferior to thee, and another third kingdom of brass, which shall bear rule over all the earth.
 {% ct 'Daniel 2:39' %}
 
-## What kingdom did the chest of silver represent?
+## Who did the chest of silver represent?
 
 > PERES: Thy kingdom is divided, and given to the *Medes and Persians*.
 {% ct 'Daniel 5:28' %}
