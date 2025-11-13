@@ -42,7 +42,7 @@ God is omniscient in the fullest sense of the word.
 
 As our Creator, God knows us better than we know ourselves. Just as there is no sin in our lives that God does not see, so there is no sorrow that He does not notice. He is acquainted with it all—every wound, disappointment, injustice, and abuse. Yet He is not merely aware; He longs to heal our wounds {% rf 'Isaiah 53:5; Jeremiah 30:17; 33:6' %}, restore what was lost {% rf 'Isaiah 43:18-19; 51:3; Joel 2:25' %}, comfort our sorrows {% rf 'Psalm 147:3; Isaiah 57:18' %}, make right every wrong {% rf 'Romans 12:19' %}, forgive every confessed sin {% rf 'Psalm 103:2-4; 1 John 1:9' %}, cleanse every defilement {% rf 'Ezekiel 36:25' %}, and set us free from every addiction {% rf 'Luke 4:18' %}. He who created the heavens and the earth by the power of His Word {% rf 'Genesis 1:1; Psalm 33:6' %} has the same power to recreate us by that same Word {% rf '1 Peter 1:23; 2 Corinthians 5:17' %}, the Bible, but only if we let Him {% rf 'Revelation 3:20' %}.
 
-## Is He the source of all true human wisdom?
+## Is He the source of all wisdom?
 
 > And he changeth the times and the seasons: he removeth kings, and setteth up kings: *he giveth wisdom unto the wise, and knowledge to them that know understanding*.
 {% ct 'Daniel 2:21' %}
@@ -71,13 +71,11 @@ After Adam and Eve ate from the tree of the knowledge of good and evil, humanity
 
 Not only does God know the future, but He also [reveals it beforehand](/posts/prophecy/europe.md)—to strengthen our faith in Him and to prepare us for what is to come. The Bible is full of prophecy for this very reason.
 
-But God’s foreknowledge has a personal dimension as well, for He knows our individual futures and prepares and equips us to face whatever trials may come our way. More than that, He walks with us through them {% rf 'Isaiah 43:1-2' %}, just as He walked through the fiery furnace with the three Hebrew worthies {% rf 'Daniel 3:22-25' %}, and just as He was in the boat with His disciples during the storm on the sea {% rf 'Mark 4:37-40' %}. As long as Jesus was with them, they were safe, for it was impossible for Him who made the sea to perish in it.[^1]
-
-When storms come into our own lives, we can rest in the promise that He will never allow us to be tempted beyond what we can bear {% rf '1 Corinthians 10:13' %}, and that whatever He does allow, He will ultimately work out for our good {% rf 'Romans 8:28' %}.
+But God’s foreknowledge has a personal dimension as well, for He knows our individual futures and prepares and equips us to face whatever trials may come our way. More than that, He walks with us through them {% rf 'Isaiah 43:1-2' %}, just as He walked through the fiery furnace with the three Hebrew worthies {% rf 'Daniel 3:22-25' %}, and just as He was in the boat with His disciples during the storm on the sea {% rf 'Mark 4:37-40' %}. As long as Jesus was with them, they were safe, for it was impossible for Him who made the sea to perish in it.[^1] When storms come into our own lives, we can rest in the promise that He will never allow us to be tempted beyond what we can bear {% rf '1 Corinthians 10:13' %}, and that whatever He does allow, He will ultimately work out for our good {% rf 'Romans 8:28' %}.
 
 [^1]: Waggoner, E. J. [“Carest Thou Not That We Perish?”](https://m.egwwritings.org/en/book/1544.683#683) The Signs of the Times, vol. 17, no. 38, 21 Sept. 1891.
 
-## What comfort does God’s foreknowledge bring?
+## What comfort does this bring?
 
 > Forasmuch as ye know that ye were not redeemed with corruptible things, as silver and gold, from your vain conversation received by tradition from your fathers; but with the precious blood of Christ, as of a lamb without blemish and without spot: *who verily was foreordained before the foundation of the world*, but was manifest in these last times for you.
 {% ct '1 Peter 1:18-20' %}
@@ -88,7 +86,7 @@ When storms come into our own lives, we can rest in the promise that He will nev
 > Who hath saved us, and called us with a holy calling, not according to our works, but according to his own purpose and grace, which was *given us in Christ Jesus before the world began*, but is now made manifest by the appearing of our Saviour Jesus Christ, who hath abolished death, and hath brought life and immortality to light through the gospel:
 {% ct '2 Timothy 1:9-10' %}
 
-Because God is never caught off guard by any development, Satan’s rebellion in heaven was doomed from the start {% rf 'Ezekiel 28:17-19' %}, for God foresaw it and was prepared for it. He was likewise prepared for humanity’s fall, for Peter writes that Christ “was foreordained before the foundation of the world” {% rf '1 Peter 1:18-20' %}, meaning that before Adam and Eve sinned, Christ had already offered Himself as their surety. This is exceedingly good news, because no matter how unconquerable evil, sin, and death may now appear, God’s love, righteousness, and life will ultimately triumph {% rf '1 Corinthians 15:54-57' %}.
+Because God is never caught off guard by any development, Satan’s rebellion in heaven was doomed from the start {% rf 'Ezekiel 28:17-19' %}, for God foresaw it and was prepared for it. He was likewise prepared for humanity’s fall, for Peter writes that Christ “was foreordained before the foundation of the world” {% rf '1 Peter 1:18-20' %}, meaning that before Adam and Eve sinned, Christ had already offered Himself as their surety. This is the good news of the gospel, because no matter how unconquerable sin, evil, and death may now appear, God’s righteousness, love, and life will ultimately triumph {% rf '1 Corinthians 15:54-57' %}.
 
 ## Does God predestine who is saved?
 
@@ -124,17 +122,37 @@ There are countless gods across the world’s religions, but the Bible declares 
 
 God’s exclusive claim to divinity completely extinguishes the idea that mankind possesses inherent divinity or could attain it through practices such as yoga, mantra recitation, energy healing, or various Eastern meditation techniques. We are—and always will be—created beings. God does promise to [bestow His character](/posts/basics/change.md#what-role-will-the-law-play-in-the-last-days) upon His followers (and what an honor that is), but we will never be divine—not even in heaven. The redeemed will live forever in heaven, not because they are immortal, but because God, who alone is immortal {% rf '1 Timothy 6:15-16' %}, sustains their life.
 
-[^3]: God’s declaration that He is the only true God may seem politically incorrect in an ecumenical world trending toward unity among religions. After all, what gives Him the right to make such a bold and exclusive claim? The answer is simple: Jesus is the only God who died for His creation. What other god set aside his divine nature, took on the nature of his created beings, and died at their hands and for their sins? There is only One.
+[^3]: God’s declaration that He is the only true God may seem politically incorrect in an ecumenical world trending toward unity among religions. After all, what gives Him the right to make such a bold and exclusive claim? What sets the Christian God apart from all other gods is the fact that Jesus is the only One who died for His creation. What other god set aside his divine nature, took on the nature of his created beings, and died at their hands and for their sins? There is only One.
 
 ## How did God create the universe?
 
 > *By the word of the LORD* were the heavens made; and all the host of them *by the breath of his mouth*. He gathereth the waters of the sea together as an heap: he layeth up the depth in storehouses. Let all the earth fear the LORD: let all the inhabitants of the world stand in awe of him. For he spake, and it was done; he commanded, and it stood fast.
 {% ct 'Psalm 33:6-9' %}
 
-> And he arose, and rebuked the wind, and *said unto the sea, Peace, be still. And the wind ceased*, and there was a great calm.
-{% ct 'Mark 4:39' %}
+> Through faith we understand that *the worlds were framed by the word of God*, so that things which are seen were not made of things which do appear.
+{% ct 'Hebrews 11:3' %}
 
-All God has to do is speak and atoms are immediately created in obedience to His word! And after its been created, all of nature is just as eager to obey her Maker.
+> For this they willingly are ignorant of, that *by the word of God* the heavens were of old, and the earth standing out of the water and in the water.
+{% ct '2 Peter 3:5' %}
+
+All God had to do was speak, and immediately atoms came into existence and cells formed in obedience to His Word, for His Word possesses creative power. Because God never changes {% rf 'Malachi 3:6' %}, Jesus’ earthly life revealed that He had—and still has—the same power over creation {% rf 'Mark 4:39' %} as when He spoke it into existence {% rf 'Colossians 1:16; John 1:1-3' %}.
+
+## Does He still create by His Word?
+
+> Husbands, love your wives, even as Christ also loved the church, and gave himself for it; that he might *sanctify and cleanse it with the washing of water by the word*, that he might present it to himself a glorious church, not having spot, or wrinkle, or any such thing; but that it should be holy and without blemish.
+{% ct 'Ephesians 5:25-27' %}
+
+> Of his own will begat he us *with the word of truth*, that we should be a kind of firstfruits of his creatures.
+{% ct 'James 1:18' %}
+
+> Seeing ye have purified your souls in obeying the truth through the Spirit unto unfeigned love of the brethren, see that ye love one another with a pure heart fervently: *being born again, not of corruptible seed, but of incorruptible, by the word of God, which liveth and abideth for ever*. For all flesh is as grass, and all the glory of man as the flower of grass. The grass withereth, and the flower thereof falleth away: but the word of the Lord endureth for ever. And *this is the word which by the gospel is preached unto you*.
+{% ct '1 Peter 1:22-25' %}
+
+The same creative power that spoke the worlds into existence out of nothing is still at work to speak His righteousness into existence in us—out of nothing—for we have no righteousness of our own {% rf 'Isaiah 64:6' %}. God’s power never changes; therefore, He exercises that same creative power in the re-creation of His image in us through the Holy Spirit {% rf 'Titus 3:4-7' %}, as we take hold of His promises by faith, especially those expressed in His Ten Commandments.
+
+How are the Ten Commandments promises? God begins the Decalogue with a declaration that He is the Lord who delivered us out of bondage—bondage to sin. This is a fact, a finished work {% rf 'John 19:30' %}, for Christ overcame sin—our sins—in human flesh—our flesh {% rf 'Philippians 2:7-8; Hebrews 4:15' %}. Do we believe it?
+
+After this opening declaration, God proceeds to spell out what His deliverance means in practical terms by giving us ten promises. In essence He says, “Because I have already delivered you—in Christ—from the bondage of sin, I promise that you will no longer have other gods before Me, that you will not make idols, that you will not take My name in vain by living hypocritically, that you will keep My Sabbath holy and honor your parents, that you will not kill, commit adultery, steal, lie, or covet.” Do we believe Him? This is the gospel proclaimed in the Ten Commandments, to be received by faith alone.
 
 ## Do the heavens have anything to say about Him?
 

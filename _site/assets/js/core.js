@@ -219,11 +219,11 @@ if (document.body.classList.contains('js-enabled')) {
               formattedText = data.text.trim(); // single verse: no verse number
             }
             
-            link.dataset.verse = `<strong>${reference}</strong><br>${formattedText}`;
+            link.dataset.verse = `<strong>${reference}</strong><hr>${formattedText}`;
             link.dataset.loaded = 'true';
             announceToLiveRegion(`Verse loaded: ${reference}`);
           } catch {
-            link.dataset.verse = `<strong>${reference}</strong><br>Verse not found.`;
+            link.dataset.verse = `<strong>${reference}</strong><hr>Verse not found.`;
             announceToLiveRegion(`Verse not found: ${reference}`);
           }
         }
@@ -264,10 +264,10 @@ if (document.body.classList.contains('js-enabled')) {
           // extract footnote number from id
           const numMatch = id.match(/(\d+)/);
           const num = numMatch ? numMatch[1] : '';
-          html = `<strong>Footnote ${num}</strong><br>${contentHtml}`;
+          html = `<strong>Footnote ${num}</strong><hr>${contentHtml}`;
           announceToLiveRegion(`Footnote ${num} opened`);
         } else {
-          html = '<strong>Footnote</strong><br>Not found.';
+          html = '<strong>Footnote</strong><hr>Not found.';
           announceToLiveRegion('Footnote not found');
         }
 
