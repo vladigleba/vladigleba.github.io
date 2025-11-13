@@ -2,7 +2,7 @@
 .copy-toast {
   position: absolute;
   background-color: white;
-  padding: 10px 15px;
+  padding: 12.5px 17.5px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
   border-radius: var(--default-radius);
   z-index: 1000;
@@ -14,18 +14,15 @@
   max-height: 250px;
   overflow-y: auto;
   line-height: 1.4;
+  font-weight: 500;
 }
 
 #dialog-popup strong {
   margin-bottom: 2px;
   display: inline-block;
-}
-
-#dialog-popup hr {
-  border: none;
-  height: 1px;
-  background-color: #ccc;
-  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: var(--lighter-gray-color);
+  margin-bottom: 7px;
 }
 
 #dialog-popup.show {
