@@ -1,15 +1,29 @@
 .footnotes-sep {
-  width: 20%;
-  margin-top: 30px;
-  height: 1px;
-  background-color: black;
-  border-style: none;
+  display: none;
 }
 
 .footnotes {
-  padding: 15px 0;
+  position: relative;
+  padding: 45px 0 15px;
+}
+
+.footnotes::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 20%;
+  height: 1px;
+  background-color: black;
+  border-style: none;
+  pointer-events: none;
 }
 
 .footnotes li p {
   padding: 0;
+}
+
+.footnote-item {
+  padding: 7.5px 0;
 }

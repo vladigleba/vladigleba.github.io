@@ -150,16 +150,30 @@ All God had to do was speak, and immediately atoms came into existence and cells
 
 The same creative power that spoke the worlds into existence out of nothing is still at work to speak His righteousness into existence in us—out of nothing—for we have no righteousness of our own {% rf 'Isaiah 64:6' %}. God’s power never changes; therefore, He exercises that same creative power in the re-creation of His image in us through the Holy Spirit {% rf 'Titus 3:4-7' %}, as we take hold of His promises by faith, especially those expressed in His Ten Commandments.
 
-How are the Ten Commandments promises? God begins the Decalogue with a declaration that He is the Lord who delivered us out of bondage—bondage to sin. This is a fact, a finished work {% rf 'John 19:30' %}, for Christ overcame sin—our sins—in human flesh—our flesh {% rf 'Philippians 2:7-8; Hebrews 4:15' %}. Do we believe it?
+Why are the Ten Commandments promises? Because God knows that we have no power to keep them. The truth is He requires only that which He already gives. This is why He begins the Decalogue with the declaration that He is the Lord who delivered us out of bondage—bondage to sin. This is a fact, a finished work {% rf 'John 19:30' %}, for Christ overcame sin—our sins—in human flesh—our flesh {% rf 'Philippians 2:7-8; Hebrews 4:15' %}. Do we believe it?
 
-After this opening declaration, God proceeds to spell out what His deliverance means in practical terms by giving us ten promises. In essence He says, “Because I have already delivered you—in Christ—from the bondage of sin, I promise that you will no longer have other gods before Me, that you will not make idols, that you will not take My name in vain by living hypocritically, that you will keep My Sabbath holy and honor your parents, that you will not kill, commit adultery, steal, lie, or covet.” Do we believe Him? This is the gospel proclaimed in the Ten Commandments, to be received by faith alone.
+After this opening declaration, God proceeds to spell out what His deliverance means in practical terms by giving us ten promises. In essence He says, “Because I have already delivered you—in Christ—from the bondage of sin, you will no longer have other gods before Me, nor worship idols, nor take My name in vain by living hypocritically; you will keep My Sabbath holy and honor your parents; you will not kill, nor commit adultery, nor steal, nor lie, nor covet.” Do we believe Him? This is the gospel proclaimed in the Ten Commandments, to be received by faith alone. 
 
-## Do the heavens have anything to say about Him?
+> You are not to read or hear the word of God, and say, I must do that, I will do that. You are to open the heart to that word, that it may accomplish the will of God in you. *It is not you who are to do it, but it. “It,” the word of God itself, is to do it, and you are to let it.* “Let the word of Christ dwell in you.” This is stated in another place thus: “When ye receive the word of God which ye heard of us, ye received it not as the word of men, but as it is in truth, the word of God, *which effectually worketh also in you that believe.*” Thus it is the word of God that must work in you. You are not to work to do the word of God: the word of God is to work in you to cause you to do. “Whereunto I also labor, striving according to his working, *which worketh in me mightily*.”
+{% ct 'A. T. Jones & E. J. Waggoner, Lessons on Faith, p. 104.' %}
+
+## How is God glorified?
 
 > The *heavens declare the glory of God*; the *skies proclaim the work of his hands*. Day after day they pour forth speech; night after night they reveal knowledge.
 {% ct 'Psalm 19:1-2, NIV' %}
 
-## What is God like?
+> If ye abide in me, and my words abide in you, ye shall ask what ye will, and it shall be done unto you. *Herein is my Father glorified, that ye bear much fruit*; so shall ye be my disciples.
+{% ct 'John 15:7-8' %}
+
+> But the fruit of the Spirit is *love, joy, peace, long-suffering, gentleness, goodness, faith, meekness, temperance*: against such there is no law.
+{% ct 'Galatians 5:22-23' %}
+
+> The Spirit of the Lord GOD is upon me; because the LORD hath anointed me to preach good tidings unto the meek; he hath sent me to bind up the brokenhearted, to proclaim liberty to the captives, and the opening of the prison to them that are bound; to proclaim the acceptable year of the LORD, and the day of vengeance of our God; to comfort all that mourn; to appoint unto them that mourn in Zion, to give unto them beauty for ashes, the oil of joy for mourning, the garment of praise for the spirit of heaviness; *that they might be called trees of righteousness, the planting of the LORD, that he might be glorified.*
+{% ct 'Isaiah 61:1-3' %}
+
+God is glorified through the extraordinary works of His creation: the awe-inspiring sunset, the starry skies on a clear night, the fragrant meadow filled with colorful flowers, the majestic snow-capped mountains, the birds singing their cheerful songs, and yes—the people marred by sin who have permitted God to restore His character in them—the most marvelous wonder of all.
+
+## What is God’s character like?
 
 > And the LORD passed by before him, and proclaimed, The LORD, The LORD God, *merciful and gracious, longsuffering, and abundant in goodness and truth, keeping mercy for thousands, forgiving iniquity and transgression and sin, and that will by no means clear the guilty*; visiting the iniquity of the fathers upon the children, and upon the children’s children, unto the third and to the fourth generation.
 {% ct 'Exodus 34:6-7' %}
