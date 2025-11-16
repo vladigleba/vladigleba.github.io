@@ -1,12 +1,21 @@
-<div class="control-wrapper">
-  <div class="count">
-    <p>
-      <b>{{ seriesCount }}</b> series <span>•</span>
-      <b>{{ articleCount }}</b> articles <span>•</span>
-      <b>{{ questionsCount }}</b> questions
-    </p>
+<div class="stats">
+  <div class="stat">
+    <span class="stat-count">{{ seriesCount }}</span>
+    <span class="stat-label">Series</span>
   </div>
 
+  <div class="stat">
+    <span class="stat-count">{{ articleCount }}</span>
+    <span class="stat-label">Articles</span>
+  </div>
+
+  <div class="stat">
+    <span class="stat-count">{{ questionsCount }}</span>
+    <span class="stat-label">Questions</span>
+  </div>
+</div>
+
+<div class="control-wrapper">
   <div class="posts-toggle">
     <span class="switch-label">Group by series</span>
     <label class="switch" for="posts-view-switch">

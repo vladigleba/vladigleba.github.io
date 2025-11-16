@@ -115,8 +115,11 @@ God’s respect for freedom of choice dismantles the idea of predestination—of
 > Remember the former things of old: for *I am God, and there is none else; I am God, and there is none like me*.
 {% ct 'Isaiah 46:9' %}
 
-> “*To whom will you compare me? Or who is my equal*?” says the Holy One. Lift up your eyes and look to the heavens: Who created all these? He who brings out the starry host one by one and calls forth each of them by name. Because of his great power and mighty strength, not one of them is missing.
-{% ct 'Isaiah 40:25-26, NIV' %}
+> *To whom then will ye liken me, or shall I be equal?* saith the Holy One. Lift up your eyes on high, and behold who hath created these things, that bringeth out their host by number: he calleth them all by names by the greatness of his might, for that he is strong in power; not one faileth.
+{% ct 'Isaiah 40:25-26' %}
+
+> What profiteth the graven image that the maker thereof hath graven it; the molten image, and a teacher of lies, that the maker of his work trusteth therein, to make dumb idols? Woe unto him that saith to the wood, Awake; to the dumb stone, Arise, it shall teach! Behold, it is laid over with gold and silver, and *there is no breath at all in the midst of it*. But the LORD is in his holy temple: let all the earth keep silence before him.
+{% ct 'Habakkuk 2:18-20' %}
 
 There are countless gods across the world’s religions, but the Bible declares that there is only one true God,[^3] and that one fallen angel—Satan—competes with Him for the worship of humanity. Though Satan aspires to [be like God](/posts/gospel/evil.md) {% rf 'Isaiah 14:12-14' %}, he is—and will always remain—a created being {% rf 'Ezekiel 28:15' %}. Since Satan especially covets the worship that belongs to God alone (though not His character, interestingly enough), it is unsurprising that, just before the second coming of Christ, the great test that will divide all humanity into two groups will [revolve around worship](/posts/prophecy/usa.md).
 
@@ -171,7 +174,7 @@ After this opening declaration, God proceeds to spell out what His deliverance m
 > The Spirit of the Lord GOD is upon me; because the LORD hath anointed me to preach good tidings unto the meek; he hath sent me to bind up the brokenhearted, to proclaim liberty to the captives, and the opening of the prison to them that are bound; to proclaim the acceptable year of the LORD, and the day of vengeance of our God; to comfort all that mourn; to appoint unto them that mourn in Zion, to give unto them beauty for ashes, the oil of joy for mourning, the garment of praise for the spirit of heaviness; *that they might be called trees of righteousness, the planting of the LORD, that he might be glorified.*
 {% ct 'Isaiah 61:1-3' %}
 
-God is glorified through the extraordinary works of His creation: the awe-inspiring sunset, the starry skies on a clear night, the fragrant meadow filled with colorful flowers, the majestic snow-capped mountains, the birds singing their cheerful songs, and yes—the people marred by sin who have permitted God to restore His character in them—the most marvelous wonder of all.
+God is glorified through the marvelous works of His creation: the awe-inspiring sunset, the starry skies on a clear night, the fragrant meadow filled with colorful flowers, the majestic snow-capped mountains, the birds singing their cheerful songs, and yes—the people once marred by sin who have permitted God to completely transform their characters so that they reflect His—the most magnificent wonder of all.
 
 ## What is God’s character like?
 

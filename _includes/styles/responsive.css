@@ -128,6 +128,10 @@
     font-size: 42px;
   }
 
+  .stat-count {
+    font-size: 30px;
+  }
+
   .toc {
     padding: 15px 10px;
     top: 30px;
@@ -188,7 +192,7 @@
   .posts-sort select,
   .list p,
   .switch-label,
-  .count {
+  .stats {
     font-size: 17px;
   }
 

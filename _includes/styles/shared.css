@@ -1,6 +1,5 @@
 .meta span,
-.list p span,
-.count p span {
+.list p span {
   margin-left: 3px;
   margin-right: 3px;
 }

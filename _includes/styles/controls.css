@@ -1,3 +1,38 @@
+.posts-sort select,
+.switch-label,
+.stat-label {
+  font-weight: 600;
+}
+
+/* stats */
+
+.stats {
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.stats .stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px; /* spacing between count and label */
+}
+
+.stats .stat-count {
+  font-weight: 500;
+  display: block;
+}
+
+.stats .stat-label {
+  color: var(--gray-color);
+}
+
+/* controls */
+
 .control-wrapper {
   display: flex;
   justify-content: space-around;
@@ -7,7 +42,7 @@
   flex-wrap: wrap;
   background: var(--light-background);
   border-radius: var(--default-radius);
-  padding: 15px 35px;
+  padding: 12.5px 30px;
   max-width: 600px;
   color: var(--darker-gray-color);
 }
@@ -17,20 +52,6 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
-}
-
-.count p {
-  text-align: center;
-}
-
-.count p b {
-  font-weight: 800;
-}
-
-.posts-sort select,
-.switch-label,
-.count p {
-  font-weight: 600;
 }
 
 /* toggle control */

@@ -8,14 +8,13 @@ article > header h1 {
   font-size: 63px;
 }
 
-.banner p,
-article > header p {
-  font-size: 25px;
-}
-
 .banner h1 {
   letter-spacing: -2px;
   font-weight: 600;
+}
+
+.stat-count {
+  font-size: 40px;
 }
 
 .content h2 {
@@ -25,6 +24,11 @@ article > header p {
 
 .list a {
   font-size: 31px;
+}
+
+.banner p,
+article > header p {
+  font-size: 25px;
 }
 
 .main-nav ul {
@@ -43,7 +47,7 @@ article > header p {
 .posts-sort select,
 .list p,
 .switch-label,
-.count {
+.stats {
   font-size: 18px;
 }
 
