@@ -4,6 +4,7 @@ description: Will a just and loving God torture people in a never ending hell fo
 date: 2022-06-11
 series: Deception
 order: 2600
+featured: true
 ---
 
 ## How many does Jesus want to save?

@@ -4,6 +4,7 @@ description: The amount of misconceptions and flat out lies about God is astound
 date: 2021-10-26
 series: Controversy
 order: 200
+featured: true
 ---
 
 ## Does God have a beginning or end?

@@ -4,6 +4,7 @@ description: Delve into a remarkable prophecy about the rise and fall of kingdom
 color: rgb(81,152,125)
 date: 2022-01-07
 order: 1000
+featured: true
 ---
 
 ## How does the story start?

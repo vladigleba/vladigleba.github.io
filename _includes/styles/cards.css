@@ -56,17 +56,12 @@ li .tag {
   color: black;
 }
 
-/* li:not(.latest, .featured) {
-  border: 1px solid #ccc;
-  border-radius: var(--default-radius);
-} */
-
 li.featured .tag {
   background-color: var(--darker-gray-color);
   opacity: 0.8;
 }
 
-li.standalone .tag {
+li.standalone-view .tag {
   display: flex;
   justify-content: space-between;
 }

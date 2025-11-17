@@ -4,6 +4,7 @@ description: If God is in control, why is there so much evil in the world? How d
 date: 2021-11-02
 series: Controversy
 order: 300
+featured: true
 ---
             
 ## Is God evil?

@@ -1,28 +1,22 @@
 
 {% assign data = post.data %}
 {% assign color = data.color %}
-{% assign featured = data.featured %}
-{% assign latest = data.latest %}
 {% assign seriesInfo = data.seriesInfo %}
 
 <li
-  {% if featured %} class="featured"
-  {% elsif latest %} class="latest"
-  {% elsif seriesInfo %} class="standalone"
+  {% if seriesInfo %} class="standalone-view"
   {% endif %}
   data-updated="{{ data.updated | toISO }}"
   data-length="{{ data.length | default: 0 }}"
   data-reading-order="{{ data.order | default: 0 }}"
 >
-  {% if latest %}
-    <div><span class="tag" style="background-color: {{ color }}">Latest</span></div>
-  {% elsif featured %}
-    <div><span class="tag">Featured</span></div>
-  {% elsif seriesInfo %}
+  {% if seriesInfo %}
     <div><span class="tag" style="color: {{ color }}">
       <span>{{ site[data.series].title }}</span>
       <span>{{ seriesInfo.current }} of {{ seriesInfo.total }}</span>
     </span></div>
+  {% else %}
+    <div><span class="tag" style="color: {{ color }}">Standalone</span></div>
   {% endif %}
 
   <a style="color: {{ color }}" href="{{ post.url }}">
