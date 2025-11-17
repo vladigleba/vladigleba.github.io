@@ -3,9 +3,10 @@
   position: absolute;
   background-color: white;
   padding: 12.5px 17.5px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.175);
   border-radius: var(--default-radius);
   z-index: 1000;
+  font-weight: 500;
 }
 
 #dialog-popup {
@@ -14,14 +15,11 @@
   max-height: 250px;
   overflow-y: auto;
   line-height: 1.4;
-  font-weight: 500;
 }
 
 #dialog-popup strong {
   margin-bottom: 2px;
   display: inline-block;
-  text-transform: uppercase;
-  color: var(--lighter-gray-color);
   margin-bottom: 5px;
 }
 
@@ -30,7 +28,6 @@
 }
 
 .copy-toast {
-  font-weight: 400;
   top: -30%;
   left: 50%;
   transform: translate(-50%);
@@ -39,11 +36,12 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  font-family: var(--default-font);
 }
 
 .copy-toast span {
   position: relative;
-  top: -2px;
+  top: -1px;
 }
 
 .checkmark {
