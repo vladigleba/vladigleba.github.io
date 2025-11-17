@@ -2,7 +2,6 @@
 .copy-toast {
   position: absolute;
   background-color: white;
-  padding: 12.5px 17.5px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.175);
   border-radius: var(--default-radius);
   z-index: 1000;
@@ -10,6 +9,7 @@
 }
 
 #dialog-popup {
+  padding: 12.5px 17.5px;
   display: none;
   max-width: 350px;
   max-height: 250px;
@@ -28,6 +28,7 @@
 }
 
 .copy-toast {
+  padding: 10px 15px;
   top: -30%;
   left: 50%;
   transform: translate(-50%);
