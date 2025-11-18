@@ -1,0 +1,39 @@
+<div class="featured-card">
+  <div class="featured-tag">Featured</div>
+  <h2 class="featured-title">
+    <a href="{{ featured.url }}">{{ featured.data.title }}</a>
+  </h2>
+
+  <p class="featured-meta">
+    {{ featured.data.category }} <span>•</span>
+    {{ featured.data.length }} min read <span>•</span> 
+    <time datetime="{{ featured.data.updated | toISO }}">
+      {{ featured.data.updated | toLocal }}
+    </time>
+  </p>
+
+  <p class="featured-description">{{ featured.data.description }}</p>
+</div>
+
+<div class="latest-card">
+  <div class="latest-tag">Latest</div>
+  <h3 class="latest-title">
+    <a href="{{ latest.url }}">{{ latest.data.title }}</a>
+  </h3>
+
+  <p class="latest-meta">
+    {{ latest.data.category }} <span>•</span>
+    {{ latest.data.length }} min read <span>•</span>
+    <time datetime="{{ latest.data.updated | toISO }}">
+      {{ latest.data.updated | toLocal }}
+    </time>
+  </p>
+
+  <p class="latest-description">{{ latest.data.description }}</p>
+</div>
+
+<div class="coming-next-card">
+  <div class="latest-tag">Coming next</div>
+  <h3 class="latest-title">Sabbath Rest in Jesus</h3>
+  <p class="latest-description">Learn how to receive righteousness and find Sabbath rest in Jesus by faith.</p>
+</div>

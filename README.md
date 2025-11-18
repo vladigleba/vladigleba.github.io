@@ -1,7 +1,3 @@
----
-sitemap:
-  ignore: true
----
 # Overview
 
 This is a static blog (no server-side code) built with [11ty](https://www.11ty.dev/), using [Liquid](https://liquidjs.com) for templates and [Markdown](https://www.markdownguide.org) for content. Styled with custom CSS and enhanced with vanilla JavaScript.
@@ -31,34 +27,3 @@ This is a static blog (no server-side code) built with [11ty](https://www.11ty.d
 - `assets/` - images, icons, JS
 - `posts/` - blog posts (Markdown)
 - `/` - root files (config, main templates)
-
-## Development
-
-### Install dependencies
-```
-npm install
-```
-
-### Build the site
-
-```
-npm run build
-```
-
-### Start a local dev server (with live reload)
-
-```
-npm run serve
-```
-
-### Watch for changes (no server)
-
-```
-npm run watch
-```
-
-### Clean the output folder
-
-```
-npm run clean
-```

@@ -17,7 +17,7 @@ eleventyComputed:
    glow_color: site.categories[category].color
 %}
 
-{% render 'layouts/cards',
+{% render 'layouts/iterate-posts',
    groupedPosts: collections.groupedPosts,
    standalonePosts: collections.standalonePosts,
    categoryFilter: category,

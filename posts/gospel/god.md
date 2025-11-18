@@ -113,16 +113,16 @@ God’s respect for freedom of choice dismantles the idea of predestination—of
 > Tell ye, and bring them near; yea, let them take counsel together: who hath declared this from ancient time? who hath told it from that time? have not I the LORD? and *there is no God else beside me*; a just God and a Saviour; *there is none beside me*.
 {% ct 'Isaiah 45:21' %}
 
-> Remember the former things of old: for *I am God, and there is none else; I am God, and there is none like me*.
-{% ct 'Isaiah 46:9' %}
-
 > *To whom then will ye liken me, or shall I be equal?* saith the Holy One. Lift up your eyes on high, and behold who hath created these things, that bringeth out their host by number: he calleth them all by names by the greatness of his might, for that he is strong in power; not one faileth.
 {% ct 'Isaiah 40:25-26' %}
 
 > What profiteth the graven image that the maker thereof hath graven it; the molten image, and a teacher of lies, that the maker of his work trusteth therein, to make dumb idols? Woe unto him that saith to the wood, Awake; to the dumb stone, Arise, it shall teach! Behold, it is laid over with gold and silver, and *there is no breath at all in the midst of it*. But the LORD is in his holy temple: let all the earth keep silence before him.
 {% ct 'Habakkuk 2:18-20' %}
 
-There are countless gods across the world’s religions, but the Bible declares that there is only one true God,[^3] and that one fallen angel—Satan—competes with Him for the worship of humanity. Though Satan aspires to [be like God](/posts/gospel/evil.md) {% rf 'Isaiah 14:12-14' %}, he is—and will always remain—a created being {% rf 'Ezekiel 28:15' %}. Since Satan especially covets the worship that belongs to God alone (though not His character, interestingly enough), it is unsurprising that, just before the second coming of Christ, the great test that will divide all humanity into two groups will [revolve around worship](/posts/prophecy/usa.md).
+> *Neither is there salvation in any other*: for there is none other name under heaven given among men, whereby we must be saved.
+{% ct 'Acts 4:12' %}
+
+There are countless gods across the world’s religions, but the Bible declares that there is only one true God,[^3] that there is salvation in no other, and that one fallen angel—Satan—wages war against Him for the worship of humanity. Though Satan aspires to [be like God](/posts/gospel/evil.md) {% rf 'Isaiah 14:12-14' %}, he is—and will always remain—a created being {% rf 'Ezekiel 28:15' %}. Since Satan especially covets the worship that belongs to God alone (though not His character, interestingly enough), it is unsurprising that, just before the second coming of Christ, the great test that will divide all humanity into two groups will [revolve around worship](/posts/prophecy/usa.md).
 
 God’s exclusive claim to divinity completely extinguishes the idea that mankind possesses inherent divinity or could attain it through practices such as yoga, mantra recitation, energy healing, or various Eastern meditation techniques. We are—and always will be—created beings. God does promise to [bestow His character](/posts/basics/change.md#what-role-will-the-law-play-in-the-last-days) upon His followers (and what an honor that is), but we will never be divine—not even in heaven. The redeemed will live forever in heaven, not because they are immortal, but because God, who alone is immortal {% rf '1 Timothy 6:15-16' %}, sustains their life.
 
@@ -179,8 +179,16 @@ God is glorified through the marvelous works of His creation: the awe-inspiring 
 
 ## What is God’s character like?
 
+> And we have known and believed the love that God hath to us. *God is love*; and he that dwelleth in love dwelleth in God, and God in him.
+{% ct '1 John 4:16' %}
+
 > And the LORD passed by before him, and proclaimed, The LORD, The LORD God, *merciful and gracious, longsuffering, and abundant in goodness and truth, keeping mercy for thousands, forgiving iniquity and transgression and sin, and that will by no means clear the guilty*; visiting the iniquity of the fathers upon the children, and upon the children’s children, unto the third and to the fourth generation.
 {% ct 'Exodus 34:6-7' %}
+
+> To declare, I say, at this time his righteousness: *that he might be just, and the justifier* of him which believeth in Jesus.
+{% ct 'Romans 3:26' %}
+
+God is love, yet He is perfectly just. He does not clear the guilty nor overlook sin, but takes that guilt and sin upon Himself, granting the sinner a second chance {% rf 'John 8:11' %}. He is patient, yet not indulgent, willing to chasten as a loving Father would—always for our eternal good. Never one to employ force or coercion, He gently woos us into a relationship with Him, yet will leave us alone if we continually resist. He is our heavenly Father who risked everything to spend eternity with His beloved sons and daughters.
 
 ## What does the psalmist say belongs to God?
 

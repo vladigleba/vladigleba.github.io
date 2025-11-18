@@ -1,59 +1,34 @@
-<div class="posts-view">
-  {% assign articleCount = 0 %}
-  {% assign seriesCount = 0 %}
-  {% assign questionsCount = 0 %}
-  {% assign filteredGroupedPosts = "" | split: "" %}
+<ol class="list series-list">
+  {% for item in filteredGroupedPosts %}
+    {% if item.type == 'series' %}
+      <li class="series">
+        <div>
+          <span class="tag" style="color: {{ item.color }}">
+            {{ item.posts.size }}-part Series
+          </span>
+        </div>
+        
+        <a style="color: {{ item.color }}" href="{{ item.posts[0].url }}">
+          {{ item.title }}
+        </a>
+        <p>{{ item.category }}</p>
 
-  {% for item in groupedPosts %}
-    {% if not categoryFilter or item.category == categoryFilter %}
-      {% assign filteredGroupedPosts = filteredGroupedPosts | push: item %}
-      {% if item.type == 'series' %}
-        {% assign seriesCount = seriesCount | plus: 1 %}
-        {% assign articleCount = articleCount | plus: item.posts.size %}
-        {% for p in item.posts %}
-          {% assign questionsCount = questionsCount | plus: p.data.questions %}
-        {% endfor %}
-      {% else %}
-        {% assign articleCount = articleCount | plus: 1 %}
-        {% assign questionsCount = questionsCount | plus: item.post.data.questions %}
-      {% endif %}
+        <div class="series-bar">
+          {% for post in item.posts %}
+            <div class="series-segment" style="background: {{ item.color }}"></div>
+          {% endfor %}
+        </div>
+      </li>
+    {% else %}
+      {% render 'layouts/card-standalone', post: item.post, site: site %}
     {% endif %}
   {% endfor %}
+</ol>
 
-  {% render 'layouts/controls', articleCount: articleCount, seriesCount: seriesCount, questionsCount: questionsCount %}
-
-  <ol class="list series-list">
-    {% for item in filteredGroupedPosts %}
-      {% if item.type == 'series' %}
-        <li class="series">
-          <div>
-            <span class="tag" style="color: {{ item.color }}">
-              {{ item.posts.size }}-part Series
-            </span>
-          </div>
-          
-          <a style="color: {{ item.color }}" href="{{ item.posts[0].url }}">
-            {{ item.title }}
-          </a>
-          <p>{{ item.category }}</p>
-
-          <div class="series-bar">
-            {% for post in item.posts %}
-              <div class="series-segment" style="background: {{ item.color }}"></div>
-            {% endfor %}
-          </div>
-        </li>
-      {% else %}
-        {% render 'layouts/card-standalone', post: item.post, site: site %}
-      {% endif %}
-    {% endfor %}
-  </ol>
-
-  <ol class="list standalone-list">
-    {% for post in standalonePosts %}
-      {% if not categoryFilter or post.data.category == categoryFilter %}
-        {% render 'layouts/card-standalone', post: post, site: site %}
-      {% endif %}
-    {% endfor %}
-  </ol>
-</div>
+<ol class="list standalone-list">
+  {% for post in standalonePosts %}
+    {% if not categoryFilter or post.data.category == categoryFilter %}
+      {% render 'layouts/card-standalone', post: post, site: site %}
+    {% endif %}
+  {% endfor %}
+</ol>

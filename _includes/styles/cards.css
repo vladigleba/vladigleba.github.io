@@ -28,7 +28,7 @@
 
 .series-segment {
   flex: 1;
-  height: 5px;
+  height: 4px;
   background: #e0e0e0;
   border-radius: 3px;
 }

@@ -1,0 +1,64 @@
+{% assign articleCount = 0 %}
+{% assign seriesCount = 0 %}
+{% assign questionsCount = 0 %}
+{% assign featuredPosts = "" | split: "" %}
+{% assign latestPost = "" %}
+{% assign filteredGroupedPosts = "" | split: "" %}
+
+{% for item in groupedPosts %}
+  {% if not categoryFilter or item.category == categoryFilter %}
+    {% assign filteredGroupedPosts = filteredGroupedPosts | push: item %}
+    
+    {% if item.type == 'series' %}
+      {% assign seriesCount = seriesCount | plus: 1 %}
+      {% assign articleCount = articleCount | plus: item.posts.size %}
+      
+      {% for p in item.posts %}
+        {% assign questionsCount = questionsCount | plus: p.data.questions %}
+        
+        {% if p.data.featured %}
+          {% assign featuredPosts = featuredPosts | push: p %}
+        {% endif %}
+
+        {% if latestPost == "" %}
+          {% assign latestPost = p %}
+        {% elsif p.date > latestPost.date %}
+          {% assign latestPost = p %}
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      {% assign articleCount = articleCount | plus: 1 %}
+      {% assign questionsCount = questionsCount | plus: item.post.data.questions %}
+      
+      {% if item.post.data.featured %}
+        {% assign featuredPosts = featuredPosts | push: item.post %}
+      {% endif %}
+
+      {% if latestPost == "" %}
+        {% assign latestPost = item.post %}
+      {% elsif item.post.date > latestPost.date %}
+        {% assign latestPost = item.post %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<div class="posts-view">
+  {% if featuredPosts.size > 0 %}
+    {% assign randomFeatured = featuredPosts | sample %}
+    {% comment %} {% render 'layouts/featured', featured: randomFeatured, latest: latestPost %} {% endcomment %}
+  {% endif %}
+
+  {% render 'layouts/controls',
+    articleCount: articleCount,
+    seriesCount: seriesCount,
+    questionsCount: questionsCount
+  %}
+
+  {% render 'layouts/cards',
+    filteredGroupedPosts: filteredGroupedPosts,
+    standalonePosts: standalonePosts,
+    categoryFilter: categoryFilter,
+    site: site
+  %}
+</div>
