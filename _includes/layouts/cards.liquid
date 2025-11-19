@@ -26,9 +26,13 @@
 </ol>
 
 <ol class="list standalone-list">
-  {% for post in standalonePosts %}
-    {% if not categoryFilter or post.data.category == categoryFilter %}
-      {% render 'layouts/card-standalone', post: post, site: site %}
+  {% for item in filteredGroupedPosts %}
+    {% if item.type == 'standalone' %}
+      {% render 'layouts/card-standalone', post: item.post, site: site %}
+    {% else %}
+      {% for post in item.posts %}
+        {% render 'layouts/card-standalone', post: post, site: site %}
+      {% endfor %}
     {% endif %}
   {% endfor %}
 </ol>
