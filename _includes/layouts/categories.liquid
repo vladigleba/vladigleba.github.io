@@ -11,15 +11,15 @@ eleventyComputed:
   description: '{{ site.categories[category] }}'
 ---
 
-{% render 'layouts/banner',
-   title: category,
-   description: site.categories[category].description,
-   glow_color: site.categories[category].color
+{% 
+  render 'layouts/banner',
+  title: category,
+  description: site.categories[category].description,
 %}
 
-{% render 'layouts/iterate-posts',
-   groupedPosts: collections.groupedPosts,
-   standalonePosts: collections.standalonePosts,
-   categoryFilter: category,
-   site: site.series
+{%
+  render 'layouts/iterate-posts',
+  allPosts: collections.allPosts,
+  categoryFilter: category,
+  site: site.series
 %}

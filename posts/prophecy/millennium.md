@@ -120,7 +120,7 @@ Scripture’s portrayal of the earth’s desolation shows that the belief in an 
 > And after these things *I heard a great voice of much people in heaven*, saying, Alleluia; Salvation, and glory, and honour, and power, unto the Lord our God: *for true and righteous are his judgments*.
 {% ct 'Revelation 19:1-2' %}
 
-The saved from all ages will participate in the next phase of judgment, during which all their questions about God’s dealings with sin and sinners will be answered. They will not determine who is saved or lost, for God will have already decided that during the [first phase](/posts/prophecy/investigative.md#who-is-being-judged-first); rather, they will review the cases of all who are lost—including Satan and his angels.
+The saved from all ages will participate in the next phase of [judgment](/posts/prophecy/judgment.md), during which all their questions about God’s dealings with sin and sinners will be answered. They will not determine who is saved or lost, for God will have already decided that during the [first phase](/posts/prophecy/investigative.md#who-is-being-judged-first); rather, they will review the cases of all who are lost—including Satan and his angels.
 
 Perhaps they will wonder why some people they expected to be there are missing, while others they did not expect are present. Maybe certain perplexing events or trying circumstances in their own lives caused them to question why God allowed these things to happen. To all of these perplexities—and more—God will provide perfectly satisfying answers, confirming the fairness of His judgment and motivating the redeemed to praise Him all the more for His infinite wisdom, love, and mercy.
 

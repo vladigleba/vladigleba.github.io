@@ -16,16 +16,17 @@
       {% assign is_article = true %}
     {% endif %}
 
-    {% render 'layouts/meta', 
-       default_title: site.title,
-       meta_title: meta_title, 
-       meta_description: meta_description,
-       author: site.author,
-       is_article: is_article,
-       page_url: page.url,
-       url: site.url,
-       date: date,
-       updated: updated,
+    {%
+      render 'layouts/meta', 
+      default_title: site.title,
+      meta_title: meta_title, 
+      meta_description: meta_description,
+      author: site.author,
+      is_article: is_article,
+      page_url: page.url,
+      url: site.url,
+      date: date,
+      updated: updated,
     %}
   </head>
 

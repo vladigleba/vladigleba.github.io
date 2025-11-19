@@ -5,7 +5,7 @@ sitemap:
   ignore: true
 ---
 
-{%- assign posts_by_date = collections.standalonePosts | sort: "date" | reverse -%}
+{%- assign posts_by_date = collections.allPosts | sort: "date" | reverse -%}
 {%- assign latest_post = posts_by_date | first -%}
 
 <?xml version="1.0" encoding="UTF-8"?>

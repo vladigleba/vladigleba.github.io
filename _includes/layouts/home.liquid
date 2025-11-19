@@ -2,14 +2,15 @@
 layout: layouts/base
 ---
 
-{% render 'layouts/banner',
-   title: 'Better than gold',
-   subtitle: 'sweeter than honey',
-   description: site.title
+{%
+  render 'layouts/banner',
+  title: 'Better than gold',
+  subtitle: 'sweeter than honey',
+  description: site.title
 %}
 
-{% render 'layouts/iterate-posts',
-   groupedPosts: collections.groupedPosts,
-   standalonePosts: collections.standalonePosts,
-   site: site.series
+{%
+  render 'layouts/iterate-posts',
+  allPosts: collections.allPosts,
+  site: site.series
 %}

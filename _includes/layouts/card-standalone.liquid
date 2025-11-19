@@ -24,14 +24,15 @@
   </a>
 
   <p>
-    {{ data.category }} <span>•</span> {{ data.length }} min read <span>•</span> 
+    {{ data.category }} <span>•</span>
+    {{ data.length }} min read <span>•</span> 
     <time datetime="{{ data.updated | toISO }}">{{ data.updated | toLocal }}</time>
   </p>
 
   {% if seriesInfo %}
     <div class="series-bar">
       {% for post in seriesInfo.posts %}
-        <div class="series-segment" {% if forloop.index == seriesInfo.current %}style="background: {{ color }} {% endif %}"></div>
+        <div class="series-segment" {% if forloop.index == seriesInfo.current %}style="background: {{ color }}"{% endif %}></div>
       {% endfor %}
     </div>
   {% else %}
