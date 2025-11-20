@@ -3,19 +3,6 @@
   <head>
     
     
-
-    
-    
-      
-    
-      
-    
-      
-    
-    
-    
-
-    
     
 
     <title>Prophecy</title>
@@ -25,9 +12,9 @@
 <link rel="canonical" href="https://vladigleba.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" as="style">
 <link href="/styles.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"></noscript>
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 
@@ -37,7 +24,66 @@
 <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=(), payment=()">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 
+<style>
+  .main-nav {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  color: var(--darker-gray-color);
+}
 
+.main-nav ul {
+  margin: 8px 0;
+  padding: 1px 18px;
+  border-radius: var(--default-radius);
+  list-style: none;
+  display: flex;
+  gap: 7px;
+  background-color: var(--light-background);
+}
+
+.main-nav li {
+  text-transform: uppercase;
+  padding: 5px 12.5px 3px;
+}
+
+.main-nav li:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.125);
+  color: black;
+}
+
+.main-nav li a {
+  color: inherit;
+}
+  .banner {
+  position: relative;
+  z-index: 1;
+  color: black;
+  padding: 150px 0 170px;
+  text-align: center;
+}
+
+.banner .intro {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.banner h1 span {
+  background: var(--gradient) padding-box text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block; /* iOS workaround */
+}
+
+.banner p {
+  margin-top: 25px;
+}
+</style>
 
 <!-- meta tags for SEO -->
 
@@ -73,17 +119,20 @@
     location.hostname !== '127.0.0.1' &&
     (!navigator.doNotTrack || navigator.doNotTrack === '0')
   ) {
-    var s = document.createElement('script');
-    s.defer = true;
-    s.setAttribute('data-website-id', 'dd2fe86a-abe1-4240-869c-fbe22064287d');
-    s.src = 'https://cloud.umami.is/script.js';
-    document.head.appendChild(s);
+    window.addEventListener('load', () => {
+      var s = document.createElement('script');
+      s.defer = true;
+      s.setAttribute('data-website-id', 'dd2fe86a-abe1-4240-869c-fbe22064287d');
+      s.src = 'https://cloud.umami.is/script.js';
+      document.head.appendChild(s);
+    });
   }
 </script>
   </head>
 
   <body id="top">
     <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <nav aria-label="Main site navigation" class="main-nav">
   <ul>
     <li>
@@ -119,197 +168,7 @@
 
 
 
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-      
-      
-      
-      
-        
-      
-
-      
-        
-      
-    
-  
-
-  
-    
-    
-    
-      
-      
-      
-      
-        
-        
-        
-
-        
-          
-        
-      
-        
-        
-        
-
-        
-      
-        
-        
-        
-
-        
-          
-        
-      
-    
-  
-
-  
-
-  
-
-  
-    
-    
-    
-      
-      
-      
-      
-        
-        
-        
-
-        
-      
-        
-        
-        
-
-        
-          
-        
-      
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-      
-      
-      
-      
-        
-        
-        
-
-        
-      
-        
-        
-        
-
-        
-      
-        
-        
-        
-          
-        
-
-        
-      
-    
-  
-
-  
-    
-    
-    
-      
-      
-      
-      
-        
-        
-        
-
-        
-      
-        
-        
-        
-
-        
-          
-        
-      
-    
-  
-
-  
-
-  
-    
-    
-    
-      
-      
-      
-      
-        
-        
-        
-
-        
-      
-        
-        
-        
-
-        
-          
-        
-      
-    
-  
-
-  
-
-
-<div class="posts-view">
-  
-    
-    
+<div class="category-view">
   
 
   <div class="stats">
@@ -352,7 +211,7 @@
     </svg>
   </div>
 </div>
-
+  
   <ol class="list series-list">
   
     
@@ -371,7 +230,8 @@
   </a>
 
   <p>
-    Prophecy <span>•</span> 18 min read <span>•</span> 
+    Prophecy <span>•</span>
+    18 min read <span>•</span> 
     <time datetime="2025-11-17T06:18:01.000Z">Nov 16, 2025</time>
   </p>
 
@@ -386,11 +246,9 @@
   
     
       <li class="series">
-        <div>
-          <span class="tag" style="color: rgb(57,96,136)">
-            3-part Series
-          </span>
-        </div>
+        <div><span class="tag" style="color: rgb(57,96,136)">
+          3-part Series
+        </span></div>
         
         <a style="color: rgb(57,96,136)" href="/prophecy/signs/">
           The Second Coming
@@ -411,11 +269,9 @@
   
     
       <li class="series">
-        <div>
-          <span class="tag" style="color: rgb(242,106,85)">
-            2-part Series
-          </span>
-        </div>
+        <div><span class="tag" style="color: rgb(242,106,85)">
+          2-part Series
+        </span></div>
         
         <a style="color: rgb(242,106,85)" href="/prophecy/judgment/">
           Facing Judgment
@@ -434,11 +290,9 @@
   
     
       <li class="series">
-        <div>
-          <span class="tag" style="color: rgb(17,128,138)">
-            3-part Series
-          </span>
-        </div>
+        <div><span class="tag" style="color: rgb(17,128,138)">
+          3-part Series
+        </span></div>
         
         <a style="color: rgb(17,128,138)" href="/prophecy/antichrist/">
           The Antichrist’s Mark
@@ -459,11 +313,9 @@
   
     
       <li class="series">
-        <div>
-          <span class="tag" style="color: rgb(170,104,150)">
-            2-part Series
-          </span>
-        </div>
+        <div><span class="tag" style="color: rgb(170,104,150)">
+          2-part Series
+        </span></div>
         
         <a style="color: rgb(170,104,150)" href="/prophecy/babylon/">
           Coming Out of Babylon
@@ -482,11 +334,9 @@
   
     
       <li class="series">
-        <div>
-          <span class="tag" style="color: rgb(57,96,136)">
-            2-part Series
-          </span>
-        </div>
+        <div><span class="tag" style="color: rgb(57,96,136)">
+          2-part Series
+        </span></div>
         
         <a style="color: rgb(57,96,136)" href="/prophecy/remnant/">
           A Prophetic Movement
@@ -508,24 +358,6 @@
 <ol class="list standalone-list">
   
     
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
       
 
 
@@ -541,7 +373,8 @@
   </a>
 
   <p>
-    Prophecy <span>•</span> 18 min read <span>•</span> 
+    Prophecy <span>•</span>
+    18 min read <span>•</span> 
     <time datetime="2025-11-17T06:18:01.000Z">Nov 16, 2025</time>
   </p>
 
@@ -556,6 +389,7 @@
   
     
       
+        
 
 
 
@@ -573,27 +407,26 @@
   </a>
 
   <p>
-    Prophecy <span>•</span> 14 min read <span>•</span> 
+    Prophecy <span>•</span>
+    14 min read <span>•</span> 
     <time datetime="2025-10-20T13:49:11.000Z">Oct 20, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" style="background: rgb(57,96,136) "></div>
+        <div class="series-segment" style="background: rgb(57,96,136)"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
       
+        
 
 
 
@@ -611,32 +444,31 @@
   </a>
 
   <p>
-    Prophecy <span>•</span> 13 min read <span>•</span> 
+    Prophecy <span>•</span>
+    13 min read <span>•</span> 
     <time datetime="2025-10-20T13:49:11.000Z">Oct 20, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" style="background: rgb(57,96,136) "></div>
+        <div class="series-segment" style="background: rgb(57,96,136)"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
       
+        
 
 
 
 
-<li class="standalone-view" data-updated="2025-10-26T03:23:44.000Z" data-length="18" data-reading-order="1300">
+<li class="standalone-view" data-updated="2025-11-19T05:04:04.000Z" data-length="18" data-reading-order="1300">
   
     <div><span class="tag" style="color: rgb(57,96,136)">
       <span>The Second Coming</span>
@@ -649,31 +481,30 @@
   </a>
 
   <p>
-    Prophecy <span>•</span> 18 min read <span>•</span> 
-    <time datetime="2025-10-26T03:23:44.000Z">Oct 25, 2025</time>
+    Prophecy <span>•</span>
+    18 min read <span>•</span> 
+    <time datetime="2025-11-19T05:04:04.000Z">Nov 18, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" style="background: rgb(57,96,136) "></div>
+        <div class="series-segment" style="background: rgb(57,96,136)"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
-  
+      
     
   
     
       
+        
 
 
 
@@ -691,25 +522,24 @@
   </a>
 
   <p>
-    Prophecy <span>•</span> 10 min read <span>•</span> 
+    Prophecy <span>•</span>
+    10 min read <span>•</span> 
     <time datetime="2025-10-16T03:19:09.000Z">Oct 15, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" style="background: rgb(242,106,85) "></div>
+        <div class="series-segment" style="background: rgb(242,106,85)"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
       
+        
 
 
 
@@ -727,43 +557,28 @@
   </a>
 
   <p>
-    Prophecy <span>•</span> 21 min read <span>•</span> 
+    Prophecy <span>•</span>
+    21 min read <span>•</span> 
     <time datetime="2025-10-19T02:54:39.000Z">Oct 18, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" style="background: rgb(242,106,85) "></div>
+        <div class="series-segment" style="background: rgb(242,106,85)"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
+      
     
   
     
       
+        
 
 
 
@@ -781,27 +596,26 @@
   </a>
 
   <p>
-    Prophecy <span>•</span> 14 min read <span>•</span> 
+    Prophecy <span>•</span>
+    14 min read <span>•</span> 
     <time datetime="2025-10-19T02:54:39.000Z">Oct 18, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" style="background: rgb(17,128,138) "></div>
+        <div class="series-segment" style="background: rgb(17,128,138)"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
       
+        
 
 
 
@@ -819,27 +633,26 @@
   </a>
 
   <p>
-    Prophecy <span>•</span> 24 min read <span>•</span> 
+    Prophecy <span>•</span>
+    24 min read <span>•</span> 
     <time datetime="2025-10-19T02:54:39.000Z">Oct 18, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" style="background: rgb(17,128,138) "></div>
+        <div class="series-segment" style="background: rgb(17,128,138)"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
       
+        
 
 
 
@@ -857,27 +670,30 @@
   </a>
 
   <p>
-    Prophecy <span>•</span> 28 min read <span>•</span> 
+    Prophecy <span>•</span>
+    28 min read <span>•</span> 
     <time datetime="2025-11-17T06:18:01.000Z">Nov 16, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" style="background: rgb(17,128,138) "></div>
+        <div class="series-segment" style="background: rgb(17,128,138)"></div>
       
     </div>
   
 </li>
 
+      
     
   
     
       
+        
 
 
 
@@ -895,25 +711,24 @@
   </a>
 
   <p>
-    Prophecy <span>•</span> 24 min read <span>•</span> 
+    Prophecy <span>•</span>
+    24 min read <span>•</span> 
     <time datetime="2025-10-19T02:54:39.000Z">Oct 18, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" style="background: rgb(170,104,150) "></div>
+        <div class="series-segment" style="background: rgb(170,104,150)"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
       
+        
 
 
 
@@ -931,29 +746,28 @@
   </a>
 
   <p>
-    Prophecy <span>•</span> 12 min read <span>•</span> 
+    Prophecy <span>•</span>
+    12 min read <span>•</span> 
     <time datetime="2025-10-19T02:54:39.000Z">Oct 18, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" style="background: rgb(170,104,150) "></div>
+        <div class="series-segment" style="background: rgb(170,104,150)"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
-  
+      
     
   
     
       
+        
 
 
 
@@ -971,25 +785,24 @@
   </a>
 
   <p>
-    Prophecy <span>•</span> 15 min read <span>•</span> 
+    Prophecy <span>•</span>
+    15 min read <span>•</span> 
     <time datetime="2025-10-19T02:54:39.000Z">Oct 18, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" style="background: rgb(57,96,136) "></div>
+        <div class="series-segment" style="background: rgb(57,96,136)"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
       
+        
 
 
 
@@ -1007,27 +820,23 @@
   </a>
 
   <p>
-    Prophecy <span>•</span> 16 min read <span>•</span> 
+    Prophecy <span>•</span>
+    16 min read <span>•</span> 
     <time datetime="2025-10-19T15:43:20.000Z">Oct 19, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" style="background: rgb(57,96,136) "></div>
+        <div class="series-segment" style="background: rgb(57,96,136)"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
-  
-    
-  
+      
     
   
 </ol>
@@ -1044,11 +853,12 @@
       </div>
       
       <div class="last-updated">
-        Last updated <time datetime="2025-11-17T21:19:07.924Z">November 17, 2025</time>
+        Last updated <time datetime="2025-11-19T20:06:49.605Z">November 19, 2025</time>
       </div>
     <p></p>
   </div>
 </footer>
+
     <script>
       document.body.classList.add('js-enabled');
       if (

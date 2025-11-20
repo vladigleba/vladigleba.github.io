@@ -17,6 +17,16 @@ featured: true
 
 It may be hard for our finite minds to comprehend—especially since none of us are exempt from death—but God is infinite; He always has been and always will be.
 
+## What belongs to God?
+
+> The *earth* is the LORD’S, and the fulness thereof; the world, and *they that dwell therein*.
+{% ct 'Psalm 24:1' %}
+
+> What? know ye not that your body is the temple of the Holy Ghost which is in you, which ye have of God, and *ye are not your own? For ye are bought with a price*: therefore glorify God in your body, and in your spirit, which are God’s.
+{% ct '1 Corinthians 6:19-20' %}
+
+Everything belongs to God first and foremost by creation, for nothing created itself. Humans belong to God both by creation and by redemption, for Jesus paid the price for our sin, thereby redeeming us from the power of death. In other words, we are doubly His: first because He gave us life, and second because He rescued us from certain death.
+
 ## Does God know all things?
 
 > Great is our Lord, and of great power: *his understanding is infinite*.
@@ -42,19 +52,6 @@ God is omniscient in the fullest sense of the word.
 {% ct 'Jeremiah 17:10' %}
 
 As our Creator, God knows us better than we know ourselves. Just as there is no sin in our lives that God does not see, so there is no sorrow that He does not notice. He is acquainted with it all—every wound, disappointment, injustice, and abuse. Yet He is not merely aware; He longs to heal our wounds {% rf 'Isaiah 53:5; Jeremiah 30:17; 33:6' %}, restore what was lost {% rf 'Isaiah 43:18-19; 51:3; Joel 2:25' %}, comfort our sorrows {% rf 'Psalm 147:3; Isaiah 57:18' %}, make right every wrong {% rf 'Romans 12:19' %}, forgive every confessed sin {% rf 'Psalm 103:2-4; 1 John 1:9' %}, cleanse every defilement {% rf 'Ezekiel 36:25' %}, and set us free from every addiction {% rf 'Luke 4:18' %}. He who created the heavens and the earth by the power of His Word {% rf 'Genesis 1:1; Psalm 33:6' %} has the same power to recreate us by that same Word {% rf '1 Peter 1:23; 2 Corinthians 5:17' %}, the Bible, but only if we let Him {% rf 'Revelation 3:20' %}.
-
-## Is He the source of all wisdom?
-
-> And he changeth the times and the seasons: he removeth kings, and setteth up kings: *he giveth wisdom unto the wise, and knowledge to them that know understanding*.
-{% ct 'Daniel 2:21' %}
-
-> If any of you lacks wisdom, let him ask of God, *who gives to all liberally* and without reproach, and it will be given to him.
-{% ct 'James 1:5, NKJV' %}
-
-> For the LORD *giveth wisdom*: out of his mouth *cometh knowledge and understanding*.
-{% ct 'Proverbs 2:6' %}
-
-After Adam and Eve ate from the tree of the knowledge of good and evil, humanity became exposed to the knowledge of evil—with all its pain, misery, and suffering—which was never God’s design. Yet even all genuinely good human wisdom is not inherently ours, but His—a profound truth that removes any temptation to glory in ourselves {% rf '2 Corinthians 10:17; Galatians 6:14' %}.
 
 ## Does God know the future?
 
@@ -107,6 +104,19 @@ Love is often expressed most vividly under trying circumstances. If God had crea
 God’s respect for freedom of choice dismantles the idea of predestination—of God predetermining who will be saved or lost.[^2] Imagine a pilot flying over a long, dark, one-way tunnel as two cars enter from opposite ends—both without headlights. The pilot knows disaster will soon follow, but his foreknowledge in no way impedes or imposes itself upon the drivers’ choice to enter that tunnel. Predestination is a dangerous teaching because it can lead people to live as though their decisions and actions do not matter, believing their destiny has already been determined. Scripture, however, teaches the exact opposite: our words and actions do matter, for we will be [held accountable](/posts/prophecy/judgment.md) for them {% rf 'Matthew 12:36; Romans 14:12; Revelation 22:12' %}.
 
 [^2]: Jacobus Arminius was a 16th-century Dutch Reformer who rediscovered the biblical teaching of free will, now known as Arminianism. He rejected both the Calvinist doctrine of predestination and the idea that all will ultimately be saved (Universalism).
+
+## Is He the source of all wisdom?
+
+> And he changeth the times and the seasons: he removeth kings, and setteth up kings: *he giveth wisdom unto the wise, and knowledge to them that know understanding*.
+{% ct 'Daniel 2:21' %}
+
+> If any of you lacks wisdom, let him ask of God, *who gives to all liberally* and without reproach, and it will be given to him.
+{% ct 'James 1:5, NKJV' %}
+
+> For the LORD *giveth wisdom*: out of his mouth *cometh knowledge and understanding*.
+{% ct 'Proverbs 2:6' %}
+
+After Adam and Eve ate from the tree of the knowledge of good and evil, humanity became exposed to the knowledge of evil—with all its pain, misery, and suffering—which was never God’s design. Yet even all genuinely good human wisdom is not inherently ours, but His—a profound truth that removes any temptation to glory in ourselves {% rf '2 Corinthians 10:17; Galatians 6:14' %}.
 
 ## How many gods are there?
 
@@ -190,14 +200,7 @@ God is glorified through the marvelous works of His creation: the awe-inspiring 
 
 God is love, yet He is also perfectly just. He does not clear the guilty nor overlook sin, but takes that guilt and sin upon Himself, offering the sinner a second chance {% rf 'John 8:11' %}. He is patient, yet not indulgent—willing to chasten as a loving Father would, always for our eternal good. Never one to use force or coercion, He gently draws us into a relationship with Him, yet He honors our freedom if we continually resist. He is our heavenly Father who risked everything to spend eternity with His beloved sons and daughters. But because He is also just, all who refuse His free offer of life in Christ must bear the consequence of their sin themselves—the forfeiture of their lives—for the wages of sin is death {% rf 'Romans 6:23' %}.[^4] Yet this is not God’s desire for anyone, for Christ has already borne this death on our behalf!
 
-[^4]: It bears emphasizing: the wages of sin is *death*—[not eternal torment](/posts/basics/hell.md) in hell for a brief life of sin, [nor a continuation of life](/posts/basics/death.md) as a disembodied spirit. This death includes both the first and the second death, because all the dead, whether saved or lost, will be resurrected again. The saved will be resurrected at Christ's second coming, never to die again, while the lost will be resurrected at the [end of the millennium](/posts/prophecy/millennium.md) for God’s final judgment.
-
-## What does the psalmist say belongs to God?
-
-> The *earth* is the LORD’S, and the fulness thereof; the world, and *they that dwell therein*.
-{% ct 'Psalm 24:1' %}
-
-Everything and everyone created belongs to the Creator first and foremost.
+[^4]: It bears emphasizing: the wages of sin is *death*—[not eternal torment](/posts/basics/hell.md) in hell for a brief life of sin, [nor a continuation of life](/posts/basics/death.md) as a disembodied spirit. This death includes both the first and the second death, because all the dead, whether saved or lost, will be resurrected again. The saved will be resurrected at Christ’s second coming, never to die again, while the lost will be resurrected at the [end of the millennium](/posts/prophecy/millennium.md) for God’s final judgment.
 
 ## How does He feel about me?
 

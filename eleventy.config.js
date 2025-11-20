@@ -44,12 +44,6 @@ module.exports = async (config) => {
 
   //#region
 
-  // inlineNavCSS
-  config.addLiquidShortcode('inlineNavCSS', () => {
-    const navCssPath = path.join(__dirname, '_includes', 'styles', 'nav.css');
-    return fs.readFileSync(navCssPath, 'utf8');
-  });
-
   // cite
   config.addLiquidShortcode('ct', (citation) =>
     `<figcaption>&mdash; ${ citation }</figcaption>`
@@ -94,14 +88,24 @@ module.exports = async (config) => {
 
   //#region
 
+  // isArticle
+  config.addFilter('isArticle', (page, categories) => {
+    const categoriesArray = Object.keys(categories).map(c => c.toLowerCase());
+    const urlParts = page.url?.split('/').filter(Boolean) || [];
+
+    // if URL contains more than just category
+    // and first URL part matches a category, it's an article
+    return urlParts.length > 1 && categoriesArray.includes(urlParts[0].toLowerCase());
+  });
+
   // toLocal
-  config.addLiquidFilter('toLocal', (date) => {
+  config.addFilter('toLocal', (date) => {
     if (!date) return '';
     return moment(date).local().format('MMM D, YYYY');
   });
 
   // toISO
-  config.addLiquidFilter('toISO', (date) => {
+  config.addFilter('toISO', (date) => {
     if (!date) return '';
     const d = new Date(date);
     if (isNaN(d)) return '';
@@ -112,7 +116,7 @@ module.exports = async (config) => {
   config.addFilter('cssmin', code => new CleanCSS({}).minify(code).styles);
 
   // absoluteUrl
-  config.addLiquidFilter('absoluteUrl', (url) => {
+  config.addFilter('absoluteUrl', (url) => {
     if (!url) return '';
     const base = site.url;
     if (url.startsWith('http://') || url.startsWith('https://')) return url;
@@ -129,71 +133,133 @@ module.exports = async (config) => {
 
   //#region
 
-  // standalonePosts
-  config.addCollection('standalonePosts', (collectionApi) => {
+  // allPosts
+  config.addCollection('allPosts', (collectionApi) => {
     const posts = collectionApi.getFilteredByGlob('posts/*/*.md');
-    posts.forEach(post => {
-      processPost(post);
+    const categories = ['All', ...Object.keys(site.categories)];
+    const summariesByCategory = {};
+    const groupedPostsByCategory = {};
+    const uniqueSeriesByCategory = {};
+    const seriesByCategoryLookup = {};
+    const highlightedPosts = { featured: [], latest: null };
 
-      if ((!post.data.color) && post.data.series) {
-        const seriesKey = post.data.series;
-        post.data.color = site.series[seriesKey].color;
-      }
+    categories.forEach(category => {
+      summariesByCategory[category] = {
+        articleCount: 0,
+        seriesCount: 0,
+        questionsCount: 0,
+      };
+      uniqueSeriesByCategory[category] = new Set(); // to track unique series
+      groupedPostsByCategory[category] = [];
+      seriesByCategoryLookup[category] = new Map(); // key-value lookup by series name
     });
 
-    return addNextLinks(sortPosts(posts));
-  });
-
-  // groupedPosts
-  config.addCollection('groupedPosts', (collectionApi) => {
-    const groupedPosts = [];
-    const processedSeries = new Map();
-    const posts = collectionApi.getFilteredByGlob('posts/*/*.md');
-
-    posts.forEach(post => processPost(post));
     const orderedPosts = addNextLinks(sortPosts(posts));
-
     orderedPosts.forEach(post => {
-      const { series } = post.data;
-      const category = post.data.category;
+      addFrontmatterData(post); // add category, length, updated, questions
       
-      if (series) {
-        let seriesEntry = processedSeries.get(series);
-        if (!seriesEntry) {
-          seriesEntry = {
-            type: 'series',
-            title: site.series[series].title,
-            category,
-            color: site.series[series].color,
-            posts: [],
-          };
-
-          processedSeries.set(series, seriesEntry);
-          groupedPosts.push(seriesEntry);
-        }
-        
-        seriesEntry.posts.push(post);
-      } else {
-        groupedPosts.push({
-          type: 'standalone',
-          category,
-          post,
-        });
+      if ((!post.data.color) && post.data.series) {
+        post.data.color = site.series[post.data.series].color;
       }
-    });
 
-    // series info
-    processedSeries.forEach((series) => {
-      series.posts.forEach((post, index) => {
-        post.data.seriesInfo = {
-          total: series.posts.length,
-          current: index + 1, //1-based
-          posts: series.posts,
-        };
+      const { series, category, featured, questions } = post.data;
+      categories.forEach(categoryFilter => {
+        const isAll = categoryFilter === 'All';
+
+        if (isAll || category === categoryFilter) {
+          if (series) {
+            // series post
+            let seriesEntry = seriesByCategoryLookup[categoryFilter].get(series);
+            if (!seriesEntry) {
+              seriesEntry = {
+                type: 'series',
+                title: site.series[series].title,
+                category,
+                color: site.series[series].color,
+                posts: [],
+              };
+
+              seriesByCategoryLookup[categoryFilter].set(series, seriesEntry);
+              groupedPostsByCategory[categoryFilter].push(seriesEntry);
+            }
+
+            seriesEntry.posts.push(post);
+            uniqueSeriesByCategory[categoryFilter].add(series);
+          } else {
+            // standalone post
+            groupedPostsByCategory[categoryFilter].push({
+              type: 'standalone',
+              category,
+              post,
+            });
+          }
+
+          summariesByCategory[categoryFilter].articleCount += 1;
+          summariesByCategory[categoryFilter].questionsCount += questions || 0;
+
+          // set featured and latest posts
+          if (isAll) {
+            if (featured) highlightedPosts.featured.push(post);
+            if (!highlightedPosts.latest || post.date > highlightedPosts.latest.date) {
+              highlightedPosts.latest = post;
+            }
+          }
+        }
       });
     });
 
-    return groupedPosts;
+    // add seriesInfo after all posts are grouped
+    categories.forEach(category => {
+      seriesByCategoryLookup[category].forEach((series) => {
+        series.posts.forEach((post, index) => {
+          post.data.seriesInfo = {
+            total: series.posts.length,
+            current: index + 1, // 1-based index
+            posts: series.posts,
+          };
+        });
+      });
+
+      // finalize series counts
+      summariesByCategory[category].seriesCount = uniqueSeriesByCategory[category].size;
+    });
+
+    orderedPosts.summariesByCategory = summariesByCategory;
+    orderedPosts.groupedPostsByCategory = groupedPostsByCategory;
+    orderedPosts.highlightedPosts = highlightedPosts;
+
+    return orderedPosts; // = [
+    //   {
+    //     data: { 
+    //       title, category, series, color, questions, 
+    //       seriesInfo: { total, current, posts }, 
+    //       next: { url, title },
+    //       ... other post data
+    //     },
+    //     url, inputPath, rawInput, date, ...
+    //   },
+    //   ... all post objects sorted
+    // ]
+    // orderedPosts.summariesByCategory = {
+    //   'All': { articleCount: 50, seriesCount: 8, questionsCount: 120 },
+    //   'Basics': { articleCount: 15, seriesCount: 3, questionsCount: 35 },
+    //   'Gospel': { articleCount: 20, seriesCount: 3, questionsCount: 50 },
+    //   'Prophecy': { articleCount: 15, seriesCount: 2, questionsCount: 35 }
+    // }
+    // orderedPosts.groupedPostsByCategory = {
+    //   'All': [
+    //     { type: 'series', title: 'X', category: 'Basics', color: 'X', posts: [...] },
+    //     { type: 'standalone', category: 'Gospel', post: {...} },
+    //     ... mixed series and standalone items
+    //   ],
+    //   'Basics': [ /* only Basics posts/series */ ],
+    //   'Gospel': [ /* only Gospel posts/series */ ],
+    //   'Prophecy': [ /* only Prophecy posts/series */ ]
+    // }
+    // orderedPosts.highlightedPosts = {
+    //   featured: [ /* posts with featured: true */ ],
+    //   latest: { /* most recent post by date */ }
+    // }
   });
 
   //#endregion
@@ -254,7 +320,7 @@ module.exports = async (config) => {
       tocList.appendChild(listItem);
     });
 
-    // wrap h2 and all following siblings until next h2 or p.next-link in section
+    // wrap h2 and all related siblings
     main.querySelectorAll('h2').forEach(h2 => {
       let current = h2.nextElementSibling;
       const toWrap = [];
@@ -319,7 +385,7 @@ module.exports = async (config) => {
     return posts;
   }
 
-  function processPost(post) {
+  function addFrontmatterData(post) {
     // category
     post.data.category = getCategoryFromPath(post.inputPath);
 

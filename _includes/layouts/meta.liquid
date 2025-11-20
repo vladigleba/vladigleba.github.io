@@ -5,9 +5,9 @@
 <link rel="canonical" href="{{ url }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" as="style">
 <link href="/styles.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"></noscript>
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 
@@ -17,9 +17,10 @@
 <meta http-equiv='Permissions-Policy' content="geolocation=(), camera=(), microphone=(), payment=()">
 <meta http-equiv='X-Content-Type-Options' content='nosniff'>
 
-{% comment %} <style>
-  {% inlineNavCSS %} /* critical nav styles inlined for performance */
-</style> {% endcomment %}
+<style>
+  {% render 'styles/nav.css' %}
+  {% render 'styles/banner.css' %}
+</style>
 
 <!-- meta tags for SEO -->
 {% if is_article %}
@@ -76,10 +77,12 @@
     location.hostname !== '127.0.0.1' &&
     (!navigator.doNotTrack || navigator.doNotTrack === '0')
   ) {
-    var s = document.createElement('script');
-    s.defer = true;
-    s.setAttribute('data-website-id', 'dd2fe86a-abe1-4240-869c-fbe22064287d');
-    s.src = 'https://cloud.umami.is/script.js';
-    document.head.appendChild(s);
+    window.addEventListener('load', () => {
+      var s = document.createElement('script');
+      s.defer = true;
+      s.setAttribute('data-website-id', 'dd2fe86a-abe1-4240-869c-fbe22064287d');
+      s.src = 'https://cloud.umami.is/script.js';
+      document.head.appendChild(s);
+    });
   }
 </script>

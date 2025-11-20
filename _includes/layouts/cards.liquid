@@ -1,12 +1,10 @@
 <ol class="list series-list">
-  {% for item in filteredGroupedPosts %}
+  {% for item in groupedPostsByCategory %}
     {% if item.type == 'series' %}
       <li class="series">
-        <div>
-          <span class="tag" style="color: {{ item.color }}">
-            {{ item.posts.size }}-part Series
-          </span>
-        </div>
+        <div><span class="tag" style="color: {{ item.color }}">
+          {{ item.posts.size }}-part Series
+        </span></div>
         
         <a style="color: {{ item.color }}" href="{{ item.posts[0].url }}">
           {{ item.title }}
@@ -26,7 +24,7 @@
 </ol>
 
 <ol class="list standalone-list">
-  {% for item in filteredGroupedPosts %}
+  {% for item in groupedPostsByCategory %}
     {% if item.type == 'standalone' %}
       {% render 'layouts/card-standalone', post: item.post, site: site %}
     {% else %}

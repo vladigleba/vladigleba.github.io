@@ -3,19 +3,6 @@
   <head>
     
     
-
-    
-    
-      
-    
-      
-    
-      
-    
-    
-    
-
-    
     
 
     <title>Basics</title>
@@ -25,9 +12,9 @@
 <link rel="canonical" href="https://vladigleba.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" as="style">
 <link href="/styles.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"></noscript>
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 
@@ -37,7 +24,66 @@
 <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=(), payment=()">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 
+<style>
+  .main-nav {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  color: var(--darker-gray-color);
+}
 
+.main-nav ul {
+  margin: 8px 0;
+  padding: 1px 18px;
+  border-radius: var(--default-radius);
+  list-style: none;
+  display: flex;
+  gap: 7px;
+  background-color: var(--light-background);
+}
+
+.main-nav li {
+  text-transform: uppercase;
+  padding: 5px 12.5px 3px;
+}
+
+.main-nav li:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.125);
+  color: black;
+}
+
+.main-nav li a {
+  color: inherit;
+}
+  .banner {
+  position: relative;
+  z-index: 1;
+  color: black;
+  padding: 150px 0 170px;
+  text-align: center;
+}
+
+.banner .intro {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.banner h1 span {
+  background: var(--gradient) padding-box text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block; /* iOS workaround */
+}
+
+.banner p {
+  margin-top: 25px;
+}
+</style>
 
 <!-- meta tags for SEO -->
 
@@ -73,17 +119,20 @@
     location.hostname !== '127.0.0.1' &&
     (!navigator.doNotTrack || navigator.doNotTrack === '0')
   ) {
-    var s = document.createElement('script');
-    s.defer = true;
-    s.setAttribute('data-website-id', 'dd2fe86a-abe1-4240-869c-fbe22064287d');
-    s.src = 'https://cloud.umami.is/script.js';
-    document.head.appendChild(s);
+    window.addEventListener('load', () => {
+      var s = document.createElement('script');
+      s.defer = true;
+      s.setAttribute('data-website-id', 'dd2fe86a-abe1-4240-869c-fbe22064287d');
+      s.src = 'https://cloud.umami.is/script.js';
+      document.head.appendChild(s);
+    });
   }
 </script>
   </head>
 
   <body id="top">
     <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <nav aria-label="Main site navigation" class="main-nav">
   <ul>
     <li>
@@ -119,227 +168,7 @@
 
 
 
-
-
-
-
-  
-    
-    
-    
-      
-      
-      
-      
-
-      
-        
-      
-    
-  
-
-  
-
-  
-    
-    
-    
-      
-      
-      
-      
-        
-        
-        
-
-        
-          
-        
-      
-        
-        
-        
-
-        
-          
-        
-      
-    
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-      
-      
-      
-      
-
-      
-        
-      
-    
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-      
-      
-      
-      
-        
-        
-        
-
-        
-      
-        
-        
-        
-
-        
-      
-    
-  
-
-  
-    
-    
-    
-      
-      
-      
-      
-        
-        
-        
-
-        
-      
-        
-        
-        
-
-        
-      
-    
-  
-
-  
-
-  
-    
-    
-    
-      
-      
-      
-      
-        
-        
-        
-          
-        
-
-        
-      
-        
-        
-        
-          
-        
-
-        
-      
-    
-  
-
-  
-
-  
-
-  
-    
-    
-    
-      
-      
-      
-      
-        
-        
-        
-
-        
-          
-        
-      
-        
-        
-        
-
-        
-          
-        
-      
-    
-  
-
-  
-
-  
-    
-    
-    
-      
-      
-      
-      
-        
-        
-        
-
-        
-          
-        
-      
-        
-        
-        
-
-        
-      
-        
-        
-        
-
-        
-          
-        
-      
-    
-  
-
-
-<div class="posts-view">
-  
-    
-    
+<div class="category-view">
   
 
   <div class="stats">
@@ -382,7 +211,7 @@
     </svg>
   </div>
 </div>
-
+  
   <ol class="list series-list">
   
     
@@ -401,7 +230,8 @@
   </a>
 
   <p>
-    Basics <span>•</span> 6 min read <span>•</span> 
+    Basics <span>•</span>
+    6 min read <span>•</span> 
     <time datetime="2025-11-08T05:17:45.000Z">Nov 7, 2025</time>
   </p>
 
@@ -416,11 +246,9 @@
   
     
       <li class="series">
-        <div>
-          <span class="tag" style="color: rgb(101,102,166)">
-            2-part Series
-          </span>
-        </div>
+        <div><span class="tag" style="color: rgb(101,102,166)">
+          2-part Series
+        </span></div>
         
         <a style="color: rgb(101,102,166)" href="/basics/messiah/">
           Jesus, the Messiah
@@ -453,7 +281,8 @@
   </a>
 
   <p>
-    Basics <span>•</span> 15 min read <span>•</span> 
+    Basics <span>•</span>
+    15 min read <span>•</span> 
     <time datetime="2025-11-08T05:17:45.000Z">Nov 7, 2025</time>
   </p>
 
@@ -468,11 +297,9 @@
   
     
       <li class="series">
-        <div>
-          <span class="tag" style="color: rgb(199,103,103)">
-            2-part Series
-          </span>
-        </div>
+        <div><span class="tag" style="color: rgb(199,103,103)">
+          2-part Series
+        </span></div>
         
         <a style="color: rgb(199,103,103)" href="/basics/sabbath/">
           The Bible Sabbath
@@ -491,11 +318,9 @@
   
     
       <li class="series">
-        <div>
-          <span class="tag" style="color: rgb(141,100,171)">
-            2-part Series
-          </span>
-        </div>
+        <div><span class="tag" style="color: rgb(141,100,171)">
+          2-part Series
+        </span></div>
         
         <a style="color: rgb(141,100,171)" href="/basics/sunday/">
           The Counterfeit Sabbath
@@ -514,11 +339,9 @@
   
     
       <li class="series">
-        <div>
-          <span class="tag" style="color: rgb(255,98,98)">
-            2-part Series
-          </span>
-        </div>
+        <div><span class="tag" style="color: rgb(255,98,98)">
+          2-part Series
+        </span></div>
         
         <a style="color: rgb(255,98,98)" href="/basics/death/">
           Mainstream Deceptions
@@ -537,11 +360,9 @@
   
     
       <li class="series">
-        <div>
-          <span class="tag" style="color: rgb(86,111,170)">
-            2-part Series
-          </span>
-        </div>
+        <div><span class="tag" style="color: rgb(86,111,170)">
+          2-part Series
+        </span></div>
         
         <a style="color: rgb(86,111,170)" href="/basics/spirit/">
           Baptized by the Spirit
@@ -560,11 +381,9 @@
   
     
       <li class="series">
-        <div>
-          <span class="tag" style="color: rgb(199,62,95)">
-            3-part Series
-          </span>
-        </div>
+        <div><span class="tag" style="color: rgb(199,62,95)">
+          3-part Series
+        </span></div>
         
         <a style="color: rgb(199,62,95)" href="/basics/standards/">
           The Christian Life
@@ -603,7 +422,8 @@
   </a>
 
   <p>
-    Basics <span>•</span> 6 min read <span>•</span> 
+    Basics <span>•</span>
+    6 min read <span>•</span> 
     <time datetime="2025-11-08T05:17:45.000Z">Nov 7, 2025</time>
   </p>
 
@@ -617,11 +437,8 @@
     
   
     
-  
-    
-  
-    
       
+        
 
 
 
@@ -639,25 +456,24 @@
   </a>
 
   <p>
-    Basics <span>•</span> 8 min read <span>•</span> 
+    Basics <span>•</span>
+    8 min read <span>•</span> 
     <time datetime="2025-10-15T04:07:21.000Z">Oct 14, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" style="background: rgb(101,102,166) "></div>
+        <div class="series-segment" style="background: rgb(101,102,166)"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
       
+        
 
 
 
@@ -675,37 +491,23 @@
   </a>
 
   <p>
-    Basics <span>•</span> 5 min read <span>•</span> 
+    Basics <span>•</span>
+    5 min read <span>•</span> 
     <time datetime="2025-10-15T04:07:21.000Z">Oct 14, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" style="background: rgb(101,102,166) "></div>
+        <div class="series-segment" style="background: rgb(101,102,166)"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
+      
     
   
     
@@ -724,7 +526,8 @@
   </a>
 
   <p>
-    Basics <span>•</span> 15 min read <span>•</span> 
+    Basics <span>•</span>
+    15 min read <span>•</span> 
     <time datetime="2025-11-08T05:17:45.000Z">Nov 7, 2025</time>
   </p>
 
@@ -738,15 +541,8 @@
     
   
     
-  
-    
-  
-    
-  
-    
-  
-    
       
+        
 
 
 
@@ -764,25 +560,24 @@
   </a>
 
   <p>
-    Basics <span>•</span> 10 min read <span>•</span> 
+    Basics <span>•</span>
+    10 min read <span>•</span> 
     <time datetime="2025-10-16T03:19:09.000Z">Oct 15, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" style="background: rgb(199,103,103) "></div>
+        <div class="series-segment" style="background: rgb(199,103,103)"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
       
+        
 
 
 
@@ -800,25 +595,28 @@
   </a>
 
   <p>
-    Basics <span>•</span> 13 min read <span>•</span> 
+    Basics <span>•</span>
+    13 min read <span>•</span> 
     <time datetime="2025-10-16T03:19:09.000Z">Oct 15, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" style="background: rgb(199,103,103) "></div>
+        <div class="series-segment" style="background: rgb(199,103,103)"></div>
       
     </div>
   
 </li>
 
+      
     
   
     
       
+        
 
 
 
@@ -836,25 +634,24 @@
   </a>
 
   <p>
-    Basics <span>•</span> 14 min read <span>•</span> 
+    Basics <span>•</span>
+    14 min read <span>•</span> 
     <time datetime="2025-10-26T19:00:23.000Z">Oct 26, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" style="background: rgb(141,100,171) "></div>
+        <div class="series-segment" style="background: rgb(141,100,171)"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
       
+        
 
 
 
@@ -872,29 +669,28 @@
   </a>
 
   <p>
-    Basics <span>•</span> 22 min read <span>•</span> 
+    Basics <span>•</span>
+    22 min read <span>•</span> 
     <time datetime="2025-11-13T03:08:28.000Z">Nov 12, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" style="background: rgb(141,100,171) "></div>
+        <div class="series-segment" style="background: rgb(141,100,171)"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
-  
+      
     
   
     
       
+        
 
 
 
@@ -912,25 +708,24 @@
   </a>
 
   <p>
-    Basics <span>•</span> 12 min read <span>•</span> 
+    Basics <span>•</span>
+    12 min read <span>•</span> 
     <time datetime="2025-11-17T06:18:01.000Z">Nov 16, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" style="background: rgb(255,98,98) "></div>
+        <div class="series-segment" style="background: rgb(255,98,98)"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
       
+        
 
 
 
@@ -948,35 +743,28 @@
   </a>
 
   <p>
-    Basics <span>•</span> 13 min read <span>•</span> 
+    Basics <span>•</span>
+    13 min read <span>•</span> 
     <time datetime="2025-11-17T06:18:01.000Z">Nov 16, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" style="background: rgb(255,98,98) "></div>
+        <div class="series-segment" style="background: rgb(255,98,98)"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
+      
     
   
     
       
+        
 
 
 
@@ -994,25 +782,24 @@
   </a>
 
   <p>
-    Basics <span>•</span> 21 min read <span>•</span> 
+    Basics <span>•</span>
+    21 min read <span>•</span> 
     <time datetime="2025-10-19T15:43:20.000Z">Oct 19, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" style="background: rgb(86,111,170) "></div>
+        <div class="series-segment" style="background: rgb(86,111,170)"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
       
+        
 
 
 
@@ -1030,29 +817,28 @@
   </a>
 
   <p>
-    Basics <span>•</span> 16 min read <span>•</span> 
+    Basics <span>•</span>
+    16 min read <span>•</span> 
     <time datetime="2025-10-19T15:43:20.000Z">Oct 19, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" style="background: rgb(86,111,170) "></div>
+        <div class="series-segment" style="background: rgb(86,111,170)"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
-  
+      
     
   
     
       
+        
 
 
 
@@ -1070,27 +856,26 @@
   </a>
 
   <p>
-    Basics <span>•</span> 19 min read <span>•</span> 
+    Basics <span>•</span>
+    19 min read <span>•</span> 
     <time datetime="2025-10-19T15:43:20.000Z">Oct 19, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" style="background: rgb(199,62,95) "></div>
+        <div class="series-segment" style="background: rgb(199,62,95)"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
       
+        
 
 
 
@@ -1108,27 +893,26 @@
   </a>
 
   <p>
-    Basics <span>•</span> 12 min read <span>•</span> 
+    Basics <span>•</span>
+    12 min read <span>•</span> 
     <time datetime="2025-10-19T15:43:20.000Z">Oct 19, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" style="background: rgb(199,62,95) "></div>
+        <div class="series-segment" style="background: rgb(199,62,95)"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
     </div>
   
 </li>
 
-    
-  
-    
       
+        
 
 
 
@@ -1146,23 +930,25 @@
   </a>
 
   <p>
-    Basics <span>•</span> 26 min read <span>•</span> 
+    Basics <span>•</span>
+    26 min read <span>•</span> 
     <time datetime="2025-11-08T05:17:45.000Z">Nov 7, 2025</time>
   </p>
 
   
     <div class="series-bar">
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" "=""></div>
+        <div class="series-segment"></div>
       
-        <div class="series-segment" style="background: rgb(199,62,95) "></div>
+        <div class="series-segment" style="background: rgb(199,62,95)"></div>
       
     </div>
   
 </li>
 
+      
     
   
 </ol>
@@ -1179,11 +965,12 @@
       </div>
       
       <div class="last-updated">
-        Last updated <time datetime="2025-11-17T21:19:07.862Z">November 17, 2025</time>
+        Last updated <time datetime="2025-11-19T20:06:49.545Z">November 19, 2025</time>
       </div>
     <p></p>
   </div>
 </footer>
+
     <script>
       document.body.classList.add('js-enabled');
       if (

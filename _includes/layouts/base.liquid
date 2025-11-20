@@ -3,18 +3,7 @@
   <head>
     {% assign meta_title = title | default: site.title %}
     {% assign meta_description = description | default: site.description %}
-
-    {% assign categories = '' %}
-    {% for cat in site.categories %}
-      {% assign categories = categories | append: cat[0] | append: ',' %}
-    {% endfor %}
-    {% assign categories = categories | downcase | split: ',' %}
-    {% assign url_parts = page.url | split: '/' %}
-
-    {% assign is_article = false %}
-    {% if url_parts.size > 2 and categories contains url_parts[1] %}
-      {% assign is_article = true %}
-    {% endif %}
+    {% assign is_article = page | isArticle: site.categories %}
 
     {%
       render 'layouts/meta', 
@@ -32,6 +21,7 @@
 
   <body id="top">
     <a href="#main-content" class="skip-link">Skip to main content</a>
+
     {% render 'layouts/nav' %}
    
     <main id="main-content" tabindex="-1">
@@ -39,6 +29,7 @@
     </main>
 
     {% render 'layouts/footer' %}
+
     <script>
       document.body.classList.add('js-enabled');
       if (

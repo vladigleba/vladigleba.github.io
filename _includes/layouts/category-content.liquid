@@ -1,8 +1,8 @@
 {% assign categoryKey = categoryFilter | default: 'All' %}
-{% assign summary = allPosts.summaries[categoryKey] %}
-{% assign filteredGroupedPosts = allPosts.filteredGroupedPosts[categoryKey] %}
+{% assign summary = allPosts.summariesByCategory[categoryKey] %}
+{% assign groupedPostsByCategory = allPosts.groupedPostsByCategory[categoryKey] %}
 
-<div class="posts-view">
+<div class="category-view">
   {% if not categoryFilter and allPosts.highlightedPosts.featured.size > 0 %}
     {% assign randomFeatured = allPosts.highlightedPosts.featured | sample %}
     {% comment %} {% render 'layouts/featured', featured: randomFeatured, latest: allPosts.highlightedPosts.latest %} {% endcomment %}
@@ -17,7 +17,7 @@
   
   {% 
     render 'layouts/cards',
-    filteredGroupedPosts: filteredGroupedPosts,
+    groupedPostsByCategory: groupedPostsByCategory,
     site: site
   %}
 </div>
