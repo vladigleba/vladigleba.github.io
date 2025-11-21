@@ -1,0 +1,30 @@
+<ol class="list series-list">
+  {% for item in groupedPostsByCategory %}
+    {% if item.type == 'series' %}
+      {% render 'layouts/cards', 
+         series: item, 
+         mode: 'series-overview',
+         site: site %}
+    {% else %}
+      {% render 'layouts/cards', 
+         post: item.post, 
+         site: site %}
+    {% endif %}
+  {% endfor %}
+</ol>
+
+<ol class="list standalone-list">
+  {% for item in groupedPostsByCategory %}
+    {% if item.type == 'standalone' %}
+      {% render 'layouts/cards', 
+         post: item.post, 
+         site: site %}
+    {% else %}
+      {% for post in item.posts %}
+        {% render 'layouts/cards', 
+           post: post, 
+           site: site %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</ol>

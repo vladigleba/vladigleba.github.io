@@ -59,7 +59,8 @@ article > header p {
 .toc a,
 body > footer,
 #dialog-popup,
-.copy-toast {
+.copy-toast,
+.unified-card .tag {
   font-size: 16px;
 }
 

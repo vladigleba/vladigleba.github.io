@@ -1,36 +1,63 @@
-<ol class="list series-list">
-  {% for item in groupedPostsByCategory %}
-    {% if item.type == 'series' %}
-      <li class="series">
-        <div><span class="tag" style="color: {{ item.color }}">
-          {{ item.posts.size }}-part Series
-        </span></div>
-        
-        <a style="color: {{ item.color }}" href="{{ item.posts[0].url }}">
-          {{ item.title }}
-        </a>
-        <p>{{ item.category }}</p>
+{% if mode == 'series-overview' %}
+  {%- assign isSeriesOverview = true -%}
+  {%- assign color = series.color -%}
+  {%- assign title = series.title -%}
+  {%- assign url = series.posts[0].url -%}
+  {%- assign category = series.category -%}
+{% else %}
+  {%- assign isSeriesOverview = false -%}
+  {%- assign data = post.data -%}
+  {%- assign color = data.color -%}
+  {%- assign seriesInfo = data.seriesInfo -%}
+  {%- assign title = data.title -%}
+  {%- assign url = post.url -%}
+  {%- assign category = data.category -%}
+{% endif %}
 
-        <div class="series-bar">
-          {% for post in item.posts %}
-            <div class="series-segment" style="background: {{ item.color }}"></div>
-          {% endfor %}
-        </div>
-      </li>
+<li
+  {% if isSeriesOverview %} class="series"
+  {% elsif seriesInfo %} class="standalone-view" {% endif %}
+  {% unless isSeriesOverview %}
+  data-updated="{{ data.updated | toISO }}"
+  data-length="{{ data.length | default: 0 }}"
+  data-reading-order="{{ data.order | default: 0 }}"
+  {% endunless %}
+>
+  <div><span class="tag" style="color: {{ color }}">
+    {% if isSeriesOverview %}
+      {{ series.posts.size | append: '-part Series' }}
+    {% elsif seriesInfo %}
+      <span>{{ site[data.series].title }}</span>
+      <span>{{ seriesInfo.current }} of {{ seriesInfo.total }}</span>
     {% else %}
-      {% render 'layouts/card-standalone', post: item.post, site: site %}
+      Standalone
     {% endif %}
-  {% endfor %}
-</ol>
-
-<ol class="list standalone-list">
-  {% for item in groupedPostsByCategory %}
-    {% if item.type == 'standalone' %}
-      {% render 'layouts/card-standalone', post: item.post, site: site %}
-    {% else %}
-      {% for post in item.posts %}
-        {% render 'layouts/card-standalone', post: post, site: site %}
+  </span></div>
+  
+  <a style="color: {{ color }}" href="{{ url }}">
+    {{ title }}
+  </a>
+  
+  <p>
+    {{ category }}
+    {% unless isSeriesOverview %}
+      <span>•</span>
+      {{ data.length }} min read <span>•</span> 
+      <time datetime="{{ data.updated | toISO }}">{{ data.updated | toLocal }}</time>
+    {% endunless %}
+  </p>
+  
+  <div class="series-bar">
+    {% if isSeriesOverview %}
+      {% for p in series.posts %}
+        <div class="series-segment" style="background: {{ color }}"></div>
       {% endfor %}
+    {% elsif seriesInfo %}
+      {% for p in seriesInfo.posts %}
+        <div class="series-segment" {% if forloop.index == seriesInfo.current %}style="background: {{ color }}"{% endif %}></div>
+      {% endfor %}
+    {% else %}
+      <div class="series-segment" style="background: {{ color }}"></div>
     {% endif %}
-  {% endfor %}
-</ol>
+  </div>
+</li>

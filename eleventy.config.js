@@ -273,38 +273,50 @@ module.exports = async (config) => {
   // modifyHtml
   config.addTransform('modifyHtml', async (content, outputPath) => {
     if (!(outputPath && outputPath.endsWith('.html'))) return content;
-
+    
     const dom = new JSDOM(content);
     const document = dom.window.document;
     const main = document.querySelector('.content');
+    
     if (!main) return content;
-
+    
     // wrap blockquote/figcaption with figure
-    document.querySelectorAll('blockquote + figcaption').forEach((figcaption) => {
+    const figcaptions = document.querySelectorAll('blockquote + figcaption');
+    for (const figcaption of figcaptions) {
       const blockquote = figcaption.previousElementSibling;
       const figure = document.createElement('figure');
       blockquote.replaceWith(figure);
       figure.appendChild(blockquote);
       figure.appendChild(figcaption);
-    });
-
-    // add anchors to headings
+    }
+    
+    // early exit if no headings
     const headings = main.querySelectorAll('h2, h3, h4');
     if (headings.length < 1) return content;
-
+        
+    // batch DOM operations
+    const fragment = document.createDocumentFragment();
+    
+    // pre-compile regex outside loop
+    const spaceRegex = /\s+/g;
+    const nonWordRegex = /[^\w\-]+/g;
+    const multiHyphenRegex = /\-\-+/g;
+    const trimHyphenRegex = /^-+|-+$/g;
+    
+    // add anchors to all headings AND wrap h2 sections
     const tocList = document.querySelector('aside ul');
-    headings.forEach((heading) => {
-      const slug = heading.textContent
-        .trim()
+    for (const heading of headings) {
+      const text = heading.textContent.trim();
+      const slug = text
         .toLowerCase()
-        .replace(/\s+/g, '-')           // Replace spaces with hyphens
-        .replace(/[^\w\-]+/g, '')       // Remove all non-word characters
-        .replace(/\-\-+/g, '-')         // Replace multiple hyphens with single hyphen
-        .replace(/^-+|-+$/g, '');       // Remove leading/trailing hyphens
-
+        .replace(spaceRegex, '-')         // Replace spaces with hyphens
+        .replace(nonWordRegex, '')        // Remove all non-word characters
+        .replace(multiHyphenRegex, '-')   // Replace multiple hyphens with 
+        .replace(trimHyphenRegex, '');    // Remove leading/trailing hyphens
+      
       heading.id = slug;
       heading.setAttribute('tabindex', '-1'); // make heading programmatically focusable
-
+      
       const link = document.createElement('a');
       link.href = `#${slug}`;
       link.classList.add('anchor-link');
@@ -314,37 +326,49 @@ module.exports = async (config) => {
           <use href="/assets/images/icons.svg#link"></use>
         </svg>`;
       heading.appendChild(link);
-
-      const listItem = document.createElement('li');
-      listItem.innerHTML = `<a href="#${slug}">${heading.textContent}</a>`;
-      tocList.appendChild(listItem);
-    });
-
-    // wrap h2 and all related siblings
-    main.querySelectorAll('h2').forEach(h2 => {
-      let current = h2.nextElementSibling;
-      const toWrap = [];
-
-      while (current) {
-        const isH2 = current.tagName === 'H2';
-        const isNextLink = current.tagName === 'P' && current.classList.contains('next-link');
-        const isFootnotesHr = current.tagName === 'HR' && current.classList.contains('footnotes-sep');
-        const isFootnotesSection = current.classList && current.classList.contains('footnotes');
-
-        if (isH2 || isNextLink || isFootnotesHr || isFootnotesSection) break;
-
-        toWrap.push(current);
-        current = current.nextElementSibling;
+      
+      if (tocList) {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `<a href="#${slug}">${text}</a>`;
+        fragment.appendChild(listItem);
       }
-
-      if (toWrap.length > 0) {
-        const section = document.createElement('section');
-        h2.parentNode.insertBefore(section, h2);
-        section.appendChild(h2);
-        toWrap.forEach(el => section.appendChild(el));
+      
+      // wrap h2 sections
+      if (heading.tagName === 'H2') {
+        let current = heading.nextElementSibling;
+        const toWrap = [];
+        
+        while (current) {
+          const tagName = current.tagName;
+          const classList = current.classList;
+          
+          const isH2 = tagName === 'H2';
+          const isNextLink = tagName === 'P' && classList.contains('next-link');
+          const isFootnotesHr = tagName === 'HR' && classList.contains('footnotes-sep');
+          const isFootnotesSection = classList && classList.contains('footnotes');
+          
+          if (isH2 || isNextLink || isFootnotesHr || isFootnotesSection) break;
+          
+          toWrap.push(current);
+          current = current.nextElementSibling;
+        }
+        
+        if (toWrap.length > 0) {
+          const section = document.createElement('section');
+          heading.parentNode.insertBefore(section, heading);
+          section.appendChild(heading);
+          for (const el of toWrap) {
+            section.appendChild(el);
+          }
+        }
       }
-    });
-
+    }
+    
+    // append all TOC items at once
+    if (tocList && fragment.hasChildNodes()) {
+      tocList.appendChild(fragment);
+    }
+    
     return dom.serialize();
   });
 

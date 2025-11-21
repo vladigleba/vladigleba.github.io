@@ -4,6 +4,7 @@ description: Does the Bible have evidence of the Sabbath being changed? Explore 
 date: 2022-04-12
 series: Sunday
 order: 2100
+featured: true
 ---
 
 ## Is the Sabbath temporary or perpetual?

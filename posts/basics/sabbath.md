@@ -4,6 +4,7 @@ description: A day was set apart by God on the first week of creation. Why? Does
 date: 2022-04-02
 series: Sabbath
 order: 1900
+featured: true
 ---
 
 ## What is the first angel’s message in Revelation 14?

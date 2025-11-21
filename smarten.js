@@ -95,7 +95,7 @@ function processFile(filePath, debugMode = false) {
     const updated = replaceTypography(content, debugMode);
     if (!debugMode) {
       fs.writeFileSync(filePath, updated, 'utf8');
-      console.log(`✅ Processed file: ${filePath}`);
+      // console.log(`✅ Processed file: ${filePath}`);
     }
   } catch (err) {
     console.error(`❌ Failed to process ${filePath}: ${err.message}`);
