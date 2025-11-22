@@ -4,6 +4,7 @@ description: Jesus wants to redeem me from sin. Does He have a plan to redeem my
 date: 2022-05-20
 series: Healing
 order: 2300
+featured: true
 ---
 
 ## Does Jesus care about my health?

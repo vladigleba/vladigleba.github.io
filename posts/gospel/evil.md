@@ -124,7 +124,7 @@ Sin leads to separation from the Giver of life, which leads to death.
 > For *all have sinned* and fall short of the glory of God.
 {% ct 'Romans 3:23' %}
 
-## Am I really sovereign in my fallen condition?
+## Am I really free in my fallen condition?
 
 > Know ye not, that to whom ye yield yourselves servants to obey, *his servants ye are to whom ye obey*; whether of sin unto death, or of obedience unto righteousness?
 {% ct 'Romans 6:16' %}
@@ -141,7 +141,7 @@ Ever since the fall, the human race no longer has true freedom and has become a 
 
 Once Adam and Eve fell, God did not leave them in their hopeless condition but gave them a promise that sin would not reign on earth forever. A Redeemer would come who would crush the head of Satan and break the power of sin and death over the human race by paying for their sins Himself.
 
-## How can I go from death to justification of life?
+## How can I escape death?
 
 > For if by one man’s offence death reigned by one; much more *they which receive abundance of grace and of the gift of righteousness shall reign in life by one, Jesus Christ*. Therefore as by the offence of one judgment came upon all men to condemnation; even so by the righteousness of one the *free gift came upon all men unto justification of life*. For as by one man’s disobedience many were made sinners, so *by the obedience of one shall many be made righteous*.
 {% ct 'Romans 5:17-19' %}
@@ -151,7 +151,7 @@ Once Adam and Eve fell, God did not leave them in their hopeless condition but g
 
 Christ’s perfect life gives us the ability to be free from the bondage of sin and it’s penalty of death! By paying for our sins, Jesus made it possible for anyone who receives this free gift by faith through repentance of sins to be forgiven and declared righteous before God!
 
-## What does God promise as I live in a world of sin and evil?
+## What does God promise?
 
 > For I the LORD thy God will hold thy right hand, saying unto thee, *Fear not; I will help thee*.
 {% ct 'Isaiah 41:13' %}
