@@ -11,10 +11,10 @@
 
 .content figure {
   position: relative;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--border-color);
   border-radius: var(--default-radius);
   padding: 0.5rem 1.5em;
-  box-shadow: 0 0 32px rgba(102, 126, 234, 0.1);
+  box-shadow: 0 4px 24px rgba(102, 126, 234, 0.1);
   font-weight: 600;
   margin: 0.8rem 0;
 }

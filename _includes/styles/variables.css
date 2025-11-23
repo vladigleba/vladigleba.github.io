@@ -9,4 +9,5 @@
   --light-background: #f1f5f9; /* #f8fafc #f1f5f9 */
   --tag-horizontal-padding: 10px;
   --gradient: linear-gradient(90deg, rgb(255, 117, 102) 0%, rgb(148, 56, 179) 100%);
+  --border-color: #e2e8f0;
 }

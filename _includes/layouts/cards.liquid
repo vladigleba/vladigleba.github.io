@@ -27,8 +27,8 @@
     {% if isSeriesOverview %}
       {{ series.posts.size | append: '-part Series' }}
     {% elsif seriesInfo %}
-      <span>{{ site[data.series].title }}</span>
-      <span>{{ seriesInfo.current }} of {{ seriesInfo.total }}</span>
+      {{ site[data.series].title }} <span>•</span>
+      {{ seriesInfo.current }} of {{ seriesInfo.total }}
     {% else %}
       Standalone
     {% endif %}

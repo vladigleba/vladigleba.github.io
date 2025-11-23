@@ -1,0 +1,28 @@
+{% assign categoryKey = categoryFilter | default: 'All' %}
+{% assign summary = allPosts.summariesByCategory[categoryKey] %}
+{% assign groupedPostsByCategory = allPosts.groupedPostsByCategory[categoryKey] %}
+
+<div class="category-view">
+  {% if not categoryFilter %}
+    {% assign randomFeatured = allPosts.highlightedPosts.featured | sample %}
+    
+    {% 
+      render 'layouts/featured',
+      featured: randomFeatured,
+      latest: allPosts.highlightedPosts.latest 
+    %}
+  {% endif %}
+
+  {% 
+    render 'layouts/controls',
+    articleCount: summary.articleCount,
+    seriesCount: summary.seriesCount,
+    questionsCount: summary.questionsCount
+  %}
+  
+  {% 
+    render 'layouts/lists',
+    groupedPostsByCategory: groupedPostsByCategory,
+    site: site
+  %}
+</div>

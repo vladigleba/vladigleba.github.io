@@ -22,8 +22,9 @@ article > header h1 {
   letter-spacing: -0.5px;
 }
 
+.unified-card .title,
 .list a {
-  font-size: 31px;
+  font-size: 32px;
 }
 
 .banner p,
@@ -39,6 +40,10 @@ article > header p {
   font-size: 22px;
 }
 
+.unified-card .description {
+  font-size: 20px;
+}
+
 .content figcaption {
   font-size: 19px;
   font-weight: 700;
@@ -47,7 +52,8 @@ article > header p {
 .posts-sort select,
 .list p,
 .switch-label,
-.stats {
+.stats,
+.unified-card .details {
   font-size: 18px;
 }
 
@@ -78,6 +84,7 @@ li .tag {
   font-family: "Literata", Georgia, Times, "Times New Roman", serif;
 }
 
+.unified-card .title,
 article header h1,
 article .content h2,
 .main-nav ul,

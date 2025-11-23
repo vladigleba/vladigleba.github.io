@@ -4,6 +4,7 @@ description: Heaven is real, accessible to all, and more glorious than anything 
 color: rgb(66, 138, 177)
 date: 2022-06-24
 order: 1400
+featured: true
 ---
 
 ## What promise did Jesus make about heaven?
