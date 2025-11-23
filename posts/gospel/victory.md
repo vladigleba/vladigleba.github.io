@@ -4,6 +4,7 @@ description: Is it possible to have victory over the power of sin, or is forgive
 date: 2022-05-15
 series: Healing
 order: 2400
+featured: true
 ---
 
 ## What is God’s will regarding sin?

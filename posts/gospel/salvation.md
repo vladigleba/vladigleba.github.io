@@ -4,6 +4,7 @@ description: Because all have sinned, all are sitting on death row, whether we r
 date: 2021-12-18
 series: Salvation
 order: 600
+featured: true
 ---
 
 ## How did God demonstrate His love?
