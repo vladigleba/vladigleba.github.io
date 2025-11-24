@@ -20,7 +20,7 @@ featured: true
 > For this cause *the king was angry and very furious, and commanded to destroy all the wise men of Babylon*.
 {% ct 'Daniel 2:1-13' %}
 
-## Who then appeared before the king? What did he request?
+## Who then appeared before the king?
 
 > And the decree went forth that the wise men should be slain; and they sought Daniel and his fellows to be slain. … Then *Daniel went in, and desired of the king that he would give him time*, and that he would shew the king the interpretation.
 {% ct 'Daniel 2:13, 16' %}
