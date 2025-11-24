@@ -135,8 +135,8 @@
 /* Tablets and smaller screens */
 @media (max-width: 768px) {
   .control-wrapper {
-    max-width: 365px;
-    padding: 15px 25px;
+    max-width: 350px;
+    padding: 15px 0;
   }
 
   article,
@@ -265,7 +265,7 @@
 /* Small phones */
 @media (max-width: 480px) {
   .main-nav li {
-    padding: 5px 6px 3px;
+    padding: 5px 6px 3px !important;
   }
 
   article > header .series-links {
