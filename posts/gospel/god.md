@@ -25,7 +25,12 @@ It may be hard for our finite minds to comprehend—especially since none of us 
 > What? know ye not that your body is the temple of the Holy Ghost which is in you, which ye have of God, and *ye are not your own? For ye are bought with a price*: therefore glorify God in your body, and in your spirit, which are God’s.
 {% ct '1 Corinthians 6:19-20' %}
 
+> But now thus saith the LORD that created thee, O Jacob, and he that formed thee, O Israel, *Fear not: for I have redeemed thee, I have called thee by thy name; thou art mine*. When thou passest through the waters, I will be with thee; and through the rivers, they shall not overflow thee: when thou walkest through the fire, thou shalt not be burned; neither shall the flame kindle upon thee. For I am the LORD thy God, the Holy One of Israel, thy Saviour.
+{% ct 'Isaiah 43:1-3' %}
+
 Everything belongs to God first and foremost by creation, for nothing created itself. Humans belong to God both by creation and by redemption, for Jesus paid the price for our sin, thereby redeeming us from the power of death. In other words, we are doubly His: first because He gave us life, and second because He rescued us from certain death.
+
+Because He created us, He cares for us as a loving Father cares for His children. It may be astonishing—or even difficult to grasp—that the Creator and King of the universe cares for each of us personally, but it is absolutely true. When we feel abandoned or neglected, He sees us and is with us {% rf 'Isaiah 40:27-31; 41:10' %}. He keeps our hearts beating, provides for our needs, and has a solution for every crisis {% rf 'Acts 17:28; Matthew 6:26; 10:29-31; 2 Chronicles 16:9' %}. No matter the time or place, He is always only a prayer away {% rf 'Jeremiah 29:11-13' %}.
 
 ## Does God know all things?
 
@@ -187,10 +192,13 @@ After this opening declaration, God proceeds to spell out what His deliverance m
 
 God is glorified through the marvelous works of His creation: the awe-inspiring sunset, the starry skies on a clear night, the fragrant meadow filled with colorful flowers, the majestic snow-capped mountains, the birds singing their cheerful songs, and yes—the people once marred by sin who have permitted God to completely transform their characters so that they reflect His—the most magnificent wonder of all.
 
-## What is God’s character like?
+## What is His character like?
 
 > And we have known and believed the love that God hath to us. *God is love*; and he that dwelleth in love dwelleth in God, and God in him.
 {% ct '1 John 4:16' %}
+
+> The LORD hath appeared of old unto me, saying, Yea, *I have loved thee with an everlasting love*: therefore with lovingkindness have I drawn thee.
+{% ct 'Jeremiah 31:3' %}
 
 > And the LORD passed by before him, and proclaimed, The LORD, The LORD God, *merciful and gracious, longsuffering, and abundant in goodness and truth, keeping mercy for thousands, forgiving iniquity and transgression and sin, and that will by no means clear the guilty*; visiting the iniquity of the fathers upon the children, and upon the children’s children, unto the third and to the fourth generation.
 {% ct 'Exodus 34:6-7' %}
@@ -202,22 +210,7 @@ God is love, yet He is also perfectly just. He does not clear the guilty nor ove
 
 [^4]: It bears emphasizing: the wages of sin is *death*—[not eternal torment](/posts/basics/hell.md) in hell for a brief life of sin, [nor a continuation of life](/posts/basics/death.md) as a disembodied spirit. This death includes both the first and the second death, because all the dead, whether saved or lost, will be resurrected again. The saved will be resurrected at Christ’s second coming, never to die again, while the lost will be resurrected at the [end of the millennium](/posts/prophecy/millennium.md) for God’s final judgment.
 
-## How does He feel about me?
-
-> The LORD hath appeared of old unto me, saying, Yea, *I have loved thee with an everlasting love*: therefore with lovingkindness have I drawn thee.
-{% ct 'Jeremiah 31:3' %}
-
-## Am I ever alone?
-
-> Fear thou not; for *I am with thee*: be not dismayed; for I am thy God: *I will strengthen thee; yea, I will help thee; yea, I will uphold thee* with the right hand of my righteousness.
-{% ct 'Isaiah 41:10' %}
-
-> But now thus saith the LORD that created thee, O Jacob, and he that formed thee, O Israel, *Fear not: for I have redeemed thee, I have called thee by thy name; thou art mine*. When thou passest through the waters, *I will be with thee*; and through the rivers, they shall not overflow thee: when thou walkest through the fire, thou shalt not be burned; neither shall the flame kindle upon thee. *For I am the LORD thy God, the Holy One of Israel, thy Saviour*.
-{% ct 'Isaiah 43:1-3' %}
-
-The fact that the Creator and King of the universe cares about you personally is astounding and may be hard to believe because we live in a world where love does not reign supreme like it does in heaven, but it is absolutely true!
-
-## How faithful is God?
+## How faithful is He?
 
 > Let your conversation be without covetousness; and be content with such things as ye have: for he hath said, *I will never leave thee, nor forsake thee*.
 {% ct 'Hebrews 13:5' %}

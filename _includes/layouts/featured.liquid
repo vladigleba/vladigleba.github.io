@@ -1,43 +1,41 @@
-<div class="unified-card" style="background: {{ featured.data.color }}">
-  <div class="featured-card">
-    <div class="tag">Featured</div>
-    <h2 class="title">
-      <a href="{{ featured.url }}">{{ featured.data.title }}</a>
-    </h2>
-
-    <p class="featured-meta">
-      {{ featured.data.category }} <span>•</span>
-      {{ featured.data.length }} min read <span>•</span> 
-      <time datetime="{{ featured.data.updated | toISO }}">
-        {{ featured.data.updated | toLocal }}
-      </time>
-    </p>
-
-    <p class="featured-description">{{ featured.data.description }}</p>
+<div class="unified-card">
+  <div class="featured-card" style="background: {{ featured.data.color }}">
+    <a href="{{ featured.url }}" class="card-link">
+      <div class="tag">Featured</div>
+      <h2 class="title">{{ featured.data.title }}</h2>
+      <p class="description">{{ featured.data.description }}</p>
+      
+      <p class="details">
+        {{ featured.data.category }} <span>•</span>
+        {{ featured.data.length }} min read <span>•</span> 
+        <time datetime="{{ featured.data.updated | toISO }}">
+          {{ featured.data.updated | toLocal }}
+        </time>
+      </p>
+    </a>
   </div>
 
   <div class="secondary-section">
-    <div class="latest-card">
-      <div class="tag">Latest</div>
-      <h3 class="title">
-        <a href="{{ latest.url }}">{{ latest.data.title }}</a>
-      </h3>
+    <div class="latest-card" class="card-link">
+      <a href="{{ latest.url }}">
+        <div class="tag">Latest</div>
+        <h2 class="title">{{ latest.data.title }}</h2>
+        <p class="description">{{ latest.data.description }}</p>
 
-      <p class="latest-meta">
-        {{ latest.data.category }} <span>•</span>
-        {{ latest.data.length }} min read <span>•</span>
-        <time datetime="{{ latest.data.updated | toISO }}">
-          {{ latest.data.updated | toLocal }}
-        </time>
-      </p>
-
-      <p class="latest-description">{{ latest.data.description }}</p>
+        <p class="details">
+          {{ latest.data.category }} <span>•</span>
+          {{ latest.data.length }} min read <span>•</span>
+          <time datetime="{{ latest.data.updated | toISO }}">
+            {{ latest.data.updated | toLocal }}
+          </time>
+        </p>
+      </a>
     </div>
 
     <div class="coming-next-card">
       <div class="tag">Coming next</div>
-      <h3 class="title">Sabbath Rest in Jesus</h3>
-      <p class="latest-description">Learn how to receive righteousness and find Sabbath rest in Jesus by faith.</p>
+      <h2 class="title">Sabbath Rest in Christ</h2>
+      <p class="description">Go beyond mere physical Sabbath rest and discover how to find spiritual rest in the righteousness of Jesus by faith.</p>
     </div>
   </div>
 </div>

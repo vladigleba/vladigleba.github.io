@@ -4,6 +4,7 @@ description: Am I my own ruler? Or am I responsible to a higher Authority for th
 date: 2022-03-06
 series: Judgment
 order: 1600
+featured: true
 ---
 
 ## Has the judgment already begun?

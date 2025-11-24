@@ -4,6 +4,7 @@ description: Find out who stays behind and what happens on earth, as well as in 
 date: 2022-06-04
 series: Coming
 order: 1300
+featured: true
 ---
 
 ## What did Jesus promise before ascending to heaven?

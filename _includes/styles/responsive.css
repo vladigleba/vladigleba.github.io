@@ -5,6 +5,10 @@
   body > footer > div {
     width: 60%;
   }
+
+  .unified-card {
+    width: 25%;
+  }
 }
 
 /* 2K/QHD monitors */
@@ -17,6 +21,10 @@
   article > header > div,
   body > footer > div {
     width: 64%;
+  }
+
+  .unified-card {
+    width: 30%;
   }
 }
 
@@ -31,6 +39,10 @@
   body > footer > div {
     width: 68%;
   }
+
+  .unified-card {
+    width: 35%;
+  }
 }
 
 /* Full HD screens */
@@ -39,6 +51,10 @@
   article > header > div,
   body > footer > div {
     width: 72%;
+  }
+
+  .unified-card {
+    width: 40%;
   }
 }
 
@@ -49,6 +65,10 @@
   body > footer > div {
     width: 76%;
   }
+
+  .unified-card {
+    width: 50%;
+  }
 }
 
 /* Larger laptops */
@@ -57,6 +77,10 @@
   article > header > div,
   body > footer > div {
     width: 80%;
+  }
+
+  .unified-card {
+    width: 60%;
   }
 }
 
@@ -68,6 +92,10 @@
     width: 84%;
   }
 
+  .unified-card {
+    width: 70%;
+  }
+
   .wrapper {
     gap: 0rem;
   }
@@ -77,6 +105,10 @@
 @media (max-width: 1024px) {
   :root {
     --font-size: 18px;
+  }
+
+  .unified-card {
+    width: 80%;
   }
 
   .wrapper {
@@ -91,7 +123,6 @@
 
   .list {
     padding: 0 20px;
-    grid-template-columns: repeat(auto-fit, 380px);
   }
 
   article,
@@ -112,6 +143,10 @@
   article > header > div,
   body > footer > div {
     width: 92%;
+  }
+
+  .unified-card {
+    width: 90%;
   }
 
   article > header .series-links {
@@ -185,18 +220,31 @@
     grid-auto-rows: 125px;
   }
 
-  .list a {
+  .featured-card,
+  .latest-card,
+  .coming-next-card {
+    padding: 15px 30px;
+  }
+
+  .list a,
+  .unified-card .title {
     font-size: 28px;
+  }
+
+  .unified-card .description {
+    font-size: 18px;
   }
   
   .posts-sort select,
   .list p,
   .switch-label,
-  .stats {
+  .stats,
+  .unified-card .details {
     font-size: 17px;
   }
 
-  li .tag {
+  li .tag,
+  .unified-card .tag {
     font-size: 14px;
   }
 

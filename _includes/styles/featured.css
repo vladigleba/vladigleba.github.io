@@ -1,22 +1,29 @@
 .unified-card {
-  margin: 0 auto 150px;
+  margin: 0 auto 100px;
+  border: 1px solid var(--border-color);
   border-radius: var(--default-radius);
-  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   display: grid;
   grid-template-columns: 1fr;
-  width: 50%;
+  width: 45%;
+  text-align: center;
+}
+
+.unified-card .card-link {
+  cursor: pointer;
 }
 
 .featured-card,
 .featured-card a,
-.featured-card .tag {
+.featured-card .tag,
+.featured-card .details {
   color: white !important;
 }
 
 .featured-card,
 .latest-card,
 .coming-next-card {
-  padding: 40px 50px;
+  padding: 25px 40px;
 }
 
 .unified-card a {
@@ -24,13 +31,25 @@
 }
 
 .unified-card .tag {
-  font-weight: 600;;
-  text-transform: uppercase;
+  margin-bottom: 8px;
   color: var(--lighter-gray-color);
 }
 
 .unified-card .title {
-  padding: 10px 0;
+  font-weight: 500;
+}
+
+.unified-card .description {
+  line-height: 1.4;
+}
+
+.unified-card .description,
+.unified-card .details {
+  margin-top: 10px;
+}
+
+.unified-card .details {
+  color: var(--gray-color);
 }
 
 .secondary-section {
@@ -38,9 +57,14 @@
   grid-template-columns: 1fr;
 }
 
-/* Latest Card */
+.featured-card {
+  border-top-left-radius: var(--default-radius);
+  border-top-right-radius: var(--default-radius);
+}
+
 .latest-card {
   background: white;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .latest-card,
@@ -50,38 +74,7 @@
 }
 
 .coming-next-card {
-  border-top: 1px solid rgb(229 231 235);
-  background: rgb(249 250 251);
+  background: rgb(247 248 249);
   border-bottom-left-radius: var(--default-radius);
   border-bottom-right-radius: var(--default-radius);
-}
-
-/* Responsive Styles */
-@media (max-width: 968px) {
-    .unified-card {
-        gap: 0;
-        padding: 50px;
-    }
-
-    .featured-card {
-        margin: -50px -50px 40px -50px;
-        padding: 40px;
-        border-radius: 12px 12px 0 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .unified-card {
-        padding: 40px 30px;
-    }
-
-    .featured-card {
-        margin: -40px -30px 30px -30px;
-        padding: 35px;
-    }
-
-    .secondary-section {
-        display: flex;
-        gap: 25px;
-    }
 }

@@ -1,7 +1,8 @@
 .meta span,
-.list p span {
-  margin-left: 3px;
-  margin-right: 3px;
+.list p span,
+.details span {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .last-updated,
@@ -9,6 +10,12 @@
 li .tag,
 article > header .tag span {
   line-height: 1;
+}
+
+.unified-card .tag,
+li .tag {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 article,
