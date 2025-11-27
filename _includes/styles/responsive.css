@@ -135,7 +135,7 @@
 /* Tablets and smaller screens */
 @media (max-width: 768px) {
   .control-wrapper {
-    max-width: 350px;
+    max-width: 340px;
     padding: 15px 0;
   }
 
@@ -223,7 +223,7 @@
   .featured-card,
   .latest-card,
   .coming-next-card {
-    padding: 15px 30px;
+    padding: 20px 30px;
   }
 
   .list a,
@@ -243,6 +243,10 @@
     font-size: 17px;
   }
 
+  .stats {
+    gap: 35px;
+  }
+
   li .tag,
   .unified-card .tag {
     font-size: 14px;
@@ -257,7 +261,8 @@
 @media (max-width: 640px) {
   article,
   article > header > div,
-  body > footer > div {
+  body > footer > div,
+  .unified-card {
     width: 96%;
   }
 }

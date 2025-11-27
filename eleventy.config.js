@@ -257,7 +257,7 @@ module.exports = async (config) => {
     //   'Prophecy': [ /* only Prophecy posts/series */ ]
     // }
     // orderedPosts.highlightedPosts = {
-    //   featured: [ /* posts with featured: true */ ],
+    //   featured: [ /* posts with featured set to true */ ],
     //   latest: { /* most recent post by date */ }
     // }
   });

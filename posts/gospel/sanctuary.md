@@ -4,6 +4,7 @@ description: First introduced to Moses on Mount Sinai, the sanctuary offers deep
 color: rgb(128,69,154)
 date: 2022-11-11
 order: 1500
+featured: true
 ---
 
 ## Why did God tell Moses to build a sanctuary?

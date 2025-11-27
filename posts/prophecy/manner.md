@@ -4,6 +4,7 @@ description: Will His coming be a secret, or does the Bible tell a different sto
 date: 2022-01-11
 series: Coming
 order: 1200
+featured: true
 ---
 
 ## What did Jesus promise prior to His crucifixion?
