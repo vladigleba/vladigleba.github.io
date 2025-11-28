@@ -4,6 +4,7 @@ description: Is the Bible a fable, or is it the most trustworthy document we hav
 color: rgb(86, 152, 99)
 date: 2021-10-24
 order: 100
+featured: true
 ---
 
 ## How much of the Bible is inspired? By whom? For what purpose?

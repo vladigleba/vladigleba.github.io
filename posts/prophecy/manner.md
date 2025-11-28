@@ -1,6 +1,6 @@
 ---
 title: How Will Christ Come?
-description: Will His coming be a secret, or does the Bible tell a different story? The truth may shock you.
+description: Will His coming be secret, or does the Bible tell a different story? The truth may shock you.
 date: 2022-01-11
 series: Coming
 order: 1200

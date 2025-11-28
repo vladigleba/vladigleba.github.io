@@ -4,6 +4,7 @@ description: The book of James calls it the royal law of liberty. Can it even be
 color: rgb(77,104,129)
 date: 2022-03-28
 order: 1800
+featured: true
 ---
 
 ## How does the Bible describe the law of God?
@@ -314,8 +315,8 @@ The devil’s war against God and His law started in the courts of heaven and ha
   
 > Here is the patience of the saints: here are they that *keep the commandments of God, and the faith of Jesus*.
 {% ct 'Revelation 14:12' %}
-    
+
 > *Blessed are they that do his commandments*, that they may have right to the tree of life, and may enter in through the gates into the city.
 {% ct 'Revelation 22:14' %}
-    
+
 Those who are saved will be keeping the commandments of God, not because they are saved by doing so, but because of their love for Jesus.

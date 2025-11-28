@@ -1,7 +1,7 @@
 ---
 title: The Gospel in the Sanctuary
 description: First introduced to Moses on Mount Sinai, the sanctuary offers deep insights into God’s plan of salvation.
-color: rgb(128,69,154)
+color: rgb(121,62,147)
 date: 2022-11-11
 order: 1500
 featured: true
