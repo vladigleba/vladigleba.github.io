@@ -23,7 +23,7 @@
 .series-bar {
   display: flex;
   gap: 12px;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .series-segment {
