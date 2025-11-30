@@ -17,12 +17,14 @@
   {% for item in groupedPostsByCategory %}
     {% if item.type == 'standalone' %}
       {% render 'layouts/cards', 
-         post: item.post, 
+         post: item.post,
+         mode: 'standalone-list',
          site: site %}
     {% else %}
       {% for post in item.posts %}
         {% render 'layouts/cards', 
-           post: post, 
+           post: post,
+           mode: 'standalone-list',
            site: site %}
       {% endfor %}
     {% endif %}

@@ -41,9 +41,11 @@
   <p>
     {{ category }}
     {% unless isSeriesOverview %}
-      <span>•</span>
-      {{ data.length }} min read <span>•</span> 
-      <time datetime="{{ data.updated | toISO }}">{{ data.updated | toLocal }}</time>
+      {% if seriesInfo or mode == 'standalone-list' %}
+        <span>•</span>
+        {{ data.length }} min read <span>•</span> 
+        <time datetime="{{ data.updated | toISO }}">{{ data.updated | toLocal }}</time>
+      {% endif %}
     {% endunless %}
   </p>
   
