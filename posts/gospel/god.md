@@ -32,7 +32,18 @@ Everything belongs to God first and foremost by creation, for nothing created it
 
 Because He created us, He cares for us as a loving Father cares for His children. It may be astonishing—or even difficult to grasp—that the Creator and King of the universe cares for each of us personally, but it is absolutely true. When we feel abandoned or neglected, He sees us and is with us {% rf 'Isaiah 40:27-31; 41:10' %}. He keeps our hearts beating, provides for our needs, and has a solution for every crisis {% rf 'Acts 17:28; Matthew 6:26; 10:29-31; 2 Chronicles 16:9' %}. No matter the time or place, He is always only a prayer away {% rf 'Jeremiah 29:11-13' %}.
 
-## Does God know all things?
+## Is God omnipotent?
+
+> And all the inhabitants of the earth are reputed as nothing: and *he doeth according to his will in the army of heaven, and among the inhabitants of the earth: and none can stay his hand*, or say unto him, What doest thou?
+{% ct 'Daniel 4:35' %}
+
+> And he changeth the times and the seasons: *he removeth kings, and setteth up kings*: he giveth wisdom unto the wise, and knowledge to them that know understanding.
+{% ct 'Daniel 2:21' %}
+
+> I know that, *whatsoever God doeth, it shall be for ever: nothing can be put to it, nor any thing taken from it*: and God doeth it, that men should fear before him.
+{% ct 'Ecclesiastes 3:14' %}
+
+## Is God omniscient?
 
 > Great is our Lord, and of great power: *his understanding is infinite*.
 {% ct 'Psalm 147:5' %}
@@ -221,7 +232,7 @@ God is love, yet He is also perfectly just. He does not clear the guilty nor ove
 > That Christ may dwell in your hearts by faith; that ye, being rooted and grounded in love, may be able to comprehend with all saints what is the breadth, and length, and depth, and height; and to *know the love of Christ, which passeth knowledge*, that ye might be filled with all the fulness of God.
 {% ct 'Ephesians 3:17-19' %}
 
-It’s said that the bond between mother and child is the strongest human bond there is, but God’s love for you is actually even stronger. It knows no bounds.
+It is often said that the bond between a mother and her child is the strongest human bond there is, but God’s love for each of us is even stronger—far beyond what we can imagine. For this reason, all who are saved will be saved not because of anything they accomplish, but because they give the power of God’s love free rein to work and be manifested in their lives. All who commit themselves to Him—daily choosing His will over their own {% rf 'Luke 22:42; 1 Corinthians 15:31' %}—He will faithfully keep in His care, as He cleanses and transforms their character to reflect His own {% rf 'Philippians 1:6; Hebrews 12:2; Jude 1:24' %}.
 
 ## What is the psalmist’s response to Him?
 
@@ -232,3 +243,5 @@ It’s said that the bond between mother and child is the strongest human bond t
 
 > Daniel answered and said, Blessed be the name of God *for ever and ever*: for wisdom and might are his.
 {% ct 'Daniel 2:20' %}
+
+God’s name will be praised throughout the ceaseless ages of eternity. Why? Simply because of who He is.
