@@ -40,8 +40,13 @@ Because He created us, He cares for us as a loving Father cares for His children
 > And he changeth the times and the seasons: *he removeth kings, and setteth up kings*: he giveth wisdom unto the wise, and knowledge to them that know understanding.
 {% ct 'Daniel 2:21' %}
 
+> Ah Lord GOD! behold, *thou hast made the heaven and the earth by thy great power* and stretched out arm, and there is *nothing too hard for thee*.
+{% ct 'Jeremiah 32:17' %}
+
 > I know that, *whatsoever God doeth, it shall be for ever: nothing can be put to it, nor any thing taken from it*: and God doeth it, that men should fear before him.
 {% ct 'Ecclesiastes 3:14' %}
+
+God is omnipotent, yet He is not a tyrant; on the contrary, He sacrifices Himself for His creation. He carries out His will through His Word, which possesses creative power to accomplish what He declares {% rf 'Numbers 23:19; Isaiah 55:11' %}. His desire for Adam and Eve was that their descendants would inherit the earth as an everlasting possession {% rf 'Genesis 17:8; 48:4' %}, and although this has been delayed because of sin and death, it *will* ultimately be fulfilled {% rf 'Psalm 37:11; Matthew 5:5; Revelation 7:9-10' %}—at immeasurable cost to Himself—for His Word cannot fail. Remarkably, God brings His purposes to completion without violating anyone’s free will: all who desire to become His sons and daughters will inherit the land first given to Adam and Eve, reaffirmed to Abraham, and secured in Christ {% rf 'Genesis 1:26-28; 15:5-7; Galatians 3:16, 29; John 1:12-13' %}.
 
 ## Is God omniscient?
 

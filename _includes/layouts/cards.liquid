@@ -33,7 +33,21 @@
       Standalone
     {% endif %}
   </span></div>
-  
+
+  <div class="series-bar">
+    {% if isSeriesOverview %}
+      {% for p in series.posts %}
+        <div class="series-segment" style="background: {{ color }}"></div>
+      {% endfor %}
+    {% elsif seriesInfo %}
+      {% for p in seriesInfo.posts %}
+        <div class="series-segment" {% if forloop.index == seriesInfo.current %}style="background: {{ color }}"{% endif %}></div>
+      {% endfor %}
+    {% else %}
+      <div class="series-segment" style="background: {{ color }}"></div>
+    {% endif %}
+  </div>
+
   <a style="color: {{ color }}" href="{{ url }}">
     {{ title }}
   </a>
@@ -48,18 +62,4 @@
       {% endif %}
     {% endunless %}
   </p>
-  
-  <div class="series-bar">
-    {% if isSeriesOverview %}
-      {% for p in series.posts %}
-        <div class="series-segment" style="background: {{ color }}"></div>
-      {% endfor %}
-    {% elsif seriesInfo %}
-      {% for p in seriesInfo.posts %}
-        <div class="series-segment" {% if forloop.index == seriesInfo.current %}style="background: {{ color }}"{% endif %}></div>
-      {% endfor %}
-    {% else %}
-      <div class="series-segment" style="background: {{ color }}"></div>
-    {% endif %}
-  </div>
 </li>

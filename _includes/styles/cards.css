@@ -13,17 +13,17 @@
 .list li {
   grid-row: auto / span 1;
   grid-column: auto / span 1;
-  padding: 25px 25px 0 25px;
+  padding: 20px 25px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   color: var(--gray-color);
 }
 
 .series-bar {
   display: flex;
   gap: 12px;
-  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .series-segment {
@@ -35,17 +35,6 @@
 
 /* tag */
 
-li.featured,
-li.latest {
-  /* grid-row: auto / span 2; */
-  border-radius: var(--default-radius);
-}
-
-li.featured .tag,
-li.latest .tag {
-  color: white !important;
-}
-
 li .tag {
   border-radius: var(--default-radius);
   display: inline-block;
@@ -56,11 +45,6 @@ li .tag {
 li.featured .tag {
   background-color: var(--darker-gray-color);
   opacity: 0.8;
-}
-
-li.standalone-view .tag {
-  display: flex;
-  justify-content: center;
 }
 
 li.standalone-view .tag span {

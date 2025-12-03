@@ -46,7 +46,7 @@ God has given us certain principles because, as our Creator, He knows what is be
 
 Those who become followers of Christ become His ambassadors, representing Him wherever they go, whether in the family, at school, at work, or on vacation. Words and actions not only testify if the heart belongs to Christ, but they also have an influence on others. Jesus gave a solemn warning to Christians who are indifferent to their own example and influence {% rf 'Matthew 18:6' %} as did Paul {% rf 'Romans 14:7, 13' %}. When people saw the conduct of Peter and John it was obvious to them that they were different because they had been with Jesus. May our walk with Christ transform us in like manner to reflect His character to those we come in contact with {% rf 'Matthew 5:16' %}.
 
-## Does the Bible speak about worldliness?
+## Does the Bible say about worldliness?
 
 > *Love not the world, neither the things that are in the world. If any man love the world, the love of the Father is not in him*. For all that is in the world, the lust of the flesh, and the lust of the eyes, and the pride of life, is not of the Father, but is of the world. And the world passeth away, and the lust thereof: but he that doeth the will of God abideth for ever.
 {% ct '1 John 2:15-17' %}
@@ -60,7 +60,7 @@ Every sin falls into one of three categories: 1) the lust of the flesh, 2) the l
 
 Living in a world of sin brings pressure to conform to its ways, to be squeezed into its mold, but God’s goal is to transform us by renewing our minds through the truth of His Word {% rf 'John 17:17' %}.
 
-## Why does transformation start with the mind?
+## Why does transformation start in the mind?
 
 > For *as he thinketh* in his heart, *so is he*.
 {% ct 'Proverbs 23:7' %}
@@ -141,7 +141,7 @@ The ornaments God desires His people to wear are not outward ones; rather, it’
 
 God clearly shows His displeasure when His people, referred to as daughters of Zion, adorn themselves on the outside and lack the adornment that truly matters—the adornment of character.
 
-## What is jewelry associated with in the Bible?
+## What is jewelry associated with?
 
 > And I will visit upon her the days of Baalim, wherein she burned incense to them, and *she decked herself with her earrings and her jewels, and she went after her lovers, and forgat me*, saith the LORD.
 {% ct 'Hosea 2:13' %}
