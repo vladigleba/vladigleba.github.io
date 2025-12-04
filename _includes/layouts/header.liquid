@@ -1,18 +1,18 @@
 <h1 class="title">{{ title }}</h1>
 <p class="description">{{ description }}</p>
 <p class="meta tag">
-  <span>{{ category }}</span>
-  <span>{{ length }} min read</span>
-  <span class="post-last-updated">
+  {{ category }} <span>•</span>
+  {{ length }} min read <span>•</span>
+  <b class="post-last-updated">
     Updated <time datetime="{{ updated | toISO }}">{{ updated | toLocal }}</time>
-  </span>
+  </b>
 </p>
 
 {% if isSeries %}
   <div class="series-links">
     <h2 class="meta series">
-      <span class="title">{{ series_title }}</span>
-      <span class="fraction">{{ series.current }} of {{ series.total }}</span>
+      {{ series_title }} <span>•</span>
+      {{ series.current }} of {{ series.total }}
     </h2>
 
     <nav aria-label="Series navigation">

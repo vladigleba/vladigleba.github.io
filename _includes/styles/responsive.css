@@ -223,7 +223,8 @@
   .featured-card,
   .latest-card,
   .coming-next-card {
-    padding: 20px 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .list a,

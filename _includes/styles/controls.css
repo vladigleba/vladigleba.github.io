@@ -7,7 +7,7 @@
 /* stats */
 
 .stats {
-  margin: 0 auto 40px;
+  margin: 0 auto 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +38,7 @@
   justify-content: space-around;
   align-items: center;
   gap: 12px;
-  margin: 0 auto 40px;
+  margin: 0 auto 45px;
   flex-wrap: wrap;
   background: var(--light-background);
   border-radius: var(--default-radius);
