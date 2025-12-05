@@ -4,6 +4,7 @@ description: Knowingly or unknowingly, every person on earth is waging a losing 
 date: 2023-03-29
 series: Salvation
 order: 900
+featured: true
 ---
 
 ## What is the war of all wars?
