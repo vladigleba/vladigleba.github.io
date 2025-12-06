@@ -35,7 +35,7 @@ The Bible tells us that Jesus, our example, was a man of prayer. If He had a nee
 
 Jesus made it clear that our heavenly Father wants us to come to Him in prayer. He is more willing to grant our requests than parents are to give good gifts to their children. Of course, He doesn’t grant every request, but only those that will result in “good things” {% rf 'Matthew 7:11' %}—that is, those in harmony with His wise and loving will for us.
 
-## What is the right heart posture for prayer?
+## What heart posture is needed?
 
 > And he arose, and came to his father. But when he was yet a great way off, his father saw him, and had compassion, and ran, and fell on his neck, and kissed him. And the son said unto him, *Father, I have sinned against heaven, and in thy sight, and am no more worthy to be called thy son*.
 {% ct 'Luke 15:20-21' %}
@@ -84,7 +84,7 @@ It’s crucial to be fully surrendered to His will for our prayers to be effecti
 
 God will never force His will upon us, which is why surrender begins with the *willingness* to follow His will. It’s a choice we consciously make, giving Him permission to activate His will and power in our lives.
 
-## What should my prayers be focused on?
+## What should be the focus of prayer?
 
 > But *seek ye first the kingdom of God, and his righteousness*; and all these things shall be added unto you.
 {% ct 'Matthew 6:33' %}
@@ -133,7 +133,7 @@ Praying for others is another crucial part of our prayer life. When we pray for 
 
 Intercessory prayer, however, is not limited to those who are resistant to God. Jesus prayed for Peter—one of His own disciples—because He saw a blind spot in Peter’s life that Peter was unaware of. Moses prayed for the Israelites {% rf 'Numbers 21:7' %} and for his brother Aaron {% rf 'Deuteronomy 9:20' %}, and Job prayed for his friends {% rf 'Job 42:10' %}. Just as Jesus intercedes for us in the heavenly sanctuary {% rf 'Hebrews 7:25' %}, we, as His followers, are called to intercede for others.
 
-## What does intercessory prayer require?
+## What does intercession require?
 
 > Praying always with all prayer and supplication in the Spirit, and watching thereunto *with all perseverance* and supplication for all saints.
 {% ct 'Ephesians 6:18' %}

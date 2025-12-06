@@ -100,7 +100,7 @@ All I need to do to receive the Holy Spirit is ask God for it! He wants to besto
 
 A life that is filled with the Holy Spirit will produce the fruits of the Spirit, which are the attributes of Jesus, while the carnal, selfish nature will be crucified, or surrendered, to Christ. Notice that these are the fruits of the Spirit, not our own fruits, because we cannot produce them ourselves.
 
-## What does the Spirit have the power to do?
+## What does the Spirit have power to do?
 
 > And the earth was without form, and void; and darkness was upon the face of the deep. And the *Spirit of God moved upon the face of the waters*.
 {% ct 'Genesis 1:2' %}
@@ -151,7 +151,7 @@ The Holy Spirit will participate in the resurrection of God’s faithful followe
 
 The Holy Spirit bestows various spiritual gifts on believers to edify the members of the church as well as to minister to those outside of the church. These can be obvious miraculous talents, but they also include already existing ones that the Spirit then develops. The Holy Spirit distributes these gifts as He wills, and every believer receives at least one.
 
-## What does it mean to “speak in tongues”?
+## What does “speaking in tongues” mean?
 
 > And they were all filled with the Holy Ghost, and *began to speak with other tongues*, as the Spirit gave them utterance. And there were dwelling at Jerusalem Jews, devout men, *out of every nation under heaven*. Now when this was noised abroad, the multitude came together, and were confounded, because that *every man heard them speak in his own language*.
 >
@@ -186,7 +186,7 @@ In fact, Paul later warns that this quenching can lead to a delusion where error
 
 In {% rf 'Matthew 7:21' false %} Jesus says only those who do the will of His Father will enter the kingdom of heaven, so any teaching of “salvation in sin“ is not from God because it rejects the need of Jesus (as does “salvation by works“). A genuine acceptance of Jesus as Lord and Savior, that is motivated by love and gratitute, always leads to a changed lifestyle that is in harmony with His will, which is salvation *from* sin by faith in Jesus’ power to forgive, save, and transform {% rf '2 Corinthians 5:17; John 14:15' %}. Who choose to obey Him because we *are* saved, not *to be* saved.
 
-## What is blasphemy against the Holy Spirit?
+## What is blasphemy against the Spirit?
 
 > Wherefore I say unto you, All manner of sin and blasphemy shall be forgiven unto men: but the *blasphemy against the Holy Ghost shall not be forgiven unto men*. And whosoever speaketh a word against the Son of man, it shall be forgiven him: but whosoever speaketh against the Holy Ghost, it shall not be forgiven him, neither in this world, neither in the world to come.
 {% ct 'Matthew 12:31-32' %}
@@ -197,7 +197,7 @@ We’ve learned that one of the roles of the Holy Spirit is to convict us of sin
 
 It’s unknown how long it takes to reach the point of no return, but one thing is certain: it’s never safe to say “no” to the Holy Spirit. The only wise thing to do is to surrender to the convictions of the Spirit by confessing and forsaking the sin being pointed out {% rf '1 John 1:9' %}. By the way, if you feel concerned you have rejected the Holy Spirit then that is evidence you have not.
 
-## When should I act on the convictions of the Spirit?
+## Is it safe to ignore conviction?
 
 > *I made haste, and delayed not* to keep thy commandments.
 {% ct 'Psalm 119:60' %}
