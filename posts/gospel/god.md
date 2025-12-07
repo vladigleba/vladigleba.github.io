@@ -59,7 +59,9 @@ God is omnipotent, yet He is not a tyrant; on the contrary, He sacrifices Himsel
 > The LORD is *righteous in all his ways*, and holy in all his works.
 {% ct 'Psalm 145:17' %}
 
-Because God does not make mistakes, every human He created—from the moment of conception—matters, has a purpose, and is cherished {% rf 'Isaiah 49:1; Jeremiah 1:5' %}. There is no such thing as an expendable or inferior person—much less a group of people. No matter how negatively we may feel about ourselves or the direction of our lives, God is in the work of bringing freedom, healing, and restoration to lives are marred by bondage, brokenness, or despair {% rf 'Psalm 147:3; Joel 2:25-26; Isaiah 43:18-19; 61:1-3; Ezekiel 37:4-6' %}.
+Because God does not make mistakes, every human He created—from the moment of conception—matters, has a purpose, and is cherished {% rf 'Isaiah 49:1; Jeremiah 1:5' %}. Despite the widespread acceptance of Darwin’s ill-conceived “survival of the fittest” theory, there is no such thing as an expendable or inferior person—much less a group of people. This truth has profound implications for how we treat others as a society and as individuals—from those closest to us, to our enemies, to the unborn, to the homeless. Justice and law must always be respected, but even criminals deserve to be treated with human dignity.
+
+On a personal level, no matter how negatively we may feel about ourselves or the direction our life has taken, God is in the work of bringing healing, restoration, and freedom where there is brokenness, despair, and bondage {% rf 'Psalm 147:3; Joel 2:25-26; Isaiah 43:18-19; 61:1-3; Ezekiel 37:4-6' %}. The more hopeless the case, the stronger His desire to help.
 
 ## Can we fully comprehend Him?
 
@@ -124,7 +126,7 @@ Not only does God know the future, but He also [reveals it beforehand](/posts/pr
 
 But God’s foreknowledge has a personal dimension as well, for He knows our individual futures and prepares and equips us to face whatever trials may come our way. More than that, He walks with us through them {% rf 'Isaiah 43:1-2' %}, just as He walked through the fiery furnace with the three Hebrew worthies {% rf 'Daniel 3:22-25' %}, and just as He was in the boat with His disciples during the storm on the sea {% rf 'Mark 4:37-40' %}. As long as Jesus was with them, they were safe, for it was impossible for Him who made the sea to perish in it.[^3] When storms come into our own lives, we can rest in the promise that He will never allow us to be tempted beyond what we can bear {% rf '1 Corinthians 10:13' %}, and that whatever He does allow, He will ultimately work out for our good {% rf 'Romans 8:28' %}.
 
-[^3]: Waggoner, E. J. [“Carest Thou Not That We Perish?”](https://m.egwwritings.org/en/book/1544.683#683) The Signs of the Times, vol. 17, no. 38, 21 Sept. 1891.
+[^3]: Waggoner, E. J. [“Carest Thou Not That We Perish?”](https://m.egwwritings.org/en/book/1544.683#683) *The Signs of the Times*, vol. 17, no. 38, 21 Sept. 1891.
 
 ## What comfort does this bring?
 
@@ -271,14 +273,12 @@ God is love, yet He is also perfectly just. He does not clear the guilty nor ove
 
 It is often said that the bond between a mother and her child is the strongest human bond there is, but God’s love for each of us is even stronger—far beyond what we can imagine. For this reason, all who are saved will be saved not because of anything they accomplish, but because they give the power of God’s love free rein to work and be manifested in their lives. All who commit themselves to Him—daily choosing His will over their own {% rf 'Luke 22:42; 1 Corinthians 15:31' %}—He will faithfully keep in His care, as He cleanses and transforms their character to reflect His own {% rf 'Philippians 1:6; Hebrews 12:2; Jude 1:24' %}.
 
-## What is the psalmist’s response to Him?
-
-> *I will bless the LORD at all times*: his praise shall continually be in my mouth. My soul shall make her boast in the LORD: the humble shall hear thereof, and be glad. O *magnify the LORD with me, and let us exalt his name together*. I sought the LORD, and he heard me, and delivered me from all my fears.
-{% ct 'Psalm 34:1-4' %}
-
 ## Will His name ever cease to be blessed?
 
 > Daniel answered and said, Blessed be the name of God *for ever and ever*: for wisdom and might are his.
 {% ct 'Daniel 2:20' %}
+
+> *I will bless the LORD at all times*: his praise shall continually be in my mouth. My soul shall make her boast in the LORD: the humble shall hear thereof, and be glad. O magnify the LORD with me, and let us exalt his name together. I sought the LORD, and he heard me, and delivered me from all my fears.
+{% ct 'Psalm 34:1-4' %}
 
 God’s name will be praised throughout the ceaseless ages of eternity. Why? Simply because of who He is.

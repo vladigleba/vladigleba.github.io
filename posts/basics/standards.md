@@ -6,7 +6,7 @@ series: Life
 order: 3600
 ---
 
-## What is the main motivator in a Christian's life?
+## What is the main motivator in a Christian’s life?
 
 > But God commendeth his love toward us, in that, *while we were yet sinners, Christ died for us*.
 {% ct 'Romans 5:8' %}

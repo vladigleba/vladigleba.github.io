@@ -83,7 +83,7 @@ Aptly symbolized by a head of gold, Babylon was one of the most extravagant king
 
 Babylon was conquered by Cyrus in 539 BC, making the Medo-Persian Empire the next dominant power. Under its reign, all taxes were required to be paid in silver.
 
-## Did the Bible predict how Babylon would fall?
+## Did the Bible predict Babylon’s fall?
 
 > That saith to the deep, Be dry, and I will *dry up thy rivers*: that saith of *Cyrus*, He is my shepherd, and shall perform all my pleasure: even saying to Jerusalem, Thou shalt be built; and to the temple, Thy foundation shall be laid.
 {% ct 'Isaiah 44:27-28' %}
@@ -114,7 +114,7 @@ Daniel 8 is a parallel prophecy that repeats and expands on the one in Daniel 2,
 
 The iron monarchy of Rome conquered the Greeks in 168 BC and was the world power when Jesus was born. The legs of iron are a fitting symbol, as Rome’s long reign—lasting over 600 years—brought great persecution to God’s people.
 
-## What is represented by the feet of iron and clay?
+## What do the iron and clay feet represent?
 
 > And whereas thou sawest the feet and toes, part of potters’ clay, and part of iron, the *kingdom shall be divided*; but there shall be in it of the strength of the iron, forasmuch as thou sawest the iron mixed with miry clay. And as the toes of the feet were part of iron, and part of clay, so the *kingdom shall be partly strong, and partly broken*.
 {% ct 'Daniel 2:41-42' %}
@@ -128,9 +128,9 @@ When the Christian church started apostatizing, it sought to regain the power of
 
 [^1]: The mingling of church and state that began in the Roman Empire in AD 313 brought ruin upon the empire in the following century through the invasions of barbarian tribes. This church-state union was then reestablished under the papacy’s ecclesiastical empire in Europe, which lasted from AD 538 until 1798, when Napoleon Bonaparte’s general took Pope Pius VI captive. Although God’s judgment took longer to manifest than it did in the Roman Empire, it still came. A third and final installment of this union will occur just prior to Christ’s Second Coming—this time [in the United States](/posts/prophecy/usa.md)—and will then be imitated by the rest of the world. National and global ruin will once again be the inevitable result {% rf 'Daniel 2:34' %}.
 
-## What else is significant about the iron and clay mixture?
+## What else is significant about the feet?
 
-The iron-clay mixture in the feet forms the base upon which the entire image stands. This suggests that the blending of religion and government is, unfortunately, a fundamental feature throughout history, and that the union of apostate Christianity with civil power, specifically, is the culmination toward which history has been trending.[^2] Under the Babylonian, Medo-Persian, Grecian, and Roman empires, religion was deeply intertwined with the state, so much so that it became a civic duty rather than merely a personal matter. What is notable about the iron-clay mixture in the feet is that it represents a power claiming to be God’s church—one that ought to know better, especially since Jesus Himself said that His kingdom is not of this world {% rf 'John 18:36' %}, and that a clear separation between one’s duties to God and to the state must always be maintained {% rf 'Luke 20:25' %}.[^3]
+The iron-clay mixture in the feet forms the foundation upon which the entire image stands. This suggests that the union of apostate Christianity with civil power is the culmination toward which history has been trending.[^2] Under the Babylonian, Medo-Persian, Grecian, and Roman empires, religion was deeply intertwined with the state, so much so that it became a civic duty rather than merely a personal matter. What is notable about the iron-clay mixture in the feet is that it represents a power claiming to be God’s church—one that ought to know better, especially since Jesus Himself said that His kingdom is not of this world {% rf 'John 18:36' %}, and that a clear separation between one’s duties to God and to the state must always be maintained {% rf 'Luke 20:25' %}.[^3]
 
 In the pagan empires of Babylon, Persia, Greece, and Rome, the state was supreme over religion, using religion to support its authority. However, under the papal government symbolized by the feet, this pattern was reversed: religion was elevated above the state, using the *state* for its support. Thus, the mingling of religion and government in the pagan empires served as a precursor to the ultimate form of this union under the papacy.
 
@@ -155,9 +155,9 @@ The prophecy of Daniel 2 is expanded in Daniel 7: just as the image in Daniel 2 
 
 [^5]: The eighteen tribes were the Alemanni, Alans, Angles, Burgundians, Franks, Gepids, Heruli, Huns, Jutes, Lombards, Ostrogoths, Rugians, Saxons, Sciri, Suevi, Thuringians, Vandals, and Visigoths.
 
-## Will national divisions ever be abolished?
+## Will national divisions be abolished?
 
-Since the toes are the final portion of the image, the national divisions they symbolize will remain until the Second Coming of Christ, despite numerous attempts throughout history to reunite them. Leaders such as Charlemagne, Napoleon, Kaiser Wilhelm II, and Hitler all tried and failed to restore a fully unified empire. Even modern efforts, like the European Union, will not succeed. No power will ever rise again to unite all nations under a single empire, as Babylon, Medo-Persia, Greece, and Rome once did.[^6]
+Since the toes are the final portion of the image, the national divisions they symbolize will remain until the second coming of Christ, despite numerous attempts throughout history to abolish them. Leaders such as Charlemagne, Napoleon, Kaiser Wilhelm II, and Hitler all tried and failed to restore a fully unified empire. Even modern efforts, like the European Union, will not succeed. No power will ever rise again to unite all nations under a single empire, as Babylon, Medo-Persia, Greece, and Rome once did.[^6]
 
 [^6]: Revelation predicts that just before Christ’s return, all the nations of the world will unite to destroy God’s people, but God [will intervene](/posts/prophecy/usa.md#is-this-the-battle-of-armageddon) before their plans are carried out.
 
@@ -168,7 +168,7 @@ Since the toes are the final portion of the image, the national divisions they s
 
 The stone cut without hands represents Christ’s eternal kingdom, which will replace all earthly kingdoms at His return. Some have misapplied the symbolism of the stone to represent an earthly millennial kingdom established by His Church, but this cannot be the case, as the Bible teaches that the earth will be completely destroyed at His Second Coming and that the saved will be [caught up to heaven](/posts/prophecy/millennium.md). The stone, by the way, strikes the image at its feet, which indicates that Jesus will return during the time of the divided nations.
 
-## Are there other Bible references to Christ’s kingdom?
+## Any other Bible references to Christ’s kingdom?
 
 > Ask of Me, and *I will give You the nations for Your inheritance*, and the ends of the earth for Your possession. You shall break them with a rod of iron; *You shall dash them to pieces like a potter’s vessel*.
 {% ct 'Psalm 2:8-9, NKJV' %}

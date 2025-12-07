@@ -177,7 +177,7 @@ As Satan works to deceive the world into compromising with error by casting asid
 
 [^12]: It may seem improbable that people’s eternal destiny will be determined by the day they choose to observe, but God often uses simple means to test our loyalty; affter all, Adam and Eve were expelled from the Garden for eating fruit from the wrong tree. Of course, the fruit was merely the means of settling a far greater issue—trust. Would Adam and Eve trust God or Satan? In the same way, the day of worship will represent the far greater issue of *authority*. Every person will have to decide: Whom will I acknowledge as the ultimate authority over my life—God or Satan?
 
-## Who is the false prophet of Revelation 16:13?
+## Who is the false prophet?
 
 > And I saw three unclean spirits like frogs come out of the mouth of the dragon, and out of the mouth of the beast, and *out of the mouth of the false prophet*.
 {% ct 'Revelation 16:13' %}
