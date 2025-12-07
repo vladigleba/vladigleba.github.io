@@ -6,7 +6,7 @@ series: Life
 order: 3600
 ---
 
-## What is the primary motivator in a Christian’s life?
+## What is the main motivator in a Christian's life?
 
 > But God commendeth his love toward us, in that, *while we were yet sinners, Christ died for us*.
 {% ct 'Romans 5:8' %}
@@ -33,7 +33,7 @@ Love for one’s spouse leads to a desire to please. That which is pleasing is p
 
 God has given us certain principles because, as our Creator, He knows what is best for us. The enemy tries to portray these principles as legalistic and dull, because he wants us to stay away from them, but the truth is following them brings fullness of joy into the life. They are for our own good {% rf 'Deuteronomy 6:24' %}, safeguarding us from the danger of sin {% rf 'Psalm 119:11' %}, while also giving us the opportunity to express our love for Christ as we follow His example {% rf 'John 14:15' %}.
 
-## What is my responsibility as a Christian?
+## What responsibility does a Christian have?
 
 > Now then *we are ambassadors for Christ*, as though God did beseech you by us: we pray you in Christ’s stead, be ye reconciled to God.
 {% ct '2 Corinthians 5:20' %}
@@ -60,7 +60,7 @@ Every sin falls into one of three categories: 1) the lust of the flesh, 2) the l
 
 Living in a world of sin brings pressure to conform to its ways, to be squeezed into its mold, but God’s goal is to transform us by renewing our minds through the truth of His Word {% rf 'John 17:17' %}.
 
-## Why does transformation start in the mind?
+## Where does transformation start?
 
 > For *as he thinketh* in his heart, *so is he*.
 {% ct 'Proverbs 23:7' %}
@@ -68,7 +68,7 @@ Living in a world of sin brings pressure to conform to its ways, to be squeezed 
 > But we all, with open face *beholding as in a glass the glory of the Lord, are changed into the same image from glory to glory*, even as by the Spirit of the Lord.
 {% ct '2 Corinthians 3:18' %}
 
-Thoughts turn into words, which turn into actions, which turn into habits, which become a part of character. Satan knows that we become what we repeatedly behold, which is why he has a myriad of ways to influence our thoughts through our five senses, but especially sight and hearing. Because we become what we see and hear, we are invited to behold the glory of God’s character by daily reading His letter to us—the Bible—so that we may become more like Him.
+Transformation starts in the mind: thoughts turn into words, words into actions, actions into habits, and habits into character. Satan knows that we become what we repeatedly behold, which is why he has a myriad of ways to influence our thoughts through our five senses, but especially sight and hearing. Because we become what we see and hear, we are invited to behold the glory of God’s character by daily reading His letter to us—the Bible—so that we may become more like Him.
 
 ## What should I think about?
 
@@ -120,7 +120,7 @@ Instead of beholding vanity or violence, which are displeasing to God, we are in
 
 Sin has so perverted our sensibility to what is right and wrong that, without God drawing a clear distinction between the two in His Word, we are incapable of making the distinction ourselves. The key question He would like us to ask is will this music, movie, TV show, or book honor You?
 
-## What principles does God give regarding clothing?
+## How should I dress?
 
 > In like manner also, that the women adorn themselves *in modest apparel, with propriety and moderation*, not with braided hair or gold or pearls or costly clothing, but, which is proper for women professing godliness, with good works.
 {% ct '1 Timothy 2:9-10, NKJV' %}
@@ -177,7 +177,7 @@ The apostate chuch of Revelation, having abandoned her loyalty to Jesus Christ, 
 
 We obey Him *because* we are saved, not *to be* saved. The Bible is clear we are saved by God’s grace through faith {% rf 'Ephesians 2:8' %}, and because there is nothing we can do to be saved, when we accept His free gift of redemption from sin, we develop gratitude and love for Jesus that naturally makes us want to please Him, just as Jesus lived to please His Father in everything He did {% rf 'John 8:29' %}. For a person who genuinely loves Christ it’s a joy to discover His will in the Bible and to follow it in all areas of life. A conversion without a transformation of character or change in lifestyle, on the other hand, is most likely not genuine because faith without works is dead. A tree is known by its fruit, and genuine faith will produce a life that is obedient to Christ in an expression of love for Him.
 
-## Will everyone understand the Christian lifestyle?
+## Is the Christian life appealing to all?
 
 > But the natural man *receiveth not the things of the Spirit of God: for they are foolishness unto him*: neither can he know them, because they are *spiritually discerned*.
 {% ct '1 Corinthians 2:14' %}
@@ -185,7 +185,7 @@ We obey Him *because* we are saved, not *to be* saved. The Bible is clear we are
 > For *they that are after the flesh do mind the things of the flesh; but they that are after the Spirit the things of the Spirit*. For to be carnally minded is death; but to be spiritually minded is life and peace. Because *the carnal mind is enmity against God: for it is not subject to the law of God, neither indeed can be*. So then they that are in the flesh cannot please God.
 {% ct 'Romans 8:5-8' %}
 
-The principles of Jesus are for those who are looking to be led by His Spirit. The world lacks spiritual discernment, so it will consider the things of God as foolishness. In fact, uncoverted people would be find heaven a bore because their love for worldy things could never be satisfied. This is why Jesus wants to change our tastes here on earth by calling us to be separate from the world {% rf '2 Corinthians 6:17' %} because the truth is we cannot serve two masters {% rf 'Matthew 6:24' %}.
+The principles of Jesus are for those who are looking to be led by His Spirit. The world lacks spiritual discernment, so it will consider the things of God as foolishness. In fact, unconverted people would find heaven a bore because their love for worldly things could never be satisfied. This is why Jesus wants to change our tastes here on earth by calling us to be separate from the world {% rf '2 Corinthians 6:17' %} because the truth is we cannot serve two masters {% rf 'Matthew 6:24' %}.
 
 Many try to follow Christ while staying as close as possible to the world, but a house divided against itself cannot stand {% rf 'Matthew 12:25' %}. Moreover, Jesus will never withhold from us anything that is good {% rf 'Psalm 84:11' %} but only those things that are harmful. We may not always understand why He asks us to do certain things, but motivated by love, we can give Him the benefit of the doubt, trusting that He always has our best interest in mind.
 

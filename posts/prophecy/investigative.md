@@ -150,7 +150,7 @@ This is why Peter says the judgment begins with the “house of God,” meaning 
 
 After Jesus takes the saved to heaven, they will participate in the [second phase](/posts/prophecy/millennium.md) of the judgment, during which the life of every lost person, including Satan and his angels, will be examined and all questions will be answered. Ultimately, the saved will agree that Jesus’ judgments were not arbitrary, but just and true {% rf 'Revelation 15:3' %}. They will see that Jesus only confirms the decision that has already been made in a person’s heart to either serve Him or another {% rf 'Revelation 22:11-12' %}.
 
-## When is the third phase of the judgment?
+## When is the third phase?
 
 > And I saw a great white throne, and him that sat on it, from whose face the earth and the heaven fled away; and there was found no place for them. And I* saw the dead, small and great, stand before God*; and the books were opened: and another book was opened, which is the book of life: and *the dead were judged out of those things which were written in the books, according to their works*.
 {% ct 'Revelation 20:11-12' %}
@@ -172,7 +172,7 @@ In the end, God will honor the choices of Satan, his angels, and all people who 
 
 Ultimately, this is an act of mercy because sin only leads to pain, suffering, and sorrow; nevertheless, the act will bring immeasurable anguish to the heart of God {% rf 'Ezekiel 33:11' %} because these are people whom He loved so much that He sent His only Son to die for them {% rf 'John 3:16' %}. No doubt Jesus will weep over those whom He wanted to save. Guardian angels will likely weep over the ones they served to protect. It will be a time of immense sorrow for the saved as well because it’s likely many will have a loved one in the fire. The good news is the fire [does not burn forever](/posts/basics/hell.md). The pain and suffering will come to an end, and God will create a new earth on which He will dwell with His people {% rf 'Revelation 21:1-5' %}. The harmony that existed between Adam, Eve, and their Creator will be restored, and sin will never rise up again {% rf 'Nahum 1:9' %}!
 
-## What is the good news about the judgment?
+## What good news do we have?
 
 > There is therefore now *no condemnation to them which are in Christ Jesus*, who walk not after the flesh, but after the Spirit.
 {% ct 'Romans 8:1' %}
