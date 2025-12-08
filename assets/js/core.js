@@ -264,7 +264,10 @@ if (document.body.classList.contains('js-enabled')) {
           // extract footnote number from id
           const numMatch = id.match(/(\d+)/);
           const num = numMatch ? numMatch[1] : '';
-          html = `<strong>Footnote ${num}</strong><br>${contentHtml}`;
+          html = `
+            <strong>Footnote ${num}</strong><br>
+            ${contentHtml}<br>
+            <a href="#" class="see-all-footnotes">Go to all footnotes</a>`;
           announceToLiveRegion(`Footnote ${num} opened`);
         } else {
           html = '<strong>Footnote</strong><br>Not found.';
@@ -273,6 +276,19 @@ if (document.body.classList.contains('js-enabled')) {
 
         showPopup(html, link);
       });
+    });
+
+    // handle "see all footnotes" links
+    document.addEventListener('click', (e) => {
+      if (e.target.classList.contains('see-all-footnotes')) {
+        e.preventDefault();
+        closePopup();
+        const footnotes = document.querySelector('.footnotes');
+        if (footnotes) {
+          footnotes.scrollIntoView({ behavior: 'smooth' });
+          footnotes.focus();
+        }
+      }
     });
 
     //#endregion
