@@ -7,6 +7,23 @@ order: 200
 featured: true
 ---
 
+## Is God triune?
+
+> For there are three that bear record in heaven, *the Father, the Word, and the Holy Ghost*: and these three are *one*.
+{% ct '1 John 5:7' %}
+
+> Go ye therefore, and teach all nations, baptizing them in the name of *the Father, and of the Son, and of the Holy Ghost*.
+{% ct 'Matthew 28:19' %}
+
+> How much more shall the blood of *Christ*, who through the eternal *Spirit* offered himself without spot to *God*, purge your conscience from dead works to serve the living God?
+{% ct 'Hebrews 9:14' %}
+
+The Godhead consists of three distinct persons: God the Father, God the Son, and God the Holy Spirit. Though distinct, they are one in nature, character, purpose, and will. In this article, when I use the term *God*, I am referring specifically to the Father, because Scripture presents Him as holding the highest authority within the Godhead {% rf 'John 14:28' %}, though the term is equally appropriate for the Son and the Holy Spirit.
+
+The Father’s position of highest authority indicates a hierarchy within the Godhead.[^1] For example, the Father sent the Son {% rf 'John 17:3' %}, and both the Father and the Son send the Holy Spirit {% rf 'John 14:26; 15:26' %}, yet the Holy Spirit does not send the Son or the Father. This order reflects voluntary, loving submission, not inequality, for the Son and the Holy Spirit are not coerced, nor is their divinity diminished in any way. All three are fully and equally God.
+
+[^1]: A similar hierarchy exists among the angels, as well as within the church and the family.
+
 ## Does God have a beginning or end?
 
 > Before the mountains were brought forth, or ever thou hadst formed the earth and the world, even *from everlasting to everlasting*, thou art God.
@@ -76,11 +93,11 @@ On a personal level, no matter how negatively we may feel about ourselves or the
 
 A finite human mind cannot comprehend the infinite God. At the same time, He has not left us to walk in blind ignorance but has revealed everything we need to know about Him—first and foremost in His Word. Yet that is not all, for we can also learn about Him through the things He has made. The starry skies, the breathtaking landscapes, and the plant and animal kingdoms all give us glimpses of their Maker. We are saved by faith, but He does not expect us to operate on blind faith, for He has given us abundant evidence on which to base our belief. In fact, it often takes more faith to accept human theories than to trust the biblical record.
 
-Even so, the need for faith is never removed entirely, for those who wish to doubt will always find room to do so. After all, apart from the thirty-three years of Christ’s earthly life, God has been—and still is—unseen.[^1] Yet His fingerprints are everywhere, not only in nature, but also in the Bible’s divine design, especially in the prophecies that foretell events thousands of years in advance. His providence—His guiding hand—in the history of nations, in the story of His church,[^2] and in the lives of individuals likewise testifies that He is deeply invested in and actively involved with humanity.
+Even so, the need for faith is never removed entirely, for those who wish to doubt will always find room to do so. After all, apart from the thirty-three years of Christ’s earthly life, God has been—and still is—unseen.[^2] Yet His fingerprints are everywhere, not only in nature, but also in the Bible’s divine design, especially in the prophecies that foretell events thousands of years in advance. His providence—His guiding hand—in the history of nations, in the story of His church,[^3] and in the lives of individuals likewise testifies that He is deeply invested in and actively involved with humanity.
 
-[^1]: According to {% rf 'Revelation 18:1' false %}, just before the second coming of Christ, the world will see a visible manifestation of God’s character (His glory) in the lives of His followers.
+[^2]: According to {% rf 'Revelation 18:1' false %}, just before the second coming of Christ, the world will see a visible manifestation of God’s character (His glory) in the lives of His followers.
 
-[^2]: In {% rf 'Matthew 16:18' false %}, Jesus declared that the gates of hell would not prevail against His church. Consider that He entrusted the establishment of His church to a small group of twelve disciples, who faced intense persecution from the Jewish authorities; that their converts would then endure the persecutions of the Roman Empire; and that, during the Dark Ages, much of the Christian church would apostatize and even persecute those who refused to compromise the pure faith. What, then, are the chances that [a remnant](/posts/prophecy/remnant.md) of His church would still exist two thousand years later if it were not for His providence?
+[^3]: In {% rf 'Matthew 16:18' false %}, Jesus declared that the gates of hell would not prevail against His church. Consider that He entrusted the establishment of His church to a small group of twelve disciples, who faced intense persecution from the Jewish authorities; that their converts would then endure the persecutions of the Roman Empire; and that, during the Dark Ages, much of the Christian church would apostatize and even persecute those who refused to compromise the pure faith. What, then, are the chances that [a remnant](/posts/prophecy/remnant.md) of His church would still exist two thousand years later if it were not for His providence?
 
 ## Is God omniscient?
 
@@ -124,9 +141,9 @@ As our Creator, God knows us better than we know ourselves. Just as there is no 
 
 Not only does God know the future, but He also [reveals it beforehand](/posts/prophecy/europe.md)—to strengthen our faith in Him and to prepare us for what is to come. The Bible is full of prophecy for this very reason.
 
-But God’s foreknowledge has a personal dimension as well, for He knows our individual futures and prepares and equips us to face whatever trials may come our way. More than that, He walks with us through them {% rf 'Isaiah 43:1-2' %}, just as He walked through the fiery furnace with the three Hebrew worthies {% rf 'Daniel 3:22-25' %}, and just as He was in the boat with His disciples during the storm on the sea {% rf 'Mark 4:37-40' %}. As long as Jesus was with them, they were safe, for it was impossible for Him who made the sea to perish in it.[^3] When storms come into our own lives, we can rest in the promise that He will never allow us to be tempted beyond what we can bear {% rf '1 Corinthians 10:13' %}, and that whatever He does allow, He will ultimately work out for our good {% rf 'Romans 8:28' %}.
+But God’s foreknowledge has a personal dimension as well, for He knows our individual futures and prepares and equips us to face whatever trials may come our way. More than that, He walks with us through them {% rf 'Isaiah 43:1-2' %}, just as He walked through the fiery furnace with the three Hebrew worthies {% rf 'Daniel 3:22-25' %}, and just as He was in the boat with His disciples during the storm on the sea {% rf 'Mark 4:37-40' %}. As long as Jesus was with them, they were safe, for it was impossible for Him who made the sea to perish in it.[^4] When storms come into our own lives, we can rest in the promise that He will never allow us to be tempted beyond what we can bear {% rf '1 Corinthians 10:13' %}, and that whatever He does allow, He will ultimately work out for our good {% rf 'Romans 8:28' %}.
 
-[^3]: Waggoner, E. J. [“Carest Thou Not That We Perish?”](https://m.egwwritings.org/en/book/1544.683#683) *The Signs of the Times*, vol. 17, no. 38, 21 Sept. 1891.
+[^4]: Waggoner, E. J. [“Carest Thou Not That We Perish?”](https://m.egwwritings.org/en/book/1544.683#683) *The Signs of the Times*, vol. 17, no. 38, 21 Sept. 1891.
 
 ## What comfort does this bring?
 
@@ -156,9 +173,9 @@ God’s foreknowledge does not negate anyone’s freedom of choice. He respects 
 
 Love is often expressed most vividly under trying circumstances. If God had created only angels whom He knew would remain loyal to Him, He would have limited Himself to a love that lacked depth—one that had never been “tried in the fire.” And a shallow expression of love can awaken only the same love in return. But God desires to reveal a love that “passeth knowledge” {% rf 'Ephesians 3:19' %}. Satan’s fall provided God an opportunity to display a love—by offering His Son for the sins of a rebellious world—that would never have been possible otherwise. This love, in turn, awakens a far greater love and devotion, not only from the redeemed human race but also from the angels who remained loyal to Him.
 
-God’s respect for freedom of choice dismantles the idea of predestination—of God predetermining who will be saved or lost.[^4] Imagine a pilot flying over a long, dark, one-way tunnel as two cars enter from opposite ends—both without headlights. The pilot knows disaster will soon follow, but his foreknowledge in no way impedes or imposes itself upon the drivers’ choice to enter that tunnel. Predestination is a dangerous teaching because it can lead people to live as though their decisions and actions do not matter, believing their destiny has already been determined. Scripture, however, teaches the exact opposite: our words and actions do matter, for we will be [held accountable](/posts/prophecy/judgment.md) for them {% rf 'Matthew 12:36; Romans 14:12; Revelation 22:12' %}.
+God’s respect for freedom of choice dismantles the idea of predestination—of God predetermining who will be saved or lost.[^5] Imagine a pilot flying over a long, dark, one-way tunnel as two cars enter from opposite ends—both without headlights. The pilot knows disaster will soon follow, but his foreknowledge in no way impedes or imposes itself upon the drivers’ choice to enter that tunnel. Predestination is a dangerous teaching because it can lead people to live as though their decisions and actions do not matter, believing their destiny has already been determined. Scripture, however, teaches the exact opposite: our words and actions do matter, for we will be [held accountable](/posts/prophecy/judgment.md) for them {% rf 'Matthew 12:36; Romans 14:12; Revelation 22:12' %}.
 
-[^4]: Jacobus Arminius was a 16th-century Dutch Reformer who rediscovered the biblical teaching of free will, now known as Arminianism. He rejected both the Calvinist doctrine of predestination and the idea that all will ultimately be saved (Universalism).
+[^5]: Jacobus Arminius was a 16th-century Dutch Reformer who rediscovered the biblical teaching of free will, now known as Arminianism. He rejected both the Calvinist doctrine of predestination and the idea that all will ultimately be saved (Universalism).
 
 ## Is He the source of all wisdom?
 
@@ -187,11 +204,11 @@ After Adam and Eve ate from the tree of the knowledge of good and evil, humanity
 > *Neither is there salvation in any other*: for there is none other name under heaven given among men, whereby we must be saved.
 {% ct 'Acts 4:12' %}
 
-There are countless gods across the world’s religions, but the Bible declares that there is only one true God,[^5] that there is salvation in no other, and that one fallen angel—Satan—wages war against Him for the worship of humanity. Though Satan aspires to [be like God](/posts/gospel/evil.md) {% rf 'Isaiah 14:12-14' %}, he is—and will always remain—a created being {% rf 'Ezekiel 28:15' %}. Since Satan especially covets the worship that belongs to God alone (though not His character, interestingly enough), it is unsurprising that, just before the second coming of Christ, the great test that will divide all humanity into two groups will [revolve around worship](/posts/prophecy/usa.md).
+There are countless gods across the world’s religions, but the Bible declares that there is only one true God,[^6] that there is salvation in no other, and that one fallen angel—Satan—wages war against Him for the worship of humanity. Though Satan aspires to [be like God](/posts/gospel/evil.md) {% rf 'Isaiah 14:12-14' %}, he is—and will always remain—a created being {% rf 'Ezekiel 28:15' %}. Since Satan especially covets the worship that belongs to God alone (though not His character, interestingly enough), it is unsurprising that, just before the second coming of Christ, the great test that will divide all humanity into two groups will [revolve around worship](/posts/prophecy/usa.md).
 
 God’s exclusive claim to divinity completely extinguishes the idea that mankind possesses inherent divinity or could attain it through practices such as yoga, mantra recitation, energy healing, or various Eastern meditation techniques. We are—and always will be—created beings. God does promise to [bestow His character](/posts/basics/change.md#what-role-will-the-law-play-in-the-last-days) upon His followers (and what an honor that is), but we will never be divine—not even in heaven. The redeemed will live forever in heaven, not because they are immortal, but because God, who alone is immortal {% rf '1 Timothy 6:15-16' %}, sustains their life.
 
-[^5]: God’s declaration that He is the only true God may seem politically incorrect in an ecumenical world trending toward unity among religions. After all, what gives Him the right to make such a bold and exclusive claim? What sets the Christian God apart from all other gods is the fact that Jesus is the only One who died for His creation. What other god set aside his divine nature, took on the nature of his created beings, and died at their hands and for their sins? There is only One.
+[^6]: God’s declaration that He is the only true God may seem politically incorrect in an ecumenical world trending toward unity among religions. After all, what gives Him the right to make such a bold and exclusive claim? What sets the Christian God apart from all other gods is the fact that Jesus is the only One who died for His creation. What other god set aside his divine nature, took on the nature of his created beings, and died at their hands and for their sins? There is only One.
 
 ## How did God create the universe?
 
@@ -256,9 +273,9 @@ God is glorified through the marvelous works of His creation: the awe-inspiring 
 > To declare, I say, at this time his righteousness: *that he might be just, and the justifier* of him which believeth in Jesus.
 {% ct 'Romans 3:26' %}
 
-God is love, yet He is also perfectly just. He does not clear the guilty nor overlook sin, but takes that guilt and sin upon Himself, offering the sinner a second chance {% rf 'John 8:11' %}. He is patient, yet not indulgent—willing to chasten as a loving Father would, always for our eternal good. Never one to use force or coercion, He gently draws us into a relationship with Him, yet He honors our freedom if we continually resist. He is our heavenly Father who risked everything to spend eternity with His beloved sons and daughters. But because He is also just, all who refuse His free offer of life in Christ must bear the consequence of their sin themselves—the forfeiture of their lives—for the wages of sin is death {% rf 'Romans 6:23' %}.[^6] Yet this is not God’s desire for anyone, for Christ has already borne this death on our behalf!
+God is love, yet He is also perfectly just. He does not clear the guilty nor overlook sin, but takes that guilt and sin upon Himself, offering the sinner a second chance {% rf 'John 8:11' %}. He is patient, yet not indulgent—willing to chasten as a loving Father would, always for our eternal good. Never one to use force or coercion, He gently draws us into a relationship with Him, yet He honors our freedom if we continually resist. He is our heavenly Father who risked everything to spend eternity with His beloved sons and daughters. But because He is also just, all who refuse His free offer of life in Christ must bear the consequence of their sin themselves—the forfeiture of their lives—for the wages of sin is death {% rf 'Romans 6:23' %}.[^7] Yet this is not God’s desire for anyone, for Christ has already borne this death on our behalf!
 
-[^6]: It bears emphasizing: the wages of sin is *death*—[not eternal torment](/posts/basics/hell.md) in hell for a brief life of sin, [nor a continuation of life](/posts/basics/death.md) as a disembodied spirit. This death includes both the first and the second death, because all the dead, whether saved or lost, will be resurrected again. The saved will be resurrected at Christ’s second coming, never to die again, while the lost will be resurrected at the [end of the millennium](/posts/prophecy/millennium.md) for God’s final judgment.
+[^7]: It bears emphasizing: the wages of sin is *death*—[not eternal torment](/posts/basics/hell.md) in hell for a brief life of sin, [nor a continuation of life](/posts/basics/death.md) as a disembodied spirit. This death includes both the first and the second death, because all the dead, whether saved or lost, will be resurrected again. The saved will be resurrected at Christ’s second coming, never to die again, while the lost will be resurrected at the [end of the millennium](/posts/prophecy/millennium.md) for God’s final judgment.
 
 ## How faithful is He?
 
