@@ -58,7 +58,8 @@ article > header p {
   font-size: 18px;
 }
 
-.footnotes {
+.footnotes,
+article > header .meta.series {
   font-size: 17px;
 }
 
