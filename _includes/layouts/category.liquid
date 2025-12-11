@@ -10,6 +10,7 @@
       render 'layouts/featured',
       featured: randomFeatured,
       latest: allPosts.highlightedPosts.latest 
+      showComingNextCard: site.showComingNextCard
     %}
   {% endif %}
 
@@ -23,6 +24,6 @@
   {% 
     render 'layouts/lists',
     groupedPostsByCategory: groupedPostsByCategory,
-    site: site
+    site: site.series
   %}
 </div>

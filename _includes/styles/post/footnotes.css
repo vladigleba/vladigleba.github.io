@@ -4,7 +4,7 @@
 
 .footnotes {
   position: relative;
-  padding: 55px 0 15px;
+  padding: 60px 0 15px;
 }
 
 .footnotes::before {
@@ -12,7 +12,7 @@
   display: block;
   position: absolute;
   left: 0;
-  top: 40px;
+  top: 45px;
   width: 20%;
   height: 1px;
   background-color: black;

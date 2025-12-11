@@ -30,10 +30,12 @@
       </a>
     </div>
 
-    <div class="coming-next-card">
-      <div class="tag">Coming next</div>
-      <h2 class="title">Sabbath Rest in Christ</h2>
-      <p class="description">Go beyond mere physical Sabbath rest and discover how to find spiritual rest in the righteousness of Jesus by faith.</p>
-    </div>
+    {% if showComingNextCard %}
+      <div class="coming-next-card">
+        <div class="tag">Coming next</div>
+        <h2 class="title">Sabbath Rest in Christ</h2>
+        <p class="description">Go beyond mere physical Sabbath rest and discover how to find spiritual rest in the righteousness of Jesus by faith.</p>
+      </div>
+    {% endif %}
   </div>
 </div>

@@ -50,7 +50,12 @@ The reason why the fourth commandment invites me to keep the Sabbath day holy is
 > And he said unto them, *The sabbath was made for man*, and not man for the sabbath: therefore the Son of man is Lord also of the sabbath.
 {% ct 'Mark 2:27-28' %}
 
-The Sabbath was made for us. When God created it, He did not need the rest it provided, because God does not get tired. Nor had He worked in the way we undertand labor, since apart from forming Adam and Eve, all of His prior creation was spoken into existence.
+> For thus saith the LORD unto the eunuchs that keep my sabbaths, and choose the things that please me, and take hold of my covenant; rven unto them will I give in mine house and within my walls a place and a name better than of sons and of daughters: I will give them an everlasting name, that shall not be cut off. Also *the sons of the stranger, that join themselves to the LORD*, to serve him, and to love the name of the LORD, to be his servants, *every one that keepeth the sabbath from polluting it*, and taketh hold of my covenant; even them will I bring to my holy mountain, and make them joyful in my house of prayer: their burnt offerings and their sacrifices shall be accepted upon mine altar; for mine house shall be called an house of prayer for all people.
+{% ct 'Isaiah 56:4-7' %}
+
+The Sabbath was made for all humanity. When God established the Sabbath, He did not need the rest it provided, for He does not grow weary {% rf 'Isaiah 40:28' %}. Nor had He labored in the way we do, since apart from forming Adam and Eve, His creative acts were accomplished simply by speaking. But humanity *does* grow weary from labor and therefore needs the rest the Sabbath provides.
+
+This is affirmed in the Old Testament, for Isaiah declares that the Sabbath was not only for the Israelites but also for the “strangers”—outsiders—who chose to “join themselves to the Lord.” Jesus, the Creator and Lord of the Sabbath, confirmed this same truth in the New Testament when He declared, “The Sabbath was made for man.” He could have said “for the Jews,” but He did not. Therefore, the commonly used expression “Jewish Sabbath” reflects a serious misunderstanding of Scripture at best, and profound ignorance at worst.
 
 ## Why was it given to us?
 

@@ -48,7 +48,7 @@ Even if my faith is weak and small as a tiny seed, I can exercise the faith that
 > Another parable put he forth unto them, saying, The kingdom of heaven is *like to a grain of mustard seed*, which a man took, and sowed in his field: which indeed is the least of all seeds: but *when it is grown, it is the greatest among herbs, and becometh a tree*, so that the birds of the air come and lodge in the branches thereof.
 {% ct 'Matthew 13:31-32' %}
 
-Faith is primarily based on the evidence of truth revealed in the Word of God, the Bible. Like a seed that is watered by the rain, faith grows whenever it is watered with the truth of His Word and that truth is then internalized—received and allowed to take root in the heart. With my cooperation, God can take the small seed of faith and make it grow into a tall tree.
+Faith is primarily based on the evidence of truth revealed in the Word of God, the Bible. Like a seed that is watered by the rain, faith grows whenever it is watered with the truth of His Word and that truth is then internalized—received and allowed to take root in the heart. With our cooperation, God can take that small seed of faith and make it grow into a mature tree through His Word.
 
 ## What role does faith have in prayer?
 
