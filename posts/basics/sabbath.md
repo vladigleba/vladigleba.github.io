@@ -55,7 +55,7 @@ The reason why the fourth commandment invites me to keep the Sabbath day holy is
 
 The Sabbath was made for all humanity. When God established the Sabbath, He did not need the rest it provided, for He does not grow weary {% rf 'Isaiah 40:28' %}. Nor had He labored in the way we do, since apart from forming Adam and Eve, His creative acts were accomplished simply by speaking. But humanity *does* grow weary from labor and therefore needs the rest the Sabbath provides.
 
-This is affirmed in the Old Testament, for Isaiah declares that the Sabbath was not only for the Israelites but also for the “strangers”—outsiders—who chose to “join themselves to the Lord.” Jesus, the Creator and Lord of the Sabbath, confirmed this same truth in the New Testament when He declared, “The Sabbath was made for man.” He could have said “for the Jews,” but He did not. Therefore, the commonly used expression “Jewish Sabbath” reflects a serious misunderstanding of Scripture at best, and profound ignorance at worst.
+This is affirmed in the Old Testament, for Isaiah declares that the Sabbath was not only for the Israelites but also for the “strangers”—outsiders—who chose to “join themselves to the Lord.” Jesus, the Creator and Lord of the Sabbath, confirmed this same truth in the New Testament when He declared, “The Sabbath was made for man.” He could have said “for the Jews,” but He did not. Therefore, the commonly used expression “Jewish Sabbath” reflects either genuine ignorance or a serious misunderstanding of Scripture.
 
 ## Why was it given to us?
 

@@ -137,14 +137,18 @@ There is only one commandment that is both a law and a measure of time: the four
 
 The elevation of human-made commandments and traditions above the truth of the Bible was already a problem in Jesus’ time, and He warned against it. Why? Because it is idolatry. Idolatry is traditionally defined as the worship of idols—human-made images. In the same way, Sunday sacredness is a human-made tradition. Just as God did not create the sun as an object of worship, He did not establish the first day as a day of worship; therefore, there is no real difference between worshiping the object and venerating the day.
 
+He also did not rest on Sunday. The Sabbath commemorates God’s rest on the seventh day, so Sunday cannot be the “new” Sabbath for the simple reason that He did not rest on that day. We never celebrate a friend’s birthday or a couple’s wedding anniversary on the day it did *not* occur, because these dates are historical, not arbitrary. Just as we cannot change the day we were born or married, we cannot change the day on which God rested.[^3]
+
+[^3]: The same principle applies to Christmas, the supposed birth of Christ on December 25. It is highly unlikely that He was born at that time, since shepherds would not have been out in the fields watching their sheep in the middle of winter. Whose birth, then, is actually being celebrated on December 25?
+
 ## What else was changed besides the fourth commandment?
 
 > And he shall speak great words against the most High, and shall wear out the saints of the most High, and think to change *times and laws*: and they shall be given into his hand until a time and times and the dividing of time.
 {% ct 'Daniel 7:25' %}
 
-The word “laws” is plural, and indeed the Sabbath commandment was not the only one that was changed. The Catholic Church removed the second commandment, which prohibits the worship of images, and divided the tenth commandment into two.[^3] However, it is the alteration of the fourth commandment that stands out most, because the Sabbath is the [mark of God’s authority](/posts/basics/sabbath.md#which-commandment-identifies-the-creator-god), identifying Him as the Creator. To alter it, therefore, is to directly challenge God’s authority. This naturally raises the following question: What is the Catholic Church’s mark of authority?
+The word “laws” is plural, and indeed the Sabbath commandment was not the only one that was changed. The Catholic Church removed the second commandment, which prohibits the worship of images, and divided the tenth commandment into two.[^4] However, it is the alteration of the fourth commandment that stands out most, because the Sabbath is the [mark of God’s authority](/posts/basics/sabbath.md#which-commandment-identifies-the-creator-god), identifying Him as the Creator. To alter it, therefore, is to directly challenge God’s authority. This naturally raises the following question: What is the Catholic Church’s mark of authority?
 
-[^3]: Incidentally, Catholicism teaches that the pope is infallible when he speaks *ex cathedra*—from his authoritative position—yet at the same time asserts that God, the Creator of all, could somehow alter His own divine law. How can this be?
+[^4]: Incidentally, Catholicism teaches that the pope is infallible when he speaks *ex cathedra*—from his authoritative position—yet at the same time asserts that God, the Creator of all, could somehow alter His own divine law. How can this be?
 
 ## What is the Catholic Church’s mark of authority?
 

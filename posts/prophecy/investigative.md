@@ -69,7 +69,22 @@ The angel says that seventy weeks were alloted to the Jewish people, which would
 > And there went up some of the children of Israel, and of the priests, and the Levites, and the singers, and the porters, and the Nethinims, unto Jerusalem, *in the seventh year of Artaxerxes the king*.
 {% ct 'Ezra 7:7' %}
 
-The starting point was a decree giving authorization to God’s people to rebuild Jerusalem. The decree was issued by King Artaxerxes in 457 B.C. on the seventh year of his reign and implemented in autumn of that year. The story is described in {% rf 'Ezra 7:7-26' false %}.
+The starting point was a decree authorizing God’s people to rebuild Jerusalem. The decree, recorded in {% rf 'Ezra 7:11-26' false %}, was issued by King Artaxerxes Longimanus in 457 B.C., in the seventh year of his reign, and implemented in the autumn of that year. This was the third in a series of three decrees: originated by Cyrus, re-affirmed by Darius, and completed by Artaxerxes.
+
+> And the elders of the Jews builded, and they prospered through the prophesying of Haggai the prophet and Zechariah the son of Iddo. And they builded, and finished it, according to the commandment of the God of Israel, and *according to the commandment of Cyrus, and Darius, and Artaxerxes king of Persia*.
+{% ct 'Ezra 6:14' %}
+
+The first two decrees dealt primarily with the rebuilding of the temple, but it was the third that established judges and counselors, in direct fulfillment of Isaiah’s prophecy, written before the Babylonian destruction of Jerusalem:
+
+> And I will *restore thy judges as at the first, and thy counselors* as at the beginning: afterward thou shalt be called, The city of righteousness, the faithful city. *Zion shall be redeemed with judgment*, and her converts with righteousness.
+{% ct 'Isaiah 1:26-27' %}
+
+Its fulfillment is found in the decree itself:
+
+> And thou, Ezra, after the wisdom of thy God, that is in thine hand, *set magistrates and judges*, which may judge all the people that are beyond the river, all such as know the laws of thy God; and teach ye them that know them not.
+{% ct 'Ezra 7:25' %}
+
+The rebuilding of the temple—authorized by the first two decrees—was not enough. The prophecy of {% rf 'Daniel 9:24' false %}, to “restore and rebuild Jerusalem,” could not be fulfilled until the Israelites regained the authority to appoint magistrates and judges to teach and restore the law of God, as had been the case before their Babylonian captivity. Following the restoration of judges, {% rf 'Isaiah 1:26-27' false %} promised, “afterward thou shalt be called, The city of righteousness, the faithful city,” which was fulfilled in the Messiah, who would “bring in everlasting righteousness” {% rf 'Daniel 9:24' %} through a perfectly righteous life, made available to all who receive Him by faith!
 
 ## How many weeks were there until the Messiah?
 
