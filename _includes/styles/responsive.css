@@ -97,7 +97,7 @@
   }
 
   .wrapper {
-    gap: 0rem;
+    gap: 0;
   }
 }
 
@@ -199,7 +199,11 @@
   }
 
   .meta {
-    font-size: 15px;
+    font-size: 16px !important;
+  }
+
+  article > header .meta.series {
+    padding: 8px 15px;
   }
 
   /* home */

@@ -65,7 +65,6 @@ article > header .series-item .series-left {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-right: 0.25rem;
   position: relative;
   top: -1px;
   border-radius: 50%;
