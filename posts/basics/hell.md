@@ -41,7 +41,7 @@ God is love, but He is also holy. He loves the sinner and has made ample provisi
 > For, behold, *the day cometh, that shall burn as an oven; and all the proud, yea, and all that do wickedly, shall be stubble: and the day that cometh shall burn them up*, saith the LORD of hosts, that it shall leave them neither root nor branch. But unto you that fear my name shall the Sun of righteousness arise with healing in his wings; and ye shall go forth, and grow up as calves of the stall. And ye shall tread down the wicked; for they *shall be ashes* under the soles of your feet in the day that I shall do this, saith the LORD of hosts.
 {% ct 'Malachi 4:1-3' %}
 
-Because the wicked choose to cling to sin, which, at its core, is selfishness and in complete opposition to the government of love, God has no other choice but to destroy them. The Bible calls this a strange act because God has no pleasure in the death of the wicked; these are people for whom He died, but because they refuse to turn from their path of sin and destruction, He must respect their choice and leave them to its consequences so that the curse of sin—the misery, suffering, and ruin—can be finally blotted out. Note also that Malachi says the fire will burn them up and turn them into ashes, meaning they will not burn in hell forever.
+Because the wicked choose to cling to sin, which, at its core, is selfishness and in complete opposition to God’s government of self-sacrificing love, He has no other choice but to leave them to the consequence of their choice—death {% rf 'Romans 6:23' %}. The Bible calls this a strange act because God has no pleasure in the death of the wicked; these are people for whom He died, but because they refuse to turn from their path of sin and destruction, He must respect their choice and leave them to its consequences so that the curse of sin—the misery, suffering, and ruin—can be finally blotted out. Note also that Malachi says the fire will burn them up and turn them into ashes, meaning they will not burn in hell forever.
 
 ## What does the Psalmist have to say?
 
@@ -128,7 +128,7 @@ The Bible says the fire comes down on earth at the end of the [1,000 year period
 > Thine heart was lifted up because of thy beauty, thou hast corrupted thy wisdom by reason of thy brightness: I will cast thee to the ground, I will lay thee before kings, that they may behold thee. Thou hast defiled thy sanctuaries by the multitude of thine iniquities, by the iniquity of thy traffick; therefore *will I bring forth a fire from the midst of thee, it shall devour thee, and I will bring thee to ashes* upon the earth in the sight of all them that behold thee.
 {% ct 'Ezekiel 28:17-18' %}
 
-The fire cleanses the earth from all traces of sin, and so the fallen angels, including Satan, will also be destroyed by it, turning them to ashes, because the entire rebellion against God [started with Satan](/posts/gospel/evil.md) and the angels he managed to deceive.
+The fire cleanses the earth from all traces of sin, and so the fallen angels, including Satan, will also be destroyed by it, turning them to ashes, since the entire rebellion against God [started with Satan](/posts/gospel/evil.md) and the angels he managed to deceive.
 
 ## Is everyone punished equally?
 
@@ -154,7 +154,9 @@ The punishment is according to a person’s deeds. Those who are guilty of henio
 > For the day of the LORD is near upon all the heathen: as thou hast done, it shall be done unto thee: thy reward shall return upon thine own head. For as ye have drunk upon my holy mountain, so shall all the heathen drink continually, yea, they shall drink, and they shall swallow down, and *they shall be as though they had not been*.
 {% ct 'Obadiah 1:15-16' %}
 
-Hell cannot burn forever because the wages of sin are death, not eternal torment for a short life of sin. How cruel would that be! This eternal hell teaching goes all the way back to the Garden of Eden where Satan told Eve she would surely not die {% rf 'Genesis 3:4' %} even though God clearly said that sin brings death {% rf 'Genesis 2:17' %}. But make no mistake, Jesus would rather die on the cross Himself than watch His creation destroyed by fire; nevertheless, He also respects every person’s freedom of choice, and in an effort to purge the world from the misery of sin, it is, ultimately, an act of love to bring the rebellion to an end. And so the fire will burn out once it finishes its work, and there will be not a coal left to warm at. Satan, his angels, and the wicked will cease to exist, never to live again.
+Hell cannot burn forever because the wages of sin are death, not eternal torment for a short life of sin. How cruel would that be! This eternal hell teaching goes all the way back to the Garden of Eden where Satan told Eve she would surely not die {% rf 'Genesis 3:4' %} even though God clearly said that sin brings death {% rf 'Genesis 2:17' %}. But make no mistake, Jesus would rather die on the cross Himself than watch His creation destroyed by fire; nevertheless, He also respects every person’s freedom of choice, and in an effort to purge the world from the misery of sin, it is, ultimately, an act of love to bring the rebellion to an end. And so the fire will burn out once it finishes its work, and there will be not a coal left to warm at. Satan, his angels, and the wicked will cease to exist, never to live again.[^1]
+
+[^1]: In Christianity, this is known as annihilationism.
 
 ## What happens once it goes out?
 

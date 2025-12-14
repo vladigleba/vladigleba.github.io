@@ -9,6 +9,10 @@ body > footer > div {
   margin: 0 auto;
 }
 
+.footer-links i {
+  font-style: normal;
+}
+
 .last-updated {
   display: inline-block;
   padding: 2px var(--tag-horizontal-padding) 4px;
