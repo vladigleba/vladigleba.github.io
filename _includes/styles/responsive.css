@@ -119,6 +119,8 @@
     position: relative;
     margin: 25px auto;
     top: 15px;
+    width: 100%;
+    padding: 20px 25px;
   }
 
   .list {
@@ -155,7 +157,6 @@
 
   article > header {
     padding: 60px 0 70px;
-    margin-bottom: 10px;
   }
 
   article > header h1,
@@ -167,17 +168,12 @@
     font-size: 30px;
   }
 
-  .toc {
-    padding: 15px 10px;
-    top: 30px;
-  }
-
   .toc h2 {
     font-size: 20px;
   }
 
   body > footer {
-    padding-top: 75px;
+    padding: 75px 0 40px;
   }
 
   .content .next-link {
@@ -209,7 +205,7 @@
   /* home */
 
   .banner {
-    padding: 100px 0 130px
+    padding: 100px 0 !important;
   }
 
   .list {
