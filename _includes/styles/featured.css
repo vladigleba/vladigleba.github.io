@@ -49,8 +49,7 @@
 }
 
 .unified-card .details {
-  color: var(--lighter-gray-color);
-  font-weight: 600;
+  color: var(--gray-color);
 }
 
 .secondary-section {

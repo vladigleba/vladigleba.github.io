@@ -104,7 +104,7 @@
 /* Large tablets */
 @media (max-width: 1024px) {
   :root {
-    --font-size: 18px;
+    --font-size: 19px;
   }
 
   .unified-card {
@@ -120,7 +120,7 @@
     margin: 25px auto;
     top: 15px;
     width: 100%;
-    padding: 20px 25px;
+    padding: 25px;
   }
 
   .list {
