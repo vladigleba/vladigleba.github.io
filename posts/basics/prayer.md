@@ -101,7 +101,7 @@ It is easy for our prayers to become self-focused and selfish, but Christ teache
 One author shared the following insight on praying Jesus’ model prayer:[^1]
 
 > I cannot say ‘our’ if I live only for myself. I cannot say ‘Father’ if I do not endeavor each day to act like his child. I cannot say ‘who art in heaven’ if I’m laying up no treasures there. I cannot say ‘hallowed be thy name’ if I am not striving for holiness. I cannot say ‘thy kingdom come’ if I’m not seeking to hasten the blessed hope. I cannot say ‘thy will be done’ if I am disobedient to his word. I cannot say ‘in earth as it is in heaven’ if I’ll not serve him here and now. I cannot say ‘give us this day our daily bread’ if I am selfishly hoarding for the future. I cannot say ‘forgive us our debts’ if I harbor a grudge against anyone. I cannot say ‘lead us not into temptation’ if I deliberately place myself in its path. I cannot say ‘deliver us from evil’ if I do not long for holiness. I cannot say ‘thine is the kingdom’ if I do not give Jesus the throne of my heart. I cannot attribute to him ‘the power’ if I fear what men may do. I cannot ascribe to him ‘the glory’ if I’m seeking for my own honor. I cannot say ‘forever’ if I’m living only for temporary earthly rewards.
-{% ct 'Unknown' %}
+{% ct 'Anonymous' %}
 
 [^1]: Quoted in Doug Batchelor, *Teach Us to Pray*, 30 (2005).
 

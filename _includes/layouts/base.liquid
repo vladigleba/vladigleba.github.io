@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% assign meta_title = title | default: site.title %}
+    {% if title %}
+      {% assign meta_title = title | append: " | " | append: site.title %}
+    {% else %}
+      {% assign meta_title = site.title %}
+    {% endif %}
+
     {% assign meta_description = description | default: site.description %}
     {% assign is_article = page | isArticle: site.categories %}
 

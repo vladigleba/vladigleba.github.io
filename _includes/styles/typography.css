@@ -58,6 +58,8 @@ article > header p {
   font-size: 18px;
 }
 
+#dialog-popup,
+.copy-toast,
 .footnotes,
 article > header .meta.series {
   font-size: 17px;
@@ -65,8 +67,6 @@ article > header .meta.series {
 
 .toc a,
 body > footer,
-#dialog-popup,
-.copy-toast,
 .unified-card .tag {
   font-size: 16px;
 }

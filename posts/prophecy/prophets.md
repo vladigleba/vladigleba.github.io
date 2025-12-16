@@ -6,7 +6,7 @@ series: Remnant
 order: 3500
 ---
 
-## What is one of the ways God speaks to humanity?
+## What is one way God speaks to us?
 
 > *I have also spoken by the prophets*, and I have multiplied visions, and used similitudes, by the ministry of the prophets.
 {% ct 'Hosea 12:10' %}
@@ -21,14 +21,14 @@ God has chosen to use prophets to speak to humanity on His behalf; they share Hi
 
 For example, He used Noah to warn the world about the flood {% rf '2 Peter 2:5' %}, while Jeremiah warned Israel about their 70-year captivity in Babylon {% rf 'Jeremiah 25:11' %}. Regarding the coming of the Messiah, Isaiah announced that Jesus would would be born of a virgin {% rf 'Isaiah 7:14' %}, Micah said He would be born in Bethlehem {% rf 'Micah 5:2' %}, and Daniel prophesied that He would be “cut off” or killed {% rf 'Daniel 9:26' %}. Later, God used John the Baptist to announce that His coming was near {% rf 'John 1:23-27' %}. After Jesus’ ascension, Paul announced that Jesus would return a second time {% rf '1 Thessalonians 4:16-17' %}, and given the importance of His return, we can expect the gift of prophecy to be evident again in the last days to warn and prepare the world.
 
-## What warning did Jesus give about prophets?
+## What did Jesus warn about prophets?
 
 > And *many false prophets shall rise, and shall deceive many*. And because iniquity shall abound, the love of many shall wax cold. … For there shall *arise false Christs, and false prophets*, and shall shew great signs and wonders; insomuch that, if it were possible, they shall deceive the very elect.
 {% ct 'Matthew 24:11, 24' %}
 
 Jesus said there will be many false prophets in the last days deceiving people with signs and wonders. The working of miracles, therefore, is not sufficient evidence of a genuine prophet {% rf 'Revelation 13:13-14; 16:14' %}. But it’s important to note that Jesus did not say that all prophets will be false ones. Since He warned about false ones, there must be genuine ones too.
 
-## What false prophets are condemned in the Bible?
+## Which false prophets are condemned?
 
 > There shall not be found among you anyone who makes his son or his daughter pass through the fire, or one *who practices witchcraft, or a soothsayer, or one who interprets omens, or a sorcerer, or one who conjures spells, or a medium, or a spiritist, or one who calls up the dead*. For all who do these things are an abomination to the Lord, and because of these abominations the Lord your God drives them out from before you
 {% ct 'Deuteronomy 18:10-12, NKJV' %}
@@ -52,6 +52,9 @@ The Bible clearly teaches that the dead [cannot be contacted](/posts/basics/deat
 
 > Now ye are the body of Christ, and members in particular. And *God hath set some in the church*, first apostles, *secondarily prophets*, thirdly teachers, after that miracles, then gifts of healings, helps, governments, diversities of tongues.
 {% ct '1 Corinthians 12:27-28' %}
+
+> Wherefore tongues are for a sign, not to them that believe, but to them that believe not: but *prophesying serveth not for them that believe not, but for them which believe*.
+{% ct '1 Corinthians 14:22' %}
 
 While a prophet can at times edify the public, Paul tells us that prophecy is one of Jesus’ gifts to His church intended to edify its members in their Christian walk as well as to equip them in the work of ministry to others. These gifts are vital to His church and will remain with her until Jesus returns. But it’s also important to emphasize that while the gift of prophecy is a tremendous blessing, it’s not meant to add to, replace, or minimize the Word of God {% rf 'Revelation 22:18-19; Proverbs 30:5-6' %}. It’s true that God has used prophets to clarify His Word, but He never used them to originate new beliefs that cannot be supported by the Bible. The genuine gift of prophecy always elevates, and is in harmony with, God’s Word {% rf 'Matthew 4:4' %}.
 
@@ -79,7 +82,7 @@ Jesus gives the gift of prophecy through the Holy Spirit, who distributes it to 
 
 This prophecy was partially fulfilled when the Holy Spirit was poured out during Pentecost {% rf 'Acts 2:1-4' %}, empowering Jesus’ disciples to take the good news of His great sacrifice for sinners to the entire world. The prophecy will be fully fulfilled in the last days when the Holy Spirit empowers Christ’s followers to warn and prepare the world for His glorious return.
 
-## Does the Bible give more evidence of this?
+## Does the Bible give more evidence?
 
 > And the dragon was wroth with the woman, and went to make war with the remnant of her seed, *which keep the commandments of God, and have the testimony of Jesus Christ*.
 {% ct 'Revelation 12:17' %}
@@ -111,7 +114,7 @@ God has urged His people not to despise the gift of prophecy; in fact, He has pr
 
 God speaks to His prophets through visions, dreams, and face to face.
 
-## What happens to the true prophet during a vision?
+## What is a characteristic of a true prophet?
 
 > And, behold, one like the similitude of the sons of men touched my lips: then *I opened my mouth, and spake*, and said unto him that stood before me, O my lord, by the vision my sorrows are turned upon me, and I have retained no strength. For how can the servant of this my lord talk with this my lord? for as for me, *straightway there remained no strength in me, neither is there breath left in me*. Then there came again and touched me one like the appearance of a man, and he strengthened me, and said, O man greatly beloved, fear not: peace be unto thee, be strong, yea, be strong. And *when he had spoken unto me, I was strengthened*, and said, Let my lord speak; for thou hast strengthened me.
 {% ct 'Daniel 10:16-19' %}
@@ -130,7 +133,7 @@ During a vision from God the true prophet will have the following physical chara
 - Eyes wide open {% rf 'Numbers 24:4' %}.
 - Not being aware of earthly surroundings {% rf '2 Corinthians 12:1-4' %}.
 
-## What else happens to the genuine prophet?
+## What is another characteristic?
 
 > Also I heard the voice of the Lord, saying, Whom shall I send, and who will go for us? Then said I, Here am I; send me. And he said, *Go, and tell this people*, Hear ye indeed, but understand not; and see ye indeed, but perceive not.
 {% ct 'Isaiah 6:8-9' %}
@@ -143,7 +146,7 @@ During a vision from God the true prophet will have the following physical chara
 
 A genuine prophet is called to service by God.
 
-## What is another characteristic of a true prophet?
+## What is the third characteristic?
 
 > If there arise among you a prophet, or a dreamer of dreams, and giveth thee a sign or a wonder, and the sign or the wonder come to pass, *whereof he spake unto thee, saying, Let us go after other gods, which thou hast not known, and let us serve them; thou shalt not hearken unto the words of that prophet*, or that dreamer of dreams: for the LORD your God proveth you, to know whether ye love the LORD your God with all your heart and with all your soul. *Ye shall walk after the LORD your God, and fear him, and keep his commandments, and obey his voice*, and ye shall serve him, and cleave unto him.
 {% ct 'Deuteronomy 13:1-4' %}
@@ -153,21 +156,21 @@ A genuine prophet is called to service by God.
 
 The true prophet will always speak in harmony with and obedience to God’s will as revealed in His Word and in His commandments. Anyone speaking contrary to God’s will cannot be His prophet.
 
-## What is another test?
+## What is the fourth characteristic?
 
 > The prophets that have been before me and before thee of old prophesied both against many countries, and against great kingdoms, of war, and of evil, and of pestilence. The prophet which prophesieth of peace, *when the word of the prophet shall come to pass, then shall the prophet be known, that the LORD hath truly sent him*.
 {% ct 'Jeremiah 28:8-9' %}
 
 The genuine prophet’s predictions always come to pass if they are not conditional.
 
-## What is the fifth test?
+## What is the fifth characteristic?
 
 > Beware of false prophets, which come to you in sheep’s clothing, but inwardly they are ravening wolves. *Ye shall know them by their fruits*. Do men gather grapes of thorns, or figs of thistles?
 {% ct 'Matthew 7:15-16' %}
 
 The life of a genuine prophet will reveal the character of Jesus and the fruits of the Spirit {% rf 'Galatians 5:22-23' %}.
 
-## What is the final test?
+## What is the final characteristic?
 
 > Beloved, believe not every spirit, but try the spirits whether they are of God: because many false prophets are gone out into the world. Hereby know ye the Spirit of God: *every spirit that confesseth that Jesus Christ is come in the flesh is of God, and every spirit that confesseth not that Jesus Christ is come in the flesh is not of God*: and this is that spirit of antichrist, whereof ye have heard that it should come; and even now already is it in the world.
 {% ct '1 John 4:1-3' %}
@@ -179,8 +182,8 @@ The true prophet will lift up Jesus Christ and emphasize His centrality in all t
 
 ## How is the gift of prophecy manifested in the last days?
 
-In question eight we learned that the gift of prophecy will be evident in God’s remnant church, which emerged in the 1800s. In order to encourage the growing church, God called a young woman named Ellen Harmon, who later married and became Ellen White, and blessed her with the gift of prophecy, using her to instruct the church as it grew into a worldwide missionary movement. Her life, visions, and writings fulfilled every biblical test of a genuine prophet, and they are evidence that God is doing everything He can to ensure His people have all the encouragement they need in order to thrive in the closing moments of Earth’s history.
+In question eight we learned that the gift of prophecy will be evident in God’s remnant church, which emerged in the mid-1800s. In order to encourage the growing church, God called a young woman named Ellen Harmon, who later married and became Ellen White, and blessed her with the gift of prophecy, using her to instruct the church as it grew into a worldwide missionary movement. Her life, visions, and writings fulfilled every biblical test of a genuine prophet, and they are evidence that God is doing everything He can to ensure His people have all the encouragement they need in order to thrive in the closing moments of Earth’s history.
 
 Even though Ellen had little formal education, she went on to write dozens of books on a variety of subjects, including the Bible, health, education, parenting, Christian living, evangelism, and more. Her writing is so impactful that she has become the fourth most translated author of all time. Her book on having a saving relationship with Jesus, *[Steps to Christ](https://m.egwwritings.org/en/book/108/toc)*, has been translated into more than 165 languages.
 
-The best way to get acquainted with her prophetic gift is to read her material for yourself, and it will become evident that her primary goal was to direct people to Jesus as their personal Savior and to the Bible as their only rule of faith and life. Some of her other popular works include a book about the conflict between good and evil called *[The Great Controversy](https://m.egwwritings.org/en/book/132/toc)*, one about Christ’s famous sermon called *[Thoughts From the Mount of Blessing](https://m.egwwritings.org/en/book/150/toc)*, a book about His parables called *[Christ’s Object Lessons](https://m.egwwritings.org/en/book/15/toc)*, and a masterpiece about His life called *[The Desire of Ages](https://m.egwwritings.org/en/book/130/toc)*. Her writings are saturated with references to the Bible, which is elevated at every opportunity and never contradicted. Many who have read her works have been greatly blessed, realizing that she was used by God to communicate His love and truth, thereby leading many into a closer relationship with Him. It could be you if you give her a try.
+The best way to get acquainted with her prophetic gift is to read her material for yourself, and it will become evident that her primary goal was to direct people to Jesus as their personal Savior and to the Bible as their only rule of faith and life. Some of her other popular works include a book about the conflict between good and evil called *[The Great Controversy](https://m.egwwritings.org/en/book/132/toc)*, one about Christ’s famous sermon called *[Thoughts From the Mount of Blessing](https://m.egwwritings.org/en/book/150/toc)*, a book about His parables called *[Christ’s Object Lessons](https://m.egwwritings.org/en/book/15/toc)*, and a masterpiece about His life called *[The Desire of Ages](https://m.egwwritings.org/en/book/130/toc)*. Her writings are saturated with references to the Bible, which is elevated at every opportunity and never contradicted. Many who have read her works have been greatly blessed, realizing that she was used by God to communicate His love and truth, thereby leading many into a closer relationship with Him. It could be you if you give her writings a try.

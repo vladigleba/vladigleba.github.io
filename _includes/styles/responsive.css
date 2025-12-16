@@ -123,6 +123,14 @@
     padding: 25px;
   }
 
+  .toc h2 {
+    font-size: 24px;
+  }
+
+  .toc a {
+    font-size: 18px;
+  }
+
   .list {
     padding: 0 20px;
   }
@@ -168,6 +176,10 @@
     font-size: 30px;
   }
 
+  .toc {
+    padding: 20px 15px;
+  }
+
   .toc h2 {
     font-size: 20px;
   }
@@ -176,12 +188,16 @@
     padding: 75px 0 40px;
   }
 
+  .content figure {
+    padding: 5px 20px;
+  }
+
   .content .next-link {
     margin-top: 30px;
   }
 
   .content h2 {
-    font-size: 27px;
+    font-size: 28px;
   }
 
   .main-nav ul {
@@ -193,13 +209,11 @@
     font-size: 20px;
   }
 
+  .toc a,
   .content figcaption,
-  .footnotes {
-    font-size: 16px;
-  }
-
+  .footnotes,
   .meta {
-    font-size: 16px !important;
+    font-size: 17px !important;
   }
 
   article > header .meta.series {
