@@ -220,6 +220,16 @@
     padding: 8px 15px;
   }
 
+  article>header .series-item {
+    padding: 5px 15px;
+  }
+
+  .series-left .number,
+  .series-right {
+    margin-left: 0;
+    margin-right: 0 !important;
+  }
+
   /* home */
 
   .banner {

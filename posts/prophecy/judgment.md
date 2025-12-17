@@ -111,7 +111,10 @@ Even though all have sinned, every person has hope of forgiveness! God the Fathe
 > For we have not an high priest which cannot be touched with the feeling of our infirmities; but was *in all points tempted like as we are, yet without sin*. Let us therefore come boldly unto the throne of grace, that we may obtain mercy, and find grace to help in time of need.
 {% ct 'Hebrews 4:15-16' %}
 
-Because Jesus understands us and can sympathize with our weaknesses, He also intercedes on our behalf when we come to God through Him asking for forgiveness.
+> I will bear the indignation of the LORD, because I have sinned against him, *until he plead my cause*, and execute judgment for me: he will bring me forth to the light, and I shall behold his righteousness.
+{% ct 'Micah 7:9' %}
+
+Because Jesus understands us and can sympathize with our weaknesses, He intercedes on our behalf when we come to the Father through Him, asking for forgiveness. As our Advocate, He pleads the case of every repentant sinner who is accused by Satan, ensuring that we do not face judgment alone. In fact, we are incapable of winning our case without Him. However, not only is Jesus with us in judgment, but He never brings judgment upon us apart from Himself; instead, He *first* brings it upon *Himself*, bearing its condemnation on our behalf {% rf '2 Corinthians 5:21; 1 Peter 2:24; Galatians 3:13-14' %}. Judgment, therefore, is a revelation of the heart of God and a vindication of His character, for none of the angels—Satan himself included—could have imagined that their Commander would be willing to take on human nature and hang on the cross for His beloved creation.
 
 ## What role does the Holy Spirit play?
 

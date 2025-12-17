@@ -66,10 +66,9 @@ article > header .series-item .series-left {
   align-items: center;
   justify-content: center;
   position: relative;
-  top: -1px;
   border-radius: 50%;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 24px;
+  height: 24px;
 }
 
 article > header .series-item .series-right {
@@ -83,7 +82,6 @@ article > header .series-item:not([aria-current="page"]):hover {
 }
 
 article > header .meta.series {
-  font-weight: 700;
   padding: 10px 20px;
   margin: 0 -20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.125);
