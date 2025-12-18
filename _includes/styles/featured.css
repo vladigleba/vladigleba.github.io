@@ -2,7 +2,6 @@
   margin: 0 auto 100px;
   border: 1px solid var(--border-color);
   border-radius: var(--default-radius);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   display: grid;
   grid-template-columns: 1fr;
   width: 45%;
