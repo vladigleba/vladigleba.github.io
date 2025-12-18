@@ -16,7 +16,7 @@ In Revelation 14 there are three angels proclaiming a message to the people of t
 
 ## What is it an echo of?
 
-> “You are worthy, O Lord, to receive glory and honor and power; for *You created all things*, and *by Your will they exist* and were created.”
+> You are worthy, O Lord, to receive glory and honor and power; for *You created all things*, and *by Your will they exist* and were created.
 {% ct 'Revelation 4:11, NKJV' %}
 
 {% rf 'Revelation 14:6-7' false %} is an echo of the verse above, which explains that God is worthy to receive glory, honor, and power because He is the Author of all life.

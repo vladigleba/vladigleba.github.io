@@ -1,5 +1,5 @@
 ---
-title: Are the Dead Really Dead?
+title: Is There Life After Death?
 description: It started with a lie in the Garden of Eden, and it’s still being told today. Will you be fooled?
 date: 2022-05-28
 series: Deception
@@ -64,7 +64,7 @@ The spirit that returns to God is simply the breath of life, without which the b
 > For *all have sinned*, and come short of the glory of God.
 {% ct 'Romans 3:23' %}
 
-A person’s soul or spirit does not go to heaven or hell at death, for the Bible plainly declares, “The soul that sinneth, it shall die.” Why is this so? Because the wages of sin are death, and all have sinned. Moreover, before His ascension, Jesus assured His disciples, “I will come again, and receive you unto Myself” (John 14:2–3). {% rf 'John 14:2-3' %}. Notice that He did not say they would come to Him at death, but rather that *He would come to them* at His Second Coming.
+A person’s soul or spirit does not go to heaven or hell at death, for the Bible plainly declares, “The soul that sinneth, it shall die.” Why is this so? Because the wages of sin are death, and all have sinned. Moreover, before His ascension, Jesus assured His disciples, “I will come again, and receive you unto Myself” {% rf 'John 14:2-3' %}. Notice that He did not say they would come to Him at death, but rather that *He would come to them* at His Second Coming.
 
 ## Where is King David now?
 
