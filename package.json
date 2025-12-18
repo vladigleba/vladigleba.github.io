@@ -20,6 +20,8 @@
     "reading-time": "^1.5.0"
   },
   "dependencies": {
-    "clean-css": "^5.3.3"
+    "clean-css": "^5.3.3",
+    "gray-matter": "^4.0.3",
+    "minisearch": "^6.3.0"
   }
 }
