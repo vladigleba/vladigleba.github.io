@@ -1,5 +1,5 @@
-#!/usr/bin/env node
-// Usage: node smarten.js path/to/file-or-folder [-d]
+// Usage: node smarten.js path/to/file-or-folder [-d] 
+// -d for debug mode (prints output instead of writing files)
 
 const fs = require('fs');
 const path = require('path');

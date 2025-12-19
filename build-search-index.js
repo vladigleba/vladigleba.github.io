@@ -9,13 +9,14 @@ const site = require('./_data/site.json');
  */
 function cleanMarkdown(text) {
   return text
-    .replace(/\{%\s*ct\s*'([^']*)'\s*%\}/g, '$1') // remove ct liquid tag 
-    .replace(/\{%\s*rf\s*'([^']*)'\s*(?:false\s*)?%\}/g, '$1') // remove rf liquid tag
-    .replace(/\[\^\d+\]:?/g, '') // Remove footnote markers
-    .replace(/>\s*/g, '') // Remove blockquote markers
+    .replace(/\s*\{%\s*ct\s*'([^']*)'\s*%\}/g, '” —$1') // remove ct tag 
+    .replace(/\{%\s*rf\s*'([^']*)'\s+false\s*%\}/g, '$1') // remove rf tag (no parens)
+    .replace(/\{%\s*rf\s*'([^']*)'\s*%\}/g, '($1)') // remove rf tag (with parens)
+    .replace(/\[\^\d+\]:?/g, '') // remove footnote markers
+    .replace(/>\s*/g, '“') // remove blockquote markers
     .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1') // remove markdown links
-    .replace(/[#*_`[\]()]/g, '') // Remove markdown symbols
-    .replace(/\s+/g, ' ') // Normalize whitespace
+    .replace(/[#*_`]/g, '') // remove markdown symbols
+    .replace(/\s+/g, ' ') // normalize whitespace
     .trim();
 }
 
@@ -29,22 +30,7 @@ function getSeriesTitle(seriesKey) {
 }
 
 /**
- * Extract all text content from markdown for search indexing
- */
-function extractPostContent(bodyText, frontmatter) {
-  const cleanedBody = cleanMarkdown(bodyText);
-  
-  // Combine frontmatter fields with body content
-  const parts = [
-    frontmatter.title,
-    frontmatter.description,
-    cleanedBody
-  ].filter(Boolean); // Remove undefined/null
-  
-  return parts.join(' ');
-}
 
-/**
  * Determine category from file path
  */
 function getCategoryFromPath(filePath) {
@@ -74,7 +60,7 @@ function processMarkdownFile(filePath, docId) {
     id: String(docId),
     title: frontmatter.title || '',
     series: getSeriesTitle(frontmatter.series),
-    body: extractPostContent(bodyText, frontmatter),
+    body: cleanMarkdown(bodyText),
     url: buildUrlFromPath(filePath),
     category: getCategoryFromPath(filePath),
     description: frontmatter.description || ''
@@ -131,15 +117,9 @@ function generateSearchIndex(postsDir = 'posts') {
 }
 
 /**
- * Main export for Eleventy integration
+ * Run the search index generation process
  */
-module.exports = {
-  generateSearchIndex,
-  extractPostContent,
-  getCategoryFromPath
-};
 
-// Run directly if executed as script
 if (require.main === module) { // node build-search-index.js
   const { index, options, documents } = generateSearchIndex();
   

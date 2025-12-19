@@ -18,11 +18,13 @@
   background-color: var(--light-background);
 }
 
+.search-trigger,
 .main-nav li {
   text-transform: uppercase;
   padding: 5px 12.5px 3px;
 }
 
+.search-trigger:hover,
 .main-nav li:hover {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.125);

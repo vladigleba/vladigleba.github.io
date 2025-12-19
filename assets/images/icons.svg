@@ -10,4 +10,9 @@
   <symbol id="chevron-down" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M1 1.5L6 6.5L11 1.5"/>
   </symbol>
+
+  <symbol id="search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8"></circle>
+    <path d="m23 23-5.66-5.66"></path>
+  </symbol>
 </svg>
