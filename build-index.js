@@ -1,3 +1,5 @@
+// Usage: node build-index.js
+
 const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
@@ -120,7 +122,7 @@ function generateSearchIndex(postsDir = 'posts') {
  * Run the search index generation process
  */
 
-if (require.main === module) { // node build-search-index.js
+if (require.main === module) { // node build-index.js
   const { index, options, documents } = generateSearchIndex();
   
   const outDir = path.join(__dirname, '_site', 'assets', 'js');
@@ -129,5 +131,5 @@ if (require.main === module) { // node build-search-index.js
   const indexPath = path.join(outDir, 'search-index.json');
   fs.writeFileSync(indexPath, JSON.stringify({ index, options, documents }, null, 2));
   
-  console.log(`Search index generated: ${documents.length} posts indexed.`);
+  console.log(`✅ Search index generated: ${documents.length} posts indexed.`);
 }

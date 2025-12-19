@@ -1,4 +1,4 @@
-// Usage: node smarten.js path/to/file-or-folder [-d] 
+// Usage: node smarten-text.js path/to/file-or-folder [-d] 
 // -d for debug mode (prints output instead of writing files)
 
 const fs = require('fs');
@@ -138,8 +138,9 @@ const debugMode = args.includes('-d');
 const inputPath = args.find(arg => arg !== '-d');
 
 if (!inputPath) {
-  console.error('Usage: node smarten.js path/to/file-or-folder [-d]');
+  console.error('Usage: node smarten-text.js path/to/file-or-folder [-d]');
   process.exit(1);
 }
 
 processPath(inputPath, debugMode);
+console.log('✅ Smartened text successfully.');

@@ -5,7 +5,7 @@
   "scripts": {
     "build": "npx @11ty/eleventy",
     "watch": "npx @11ty/eleventy --watch",
-    "serve": "node smarten.js posts && node build-search-index.js && npx @11ty/eleventy --serve",
+    "serve": "node smarten-text.js posts && node build-index.js && npx @11ty/eleventy --serve",
     "clean": "rm -rf _site"
   },
   "keywords": [],
