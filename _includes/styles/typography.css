@@ -65,6 +65,8 @@ article > header .meta.series {
   font-size: 17px;
 }
 
+.search-result .header h3,
+.search-results .empty,
 .toc a,
 body > footer,
 .unified-card .tag {
@@ -73,6 +75,14 @@ body > footer,
 
 li .tag {
   font-size: 15px;
+}
+
+.search-result .header .series {
+  font-size: 13px;
+}
+
+.search-result .header .category {
+  font-size: 12px;
 }
 
 .meta {

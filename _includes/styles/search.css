@@ -1,0 +1,150 @@
+.search-trigger {
+  background: none;
+  border: none;
+  color: var(--darker-gray-color);
+}
+
+.search-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.search-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 60px;
+  z-index: 1000;
+  animation: slideDown 0.3s ease-out;
+}
+
+.search-container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.2s ease-out;
+}
+
+.search-container.active {
+  display: flex;
+}
+
+.search-modal {
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.search-input {
+  padding: 16px 20px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  font-family: inherit;
+}
+
+.search-results {
+  flex: 1;
+  overflow-y: auto;
+  background-color: white;
+}
+
+.search-results .empty {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--gray-color);
+}
+
+.search-result {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.15s ease;
+}
+
+.search-result mark {
+  background-color: #fff7af;
+}
+
+.search-result:hover {
+  background-color: var(--light-background);
+}
+
+.search-result:last-child {
+  border-bottom: none;
+}
+
+.search-result .header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.search-result .header h3 {
+  font-weight: 600;
+  flex: 1;
+}
+
+.search-result .header .series {
+  font-weight: 500;
+  color: var(--gray-color);
+  flex-shrink: 0;
+}
+
+.search-result .header .category {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  background-color: #e8e8e8;
+  flex-shrink: 0;
+}
+
+.search-result .snippet {
+  font-size: 14px;
+  color: var(--gray-color);
+  line-height: 1.4;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

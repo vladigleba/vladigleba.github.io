@@ -46,11 +46,13 @@
   background-color: var(--light-background);
 }
 
+.search-trigger,
 .main-nav li {
   text-transform: uppercase;
   padding: 5px 12.5px 3px;
 }
 
+.search-trigger:hover,
 .main-nav li:hover {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.125);
@@ -113,7 +115,7 @@
         "name": "Vladi Gleba"
       },
       "datePublished": "2023-01-26T00:00:00.000Z",
-      "dateModified": "2025-12-16T04:43:05.000Z",
+      "dateModified": "2025-12-17T04:20:38.000Z",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://vladigleba.com/basics/baptism/"
@@ -157,6 +159,8 @@
     <li>
       <a href="/prophecy/">Prophecy</a>
     </li>
+
+    
   </ul>
 
   <!-- global live region for site-wide announcements (screen readers) -->
@@ -173,7 +177,7 @@
 
 <style>
   .main-nav ul { background: rgba(255, 255, 255, 0.09); }
-  .main-nav, .main-nav li:hover { color: white; }
+  .main-nav, .main-nav li:hover, .search-trigger, .search-trigger:hover { color: white; }
   header h1, .content h2, figcaption, .number { color: rgb(86,111,170); }
   header, .main-nav, .content figure::before { background: rgb(86,111,170); }
   .toc li.active { border-left: 4px solid rgb(86,111,170); }
@@ -188,7 +192,7 @@
   Basics <span>•</span>
   17 min read <span>•</span>
   <b class="post-last-updated">
-    Updated <time datetime="2025-12-16T04:43:05.000Z">Dec 15, 2025</time>
+    Updated <time datetime="2025-12-17T04:20:38.000Z">Dec 16, 2025</time>
   </b>
 </p>
 
@@ -486,12 +490,18 @@
       </div>
       
       <div class="last-updated">
-        Last updated <time datetime="2025-12-16T20:20:03.384Z">December 16, 2025</time>
+        Last updated <time datetime="2025-12-22T21:13:58.645Z">December 22, 2025</time>
       </div>
     <p></p>
   </div>
 </footer>
-
+    <div id="search-container" class="search-container">
+  <div class="search-modal">
+    <input id="search-input" type="text" class="search-input" placeholder="Search posts..." autocomplete="off" aria-label="Search posts">
+    <div id="search-results" class="search-results"></div>
+  </div>
+</div>
+    
     <script>
       document.body.classList.add('js-enabled');
       if (

@@ -46,11 +46,13 @@
   background-color: var(--light-background);
 }
 
+.search-trigger,
 .main-nav li {
   text-transform: uppercase;
   padding: 5px 12.5px 3px;
 }
 
+.search-trigger:hover,
 .main-nav li:hover {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.125);
@@ -113,7 +115,7 @@
         "name": "Vladi Gleba"
       },
       "datePublished": "2022-04-02T00:00:00.000Z",
-      "dateModified": "2025-12-12T05:13:02.000Z",
+      "dateModified": "2025-12-18T05:38:32.000Z",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://vladigleba.com/basics/sabbath/"
@@ -157,6 +159,8 @@
     <li>
       <a href="/prophecy/">Prophecy</a>
     </li>
+
+    
   </ul>
 
   <!-- global live region for site-wide announcements (screen readers) -->
@@ -173,7 +177,7 @@
 
 <style>
   .main-nav ul { background: rgba(255, 255, 255, 0.09); }
-  .main-nav, .main-nav li:hover { color: white; }
+  .main-nav, .main-nav li:hover, .search-trigger, .search-trigger:hover { color: white; }
   header h1, .content h2, figcaption, .number { color: rgb(199,103,103); }
   header, .main-nav, .content figure::before { background: rgb(199,103,103); }
   .toc li.active { border-left: 4px solid rgb(199,103,103); }
@@ -188,7 +192,7 @@
   Basics <span>•</span>
   11 min read <span>•</span>
   <b class="post-last-updated">
-    Updated <time datetime="2025-12-12T05:13:02.000Z">Dec 11, 2025</time>
+    Updated <time datetime="2025-12-18T05:38:32.000Z">Dec 17, 2025</time>
   </b>
 </p>
 
@@ -256,7 +260,7 @@
         <svg aria-hidden="true">
           <use href="/assets/images/icons.svg#link"></use>
         </svg></a></h2><figure><blockquote>
-<p>“You are worthy, O Lord, to receive glory and honor and power; for <em>You created all things</em>, and <em>by Your will they exist</em> and were created.”</p>
+<p>You are worthy, O Lord, to receive glory and honor and power; for <em>You created all things</em>, and <em>by Your will they exist</em> and were created.</p>
 </blockquote><figcaption>— Revelation 4:11, NKJV</figcaption></figure><p><a href="https://bible-api.com/Revelation%2014%3A6-7?translation=kjv" class="verse-link" data-reference="Revelation 14:6-7" target="_blank" rel="noopener noreferrer">Revelation 14:6-7</a> is an echo of the verse above, which explains that God is worthy to receive glory, honor, and power because He is the Author of all life.</p></section>
 
 
@@ -471,12 +475,18 @@
       </div>
       
       <div class="last-updated">
-        Last updated <time datetime="2025-12-16T20:20:03.442Z">December 16, 2025</time>
+        Last updated <time datetime="2025-12-22T21:13:58.645Z">December 22, 2025</time>
       </div>
     <p></p>
   </div>
 </footer>
-
+    <div id="search-container" class="search-container">
+  <div class="search-modal">
+    <input id="search-input" type="text" class="search-input" placeholder="Search posts..." autocomplete="off" aria-label="Search posts">
+    <div id="search-results" class="search-results"></div>
+  </div>
+</div>
+    
     <script>
       document.body.classList.add('js-enabled');
       if (

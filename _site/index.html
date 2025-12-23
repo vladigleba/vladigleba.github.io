@@ -48,11 +48,13 @@
   background-color: var(--light-background);
 }
 
+.search-trigger,
 .main-nav li {
   text-transform: uppercase;
   padding: 5px 12.5px 3px;
 }
 
+.search-trigger:hover,
 .main-nav li:hover {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.125);
@@ -150,6 +152,8 @@
     <li>
       <a href="/prophecy/">Prophecy</a>
     </li>
+
+    
   </ul>
 
   <!-- global live region for site-wide announcements (screen readers) -->
@@ -176,14 +180,14 @@
     
     
     <div class="unified-card">
-  <div class="featured-card" style="background: rgb(77,104,129)">
-    <a href="/gospel/law/" class="card-link">
+  <div class="featured-card" style="background: rgb(86, 152, 99)">
+    <a href="/basics/bible/" class="card-link">
       <div class="tag">Featured</div>
-      <h2 class="title">God’s Law of Love</h2>
-      <p class="description">The book of James calls it the royal law of liberty. Can it even be kept? Or is obedience legalism?</p>
+      <h2 class="title">Can I Trust the Bible?</h2>
+      <p class="description">Is the Bible a fable, or is it the most trustworthy document we have ever possessed?</p>
       <p class="details">
-        Gospel <span>•</span>
-        18 min read <span>•</span> 
+        Basics <span>•</span>
+        6 min read <span>•</span> 
         <time datetime="2025-11-28T17:47:21.000Z">
           Nov 28, 2025
         </time>
@@ -1424,7 +1428,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-11-24T15:12:50.000Z" data-length="11" data-reading-order="1600">
+<li class="standalone-view" data-updated="2025-12-17T04:20:38.000Z" data-length="11" data-reading-order="1600">
   <div><span class="tag" style="color: rgb(237,103,82)">
     
       Facing Judgment <span>•</span>
@@ -1452,7 +1456,7 @@
       
         <span>•</span>
         11 min read <span>•</span> 
-        <time datetime="2025-11-24T15:12:50.000Z">Nov 24, 2025</time>
+        <time datetime="2025-12-17T04:20:38.000Z">Dec 16, 2025</time>
       
     
   </p>
@@ -1533,7 +1537,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-12-12T05:13:02.000Z" data-length="11" data-reading-order="1900">
+<li class="standalone-view" data-updated="2025-12-18T05:38:32.000Z" data-length="11" data-reading-order="1900">
   <div><span class="tag" style="color: rgb(199,103,103)">
     
       The Bible Sabbath <span>•</span>
@@ -1561,7 +1565,7 @@
       
         <span>•</span>
         11 min read <span>•</span> 
-        <time datetime="2025-12-12T05:13:02.000Z">Dec 11, 2025</time>
+        <time datetime="2025-12-18T05:38:32.000Z">Dec 17, 2025</time>
       
     
   </p>
@@ -1761,7 +1765,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-11-17T06:18:01.000Z" data-length="12" data-reading-order="2500">
+<li class="standalone-view" data-updated="2025-12-18T05:38:32.000Z" data-length="11" data-reading-order="2500">
   <div><span class="tag" style="color: rgb(255,98,98)">
     
       Mainstream Deceptions <span>•</span>
@@ -1780,7 +1784,7 @@
   </div>
 
   <a style="color: rgb(255,98,98)" href="/basics/death/">
-    Are the Dead Really Dead?
+    Is There Life After Death?
   </a>
   
   <p>
@@ -1788,8 +1792,8 @@
     
       
         <span>•</span>
-        12 min read <span>•</span> 
-        <time datetime="2025-11-17T06:18:01.000Z">Nov 16, 2025</time>
+        11 min read <span>•</span> 
+        <time datetime="2025-12-18T05:38:32.000Z">Dec 17, 2025</time>
       
     
   </p>
@@ -2067,7 +2071,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-12-16T04:43:05.000Z" data-length="17" data-reading-order="3300">
+<li class="standalone-view" data-updated="2025-12-17T04:20:38.000Z" data-length="17" data-reading-order="3300">
   <div><span class="tag" style="color: rgb(86,111,170)">
     
       Baptized by the Spirit <span>•</span>
@@ -2095,7 +2099,7 @@
       
         <span>•</span>
         17 min read <span>•</span> 
-        <time datetime="2025-12-16T04:43:05.000Z">Dec 15, 2025</time>
+        <time datetime="2025-12-17T04:20:38.000Z">Dec 16, 2025</time>
       
     
   </p>
@@ -2313,12 +2317,18 @@
       </div>
       
       <div class="last-updated">
-        Last updated <time datetime="2025-12-16T20:20:03.803Z">December 16, 2025</time>
+        Last updated <time datetime="2025-12-22T21:13:59.369Z">December 22, 2025</time>
       </div>
     <p></p>
   </div>
 </footer>
-
+    <div id="search-container" class="search-container">
+  <div class="search-modal">
+    <input id="search-input" type="text" class="search-input" placeholder="Search posts..." autocomplete="off" aria-label="Search posts">
+    <div id="search-results" class="search-results"></div>
+  </div>
+</div>
+    
     <script>
       document.body.classList.add('js-enabled');
       if (

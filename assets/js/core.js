@@ -506,5 +506,339 @@ if (document.body.classList.contains('js-enabled')) {
     }
 
     //#endregion
+    
+    /*
+    full-text search with snippet generation
+    */
+
+    //#region
+
+    let searchIndexData = null;
+    let miniSearchInstance = null;
+    const SEARCH_INDEX_URL = '/assets/js/search-index.json';
+    const RESULTS_PER_PAGE = 10;
+    const SNIPPET_LENGTH = 200;
+
+    // escape HTML entities
+    const escapeHtml = (text) => {
+      const map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;'
+      };
+      return text.replace(/[&<>"']/g, m => map[m]);
+    };
+
+    // escape special regex characters in search terms
+    const createSearchPattern = (term) => {
+      return term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    };
+
+    // highlight search terms in text
+    const highlightTerms = (text, searchPattern) => {
+      if (!text || !searchPattern) return escapeHtml(text);
+      
+      const escaped = escapeHtml(text);
+      return escaped.replace(
+        new RegExp(`(${searchPattern})`, 'gi'),
+        '<mark>$1</mark>'
+      );
+    };
+
+    // extract context snippet around matched terms
+    const extractSnippet = (fullText, searchPattern, targetLength = SNIPPET_LENGTH) => {
+      if (!fullText || !searchPattern) return '';
+
+      const regex = new RegExp(searchPattern, 'gi');
+      const match = regex.exec(fullText);
+      
+      if (!match) return '';
+
+      // find context boundaries around match
+      const halfLength = targetLength / 2;
+      let start = Math.max(0, match.index - halfLength);
+      let end = Math.min(fullText.length, match.index + match[0].length + halfLength);
+
+      // clean and truncate snippet
+      let snippet = fullText.substring(start, end).trim().replace(/\s+/g, ' ');
+      if (snippet.length > targetLength) {
+        snippet = snippet.substring(0, targetLength) + '...';
+      }
+
+      return highlightTerms(snippet, searchPattern);
+    };
+
+    // initialize MiniSearch with lazy-loaded index
+    const initializeSearch = async () => {
+      if (miniSearchInstance) return true;
+
+      try {
+        const response = await fetch(SEARCH_INDEX_URL);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+        searchIndexData = await response.json();
+
+        const MiniSearch = window.MiniSearch;
+        miniSearchInstance = MiniSearch.loadJSON(searchIndexData.index, searchIndexData.options);
+
+        // create document lookup map
+        miniSearchInstance.documentsById = {};
+        searchIndexData.documents.forEach(doc => {
+          miniSearchInstance.documentsById[doc.id] = doc;
+        });
+
+        return true;
+      } catch (err) {
+        console.error('error loading search index:', err);
+        return false;
+      }
+    };
+
+    // perform search and return paginated results
+    const performSearch = (query, page = 0) => {
+      if (!miniSearchInstance || !query.trim()) {
+        return { results: [], total: 0, hasMore: false };
+      }
+
+      try {
+        const trimmedQuery = query.trim();
+        const queryWords = trimmedQuery.split(/\s+/);
+        const isMultiWord = queryWords.length > 1;
+
+        let allResults;
+
+        if (isMultiWord) {
+          allResults = miniSearchInstance.search(trimmedQuery, {
+            prefix: true,
+            fuzzy: 0,
+            combineWith: 'AND',  // Must contain ALL words
+            boost: { title: 5, series: 5 }
+          });
+          
+          // Now filter for exact phrase
+          const phraseToMatch = trimmedQuery.toLowerCase();
+          allResults = allResults.filter(result => {
+            const fullDoc = miniSearchInstance.documentsById[result.id];
+            const searchableText = `${fullDoc.title} ${fullDoc.series || ''} ${fullDoc.body}`.toLowerCase();
+            return searchableText.includes(phraseToMatch);
+          });
+        } else {
+          allResults = miniSearchInstance.search(trimmedQuery, {
+            prefix: true,
+            fuzzy: 0,
+            boost: { title: 5, series: 5 }
+          });
+        }
+
+        const totalResults = allResults.length;
+        const startIdx = page * RESULTS_PER_PAGE;
+        const endIdx = startIdx + RESULTS_PER_PAGE;
+        const paginatedResults = allResults.slice(startIdx, endIdx);
+
+        // enrich results with snippets and highlighting
+        const enrichedResults = paginatedResults.map(result => {
+          const fullDoc = miniSearchInstance.documentsById[result.id];
+
+          const searchPattern = createSearchPattern(trimmedQuery);
+          const snippet = extractSnippet(fullDoc.body, searchPattern);
+
+          return {
+            id: result.id,
+            title: highlightTerms(fullDoc.title, searchPattern),
+            series: fullDoc.series ? highlightTerms(fullDoc.series, searchPattern) : '',
+            url: fullDoc.url,
+            category: fullDoc.category,
+            snippet: snippet,
+            score: result.score
+          };
+        });
+
+        return {
+          results: enrichedResults,
+          total: totalResults,
+          hasMore: endIdx < totalResults
+        };
+      } catch (err) {
+        console.error('error performing search:', err);
+        return { results: [], total: 0, hasMore: false };
+      }
+    };
+
+    // lazy-load MiniSearch library
+    const loadMiniSearchLibrary = () => {
+      return new Promise((resolve) => {
+        if (window.MiniSearch) {
+          resolve();
+          return;
+        }
+
+        const script = document.createElement('script');
+        script.src = '/assets/js/minisearch.js';
+        script.onload = resolve;
+        script.onerror = () => {
+          console.error('failed to load MiniSearch library');
+          resolve();
+        };
+        document.head.appendChild(script);
+      });
+    };
+
+    // render search results
+    const renderResults = (results, searchResults) => {
+      const fragment = document.createDocumentFragment();
+
+      results.forEach(result => {
+        const resultEl = document.createElement('a');
+        resultEl.href = result.url;
+        resultEl.className = 'search-result';
+
+        const seriesHtml = result.series 
+          ? `<span class="series">${result.series}</span>` 
+          : '';
+
+        resultEl.innerHTML = `
+          <div class="header">
+            <h3>${result.title}</h3>
+            ${seriesHtml}
+            <span class="category">${escapeHtml(result.category)}</span>
+          </div>
+          <p class="snippet">${result.snippet}</p>
+        `;
+
+        fragment.appendChild(resultEl);
+      });
+
+      searchResults.appendChild(fragment);
+    };
+
+    // add infinite scroll sentinel
+    const addScrollSentinel = (searchResults, observer) => {
+      const sentinel = document.createElement('div');
+      sentinel.className = 'search-scroll-sentinel';
+      searchResults.appendChild(sentinel);
+      observer.observe(sentinel);
+    };
+
+    // set up search UI
+    const setupSearchUI = async () => {
+      const searchContainer = document.getElementById('search-container');
+      const searchInput = document.getElementById('search-input');
+      const searchResults = document.getElementById('search-results');
+      const searchTrigger = document.getElementById('search-trigger');
+
+      if (!searchInput || !searchResults || !searchContainer) return;
+
+      let currentPage = 0;
+      let currentQuery = '';
+      let isLoadingMore = false;
+
+      const openSearch = async () => {
+        if (!miniSearchInstance) {
+          await loadMiniSearchLibrary();
+          await initializeSearch();
+        }
+
+        searchContainer.classList.add('active');
+        searchInput.focus();
+        searchResults.innerHTML = '';
+        document.body.style.overflow = 'hidden';
+
+        if (window.announceToLiveRegion) {
+          announceToLiveRegion('search panel opened');
+        }
+      };
+
+      const closeSearch = () => {
+        searchContainer.classList.remove('active');
+        document.body.style.overflow = '';
+        searchResults.innerHTML = '';
+        currentPage = 0;
+        currentQuery = '';
+
+        if (window.announceToLiveRegion) {
+          announceToLiveRegion('search panel closed');
+        }
+      };
+
+      const performAndRenderSearch = (query, page = 0, append = false) => {
+        isLoadingMore = true;
+        const { results, total, hasMore } = performSearch(query, page);
+
+        if (!append) {
+          searchResults.innerHTML = '';
+        }
+
+        if (results.length === 0 && page === 0) {
+          searchResults.innerHTML = '<p class="empty">No results found</p>';
+          isLoadingMore = false;
+          return;
+        }
+
+        renderResults(results, searchResults);
+
+        if (hasMore) {
+          addScrollSentinel(searchResults, infiniteScrollObserver);
+        }
+
+        isLoadingMore = false;
+      };
+
+      // infinite scroll handler
+      const infiniteScrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !isLoadingMore && currentQuery) {
+            currentPage++;
+            performAndRenderSearch(currentQuery, currentPage, true);
+          }
+        });
+      });
+
+      // handle search input
+      searchInput.addEventListener('input', (e) => {
+        currentQuery = e.target.value.trim();
+        currentPage = 0;
+
+        if (currentQuery.length > 0) {
+          performAndRenderSearch(currentQuery, 0);
+        } else {
+          searchResults.innerHTML = '';
+        }
+      });
+
+      // close search when clicking outside
+      searchContainer.addEventListener('click', (e) => {
+        if (e.target === searchContainer) {
+          closeSearch();
+        }
+      });
+
+      // keyboard shortcuts
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && searchContainer.classList.contains('active')) {
+          closeSearch();
+        }
+
+        if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+          e.preventDefault();
+          openSearch();
+        }
+      });
+
+      // search trigger button
+      if (searchTrigger) {
+        searchTrigger.addEventListener('click', openSearch);
+      }
+    };
+
+    // initialize search UI
+    try {
+      setupSearchUI();
+    } catch (err) {
+      console.error('error setting up search UI:', err);
+    }
+
+    //#endregion
   });
 }
