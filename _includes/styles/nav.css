@@ -24,6 +24,11 @@
   padding: 5px 12.5px 3px;
 }
 
+.search-trigger {
+  padding-left: 8px;
+  padding-bottom: 5px;
+}
+
 .search-trigger:hover,
 .main-nav li:hover {
   cursor: pointer;

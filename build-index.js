@@ -32,18 +32,6 @@ function getSeriesTitle(seriesKey) {
 }
 
 /**
-
- * Determine category from file path
- */
-function getCategoryFromPath(filePath) {
-  const match = filePath.match(/posts\/([^/]+)\//);
-  if (!match) return 'Other';
-  
-  const dirName = match[1];
-  return dirName.charAt(0).toUpperCase() + dirName.slice(1);
-}
-
-/**
  * Build URL from file path
  */
 function buildUrlFromPath(filePath) {
@@ -58,14 +46,17 @@ function processMarkdownFile(filePath, docId) {
   const content = fs.readFileSync(filePath, 'utf-8');
   const { data: frontmatter, content: bodyText } = matter(content);
   
+  // prepend description to body so it appears in search snippets
+  const fullBody = frontmatter.description 
+    ? `${frontmatter.description} ${cleanMarkdown(bodyText)}`
+    : cleanMarkdown(bodyText);
+  
   return {
     id: String(docId),
     title: frontmatter.title || '',
     series: getSeriesTitle(frontmatter.series),
-    body: cleanMarkdown(bodyText),
+    body: fullBody,
     url: buildUrlFromPath(filePath),
-    category: getCategoryFromPath(filePath),
-    description: frontmatter.description || ''
   };
 }
 
@@ -92,8 +83,10 @@ function collectMarkdownFiles(dir, files = []) {
  */
 function generateSearchIndex(postsDir = 'posts') {
   const miniSearchOptions = {
+    // fields to index for full-text search
     fields: ['title', 'series', 'description', 'body'],
-    storeFields: ['title', 'url', 'category', 'description', 'body', 'series']
+    // fields to return with search results
+    storeFields: ['title', 'series', 'url', 'description', 'body']
   };
 
   const index = new MiniSearch(miniSearchOptions);

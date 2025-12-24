@@ -77,7 +77,8 @@ li .tag {
   font-size: 15px;
 }
 
-.search-result .header .series {
+.search-result .header .series,
+.search-result .header .match-count {
   font-size: 13px;
 }
 
