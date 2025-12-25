@@ -4,7 +4,6 @@ const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
 const MiniSearch = require('minisearch');
-const site = require('./_data/site.json');
 
 /**
  * Remove Liquid tags and footnote markers from markdown
@@ -23,15 +22,6 @@ function cleanMarkdown(text) {
 }
 
 /**
- * Get user-facing series title from series key
- */
-function getSeriesTitle(seriesKey) {
-  return seriesKey && site.series[seriesKey]
-    ? site.series[seriesKey].title
-    : undefined;
-}
-
-/**
  * Build URL from file path
  */
 function buildUrlFromPath(filePath) {
@@ -46,16 +36,11 @@ function processMarkdownFile(filePath, docId) {
   const content = fs.readFileSync(filePath, 'utf-8');
   const { data: frontmatter, content: bodyText } = matter(content);
   
-  // prepend description to body so it appears in search snippets
-  const fullBody = frontmatter.description 
-    ? `${frontmatter.description} ${cleanMarkdown(bodyText)}`
-    : cleanMarkdown(bodyText);
-  
   return {
     id: String(docId),
     title: frontmatter.title || '',
-    series: getSeriesTitle(frontmatter.series),
-    body: fullBody,
+    description: frontmatter.description || '',
+    body: cleanMarkdown(bodyText),
     url: buildUrlFromPath(filePath),
   };
 }
@@ -84,7 +69,7 @@ function collectMarkdownFiles(dir, files = []) {
 function generateSearchIndex(postsDir = 'posts') {
   const miniSearchOptions = {
     // fields to index for full-text search
-    fields: ['title', 'series', 'description', 'body'],
+    fields: ['title', 'description', 'body'],
     // fields to return with search results
     storeFields: ['title', 'series', 'url', 'description', 'body']
   };
