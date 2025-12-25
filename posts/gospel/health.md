@@ -1,6 +1,6 @@
 ---
 title: God’s Health Plan
-description: Jesus wants to redeem me from sin. Does He have a plan to redeem my health as well?
+description: There is no doubt that Jesus wants to redeem us from sin. Does He have a plan to redeem our health as well?
 date: 2022-05-20
 series: Healing
 order: 2300
