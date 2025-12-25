@@ -5,8 +5,8 @@
 }
 
 .search-icon {
-  width: 22px;
-  height: 22px;
+  width: 21px;
+  height: 21px;
 }
 
 .search-container {
@@ -102,15 +102,8 @@
   flex: 1;
 }
 
-.search-result .header .series {
-  font-weight: 500;
-  color: var(--gray-color);
-  flex-shrink: 0;
-}
-
-.search-result .header .category {
+.search-result .header .match-count {
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 0.5px;
   padding: 2px 8px;
   border-radius: 3px;
