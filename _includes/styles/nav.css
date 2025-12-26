@@ -15,7 +15,7 @@
   list-style: none;
   display: flex;
   gap: 7px;
-  background-color: var(--light-background);
+  background-color: var(--light-blue-background);
 }
 
 .search-trigger,

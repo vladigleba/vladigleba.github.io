@@ -6,7 +6,7 @@
   order: 1; /* Moves ToC to the right */
   margin-top: 42px;
   margin-left: 50px;
-  background: var(--light-background);
+  background: var(--light-blue-background);
   border-radius: var(--default-radius);
   padding: 15px 18px;
 }

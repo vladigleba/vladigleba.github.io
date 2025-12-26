@@ -37,7 +37,7 @@ module.exports = async (config) => {
   config.addPassthroughCopy('assets');
   config.addPassthroughCopy({
     'node_modules/minisearch/dist/umd/index.js': 'assets/js/minisearch.js'
-  });
+  }); // needed for browser use
 
   //#endregion
 

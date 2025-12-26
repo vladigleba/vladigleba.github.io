@@ -518,6 +518,7 @@ if (document.body.classList.contains('js-enabled')) {
     const SEARCH_INDEX_URL = '/assets/js/search-index.json';
     const RESULTS_PER_PAGE = 10;
     const SNIPPET_LENGTH = 200;
+    const MAX_SNIPPETS_DISPLAY = 3;
 
     // escape HTML entities
     const escapeHtml = (text) => {
@@ -701,10 +702,12 @@ if (document.body.classList.contains('js-enabled')) {
         resultEl.innerHTML = `
           <div class="header">
             <h3>${result.title}</h3>
-            ${seriesHtml}
-            <span class="category">${escapeHtml(result.category)}</span>
+            ${matchCountHtml}
           </div>
-          <p class="snippet">${result.snippet}</p>
+          <div class="snippets">
+            ${snippetsHtml}
+            ${moreSnippetsHtml}
+          </div>
         `;
 
         fragment.appendChild(resultEl);
@@ -741,9 +744,13 @@ if (document.body.classList.contains('js-enabled')) {
         }
 
         searchContainer.classList.add('active');
-        searchInput.focus();
         searchResults.innerHTML = '';
         document.body.style.overflow = 'hidden';
+
+        // focus after a small delay to ensure visibility transition completes
+        setTimeout(() => {
+          searchInput.focus();
+        }, 50);
 
         if (window.announceToLiveRegion) {
           announceToLiveRegion('search panel opened');
@@ -754,6 +761,7 @@ if (document.body.classList.contains('js-enabled')) {
         searchContainer.classList.remove('active');
         document.body.style.overflow = '';
         searchResults.innerHTML = '';
+        searchInput.value = '';
         currentPage = 0;
         currentQuery = '';
 
@@ -763,6 +771,8 @@ if (document.body.classList.contains('js-enabled')) {
       };
 
       const performAndRenderSearch = (query, page = 0, append = false) => {
+        if (query.trim().length === 1) return; // ignore single-character queries
+
         isLoadingMore = true;
         const { results, total, hasMore } = performSearch(query, page);
 

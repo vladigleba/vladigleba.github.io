@@ -67,7 +67,7 @@
 }
 
 .coming-next-card {
-  background: rgb(247 248 249);
+  background: var(--light-gray-background);
   border-bottom-left-radius: var(--default-radius);
   border-bottom-right-radius: var(--default-radius);
 }
