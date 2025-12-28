@@ -518,7 +518,12 @@ if (document.body.classList.contains('js-enabled')) {
     const SEARCH_INDEX_URL = '/assets/js/search-index.json';
     const RESULTS_PER_PAGE = 10;
     const SNIPPET_LENGTH = 200;
-    const MAX_SNIPPETS_DISPLAY = 3;
+    const MAX_SNIPPETS_DISPLAY = 4;
+
+    // normalize apostrophes - convert straight to typographical
+    const normalizeApostrophes = (text) => {
+      return text.replace(/'/g, "’");
+    };
 
     // escape HTML entities
     const escapeHtml = (text) => {
@@ -534,7 +539,8 @@ if (document.body.classList.contains('js-enabled')) {
 
     // escape special regex characters in search terms
     const createSearchPattern = (term) => {
-      return term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+return escaped.replace(/'/g, "’");
     };
 
     // highlight search terms in text
@@ -548,49 +554,88 @@ if (document.body.classList.contains('js-enabled')) {
       );
     };
 
-    // extract context snippet around matched terms
-    const extractSnippet = (fullText, searchPattern, targetLength = SNIPPET_LENGTH) => {
-      if (!fullText || !searchPattern) return '';
-
-      const regex = new RegExp(searchPattern, 'gi');
-      const match = regex.exec(fullText);
+    // build a single snippet with boundaries and ellipsis
+    const buildSnippet = (text, matchIndex, length = SNIPPET_LENGTH) => {
+      const halfLength = length / 2;
+      let start = Math.max(0, matchIndex - halfLength);
+      let end = Math.min(text.length, start + length);
       
-      if (!match) return '';
-
-      // find context boundaries around match
-      const halfLength = targetLength / 2;
-      let start = Math.max(0, match.index - halfLength);
-      let end = Math.min(fullText.length, match.index + match[0].length + halfLength);
-
-      // clean and truncate snippet
-      let snippet = fullText.substring(start, end).trim().replace(/\s+/g, ' ');
-      if (snippet.length > targetLength) {
-        snippet = snippet.substring(0, targetLength) + '...';
+      // if we hit the end boundary, extend start to maintain length
+      if (end === text.length && text.length - start < length) {
+        start = Math.max(0, text.length - length);
       }
-
-      return highlightTerms(snippet, searchPattern);
+      
+      // extract snippet, trim, and defensive length check
+      let snippet = text.substring(start, end).trim().replace(/\s+/g, ' ');
+      if (snippet.length > length) {
+        snippet = snippet.substring(0, length);
+      }
+      
+      return {
+        text: snippet,
+        prefix: start > 0 ? '...' : '',
+        suffix: end < text.length ? '...' : ''
+      };
     };
 
-    // initialize MiniSearch with lazy-loaded index
-    const initializeSearch = async () => {
-      if (miniSearchInstance) return true;
+    // extract all matching snippets from text with match count
+    const extractAllSnippets = (fullText, searchPattern, targetLength = SNIPPET_LENGTH) => {
+      if (!fullText || !searchPattern) {
+        return { snippets: [], totalMatches: 0, hasMore: false, hiddenCount: 0 };
+      }
 
-      try {
+      const allSnippets = []; // preserves order, allows slicing
+      const seenSnippets = new Set(); // tracks unique snippets
+      const regex = new RegExp(searchPattern, 'gi');
+      let match;
+
+      // while there are matches
+      while ((match = regex.exec(fullText)) !== null) {
+        const { text, prefix, suffix } = buildSnippet(fullText, match.index, targetLength);
+        const formattedSnippet = `${prefix}${text}${suffix}`;
+        const highlightedSnippet = highlightTerms(formattedSnippet, searchPattern);
+        
+        // only add if we haven't seen this snippet before
+        if (!seenSnippets.has(highlightedSnippet)) { // O(1) v O(n) array .includes()
+          seenSnippets.add(highlightedSnippet); 
+          allSnippets.push(highlightedSnippet);
+        }
+      }
+
+      const displaySnippets = allSnippets.slice(0, MAX_SNIPPETS_DISPLAY);
+      const hasMore = allSnippets.length > MAX_SNIPPETS_DISPLAY;
+      const hiddenCount = Math.max(0, allSnippets.length - MAX_SNIPPETS_DISPLAY);
+
+      return {
+        snippets: displaySnippets,
+        totalMatches: allSnippets.length,
+        hasMore,
+        hiddenCount,
+        allSnippets
+      };
+    };
+
+    // initialize MiniSearch with lazy-loaded index generated at build time
+    const initializeSearch = async () => {
+      if (miniSearchInstance) return true; // build search engine only once
+
+      try { // everything inside can fail, so handle errors gracefully
         const response = await fetch(SEARCH_INDEX_URL);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
         searchIndexData = await response.json();
+        const MiniSearch = window.MiniSearch; // load MiniSearch from global window
 
-        const MiniSearch = window.MiniSearch;
+        // rebuild MiniSearch instance from saved JSON
         miniSearchInstance = MiniSearch.loadJSON(searchIndexData.index, searchIndexData.options);
 
-        // create document lookup map
+        // create document lookup map to enable instant access to doc data
         miniSearchInstance.documentsById = {};
         searchIndexData.documents.forEach(doc => {
           miniSearchInstance.documentsById[doc.id] = doc;
         });
 
-        return true;
+        return true; // search is ready
       } catch (err) {
         console.error('error loading search index:', err);
         return false;
