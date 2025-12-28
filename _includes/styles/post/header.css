@@ -82,7 +82,9 @@ article > header .series-item:not([aria-current="page"]):hover {
 }
 
 article > header .meta.series {
+  font-weight: 700;
   padding: 10px 20px;
   margin: 0 -20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+  text-transform: uppercase;
 }

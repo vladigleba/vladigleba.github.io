@@ -70,6 +70,11 @@
   font-family: inherit;
 }
 
+.search-summary {
+  font-weight: 500;
+  color: var(--gray-color);
+}
+
 .search-results {
   flex: 1;
   overflow-y: auto;
@@ -89,7 +94,7 @@
 }
 
 .search-result mark {
-  background-color: #fff4cc; /* #fff7af; */
+  background-color: #fff7af;
 }
 
 .search-result:last-child {
@@ -98,14 +103,19 @@
 
 .search-result .snippet-item,
 .search-result .header,
-.search-result .show-more-snippets {
+.search-result .show-more-snippets,
+.search-summary {
   padding-left: 15px;
   padding-right: 15px;
 }
 
+.search-summary,
 .search-result .header {
   padding-top: 6px;
   padding-bottom: 6px;
+}
+
+.search-result .header {
   display: flex;
   align-items: baseline;
   background-color: var(--light-gray-background);

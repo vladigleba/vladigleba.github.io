@@ -60,8 +60,7 @@ article > header p {
 
 #dialog-popup,
 .copy-toast,
-.footnotes,
-article > header .meta.series {
+.footnotes {
   font-size: 17px;
 }
 
@@ -69,10 +68,12 @@ article > header .meta.series {
 .search-results .empty,
 .toc a,
 body > footer,
-.unified-card .tag {
+.unified-card .tag,
+article > header .meta.series {
   font-size: 16px;
 }
 
+.search-summary,
 li .tag {
   font-size: 15px;
 }
