@@ -13,7 +13,7 @@ order: 500
 
 ## Does John confirm Jesus’ divinity?
 
-> In the beginning was the Word, and the Word was with God, and the *Word was God*. &hellip; And the Word was made flesh, and dwelt among us, and we beheld his glory, the glory as of the only begotten of the Father, full of grace and truth.
+> In the beginning was the Word, and the Word was with God, and the *Word was God*. … And the Word was made flesh, and dwelt among us, and we beheld his glory, the glory as of the only begotten of the Father, full of grace and truth.
 {% ct 'John 1:1, 14' %}
 
 ## What did Jesus say about His divinity?

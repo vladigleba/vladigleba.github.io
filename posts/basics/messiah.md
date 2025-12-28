@@ -53,7 +53,7 @@ These prophecies came from different time periods and different prophets, but th
 > Yea, *mine own familiar friend, in whom I trusted, which did eat of my bread*, hath lifted up his heel against me.
 {% ct 'Psalm 41:9' %}
 
-> When Jesus had said these things, He was troubled in spirit, and testified and said, “Most assuredly, I say to you, *one of you will betray Me*.” Then the disciples looked at one another, perplexed about whom He spoke. &hellip; Jesus answered, “*It is he to whom I shall give a piece of bread* when I have dipped it.” And having dipped the bread, He gave it to Judas Iscariot, the son of Simon.
+> When Jesus had said these things, He was troubled in spirit, and testified and said, “Most assuredly, I say to you, *one of you will betray Me*.” Then the disciples looked at one another, perplexed about whom He spoke. … Jesus answered, “*It is he to whom I shall give a piece of bread* when I have dipped it.” And having dipped the bread, He gave it to Judas Iscariot, the son of Simon.
 {% ct 'John 13:21-22, 26, NKJV' %}
 
 Jesus was betrayed by a friend, one of His own disciples, and even the act that initiated the betrayal was accurately foretold—the eating of bread.
