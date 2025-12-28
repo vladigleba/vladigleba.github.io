@@ -68,10 +68,12 @@ function collectMarkdownFiles(dir, files = []) {
  */
 function generateSearchIndex(postsDir = 'posts') {
   const miniSearchOptions = {
-    // fields to index for full-text search
-    fields: ['title', 'description', 'body'],
-    // fields to return with search results
-    storeFields: ['title', 'series', 'url', 'description', 'body']
+    fields: ['title', 'description', 'body'], // indexed
+    storeFields: ['title', 'description', 'body', 'url'], // returned w/ search results
+    boost: { title: 5, description: 3, body: 1 },
+    tokenize: (text) => {
+      return text.toLowerCase().match(/[a-z0-9’-]+/gi) || []; // keep apostrophes in words
+    }
   };
 
   const index = new MiniSearch(miniSearchOptions);
