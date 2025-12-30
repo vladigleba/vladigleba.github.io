@@ -1,5 +1,4 @@
 // Usage: node build-index.js
-
 const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
@@ -59,7 +58,6 @@ function collectMarkdownFiles(dir, files = []) {
       files.push(filePath);
     }
   });
-  
   return files;
 }
 
@@ -72,13 +70,12 @@ function generateSearchIndex(postsDir = 'posts') {
     storeFields: ['title', 'description', 'body', 'url'], // returned w/ search results
     boost: { title: 5, description: 3, body: 1 },
     tokenize: (text) => {
-      return text.toLowerCase().match(/[a-z0-9’-]+/gi) || []; // keep apostrophes in words
-    }
+      return text.match(/[a-z0-9’-]+/gi) || [];
+    } // include typographical apostrophes in tokens (matches core.js for consistency)
   };
 
   const index = new MiniSearch(miniSearchOptions);
   const documents = [];
-  
   const markdownFiles = collectMarkdownFiles(postsDir);
   
   markdownFiles.forEach((filePath, idx) => {
@@ -101,10 +98,8 @@ function generateSearchIndex(postsDir = 'posts') {
 /**
  * Run the search index generation process
  */
-
 if (require.main === module) { // node build-index.js
   const { index, options, documents } = generateSearchIndex();
-  
   const outDir = path.join(__dirname, '_site', 'assets', 'js');
   fs.mkdirSync(outDir, { recursive: true });
   

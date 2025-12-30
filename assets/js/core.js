@@ -540,7 +540,7 @@ if (document.body.classList.contains('js-enabled')) {
     // escape special regex characters in search terms
     const createSearchPattern = (term) => {
       const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-return escaped.replace(/'/g, "’");
+      return escaped.replace(/'/g, "’");
     };
 
     // highlight search terms in text
@@ -727,11 +727,11 @@ return escaped.replace(/'/g, "’");
 
         // execute token-based search
         let allResults = executeSearch(normalizedQuery);
-          
+        
         // filter for exact phrase if multi-word
         const applyPhraseFilter = phrase => phrase.trim().split(/\s+/).length > 1;
         if (applyPhraseFilter(normalizedQuery)) {
-        allResults = filterForExactPhrase(allResults, normalizedQuery);
+          allResults = filterForExactPhrase(allResults, normalizedQuery);
         }
 
         // pagination
@@ -796,7 +796,7 @@ return escaped.replace(/'/g, "’");
 
         const matchCountHtml = result.matchCount > 0
           ? `<span class="match-count">
-              ${result.matchCount} ${result.matchCount === 1 ? 'result' : 'results'}
+              ${result.matchCount} ${result.matchCount === 1 ? 'match' : 'matches'}
             </span>`
           : '';
 
@@ -808,7 +808,7 @@ return escaped.replace(/'/g, "’");
         const moreSnippetsHtml = result.hasMoreSnippets
           ? `<button class="show-more-snippets" data-result-id="${result.id}">
               <span class="expand-icon">↓</span>
-              Show ${hiddenCount} more ${hiddenCount === 1 ? 'result' : 'results'}
+              Show ${hiddenCount} more ${hiddenCount === 1 ? 'match' : 'matches'}
             </button>`
           : '';
 
@@ -841,19 +841,30 @@ return escaped.replace(/'/g, "’");
       observer.observe(sentinel);
     };
 
-    // set up search UI
+    // search UI setup
     const setupSearchUI = async () => {
       const searchContainer = document.getElementById('search-container');
       const searchInput = document.getElementById('search-input');
       const searchResults = document.getElementById('search-results');
       const searchTrigger = document.getElementById('search-trigger');
 
-      if (!searchInput || !searchResults || !searchContainer) return;
+      if (!searchContainer || !searchInput || !searchResults) return;
 
+      // state
       let currentPage = 0;
       let currentQuery = '';
       let isLoadingMore = false;
 
+      // state helpers
+      const resetSearchState = () => {
+        currentPage = 0;
+        currentQuery = '';
+        isLoadingMore = false;
+        searchResults.innerHTML = '';
+        searchInput.value = '';
+      };
+
+      // search open / close
       const openSearch = async () => {
         if (!miniSearchInstance) {
           await loadMiniSearchLibrary();
@@ -861,44 +872,53 @@ return escaped.replace(/'/g, "’");
         }
 
         searchContainer.classList.add('active');
-        searchResults.innerHTML = '';
         document.body.style.overflow = 'hidden';
 
         // focus after a small delay to ensure visibility transition completes
         setTimeout(() => searchInput.focus(), 50);
 
-        if (window.announceToLiveRegion) {
-          announceToLiveRegion('search panel opened');
-        }
+        window.announceToLiveRegion?.('search panel opened');
       };
 
       const closeSearch = () => {
         searchContainer.classList.remove('active');
         document.body.style.overflow = '';
-        searchResults.innerHTML = '';
-        searchInput.value = '';
-        currentPage = 0;
-        currentQuery = '';
-
-        if (window.announceToLiveRegion) {
-          announceToLiveRegion('search panel closed');
-        }
+        resetSearchState();
+        window.announceToLiveRegion?.('search panel closed');
       };
 
-      const performAndRenderSearch = (query, page = 0, append = false) => {
-        if (query.length === 1) return;
+      // prevent multiple observers on same elements
+      const clearScrollSentinels = () => {
+        searchResults
+          .querySelectorAll('.search-scroll-sentinel')
+          .forEach(el => infiniteScrollObserver.unobserve(el));
+      };
+
+      // search execution + rendering
+      const performAndRenderSearch = async (query, page = 0, append = false) => {
+        if (query.trim().length <= 1) return;
 
         isLoadingMore = true;
         const { results, total, hasMore } = performSearch(query, page);
 
+        // clear previous results if starting new search
         if (!append) {
+          clearScrollSentinels();
           searchResults.innerHTML = '';
         }
 
-        if (results.length === 0 && page === 0) {
+        if (!results.length && page === 0) {
           searchResults.innerHTML = '<p class="empty">No results found</p>';
           isLoadingMore = false;
           return;
+        }
+
+        // show article count
+        if (page === 0 && total > 0) {
+          const summaryEl = document.createElement('div');
+          summaryEl.className = 'search-summary';
+          summaryEl.textContent = `${total} ${total === 1 ? 'article' : 'articles'}`;
+          searchResults.appendChild(summaryEl);
         }
 
         renderResults(results, searchResults);
@@ -910,29 +930,62 @@ return escaped.replace(/'/g, "’");
         isLoadingMore = false;
       };
 
-      // infinite scroll handler
-      const infiniteScrollObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+      // infinite scroll observer
+      const infiniteScrollObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => { // for each sentinel
+
+          // if visible, not already loading, and we have a query
           if (entry.isIntersecting && !isLoadingMore && currentQuery) {
-            currentPage++;
+            currentPage++; // move to next page
             performAndRenderSearch(currentQuery, currentPage, true);
           }
         });
       });
 
-      // handle search input
+      // snippet expansion
+      const expandAllSnippets = (button) => {
+        const resultEl = button.closest('.search-result');
+        if (!resultEl) return;
+
+        const snippetsContainer = resultEl.querySelector('.snippets');
+        const allSnippets = JSON.parse(resultEl.dataset.allSnippets || '[]');
+        const resultUrl = resultEl.dataset.resultUrl;
+
+        snippetsContainer.innerHTML = renderSnippetHTML(allSnippets, resultUrl);
+        button.remove();
+
+        window.announceToLiveRegion?.('all matching excerpts expanded');
+      };
+
+      // event: search input
       searchInput.addEventListener('input', (e) => {
         currentQuery = e.target.value;
         currentPage = 0;
 
-        if (currentQuery.length > 0) {
+        if (currentQuery) { // if query present
           performAndRenderSearch(currentQuery, 0);
-        } else {
-          searchResults.innerHTML = '';
+        } else { // search cleared
+          resetSearchState();
         }
       });
 
-      // close search when clicking outside
+      // event delegation (results)
+      searchResults.addEventListener('click', (e) => {
+        const showMoreBtn = e.target.closest('.show-more-snippets');
+        if (showMoreBtn) {
+          e.preventDefault();
+          e.stopPropagation();
+          expandAllSnippets(showMoreBtn);
+          return;
+        }
+
+        const snippetLink = e.target.closest('.snippet-item');
+        if (snippetLink) {
+          // to do: enable highlighting on article page based on URL param
+        }
+      });
+
+      // close when clicking backdrop
       searchContainer.addEventListener('click', (e) => {
         if (e.target === searchContainer) {
           closeSearch();
@@ -941,26 +994,25 @@ return escaped.replace(/'/g, "’");
 
       // keyboard shortcuts
       document.addEventListener('keydown', (e) => {
+        const isCmdOrCtrlK =
+          (e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k';
+
         if (e.key === 'Escape' && searchContainer.classList.contains('active')) {
           closeSearch();
         }
 
-        if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+        if (isCmdOrCtrlK) {
           e.preventDefault();
           openSearch();
         }
       });
 
-      // search trigger button
-      if (searchTrigger) {
-        searchTrigger.addEventListener('click', openSearch);
-      }
+      // trigger button
+      searchTrigger?.addEventListener('click', openSearch);
     };
 
-    // initialize search UI
     try {
       setupSearchUI();
-      handleSearchMatchScroll();
     } catch (err) {
       console.error('error setting up search UI:', err);
     }
