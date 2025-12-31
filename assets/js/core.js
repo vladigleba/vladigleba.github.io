@@ -507,7 +507,7 @@ if (document.body.classList.contains('js-enabled')) {
 
     //#endregion
     
-    /*
+/*
     full-text search with snippet generation
     */
 
@@ -617,6 +617,12 @@ if (document.body.classList.contains('js-enabled')) {
       };
     };
 
+    // reconstruct full body text from blocks
+    const reconstructBodyText = (blocks) => {
+      if (!blocks || !Array.isArray(blocks)) return '';
+      return blocks.map(block => block.text).join(' ');
+    };
+
     // initialize MiniSearch with lazy-loaded index generated at build time
     const initializeSearch = async () => {
       if (miniSearchInstance) return true; // build search engine only once
@@ -632,9 +638,13 @@ if (document.body.classList.contains('js-enabled')) {
         miniSearchInstance = MiniSearch.loadJSON(searchIndexData.index, searchIndexData.options);
 
         // create document lookup map to enable instant access to doc data
+        // also reconstruct body text from blocks for searching
         miniSearchInstance.documentsById = {};
         searchIndexData.documents.forEach(doc => {
-          miniSearchInstance.documentsById[doc.id] = doc;
+          miniSearchInstance.documentsById[doc.id] = {
+            ...doc,
+            body: reconstructBodyText(doc.blocks) // reconstruct full text for searching
+          };
         });
 
         return true; // search is ready
@@ -728,11 +738,8 @@ if (document.body.classList.contains('js-enabled')) {
         // execute token-based search
         let allResults = executeSearch(normalizedQuery);
         
-        // filter for exact phrase if multi-word
-        const applyPhraseFilter = phrase => phrase.trim().split(/\s+/).length > 1;
-        if (applyPhraseFilter(normalizedQuery)) {
-          allResults = filterForExactPhrase(allResults, normalizedQuery);
-        }
+        // always filter for exact phrase matches (tokenizer is too broad)
+        allResults = filterForExactPhrase(allResults, normalizedQuery);      
 
         // pagination
         const totalResults = allResults.length;
