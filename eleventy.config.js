@@ -294,7 +294,6 @@ module.exports = async (config) => {
     }
     
     // early exit if no headings
-    const headings = main.querySelectorAll('h2, h3, h4');
     if (headings.length < 1) return content;
         
     // batch DOM operations
@@ -336,7 +335,7 @@ module.exports = async (config) => {
         fragment.appendChild(listItem);
       }
       
-      // wrap h2 sections
+      // wrap h2 heading and paragraphs in section tags
       if (heading.tagName === 'H2') {
         let current = heading.nextElementSibling;
         const toWrap = [];
