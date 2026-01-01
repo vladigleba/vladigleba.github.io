@@ -293,6 +293,37 @@ module.exports = async (config) => {
       figure.appendChild(figcaption);
     }
     
+    // add data-search-id attributes to content blocks for search functionality
+    const blockCounters = { heading: 0, paragraph: 0, blockquote: 0, list: 0 };
+    
+    // headings (ignore h1 since it's page title)
+    const headings = main.querySelectorAll('h2, h3, h4, h5, h6');
+    for (const heading of headings) {
+      heading.setAttribute('data-search-id', `heading-${blockCounters.heading++}`);
+    }
+    
+    // paragraphs (but not inside blockquotes or lists)
+    const paragraphs = main.querySelectorAll('p');
+    for (const p of paragraphs) {
+      if (p.closest('blockquote, figure, ul, ol')) continue;
+      p.setAttribute('data-search-id', `paragraph-${blockCounters.paragraph++}`);
+    }
+    
+    // blockquotes (wrapped in figures after the earlier transform)
+    const figures = main.querySelectorAll('figure');
+    for (const figure of figures) {
+      if (figure.querySelector('blockquote')) {
+        figure.setAttribute('data-search-id', `blockquote-${blockCounters.blockquote++}`);
+      }
+    }
+    
+    // lists (both ul and ol, but skip TOC lists, nested lists, footnotes)
+    const lists = main.querySelectorAll('ul, ol');
+    for (const list of lists) {
+      if (list.closest('aside, ul, ol') || list.classList.contains('footnotes-list')) continue;
+      list.setAttribute('data-search-id', `list-${blockCounters.list++}`);
+    }
+    
     // early exit if no headings
     if (headings.length < 1) return content;
         
