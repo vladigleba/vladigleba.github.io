@@ -19,18 +19,17 @@ order: 2800
 {% ct 'Revelation 13:18' %}
 
 Before identifying the mark of the beast, we must first identify the beast itself. The Bible gives 11 characteristics:
-
-1. It rises out of the sea {% rf 'Revelation 13:1' %},
-1. It is the composite of the four beasts of Daniel 7 {% rf 'Revelation 13:2' %},
-1. The dragon gives it power and authority {% rf 'Revelation 13:2' %},
-1. It receives a deadly wound {% rf 'Revelation 13:3' %},
-1. Its deadly wound is healed {% rf 'Revelation 13:3' %},
-1. It becomes a strong political power {% rf 'Revelation 13:3, 7' %},
-1. It becomes a strong religious power {% rf 'Revelation 13:3, 8' %},
-1. It speaks blasphemy against God {% rf 'Revelation 13:1, 5, 6' %},
-1. It wars against the saints and overcomes them {% rf 'Revelation 13:7' %},
-1. It rules for 42 months {% rf 'Revelation 13:5' %},
-1. It has the mysterious number of 666 {% rf 'Revelation 13:18' %}.
+1. It rises out of the sea {% rf 'Revelation 13:1' %}
+1. It is the composite of the four beasts of Daniel 7 {% rf 'Revelation 13:2' %}
+1. The dragon gives it power and authority {% rf 'Revelation 13:2' %}
+1. It receives a deadly wound {% rf 'Revelation 13:3' %}
+1. Its deadly wound is healed {% rf 'Revelation 13:3' %}
+1. It becomes a strong political power {% rf 'Revelation 13:3, 7' %}
+1. It becomes a strong religious power {% rf 'Revelation 13:3, 8' %}
+1. It speaks blasphemy against God {% rf 'Revelation 13:1, 5, 6' %}
+1. It wars against the saints and overcomes them {% rf 'Revelation 13:7' %}
+1. It rules for 42 months {% rf 'Revelation 13:5' %}
+1. It has the mysterious number of 666 {% rf 'Revelation 13:18' %}
 
 ## What power is represented here?
 
@@ -56,13 +55,11 @@ The Bible often operates on the principle of repetition where previously covered
 
 1. *It rules for 42 months.* The papacy ruled for [42 prophetic months](/posts/prophecy/antichrist.md#what-power-fits-these-characteristics), which equates to 1,260 years, from 538 to 1798. During this time the papacy had power to persecute and kill anyone who followed the Bible over its own traditions, and as a result, many had to flee their native countries or even escape into the wilderness. This was clearly foretold in {% rf 'Revelation 12:6, 14' false %} and vividly fulfilled, for example, in the history of the Huguenots who fled France and the Waldensians who escaped into the Cottian Alps because they refused to compromise with the unbiblical teachings of the Roman Catholic Church.
 
-1. *It has the mysterious number of 666.* {% rf 'Revelation 13:8' false %} refers to it as “the number of a man,” and {% rf 'Revelation 15:2' false %} says “the number of his name.” What is the official name of the pope? According to a Catholic quote: “The title of the pope of Rome is Vicarius Filii Dei.”[^6] The Douay versions of the Bible have a footnote for {% rf 'Revelation 13:8' false %} that says, “The numeral letters of his name shall make up this number.” Notice that when the Roman numeral values of the letters of the pope’s official name are added up they equal 666 (note that V and U each equal five in Roman numerals). <br>
+1. *It has the mysterious number of 666.* {% rf 'Revelation 13:8' false %} refers to it as “the number of a man,” and {% rf 'Revelation 15:2' false %} says “the number of his name.” What is the official name of the pope? According to a Catholic quote: “The title of the pope of Rome is Vicarius Filii Dei,”[^6] meaning “substitute of Son of God,” which is an echo of the word “antichrist,” which can be translated as “in place of God.” The Douay versions of the Bible have a footnote for {% rf 'Revelation 13:8' false %} that says, “The numeral letters of his name shall make up this number.” Notice that when the Roman numeral values of the letters of the pope’s official Latin name are added up they equal 666 (note that V and U each equal five in Roman numerals). <br>
 
 |V|I|C|A|R|I|U|S| |F|I|L|I|I| |D|E|I|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |5|1|100|0|0|1|5|0| |0|1|50|1|1| |500|0|1|
-
-By the way, the Latin title “Vicarius Filii Dei” means “substitute of Son of God,” which is an echo of the word “antichrist,” which can be translated as “in place of God.”
 
 To summarize, there is no other power in history that could fit all 11 of these identifiers apart from the papacy, and only God could have prophesied this in advance.
 

@@ -108,7 +108,6 @@ The spirit of the Reformation continued through the centuries, leading to the es
 1. The third message warns against worshiping the beast or receiving [his mark](/posts/prophecy/mark.md), which is the observance of the papal Sunday in place of God’s true seventh-day Sabbath.
 
 Because this three-point message goes to the entire world, the remnant church must be a worldwide missionary church that preaches this three-point message. With the addition of the previously identified clues, we now have the following list of characteristics regarding the remnant church:
-
 1. It would arise after 1798.
 1. It would believe all the teachings of Jesus.
 1. It would have the spirit of prophecy.

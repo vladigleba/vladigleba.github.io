@@ -92,8 +92,7 @@ God will never force His will upon us, which is why surrender begins with the *w
 > After this manner therefore pray ye: Our Father which art in heaven, *Hallowed be thy name. Thy kingdom come. Thy will be done* in earth, as it is in heaven.
 {% ct 'Matthew 6:9-10' %}
 
-It is easy for our prayers to become self-focused and selfish, but Christ teaches us to seek first His kingdom and His righteousness. This is later reinforced in His model prayer: “Hallowed be thy name. Thy kingdom come. Thy will be done.” Below are some difficult—but necessary—questions we can ask to help us understand where we stand: 
-
+It is easy for our prayers to become self-focused and selfish, but Christ teaches us to seek first His kingdom and His righteousness. This is later reinforced in His model prayer: “Hallowed be thy name. Thy kingdom come. Thy will be done.” Below are some difficult—but necessary—questions we can ask to help us understand where we stand:
 1. Is my primary focus on bringing glory and honor to His holy name rather than my own? 
 1. Am I preparing for and investing in His kingdom of righteousness—which, by the way, starts in our hearts now {% rf 'Luke 17:20-21' %}—or am I more concerned with expanding my own personal, earthly empire?
 1. Am I seeking His will in my daily life, or am I pursuing my own wants and desires above all else?
@@ -302,10 +301,10 @@ Jesus often prayed aloud, even in His personal prayers; otherwise, His disciples
 ## What is the PRAY acronym?
 
 PRAY is an easy-to-remember acronym that can bring structure to our prayers. It stands for:
-- *Praise* - acknowledging God’s goodness.
-- *Repent* - confessing sins He has convicted us about.
-- *Ask* - presenting our requests to Him and interceding for others.
-- *Yield* - surrendering ourselves to Him in faith—our will, mind, heart, body, plans, abilities, and resources.
+- **Praise**: acknowledging God’s goodness.
+- **Repent**: confessing sins He has convicted us about.
+- **Ask**: presenting our requests to Him and interceding for others.
+- **Yield**: surrendering ourselves to Him in faith—our will, mind, heart, body, plans, abilities, and resources.
 
 ## Should I document God’s answers?
 

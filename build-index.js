@@ -70,7 +70,7 @@ function cleanList(text, listCounter = { ordered: 0 }) {
     return line; // fallback
   });
   
-  return cleaned.join('\n'); // combine into single string with newlines
+  return cleaned.join('\n'); // combine into single string
 }
 
 function cleanFootnote(text) {

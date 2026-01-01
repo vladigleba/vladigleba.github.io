@@ -36,12 +36,12 @@ Because of its power and influence in the world, Babylon made drunk, or confused
 
 The Bible gives seven characteristics to describe Babylon:
 1. She is called the “Mother of Harlots” {% rf 'Revelation 17:5' %},
-2. She persecutes the saints {% rf 'Revelation 17:6' %},
-3. She is dressed in purple and scarlet and decked with jewelry {% rf 'Revelation 17:4' %},
-4. She is sitting on a beast {% rf 'Revelation 17:3' %},
-5. She has worldwide influence {% rf 'Revelation 17:1, 18' %},
-6. The beast she’s sitting on has seven heads and ten horns {% rf 'Revelation 17:3' %},
-7. The beast is guilty of blasphemy {% rf 'Revelation 17:3' %}.
+1. She persecutes the saints {% rf 'Revelation 17:6' %},
+1. She is dressed in purple and scarlet and decked with jewelry {% rf 'Revelation 17:4' %},
+1. She is sitting on a beast {% rf 'Revelation 17:3' %},
+1. She has worldwide influence {% rf 'Revelation 17:1, 18' %},
+1. The beast she’s sitting on has seven heads and ten horns {% rf 'Revelation 17:3' %},
+1. The beast is guilty of blasphemy {% rf 'Revelation 17:3' %}.
 
 ## What does a woman represent?
 

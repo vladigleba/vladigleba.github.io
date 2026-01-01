@@ -196,10 +196,15 @@ Ultimately, this is an act of mercy because sin only leads to pain, suffering, a
 {% ct '1 John 1:9' %}
 
 The judgment has been in session since 1844, and even though it may seem like a dreadful thing to many, it’s actually full of good news:
+
 - The central purpose of the judgment is to vindicate God’s character and government before the universe, because Lucifer, [in his rebellion](/posts/gospel/evil.md), suggested that, if given the chance, he would establish a better form of government than God, but in the end, every human and angel, including Satan, will bow in confession that God’s ways are love, mercy, and justice {% rf 'Philippians 2:10-11; Revelation 15:3' %}.
+
 - The judgment is declared in favor of God’s people {% rf 'Daniel 7:21-22' %} because all of their sins have been confessed, forgiven, and cleansed by Jesus {% rf '1 John 1:9' %}; there is no condemnation to those who are in Christ {% rf 'Romans 8:1' %}.
+
 - Those who rejected God’s mercy will not be tortured in hell endlessly {% rf 'Malachi 4:1' %}.
+
 - Jesus presides as Judge {% rf 'John 5:22' %}; He is also the Advocate and the Witness for the saved {% rf '1 John 2:1; Revelation 3:14' %}. With Jesus on my side, I have nothing to fear.
+
 - The Father and the Son want every person to be saved {% rf 'John 3:16; 13:1; 1 Timothy 2:3-4' %}; Satan is our only accusser {% rf 'Revelation 12:10' %}.
 
 The judgment revolves around the atonement, being “at one” or reconciled with God, and Jesus is in the center of it all! He is the only One who can remove sin from our lives {% rf 'Acts 4:12' %}. If you haven’t done so, now is the time to get right with God and accept Jesus as Lord and Savior {% rf '2 Corinthians 6:2' %}. God is still offering forgiveness and mercy to those who come to His throne {% rf 'Hebrews 4:14-16; 7:25' %}, and Jesus is still knocking {% rf 'Revelation 3:20' %}.

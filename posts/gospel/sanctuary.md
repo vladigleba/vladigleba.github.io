@@ -66,11 +66,17 @@ The animal sacrifices pointed to the Lamb of God sacrificed in the “courtyard�
 ## What did the sanctuary furniture represent?
 
 Every piece of furniture points to Jesus and represents an aspect of His work on my behalf to save me from sin:
+
 - The altar of burnt offering represents the cross, while the animal represents Jesus, the ultimate sacrifice {% rf 'John 1:29' %}.
+
 - The laver points to Jesus as the Living Water cleansing me from sin and giving me a new birth through the Holy Spirit {% rf 'John 4:10; Titus 3:5' %}—of which [baptism](/posts/basics/baptism.md) is a symbol {% rf 'Romans 6:3-7' %}.
+
 - The candlestick points to Jesus as the Light of the world {% rf 'John 1:9; 9:5' %}, while its oil represents the Holy Spirit {% rf 'Zechariah 4:1-6; Revelation 4:5' %}, with whom I am invited to be filled {% rf 'Luke 11:13' %}.
+
 - The showbread is a symbol of Jesus being the Bread of Life {% rf 'John 6:48, 51' %}, which I an invited to internalize by reading His Word—the Bible {% rf 'Matthew 4:4' %}.
+
 - The altar of incense represents the righteousness of Jesus mixed with the prayers of God’s people {% rf 'Revelation 5:8; 8:3' %}.
+
 - The ark of the covenant represents God’s throne in heaven {% rf 'Psalm 80:1' %}, but there is more to it. Because God’s Ten Commandments were inside the ark, it shows how His [law of love](/posts/gospel/law.md), which is a reflection of His character, is the foundation of His government. But since the mercy seat was over the Ten Commandments, it also represents His mercy being extended, through the blood that was sprinkled on the seat by the priest {% rf 'Leviticus 16:15-16' %}, to those who confess and forsake sin after breaking His law. It’s beautiful! And of course, the sprinkled blood was a symbol of Jesus’ blood shed on behalf of all people {% rf 'Matthew 26:28' %}.
 
 ## Do I have a High Priest today?
