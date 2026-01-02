@@ -45,13 +45,17 @@
   list-style: none;
   display: flex;
   gap: 7px;
-  background-color: var(--light-background);
+  background-color: var(--light-blue-background);
 }
 
 .search-trigger,
 .main-nav li {
   text-transform: uppercase;
   padding: 5px 12.5px 3px;
+}
+
+.search-trigger {
+  padding-bottom: 5px;
 }
 
 .search-trigger:hover,
@@ -153,7 +157,11 @@
       <a href="/prophecy/">Prophecy</a>
     </li>
 
-    
+    <button id="search-trigger" class="search-trigger" aria-label="Open search" title="Search posts (Ctrl+K)">
+      <svg aria-hidden="true" class="search-icon">
+        <use href="/assets/images/icons.svg#search"></use>
+      </svg>
+    </button>
   </ul>
 
   <!-- global live region for site-wide announcements (screen readers) -->
@@ -290,7 +298,7 @@
     
       
 
-<li data-updated="2025-12-04T04:11:45.000Z" data-length="17" data-reading-order="1500">
+<li data-updated="2026-01-01T22:29:08.000Z" data-length="17" data-reading-order="1500">
   <div><span class="tag" style="color: rgb(121,79,140)">
     
       Standalone
@@ -623,7 +631,7 @@
     
       
 
-<li data-updated="2025-12-04T04:11:45.000Z" data-length="17" data-reading-order="1500">
+<li data-updated="2026-01-01T22:29:08.000Z" data-length="17" data-reading-order="1500">
   <div><span class="tag" style="color: rgb(121,79,140)">
     
       Standalone
@@ -646,7 +654,7 @@
       
         <span>•</span>
         17 min read <span>•</span> 
-        <time datetime="2025-12-04T04:11:45.000Z">Dec 3, 2025</time>
+        <time datetime="2026-01-01T22:29:08.000Z">Jan 1, 2026</time>
       
     
   </p>
@@ -690,7 +698,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-11-22T00:22:33.000Z" data-length="12" data-reading-order="2300">
+<li class="standalone-view" data-updated="2025-12-25T04:58:13.000Z" data-length="12" data-reading-order="2300">
   <div><span class="tag" style="color: rgb(214,65,102)">
     
       Made Whole by Christ <span>•</span>
@@ -718,7 +726,7 @@
       
         <span>•</span>
         12 min read <span>•</span> 
-        <time datetime="2025-11-22T00:22:33.000Z">Nov 21, 2025</time>
+        <time datetime="2025-12-25T04:58:13.000Z">Dec 24, 2025</time>
       
     
   </p>
@@ -778,14 +786,14 @@
       </div>
       
       <div class="last-updated">
-        Last updated <time datetime="2025-12-22T21:13:59.357Z">December 22, 2025</time>
+        Last updated <time datetime="2026-01-02T14:22:50.388Z">January 2, 2026</time>
       </div>
     <p></p>
   </div>
 </footer>
     <div id="search-container" class="search-container">
   <div class="search-modal">
-    <input id="search-input" type="text" class="search-input" placeholder="Search posts..." autocomplete="off" aria-label="Search posts">
+    <input id="search-input" type="text" class="search-input" placeholder="Search articles..." autocomplete="off" aria-label="Search posts">
     <div id="search-results" class="search-results"></div>
   </div>
 </div>

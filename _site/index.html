@@ -45,13 +45,17 @@
   list-style: none;
   display: flex;
   gap: 7px;
-  background-color: var(--light-background);
+  background-color: var(--light-blue-background);
 }
 
 .search-trigger,
 .main-nav li {
   text-transform: uppercase;
   padding: 5px 12.5px 3px;
+}
+
+.search-trigger {
+  padding-bottom: 5px;
 }
 
 .search-trigger:hover,
@@ -153,7 +157,11 @@
       <a href="/prophecy/">Prophecy</a>
     </li>
 
-    
+    <button id="search-trigger" class="search-trigger" aria-label="Open search" title="Search posts (Ctrl+K)">
+      <svg aria-hidden="true" class="search-icon">
+        <use href="/assets/images/icons.svg#search"></use>
+      </svg>
+    </button>
   </ul>
 
   <!-- global live region for site-wide announcements (screen readers) -->
@@ -180,16 +188,16 @@
     
     
     <div class="unified-card">
-  <div class="featured-card" style="background: rgb(86, 152, 99)">
-    <a href="/basics/bible/" class="card-link">
+  <div class="featured-card" style="background: rgb(214,65,102)">
+    <a href="/gospel/health/" class="card-link">
       <div class="tag">Featured</div>
-      <h2 class="title">Can I Trust the Bible?</h2>
-      <p class="description">Is the Bible a fable, or is it the most trustworthy document we have ever possessed?</p>
+      <h2 class="title">God’s Health Plan</h2>
+      <p class="description">There is no doubt that Jesus wants to redeem us from sin. Does He have a plan to redeem our health as well?</p>
       <p class="details">
-        Basics <span>•</span>
-        6 min read <span>•</span> 
-        <time datetime="2025-11-28T17:47:21.000Z">
-          Nov 28, 2025
+        Gospel <span>•</span>
+        12 min read <span>•</span> 
+        <time datetime="2025-12-25T04:58:13.000Z">
+          Dec 24, 2025
         </time>
       </p>
     </a>
@@ -204,8 +212,8 @@
         <p class="details">
           Basics <span>•</span>
           26 min read <span>•</span>
-          <time datetime="2025-12-16T04:43:05.000Z">
-            Dec 15, 2025
+          <time datetime="2026-01-01T22:29:08.000Z">
+            Jan 1, 2026
           </time>
         </p>
       </a>
@@ -485,7 +493,7 @@
     
       
 
-<li data-updated="2025-12-04T04:11:45.000Z" data-length="17" data-reading-order="1500">
+<li data-updated="2026-01-01T22:29:08.000Z" data-length="17" data-reading-order="1500">
   <div><span class="tag" style="color: rgb(121,79,140)">
     
       Standalone
@@ -971,7 +979,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-10-15T04:07:21.000Z" data-length="8" data-reading-order="400">
+<li class="standalone-view" data-updated="2025-12-28T18:14:11.000Z" data-length="8" data-reading-order="400">
   <div><span class="tag" style="color: rgb(101,102,166)">
     
       Jesus, the Messiah <span>•</span>
@@ -999,7 +1007,7 @@
       
         <span>•</span>
         8 min read <span>•</span> 
-        <time datetime="2025-10-15T04:07:21.000Z">Oct 14, 2025</time>
+        <time datetime="2025-12-28T18:14:11.000Z">Dec 28, 2025</time>
       
     
   </p>
@@ -1007,7 +1015,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-10-15T04:07:21.000Z" data-length="5" data-reading-order="500">
+<li class="standalone-view" data-updated="2025-12-28T18:14:11.000Z" data-length="5" data-reading-order="500">
   <div><span class="tag" style="color: rgb(101,102,166)">
     
       Jesus, the Messiah <span>•</span>
@@ -1035,7 +1043,7 @@
       
         <span>•</span>
         5 min read <span>•</span> 
-        <time datetime="2025-10-15T04:07:21.000Z">Oct 14, 2025</time>
+        <time datetime="2025-12-28T18:14:11.000Z">Dec 28, 2025</time>
       
     
   </p>
@@ -1394,7 +1402,7 @@
     
       
 
-<li data-updated="2025-12-04T04:11:45.000Z" data-length="17" data-reading-order="1500">
+<li data-updated="2026-01-01T22:29:08.000Z" data-length="17" data-reading-order="1500">
   <div><span class="tag" style="color: rgb(121,79,140)">
     
       Standalone
@@ -1417,7 +1425,7 @@
       
         <span>•</span>
         17 min read <span>•</span> 
-        <time datetime="2025-12-04T04:11:45.000Z">Dec 3, 2025</time>
+        <time datetime="2026-01-01T22:29:08.000Z">Jan 1, 2026</time>
       
     
   </p>
@@ -1428,7 +1436,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-12-17T04:20:38.000Z" data-length="11" data-reading-order="1600">
+<li class="standalone-view" data-updated="2026-01-01T22:29:08.000Z" data-length="11" data-reading-order="1600">
   <div><span class="tag" style="color: rgb(237,103,82)">
     
       Facing Judgment <span>•</span>
@@ -1456,7 +1464,7 @@
       
         <span>•</span>
         11 min read <span>•</span> 
-        <time datetime="2025-12-17T04:20:38.000Z">Dec 16, 2025</time>
+        <time datetime="2026-01-01T22:29:08.000Z">Jan 1, 2026</time>
       
     
   </p>
@@ -1464,7 +1472,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-12-12T05:13:02.000Z" data-length="22" data-reading-order="1700">
+<li class="standalone-view" data-updated="2026-01-01T22:29:08.000Z" data-length="22" data-reading-order="1700">
   <div><span class="tag" style="color: rgb(237,103,82)">
     
       Facing Judgment <span>•</span>
@@ -1492,7 +1500,7 @@
       
         <span>•</span>
         22 min read <span>•</span> 
-        <time datetime="2025-12-12T05:13:02.000Z">Dec 11, 2025</time>
+        <time datetime="2026-01-01T22:29:08.000Z">Jan 1, 2026</time>
       
     
   </p>
@@ -1537,7 +1545,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-12-18T05:38:32.000Z" data-length="11" data-reading-order="1900">
+<li class="standalone-view" data-updated="2026-01-01T22:29:08.000Z" data-length="11" data-reading-order="1900">
   <div><span class="tag" style="color: rgb(199,103,103)">
     
       The Bible Sabbath <span>•</span>
@@ -1565,7 +1573,7 @@
       
         <span>•</span>
         11 min read <span>•</span> 
-        <time datetime="2025-12-18T05:38:32.000Z">Dec 17, 2025</time>
+        <time datetime="2026-01-01T22:29:08.000Z">Jan 1, 2026</time>
       
     
   </p>
@@ -1689,7 +1697,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-11-22T00:22:33.000Z" data-length="12" data-reading-order="2300">
+<li class="standalone-view" data-updated="2025-12-25T04:58:13.000Z" data-length="12" data-reading-order="2300">
   <div><span class="tag" style="color: rgb(214,65,102)">
     
       Made Whole by Christ <span>•</span>
@@ -1717,7 +1725,7 @@
       
         <span>•</span>
         12 min read <span>•</span> 
-        <time datetime="2025-11-22T00:22:33.000Z">Nov 21, 2025</time>
+        <time datetime="2025-12-25T04:58:13.000Z">Dec 24, 2025</time>
       
     
   </p>
@@ -1784,7 +1792,7 @@
   </div>
 
   <a style="color: rgb(255,98,98)" href="/basics/death/">
-    Is There Life After Death?
+    What Happens When I Die?
   </a>
   
   <p>
@@ -1879,7 +1887,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-10-19T02:54:39.000Z" data-length="24" data-reading-order="2800">
+<li class="standalone-view" data-updated="2026-01-01T22:29:08.000Z" data-length="24" data-reading-order="2800">
   <div><span class="tag" style="color: rgb(17,128,138)">
     
       The Antichrist’s Mark <span>•</span>
@@ -1909,7 +1917,7 @@
       
         <span>•</span>
         24 min read <span>•</span> 
-        <time datetime="2025-10-19T02:54:39.000Z">Oct 18, 2025</time>
+        <time datetime="2026-01-01T22:29:08.000Z">Jan 1, 2026</time>
       
     
   </p>
@@ -1917,7 +1925,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-12-07T16:34:43.000Z" data-length="28" data-reading-order="2900">
+<li class="standalone-view" data-updated="2025-12-25T04:58:13.000Z" data-length="28" data-reading-order="2900">
   <div><span class="tag" style="color: rgb(17,128,138)">
     
       The Antichrist’s Mark <span>•</span>
@@ -1947,7 +1955,7 @@
       
         <span>•</span>
         28 min read <span>•</span> 
-        <time datetime="2025-12-07T16:34:43.000Z">Dec 7, 2025</time>
+        <time datetime="2025-12-25T04:58:13.000Z">Dec 24, 2025</time>
       
     
   </p>
@@ -1959,7 +1967,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-10-19T02:54:39.000Z" data-length="24" data-reading-order="3000">
+<li class="standalone-view" data-updated="2026-01-01T22:29:08.000Z" data-length="24" data-reading-order="3000">
   <div><span class="tag" style="color: rgb(170,104,150)">
     
       Coming Out of Babylon <span>•</span>
@@ -1987,7 +1995,7 @@
       
         <span>•</span>
         24 min read <span>•</span> 
-        <time datetime="2025-10-19T02:54:39.000Z">Oct 18, 2025</time>
+        <time datetime="2026-01-01T22:29:08.000Z">Jan 1, 2026</time>
       
     
   </p>
@@ -2111,7 +2119,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-10-19T02:54:39.000Z" data-length="15" data-reading-order="3400">
+<li class="standalone-view" data-updated="2026-01-01T22:29:08.000Z" data-length="15" data-reading-order="3400">
   <div><span class="tag" style="color: rgb(57,96,136)">
     
       A Prophetic Movement <span>•</span>
@@ -2139,7 +2147,7 @@
       
         <span>•</span>
         15 min read <span>•</span> 
-        <time datetime="2025-10-19T02:54:39.000Z">Oct 18, 2025</time>
+        <time datetime="2026-01-01T22:29:08.000Z">Jan 1, 2026</time>
       
     
   </p>
@@ -2263,7 +2271,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-12-16T04:43:05.000Z" data-length="26" data-reading-order="3800">
+<li class="standalone-view" data-updated="2026-01-01T22:29:08.000Z" data-length="26" data-reading-order="3800">
   <div><span class="tag" style="color: rgb(199,62,95)">
     
       The Christian Life <span>•</span>
@@ -2293,7 +2301,7 @@
       
         <span>•</span>
         26 min read <span>•</span> 
-        <time datetime="2025-12-16T04:43:05.000Z">Dec 15, 2025</time>
+        <time datetime="2026-01-01T22:29:08.000Z">Jan 1, 2026</time>
       
     
   </p>
@@ -2317,14 +2325,14 @@
       </div>
       
       <div class="last-updated">
-        Last updated <time datetime="2025-12-22T21:13:59.369Z">December 22, 2025</time>
+        Last updated <time datetime="2026-01-02T14:22:50.400Z">January 2, 2026</time>
       </div>
     <p></p>
   </div>
 </footer>
     <div id="search-container" class="search-container">
   <div class="search-modal">
-    <input id="search-input" type="text" class="search-input" placeholder="Search posts..." autocomplete="off" aria-label="Search posts">
+    <input id="search-input" type="text" class="search-input" placeholder="Search articles..." autocomplete="off" aria-label="Search posts">
     <div id="search-results" class="search-results"></div>
   </div>
 </div>

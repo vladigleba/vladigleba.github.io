@@ -1163,7 +1163,7 @@ if (document.body.classList.contains('js-enabled')) {
       }
 
       // highlight all matches in article
-      const contentContainer = document.querySelector('article .content, main');
+      const contentContainer = document.querySelector('main');
       highlightMatchesInElement(contentContainer, searchQuery);
     };
 

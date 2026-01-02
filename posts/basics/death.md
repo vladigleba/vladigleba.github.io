@@ -1,5 +1,5 @@
 ---
-title: Is There Life After Death?
+title: What Happens When I Die?
 description: It started with a lie in the Garden of Eden, and it’s still being told today. Will you be fooled?
 date: 2022-05-28
 series: Deception

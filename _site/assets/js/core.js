@@ -508,7 +508,9 @@ if (document.body.classList.contains('js-enabled')) {
     //#endregion
     
     /*
-    full-text search with snippet generation
+    full-text search with snippet generation:
+      1. search index is generated at build time via build-index.js
+      2. browser uses assets/js/minisearch.js to reconstruct and query index at runtime
     */
 
     //#region
@@ -518,6 +520,12 @@ if (document.body.classList.contains('js-enabled')) {
     const SEARCH_INDEX_URL = '/assets/js/search-index.json';
     const RESULTS_PER_PAGE = 10;
     const SNIPPET_LENGTH = 200;
+    const MAX_SNIPPETS_DISPLAY = 4;
+
+    // normalize apostrophes - convert straight to typographical
+    const normalizeApostrophes = (text) => {
+      return text.replace(/'/g, "’");
+    };
 
     // escape HTML entities
     const escapeHtml = (text) => {
@@ -533,13 +541,17 @@ if (document.body.classList.contains('js-enabled')) {
 
     // escape special regex characters in search terms
     const createSearchPattern = (term) => {
-      return term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      return escaped.replace(/'/g, "’");
     };
+
+    const createSearchRegex = pattern => new RegExp(pattern, 'gi');
+
 
     // highlight search terms in text
     const highlightTerms = (text, searchPattern) => {
       if (!text || !searchPattern) return escapeHtml(text);
-      
+
       const escaped = escapeHtml(text);
       return escaped.replace(
         new RegExp(`(${searchPattern})`, 'gi'),
@@ -547,113 +559,209 @@ if (document.body.classList.contains('js-enabled')) {
       );
     };
 
-    // extract context snippet around matched terms
-    const extractSnippet = (fullText, searchPattern, targetLength = SNIPPET_LENGTH) => {
-      if (!fullText || !searchPattern) return '';
-
-      const regex = new RegExp(searchPattern, 'gi');
-      const match = regex.exec(fullText);
+    // build a single snippet with boundaries and ellipsis
+    const buildSnippet = (text, matchIndex, length = SNIPPET_LENGTH) => {
+      const halfLength = length / 2;
+      let start = Math.max(0, matchIndex - halfLength);
+      let end = Math.min(text.length, start + length);
       
-      if (!match) return '';
-
-      // find context boundaries around match
-      const halfLength = targetLength / 2;
-      let start = Math.max(0, match.index - halfLength);
-      let end = Math.min(fullText.length, match.index + match[0].length + halfLength);
-
-      // clean and truncate snippet
-      let snippet = fullText.substring(start, end).trim().replace(/\s+/g, ' ');
-      if (snippet.length > targetLength) {
-        snippet = snippet.substring(0, targetLength) + '...';
+      // if hit end boundary and snippet is shorter than desired, shift start back
+      if (end === text.length && text.length - start < length) {
+        start = Math.max(0, text.length - length);
       }
-
-      return highlightTerms(snippet, searchPattern);
+      
+      // extract snippet, trim, and defensive length check
+      let snippet = text.substring(start, end).trim().replace(/\s+/g, ' ');
+      if (snippet.length > length) {
+        snippet = snippet.substring(0, length);
+      }
+      
+      return {
+        text: snippet,
+        prefix: start > 0 ? '...' : '',
+        suffix: end < text.length ? '...' : ''
+      };
     };
 
-    // initialize MiniSearch with lazy-loaded index
-    const initializeSearch = async () => {
-      if (miniSearchInstance) return true;
+    // limit number of snippets for display
+    const limitSnippetsForDisplay = (items, limit) => {
+      return {
+        display: items.slice(0, limit),
+        hasMore: items.length > limit,
+        hiddenCount: Math.max(0, items.length - limit)
+      };
+    };
 
-      try {
+    // extract matching snippets from a single block with its ID
+    const extractSnippetsFromBlock = (block, searchPattern, targetLength = SNIPPET_LENGTH) => {
+      if (!block.text || !searchPattern) {
+        return [];
+      }
+
+      const snippets = []; // array preserves order, allows slicing
+      const seenSnippets = new Set(); // set tracks unique snippets
+      const regex = createSearchRegex(searchPattern);
+      let match;
+
+      // while there are matches
+      while ((match = regex.exec(block.text)) !== null) {
+        const { text, prefix, suffix } = buildSnippet(block.text, match.index, targetLength);
+        const formatted = `${prefix}${text}${suffix}`;
+        const highlighted = highlightTerms(formatted, searchPattern);
+        
+        if (!seenSnippets.has(highlighted)) { // O(1) v O(n) for array .includes()
+          seenSnippets.add(highlighted);
+          snippets.push({
+            text: highlighted,
+            blockId: block.id // preserve block ID for linking
+          });
+        }
+      }
+
+      return snippets;
+    };
+
+    // initialize MiniSearch with lazy-loaded index generated at build time
+    const initializeSearch = async () => {
+      if (miniSearchInstance) return true; // build search engine only once
+
+      try { // everything inside can fail, so handle errors gracefully
         const response = await fetch(SEARCH_INDEX_URL);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
         searchIndexData = await response.json();
+        const MiniSearch = window.MiniSearch; // load from global window via script
 
-        const MiniSearch = window.MiniSearch;
+        // rebuild MiniSearch instance from saved JSON
         miniSearchInstance = MiniSearch.loadJSON(searchIndexData.index, searchIndexData.options);
 
-        // create document lookup map
+        // create document lookup map to enable instant access to doc data
         miniSearchInstance.documentsById = {};
         searchIndexData.documents.forEach(doc => {
           miniSearchInstance.documentsById[doc.id] = doc;
         });
 
-        return true;
+        return true; // search is ready
       } catch (err) {
         console.error('error loading search index:', err);
         return false;
       }
     };
 
-    // perform search and return paginated results
+    // execute search query against index
+    const executeSearch = (query) => {
+      return miniSearchInstance.search(query, {
+        prefix: true,
+        fuzzy: 0,
+        combineWith: 'AND', // must contain ALL terms
+        tokenize: (text) => {
+          return text.match(/[a-z0-9’]+/gi) || [];
+        } // include typographical apostrophes in tokens
+      });
+    };
+
+    // filter results for exact phrase match after initial token-based search
+    const filterForExactPhrase = (results, phrase) => {
+      const normalizedPhrase = phrase.toLowerCase();
+      
+      return results.filter(result => {
+        // convert result to full document to grab searchable fields
+        const fullDoc = miniSearchInstance.documentsById[result.id];
+        
+        // check title and description
+        const titleDesc = `${fullDoc.title} ${fullDoc.description}`.toLowerCase();
+        if (titleDesc.includes(normalizedPhrase)) return true;
+        
+        // check blocks, stop at first match
+        return fullDoc.blocks.some(block => 
+          block.text.toLowerCase().includes(normalizedPhrase)
+        );
+      });
+    };
+
+    // enrich a single article result with snippets and highlighting
+    const enrichResult = (result, searchPattern) => {
+      const fullDoc = miniSearchInstance.documentsById[result.id];
+      
+      let totalMatches = 0;
+      const allSnippets = [];
+      
+      // count title matches
+      const titleRegex = createSearchRegex(searchPattern);
+      const titleMatches = (fullDoc.title.match(titleRegex) || []).length;
+      totalMatches += titleMatches;
+      
+      // extract description snippets
+      if (fullDoc.description) {
+        const descRegex = createSearchRegex(searchPattern);
+        const descMatches = (fullDoc.description.match(descRegex) || []).length;
+
+        if (descMatches > 0) {
+          totalMatches += descMatches;
+          const descSnippets = extractSnippetsFromBlock(
+            { text: fullDoc.description, id: 'description' },
+            searchPattern
+          );
+          allSnippets.push(...descSnippets); // flatten
+        }
+      }
+      
+      // extract snippets from each matching block
+      fullDoc.blocks.forEach(block => {
+        const blockSnippets = extractSnippetsFromBlock(block, searchPattern);
+        if (blockSnippets.length > 0) {
+          totalMatches += blockSnippets.length;
+          allSnippets.push(...blockSnippets);
+        }
+      });
+
+      const {
+        display: displaySnippets,
+        hasMore: hasMoreSnippets,
+        hiddenCount
+      } = limitSnippetsForDisplay(allSnippets, MAX_SNIPPETS_DISPLAY);
+
+      return {
+        id: result.id,
+        title: highlightTerms(fullDoc.title, searchPattern),
+        url: fullDoc.url,
+        snippets: displaySnippets,
+        allSnippets: allSnippets,
+        hasMoreSnippets: hasMoreSnippets,
+        hiddenSnippetCount: hiddenCount,
+        matchCount: totalMatches,
+        score: result.score,
+        searchQuery: searchPattern
+      };
+    };
+
+    // return fully enriched, UI-ready search results w/ pagination
     const performSearch = (query, page = 0) => {
       if (!miniSearchInstance || !query.trim()) {
         return { results: [], total: 0, hasMore: false };
       }
 
       try {
-        const trimmedQuery = query.trim();
-        const queryWords = trimmedQuery.split(/\s+/);
-        const isMultiWord = queryWords.length > 1;
+        const normalizedQuery = normalizeApostrophes(query);
 
-        let allResults;
+        // execute token-based search
+        let allResults = executeSearch(normalizedQuery);
+        
+        // always filter for exact phrase match so punctuation matches
+        // (tokenizer splits on punctuation)
+        allResults = filterForExactPhrase(allResults, normalizedQuery);
 
-        if (isMultiWord) {
-          allResults = miniSearchInstance.search(trimmedQuery, {
-            prefix: true,
-            fuzzy: 0,
-            combineWith: 'AND',  // Must contain ALL words
-            boost: { title: 5, series: 5 }
-          });
-          
-          // Now filter for exact phrase
-          const phraseToMatch = trimmedQuery.toLowerCase();
-          allResults = allResults.filter(result => {
-            const fullDoc = miniSearchInstance.documentsById[result.id];
-            const searchableText = `${fullDoc.title} ${fullDoc.series || ''} ${fullDoc.body}`.toLowerCase();
-            return searchableText.includes(phraseToMatch);
-          });
-        } else {
-          allResults = miniSearchInstance.search(trimmedQuery, {
-            prefix: true,
-            fuzzy: 0,
-            boost: { title: 5, series: 5 }
-          });
-        }
-
+        // pagination
         const totalResults = allResults.length;
         const startIdx = page * RESULTS_PER_PAGE;
         const endIdx = startIdx + RESULTS_PER_PAGE;
         const paginatedResults = allResults.slice(startIdx, endIdx);
 
-        // enrich results with snippets and highlighting
-        const enrichedResults = paginatedResults.map(result => {
-          const fullDoc = miniSearchInstance.documentsById[result.id];
-
-          const searchPattern = createSearchPattern(trimmedQuery);
-          const snippet = extractSnippet(fullDoc.body, searchPattern);
-
-          return {
-            id: result.id,
-            title: highlightTerms(fullDoc.title, searchPattern),
-            series: fullDoc.series ? highlightTerms(fullDoc.series, searchPattern) : '',
-            url: fullDoc.url,
-            category: fullDoc.category,
-            snippet: snippet,
-            score: result.score
-          };
-        });
+        // enrich results with snippets, highlighting, and match counts
+        const searchPattern = createSearchPattern(normalizedQuery);
+        const enrichedResults = paginatedResults.map(result => 
+          enrichResult(result, searchPattern)
+        );
 
         return {
           results: enrichedResults,
@@ -668,21 +776,37 @@ if (document.body.classList.contains('js-enabled')) {
 
     // lazy-load MiniSearch library
     const loadMiniSearchLibrary = () => {
+      // return promise (loading is async, caller awaits)
       return new Promise((resolve) => {
         if (window.MiniSearch) {
-          resolve();
+          resolve(); // already loaded
           return;
         }
 
+        // make available as global variable on window object
         const script = document.createElement('script');
         script.src = '/assets/js/minisearch.js';
         script.onload = resolve;
         script.onerror = () => {
           console.error('failed to load MiniSearch library');
-          resolve();
+          resolve(); // search is non-critical, so resolve anyway
         };
-        document.head.appendChild(script);
+        document.head.appendChild(script); // start network request
       });
+    };
+
+    // helper function to render snippet HTML with data-search-id anchors
+    const renderSnippetHTML = (snippets, resultUrl, searchQuery) => {
+      return snippets.map((snippet) => {
+        // use data-search-id as URL fragment
+        const anchor = snippet.blockId !== 'description' ? `#${snippet.blockId}` : '';
+        const url = `${resultUrl}${anchor}?q=${encodeURIComponent(searchQuery)}`;
+        return `
+          <a href="${url}" class="snippet-item">
+            <p class="snippet">${snippet.text}</p>
+          </a>
+        `;
+      }).join('');
     };
 
     // render search results
@@ -694,18 +818,38 @@ if (document.body.classList.contains('js-enabled')) {
         resultEl.href = result.url;
         resultEl.className = 'search-result';
 
-        const seriesHtml = result.series 
-          ? `<span class="series">${result.series}</span>` 
+        const matchCountHtml = result.matchCount > 0
+          ? `<span class="match-count">
+              ${result.matchCount} ${result.matchCount === 1 ? 'match' : 'matches'}
+            </span>`
+          : '';
+
+        const snippetsHtml = renderSnippetHTML(result.snippets, result.url, result.searchQuery);
+
+        // show "show x more matches" if there are hidden snippets
+        const hiddenCount = result.hiddenSnippetCount;
+        const moreSnippetsHtml = result.hasMoreSnippets
+          ? `<button class="show-more-snippets" data-result-id="${result.id}">
+              <span class="expand-icon">↓</span>
+              Show ${hiddenCount} more ${hiddenCount === 1 ? 'match' : 'matches'}
+            </button>`
           : '';
 
         resultEl.innerHTML = `
           <div class="header">
             <h3>${result.title}</h3>
-            ${seriesHtml}
-            <span class="category">${escapeHtml(result.category)}</span>
+            ${matchCountHtml}
           </div>
-          <p class="snippet">${result.snippet}</p>
+          <div class="snippets">
+            ${snippetsHtml}
+            ${moreSnippetsHtml}
+          </div>
         `;
+
+        // store data for in-memory "show more" functionality
+        resultEl.dataset.allSnippets = JSON.stringify(result.allSnippets || []);
+        resultEl.dataset.resultUrl = result.url;
+        resultEl.dataset.searchQuery = result.searchQuery;
 
         fragment.appendChild(resultEl);
       });
@@ -721,19 +865,30 @@ if (document.body.classList.contains('js-enabled')) {
       observer.observe(sentinel);
     };
 
-    // set up search UI
+    // search UI setup
     const setupSearchUI = async () => {
       const searchContainer = document.getElementById('search-container');
       const searchInput = document.getElementById('search-input');
       const searchResults = document.getElementById('search-results');
       const searchTrigger = document.getElementById('search-trigger');
 
-      if (!searchInput || !searchResults || !searchContainer) return;
+      if (!searchContainer || !searchInput || !searchResults) return;
 
+      // state
       let currentPage = 0;
       let currentQuery = '';
       let isLoadingMore = false;
 
+      // state helpers
+      const resetSearchState = () => {
+        currentPage = 0;
+        currentQuery = '';
+        isLoadingMore = false;
+        searchResults.innerHTML = '';
+        searchInput.value = '';
+      };
+
+      // search open / close
       const openSearch = async () => {
         if (!miniSearchInstance) {
           await loadMiniSearchLibrary();
@@ -741,39 +896,53 @@ if (document.body.classList.contains('js-enabled')) {
         }
 
         searchContainer.classList.add('active');
-        searchInput.focus();
-        searchResults.innerHTML = '';
         document.body.style.overflow = 'hidden';
 
-        if (window.announceToLiveRegion) {
-          announceToLiveRegion('search panel opened');
-        }
+        // focus after a small delay to ensure visibility transition completes
+        setTimeout(() => searchInput.focus(), 50);
+
+        announceToLiveRegion('Search panel opened');
       };
 
       const closeSearch = () => {
         searchContainer.classList.remove('active');
         document.body.style.overflow = '';
-        searchResults.innerHTML = '';
-        currentPage = 0;
-        currentQuery = '';
-
-        if (window.announceToLiveRegion) {
-          announceToLiveRegion('search panel closed');
-        }
+        resetSearchState();
+        announceToLiveRegion('Search panel closed');
       };
 
-      const performAndRenderSearch = (query, page = 0, append = false) => {
+      // prevent multiple observers on same elements
+      const clearScrollSentinels = () => {
+        searchResults
+          .querySelectorAll('.search-scroll-sentinel')
+          .forEach(el => infiniteScrollObserver.unobserve(el));
+      };
+
+      // search execution + rendering
+      const performAndRenderSearch = async (query, page = 0, append = false) => {
+        if (query.trim().length <= 1) return;
+
         isLoadingMore = true;
         const { results, total, hasMore } = performSearch(query, page);
 
+        // clear previous results if starting new search
         if (!append) {
+          clearScrollSentinels();
           searchResults.innerHTML = '';
         }
 
-        if (results.length === 0 && page === 0) {
+        if (!results.length && page === 0) {
           searchResults.innerHTML = '<p class="empty">No results found</p>';
           isLoadingMore = false;
           return;
+        }
+
+        // show article count
+        if (page === 0 && total > 0) {
+          const summaryEl = document.createElement('div');
+          summaryEl.className = 'search-summary';
+          summaryEl.textContent = `${total} ${total === 1 ? 'article' : 'articles'}`;
+          searchResults.appendChild(summaryEl);
         }
 
         renderResults(results, searchResults);
@@ -785,29 +954,58 @@ if (document.body.classList.contains('js-enabled')) {
         isLoadingMore = false;
       };
 
-      // infinite scroll handler
-      const infiniteScrollObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+      // infinite scroll observer
+      const infiniteScrollObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => { // for each sentinel
+
+          // if visible, not already loading, and we have a query
           if (entry.isIntersecting && !isLoadingMore && currentQuery) {
-            currentPage++;
+            currentPage++; // move to next page
             performAndRenderSearch(currentQuery, currentPage, true);
           }
         });
       });
 
-      // handle search input
+      // snippet expansion
+      const expandAllSnippets = (button) => {
+        const resultEl = button.closest('.search-result');
+        if (!resultEl) return;
+
+        const snippetsContainer = resultEl.querySelector('.snippets');
+        const allSnippets = JSON.parse(resultEl.dataset.allSnippets || '[]');
+        const resultUrl = resultEl.dataset.resultUrl;
+        const searchQuery = resultEl.dataset.searchQuery;
+
+        snippetsContainer.innerHTML = renderSnippetHTML(allSnippets, resultUrl, searchQuery);
+        button.remove();
+
+        announceToLiveRegion('All matching excerpts expanded');
+      };
+
+      // event: search input
       searchInput.addEventListener('input', (e) => {
-        currentQuery = e.target.value.trim();
+        currentQuery = e.target.value;
         currentPage = 0;
 
-        if (currentQuery.length > 0) {
+        if (currentQuery) { // if query present
           performAndRenderSearch(currentQuery, 0);
-        } else {
-          searchResults.innerHTML = '';
+        } else { // search cleared
+          resetSearchState();
         }
       });
 
-      // close search when clicking outside
+      // event delegation (results)
+      searchResults.addEventListener('click', (e) => {
+        const showMoreBtn = e.target.closest('.show-more-snippets');
+        if (showMoreBtn) {
+          e.preventDefault();
+          e.stopPropagation();
+          expandAllSnippets(showMoreBtn);
+          return;
+        }
+      });
+
+      // close when clicking backdrop
       searchContainer.addEventListener('click', (e) => {
         if (e.target === searchContainer) {
           closeSearch();
@@ -816,28 +1014,160 @@ if (document.body.classList.contains('js-enabled')) {
 
       // keyboard shortcuts
       document.addEventListener('keydown', (e) => {
+        const isCmdOrCtrlK =
+          (e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k';
+
         if (e.key === 'Escape' && searchContainer.classList.contains('active')) {
           closeSearch();
         }
 
-        if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+        if (isCmdOrCtrlK) {
           e.preventDefault();
           openSearch();
         }
       });
 
-      // search trigger button
-      if (searchTrigger) {
-        searchTrigger.addEventListener('click', openSearch);
-      }
+      // trigger button
+      searchTrigger?.addEventListener('click', openSearch);
     };
 
-    // initialize search UI
     try {
       setupSearchUI();
     } catch (err) {
       console.error('error setting up search UI:', err);
     }
+
+    //#endregion
+
+    /*
+    article page: highlight search matches
+    */
+
+    //#region
+
+    // get URL parameters for article page highlighting
+    // example URL: /gospel/law/#blockquote-2?q=queryString
+    const getArticleUrlParams = () => {
+      const hash = window.location.hash.slice(1); // get everything after '#'
+      const [blockId, queryString] = hash.split('?');
+
+      // parse query string either from hash or full URL if undefined
+      const params = new URLSearchParams(queryString || window.location.search);
+      
+      return {
+        searchQuery: params.get('q'),
+        blockId: blockId || null
+      };
+    };
+
+    const findBlockElement = (blockId) => {
+      return blockId ? document.querySelector(`[data-search-id="${blockId}"]`) : null;
+    };
+
+    // find text nodes within a root element, excluding existing highlights
+    const getTextNodes = (root) => {
+      const textNodes = [];
+      const walker = document.createTreeWalker(
+        root,
+        NodeFilter.SHOW_TEXT,
+        (node) => { // filter function to skip already highlighted nodes
+          return node.parentElement?.classList.contains('search-highlight')
+            ? NodeFilter.FILTER_REJECT
+            : NodeFilter.FILTER_ACCEPT;
+        }
+      );
+      
+      // collect all accepted text nodes
+      let node;
+      while (node = walker.nextNode()) {
+        textNodes.push(node);
+      }
+      return textNodes;
+    };
+
+    // find all occurrences of search pattern and wrap in <mark>
+    const highlightMatchesInElement = (element, searchPattern) => {
+      const regex = new RegExp(`(${searchPattern})`, 'gi');
+      const textNodes = getTextNodes(element); // get text nodes to search
+      const matches = [];
+      
+      textNodes.forEach(textNode => {
+        const text = textNode.textContent;
+        const nodeMatches = text.match(regex);
+        
+        if (!nodeMatches) return;
+        
+        const fragment = document.createDocumentFragment(); // replacement
+        let lastIndex = 0;
+        
+        // reset regex for exec loop
+        regex.lastIndex = 0;
+        let match;
+        
+        while ((match = regex.exec(text)) !== null) {
+          // add plain text before match
+          if (match.index > lastIndex) { // there is text before the match
+            fragment.appendChild(document.createTextNode(text.substring(lastIndex, match.index)));
+          }
+          
+          // creates <mark class="search-highlight">match</mark>
+          const mark = document.createElement('mark');
+          mark.className = 'search-highlight';
+          mark.textContent = match[0];
+          fragment.appendChild(mark);
+          matches.push(mark);
+          
+          lastIndex = regex.lastIndex;
+        }
+        
+        // add remaining plain text
+        if (lastIndex < text.length) {
+          fragment.appendChild(document.createTextNode(text.substring(lastIndex)));
+        }
+        
+        textNode.parentNode.replaceChild(fragment, textNode);
+      });
+      
+      return matches;
+    };
+
+    const scrollToElement = (element) => {
+      if (!element) return;
+      
+      element.classList.add('search-block-focus');
+      
+      // pageYOffset is how far page is scrolled vertically already
+      const offset = 100; // for fixed header
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    };
+
+    const initArticleHighlighting = () => {
+      const { searchQuery, blockId } = getArticleUrlParams();
+      
+      if (!searchQuery) return;
+      
+      // highlight specific block if provided
+      if (blockId) {
+        const blockElement = findBlockElement(blockId);
+        if (blockElement) {
+          highlightMatchesInElement(blockElement, searchQuery);
+          scrollToElement(blockElement);
+          return;
+        }
+      }
+
+      // highlight all matches in article
+      const contentContainer = document.querySelector('main');
+      highlightMatchesInElement(contentContainer, searchQuery);
+    };
+
+    initArticleHighlighting();
 
     //#endregion
   });

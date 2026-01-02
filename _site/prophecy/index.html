@@ -45,13 +45,17 @@
   list-style: none;
   display: flex;
   gap: 7px;
-  background-color: var(--light-background);
+  background-color: var(--light-blue-background);
 }
 
 .search-trigger,
 .main-nav li {
   text-transform: uppercase;
   padding: 5px 12.5px 3px;
+}
+
+.search-trigger {
+  padding-bottom: 5px;
 }
 
 .search-trigger:hover,
@@ -153,7 +157,11 @@
       <a href="/prophecy/">Prophecy</a>
     </li>
 
-    
+    <button id="search-trigger" class="search-trigger" aria-label="Open search" title="Search posts (Ctrl+K)">
+      <svg aria-hidden="true" class="search-icon">
+        <use href="/assets/images/icons.svg#search"></use>
+      </svg>
+    </button>
   </ul>
 
   <!-- global live region for site-wide announcements (screen readers) -->
@@ -568,7 +576,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-12-17T04:20:38.000Z" data-length="11" data-reading-order="1600">
+<li class="standalone-view" data-updated="2026-01-01T22:29:08.000Z" data-length="11" data-reading-order="1600">
   <div><span class="tag" style="color: rgb(237,103,82)">
     
       Facing Judgment <span>•</span>
@@ -596,7 +604,7 @@
       
         <span>•</span>
         11 min read <span>•</span> 
-        <time datetime="2025-12-17T04:20:38.000Z">Dec 16, 2025</time>
+        <time datetime="2026-01-01T22:29:08.000Z">Jan 1, 2026</time>
       
     
   </p>
@@ -604,7 +612,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-12-12T05:13:02.000Z" data-length="22" data-reading-order="1700">
+<li class="standalone-view" data-updated="2026-01-01T22:29:08.000Z" data-length="22" data-reading-order="1700">
   <div><span class="tag" style="color: rgb(237,103,82)">
     
       Facing Judgment <span>•</span>
@@ -632,7 +640,7 @@
       
         <span>•</span>
         22 min read <span>•</span> 
-        <time datetime="2025-12-12T05:13:02.000Z">Dec 11, 2025</time>
+        <time datetime="2026-01-01T22:29:08.000Z">Jan 1, 2026</time>
       
     
   </p>
@@ -682,7 +690,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-10-19T02:54:39.000Z" data-length="24" data-reading-order="2800">
+<li class="standalone-view" data-updated="2026-01-01T22:29:08.000Z" data-length="24" data-reading-order="2800">
   <div><span class="tag" style="color: rgb(17,128,138)">
     
       The Antichrist’s Mark <span>•</span>
@@ -712,7 +720,7 @@
       
         <span>•</span>
         24 min read <span>•</span> 
-        <time datetime="2025-10-19T02:54:39.000Z">Oct 18, 2025</time>
+        <time datetime="2026-01-01T22:29:08.000Z">Jan 1, 2026</time>
       
     
   </p>
@@ -720,7 +728,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-12-07T16:34:43.000Z" data-length="28" data-reading-order="2900">
+<li class="standalone-view" data-updated="2025-12-25T04:58:13.000Z" data-length="28" data-reading-order="2900">
   <div><span class="tag" style="color: rgb(17,128,138)">
     
       The Antichrist’s Mark <span>•</span>
@@ -750,7 +758,7 @@
       
         <span>•</span>
         28 min read <span>•</span> 
-        <time datetime="2025-12-07T16:34:43.000Z">Dec 7, 2025</time>
+        <time datetime="2025-12-25T04:58:13.000Z">Dec 24, 2025</time>
       
     
   </p>
@@ -762,7 +770,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-10-19T02:54:39.000Z" data-length="24" data-reading-order="3000">
+<li class="standalone-view" data-updated="2026-01-01T22:29:08.000Z" data-length="24" data-reading-order="3000">
   <div><span class="tag" style="color: rgb(170,104,150)">
     
       Coming Out of Babylon <span>•</span>
@@ -790,7 +798,7 @@
       
         <span>•</span>
         24 min read <span>•</span> 
-        <time datetime="2025-10-19T02:54:39.000Z">Oct 18, 2025</time>
+        <time datetime="2026-01-01T22:29:08.000Z">Jan 1, 2026</time>
       
     
   </p>
@@ -838,7 +846,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-10-19T02:54:39.000Z" data-length="15" data-reading-order="3400">
+<li class="standalone-view" data-updated="2026-01-01T22:29:08.000Z" data-length="15" data-reading-order="3400">
   <div><span class="tag" style="color: rgb(57,96,136)">
     
       A Prophetic Movement <span>•</span>
@@ -866,7 +874,7 @@
       
         <span>•</span>
         15 min read <span>•</span> 
-        <time datetime="2025-10-19T02:54:39.000Z">Oct 18, 2025</time>
+        <time datetime="2026-01-01T22:29:08.000Z">Jan 1, 2026</time>
       
     
   </p>
@@ -926,14 +934,14 @@
       </div>
       
       <div class="last-updated">
-        Last updated <time datetime="2025-12-22T21:13:59.393Z">December 22, 2025</time>
+        Last updated <time datetime="2026-01-02T14:22:50.423Z">January 2, 2026</time>
       </div>
     <p></p>
   </div>
 </footer>
     <div id="search-container" class="search-container">
   <div class="search-modal">
-    <input id="search-input" type="text" class="search-input" placeholder="Search posts..." autocomplete="off" aria-label="Search posts">
+    <input id="search-input" type="text" class="search-input" placeholder="Search articles..." autocomplete="off" aria-label="Search posts">
     <div id="search-results" class="search-results"></div>
   </div>
 </div>

@@ -45,13 +45,17 @@
   list-style: none;
   display: flex;
   gap: 7px;
-  background-color: var(--light-background);
+  background-color: var(--light-blue-background);
 }
 
 .search-trigger,
 .main-nav li {
   text-transform: uppercase;
   padding: 5px 12.5px 3px;
+}
+
+.search-trigger {
+  padding-bottom: 5px;
 }
 
 .search-trigger:hover,
@@ -153,7 +157,11 @@
       <a href="/prophecy/">Prophecy</a>
     </li>
 
-    
+    <button id="search-trigger" class="search-trigger" aria-label="Open search" title="Search posts (Ctrl+K)">
+      <svg aria-hidden="true" class="search-icon">
+        <use href="/assets/images/icons.svg#search"></use>
+      </svg>
+    </button>
   </ul>
 
   <!-- global live region for site-wide announcements (screen readers) -->
@@ -508,7 +516,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-10-15T04:07:21.000Z" data-length="8" data-reading-order="400">
+<li class="standalone-view" data-updated="2025-12-28T18:14:11.000Z" data-length="8" data-reading-order="400">
   <div><span class="tag" style="color: rgb(101,102,166)">
     
       Jesus, the Messiah <span>•</span>
@@ -536,7 +544,7 @@
       
         <span>•</span>
         8 min read <span>•</span> 
-        <time datetime="2025-10-15T04:07:21.000Z">Oct 14, 2025</time>
+        <time datetime="2025-12-28T18:14:11.000Z">Dec 28, 2025</time>
       
     
   </p>
@@ -544,7 +552,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-10-15T04:07:21.000Z" data-length="5" data-reading-order="500">
+<li class="standalone-view" data-updated="2025-12-28T18:14:11.000Z" data-length="5" data-reading-order="500">
   <div><span class="tag" style="color: rgb(101,102,166)">
     
       Jesus, the Messiah <span>•</span>
@@ -572,7 +580,7 @@
       
         <span>•</span>
         5 min read <span>•</span> 
-        <time datetime="2025-10-15T04:07:21.000Z">Oct 14, 2025</time>
+        <time datetime="2025-12-28T18:14:11.000Z">Dec 28, 2025</time>
       
     
   </p>
@@ -617,7 +625,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-12-18T05:38:32.000Z" data-length="11" data-reading-order="1900">
+<li class="standalone-view" data-updated="2026-01-01T22:29:08.000Z" data-length="11" data-reading-order="1900">
   <div><span class="tag" style="color: rgb(199,103,103)">
     
       The Bible Sabbath <span>•</span>
@@ -645,7 +653,7 @@
       
         <span>•</span>
         11 min read <span>•</span> 
-        <time datetime="2025-12-18T05:38:32.000Z">Dec 17, 2025</time>
+        <time datetime="2026-01-01T22:29:08.000Z">Jan 1, 2026</time>
       
     
   </p>
@@ -788,7 +796,7 @@
   </div>
 
   <a style="color: rgb(255,98,98)" href="/basics/death/">
-    Is There Life After Death?
+    What Happens When I Die?
   </a>
   
   <p>
@@ -997,7 +1005,7 @@
       
         
 
-<li class="standalone-view" data-updated="2025-12-16T04:43:05.000Z" data-length="26" data-reading-order="3800">
+<li class="standalone-view" data-updated="2026-01-01T22:29:08.000Z" data-length="26" data-reading-order="3800">
   <div><span class="tag" style="color: rgb(199,62,95)">
     
       The Christian Life <span>•</span>
@@ -1027,7 +1035,7 @@
       
         <span>•</span>
         26 min read <span>•</span> 
-        <time datetime="2025-12-16T04:43:05.000Z">Dec 15, 2025</time>
+        <time datetime="2026-01-01T22:29:08.000Z">Jan 1, 2026</time>
       
     
   </p>
@@ -1051,14 +1059,14 @@
       </div>
       
       <div class="last-updated">
-        Last updated <time datetime="2025-12-22T21:13:59.319Z">December 22, 2025</time>
+        Last updated <time datetime="2026-01-02T14:22:50.351Z">January 2, 2026</time>
       </div>
     <p></p>
   </div>
 </footer>
     <div id="search-container" class="search-container">
   <div class="search-modal">
-    <input id="search-input" type="text" class="search-input" placeholder="Search posts..." autocomplete="off" aria-label="Search posts">
+    <input id="search-input" type="text" class="search-input" placeholder="Search articles..." autocomplete="off" aria-label="Search posts">
     <div id="search-results" class="search-results"></div>
   </div>
 </div>
