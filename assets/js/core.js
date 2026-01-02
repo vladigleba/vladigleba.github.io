@@ -507,7 +507,7 @@ if (document.body.classList.contains('js-enabled')) {
 
     //#endregion
     
-/*
+    /*
     full-text search with snippet generation:
       1. search index is generated at build time via build-index.js
       2. browser uses assets/js/minisearch.js to reconstruct and query index at runtime
@@ -610,7 +610,7 @@ if (document.body.classList.contains('js-enabled')) {
         const highlighted = highlightTerms(formatted, searchPattern);
         
         if (!seenSnippets.has(highlighted)) { // O(1) v O(n) for array .includes()
-          seenSnippets.add(highlighted); 
+          seenSnippets.add(highlighted);
           snippets.push({
             text: highlighted,
             blockId: block.id // preserve block ID for linking
@@ -667,7 +667,7 @@ if (document.body.classList.contains('js-enabled')) {
       return results.filter(result => {
         // convert result to full document to grab searchable fields
         const fullDoc = miniSearchInstance.documentsById[result.id];
-
+        
         // check title and description
         const titleDesc = `${fullDoc.title} ${fullDoc.description}`.toLowerCase();
         if (titleDesc.includes(normalizedPhrase)) return true;
@@ -749,7 +749,7 @@ if (document.body.classList.contains('js-enabled')) {
         
         // always filter for exact phrase match so punctuation matches
         // (tokenizer splits on punctuation)
-        allResults = filterForExactPhrase(allResults, normalizedQuery);      
+        allResults = filterForExactPhrase(allResults, normalizedQuery);
 
         // pagination
         const totalResults = allResults.length;
@@ -795,13 +795,18 @@ if (document.body.classList.contains('js-enabled')) {
       });
     };
 
-    // helper function to render snippet HTML
-    const renderSnippetHTML = (snippets, resultUrl) => {
-      return snippets.map((snippet, idx) => `
-        <a href="${resultUrl}?searchMatch=${idx}" class="snippet-item">
-          <p class="snippet">${snippet}</p>
-        </a>
-      `).join('');
+    // helper function to render snippet HTML with data-search-id anchors
+    const renderSnippetHTML = (snippets, resultUrl, searchQuery) => {
+      return snippets.map((snippet) => {
+        // use data-search-id as URL fragment
+        const anchor = snippet.blockId !== 'description' ? `#${snippet.blockId}` : '';
+        const url = `${resultUrl}${anchor}?q=${encodeURIComponent(searchQuery)}`;
+        return `
+          <a href="${url}" class="snippet-item">
+            <p class="snippet">${snippet.text}</p>
+          </a>
+        `;
+      }).join('');
     };
 
     // render search results
@@ -844,6 +849,7 @@ if (document.body.classList.contains('js-enabled')) {
         // store data for in-memory "show more" functionality
         resultEl.dataset.allSnippets = JSON.stringify(result.allSnippets || []);
         resultEl.dataset.resultUrl = result.url;
+        resultEl.dataset.searchQuery = result.searchQuery;
 
         fragment.appendChild(resultEl);
       });
@@ -895,14 +901,14 @@ if (document.body.classList.contains('js-enabled')) {
         // focus after a small delay to ensure visibility transition completes
         setTimeout(() => searchInput.focus(), 50);
 
-        window.announceToLiveRegion?.('search panel opened');
+        announceToLiveRegion('Search panel opened');
       };
 
       const closeSearch = () => {
         searchContainer.classList.remove('active');
         document.body.style.overflow = '';
         resetSearchState();
-        window.announceToLiveRegion?.('search panel closed');
+        announceToLiveRegion('Search panel closed');
       };
 
       // prevent multiple observers on same elements
@@ -968,11 +974,12 @@ if (document.body.classList.contains('js-enabled')) {
         const snippetsContainer = resultEl.querySelector('.snippets');
         const allSnippets = JSON.parse(resultEl.dataset.allSnippets || '[]');
         const resultUrl = resultEl.dataset.resultUrl;
+        const searchQuery = resultEl.dataset.searchQuery;
 
-        snippetsContainer.innerHTML = renderSnippetHTML(allSnippets, resultUrl);
+        snippetsContainer.innerHTML = renderSnippetHTML(allSnippets, resultUrl, searchQuery);
         button.remove();
 
-        window.announceToLiveRegion?.('all matching excerpts expanded');
+        announceToLiveRegion('All matching excerpts expanded');
       };
 
       // event: search input
@@ -995,11 +1002,6 @@ if (document.body.classList.contains('js-enabled')) {
           e.stopPropagation();
           expandAllSnippets(showMoreBtn);
           return;
-        }
-
-        const snippetLink = e.target.closest('.snippet-item');
-        if (snippetLink) {
-          // to do: enable highlighting on article page based on URL param
         }
       });
 
@@ -1034,6 +1036,138 @@ if (document.body.classList.contains('js-enabled')) {
     } catch (err) {
       console.error('error setting up search UI:', err);
     }
+
+    //#endregion
+
+    /*
+    article page: highlight search matches
+    */
+
+    //#region
+
+    // get URL parameters for article page highlighting
+    // example URL: /gospel/law/#blockquote-2?q=queryString
+    const getArticleUrlParams = () => {
+      const hash = window.location.hash.slice(1); // get everything after '#'
+      const [blockId, queryString] = hash.split('?');
+
+      // parse query string either from hash or full URL if undefined
+      const params = new URLSearchParams(queryString || window.location.search);
+      
+      return {
+        searchQuery: params.get('q'),
+        blockId: blockId || null
+      };
+    };
+
+    const findBlockElement = (blockId) => {
+      return blockId ? document.querySelector(`[data-search-id="${blockId}"]`) : null;
+    };
+
+    // find text nodes within a root element, excluding existing highlights
+    const getTextNodes = (root) => {
+      const textNodes = [];
+      const walker = document.createTreeWalker(
+        root,
+        NodeFilter.SHOW_TEXT,
+        (node) => { // filter function to skip already highlighted nodes
+          return node.parentElement?.classList.contains('search-highlight')
+            ? NodeFilter.FILTER_REJECT
+            : NodeFilter.FILTER_ACCEPT;
+        }
+      );
+      
+      // collect all accepted text nodes
+      let node;
+      while (node = walker.nextNode()) {
+        textNodes.push(node);
+      }
+      return textNodes;
+    };
+
+    // find all occurrences of search pattern and wrap in <mark>
+    const highlightMatchesInElement = (element, searchPattern) => {
+      const regex = new RegExp(`(${searchPattern})`, 'gi');
+      const textNodes = getTextNodes(element); // get text nodes to search
+      const matches = [];
+      
+      textNodes.forEach(textNode => {
+        const text = textNode.textContent;
+        const nodeMatches = text.match(regex);
+        
+        if (!nodeMatches) return;
+        
+        const fragment = document.createDocumentFragment(); // replacement
+        let lastIndex = 0;
+        
+        // reset regex for exec loop
+        regex.lastIndex = 0;
+        let match;
+        
+        while ((match = regex.exec(text)) !== null) {
+          // add plain text before match
+          if (match.index > lastIndex) { // there is text before the match
+            fragment.appendChild(document.createTextNode(text.substring(lastIndex, match.index)));
+          }
+          
+          // creates <mark class="search-highlight">match</mark>
+          const mark = document.createElement('mark');
+          mark.className = 'search-highlight';
+          mark.textContent = match[0];
+          fragment.appendChild(mark);
+          matches.push(mark);
+          
+          lastIndex = regex.lastIndex;
+        }
+        
+        // add remaining plain text
+        if (lastIndex < text.length) {
+          fragment.appendChild(document.createTextNode(text.substring(lastIndex)));
+        }
+        
+        textNode.parentNode.replaceChild(fragment, textNode);
+      });
+      
+      return matches;
+    };
+
+    const scrollToElement = (element) => {
+      if (!element) return;
+      
+      element.classList.add('search-block-focus');
+      
+      // pageYOffset is how far page is scrolled vertically already
+      const offset = 100; // for fixed header
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    };
+
+    const initArticleHighlighting = () => {
+      const { searchQuery, blockId } = getArticleUrlParams();
+      
+      if (!searchQuery) return;
+      
+      // highlight specific block if provided
+      if (blockId) {
+        const blockElement = findBlockElement(blockId);
+        if (blockElement) {
+          highlightMatchesInElement(blockElement, searchQuery);
+          scrollToElement(blockElement);
+          return;
+        }
+      }
+
+      // highlight all matches in article
+      const contentContainer = document.querySelector('article .content, main');
+      highlightMatchesInElement(contentContainer, searchQuery);
+    };
+
+    initArticleHighlighting();
 
     //#endregion
   });
