@@ -508,7 +508,9 @@ if (document.body.classList.contains('js-enabled')) {
     //#endregion
     
 /*
-    full-text search with snippet generation
+    full-text search with snippet generation:
+      1. search index is generated at build time via build-index.js
+      2. browser uses assets/js/minisearch.js to reconstruct and query index at runtime
     */
 
     //#region
@@ -542,6 +544,9 @@ if (document.body.classList.contains('js-enabled')) {
       const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
       return escaped.replace(/'/g, "’");
     };
+
+    const createSearchRegex = pattern => new RegExp(pattern, 'gi');
+
 
     // highlight search terms in text
     const highlightTerms = (text, searchPattern) => {
@@ -587,40 +592,33 @@ if (document.body.classList.contains('js-enabled')) {
       };
     };
 
-    // extract all matching snippets from text with match count
-    const extractAllSnippets = (fullText, searchPattern, targetLength = SNIPPET_LENGTH) => {
-      if (!fullText || !searchPattern) {
-        return { allSnippets: [], totalMatches: 0 };
+    // extract matching snippets from a single block with its ID
+    const extractSnippetsFromBlock = (block, searchPattern, targetLength = SNIPPET_LENGTH) => {
+      if (!block.text || !searchPattern) {
+        return [];
       }
 
-      const allSnippets = []; // preserves order, allows slicing
-      const seenSnippets = new Set(); // tracks unique snippets
-      const regex = new RegExp(searchPattern, 'gi');
+      const snippets = []; // array preserves order, allows slicing
+      const seenSnippets = new Set(); // set tracks unique snippets
+      const regex = createSearchRegex(searchPattern);
       let match;
 
       // while there are matches
-      while ((match = regex.exec(fullText)) !== null) {
-        const { text, prefix, suffix } = buildSnippet(fullText, match.index, targetLength);
+      while ((match = regex.exec(block.text)) !== null) {
+        const { text, prefix, suffix } = buildSnippet(block.text, match.index, targetLength);
         const formatted = `${prefix}${text}${suffix}`;
         const highlighted = highlightTerms(formatted, searchPattern);
         
-        // only add if we haven't seen this snippet before
-        if (!seenSnippets.has(highlighted)) { // O(1) v O(n) array .includes()
+        if (!seenSnippets.has(highlighted)) { // O(1) v O(n) for array .includes()
           seenSnippets.add(highlighted); 
-          allSnippets.push(highlighted);
+          snippets.push({
+            text: highlighted,
+            blockId: block.id // preserve block ID for linking
+          });
         }
       }
 
-      return {
-        allSnippets,
-        totalMatches: allSnippets.length
-      };
-    };
-
-    // reconstruct full body text from blocks
-    const reconstructBodyText = (blocks) => {
-      if (!blocks || !Array.isArray(blocks)) return '';
-      return blocks.map(block => block.text).join(' ');
+      return snippets;
     };
 
     // initialize MiniSearch with lazy-loaded index generated at build time
@@ -632,19 +630,15 @@ if (document.body.classList.contains('js-enabled')) {
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
         searchIndexData = await response.json();
-        const MiniSearch = window.MiniSearch; // load MiniSearch from global window
+        const MiniSearch = window.MiniSearch; // load from global window via script
 
         // rebuild MiniSearch instance from saved JSON
         miniSearchInstance = MiniSearch.loadJSON(searchIndexData.index, searchIndexData.options);
 
         // create document lookup map to enable instant access to doc data
-        // also reconstruct body text from blocks for searching
         miniSearchInstance.documentsById = {};
         searchIndexData.documents.forEach(doc => {
-          miniSearchInstance.documentsById[doc.id] = {
-            ...doc,
-            body: reconstructBodyText(doc.blocks) // reconstruct full text for searching
-          };
+          miniSearchInstance.documentsById[doc.id] = doc;
         });
 
         return true; // search is ready
@@ -666,18 +660,22 @@ if (document.body.classList.contains('js-enabled')) {
       });
     };
 
-    // filter results for exact phrase match (multi-word queries)
-    // after initial token-based search
+    // filter results for exact phrase match after initial token-based search
     const filterForExactPhrase = (results, phrase) => {
       const normalizedPhrase = phrase.toLowerCase();
       
       return results.filter(result => {
-        // convert search hit to full document
+        // convert result to full document to grab searchable fields
         const fullDoc = miniSearchInstance.documentsById[result.id];
 
-        const searchableText = `${fullDoc.title} ${fullDoc.description} ${fullDoc.body}`
-        .toLowerCase();
-        return searchableText.includes(normalizedPhrase);
+        // check title and description
+        const titleDesc = `${fullDoc.title} ${fullDoc.description}`.toLowerCase();
+        if (titleDesc.includes(normalizedPhrase)) return true;
+        
+        // check blocks, stop at first match
+        return fullDoc.blocks.some(block => 
+          block.text.toLowerCase().includes(normalizedPhrase)
+        );
       });
     };
 
@@ -685,44 +683,55 @@ if (document.body.classList.contains('js-enabled')) {
     const enrichResult = (result, searchPattern) => {
       const fullDoc = miniSearchInstance.documentsById[result.id];
       
-      // extract snippets from body
-      const bodySnippetData = extractAllSnippets(fullDoc.body, searchPattern);
-      let totalMatches = bodySnippetData.totalMatches;
+      let totalMatches = 0;
+      const allSnippets = [];
       
       // count title matches
-      const titleRegex = new RegExp(searchPattern, 'gi');
+      const titleRegex = createSearchRegex(searchPattern);
       const titleMatches = (fullDoc.title.match(titleRegex) || []).length;
       totalMatches += titleMatches;
       
-      // extract description matches
-      let descSnippetData = { snippets: [], totalMatches: 0, allSnippets: [] };
+      // extract description snippets
       if (fullDoc.description) {
-        descSnippetData = extractAllSnippets(fullDoc.description, searchPattern);
-        totalMatches += descSnippetData.totalMatches;
+        const descRegex = createSearchRegex(searchPattern);
+        const descMatches = (fullDoc.description.match(descRegex) || []).length;
+
+        if (descMatches > 0) {
+          totalMatches += descMatches;
+          const descSnippets = extractSnippetsFromBlock(
+            { text: fullDoc.description, id: 'description' },
+            searchPattern
+          );
+          allSnippets.push(...descSnippets); // flatten
+        }
       }
       
-      // combine all snippets: description first, then body
-      let allCombinedSnippets = [
-        ...(descSnippetData.allSnippets || []),
-        ...bodySnippetData.allSnippets
-      ];
+      // extract snippets from each matching block
+      fullDoc.blocks.forEach(block => {
+        const blockSnippets = extractSnippetsFromBlock(block, searchPattern);
+        if (blockSnippets.length > 0) {
+          totalMatches += blockSnippets.length;
+          allSnippets.push(...blockSnippets);
+        }
+      });
 
       const {
         display: displaySnippets,
         hasMore: hasMoreSnippets,
         hiddenCount
-      } = limitSnippetsForDisplay(allCombinedSnippets, MAX_SNIPPETS_DISPLAY);
+      } = limitSnippetsForDisplay(allSnippets, MAX_SNIPPETS_DISPLAY);
 
       return {
         id: result.id,
         title: highlightTerms(fullDoc.title, searchPattern),
         url: fullDoc.url,
         snippets: displaySnippets,
-        allSnippets: allCombinedSnippets, // store for "show more"
+        allSnippets: allSnippets,
         hasMoreSnippets: hasMoreSnippets,
         hiddenSnippetCount: hiddenCount,
         matchCount: totalMatches,
-        score: result.score
+        score: result.score,
+        searchQuery: searchPattern
       };
     };
 
@@ -738,7 +747,8 @@ if (document.body.classList.contains('js-enabled')) {
         // execute token-based search
         let allResults = executeSearch(normalizedQuery);
         
-        // always filter for exact phrase matches (tokenizer is too broad)
+        // always filter for exact phrase match so punctuation matches
+        // (tokenizer splits on punctuation)
         allResults = filterForExactPhrase(allResults, normalizedQuery);      
 
         // pagination
@@ -766,12 +776,14 @@ if (document.body.classList.contains('js-enabled')) {
 
     // lazy-load MiniSearch library
     const loadMiniSearchLibrary = () => {
-      return new Promise((resolve) => { // return promise so caller can await
-        if (window.MiniSearch) { // already loaded
-          resolve();
+      // return promise (loading is async, caller awaits)
+      return new Promise((resolve) => {
+        if (window.MiniSearch) {
+          resolve(); // already loaded
           return;
         }
 
+        // make available as global variable on window object
         const script = document.createElement('script');
         script.src = '/assets/js/minisearch.js';
         script.onload = resolve;
@@ -807,8 +819,7 @@ if (document.body.classList.contains('js-enabled')) {
             </span>`
           : '';
 
-        // use helper function to build snippets
-        const snippetsHtml = renderSnippetHTML(result.snippets, result.url);
+        const snippetsHtml = renderSnippetHTML(result.snippets, result.url, result.searchQuery);
 
         // show "show x more matches" if there are hidden snippets
         const hiddenCount = result.hiddenSnippetCount;
@@ -830,7 +841,7 @@ if (document.body.classList.contains('js-enabled')) {
           </div>
         `;
 
-        // store all snippets on element for in-memory "show more" functionality
+        // store data for in-memory "show more" functionality
         resultEl.dataset.allSnippets = JSON.stringify(result.allSnippets || []);
         resultEl.dataset.resultUrl = result.url;
 
