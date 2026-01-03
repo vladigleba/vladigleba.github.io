@@ -1,5 +1,5 @@
 ---
-title: Is Hell Forever?
+title: Does Hell Burn Forever?
 description: Will a just and loving God torture people in a never ending hell for only a lifetime of sin?
 date: 2022-06-11
 series: Deception
