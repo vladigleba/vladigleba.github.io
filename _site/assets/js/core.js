@@ -899,7 +899,7 @@ if (document.body.classList.contains('js-enabled')) {
         document.body.style.overflow = 'hidden';
 
         // focus after a small delay to ensure visibility transition completes
-        setTimeout(() => searchInput.focus(), 200);
+        setTimeout(() => searchInput.focus(), 400);
 
         announceToLiveRegion('Search panel opened');
       };

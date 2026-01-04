@@ -68,12 +68,12 @@ article > header p {
 .search-results .empty,
 .toc a,
 body > footer,
-.unified-card .tag,
 article > header .meta.series {
   font-size: 16px;
 }
 
 .search-summary,
+.unified-card .tag,
 li .tag {
   font-size: 15px;
 }

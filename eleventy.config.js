@@ -230,6 +230,7 @@ module.exports = async (config) => {
     orderedPosts.summariesByCategory = summariesByCategory;
     orderedPosts.groupedPostsByCategory = groupedPostsByCategory;
     orderedPosts.highlightedPosts = highlightedPosts;
+    orderedPosts.categoriesCount = Object.keys(summariesByCategory).length - 1;
 
     return orderedPosts; // = [
     //   {
@@ -263,6 +264,7 @@ module.exports = async (config) => {
     //   featured: [ /* posts with featured set to true */ ],
     //   latest: { /* most recent post by date */ }
     // }
+    // orderedPosts.categoriesCount = 3 (excluding 'All')
   });
 
   //#endregion

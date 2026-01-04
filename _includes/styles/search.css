@@ -22,7 +22,7 @@
   z-index: 1000;
   visibility: hidden;
   opacity: 0;
-  transform: translateY(-10px);
+  transform: translateY(-20px);
   transition: visibility 0.15s ease-out, opacity 0.15s ease-out, transform 0.15s ease-out;
   pointer-events: none;
 }
