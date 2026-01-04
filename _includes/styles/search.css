@@ -18,12 +18,12 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 60px;
+  padding-top: 10px;
   z-index: 1000;
   visibility: hidden;
   opacity: 0;
   transform: translateY(-10px);
-  transition: visibility 0.3s ease-out, opacity 0.3s ease-out, transform 0.3s ease-out;
+  transition: visibility 0.2s ease-out, opacity 0.2s ease-out, transform 0.2s ease-out;
   pointer-events: none;
 }
 
@@ -172,7 +172,6 @@
   cursor: pointer;
 }
 
-/* highlight for search match scroll-to destination */
 .search-match-highlight {
   background-color: #fff7af !important;
   transition: background-color 0.3s ease;

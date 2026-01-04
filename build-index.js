@@ -258,7 +258,7 @@ function generateSearchIndex(postsDir = 'posts') {
     storeFields: ['title', 'description', 'url', 'blocks'], // returned to browser
     boost: { 
       title: 5,
-      headingsText: 4,
+      headingsText: 2,
       description: 3,
       paragraphsText: 1,
       blockquotesText: 1,

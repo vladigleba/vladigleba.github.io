@@ -58,12 +58,12 @@ article > header p {
   font-size: 18px;
 }
 
-#dialog-popup,
-.copy-toast,
 .footnotes {
   font-size: 17px;
 }
 
+#dialog-popup,
+.copy-toast,
 .search-result .header h3,
 .search-results .empty,
 .toc a,

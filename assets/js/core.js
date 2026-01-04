@@ -519,7 +519,7 @@ if (document.body.classList.contains('js-enabled')) {
     let miniSearchInstance = null;
     const SEARCH_INDEX_URL = '/assets/js/search-index.json';
     const RESULTS_PER_PAGE = 10;
-    const SNIPPET_LENGTH = 200;
+    const SNIPPET_LENGTH = 165;
     const MAX_SNIPPETS_DISPLAY = 4;
 
     // normalize apostrophes - convert straight to typographical
@@ -899,7 +899,7 @@ if (document.body.classList.contains('js-enabled')) {
         document.body.style.overflow = 'hidden';
 
         // focus after a small delay to ensure visibility transition completes
-        setTimeout(() => searchInput.focus(), 50);
+        setTimeout(() => searchInput.focus(), 100);
 
         announceToLiveRegion('Search panel opened');
       };
