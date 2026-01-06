@@ -186,9 +186,9 @@
 <style>
   .main-nav ul { background: rgba(255, 255, 255, 0.09); }
   .main-nav, .main-nav li:hover, .search-trigger, .search-trigger:hover { color: white; }
-  header h1, .content h2, figcaption, .number { color: rgb(141,100,171); }
-  header, .main-nav, .content figure::before { background: rgb(141,100,171); }
-  .toc li.active { border-left: 4px solid rgb(141,100,171); }
+  header h1, .content h2, figcaption, .number { color: rgb(133,93,162); }
+  header, .main-nav, .content figure::before { background: rgb(133,93,162); }
+  .toc li.active { border-left: 4px solid rgb(133,93,162); }
 </style>
 
 <article>
@@ -462,14 +462,18 @@
       </div>
       
       <div class="last-updated">
-        Last updated <time datetime="2026-01-04T12:26:12.850Z">January 4, 2026</time>
+        Last updated <time datetime="2026-01-05T17:45:57.411Z">January 5, 2026</time>
       </div>
     <p></p>
   </div>
 </footer>
     <div id="search-container" class="search-container">
   <div class="search-modal">
-    <input id="search-input" type="text" class="search-input" placeholder="Search articles..." autocomplete="off" aria-label="Search posts">
+    <div class="search-input-wrapper">
+      <button class="search-back-btn" id="search-back-btn" aria-label="Close search">←</button>
+      <input id="search-input" type="text" class="search-input" placeholder="Search articles..." autocomplete="off" aria-label="Search posts" inputmode="search">
+      <button class="search-clear-btn" id="search-clear-btn" aria-label="Clear search input">✕</button>
+    </div>
     <div id="search-results" class="search-results"></div>
   </div>
 </div>

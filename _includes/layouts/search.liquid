@@ -1,13 +1,18 @@
 <div id="search-container" class="search-container">
   <div class="search-modal">
-    <input 
-      id="search-input" 
-      type="text" 
-      class="search-input" 
-      placeholder="Search articles..." 
-      autocomplete="off"
-      aria-label="Search posts"
-    >
+    <div class="search-input-wrapper">
+      <button class="search-back-btn" id="search-back-btn" aria-label="Close search">←</button>
+      <input 
+        id="search-input" 
+        type="text" 
+        class="search-input" 
+        placeholder="Search articles..." 
+        autocomplete="off"
+        aria-label="Search posts"
+        inputmode="search"
+      >
+      <button class="search-clear-btn" id="search-clear-btn" aria-label="Clear search input">✕</button>
+    </div>
     <div id="search-results" class="search-results"></div>
   </div>
 </div>

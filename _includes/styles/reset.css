@@ -28,6 +28,7 @@ a {
 html {
   font-family: var(--default-font);
   font-size: var(--font-size);
+  font-feature-settings: "kern" 1;
   line-height: var(--line-height);
   scroll-behavior: smooth;
 }

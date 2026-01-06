@@ -871,6 +871,8 @@ if (document.body.classList.contains('js-enabled')) {
       const searchInput = document.getElementById('search-input');
       const searchResults = document.getElementById('search-results');
       const searchTrigger = document.getElementById('search-trigger');
+      const searchBackBtn = document.getElementById('search-back-btn');
+      const searchClearBtn = document.getElementById('search-clear-btn');
 
       if (!searchContainer || !searchInput || !searchResults) return;
 
@@ -987,12 +989,41 @@ if (document.body.classList.contains('js-enabled')) {
         currentQuery = e.target.value;
         currentPage = 0;
 
+        // show/hide clear button
+        if (searchClearBtn) {
+          if (currentQuery.length > 0) {
+            searchClearBtn.classList.add('visible');
+          } else {
+            searchClearBtn.classList.remove('visible');
+          }
+        }
+
         if (currentQuery) { // if query present
           performAndRenderSearch(currentQuery, 0);
         } else { // search cleared
           resetSearchState();
         }
       });
+
+      // event: clear button
+      if (searchClearBtn) {
+        searchClearBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          searchInput.value = '';
+          currentQuery = '';
+          searchClearBtn.classList.remove('visible');
+          resetSearchState();
+          searchInput.focus();
+        });
+      }
+
+      // event: back button
+      if (searchBackBtn) {
+        searchBackBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          closeSearch();
+        });
+      }
 
       // event delegation (results)
       searchResults.addEventListener('click', (e) => {
@@ -1143,7 +1174,7 @@ if (document.body.classList.contains('js-enabled')) {
       
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth'
+        behavior: 'auto'
       });
     };
 

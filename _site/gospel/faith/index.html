@@ -477,14 +477,18 @@
       </div>
       
       <div class="last-updated">
-        Last updated <time datetime="2026-01-04T12:26:12.850Z">January 4, 2026</time>
+        Last updated <time datetime="2026-01-05T17:45:57.411Z">January 5, 2026</time>
       </div>
     <p></p>
   </div>
 </footer>
     <div id="search-container" class="search-container">
   <div class="search-modal">
-    <input id="search-input" type="text" class="search-input" placeholder="Search articles..." autocomplete="off" aria-label="Search posts">
+    <div class="search-input-wrapper">
+      <button class="search-back-btn" id="search-back-btn" aria-label="Close search">←</button>
+      <input id="search-input" type="text" class="search-input" placeholder="Search articles..." autocomplete="off" aria-label="Search posts" inputmode="search">
+      <button class="search-clear-btn" id="search-clear-btn" aria-label="Clear search input">✕</button>
+    </div>
     <div id="search-results" class="search-results"></div>
   </div>
 </div>
