@@ -80,23 +80,31 @@ if (document.body.classList.contains('js-enabled')) {
 
     //#region
 
-    // helper to set aria-current on a TOC link only when it changes
-    const setActiveTocLink = (link) => {
+    // helper to set active state on a TOC link
+    const setActiveTocItem = (link) => {
       const existing = document.querySelector('.toc a[aria-current="true"]');
-      if (existing && existing !== link) existing.removeAttribute('aria-current');
-      if (link && link.getAttribute('aria-current') !== 'true') link.setAttribute('aria-current', 'true');
+      if (existing && existing !== link) {
+        existing.removeAttribute('aria-current');
+      }
+      
+      // remove previous active class from all items
+      document.querySelectorAll('.toc li').forEach((li) => li.classList.remove('active'));
+      
+      // set new states if link provided
+      if (link) {
+        link.setAttribute('aria-current', 'true');
+        link.closest('li')?.classList.add('active');
+      }
     };
 
     // observer
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          document.querySelectorAll('.toc li').forEach((li) => li.classList.remove('active'));
           const id = entry.target.id;
           const activeLink = document.querySelector(`.toc a[href="#${id}"]`);
           if (activeLink) {
-            activeLink.closest('li')?.classList.add('active');
-            setActiveTocLink(activeLink);
+            setActiveTocItem(activeLink);
           }
         }
       });
@@ -108,6 +116,13 @@ if (document.body.classList.contains('js-enabled')) {
 
     const headings = document.querySelectorAll('.content h2, .content h3, .content h4');
     headings.forEach((heading) => observer.observe(heading));
+    
+    // add click listeners to TOC links to mark them as active
+    document.querySelectorAll('.toc a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', () => {
+        setActiveTocItem(link);
+      });
+    });
 
     // focus the referenced element referenced and update aria-current on TOC links
     const focusFragmentTarget = () => {
@@ -597,27 +612,65 @@ if (document.body.classList.contains('js-enabled')) {
       if (!block.text || !searchPattern) {
         return [];
       }
-
-      const snippets = []; // array preserves order, allows slicing
-      const seenSnippets = new Set(); // set tracks unique snippets
+      
+      const snippets = [];
       const regex = createSearchRegex(searchPattern);
       let match;
+      const matches = [];
 
-      // while there are matches
+      // collect all match positions first
       while ((match = regex.exec(block.text)) !== null) {
-        const { text, prefix, suffix } = buildSnippet(block.text, match.index, targetLength);
-        const formatted = `${prefix}${text}${suffix}`;
-        const highlighted = highlightTerms(formatted, searchPattern);
+        matches.push(match.index);
+      }
+      
+      // group overlapping matches
+      const groups = [];
+      for (const matchIndex of matches) {
+        const snippetStart = Math.max(
+          0, // avoid negative index
+          matchIndex - Math.floor(targetLength / 2)
+        );
+        const snippetEnd = Math.min(
+          block.text.length, // avoid going past end of text
+          matchIndex + Math.floor(targetLength / 2)
+        );
         
-        if (!seenSnippets.has(highlighted)) { // O(1) v O(n) for array .includes()
-          seenSnippets.add(highlighted);
-          snippets.push({
-            text: highlighted,
-            blockId: block.id // preserve block ID for linking
+        // check if this snippet overlaps with the last group
+        const lastGroup = groups[groups.length - 1];
+        if (lastGroup && snippetStart <= lastGroup.end) {
+          lastGroup.end = Math.max(lastGroup.end, snippetEnd);
+          lastGroup.matches.push(matchIndex); // overlap, add to same group
+        } else {
+          groups.push({ 
+            start: snippetStart,
+            end: snippetEnd,
+            matches: [matchIndex]
           });
         }
       }
-
+      
+      // build snippets from groups
+      for (const group of groups) {
+        // shift center around matches to provide better context
+        const firstMatch = group.matches[0];
+        const lastMatch = group.matches[group.matches.length - 1];
+        const centerPoint = Math.floor((firstMatch + lastMatch) / 2);
+        
+        const { text, prefix, suffix } = buildSnippet(
+          block.text, 
+          centerPoint,
+          targetLength
+        );
+        
+        const formatted = `${prefix}${text}${suffix}`;
+        const highlighted = highlightTerms(formatted, searchPattern);
+        
+        snippets.push({
+          text: highlighted,
+            blockId: block.id // preserve block ID for linking
+        });
+      }
+      
       return snippets;
     };
 
@@ -708,9 +761,12 @@ if (document.body.classList.contains('js-enabled')) {
       
       // extract snippets from each matching block
       fullDoc.blocks.forEach(block => {
-        const blockSnippets = extractSnippetsFromBlock(block, searchPattern);
-        if (blockSnippets.length > 0) {
-          totalMatches += blockSnippets.length;
+        const blockRegex = createSearchRegex(searchPattern);
+        const blockMatches = (block.text.match(blockRegex) || []).length;
+        
+        if (blockMatches > 0) {
+          totalMatches += blockMatches;
+          const blockSnippets = extractSnippetsFromBlock(block, searchPattern);
           allSnippets.push(...blockSnippets);
         }
       });
@@ -888,6 +944,9 @@ if (document.body.classList.contains('js-enabled')) {
         isLoadingMore = false;
         searchResults.innerHTML = '';
         searchInput.value = '';
+        if (searchClearBtn) {
+          searchClearBtn.classList.remove('visible'); // hide clear button
+        }
       };
 
       // search open / close
@@ -900,7 +959,10 @@ if (document.body.classList.contains('js-enabled')) {
         searchContainer.classList.add('active');
         document.body.style.overflow = 'hidden';
 
-        // focus after a small delay to ensure visibility transition completes
+        // iOS doesn't auto-focus well with setTimeout, so try both approaches:
+        // 1. focus immediately for iOS
+        // 2. also try after animation delay for desktop browsers
+        searchInput.focus();
         setTimeout(() => searchInput.focus(), 400);
 
         announceToLiveRegion('Search panel opened');
@@ -1183,19 +1245,17 @@ if (document.body.classList.contains('js-enabled')) {
       
       if (!searchQuery) return;
       
-      // highlight specific block if provided
+      // highlight all matches in the article
+      const contentContainer = document.querySelector('main');
+      highlightMatchesInElement(contentContainer, searchQuery);
+      
+      // scroll to specific block if provided
       if (blockId) {
         const blockElement = findBlockElement(blockId);
         if (blockElement) {
-          highlightMatchesInElement(blockElement, searchQuery);
           scrollToElement(blockElement);
-          return;
         }
       }
-
-      // highlight all matches in article
-      const contentContainer = document.querySelector('main');
-      highlightMatchesInElement(contentContainer, searchQuery);
     };
 
     initArticleHighlighting();

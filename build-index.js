@@ -209,6 +209,11 @@ function extractContentBlocks(bodyText) {
       continue;
     }
     
+    // skip markdown table rows
+    if (line.startsWith('|') && line.endsWith('|')) {
+      continue;
+    }
+    
     // catch-all transition to close previous block and start new paragraph
     if (blockType === 'blockquote' || blockType === 'list') {
       saveBlock(); // save previous block (either blockquote or list)
