@@ -175,11 +175,11 @@ The word “laws” is plural, and indeed the Sabbath commandment was not the on
 
 ## What question does the papacy ask Protestants?
 
-> Protestants have repeatedly asked the papacy, “How could you dare to change God’s law?” But the question posed to Protestants by the Catholic church is even more penetrating.
+> Protestants have repeatedly asked the papacy, “How could you dare to change God’s law?” But the question posed to Protestants by the Catholic Church is even more penetrating.
 > 
-> Here it is officially: You will tell me that Saturday was the Jewish Sabbath, but that the Christian Sabbath has been changed to Sunday. Changed! but by whom? *Who has authority to change an express commandment of Almighty God? When God has spoken and said, Thou shalt keep holy the seventh day, who shall dare to say, Nay, thou mayest work and do all manner of worldly business on the seventh day; but thou shalt keep holy the first day in its stead?*
->
-> This is a most important question, which I know not how you can answer. You are a Protestant, and you profess to go by the Bible and the Bible only; and *yet in so important a matter as the observance of one day in seven as a holy day, you go against the plain letter of the Bible, and put another day in the place of that day which the Bible has commanded.*
+> Here it is officially: You will tell me that Saturday was the Jewish Sabbath, but that the Christian Sabbath has been changed to Sunday. Changed! but by whom? *Who has authority to change an express commandment of Almighty God? When God has spoken and said, Thou shalt keep holy the seventh day, who shall dare to say, Nay, thou mayest work and do all manner of worldly business on the seventh day; but thou shalt keep holy the first day in its stead?* This is a most important question, which I know not how you can answer.
+> 
+> You are a Protestant, and you profess to go by the Bible and the Bible only; and *yet in so important a matter as the observance of one day in seven as a holy day, you go against the plain letter of the Bible, and put another day in the place of that day which the Bible has commanded.*
 > 
 > The command to keep holy the seventh day is one of the ten commandments; *you believe that the other nine are still binding; who gave you authority to tamper with the fourth?* If you are consistent with your own principles, if you really follow the Bible and the Bible only, you ought to be able to produce some portion of the New Testament in which this fourth commandment is expressly altered.
 {% ct "Library of Christian Doctrine: Why Don't You Keep Holy the Sabbath-Day? (London: Burns and Oates, Ltd.), pp. 3, 4." %}

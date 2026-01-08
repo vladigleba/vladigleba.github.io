@@ -576,25 +576,34 @@ if (document.body.classList.contains('js-enabled')) {
 
     // build a single snippet with boundaries and ellipsis
     const buildSnippet = (text, matchIndex, length = SNIPPET_LENGTH) => {
-      const halfLength = length / 2;
-      let start = Math.max(0, matchIndex - halfLength);
-      let end = Math.min(text.length, start + length);
-      
-      // if hit end boundary and snippet is shorter than desired, shift start back
-      if (end === text.length && text.length - start < length) {
-        start = Math.max(0, text.length - length);
+      const halfLength = Math.floor(length / 2); // floor avoids fractional lengths
+
+      let start = Math.max(0, Math.floor(matchIndex - halfLength));
+      let end = Math.min(text.length, Math.floor(start + length));
+
+      const originalStart = start;
+      const originalEnd = end;
+
+      // if character before snippet is non-whitespace, shift start back to nearest whitespace
+      while (start > 0 && !/\s/.test(text[start - 1])) {
+        start--;
       }
-      
-      // extract snippet, trim, and defensive length check
-      let snippet = text.substring(start, end).trim().replace(/\s+/g, ' ');
-      if (snippet.length > length) {
-        snippet = snippet.substring(0, length);
+
+      // extend end to include complete word
+      while (end < text.length && !/\s/.test(text[end])) {
+        end++;
       }
-      
+
+      // trim and collapse whitespace
+      const snippet = text
+        .substring(start, end)
+        .trim()
+        .replace(/\s+/g, ' ');
+
       return {
         text: snippet,
-        prefix: start > 0 ? '...' : '',
-        suffix: end < text.length ? '...' : ''
+        prefix: originalStart > 0 ? '...' : '',
+        suffix: originalEnd < text.length ? '...' : ''
       };
     };
 
@@ -635,11 +644,10 @@ if (document.body.classList.contains('js-enabled')) {
           matchIndex + Math.floor(targetLength / 2)
         );
         
-        // check if this snippet overlaps with the last group
+        // check if snippet overlaps with last group
         const lastGroup = groups[groups.length - 1];
         if (lastGroup && snippetStart <= lastGroup.end) {
-          lastGroup.end = Math.max(lastGroup.end, snippetEnd);
-          lastGroup.matches.push(matchIndex); // overlap, add to same group
+          lastGroup.matches.push(matchIndex); // overlap, add to last group
         } else {
           groups.push({ 
             start: snippetStart,
@@ -667,7 +675,7 @@ if (document.body.classList.contains('js-enabled')) {
         
         snippets.push({
           text: highlighted,
-            blockId: block.id // preserve block ID for linking
+          blockId: block.id // preserve block ID for linking
         });
       }
       
