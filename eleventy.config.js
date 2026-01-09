@@ -296,7 +296,7 @@ module.exports = async (config) => {
     }
     
     // add data-search-id attributes to content blocks for search functionality
-    const blockCounters = { heading: 0, paragraph: 0, blockquote: 0, list: 0 };
+    const blockCounters = { heading: 0, paragraph: 0, blockquote: 0, list: 0, footnote: 0 };
     
     // headings (ignore h1 since it's page title)
     const headings = main.querySelectorAll('h2, h3, h4, h5, h6');

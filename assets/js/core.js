@@ -863,8 +863,8 @@ if (document.body.classList.contains('js-enabled')) {
     const renderSnippetHTML = (snippets, resultUrl, searchQuery) => {
       return snippets.map((snippet) => {
         // use data-search-id as URL fragment
-        const anchor = snippet.blockId !== 'description' ? `#${snippet.blockId}` : '';
-        const url = `${resultUrl}${anchor}?q=${encodeURIComponent(searchQuery)}`;
+        const anchor = snippet.blockId !== 'description' ? `${snippet.blockId}` : '';
+        const url = `${resultUrl}?q=${encodeURIComponent(searchQuery)}#${anchor}`;
         return `
           <a href="${url}" class="snippet-item">
             <p class="snippet">${snippet.text}</p>
@@ -971,7 +971,7 @@ if (document.body.classList.contains('js-enabled')) {
         // 1. focus immediately for iOS
         // 2. also try after animation delay for desktop browsers
         searchInput.focus();
-        setTimeout(() => searchInput.focus(), 400);
+        setTimeout(() => searchInput.focus(), 250);
 
         announceToLiveRegion('Search panel opened');
       };
@@ -1147,17 +1147,15 @@ if (document.body.classList.contains('js-enabled')) {
     //#region
 
     // get URL parameters for article page highlighting
-    // example URL: /gospel/law/#blockquote-2?q=queryString
     const getArticleUrlParams = () => {
-      const hash = window.location.hash.slice(1); // get everything after '#'
-      const [blockId, queryString] = hash.split('?');
-
-      // parse query string either from hash or full URL if undefined
-      const params = new URLSearchParams(queryString || window.location.search);
+      const params = new URLSearchParams(window.location.search);
+      
+      // get blockId from hash (everything after '#')
+      const blockId = window.location.hash.slice(1) || null;
       
       return {
         searchQuery: params.get('q'),
-        blockId: blockId || null
+        blockId: blockId
       };
     };
 
