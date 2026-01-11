@@ -319,11 +319,27 @@ module.exports = async (config) => {
       }
     }
     
-    // lists (both ul and ol, but skip TOC lists, nested lists, footnotes)
+    // lists (both ul and ol)
     const lists = main.querySelectorAll('ul, ol');
     for (const list of lists) {
-      if (list.closest('aside, ul, ol') || list.classList.contains('footnotes-list')) continue;
-      list.setAttribute('data-search-id', `list-${blockCounters.list++}`);
+      const parentSection = list.closest('section');
+      if (!parentSection) continue; // skip lists outside of main content
+      
+      // each list item gets individual blockid
+      const listItems = list.querySelectorAll('li');
+      listItems.forEach((li, index) => {
+        li.setAttribute('data-search-id', `list-${blockCounters.list}-item-${index}`);
+      });
+      blockCounters.list++;
+    }
+    
+    // footnotes
+    const footnotesList = main.querySelector('.footnotes-list');
+    if (footnotesList) {
+      const footnoteItems = footnotesList.querySelectorAll('li.footnote-item');
+      footnoteItems.forEach((li) => {
+        li.setAttribute('data-search-id', `footnote-${blockCounters.footnote++}`);
+      });
     }
     
     // early exit if no headings

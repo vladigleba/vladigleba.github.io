@@ -84,8 +84,7 @@ function buildUrlFromPath(filePath) {
   return match ? `/${match[1]}/${match[2]}/` : '';
 }
 
-// separate markdown file content into blocks
-// assign data-search-id to each block for search result linking
+// separate markdown file content into blocks with search IDs
 function extractContentBlocks(bodyText) {
   const lines = bodyText.split('\n');
   const blocks = [];
@@ -94,7 +93,7 @@ function extractContentBlocks(bodyText) {
   let blockCounters = { heading: 0, paragraph: 0, blockquote: 0, list: 0, footnote: 0 };
   let listCounter = { ordered: 0 };
   
-  // helper to save accumulated block with type-specific cleaning
+  // save accumulated block with type-specific cleaning
   const saveBlock = () => {
     if (currentBlock.length === 0) return;
     
@@ -103,7 +102,6 @@ function extractContentBlocks(bodyText) {
     let cleanedText = '';
     let blockId = '';
     
-    // type-specific cleaning and ID assignment to match eleventy.config.js
     switch(blockType) {
       case 'heading':
         cleanedText = cleanHeading(rawText);
