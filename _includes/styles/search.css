@@ -93,7 +93,6 @@
   flex: 1;
   -webkit-appearance: none;
   appearance: none;
-  border: 1px solid var(--border-color);
   border-radius: var(--default-radius);
   margin: 10px 0;
 }
