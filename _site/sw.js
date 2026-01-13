@@ -1,8 +1,7 @@
 
-const CACHE_NAME = 'vgb-site-cache-1768281662172';
+const CACHE_NAME = 'vgb-site-cache-1768282321916';
 const FONT_CACHE = 'google-fonts-v1';
 const IMAGE_CACHE = 'images-v1';
-const FONT_URL = 'https://fonts.googleapis.com';
 
 const CORE_ASSETS = [
   '/',
@@ -67,12 +66,13 @@ if (!isLocalhost) {
     if (request.method !== 'GET') return;
 
     // only cache same-origin requests (except Google Fonts)
-    const isFont = url.origin === FONT_URL;
+    const isFont = url.origin === 'https://fonts.googleapis.com' || 
+               url.origin === 'https://fonts.gstatic.com';
     const isSameOrigin = url.origin === self.location.origin;
     
     if (!isFont && !isSameOrigin) return;
 
-    // Google Fonts: cache CSS only, let browser handle font files
+    // Google Fonts: cache CSS and font files
     if (isFont) {
       event.respondWith(
         caches.open(FONT_CACHE).then(cache =>
