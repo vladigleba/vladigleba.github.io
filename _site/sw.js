@@ -1,70 +1,106 @@
 
-const CACHE_NAME = 'vgb-site-cache-1768198940060';
-const FONT_CACHE = 'google-fonts-cache';
-const ASSETS_TO_CACHE = [
+const CACHE_NAME = 'vgb-site-cache-1768280835529';
+const FONT_CACHE = 'google-fonts-v1';
+const IMAGE_CACHE = 'images-v1';
+const FONT_URL = 'https://fonts.googleapis.com';
+
+const CORE_ASSETS = [
   '/',
   '/styles.css',
   '/assets/js/core.js',
-  // images
-  '/assets/images/favicon.svg',
-  '/assets/images/icons.svg',
-  '/assets/images/social-default.png',
-  // categories
-  '/basics/',
-  '/gospel/',
-  '/prophecy/',
   '/offline/',
 ];
 
-// disable service worker caching on localhost for development
-const isLocalhost =
-  self.location.hostname === 'localhost' ||
-  self.location.hostname === '127.0.0.1';
+const PRECACHE_IMAGES = [
+  '/assets/images/favicon.svg',
+  '/assets/images/icons.svg',
+];
+
+const CACHE_CATEGORIES = [
+  '/basics/',
+  '/gospel/',
+  '/prophecy/',
+];
+
+const isLocalhost = self.location.hostname === 'localhost' || 
+                    self.location.hostname === '127.0.0.1';
 
 if (!isLocalhost) {
-
-  // install SW, cache assets for offline
   self.addEventListener('install', event => {
     event.waitUntil(
       caches.open(CACHE_NAME)
-        .then(cache => cache.addAll(ASSETS_TO_CACHE))
-        .then(() => self.skipWaiting()) // activate new SW AFTER cache is ready
+        .then(cache => cache.addAll(CORE_ASSETS))
+        .then(() => {
+          // precache images
+          return caches.open(IMAGE_CACHE)
+            .then(cache => cache.addAll(PRECACHE_IMAGES))
+            .catch(() => {});
+        })
+        .then(() => {
+          // precache categories
+          return caches.open(CACHE_NAME)
+            .then(cache => cache.addAll(CACHE_CATEGORIES))
+            .catch(() => {});
+        })
+        .then(() => self.skipWaiting()) // activate new SW immediately
     );
   });
 
-  // activate SW, delete old caches
   self.addEventListener('activate', event => {
     event.waitUntil(
-      caches.keys().then(keys =>
-        Promise.all(
-          keys
-            .filter(key =>
-              key !== CACHE_NAME &&
-              key !== FONT_CACHE
-            )
-            .map(key => caches.delete(key))
-        )
-      ).then(() => self.clients.claim()) // take control of all open tabs immediately
+      caches.keys().then(keys => 
+        Promise.all(keys
+          .filter(key => 
+            key !== CACHE_NAME && 
+            key !== FONT_CACHE && 
+            key !== IMAGE_CACHE)
+          .map(key => caches.delete(key)))
+        ))
+        .then(() => self.clients.claim()) // take control of all open tabs immediately
     );
   });
 
-  // fetch
   self.addEventListener('fetch', event => {
-    const request = event.request;
-    const url = request.url;
+    const { request } = event;
+    const url = new URL(request.url);
 
-    // Google Fonts: cache-first
-    if (
-      url.startsWith('https://fonts.googleapis.com/') ||
-      url.startsWith('https://fonts.gstatic.com/')
-    ) {
+    if (request.method !== 'GET') return;
+
+    // only cache same-origin requests (except Google Fonts)
+    const isFont = url.origin === FONT_URL;
+    const isSameOrigin = url.origin === self.location.origin;
+    
+    if (!isFont && !isSameOrigin) return;
+
+    // Google Fonts: cache CSS only, let browser handle font files
+    if (isFont) {
       event.respondWith(
         caches.open(FONT_CACHE).then(cache =>
           cache.match(request).then(cached => {
             if (cached) return cached;
+            
+            return fetch(request, { mode: 'cors' })
+              .then(response => {
+                if (response?.ok) {
+                  cache.put(request, response.clone());
+                }
+                return response;
+              });
+          })
+        )
+      );
+      return;
+    }
 
+    // Images: cache-first with separate cache
+    if (request.destination === 'image') {
+      event.respondWith(
+        caches.open(IMAGE_CACHE).then(cache =>
+          cache.match(request).then(cached => {
+            if (cached) return cached;
+            
             return fetch(request).then(response => {
-              if (response && response.status === 200) {
+              if (response?.ok) {
                 cache.put(request, response.clone());
               }
               return response;
@@ -75,38 +111,32 @@ if (!isLocalhost) {
       return;
     }
 
-    // HTML navigation: network first
+    // HTML navigation: network-first, fallback to offline page
     if (request.mode === 'navigate') {
       event.respondWith(
         fetch(request)
-          .then(response => {
-            const clone = response.clone();
-            caches.open(CACHE_NAME).then(cache =>
-              cache.put(request, clone)
-            );
-            return response;
-          })
           .catch(() => caches.match('/offline/'))
       );
       return;
     }
 
-    // everything else: cache first
-    event.respondWith(
-      caches.match(request).then(cached => {
-        if (cached) return cached;
-
-        // not in cache, fetch from network and cache it
-        return fetch(request).then(response => {
-          if (response && response.status === 200) {
-            const clone = response.clone();
-            caches.open(CACHE_NAME).then(cache =>
-              cache.put(request, clone)
-            );
-          }
-          return response;
-        });
-      })
-    );
+    // CSS/JS: cache-first
+    if (request.destination === 'style' || 
+        request.destination === 'script') {
+      event.respondWith(
+        caches.match(request).then(cached => {
+          if (cached) return cached;
+          
+          return fetch(request).then(response => {
+            if (response?.ok) {
+              caches.open(CACHE_NAME)
+                .then(cache => cache.put(request, response.clone()));
+            }
+            return response;
+          });
+        })
+      );
+      return;
+    }
   });
 }
