@@ -1,5 +1,5 @@
 
-const CACHE_NAME = 'vgb-site-cache-1768280835529';
+const CACHE_NAME = 'vgb-site-cache-1768281662172';
 const FONT_CACHE = 'google-fonts-v1';
 const IMAGE_CACHE = 'images-v1';
 const FONT_URL = 'https://fonts.googleapis.com';
@@ -55,8 +55,8 @@ if (!isLocalhost) {
             key !== FONT_CACHE && 
             key !== IMAGE_CACHE)
           .map(key => caches.delete(key)))
-        ))
-        .then(() => self.clients.claim()) // take control of all open tabs immediately
+      )
+      .then(() => self.clients.claim()) // take control of all open tabs immediately
     );
   });
 

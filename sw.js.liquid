@@ -59,8 +59,8 @@ if (!isLocalhost) {
             key !== FONT_CACHE && 
             key !== IMAGE_CACHE)
           .map(key => caches.delete(key)))
-        ))
-        .then(() => self.clients.claim()) // take control of all open tabs immediately
+      )
+      .then(() => self.clients.claim()) // take control of all open tabs immediately
     );
   });
 
