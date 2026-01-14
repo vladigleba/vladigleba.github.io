@@ -3,10 +3,6 @@
 <title>{{ meta_title }}</title>
 <meta name="description" content="{{ meta_description }}">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" fetchpriority="low">
-
 <!-- security headers -->
 <meta http-equiv='Content-Security-Policy' content="default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://cloud.umami.is; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://bible-api.com https://api-gateway.umami.dev; object-src 'none'; base-uri 'self'; form-action 'self';">
 <meta name='referrer' content='strict-origin-when-cross-origin'>
@@ -30,7 +26,9 @@
 <meta name="twitter:image" content="{{ '/assets/images/social-default.png' | absoluteUrl }}">
 
 <!-- DNS prefetch and preconnect -->
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" fetchpriority="low">
 
 <!-- critical CSS -->
 <link href="/styles.css" rel="stylesheet">
