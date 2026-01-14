@@ -1,23 +1,20 @@
 <meta charset="utf-8">
-
-<!-- meta tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ meta_title }}</title>
 <meta name="description" content="{{ meta_description }}">
 
-<!-- security -->
+<!-- security headers -->
 <meta http-equiv='Content-Security-Policy' content="default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://cloud.umami.is; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://bible-api.com https://api-gateway.umami.dev; object-src 'none'; base-uri 'self'; form-action 'self';">
 <meta name='referrer' content='strict-origin-when-cross-origin'>
 <meta http-equiv='Permissions-Policy' content="geolocation=(), camera=(), microphone=(), payment=()">
 <meta http-equiv='X-Content-Type-Options' content='nosniff'>
 
-<!-- meta tags for SEO and social -->
+<!-- social meta tags -->
 {% if is_article %}
   <meta property="og:type" content="article">
 {% else %}
   <meta property="og:type" content="website">
 {% endif %}
-
 <meta property="og:title" content="{{ meta_title }}">
 <meta property="og:description" content="{{ meta_description }}">
 <meta property="og:url" content="{{ page_url | absoluteUrl }}">
@@ -28,7 +25,7 @@
 <meta name="twitter:description" content="{{ meta_description }}">
 <meta name="twitter:image" content="{{ '/assets/images/social-default.png' | absoluteUrl }}">
 
-<!-- DNS hints -->
+<!-- DNS prefetch and preconnect -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -48,14 +45,14 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
 </noscript>
 
-<!-- canonical URL and RSS feed -->
+<!-- canonical and feeds -->
 <link rel="canonical" href="{{ url }}">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 
 <!-- icons -->
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 
-<!-- structured data for SEO -->
+<!-- structured data -->
 {% if is_article %}
   <script type="application/ld+json">
     {

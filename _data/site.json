@@ -22,59 +22,59 @@
   "series": {
     "Messiah": {
       "title": "Jesus, the Messiah",
-      "color": "rgb(101,102,166)"
+      "color": "rgb(101, 102, 166)"
     },
     "Salvation": {
       "title": "Experiencing Salvation",
-      "color": "rgb(145,94,124)"
+      "color": "rgb(145, 94, 124)"
     },
     "Coming": {
       "title": "The Second Coming",
-      "color": "rgb(57,96,136)"
+      "color": "rgb(57, 96, 136)"
     },
     "Judgment": {
       "title": "Facing Judgment",
-      "color": "rgb(237,103,82)"
+      "color": "rgb(237, 103, 82)"
     },
     "Sabbath": {
       "title": "The Bible Sabbath",
-      "color": "rgb(199,103,103)"
+      "color": "rgb(199, 103, 103)"
     },
     "Sunday": {
       "title": "The Counterfeit Sabbath",
-      "color": "rgb(133,93,162)"
+      "color": "rgb(133, 93, 162)"
     },
     "Mark": {
       "title": "The Antichrist’s Mark",
-      "color": "rgb(17,128,138)"
+      "color": "rgb(17, 128, 138)"
     },
     "Babylon": {
       "title": "Coming Out of Babylon",
-      "color": "rgb(170,104,150)"
+      "color": "rgb(170, 104, 150)"
     },
     "Baptism": {
       "title": "Baptized by the Spirit",
-      "color": "rgb(86,111,170)"
+      "color": "rgb(86, 111, 170)"
     },
     "Healing": {
       "title": "Made Whole by Christ",
-      "color": "rgb(214,65,102)"
+      "color": "rgb(33, 122, 105)"
     },
     "Remnant": {
       "title": "A Prophetic Movement",
-      "color": "rgb(57,96,136)"
+      "color": "rgb(57, 96, 136)"
     },
     "Life": {
       "title": "The Christian Life",
-      "color": "rgb(199,62,95)"
+      "color": "rgb(185, 57, 88)"
     },
     "Deception": {
       "title": "Mainstream Deceptions",
-      "color": "rgb(255,98,98)"
+      "color": "rgb(255, 98, 98)"
     },
     "Controversy": {
       "title": "The Great Controversy",
-      "color": "rgb(170,98,98)"
+      "color": "rgb(170, 88, 88)"
     }
   }
 }

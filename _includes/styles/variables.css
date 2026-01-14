@@ -1,7 +1,7 @@
 :root {
   --font-size: 21px;
   --line-height: 1.2;
-  --default-font: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  --default-font: "Open Sans", Arial, sans-serif;
   --lighter-gray-color: #999;
   --gray-color: #727272;
   --darker-gray-color: rgb(69, 77, 97);

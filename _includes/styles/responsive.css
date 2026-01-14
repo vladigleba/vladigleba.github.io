@@ -67,7 +67,7 @@
   }
 
   .unified-card {
-    width: 50%;
+    width: 45%;
   }
 }
 
@@ -80,7 +80,7 @@
   }
 
   .unified-card {
-    width: 60%;
+    width: 50%;
   }
 }
 
@@ -93,7 +93,7 @@
   }
 
   .unified-card {
-    width: 70%;
+    width: 60%;
   }
 
   .wrapper {
@@ -108,7 +108,7 @@
   }
 
   .unified-card {
-    width: 80%;
+    width: 70%;
   }
 
   .wrapper {
@@ -156,7 +156,7 @@
   }
 
   .unified-card {
-    width: 90%;
+    width: 80%;
   }
 
   article > header .series-links {
@@ -245,9 +245,8 @@
     grid-auto-rows: 125px;
   }
 
-  .featured-card,
-  .latest-card,
-  .coming-next-card {
+  .enabled-card,
+  .disabled-card {
     padding-left: 30px;
     padding-right: 30px;
   }

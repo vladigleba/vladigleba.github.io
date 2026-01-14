@@ -1,5 +1,5 @@
 <div class="unified-card">
-  <div class="featured-card" style="background: {{ featured.data.color }}">
+  <div class="enabled-card" style="background: {{ featured.data.color }}">
     <a href="{{ featured.url }}" class="card-link">
       <div class="tag">Featured</div>
       <h2 class="title">{{ featured.data.title }}</h2>
@@ -14,28 +14,26 @@
     </a>
   </div>
 
-  <div class="secondary-section">
-    <div class="latest-card" class="card-link">
-      <a href="{{ latest.url }}">
-        <div class="tag">Latest</div>
-        <h2 class="title">{{ latest.data.title }}</h2>
-        <p class="description">{{ latest.data.description }}</p>
-        <p class="details">
-          {{ latest.data.category }} <span>•</span>
-          {{ latest.data.length }} min read <span>•</span>
-          <time datetime="{{ latest.data.updated | toISO }}">
-            {{ latest.data.updated | toLocal }}
-          </time>
-        </p>
-      </a>
-    </div>
-
-    {% if showComingNextCard %}
-      <div class="coming-next-card">
-        <div class="tag">Coming next</div>
-        <h2 class="title">Sabbath Rest in Christ</h2>
-        <p class="description">Go beyond mere physical Sabbath rest and discover how to find spiritual rest in the righteousness of Jesus by faith.</p>
-      </div>
-    {% endif %}
+  <div class="enabled-card" style="background: {{ latest.data.color }}">
+    <a href="{{ latest.url }}" class="card-link">
+      <div class="tag">Latest</div>
+      <h2 class="title">{{ latest.data.title }}</h2>
+      <p class="description">{{ latest.data.description }}</p>
+      <p class="details">
+        {{ latest.data.category }} <span>•</span>
+        {{ latest.data.length }} min read <span>•</span>
+        <time datetime="{{ latest.data.updated | toISO }}">
+          {{ latest.data.updated | toLocal }}
+        </time>
+      </p>
+    </a>
   </div>
+
+  {% if showComingNextCard %}
+    <div class="disabled-card">
+      <div class="tag">Coming next</div>
+      <h2 class="title">Sabbath Rest in Christ</h2>
+      <p class="description">Go beyond mere physical Sabbath rest and discover how to find spiritual rest in the righteousness of Jesus by faith.</p>
+    </div>
+  {% endif %}
 </div>
