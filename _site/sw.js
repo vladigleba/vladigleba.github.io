@@ -1,4 +1,4 @@
-const CACHE_NAME = 'core-assets-1768355789401';
+const CACHE_NAME = 'core-assets-1768368062355';
 const FONT_CACHE = 'google-fonts-v1';
 const IMAGE_CACHE = 'images-v1';
 const CORE_ASSETS = [
@@ -80,6 +80,7 @@ if (!isLocalhost) {
     const isSameOrigin = url.origin === self.location.origin;
     
     if (!isFont && !isSameOrigin) return;
+    console.log(url.origin, self.location.origin, isFont, isSameOrigin);
 
     // Google Fonts: cache CSS only, let browser handle font files
     if (isFont) {

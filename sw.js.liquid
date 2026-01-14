@@ -84,6 +84,7 @@ if (!isLocalhost) {
     const isSameOrigin = url.origin === self.location.origin;
     
     if (!isFont && !isSameOrigin) return;
+    console.log(url.origin, self.location.origin, isFont, isSameOrigin);
 
     // Google Fonts: cache CSS only, let browser handle font files
     if (isFont) {

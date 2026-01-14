@@ -53,5 +53,6 @@
 }
 
 .disabled-card {
+  /* background-color: var(--light-gray-background); */
   opacity: 0.4;
 }
