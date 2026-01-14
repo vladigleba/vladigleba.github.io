@@ -1,4 +1,4 @@
-const CACHE_NAME = 'core-assets-1768370127226';
+const CACHE_NAME = 'core-assets-1768370430235';
 const FONT_CACHE = 'google-fonts-v1';
 const IMAGE_CACHE = 'images-v1';
 const CORE_ASSETS = [
@@ -82,40 +82,24 @@ if (!isLocalhost) {
     if (!isFont && !isSameOrigin) return;
 
     // Google Fonts: cache CSS only, let browser handle font files
-// Google Fonts: cache CSS only
-if (isFont) {
-  console.log('🔵 Font request:', url.href);
-  event.respondWith(
-    caches.open(FONT_CACHE).then(cache => {
-      console.log('🔵 Opened FONT_CACHE');
-      return cache.match(request).then(cached => {
-        if (cached) {
-          console.log('✅ Served from cache');
-          return cached;
-        }
-        
-        console.log('🔵 Not cached, fetching...');
-        return fetch(request).then(response => {
-          console.log('🔵 Fetch response:', response.status, response.ok, response.type);
-          
-          // Cache opaque responses for fonts (they work, just can't inspect them)
-          if (response.ok || response.type === 'opaque') {
-            const cloned = response.clone();
-            console.log('✅ Caching response (opaque allowed for fonts)');
-            cache.put(request, cloned);
-          } else {
-            console.log('❌ Not caching');
-          }
-          return response;
-        }).catch(err => {
-          console.log('❌ Fetch error:', err);
-          throw err;
-        });
-      });
-    })
-  );
-  return;
-}
+    if (isFont) {
+      event.respondWith(
+        caches.open(FONT_CACHE).then(cache =>
+          cache.match(request).then(cached => {
+            if (cached) return cached;
+            
+            return fetch(request).then(response => {
+              if (response.ok || response.type === 'opaque') {
+                const cloned = response.clone();
+                cache.put(request, cloned);
+              }
+              return response;
+            });
+          })
+        )
+      );
+      return;
+    }
 
     // Images: cache-first
     if (request.destination === 'image') {
