@@ -1,4 +1,4 @@
-const CACHE_NAME = 'core-assets-1768368062355';
+const CACHE_NAME = 'core-assets-1768368854784';
 const FONT_CACHE = 'google-fonts-v1';
 const IMAGE_CACHE = 'images-v1';
 const CORE_ASSETS = [
@@ -80,13 +80,39 @@ if (!isLocalhost) {
     const isSameOrigin = url.origin === self.location.origin;
     
     if (!isFont && !isSameOrigin) return;
-    console.log(url.origin, self.location.origin, isFont, isSameOrigin);
 
     // Google Fonts: cache CSS only, let browser handle font files
-    if (isFont) {
-      event.respondWith(cacheFirst(FONT_CACHE, request));
-      return;
-    }
+if (isFont) {
+  console.log('🔵 Font request:', url.href);
+  event.respondWith(
+    caches.open(FONT_CACHE).then(cache => {
+      console.log('🔵 Opened FONT_CACHE');
+      return cache.match(request).then(cached => {
+        if (cached) {
+          console.log('✅ Served from cache');
+          return cached;
+        }
+        
+        console.log('🔵 Not cached, fetching...');
+        return fetch(request).then(response => {
+          console.log('🔵 Fetch response:', response.status, response.ok, response.type);
+          if (response?.ok) {
+            const cloned = response.clone();
+            console.log('✅ Caching response');
+            cache.put(request, cloned);
+          } else {
+            console.log('❌ Not caching (not ok)');
+          }
+          return response;
+        }).catch(err => {
+          console.log('❌ Fetch error:', err);
+          throw err;
+        });
+      });
+    })
+  );
+  return;
+}
 
     // Images: cache-first
     if (request.destination === 'image') {
