@@ -32,7 +32,7 @@
 
 .unified-card .tag {
   margin-bottom: 7px;
-  color: var(--gray-color);
+  color: var(--darker-gray-color);
 }
 
 .unified-card .title {
