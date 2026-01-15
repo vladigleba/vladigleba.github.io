@@ -4,11 +4,6 @@
   color: var(--darker-gray-color);
 }
 
-.search-icon {
-  width: 20px;
-  height: 20px;
-}
-
 .search-container {
   position: fixed;
   top: 0;
@@ -62,9 +57,12 @@
   background: none;
   border: none;
   color: var(--darker-gray-color);
-  font-size: 25px;
   cursor: pointer;
   padding: 0 8px;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
 }
 
 .search-back-btn:hover,

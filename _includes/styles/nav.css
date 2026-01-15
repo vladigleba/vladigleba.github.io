@@ -18,14 +18,9 @@
   background-color: var(--light-blue-background);
 }
 
-.search-trigger,
 .main-nav li {
   text-transform: uppercase;
-  padding: 5px 12.5px 3px;
-}
-
-.search-trigger {
-  padding-bottom: 5px;
+  padding: 5px 12px 3px;
 }
 
 .search-trigger:hover,
@@ -37,4 +32,16 @@
 
 .main-nav li a {
   color: inherit;
+}
+
+.home-icon {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  top: 1px;
+}
+
+.search-icon {
+  width: 21px;
+  height: 21px;
 }

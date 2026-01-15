@@ -59,14 +59,9 @@
   background-color: var(--light-blue-background);
 }
 
-.search-trigger,
 .main-nav li {
   text-transform: uppercase;
-  padding: 5px 12.5px 3px;
-}
-
-.search-trigger {
-  padding-bottom: 5px;
+  padding: 5px 12px 3px;
 }
 
 .search-trigger:hover,
@@ -78,6 +73,18 @@
 
 .main-nav li a {
   color: inherit;
+}
+
+.home-icon {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  top: 1px;
+}
+
+.search-icon {
+  width: 21px;
+  height: 21px;
 }
   .banner {
   position: relative;
@@ -156,7 +163,11 @@
     <nav aria-label="Main site navigation" class="main-nav">
   <ul>
     <li>
-      <a href="/">All</a>
+      <a href="/" aria-label="Home">
+        <svg aria-hidden="true" class="home-icon">
+          <use href="/assets/images/icons.svg#home"></use>
+        </svg>
+      </a>
     </li>
     <li>
       <a href="/basics/">Basics</a>
@@ -167,12 +178,13 @@
     <li>
       <a href="/prophecy/">Prophecy</a>
     </li>
-
-    <button id="search-trigger" class="search-trigger" aria-label="Open search" title="Search posts (Ctrl+K)">
-      <svg aria-hidden="true" class="search-icon">
-        <use href="/assets/images/icons.svg#search"></use>
-      </svg>
-    </button>
+    <li>
+      <button id="search-trigger" class="search-trigger" aria-label="Open search" title="Search posts (Ctrl+K)">
+        <svg aria-hidden="true" class="search-icon">
+          <use href="/assets/images/icons.svg#search"></use>
+        </svg>
+      </button>
+    </li>
   </ul>
 
   <!-- global live region for site-wide announcements (screen readers) -->
@@ -505,7 +517,7 @@
       </div>
       
       <div class="last-updated">
-        Last updated <time datetime="2026-01-13T22:28:55.615Z">January 13, 2026</time>
+        Last updated <time datetime="2026-01-14T14:48:41.200Z">January 14, 2026</time>
       </div>
     <p></p>
   </div>
@@ -513,7 +525,11 @@
     <div id="search-container" class="search-container">
   <div class="search-modal">
     <div class="search-input-wrapper">
-      <button class="search-back-btn" id="search-back-btn" aria-label="Close search">←</button>
+      <button class="search-back-btn" id="search-back-btn" aria-label="Close search">
+        <svg aria-hidden="true">
+          <use href="/assets/images/icons.svg#back"></use>
+        </svg>
+      </button>
       <input id="search-input" type="text" class="search-input" placeholder="Search articles..." autocomplete="off" aria-label="Search posts" inputmode="search">
       <button class="search-clear-btn" id="search-clear-btn" aria-label="Clear search input">✕</button>
     </div>

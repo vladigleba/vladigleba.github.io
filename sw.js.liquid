@@ -111,10 +111,14 @@ if (!isLocalhost) {
       return;
     }
 
-    // HTML navigation: network-first, fallback to offline page
+    // HTML navigation: network-first, fallback to cache, then offline page
     if (request.mode === 'navigate') {
       event.respondWith(
-        fetch(request).catch(() => caches.match('/offline/'))
+        fetch(request).catch(() => 
+          caches.match(request).then(cached => 
+            cached || caches.match('/offline/')
+          )
+        )
       );
       return;
     }

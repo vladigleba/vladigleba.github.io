@@ -1,4 +1,4 @@
-const CACHE_NAME = 'core-assets-1768372134700';
+const CACHE_NAME = 'core-assets-1768430920191';
 const FONT_CACHE = 'google-fonts-v1';
 const IMAGE_CACHE = 'images-v1';
 const CORE_ASSETS = [
@@ -107,10 +107,14 @@ if (!isLocalhost) {
       return;
     }
 
-    // HTML navigation: network-first, fallback to offline page
+    // HTML navigation: network-first, fallback to cache, then offline page
     if (request.mode === 'navigate') {
       event.respondWith(
-        fetch(request).catch(() => caches.match('/offline/'))
+        fetch(request).catch(() => 
+          caches.match(request).then(cached => 
+            cached || caches.match('/offline/')
+          )
+        )
       );
       return;
     }
