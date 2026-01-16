@@ -204,6 +204,11 @@
     font-size: 22px;
   }
 
+  .search-icon {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
   .banner p,
   article > header p {
     font-size: 20px;
