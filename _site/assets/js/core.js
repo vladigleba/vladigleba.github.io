@@ -1008,6 +1008,8 @@ if (document.body.classList.contains('js-enabled')) {
 
       // search open / close
       const openSearch = async () => {
+        searchInput.focus();
+
         if (!miniSearchInstance) {
           await loadMiniSearchLibrary();
           await initializeSearch();
@@ -1017,7 +1019,6 @@ if (document.body.classList.contains('js-enabled')) {
         searchContainer.classList.add('active');
         searchContainer.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
-        searchInput.focus();
         
         // attach focus trap, escape key handlers
         searchContainer.addEventListener('keydown', trapFocus);
