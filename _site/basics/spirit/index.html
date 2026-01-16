@@ -76,15 +76,15 @@
 }
 
 .home-icon {
-  width: 22px;
+  width: 23px;
   height: 22px;
   position: relative;
   top: 1px;
 }
 
 .search-icon {
-  width: 21px;
-  height: 21px;
+  width: 22px;
+  height: 22px;
 }
   .banner {
   position: relative;
@@ -571,12 +571,12 @@
       </div>
       
       <div class="last-updated">
-        Last updated <time datetime="2026-01-14T14:48:41.400Z">January 14, 2026</time>
+        Last updated <time datetime="2026-01-15T09:26:28.102Z">January 15, 2026</time>
       </div>
     <p></p>
   </div>
 </footer>
-    <div id="search-container" class="search-container">
+    <div id="search-container" class="search-container" role="dialog" aria-modal="true" aria-label="Search articles" aria-hidden="true">
   <div class="search-modal">
     <div class="search-input-wrapper">
       <button class="search-back-btn" id="search-back-btn" aria-label="Close search">
@@ -584,10 +584,9 @@
           <use href="/assets/images/icons.svg#back"></use>
         </svg>
       </button>
-      <input id="search-input" type="text" class="search-input" placeholder="Search articles..." autocomplete="off" aria-label="Search posts" inputmode="search">
-      <button class="search-clear-btn" id="search-clear-btn" aria-label="Clear search input">✕</button>
+      <input id="search-input" type="search" class="search-input" placeholder="Search articles..." autocomplete="off" aria-label="Search posts">
     </div>
-    <div id="search-results" class="search-results"></div>
+    <div id="search-results" class="search-results" role="list" aria-live="polite" aria-label="Search results"></div>
   </div>
 </div>
     

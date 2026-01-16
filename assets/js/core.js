@@ -865,8 +865,9 @@ if (document.body.classList.contains('js-enabled')) {
         // use data-search-id as URL fragment
         const anchor = snippet.blockId !== 'description' ? `${snippet.blockId}` : '';
         const url = `${resultUrl}?q=${encodeURIComponent(searchQuery)}#${anchor}`;
+        const blockLabel = snippet.blockId !== 'description' ? snippet.blockId : 'description';
         return `
-          <a href="${url}" class="snippet-item">
+          <a href="${url}" class="snippet-item" aria-label="Snippet from ${blockLabel}">
             <p class="snippet">${snippet.text}</p>
           </a>
         `;
@@ -878,9 +879,12 @@ if (document.body.classList.contains('js-enabled')) {
       const fragment = document.createDocumentFragment();
 
       results.forEach(result => {
-        const resultEl = document.createElement('a');
-        resultEl.href = result.url;
-        resultEl.className = 'search-result';
+        const resultLi = document.createElement('li');
+        resultLi.className = 'search-result';
+
+        const resultLink = document.createElement('a');
+        resultLink.href = result.url;
+        resultLink.className = 'result-link';
 
         const matchCountHtml = result.matchCount > 0
           ? `<span class="match-count">
@@ -892,30 +896,33 @@ if (document.body.classList.contains('js-enabled')) {
 
         // show "show x more matches" if there are hidden snippets
         const hiddenCount = result.hiddenSnippetCount;
+        const snippetsContainerId = `snippets-${result.id}`;
         const moreSnippetsHtml = result.hasMoreSnippets
-          ? `<button class="show-more-snippets" data-result-id="${result.id}">
+          ? `<button class="show-more-snippets" data-result-id="${result.id}" aria-expanded="false" aria-controls="${snippetsContainerId}">
               <span class="expand-icon">↓</span>
               Show ${hiddenCount} more ${hiddenCount === 1 ? 'match' : 'matches'}
             </button>`
           : '';
 
-        resultEl.innerHTML = `
+        resultLink.innerHTML = `
           <div class="header">
             <h3>${result.title}</h3>
             ${matchCountHtml}
           </div>
-          <div class="snippets">
+          <div class="snippets" id="${snippetsContainerId}">
             ${snippetsHtml}
             ${moreSnippetsHtml}
           </div>
         `;
 
-        // store data for in-memory "show more" functionality
-        resultEl.dataset.allSnippets = JSON.stringify(result.allSnippets || []);
-        resultEl.dataset.resultUrl = result.url;
-        resultEl.dataset.searchQuery = result.searchQuery;
+        resultLi.appendChild(resultLink);
 
-        fragment.appendChild(resultEl);
+        // store data for in-memory "show more" functionality
+        resultLi.dataset.allSnippets = JSON.stringify(result.allSnippets || []);
+        resultLi.dataset.resultUrl = result.url;
+        resultLi.dataset.searchQuery = result.searchQuery;
+
+        fragment.appendChild(resultLi);
       });
 
       searchResults.appendChild(fragment);
@@ -936,7 +943,6 @@ if (document.body.classList.contains('js-enabled')) {
       const searchResults = document.getElementById('search-results');
       const searchTrigger = document.getElementById('search-trigger');
       const searchBackBtn = document.getElementById('search-back-btn');
-      const searchClearBtn = document.getElementById('search-clear-btn');
 
       if (!searchContainer || !searchInput || !searchResults) return;
 
@@ -944,6 +950,7 @@ if (document.body.classList.contains('js-enabled')) {
       let currentPage = 0;
       let currentQuery = '';
       let isLoadingMore = false;
+      let lastFocusedBeforeSearch = null;
 
       // state helpers
       const resetSearchState = () => {
@@ -952,8 +959,33 @@ if (document.body.classList.contains('js-enabled')) {
         isLoadingMore = false;
         searchResults.innerHTML = '';
         searchInput.value = '';
-        if (searchClearBtn) {
-          searchClearBtn.classList.remove('visible'); // hide clear button
+      };
+
+      // focus trap within dialog
+      const trapFocus = (e) => {
+        if (e.key !== 'Tab') return;
+
+        const focusableElements = searchContainer.querySelectorAll(
+          'button, input, [href], [tabindex]:not([tabindex="-1"])'
+        );
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+
+        // create focus loop
+        if (e.shiftKey && document.activeElement === firstElement) {
+          e.preventDefault();
+          lastElement.focus();
+        } else if (!e.shiftKey && document.activeElement === lastElement) {
+          e.preventDefault();
+          firstElement.focus();
+        }
+      };
+
+      // handle Escape key to close dialog
+      const handleDialogKeydown = (e) => {
+        if (e.key === 'Escape' || e.key === 'Esc') {
+          e.preventDefault();
+          closeSearch();
         }
       };
 
@@ -964,16 +996,36 @@ if (document.body.classList.contains('js-enabled')) {
           await initializeSearch();
         }
 
+        lastFocusedBeforeSearch = document.activeElement;
         searchContainer.classList.add('active');
+        searchContainer.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
         searchInput.focus();
+        
+        // attach focus trap, escape key handlers
+        searchContainer.addEventListener('keydown', trapFocus);
+        searchContainer.addEventListener('keydown', handleDialogKeydown);
+        
         announceToLiveRegion('Search panel opened');
       };
 
       const closeSearch = () => {
         searchContainer.classList.remove('active');
+        searchContainer.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
         resetSearchState();
+        
+        // remove focus trap, escape key handlers
+        searchContainer.removeEventListener('keydown', trapFocus);
+        searchContainer.removeEventListener('keydown', handleDialogKeydown);
+        
+        // back to last focused before search
+        if (lastFocusedBeforeSearch) {
+          try {
+            lastFocusedBeforeSearch.focus();
+          } catch (e) {}
+        }
+        
         announceToLiveRegion('Search panel closed');
       };
 
@@ -1000,6 +1052,7 @@ if (document.body.classList.contains('js-enabled')) {
         if (!results.length && page === 0) {
           searchResults.innerHTML = '<p class="empty">No results found</p>';
           isLoadingMore = false;
+          announceToLiveRegion('No results found');
           return;
         }
 
@@ -1009,6 +1062,7 @@ if (document.body.classList.contains('js-enabled')) {
           summaryEl.className = 'search-summary';
           summaryEl.textContent = `${total} ${total === 1 ? 'article' : 'articles'}`;
           searchResults.appendChild(summaryEl);
+          announceToLiveRegion(`${total} ${total === 1 ? 'article' : 'articles'} found`);
         }
 
         renderResults(results, searchResults);
@@ -1041,11 +1095,25 @@ if (document.body.classList.contains('js-enabled')) {
         const allSnippets = JSON.parse(resultEl.dataset.allSnippets || '[]');
         const resultUrl = resultEl.dataset.resultUrl;
         const searchQuery = resultEl.dataset.searchQuery;
+        
+        // get current number of snippets before expansion
+        const currentSnippetCount = snippetsContainer.querySelectorAll('.snippet-item').length;
 
         snippetsContainer.innerHTML = renderSnippetHTML(allSnippets, resultUrl, searchQuery);
+        button.setAttribute('aria-expanded', 'true');
         button.remove();
 
         announceToLiveRegion('All matching excerpts expanded');
+        
+        // focus first newly revealed snippet
+        const allSnippetLinks = snippetsContainer.querySelectorAll('.snippet-item');
+        const firstNewSnippet = allSnippetLinks[currentSnippetCount];
+        
+        if (firstNewSnippet) {
+          setTimeout(() => {
+            firstNewSnippet.focus(); // delay to ensure DOM is updated
+          }, 0);
+        }
       };
 
       // event: search input
@@ -1053,33 +1121,12 @@ if (document.body.classList.contains('js-enabled')) {
         currentQuery = e.target.value;
         currentPage = 0;
 
-        // show/hide clear button
-        if (searchClearBtn) {
-          if (currentQuery.length > 0) {
-            searchClearBtn.classList.add('visible');
-          } else {
-            searchClearBtn.classList.remove('visible');
-          }
-        }
-
         if (currentQuery) { // if query present
           performAndRenderSearch(currentQuery, 0);
         } else { // search cleared
           resetSearchState();
         }
       });
-
-      // event: clear button
-      if (searchClearBtn) {
-        searchClearBtn.addEventListener('click', (e) => {
-          e.preventDefault();
-          searchInput.value = '';
-          currentQuery = '';
-          searchClearBtn.classList.remove('visible');
-          resetSearchState();
-          searchInput.focus();
-        });
-      }
 
       // event: back button
       if (searchBackBtn) {
@@ -1111,10 +1158,6 @@ if (document.body.classList.contains('js-enabled')) {
       document.addEventListener('keydown', (e) => {
         const isCmdOrCtrlK =
           (e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k';
-
-        if (e.key === 'Escape' && searchContainer.classList.contains('active')) {
-          closeSearch();
-        }
 
         if (isCmdOrCtrlK) {
           e.preventDefault();

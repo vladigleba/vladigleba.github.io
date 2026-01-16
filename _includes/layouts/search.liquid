@@ -1,4 +1,4 @@
-<div id="search-container" class="search-container">
+<div id="search-container" class="search-container" role="dialog" aria-modal="true" aria-label="Search articles" aria-hidden="true">
   <div class="search-modal">
     <div class="search-input-wrapper">
       <button class="search-back-btn" id="search-back-btn" aria-label="Close search">
@@ -8,15 +8,13 @@
       </button>
       <input 
         id="search-input" 
-        type="text" 
+        type="search" 
         class="search-input" 
         placeholder="Search articles..." 
         autocomplete="off"
         aria-label="Search posts"
-        inputmode="search"
       >
-      <button class="search-clear-btn" id="search-clear-btn" aria-label="Clear search input">✕</button>
     </div>
-    <div id="search-results" class="search-results"></div>
+    <div id="search-results" class="search-results" role="list" aria-live="polite" aria-label="Search results"></div>
   </div>
 </div>

@@ -65,8 +65,7 @@
   align-items: center;
 }
 
-.search-back-btn:hover,
-.search-clear-btn:hover {
+.search-back-btn:hover {
   color: var(--gray-color);
 }
 
@@ -84,23 +83,6 @@
 
 .search-input:focus {
   outline: none;
-}
-
-.search-clear-btn {
-  position: absolute;
-  right: 25px;
-  background: none;
-  border: none;
-  color: var(--darker-gray-color);
-  font-size: 25px;
-  cursor: pointer;
-  display: none;
-  padding: 0;
-  z-index: 5;
-}
-
-.search-clear-btn.visible {
-  display: flex;
 }
 
 .search-summary {
@@ -128,6 +110,10 @@
   display: block;
   text-decoration: none;
   transition: background-color 0.15s ease;
+}
+
+.search-result a {
+  text-decoration: none;
 }
 
 .search-result mark {
