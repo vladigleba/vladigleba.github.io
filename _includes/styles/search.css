@@ -71,7 +71,6 @@
 
 .search-input {
   padding: 10px 15px;
-  font-size: 16px;
   border: none;
   font-family: inherit;
   flex: 1;
@@ -160,7 +159,6 @@
 }
 
 .search-result .snippet {
-  font-size: 14px;
   line-height: 1.4;
   overflow: visible;
   word-wrap: break-word;
@@ -189,7 +187,6 @@
   color: var(--darker-gray-color);
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -199,4 +196,10 @@
 .search-match-highlight {
   background-color: #fff7af !important;
   transition: background-color 0.3s ease;
+}
+
+.snippet-type {
+  text-transform: uppercase;
+  color: var(--lighter-gray-color);
+  font-weight: 600;
 }

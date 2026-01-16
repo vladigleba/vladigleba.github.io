@@ -675,7 +675,8 @@ if (document.body.classList.contains('js-enabled')) {
         
         snippets.push({
           text: highlighted,
-          blockId: block.id // preserve block ID for linking
+          blockId: block.id, // preserve block ID for linking
+          blockType: block.type // preserve block type for context label
         });
       }
       
@@ -760,7 +761,7 @@ if (document.body.classList.contains('js-enabled')) {
         if (descMatches > 0) {
           totalMatches += descMatches;
           const descSnippets = extractSnippetsFromBlock(
-            { text: fullDoc.description, id: 'description' },
+            { text: fullDoc.description, id: 'description', type: 'description' },
             searchPattern
           );
           allSnippets.push(...descSnippets); // flatten
@@ -862,12 +863,28 @@ if (document.body.classList.contains('js-enabled')) {
     // helper function to render snippet HTML with data-search-id anchors
     const renderSnippetHTML = (snippets, resultUrl, searchQuery) => {
       return snippets.map((snippet) => {
-        // use data-search-id as URL fragment
         const anchor = snippet.blockId !== 'description' ? `${snippet.blockId}` : '';
         const url = `${resultUrl}?q=${encodeURIComponent(searchQuery)}#${anchor}`;
-        const blockLabel = snippet.blockId !== 'description' ? snippet.blockId : 'description';
+        
+        // map blockType to display label
+        let typeLabel = '';
+        if (snippet.blockType) {
+          const typeMap = {
+            'description': 'Introduction',
+            'blockquote': 'Block quote',
+            'paragraph': 'Commentary',
+            'footnote': 'Footnote',
+            'heading': 'Heading',
+            'list': 'Commentary'
+          };
+          typeLabel = typeMap[snippet.blockType] || snippet.blockType;
+        }
+        
+        const typeHtml = typeLabel ? `<p class="snippet-type">${typeLabel}</p>` : '';
+        
         return `
-          <a href="${url}" class="snippet-item" aria-label="Snippet from ${blockLabel}">
+          <a href="${url}" class="snippet-item" aria-label="${typeLabel} snippet">
+            ${typeHtml}
             <p class="snippet">${snippet.text}</p>
           </a>
         `;
@@ -898,7 +915,7 @@ if (document.body.classList.contains('js-enabled')) {
         const hiddenCount = result.hiddenSnippetCount;
         const snippetsContainerId = `snippets-${result.id}`;
         const moreSnippetsHtml = result.hasMoreSnippets
-          ? `<button class="show-more-snippets" data-result-id="${result.id}" aria-expanded="false" aria-controls="${snippetsContainerId}">
+          ? `<button class="show-more-snippets" aria-expanded="false" aria-controls="${snippetsContainerId}">
               <span class="expand-icon">↓</span>
               Show ${hiddenCount} more ${hiddenCount === 1 ? 'match' : 'matches'}
             </button>`

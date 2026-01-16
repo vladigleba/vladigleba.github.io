@@ -64,6 +64,7 @@ article > header p {
 
 #dialog-popup,
 .copy-toast,
+.search-input,
 .search-result .header h3,
 .search-results .empty,
 .toc a,
@@ -78,12 +79,17 @@ li .tag {
   font-size: 15px;
 }
 
+.search-result .snippet {
+  font-size: 14px;
+}
+
 .search-result .header .series,
 .search-result .header .match-count {
   font-size: 13px;
 }
 
-.search-result .header .category {
+.search-result .show-more-snippets,
+.snippet-type {
   font-size: 12px;
 }
 

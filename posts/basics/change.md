@@ -8,7 +8,7 @@ order: 2200
 
 ## What is truth?
 
-> > Jesus saith unto him, *I am the way, the truth, and the life*: no man cometh unto the Father, but by me.
+> Jesus saith unto him, *I am the way, the truth, and the life*: no man cometh unto the Father, but by me.
 {% ct 'John 14:6' %}
 
 > *God is not a man, that he should lie*; neither the son of man, that he should repent: hath he said, and shall he not do it? or hath he spoken, and shall he not make it good?

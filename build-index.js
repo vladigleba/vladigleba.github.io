@@ -6,7 +6,7 @@ const MiniSearch = require('minisearch');
 
 const LIST_MARKER_REGEX = /^[-*+]\s|^\d+\.\s/;
 const HEADING_REGEX = /^#+\s*/;
-const BLOCKQUOTE_REGEX = /^>\s*/gm;
+const BLOCKQUOTE_REGEX = />\s*/g;
 const FOOTNOTE_REGEX = /^\[\^\d+\]:\s*/;
 const FOOTNOTE_REF_REGEX = /\[\^\d+\]/g;
 
