@@ -1,3 +1,6 @@
+{% assign hours = totalReadingTime | divided_by: 60.0 | floor %}
+{% assign minutes = totalReadingTime | modulo: 60 %}
+
 <div class="stats">
   <div class="stat">
     <span class="stat-count">{{ seriesCount }}</span>
@@ -9,9 +12,34 @@
     <span class="stat-label">Articles</span>
   </div>
 
-  <div class="stat">
-    <span class="stat-count">{{ questionsCount }}</span>
-    <span class="stat-label">Answers</span>
+  <div class="stats-popup-wrapper">
+    <button 
+      class="stat-button" 
+      id="stats-popup-button"
+      aria-label="Show reading statistics"
+      aria-expanded="false"
+      aria-controls="stats-popup">
+      <svg class="chevron-icon" aria-hidden="true">
+        <use href="/assets/images/icons.svg#chevron-down"></use>
+      </svg>
+    </button>
+    
+    <div class="stats-popup" id="stats-popup" role="region" aria-label="Reading statistics">
+      <div class="popup-content">
+        <div class="popup-stat">
+          <span class="popup-stat-value">{{ hours }}h {{ minutes }}min</span>
+          <span class="popup-stat-label">Total Reading Time</span>
+        </div>
+        <div class="popup-stat">
+          <span class="popup-stat-value">{{ standaloneArticleCount }}</span>
+          <span class="popup-stat-label">Standalone Articles</span>
+        </div>
+        <div class="popup-stat">
+          <span class="popup-stat-value">{{ seriesArticleCount }}</span>
+          <span class="popup-stat-label">Series-based Articles</span>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
