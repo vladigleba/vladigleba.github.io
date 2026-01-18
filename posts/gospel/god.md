@@ -18,7 +18,7 @@ featured: true
 > How much more shall the blood of *Christ*, who through the eternal *Spirit* offered himself without spot to *God*, purge your conscience from dead works to serve the living God?
 {% ct 'Hebrews 9:14' %}
 
-The Godhead consists of three distinct persons: God the Father, God the Son, and God the Holy Spirit. Though distinct, they are one in nature, character, purpose, and will. In this article, when I use the term *God*, I am referring specifically to the Father, because Scripture presents Him as holding the highest authority within the Godhead {% rf 'John 14:28' %}, though the term is equally appropriate for the Son and the Holy Spirit.
+The Godhead consists of three distinct persons: God the Father, God the Son, and God the Holy Spirit. Though distinct, they are one in nature, character, purpose, and will. In this article, the term *God* refers specifically to the Father, because Scripture presents Him as holding the highest authority within the Godhead {% rf 'John 14:28' %}, though the term is equally appropriate for the Son and the Holy Spirit.
 
 The Father’s position of highest authority indicates a hierarchy within the Godhead.[^1] For example, the Father sent the Son {% rf 'John 17:3' %}, and both the Father and the Son send the Holy Spirit {% rf 'John 14:26; 15:26' %}, yet the Holy Spirit does not send the Father or the Son. This order reflects voluntary, loving submission, not inequality, for the Son and the Holy Spirit are not coerced, nor is their divinity diminished in any way. All three are fully and equally God.
 

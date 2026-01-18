@@ -185,9 +185,13 @@
     min-width: 240px;
   }
 
+  .popup-stat-value {
+    font-size: 22px;
+  }
+
   .popup-content {
-    padding: 12px;
-    gap: 12px;
+    padding: 10px;
+    gap: 10px;
   }
 
   .toc {
