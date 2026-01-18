@@ -138,134 +138,152 @@ module.exports = async (config) => {
 
   // allPosts
   config.addCollection('allPosts', (collectionApi) => {
-    const posts = collectionApi.getFilteredByGlob('posts/*/*.md');
-    const categories = ['All', ...Object.keys(site.categories)];
-    const summariesByCategory = {};
-    const groupedPostsByCategory = {};
-    const uniqueSeriesByCategory = {};
-    const seriesByCategoryLookup = {};
-    const highlightedPosts = { featured: [], latest: null };
+      const posts = collectionApi.getFilteredByGlob('posts/*/*.md');
+      const categories = ['All', ...Object.keys(site.categories)];
+      const summariesByCategory = {};
+      const groupedPostsByCategory = {};
+      const uniqueSeriesByCategory = {};
+      const seriesByCategoryLookup = {};
+      const highlightedPosts = { featured: [], latest: null };
 
-    categories.forEach(category => {
-      summariesByCategory[category] = {
-        articleCount: 0,
-        seriesCount: 0,
-        questionsCount: 0,
-      };
-      uniqueSeriesByCategory[category] = new Set(); // to track unique series
-      groupedPostsByCategory[category] = [];
-      seriesByCategoryLookup[category] = new Map(); // key-value lookup by series name
-    });
-
-    const orderedPosts = addNextLinks(sortPosts(posts));
-    orderedPosts.forEach(post => {
-      addFrontmatterData(post); // add category, length, updated, questions
-      
-      if ((!post.data.color) && post.data.series) {
-        post.data.color = site.series[post.data.series].color;
-      }
-
-      const { series, category, featured, questions } = post.data;
-      categories.forEach(categoryFilter => {
-        const isAll = categoryFilter === 'All';
-
-        if (isAll || category === categoryFilter) {
-          if (series) {
-            // series post
-            let seriesEntry = seriesByCategoryLookup[categoryFilter].get(series);
-            if (!seriesEntry) {
-              seriesEntry = {
-                type: 'series',
-                title: site.series[series].title,
-                category,
-                color: site.series[series].color,
-                posts: [],
-              };
-
-              seriesByCategoryLookup[categoryFilter].set(series, seriesEntry);
-              groupedPostsByCategory[categoryFilter].push(seriesEntry);
-            }
-
-            seriesEntry.posts.push(post);
-            uniqueSeriesByCategory[categoryFilter].add(series);
-          } else {
-            // standalone post
-            groupedPostsByCategory[categoryFilter].push({
-              type: 'standalone',
-              category,
-              post,
-            });
-          }
-
-          summariesByCategory[categoryFilter].articleCount += 1;
-          summariesByCategory[categoryFilter].questionsCount += questions || 0;
-
-          // set featured and latest posts
-          if (isAll) {
-            if (featured) highlightedPosts.featured.push(post);
-            if (!highlightedPosts.latest || post.date > highlightedPosts.latest.date) {
-              highlightedPosts.latest = post;
-            }
-          }
-        }
+      categories.forEach(category => {
+        summariesByCategory[category] = {
+          articleCount: 0,
+          seriesCount: 0,
+          questionsCount: 0,
+          standaloneArticleCount: 0,
+          seriesArticleCount: 0,
+          totalReadingTime: 0,
+        };
+        uniqueSeriesByCategory[category] = new Set(); // to track unique series
+        groupedPostsByCategory[category] = [];
+        seriesByCategoryLookup[category] = new Map(); // key-value lookup by series name
       });
-    });
 
-    // add seriesInfo after all posts are grouped
-    categories.forEach(category => {
-      seriesByCategoryLookup[category].forEach((series) => {
-        series.posts.forEach((post, index) => {
-          post.data.seriesInfo = {
-            total: series.posts.length,
-            current: index + 1, // 1-based index
-            posts: series.posts,
-          };
+      const orderedPosts = addNextLinks(sortPosts(posts));
+      orderedPosts.forEach(post => {
+        addFrontmatterData(post); // add category, length, updated, questions
+        
+        if ((!post.data.color) && post.data.series) {
+          post.data.color = site.series[post.data.series].color;
+        }
+
+        const { series, category, featured, questions, length } = post.data;
+        categories.forEach(categoryFilter => {
+          const isAll = categoryFilter === 'All';
+
+          if (isAll || category === categoryFilter) {
+            if (series) {
+              // series post
+              let seriesEntry = seriesByCategoryLookup[categoryFilter].get(series);
+              if (!seriesEntry) {
+                seriesEntry = {
+                  type: 'series',
+                  title: site.series[series].title,
+                  category,
+                  color: site.series[series].color,
+                  posts: [],
+                };
+
+                seriesByCategoryLookup[categoryFilter].set(series, seriesEntry);
+                groupedPostsByCategory[categoryFilter].push(seriesEntry);
+              }
+
+              seriesEntry.posts.push(post);
+              uniqueSeriesByCategory[categoryFilter].add(series);
+              summariesByCategory[categoryFilter].seriesArticleCount += 1;
+            } else {
+              // standalone post
+              groupedPostsByCategory[categoryFilter].push({
+                type: 'standalone',
+                category,
+                post,
+              });
+              summariesByCategory[categoryFilter].standaloneArticleCount += 1;
+            }
+
+            summariesByCategory[categoryFilter].articleCount += 1;
+            summariesByCategory[categoryFilter].questionsCount += questions || 0;
+            summariesByCategory[categoryFilter].totalReadingTime += length || 0;
+
+            // set featured and latest posts
+            if (isAll) {
+              if (featured) highlightedPosts.featured.push(post);
+              if (!highlightedPosts.latest || post.date > highlightedPosts.latest.date) {
+                highlightedPosts.latest = post;
+              }
+            }
+          }
         });
       });
 
-      // finalize series counts
-      summariesByCategory[category].seriesCount = uniqueSeriesByCategory[category].size;
+      // add seriesInfo after all posts are grouped
+      categories.forEach(category => {
+        seriesByCategoryLookup[category].forEach((series) => {
+          series.posts.forEach((post, index) => {
+            post.data.seriesInfo = {
+              total: series.posts.length,
+              current: index + 1, // 1-based index
+              posts: series.posts,
+            };
+          });
+        });
+
+        // finalize series counts
+        summariesByCategory[category].seriesCount = uniqueSeriesByCategory[category].size;
+      });
+
+      orderedPosts.summariesByCategory = summariesByCategory;
+      orderedPosts.groupedPostsByCategory = groupedPostsByCategory;
+      orderedPosts.highlightedPosts = highlightedPosts;
+      orderedPosts.categoriesCount = Object.keys(summariesByCategory).length - 1;
+
+      return orderedPosts; // = [
+      //   {
+      //     data: { 
+      //       title, category, series, color, questions, 
+      //       seriesInfo: { total, current, posts }, 
+      //       next: { url, title },
+      //       ... other post data
+      //     },
+      //     url, inputPath, rawInput, date, ...
+      //   },
+      //   ... all post objects sorted
+      // ]
+      // orderedPosts.summariesByCategory = {
+      //   'All': { 
+      //     articleCount: 50, seriesCount: 8, questionsCount: 120,
+      //     standaloneArticleCount: 15, seriesArticleCount: 35, totalReadingTime: 450
+      //   },
+      //   'Basics': { 
+      //     articleCount: 15, seriesCount: 3, questionsCount: 35,
+      //     standaloneArticleCount: 5, seriesArticleCount: 10, totalReadingTime: 120
+      //   },
+      //   'Gospel': { 
+      //     articleCount: 20, seriesCount: 3, questionsCount: 50,
+      //     standaloneArticleCount: 8, seriesArticleCount: 12, totalReadingTime: 180
+      //   },
+      //   'Prophecy': { 
+      //     articleCount: 15, seriesCount: 2, questionsCount: 35,
+      //     standaloneArticleCount: 2, seriesArticleCount: 13, totalReadingTime: 150
+      //   }
+      // }
+      // orderedPosts.groupedPostsByCategory = {
+      //   'All': [
+      //     { type: 'series', title: 'X', category: 'Basics', color: 'X', posts: [...] },
+      //     { type: 'standalone', category: 'Gospel', post: {...} },
+      //     ... mixed series and standalone items
+      //   ],
+      //   'Basics': [ /* only Basics posts/series */ ],
+      //   'Gospel': [ /* only Gospel posts/series */ ],
+      //   'Prophecy': [ /* only Prophecy posts/series */ ]
+      // }
+      // orderedPosts.highlightedPosts = {
+      //   featured: [ /* posts with featured set to true */ ],
+      //   latest: { /* most recent post by date */ }
+      // }
+      // orderedPosts.categoriesCount = 3 (excluding 'All')
     });
-
-    orderedPosts.summariesByCategory = summariesByCategory;
-    orderedPosts.groupedPostsByCategory = groupedPostsByCategory;
-    orderedPosts.highlightedPosts = highlightedPosts;
-    orderedPosts.categoriesCount = Object.keys(summariesByCategory).length - 1;
-
-    return orderedPosts; // = [
-    //   {
-    //     data: { 
-    //       title, category, series, color, questions, 
-    //       seriesInfo: { total, current, posts }, 
-    //       next: { url, title },
-    //       ... other post data
-    //     },
-    //     url, inputPath, rawInput, date, ...
-    //   },
-    //   ... all post objects sorted
-    // ]
-    // orderedPosts.summariesByCategory = {
-    //   'All': { articleCount: 50, seriesCount: 8, questionsCount: 120 },
-    //   'Basics': { articleCount: 15, seriesCount: 3, questionsCount: 35 },
-    //   'Gospel': { articleCount: 20, seriesCount: 3, questionsCount: 50 },
-    //   'Prophecy': { articleCount: 15, seriesCount: 2, questionsCount: 35 }
-    // }
-    // orderedPosts.groupedPostsByCategory = {
-    //   'All': [
-    //     { type: 'series', title: 'X', category: 'Basics', color: 'X', posts: [...] },
-    //     { type: 'standalone', category: 'Gospel', post: {...} },
-    //     ... mixed series and standalone items
-    //   ],
-    //   'Basics': [ /* only Basics posts/series */ ],
-    //   'Gospel': [ /* only Gospel posts/series */ ],
-    //   'Prophecy': [ /* only Prophecy posts/series */ ]
-    // }
-    // orderedPosts.highlightedPosts = {
-    //   featured: [ /* posts with featured set to true */ ],
-    //   latest: { /* most recent post by date */ }
-    // }
-    // orderedPosts.categoriesCount = 3 (excluding 'All')
-  });
 
   //#endregion
 
