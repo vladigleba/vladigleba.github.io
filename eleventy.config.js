@@ -150,7 +150,6 @@ module.exports = async (config) => {
         summariesByCategory[category] = {
           articleCount: 0,
           seriesCount: 0,
-          questionsCount: 0,
           standaloneArticleCount: 0,
           seriesArticleCount: 0,
           totalReadingTime: 0,
@@ -162,13 +161,13 @@ module.exports = async (config) => {
 
       const orderedPosts = addNextLinks(sortPosts(posts));
       orderedPosts.forEach(post => {
-        addFrontmatterData(post); // add category, length, updated, questions
+        addFrontmatterData(post); // add category, length, updated
         
         if ((!post.data.color) && post.data.series) {
           post.data.color = site.series[post.data.series].color;
         }
 
-        const { series, category, featured, questions, length } = post.data;
+        const { series, category, featured, length } = post.data;
         categories.forEach(categoryFilter => {
           const isAll = categoryFilter === 'All';
 
@@ -203,7 +202,6 @@ module.exports = async (config) => {
             }
 
             summariesByCategory[categoryFilter].articleCount += 1;
-            summariesByCategory[categoryFilter].questionsCount += questions || 0;
             summariesByCategory[categoryFilter].totalReadingTime += length || 0;
 
             // set featured and latest posts
@@ -241,7 +239,7 @@ module.exports = async (config) => {
       return orderedPosts; // = [
       //   {
       //     data: { 
-      //       title, category, series, color, questions, 
+      //       title, category, series, color,
       //       seriesInfo: { total, current, posts }, 
       //       next: { url, title },
       //       ... other post data
@@ -252,19 +250,19 @@ module.exports = async (config) => {
       // ]
       // orderedPosts.summariesByCategory = {
       //   'All': { 
-      //     articleCount: 50, seriesCount: 8, questionsCount: 120,
+      //     articleCount: 50, seriesCount: 8,
       //     standaloneArticleCount: 15, seriesArticleCount: 35, totalReadingTime: 450
       //   },
       //   'Basics': { 
-      //     articleCount: 15, seriesCount: 3, questionsCount: 35,
+      //     articleCount: 15, seriesCount: 3,
       //     standaloneArticleCount: 5, seriesArticleCount: 10, totalReadingTime: 120
       //   },
       //   'Gospel': { 
-      //     articleCount: 20, seriesCount: 3, questionsCount: 50,
+      //     articleCount: 20, seriesCount: 3,
       //     standaloneArticleCount: 8, seriesArticleCount: 12, totalReadingTime: 180
       //   },
       //   'Prophecy': { 
-      //     articleCount: 15, seriesCount: 2, questionsCount: 35,
+      //     articleCount: 15, seriesCount: 2,
       //     standaloneArticleCount: 2, seriesArticleCount: 13, totalReadingTime: 150
       //   }
       // }
@@ -496,13 +494,13 @@ module.exports = async (config) => {
     }
 
     // number of questions (H2 headings)
-    let source = post.rawInput;
-    if (source) {
-      const matches = source.match(/^##\s.+$/gm) || [];
-      post.data.questions = matches.length;
-    } else {
-      post.data.questions = 0;
-    }
+    // let source = post.rawInput;
+    // if (source) {
+    //   const matches = source.match(/^##\s.+$/gm) || [];
+    //   post.data.questions = matches.length;
+    // } else {
+    //   post.data.questions = 0;
+    // }
 
     return post;
   }

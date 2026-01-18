@@ -176,6 +176,20 @@
     font-size: 30px;
   }
 
+  .stat-button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .stats-popup {
+    min-width: 240px;
+  }
+
+  .popup-content {
+    padding: 12px;
+    gap: 12px;
+  }
+
   .toc {
     padding: 20px 15px;
   }

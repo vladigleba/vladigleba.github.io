@@ -1321,5 +1321,32 @@ if (document.body.classList.contains('js-enabled')) {
     initArticleHighlighting();
 
     //#endregion
+
+    /*
+    stats popup
+    */
+
+    //#region
+
+    const statsButton = document.getElementById('stats-popup-button');
+    const statsPopup = document.getElementById('stats-popup');
+    
+    if (statsButton && statsPopup) {
+      statsButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = statsPopup.classList.toggle('open');
+        statsButton.setAttribute('aria-expanded', isOpen);
+      });
+
+      // close popup when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.stats-popup-wrapper')) {
+          statsPopup.classList.remove('open');
+          statsButton.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    //#endregion
   });
 }

@@ -1,6 +1,7 @@
 .posts-sort select,
 .switch-label,
-.stat-label {
+.stat-label,
+.popup-stat-label {
   font-weight: 600;
 }
 
@@ -28,6 +29,91 @@
 }
 
 .stats .stat-label {
+  color: var(--gray-color);
+}
+
+/* stats popup */
+
+.stats-popup-wrapper {
+  position: relative;
+}
+
+.stat-button {
+  background-color: var(--light-blue-background);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 200ms ease;
+  color: var(--darker-gray-color);
+}
+
+.stat-button:hover {
+  transform: scale(1.1);
+}
+
+.stat-button:active {
+  transform: scale(0.95);
+}
+
+.stat-button[aria-expanded="true"] .chevron-icon {
+  transform: rotate(180deg);
+}
+
+.chevron-icon {
+  width: 12px;
+  height: 8px;
+  transition: transform 200ms ease;
+  color: inherit;
+}
+
+.stats-popup {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  transform: translateY(100%);
+  background: white;
+  border-radius: var(--default-radius);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 200ms ease, visibility 200ms ease;
+  z-index: 10;
+  min-width: 280px;
+}
+
+.stats-popup.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.popup-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.popup-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px;
+  background: var(--light-gray-background);
+  border-radius: var(--default-radius);
+  text-align: center;
+}
+
+.popup-stat-value {
+  font-weight: 600;
+}
+
+.popup-stat-label {
   color: var(--gray-color);
 }
 
