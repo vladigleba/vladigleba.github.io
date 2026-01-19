@@ -193,9 +193,11 @@
   cursor: pointer;
 }
 
-.search-match-highlight {
-  background-color: #fff7af !important;
-  transition: background-color 0.3s ease;
+mark {
+  background: linear-gradient(120deg, #ffc0e0 0%, #ffd4ed 100%);
+  padding: 1px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(255, 192, 224, 0.3)
 }
 
 .snippet-type {

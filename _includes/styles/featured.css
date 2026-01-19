@@ -1,15 +1,15 @@
 .unified-card {
   margin: 0 auto 100px;
-  /* border: 1px solid var(--border-color);
-  border-radius: var(--default-radius);
-  display: grid;
-  grid-template-columns: 1fr; */
   width: 45%;
   text-align: center;
 }
 
 .unified-card .card-link {
   cursor: pointer;
+}
+
+.enabled-card {
+  transition: opacity 200ms ease;
 }
 
 .enabled-card:hover {

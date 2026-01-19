@@ -21,6 +21,6 @@
   </symbol>
 
   <symbol id="back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M21 12H3M10 19l-9-7 9-7"/>
+    <path d="M20 12H4M10 19l-9-7 9-7"/>
   </symbol>
 </svg>

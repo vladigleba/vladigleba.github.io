@@ -1336,6 +1336,7 @@ if (document.body.classList.contains('js-enabled')) {
         e.stopPropagation();
         const isOpen = statsPopup.classList.toggle('open');
         statsButton.setAttribute('aria-expanded', isOpen);
+        announceToLiveRegion(isOpen ? 'Statistics opened' : 'Statistics closed');
       });
 
       // close popup when clicking outside
@@ -1343,6 +1344,7 @@ if (document.body.classList.contains('js-enabled')) {
         if (!e.target.closest('.stats-popup-wrapper')) {
           statsPopup.classList.remove('open');
           statsButton.setAttribute('aria-expanded', 'false');
+          announceToLiveRegion('Statistics closed');
         }
       });
     }

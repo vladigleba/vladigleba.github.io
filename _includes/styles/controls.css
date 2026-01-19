@@ -51,7 +51,7 @@
 }
 
 .stat-button:hover {
-  transform: scale(1.1);
+  color: black;
 }
 
 .stat-button:active {
@@ -211,6 +211,7 @@
   border: 1px solid #e5e7eb;
   background-color: white;
   color: black;
+  cursor: pointer;
 }
 
 .select-arrow {
