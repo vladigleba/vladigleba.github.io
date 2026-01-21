@@ -1419,10 +1419,21 @@ if (document.body.classList.contains('js-enabled')) {
       if (!keyboardListenerAttached) {
         document.addEventListener('keydown', (e) => {
           if (allHighlights.length === 0) return;
-          
+
+          // screen reader users
           if (e.key === 'Enter') {
             e.preventDefault();
             e.shiftKey ? navigateHighlight(-1) : navigateHighlight(1);
+          }
+          
+          // visual users
+          if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+            e.preventDefault();
+            navigateHighlight(1); // next
+          }
+          if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+            e.preventDefault();
+            navigateHighlight(-1); // previous
           }
           
           if (e.key === 'Escape' || e.key === 'Esc') {
