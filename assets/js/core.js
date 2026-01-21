@@ -489,12 +489,13 @@ if (document.body.classList.contains('js-enabled')) {
           return null;
         }
       })();
+
       if (saved) {
         select.value = saved;
         sortListBy(list, saved);
 
-        // announce change for assistive tech users
-        announceToLiveRegion(`Sorted by ${select.options[select.selectedIndex].text}`);
+        const sortType = select.options[select.selectedIndex].text;
+        announceToLiveRegion(`Sorted by ${sortType}`);
         updateSortControl(); // ensure visibility reflects current switch state
       }
 
@@ -508,7 +509,8 @@ if (document.body.classList.contains('js-enabled')) {
         }
         sortListBy(list, val);
 
-        announceToLiveRegion(`Sorted by ${e.target.options[e.target.selectedIndex].text}`);
+        const sortType = e.target.options[e.target.selectedIndex].text;
+        announceToLiveRegion(`Sorted by ${sortType}`);
       });
     }
 
@@ -899,9 +901,7 @@ if (document.body.classList.contains('js-enabled')) {
         const resultLi = document.createElement('li');
         resultLi.className = 'search-result';
 
-        const resultLink = document.createElement('a');
-        resultLink.href = result.url;
-        resultLink.className = 'result-link';
+        const resultLink = document.createElement('div');
 
         const matchCountHtml = result.matchCount > 0
           ? `<span class="match-count">
@@ -1229,8 +1229,8 @@ if (document.body.classList.contains('js-enabled')) {
             return NodeFilter.FILTER_REJECT;
           }
           
-          // skip nodes inside .toc or .series-links
-          if (node.parentElement?.closest('.toc, .series-links')) {
+          // skip nodes inside excluded containers
+          if (node.parentElement?.closest('.toc, .series-links, .next-link')) {
             return NodeFilter.FILTER_REJECT;
           }
           
@@ -1292,22 +1292,6 @@ if (document.body.classList.contains('js-enabled')) {
       return matches;
     };
 
-    const scrollToElement = (element) => {
-      if (!element) return;
-      
-      element.classList.add('search-block-focus');
-      
-      // pageYOffset is how far page is scrolled vertically already
-      const offset = 100; // for fixed header
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-      
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'auto'
-      });
-    };
-
     // article search controls state
     let currentHighlightIndex = -1;
     let allHighlights = [];
@@ -1366,6 +1350,9 @@ if (document.body.classList.contains('js-enabled')) {
 
       scrollToHighlight(allHighlights[currentHighlightIndex]);
       updateCounterDisplay();
+      
+      const position = currentHighlightIndex + 1;
+      announceToLiveRegion(`Highlight ${position} of ${total}`);
     };
 
     // clear all highlights and reset UI
@@ -1389,6 +1376,9 @@ if (document.body.classList.contains('js-enabled')) {
 
       // update browser URL without reloading
       window.history.replaceState({}, document.title, url);
+      
+      const totalCleared = allHighlights.length;
+      announceToLiveRegion(`${totalCleared} highlights cleared`);
     };
 
     // update counter display
@@ -1411,7 +1401,7 @@ if (document.body.classList.contains('js-enabled')) {
           <button class="search-nav-btn" data-action="prev" title="Previous match (Shift+Enter)">← Previous</button>
           <span class="search-counter">1 / ${allHighlights.length}</span>
           <button class="search-nav-btn" data-action="next" title="Next match (Enter)">Next →</button>
-          <button class="search-clear-btn" data-action="clear" title="Clear highlights">Clear All</button>
+          <button class="search-clear-btn" data-action="clear" title="Clear highlights (Escape)">Clear All</button>
         `;
         
         // event delegation for buttons
@@ -1429,8 +1419,14 @@ if (document.body.classList.contains('js-enabled')) {
       if (!keyboardListenerAttached) {
         document.addEventListener('keydown', (e) => {
           if (allHighlights.length === 0) return;
+          
           if (e.key === 'Enter') {
+            e.preventDefault();
             e.shiftKey ? navigateHighlight(-1) : navigateHighlight(1);
+          }
+          
+          if (e.key === 'Escape' || e.key === 'Esc') {
+            clearAllHighlights();
           }
         });
         keyboardListenerAttached = true;
@@ -1438,6 +1434,9 @@ if (document.body.classList.contains('js-enabled')) {
       
       updateCounterDisplay();
       controlsElement.classList.remove('hidden');
+      
+      // announce initial state
+      announceToLiveRegion(`${allHighlights.length} matches found. Use Enter to navigate, Escape to clear.`);
     };
 
     // hide search controls
@@ -1462,8 +1461,6 @@ if (document.body.classList.contains('js-enabled')) {
       if (blockId) {
         const blockElement = findBlockElement(blockId);
         if (blockElement) {
-          scrollToElement(blockElement);
-          
           // find and highlight the closest match to the block
           const closestIndex = findClosestHighlight(blockElement);
           if (closestIndex >= 0) {

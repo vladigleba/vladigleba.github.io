@@ -1,24 +1,6 @@
 # Overview
 
-This is a static blog (no server-side code) built with [11ty](https://www.11ty.dev/), using [Liquid](https://liquidjs.com) for templates and [Markdown](https://www.markdownguide.org) for content. Styled with custom CSS and enhanced with vanilla JavaScript.
-
-## Features
-- Fast static site generation with 11ty
-- Modern and responsive user interface for all screen sizes
-- Reader-friendly typography
-- Modular layouts using Liquid templates
-- Markdown-based posts with footnote support and proper typographic punctuation
-- Folder-based category groupings for posts
-- Series groupings for posts
-- Table of contents and anchor link generation for headings with copy-to-clipboard functionality
-- Reading time estimates and last-updated tags (with relative dates) for posts
-- SEO-friendly (semantic HTML, sitemap, robots.txt, meta tags, Open Graph, Twitter cards, JSON-LD)
-- Accessible keyboard navigation and screen reader support (skip links, ARIA attributes)
-- Offline support via service workers
-- RSS feed
-- Privacy-friendly analytics via [Umami](https://umami.is)
-- Automatic deployment to [GitHub Pages](https://pages.github.com) via [GitHub Actions](https://github.com/features/actions)
-- Security meta tags (CSP, referrer policy, X-Frame-Options, Permissions Policy, X-Content-Type-Options) for enhanced protection
+This is a static blog (no server-side code) built with [11ty](https://www.11ty.dev/), using [Liquid](https://liquidjs.com) for templates and [Markdown](https://www.markdownguide.org) for content. Styled with custom CSS, enhanced with custom JavaScript, and automatically deployed to [GitHub Pages](https://pages.github.com) via [GitHub Actions](https://github.com/features/actions). Privacy-friendly analytics are provided by [Umami](https://umami.is).
 
 ## Structure
 - `_data/` - site data
