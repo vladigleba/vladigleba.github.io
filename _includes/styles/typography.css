@@ -81,6 +81,9 @@ li .tag {
   font-size: 15px;
 }
 
+.search-counter,
+.search-nav-btn,
+.search-clear-btn,
 .search-result .snippet {
   font-size: 14px;
 }

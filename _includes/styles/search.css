@@ -119,10 +119,6 @@
   background-color: #fff7af;
 }
 
-.search-result:last-child {
-  border-bottom: none;
-}
-
 .search-result .snippet-item,
 .search-result .header,
 .search-result .show-more-snippets,
@@ -173,7 +169,12 @@
   text-decoration: none;
   padding-top: 12px;
   padding-bottom: 12px;
+  border-bottom: 1px solid #f5f5f5;
   transition: background-color 0.15s ease;
+}
+
+.search-result .snippet-item:last-child {
+  border-bottom: none;
 }
 
 .search-result .snippet-item:hover,
@@ -185,8 +186,8 @@
   background: none;
   border: none;
   color: var(--darker-gray-color);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -197,4 +198,77 @@
   text-transform: uppercase;
   color: var(--lighter-gray-color);
   font-weight: 600;
+}
+
+/* article search controls */
+
+.article-search-controls {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  z-index: 500;
+  background: var(--light-gray-background);
+  padding: 12px 24px;
+  border-radius: var(--default-radius);
+  box-shadow: var(--default-shadow);
+}
+
+.article-search-controls.hidden {
+  display: none !important;
+}
+
+.search-nav-btn,
+.search-clear-btn {
+  border: none;
+  border-radius: var(--default-radius);
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+}
+
+.search-nav-btn {
+  background: #667eea;
+}
+
+.search-clear-btn {
+  background: #dc2626;
+}
+
+.search-nav-btn:hover,
+.search-clear-btn:hover {
+  opacity: 0.9;
+}
+
+.search-counter {
+  font-weight: 600;
+  color: var(--gray-color);
+  min-width: 40px;
+  text-align: center;
+}
+
+mark {
+  background: linear-gradient(120deg, #ffc0e0 0%, #ffd4ed 100%);
+  padding: 2px 6px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(255, 192, 224, 0.3);
+}
+
+mark.search-highlight {
+  transition: all 0.3s;
+}
+
+mark.search-highlight.active {
+  background: linear-gradient(120deg, #db2777 0%, #e11d48 100%);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(219, 39, 119, 0.6), 0 0 0 3px rgba(219, 39, 119, 0.2);
+  position: relative;
+  z-index: 1;
 }

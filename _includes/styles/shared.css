@@ -19,6 +19,23 @@ li .tag {
   text-transform: uppercase;
 }
 
+.enabled-card:active {
+  transform: scale(0.99);
+}
+
+.toc li:active,
+.list li:active,
+.search-trigger:active,
+.main-nav li:active,
+.search-nav-btn:active,
+.search-clear-btn:active {
+  transform: scale(0.98);
+}
+
+.stat-button:active {
+  transform: scale(0.95);
+}
+
 article,
 article > header > div,
 body > footer > div {

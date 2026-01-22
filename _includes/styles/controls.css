@@ -54,10 +54,6 @@
   color: black;
 }
 
-.stat-button:active {
-  transform: scale(0.95);
-}
-
 .stat-button[aria-expanded="true"] .chevron-icon {
   transform: rotate(180deg);
 }

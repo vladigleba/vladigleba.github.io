@@ -489,12 +489,13 @@ if (document.body.classList.contains('js-enabled')) {
           return null;
         }
       })();
+
       if (saved) {
         select.value = saved;
         sortListBy(list, saved);
 
-        // announce change for assistive tech users
-        announceToLiveRegion(`Sorted by ${select.options[select.selectedIndex].text}`);
+        const sortType = select.options[select.selectedIndex].text;
+        announceToLiveRegion(`Sorted by ${sortType}`);
         updateSortControl(); // ensure visibility reflects current switch state
       }
 
@@ -508,7 +509,8 @@ if (document.body.classList.contains('js-enabled')) {
         }
         sortListBy(list, val);
 
-        announceToLiveRegion(`Sorted by ${e.target.options[e.target.selectedIndex].text}`);
+        const sortType = e.target.options[e.target.selectedIndex].text;
+        announceToLiveRegion(`Sorted by ${sortType}`);
       });
     }
 
@@ -899,9 +901,7 @@ if (document.body.classList.contains('js-enabled')) {
         const resultLi = document.createElement('li');
         resultLi.className = 'search-result';
 
-        const resultLink = document.createElement('a');
-        resultLink.href = result.url;
-        resultLink.className = 'result-link';
+        const resultLink = document.createElement('div');
 
         const matchCountHtml = result.matchCount > 0
           ? `<span class="match-count">
@@ -1217,16 +1217,24 @@ if (document.body.classList.contains('js-enabled')) {
       return blockId ? document.querySelector(`[data-search-id="${blockId}"]`) : null;
     };
 
-    // find text nodes within a root element, excluding existing highlights
+    // find text nodes within a root element for highlighting
     const getTextNodes = (root) => {
       const textNodes = [];
       const walker = document.createTreeWalker(
         root,
         NodeFilter.SHOW_TEXT,
-        (node) => { // filter function to skip already highlighted nodes
-          return node.parentElement?.classList.contains('search-highlight')
-            ? NodeFilter.FILTER_REJECT
-            : NodeFilter.FILTER_ACCEPT;
+        (node) => {
+          // skip already highlighted nodes
+          if (node.parentElement?.classList.contains('search-highlight')) {
+            return NodeFilter.FILTER_REJECT;
+          }
+          
+          // skip nodes inside excluded containers
+          if (node.parentElement?.closest('.toc, .series-links, .next-link')) {
+            return NodeFilter.FILTER_REJECT;
+          }
+          
+          return NodeFilter.FILTER_ACCEPT;
         }
       );
       
@@ -1284,20 +1292,167 @@ if (document.body.classList.contains('js-enabled')) {
       return matches;
     };
 
-    const scrollToElement = (element) => {
-      if (!element) return;
+    // article search controls state
+    let currentHighlightIndex = -1;
+    let allHighlights = [];
+    let controlsElement = null;
+    let keyboardListenerAttached = false;
+
+    // get all highlight elements on the page
+    const getAllHighlights = () => {
+      return Array.from(document.querySelectorAll('mark.search-highlight'));
+    };
+
+    // find the closest highlight to a given element
+    const findClosestHighlight = (element) => {
+      if (!element || allHighlights.length === 0) return -1;
       
-      element.classList.add('search-block-focus');
+      // get element's vertical position
+      const elementTop = element.getBoundingClientRect().top + window.scrollY;
+      let closestIndex = 0;
+      let closestDistance = Infinity;
       
-      // pageYOffset is how far page is scrolled vertically already
-      const offset = 100; // for fixed header
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-      
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'auto'
+      allHighlights.forEach((highlight, index) => {
+        const highlightTop = highlight.getBoundingClientRect().top + window.scrollY;
+        const distance = Math.abs(highlightTop - elementTop); // vertical distance
+        
+        // update closest if this is nearer
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestIndex = index;
+        }
       });
+      
+      return closestIndex;
+    };
+
+    // scroll to a specific highlight
+    const scrollToHighlight = (highlightElement) => {
+      if (!highlightElement) return;
+      
+      // remove active from all, add to current
+      allHighlights.forEach((h) => {
+        h.classList.toggle('active', h === highlightElement);
+      });
+      
+      // scroll smoothly to center of viewport
+      highlightElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    };
+
+    // navigate highlights (direction: 1 for next, -1 for previous)
+    const navigateHighlight = (direction) => {
+      if (allHighlights.length === 0) return;
+      
+      // update current index with wrap-around
+      const total = allHighlights.length;
+      const nextIndex = (currentHighlightIndex + direction + total) % total;
+      currentHighlightIndex = nextIndex;
+
+      scrollToHighlight(allHighlights[currentHighlightIndex]);
+      updateCounterDisplay();
+      
+      const position = currentHighlightIndex + 1;
+      announceToLiveRegion(`Highlight ${position} of ${total}`);
+    };
+
+    // clear all highlights and reset UI
+    const clearAllHighlights = () => {
+      allHighlights.forEach((mark) => {
+        const parent = mark.parentNode;
+
+        // replace <mark> with its text content
+        parent.replaceChild(document.createTextNode(mark.textContent), mark);
+        parent.normalize(); // combine adjacent text nodes
+      });
+      
+      allHighlights = [];
+      currentHighlightIndex = -1;
+      hideSearchControls();
+      
+      // clear URL query parameter and hash
+      const url = new URL(window.location);
+      url.searchParams.delete('q');
+      url.hash = '';
+
+      // update browser URL without reloading
+      window.history.replaceState({}, document.title, url);
+      
+      const totalCleared = allHighlights.length;
+      announceToLiveRegion(`${totalCleared} highlights cleared`);
+    };
+
+    // update counter display
+    const updateCounterDisplay = () => {
+      const counter = document.querySelector('.search-counter');
+      if (counter) {
+        const position = currentHighlightIndex + 1; // 1-based index
+        counter.textContent = `${position} / ${allHighlights.length}`;
+      }
+    };
+
+    // show search controls
+    const showSearchControls = () => {
+      // create controls only once
+      if (!controlsElement) {
+        controlsElement = document.createElement('div');
+        controlsElement.id = 'article-search-controls';
+        controlsElement.className = 'article-search-controls';
+        controlsElement.innerHTML = `
+          <button class="search-nav-btn" data-action="prev" title="Previous match (Shift+Enter)">← Previous</button>
+          <span class="search-counter">1 / ${allHighlights.length}</span>
+          <button class="search-nav-btn" data-action="next" title="Next match (Enter)">Next →</button>
+          <button class="search-clear-btn" data-action="clear" title="Clear highlights (Escape)">Clear All</button>
+        `;
+        
+        // event delegation for buttons
+        controlsElement.addEventListener('click', (e) => {
+          const action = e.target.dataset.action;
+          if (action === 'prev') navigateHighlight(-1);
+          else if (action === 'next') navigateHighlight(1);
+          else if (action === 'clear') clearAllHighlights();
+        });
+        
+        document.body.appendChild(controlsElement);
+      }
+      
+      // attach keyboard listener only once
+      if (!keyboardListenerAttached) {
+        document.addEventListener('keydown', (e) => {
+          if (allHighlights.length === 0) return;
+
+          // screen reader users
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            e.shiftKey ? navigateHighlight(-1) : navigateHighlight(1);
+          }
+          
+          // visual users
+          if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+            e.preventDefault();
+            navigateHighlight(1); // next
+          }
+          if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+            e.preventDefault();
+            navigateHighlight(-1); // previous
+          }
+          
+          if (e.key === 'Escape' || e.key === 'Esc') {
+            clearAllHighlights();
+          }
+        });
+        keyboardListenerAttached = true;
+      }
+      
+      updateCounterDisplay();
+      controlsElement.classList.remove('hidden');
+      
+      // announce initial state
+      announceToLiveRegion(`${allHighlights.length} matches found. Use Enter to navigate, Escape to clear.`);
+    };
+
+    // hide search controls
+    const hideSearchControls = () => {
+      controlsElement?.classList.add('hidden');
     };
 
     const initArticleHighlighting = () => {
@@ -1306,16 +1461,31 @@ if (document.body.classList.contains('js-enabled')) {
       if (!searchQuery) return;
       
       // highlight all matches in the article
-      const contentContainer = document.querySelector('main');
+      const contentContainer = document.querySelector('article');
       highlightMatchesInElement(contentContainer, searchQuery);
+      
+      // update highlights and show controls if needed
+      allHighlights = getAllHighlights();
+      if (allHighlights.length === 0) return;
       
       // scroll to specific block if provided
       if (blockId) {
         const blockElement = findBlockElement(blockId);
         if (blockElement) {
-          scrollToElement(blockElement);
+          // find and highlight the closest match to the block
+          const closestIndex = findClosestHighlight(blockElement);
+          if (closestIndex >= 0) {
+            currentHighlightIndex = closestIndex;
+            scrollToHighlight(allHighlights[currentHighlightIndex]);
+          }
         }
+      } else { // no specific block, just highlight the first match
+        currentHighlightIndex = 0;
+        scrollToHighlight(allHighlights[0]);
       }
+      
+      showSearchControls();
+      updateCounterDisplay();
     };
 
     initArticleHighlighting();
