@@ -23,6 +23,7 @@ li .tag {
   transform: scale(0.99);
 }
 
+.series-links a > span:active,
 .toc li:active,
 .list li:active,
 .search-trigger:active,
