@@ -1,3 +1,5 @@
+/* search modal styles */
+
 .search-trigger {
   background: none;
   border: none;
@@ -253,7 +255,7 @@
 
 mark {
   background: linear-gradient(120deg, #ffc0e0 0%, #ffd4ed 100%);
-  padding: 2px 6px;
+  padding: 1px 4px;
   border-radius: 6px;
   box-shadow: 0 1px 3px rgba(255, 192, 224, 0.3);
 }
@@ -265,7 +267,7 @@ mark.search-highlight {
 mark.search-highlight.active {
   background: linear-gradient(120deg, #db2777 0%, #e11d48 100%);
   color: white;
-  padding: 2px 8px;
+  padding: 1px 8px;
   border-radius: 6px;
   font-weight: 700;
   box-shadow: 0 4px 12px rgba(219, 39, 119, 0.6), 0 0 0 3px rgba(219, 39, 119, 0.2);
