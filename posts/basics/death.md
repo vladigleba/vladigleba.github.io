@@ -29,7 +29,7 @@ Jesus uses the state of sleep as a metaphor for death because He knows there wil
 
 John makes it clear there will be two resurrections for two different groups of people: those who, through the grace of Christ, reflected goodness in their life will be part of the resurrection of life, which takes place at the second coming of Jesus, while those who lived unrighteous lives will be part of the resurrection of damnation.
 
-## How did God form the first human?
+## How did God create Adam?
 
 > And the LORD *God formed man of the dust of the ground*, and *breathed into his nostrils the breath of life*; and man became a living soul.
 {% ct 'Genesis 2:7' %}
