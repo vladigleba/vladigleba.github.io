@@ -31,7 +31,7 @@ John makes it clear there will be two resurrections for two different groups of 
 
 ## How did God create Adam?
 
-> And the LORD *God formed man of the dust of the ground*, and *breathed into his nostrils the breath of life*; and man became a living soul.
+> And the LORD God formed man *of the dust of the ground*, and *breathed into his nostrils the breath of life*; and man *became* a living soul.
 {% ct 'Genesis 2:7' %}
 
 God made man by forming him from the dust of the ground and breathing into him the breath of life. In other words, dust (the body) plus breath of God equals a living soul.
