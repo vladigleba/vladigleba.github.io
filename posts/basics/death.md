@@ -53,7 +53,7 @@ When a person dies, the body returns to dust, and the spirit returns to God.
 
 The spirit that returns to God is simply the breath of life, without which the body dies. In other words, the process described in {% rf 'Ecclesiastes 12:7' false %} is the opposite of what happened in {% rf 'Genesis 2:7' false %}. If a soul is a combination of two things—the body and the breath of life (spirit)—then the soul ceases to exist when the body returns to dust and the breath returns to God. The soul does not go anywhere; it simply ceases to exist. As an illustration, consider what is needed for light: there needs to be an electrical current and a bulb. As soon as the electrical current is turned off, the light simply ceases to exist. It is the same with the soul.
 
-## What else does the Bible about the soul?
+## What else does the Bible say about the soul?
 
 > Behold, all souls are mine; as the soul of the father, so also the soul of the son is mine: the *soul that sinneth, it shall die*.
 {% ct 'Ezekiel 18:4' %}
