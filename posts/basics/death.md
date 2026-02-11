@@ -34,14 +34,16 @@ John makes it clear there will be two resurrections for two different groups of 
 > And the LORD God formed man *of the dust of the ground*, and *breathed into his nostrils the breath of life*; and man *became* a living soul.
 {% ct 'Genesis 2:7' %}
 
-God made Adam by forming him from the dust of the ground and breathing into him the breath of life. In other words, dust (the body) plus the breath of God *results in* a living soul. The text does not say that man *received* a living soul, but that he *became* one. This distinction highlights an important implication: humans are souls, because a soul is simply a living being. {% rf 'Ezekiel 18:20' false %} confirms this by paralleling the soul with the son and the father, underscoring that, biblically, the soul refers to the whole person rather than a separable part. {% rf 'Matthew 16:25' false %} also supports this, where the Greek word *psychē* is translated as *life*, though it is translated as *soul* in other contexts. Put simply, a living person *is* a soul, not someone who *has* a soul.
+God made Adam by forming him from the dust of the ground and breathing into him the breath of life. In other words, dust (the body) plus the breath of God *results in* a living soul. The text does not say that man *received* a living soul, but that he *became* one. This distinction highlights an important implication: humans are souls, because a soul is simply a living being.
+
+{% rf 'Ezekiel 18:20' false %} confirms this by paralleling the soul with the son and the father, underscoring that, biblically, the soul refers to the whole person rather than a separable part. {% rf 'Matthew 16:25' false %} also supports this, where the Greek word *psychē* is translated as *life*, even though it is translated as *soul* in other contexts. Put simply, a living person *is* a soul, not someone who *has* a soul.
 
 ## What happens when a person dies?
 
 > Then *shall the dust return to the earth* as it was: and *the spirit shall return unto God* who gave it.
 {% ct 'Ecclesiastes 12:7' %}
 
-When a person dies, the body returns to dust, and the spirit returns to God. {% rf 'Leviticus 17:11' false %} provides another clue by stating that “the life of the flesh is in the blood,” thus equating life with blood—a physical, bodily reality—rather than with an immaterial essence or detachable consciousness. Furthermore, {% rf 'Psalm 146:4' false %} and {% rf 'Ecclesiastes 9:5-6' false %} both declare that all thought and consciousness cease at death, thus leaving no possibility for an ongoing conscious soul after death. Put simply, death is not a relocation but a total cessation of life--the loss of the whole person.
+When a person dies, the body returns to dust, and the spirit returns to God. {% rf 'Leviticus 17:11' false %} provides another clue by stating that “the life of the flesh is in the blood,” thus equating life with blood—a physical, bodily reality—rather than with an immaterial essence or detachable consciousness. Furthermore, {% rf 'Psalm 146:4' false %} and {% rf 'Ecclesiastes 9:5-6' false %} both declare that all thought and consciousness cease at death, thus leaving no possibility for an ongoing conscious soul after death. Put simply, death is not a relocation but a total cessation of life—the loss of the whole person.
 
 ## What is the spirit that returns to God?
 
@@ -69,7 +71,7 @@ As an illustration, consider what is needed for light: there must be an electric
 > For *all have sinned*, and come short of the glory of God.
 {% ct 'Romans 3:23' %}
 
-Because the soul ceases to exist at death, it cannot go to heaven or hell immediately after death, for Scripture plainly declares, “The soul that sinneth, it shall die.” Why is this so? Because the wages of sin are death, and all have sinned. {% rf 'Ezekiel 18:4' false %} is utterly incompatible with the popular belief that souls are inherently immortal. If the soul were immortal, Christ could not have died to pay the penalty for our sin--which is death--and the entire plan of salvation would collapse. Moreover, if the soul were immortal then God would be unable to destroy it in hell; yet {% rf 'Matthew 10:28' false %} plainly teaches that He can.[^1]
+Because the soul ceases to exist at death, it cannot go to heaven or hell immediately after death, for Scripture plainly declares, “The soul that sinneth, it shall die.” Why is this so? Because the wages of sin are death, and all have sinned. {% rf 'Ezekiel 18:4' false %} is utterly incompatible with the popular belief that souls are inherently immortal. If the soul were immortal, Christ could not have died to pay the penalty for our sin—which is death—and the entire plan of salvation would collapse. Moreover, if the soul were immortal then God would be unable to destroy it in hell; yet {% rf 'Matthew 10:28' false %} plainly teaches that He can.[^1]
 
 Finally, before His ascension, Jesus assured His disciples, “I will come again and receive you unto Myself” {% rf 'John 14:2-3' %}. It is crucial to note that He did not say they would come to Him at death, but rather that *He would come to them* at His Second Coming.
 
@@ -86,20 +88,22 @@ Finally, before His ascension, Jesus assured His disciples, “I will come again
 > Behold my hands and my feet, that it is I myself: handle me, and see; for *a spirit hath not flesh and bones, as ye see me have*.
 {% ct 'Luke 24:39' %}
 
-The Christian looks forward to the resurrection, not to the soul's escape at death. In fact, the resurrection loses meaning and purpose if the souls of the saved are already in heaven. There would be no reason for Jesus to return to resurrect His people if they had already been living with Him since their death.
+The Christian looks forward to the resurrection, not to the soul’s escape at death. In fact, the resurrection loses meaning and purpose if the souls of the saved are already in heaven. There would be no reason for Jesus to return to resurrect His people if they had already been living with Him since their death.
 
-The biblical worldview is grounded in a physical, bodily reality rather than a mystical one, and the resurrection is no exception. When discussing the resurrection in {% rf '1 Corinthians 15:42-44' false %}, Paul contrasts the perishable body with the imperishable body. He could have contrasted the body with the soul, but instead he describes the transformation of one body. His use of parallelism shows that a "spiritual body" is a transformed body, not a nonphysical essence. Likewise, {% rf 'Romans 8:11' false %} speaks of the resurrection as bodily restoration. Jesus Himself rejected disembodied personhood in {% rf 'Luke 24:39' false %} by showing His disciples that, after His resurrection, He had a physical body of flesh and bones. Thus, the Bible stands in strong contrast to soul-body dualism, which teaches that true life is essentially disembodied.
+The biblical worldview is grounded in a physical, bodily reality rather than a mystical one, and the resurrection is no exception. When discussing the resurrection in {% rf '1 Corinthians 15:42-44' false %}, Paul contrasts the perishable body with the imperishable body. He could have contrasted the body with the soul, but instead he describes the transformation of one body. His use of parallelism shows that a “spiritual body” is a transformed body, not a nonphysical essence. Likewise, {% rf 'Romans 8:11' false %} speaks of the resurrection as bodily restoration. Jesus Himself rejected disembodied personhood in {% rf 'Luke 24:39' false %} by showing His disciples that, after His resurrection, He had a physical body of flesh and bones. Thus, the Bible stands in strong contrast to soul-body dualism, which teaches that true life is essentially disembodied.
 
 ## How did dualism enter Christianity?
 
-It was Greek philosophy, not Scripture, that introduced the body-soul dichotomy into Christianity. Four hundred years before Christ, the Greek philosopher Plato promoted the idea that the soul is immortal, pre-existent, and separate from the body, which he viewed as a temporary prison for the soul. The Jewish philosopher Philo of Alexandria, a contemporary of Jesus, later incorporated this distinction into Jewish thought, becoming a harbinger of Alexandria's future role as a center of Gnostic influence and a gateway for dualism's entry into Christianity. Two hundred years later, theologians Clement of Alexandria (c. 150-215) and Origen (c. 185-253) began integrating Plato's ideas about the immortal soul into Christian theology, and Augustine of Hippo (c. 354-430) effectively entrenched them. As a result, many Christians shifted from believing they would rise at the resurrection to believing they would never truly die.
+It was Greek philosophy, not Scripture, that introduced the body-soul dichotomy into Christianity. Four hundred years before Christ, the Greek philosopher Plato promoted the idea that the soul is immortal, pre-existent, and separate from the body, which he viewed as a temporary prison for the soul. The Jewish philosopher Philo of Alexandria, a contemporary of Jesus, later incorporated this distinction into Jewish thought, becoming a harbinger of Alexandria’s future role as a center of Gnostic influence and a gateway for dualism’s entry into Christianity.
+
+Two hundred years later, theologians Clement of Alexandria (c. 150-215) and Origen (c. 185-253) began integrating Plato’s ideas about the immortal soul into Christian theology, and Augustine of Hippo (c. 354-430) effectively entrenched them. As a result, many Christians shifted from believing they would rise at the resurrection to believing they would never truly die.
 
 ## What about Revelation 6:9?
 
 > And when he had opened the fifth seal, I saw under the altar *the souls of them that were slain* for the word of God, and for the testimony which they held. *And they cried with a loud voice*, saying, How long, O Lord, holy and true, dost thou not judge and avenge our blood on them that dwell on the earth?
 {% ct 'Revelation 6:9-10' %}
 
-It may appear that the souls of the martyrs are crying out to God, yet we must remember that Genesis describes the blood of Abel crying out as well {% rf 'Genesis 4:10' %}. This is simply a figure of speech, referring to God's vindication.
+It may appear that the souls of the martyrs are crying out to God, yet we must remember that Genesis describes the blood of Abel crying out as well {% rf 'Genesis 4:10' %}. This is simply a figure of speech, referring to God’s vindication.
 
 ## Where is King David now?
 
@@ -158,6 +162,18 @@ Man is fully mortal; only God is immortal. This idea that the soul is immortal s
 {% ct 'Philippians 3:21' %}
 
 Because Jesus, His Redeemer, conquered death, Job will one day be able to see Him in a glorious, new, physical body.
+
+## How about 2 Corinthians 5:6?
+
+> Therefore we are always confident, knowing that, *whilst we are at home in the body, we are absent from the Lord*. (For we walk by faith, not by sight.) We are confident, I say, and willing rather *to be absent from the body, and to be present with the Lord*.
+{% ct '2 Corinthians 5:6-8' %}
+
+> For I am in a strait betwixt two, *having a desire to depart, and to be with Christ*; which is far better. Nevertheless to abide in the flesh is more needful for you.
+{% ct 'Philippians 1:23-24' %}
+
+Here, Paul differentiates between the earthly body and the glorified body, not conscious existence apart from the body. In fact, in {% rf '2 Corinthians 5:4' false %}, Paul specifically rejects being “unclothed.” Put another way: while we are absent from the Lord, we still possess earthly bodies subject to sickness, disease, and death. At the resurrection, however, when the saved are present with the Lord, they will be absent from their earthly bodies because they will receive new, glorified bodies.
+
+A similar idea is expressed in {% rf 'Philippians 1:23' false %}, where Paul describes how “departure” from life and the coming of Christ will feel almost instantaneous due to the unconscious state of death. The next conscious moment for the person who has died is the resurrection, even though the two events are separated by time. We know that Paul did not expect to ascend to heaven immediately after death because in {% rf '2 Timothy 4:6-8' false %} he links receiving the eternal crown with “that day,” a future point in time associated with Christ’s appearing.
 
 ## What about Luke 23:43?
 
