@@ -83,6 +83,8 @@ By the way, the parallels between {% rf 'Isaiah 24:21-22' false %} and {% rf 'Re
 {% ct 'Jeremiah 25:33' %}
 
  The brightness of Jesus’ coming—His glorious and holy presence—will destroy the lost, who will remain dead for the entire millennium. Contrary to the popular secret rapture theory, which teaches that the lost will have a second chance to repent, they will have no such opportunity—for they will be dead, and the door of mercy will have closed forever.
+ 
+ There was no second chance for the lost outside the ark after the door was closed. Noah preached the message of salvation for 120 years, and all had opportunity to hear and accept it by faith, but once the time of probation expired and the door of the ark was shut, the fate of all was sealed. The same pattern will be repeated in the last days {% rf 'Matthew 24:37' %}. It is never wise to put off God’s invitation of mercy to another day, for that day may never come {% rf 'Jeremiah 8:20; 2 Corinthians 6:2' %}.
 
 ## What happens to planet Earth?
 

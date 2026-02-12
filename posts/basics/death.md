@@ -7,10 +7,12 @@ order: 2500
 featured: true
 ---
 
-## How did Jesus describe sleep?
+## How did Jesus describe death?
 
 > These things said he: and after that he saith unto them, *Our friend Lazarus sleepeth*; but I go, that I may awake him out of sleep. Then said his disciples, Lord, if he sleep, he shall do well. Howbeit *Jesus spake of his death*: but they thought that he had spoken of taking of rest in sleep. Then said Jesus unto them plainly, *Lazarus is dead*.
 {% ct 'John 11:11-14' %}
+
+Jesus described death as sleep because there is a resurrection from the first death for both the [saved and the lost](/posts/prophecy/millennium.md): the saved at His second coming and the lost after the heavenly millennium.
 
 ## Will there be a resurrection?
 
@@ -20,7 +22,7 @@ featured: true
 > *I am he that liveth, and was dead*; and, behold, I am alive for evermore, amen; and *have the keys of hell and of death*.
 {% ct 'Revelation 1:18' %}
 
-Jesus uses the state of sleep as a metaphor for death because He knows there will be a resurrection at the second coming. This will be a resurrection of those who died in Christ because He was the only One who conquered death.
+The resurrection is possible because of Jesus, for He alone has conquered death.
 
 ## Will there be a second resurrection?
 
@@ -56,11 +58,11 @@ When a person dies, the body returns to dust, and the spirit returns to God. {% 
 > Thou hidest thy face, they are troubled: *thou takest away their breath, they die, and return to their dust*.
 {% ct 'Psalm 104:29' %}
 
-According to the parallelism in {% rf 'Job 27:3' false %}, the spirit that returns to God is simply the breath of life, without which the body dies. In other words, the process described in {% rf 'Ecclesiastes 12:7' false %} is the reverse of what occurred in {% rf 'Genesis 2:7' false %}. If a soul (a living human being) is the combination of two elements—the body and the breath of life (spirit)—then the soul ceases to exist when the body returns to dust and the breath returns to God who gave it. The soul does not go anywhere; it simply ceases to exist. {% rf 'James 2:26' false %} affirms that neither the body nor the spirit (breath) constitutes a complete person on its own; both are required. 
+According to the parallelism in {% rf 'Job 27:3' false %}, the spirit that returns to God is simply the breath of life, without which the body dies. In other words, the process described in {% rf 'Ecclesiastes 12:7' false %} is the reverse of what occurred in {% rf 'Genesis 2:7' false %}. If a soul (a living human being) is the combination of two elements—the body and the breath of life (spirit)—then the soul ceases to exist when the body returns to dust and the breath returns to God who gave it. The soul does not go anywhere; it simply ceases to exist. {% rf 'James 2:26' false %} affirms that neither the body nor the spirit (breath) constitutes a complete person on its own; both are required.
 
 As an illustration, consider what is needed for light: there must be an electrical current and a bulb. When the electrical current is cut off, the light simply ceases to exist. The same is true of the soul.
 
-## What else does the Bible say about the soul?
+## What else does the Bible teach?
 
 > Behold, all souls are mine; as the soul of the father, so also the soul of the son is mine: the *soul that sinneth, it shall die*.
 {% ct 'Ezekiel 18:4' %}
@@ -153,7 +155,7 @@ Man is fully mortal; only God is immortal. This idea that the soul is immortal s
 
 1 Corinthians 15 says that not all the righteous will experience death, but all the righteous will be changed when the trumpet of God sounds at the second coming. In other words, the righteous who are live to see the second coming, as well as those who died in Christ, who will at that moment be resurrected, will receive new, immortal bodies. From that point on death will never have power over them because Jesus defeated it, and by accepting His sacrifice on their behalf, they will inherit His victory over it!
 
-## What hope did Job have about the resurrection?
+## What hope did Job have?
 
 > *For I know that my redeemer liveth*, and that he shall stand at the latter day upon the earth: and though after my skin worms destroy this body, yet *in my flesh shall I see God*.
 {% ct 'Job 19:25-26' %}
@@ -201,7 +203,7 @@ Jesus could not have gone to heaven after His death because on Sunday morning He
 
 It could not have been Samuel that Saul saw because the Bible is clear that the dead remain dead until the resurrection. In Revelation we learn that the devil has fallen angels whom he was able to persuade to join his rebellion in heaven, and after he was cast to earth, they were cast down with him {% rf 'Revelation 12:4' %}. In other places, they are called “lying spirits” and “spirits of devils” who have the power to work miracles, including masquerading as human beings. In fact, Satan Himself is able to appear as an angel of light {% rf '2 Corinthians 11:14' %}. Saul saw one of these spirits masquerading as Samuel.
 
-## What does the Bible say about communication with spirits?
+## Is it safe to communicate with spirits?
 
 > *Do not turn to mediums or spiritists; do not seek them out to be defiled by them*. I am the LORD your God.
 {% ct 'Leviticus 19:31, NASB' %}
@@ -217,7 +219,7 @@ It could not have been Samuel that Saul saw because the Bible is clear that the 
 
 Communication with spirits is forbidden in the Bible because it’s an abomination to God. Paul also warns that this practice is one of the signs of the last days, and it will lead to deception and a departure from the faith, meaning it will be practiced by those who claim to be believers. Isaiah says that the only way to identify whether a spirit is from God or not is to compare what it says with the Word of God because every lying spirit will speak contrary to His Word.
 
-## What did Paul write at the end of his life?
+## How did Paul look back on his life?
 
 > *I have fought a good fight, I have finished my course, I have kept the faith*: henceforth there is laid up for me a crown of righteousness, which the Lord, the righteous judge, shall give me at that day: and not to me only, but unto all them also that love his appearing.
 {% ct '2 Timothy 4:7-8' %}
