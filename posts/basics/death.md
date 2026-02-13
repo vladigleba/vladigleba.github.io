@@ -79,6 +79,19 @@ Finally, before His ascension, Jesus assured His disciples, “I will come again
 
 [^1]: This passage is often cited as evidence the soul is separable from the body, but it simply teaches that humans cannot permanently destroy a person; only God can. God can resurrect the martyr’s body, but there is no resurrection from the [second death](/posts/prophecy/millennium.md#what-then-happens-to-the-lost), over which He alone has authority.
 
+## What about the rich man and Lazarus?
+
+> And it came to pass, that the beggar died, and was carried by the angels into Abraham’s bosom: *the rich man also died, and was buried; and in hell he lift up his eyes*, being in torments, and seeth Abraham afar off, and Lazarus in his bosom.
+{% ct 'Luke 16:22-23' %}
+
+It may seem that Jesus’ story teaches that the rich man went straight to hell after death, but several clues suggest that the story was simply a parable rather than a literal description of the afterlife.
+
+1. After the beggar (Lazarus) died, he was carried to “Abraham’s bosom.” How could Abraham’s literal bosom be the dwelling place of the righteous dead?
+1. {% rf 'Luke 16:26' false %} says there is a great gulf between the two, yet the rich man and Lazarus are depicted as conversing. How could that be literally true?
+1. How much relief would a single drop of water from Lazarus’ finger bring to rich man’s tongue?
+
+Jesus told this parable as an illustration directed particularly to the Jews, who trusted in their privileged position as children of Abraham {% rf 'John 8:39' %}, while the beggar represents the Gentiles, whom many Jews considered spiritually unworthy. Compared to the Jews, who had been entrusted with great truths concerning the plan of salvation {% rf 'Romans 3:1-2' %}, the Gentiles were indeed like beggars ; yet it was often the Gentiles who were quicker to believe in Jesus {% rf 'Matthew 8:8-12; 15:22' %}.
+
 ## What is the Christian’s hope?
 
 > So is it with the resurrection of the dead. *What is sown is perishable; what is raised is imperishable*. It is sown in dishonor; it is raised in glory. It is sown in weakness; it is raised in power. *It is sown a natural body; it is raised a spiritual body*. If there is a natural body, there is also a spiritual body.
