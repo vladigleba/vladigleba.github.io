@@ -157,7 +157,7 @@ God is Lord of the Sabbath, the seventh day {% rf 'Exodus 20:11' %}. Notice that
 > Heaven and earth shall pass away: but *my words shall not pass away*.
 {% ct 'Luke 21:33' %}
 
-God is not a fallible man who makes mistakes, changes His mind, or alters His commandments. The Decalogue is a [transcript of His character](/posts/gospel/law.md#what-is-gods-law-a-reflection-of) and, as such, it can never be altered, which is good news, because it means His righteous and loving character will never change! Although some have claimed that His commandments have been altered—and the [Bible predicted](/posts/prophecy/change.md) such attempts—the truth remains that His commandments are unchangeable.
+God is not a fallible man who makes mistakes, changes His mind, or alters His commandments. The Decalogue is a [transcript of His character](/posts/gospel/law.md#what-is-gods-law-a-reflection-of) and, as such, it can never be altered, which is good news, because it means His righteous and loving character will never change! Although some have claimed that His commandments have been altered—and the [Bible predicted](/posts/basics/change.md) such attempts—the truth remains that His commandments are unchangeable.
 
 ## Will the Sabbath be kept in heaven?
 
