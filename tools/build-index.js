@@ -1,4 +1,4 @@
-// Usage: node build-index.js
+// usage: node build-index.js
 const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
@@ -248,7 +248,7 @@ function collectMarkdownFiles(dir, files = []) {
 }
 
 // generate search index from all posts
-function generateSearchIndex(postsDir = 'posts') {
+function generateSearchIndex(postsDir = path.join(__dirname, '..', 'posts')) {
   const miniSearchOptions = {
     // indexed fields for search relevance scoring
     fields: ['title', 'description', 'headingsText', 'paragraphsText', 'blockquotesText', 'listsText', 'footnotesText'],
@@ -312,7 +312,7 @@ function generateSearchIndex(postsDir = 'posts') {
 // run the search index generation process
 if (require.main === module) { // node build-index.js
   const { index, options, documents } = generateSearchIndex();
-  const outDir = path.join(__dirname, '_site', 'assets', 'js');
+  const outDir = path.join(__dirname, '..', '_site', 'assets', 'js');
 
   fs.mkdirSync(outDir, { recursive: true }); // ensure output directory exists
   const indexPath = path.join(outDir, 'search-index.json');
