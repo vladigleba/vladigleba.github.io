@@ -91,7 +91,7 @@ Baptism is a beautiful and powerful symbol of how Jesus’ death, burial, and re
 
 In addition to water baptism, every sincere Christian will also receive the baptism of the Holy Spirit, since full immersion in water is merely a visible manifestation of the inward immersion by the Holy Spirit. The good news is that God is more than willing to give His Spirit to anyone who asks {% rf 'Luke 11:13' %}. Those who desire to be transformed in life and character by the Spirit will receive Him, and He, in turn, will convict them of sin and bestow the righteousness of Jesus upon them {% rf 'John 16:8; Titus 3:3-7' %}. The baptism of the Holy Spirit is absolutely essential; without Him, we cannot change ourselves {% rf 'Jeremiah 13:23' %}.
 
-Evidence of receiving the baptism of the Spirit includes producing the fruit of the Spirit described in {% rf 'Galatians 5:22-23' false %}, as well as receiving [His gifts](/posts/basics/spirit.md#what-are-the-gifts-of-the-holy-spirit)—both of which enable us to be effective ambassadors for God {% rf '2 Corinthians 5:19-21' %}.
+Evidence of receiving the baptism of the Spirit includes producing the fruit of the Spirit described in {% rf 'Galatians 5:22-23' false %}, as well as receiving [His gifts](/posts/basics/spirit.md#what-are-the-gifts-of-the-spirit)—both of which enable us to be effective ambassadors for God {% rf '2 Corinthians 5:19-21' %}.
 
 ## How do I know if I’m ready for baptism?
 
