@@ -139,6 +139,8 @@ The elevation of human-made commandments and traditions above the truth of the B
 
 He also did not rest on Sunday. The Sabbath commemorates God’s rest on the seventh day, so Sunday cannot be the “new” Sabbath for the simple reason that He did not rest on that day. We never celebrate a friend’s birthday or a couple’s wedding anniversary on the day it did *not* occur, because these dates are historical, not arbitrary. Just as we cannot change the day we were born or married, we cannot change the day on which God rested.[^3]
 
+The fact that Jesus had to die on the cross to pay the penalty for our sins proves the immutability of God’s law; for if the Father would not change His law for His own Son in order to save Him from that humiliating, torturous death, how could He have suddenly changed it after His resurrection? The claim that God changed His law (or that it has been [done away with](/posts/gospel/law.md#does-that-mean-we-are-now-free-to-break-it)) is a denial of the cross.
+
 [^3]: The same principle applies to Christmas—the supposed birth of Christ on December 25. It is highly unlikely that He was born at that time, since shepherds would not have been out in the fields watching their sheep in the middle of winter. Like Sunday, the date was associated with the sun in paganism. Its placement shortly after the winter solstice—the shortest day of the year—is a significant clue that it originally celebrated the sun’s “rebirth,” as the days slowly began to grow longer.
 
 ## What else was changed besides the fourth commandment?

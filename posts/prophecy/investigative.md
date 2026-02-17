@@ -207,4 +207,6 @@ The judgment has been in session since 1844, and even though it may seem like a 
 
 - The Father and the Son want every person to be saved {% rf 'John 3:16; 13:1; 1 Timothy 2:3-4' %}; Satan is our only accusser {% rf 'Revelation 12:10' %}.
 
+- The blood Jesus shed for us on Calvary is our only hope, just as it was Israel’s only hope on the Day of Atonement. Nothing else can cleanse us from our sins.
+
 The judgment revolves around the atonement, being “at one” or reconciled with God, and Jesus is in the center of it all! He is the only One who can remove sin from our lives {% rf 'Acts 4:12' %}. If you haven’t done so, now is the time to get right with God and accept Jesus as Lord and Savior {% rf '2 Corinthians 6:2' %}. God is still offering forgiveness and mercy to those who come to His throne {% rf 'Hebrews 4:14-16; 7:25' %}, and Jesus is still knocking {% rf 'Revelation 3:20' %}.
