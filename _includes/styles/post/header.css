@@ -6,6 +6,7 @@
   width: 0;
   max-width: 100%;
   z-index: 9999;
+  background: rgba(255,238,88,1);
   display: none;
 }
 
