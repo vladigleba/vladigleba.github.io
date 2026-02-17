@@ -1,3 +1,14 @@
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  max-width: 100%;
+  z-index: 9999;
+  display: none;
+}
+
 article > header {
   display: inline-block;
   color: #fff;

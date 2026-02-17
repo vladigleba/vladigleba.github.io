@@ -2,6 +2,26 @@ if (document.body.classList.contains('js-enabled')) {
   document.addEventListener('DOMContentLoaded', () => {
 
     /*
+    article progress bar
+    */
+
+    //#region
+
+    const progressBar = document.querySelector('.progress-bar');
+    if (progressBar) {
+      const updateProgressBar = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+        progressBar.style.width = `${scrollPercent}%`;
+      };
+
+      window.addEventListener('scroll', updateProgressBar, { passive: true });
+      updateProgressBar();
+    }
+
+    //#endregion
+
+    /*
     collapse table of contents
     */
 

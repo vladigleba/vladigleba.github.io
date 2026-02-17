@@ -107,6 +107,10 @@
     --font-size: 19px;
   }
 
+  .progress-bar {
+    display: block;
+  }
+
   .unified-card {
     width: 70%;
   }

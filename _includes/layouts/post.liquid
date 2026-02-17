@@ -13,7 +13,10 @@ layout: layouts/base
   header h1, .content h2, figcaption, .number { color: {{ color }}; }
   header, .main-nav, .content figure::before { background: {{ color }}; }
   .toc li.active { border-left: 4px solid {{ color }}; }
+  .progress-bar { background: rgba(255,238,88,1); }
 </style>
+
+<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
 
 <article>
   <header>
