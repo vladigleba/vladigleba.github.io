@@ -1,4 +1,4 @@
-const CACHE_NAME = 'core-assets-1771306475041';
+const CACHE_NAME = 'core-assets-1771390520393';
 const FONT_CACHE = 'google-fonts-v1';
 const IMAGE_CACHE = 'images-v1';
 const CORE_ASSETS = [

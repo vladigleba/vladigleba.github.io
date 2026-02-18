@@ -87,6 +87,9 @@ Every piece of furniture points to Jesus and represents an aspect of His work on
 > For there is one God, and *one mediator between God and men, the man Christ Jesus*.
 {% ct '1 Timothy 2:15' %}
 
+> Having therefore, brethren, *boldness to enter into the holiest by the blood of Jesus*, by a new and living way, which he hath consecrated for us, through the veil, that is to say, his flesh; and *having a high priest over the house of God; let us draw near with a true heart in full assurance of faith*, having our hearts sprinkled from an evil conscience, and our bodies washed with pure water.
+{% ct 'Hebrews 10:19-22' %}
+
 The sprinkling of blood by the priest foreshadowed Jesus’ current ministry in the heavenly sanctuary that He started after rising from the dead and returning to heaven. He is now my High Priest, presenting His own blood for my sins so they can be forgiven when I confess them in His name {% rf '1 John 1:9' %}. In other words, the salvation process did not end at the cross but continues to this day in the heavenly sanctuary. Just like the priest was the mediator between God and sinners in the earthly sanctuary, Jesus is now our Mediator, the link between our human weakness and God’s divine power, reconciling us to God.
 
 ## What does this reconciliation entail?
@@ -146,10 +149,10 @@ The scapegoat was then led into the wilderness {% rf 'Leviticus 16:21-22' %} whe
 
 ## What did the Day of Atonement foreshadow?
 
-> It was therefore necessary that *the patterns of things in the heavens should be purified* with these; but the heavenly things themselves with better sacrifices than these.
-{% ct 'Hebrews 9:23' %}
+> It was therefore necessary that *the patterns of things in the heavens should be purified* with these; but the heavenly things themselves with better sacrifices than these. For Christ is not entered into the holy places made with hands, which are the figures of the true; but *into heaven itself, now to appear in the presence of God for us*.
+{% ct 'Hebrews 9:23-24' %}
 
-Since the earthly sanctuary and it’s services were a foreshadow of the heavenly sanctuary, the Day of Atonement was pointing to the [cleansing](/posts/prophecy/investigative.md) of the heavenly sanctuary by the real High Priest, Jesus Christ, the real Mediator between God and man {% rf '1 Timothy 2:5' %} who offers forgiveness and cleansing from sin to anyone who exercises faith in His substitutionary sacrifice.
+Since the earthly sanctuary and its services foreshadowed the heavenly sanctuary, the Day of Atonement was pointing to the [cleansing](/posts/prophecy/investigative.md) of the heavenly sanctuary by the real High Priest, Jesus Christ, the real Mediator between God and man {% rf '1 Timothy 2:5' %} who offers forgiveness and cleansing from sin to anyone who exercises faith in His substitutionary sacrifice.
 
 In the broadest aspect, the Day of Atonement lead to sin being eradicated from the camp of Israel, which pointed to a future time when sin would be eradicated from the universe forever. Then and only then will the atonement be completed and the universe restored to its pre-sin state. The story of the sanctuary, therefore, is far reaching and all-encompassing, covering the entire history of the human race, from the fall of Adam and Eve in Eden to the restoration of the fallen race in the new heavenly Eden!
 
@@ -158,8 +161,8 @@ In the broadest aspect, the Day of Atonement lead to sin being eradicated from t
 > Therefore, *in all things He had to be made like His brethren*, that He might be a merciful and faithful High Priest in things pertaining to God, to make propitiation for the sins of the people. *For in that He Himself has suffered, being tempted, He is able to aid those who are tempted*.
 {% ct 'Hebrews 2:17-18, NKJV' %}
 
-> For we do not have a High Priest who cannot sympathize with our weaknesses, but *was in all points tempted as we are*, yet without sin. Let us therefore come boldly to the throne of grace, that we may obtain mercy and find grace to help in time of need.
-{% ct 'Hebrews 4:15-16' %}
+> Seeing then that we have a great high priest, that is passed into the heavens, Jesus the Son of God, let us hold fast our profession. For we do not have a High Priest who cannot sympathize with our weaknesses, but *was in all points tempted as we are*, yet without sin. Let us therefore come boldly to the throne of grace, that we may obtain mercy and find grace to help in time of need.
+{% ct 'Hebrews 4:14-16' %}
 
 Because Jesus was born in human flesh, He experienced all of the temptations that we experience, and because He knows what it feels like to wrestle with sin, He is full of mercy and compassion toward anyone who comes to Him in confession and repentence. Because He successfully resisted temptation {% rf '1 John 3:5' %} and gained victory over sin, He is ever ready to help me overcome sin in my own life. He wants me to experience an abundant life {% rf 'John 10:10' %} that is free from the power of sin {% rf 'John 8:31-31' %}.
 

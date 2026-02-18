@@ -112,7 +112,7 @@ One author shared the following insight on praying Jesus’ model prayer:[^1]
 > Cast *thy burden* upon the LORD, and he shall sustain thee: He shall never suffer the righteous to be moved.
 {% ct 'Psalm 55:22' %}
 
-> *Come unto me*, all ye that labour and are heavy laden, and I will give you rest.
+> Come unto me, all ye that *labour and are heavy laden*, and I will give you rest.
 {% ct 'Matthew 11:28' %}
 
 Besides praying for His glory, His kingdom, and His will, God also cares about our personal lives and invites us to bring to Him anything that causes worry, trouble, or heaviness in our hearts. He is our loving heavenly Father who is deeply interested in the burdens we carry, and He wants to help!
@@ -146,7 +146,7 @@ Intercessory prayer, however, is not limited to those who are resistant to God. 
 > Now she that is a widow indeed, and desolate, trusteth in God, and *continueth in supplications and prayers night and day*. But she that liveth in pleasure is dead while she liveth.
 {% ct '1 Timothy 5:5-6' %}
 
-Praying for others often involves asking God for a change of heart, and this usually takes time. God honors everyone’s free will, but He also honors the prayers of others, so even if a person resists Him initially, there is still hope, as long as those praying are willing to persevere and be patient. It may take years—or even decades—for a change of heart to take place, but that is nothing compared with eternity.
+Praying for others often involves asking God for a change of heart, and this usually takes time. God honors everyone’s free will, but He also honors the prayers of others, so even if a person resists Him initially, there is still hope, as long as those praying are willing to persevere and be patient {% rf 'Psalm 40:1' %}. It may take years—or even decades—for a change of heart to take place, but that is nothing compared with eternity.
 
 All good things take time and effort, and prayer is no different. Rushed prayers often lack power because they don’t mean much to us, but prayers that produce results take time and effort. It would be wise for us to preface every important decision or action in our lives with much prayer. Jesus Himself sometimes prayed all night, such as before ordaining the twelve apostles {% rf 'Luke 6:12-13' %}. As our prayer life develops, spending time communing with our Father becomes a delight, no matter how long it takes.
 
@@ -179,7 +179,7 @@ So why is faith so important to God? Well, [it is the foundation](/posts/gospel/
 > And when he had consulted with the people, he appointed singers unto the LORD, and that should praise the beauty of holiness, as they went out before the army, and to say, Praise the LORD; for his mercy endureth for ever. And *when they began to sing and to praise*, the LORD set ambushments against the children of Ammon, Moab, and mount Seir, which were come against Judah; and *they were smitten*.
 {% ct '2 Chronicles 20:21-22' %}
 
-When Jesus raised Lazarus, He thanked God for hearing His prayer *before* the resurrection occurred. Likewise, when the Israelites went to war under Jehoshaphat, they praised God *before* the battle even began. Thanking God before we receive His answer is closely related to the concept we just discussed—faith; it is further evidence of a trusting confidence in His love. It is natural to give thanks for something already received, but giving thanks in advance requires faith. However, if we know our request is in harmony with His will, as revealed in the Bible, we can be confident that He will answer it. Knowing God’s will for us requires Bible study, but there is power in finding a promise in His Word that pertains to our request, presenting it to Him in prayer, and then claiming it—in the name of His beloved Son—by faith, and thanking Him for it. In Jesus, all of God’s promises are sure {% rf '2 Corinthians 1:20' %}.
+When Jesus raised Lazarus, He thanked God for hearing His prayer *before* the resurrection occurred. Likewise, when the Israelites went to war under Jehoshaphat, they praised God *before* the battle even began. Thanking God before we receive His answer is closely related to the concept we just discussed—faith; it is further evidence of a trusting confidence in His love. It is natural to give thanks for something already received, but giving thanks in advance requires faith. However, if we know our request is in harmony with His will, as revealed in the Bible, we can be confident that He will answer it {% rf 'John 15:7' %}. Knowing God’s will for us requires Bible study, but there is power in finding a promise in His Word that pertains to our request, presenting it to Him in prayer, and then claiming it—in the name of His beloved Son—by faith, and thanking Him for it. In Jesus, all of God’s promises are sure {% rf '2 Corinthians 1:20' %}.
 
 Obviously, how and when God answers our prayers is up to Him. He may say “Yes,” or He may say “Wait” if the timing is not quite right, thereby giving us a chance to practice patience. “No” is a perfectly legitimate answer too, even though it may not be what we wanted. In such cases, we can rest in the assurance that He sees the end from the beginning and always has our best interests in mind—knowing what is best for us better than we do ourselves.
 

@@ -123,7 +123,7 @@ In 1999, the Catholic and Lutheran churches issued a *Joint Declaration on the D
 
 The Bible is clear that it is not Christ’s works that save me, but His shed blood. In the *Joint Declaration*, the phrase “faith in Christ’s saving work” refers to the treasury of merit, which the Church dispenses to atone for sin; however, the Bible teaches that without the shedding of *blood* there is no remission of sin. The truth is Christ died for each person individually {% rf 'Galatians 2:20' %}. His death paid the penalty for my sins—the penalty that I was supposed to pay—while His righteous life satisfies the claims of the law upon me, namely, perfect righteousness, which my life could never meet {% rf 'Romans 5:9-10' %}.
 
-## What happens once I accept God’s free gift?
+## What happens once I accept God’s gift?
 
 > There is therefore now *no condemnation to them which are in Christ Jesus*, who walk not after the flesh, but after the Spirit. 
 {% ct 'Romans 8:1' %}
@@ -135,7 +135,7 @@ Once I turn away from my sins and accept Jesus as my Lord and Saviour, I’m no 
 > But as many as received him, to them gave he power *to become the sons of God*, even to them that believe on his name. 
 {% ct 'John 1:12' %}
 
-Christ’s death on the cross restored the rift that occured between God and the human race when Adam and Eve sinned, and we can now once again be called sons and daughters of God!
+Christ’s death on the cross restored the rift that occurred between God and the human race when Adam and Eve sinned, and we can now once again be called sons and daughters of God!
 
 ## Can I know I have eternal life?
 

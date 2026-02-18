@@ -30,8 +30,8 @@ Jesus established His church upon Himself—the Rock {% rf 'Psalm 62:6' %}. Paul
 > Then *had the churches rest* throughout all Judaea and Galilee and Samaria, and were edified; and walking in the fear of the Lord, and in the comfort of the Holy Ghost, were multiplied.
 {% ct 'Acts 9:31' %}
 
-> *Not forsaking the assembling of ourselves together*, as the manner of some is; but exhorting one another: and so much the more, as ye see the day approaching.
-{% ct 'Hebrews 10:25' %}
+> And let us consider one another to provoke unto love and to good works: *not forsaking the assembling of ourselves together*, as the manner of some is; but exhorting one another: and so much the more, as ye see the day approaching.
+{% ct 'Hebrews 10:24-25' %}
 
 After Jesus ascended to heaven, the church He established multiplied as it shared the truths it received from Christ with the world. Though it did not have an official denominational name, it was described as the body of Christ {% rf 'Colossians 1:18' %}. It was organized and included deacons, elders, and missionaries {% rf '1 Timothy 3:8-13; Titus 1:5-9; Acts 13:4-5' %}. Paul encouraged believers to attend church—a practice that’s in harmony with the example set by Jesus Himself, who faithfully attended church every Sabbath {% rf 'Luke 4:16' %}. Attending church offers opportunities to encourage others, brings the blessings of community, enables the gospel to be shared more effectively, and enhances one’s own spiritual journey.
 
