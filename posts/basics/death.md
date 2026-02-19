@@ -153,7 +153,9 @@ Since the spirit is simply the breath then it is not possible for the spirit to 
 > Shall *mortal man* be more just than God? shall a man be more pure than his maker?
 {% ct 'Job 4:17' %}
 
-Man is fully mortal; only God is immortal. This idea that the soul is immortal stems from the Garden of Eden where Satan told Eve she would surely not die {% rf 'Genesis 3:4' %}, even though God clearly said that sin brings death {% rf 'Genesis 2:17' %}.
+Man is fully mortal; only God is immortal. This idea that the soul is immortal stems from the Garden of Eden, where Satan told Eve she would surely not die {% rf 'Genesis 3:4' %}, even though God clearly said that sin brings death {% rf 'Genesis 2:17' %}.
+
+The greatest evidence that man is mortal, however, is found in {% rf 'John 3:16' false %}, which teaches that the Father gave Jesus, “that whosoever believeth in him should not perish, but have everlasting life.” In other words, only those who have Jesus will have everlasting life—*made* immortal—while everyone else will perish. To deny this is to deny the cross, which teaches plainly that eternal life is available only through the sacrifice of Christ. To claim that humans are born naturally immortal is to suggest that the cross is not the only way to everlasting life—a dangerous and preposterous conclusion.
 
 ## Who else will inherit immortality?
 
