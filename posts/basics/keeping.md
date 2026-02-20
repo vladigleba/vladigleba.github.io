@@ -30,6 +30,8 @@ The Sabbath was not made to be a burden, but a blessing to the human race. Those
 
 The Sabbath was instituted to provide rest and refuge in and through Christ {% rf 'Matthew 11:28-30' %}. It is a special weekly blessing for everyone who chooses to rest from their works by trusting in Him. We may have a long list of things to do, but we can still set them aside in order to have time to connect with God and acknowledge His supremacy in our lives. This rest from work extends to everyone “within our gates,” meaning those under our authority.
 
+The rest provided by the Sabbath extends even beyond the physical and into the spiritual. Jesus rested on the Sabbath in the tomb after providing full provision for our salvation on the cross, and every Sabbath we rest is a testament that we trust in that provision—that we are resting from our own works of the flesh {% rf 'Galatians 5:19-21' %} and in His works of righteousness, which are the fruit of the Spirit {% rf 'Galatians 5:22-24' %}. Keeping the Sabbath is an act of faith in His promise that if we hunger and thirst after His righteousness, we will be filled {% rf 'Matthew 5:6' %}.
+
 ## How did Jesus keep it?
 
 > And he came to Nazareth, where he had been brought up: and, as his custom was, *he went into the synagogue on the sabbath day*, and stood up for to read.
