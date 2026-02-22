@@ -115,7 +115,12 @@ One author shared the following insight on praying Jesus’ model prayer:[^1]
 > Come unto me, all ye that *labour and are heavy laden*, and I will give you rest.
 {% ct 'Matthew 11:28' %}
 
-Besides praying for His glory, His kingdom, and His will, God also cares about our personal lives and invites us to bring to Him anything that causes worry, trouble, or heaviness in our hearts. He is our loving heavenly Father who is deeply interested in the burdens we carry, and He wants to help!
+> Be anxious for nothing, but *in everything by prayer and supplication, with thanksgiving, let your requests be made known to God*; and the peace of God, which surpasses all understanding, will guard your hearts and minds through Christ Jesus.
+{% ct 'Philippians 4:6-7, NKJV' %}
+
+God cares about our personal lives, and besides praying for His glory, His kingdom, and His will, we are also invited to share with Him anything that causes worry, trouble, or heaviness in our hearts. He is our loving heavenly Father, deeply interested in the burdens we carry, and He wants—and is able—to help. He may not always intervene in the way we want, but He always intervenes in the way that is best {% rf 'Isaiah 55:8-9' %}.
+
+As we learn to lay our cares at His feet by faith, He will fill our minds with a peace that surpasses comprehension. Jesus, for example, was able to sleep on a pillow in the midst of a great storm that left His disciples terrified for their lives, yet He slept in perfect peace {% rf 'Mark 4:37-38' %}. Why? Because He knew His Father. He had a deep-rooted, unshakable trust in His Father, built on personal experience—trust that can be gained only through a consistent prayer life {% rf 'Mark 1:35; 6:46; Luke 6:12' %}.
 
 ## What about intercessory prayer?
 

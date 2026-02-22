@@ -153,7 +153,7 @@ Under this new arrangement, the pope not only assumed the imperial title of the 
 
 The prophecy of Daniel 2 is expanded in Daniel 7: just as the image in Daniel 2 has ten toes, so the fourth beast in Daniel 7 has ten horns. Eighteen distinct tribes played a role in the destruction of the Western Roman Empire,[^5] but exactly ten—no more, no less—remained when the Empire finally collapsed in AD 476, just as the Bible had predicted. Three of the ten [were destroyed](/posts/prophecy/antichrist.md#what-power-fits-these-characteristics), but the seven remaining would give rise to the modern nations of Europe: Visigoths (Spain), Franks (France), Alemanni (Germany), Suevi (Portugal), Anglo-Saxons (England), Burgundians (Switzerland), Lombards (Italy), Heruli (destroyed in 493 AD), Vandals (destroyed in 534 AD), and Ostrogoths (destroyed in 538 AD).
 
-[^5]: The eighteen tribes were the Alemanni, Alans, Angles, Burgundians, Franks, Gepids, Heruli, Huns, Jutes, Lombards, Ostrogoths, Rugians, Saxons, Sciri, Suevi, Thuringians, Vandals, and Visigoths.
+[^5]: The eighteen tribes were the Alemanni, Alans, Angles, Burgundians, Franks, Gepids, Heruli, Huns, Jutes, Lombards, Ostrogoths, Rugii, Saxons, Sciri, Suevi, Thuringi, Vandals, and Visigoths.
 
 ## Will national divisions be abolished?
 
