@@ -87,18 +87,23 @@ Every piece of furniture points to Jesus and represents an aspect of His work on
 > For there is one God, and *one mediator between God and men, the man Christ Jesus*.
 {% ct '1 Timothy 2:15' %}
 
+> But this man, after he had offered *one sacrifice for sins forever*, sat down on the right hand of God.
+{% ct 'Hebrews 10:12' %}
+
 > Having therefore, brethren, *boldness to enter into the holiest by the blood of Jesus*, by a new and living way, which he hath consecrated for us, through the veil, that is to say, his flesh; and *having a high priest over the house of God; let us draw near with a true heart in full assurance of faith*, having our hearts sprinkled from an evil conscience, and our bodies washed with pure water.
 {% ct 'Hebrews 10:19-22' %}
 
-The sprinkling of blood by the priest foreshadowed Jesus’ current ministry in the heavenly sanctuary that He started after rising from the dead and returning to heaven. He is now my High Priest, presenting His own blood for my sins so they can be forgiven when I confess them in His name {% rf '1 John 1:9' %}. In other words, the salvation process did not end at the cross but continues to this day in the heavenly sanctuary. Just like the priest was the mediator between God and sinners in the earthly sanctuary, Jesus is now our Mediator, the link between our human weakness and God’s divine power, reconciling us to God.
+> Wherefore he is able also to save them to the uttermost that come unto God by him, seeing *he ever liveth to make intercession for them*.
+{% ct 'Hebrews 7:25' %}
+
+The sprinkling of blood by the priest in the earthly sanctuary foreshadowed Jesus’ ongoing ministry in the heavenly sanctuary. Since His ascension, Jesus has served as our High Priest, presenting His own blood for each of our sins when we confess them in His name {% rf '1 John 1:9' %}, so that we may be forgiven. This demonstrates that the process of salvation did not end at the cross but continues to this day in heaven, where Jesus, our only Mediator, reconciles us to God through His blood {% rf 'John 14:6; Acts 4:12' %}.[^1]
+
+[^1]: Some Christians view Mary, the mother of Jesus, as a mediator or intercessor between God and humanity; however, this contradicts the Bible and undermines Christ’s all-sufficient sacrifice on the cross and His ongoing heavenly ministry. First, there is no need for another intercessor, because Christ’s sacrifice and intercession are able to save completely all who desire salvation. Nor does Mary possess the qualifications of a mediator, for she did not shed her blood to atone for our sins. Finally, the Bible teaches that Mary, like all the other canonized saints, [rests in death](/posts/basics/death.md) awaiting the resurrection. Our only hope, therefore, is the risen Christ, our High Priest, who is ever ready to intercede for all who come to the Father through Him.
 
 ## What does this reconciliation entail?
 
 > Seeing then that *we have a great high priest, that is passed into the heavens, Jesus the Son of God*, let us hold fast our profession.
 {% ct 'Hebrews 4:14' %}
-
-> Wherefore he is able also to save them to the uttermost that come unto God by him, seeing *he ever liveth to make intercession for them*.
-{% ct 'Hebrews 7:25' %}
 
 > Being justified freely by his grace through the redemption that is in Christ Jesus: whom God hath set forth to be a propitiation through faith in his blood, *to declare his righteousness for the remission of sins that are past*, through the forbearance of God.
 {% ct 'Romans 3:24-25' %}
