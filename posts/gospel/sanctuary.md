@@ -81,14 +81,11 @@ Every piece of furniture points to Jesus and represents an aspect of His work on
 
 ## Do I have a High Priest today?
 
-> But *Christ being come an high priest* of good things to come, by a greater and more perfect tabernacle, not made with hands, that is to say, not of this building; neither by the blood of goats and calves, but *by his own blood he entered in once into the holy place, having obtained eternal redemption for us*.
+> But *Christ being come a high priest* of good things to come, by a greater and more perfect tabernacle, not made with hands, that is to say, not of this building; neither by the blood of goats and calves, but *by his own blood he entered in once into the holy place, having obtained eternal redemption for us*.
 {% ct 'Hebrews 9:11-12' %}
 
 > For there is one God, and *one mediator between God and men, the man Christ Jesus*.
 {% ct '1 Timothy 2:15' %}
-
-> But this man, after he had offered *one sacrifice for sins forever*, sat down on the right hand of God.
-{% ct 'Hebrews 10:12' %}
 
 > Having therefore, brethren, *boldness to enter into the holiest by the blood of Jesus*, by a new and living way, which he hath consecrated for us, through the veil, that is to say, his flesh; and *having a high priest over the house of God; let us draw near with a true heart in full assurance of faith*, having our hearts sprinkled from an evil conscience, and our bodies washed with pure water.
 {% ct 'Hebrews 10:19-22' %}
@@ -96,7 +93,10 @@ Every piece of furniture points to Jesus and represents an aspect of His work on
 > Wherefore he is able also to save them to the uttermost that come unto God by him, seeing *he ever liveth to make intercession for them*.
 {% ct 'Hebrews 7:25' %}
 
-The sprinkling of blood by the priest in the earthly sanctuary foreshadowed Jesus’ ongoing ministry in the heavenly sanctuary. Since His ascension, Jesus has served as our High Priest, presenting His own blood for each of our sins when we confess them in His name {% rf '1 John 1:9' %}, so that we may be forgiven. This demonstrates that the process of salvation did not end at the cross but continues to this day in heaven, where Jesus, our only Mediator, reconciles us to God through His blood {% rf 'John 14:6; Acts 4:12' %}.[^1]
+The sprinkling of blood by the priest in the earthly sanctuary foreshadowed Christ’s ongoing ministry in the heavenly sanctuary. Since His ascension, Jesus has served as our High Priest, presenting His own blood on our behalf when we confess our sins in His name {% rf '1 John 1:9' %}, granting us forgiveness *and* power to overcome them. This shows that the work of salvation did not end at the cross but continues to this day in heaven, where Jesus, our only Mediator, reconciles us to God through His blood {% rf 'John 14:6; Acts 4:12' %}.[^1]
+
+> It was our sins that nailed Jesus to the cross. 1 Peter 2:2-1. And it was our sins that He bore in the garden of Gethsemane and in the wilderness of temptation. *It was our sins (He had none of His own) for deliverance from which He spent whole nights in prayer.* But He “was heard in that He feared.” Ah, thank God for that. … Jesus of Nazareth, in the flesh, in the weakest human flesh, with your and my sins upon Him, was delivered from them, He gained the victory over them. Isn’t that joyful news? Believe it, accept it, and pass it to others. … “He ever lives to make intercession” for us. That is, *He prays for us now as He did when on earth; and as surely as He was heard then, so surely will He be heard now.*
+{% ct 'Waggoner, E.J. Studies in the Book of Hebrews (Function). Kindle Edition.' %}
 
 [^1]: Some Christians view Mary, the mother of Jesus, as a mediator or intercessor between God and humanity; however, this contradicts the Bible and undermines Christ’s all-sufficient sacrifice on the cross and His ongoing heavenly ministry. First, there is no need for another intercessor, because Christ’s sacrifice and intercession are able to save completely all who desire salvation. Nor does Mary possess the qualifications of a mediator, for she did not shed her blood to atone for our sins. Finally, the Bible teaches that Mary, like all the other canonized saints, [rests in death](/posts/basics/death.md) awaiting the resurrection. Our only hope, therefore, is the risen Christ, our High Priest, who is ever ready to intercede for all who come to the Father through Him.
 
