@@ -143,7 +143,7 @@ Not only does God know the future, but He also [reveals it beforehand](/posts/pr
 
 But God’s foreknowledge has a personal dimension as well, for He knows our individual futures and prepares and equips us to face whatever trials may come our way. More than that, He walks with us through them {% rf 'Isaiah 43:1-2' %}, just as He walked through the fiery furnace with the three Hebrew worthies {% rf 'Daniel 3:22-25' %}, and just as He was in the boat with His disciples during the storm on the sea {% rf 'Mark 4:37-40' %}. As long as Jesus was with them, they were safe, for it was impossible for Him who made the sea to perish in it.[^4] When storms come into our own lives, we can rest in the promise that He will never allow us to be tempted beyond what we can bear {% rf '1 Corinthians 10:13' %}, and that whatever He does allow, He will ultimately work out for our good {% rf 'Romans 8:28' %}.
 
-[^4]: Waggoner, E. J. [“Carest Thou Not That We Perish?”](https://m.egwwritings.org/en/book/1544.683#683) *The Signs of the Times*, vol. 17, no. 38, 21 Sept. 1891.
+[^4]: Waggoner, Ellet Joseph. [“Carest Thou Not That We Perish?”](https://m.egwwritings.org/en/book/1544.683#683) *The Signs of the Times*, vol. 17, no. 38, 21 Sept. 1891.
 
 ## What comfort does this bring?
 
