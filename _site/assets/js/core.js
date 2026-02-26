@@ -2,21 +2,22 @@ if (document.body.classList.contains('js-enabled')) {
   document.addEventListener('DOMContentLoaded', () => {
 
     /*
-    article progress bar
+    nav progress indicator
     */
 
     //#region
 
-    const progressBar = document.querySelector('.progress-bar');
-    if (progressBar) {
-      const updateProgressBar = () => {
+    const navUl = document.querySelector('.main-nav ul');
+    const article = document.querySelector('article');
+    if (navUl && article) {
+      const updateProgress = () => {
         const scrollable = document.documentElement.scrollHeight - window.innerHeight;
         const scrollPercent = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
-        progressBar.style.width = `${scrollPercent}%`;
+        navUl.style.setProperty('--scroll-progress', scrollPercent);
       };
 
-      window.addEventListener('scroll', updateProgressBar, { passive: true });
-      updateProgressBar();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress();
     }
 
     //#endregion

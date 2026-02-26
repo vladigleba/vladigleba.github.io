@@ -57,6 +57,18 @@
   display: flex;
   gap: 7px;
   background-color: var(--light-blue-background);
+  position: relative;
+  overflow: hidden;
+}
+
+.main-nav ul::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: calc(var(--scroll-progress, 0) * 1%);
+  background: white;
 }
 
 .main-nav li {
@@ -129,7 +141,7 @@
         "name": "Vladi Gleba"
       },
       "datePublished": "2022-11-11T00:00:00.000Z",
-      "dateModified": "2026-02-25T05:54:10.000Z",
+      "dateModified": "2026-02-25T05:58:53.000Z",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://vladigleba.com/gospel/sanctuary/"
@@ -208,7 +220,7 @@
   Gospel <span>•</span>
   19 min read <span>•</span>
   <b class="post-last-updated">
-    Updated <time datetime="2026-02-25T05:54:10.000Z">Feb 24, 2026</time>
+    Updated <time datetime="2026-02-25T05:58:53.000Z">Feb 24, 2026</time>
   </b>
 </p>
 
@@ -465,7 +477,7 @@
       </div>
       
       <div class="last-updated">
-        Last updated <time datetime="2026-02-24T21:58:22.205Z">February 24, 2026</time>
+        Last updated <time datetime="2026-02-25T21:27:34.483Z">February 25, 2026</time>
       </div>
     <p></p>
   </div>
