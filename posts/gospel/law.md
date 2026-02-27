@@ -143,7 +143,9 @@ God knows me better than I know myself, and He knows if I truly love Him. The Te
 > I delight to do thy will, O my God: yea, *thy law is within my heart*.
 {% ct 'Psalm 40:8' %}
 
-God promises to help me keep His commandments because He knows that I cannot overcome sin myself. But He does not force Himself on anyone, so I must ask, and the promise is He will write His law in my heart and mind, enabling me to walk in His commandments through the power of the Holy Spirit dwelling in me! The only one who can create a new heart in me is the One who created the world in Eden. If I take Him at His word, believing that He will keep this promise, He will do it according to my faith {% rf 'Matthew 9:29' %}, making it a delight for me to do His will {% rf 'Psalm 40:8' %}!
+God promises to enable me to keep His commandments because He knows that I cannot overcome sin myself. But He does not force Himself on anyone, so I must ask, and the promise is that He will write His law in my heart and mind, enabling me to walk in His commandments through the power of the Holy Spirit dwelling in me. This is the gospel, and the entire Decalogue [is simply its proclamation](/posts/gospel/god.md#does-he-still-create-by-his-word), for it begins by declaring what God has already done in Christ and proceeds to spell out the results in action.
+
+The battle against sin is supernatural, and it can be fought only by the supernatural power of God. The only One who can create a new heart in me out of nothing is the One who created the heaven and the earth out of nothing. If I take Him at His word, He will do it according to my faith {% rf 'Matthew 9:29' %}, and doing His will will become a delight {% rf 'Psalm 40:8' %}.
 
 ## What are the Ten Commandments?
 
@@ -296,7 +298,7 @@ The fact that Jesus had to die on the cross to pay for the penalty of lawlessnes
 > [*Law is everlasting:*] The works of his hands are verity and judgment; all his commandments are sure. They stand fast *for ever and ever*, and are done in truth and uprightness.
 {% ct 'Psalms 111:7-8' %}
 
-The Ten Commandments are a reflection of God’s character in written form, and Jesus demonstrated what it  looks like in human form. Through the law and Jesus’ life we may better comprehend God’s character. Because God cannot change, neither can His law.
+The Ten Commandments are a reflection of God’s character in written form, and Jesus demonstrated what it looks like in human form. Through the law and Jesus’ life we may better comprehend God’s character. Because God cannot change, neither can His law.
 
 ## How does the devil feel about keeping God’s law?
 
