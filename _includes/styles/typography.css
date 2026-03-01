@@ -54,11 +54,11 @@ article > header p {
 .list p,
 .switch-label,
 .stats,
-.unified-card .details,
 .meta {
   font-size: 18px;
 }
 
+.unified-card .details,
 .footnotes {
   font-size: 17px;
 }

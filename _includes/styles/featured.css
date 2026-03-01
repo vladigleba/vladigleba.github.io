@@ -44,11 +44,12 @@
 
 .unified-card .description {
   line-height: 1.4;
+  font-weight: 500;
 }
 
 .unified-card .description,
 .unified-card .details {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .unified-card .details {
