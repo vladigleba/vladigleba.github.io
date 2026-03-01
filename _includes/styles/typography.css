@@ -17,12 +17,12 @@ article > header h1 {
   font-size: 40px;
 }
 
+.unified-card .title,
 .content h2 {
   font-size: 34px;
   letter-spacing: -0.5px;
 }
 
-.unified-card .title,
 .list a {
   font-size: 32px;
 }
