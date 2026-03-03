@@ -2,6 +2,31 @@ if (document.body.classList.contains('js-enabled')) {
   document.addEventListener('DOMContentLoaded', () => {
 
     /*
+    utils
+    */
+
+    //#region
+
+    const storageGet = (key) => { 
+      try { return localStorage.getItem(key); } 
+      catch { return null; } 
+    };
+    const storageSet = (key, val) => { 
+      try { localStorage.setItem(key, val); } 
+      catch {} 
+    };
+
+    function announceToLiveRegion(message) {
+      const liveRegion = document.getElementById('site-live');
+      if (liveRegion) {
+        liveRegion.textContent = '';
+        liveRegion.textContent = message;
+      }
+    }
+
+    //#endregion
+
+    /*
     nav progress indicator
     */
 
@@ -45,24 +70,13 @@ if (document.body.classList.contains('js-enabled')) {
 
     //#region
 
-    function announceToLiveRegion(message) {
-      const liveRegion = document.getElementById('site-live');
-      if (liveRegion) {
-        liveRegion.textContent = '';
-        liveRegion.textContent = message;
-      }
-    }
-
     document.querySelectorAll('.anchor-link').forEach(link => {
       const copyHandler = (e) => {
         e.preventDefault();
 
         const fullUrl = `${window.location.origin}${window.location.pathname}${link.getAttribute('href')}`;
         navigator.clipboard.writeText(fullUrl).then(() => {
-
-            // visual feedback
-            const existing = link.querySelector('.copy-toast');
-            if (!existing) {
+            if (!link.querySelector('.copy-toast')) {
               const popup = document.createElement('div');
               popup.className = 'copy-toast';
               popup.innerHTML = `
@@ -73,13 +87,9 @@ if (document.body.classList.contains('js-enabled')) {
               link.appendChild(popup);
               setTimeout(() => popup.remove(), 2500);
             }
-
-            // announce to assistive tech
             announceToLiveRegion('Link copied');
           })
-          .catch(err => {
-            console.error('Error copying text: ', err);
-          });
+          .catch(err => console.error('Error copying text: ', err));
       };
 
       link.addEventListener('click', copyHandler);
@@ -103,10 +113,7 @@ if (document.body.classList.contains('js-enabled')) {
 
     // helper to set active state on a TOC link
     const setActiveTocItem = (link) => {
-      const existing = document.querySelector('.toc a[aria-current="true"]');
-      if (existing && existing !== link) {
-        existing.removeAttribute('aria-current');
-      }
+      document.querySelector('.toc a[aria-current="true"]')?.removeAttribute('aria-current');
       
       // remove previous active class from all items
       document.querySelectorAll('.toc li').forEach((li) => li.classList.remove('active'));
@@ -118,49 +125,34 @@ if (document.body.classList.contains('js-enabled')) {
       }
     };
 
-    // observer
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const id = entry.target.id;
-          const activeLink = document.querySelector(`.toc a[href="#${id}"]`);
-          if (activeLink) {
-            setActiveTocItem(activeLink);
-          }
+          const activeLink = document.querySelector(`.toc a[href="#${entry.target.id}"]`);
+          if (activeLink) setActiveTocItem(activeLink);
         }
       });
-    },
-    { 
-      rootMargin: '-10% 0px -70% 0px', 
-      threshold: 1 
-    });
+    }, { rootMargin: '-10% 0px -70% 0px', threshold: 1 });
 
-    const headings = document.querySelectorAll('.content h2, .content h3, .content h4');
-    headings.forEach((heading) => observer.observe(heading));
+    document.querySelectorAll('.content h2, .content h3, .content h4').forEach((h) => observer.observe(h));
     
     // add click listeners to TOC links to mark them as active
     document.querySelectorAll('.toc a[href^="#"]').forEach((link) => {
-      link.addEventListener('click', () => {
-        setActiveTocItem(link);
-      });
+      link.addEventListener('click', () => setActiveTocItem(link));
     });
 
     // focus the referenced element referenced and update aria-current on TOC links
     const focusFragmentTarget = () => {
       const hash = location.hash;
       if (!hash) return;
-      const id = hash.slice(1);
-      const target = document.getElementById(id);
+      const target = document.getElementById(hash.slice(1));
       if (!target) return;
 
-      try {
-        target.focus({ preventScroll: true });
-      } catch (e) {
-        target.focus();
-      }
+      try { target.focus({ preventScroll: true }); } 
+      catch { target.focus(); }
 
-      const tocLink = document.querySelector(`.toc a[href="#${id}"]`);
-      setActiveTocLink(tocLink);
+      const tocLink = document.querySelector(`.toc a[href="${hash}"]`);
+      setActiveTocItem(tocLink);
     };
 
     // handle initial load and subsequent hash changes (clicks/back/forward)
@@ -170,7 +162,7 @@ if (document.body.classList.contains('js-enabled')) {
     //#endregion
 
     /*
-    popup generation (verses and footnotes)
+    popup (verses and footnotes)
     */
 
     //#region
@@ -189,17 +181,17 @@ if (document.body.classList.contains('js-enabled')) {
     // close popup helper
     const closePopup = () => {
       if (!popup.classList.contains('show')) return;
+
       popup.classList.remove('show');
       popup.setAttribute('aria-hidden', 'true');
+      
       // restore focus to previously focused element
-      try { _lastFocused?.focus(); } catch (e) {}
+      try { _lastFocused?.focus(); } catch {}
     };
 
     // allow closing with Esc key for keyboard users
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' || e.key === 'Esc') {
-        closePopup();
-      }
+      if (e.key === 'Escape' || e.key === 'Esc') closePopup();
     });
 
     // helper to position and show popup
@@ -209,30 +201,38 @@ if (document.body.classList.contains('js-enabled')) {
 
       // position near trigger
       const rect = trigger.getBoundingClientRect();
-      let left = rect.left + window.scrollX;
-      const top = rect.bottom + window.scrollY + 10;
-      const popupWidth = popup.offsetWidth || 350; // estimated default
-      const maxLeft = window.innerWidth - popupWidth - 10; // 10px margin
-      if (left > maxLeft) left = maxLeft;
-
-      popup.style.top = `${top}px`;
+      const left = Math.min(
+        rect.left + window.scrollX,
+        window.innerWidth - (popup.offsetWidth || 350) - 10
+      );
+      popup.style.top = `${rect.bottom + window.scrollY + 10}px`;
       popup.style.left = `${left}px`;
 
       // set aria label depending on trigger
-      let label = 'Popup';
-      if (trigger.classList.contains('verse-link')) label = 'Verse';
-      else if (trigger.closest && trigger.closest('.footnote-ref')) label = 'Footnote';
+      const label = trigger.classList.contains('verse-link') ? 'Verse'
+        : trigger.closest?.('.footnote-ref') ? 'Footnote'
+        : 'Popup';
       popup.setAttribute('aria-label', label);
 
       // show and make accessible
       _lastFocused = document.activeElement;
       popup.classList.add('show');
       popup.setAttribute('aria-hidden', 'false');
-      try { popup.focus({ preventScroll: true }); } catch (e) { popup.focus(); }
+
+      try { popup.focus({ preventScroll: true }); } 
+      catch { popup.focus(); }
+      
       announceToLiveRegion(`${label} opened`);
     };
 
-    // verse popup handling
+    // close on outside click
+    document.addEventListener('click', (e) => {
+      if (!popup.contains(e.target) && !e.target.closest('.verse-link') && !e.target.closest('.footnote-ref')) {
+        popup.classList.remove('show');
+      }
+    });
+
+    // verse popups
     document.querySelectorAll('.verse-link').forEach(link => {
       link.addEventListener('click', async (e) => {
         e.preventDefault();
@@ -244,17 +244,10 @@ if (document.body.classList.contains('js-enabled')) {
             const response = await fetch(`https://bible-api.com/${encodeURIComponent(reference)}?translation=kjv`);
             const data = await response.json();
             
-            // format verses with verse numbers
-            let formattedText;
-            if (data.verses && data.verses.length > 1) {
-              // multi-verse passage: show verse numbers
-              formattedText = data.verses.map(v => 
-                `<b>${v.verse}</b> ${v.text.trim()}`
-              ).join(' ');
-            } else {
-              formattedText = data.text.trim(); // single verse: no verse number
-            }
-            
+            // format verses with verse numbers if multiple, otherwise just show text
+            const formattedText = data.verses?.length > 1
+              ? data.verses.map(v => `<b>${v.verse}</b> ${v.text.trim()}`).join(' ')
+              : data.text.trim();
             link.dataset.verse = `<strong>${reference}</strong><br>${formattedText}`;
             link.dataset.loaded = 'true';
             announceToLiveRegion(`Verse loaded: ${reference}`);
@@ -268,42 +261,22 @@ if (document.body.classList.contains('js-enabled')) {
       });
     });
 
-    // close popup on outside click
-    document.addEventListener('click', (e) => {
-      const target = e.target;
-      if (!popup.contains(target) && !target.closest('.verse-link') && !target.closest('.footnote-ref')) {
-        popup.classList.remove('show');
-      }
-    });
-
-    // footnote popup handling
+    // footnote popups
     document.querySelectorAll('.footnote-ref a').forEach(link => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
 
         // resolve footnote id from href (e.g. #fn1)
-        const href = link.getAttribute('href') || '';
-        const id = href.charAt(0) === '#' ? href.slice(1) : href;
+        const id = (link.getAttribute('href') || '').replace(/^#/, '');
         const foot = document.getElementById(id);
 
-        let html = '';
+        let html;
         if (foot) {
           // clone so we can remove the backref without touching original
           const clone = foot.cloneNode(true);
-          const back = clone.querySelector('.footnote-backref');
-          if (back) back.remove();
-   
-          // get content
-          const p = clone.querySelector('p');
-          const contentHtml = p.innerHTML.trim();
-
-          // extract footnote number from id
-          const numMatch = id.match(/(\d+)/);
-          const num = numMatch ? numMatch[1] : '';
-          html = `
-            <strong>Footnote ${num}</strong><br>
-            ${contentHtml}<br>
-            <a href="#" class="see-all-footnotes">Go to all footnotes</a>`;
+          clone.querySelector('.footnote-backref')?.remove();
+          const num = id.match(/(\d+)/)?.[1] ?? '';
+          html = `<strong>Footnote ${num}</strong><br>${clone.querySelector('p').innerHTML.trim()}<br><a href="#" class="see-all-footnotes">Go to all footnotes</a>`;
           announceToLiveRegion(`Footnote ${num} opened`);
         } else {
           html = '<strong>Footnote</strong><br>Not found.';
@@ -314,7 +287,7 @@ if (document.body.classList.contains('js-enabled')) {
       });
     });
 
-    // handle "see all footnotes" links
+    // "see all footnotes" handler
     document.addEventListener('click', (e) => {
       if (e.target.classList.contains('see-all-footnotes')) {
         e.preventDefault();
@@ -379,7 +352,6 @@ if (document.body.classList.contains('js-enabled')) {
 
     //#region
 
-    // posts view toggle (series vs standalone)
     const POSTS_VIEW_KEY = 'postsViewPreference';
     const postsViewSwitch = document.getElementById('posts-view-switch');
     const STANDALONE = 'standalone';
@@ -395,8 +367,8 @@ if (document.body.classList.contains('js-enabled')) {
       standaloneList.style.display = isStandalone ? '' : 'none';
 
       // ensure content is removed from the accessibility tree when hidden
-      seriesList.setAttribute('aria-hidden', isStandalone ? 'true' : 'false');
-      standaloneList.setAttribute('aria-hidden', isStandalone ? 'false' : 'true');
+      seriesList.setAttribute('aria-hidden', String(isStandalone));
+      standaloneList.setAttribute('aria-hidden', String(!isStandalone));
 
       // update checked state (checked = grouped by series)
       if (postsViewSwitch) postsViewSwitch.checked = !isStandalone;
