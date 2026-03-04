@@ -114,7 +114,7 @@ if (document.body.classList.contains('js-enabled')) {
     // helper to set active state on a TOC link
     const setActiveTocItem = (link) => {
       document.querySelector('.toc a[aria-current="true"]')?.removeAttribute('aria-current');
-      
+
       // remove previous active class from all items
       document.querySelectorAll('.toc li').forEach((li) => li.classList.remove('active'));
       
@@ -135,7 +135,7 @@ if (document.body.classList.contains('js-enabled')) {
     }, { rootMargin: '-10% 0px -70% 0px', threshold: 1 });
 
     document.querySelectorAll('.content h2, .content h3, .content h4').forEach((h) => observer.observe(h));
-    
+
     // add click listeners to TOC links to mark them as active
     document.querySelectorAll('.toc a[href^="#"]').forEach((link) => {
       link.addEventListener('click', () => setActiveTocItem(link));
@@ -150,7 +150,7 @@ if (document.body.classList.contains('js-enabled')) {
 
       try { target.focus({ preventScroll: true }); } 
       catch { target.focus(); }
-
+      
       const tocLink = document.querySelector(`.toc a[href="${hash}"]`);
       setActiveTocItem(tocLink);
     };
@@ -221,7 +221,7 @@ if (document.body.classList.contains('js-enabled')) {
 
       try { popup.focus({ preventScroll: true }); } 
       catch { popup.focus(); }
-      
+
       announceToLiveRegion(`${label} opened`);
     };
 
@@ -243,7 +243,7 @@ if (document.body.classList.contains('js-enabled')) {
           try {
             const response = await fetch(`https://bible-api.com/${encodeURIComponent(reference)}?translation=kjv`);
             const data = await response.json();
-            
+
             // format verses with verse numbers if multiple, otherwise just show text
             const formattedText = data.verses?.length > 1
               ? data.verses.map(v => `<b>${v.verse}</b> ${v.text.trim()}`).join(' ')
@@ -309,40 +309,29 @@ if (document.body.classList.contains('js-enabled')) {
     //#region
 
     // show relative date if within last 7 days
-    const updateFooterTime = () => {
-      const updateTimeInContainer = (container) => {
-        if (!container) return;
-        const timeEl = container.querySelector('time[datetime]');
-        if (!timeEl) return;
-        const dateStr = timeEl.getAttribute('datetime');
-        if (!dateStr) return;
-        const date = new Date(dateStr);
-        if (isNaN(date)) return;
+    const updateRelativeDate = (container) => {
+      if (!container) return;
+      const timeEl = container.querySelector('time[datetime]');
+      if (!timeEl) return;
+      const date = new Date(timeEl.getAttribute('datetime'));
+      if (isNaN(date)) return;
 
-        const now = new Date();
-        now.setHours(0,0,0,0);
-        date.setHours(0,0,0,0);
-        const diffDays = Math.round((now - date) / (1000 * 60 * 60 * 24));
+      const now = new Date();
+      now.setHours(0, 0, 0, 0);
+      date.setHours(0, 0, 0, 0);
+      const diffDays = Math.round((now - date) / (1000 * 60 * 60 * 24));
 
-        if (diffDays === 0) {
-          timeEl.textContent = 'today';
-        } else if (diffDays === 1) {
-          timeEl.textContent = 'yesterday';
-        } else if (diffDays > 1 && diffDays <= 7) {
-          timeEl.textContent = `${diffDays} days ago`;
-        }
-      };
-
-      updateTimeInContainer(document.querySelector('footer .last-updated'));
-      updateTimeInContainer(document.querySelector('header .post-last-updated'));
-
-      // remove spaces
-      const heyEl = document.querySelector('footer .hey');
-      if (heyEl) {
-        heyEl.textContent = heyEl.textContent.replace(/\s+/g, '');
-      }
+      if (diffDays === 0) timeEl.textContent = 'today';
+      else if (diffDays === 1) timeEl.textContent = 'yesterday';
+      else if (diffDays <= 7) timeEl.textContent = `${diffDays} days ago`;
     };
-    updateFooterTime();
+
+    updateRelativeDate(document.querySelector('footer .last-updated'));
+    updateRelativeDate(document.querySelector('header .post-last-updated'));
+
+    // remove spaces
+    const heyEl = document.querySelector('footer .hey');
+    if (heyEl) heyEl.textContent = heyEl.textContent.replace(/\s+/g, '');
 
     //#endregion
 
@@ -365,7 +354,7 @@ if (document.body.classList.contains('js-enabled')) {
       const isStandalone = view === STANDALONE;
       seriesList.style.display = isStandalone ? 'none' : '';
       standaloneList.style.display = isStandalone ? '' : 'none';
-
+      
       // ensure content is removed from the accessibility tree when hidden
       seriesList.setAttribute('aria-hidden', String(isStandalone));
       standaloneList.setAttribute('aria-hidden', String(!isStandalone));
@@ -375,27 +364,17 @@ if (document.body.classList.contains('js-enabled')) {
 
       // announce change for screen reader users
       announceToLiveRegion(isStandalone ? 'Showing standalone posts' : 'Showing posts grouped by series');
-
     };
 
     // init from localStorage (default to series grouping)
-    const stored = (() => {
-      try { 
-        return localStorage.getItem(POSTS_VIEW_KEY); 
-      } catch (e) { 
-        return null; 
-      }
-    })();
-    applyView(stored === STANDALONE ? STANDALONE : SERIES);
+    applyView(storageGet(POSTS_VIEW_KEY) === STANDALONE ? STANDALONE : SERIES);
 
     // add event listener
-    if (postsViewSwitch) {
-      postsViewSwitch.addEventListener('change', (e) => {
-        const view = e.target.checked ? SERIES : STANDALONE;
-        try { localStorage.setItem(POSTS_VIEW_KEY, view); } catch (err) {}
-        applyView(view);
-      });
-    }
+    postsViewSwitch?.addEventListener('change', (e) => {
+      const view = e.target.checked ? SERIES : STANDALONE;
+      storageSet(POSTS_VIEW_KEY, view);
+      applyView(view);
+    });
 
     //#endregion
 
@@ -405,107 +384,57 @@ if (document.body.classList.contains('js-enabled')) {
 
     //#region
 
-    const SELECTOR = '#posts-sort-select';
-    const SWITCH_ID = 'posts-view-switch';
-    const STANDALONE_LIST = '.standalone-list';
-    const SORT_CONTAINER = '.posts-sort';
-    const STORAGE_KEY = 'posts-sort';
+    const parseAttrInt = (el, attr) => { 
+      const n = parseInt(el.getAttribute(attr), 10);
+      return isNaN(n) ? 0 : n; 
+    };
+    const parseAttrDate = (el, attr) => { 
+      const t = Date.parse(el.getAttribute(attr)); 
+      return isNaN(t) ? 0 : t; 
+    };
 
-    function parseUpdated(el) {
-      const s = el.getAttribute('data-updated');
-      if (!s) return 0;
-      const t = Date.parse(s);
-      return isNaN(t) ? 0 : t;
-    }
+    const SORT_COMPARATORS = {
+      reading: (a, b) => parseAttrInt(a, 'data-reading-order') - parseAttrInt(b, 'data-reading-order'),
+      updated: (a, b) => parseAttrDate(b, 'data-updated') - parseAttrDate(a, 'data-updated'),
+      shortest: (a, b) => parseAttrInt(a, 'data-length') - parseAttrInt(b, 'data-length'),
+      longest:  (a, b) => parseAttrInt(b, 'data-length') - parseAttrInt(a, 'data-length'),
+    };
 
-    function parseLength(el) {
-      const s = el.getAttribute('data-length');
-      const n = parseInt(s, 10);
-      return isNaN(n) ? 0 : n;
-    }
-
-    function getOriginalIndex(el) {
-      const s = el.getAttribute('data-reading-order');
-      const n = parseInt(s, 10);
-      return isNaN(n) ? 0 : n;
-    }
-
-    function stableSort(nodes, compare) {
-      return Array.from(nodes).map((el, i) => ({ el, i })).sort((a, b) => {
-        const r = compare(a.el, b.el);
-        return r !== 0 ? r : a.i - b.i;
-      }).map(x => x.el);
-    }
-
-    function sortListBy(root, mode) {
-      const children = root.children;
-      const sorted = stableSort(children, (a, b) => {
-        switch (mode) {
-          case 'reading':
-            return getOriginalIndex(a) - getOriginalIndex(b);
-          case 'updated':
-            return parseUpdated(b) - parseUpdated(a); // most recent first
-          case 'shortest':
-            return parseLength(a) - parseLength(b);
-          case 'longest':
-            return parseLength(b) - parseLength(a);
-          default:
-            return 0;
-        }
-      });
+    const sortListBy = (root, mode) => {
+      const comparator = SORT_COMPARATORS[mode];
+      if (!comparator) return;
+      const sorted = Array.from(root.children).sort(comparator);
 
       // re-append in new order
       const frag = document.createDocumentFragment();
       sorted.forEach(n => frag.appendChild(n));
       root.appendChild(frag);
-    }
+    };
 
-    function initCardsSort() {
-      const select = document.querySelector(SELECTOR);
-      const switchEl = document.getElementById(SWITCH_ID) || postsViewSwitch;
-      const sortWrapper = document.querySelector(SORT_CONTAINER);
-      const list = document.querySelector(STANDALONE_LIST);
-      if (!select || !switchEl || !sortWrapper || !list) return;
+    const initCardsSort = () => {
+      const select = document.querySelector('#posts-sort-select');
+      if (!select || !postsViewSwitch || !standaloneList) return;
 
-      function updateSortControl() {
-        select.disabled = switchEl.checked; // disable select when grouped
-      }
-
+      const updateSortControl = () => { select.disabled = postsViewSwitch.checked; }; // disable select when grouped
       updateSortControl();
-      switchEl.addEventListener('change', updateSortControl);
+      postsViewSwitch.addEventListener('change', updateSortControl);
 
       // apply saved selection from localStorage if present and announce
-      const saved = (function () {
-        try {
-          return localStorage.getItem(STORAGE_KEY);
-        } catch (e) {
-          return null;
-        }
-      })();
-
+      const saved = storageGet('posts-sort');
       if (saved) {
         select.value = saved;
-        sortListBy(list, saved);
-
-        const sortType = select.options[select.selectedIndex].text;
-        announceToLiveRegion(`Sorted by ${sortType}`);
+        sortListBy(standaloneList, saved);
+        announceToLiveRegion(`Sorted by ${select.options[select.selectedIndex].text}`);
         updateSortControl(); // ensure visibility reflects current switch state
       }
 
       // sort on select change
       select.addEventListener('change', (e) => {
-        const val = e.target.value;
-        try {
-          localStorage.setItem(STORAGE_KEY, val);
-        } catch (err) {
-          /* ignore */
-        }
-        sortListBy(list, val);
-
-        const sortType = e.target.options[e.target.selectedIndex].text;
-        announceToLiveRegion(`Sorted by ${sortType}`);
+        storageSet('posts-sort', e.target.value);
+        sortListBy(standaloneList, e.target.value);
+        announceToLiveRegion(`Sorted by ${e.target.options[e.target.selectedIndex].text}`);
       });
-    }
+    };
 
     // Initialize cards sort logic now that DOMContentLoaded has fired
     try {
@@ -532,10 +461,8 @@ if (document.body.classList.contains('js-enabled')) {
     const SNIPPET_LENGTH = 165;
     const MAX_SNIPPETS_DISPLAY = 4;
 
-    // normalize apostrophes - convert straight to typographical
-    const normalizeApostrophes = (text) => {
-      return text.replace(/'/g, "’");
-    };
+    // normalize straight apostrophes to typographical
+    const normalizeApostrophes = (text) => text.replace(/'/g, "’");
 
     // escape HTML entities
     const escapeHtml = (text) => {
@@ -549,27 +476,19 @@ if (document.body.classList.contains('js-enabled')) {
       return text.replace(/[&<>"']/g, m => map[m]);
     };
 
-    // escape special regex characters in search terms
-    const createSearchPattern = (term) => {
-      const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      return escaped.replace(/'/g, "’");
-    };
+    // escape special regex characters, then normalize apostrophes
+    const createSearchPattern = (term) =>
+      term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/'/g, "’");
 
-    const createSearchRegex = pattern => new RegExp(pattern, 'gi');
-
+    const createSearchRegex = (pattern) => new RegExp(pattern, 'gi');
 
     // highlight search terms in text
     const highlightTerms = (text, searchPattern) => {
       if (!text || !searchPattern) return escapeHtml(text);
-
-      const escaped = escapeHtml(text);
-      return escaped.replace(
-        new RegExp(`(${searchPattern})`, 'gi'),
-        '<mark>$1</mark>'
-      );
+      return escapeHtml(text).replace(new RegExp(`(${searchPattern})`, 'gi'), '<mark>$1</mark>');
     };
 
-    // build a single snippet with boundaries and ellipsis
+    // build a single snippet with ellipsis prefix/suffix
     const buildSnippet = (text, matchIndex, length = SNIPPET_LENGTH) => {
       const halfLength = Math.floor(length / 2); // floor avoids fractional lengths
 
@@ -580,54 +499,36 @@ if (document.body.classList.contains('js-enabled')) {
       const originalEnd = end;
 
       // if character before snippet is non-whitespace, shift start back to nearest whitespace
-      while (start > 0 && !/\s/.test(text[start - 1])) {
-        start--;
-      }
-
+      while (start > 0 && !/\s/.test(text[start - 1])) start--;
       // extend end to include complete word
-      while (end < text.length && !/\s/.test(text[end])) {
-        end++;
-      }
-
-      // trim and collapse whitespace
-      const snippet = text
-        .substring(start, end)
-        .trim()
-        .replace(/\s+/g, ' ');
+      while (end < text.length && !/\s/.test(text[end])) end++;
 
       return {
-        text: snippet,
+        text: text.substring(start, end).trim().replace(/\s+/g, ' '),
         prefix: originalStart > 0 ? '...' : '',
         suffix: originalEnd < text.length ? '...' : ''
       };
     };
 
-    // limit number of snippets for display
-    const limitSnippetsForDisplay = (items, limit) => {
-      return {
+    // limit snippets for display
+    const limitSnippetsForDisplay = (items, limit) => ({
         display: items.slice(0, limit),
         hasMore: items.length > limit,
         hiddenCount: Math.max(0, items.length - limit)
-      };
-    };
+    });
 
-    // extract matching snippets from a single block with its ID
+    // extract highlighted snippets from a single block
     const extractSnippetsFromBlock = (block, searchPattern, targetLength = SNIPPET_LENGTH) => {
-      if (!block.text || !searchPattern) {
-        return [];
-      }
+      if (!block.text || !searchPattern) return [];
       
-      const snippets = [];
       const regex = createSearchRegex(searchPattern);
-      let match;
       const matches = [];
+      let match;
 
       // collect all match positions first
-      while ((match = regex.exec(block.text)) !== null) {
-        matches.push(match.index);
-      }
+      while ((match = regex.exec(block.text)) !== null) matches.push(match.index);
       
-      // group overlapping matches
+      // group overlapping match windows
       const groups = [];
       for (const matchIndex of matches) {
         const snippetStart = Math.max(
@@ -652,72 +553,51 @@ if (document.body.classList.contains('js-enabled')) {
         }
       }
       
-      // build snippets from groups
-      for (const group of groups) {
-        // shift center around matches to provide better context
-        const firstMatch = group.matches[0];
-        const lastMatch = group.matches[group.matches.length - 1];
-        const centerPoint = Math.floor((firstMatch + lastMatch) / 2);
-        
-        const { text, prefix, suffix } = buildSnippet(
-          block.text, 
-          centerPoint,
-          targetLength
+      return groups.map(group => {
+        const centerPoint = Math.floor(
+          (group.matches[0] + group.matches[group.matches.length - 1]) / 2
         );
-        
-        const formatted = `${prefix}${text}${suffix}`;
-        const highlighted = highlightTerms(formatted, searchPattern);
-        
-        snippets.push({
-          text: highlighted,
-          blockId: block.id, // preserve block ID for linking
-          blockType: block.type // preserve block type for context label
-        });
-      }
-      
-      return snippets;
+        const { text, prefix, suffix } = buildSnippet(block.text, centerPoint, targetLength);
+        return {
+          text: highlightTerms(`${prefix}${text}${suffix}`, searchPattern),
+          blockId: block.id,
+          blockType: block.type
+        };
+      });
     };
 
-    // initialize MiniSearch with lazy-loaded index generated at build time
+    // initialize MiniSearch with lazy-loaded index
     const initializeSearch = async () => {
-      if (miniSearchInstance) return true; // build search engine only once
-
-      try { // everything inside can fail, so handle errors gracefully
+      if (miniSearchInstance) return true;
+      try {
         const response = await fetch(SEARCH_INDEX_URL);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
         searchIndexData = await response.json();
-        const MiniSearch = window.MiniSearch; // load from global window via script
-
-        // rebuild MiniSearch instance from saved JSON
-        miniSearchInstance = MiniSearch.loadJSON(searchIndexData.index, searchIndexData.options);
+        miniSearchInstance = window.MiniSearch.loadJSON(searchIndexData.index, searchIndexData.options);
 
         // create document lookup map to enable instant access to doc data
-        miniSearchInstance.documentsById = {};
-        searchIndexData.documents.forEach(doc => {
-          miniSearchInstance.documentsById[doc.id] = doc;
-        });
-
-        return true; // search is ready
+        miniSearchInstance.documentsById = Object.fromEntries(
+          searchIndexData.documents.map(doc => [doc.id, doc])
+        );
+        return true;
       } catch (err) {
         console.error('error loading search index:', err);
         return false;
       }
     };
 
-    // execute search query against index
-    const executeSearch = (query) => {
-      return miniSearchInstance.search(query, {
+    // execute token-based search
+    const executeSearch = (query) =>
+      miniSearchInstance.search(query, {
         prefix: true,
         fuzzy: 0,
         combineWith: 'AND', // must contain ALL terms
-        tokenize: (text) => {
-          return text.match(/[a-z0-9’]+/gi) || [];
-        } // include typographical apostrophes in tokens
+        // include typographical apostrophes in tokens
+        tokenize: (text) => text.match(/[a-z0-9’]+/gi) || [] 
       });
-    };
 
-    // filter results for exact phrase match after initial token-based search
+    // filter results for exact phrase match
     const filterForExactPhrase = (results, phrase) => {
       const normalizedPhrase = phrase.toLowerCase();
       
@@ -1285,18 +1165,13 @@ if (document.body.classList.contains('js-enabled')) {
       return matches;
     };
 
-    // article search controls state
     let currentHighlightIndex = -1;
     let allHighlights = [];
     let controlsElement = null;
     let keyboardListenerAttached = false;
 
-    // get all highlight elements on the page
-    const getAllHighlights = () => {
-      return Array.from(document.querySelectorAll('mark.search-highlight'));
-    };
+    const getAllHighlights = () => Array.from(document.querySelectorAll('mark.search-highlight'));
 
-    // find the closest highlight to a given element
     const findClosestHighlight = (element) => {
       if (!element || allHighlights.length === 0) return -1;
       
@@ -1315,21 +1190,20 @@ if (document.body.classList.contains('js-enabled')) {
           closestIndex = index;
         }
       });
-      
       return closestIndex;
     };
 
-    // scroll to a specific highlight
     const scrollToHighlight = (highlightElement) => {
       if (!highlightElement) return;
       
       // remove active from all, add to current
-      allHighlights.forEach((h) => {
-        h.classList.toggle('active', h === highlightElement);
-      });
-      
-      // scroll smoothly to center of viewport
+      allHighlights.forEach(h => h.classList.toggle('active', h === highlightElement));
       highlightElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    };
+
+    const updateCounterDisplay = () => {
+      const counter = document.querySelector('.search-counter');
+      if (counter) counter.textContent = `${currentHighlightIndex + 1} / ${allHighlights.length}`;
     };
 
     // navigate highlights (direction: 1 for next, -1 for previous)
@@ -1337,27 +1211,21 @@ if (document.body.classList.contains('js-enabled')) {
       if (allHighlights.length === 0) return;
       
       // update current index with wrap-around
-      const total = allHighlights.length;
-      const nextIndex = (currentHighlightIndex + direction + total) % total;
-      currentHighlightIndex = nextIndex;
-
+      currentHighlightIndex = (currentHighlightIndex + direction + allHighlights.length) % allHighlights.length;
       scrollToHighlight(allHighlights[currentHighlightIndex]);
       updateCounterDisplay();
-      
-      const position = currentHighlightIndex + 1;
-      announceToLiveRegion(`Highlight ${position} of ${total}`);
+      announceToLiveRegion(`Highlight ${currentHighlightIndex + 1} of ${allHighlights.length}`);
     };
+
+    const hideSearchControls = () => controlsElement?.classList.add('hidden');
 
     // clear all highlights and reset UI
     const clearAllHighlights = () => {
       allHighlights.forEach((mark) => {
-        const parent = mark.parentNode;
-
         // replace <mark> with its text content
-        parent.replaceChild(document.createTextNode(mark.textContent), mark);
-        parent.normalize(); // combine adjacent text nodes
+        mark.parentNode.replaceChild(document.createTextNode(mark.textContent), mark);
+        mark.parentNode.normalize(); // combine adjacent text nodes
       });
-      
       allHighlights = [];
       currentHighlightIndex = -1;
       hideSearchControls();
@@ -1369,23 +1237,10 @@ if (document.body.classList.contains('js-enabled')) {
 
       // update browser URL without reloading
       window.history.replaceState({}, document.title, url);
-      
-      const totalCleared = allHighlights.length;
-      announceToLiveRegion(`${totalCleared} highlights cleared`);
+      announceToLiveRegion('Highlights cleared');
     };
 
-    // update counter display
-    const updateCounterDisplay = () => {
-      const counter = document.querySelector('.search-counter');
-      if (counter) {
-        const position = currentHighlightIndex + 1; // 1-based index
-        counter.textContent = `${position} / ${allHighlights.length}`;
-      }
-    };
-
-    // show search controls
     const showSearchControls = () => {
-      // create controls only once
       if (!controlsElement) {
         controlsElement = document.createElement('div');
         controlsElement.id = 'article-search-controls';
@@ -1394,8 +1249,7 @@ if (document.body.classList.contains('js-enabled')) {
           <button class="search-nav-btn" data-action="prev" title="Previous match (Shift+Enter)">← Previous</button>
           <span class="search-counter">1 / ${allHighlights.length}</span>
           <button class="search-nav-btn" data-action="next" title="Next match (Enter)">Next →</button>
-          <button class="search-clear-btn" data-action="clear" title="Clear highlights (Escape)">Clear All</button>
-        `;
+          <button class="search-clear-btn" data-action="clear" title="Clear highlights (Escape)">Clear All</button>`;
         
         // event delegation for buttons
         controlsElement.addEventListener('click', (e) => {
@@ -1404,7 +1258,6 @@ if (document.body.classList.contains('js-enabled')) {
           else if (action === 'next') navigateHighlight(1);
           else if (action === 'clear') clearAllHighlights();
         });
-        
         document.body.appendChild(controlsElement);
       }
       
@@ -1428,34 +1281,22 @@ if (document.body.classList.contains('js-enabled')) {
             e.preventDefault();
             navigateHighlight(-1); // previous
           }
-          
-          if (e.key === 'Escape' || e.key === 'Esc') {
-            clearAllHighlights();
-          }
+          if (e.key === 'Escape' || e.key === 'Esc') clearAllHighlights();
         });
         keyboardListenerAttached = true;
       }
       
       updateCounterDisplay();
       controlsElement.classList.remove('hidden');
-      
-      // announce initial state
       announceToLiveRegion(`${allHighlights.length} matches found. Use Enter to navigate, Escape to clear.`);
-    };
-
-    // hide search controls
-    const hideSearchControls = () => {
-      controlsElement?.classList.add('hidden');
     };
 
     const initArticleHighlighting = () => {
       const { searchQuery, blockId } = getArticleUrlParams();
-      
       if (!searchQuery) return;
       
       // highlight all matches in the article
-      const contentContainer = document.querySelector('article');
-      highlightMatchesInElement(contentContainer, searchQuery);
+      highlightMatchesInElement(document.querySelector('article'), searchQuery);
       
       // update highlights and show controls if needed
       allHighlights = getAllHighlights();
