@@ -28,9 +28,9 @@ function cleanText(text, options = {}) {
   if (options.removeFootnoteRefs) {
     result = result.replace(FOOTNOTE_REF_REGEX, '');
   }
-  
+
   // apply universal cleaners
-  result = result
+  return result
     .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1') // [text](url) → text
     .replace(/\s*\{%\s*ct\s*'([^']*)'\s*%\}/g, ' —$1') // {% ct 'ref' %} → —ref
     .replace(/\{%\s*rf\s*'([^']*)'\s+false\s*%\}/g, '$1') // {% rf 'text' false %} → text
@@ -38,8 +38,6 @@ function cleanText(text, options = {}) {
     .replace(/[*_`]/g, '') // remove emphasis
     .replace(/\s+/g, ' ') // normalize whitespace
     .trim();
-  
-  return result;
 }
 
 const cleanHeading = (text) => cleanText(text, { removeHeadingMarkers: true });
@@ -50,7 +48,7 @@ const cleanFootnote = (text) => cleanText(text, { removeFootnoteMarkers: true })
 function cleanListItems(text) {
   return text.split('\n')
     .map(line => line.trim())
-    .filter(line => line)
+    .filter(Boolean)
     .map(line => cleanText(line, { removeListMarkers: true, removeFootnoteRefs: true }));
 }
 
@@ -73,87 +71,67 @@ function extractContentBlocks(bodyText) {
   let blockType = 'paragraph';
   let blockCounters = { heading: 0, paragraph: 0, blockquote: 0, list: 0, footnote: 0 };
   let currentListIndex = -1; // track current list for blank-separated items
-  
+
   // save accumulated block with type-specific cleaning
   const saveBlock = () => {
     if (currentBlock.length === 0) return;
-    
+
     // combine multi-line block array into single string
     const rawText = blockType === 'list' ? currentBlock.join('\n') : currentBlock.join(' ');
-    let cleanedText = '';
-    let blockId = '';
-    
-    switch(blockType) {
-      case 'list':
-        const isLong = isLongList(currentBlock);
-        
-        // short lists always get new index because they reset to -1 immediately
-        // long lists get new index only on first item, reuse for subsequent
-        if (currentListIndex === -1 || !isLong) {
-          currentListIndex = blockCounters.list++;
-        }
-        
-        const items = cleanListItems(rawText);
-        items.forEach((itemText, index) => {
-          if (itemText.length > 0) {
+
+    if (blockType === 'list') {
+      const isLong = isLongList(currentBlock);
+
+      // short lists always get new index because they reset to -1 immediately
+      // long lists get new index only on first item, reuse for subsequent
+      if (currentListIndex === -1 || !isLong) {
+        currentListIndex = blockCounters.list++;
+      }
+
+      cleanListItems(rawText).forEach((itemText, index) => {
+        if (itemText.length > 0) {
             blocks.push({
               id: `list-${currentListIndex}-item-${index}`,
               text: itemText,
               type: 'list'
             });
-          }
-        });
-        
-        // reset list index only for short lists
-        if (!isLong) {
-          currentListIndex = -1;
         }
-        break;
-        
-      case 'heading':
-        cleanedText = cleanHeading(rawText);
-        blockId = `heading-${blockCounters.heading++}`;
-        break;
-        
-      case 'blockquote':
-        currentListIndex = -1;
-        cleanedText = cleanBlockquote(rawText);
-        blockId = `blockquote-${blockCounters.blockquote++}`;
-        break;
-        
-      case 'footnote':
-        currentListIndex = -1;
-        cleanedText = cleanFootnote(rawText);
-        blockId = `footnote-${blockCounters.footnote++}`;
-        break;
-        
-      case 'paragraph':
-      default:
-        currentListIndex = -1;
-        cleanedText = cleanParagraph(rawText);
-        blockId = `paragraph-${blockCounters.paragraph++}`;
-        break;
-    }
+      });
 
-    // push block for all non-list types
-    if (blockType !== 'list' && cleanedText.length > 0) {
-      blocks.push({ id: blockId, text: cleanedText, type: blockType });
+      // reset list index only for short lists
+      if (!isLong) currentListIndex = -1;
+    } else {
+      // function lookup
+      const cleaners = {
+        heading:    cleanHeading,
+        blockquote: cleanBlockquote,
+        footnote:   cleanFootnote,
+        paragraph:  cleanParagraph,
+      };
+      const clean = (cleaners[blockType] || cleanParagraph)(rawText);
+      if (clean.length > 0) {
+        blocks.push({ 
+          id: `${blockType}-${blockCounters[blockType]++}`, 
+          text: clean, 
+          type: blockType 
+        });
+      }
+      if (blockType !== 'heading') currentListIndex = -1;
     }
 
     currentBlock = [];
   };
-  
-  const lines = bodyText.split('\n');
-  for (const line of lines) {
+
+  for (const line of bodyText.split('\n')) {
     const trimmed = line.trim();
-    
+
     // empty line - save accumulated block
     if (trimmed === '') {
       saveBlock();
       blockType = 'paragraph';
       continue;
     }
-    
+
     // heading
     if (trimmed.startsWith('#')) {
       saveBlock(); // save accumulated
@@ -163,7 +141,7 @@ function extractContentBlocks(bodyText) {
       blockType = 'paragraph'; // reset to default for next block
       continue;
     }
-    
+
     // blockquote
     if (trimmed.startsWith('>')) {
       if (blockType !== 'blockquote') {
@@ -193,36 +171,32 @@ function extractContentBlocks(bodyText) {
       blockType = 'paragraph';
       continue;
     }
-    
+
     // liquid tags - add to current block
     if (trimmed.startsWith('{%') && trimmed.endsWith('%}')) {
       currentBlock.push(trimmed);
       continue;
     }
-    
+
     // skip markdown table rows
-    if (trimmed.startsWith('|') && trimmed.endsWith('|')) {
-      continue;
-    }
-    
+    if (trimmed.startsWith('|') && trimmed.endsWith('|')) continue;
+
     // catch-all transition to close previous block and start new paragraph
     if (blockType === 'blockquote' || blockType === 'list') {
       saveBlock();
       blockType = 'paragraph';
     }
-    
+
     currentBlock.push(trimmed); // add line as start of new paragraph
   }
-  
+
   saveBlock(); // save final block
   return blocks;
 }
 
 // process a single markdown file into a search document
 function processMarkdownFile(filePath, docId) {
-  const content = fs.readFileSync(filePath, 'utf-8');
-  const { data: frontmatter, content: bodyText } = matter(content);
-  
+  const { data: frontmatter, content: bodyText } = matter(fs.readFileSync(filePath, 'utf-8'));
   return {
     id: String(docId),
     title: frontmatter.title || '',
@@ -236,28 +210,32 @@ function processMarkdownFile(filePath, docId) {
 function collectMarkdownFiles(dir, files = []) {
   fs.readdirSync(dir).forEach(file => {
     const filePath = path.join(dir, file);
-    const stat = fs.statSync(filePath);
-    
-    if (stat.isDirectory()) {
-      collectMarkdownFiles(filePath, files);
-    } else if (file.endsWith('.md')) {
-      files.push(filePath);
-    }
+    fs.statSync(filePath).isDirectory()
+      ? collectMarkdownFiles(filePath, files)
+      : file.endsWith('.md') && files.push(filePath);
   });
   return files;
 }
+
+const BLOCK_TYPE_FIELDS = {
+  heading:    'headingsText',
+  paragraph:  'paragraphsText',
+  blockquote: 'blockquotesText',
+  list:       'listsText',
+  footnote:   'footnotesText',
+};
 
 // generate search index from all posts
 function generateSearchIndex(postsDir = path.join(__dirname, '..', 'posts')) {
   const miniSearchOptions = {
     // indexed fields for search relevance scoring
-    fields: ['title', 'description', 'headingsText', 'paragraphsText', 'blockquotesText', 'listsText', 'footnotesText'],
+    fields: ['title', 'description', ...Object.values(BLOCK_TYPE_FIELDS)],
     // stored fields to return with search results
     storeFields: ['title', 'description', 'url', 'blocks'],
-    boost: { 
+    boost: {
       title: 5,
-      headingsText: 2,
       description: 3,
+      headingsText: 2,
       paragraphsText: 1,
       blockquotesText: 1,
       listsText: 1,
@@ -269,34 +247,30 @@ function generateSearchIndex(postsDir = path.join(__dirname, '..', 'posts')) {
 
   const index = new MiniSearch(miniSearchOptions);
   const documents = [];
-  const markdownFiles = collectMarkdownFiles(postsDir);
-
+  
   // generate search document for each markdown file and add to index
-  markdownFiles.forEach((filePath, idx) => {
+  collectMarkdownFiles(postsDir).forEach((filePath, idx) => {
     try {
       const doc = processMarkdownFile(filePath, idx);
       documents.push(doc);
-      
-      // group blocks by type for indexing
-      // create object: key = block type, value = array of text for that type
+
+      // group block text by type for indexing
       const blocksByType = doc.blocks.reduce((acc, block) => {
-        if (!acc[block.type]) acc[block.type] = [];
-        acc[block.type].push(block.text);
+        (acc[block.type] ??= []).push(block.text);
         return acc; // return accumulator for next iteration
       }, {});
-      
+
       // create document w/ concatenated text fields for indexing
       // join arrays of text into single string for each block type
-      const docWithText = {
+      index.add({
         ...doc,
-        headingsText: (blocksByType.heading || []).join(' '),
-        paragraphsText: (blocksByType.paragraph || []).join(' '),
-        blockquotesText: (blocksByType.blockquote || []).join(' '),
-        listsText: (blocksByType.list || []).join(' '),
-        footnotesText: (blocksByType.footnote || []).join(' ')
-      };
-      
-      index.add(docWithText);
+        ...Object.fromEntries(
+          Object.entries(BLOCK_TYPE_FIELDS).map(([type, field]) => [
+            field,
+            (blocksByType[type] || []).join(' ')
+          ])
+        )
+      });
     } catch (err) {
       console.error(`Error processing ${filePath}:`, err.message);
     }
