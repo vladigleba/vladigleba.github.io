@@ -2,6 +2,31 @@ if (document.body.classList.contains('js-enabled')) {
   document.addEventListener('DOMContentLoaded', () => {
 
     /*
+    utils
+    */
+
+    //#region
+
+    const storageGet = (key) => { 
+      try { return localStorage.getItem(key); } 
+      catch { return null; } 
+    };
+    const storageSet = (key, val) => { 
+      try { localStorage.setItem(key, val); } 
+      catch {} 
+    };
+
+    function announceToLiveRegion(message) {
+      const liveRegion = document.getElementById('site-live');
+      if (liveRegion) {
+        liveRegion.textContent = '';
+        liveRegion.textContent = message;
+      }
+    }
+
+    //#endregion
+
+    /*
     nav progress indicator
     */
 
@@ -45,24 +70,13 @@ if (document.body.classList.contains('js-enabled')) {
 
     //#region
 
-    function announceToLiveRegion(message) {
-      const liveRegion = document.getElementById('site-live');
-      if (liveRegion) {
-        liveRegion.textContent = '';
-        liveRegion.textContent = message;
-      }
-    }
-
     document.querySelectorAll('.anchor-link').forEach(link => {
       const copyHandler = (e) => {
         e.preventDefault();
 
         const fullUrl = `${window.location.origin}${window.location.pathname}${link.getAttribute('href')}`;
         navigator.clipboard.writeText(fullUrl).then(() => {
-
-            // visual feedback
-            const existing = link.querySelector('.copy-toast');
-            if (!existing) {
+            if (!link.querySelector('.copy-toast')) {
               const popup = document.createElement('div');
               popup.className = 'copy-toast';
               popup.innerHTML = `
@@ -73,13 +87,9 @@ if (document.body.classList.contains('js-enabled')) {
               link.appendChild(popup);
               setTimeout(() => popup.remove(), 2500);
             }
-
-            // announce to assistive tech
             announceToLiveRegion('Link copied');
           })
-          .catch(err => {
-            console.error('Error copying text: ', err);
-          });
+          .catch(err => console.error('Error copying text: ', err));
       };
 
       link.addEventListener('click', copyHandler);
@@ -103,11 +113,8 @@ if (document.body.classList.contains('js-enabled')) {
 
     // helper to set active state on a TOC link
     const setActiveTocItem = (link) => {
-      const existing = document.querySelector('.toc a[aria-current="true"]');
-      if (existing && existing !== link) {
-        existing.removeAttribute('aria-current');
-      }
-      
+      document.querySelector('.toc a[aria-current="true"]')?.removeAttribute('aria-current');
+
       // remove previous active class from all items
       document.querySelectorAll('.toc li').forEach((li) => li.classList.remove('active'));
       
@@ -118,49 +125,34 @@ if (document.body.classList.contains('js-enabled')) {
       }
     };
 
-    // observer
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const id = entry.target.id;
-          const activeLink = document.querySelector(`.toc a[href="#${id}"]`);
-          if (activeLink) {
-            setActiveTocItem(activeLink);
-          }
+          const activeLink = document.querySelector(`.toc a[href="#${entry.target.id}"]`);
+          if (activeLink) setActiveTocItem(activeLink);
         }
       });
-    },
-    { 
-      rootMargin: '-10% 0px -70% 0px', 
-      threshold: 1 
-    });
+    }, { rootMargin: '-10% 0px -70% 0px', threshold: 1 });
 
-    const headings = document.querySelectorAll('.content h2, .content h3, .content h4');
-    headings.forEach((heading) => observer.observe(heading));
-    
+    document.querySelectorAll('.content h2, .content h3, .content h4').forEach((h) => observer.observe(h));
+
     // add click listeners to TOC links to mark them as active
     document.querySelectorAll('.toc a[href^="#"]').forEach((link) => {
-      link.addEventListener('click', () => {
-        setActiveTocItem(link);
-      });
+      link.addEventListener('click', () => setActiveTocItem(link));
     });
 
     // focus the referenced element referenced and update aria-current on TOC links
     const focusFragmentTarget = () => {
       const hash = location.hash;
       if (!hash) return;
-      const id = hash.slice(1);
-      const target = document.getElementById(id);
+      const target = document.getElementById(hash.slice(1));
       if (!target) return;
 
-      try {
-        target.focus({ preventScroll: true });
-      } catch (e) {
-        target.focus();
-      }
-
-      const tocLink = document.querySelector(`.toc a[href="#${id}"]`);
-      setActiveTocLink(tocLink);
+      try { target.focus({ preventScroll: true }); } 
+      catch { target.focus(); }
+      
+      const tocLink = document.querySelector(`.toc a[href="${hash}"]`);
+      setActiveTocItem(tocLink);
     };
 
     // handle initial load and subsequent hash changes (clicks/back/forward)
@@ -170,7 +162,7 @@ if (document.body.classList.contains('js-enabled')) {
     //#endregion
 
     /*
-    popup generation (verses and footnotes)
+    popup (verses and footnotes)
     */
 
     //#region
@@ -189,17 +181,17 @@ if (document.body.classList.contains('js-enabled')) {
     // close popup helper
     const closePopup = () => {
       if (!popup.classList.contains('show')) return;
+
       popup.classList.remove('show');
       popup.setAttribute('aria-hidden', 'true');
+      
       // restore focus to previously focused element
-      try { _lastFocused?.focus(); } catch (e) {}
+      try { _lastFocused?.focus(); } catch {}
     };
 
     // allow closing with Esc key for keyboard users
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' || e.key === 'Esc') {
-        closePopup();
-      }
+      if (e.key === 'Escape' || e.key === 'Esc') closePopup();
     });
 
     // helper to position and show popup
@@ -209,30 +201,38 @@ if (document.body.classList.contains('js-enabled')) {
 
       // position near trigger
       const rect = trigger.getBoundingClientRect();
-      let left = rect.left + window.scrollX;
-      const top = rect.bottom + window.scrollY + 10;
-      const popupWidth = popup.offsetWidth || 350; // estimated default
-      const maxLeft = window.innerWidth - popupWidth - 10; // 10px margin
-      if (left > maxLeft) left = maxLeft;
-
-      popup.style.top = `${top}px`;
+      const left = Math.min(
+        rect.left + window.scrollX,
+        window.innerWidth - (popup.offsetWidth || 350) - 10
+      );
+      popup.style.top = `${rect.bottom + window.scrollY + 10}px`;
       popup.style.left = `${left}px`;
 
       // set aria label depending on trigger
-      let label = 'Popup';
-      if (trigger.classList.contains('verse-link')) label = 'Verse';
-      else if (trigger.closest && trigger.closest('.footnote-ref')) label = 'Footnote';
+      const label = trigger.classList.contains('verse-link') ? 'Verse'
+        : trigger.closest?.('.footnote-ref') ? 'Footnote'
+        : 'Popup';
       popup.setAttribute('aria-label', label);
 
       // show and make accessible
       _lastFocused = document.activeElement;
       popup.classList.add('show');
       popup.setAttribute('aria-hidden', 'false');
-      try { popup.focus({ preventScroll: true }); } catch (e) { popup.focus(); }
+
+      try { popup.focus({ preventScroll: true }); } 
+      catch { popup.focus(); }
+
       announceToLiveRegion(`${label} opened`);
     };
 
-    // verse popup handling
+    // close on outside click
+    document.addEventListener('click', (e) => {
+      if (!popup.contains(e.target) && !e.target.closest('.verse-link') && !e.target.closest('.footnote-ref')) {
+        popup.classList.remove('show');
+      }
+    });
+
+    // verse popups
     document.querySelectorAll('.verse-link').forEach(link => {
       link.addEventListener('click', async (e) => {
         e.preventDefault();
@@ -243,18 +243,11 @@ if (document.body.classList.contains('js-enabled')) {
           try {
             const response = await fetch(`https://bible-api.com/${encodeURIComponent(reference)}?translation=kjv`);
             const data = await response.json();
-            
-            // format verses with verse numbers
-            let formattedText;
-            if (data.verses && data.verses.length > 1) {
-              // multi-verse passage: show verse numbers
-              formattedText = data.verses.map(v => 
-                `<b>${v.verse}</b> ${v.text.trim()}`
-              ).join(' ');
-            } else {
-              formattedText = data.text.trim(); // single verse: no verse number
-            }
-            
+
+            // format verses with verse numbers if multiple, otherwise just show text
+            const formattedText = data.verses?.length > 1
+              ? data.verses.map(v => `<b>${v.verse}</b> ${v.text.trim()}`).join(' ')
+              : data.text.trim();
             link.dataset.verse = `<strong>${reference}</strong><br>${formattedText}`;
             link.dataset.loaded = 'true';
             announceToLiveRegion(`Verse loaded: ${reference}`);
@@ -268,42 +261,22 @@ if (document.body.classList.contains('js-enabled')) {
       });
     });
 
-    // close popup on outside click
-    document.addEventListener('click', (e) => {
-      const target = e.target;
-      if (!popup.contains(target) && !target.closest('.verse-link') && !target.closest('.footnote-ref')) {
-        popup.classList.remove('show');
-      }
-    });
-
-    // footnote popup handling
+    // footnote popups
     document.querySelectorAll('.footnote-ref a').forEach(link => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
 
         // resolve footnote id from href (e.g. #fn1)
-        const href = link.getAttribute('href') || '';
-        const id = href.charAt(0) === '#' ? href.slice(1) : href;
+        const id = (link.getAttribute('href') || '').replace(/^#/, '');
         const foot = document.getElementById(id);
 
-        let html = '';
+        let html;
         if (foot) {
           // clone so we can remove the backref without touching original
           const clone = foot.cloneNode(true);
-          const back = clone.querySelector('.footnote-backref');
-          if (back) back.remove();
-   
-          // get content
-          const p = clone.querySelector('p');
-          const contentHtml = p.innerHTML.trim();
-
-          // extract footnote number from id
-          const numMatch = id.match(/(\d+)/);
-          const num = numMatch ? numMatch[1] : '';
-          html = `
-            <strong>Footnote ${num}</strong><br>
-            ${contentHtml}<br>
-            <a href="#" class="see-all-footnotes">Go to all footnotes</a>`;
+          clone.querySelector('.footnote-backref')?.remove();
+          const num = id.match(/(\d+)/)?.[1] ?? '';
+          html = `<strong>Footnote ${num}</strong><br>${clone.querySelector('p').innerHTML.trim()}<br><a href="#" class="see-all-footnotes">Go to all footnotes</a>`;
           announceToLiveRegion(`Footnote ${num} opened`);
         } else {
           html = '<strong>Footnote</strong><br>Not found.';
@@ -314,7 +287,7 @@ if (document.body.classList.contains('js-enabled')) {
       });
     });
 
-    // handle "see all footnotes" links
+    // "see all footnotes" handler
     document.addEventListener('click', (e) => {
       if (e.target.classList.contains('see-all-footnotes')) {
         e.preventDefault();
@@ -336,40 +309,29 @@ if (document.body.classList.contains('js-enabled')) {
     //#region
 
     // show relative date if within last 7 days
-    const updateFooterTime = () => {
-      const updateTimeInContainer = (container) => {
-        if (!container) return;
-        const timeEl = container.querySelector('time[datetime]');
-        if (!timeEl) return;
-        const dateStr = timeEl.getAttribute('datetime');
-        if (!dateStr) return;
-        const date = new Date(dateStr);
-        if (isNaN(date)) return;
+    const updateRelativeDate = (container) => {
+      if (!container) return;
+      const timeEl = container.querySelector('time[datetime]');
+      if (!timeEl) return;
+      const date = new Date(timeEl.getAttribute('datetime'));
+      if (isNaN(date)) return;
 
-        const now = new Date();
-        now.setHours(0,0,0,0);
-        date.setHours(0,0,0,0);
-        const diffDays = Math.round((now - date) / (1000 * 60 * 60 * 24));
+      const now = new Date();
+      now.setHours(0, 0, 0, 0);
+      date.setHours(0, 0, 0, 0);
+      const diffDays = Math.round((now - date) / (1000 * 60 * 60 * 24));
 
-        if (diffDays === 0) {
-          timeEl.textContent = 'today';
-        } else if (diffDays === 1) {
-          timeEl.textContent = 'yesterday';
-        } else if (diffDays > 1 && diffDays <= 7) {
-          timeEl.textContent = `${diffDays} days ago`;
-        }
-      };
-
-      updateTimeInContainer(document.querySelector('footer .last-updated'));
-      updateTimeInContainer(document.querySelector('header .post-last-updated'));
-
-      // remove spaces
-      const heyEl = document.querySelector('footer .hey');
-      if (heyEl) {
-        heyEl.textContent = heyEl.textContent.replace(/\s+/g, '');
-      }
+      if (diffDays === 0) timeEl.textContent = 'today';
+      else if (diffDays === 1) timeEl.textContent = 'yesterday';
+      else if (diffDays <= 7) timeEl.textContent = `${diffDays} days ago`;
     };
-    updateFooterTime();
+
+    updateRelativeDate(document.querySelector('footer .last-updated'));
+    updateRelativeDate(document.querySelector('header .post-last-updated'));
+
+    // remove spaces
+    const heyEl = document.querySelector('footer .hey');
+    if (heyEl) heyEl.textContent = heyEl.textContent.replace(/\s+/g, '');
 
     //#endregion
 
@@ -379,7 +341,6 @@ if (document.body.classList.contains('js-enabled')) {
 
     //#region
 
-    // posts view toggle (series vs standalone)
     const POSTS_VIEW_KEY = 'postsViewPreference';
     const postsViewSwitch = document.getElementById('posts-view-switch');
     const STANDALONE = 'standalone';
@@ -393,37 +354,27 @@ if (document.body.classList.contains('js-enabled')) {
       const isStandalone = view === STANDALONE;
       seriesList.style.display = isStandalone ? 'none' : '';
       standaloneList.style.display = isStandalone ? '' : 'none';
-
+      
       // ensure content is removed from the accessibility tree when hidden
-      seriesList.setAttribute('aria-hidden', isStandalone ? 'true' : 'false');
-      standaloneList.setAttribute('aria-hidden', isStandalone ? 'false' : 'true');
+      seriesList.setAttribute('aria-hidden', String(isStandalone));
+      standaloneList.setAttribute('aria-hidden', String(!isStandalone));
 
       // update checked state (checked = grouped by series)
       if (postsViewSwitch) postsViewSwitch.checked = !isStandalone;
 
       // announce change for screen reader users
       announceToLiveRegion(isStandalone ? 'Showing standalone posts' : 'Showing posts grouped by series');
-
     };
 
     // init from localStorage (default to series grouping)
-    const stored = (() => {
-      try { 
-        return localStorage.getItem(POSTS_VIEW_KEY); 
-      } catch (e) { 
-        return null; 
-      }
-    })();
-    applyView(stored === STANDALONE ? STANDALONE : SERIES);
+    applyView(storageGet(POSTS_VIEW_KEY) === STANDALONE ? STANDALONE : SERIES);
 
     // add event listener
-    if (postsViewSwitch) {
-      postsViewSwitch.addEventListener('change', (e) => {
-        const view = e.target.checked ? SERIES : STANDALONE;
-        try { localStorage.setItem(POSTS_VIEW_KEY, view); } catch (err) {}
-        applyView(view);
-      });
-    }
+    postsViewSwitch?.addEventListener('change', (e) => {
+      const view = e.target.checked ? SERIES : STANDALONE;
+      storageSet(POSTS_VIEW_KEY, view);
+      applyView(view);
+    });
 
     //#endregion
 
@@ -433,107 +384,57 @@ if (document.body.classList.contains('js-enabled')) {
 
     //#region
 
-    const SELECTOR = '#posts-sort-select';
-    const SWITCH_ID = 'posts-view-switch';
-    const STANDALONE_LIST = '.standalone-list';
-    const SORT_CONTAINER = '.posts-sort';
-    const STORAGE_KEY = 'posts-sort';
+    const parseAttrInt = (el, attr) => { 
+      const n = parseInt(el.getAttribute(attr), 10);
+      return isNaN(n) ? 0 : n; 
+    };
+    const parseAttrDate = (el, attr) => { 
+      const t = Date.parse(el.getAttribute(attr)); 
+      return isNaN(t) ? 0 : t; 
+    };
 
-    function parseUpdated(el) {
-      const s = el.getAttribute('data-updated');
-      if (!s) return 0;
-      const t = Date.parse(s);
-      return isNaN(t) ? 0 : t;
-    }
+    const SORT_COMPARATORS = {
+      reading: (a, b) => parseAttrInt(a, 'data-reading-order') - parseAttrInt(b, 'data-reading-order'),
+      updated: (a, b) => parseAttrDate(b, 'data-updated') - parseAttrDate(a, 'data-updated'),
+      shortest: (a, b) => parseAttrInt(a, 'data-length') - parseAttrInt(b, 'data-length'),
+      longest:  (a, b) => parseAttrInt(b, 'data-length') - parseAttrInt(a, 'data-length'),
+    };
 
-    function parseLength(el) {
-      const s = el.getAttribute('data-length');
-      const n = parseInt(s, 10);
-      return isNaN(n) ? 0 : n;
-    }
-
-    function getOriginalIndex(el) {
-      const s = el.getAttribute('data-reading-order');
-      const n = parseInt(s, 10);
-      return isNaN(n) ? 0 : n;
-    }
-
-    function stableSort(nodes, compare) {
-      return Array.from(nodes).map((el, i) => ({ el, i })).sort((a, b) => {
-        const r = compare(a.el, b.el);
-        return r !== 0 ? r : a.i - b.i;
-      }).map(x => x.el);
-    }
-
-    function sortListBy(root, mode) {
-      const children = root.children;
-      const sorted = stableSort(children, (a, b) => {
-        switch (mode) {
-          case 'reading':
-            return getOriginalIndex(a) - getOriginalIndex(b);
-          case 'updated':
-            return parseUpdated(b) - parseUpdated(a); // most recent first
-          case 'shortest':
-            return parseLength(a) - parseLength(b);
-          case 'longest':
-            return parseLength(b) - parseLength(a);
-          default:
-            return 0;
-        }
-      });
+    const sortListBy = (root, mode) => {
+      const comparator = SORT_COMPARATORS[mode];
+      if (!comparator) return;
+      const sorted = Array.from(root.children).sort(comparator);
 
       // re-append in new order
       const frag = document.createDocumentFragment();
       sorted.forEach(n => frag.appendChild(n));
       root.appendChild(frag);
-    }
+    };
 
-    function initCardsSort() {
-      const select = document.querySelector(SELECTOR);
-      const switchEl = document.getElementById(SWITCH_ID) || postsViewSwitch;
-      const sortWrapper = document.querySelector(SORT_CONTAINER);
-      const list = document.querySelector(STANDALONE_LIST);
-      if (!select || !switchEl || !sortWrapper || !list) return;
+    const initCardsSort = () => {
+      const select = document.querySelector('#posts-sort-select');
+      if (!select || !postsViewSwitch || !standaloneList) return;
 
-      function updateSortControl() {
-        select.disabled = switchEl.checked; // disable select when grouped
-      }
-
+      const updateSortControl = () => { select.disabled = postsViewSwitch.checked; }; // disable select when grouped
       updateSortControl();
-      switchEl.addEventListener('change', updateSortControl);
+      postsViewSwitch.addEventListener('change', updateSortControl);
 
       // apply saved selection from localStorage if present and announce
-      const saved = (function () {
-        try {
-          return localStorage.getItem(STORAGE_KEY);
-        } catch (e) {
-          return null;
-        }
-      })();
-
+      const saved = storageGet('posts-sort');
       if (saved) {
         select.value = saved;
-        sortListBy(list, saved);
-
-        const sortType = select.options[select.selectedIndex].text;
-        announceToLiveRegion(`Sorted by ${sortType}`);
+        sortListBy(standaloneList, saved);
+        announceToLiveRegion(`Sorted by ${select.options[select.selectedIndex].text}`);
         updateSortControl(); // ensure visibility reflects current switch state
       }
 
       // sort on select change
       select.addEventListener('change', (e) => {
-        const val = e.target.value;
-        try {
-          localStorage.setItem(STORAGE_KEY, val);
-        } catch (err) {
-          /* ignore */
-        }
-        sortListBy(list, val);
-
-        const sortType = e.target.options[e.target.selectedIndex].text;
-        announceToLiveRegion(`Sorted by ${sortType}`);
+        storageSet('posts-sort', e.target.value);
+        sortListBy(standaloneList, e.target.value);
+        announceToLiveRegion(`Sorted by ${e.target.options[e.target.selectedIndex].text}`);
       });
-    }
+    };
 
     // Initialize cards sort logic now that DOMContentLoaded has fired
     try {
@@ -560,10 +461,8 @@ if (document.body.classList.contains('js-enabled')) {
     const SNIPPET_LENGTH = 165;
     const MAX_SNIPPETS_DISPLAY = 4;
 
-    // normalize apostrophes - convert straight to typographical
-    const normalizeApostrophes = (text) => {
-      return text.replace(/'/g, "’");
-    };
+    // normalize straight apostrophes to typographical
+    const normalizeApostrophes = (text) => text.replace(/'/g, "’");
 
     // escape HTML entities
     const escapeHtml = (text) => {
@@ -577,27 +476,19 @@ if (document.body.classList.contains('js-enabled')) {
       return text.replace(/[&<>"']/g, m => map[m]);
     };
 
-    // escape special regex characters in search terms
-    const createSearchPattern = (term) => {
-      const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      return escaped.replace(/'/g, "’");
-    };
+    // escape special regex characters, then normalize apostrophes
+    const createSearchPattern = (term) =>
+      term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/'/g, "’");
 
-    const createSearchRegex = pattern => new RegExp(pattern, 'gi');
-
+    const createSearchRegex = (pattern) => new RegExp(pattern, 'gi');
 
     // highlight search terms in text
     const highlightTerms = (text, searchPattern) => {
       if (!text || !searchPattern) return escapeHtml(text);
-
-      const escaped = escapeHtml(text);
-      return escaped.replace(
-        new RegExp(`(${searchPattern})`, 'gi'),
-        '<mark>$1</mark>'
-      );
+      return escapeHtml(text).replace(new RegExp(`(${searchPattern})`, 'gi'), '<mark>$1</mark>');
     };
 
-    // build a single snippet with boundaries and ellipsis
+    // build a single snippet with ellipsis prefix/suffix
     const buildSnippet = (text, matchIndex, length = SNIPPET_LENGTH) => {
       const halfLength = Math.floor(length / 2); // floor avoids fractional lengths
 
@@ -608,54 +499,36 @@ if (document.body.classList.contains('js-enabled')) {
       const originalEnd = end;
 
       // if character before snippet is non-whitespace, shift start back to nearest whitespace
-      while (start > 0 && !/\s/.test(text[start - 1])) {
-        start--;
-      }
-
+      while (start > 0 && !/\s/.test(text[start - 1])) start--;
       // extend end to include complete word
-      while (end < text.length && !/\s/.test(text[end])) {
-        end++;
-      }
-
-      // trim and collapse whitespace
-      const snippet = text
-        .substring(start, end)
-        .trim()
-        .replace(/\s+/g, ' ');
+      while (end < text.length && !/\s/.test(text[end])) end++;
 
       return {
-        text: snippet,
+        text: text.substring(start, end).trim().replace(/\s+/g, ' '),
         prefix: originalStart > 0 ? '...' : '',
         suffix: originalEnd < text.length ? '...' : ''
       };
     };
 
-    // limit number of snippets for display
-    const limitSnippetsForDisplay = (items, limit) => {
-      return {
-        display: items.slice(0, limit),
-        hasMore: items.length > limit,
-        hiddenCount: Math.max(0, items.length - limit)
-      };
-    };
+    // limit snippets for display
+    const limitSnippetsForDisplay = (items, limit) => ({
+      display: items.slice(0, limit),
+      hasMore: items.length > limit,
+      hiddenCount: Math.max(0, items.length - limit)
+    });
 
-    // extract matching snippets from a single block with its ID
+    // extract highlighted snippets from a single block
     const extractSnippetsFromBlock = (block, searchPattern, targetLength = SNIPPET_LENGTH) => {
-      if (!block.text || !searchPattern) {
-        return [];
-      }
-      
-      const snippets = [];
+      if (!block.text || !searchPattern) return [];
+
       const regex = createSearchRegex(searchPattern);
-      let match;
       const matches = [];
+      let match;
 
       // collect all match positions first
-      while ((match = regex.exec(block.text)) !== null) {
-        matches.push(match.index);
-      }
-      
-      // group overlapping matches
+      while ((match = regex.exec(block.text)) !== null) matches.push(match.index);
+
+      // group overlapping match windows
       const groups = [];
       for (const matchIndex of matches) {
         const snippetStart = Math.max(
@@ -679,143 +552,101 @@ if (document.body.classList.contains('js-enabled')) {
           });
         }
       }
-      
-      // build snippets from groups
-      for (const group of groups) {
-        // shift center around matches to provide better context
-        const firstMatch = group.matches[0];
-        const lastMatch = group.matches[group.matches.length - 1];
-        const centerPoint = Math.floor((firstMatch + lastMatch) / 2);
-        
-        const { text, prefix, suffix } = buildSnippet(
-          block.text, 
-          centerPoint,
-          targetLength
+
+      return groups.map(group => {
+        const centerPoint = Math.floor(
+          (group.matches[0] + group.matches[group.matches.length - 1]) / 2
         );
-        
-        const formatted = `${prefix}${text}${suffix}`;
-        const highlighted = highlightTerms(formatted, searchPattern);
-        
-        snippets.push({
-          text: highlighted,
-          blockId: block.id, // preserve block ID for linking
-          blockType: block.type // preserve block type for context label
-        });
-      }
-      
-      return snippets;
+        const { text, prefix, suffix } = buildSnippet(block.text, centerPoint, targetLength);
+        return {
+          text: highlightTerms(`${prefix}${text}${suffix}`, searchPattern),
+          blockId: block.id,
+          blockType: block.type
+        };
+      });
     };
 
-    // initialize MiniSearch with lazy-loaded index generated at build time
+    // initialize MiniSearch with lazy-loaded index
     const initializeSearch = async () => {
-      if (miniSearchInstance) return true; // build search engine only once
-
-      try { // everything inside can fail, so handle errors gracefully
+      if (miniSearchInstance) return true;
+      try {
         const response = await fetch(SEARCH_INDEX_URL);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
         searchIndexData = await response.json();
-        const MiniSearch = window.MiniSearch; // load from global window via script
-
-        // rebuild MiniSearch instance from saved JSON
-        miniSearchInstance = MiniSearch.loadJSON(searchIndexData.index, searchIndexData.options);
-
+        miniSearchInstance = window.MiniSearch.loadJSON(searchIndexData.index, searchIndexData.options);
+        
         // create document lookup map to enable instant access to doc data
-        miniSearchInstance.documentsById = {};
-        searchIndexData.documents.forEach(doc => {
-          miniSearchInstance.documentsById[doc.id] = doc;
-        });
-
-        return true; // search is ready
+        miniSearchInstance.documentsById = Object.fromEntries(
+          searchIndexData.documents.map(doc => [doc.id, doc])
+        );
+        return true;
       } catch (err) {
         console.error('error loading search index:', err);
         return false;
       }
     };
 
-    // execute search query against index
-    const executeSearch = (query) => {
-      return miniSearchInstance.search(query, {
+    // execute token-based search
+    const executeSearch = (query) =>
+      miniSearchInstance.search(query, {
         prefix: true,
         fuzzy: 0,
         combineWith: 'AND', // must contain ALL terms
-        tokenize: (text) => {
-          return text.match(/[a-z0-9’]+/gi) || [];
-        } // include typographical apostrophes in tokens
+        // include typographical apostrophes in tokens
+        tokenize: (text) => text.match(/[a-z0-9’]+/gi) || [] 
       });
-    };
 
-    // filter results for exact phrase match after initial token-based search
+    // filter results for exact phrase match
     const filterForExactPhrase = (results, phrase) => {
       const normalizedPhrase = phrase.toLowerCase();
-      
       return results.filter(result => {
-        // convert result to full document to grab searchable fields
         const fullDoc = miniSearchInstance.documentsById[result.id];
-        
-        // check title and description
-        const titleDesc = `${fullDoc.title} ${fullDoc.description}`.toLowerCase();
-        if (titleDesc.includes(normalizedPhrase)) return true;
-        
-        // check blocks, stop at first match
-        return fullDoc.blocks.some(block => 
-          block.text.toLowerCase().includes(normalizedPhrase)
-        );
+        if (`${fullDoc.title} ${fullDoc.description}`.toLowerCase().includes(normalizedPhrase)) return true;
+        return fullDoc.blocks.some(block => block.text.toLowerCase().includes(normalizedPhrase));
       });
     };
 
-    // enrich a single article result with snippets and highlighting
+    // enrich a single result with snippets, highlights, and match counts
     const enrichResult = (result, searchPattern) => {
       const fullDoc = miniSearchInstance.documentsById[result.id];
-      
       let totalMatches = 0;
       const allSnippets = [];
-      
-      // count title matches
-      const titleRegex = createSearchRegex(searchPattern);
-      const titleMatches = (fullDoc.title.match(titleRegex) || []).length;
-      totalMatches += titleMatches;
-      
-      // extract description snippets
-      if (fullDoc.description) {
-        const descRegex = createSearchRegex(searchPattern);
-        const descMatches = (fullDoc.description.match(descRegex) || []).length;
 
+      const countMatches = (text) => (text.match(createSearchRegex(searchPattern)) || []).length;
+
+      totalMatches += countMatches(fullDoc.title);
+
+      if (fullDoc.description) {
+        const descMatches = countMatches(fullDoc.description);
         if (descMatches > 0) {
           totalMatches += descMatches;
-          const descSnippets = extractSnippetsFromBlock(
+          allSnippets.push(...extractSnippetsFromBlock(
             { text: fullDoc.description, id: 'description', type: 'description' },
             searchPattern
-          );
-          allSnippets.push(...descSnippets); // flatten
+          ));
         }
       }
-      
+
       // extract snippets from each matching block
       fullDoc.blocks.forEach(block => {
-        const blockRegex = createSearchRegex(searchPattern);
-        const blockMatches = (block.text.match(blockRegex) || []).length;
-        
+        const blockMatches = countMatches(block.text);
         if (blockMatches > 0) {
           totalMatches += blockMatches;
-          const blockSnippets = extractSnippetsFromBlock(block, searchPattern);
-          allSnippets.push(...blockSnippets);
+          allSnippets.push(...extractSnippetsFromBlock(block, searchPattern));
         }
       });
 
-      const {
-        display: displaySnippets,
-        hasMore: hasMoreSnippets,
-        hiddenCount
-      } = limitSnippetsForDisplay(allSnippets, MAX_SNIPPETS_DISPLAY);
+      const { display: displaySnippets, hasMore: hasMoreSnippets, hiddenCount } =
+        limitSnippetsForDisplay(allSnippets, MAX_SNIPPETS_DISPLAY);
 
       return {
         id: result.id,
         title: highlightTerms(fullDoc.title, searchPattern),
         url: fullDoc.url,
         snippets: displaySnippets,
-        allSnippets: allSnippets,
-        hasMoreSnippets: hasMoreSnippets,
+        allSnippets,
+        hasMoreSnippets,
         hiddenSnippetCount: hiddenCount,
         matchCount: totalMatches,
         score: result.score,
@@ -823,38 +654,25 @@ if (document.body.classList.contains('js-enabled')) {
       };
     };
 
-    // return fully enriched, UI-ready search results w/ pagination
+    // return enriched, paginated search results
     const performSearch = (query, page = 0) => {
-      if (!miniSearchInstance || !query.trim()) {
-        return { results: [], total: 0, hasMore: false };
-      }
-
+      if (!miniSearchInstance || !query.trim()) return { 
+        results: [], total: 0, hasMore: false 
+      };
       try {
         const normalizedQuery = normalizeApostrophes(query);
-
-        // execute token-based search
-        let allResults = executeSearch(normalizedQuery);
         
         // always filter for exact phrase match so punctuation matches
         // (tokenizer splits on punctuation)
-        allResults = filterForExactPhrase(allResults, normalizedQuery);
-
-        // pagination
-        const totalResults = allResults.length;
+        const allResults = filterForExactPhrase(executeSearch(normalizedQuery), normalizedQuery);
+        const total = allResults.length;
         const startIdx = page * RESULTS_PER_PAGE;
         const endIdx = startIdx + RESULTS_PER_PAGE;
-        const paginatedResults = allResults.slice(startIdx, endIdx);
-
-        // enrich results with snippets, highlighting, and match counts
         const searchPattern = createSearchPattern(normalizedQuery);
-        const enrichedResults = paginatedResults.map(result => 
-          enrichResult(result, searchPattern)
-        );
-
         return {
-          results: enrichedResults,
-          total: totalResults,
-          hasMore: endIdx < totalResults
+          results: allResults.slice(startIdx, endIdx).map(r => enrichResult(r, searchPattern)),
+          total,
+          hasMore: endIdx < total
         };
       } catch (err) {
         console.error('error performing search:', err);
@@ -863,58 +681,46 @@ if (document.body.classList.contains('js-enabled')) {
     };
 
     // lazy-load MiniSearch library
-    const loadMiniSearchLibrary = () => {
-      // return promise (loading is async, caller awaits)
-      return new Promise((resolve) => {
-        if (window.MiniSearch) {
-          resolve(); // already loaded
-          return;
-        }
-
+    const loadMiniSearchLibrary = () =>
+      new Promise((resolve) => {
+        if (window.MiniSearch) { resolve(); return; }
+        
         // make available as global variable on window object
         const script = document.createElement('script');
         script.src = '/assets/js/minisearch.js';
         script.onload = resolve;
-        script.onerror = () => {
-          console.error('failed to load MiniSearch library');
-          resolve(); // search is non-critical, so resolve anyway
+        script.onerror = () => { 
+          console.error('failed to load MiniSearch library'); 
+          resolve(); 
         };
         document.head.appendChild(script); // start network request
       });
+
+    const SNIPPET_TYPE_LABELS = {
+      description: 'Introduction',
+      blockquote: 'Block quote',
+      paragraph: 'Commentary',
+      footnote: 'Footnote',
+      heading: 'Heading',
+      list: 'Commentary'
     };
 
-    // helper function to render snippet HTML with data-search-id anchors
-    const renderSnippetHTML = (snippets, resultUrl, searchQuery) => {
-      return snippets.map((snippet) => {
-        const anchor = snippet.blockId !== 'description' ? `${snippet.blockId}` : '';
+    // render snippet HTML with anchor links
+    const renderSnippetHTML = (snippets, resultUrl, searchQuery) =>
+      snippets.map((snippet) => {
+        const anchor = snippet.blockId !== 'description' ? snippet.blockId : '';
         const url = `${resultUrl}?q=${encodeURIComponent(searchQuery)}#${anchor}`;
-        
-        // map blockType to display label
-        let typeLabel = '';
-        if (snippet.blockType) {
-          const typeMap = {
-            'description': 'Introduction',
-            'blockquote': 'Block quote',
-            'paragraph': 'Commentary',
-            'footnote': 'Footnote',
-            'heading': 'Heading',
-            'list': 'Commentary'
-          };
-          typeLabel = typeMap[snippet.blockType] || snippet.blockType;
-        }
-        
+        const typeLabel = SNIPPET_TYPE_LABELS[snippet.blockType] || snippet.blockType || '';
         const typeHtml = typeLabel ? `<p class="snippet-type">${typeLabel}</p>` : '';
         
         return `
           <a href="${url}" class="snippet-item" aria-label="${typeLabel} snippet">
             ${typeHtml}
             <p class="snippet">${snippet.text}</p>
-          </a>
-        `;
+          </a>`;
       }).join('');
-    };
 
-    // render search results
+    // render search results into the DOM
     const renderResults = (results, searchResults) => {
       const fragment = document.createDocumentFragment();
 
@@ -922,19 +728,9 @@ if (document.body.classList.contains('js-enabled')) {
         const resultLi = document.createElement('li');
         resultLi.className = 'search-result';
 
-        const resultLink = document.createElement('div');
-
-        const matchCountHtml = result.matchCount > 0
-          ? `<span class="match-count">
-              ${result.matchCount} ${result.matchCount === 1 ? 'match' : 'matches'}
-            </span>`
-          : '';
-
-        const snippetsHtml = renderSnippetHTML(result.snippets, result.url, result.searchQuery);
-
-        // show "show x more matches" if there are hidden snippets
-        const hiddenCount = result.hiddenSnippetCount;
         const snippetsContainerId = `snippets-${result.id}`;
+        const { hiddenSnippetCount: hiddenCount } = result;
+
         const moreSnippetsHtml = result.hasMoreSnippets
           ? `<button class="show-more-snippets" aria-expanded="false" aria-controls="${snippetsContainerId}">
               <span class="expand-icon">↓</span>
@@ -942,19 +738,23 @@ if (document.body.classList.contains('js-enabled')) {
             </button>`
           : '';
 
-        resultLink.innerHTML = `
+        const matchCountHtml = result.matchCount > 0
+          ? `<span class="match-count">${result.matchCount} ${result.matchCount === 1 ? 'match' : 'matches'}</span>`
+          : '';
+
+        const div = document.createElement('div');
+        div.innerHTML = `
           <div class="header">
             <h3>${result.title}</h3>
             ${matchCountHtml}
           </div>
           <div class="snippets" id="${snippetsContainerId}">
-            ${snippetsHtml}
+            ${renderSnippetHTML(result.snippets, result.url, result.searchQuery)}
             ${moreSnippetsHtml}
-          </div>
-        `;
+          </div>`;
 
-        resultLi.appendChild(resultLink);
-
+        resultLi.appendChild(div);
+        
         // store data for in-memory "show more" functionality
         resultLi.dataset.allSnippets = JSON.stringify(result.allSnippets || []);
         resultLi.dataset.resultUrl = result.url;
@@ -984,13 +784,11 @@ if (document.body.classList.contains('js-enabled')) {
 
       if (!searchContainer || !searchInput || !searchResults) return;
 
-      // state
       let currentPage = 0;
       let currentQuery = '';
       let isLoadingMore = false;
       let lastFocusedBeforeSearch = null;
 
-      // state helpers
       const resetSearchState = () => {
         currentPage = 0;
         currentQuery = '';
@@ -1002,32 +800,30 @@ if (document.body.classList.contains('js-enabled')) {
       // focus trap within dialog
       const trapFocus = (e) => {
         if (e.key !== 'Tab') return;
-
-        const focusableElements = searchContainer.querySelectorAll(
+        const focusable = searchContainer.querySelectorAll(
           'button, input, [href], [tabindex]:not([tabindex="-1"])'
         );
-        const firstElement = focusableElements[0];
-        const lastElement = focusableElements[focusableElements.length - 1];
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
 
         // create focus loop
-        if (e.shiftKey && document.activeElement === firstElement) {
-          e.preventDefault();
-          lastElement.focus();
-        } else if (!e.shiftKey && document.activeElement === lastElement) {
-          e.preventDefault();
-          firstElement.focus();
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault(); 
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault(); 
+          first.focus();
         }
       };
 
       // handle Escape key to close dialog
       const handleDialogKeydown = (e) => {
-        if (e.key === 'Escape' || e.key === 'Esc') {
-          e.preventDefault();
-          closeSearch();
+        if (e.key === 'Escape' || e.key === 'Esc') { 
+          e.preventDefault(); 
+          closeSearch(); 
         }
       };
 
-      // search open / close
       const openSearch = async () => {
         if (!miniSearchInstance) {
           await loadMiniSearchLibrary();
@@ -1058,26 +854,18 @@ if (document.body.classList.contains('js-enabled')) {
         searchContainer.removeEventListener('keydown', handleDialogKeydown);
         
         // back to last focused before search
-        if (lastFocusedBeforeSearch) {
-          try {
-            lastFocusedBeforeSearch.focus();
-          } catch (e) {}
-        }
-        
+        try { lastFocusedBeforeSearch?.focus(); } catch {}
         announceToLiveRegion('Search panel closed');
       };
 
       // prevent multiple observers on same elements
       const clearScrollSentinels = () => {
-        searchResults
-          .querySelectorAll('.search-scroll-sentinel')
+        searchResults.querySelectorAll('.search-scroll-sentinel')
           .forEach(el => infiniteScrollObserver.unobserve(el));
       };
 
-      // search execution + rendering
       const performAndRenderSearch = async (query, page = 0, append = false) => {
         if (query.trim().length <= 1) return;
-
         isLoadingMore = true;
         const { results, total, hasMore } = performSearch(query, page);
 
@@ -1104,15 +892,10 @@ if (document.body.classList.contains('js-enabled')) {
         }
 
         renderResults(results, searchResults);
-
-        if (hasMore) {
-          addScrollSentinel(searchResults, infiniteScrollObserver);
-        }
-
+        if (hasMore) addScrollSentinel(searchResults, infiniteScrollObserver);
         isLoadingMore = false;
       };
 
-      // infinite scroll observer
       const infiniteScrollObserver = new IntersectionObserver(entries => {
         entries.forEach(entry => { // for each sentinel
 
@@ -1124,86 +907,56 @@ if (document.body.classList.contains('js-enabled')) {
         });
       });
 
-      // snippet expansion
       const expandAllSnippets = (button) => {
         const resultEl = button.closest('.search-result');
         if (!resultEl) return;
 
         const snippetsContainer = resultEl.querySelector('.snippets');
-        const allSnippets = JSON.parse(resultEl.dataset.allSnippets || '[]');
-        const resultUrl = resultEl.dataset.resultUrl;
-        const searchQuery = resultEl.dataset.searchQuery;
-        
-        // get current number of snippets before expansion
         const currentSnippetCount = snippetsContainer.querySelectorAll('.snippet-item').length;
-
-        snippetsContainer.innerHTML = renderSnippetHTML(allSnippets, resultUrl, searchQuery);
+        const allSnippets = JSON.parse(resultEl.dataset.allSnippets || '[]');
+        snippetsContainer.innerHTML = renderSnippetHTML(
+          allSnippets, resultEl.dataset.resultUrl, resultEl.dataset.searchQuery
+        );
         button.setAttribute('aria-expanded', 'true');
         button.remove();
 
         announceToLiveRegion('All matching excerpts expanded');
         
         // focus first newly revealed snippet
-        const allSnippetLinks = snippetsContainer.querySelectorAll('.snippet-item');
-        const firstNewSnippet = allSnippetLinks[currentSnippetCount];
-        
-        if (firstNewSnippet) {
-          setTimeout(() => {
-            firstNewSnippet.focus(); // delay to ensure DOM is updated
-          }, 0);
-        }
+        const firstNew = snippetsContainer.querySelectorAll('.snippet-item')[currentSnippetCount];
+        if (firstNew) setTimeout(() => firstNew.focus(), 0);
       };
 
-      // event: search input
       searchInput.addEventListener('input', (e) => {
         currentQuery = e.target.value;
         currentPage = 0;
-
-        if (currentQuery) { // if query present
-          performAndRenderSearch(currentQuery, 0);
-        } else { // search cleared
-          resetSearchState();
-        }
+        currentQuery ? performAndRenderSearch(currentQuery, 0) : resetSearchState();
       });
 
-      // event: back button
-      if (searchBackBtn) {
-        searchBackBtn.addEventListener('click', (e) => {
-          e.preventDefault();
-          closeSearch();
-        });
-      }
+      searchBackBtn?.addEventListener('click', (e) => { e.preventDefault(); closeSearch(); });
 
-      // event delegation (results)
       searchResults.addEventListener('click', (e) => {
         const showMoreBtn = e.target.closest('.show-more-snippets');
         if (showMoreBtn) {
           e.preventDefault();
           e.stopPropagation();
           expandAllSnippets(showMoreBtn);
-          return;
         }
       });
 
       // close when clicking backdrop
       searchContainer.addEventListener('click', (e) => {
-        if (e.target === searchContainer) {
-          closeSearch();
-        }
+        if (e.target === searchContainer) closeSearch();
       });
 
       // keyboard shortcuts
       document.addEventListener('keydown', (e) => {
-        const isCmdOrCtrlK =
-          (e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k';
-
-        if (isCmdOrCtrlK) {
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
           e.preventDefault();
           openSearch();
         }
       });
 
-      // trigger button
       searchTrigger?.addEventListener('click', openSearch);
     };
 
@@ -1221,74 +974,47 @@ if (document.body.classList.contains('js-enabled')) {
 
     //#region
 
-    // get URL parameters for article page highlighting
-    const getArticleUrlParams = () => {
-      const params = new URLSearchParams(window.location.search);
-      
-      // get blockId from hash (everything after '#')
-      const blockId = window.location.hash.slice(1) || null;
-      
-      return {
-        searchQuery: params.get('q'),
-        blockId: blockId
-      };
-    };
+    const getArticleUrlParams = () => ({
+      searchQuery: new URLSearchParams(window.location.search).get('q'),
+      blockId: window.location.hash.slice(1) || null
+    });
 
-    const findBlockElement = (blockId) => {
-      return blockId ? document.querySelector(`[data-search-id="${blockId}"]`) : null;
-    };
+    const findBlockElement = (blockId) =>
+      blockId ? document.querySelector(`[data-search-id="${blockId}"]`) : null;
 
-    // find text nodes within a root element for highlighting
+    // collect text nodes, skipping highlights and excluded containers
     const getTextNodes = (root) => {
       const textNodes = [];
-      const walker = document.createTreeWalker(
-        root,
-        NodeFilter.SHOW_TEXT,
-        (node) => {
-          // skip already highlighted nodes
-          if (node.parentElement?.classList.contains('search-highlight')) {
-            return NodeFilter.FILTER_REJECT;
-          }
-          
-          // skip nodes inside excluded containers
-          if (node.parentElement?.closest('.toc, .series-links, .next-link')) {
-            return NodeFilter.FILTER_REJECT;
-          }
-          
-          return NodeFilter.FILTER_ACCEPT;
-        }
-      );
-      
-      // collect all accepted text nodes
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, (node) => {
+        // skip already highlighted nodes
+        if (node.parentElement?.classList.contains('search-highlight')) return NodeFilter.FILTER_REJECT;
+        // skip nodes inside excluded containers
+        if (node.parentElement?.closest('.toc, .series-links, .next-link')) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      });
       let node;
-      while (node = walker.nextNode()) {
-        textNodes.push(node);
-      }
+      while ((node = walker.nextNode())) textNodes.push(node);
       return textNodes;
     };
 
-    // find all occurrences of search pattern and wrap in <mark>
+    // wrap all matches in <mark>
     const highlightMatchesInElement = (element, searchPattern) => {
       const regex = new RegExp(`(${searchPattern})`, 'gi');
-      const textNodes = getTextNodes(element); // get text nodes to search
-      const matches = [];
-      
-      textNodes.forEach(textNode => {
+      const marks = [];
+
+      getTextNodes(element).forEach(textNode => {
         const text = textNode.textContent;
-        const nodeMatches = text.match(regex);
-        
-        if (!nodeMatches) return;
-        
-        const fragment = document.createDocumentFragment(); // replacement
+        if (!text.match(regex)) return;
+
+        const fragment = document.createDocumentFragment();
         let lastIndex = 0;
         
         // reset regex for exec loop
         regex.lastIndex = 0;
         let match;
-        
+
         while ((match = regex.exec(text)) !== null) {
-          // add plain text before match
-          if (match.index > lastIndex) { // there is text before the match
+          if (match.index > lastIndex) {
             fragment.appendChild(document.createTextNode(text.substring(lastIndex, match.index)));
           }
           
@@ -1297,37 +1023,31 @@ if (document.body.classList.contains('js-enabled')) {
           mark.className = 'search-highlight';
           mark.textContent = match[0];
           fragment.appendChild(mark);
-          matches.push(mark);
-          
+          marks.push(mark);
           lastIndex = regex.lastIndex;
         }
-        
+
         // add remaining plain text
         if (lastIndex < text.length) {
           fragment.appendChild(document.createTextNode(text.substring(lastIndex)));
         }
-        
+
         textNode.parentNode.replaceChild(fragment, textNode);
       });
-      
-      return matches;
+
+      return marks;
     };
 
-    // article search controls state
     let currentHighlightIndex = -1;
     let allHighlights = [];
     let controlsElement = null;
     let keyboardListenerAttached = false;
 
-    // get all highlight elements on the page
-    const getAllHighlights = () => {
-      return Array.from(document.querySelectorAll('mark.search-highlight'));
-    };
+    const getAllHighlights = () => Array.from(document.querySelectorAll('mark.search-highlight'));
 
-    // find the closest highlight to a given element
     const findClosestHighlight = (element) => {
       if (!element || allHighlights.length === 0) return -1;
-      
+
       // get element's vertical position
       const elementTop = element.getBoundingClientRect().top + window.scrollY;
       let closestIndex = 0;
@@ -1343,49 +1063,42 @@ if (document.body.classList.contains('js-enabled')) {
           closestIndex = index;
         }
       });
-      
       return closestIndex;
     };
 
-    // scroll to a specific highlight
     const scrollToHighlight = (highlightElement) => {
       if (!highlightElement) return;
-      
+
       // remove active from all, add to current
-      allHighlights.forEach((h) => {
-        h.classList.toggle('active', h === highlightElement);
-      });
-      
-      // scroll smoothly to center of viewport
+      allHighlights.forEach(h => h.classList.toggle('active', h === highlightElement));
       highlightElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    };
+
+    const updateCounterDisplay = () => {
+      const counter = document.querySelector('.search-counter');
+      if (counter) counter.textContent = `${currentHighlightIndex + 1} / ${allHighlights.length}`;
     };
 
     // navigate highlights (direction: 1 for next, -1 for previous)
     const navigateHighlight = (direction) => {
       if (allHighlights.length === 0) return;
-      
-      // update current index with wrap-around
-      const total = allHighlights.length;
-      const nextIndex = (currentHighlightIndex + direction + total) % total;
-      currentHighlightIndex = nextIndex;
 
+      // update current index with wrap-around
+      currentHighlightIndex = (currentHighlightIndex + direction + allHighlights.length) % allHighlights.length;
       scrollToHighlight(allHighlights[currentHighlightIndex]);
       updateCounterDisplay();
-      
-      const position = currentHighlightIndex + 1;
-      announceToLiveRegion(`Highlight ${position} of ${total}`);
+      announceToLiveRegion(`Highlight ${currentHighlightIndex + 1} of ${allHighlights.length}`);
     };
+
+    const hideSearchControls = () => controlsElement?.classList.add('hidden');
 
     // clear all highlights and reset UI
     const clearAllHighlights = () => {
       allHighlights.forEach((mark) => {
-        const parent = mark.parentNode;
-
         // replace <mark> with its text content
-        parent.replaceChild(document.createTextNode(mark.textContent), mark);
-        parent.normalize(); // combine adjacent text nodes
+        mark.parentNode.replaceChild(document.createTextNode(mark.textContent), mark);
+        mark.parentNode.normalize(); // combine adjacent text nodes
       });
-      
       allHighlights = [];
       currentHighlightIndex = -1;
       hideSearchControls();
@@ -1397,24 +1110,11 @@ if (document.body.classList.contains('js-enabled')) {
 
       // update browser URL without reloading
       window.history.replaceState({}, document.title, url);
-      
-      const totalCleared = allHighlights.length;
-      announceToLiveRegion(`${totalCleared} highlights cleared`);
+      announceToLiveRegion('Highlights cleared');
     };
 
-    // update counter display
-    const updateCounterDisplay = () => {
-      const counter = document.querySelector('.search-counter');
-      if (counter) {
-        const position = currentHighlightIndex + 1; // 1-based index
-        counter.textContent = `${position} / ${allHighlights.length}`;
-      }
-    };
-
-    // show search controls
     const showSearchControls = () => {
-      // create controls only once
-      if (!controlsElement) {
+      if (!controlsElement) { 
         controlsElement = document.createElement('div');
         controlsElement.id = 'article-search-controls';
         controlsElement.className = 'article-search-controls';
@@ -1422,9 +1122,8 @@ if (document.body.classList.contains('js-enabled')) {
           <button class="search-nav-btn" data-action="prev" title="Previous match (Shift+Enter)">← Previous</button>
           <span class="search-counter">1 / ${allHighlights.length}</span>
           <button class="search-nav-btn" data-action="next" title="Next match (Enter)">Next →</button>
-          <button class="search-clear-btn" data-action="clear" title="Clear highlights (Escape)">Clear All</button>
-        `;
-        
+          <button class="search-clear-btn" data-action="clear" title="Clear highlights (Escape)">Clear All</button>`;
+
         // event delegation for buttons
         controlsElement.addEventListener('click', (e) => {
           const action = e.target.dataset.action;
@@ -1432,10 +1131,9 @@ if (document.body.classList.contains('js-enabled')) {
           else if (action === 'next') navigateHighlight(1);
           else if (action === 'clear') clearAllHighlights();
         });
-        
         document.body.appendChild(controlsElement);
       }
-      
+
       // attach keyboard listener only once
       if (!keyboardListenerAttached) {
         document.addEventListener('keydown', (e) => {
@@ -1448,7 +1146,7 @@ if (document.body.classList.contains('js-enabled')) {
           }
           
           // visual users
-          if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+          if (e.key === 'ArrowDown' || e.key === 'ArrowRight') { 
             e.preventDefault();
             navigateHighlight(1); // next
           }
@@ -1456,39 +1154,27 @@ if (document.body.classList.contains('js-enabled')) {
             e.preventDefault();
             navigateHighlight(-1); // previous
           }
-          
-          if (e.key === 'Escape' || e.key === 'Esc') {
-            clearAllHighlights();
-          }
+          if (e.key === 'Escape' || e.key === 'Esc') clearAllHighlights();
         });
         keyboardListenerAttached = true;
       }
-      
+
       updateCounterDisplay();
       controlsElement.classList.remove('hidden');
-      
-      // announce initial state
       announceToLiveRegion(`${allHighlights.length} matches found. Use Enter to navigate, Escape to clear.`);
-    };
-
-    // hide search controls
-    const hideSearchControls = () => {
-      controlsElement?.classList.add('hidden');
     };
 
     const initArticleHighlighting = () => {
       const { searchQuery, blockId } = getArticleUrlParams();
-      
       if (!searchQuery) return;
-      
+
       // highlight all matches in the article
-      const contentContainer = document.querySelector('article');
-      highlightMatchesInElement(contentContainer, searchQuery);
-      
+      highlightMatchesInElement(document.querySelector('article'), searchQuery);
+
       // update highlights and show controls if needed
       allHighlights = getAllHighlights();
       if (allHighlights.length === 0) return;
-      
+
       // scroll to specific block if provided
       if (blockId) {
         const blockElement = findBlockElement(blockId);
@@ -1504,7 +1190,7 @@ if (document.body.classList.contains('js-enabled')) {
         currentHighlightIndex = 0;
         scrollToHighlight(allHighlights[0]);
       }
-      
+
       showSearchControls();
       updateCounterDisplay();
     };
@@ -1521,7 +1207,7 @@ if (document.body.classList.contains('js-enabled')) {
 
     const statsButton = document.getElementById('stats-popup-button');
     const statsPopup = document.getElementById('stats-popup');
-    
+
     if (statsButton && statsPopup) {
       statsButton.addEventListener('click', (e) => {
         e.stopPropagation();

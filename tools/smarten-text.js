@@ -1,18 +1,17 @@
-// usage: node smarten-text.js path/to/file-or-folder [-d] 
+// usage: node smarten-text.js path/to/file-or-folder [-d]
 // -d for debug mode (prints output instead of writing files)
 const fs = require('fs');
 const path = require('path');
 
-function isMarkdown(filePath) {
-  return path.extname(filePath).toLowerCase() === '.md';
-}
+const isMarkdown = (filePath) => path.extname(filePath).toLowerCase() === '.md';
 
 function smartenQuotes(text) {
-  // Apostrophes (possessive uses positive lookahead (?=) to ensure it's followed by whitespace)
-  text = text.replace(/(\w)'(\w)/g, '$1’$2'); // contractions like don’t, he’s
-  text = text.replace(/(\w)'(?=\s|$)/g, '$1’'); // possessive at end of word, e.g. Severus'
+  // contractions like don't, he's
+  text = text.replace(/(\w)'(\w)/g, '$1’$2');
+  // possessive at end of word, e.g. Severus'
+  text = text.replace(/(\w)'(?=\s|$)/g, '$1’');
 
-  // Double quotes
+  // alternate open/close double quotes
   let isDoubleOpen = true;
   text = text.replace(/"/g, () => {
     const char = isDoubleOpen ? '“' : '”';
@@ -23,62 +22,46 @@ function smartenQuotes(text) {
   // Single quotes used as quotations
   // Only if they're surrounded by whitespace or parentheses, brackets, or braces
   // Uses negative lookahead (?!) to ensure not followed by a word character
-  text = text.replace(/(^|[\s\(\[\{])'(.*?)'(?!\w)/g, (match, before, content) => {
-    return before + '‘' + content + '’';
-  });
+  text = text.replace(/(^|[\s\(\[\{])'(.*?)'(?!\w)/g, (match, before, content) =>
+    before + '‘' + content + '’'
+  );
 
   return text;
 }
 
 function replaceTypography(text, debugMode = false) {
-  const fmDelimiter = '---';
-  const fmPlaceholder = '@@FRONTMATTER_DELIMITER@@';
+  const FM_PLACEHOLDER = '@@FRONTMATTER_DELIMITER@@';
+  const SHORTCODE_REGEX = /{%\s*[^%]+?\s*%}/g;
 
-  // Replace only the first two occurrences of '---' at start of lines
+  // protect frontmatter delimiters (first two occurrences of --- at line start)
   let fmCount = 0;
-  text = text.replace(/^---$/gm, (match) => {
-    fmCount++;
-    return fmCount <= 2 ? fmPlaceholder : match;
-  });
+  text = text.replace(/^---$/gm, () => (++fmCount <= 2 ? FM_PLACEHOLDER : '---'));
 
-  // Protect Eleventy shortcodes
-  const shortcodeRegex = /{%\s*[^%]+?\s*%}/g;
+  // protect Eleventy shortcodes
   const shortcodes = [];
-  const placeholders = [];
-
-  text = text.replace(shortcodeRegex, (match) => {
-    const key = `@@SHORTCODE_${shortcodes.length}@@`;
+  text = text.replace(SHORTCODE_REGEX, (match) => {
     shortcodes.push(match);
-    placeholders.push(key);
-    return key;
+    return `@@SHORTCODE_${shortcodes.length - 1}@@`;
   });
 
-  // Replace -- with literal em dash character
-  text = text.replace(/--/g, '—');
+  text = text
+    .replace(/--/g, '—')           // em dash
+    .replace(/(\S)\.{3}(\S)/g, '$1…$2') // tight ellipsis
+    .replace(/\.{3}/g, '…');       // standard ellipsis
 
-  // Tight ellipses (e.g. "Go...now")
-  text = text.replace(/(\S)\.{3}(\S)/g, '$1…$2');
-
-  // Standard ellipses
-  text = text.replace(/\.{3}/g, '…');
-
-  // Smart quotes with apostrophe handling
   text = smartenQuotes(text);
 
-  // Debug mode: print and exit
   if (debugMode) {
     console.log('--- Debug Output ---\n');
     console.log(text);
     process.exit(0);
   }
 
-  // Restore shortcodes
-  placeholders.forEach((ph, i) => {
-    text = text.replace(ph, shortcodes[i]);
-  });
+  // restore shortcodes
+  shortcodes.forEach((sc, i) => { text = text.replace(`@@SHORTCODE_${i}@@`, sc); });
 
-  // Restore frontmatter delimiters
-  text = text.replace(new RegExp(fmPlaceholder, 'g'), fmDelimiter);
+  // restore frontmatter delimiters
+  text = text.replace(new RegExp(FM_PLACEHOLDER, 'g'), '---');
 
   return text;
 }
@@ -86,16 +69,12 @@ function replaceTypography(text, debugMode = false) {
 function processFile(filePath, debugMode = false) {
   if (!isMarkdown(filePath)) {
     console.error(`❌ Only .md files are supported: ${filePath}`);
-    return; // don't exit whole process, just skip this file
+    return;
   }
-
   try {
     const content = fs.readFileSync(filePath, 'utf8');
     const updated = replaceTypography(content, debugMode);
-    if (!debugMode) {
-      fs.writeFileSync(filePath, updated, 'utf8');
-      // console.log(`✅ Processed file: ${filePath}`);
-    }
+    if (!debugMode) fs.writeFileSync(filePath, updated, 'utf8');
   } catch (err) {
     console.error(`❌ Failed to process ${filePath}: ${err.message}`);
   }
@@ -111,27 +90,26 @@ function processPath(inputPath, debugMode = false) {
 
   if (stats.isFile()) {
     processFile(inputPath, debugMode);
-  } else if (stats.isDirectory()) {
+    return;
+  }
+
+  if (stats.isDirectory()) {
     if (debugMode) {
       console.error('❌ Debug mode only supports a single file.');
       process.exit(1);
     }
-    const entries = fs.readdirSync(inputPath);
-    entries.forEach(entry => {
+    fs.readdirSync(inputPath).forEach(entry => {
       const fullPath = path.join(inputPath, entry);
       const entryStats = fs.statSync(fullPath);
-      if (entryStats.isDirectory()) {
-        processPath(fullPath); // recurse
-      } else if (entryStats.isFile() && isMarkdown(fullPath)) {
-        processFile(fullPath);
-      }
+      if (entryStats.isDirectory()) processPath(fullPath);
+      else if (entryStats.isFile() && isMarkdown(fullPath)) processFile(fullPath);
     });
-  } else {
-    console.error(`❌ Unsupported path type: ${inputPath}`);
+    return;
   }
+
+  console.error(`❌ Unsupported path type: ${inputPath}`);
 }
 
-// Get file or folder path from command-line args
 const args = process.argv.slice(2); // ignore first two args (node and script name)
 const debugMode = args.includes('-d');
 const inputPath = args.find(arg => arg !== '-d');

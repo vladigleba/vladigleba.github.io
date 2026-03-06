@@ -5,10 +5,23 @@ const markdownItFootnote = require('markdown-it-footnote');
 const { JSDOM } = require('jsdom');
 const { InputPathToUrlTransformPlugin } = require('@11ty/eleventy');
 const CleanCSS = require('clean-css');
-const fs = require('fs');
-const path = require('path');
 const childProcess = require('child_process');
 const site = require('./_data/site.json');
+
+// pre-compile slug regexes once at module level
+const SLUG_REGEXES = {
+  space:      /\s+/g,
+  nonWord:    /[^\w\-]+/g,
+  multiHyphen: /\-\-+/g,
+  trimHyphen: /^-+|-+$/g,
+};
+
+const slugify = (text) =>
+  text.toLowerCase()
+    .replace(SLUG_REGEXES.space,       '-')
+    .replace(SLUG_REGEXES.nonWord,     '')
+    .replace(SLUG_REGEXES.multiHyphen, '-')
+    .replace(SLUG_REGEXES.trimHyphen,  '');
 
 module.exports = async (config) => {
 
@@ -18,7 +31,7 @@ module.exports = async (config) => {
 
   //#region
 
-  // markdown settings and external links handling
+  // markdown settings and external link handling
   const md = markdownIt({ html: true, linkify: true }).use(markdownItFootnote);
   md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
     const href = tokens[idx].attrGet('href');
@@ -41,7 +54,7 @@ module.exports = async (config) => {
 
   //#endregion
 
-  /* 
+  /*
   shortcodes
   */
 
@@ -49,40 +62,29 @@ module.exports = async (config) => {
 
   // cite
   config.addLiquidShortcode('ct', (citation) =>
-    `<figcaption>&mdash; ${ citation }</figcaption>`
+    `<figcaption>&mdash; ${citation}</figcaption>`
   );
 
   // reference
   config.addShortcode('rf', (reference, addParens = true) => {
-    const refs = reference.split(';').map(r => r.trim()).filter(Boolean);
-    const links = [];
     let currentBook = '';
-  
-    refs.forEach(ref => {
-      let fullRef = '';
+    const links = reference.split(';').map(r => r.trim()).filter(Boolean).map(ref => {
       const fullRefMatch = ref.match(/^([1-3]?\s?[A-Za-z]+)\s+(.+)/);
-  
+      let fullRef;
       if (fullRefMatch) {
         currentBook = fullRefMatch[1];
         fullRef = `${currentBook} ${fullRefMatch[2]}`;
-      } else if (currentBook) {
-        fullRef = `${currentBook} ${ref}`;
       } else {
-        fullRef = ref; // fallback if no current book
+        fullRef = currentBook ? `${currentBook} ${ref}` : ref;
       }
-  
-      const encodedRef = encodeURIComponent(fullRef);
-      const href = `https://bible-api.com/${encodedRef}?translation=kjv`;
-  
-      links.push(
-        `<a href="${href}" class="verse-link" data-reference="${fullRef}" target="_blank" rel="noopener noreferrer">${ref}</a>`
-      );
+      const href = `https://bible-api.com/${encodeURIComponent(fullRef)}?translation=kjv`;
+      return `<a href="${href}" class="verse-link" data-reference="${fullRef}" target="_blank" rel="noopener noreferrer">${ref}</a>`;
     });
-  
+
     const joined = links.join('; ');
     return addParens ? `(${joined})` : joined;
   });
-  
+
   //#endregion
 
   /*
@@ -102,17 +104,15 @@ module.exports = async (config) => {
   });
 
   // toLocal
-  config.addFilter('toLocal', (date) => {
-    if (!date) return '';
-    return moment(date).local().format('MMM D, YYYY');
-  });
+  config.addFilter('toLocal', (date) =>
+    date ? moment(date).local().format('MMM D, YYYY') : ''
+  );
 
   // toISO
   config.addFilter('toISO', (date) => {
     if (!date) return '';
     const d = new Date(date);
-    if (isNaN(d)) return '';
-    return d.toISOString();
+    return isNaN(d) ? '' : d.toISOString();
   });
 
   // cssmin
@@ -121,16 +121,15 @@ module.exports = async (config) => {
   // absoluteUrl
   config.addFilter('absoluteUrl', (url) => {
     if (!url) return '';
-    const base = site.url;
     if (url.startsWith('http://') || url.startsWith('https://')) return url;
-    
+
     // no double slashes at the end of base
-    return base.replace(/\/$/, '') + (url.startsWith('/') ? url : '/' + url);
+    return site.url.replace(/\/$/, '') + (url.startsWith('/') ? url : '/' + url);
   });
 
   //#endregion
 
-  /* 
+  /*
   collections
   */
 
@@ -138,101 +137,97 @@ module.exports = async (config) => {
 
   // allPosts
   config.addCollection('allPosts', (collectionApi) => {
-      const posts = collectionApi.getFilteredByGlob('posts/*/*.md');
-      const categories = ['All', ...Object.keys(site.categories)];
-      const summariesByCategory = {};
-      const groupedPostsByCategory = {};
-      const uniqueSeriesByCategory = {};
-      const seriesByCategoryLookup = {};
-      const highlightedPosts = { featured: [], latest: null };
+    const posts = collectionApi.getFilteredByGlob('posts/*/*.md');
+    const categories = ['All', ...Object.keys(site.categories)];
 
-      categories.forEach(category => {
-        summariesByCategory[category] = {
-          articleCount: 0,
-          seriesCount: 0,
-          standaloneArticleCount: 0,
-          seriesArticleCount: 0,
-          totalReadingTime: 0,
-        };
+    const summariesByCategory = {};
+    const groupedPostsByCategory = {};
+    const uniqueSeriesByCategory = {};
+    const seriesByCategoryLookup = {};
+    const highlightedPosts = { featured: [], latest: null };
+
+    categories.forEach(category => {
+      summariesByCategory[category] = {
+        articleCount: 0, seriesCount: 0,
+        standaloneArticleCount: 0, seriesArticleCount: 0, totalReadingTime: 0,
+      };
         uniqueSeriesByCategory[category] = new Set(); // to track unique series
         groupedPostsByCategory[category] = [];
         seriesByCategoryLookup[category] = new Map(); // key-value lookup by series name
-      });
+    });
 
-      const orderedPosts = addNextLinks(sortPosts(posts));
-      orderedPosts.forEach(post => {
+    const orderedPosts = addNextLinks(sortPosts(posts));
+    orderedPosts.forEach(post => {
         addFrontmatterData(post); // add category, length, updated
-        
-        if ((!post.data.color) && post.data.series) {
-          post.data.color = site.series[post.data.series].color;
+
+      if (!post.data.color && post.data.series) {
+        post.data.color = site.series[post.data.series].color;
+      }
+
+      const { series, category, featured, length } = post.data;
+
+      categories.forEach(categoryFilter => {
+        const isAll = categoryFilter === 'All';
+        if (!isAll && category !== categoryFilter) return;
+
+        if (series) {
+          // series post
+          let seriesEntry = seriesByCategoryLookup[categoryFilter].get(series);
+          if (!seriesEntry) {
+            seriesEntry = {
+              type: 'series',
+              title: site.series[series].title,
+              category,
+              color: site.series[series].color,
+              posts: [],
+            };
+            seriesByCategoryLookup[categoryFilter].set(series, seriesEntry);
+            groupedPostsByCategory[categoryFilter].push(seriesEntry);
+          }
+          seriesEntry.posts.push(post);
+          uniqueSeriesByCategory[categoryFilter].add(series);
+          summariesByCategory[categoryFilter].seriesArticleCount += 1;
+        } else {
+          // standalone post
+          groupedPostsByCategory[categoryFilter].push({
+            type: 'standalone',
+            category,
+            post,
+          });
+          summariesByCategory[categoryFilter].standaloneArticleCount += 1;
         }
 
-        const { series, category, featured, length } = post.data;
-        categories.forEach(categoryFilter => {
-          const isAll = categoryFilter === 'All';
+        summariesByCategory[categoryFilter].articleCount += 1;
+        summariesByCategory[categoryFilter].totalReadingTime += length || 0;
 
-          if (isAll || category === categoryFilter) {
-            if (series) {
-              // series post
-              let seriesEntry = seriesByCategoryLookup[categoryFilter].get(series);
-              if (!seriesEntry) {
-                seriesEntry = {
-                  type: 'series',
-                  title: site.series[series].title,
-                  category,
-                  color: site.series[series].color,
-                  posts: [],
-                };
-
-                seriesByCategoryLookup[categoryFilter].set(series, seriesEntry);
-                groupedPostsByCategory[categoryFilter].push(seriesEntry);
-              }
-
-              seriesEntry.posts.push(post);
-              uniqueSeriesByCategory[categoryFilter].add(series);
-              summariesByCategory[categoryFilter].seriesArticleCount += 1;
-            } else {
-              // standalone post
-              groupedPostsByCategory[categoryFilter].push({
-                type: 'standalone',
-                category,
-                post,
-              });
-              summariesByCategory[categoryFilter].standaloneArticleCount += 1;
-            }
-
-            summariesByCategory[categoryFilter].articleCount += 1;
-            summariesByCategory[categoryFilter].totalReadingTime += length || 0;
-
-            // set featured and latest posts
-            if (isAll) {
-              if (featured) highlightedPosts.featured.push(post);
-              if (!highlightedPosts.latest || post.date > highlightedPosts.latest.date) {
-                highlightedPosts.latest = post;
-              }
-            }
+        // set featured and latest posts
+        if (isAll) {
+          if (featured) highlightedPosts.featured.push(post);
+          if (!highlightedPosts.latest || post.date > highlightedPosts.latest.date) {
+            highlightedPosts.latest = post;
           }
+        }
+      });
+    });
+
+    // add seriesInfo after all posts are grouped
+    categories.forEach(category => {
+      seriesByCategoryLookup[category].forEach(series => {
+        series.posts.forEach((post, index) => {
+          post.data.seriesInfo = {
+            total: series.posts.length,
+              current: index + 1,
+            posts: series.posts,
+          };
         });
       });
-
-      // add seriesInfo after all posts are grouped
-      categories.forEach(category => {
-        seriesByCategoryLookup[category].forEach((series) => {
-          series.posts.forEach((post, index) => {
-            post.data.seriesInfo = {
-              total: series.posts.length,
-              current: index + 1, // 1-based index
-              posts: series.posts,
-            };
-          });
-        });
 
         // finalize series counts
-        summariesByCategory[category].seriesCount = uniqueSeriesByCategory[category].size;
-      });
+      summariesByCategory[category].seriesCount = uniqueSeriesByCategory[category].size;
+    });
 
       orderedPosts.summariesByCategory = summariesByCategory;
-      orderedPosts.groupedPostsByCategory = groupedPostsByCategory;
+    orderedPosts.groupedPostsByCategory = groupedPostsByCategory;
       orderedPosts.highlightedPosts = highlightedPosts;
       orderedPosts.categoriesCount = Object.keys(summariesByCategory).length - 1;
 
@@ -281,7 +276,7 @@ module.exports = async (config) => {
       //   latest: { /* most recent post by date */ }
       // }
       // orderedPosts.categoriesCount = 3 (excluding 'All')
-    });
+  });
 
   //#endregion
 
@@ -294,96 +289,76 @@ module.exports = async (config) => {
   // modifyHtml
   config.addTransform('modifyHtml', async (content, outputPath) => {
     if (!(outputPath && outputPath.endsWith('.html'))) return content;
-    
+
     const dom = new JSDOM(content);
     const document = dom.window.document;
     const main = document.querySelector('.content');
-    
     if (!main) return content;
-    
-    // wrap blockquote/figcaption with figure
-    const figcaptions = document.querySelectorAll('blockquote + figcaption');
-    for (const figcaption of figcaptions) {
+
+    // wrap blockquote + figcaption pairs in <figure>
+    for (const figcaption of document.querySelectorAll('blockquote + figcaption')) {
       const blockquote = figcaption.previousElementSibling;
       const figure = document.createElement('figure');
       blockquote.replaceWith(figure);
       figure.appendChild(blockquote);
       figure.appendChild(figcaption);
     }
-    
-    // add data-search-id attributes to content blocks for search functionality
+
+    // add data-search-id attributes to content blocks
     const blockCounters = { heading: 0, paragraph: 0, blockquote: 0, list: 0, footnote: 0 };
-    
+
     // headings (ignore h1 since it's page title)
-    const headings = main.querySelectorAll('h2, h3, h4, h5, h6');
-    for (const heading of headings) {
+    for (const heading of main.querySelectorAll('h2, h3, h4, h5, h6')) {
       heading.setAttribute('data-search-id', `heading-${blockCounters.heading++}`);
     }
-    
+
     // paragraphs (but not inside blockquotes or lists)
-    const paragraphs = main.querySelectorAll('p');
-    for (const p of paragraphs) {
-      if (p.closest('blockquote, figure, ul, ol')) continue;
-      p.setAttribute('data-search-id', `paragraph-${blockCounters.paragraph++}`);
+    for (const p of main.querySelectorAll('p')) {
+      if (!p.closest('blockquote, figure, ul, ol')) {
+        p.setAttribute('data-search-id', `paragraph-${blockCounters.paragraph++}`);
+      }
     }
-    
+
     // blockquotes (wrapped in figures after the earlier transform)
-    const figures = main.querySelectorAll('figure');
-    for (const figure of figures) {
+    for (const figure of main.querySelectorAll('figure')) {
       if (figure.querySelector('blockquote')) {
         figure.setAttribute('data-search-id', `blockquote-${blockCounters.blockquote++}`);
       }
     }
-    
+
     // lists (both ul and ol)
-    const lists = main.querySelectorAll('ul, ol');
-    for (const list of lists) {
-      const parentSection = list.closest('section');
-      if (!parentSection) continue; // skip lists outside of main content
-      
+    for (const list of main.querySelectorAll('ul, ol')) {
+      if (!list.closest('section')) continue; // skip lists outside of main content
+
       // each list item gets individual blockid
-      const listItems = list.querySelectorAll('li');
-      listItems.forEach((li, index) => {
+      list.querySelectorAll('li').forEach((li, index) => {
         li.setAttribute('data-search-id', `list-${blockCounters.list}-item-${index}`);
       });
       blockCounters.list++;
     }
-    
+
     // footnotes
     const footnotesList = main.querySelector('.footnotes-list');
     if (footnotesList) {
-      const footnoteItems = footnotesList.querySelectorAll('li.footnote-item');
-      footnoteItems.forEach((li) => {
+      footnotesList.querySelectorAll('li.footnote-item').forEach((li) => {
         li.setAttribute('data-search-id', `footnote-${blockCounters.footnote++}`);
       });
     }
-    
+
     // early exit if no headings
+    const headings = main.querySelectorAll('h2, h3, h4, h5, h6');
     if (headings.length < 1) return content;
-        
-    // batch DOM operations
-    const fragment = document.createDocumentFragment();
-    
-    // pre-compile regex outside loop
-    const spaceRegex = /\s+/g;
-    const nonWordRegex = /[^\w\-]+/g;
-    const multiHyphenRegex = /\-\-+/g;
-    const trimHyphenRegex = /^-+|-+$/g;
-    
-    // add anchors to all headings AND wrap h2 sections
+
     const tocList = document.querySelector('aside ul');
+    const fragment = document.createDocumentFragment();
+
     for (const heading of headings) {
       const text = heading.textContent.trim();
-      const slug = text
-        .toLowerCase()
-        .replace(spaceRegex, '-')         // Replace spaces with hyphens
-        .replace(nonWordRegex, '')        // Remove all non-word characters
-        .replace(multiHyphenRegex, '-')   // Replace multiple hyphens with 
-        .replace(trimHyphenRegex, '');    // Remove leading/trailing hyphens
-      
+      const slug = slugify(text);
+
       heading.id = slug;
       heading.setAttribute('tabindex', '-1'); // make heading programmatically focusable
-      
+
       const link = document.createElement('a');
       link.href = `#${slug}`;
       link.classList.add('anchor-link');
@@ -393,49 +368,39 @@ module.exports = async (config) => {
           <use href="/assets/images/icons.svg#link"></use>
         </svg>`;
       heading.appendChild(link);
-      
+
       if (tocList) {
         const listItem = document.createElement('li');
         listItem.innerHTML = `<a href="#${slug}">${text}</a>`;
         fragment.appendChild(listItem);
       }
-      
-      // wrap h2 heading and paragraphs in section tags
+
+      // wrap h2 and its following siblings in a <section>
       if (heading.tagName === 'H2') {
-        let current = heading.nextElementSibling;
         const toWrap = [];
-        
+        let current = heading.nextElementSibling;
         while (current) {
-          const tagName = current.tagName;
-          const classList = current.classList;
-          
-          const isH2 = tagName === 'H2';
-          const isNextLink = tagName === 'P' && classList.contains('next-link');
-          const isFootnotesHr = tagName === 'HR' && classList.contains('footnotes-sep');
-          const isFootnotesSection = classList && classList.contains('footnotes');
-          
-          if (isH2 || isNextLink || isFootnotesHr || isFootnotesSection) break;
-          
+          const { tagName, classList } = current;
+          if (
+            tagName === 'H2' ||
+            (tagName === 'P' && classList.contains('next-link')) ||
+            (tagName === 'HR' && classList.contains('footnotes-sep')) ||
+            classList.contains('footnotes')
+          ) break;
           toWrap.push(current);
           current = current.nextElementSibling;
         }
-        
         if (toWrap.length > 0) {
           const section = document.createElement('section');
           heading.parentNode.insertBefore(section, heading);
           section.appendChild(heading);
-          for (const el of toWrap) {
-            section.appendChild(el);
-          }
+          for (const el of toWrap) section.appendChild(el);
         }
       }
     }
-    
-    // append all TOC items at once
-    if (tocList && fragment.hasChildNodes()) {
-      tocList.appendChild(fragment);
-    }
-    
+
+    if (tocList && fragment.hasChildNodes()) tocList.appendChild(fragment);
+
     return dom.serialize();
   });
 
@@ -449,17 +414,8 @@ module.exports = async (config) => {
 
   function sortPosts(posts) {
     if (!Array.isArray(posts)) return posts;
-    
-    // sort by custom order; if undefined, append to end (infinity)
-    if (site.useCustomReadingOrder) {
-      return posts.sort((a, b) => {
-        const orderA = a.data.order ?? Infinity;
-        const orderB = b.data.order ?? Infinity;
-        return orderA - orderB;
-      });
-    }
-
-    return posts;
+    if (!site.useCustomReadingOrder) return posts;
+    return posts.sort((a, b) => (a.data.order ?? Infinity) - (b.data.order ?? Infinity));
   }
 
   function addNextLinks(posts) {
@@ -472,7 +428,6 @@ module.exports = async (config) => {
         };
       }
     });
-
     return posts;
   }
 
@@ -486,29 +441,20 @@ module.exports = async (config) => {
 
     // last modified date (from git)
     try {
-      const gitCmd = `git log -1 --format=%cI -- "${post.inputPath}"`;
-      const gitDate = childProcess.execSync(gitCmd, { encoding: 'utf8' }).trim();
+      const gitDate = childProcess.execSync(
+        `git log -1 --format=%cI -- "${post.inputPath}"`, { encoding: 'utf8' }
+      ).trim();
       post.data.updated = gitDate ? new Date(gitDate) : null;
-    } catch (err) {
+    } catch {
       post.data.updated = null;
     }
-
-    // number of questions (H2 headings)
-    // let source = post.rawInput;
-    // if (source) {
-    //   const matches = source.match(/^##\s.+$/gm) || [];
-    //   post.data.questions = matches.length;
-    // } else {
-    //   post.data.questions = 0;
-    // }
-
     return post;
   }
 
-  function getCategoryFromPath(path) {
-    const filePath = path.replace(/\\/g, '/'); // for Windows
-    const rawCategory = filePath.split('/')[2];
-    return rawCategory.charAt(0).toUpperCase() + rawCategory.slice(1);
+  function getCategoryFromPath(filePath) {
+    const normalized = filePath.replace(/\\/g, '/'); // for Windows
+    const raw = normalized.split('/')[2];
+    return raw.charAt(0).toUpperCase() + raw.slice(1);
   }
 
   //#endregion
