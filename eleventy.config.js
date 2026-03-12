@@ -18,10 +18,10 @@ const SLUG_REGEXES = {
 
 const slugify = (text) =>
   text.toLowerCase()
-    .replace(SLUG_REGEXES.space,       '-')
-    .replace(SLUG_REGEXES.nonWord,     '')
+    .replace(SLUG_REGEXES.space, '-')
+    .replace(SLUG_REGEXES.nonWord, '')
     .replace(SLUG_REGEXES.multiHyphen, '-')
-    .replace(SLUG_REGEXES.trimHyphen,  '');
+    .replace(SLUG_REGEXES.trimHyphen, '');
 
 module.exports = async (config) => {
 
