@@ -226,6 +226,26 @@ module.exports = async (config) => {
       summariesByCategory[category].seriesCount = uniqueSeriesByCategory[category].size;
     });
 
+    // build tags if enableTags is true
+    const tagsLookup = {};
+    if (site.enableTags) {
+      orderedPosts.forEach(post => {
+        const tags = post.data.tags;
+        if (Array.isArray(tags)) {
+          tags.forEach(tag => {
+            tagsLookup[tag] ||= { 
+              count: 0,
+              posts: [], 
+              totalReadingTime: 0 
+            };
+            tagsLookup[tag].posts.push(post);
+            tagsLookup[tag].count += 1;
+            tagsLookup[tag].totalReadingTime += post.data.length || 0;
+          });
+        }
+      });
+    }
+
       orderedPosts.summariesByCategory = summariesByCategory;
     orderedPosts.groupedPostsByCategory = groupedPostsByCategory;
       orderedPosts.highlightedPosts = highlightedPosts;
