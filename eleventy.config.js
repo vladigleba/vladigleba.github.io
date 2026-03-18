@@ -250,6 +250,7 @@ module.exports = async (config) => {
     orderedPosts.groupedPostsByCategory = groupedPostsByCategory;
       orderedPosts.highlightedPosts = highlightedPosts;
       orderedPosts.categoriesCount = Object.keys(summariesByCategory).length - 1;
+      orderedPosts.tagsLookup = tagsLookup;
 
       return orderedPosts; // = [
       //   {
