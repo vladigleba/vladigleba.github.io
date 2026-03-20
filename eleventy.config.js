@@ -264,6 +264,19 @@ module.exports = async (config) => {
       //   },
       //   ... all post objects sorted
       // ]
+      // orderedPosts.tagsLookup = {
+      //   'salvation': {
+      //     count: 5,
+      //     posts: [ { post objects } ],
+      //     totalReadingTime: 45
+      //   },
+      //   'end-times': {
+      //     count: 3,
+      //     posts: [ { post objects } ],
+      //     totalReadingTime: 28
+      //   },
+      //   ... more tags
+      // }
       // orderedPosts.summariesByCategory = {
       //   'All': { 
       //     articleCount: 50, seriesCount: 8,
