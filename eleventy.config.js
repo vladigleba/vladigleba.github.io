@@ -247,7 +247,7 @@ module.exports = async (config) => {
     }
 
       orderedPosts.summariesByCategory = summariesByCategory;
-    orderedPosts.groupedPostsByCategory = groupedPostsByCategory;
+      orderedPosts.groupedPostsByCategory = groupedPostsByCategory;
       orderedPosts.highlightedPosts = highlightedPosts;
       orderedPosts.categoriesCount = Object.keys(summariesByCategory).length - 1;
       orderedPosts.tagsLookup = tagsLookup;
@@ -310,6 +310,20 @@ module.exports = async (config) => {
       //   latest: { /* most recent post by date */ }
       // }
       // orderedPosts.categoriesCount = 3 (excluding 'All')
+  });
+
+  // allTags for tag pagination
+  config.addCollection('allTags', (collectionApi) => {
+    if (!site.enableTags) return [];
+
+    const posts = collectionApi.getFilteredByGlob('posts/*/*.md');
+
+    // extract tags from all posts, flatten into single array, slugify, and dedupe
+    const tags = posts
+      .flatMap(post => Array.isArray(post.data.tags) ? post.data.tags : [])
+      .map(tag => slugify(tag));
+
+    return ['all', ...new Set(tags)].sort();
   });
 
   //#endregion
