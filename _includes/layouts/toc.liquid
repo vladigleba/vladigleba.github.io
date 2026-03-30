@@ -1,4 +1,14 @@
 <aside class="toc">
+  <section>
+    {% if site.enableTags and tags %}
+      <div class="post-tags meta">
+        <h2 class="label">Tagged with</h2>
+        {% for tag in tags %}
+          <a href="/tag/{{ tag }}/" class="tag">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </section>
   <nav aria-label="article navigation">
     <h2>In this article <button id="toggle-toc">[-]</button></h2>
     <ul></ul>
