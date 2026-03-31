@@ -1,0 +1,56 @@
+---
+layout: layouts/base
+pagination:
+  data: collections.allTags
+  size: 1
+  alias: tag
+  addAllPagesToCollections: true
+permalink: '/tag/{% if tag != "all" %}{{ tag }}/{% endif %}'
+eleventyComputed:
+  title: '{% if tag == "all" %}All Tags{% else %}Posts about {{ tag }}{% endif %}'
+---
+
+{% if site.enableTags %}
+  {% render 'layouts/banner', title: title, description: description %}
+  {% if tag == 'all' %}
+    <div class="tag-view">
+      <div class="tag-grid">
+        {% for tagSlug in collections.allTags %}
+          {% unless tagSlug == 'all' %}
+            {% assign tagData = collections.allPosts.tagsLookup[tagSlug] %}
+            <div class="tag-card">
+              <h3>
+                <a href="/tag/{{ tagSlug }}/">{{ tagSlug }}</a>
+              </h3>
+              <p class="tag-meta">
+                {{ tagData.count }} {% if tagData.count == 1 %}article{% else %}articles{% endif %}
+                &bull;
+                {{ tagData.totalReadingTime }} min read
+              </p>
+            </div>
+          {% endunless %}
+        {% endfor %}
+      </div>
+    </div>
+  {% else %}
+    {% assign tagData = collections.allPosts.tagsLookup[tag] %}
+
+    <div class="category-view">
+      <p class="tag-meta">
+        {{ tagData.count }} {% if tagData.count == 1 %}article{% else %}articles{% endif %}
+        <span>•</span>
+        {{ tagData.totalReadingTime }} min read
+      </p>
+      
+      <ol class="list standalone-list">
+        {% for post in tagData.posts %}
+          {% 
+            render 'layouts/cards',
+            post: post,
+            site: site
+          %}
+        {% endfor %}
+      </ol>
+    </div>
+  {% endif %}
+{% endif %}
