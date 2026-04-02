@@ -58,12 +58,23 @@ The fourth commandment declares that the seventh day is the Sabbath of the Lord,
 > Behold, I have received commandment to bless: and *he hath blessed; and I cannot reverse it*.
 {% ct 'Numbers 23:20' %}
 
-Since God put His blessing upon the seventh day only, and since what has been blessed cannot be unblessed, the Sabbath blessing cannot be transferred to or found on any other day. The seventh-day Sabbath, therefore, is the only day that can be referred to as the Sabbath, the Lord's day {% rf 'Revelation 1:10' %}. If another day, such as Sunday, is claimed to be the Lord's day then, logically, it cannot belong to the Lord of the Bible; there must be another entity claiming to be God and seeking to be worshiped as one.
+Since God placed His blessing upon the seventh day only, and since what has been blessed cannot be unblessed, the Sabbath blessing cannot be transferred to or found on any other day. The seventh-day Sabbath, therefore, is the only day that can rightly be called the Sabbath--the Lord's day {% rf 'Revelation 1:10' %}. If another day, such as Sunday, is claimed to be the Sabbath, then logically it cannot be the Sabbath of the Bible nor belong to the Lord of the Bible; there must be another entity [claiming to be God](/posts/basics/change.md) and seeking to be worshiped as one {% rf '2 Thessalonians 2:3-4' %}.
 
 ## Why was the Sabbath made?
 
 > And he said unto them, *The sabbath was made for man*, and not man for the sabbath.
 {% ct 'Mark 2:27' %}
 
-> According as his divine power *hath given unto us all things that pertain unto life and godliness*, through the knowledge of him that hath called us to glory and virtue.
-{% ct '2 Peter 1:3' %}
+> Grace and peace be multiplied unto you through the knowledge of God, and of Jesus our Lord, according as his divine power *hath given unto us all things that pertain unto life and godliness*, through the knowledge of him that hath called us to glory and virtue.
+{% ct '2 Peter 1:2-3' %}
+
+Christ did not give us the Sabbath arbitrarily--or worse, to disrupt our schedules or to prevent us from being productive or earning more money. Peter tells us that God in Christ has given us "all things that pertain unto life and godliness," and the Sabbath is surely among those gifts. It is a blessing--for our good, for our help.
+
+## How does it help us?
+
+> But we preach Christ crucified, unto the Jews a stumblingblock, and unto the Greeks foolishness; but unto them which are called, both Jews and Greeks, *Christ the power of God, and the wisdom of God*.
+{% ct '1 Corinthians 1:23-24' %}
+
+> And the Word was made flesh, and dwelt among us, (and we beheld his glory, *the glory as of the only begotten of the Father) full of grace and truth*.
+{% ct 'John 1:14' %}
+
