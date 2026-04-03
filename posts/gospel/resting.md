@@ -72,9 +72,19 @@ Christ did not give us the Sabbath arbitrarily--or worse, to disrupt our schedul
 
 ## How does it help us?
 
-> But we preach Christ crucified, unto the Jews a stumblingblock, and unto the Greeks foolishness; but unto them which are called, both Jews and Greeks, *Christ the power of God, and the wisdom of God*.
+> For the invisible things of him from the creation of the world are clearly seen, being understood *by the things that are made, even his eternal power and Godhead*; so that they are without excuse:
+{% ct 'Romans 1:20' %}
+
+> But we preach Christ crucified, unto the Jews a stumblingblock, and unto the Greeks foolishness; but unto them which are called, both Jews and Greeks, *Christ the power of God*, and the wisdom of God.
 {% ct '1 Corinthians 1:23-24' %}
 
-> And the Word was made flesh, and dwelt among us, (and we beheld his glory, *the glory as of the only begotten of the Father) full of grace and truth*.
-{% ct 'John 1:14' %}
+> Beware lest any man spoil you through philosophy and vain deceit, after the tradition of men, after the rudiments of the world, and not after Christ. *For in him dwelleth all the fulness of the Godhead bodily*.
+{% ct 'Colossians 2:8-9' %}
+
+Paul tells us that the eternal power and Godhead of the Creator are revealed by the things He has made {% rf 'Romans 1:20' %}, and in {% rf 'Colossians 1:16-17' false %} we learned that Christ is the Creator who made all things. {% rf '1 Corinthians 1:24' false %} identifies Christ as the power of God, and {% rf 'Colossians 2:9' false %} declares that "in him dwelleth all the fulness of the Godhead bodily." When we put these truths together, we come to a marvelous conclusion: the works of God--of which the Sabbath is a memorial--display the power and divinity of Jesus Christ. The Sabbath, therefore, stands as the glorious sign of His divinity; and when we honor the Sabbath, we acknowledge that divinity. This simple acknowledgment then allows us to receive all the blessings of His divinity by faith.
+
+## What is the blessing of Christ?
+
+> Unto you first God, having raised up his Son Jesus, sent him to bless you, *in turning away every one of you from his iniquities*.
+{% ct 'Acts 3:26' %}
 
