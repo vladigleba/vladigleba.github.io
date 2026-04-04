@@ -45,7 +45,7 @@ If the Sabbath was needed as a sign to humanity before the fall, when the earth 
 > For *by him were all things created, that are in heaven, and that are in earth*, visible and invisible, whether they be thrones, or dominions, or principalities, or powers: all things were created by him, and for him.
 {% ct 'Colossians 1:16' %}
 
-The fourth commandment declares that the seventh day is the Sabbath of the Lord, that He made heaven and earth in six days, rested on the seventh day, and blessed and sanctified it. Since both {% rf 'John 1:3' false %} and {% rf 'Colossians 1:16' false %} identify Jesus as the Creator, it was He who rested on, blessed, and sanctified the day. Jesus later confirmed this when He declared Himself Lord of the Sabbath, saying, "The Son of man is Lord also of the sabbath" {% rf 'Mark 2:28' %}. The fourth commandment and Jesus Himself thus confirm, in no uncertain terms, that the Sabbath is His day {% rf 'Exodus 20:10' %}.
+The fourth commandment declares that the seventh day is the Sabbath of the Lord, that He made heaven and earth in six days, rested on the seventh day, and blessed and sanctified it. Since both {% rf 'John 1:3' false %} and {% rf 'Colossians 1:16' false %} identify Jesus as the Creator, it was He who rested on, blessed, and sanctified the day. Jesus later confirmed this when He declared Himself Lord of the Sabbath, saying, “The Son of man is Lord also of the sabbath” {% rf 'Mark 2:28' %}. The fourth commandment and Jesus Himself thus confirm, in no uncertain terms, that the Sabbath is His day {% rf 'Exodus 20:10' %}.
 
 ## Was any other day blessed?
 
@@ -58,7 +58,7 @@ The fourth commandment declares that the seventh day is the Sabbath of the Lord,
 > Behold, I have received commandment to bless: and *he hath blessed; and I cannot reverse it*.
 {% ct 'Numbers 23:20' %}
 
-Since God placed His blessing upon the seventh day only, and since what has been blessed cannot be unblessed, the Sabbath blessing cannot be transferred to or found on any other day. The seventh-day Sabbath, therefore, is the only day that can rightly be called the Sabbath--the Lord's day {% rf 'Revelation 1:10' %}. If another day, such as Sunday, is claimed to be the Sabbath, then logically it cannot be the Sabbath of the Bible nor belong to the Lord of the Bible; there must be another entity [claiming to be God](/posts/basics/change.md) and seeking to be worshiped as one {% rf '2 Thessalonians 2:3-4' %}.
+Since God placed His blessing upon the seventh day only, and since what has been blessed cannot be unblessed, the Sabbath blessing cannot be transferred to or found on any other day. The seventh-day Sabbath, therefore, is the only day that can rightly be called the Sabbath—the Lord’s day {% rf 'Revelation 1:10' %}. If another day, such as Sunday, is claimed to be the Sabbath, then logically it cannot be the Sabbath of the Bible nor belong to the Lord of the Bible; there must be another entity [claiming to be God](/posts/basics/change.md) and seeking to be worshiped as one {% rf '2 Thessalonians 2:3-4' %}.
 
 ## Why was the Sabbath made?
 
@@ -68,7 +68,7 @@ Since God placed His blessing upon the seventh day only, and since what has been
 > Grace and peace be multiplied unto you through the knowledge of God, and of Jesus our Lord, according as his divine power *hath given unto us all things that pertain unto life and godliness*, through the knowledge of him that hath called us to glory and virtue.
 {% ct '2 Peter 1:2-3' %}
 
-Christ did not give us the Sabbath arbitrarily--or worse, to disrupt our schedules or to prevent us from being productive or earning more money. Peter tells us that God in Christ has given us "all things that pertain unto life and godliness," and the Sabbath is surely among those gifts. It is a blessing--for our good, for our help.
+Christ did not give us the Sabbath arbitrarily—or worse, to disrupt our schedules or to prevent us from being productive or earning more money. Peter tells us that God in Christ has given us “all things that pertain unto life and godliness,” and the Sabbath is surely among those gifts. It is a blessing—for our good, for our help.
 
 ## How does it help us?
 
@@ -81,10 +81,27 @@ Christ did not give us the Sabbath arbitrarily--or worse, to disrupt our schedul
 > Beware lest any man spoil you through philosophy and vain deceit, after the tradition of men, after the rudiments of the world, and not after Christ. *For in him dwelleth all the fulness of the Godhead bodily*.
 {% ct 'Colossians 2:8-9' %}
 
-Paul tells us that the eternal power and Godhead of the Creator are revealed by the things He has made {% rf 'Romans 1:20' %}, and in {% rf 'Colossians 1:16-17' false %} we learned that Christ is the Creator who made all things. {% rf '1 Corinthians 1:24' false %} identifies Christ as the power of God, and {% rf 'Colossians 2:9' false %} declares that "in him dwelleth all the fulness of the Godhead bodily." When we put these truths together, we come to a marvelous conclusion: the works of God--of which the Sabbath is a memorial--display the power and divinity of Jesus Christ. The Sabbath, therefore, stands as the glorious sign of His divinity; and when we honor the Sabbath, we acknowledge that divinity. This simple acknowledgment then allows us to receive all the blessings of His divinity by faith.
+Paul tells us that the eternal power and Godhead of the Creator are revealed by the things He has made {% rf 'Romans 1:20' %}, and in {% rf 'Colossians 1:16-17' false %} we learned that Christ is the Creator who made all things. {% rf '1 Corinthians 1:24' false %} identifies Christ as the power of God, and {% rf 'Colossians 2:9' false %} declares that “in him dwelleth all the fulness of the Godhead bodily.” Putting these truths together, we come to a marvelous conclusion: the works of God—of which the Sabbath is a memorial—display the power and divinity of Jesus Christ. The Sabbath, therefore, stands as the glorious sign of His divinity; and those who honor the Sabbath declare that they acknowledge that divinity. All who acknowledge it open the door to receiving the blessings of His divinity by faith.
 
 ## What is the blessing of Christ?
 
-> Unto you first God, having raised up his Son Jesus, sent him to bless you, *in turning away every one of you from his iniquities*.
-{% ct 'Acts 3:26' %}
+> Ye are the children of the prophets, and of the covenant which God made with our fathers, saying unto Abraham, And in thy seed shall all the kindreds of the earth be blessed. Unto you first God, having raised up his Son Jesus, sent him to bless you, *in turning away every one of you from his iniquities*.
+{% ct 'Acts 3:25-26' %}
+
+> And she shall bring forth a son, and thou shalt call his name JESUS: for *he shall save his people from their sins*.
+{% ct 'Matthew 1:21' %}
+
+> He that *committeth sin* is of the devil; for the devil sinneth from the beginning. For this purpose the Son of God was manifested, that *he might destroy the works of the devil*.
+{% ct '1 John 3:8' %}
+
+When God promised to bless Abraham, He promised to make of him a great nation, and that blessing was to extend to the whole world: “in thee shall all families of the earth be blessed” {% rf 'Genesis 12:1-3' %}. Peter explains in {% rf 'Acts 3:25-26' false %} that this promise was fulfilled in Christ and that it involved turning us away from our sins. John confirms this in {% rf '1 John 3:8' false %}, declaring that Christ came to “destroy the works of the devil,” which he equates with committing sin.
+
+Abraham was to be a blessing to the entire world because Jesus would come from his lineage {% rf 'Galatians 3:16' %}, offering salvation from sin to all who would accept Him {% rf 'John 3:16' %}. These will form the great nation promised to Abraham {% rf 'Genesis 12:2' %}, whose fulfillment is the great multitude that John saw in vision, “which no man could number, of all nations, and kindreds, and people, and tongues, [who] stood before the throne, and before the Lamb, clothed with white robes, and palms in their hands” {% rf 'Revelation 7:9-10' %}.
+
+The spiritual nature of Abraham’s blessing—saving us from our sins—was first explained by God Himself in {% rf 'Deuteronomy 30:6' false %}, then repeated by the prophets Jeremiah and Ezekiel {% rf 'Jeremiah 33:7-8; Ezekiel 36:25-29' %}, and later affirmed by Peter and John. This blessing remains freely available today to all who desire it.
+
+## Is redemption different from creation?
+
+> Wherefore the children of Israel shall keep the sabbath, to observe the sabbath throughout their generations, for a perpetual covenant. *It is a sign between me and the children of Israel for ever: for in six days the LORD made heaven and earth, and on the seventh day he rested*, and was refreshed.
+{% ct 'Exodus 31:16-17' %}
 
