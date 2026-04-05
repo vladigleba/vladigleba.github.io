@@ -70,7 +70,7 @@ Since God placed His blessing upon the seventh day only, and since what has been
 
 Christ did not give us the Sabbath arbitrarily—or worse, to disrupt our schedules or to prevent us from being productive or earning more money. Peter tells us that God in Christ has given us “all things that pertain unto life and godliness,” and the Sabbath is surely among those gifts. It is a blessing—for our good, for our help.
 
-## How does it help us?
+## How does it benefit us?
 
 > For the invisible things of him from the creation of the world are clearly seen, being understood *by the things that are made, even his eternal power and Godhead*; so that they are without excuse:
 {% ct 'Romans 1:20' %}
