@@ -96,12 +96,30 @@ Paul tells us that the eternal power and Godhead of the Creator are revealed by 
 
 When God promised to bless Abraham, He promised to make of him a great nation, and that blessing was to extend to the whole world: “in thee shall all families of the earth be blessed” {% rf 'Genesis 12:1-3' %}. Peter explains in {% rf 'Acts 3:25-26' false %} that this promise was fulfilled in Christ and that it involved turning us away from our sins. John confirms this in {% rf '1 John 3:8' false %}, declaring that Christ came to “destroy the works of the devil,” which he equates with committing sin.
 
-Abraham was to be a blessing to the entire world because Jesus would come from his lineage {% rf 'Galatians 3:16' %}, offering salvation from sin to all who would accept Him {% rf 'John 3:16' %}. These will form the great nation promised to Abraham {% rf 'Genesis 12:2' %}, whose fulfillment is the great multitude that John saw in vision, “which no man could number, of all nations, and kindreds, and people, and tongues, [who] stood before the throne, and before the Lamb, clothed with white robes, and palms in their hands” {% rf 'Revelation 7:9-10' %}.
+Abraham was to be a blessing to the entire world because Jesus would come from his lineage {% rf 'Galatians 3:16, 28-29' %}, offering salvation from sin to all who would accept Him {% rf 'John 3:16' %}. These will form the great nation promised to Abraham {% rf 'Genesis 12:2' %}, whose fulfillment is the great multitude that John saw in vision, “which no man could number, of all nations, and kindreds, and people, and tongues, [who] stood before the throne, and before the Lamb, clothed with white robes, and palms in their hands” {% rf 'Revelation 7:9-10' %}.
 
 The spiritual nature of Abraham’s blessing—saving us from our sins—was first explained by God Himself in {% rf 'Deuteronomy 30:6' false %}, then repeated by the prophets Jeremiah and Ezekiel {% rf 'Jeremiah 33:7-8; Ezekiel 36:25-29' %}, and later affirmed by Peter and John. This blessing remains freely available today to all who desire it.
 
-## Is redemption different from creation?
+## What is the blessing of the Sabbath?
 
 > Wherefore the children of Israel shall keep the sabbath, to observe the sabbath throughout their generations, for a perpetual covenant. *It is a sign between me and the children of Israel for ever: for in six days the LORD made heaven and earth, and on the seventh day he rested*, and was refreshed.
 {% ct 'Exodus 31:16-17' %}
+
+> Moreover also I gave them my sabbaths, to be a sign between me and them, that they might know that I am the LORD *that sanctify them*.
+{% ct 'Ezekiel 20:12' %}
+
+Besides being a memorial of God’s power to create, the Sabbath is also a memorial of His power to sanctify—to transform us into completely new persons in Christ.
+
+## Is redemptive power different from creative?
+
+> And the LORD God formed man of the dust of the ground, and breathed into his nostrils the breath of life; and man *became* a living soul.
+{% ct 'Genesis 2:7' %}
+
+> Therefore if any man be in Christ, he is a new *creature* [creation]: old things are passed away; behold, all things are *become* new.
+{% ct '2 Corinthians 5:17' %}
+
+The power to create a human from the dust of the ground is no different from the power to redeem a human from the "dust" of sin. It does not matter to God whether the starting medium is physical dust or spiritual; the end product is the same--a new creature. In {% rf 'John 3:3' false %}, Jesus describes this spiritual reality as being born again (recreated), and John confirms it by saying, "...which were born... of God” {% rf 'John 1:12-13' %}. Ezekiel explains what this means in practical terms in {% rf 'Ezekiel 36:25-27' false %}: a new heart and a new spirit. In {% rf 'Colossians 3:10' false %}, Paul describes the new man in Christ as being "renewed... after the image of him that created him." The power to sanctify, therefore, is the power to create--both of which the Sabbath memorializes.
+
+> Redemption is creation. *Redemption is the same power that was put forth in the beginning to create the world and all that is in it, now put forth to save men and the earth from the curse of sin.* ... The Psalmist prayed, “Create in me a clean heart, and renew a right spirit within me [Psalm 51:10].” The apostle says, that “if any man be in Christ, he is a new creature [2 Corinthians 5:17],” or a new creation. And again we read, “For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: not of works, lest any man should boast. For we are His workmanship, created in Christ Jesus unto good works, which God hath before ordained, that we should walk in them [Ephesians 2:8-10].” Compared with God, man is “less than nothing, and vanity [Isaiah 40:17].” In him “dwelleth no good thing [Romans 7:18].” Now *the same power that in the beginning made the earth from nothing, takes man, if he is willing, and makes of him that which is “to the praise of the glory of His grace* [Ephesians 1:6].”
+{% ct 'Ellet Joseph Waggoner, The Gospel in Creation, p. 16' %}
 
