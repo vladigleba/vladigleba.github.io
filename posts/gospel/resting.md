@@ -128,10 +128,10 @@ The power to create from the dust of the ground is no different from the power t
 > Speak thou also unto the children of Israel, saying, Verily *my sabbaths ye shall keep*: for it is a sign between me and you throughout your generations; that ye may know that I am the LORD that doth sanctify you.
 {% ct 'Exodus 31:13' %}
 
-> If thou turn away thy foot from the sabbath, from doing thy pleasure on *my holy day*; and call the sabbath a delight, the holy of the LORD, honourable; and shalt honour him, not doing thine own ways, nor finding thine own pleasure, nor speaking thine own words...
+> If thou turn away thy foot from the sabbath, from doing thy pleasure on *my holy day*; and call the sabbath a delight, the holy of the LORD, honourable; and shalt honour him, not doing thine own ways, nor finding thine own pleasure, nor speaking thine own words…
 {% ct 'Isaiah 58:13' %}
 
-The fourth commandment instructs us to rest from our works {% rf 'Exodus 20:10' %}, but is there a deeper meaning that extends beyond the mere cessation of labor? The Hebrew word for Sabbath (*shabath*) means "rest." When the Bible says, “The seventh day is the Sabbath [rest] of the Lord thy God” and "Remember the sabbath [rest] day, to keep it holy," it is, in fact, inviting us to keep God's rest {% rf 'Genesis 2:2-3' %}, for He rested first, setting the example for Adam and Eve to follow. It is His Sabbath and, therefore, His rest.
+The fourth commandment instructs us to rest from our works {% rf 'Exodus 20:10' %}, but is there a deeper meaning that extends beyond the mere cessation of labor? The Hebrew word for Sabbath (*shabath*) means “rest.” When the Bible says, “The seventh day is the Sabbath [rest] of the Lord thy God” and “Remember the sabbath [rest] day, to keep it holy,” it is, in fact, inviting us to keep God’s rest {% rf 'Genesis 2:2-3' %}, for He rested first, setting the example for Adam and Eve to follow. It is His Sabbath and, therefore, His rest.
 
 ## What kind of rest is this?
 
@@ -141,9 +141,21 @@ The fourth commandment instructs us to rest from our works {% rf 'Exodus 20:10' 
 > Hast thou not known? hast thou not heard, that the everlasting God, the LORD, the Creator of the ends of the earth, *fainteth not, neither is weary*? there is no searching of his understanding.
 {% ct 'Isaiah 40:28' %}
 
-First of all, God could not have been tired, for He spoke the world into existence: "Let there be light," "Let there be a firmament," and so on {% rf 'Genesis 1:3, 6' %}. The Psalmist declares, "By the word of the LORD were the heavens made; and all the host of them by the breath of his mouth" {% rf 'Psalm 33:6' %}. Everything in the natural world that we see around us came into existence in obedience to His word. But even if He had labored to create, He could not have been physically exhausted, because Isaiah says He "fainteth not, neither is weary" {% rf 'Isaiah 40:28' %}. 
+First of all, God could not have been tired, for He spoke the world into existence: “Let there be light,” “Let there be a firmament,” and so on {% rf 'Genesis 1:3, 6' %}. The Psalmist declares, “By the word of the LORD were the heavens made; and all the host of them by the breath of his mouth” {% rf 'Psalm 33:6' %}. Everything in the natural world that we see around us came into existence in obedience to His word. But even if He had labored to create, He could not have been physically exhausted, because Isaiah says He “fainteth not, neither is weary” {% rf 'Isaiah 40:28' %}. 
  
- John says that "God is a spirit" {% rf 'John 4:24' %}, which means His rest could not have been physical but spiritual. To keep His Sabbath, therefore, is to keep His *spiritual* rest. The physical cessation from labor serves as a reminder of the more important spiritual reality that God wants us to enjoy, and when we neglect the latter, we deprive ourselves of the full blessings the Sabbath provides.
+ John says that “God is a spirit” {% rf 'John 4:24' %}, which means His rest could not have been physical but spiritual. To keep His Sabbath, therefore, is to keep His *spiritual* rest. The physical cessation from labor serves as a reminder of the more important spiritual reality that God wants us to enjoy, and when we neglect the latter, we deprive ourselves of the full blessings the Sabbath provides.
 
-## What does spiritual rest bring about?
+## What does spiritual rest entail?
+
+> If thou turn away thy foot from the sabbath, from doing thy pleasure on my holy day; and *call the sabbath a delight*, the holy of the LORD, honourable; and shalt honour him, not doing thine own ways, nor finding thine own pleasure, nor speaking thine own words. Then shalt thou *delight thyself in the LORD*; and I will cause thee to ride upon the high places of the earth, and feed thee with the heritage of Jacob thy father: for the mouth of the LORD hath spoken it.
+{% ct 'Isaiah 58:13-14' %}
+
+Blessings are meant to be delighted in. When God blessed the Sabbath, He made it a day of delight—to Himself and to Adam and Eve—because it was a special time of communion between the Creator and His creation, a day on which Adam and Eve, undistracted by their ordinary activities, were able to devote themselves fully to Him. This quality time is the foundation upon which any lasting relationship is built. Its presence or absence can determine whether a relationship thrives or gradually dies. If the Sabbath is not a delight but a yoke of bondage, it is likely that the spark of love is missing, for any couple genuinely in love will never protest that they must spend time together.
+
+Thus, it is possible to rest from labor on the Sabbath and yet fail to delight in our Lord, and therefore never experience its spiritual rest. Can we really call this true Sabbath-keeping?
+
+## Can the Sabbath be forced?
+
+> And I, if I be lifted up from the earth, will *draw* all men unto me.
+{% ct 'John 12:32' %}
 
