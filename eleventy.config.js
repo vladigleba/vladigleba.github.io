@@ -323,7 +323,7 @@ module.exports = async (config) => {
       .flatMap(post => Array.isArray(post.data.tags) ? post.data.tags : [])
       .map(tag => slugify(tag));
 
-    return ['all', ...new Set(tags)].sort();
+    return [...new Set(tags)].sort();
   });
 
   //#endregion
