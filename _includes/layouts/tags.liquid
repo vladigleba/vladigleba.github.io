@@ -5,9 +5,9 @@ pagination:
   size: 1
   alias: tag
   addAllPagesToCollections: true
-permalink: '/tag/{% if tag != "all" %}{{ tag }}/{% endif %}'
+permalink: '/tag/{{ tag }}/'
 eleventyComputed:
-  title: '{% if tag == "all" %}All Tags{% else %}Posts about {{ tag }}{% endif %}'
+  title: 'Posts tagged with {{ tag }}'
 ---
 
 {% if site.enableTags %}
