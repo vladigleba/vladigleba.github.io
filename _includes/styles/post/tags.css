@@ -1,4 +1,4 @@
-aside .post-tags .tag {
+.post-tags .tag {
   display: inline-block;
   background: var(--light-blue-background);
   color: var(--darker-gray-color);
@@ -7,7 +7,7 @@ aside .post-tags .tag {
   text-decoration: none;
 }
 
-aside .post-tags .tag:hover {
+.post-tags .tag:hover {
   color: black;
 }
 
