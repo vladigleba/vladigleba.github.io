@@ -143,7 +143,9 @@ The fourth commandment instructs us to rest from our works {% rf 'Exodus 20:10' 
 
 First of all, God could not have been tired, for He spoke the world into existence: “Let there be light,” “Let there be a firmament,” and so on {% rf 'Genesis 1:3, 6' %}. The Psalmist declares, “By the word of the LORD were the heavens made; and all the host of them by the breath of his mouth” {% rf 'Psalm 33:6' %}. Everything in the natural world that we see around us came into existence in obedience to His word. But even if He had labored to create, He could not have been physically exhausted, because Isaiah says He “fainteth not, neither is weary” {% rf 'Isaiah 40:28' %}. 
  
- John says that “God is a spirit” {% rf 'John 4:24' %}, which means His rest could not have been physical but spiritual. To keep His Sabbath, therefore, is to keep His *spiritual* rest. The physical cessation from labor serves as a reminder of the more important spiritual reality that God wants us to enjoy, and when we neglect the latter, we deprive ourselves of the full blessings the Sabbath provides.
+ John says that “God is a spirit” {% rf 'John 4:24' %}, which means His rest could not have been physical but spiritual. To keep His Sabbath, therefore, is to keep His *spiritual* rest. The physical cessation from labor serves as a reminder of the more important spiritual reality that God wants us to enjoy, and when we neglect the latter, we deprive ourselves of the full blessings the Sabbath provides. 
+ 
+The person who rests physically on the Sabbath receives the blessings of bodily restoration, but that is not God’s primary concern, for the “outward man”—the body—is perishing, but “the inward man is renewed day by day” {% rf '2 Corinthians 4:16; Luke 12:23' %}. God desires both blessings for us, but He is far more concerned with the rest that has eternal consequences.
 
 ## What does spiritual rest entail?
 
@@ -154,8 +156,16 @@ Blessings are meant to be delighted in. When God blessed the Sabbath, He made it
 
 Thus, it is possible to rest from labor on the Sabbath and yet fail to delight in our Lord, and therefore never experience its spiritual rest. Can we really call this true Sabbath-keeping?
 
-## Can the Sabbath be forced?
+## Can spiritual rest be forced?
 
 > And I, if I be lifted up from the earth, will *draw* all men unto me.
 {% ct 'John 12:32' %}
 
+> Behold, I stand at the door, and *knock*: if any man hear my voice, and open the door, I will come in to him, and will sup with him, and he with me.
+{% ct 'Revelation 3:20' %}
+
+God is a gentleman who does not use force or coercion as methods of conversion, because they only fill the church with hypocrites, which He calls an abomination {% rf 'Proverbs 15:8; Isaiah 1:13-15; Amos 5:21-24' %}. Even more importantly, such methods are completely antithetical to His character of love, which seeks to draw-- not drive--people to Him. This is the reason why John portrays Jesus knocking on the door of our hearts, waiting to be let in {% rf 'Revelation 3:20' %}. Satan, on the other hand, has no problem barging in uninvited; in fact, when his preferred tactic—deception—fails, he defaults to force and coercion, for his kingdom is not built on the principle of love. Consequently, followers of Christ should be as far removed from such methods of “evangelism” as the east is from the west.
+
+We previously learned that Sabbath rest goes beyond the mere physical to include the spiritual. Even though both are needed, it is the spiritual that God is most concerned about because it carries with it eternal consequences and thus the majority of the Sabbath blessing. Since Sunday laws have already been enforced in the United States in the past and, according to prophecy, will be again in the future, the question must be asked: how can a legislative body hope to enforce spiritual rest? Can government compel its citizens to be saved?
+
+> The rest of the Sabbath, being spiritual, is the rest which only the Spirit of God can give, and the Spirit of God is not subject to acts of Parliament, or the decrees of courts.
