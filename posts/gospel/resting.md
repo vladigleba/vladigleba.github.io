@@ -164,8 +164,31 @@ Thus, it is possible to rest from labor on the Sabbath and yet fail to delight i
 > Behold, I stand at the door, and *knock*: if any man hear my voice, and open the door, I will come in to him, and will sup with him, and he with me.
 {% ct 'Revelation 3:20' %}
 
-God is a gentleman who does not use force or coercion as methods of conversion, because they only fill the church with hypocrites, which He calls an abomination {% rf 'Proverbs 15:8; Isaiah 1:13-15; Amos 5:21-24' %}. Even more importantly, such methods are completely antithetical to His character of love, which seeks to draw-- not drive--people to Him. This is the reason why John portrays Jesus knocking on the door of our hearts, waiting to be let in {% rf 'Revelation 3:20' %}. Satan, on the other hand, has no problem barging in uninvited; in fact, when his preferred tactic—deception—fails, he defaults to force and coercion, for his kingdom is not built on the principle of love. Consequently, followers of Christ should be as far removed from such methods of “evangelism” as the east is from the west.
+God is a gentleman who does not use force or coercion as methods of conversion, because they only fill the church with hypocrites, which He calls an abomination {% rf 'Proverbs 15:8; Isaiah 1:13-15; Amos 5:21-24' %}. Even more importantly, such methods are completely antithetical to His character of love, which seeks to draw--not drive--people to Him. This is why John portrays Jesus knocking on the door of our hearts, waiting to be let in {% rf 'Revelation 3:20' %}. Satan, on the other hand, has no problem barging in uninvited; in fact, when his preferred tactic—deception—fails, he defaults to force and coercion, for his kingdom is not built on the principle of love. Consequently, followers of Christ should be as far removed from such methods of “evangelism” as the east is from the west.
 
-We previously learned that Sabbath rest goes beyond the mere physical to include the spiritual. Even though both are needed, it is the spiritual that God is most concerned about because it carries with it eternal consequences and thus the majority of the Sabbath blessing. Since Sunday laws have already been enforced in the United States in the past and, according to prophecy, will be again in the future, the question must be asked: how can a legislative body hope to enforce spiritual rest? Can government compel its citizens to be saved?
+We previously learned that Sabbath rest goes beyond the merely physical to include the spiritual. Even though both are needed, it is the spiritual that God is most concerned about because it carries eternal consequences and thus the greater portion of the Sabbath blessing. Since Sunday laws have already been enforced in the United States in the past and, according to prophecy, will be again in the future, the question must be asked: how can a legislative body hope to enforce spiritual rest? Can government compel its citizens to be saved?
 
-> The rest of the Sabbath, being spiritual, is the rest which only the Spirit of God can give, and the Spirit of God is not subject to acts of Parliament, or the decrees of courts.
+> Spiritual pertains to the Spirit of God. *The rest of the Sabbath, being spiritual, is the rest which only the Spirit of God can give*, and the Spirit of God is not subject to acts of Parliament, or the decrees of courts.
+{% ct 'Ellet Joseph Waggoner, The Gospel in Creation, p. 164' %}
+
+## What does Sabbath rest teach us?
+
+> I have been young, and now am old; yet have I *not seen the righteous forsaken, nor his seed begging bread*.
+{% ct 'Psalm 37:25' %}
+
+> Are not two sparrows sold for a farthing? and one of them shall not fall on the ground without your Father. But the very hairs of your head are all numbered. *Fear ye not therefore, ye are of more value than many sparrows*.
+{% ct 'Matthew 10:29-31' %}
+
+> But seek ye first the kingdom of God, and his righteousness; and *all these things shall be added unto you*.
+{% ct 'Matthew 6:33' %}
+
+Besides giving us quality time to spend with our Father, the Sabbath also gives us an opportunity to walk by faith, trusting that He will provide for our temporal needs. If the budget is tight and we cannot see how we will pay the bills by taking a day off from income-generating work, God invites us to step out in faith and trust Him. He has a thousand ways to provide for our needs of which we know nothing {% rf 'Isaiah 55:8-9' %}.
+
+We must never forget that even the ability and the opportunity to generate income come from Him. We are indebted to Him for our talents, for favor in the workplace, for our very life. If our decision to honor His Sabbath happens to cost us our job, He who owns the cattle on a thousand hills {% rf 'Psalm 50:10; Haggai 2:8' %} will provide for us in another way. He who keeps our hearts beating, our lungs breathing, and the planets spinning in perfect order will also provide food on the table and shelter over our heads.
+
+## What is the Sabbath a promise of?
+
+> Let us therefore fear, lest, *a promise being left us of entering into his rest*, any of you should seem to come short of it. ... *There remaineth therefore a rest to the people of God*.
+{% ct 'Hebrews 4:1, 9' %}
+
+The promise of rest to the people of God includes that future heavenly rest in the new heaven and the new earth John saw in vision {% rf 'Revelation 21:1' %}. Because the Sabbath was instituted in Eden before the fall, it is a remnant and a reminder of that perfect world which God declared "very good" {% rf 'Genesis 1:31' %}, and because of Christ, it becomes a promise of that perfect world restored.
