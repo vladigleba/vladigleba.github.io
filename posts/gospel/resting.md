@@ -191,4 +191,19 @@ We must never forget that even the ability and the opportunity to generate incom
 > Let us therefore fear, lest, *a promise being left us of entering into his rest*, any of you should seem to come short of it. ... *There remaineth therefore a rest to the people of God*.
 {% ct 'Hebrews 4:1, 9' %}
 
-The promise of rest to the people of God includes that future heavenly rest in the new heaven and the new earth John saw in vision {% rf 'Revelation 21:1' %}. Because the Sabbath was instituted in Eden before the fall, it is a remnant and a reminder of that perfect world which God declared "very good" {% rf 'Genesis 1:31' %}, and because of Christ, it becomes a promise of that perfect world restored.
+The promise of rest to the people of God includes that future heavenly rest in the new heaven and the new earth John saw in vision {% rf 'Revelation 21:1' %}. The Sabbath is one of the blessings introduced in Eden before the fall that remained with us after the fall (the other being marriage), serving as a reminder of that perfect world which God had declared "very good" {% rf 'Genesis 1:31' %}. Because of Christ's great redemptive work for humanity, it becomes a promise to His followers of that perfect world fully restored--God's heavenly kingdom that will stand forever {% rf 'Daniel 2:44' %}.
+
+## What kind of people is that perfect world for?
+
+> Thy people also *shall be all righteous*: they shall inherit the land for ever, the branch of my planting, the work of my hands, that I may be glorified.
+{% ct 'Isaiah 60:21' %}
+
+> The *righteous* shall inherit the land, and dwell therein for ever.
+{% ct 'Psalm 37:29' %}
+
+> But Israel shall be saved in the LORD with an everlasting salvation: ye shall not be ashamed nor confounded world without end. For thus saith the LORD that created the heavens; God himself that formed the earth and made it; he hath established it, *he created it not in vain, he formed it to be inhabited*: I am the LORD; and there is none else.
+{% ct 'Isaiah 45:17-18' %}
+
+Before the fall, God's perfect world was inhabited by His perfect people, for they were created in the image of their Maker {% rf 'Genesis 1:27' %}. Their perfection extended beyond the physical to include the spiritual (character); however, it was not their own, and they did nothing to earn it. God simply gave it to them as a gift. Consequently, He gave them the Sabbath to remind them of Him--the source of their perfection.
+
+> Now it is to that perfect condition that the Lord is going to restore the earth, and through the Gospel He is preparing a perfect people to inhabit the restored earth**.
