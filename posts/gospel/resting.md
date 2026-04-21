@@ -210,8 +210,42 @@ Obviously, Adam and Eve’s fall marred God’s perfect world by introducing sin
 
 The rest that remains for the people of God {% rf 'Hebrews 4:9' %}, therefore, is their future heavenly rest, of which the Sabbath is a weekly reminder. But we do not have to wait for heaven to experience it, because the kingdom of God can begin in us now {% rf 'Luke 17:21' %}. Just as Adam and Eve found rest in the perfect works of Christ, to which they contributed nothing, so we can find spiritual rest now in His perfect righteousness, to which we contributed nothing. In Christ, and only in Him, can we find true Sabbath rest—complete deliverance from all our sins.
 
-## How can these things be?
+## Can we keep the Sabbath holy?
 
-> And *God said*, Let there be light: and there was light.
-{% ct 'Genesis 1:3' %}
+> Remember the sabbath day, to *keep it holy*.
+{% ct 'Exodus 20:8' %}
+
+> But we are all as an unclean thing, and *all our righteousnesses are as filthy rags*; and we all do fade as a leaf; and our iniquities, like the wind, have taken us away
+{% ct 'Isaiah 64:6' %}
+
+> As it is written, There is *none righteous, no, not one*.
+{% ct 'Romans 3:10' %}
+
+According to Isaiah, “all our righteousnesses are as filthy rags,” and Paul declares that “there is none righteous, no, not one,” yet God asks us to keep the Sabbath holy. How can an unholy person keep a day holy? He can’t.
+
+If we are called to keep it holy, then it must already be holy. Christ made it holy by sanctifying it in Eden {% rf 'Genesis 2:3' %}, and there is nothing we can do to make it more or less holy. We cannot add to its holiness because we have no holiness of our own to give. We can desecrate it, whether through ignorance, rebellion, or even legislation, yet it remains as holy as it ever was in Eden. In order to keep it holy, we must be holy, but Isaiah and Paul tell us this is an impossibility. In other words, we have a conundrum only Christ can solve.
+
+If Christ was able to sanctify a day, can He not sanctify a person? He can. In fact, He already did when He created Adam and Eve in His image.[^3] Since Christ is “the same yesterday, and today, and forever” {% rf 'Hebrews 13:8' %}, He who sanctified the Sabbath in Eden can still sanctify us today; the Sabbath is a weekly reminder of this {% rf 'Ezekiel 20:12' %}.
+
+[^3]: They failed to keep His holiness when they chose to rest in someone else’s word, but that was none of His fault. He gave them the right to walk away from Him, and they exercised it. When they turned their backs on Him, they naturally lost what He had given them: His holiness. Of course, Satan had no holiness of his own to give them, because his holiness also came from God, and he too had lost it when he rebelled against his Maker {% rf 'Ezekiel 28:15; Revelation 12:7-9' %}.
+
+## Why does Christ give us rest?
+
+> Come unto me, all ye that labour and are heavy laden, and *I will give you rest*. Take my yoke upon you, and learn of me; for I am meek and lowly in heart: and *ye shall find rest unto your souls*.
+{% ct 'Matthew 11:28-29' %}
+
+> But of him are ye *in Christ Jesus*, who of God is made unto us wisdom, and righteousness, and *sanctification*, and redemption:
+{% ct '1 Corinthians 1:30' %}
+
+> Unto the church of God which is at Corinth, *to them that are sanctified in Christ Jesus*, called to be saints, with all that in every place call upon the name of Jesus Christ our Lord, both theirs and ours:
+{% ct '1 Corinthians 1:2' %}
+
+> And such were some of you: but ye are washed, but *ye are sanctified*, but ye are justified *in the name of the Lord Jesus*, and by the Spirit of our God.
+{% ct '1 Corinthians 6:11' %}
+
+The Psalmist compares sin to a heavy burden: “For mine iniquities are gone over mine head: as a heavy burden they are too heavy for me” {% rf 'Psalm 38:4' %}. Before Christ’s birth, the angel told Joseph to name his Son Jesus because He would “save his people from their sins” {% rf 'Matthew 1:21' %}. After Jesus began His public ministry, He invited all who were “heavy laden” with the burden of sin to come to Him for rest {% rf 'Matthew 11:28-29' %}, because He is “made unto us wisdom, and righteousness, and sanctification, and redemption” {% rf '1 Corinthians 1:30' %}.
+
+Christ is our sanctification, and He sanctifies us by the same power with which He created the world in six days, for “redemption is simply the power that created all things, working to restore them.”[^4] Whenever we look up at the starry skies and see them declaring God’s glory and handiwork {% rf 'Psalm 19:1' %}, they are proclaiming His infinite power to save us from our sins—all of them {% rf '1 John 1:9; Romans 5:20' %}.
+
+[^4]: Ellet Joseph Waggoner, *The Gospel in Creation*, p. 173
 
