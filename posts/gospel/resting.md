@@ -1,6 +1,6 @@
 ---
 title: Sabbath Rest in Christ
-description: Go beyond mere physical Sabbath rest and discover how to find spiritual rest in the righteousness of Jesus.
+description: Go beyond mere physical Sabbath rest and discover how to find spiritual rest in Jesus.
 color: rgb(112,83,124)
 date: 2026-03-26
 order: 3900
@@ -263,7 +263,7 @@ Christ is our sanctification, and He sanctifies us by the same power with which 
 > For thou, LORD, hast made me glad through thy work: I will triumph in the works of thy hands.
 {% ct 'Psalm 92:4' %}
 
-Paul invites us to be strong, but not in ourselves, for we are no match for the power of sin. Having originated in the heart of Lucifer, an angel, sin precedes and transcends humanity, and its existence can be neither explained nor justified. It is supernatural and therefore requires supernatural power to overcome.
+Paul invites us to be strong, but not in ourselves, for we are no match for the power of sin. Having originated in the heart of an angel, Lucifer, sin precedes and transcends humanity, and its existence can be neither explained nor justified. Sin possesses supernatural power and therefore requires supernatural power to overcome.
 
-Christ's power and might alone enable us to stand strong against it. The Bible tells us that He shared our weak human nature and was "tempted like as we are, yet without sin" {% rf 'Hebrews 4:15' %}, and that He "spoiled principalities and powers, ... triumphing over them" {% rf 'Colossians 2:15' %}. The battle has already been won. The sins we struggle with He has already conquered. We need only to accept it by faith and thank Him for it. Do we believe Him? Like the Israelites of old who praised God before they went out to battle, we can praise Him before we see any outward evidence of victory {% rf '2 Chronicles 20:21-22' %}. This is resting in His Word. This is walking by faith.
+Christ’s power and might alone enable us to stand strong against it. The Bible tells us that He shared our weak human nature and was “tempted like as we are, yet without sin” {% rf 'Hebrews 4:15' %}, and that He “spoiled principalities and powers, … triumphing over them” {% rf 'Colossians 2:15' %}. The battle has already been won. The sins we struggle with He has already conquered. We need only to accept it by faith and thank Him for it. Like the Israelites of old who praised God before they went out to battle, we can praise Him before we see any outward evidence of victory {% rf '2 Chronicles 20:21-22' %}. This is walking by faith. This is true Sabbath rest in Christ—choosing to rest in His Word and going forth in His strength to victory.
 
