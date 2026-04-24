@@ -210,6 +210,12 @@ Obviously, Adam and Eve’s fall marred God’s perfect world by introducing sin
 
 The rest that remains for the people of God {% rf 'Hebrews 4:9' %}, therefore, is their future heavenly rest, of which the Sabbath is a weekly reminder. But we do not have to wait for heaven to experience it, because the kingdom of God can begin in us now {% rf 'Luke 17:21' %}. Just as Adam and Eve found rest in the perfect works of Christ, to which they contributed nothing, so we can find spiritual rest now in His perfect righteousness, to which we contributed nothing. In Christ, and only in Him, can we find true Sabbath rest—complete deliverance from all our sins.
 
+> Heaven does indeed begin upon earth for those who fully accept the Saviour, and who give themselves to Him without reserve. *The Sabbath—a fragment of Paradise—spans the chasm from Eden lost till Eden restored, and as it is the memorial of the first, it is the pledge of the second*. 
+{% ct 'Ellet Joseph Waggoner, The Gospel in Creation, p. 173' %}
+
+> As it came from Paradise, and is a part of the rest of Paradise, so it shows that those who keep it in spirit (not in form merely) are, *through the mighty power of God*, destined for a place in Paradise. And thus it will come to pass that, in the ages to come, when Eden is restored, all flesh shall come together from Sabbath to Sabbath to worship God [Isaiah 66:23], *whose love and power and kindness in Christ have brought them to share the glories of His presence*. And as they assemble on those thrice-blessed Sabbath days they will sing, ”Worthy is the Lamb that was slain to receive power, and riches, and wisdom, and strength, and honour, and glory, and blessing [Revelation 5:12].“
+{% ct 'Ellet Joseph Waggoner, The Gospel in Creation, p. 175' %}
+
 ## Can we keep the Sabbath holy?
 
 > Remember the sabbath day, to *keep it holy*.
@@ -260,10 +266,9 @@ Christ is our sanctification, and He sanctifies us by the same power with which 
 > Nay, in all these things we are more than conquerors *through him that loved us*.
 {% ct 'Romans 8:37' %}
 
-> For thou, LORD, hast made me glad through thy work: I will triumph in the works of thy hands.
+> For thou, LORD, hast made me glad *through thy work*: I will triumph in the works *of thy hands*.
 {% ct 'Psalm 92:4' %}
 
-Paul invites us to be strong, but not in ourselves, for we are no match for the power of sin. Having originated in the heart of an angel, Lucifer, sin precedes and transcends humanity, and its existence can be neither explained nor justified. Sin possesses supernatural power and therefore requires supernatural power to overcome.
+Paul invites us to be strong, but not in ourselves, for we are no match for the power of sin. Having originated in the heart of an angel (Lucifer), sin precedes and transcends humanity, and its existence can be neither explained nor justified. Sin is a mystery that possesses supernatural power and therefore requires supernatural power to overcome.
 
-Christ’s power and might alone enable us to stand strong against it. The Bible tells us that He shared our weak human nature and was “tempted like as we are, yet without sin” {% rf 'Hebrews 4:15' %}, and that He “spoiled principalities and powers, … triumphing over them” {% rf 'Colossians 2:15' %}. The battle has already been won. The sins we struggle with He has already conquered. We need only to accept it by faith and thank Him for it. Like the Israelites of old who praised God before they went out to battle, we can praise Him before we see any outward evidence of victory {% rf '2 Chronicles 20:21-22' %}. This is walking by faith. This is true Sabbath rest in Christ—choosing to rest in His Word and going forth in His strength to victory.
-
+Christ’s power and might alone enable us to stand strong against it. The Bible tells us that He shared our weak human nature and was “tempted like as we are, yet without sin” {% rf 'Hebrews 4:15' %}, and that He “spoiled principalities and powers, … triumphing over them” {% rf 'Colossians 2:15' %}. The battle has already been won. The sins we struggle with He has already conquered in His flesh. We need only to accept it by faith and thank Him for it. Like the Israelites of old who praised God before they went out to battle, we can praise Him before we see any outward evidence of victory {% rf '2 Chronicles 20:21-22' %}. This is walking by faith: choosing to rest in His Word and going forth in His strength to victory. This is why the Sabbath is the sign, or seal, of God {% rf 'Ezekiel 20:12' %}—because it identifies all who have chosen to find rest in Christ and thus experience the glorious victory He brings.
