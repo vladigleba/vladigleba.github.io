@@ -35,8 +35,7 @@ layout: layouts/base
   </header>
 
   <div class="wrapper">
-
-    {% render 'layouts/toc' %}
+    {% render 'layouts/toc', site: site, tags: tags %}
     
     <section class="content">
       {{ content }}

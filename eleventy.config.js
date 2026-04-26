@@ -18,10 +18,10 @@ const SLUG_REGEXES = {
 
 const slugify = (text) =>
   text.toLowerCase()
-    .replace(SLUG_REGEXES.space,       '-')
-    .replace(SLUG_REGEXES.nonWord,     '')
+    .replace(SLUG_REGEXES.space, '-')
+    .replace(SLUG_REGEXES.nonWord, '')
     .replace(SLUG_REGEXES.multiHyphen, '-')
-    .replace(SLUG_REGEXES.trimHyphen,  '');
+    .replace(SLUG_REGEXES.trimHyphen, '');
 
 module.exports = async (config) => {
 
@@ -226,10 +226,31 @@ module.exports = async (config) => {
       summariesByCategory[category].seriesCount = uniqueSeriesByCategory[category].size;
     });
 
+    // build tags if enableTags is true
+    const tagsLookup = {};
+    if (site.enableTags) {
+      orderedPosts.forEach(post => {
+        const tags = post.data.tags;
+        if (Array.isArray(tags)) {
+          tags.forEach(tag => {
+            tagsLookup[tag] ||= { 
+              count: 0,
+              posts: [], 
+              totalReadingTime: 0 
+            };
+            tagsLookup[tag].posts.push(post);
+            tagsLookup[tag].count += 1;
+            tagsLookup[tag].totalReadingTime += post.data.length || 0;
+          });
+        }
+      });
+    }
+
       orderedPosts.summariesByCategory = summariesByCategory;
-    orderedPosts.groupedPostsByCategory = groupedPostsByCategory;
+      orderedPosts.groupedPostsByCategory = groupedPostsByCategory;
       orderedPosts.highlightedPosts = highlightedPosts;
       orderedPosts.categoriesCount = Object.keys(summariesByCategory).length - 1;
+      orderedPosts.tagsLookup = tagsLookup;
 
       return orderedPosts; // = [
       //   {
@@ -243,6 +264,19 @@ module.exports = async (config) => {
       //   },
       //   ... all post objects sorted
       // ]
+      // orderedPosts.tagsLookup = {
+      //   'salvation': {
+      //     count: 5,
+      //     posts: [ { post objects } ],
+      //     totalReadingTime: 45
+      //   },
+      //   'end-times': {
+      //     count: 3,
+      //     posts: [ { post objects } ],
+      //     totalReadingTime: 28
+      //   },
+      //   ... more tags
+      // }
       // orderedPosts.summariesByCategory = {
       //   'All': { 
       //     articleCount: 50, seriesCount: 8,
@@ -276,6 +310,20 @@ module.exports = async (config) => {
       //   latest: { /* most recent post by date */ }
       // }
       // orderedPosts.categoriesCount = 3 (excluding 'All')
+  });
+
+  // allTags for tag pagination
+  config.addCollection('allTags', (collectionApi) => {
+    if (!site.enableTags) return [];
+
+    const posts = collectionApi.getFilteredByGlob('posts/*/*.md');
+
+    // extract tags from all posts, flatten into single array, slugify, and dedupe
+    const tags = posts
+      .flatMap(post => Array.isArray(post.data.tags) ? post.data.tags : [])
+      .map(tag => slugify(tag));
+
+    return [...new Set(tags)].sort();
   });
 
   //#endregion

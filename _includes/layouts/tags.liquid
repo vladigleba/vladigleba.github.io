@@ -1,0 +1,34 @@
+---
+layout: layouts/base
+pagination:
+  data: collections.allTags
+  size: 1
+  alias: tag
+  addAllPagesToCollections: true
+permalink: '/tag/{{ tag }}/'
+eleventyComputed:
+  title: 'Posts tagged with {{ tag }}'
+---
+
+{% if site.enableTags %}
+  {% render 'layouts/banner', title: title, description: description %}
+  {% assign tagData = collections.allPosts.tagsLookup[tag] %}
+
+  <div class="category-view">
+    <p class="tag-meta">
+      {{ tagData.count }} {% if tagData.count == 1 %}article{% else %}articles{% endif %}
+      <span>•</span>
+      {{ tagData.totalReadingTime }} min read
+    </p>
+    
+    <ol class="list standalone-list">
+      {% for post in tagData.posts %}
+          {% 
+            render 'layouts/cards',
+            post: post,
+            site: site
+          %}
+        {% endfor %}
+      </ol>
+    </div>
+{% endif %}

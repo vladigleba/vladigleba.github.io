@@ -5,6 +5,7 @@
   "url": "https://vladigleba.com",
   "useCustomReadingOrder": true,
   "showComingNextCard": true,
+  "enableTags": false,
   "categories": {
     "Basics": {
       "description": "Explore the most essential truths of the Bible.",
