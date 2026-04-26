@@ -162,7 +162,7 @@ function extractContentBlocks(bodyText) {
       continue;
     }
 
-    // footnote definition ([^1]:)
+    // footnote definition ([^1])
     if (trimmed.match(/^\[\^(\d+)\]:/)) {
       saveBlock();
       currentBlock = [trimmed]; // start new single-line block

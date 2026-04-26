@@ -107,6 +107,9 @@ In the Bible, the weekly Sabbath refers to the seventh day of the week {% rf 'Ex
 > Take heed therefore unto yourselves, and to all the flock, over the which the Holy Ghost hath made you overseers, to feed the church of God, which he hath purchased with his own blood. For I know this, that *after my departing shall grievous wolves enter in among you*, not sparing the flock. *Also of your own selves shall men arise, speaking perverse things, to draw away disciples after them*. Therefore watch, and remember, that by the space of three years I ceased not to warn every one night and day with tears.
 {% ct 'Acts 20:28-31' %}
 
+> Let no man deceive you by any means: for that day shall not come, except there come a falling away first, and that man of sin be revealed, the son of perdition; *who opposeth and exalteth himself above all that is called God, or that is worshipped; so that he as God sitteth in the temple of God, shewing himself that he is God*.
+{% ct '2 Thessalonians 2:3-4' %}
+
 Paul warned that people would arise within the church—professing to be Christians—who would speak perverse things to draw believers away from the truth.
 
 ## Was this prophesied in advance?
