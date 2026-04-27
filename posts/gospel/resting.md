@@ -58,7 +58,7 @@ The fourth commandment declares that the seventh day is the Sabbath of the Lord,
 > Behold, I have received commandment to bless: and *he hath blessed; and I cannot reverse it*.
 {% ct 'Numbers 23:20' %}
 
-Since God placed His blessing upon the seventh day only, and since what has been blessed cannot be unblessed, the Sabbath blessing cannot be transferred to or found on any other day. The seventh-day Sabbath, therefore, is the only day that can rightly be called the Sabbath—the Lord’s day {% rf 'Revelation 1:10' %}. If another day, such as Sunday, is claimed to be the Sabbath, then logically it cannot be the Sabbath of the Bible nor belong to the Lord of the Bible; there must be another entity [claiming to be God](/posts/basics/change.md) and seeking to be worshiped as one {% rf '2 Thessalonians 2:3-4' %}.
+Since God placed His blessing upon the seventh day only, and since what has been blessed cannot be unblessed, the Sabbath blessing cannot be transferred to or found on any other day. The seventh-day Sabbath, therefore, is the only day that can rightly be called the Sabbath—the Lord’s day {% rf 'Revelation 1:10' %}. If another day, such as Sunday, is claimed to be the Sabbath, then logically it cannot be the Sabbath of the Bible nor belong to the Lord of the Bible; there must be another entity [claiming to be God](/posts/basics/changed.md) and seeking to be worshiped as one {% rf '2 Thessalonians 2:3-4' %}.
 
 ## Why was the Sabbath made?
 
