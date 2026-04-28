@@ -9,12 +9,31 @@
 }
 
 #dialog-popup {
-  padding: 12.5px 17.5px 17.5px;
+  padding: 0;
   display: none;
   max-width: 350px;
   max-height: 250px;
-  overflow-y: auto;
+  overflow: hidden;
   line-height: 1.4;
+}
+
+.popup-track {
+  display: flex; /* create horizontal track for panels */
+  width: 200%; /* double width to fit two panels side by side */
+  transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.popup-track.show-secondary {
+  transform: translateX(-50%); /* slide left to show secondary panel */
+}
+
+.popup-panel {
+  width: 50%; /* each panel takes half of the track */
+  flex-shrink: 0; /* prevent shrinking */
+  box-sizing: border-box; /* prevent overflow issues with padding */
+  padding: 12.5px 17.5px 17.5px;
+  overflow-y: auto;
+  max-height: 250px; /* match #dialog-popup max-height */
 }
 
 #dialog-popup strong {
@@ -27,6 +46,7 @@
   display: block;
 }
 
+.popup-back-btn,
 .see-all-footnotes {
   margin-top: 7px;
   display: block;

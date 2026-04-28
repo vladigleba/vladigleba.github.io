@@ -225,7 +225,7 @@ if (document.body.classList.contains('js-enabled')) {
       announceToLiveRegion(`${label} opened`);
     };
 
-    // close on outside click
+    // outside-click close
     document.addEventListener('click', (e) => {
       if (!popup.contains(e.target) && !e.target.closest('.verse-link') && !e.target.closest('.footnote-ref')) {
         popup.classList.remove('show');
@@ -241,7 +241,9 @@ if (document.body.classList.contains('js-enabled')) {
         const reference = link.dataset.reference;
         if (!link.dataset.loaded) {
           try {
-            const response = await fetch(`https://bible-api.com/${encodeURIComponent(reference)}?translation=kjv`);
+          const response = await fetch(
+            `https://bible-api.com/${encodeURIComponent(reference)}?translation=kjv`
+          );
             const data = await response.json();
 
             // format verses with verse numbers if multiple, otherwise just show text
@@ -261,7 +263,7 @@ if (document.body.classList.contains('js-enabled')) {
       });
     });
 
-    // footnote popups
+    // footnote listeners
     document.querySelectorAll('.footnote-ref a').forEach(link => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
