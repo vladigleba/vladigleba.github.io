@@ -167,37 +167,93 @@ if (document.body.classList.contains('js-enabled')) {
 
     //#region
 
-    // build skeleton
-    const popup = document.createElement('div');
-    popup.id = 'dialog-popup';
-    popup.setAttribute('role', 'dialog');
-    popup.setAttribute('aria-hidden', 'true');
-    popup.tabIndex = -1; // allow programmatic focus
-    popup.innerHTML = `<p id="dialog-content"></p>`;
-    document.body.appendChild(popup);
+    // build two-panel shell
+    const popupShell = document.createElement('div');
+    popupShell.id = 'dialog-popup';
+    popupShell.setAttribute('role', 'dialog');
+    popupShell.setAttribute('aria-hidden', 'true');
+    popupShell.tabIndex = -1; // allow programmatic focus
+    popupShell.innerHTML = `
+      <div class="popup-track">
+        <div class="popup-panel" id="popup-panel-primary">
+          <p id="dialog-content"></p>
+        </div>
+        <div class="popup-panel" id="popup-panel-secondary" aria-hidden="true" inert>
+          <p id="dialog-content-secondary"></p>
+          <a href="#" class="popup-back-btn">← Back to footnote</a>
+        </div>
+      </div>`;
+    document.body.appendChild(popupShell);
 
-    let _lastFocused = null; // shared state for popup
+    // delegation for back button — survives innerHTML replacements
+    popupShell.addEventListener('click', (e) => {
+      if (e.target.classList.contains('popup-back-btn')) {
+        e.preventDefault();
+        slideToBack();
+      }
+    });
 
-    // close popup helper
+    // alias panel elements
+    const popup = popupShell;
+    const track = popupShell.querySelector('.popup-track');
+    const primaryPanel = document.getElementById('popup-panel-primary');
+    const secondaryPanel = document.getElementById('popup-panel-secondary');
+
+    let _lastFocused = null;
+    let _lastFocusedInPrimary = null;
+
+    // helpers
+    const isSecondaryOpen = () => track.classList.contains('show-secondary');
+
+    const slideToSecondary = () => {
+      track.classList.add('show-secondary');
+      secondaryPanel.removeAttribute('inert');
+      primaryPanel.setAttribute('inert', '');
+
+      // set focus to back button
+      secondaryPanel.querySelector('.popup-back-btn')?.focus();
+    };
+
+    const slideToBack = () => {
+      track.classList.remove('show-secondary');
+      primaryPanel.removeAttribute('inert');
+      secondaryPanel.setAttribute('inert', '');
+      
+      // restore focus to the verse link that opened the secondary panel
+      try { _lastFocusedInPrimary?.focus(); } catch {}
+      _lastFocusedInPrimary = null; // clean up
+      announceToLiveRegion('Back to footnote');
+    };
+
     const closePopup = () => {
       if (!popup.classList.contains('show')) return;
 
       popup.classList.remove('show');
       popup.setAttribute('aria-hidden', 'true');
-      
+      track.classList.remove('show-secondary');
+
       // restore focus to previously focused element
       try { _lastFocused?.focus(); } catch {}
     };
 
     // allow closing with Esc key for keyboard users
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' || e.key === 'Esc') closePopup();
+      if (e.key === 'Escape' || e.key === 'Esc') {
+        if (isSecondaryOpen()) slideToBack();
+        else closePopup();
+      }
     });
 
-    // helper to position and show popup
-    const showPopup = (html, trigger) => {
+    // position + open
+    const showPopup = (html, trigger, type = 'simple') => {
       if (!html) return;
+
       document.getElementById('dialog-content').innerHTML = html;
+      document.getElementById('dialog-content-secondary').innerHTML = '';
+      
+      track.classList.remove('show-secondary');
+      primaryPanel.removeAttribute('inert');
+      secondaryPanel.setAttribute('inert', ''); 
 
       // position near trigger
       const rect = trigger.getBoundingClientRect();
@@ -227,39 +283,46 @@ if (document.body.classList.contains('js-enabled')) {
 
     // outside-click close
     document.addEventListener('click', (e) => {
-      if (!popup.contains(e.target) && !e.target.closest('.verse-link') && !e.target.closest('.footnote-ref')) {
+      if (
+        !popup.contains(e.target) &&
+        !e.target.closest('.verse-link') &&
+        !e.target.closest('.footnote-ref')
+      ) {
         popup.classList.remove('show');
       }
     });
 
-    // verse popups
-    document.querySelectorAll('.verse-link').forEach(link => {
-      link.addEventListener('click', async (e) => {
-        e.preventDefault();
-        
-        // build popup
-        const reference = link.dataset.reference;
-        if (!link.dataset.loaded) {
-          try {
+    // verse loader (shared by static links + dynamic delegation)
+    const loadAndShowVerse = async (link, showFn) => {
+      // build popup 
+      const reference = link.dataset.reference;
+      if (!link.dataset.loaded) {
+        try {
           const response = await fetch(
             `https://bible-api.com/${encodeURIComponent(reference)}?translation=kjv`
           );
-            const data = await response.json();
+          const data = await response.json();
 
-            // format verses with verse numbers if multiple, otherwise just show text
-            const formattedText = data.verses?.length > 1
-              ? data.verses.map(v => `<b>${v.verse}</b> ${v.text.trim()}`).join(' ')
-              : data.text.trim();
+          // format verses with verse numbers if multiple, otherwise just show text
+          const formattedText = data.verses?.length > 1
+            ? data.verses.map(v => `<b>${v.verse}</b> ${v.text.trim()}`).join(' ')
+            : data.text.trim();
             link.dataset.verse = `<strong>${reference}</strong><br>${formattedText}`;
-            link.dataset.loaded = 'true';
-            announceToLiveRegion(`Verse loaded: ${reference}`);
-          } catch {
-            link.dataset.verse = `<strong>${reference}</strong><br>Verse not found.`;
-            announceToLiveRegion(`Verse not found: ${reference}`);
-          }
+          link.dataset.loaded = 'true';
+          announceToLiveRegion(`Verse loaded: ${reference}`);
+        } catch {
+          link.dataset.verse = `<strong>${reference}</strong><br>Verse not found.`;
+          announceToLiveRegion(`Verse not found: ${reference}`);
         }
-        
-        showPopup(link.dataset.verse, link);
+      }
+      showFn(link.dataset.verse);
+    };
+
+    // static .verse-link listeners (outside popup)
+    document.querySelectorAll('.verse-link').forEach(link => {
+      link.addEventListener('click', async (e) => {
+        e.preventDefault();
+        await loadAndShowVerse(link, (html) => showPopup(html, link));
       });
     });
 
@@ -284,8 +347,23 @@ if (document.body.classList.contains('js-enabled')) {
           html = '<strong>Footnote</strong><br>Not found.';
           announceToLiveRegion('Footnote not found');
         }
+        
+        showPopup(html, link, 'footnote');
+      });
+    });
 
-        showPopup(html, link);
+    // delegation: catch .verse-link clicks INSIDE the popup
+    popup.addEventListener('click', async (e) => {
+      const verseLink = e.target.closest('.verse-link');
+      if (!verseLink) return;
+      e.preventDefault();
+
+      _lastFocusedInPrimary = verseLink; // store before sliding away
+
+      await loadAndShowVerse(verseLink, (html) => {
+        document.getElementById('dialog-content-secondary').innerHTML = html;
+        slideToSecondary();
+        announceToLiveRegion('Verse panel opened');
       });
     });
 
