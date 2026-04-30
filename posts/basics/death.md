@@ -4,6 +4,7 @@ description: It started with a lie in the Garden of Eden, and it’s still being
 date: 2022-05-28
 series: Deception
 order: 2500
+tags: [afterlife, deception]
 featured: true
 ---
 
