@@ -4,6 +4,7 @@ description: The book of James calls it the royal law of liberty. Can it even be
 color: rgb(77,104,129)
 date: 2022-03-28
 order: 1800
+tags: [law]
 featured: true
 ---
 

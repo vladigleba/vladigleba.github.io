@@ -4,6 +4,7 @@ description: The Bible prophesied a power would arise that would attempt to chan
 date: 2022-04-23
 series: Sunday
 order: 2200
+tags: [history, law]
 ---
 
 ## What is truth?

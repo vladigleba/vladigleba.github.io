@@ -4,6 +4,7 @@ description: Go beyond mere physical Sabbath rest and discover how to find spiri
 color: rgb(112,83,124)
 date: 2026-03-26
 order: 3900
+tags: [law, sabbath]
 ---
 
 ## What subject is worth studying most?

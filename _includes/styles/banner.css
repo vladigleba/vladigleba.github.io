@@ -17,6 +17,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block; /* iOS workaround */
+  line-height: 1.4;
 }
 
 .banner p {
