@@ -63,6 +63,7 @@ article > header p {
   font-size: 17px;
 }
 
+.post-tags .tag,
 #dialog-popup,
 .copy-toast,
 .search-input,

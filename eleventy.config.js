@@ -235,12 +235,10 @@ module.exports = async (config) => {
           tags.forEach(tag => {
             tagsLookup[tag] ||= { 
               count: 0,
-              posts: [], 
-              totalReadingTime: 0 
+              posts: []
             };
             tagsLookup[tag].posts.push(post);
             tagsLookup[tag].count += 1;
-            tagsLookup[tag].totalReadingTime += post.data.length || 0;
           });
         }
       });

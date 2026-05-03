@@ -4,6 +4,7 @@ description: False prophets are on the rise. Learn how to tell the difference be
 date: 2023-02-22
 series: Remnant
 order: 3500
+tags: [deception]
 ---
 
 ## What is one way God speaks to us?
