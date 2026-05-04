@@ -40,11 +40,21 @@ layout: layouts/base
     <section class="content">
       {{ content }}
 
-      {% if next %}
-        <p class="next-link meta">
-          Read next: <a href="{{ next.url }}" rel="next">{{ next.title }}</a>
-        </p>
-      {% endif %}
+      <div class="post-footer">
+        {% if site.enableTags and tags %}
+          <div class="post-tags meta">
+            {% for tag in tags %}
+              <a href="/tag/{{ tag }}/" class="tag">{{ tag }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {% if next %}
+          <p class="next-link meta">
+            Read next: <a href="{{ next.url }}" rel="next">{{ next.title }}</a>
+          </p>
+        {% endif %}
+      </div>
     </section>
   </div>
 </article>
