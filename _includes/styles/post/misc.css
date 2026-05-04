@@ -16,13 +16,6 @@ article ul {
   line-height: 1.67;
 }
 
-.content .next-link {
-  font-family: unset;
-  border-top: 1px solid black;
-  margin-top: 60px;
-  padding: 2px 0;
-}
-
 sup {
   font-size: 12px;
   font-weight: 900;

@@ -4,6 +4,7 @@ description: Explore what a public commitment to Christ looks like, what it mean
 date: 2023-01-26
 series: Baptism
 order: 3300
+tags: [discipleship]
 ---
 
 ## What did Jesus tell His disciples before His ascension?

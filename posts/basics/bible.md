@@ -4,6 +4,7 @@ description: Is the Bible a fable, or is it the most trustworthy document we hav
 color: rgb(86, 152, 99)
 date: 2021-10-24
 order: 100
+tags: [discipleship]
 featured: true
 ---
 
@@ -88,7 +89,7 @@ The Bible is unlike any other book because it is my Creator and Redeemer’s spe
 
 Jesus is the spiritual bread that brings everlasting life, and we “eat” it whenever we read His Word. Our need for Him is actually greater than our need for physical food.
 
-## Who did Jesus say will help me understand the Bible?
+## Who helps me understand the Bible?
 
 > Howbeit when he, *the Spirit of truth*, is come, he *will guide you into all truth*: for he shall not speak of himself; but whatsoever he shall hear, that shall he speak: and he will shew you things to come.
 {% ct 'John 16:13' %}
