@@ -7,12 +7,13 @@ pagination:
   addAllPagesToCollections: true
 permalink: '/tag/{{ tag }}/'
 eleventyComputed:
-  title: 'Tagged with: {{ tag }}'
+  title: '{{ tag | capitalize }}'
 ---
 
 {% if site.enableTags %}
-  {% render 'layouts/banner', title: title, description: description %}
   {% assign tagData = collections.allPosts.tagsLookup[tag] %}
+  {% assign countText = tagData.count | append: ' articles' %}
+  {% render 'layouts/banner', title: title, description: countText %}
 
   <div class="category-view">
     <ol class="list standalone-list">
