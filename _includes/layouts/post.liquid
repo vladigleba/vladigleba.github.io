@@ -44,7 +44,7 @@ layout: layouts/base
         {% if site.enableTags and tags %}
           <div class="post-tags meta">
             {% for tag in tags %}
-              <a href="/tag/{{ tag }}/" class="tag">{{ tag }}</a>
+              <a href="/tag/{{ tag }}/" class="tag">{{ tag |  capitalize }}</a>
             {% endfor %}
           </div>
         {% endif %}

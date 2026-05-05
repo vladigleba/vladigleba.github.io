@@ -4,6 +4,7 @@ description: Prayer is foundational to the Christian walk. Are there biblical pr
 date: 2025-05-15
 series: Life
 order: 3800
+tags: [discipleship]
 ---
 
 ## Should I be praying more?

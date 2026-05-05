@@ -211,7 +211,11 @@
   }
 
   .post-footer {
-    margin-top: 30px;
+    margin-top: 20px;
+  }
+
+  .post-footer .next-link {
+    margin-top: 40px;
   }
 
   .content h2 {

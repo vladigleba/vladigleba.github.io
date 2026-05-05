@@ -4,7 +4,7 @@ description: Discover biblical guidance on keeping God’s seventh-day Sabbath t
 date: 2022-04-29
 series: Sabbath
 order: 2000
-tags: [law, sabbath]
+tags: [discipleship, law, sabbath]
 ---
 
 ## What does Isaiah say about keeping the Sabbath?

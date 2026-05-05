@@ -1,5 +1,5 @@
 .post-footer {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .post-footer p {
@@ -9,7 +9,7 @@
 
 .post-footer .next-link {
   border-top: 1px solid black;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .post-tags .tag {
@@ -19,6 +19,7 @@
   padding: 7px 15px;
   border-radius: var(--default-radius);
   text-decoration: none;
+  margin: 2px 0;
 }
 
 .post-tags .tag:hover {
