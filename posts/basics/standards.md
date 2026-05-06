@@ -4,6 +4,7 @@ description: Discover why followers of Christ are called to live differently and
 date: 2023-04-19
 series: Life
 order: 3600
+tags: [discipleship]
 ---
 
 ## What is the main motivator in a Christian’s life?

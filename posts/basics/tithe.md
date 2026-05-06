@@ -4,6 +4,7 @@ description: Financial investment advice in the Bible? Discover God’s plan for
 date: 2023-03-15
 series: Life
 order: 3700
+tags: [discipleship]
 ---
 
 ## Who is the true owner of everything on earth?
