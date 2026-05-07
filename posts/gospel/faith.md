@@ -4,6 +4,7 @@ description: Faith is a central theme in the Bible, but what is it really? Does 
 date: 2022-05-08
 series: Salvation
 order: 800
+tags: [salvation]
 ---
 
 ## What is faith?

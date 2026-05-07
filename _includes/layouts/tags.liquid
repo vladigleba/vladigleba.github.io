@@ -27,4 +27,13 @@ eleventyComputed:
         {% endfor %}
       </ol>
     </div>
+
+    <script>
+      const tagSelector = document.getElementById('tag-selector');
+      tagSelector.addEventListener('change', (e) => {
+        if (e.target.value) {
+          window.location.href = e.target.value;
+        }
+      });
+    </script>
 {% endif %}

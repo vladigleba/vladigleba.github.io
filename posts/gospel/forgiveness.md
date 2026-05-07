@@ -4,6 +4,7 @@ description: Confession and forgiveness of sins is central to the plan of salvat
 date: 2021-12-25
 series: Salvation
 order: 700
+tags: [salvation]
 ---
 
 ## Is God willing to forgive?
