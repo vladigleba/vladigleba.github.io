@@ -5,6 +5,7 @@ date: 2022-05-20
 series: Healing
 order: 2300
 featured: true
+tags: [discipleship]
 ---
 
 ## Does Jesus care about my health?

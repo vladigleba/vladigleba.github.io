@@ -15,6 +15,23 @@ eleventyComputed:
   {% assign countText = tagData.count | append: ' articles' %}
   {% render 'layouts/banner', title: title, description: countText %}
 
+  <div class="control-wrapper">
+    <div class="posts-sort">
+      <label for="tag-selector" class="switch-label">Jump to:</label>
+      <select id="tag-selector">
+        {% for availableTag in collections.allTags %}
+          <option value="/tag/{{ availableTag }}/" {% if availableTag == tag %}selected{% endif %}>
+            {{ availableTag | capitalize }}
+          </option>
+        {% endfor %}
+      </select>
+      
+      <svg class="select-arrow" aria-hidden="true">
+        <use href="/assets/images/icons.svg#chevron-down"></use>
+      </svg>
+    </div>
+  </div>
+
   <div class="category-view">
     <ol class="list standalone-list">
       {% for post in tagData.posts %}
