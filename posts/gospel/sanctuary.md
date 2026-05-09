@@ -4,6 +4,7 @@ description: First introduced to Moses on Mount Sinai, the sanctuary offers deep
 color: rgb(121,79,140)
 date: 2022-11-11
 order: 1500
+tags: [salvation]
 featured: true
 ---
 

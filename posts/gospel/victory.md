@@ -5,6 +5,7 @@ date: 2022-05-15
 series: Healing
 order: 2400
 featured: true
+tags: [discipleship, salvation]
 ---
 
 ## What is God’s will regarding sin?
@@ -149,5 +150,10 @@ There is power in what Jesus did on the cross because Revelation says the saints
 
 ## What can I pray for on a daily basis?
 
-> Thy kingdom come. *Thy will be done* on earth, as it is in heaven.
+> Thy kingdom come. *Thy will be done* in earth, as it is in heaven.
 {% ct 'Matthew 6:10' %}
+
+> He went away again the second time, and prayed, saying, O my Father, if this cup may not pass away from me, except I drink it, *thy will be done*.
+{% ct 'Matthew 26:42' %}
+
+Since God created Adam from the dust of the ground {% rf 'Genesis 2:7' %}, we are made of earth. Consequently, the closing portion of the Lord’s Prayer carries an important secondary meaning: His will being done *in us* as it is in heaven. This is the very prayer Jesus prayed in the Garden of Gethsemane, and it is to be our daily prayer as well.
