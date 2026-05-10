@@ -4,6 +4,7 @@ description: Is it possible to be part of a cult and not know it? Discover it’
 date: 2022-12-18
 series: Babylon
 order: 3100
+tags: [deception]
 ---
 
 ## Who is the source of truth?

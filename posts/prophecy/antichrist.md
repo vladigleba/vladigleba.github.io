@@ -4,6 +4,7 @@ description: Discover the truth about the entity that places itself in place of,
 date: 2022-07-17
 series: Mark
 order: 2700
+tags: [deception, history]
 ---
 
 ## What does Daniel see coming up out of the sea?
@@ -90,7 +91,7 @@ The Bible gives nine clear characteristics to identify the antichrist:
 
 ## What power fits these characteristics?
 
-Historians would be able to quickly identify the power being described because there is only one that fits them all—the papacy. Now it is important to emphasize that this is not a condemnation of Roman Catholics; rather, the Bible is pointing out a system—Catholicism. In other places the Bible also points out the faults of the Jewish and Protestant faiths. Moreover, God has devoted Christians in all churches, including the Roman Catholic church. It is also true that the papacy has done many good deeds for the poor and the needy, but she has also committed serious errors that the Bible clearly points out in Daniel and in Revelation. God must sometimes chasten and rebuke because He wants us to be aware of error and compromise, and people who are truly loyal to Him will heed His warnings, no matter the faith. With this in mind, let’s examine each of the nine characteristics:
+Historians would be able to quickly identify the power being described because there is only one that fits them all—the papacy. Now it is important to emphasize that this is not a condemnation of Roman Catholics; rather, the Bible is pointing out a system—Catholicism. In other places the Bible also points out the faults of the Jewish and Protestant faiths. Moreover, God has devoted Christians in all churches, including the Roman Catholic Church. It is also true that the papacy has done many good deeds for the poor and the needy, but she has also committed serious errors that the Bible clearly points out in Daniel and in Revelation. God must sometimes chasten and rebuke because He wants us to be aware of error and compromise, and people who are truly loyal to Him will heed His warnings, no matter the faith. With this in mind, let’s examine each of the nine characteristics:
 
 1. *It came up among the 10 kingdoms of Western Europe.* The papal power is in the heart of Western Europe in Rome, Italy.
 
@@ -100,7 +101,7 @@ Historians would be able to quickly identify the power being described because t
 
 1. *It would emerge from the fourth kingdom—the pagan Roman Empire.* The papacy is a continuation of the pagan Roman Empire, and historians attest to this. “The mighty Catholic Church was little more than the Roman Empire baptized. … The very capital of the old Roman Empire became the capital of the Christian empire. The office of Pontifex Maximus was continued in that of the pope.”[^1] “Whatever Roman elements the barbarians and Arians left … [came] under the protection of the Bishop of Rome, who was the chief person there after the emperor’s disappearance. … The Roman church … pushed itself into the place of the Roman World-Empire, of which it is the actual continuation.”[^2]
 
-1. *It would make war with the saints.* It is no secret that the Roman Catholic church killed millions of people whose religious convictions differed from hers, especially during the Dark Ages. “That the Church of Rome has shed more innocent blood than any other institution that has ever existed among mankind, will be questioned by no Protestant who has a competent knowledge of history.”[^3]
+1. *It would make war with the saints.* It is no secret that the Roman Catholic Church killed millions of people whose religious convictions differed from hers, especially during the Dark Ages. “That the Church of Rome has shed more innocent blood than any other institution that has ever existed among mankind, will be questioned by no Protestant who has a competent knowledge of history.”[^3]
 
 1. *It would be different from the 10 other kingdoms.* The papacy is different from the other secular powers in Europe in that it rose to power as a religious power.
 

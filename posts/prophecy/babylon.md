@@ -3,6 +3,7 @@ title: Are You Part of Babylon?
 description: Revelation warns about it, and the plagues are poured out on it. What does Babylon represent?
 date: 2022-10-19
 series: Babylon
+tags: [deception, history]
 order: 3000
 ---
 
@@ -64,7 +65,7 @@ In the Bible a woman represents the church. A pure woman is a pure church that i
 
 ## Who does the harlot represent?
 
-The Bible gives seven characteristics to identify the harlot of Revelation 17 as the papacy. Now it’s important to emphasize that this is not a condemnation of Roman Catholics; rather, the Bible is pointing out a system—Catholicism. In other places the Bible also points out the faults of the Jewish and Protestant faiths. Moreover, God has devoted Christians in all churches, including the Roman Catholic church. It is also true that the papacy has done many good deeds for the poor and the needy, but she has also committed serious errors that the Bible clearly points out in Daniel and in Revelation. God must sometimes chasten and rebuke because He wants us to be aware of error and compromise, and people who are truly loyal to Him will heed His warnings, no matter the faith. With this in mind, let’s examine each of the seven characteristics.
+The Bible gives seven characteristics to identify the harlot of Revelation 17 as the papacy. Now it’s important to emphasize that this is not a condemnation of Roman Catholics; rather, the Bible is pointing out a system—Catholicism. In other places the Bible also points out the faults of the Jewish and Protestant faiths. Moreover, God has devoted Christians in all churches, including the Roman Catholic Church. It is also true that the papacy has done many good deeds for the poor and the needy, but she has also committed serious errors that the Bible clearly points out in Daniel and in Revelation. God must sometimes chasten and rebuke because He wants us to be aware of error and compromise, and people who are truly loyal to Him will heed His warnings, no matter the faith. With this in mind, let’s examine each of the seven characteristics.
 
 1. *She is called the “Mother of Harlots.”* There is only one church that calls itself the mother church—the Roman Catholic Church. A prominent Catholic priest has made the following point: “They [non-Catholics] have continued the custom [of Sunday-keeping], even though it rests upon the authority of the Catholic Church and not upon an explicit text in the Bible. That observance [Sunday-keeping] remains as a reminder of the Mother Church from which the non-Catholic sects broke away—like a boy running away from home but still carrying in his pocket a picture of his mother or a lock of her hair.”[^1]
 
@@ -132,7 +133,7 @@ Whenever a church unites with the world, it results in a turning away from Bible
 
 There are three powers that come together: the dragon, the beast, and the false prophet. {% rf 'Revelation 12:9' false %} tells us the dragon represents Satan working through pagan Rome when it tried to destroy Jesus at His birth {% rf 'Revelation 12:4' %}. Satan is also called the prince of this world in {% rf 'John 12:31' false %}, and his influence expands beyond pagan Rome. He has used ancient Egypt, Assyria, and Babylon to persecute God’s people, and we’ve learned he will use the U.S.A. and the papacy in the future. Because {% rf 'Revelation 13:8' false %} says all the world will worship the beast in the last days, other world governments will be used too, as well as non-Christian religions, such as Islam, Buddhism, Hinduism, the New Age, etc.
 
-The second power, [the beast](/posts/prophecy/mark.md), represents the papacy and the false prophet represents the [apostate Protestantism](/posts/prophecy/usa.md) of America. And so world governments and non-Christian religions, Roman Catholicism, and apostate Protestantism will form an alliance, called “Babylon the great” in {% rf 'Revelation 18:2' false %}, in the final battle against God, His followers, and His law. Note how the three powers of {% rf 'Revelation 16:13' false %} are associated with unclean spirits, and Babylon is said to be the “hold of every foul spirit” in {% rf 'Revelation 18:2' false %}.
+The second power, [the beast](/posts/prophecy/mark.md), represents the papacy and the false prophet represents the [apostate Protestantism](/posts/prophecy/usa.md) of America. And so world governments and non-Christian religions, Catholicism, and apostate Protestantism will form an alliance, called “Babylon the great” in {% rf 'Revelation 18:2' false %}, in the final battle against God, His followers, and His law. Note how the three powers of {% rf 'Revelation 16:13' false %} are associated with unclean spirits, and Babylon is said to be the “hold of every foul spirit” in {% rf 'Revelation 18:2' false %}.
 
 ## What will unite these powers?
 
@@ -153,16 +154,16 @@ The second power, [the beast](/posts/prophecy/mark.md), represents the papacy an
 
 What the three powers of {% rf 'Revelation 16:13' false %} have in common are the unclean spirits that come out of their mouths, and according to {% rf 'Revelation 16:14' false %}, these are spirits of devils working through miracles and sorcery. This is an echo of Christ’s warning about false Christs and false prophets working miracles, which means we can expect a counterfeit religious revival, supported by miracles, sorcery, and spiritism, just before Christ’s coming. Spiritism, a doctrine of Satan first introduced in Eden when he told Eve she would “not surely die” {% rf 'Genesis 3:4' %}, is the belief that the dead are alive and can contact the living.
 
-Incidentally, Catholicism prays to Mary and other dead saints; apostate Protestantism also believes the dead are not really dead but alive in heaven or hell; and non-Christian religions have a door open to spiritism through practices like “channeling” and spirit worship. And so when Satan and his angels pose as dead loves ones, prophets of old, angels of heaven, or even Christ Himself, while quoting a twisted version of the Scriptures, the deception will be overwhelming to anyone whose faith is not based on the Bible.
+Incidentally, praying to Mary and other dead saints is a core practice in Catholicism; apostate Protestantism also believes the dead are not really dead but alive in heaven or hell; and non-Christian religions have a door open to spiritism through practices like “channeling” and spirit worship. And so when Satan and his angels pose as dead loves ones, prophets of old, angels of heaven, or even Christ Himself, while quoting a twisted version of the Scriptures, the deception will be overwhelming to anyone whose faith is not based on the Bible.
 
-## What did ancient Babylon believe about death?
+## What did ancient Babylonians believe about death?
 
 > Then he brought me to the door of the gate of the LORD’S house which was toward the north; and, behold, *there sat women weeping for Tammuz*.
 {% ct 'Ezekiel 8:14' %}
 
 Tamuz was the god of food and vegetation worshiped by the Babylonians, who believed that he died each year when winter arrived but would be resurrected in the spring (immortality of the soul), and so every year his death was mourned. But it wasn’t just Tamuz; they also believed that people went on to exist in another form after death, which led the Babylonians to worship the dead. This teaching, that people continue to live or be conscious after death, has survived and been adopted by spiritual Babylon, and her influence has made it spread to many Christian churches even though the Bible preaches the [exact opposite](/posts/basics/death.md) {% rf 'Ecclesiastes 9:5; Psalm 115:17' %}.
 
-## What else did ancient Babylon believe?
+## What else did they practice?
 
 > Therefore, behold, the days come, that I will do judgment upon the *graven images of Babylon*: and her whole land shall be confounded, and all her slain shall fall in the midst of her.
 {% ct 'Jeremiah 51:47' %}
