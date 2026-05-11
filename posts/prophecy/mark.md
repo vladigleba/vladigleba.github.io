@@ -4,6 +4,7 @@ description: Is it a barcode? A microchip perhaps? Discover what the Bible reall
 date: 2022-08-04
 series: Mark
 order: 2800
+tags: [deception, history]
 ---
 
 ## How does the Bible describe the beast?
@@ -35,7 +36,7 @@ Before identifying the mark of the beast, we must first identify the beast itsel
 
 The Bible often operates on the principle of repetition where previously covered subjects are repeated and new details added. If some of these characteristics described in Revelation 13 sound familiar it’s because the beast described here is the [same power](/posts/prophecy/antichrist.md) as the little horn of Daniel 7, which we previously learned represents the papacy.
 
-Now it’s worth repeating that this is not a condemnation of Roman Catholics; rather, the Bible is pointing out a system—Catholicism. In other places the Bible also points out the faults of the Jewish and Protestant faiths. Moreover, God has devoted Christians in all churches, including the Roman Catholic Church. It’s also true that the papacy has done many good deeds for the poor and the needy, but she has also committed serious errors that the Bible clearly points out in Daniel and in Revelation. God must sometimes chasten and rebuke because He wants us to be aware of error and compromise, and people who are truly loyal to Him will heed His warnings, no matter the faith. With this in mind, let’s examine each of the 11 characteristics:
+Now it’s worth repeating that this is not a condemnation of Roman Catholics; rather, the Bible is pointing out a system—Catholicism. In other places the Bible also points out the faults of the Jewish and Protestant faiths. Moreover, God has devoted Christians in all churches, including the Roman Catholic Church. It’s also true that the papacy has done many good deeds for the poor and the needy, but she has also committed serious errors that the Bible clearly points out in Daniel and in Revelation. God must sometimes chasten and rebuke because He wants us to be aware of error and compromise, and people who are truly loyal to Him will heed His warnings, no matter the faith. With this in mind, let’s examine each of the eleven characteristics:
 
 1. *It rises out of the sea.* We previously learned that waters represent densely populated areas {% rf 'Revelation 17:15' %}, and since the papacy arose in Rome, Italy—a peninsula in the heart of Western Europe—it fits this point.
 
