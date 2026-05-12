@@ -3,6 +3,7 @@ title: God’s Remnant Church
 description: God has a remnant church that will remain loyal to Him till the end. What are its identifying marks?
 date: 2022-11-01
 series: Remnant
+tags: [discipleship, history]
 order: 3400
 ---
 
