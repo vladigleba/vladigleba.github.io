@@ -91,7 +91,11 @@ The Bible gives nine clear characteristics to identify the antichrist:
 
 ## What power fits these characteristics?
 
-Historians would be able to quickly identify the power being described because there is only one that fits them all—the papacy. Now it is important to emphasize that this is not a condemnation of Roman Catholics; rather, the Bible is pointing out a system—Catholicism. In other places the Bible also points out the faults of the Jewish and Protestant faiths. Moreover, God has devoted Christians in all churches, including the Roman Catholic Church. It is also true that the papacy has done many good deeds for the poor and the needy, but she has also committed serious errors that the Bible clearly points out in Daniel and in Revelation. God must sometimes chasten and rebuke because He wants us to be aware of error and compromise, and people who are truly loyal to Him will heed His warnings, no matter the faith. With this in mind, let’s examine each of the nine characteristics:
+Historians would be quick to identify the power being described, because there is only one that fits them all—the papacy.
+
+Before we proceed, however, it is important to emphasize that our battle is not a physical one against flesh and blood but a spiritual one against Satan, the great deceiver. It is a battle for the mind, and every person has a right to know all the facts. The Bible is not condemning Roman Catholics; rather, it is pointing out a system—Catholicism. In other places it points out the faults of the Jewish and Protestant faiths as well. Moreover, God has sincere Christians in all churches, including the Roman Catholic Church, who follow Him as best they know how {% rf 'Acts 17:30' %}. It is also true that the papacy has done many good deeds for the poor and the needy, but it has also committed serious errors that the Bible clearly identifies in Daniel and in Revelation. God must sometimes chasten and rebuke because He does not want us to be led astray by error and deception, and people who are truly loyal to Him will heed His warnings, regardless of their faith. 
+
+With this in mind, we proceed to examine each of the nine characteristics:
 
 1. *It came up among the 10 kingdoms of Western Europe.* The papal power is in the heart of Western Europe in Rome, Italy.
 
