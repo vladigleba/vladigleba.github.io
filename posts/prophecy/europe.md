@@ -164,8 +164,8 @@ Since the toes are the final portion of the image, the national divisions they s
 
 ## What happens next?
 
-> And in the days of these kings shall the God of heaven set up *a kingdom, which shall never be destroyed*: and the kingdom shall not be left to other people, but *it shall break in pieces and consume all these kingdoms, and it shall stand for ever*. Forasmuch as thou sawest that the stone was cut out of the mountain without hands, and that it brake in pieces the iron, the brass, the clay, the silver, and the gold; the great God hath made known to the king what shall come to pass hereafter: and the dream is certain, and the interpretation thereof sure.
-{% ct 'Daniel 2:44-45' %}
+> Thou sawest till that *a stone was cut out without hands, which smote the image upon his feet that were of iron and clay, and brake them to pieces*. ... And in the days of these kings shall the God of heaven *set up a kingdom, which shall never be destroyed*: and the kingdom shall not be left to other people, but *it shall break in pieces and consume all these kingdoms, and it shall stand for ever*.
+{% ct 'Daniel 2:34, 44' %}
 
 The stone cut without hands represents Christ’s eternal kingdom, which will destroy all earthly kingdoms at His return. Its strike at the image’s feet {% rf 'Daniel 2:34' %} indicates that Jesus will return during the time of the divided nations—but this is only a partial fulfillment. The complete fulfillment takes place at Christ’s third coming (His post-millennial return to earth), when the lost from all ages, symbolized by the image’s various kingdoms, face God’s judgment together, illustrated by the entire image crumbling at once. After God [cleanses the earth](/posts/prophecy/millennium.md#what-then-happens-to-the-lost) from sin, the stone becomes a great mountain that fills the whole earth {% rf 'Daniel 2:35' %}, representing Christ establishing His eternal kingdom of righteousness {% rf '2 Peter 3:13' %}. The image thus offers a sweeping view of history from ancient Babylon to our own time, and onward to the Second Coming and the post-millennial establishment of Christ’s everlasting kingdom.
 
