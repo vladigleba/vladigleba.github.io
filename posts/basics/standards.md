@@ -52,14 +52,14 @@ Those who become followers of Christ become His ambassadors, representing Him wh
 > *Love not the world, neither the things that are in the world. If any man love the world, the love of the Father is not in him*. For all that is in the world, the lust of the flesh, and the lust of the eyes, and the pride of life, is not of the Father, but is of the world. And the world passeth away, and the lust thereof: but he that doeth the will of God abideth for ever.
 {% ct '1 John 2:15-17' %}
 
-Every sin falls into one of three categories: 1) the lust of the flesh, 2) the lust of the eyes, or 3) the pride of life. These are the avenues through which Satan works to awaken in us a love for the world. Because we cannot serve two masters {% rf 'Matthew 6:24' %}, a love for the world decreases our love for God, whose principles are the exact opposite of those in the world, which is why James says that lovers of the world become enemies of God {% rf 'James 4:4' %}. We are called to be unspotted from the world {% rf 'James 1:27' %} because the world, and its principles, will pass away, but the principles of God are eternal.
+Every sin falls into one of three categories: 1) the lust of the flesh, 2) the lust of the eyes, or 3) the pride of life. These are the avenues through which Satan works to awaken in us a love for the world. Because we cannot serve two masters {% rf 'Matthew 6:24' %}, love for the world diminishes our love for God, whose principles stand in direct opposition to the world’s. This is why James declares that lovers of the world become enemies of God {% rf 'James 4:4' %}. To profess Christianity while imitating the world—in appearance, speech, or conduct—is in fact to deny Christ {% rf 'Luke 16:15' %}. We are called to be unspotted from the world {% rf 'James 1:27' %}, for the world and its principles will pass away, but God’s kingdom will stand forever.
 
 ## What about conformity?
 
 > I beseech you therefore, brethren, by the mercies of God, that ye present your bodies a living sacrifice, holy, acceptable unto God, which is your reasonable service. And *be not conformed to this world: but be ye transformed by the renewing of your mind*, that ye may prove what is that good, and acceptable, and perfect, will of God.
 {% ct 'Romans 12:1-2' %}
 
-Living in a world of sin brings pressure to conform to its ways, to be squeezed into its mold, but God’s goal is to transform us by renewing our minds through the truth of His Word {% rf 'John 17:17' %}.
+Living in a world of sin brings constant pressure to conform to its ways—to be squeezed into its mold—but God’s goal is to transform us by renewing our minds through the truth as revealed in His Word, the Bible {% rf 'John 17:17' %}. God’s word that created the world in the beginning still possesses the same power to recreate our minds today—but only if we believe {% rf '1 Peter 1:22-25' %}.
 
 ## Where does transformation start?
 
