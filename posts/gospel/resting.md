@@ -252,7 +252,9 @@ If Christ was able to sanctify a day, can He not sanctify a person? He can. In f
 
 The Psalmist compares sin to a heavy burden: “For mine iniquities are gone over mine head: as a heavy burden they are too heavy for me” {% rf 'Psalm 38:4' %}. Before Christ’s birth, the angel told Joseph to name his Son Jesus because He would “save his people from their sins” {% rf 'Matthew 1:21' %}. After Jesus began His public ministry, He invited all who were “heavy laden” with the burden of sin to come to Him for rest {% rf 'Matthew 11:28-29' %}, because He is “made unto us wisdom, and righteousness, and sanctification, and redemption” {% rf '1 Corinthians 1:30' %}.
 
-Christ is our sanctification, and He sanctifies us by the same power with which He created the world in six days, for “redemption is simply the power that created all things, working to restore them.”[^4] Whenever we look up at the starry skies and see them declaring God’s glory and handiwork {% rf 'Psalm 19:1' %}, they are proclaiming His infinite power to save us from our sins—all of them {% rf '1 John 1:9; Romans 5:20' %}.
+Every Sabbath we are reminded of the rest that Christ offers us from the burdens of sin—stress, worry, fear, sorrow, disappointment, anger, envy, and the like. He invites us to “bear no burden on the sabbath day, nor bring it in by the gates of Jerusalem” {% rf 'Jeremiah 17:21' %}. What a delight the Sabbath can be when we choose to lay these burdens down at His feet! What joy can be ours when we walk through the doors of our churches to worship on the Sabbath in complete freedom in Christ!
+
+Christ is our “wisdom, and righteousness, and sanctification, and redemption” {% rf '1 Corinthians 1:30' %}, and He sanctifies us by the same power with which He created the world in six days, for “redemption is simply the power that created all things, working to restore them.”[^4] Whenever we look up at the starry skies and see them declaring God’s glory and handiwork {% rf 'Psalm 19:1' %}, they are proclaiming His infinite power to save us from our sins—all of them {% rf '1 John 1:9; Romans 5:20' %}.
 
 [^4]: Ellet Joseph Waggoner, *The Gospel in Creation*, p. 173
 

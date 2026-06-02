@@ -84,7 +84,7 @@ We begin walking in the Spirit when we choose to surrender to God, which Paul de
 
 The decision to give our life over to Jesus is synonymous we the decision to die to self because that is the only way He can reign on the throne of our heart. [Baptism](/posts/basics/baptism.md) is a beautiful symbol of this burial of self, along with the old life of sin, demonstrated by the submersion into water, *and* of the resurrection from that burial to a new life in Jesus, demonstrated by the coming out of water.
 
-## Is death to self a one-time occurance?
+## Is death to self a one-time occurrence?
 
 > And he said to them all, If any man will come after me, let him deny himself, and *take up his cross daily*, and follow me.
 {% ct 'Luke 9:23' %}
@@ -92,7 +92,7 @@ The decision to give our life over to Jesus is synonymous we the decision to die
 > I protest by your rejoicing which I have in Christ Jesus our Lord, *I die daily*.
 {% ct '1 Corinthians 15:31' %}
 
-Jesus says that those who desire to follow Him will make a daily decision to deny self. Paul echoes this when he says that death to self is a daily occurance for him, not a one-time experience, because it is the consistent connection with Christ that recreates His character in His people.
+Jesus says that those who desire to follow Him will make a daily decision to deny self. Paul echoes this when he says that death to self is a daily occurrence for him, not a one-time experience, because our old carnal nature does not cease to strive for supremacy. In {% rf 'Philippians 2:5-8' false %}, Paul invites us to have the mind of Christ—one of complete submission to the Father’s will—most clearly demonstrated in the Garden of Gethsemane: “Father, if thou be willing, remove this cup from me: nevertheless not my will, but thine, be done” {% rf 'Luke 22:42' %}. This is not a clench-the-fist, grind-the-teeth kind of submission, for we are totally incapable of submitting ourselves to God through our own power. This submission is motivated by love and accomplished by faith in the grace and power of God working in us {% rf 'Philippians 2:13' %}, “for whatsoever is not of faith is sin” {% rf 'Romans 14:23' %}.
 
 ## What is the process of growth compared to?
 
