@@ -83,7 +83,7 @@ Here Jesus pointed out that it is possible to do the right thing and still have 
 
 Genesis tells us that tithing was practiced by Abram and Jacob before the existance of the Israelite nation, which means that God gives everyone the privilege to honor Him by returning a tenth of His blessings. This also means that tithing was not abolished at the cross because it was never limited to the laws and ordinances of Moses.
 
-## Can I chose where my tithe goes?
+## Can I choose where my tithe goes?
 
 > And all the tithe of the land, whether of the seed of the land, or of the fruit of the tree, *is the LORD’S: it is holy unto the LORD*.
 {% ct 'Leviticus 27:30' %}

@@ -214,16 +214,16 @@ The battle against sin is supernatural, and it can be fought only by the superna
 
 ## Is it possible for the law to change?
 
-> *Jesus Christ the same* yesterday, and to day, and *for ever*.
-{% ct 'Hebrews 13:8' %}
-
 > And it is easier for heaven and earth to pass, *than one tittle of the law to fail*.
 {% ct 'Luke 16:17' %}
+
+> *Think not that I am come to destroy the law, or the prophets: I am not come to destroy, but to fulfil.* For verily I say unto you, Till heaven and earth pass, one jot or one tittle shall in no wise pass from the law, till all be fulfilled.
+{% ct 'Matthew 5:17-18' %}
 
 > My covenant will I not break, *nor alter the thing that is gone out of my lips*.
 {% ct 'Psalm 89:34' %}
 
-The fact that Jesus had to die on the cross to pay for the penalty of lawlessness for us is the biggest evidence that the law of God is unchangeable.
+The fact that Jesus had to die on the cross to pay the penalty of lawlessness for us is the greatest evidence that the law of God is unchangeable. He could not have laid down His life to fulfill the law {% rf 'Romans 10:4; Galatians 4:4-5' %}, only to then declare that same law—the one that required His infinite life—to be no longer binding on His followers. A law that requires an infinite price must stand for eternity. To declare it done away with only cheapens His great sacrifice. To reject it is to reject Christ Himself.
 
 ## What is God’s law a reflection of?
 
@@ -299,7 +299,7 @@ The fact that Jesus had to die on the cross to pay for the penalty of lawlessnes
 > [*Law is everlasting:*] The works of his hands are verity and judgment; all his commandments are sure. They stand fast *for ever and ever*, and are done in truth and uprightness.
 {% ct 'Psalms 111:7-8' %}
 
-The Ten Commandments are a reflection of God’s character in written form, and Jesus demonstrated what it looks like in human form. Through the law and Jesus’ life we may better comprehend God’s character. Because God cannot change, neither can His law.
+The Ten Commandments are a reflection of God’s character in written form, whereas Jesus’ life was a revelation of it in living form. Both the law and Jesus’ life help us to better comprehend God’s character. Because God cannot change, neither can His law.
 
 ## How does the devil feel about keeping God’s law?
 
