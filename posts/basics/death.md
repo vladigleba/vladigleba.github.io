@@ -46,7 +46,7 @@ God made Adam by forming him from the dust of the ground and breathing into him 
 > Then *shall the dust return to the earth* as it was: and *the spirit shall return unto God* who gave it.
 {% ct 'Ecclesiastes 12:7' %}
 
-When a person dies, the body returns to dust, and the spirit returns to God. {% rf 'Leviticus 17:11' false %} provides another clue by stating that “the life of the flesh is in the blood,” thus equating life with blood—a physical, bodily reality—rather than with an immaterial essence or detachable consciousness. Furthermore, {% rf 'Psalm 146:4' false %} and {% rf 'Ecclesiastes 9:5-6' false %} both declare that all thought and consciousness cease at death, thus leaving no possibility for an ongoing conscious soul after death. Put simply, death is not a relocation but a total cessation of life—the loss of the whole person.
+When a person dies, the body returns to dust, and the spirit returns to God. {% rf 'Leviticus 17:11' false %} provides another clue by stating that “the life of the flesh is in the blood,” thus equating life with blood—a physical, bodily reality—rather than with an immaterial essence or detachable consciousness. Furthermore, {% rf 'Psalm 146:4' false %} and {% rf 'Ecclesiastes 9:5–6' false %} both declare that all thought and consciousness cease at death, thus leaving no possibility for an ongoing conscious soul after death. Put simply, death is not a relocation but a total cessation of life—the loss of the whole person.
 
 ## What is the spirit that returns to God?
 
@@ -76,7 +76,7 @@ As an illustration, consider what is needed for light: there must be an electric
 
 Because the soul ceases to exist at death, it cannot go to heaven or hell immediately after death, for Scripture plainly declares, “The soul that sinneth, it shall die.” Why is this so? Because the wages of sin are death, and all have sinned. {% rf 'Ezekiel 18:4' false %} is utterly incompatible with the popular belief that souls are inherently immortal. If the soul were immortal, Christ could not have died to pay the penalty for our sin—which is death—and the entire plan of salvation would collapse. Moreover, if the soul were immortal then God would be unable to destroy it in hell; yet {% rf 'Matthew 10:28' false %} plainly teaches that He can.[^1]
 
-Finally, before His ascension, Jesus assured His disciples, “I will come again and receive you unto Myself” {% rf 'John 14:2-3' %}. It is crucial to note that He did not say they would come to Him at death, but rather that *He would come to them* at His Second Coming.
+Finally, before His ascension, Jesus assured His disciples, “I will come again and receive you unto Myself” {% rf 'John 14:2–3' %}. It is crucial to note that He did not say they would come to Him at death, but rather that *He would come to them* at His Second Coming.
 
 [^1]: This passage is often cited as evidence the soul is separable from the body, but it simply teaches that humans cannot permanently destroy a person; only God can. God can resurrect the martyr’s body, but there is no resurrection from the [second death](/posts/prophecy/millennium.md#what-then-happens-to-the-lost), over which He alone has authority.
 
@@ -91,7 +91,7 @@ It may seem that Jesus’ story teaches that the rich man went straight to hell 
 1. {% rf 'Luke 16:26' false %} says there is a great gulf between the two, yet the rich man and Lazarus are depicted as conversing. How could that be literally true?
 1. How much relief would a single drop of water from Lazarus’ finger bring to rich man’s tongue?
 
-Jesus told this parable as an illustration directed particularly to the Jews, who trusted in their privileged position as children of Abraham {% rf 'John 8:39' %}, while the beggar represents the Gentiles, whom many Jews considered spiritually unworthy. Compared to the Jews, who had been entrusted with great truths concerning the plan of salvation {% rf 'Romans 3:1-2' %}, the Gentiles were indeed like beggars ; yet it was often the Gentiles who were quicker to believe in Jesus {% rf 'Matthew 8:8-12; 15:22' %}.
+Jesus told this parable as an illustration directed particularly to the Jews, who trusted in their privileged position as children of Abraham {% rf 'John 8:39' %}, while the beggar represents the Gentiles, whom many Jews considered spiritually unworthy. Compared to the Jews, who had been entrusted with great truths concerning the plan of salvation {% rf 'Romans 3:1–2' %}, the Gentiles were indeed like beggars ; yet it was often the Gentiles who were quicker to believe in Jesus {% rf 'Matthew 8:8–12; 15:22' %}.
 
 ## What is the Christian’s hope?
 
@@ -106,7 +106,7 @@ Jesus told this parable as an illustration directed particularly to the Jews, wh
 
 The Christian looks forward to the resurrection, not to the soul’s escape at death. In fact, the resurrection loses meaning and purpose if the souls of the saved are already in heaven. There would be no reason for Jesus to return to resurrect His people if they had already been living with Him since their death.
 
-The biblical worldview is grounded in a physical, bodily reality rather than a mystical one, and the resurrection is no exception. When discussing the resurrection in {% rf '1 Corinthians 15:42-44' false %}, Paul contrasts the perishable body with the imperishable body. He could have contrasted the body with the soul, but instead he describes the transformation of one body. His use of parallelism shows that a “spiritual body” is a transformed body, not a nonphysical essence. Likewise, {% rf 'Romans 8:11' false %} speaks of the resurrection as bodily restoration. Jesus Himself rejected disembodied personhood in {% rf 'Luke 24:39' false %} by showing His disciples that, after His resurrection, He had a physical body of flesh and bones. Thus, the Bible stands in strong contrast to soul-body dualism, which teaches that true life is essentially disembodied.
+The biblical worldview is grounded in a physical, bodily reality rather than a mystical one, and the resurrection is no exception. When discussing the resurrection in {% rf '1 Corinthians 15:42–44' false %}, Paul contrasts the perishable body with the imperishable body. He could have contrasted the body with the soul, but instead he describes the transformation of one body. His use of parallelism shows that a “spiritual body” is a transformed body, not a nonphysical essence. Likewise, {% rf 'Romans 8:11' false %} speaks of the resurrection as bodily restoration. Jesus Himself rejected disembodied personhood in {% rf 'Luke 24:39' false %} by showing His disciples that, after His resurrection, He had a physical body of flesh and bones. Thus, the Bible stands in strong contrast to soul-body dualism, which teaches that true life is essentially disembodied.
 
 ## How did dualism enter Christianity?
 
@@ -191,7 +191,7 @@ Because Jesus, His Redeemer, conquered death, Job will one day be able to see Hi
 
 Here, Paul differentiates between the earthly body and the glorified body, not conscious existence apart from the body. In fact, in {% rf '2 Corinthians 5:4' false %}, Paul specifically rejects being “unclothed.” Put another way: while we are absent from the Lord, we still possess earthly bodies subject to sickness, disease, and death. At the resurrection, however, when the saved are present with the Lord, they will be absent from their earthly bodies because they will receive new, glorified bodies.
 
-A similar idea is expressed in {% rf 'Philippians 1:23' false %}, where Paul describes how “departure” from life and the coming of Christ will feel almost instantaneous due to the unconscious state of death. The next conscious moment for the person who has died is the resurrection, even though the two events are separated by time. We know that Paul did not expect to ascend to heaven immediately after death because in {% rf '2 Timothy 4:6-8' false %} he links receiving the eternal crown with “that day,” a future point in time associated with Christ’s appearing.
+A similar idea is expressed in {% rf 'Philippians 1:23' false %}, where Paul describes how “departure” from life and the coming of Christ will feel almost instantaneous due to the unconscious state of death. The next conscious moment for the person who has died is the resurrection, even though the two events are separated by time. We know that Paul did not expect to ascend to heaven immediately after death because in {% rf '2 Timothy 4:6–8' false %} he links receiving the eternal crown with “that day,” a future point in time associated with Christ’s appearing.
 
 ## What about Luke 23:43?
 
