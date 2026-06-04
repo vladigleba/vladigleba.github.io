@@ -31,13 +31,22 @@ function smartenQuotes(text) {
 
 function replaceTypography(text, debugMode = false) {
   const FM_PLACEHOLDER = '@@FRONTMATTER_DELIMITER@@';
+  const RF_SHORTCODE_REGEX = /{%\s*rf\s+[^%]+?\s*%}/g;
   const SHORTCODE_REGEX = /{%\s*[^%]+?\s*%}/g;
 
   // protect frontmatter delimiters (first two occurrences of --- at line start)
   let fmCount = 0;
   text = text.replace(/^---$/gm, () => (++fmCount <= 2 ? FM_PLACEHOLDER : '---'));
 
-  // protect Eleventy shortcodes
+  // protect and process rf shortcodes
+  const rfShortcodes = [];
+  text = text.replace(RF_SHORTCODE_REGEX, (match) => {
+    const withEnDashes = match.replace(/-/g, '–'); // convert dashes to en dashes
+    rfShortcodes.push(withEnDashes);
+    return `@@RF_SHORTCODE_${rfShortcodes.length - 1}@@`;
+  });
+
+  // protect remaining Eleventy shortcodes
   const shortcodes = [];
   text = text.replace(SHORTCODE_REGEX, (match) => {
     shortcodes.push(match);
@@ -56,6 +65,9 @@ function replaceTypography(text, debugMode = false) {
     console.log(text);
     process.exit(0);
   }
+
+  // restore rf shortcodes
+  rfShortcodes.forEach((sc, i) => { text = text.replace(`@@RF_SHORTCODE_${i}@@`, sc); });
 
   // restore shortcodes
   shortcodes.forEach((sc, i) => { text = text.replace(`@@SHORTCODE_${i}@@`, sc); });
