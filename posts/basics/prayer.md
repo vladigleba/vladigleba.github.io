@@ -95,7 +95,7 @@ God will never force His will upon us, which is why surrender begins with the *w
 
 It is easy for our prayers to become self-focused and selfish, but Christ teaches us to seek first His kingdom and His righteousness. This is later reinforced in His model prayer: “Hallowed be thy name. Thy kingdom come. Thy will be done.” Below are some difficult—but necessary—questions we can ask to help us understand where we stand:
 1. Is my primary focus on bringing glory and honor to His holy name rather than my own? 
-1. Am I preparing for and investing in His kingdom of righteousness—which, by the way, starts in our hearts now {% rf 'Luke 17:20-21' %}—or am I more concerned with expanding my own personal, earthly empire?
+1. Am I preparing for and investing in His kingdom of righteousness—which, by the way, starts in our hearts now {% rf 'Luke 17:20–21' %}—or am I more concerned with expanding my own personal, earthly empire?
 1. Am I seeking His will in my daily life, or am I pursuing my own wants and desires above all else?
 
 One author shared the following insight on praying Jesus’ model prayer:[^1]
@@ -119,9 +119,9 @@ One author shared the following insight on praying Jesus’ model prayer:[^1]
 > Be anxious for nothing, but *in everything by prayer and supplication, with thanksgiving, let your requests be made known to God*; and the peace of God, which surpasses all understanding, will guard your hearts and minds through Christ Jesus.
 {% ct 'Philippians 4:6-7, NKJV' %}
 
-God cares about our personal lives, and besides praying for His glory, His kingdom, and His will, we are also invited to share with Him anything that causes worry, trouble, or heaviness in our hearts. He is our loving heavenly Father, deeply interested in the burdens we carry, and He wants—and is able—to help. He may not always intervene in the way we want, but He always intervenes in the way that is best {% rf 'Isaiah 55:8-9' %}.
+God cares about our personal lives, and besides praying for His glory, His kingdom, and His will, we are also invited to share with Him anything that causes worry, trouble, or heaviness in our hearts. He is our loving heavenly Father, deeply interested in the burdens we carry, and He wants—and is able—to help. He may not always intervene in the way we want, but He always intervenes in the way that is best {% rf 'Isaiah 55:8–9' %}.
 
-As we learn to lay our cares at His feet by faith, He will fill our minds with a peace that surpasses comprehension. Jesus, for example, was able to sleep on a pillow in the midst of a great storm that left His disciples terrified for their lives, yet He slept in perfect peace {% rf 'Mark 4:37-38' %}. Why? Because He knew His Father. He had a deep-rooted, unshakable trust in His Father, built on personal experience—trust that can be gained only through a consistent prayer life {% rf 'Mark 1:35; 6:46; Luke 6:12' %}.
+As we learn to lay our cares at His feet by faith, He will fill our minds with a peace that surpasses comprehension. Jesus, for example, was able to sleep on a pillow in the midst of a great storm that left His disciples terrified for their lives, yet He slept in perfect peace {% rf 'Mark 4:37–38' %}. Why? Because He knew His Father. He had a deep-rooted, unshakable trust in His Father, built on personal experience—trust that can be gained only through a consistent prayer life {% rf 'Mark 1:35; 6:46; Luke 6:12' %}.
 
 ## What about intercessory prayer?
 
@@ -154,7 +154,7 @@ Intercessory prayer, however, is not limited to those who are resistant to God. 
 
 Praying for others often involves asking God for a change of heart, and this usually takes time. God honors everyone’s free will, but He also honors the prayers of others, so even if a person resists Him initially, there is still hope, as long as those praying are willing to persevere and be patient {% rf 'Psalm 40:1' %}. It may take years—or even decades—for a change of heart to take place, but that is nothing compared with eternity.
 
-All good things take time and effort, and prayer is no different. Rushed prayers often lack power because they don’t mean much to us, but prayers that produce results take time and effort. It would be wise for us to preface every important decision or action in our lives with much prayer. Jesus Himself sometimes prayed all night, such as before ordaining the twelve apostles {% rf 'Luke 6:12-13' %}. As our prayer life develops, spending time communing with our Father becomes a delight, no matter how long it takes.
+All good things take time and effort, and prayer is no different. Rushed prayers often lack power because they don’t mean much to us, but prayers that produce results take time and effort. It would be wise for us to preface every important decision or action in our lives with much prayer. Jesus Himself sometimes prayed all night, such as before ordaining the twelve apostles {% rf 'Luke 6:12–13' %}. As our prayer life develops, spending time communing with our Father becomes a delight, no matter how long it takes.
 
 ## What is the first step to effective prayer?
 
@@ -302,7 +302,7 @@ God desires that we be fully engaged when we speak with Him—just as we would b
 > And at midnight Paul and Silas *prayed*, and sang praises unto God: and the prisoners *heard them*.
 {% ct 'Acts 16:25' %}
 
-Jesus often prayed aloud, even in His personal prayers; otherwise, His disciples would not have heard them and recorded them for us. Paul and Silas also prayed aloud after they were imprisoned, and their witness for God led to the jailer’s conversion {% rf 'Acts 16:29-30' %}. Even in private, personal prayers between us and God, praying audibly can be helpful  because it keeps us more focused and engaged. However, we should be careful to maintain our privacy in these moments, ensuring that only God hears us.
+Jesus often prayed aloud, even in His personal prayers; otherwise, His disciples would not have heard them and recorded them for us. Paul and Silas also prayed aloud after they were imprisoned, and their witness for God led to the jailer’s conversion {% rf 'Acts 16:29–30' %}. Even in private, personal prayers between us and God, praying audibly can be helpful  because it keeps us more focused and engaged. However, we should be careful to maintain our privacy in these moments, ensuring that only God hears us.
 
 ## What is the PRAY acronym?
 

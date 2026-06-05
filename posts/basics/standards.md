@@ -59,7 +59,7 @@ Every sin falls into one of three categories: 1) the lust of the flesh, 2) the l
 > I beseech you therefore, brethren, by the mercies of God, that ye present your bodies a living sacrifice, holy, acceptable unto God, which is your reasonable service. And *be not conformed to this world: but be ye transformed by the renewing of your mind*, that ye may prove what is that good, and acceptable, and perfect, will of God.
 {% ct 'Romans 12:1-2' %}
 
-Living in a world of sin brings constant pressure to conform to its ways—to be squeezed into its mold—but God’s goal is to transform us by renewing our minds through the truth as revealed in His Word, the Bible {% rf 'John 17:17' %}. God’s word that created the world in the beginning still possesses the same power to recreate our minds today—but only if we believe {% rf '1 Peter 1:22-25' %}.
+Living in a world of sin brings constant pressure to conform to its ways—to be squeezed into its mold—but God’s goal is to transform us by renewing our minds through the truth as revealed in His Word, the Bible {% rf 'John 17:17' %}. God’s word that created the world in the beginning still possesses the same power to recreate our minds today—but only if we believe {% rf '1 Peter 1:22–25' %}.
 
 ## Where does transformation start?
 
@@ -103,7 +103,7 @@ Besides music, there is a second avenue into our mind: the things we watch. Do t
 > Let this *mind be in you, which was also in Christ Jesus*.
 {% ct 'Philippians 2:5' %}
 
-Instead of beholding vanity or violence, which are displeasing to God, we are invited to have the mind of Christ. It may seem like a high standard, but nothing is impossible to God {% rf 'Mark 10:27' %}. We can never accomplish it through our own power, but if we ask Him for it, He will give us a complete transformation of mind {% rf '1 Corinthians 6:9-11' %}.
+Instead of beholding vanity or violence, which are displeasing to God, we are invited to have the mind of Christ. It may seem like a high standard, but nothing is impossible to God {% rf 'Mark 10:27' %}. We can never accomplish it through our own power, but if we ask Him for it, He will give us a complete transformation of mind {% rf '1 Corinthians 6:9–11' %}.
 
 ## Am I able to decide what is right?
 

@@ -20,7 +20,7 @@ In Revelation 14 there are three angels proclaiming a message to the people of t
 > You are worthy, O Lord, to receive glory and honor and power; for *You created all things*, and *by Your will they exist* and were created.
 {% ct 'Revelation 4:11, NKJV' %}
 
-{% rf 'Revelation 14:6-7' false %} is an echo of the verse above, which explains that God is worthy to receive glory, honor, and power because He is the Author of all life.
+{% rf 'Revelation 14:6–7' false %} is an echo of the verse above, which explains that God is worthy to receive glory, honor, and power because He is the Author of all life.
 
 ## How did God create?
 
@@ -68,7 +68,7 @@ This is affirmed in the Old Testament, for Isaiah declares that the Sabbath was 
 
 The Sabbath is a sign of my acknowledgment that:
 
-1. God is Lord because He created this world in six consecutive, literal, 24-hour days {% rf 'Exodus 20:8, 11' %}. The Sabbath is a weekly reminder that I have a Creator who desires to have a relationship with me. This truth carries several important implications: I am not self-created; I am not a god, nor can I become one; I possess no inherent divinity—no inner godhood or divine spark; I do not have an immortal soul, for only God is immortal {% rf '1 Timothy 6:15-16' %}; and I did not come into existence by accident or through a long process of evolution. My life has meaning and purpose.
+1. God is Lord because He created this world in six consecutive, literal, 24-hour days {% rf 'Exodus 20:8, 11' %}. The Sabbath is a weekly reminder that I have a Creator who desires to have a relationship with me. This truth carries several important implications: I am not self-created; I am not a god, nor can I become one; I possess no inherent divinity—no inner godhood or divine spark; I do not have an immortal soul, for only God is immortal {% rf '1 Timothy 6:15–16' %}; and I did not come into existence by accident or through a long process of evolution. My life has meaning and purpose.
 
 1. God is Lord of my life because He is the One who redeems and sanctifies me. In the Bible, the Israelites’ bondage in Egypt symbolizes the spiritual bondage of sin from which God delivers me. Therefore, the Sabbath is a weekly reminder that, in Jesus, victory over sin is available to all. After all, Jesus would not have told the woman caught in adultery to “go and sin no more” if that were impossible {% rf 'John 8:11' %}. Moreover, the Sabbath is a sign that I am not saved by my own works, but by faith in His completed work on the cross, as well as His ongoing work as my Intercessor in the [heavenly sanctuary](/posts/gospel/sanctuary.md#do-i-have-a-high-priest-today).
 

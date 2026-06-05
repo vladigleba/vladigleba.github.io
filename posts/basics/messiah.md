@@ -111,7 +111,7 @@ Jesus was sold for thirty pieces of silver, the price of a slave, but not only w
 > Purge out therefore the old leaven, that ye may be a new lump, as ye are unleavened. *For even Christ our passover is sacrificed for us*.
 {% ct '1 Corinthians 5:7' %}
 
-In an incredible fulfillment of prophecy, Jesus, the Passover lamb to whom all the prior Passover feasts were pointing, died on the fourteenth day of the Hebrew month of Abib at about the ninth hour {% rf 'Matthew 27:46-50' %}.
+In an incredible fulfillment of prophecy, Jesus, the Passover lamb to whom all the prior Passover feasts were pointing, died on the fourteenth day of the Hebrew month of Abib at about the ninth hour {% rf 'Matthew 27:46–50' %}.
 
 ## Would any of His bones be broken?
 
