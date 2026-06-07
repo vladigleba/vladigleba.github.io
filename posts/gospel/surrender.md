@@ -25,7 +25,7 @@ After His ascension, Jesus committed this work of reconciliation, the proclamati
 > Know ye not, that *to whom ye yield yourselves servants to obey*, his servants ye are to whom ye obey; whether of sin unto death, or of obedience unto righteousness?
 {% ct 'Romans 6:16' %}
 
-The Bible presents only two sides for us to choose from: God or Satan, good or evil, righteousness or sin, selflessness or selfishness, life or death. The side we yield, or surrender, to is the side we choose to serve. Our loving Father, Creator, and Reedemer invites us to surrender our will to Him moment by moment because His will for our lives is better, higher, and grander than our own {% rf 'Isaiah 55:8-9' %}.
+The Bible presents only two sides for us to choose from: God or Satan, good or evil, righteousness or sin, selflessness or selfishness, life or death. The side we yield, or surrender, to is the side we choose to serve. Our loving Father, Creator, and Reedemer invites us to surrender our will to Him moment by moment because His will for our lives is better, higher, and grander than our own {% rf 'Isaiah 55:8–9' %}.
 
 ## Did Jesus demonstrate this concept in His life?
 
@@ -92,7 +92,7 @@ The decision to give our life over to Jesus is synonymous we the decision to die
 > I protest by your rejoicing which I have in Christ Jesus our Lord, *I die daily*.
 {% ct '1 Corinthians 15:31' %}
 
-Jesus says that those who desire to follow Him will make a daily decision to deny self. Paul echoes this when he says that death to self is a daily occurrence for him, not a one-time experience, because our old carnal nature does not cease to strive for supremacy. In {% rf 'Philippians 2:5-8' false %}, Paul invites us to have the mind of Christ—one of complete submission to the Father’s will—most clearly demonstrated in the Garden of Gethsemane: “Father, if thou be willing, remove this cup from me: nevertheless not my will, but thine, be done” {% rf 'Luke 22:42' %}. This is not a clench-the-fist, grind-the-teeth kind of submission, for we are totally incapable of submitting ourselves to God through our own power. This submission is motivated by love and accomplished by faith in the grace and power of God working in us {% rf 'Philippians 2:13' %}, “for whatsoever is not of faith is sin” {% rf 'Romans 14:23' %}.
+Jesus says that those who desire to follow Him will make a daily decision to deny self. Paul echoes this when he says that death to self is a daily occurrence for him, not a one-time experience, because our old carnal nature does not cease to strive for supremacy. In {% rf 'Philippians 2:5–8' false %}, Paul invites us to have the mind of Christ—one of complete submission to the Father’s will—most clearly demonstrated in the Garden of Gethsemane: “Father, if thou be willing, remove this cup from me: nevertheless not my will, but thine, be done” {% rf 'Luke 22:42' %}. This is not a clench-the-fist, grind-the-teeth kind of submission, for we are totally incapable of submitting ourselves to God through our own power. This submission is motivated by love and accomplished by faith in the grace and power of God working in us {% rf 'Philippians 2:13' %}, “for whatsoever is not of faith is sin” {% rf 'Romans 14:23' %}.
 
 ## What is the process of growth compared to?
 
@@ -112,7 +112,7 @@ Growing in Christ is the work of a lifetime, and it’s truly His work, made pos
 > My little children, these things write I unto you, that ye sin not. And *if any man sin, we have an advocate with the Father, Jesus Christ the righteous*: and he is the propitiation for our sins: and not for ours only, but also for the sins of the whole world.
 {% ct '1 John 2:1-2' %}
 
-God is gracious and merciful; He does not give up on us when we make mistakes! He is always willing to forgive the repentant person, and Jesus Christ, our Advocate in heaven, is ready to cover our shortcomings with His own righteousness, pleading His own blood on our behalf, when we genuinely repent of our sins. When learning to walk it’s not unusual for a child to fall down, but problems arise when the child stops getting up. Such a state of discouragement is Satan’s ultimate goal. But God is a patient, loving parent, who stoops down to meet us where we are, always ready to lift us back up if we stretch out our hand to Him {% rf 'Micah 7:7-8' %}.
+God is gracious and merciful; He does not give up on us when we make mistakes! He is always willing to forgive the repentant person, and Jesus Christ, our Advocate in heaven, is ready to cover our shortcomings with His own righteousness, pleading His own blood on our behalf, when we genuinely repent of our sins. When learning to walk it’s not unusual for a child to fall down, but problems arise when the child stops getting up. Such a state of discouragement is Satan’s ultimate goal. But God is a patient, loving parent, who stoops down to meet us where we are, always ready to lift us back up if we stretch out our hand to Him {% rf 'Micah 7:7–8' %}.
 
 Of course, we don’t want to abuse His grace and become presumptuous by choosing to cling to sin, because the wages of sin is death {% rf 'Romans 3:23' %}. Sin is so serious that the Father had to give up His own Son to a death on the cross because of it. The repentant sinner who truly loves Jesus and appreciates His sacrifice will develop a hatred of sin.
 
@@ -124,7 +124,7 @@ Of course, we don’t want to abuse His grace and become presumptuous by choosin
 > Know ye not, that to whom ye yield yourselves servants to obey, his servants ye are to whom ye obey; whether of sin unto death, or of *obedience* unto righteousness?
 {% ct 'Romans 6:16' %}
 
-When we yield ourselves to Christ, He starts living and working in us, giving us both the *willingness* and the *ability* to do His will. This is the gospel, the good news of forgiveness, cleansing, and restoration that Jesus has made freely available to anyone who asks for it! If Jesus could restore the demoniac {% rf 'Mark 5:1-15' %}, He can restore anybody from the most hopeless circumstances.
+When we yield ourselves to Christ, He starts living and working in us, giving us both the *willingness* and the *ability* to do His will. This is the gospel, the good news of forgiveness, cleansing, and restoration that Jesus has made freely available to anyone who asks for it! If Jesus could restore the demoniac {% rf 'Mark 5:1–15' %}, He can restore anybody from the most hopeless circumstances.
 
 ## How does Jesus live in us?
 
@@ -180,4 +180,4 @@ As long as we continue to choose Christ daily, we are complete in Him {% rf 'Col
 > Let this *mind* be in you, *which was also in Christ Jesus*.
 {% ct 'Philippians 2:5' %}
 
-Salvation goes beyond justification by faith in Jesus and includes sanctification, also by faith {% rf '1 Corinthians 6:9-11' %}. Yes, it’s about the gift of eternal life {% rf 'John 3:16' %}, but it’s also about total freedom from the degrading power of sin, total restoration of the image of God in fallen humanity. Following Christ goes beyond the knowledge of, and belief in, truth as revealed in His Word. Christianity is the complete, total surrender to the will of God, so that He can write His name—the attributes of His character—on our foreheads, a symbol for our mind. Fallen humanity redeemed to reflect the beauty of God’s character is the great aim of the plan of redemption {% rf '2 Peter 1:4' %}. What an honor!
+Salvation goes beyond justification by faith in Jesus and includes sanctification, also by faith {% rf '1 Corinthians 6:9–11' %}. Yes, it’s about the gift of eternal life {% rf 'John 3:16' %}, but it’s also about total freedom from the degrading power of sin, total restoration of the image of God in fallen humanity. Following Christ goes beyond the knowledge of, and belief in, truth as revealed in His Word. Christianity is the complete, total surrender to the will of God, so that He can write His name—the attributes of His character—on our foreheads, a symbol for our mind. Fallen humanity redeemed to reflect the beauty of God’s character is the great aim of the plan of redemption {% rf '2 Peter 1:4' %}. What an honor!

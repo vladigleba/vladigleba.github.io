@@ -122,7 +122,7 @@ In 1999, the Catholic and Lutheran churches issued a *Joint Declaration on the D
 > Whom God hath set forth to be *a propitiation through faith in his blood*, to declare his righteousness for the remission of sins that are past, through the forbearance of God.
 {% ct 'Romans 3:25' %}
 
-The Bible is clear that it is not Christ’s works that save me, but His shed blood. In the *Joint Declaration*, the phrase “faith in Christ’s saving work” refers to the treasury of merit, which the Church dispenses to atone for sin; however, the Bible teaches that without the shedding of *blood* there is no remission of sin. The truth is Christ died for each person individually {% rf 'Galatians 2:20' %}. His death paid the penalty for my sins—the penalty that I was supposed to pay—while His righteous life satisfies the claims of the law upon me, namely, perfect righteousness, which my life could never meet {% rf 'Romans 5:9-10' %}.
+The Bible is clear that it is not Christ’s works that save me, but His shed blood. In the *Joint Declaration*, the phrase “faith in Christ’s saving work” refers to the treasury of merit, which the Church dispenses to atone for sin; however, the Bible teaches that without the shedding of *blood* there is no remission of sin. The truth is Christ died for each person individually {% rf 'Galatians 2:20' %}. His death paid the penalty for my sins—the penalty that I was supposed to pay—while His righteous life satisfies the claims of the law upon me, namely, perfect righteousness, which my life could never meet {% rf 'Romans 5:9–10' %}.
 
 ## What happens once I accept God’s gift?
 
@@ -154,7 +154,7 @@ Christ’s death on the cross restored the rift that occurred between God and th
 > Behold, I stand at the door, and knock: *if any man hear my voice, and open the door*, I will come in to him, and will sup with him, and he with me. 
 {% ct 'Revelation 3:20' %}
 
-God’s way of salvation has always been about respecting freedom of choice. He gave Satan the option to rebel, and He did not immediately destroy him when he did. God permitted Adam and Eve to rebel too. Likewise, I am free to choose whether I want to serve Him or not. Jesus wants to save every person {% rf '1 Timothy 2:3-4' %}—He wants me to choose Him—but He will not force Himself on anyone. In fact, this is a daily choice; I can choose, anytime, to leave Christ and go in another direction, which is why it’s imperative to reaffirm my decision and recommit myself to Him on a daily basis {% rf 'Luke 9:23' %}. Every single day is a gift from my Creator, and it’s my privilege to give it back to Him.
+God’s way of salvation has always been about respecting freedom of choice. He gave Satan the option to rebel, and He did not immediately destroy him when he did. God permitted Adam and Eve to rebel too. Likewise, I am free to choose whether I want to serve Him or not. Jesus wants to save every person {% rf '1 Timothy 2:3–4' %}—He wants me to choose Him—but He will not force Himself on anyone. In fact, this is a daily choice; I can choose, anytime, to leave Christ and go in another direction, which is why it’s imperative to reaffirm my decision and recommit myself to Him on a daily basis {% rf 'Luke 9:23' %}. Every single day is a gift from my Creator, and it’s my privilege to give it back to Him.
 
 ## What does it mean to accept Jesus as Savior and Lord?
 
