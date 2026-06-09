@@ -114,7 +114,7 @@ Even though all have sinned, every person has hope of forgiveness! God the Fathe
 > I will bear the indignation of the LORD, because I have sinned against him, *until he plead my cause*, and execute judgment for me: he will bring me forth to the light, and I shall behold his righteousness.
 {% ct 'Micah 7:9' %}
 
-Because Jesus understands us and can sympathize with our weaknesses, He intercedes on our behalf when we come to the Father through Him, asking for forgiveness. As our Advocate, He pleads the case of every repentant sinner who is accused by Satan, ensuring that we do not face judgment alone. In fact, we are incapable of winning our case without Him. However, not only is Jesus with us in judgment, but He never brings judgment upon us apart from Himself. Instead, He *first* bore it *Himself*, taking its condemnation on our behalf {% rf '2 Corinthians 5:21; 1 Peter 2:24; Galatians 3:13-14' %}. Before [we are judged](/posts/prophecy/investigative.md) for our sins, He was first judged for them on the cross.
+Because Jesus understands us and can sympathize with our weaknesses, He intercedes on our behalf when we come to the Father through Him, asking for forgiveness. As our Advocate, He pleads the case of every repentant sinner who is accused by Satan, ensuring that we do not face judgment alone. In fact, we are incapable of winning our case without Him. However, not only is Jesus with us in judgment, but He never brings judgment upon us apart from Himself. Instead, He *first* bore it *Himself*, taking its condemnation on our behalf {% rf '2 Corinthians 5:21; 1 Peter 2:24; Galatians 3:13–14' %}. Before [we are judged](/posts/prophecy/investigative.md) for our sins, He was first judged for them on the cross.
 
 Judgment, therefore, is a revelation of the heart of God and a vindication of His character, for none of the angels—not even Satan himself—could have imagined that their Commander would take on human nature and hang on a cross for His beloved creation.
 
@@ -151,13 +151,13 @@ Those whose record of sin has been blotted out are no longer under condemnation 
 
 Jesus warned about four specific things:
 
-- *Surfeiting*: This means “excess,” and it can be anything that disturbs balance and violates the principle of temperance {% rf 'Galatians 5:22-25' %}, such as overeating, overwork, or even recreation, which is very beneficial when done it moderation.
+- *Surfeiting*: This means “excess,” and it can be anything that disturbs balance and violates the principle of temperance {% rf 'Galatians 5:22–25' %}, such as overeating, overwork, or even recreation, which is very beneficial when done it moderation.
 
 - *Drunkenness*: This is anything that brings about a spiritual stupor, destroys clear thinking, and removes our desire for heavenly things. Examples include pornography, alcoholism, illicit sex, worldly entertainment, and so on, because they lead to living in a dream world.
 
 - *Cares of this life*: These are perfectly fine activities that are a part of life, but when they take over our lives they take time away from Jesus and shift our focus away from eternal realities, leading to less time spent in prayer, studying His word, and being an active member of His church.
 
-- *Sleeping*: Jesus is referring to spiritually asleep here, and this involves taking the Bible and the truth it reveals about Him for granted. It’s being indifferent about our relationship with Jesus and neglecting the principles of His kingdom {% rf '2 Timothy 3:5' %}. In {% rf 'Revelation 3:15-19' false %} it’s described as being lukewarm—being falsely satisfied with one’s own spiritual condition and not being actively involved in the work of Jesus. Perhaps the biggest problem with sleep is being unaware that one is asleep! But the good news is Jesus still patiently knocks at the door of the heart. Have you let Him in?
+- *Sleeping*: Jesus is referring to spiritually asleep here, and this involves taking the Bible and the truth it reveals about Him for granted. It’s being indifferent about our relationship with Jesus and neglecting the principles of His kingdom {% rf '2 Timothy 3:5' %}. In {% rf 'Revelation 3:15–19' false %} it’s described as being lukewarm—being falsely satisfied with one’s own spiritual condition and not being actively involved in the work of Jesus. Perhaps the biggest problem with sleep is being unaware that one is asleep! But the good news is Jesus still patiently knocks at the door of the heart. Have you let Him in?
 
 ## What did Felix do when he was convicted?
 
