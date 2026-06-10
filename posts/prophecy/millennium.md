@@ -57,7 +57,7 @@ Because sin cannot exist in the presence of a holy God, the second coming will b
 > And such were some of you: but *ye are washed, but ye are sanctified, but ye are justified* in the name of the Lord Jesus, and *by the Spirit* of our God.
 {% ct '1 Corinthians 6:11' %}
 
-To reject Jesus is to reject the convictions of the Holy Spirit upon the mind, through whom He works to purge us from sin. This is why the two travelers to Emmaus felt their hearts “burning” with conviction after Jesus explained the Scriptures to them {% rf 'Luke 24:32' %}. It also explains why the Holy Spirit appeared in the form of fire when He came upon the apostles at Pentecost {% rf 'Acts 2:3-4' %}. Because the lost have rejected the promptings of the Holy Spirit, the second coming will bring destruction upon them, for Christ’s glorious holiness is a consuming fire to all whose sins have not already been purged by the indwelling presence of His Holy Spirit {% rf 'Psalm 50:3-4' %}.
+To reject Jesus is to reject the convictions of the Holy Spirit upon the mind, through whom He works to purge us from sin. This is why the two travelers to Emmaus felt their hearts “burning” with conviction after Jesus explained the Scriptures to them {% rf 'Luke 24:32' %}. It also explains why the Holy Spirit appeared in the form of fire when He came upon the apostles at Pentecost {% rf 'Acts 2:3–4' %}. Because the lost have rejected the promptings of the Holy Spirit, the second coming will bring destruction upon them, for Christ’s glorious holiness is a consuming fire to all whose sins have not already been purged by the indwelling presence of His Holy Spirit {% rf 'Psalm 50:3–4' %}.
 
 ## What happens to Satan at this time?
 
@@ -76,7 +76,7 @@ The chain described here is a symbolic chain of circumstances, representing Sata
 
 The fallen angels under Satan’s command—whom he first persuaded, by deception, to join his rebellion against God in heaven—will also be confined to the desolate earth with him. They will have ample time to reflect on their actions as they behold the devastation surrounding them—a constant reminder of the woeful consequences their rebellion has brought.
 
-By the way, the parallels between {% rf 'Isaiah 24:21-22' false %} and {% rf 'Revelation 20:1-3' false %} are remarkable. Both passages use the words “pit” and “prison” and refer to an extended period of time: “when the thousand years are expired, Satan shall be loosed out of his prison,” and “after many days shall they be visited.” Together, they provide a textbook example of allowing Scripture to interpret itself, for the “many days” in Isaiah correspond to the thousand years in Revelation.
+By the way, the parallels between {% rf 'Isaiah 24:21–22' false %} and {% rf 'Revelation 20:1–3' false %} are remarkable. Both passages use the words “pit” and “prison” and refer to an extended period of time: “when the thousand years are expired, Satan shall be loosed out of his prison,” and “after many days shall they be visited.” Together, they provide a textbook example of allowing Scripture to interpret itself, for the “many days” in Isaiah correspond to the thousand years in Revelation.
 
 ## What happens to the lost?
 
@@ -111,7 +111,7 @@ The destruction at Jesus’ second coming will return the earth to its original 
 > For *when they shall say, Peace and safety; then sudden destruction cometh upon them*, as travail upon a woman with child; and they shall not escape.
 {% ct '1 Thessalonians 5:3' %}
 
-Scripture’s portrayal of the earth’s desolation shows that the belief in an earthly millennium following Christ’s return (known as dispensational premillennialism) is unbiblical. Another view, postmillennialism, holds that Christ will return *after* a millennial period in which Christianity prevails—particularly at the governmental level—throughout the world. This perspective is often embraced by Christian nationalists, but it too is unbiblical, for Christ declared that His kingdom is not of this world. In fact, when describing the end of the world, Jesus never spoke of a period of universal peace; after warning of nations in distress and people’s hearts failing from fear, He went directly to His coming in glory {% rf 'Luke 21:25-27' %}. A heavenly millennium, therefore, is the only view that is consistent with all of Scripture.
+Scripture’s portrayal of the earth’s desolation shows that the belief in an earthly millennium following Christ’s return (known as dispensational premillennialism) is unbiblical. Another view, postmillennialism, holds that Christ will return *after* a millennial period in which Christianity prevails—particularly at the governmental level—throughout the world. This perspective is often embraced by Christian nationalists, but it too is unbiblical, for Christ declared that His kingdom is not of this world. In fact, when describing the end of the world, Jesus never spoke of a period of universal peace; after warning of nations in distress and people’s hearts failing from fear, He went directly to His coming in glory {% rf 'Luke 21:25–27' %}. A heavenly millennium, therefore, is the only view that is consistent with all of Scripture.
 
 ## What do the saved do in heaven?
 

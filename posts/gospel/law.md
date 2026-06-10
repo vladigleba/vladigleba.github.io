@@ -8,7 +8,7 @@ tags: [discipleship, law]
 featured: true
 ---
 
-## How does the Bible describe the law of God?
+## How is the law of God described?
 
 > The works of his hands are verity and judgment; all his commandments are sure. *They stand fast for ever and ever*, and are *done in truth and uprightness*.
 {% ct 'Psalm 111:7-8' %}
@@ -60,7 +60,7 @@ When James is talking about the law, he is referring to the Ten Commandments, an
 
 Because Jesus is the Creator God, He was able to take the condemnation of the law on Himself at the cross, on behalf of all humanity, so that every person who accepts Him by faith in His substitutionary sacrifice could stand before the law clothed in His perfectly righteous life!
 
-## Does that mean we are now free to break it?
+## Are we now free to break it?
 
 > Therefore we conclude that a man is justified by faith without the deeds of the law. Is he the God of the Jews only? Is he not also of the Gentiles? Yes, of the Gentiles also: seeing it is one God, which shall justify the circumcision by faith, and uncircumcision through faith. *Do we then make void the law through faith? God forbid: yea, we establish the law*.
 {% ct 'Romans 3:28-31' %}
@@ -105,16 +105,18 @@ Sin cannot exist in the presence of a holy God because at the root of sin is sel
 > Love worketh no ill to his neighbour: therefore *love is the fulfilling of the law*.
 {% ct 'Romans 13:10' %}
 
-Since selfishness is at the root of sin, and sin is the breaking of His law, then the law is really a law of love, dealing with my relationship with God (the first four commandments) and my neighbor (the last six). That’s why Jesus said that the entire law hangs on loving God and loving my neighbor. When there is genuine love present in a relationship then pleasing that person ceases to become a burden; in fact, without love for Jesus it’s not possible to keep His law.
+Since selfishness is at the root of sin, and sin is the breaking of His law, the law is really a law of love, one that orders my relationship with God (the first four commandments) and with my neighbor (the last six). That is why Jesus said the entire law hangs on loving God and loving one’s neighbor. Where genuine love is present, pleasing that person ceases to be a burden and becomes a delight.
+
+Consider the marriage covenant, for example. I have never seen a bride or groom protest that their exchange of vows is a yoke of bondage. Imagine the minister asking, “Do you promise to have no other women?” and the groom exclaiming, “No other woman? You mean I can no longer do the things I did before marriage? That is bondage! Aren’t you being legalistic? Is it not enough to simply say that I love her? Why must I prove or demonstrate it?” Would anybody stay with a person like that? The truth is that these vows are bondage only to the one who is not in love.
 
 ## Can the law be fulfilled in my life?
 
 > For what the law could not do, in that it was weak through the flesh, God sending his own Son in the likeness of sinful flesh, and for sin, condemned sin in the flesh: *that the righteousness of the law might be fulfilled in us*, who walk not after the flesh, but after the Spirit.
 {% ct 'Romans 8:3-4' %}
 
-If my heart is motivated by love for Jesus and filled with the Holy Spirit, then the law can be fulfilled in my life in Christ by faith. When I ask Him in faith, believing that He can and will accomplish it, He makes it a reality. Apart from His abiding presence in me {% rf 'John 15:14-15' %}, the law will never be fulfilled in my life, no matter how hard I try. Christ works in me when I surrender fully to Him—when I choose daily to die to self and pray, “Not my will, but Yours be done” {% rf 'Matthew 26:39' %}.
+If my heart is motivated by love for Jesus and filled with the Holy Spirit, then the law can be fulfilled in my life in Christ by faith. When I ask Him in faith, believing that He can and will accomplish it, He makes it a reality. Apart from His abiding presence in me {% rf 'John 15:14–15' %}, the law will never be fulfilled in my life, no matter how hard I try. Christ works in me when I surrender fully to Him—when I choose daily to die to self and pray, “Not my will, but Yours be done” {% rf 'Matthew 26:39' %}.
 
-## What is one of the purposes of the law?
+## What purpose does the law serve?
 
 > He who says, “I know Him,” and does not keep His commandments, is a liar, and the truth is not in him. But whoever keeps His word, truly the love of God is perfected in him. *By this we know that we are in Him*.
 {% ct '1 John 2:4-5, NKJV' %}
@@ -147,6 +149,23 @@ God knows me better than I know myself, and He knows if I truly love Him. The Te
 God promises to enable me to keep His commandments because He knows that I cannot overcome sin myself. But He does not force Himself on anyone, so I must ask, and the promise is that He will write His law in my heart and mind, enabling me to walk in His commandments through the power of the Holy Spirit dwelling in me. This is the gospel, and the entire Decalogue [is simply its proclamation](/posts/gospel/god.md#does-he-still-create-by-his-word), for it begins by declaring what God has already done in Christ and proceeds to spell out the results in action.
 
 The battle against sin is supernatural, and it can be fought only by the supernatural power of God. The only One who can create a new heart in me out of nothing is the One who created the heaven and the earth out of nothing. If I take Him at His word, He will do it according to my faith {% rf 'Matthew 9:29' %}, and doing His will will become a delight {% rf 'Psalm 40:8' %}.
+
+## Who gave the Ten Commandments at Sinai?
+
+> And *God* spake all these words, saying, I am the LORD thy God, *which have brought thee out of the land of Egypt*, out of the house of bondage.
+{% ct 'Exodus 20:1-2' %}
+
+> Moreover, brethren, I would not that ye should be ignorant, how that all our fathers were under the cloud, and all passed through the sea; and were all baptized unto Moses in the cloud and in the sea; and did all eat the same spiritual meat; and did all drink the same spiritual drink: *for they drank of that spiritual Rock that followed them: and that Rock was Christ*.
+{% ct '1 Corinthians 10:1-4' %}
+
+> Neither let us tempt *Christ, as some of them also tempted*, and were destroyed of serpents.
+{% ct '1 Corinthians 10:9' %}
+
+According to {% rf 'Exodus 20:1–2' false %}, the One who spoke the law on Mount Sinai was the One who brought Israel out of Egypt. In 1 Corinthians 10, Paul identifies Israel’s leader as Christ: He was the Rock who followed them and the One they tempted. In other words, Jesus was the Lawgiver on Mount Sinai, who later became our Redeemer on the cross. The One who declared the commandments is the One who would later say, “Come unto me, all ye that labour and are heavy laden, and I will give you rest” {% rf 'Matthew 11:28' %}.
+
+This forever settles the accusation that God is a hard taskmaster who gave His people a law they could never keep. *On the contrary, the Lawgiver gave Himself to redeem the lawbreakers.* In giving the law, Jesus was giving everything He could possibly give—Himself—so that through His perfect life and sacrifice on the cross, we too may be empowered to obey it in Him. Instead of condemning us, He condemned Himself for us. “And if the Lawgiver gave himself for us, to redeem us from the transgression of his own law, what greater assurance could we ask that he will save to the uttermost all who come to him?”[^1]
+
+[^1]: E. J. Waggoner, “The Divinity of Christ,” *Signs of the Times*, May 6, 1889, p. 262
 
 ## What are the Ten Commandments?
 
@@ -223,7 +242,9 @@ The battle against sin is supernatural, and it can be fought only by the superna
 > My covenant will I not break, *nor alter the thing that is gone out of my lips*.
 {% ct 'Psalm 89:34' %}
 
-The fact that Jesus had to die on the cross to pay the penalty of lawlessness for us is the greatest evidence that the law of God is unchangeable. He could not have laid down His life to fulfill the law {% rf 'Romans 10:4; Galatians 4:4-5' %}, only to then declare that same law—the one that required His infinite life—to be no longer binding on His followers. A law that requires an infinite price must stand for eternity. To declare it done away with only cheapens His great sacrifice. To reject it is to reject Christ Himself.
+The fact that Jesus had to die on the cross to pay the penalty of lawlessness for us is the greatest evidence that the law of God is unchangeable. He could not have laid down His life to fulfill the law {% rf 'Romans 10:4; Galatians 4:4–5' %}, only to then declare that same law—which had required His infinite life—to be no longer binding on His followers. A law that demands an infinite price must stand for eternity. To declare it done away with only cheapens His great sacrifice; to reject it is to reject Christ Himself.
+
+One might then ask: if Christ’s perfect life satisfied the claims of the law upon us, why do we still need to keep it? We are, in ourselves, actually unable to, but Jesus demonstrated that humanity united with divinity can keep it—and delight in doing so {% rf 'Psalm 40:8' %}. We can keep it only in Christ, and solely out of a desire to please Him (*not* to be saved), once we realize that He loves righteousness and hates iniquity—the breaking of His law {% rf '1 John 3:4; 5:3; Hebrews 1:9' %}. He has already promised to implant in us a new spirit and a new heart, giving us both the desire and the ability to please Him {% rf 'Ezekiel 36:26–27; Philippians 2:13' %}. We have no excuses, therefore, for He does not demand what He will not supply; He does the work—if we do not resist Him through unbelief {% rf 'Matthew 9:28; Romans 4:20–22' %}.
 
 ## What is God’s law a reflection of?
 
@@ -263,7 +284,7 @@ The fact that Jesus had to die on the cross to pay the penalty of lawlessness fo
 > [*Law is true:*] The judgments of the LORD are *true* and righteous altogether.
 {% ct 'Psalms 19:9' %}
 
-> [*God is spiritual:*] For they drank of that  *spiritual* Rock that followed them: and that Rock was Christ.
+> [*God is spiritual:*] For they drank of that *spiritual* Rock that followed them: and that Rock was Christ.
 {% ct '1 Corinthians 10:4' %}
 
 > [*Law is spiritual:*] For we know that the law is *spiritual*: but I am carnal, sold under sin.
@@ -299,7 +320,9 @@ The fact that Jesus had to die on the cross to pay the penalty of lawlessness fo
 > [*Law is everlasting:*] The works of his hands are verity and judgment; all his commandments are sure. They stand fast *for ever and ever*, and are done in truth and uprightness.
 {% ct 'Psalms 111:7-8' %}
 
-The Ten Commandments are a reflection of God’s character in written form, whereas Jesus’ life was a revelation of it in living form. Both the law and Jesus’ life help us to better comprehend God’s character. Because God cannot change, neither can His law.
+The Ten Commandments are a reflection of God’s character in written form; Jesus’ life was a revelation of it in living form. At Mount Sinai, God declared His character through His law and won the mind; at the cross He demonstrated His character through action and won the heart. Both law and cross are essential, complementary in purpose, harmonious in expression, each leading to the same end: the revelation of God to us.[^2]
+
+[^2]: Since His character does not change {% rf 'Malachi 3:6; Hebrews 13:8' %}, the law that reflects it cannot change either.
 
 ## How does the devil feel about keeping God’s law?
 

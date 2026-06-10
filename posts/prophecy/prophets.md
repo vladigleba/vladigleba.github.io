@@ -20,14 +20,14 @@ tags: [deception]
 
 God has chosen to use prophets to speak to humanity on His behalf; they share His messages and make His will known. Before significant events unfold, God reveals His intentions to the world through them, so that the human family is warned and prepared.
 
-For example, He used Noah to warn the world about the flood {% rf '2 Peter 2:5' %}, while Jeremiah warned Israel about their 70-year captivity in Babylon {% rf 'Jeremiah 25:11' %}. Regarding the coming of the Messiah, Isaiah announced that Jesus would would be born of a virgin {% rf 'Isaiah 7:14' %}, Micah said He would be born in Bethlehem {% rf 'Micah 5:2' %}, and Daniel prophesied that He would be “cut off” or killed {% rf 'Daniel 9:26' %}. Later, God used John the Baptist to announce that His coming was near {% rf 'John 1:23-27' %}. After Jesus’ ascension, Paul announced that Jesus would return a second time {% rf '1 Thessalonians 4:16-17' %}, and given the importance of His return, we can expect the gift of prophecy to be evident again in the last days to warn and prepare the world.
+For example, He used Noah to warn the world about the flood {% rf '2 Peter 2:5' %}, while Jeremiah warned Israel about their 70-year captivity in Babylon {% rf 'Jeremiah 25:11' %}. Regarding the coming of the Messiah, Isaiah announced that Jesus would would be born of a virgin {% rf 'Isaiah 7:14' %}, Micah said He would be born in Bethlehem {% rf 'Micah 5:2' %}, and Daniel prophesied that He would be “cut off” or killed {% rf 'Daniel 9:26' %}. Later, God used John the Baptist to announce that His coming was near {% rf 'John 1:23–27' %}. After Jesus’ ascension, Paul announced that Jesus would return a second time {% rf '1 Thessalonians 4:16–17' %}, and given the importance of His return, we can expect the gift of prophecy to be evident again in the last days to warn and prepare the world.
 
 ## What did Jesus warn about prophets?
 
 > And *many false prophets shall rise, and shall deceive many*. And because iniquity shall abound, the love of many shall wax cold. … For there shall *arise false Christs, and false prophets*, and shall shew great signs and wonders; insomuch that, if it were possible, they shall deceive the very elect.
 {% ct 'Matthew 24:11, 24' %}
 
-Jesus said there will be many false prophets in the last days deceiving people with signs and wonders. The working of miracles, therefore, is not sufficient evidence of a genuine prophet {% rf 'Revelation 13:13-14; 16:14' %}. But it’s important to note that Jesus did not say that all prophets will be false ones. Since He warned about false ones, there must be genuine ones too.
+Jesus said there will be many false prophets in the last days deceiving people with signs and wonders. The working of miracles, therefore, is not sufficient evidence of a genuine prophet {% rf 'Revelation 13:13–14; 16:14' %}. But it’s important to note that Jesus did not say that all prophets will be false ones. Since He warned about false ones, there must be genuine ones too.
 
 ## Which false prophets are condemned?
 
@@ -57,14 +57,14 @@ The Bible clearly teaches that the dead [cannot be contacted](/posts/basics/deat
 > Wherefore tongues are for a sign, not to them that believe, but to them that believe not: but *prophesying serveth not for them that believe not, but for them which believe*.
 {% ct '1 Corinthians 14:22' %}
 
-While a prophet can at times edify the public, Paul tells us that prophecy is one of Jesus’ gifts to His church intended to edify its members in their Christian walk as well as to equip them in the work of ministry to others. These gifts are vital to His church and will remain with her until Jesus returns. But it’s also important to emphasize that while the gift of prophecy is a tremendous blessing, it’s not meant to add to, replace, or minimize the Word of God {% rf 'Revelation 22:18-19; Proverbs 30:5-6' %}. It’s true that God has used prophets to clarify His Word, but He never used them to originate new beliefs that cannot be supported by the Bible. The genuine gift of prophecy always elevates, and is in harmony with, God’s Word {% rf 'Matthew 4:4' %}.
+While a prophet can at times edify the public, Paul tells us that prophecy is one of Jesus’ gifts to His church intended to edify its members in their Christian walk as well as to equip them in the work of ministry to others. These gifts are vital to His church and will remain with her until Jesus returns. But it’s also important to emphasize that while the gift of prophecy is a tremendous blessing, it’s not meant to add to, replace, or minimize the Word of God {% rf 'Revelation 22:18–19; Proverbs 30:5–6' %}. It’s true that God has used prophets to clarify His Word, but He never used them to originate new beliefs that cannot be supported by the Bible. The genuine gift of prophecy always elevates, and is in harmony with, God’s Word {% rf 'Matthew 4:4' %}.
 
 ## Why is the gift of prophecy absent from most churches?
 
 > Her gates are sunk into the ground; he hath destroyed and broken her bars: her king and her princes are among the Gentiles: *the law is no more; her prophets also find no vision from the LORD*.
 {% ct 'Lamentations 2:9' %}
 
-When God’s people knowingly rebel against His holy law, He withdraws the prophetic gift because the gifts of the Spirit are for those who genuinely desire to live a life of complete surrender to Him—a life that’s in harmony with and in obedience to His teachings, summarized in His law {% rf 'Matthew 22:36-40' %}. This principle explains why God sent a prophet once His remnant church emerged in the 1800s that kept, and still keeps, all of His commandments, including the [seventh-day Sabbath](/posts/basics/sabbath.md) observed by Jesus. God also knows exactly when His people are in need of warning, counsel, and guidance, and when that time comes, He lovingly sends them a prophet to strengthen them {% rf 'Proverbs 29:18' %}.
+When God’s people knowingly rebel against His holy law, He withdraws the prophetic gift because the gifts of the Spirit are for those who genuinely desire to live a life of complete surrender to Him—a life that’s in harmony with and in obedience to His teachings, summarized in His law {% rf 'Matthew 22:36–40' %}. This principle explains why God sent a prophet once His remnant church emerged in the 1800s that kept, and still keeps, all of His commandments, including the [seventh-day Sabbath](/posts/basics/sabbath.md) observed by Jesus. God also knows exactly when His people are in need of warning, counsel, and guidance, and when that time comes, He lovingly sends them a prophet to strengthen them {% rf 'Proverbs 29:18' %}.
 
 ## Who empowers prophets to speak on God’s behalf?
 
@@ -81,7 +81,7 @@ Jesus gives the gift of prophecy through the Holy Spirit, who distributes it to 
 > And it shall come to pass afterward, that *I will pour out my spirit upon all flesh*; and your sons and your daughters shall *prophesy*, your old men shall *dream dreams*, your young men shall *see visions*. And also upon the servants and upon the handmaids in those days will I pour out my spirit.
 {% ct 'Joel 2:28-29' %}
 
-This prophecy was partially fulfilled when the Holy Spirit was poured out during Pentecost {% rf 'Acts 2:1-4' %}, empowering Jesus’ disciples to take the good news of His great sacrifice for sinners to the entire world. The prophecy will be fully fulfilled in the last days when the Holy Spirit empowers Christ’s followers to warn and prepare the world for His glorious return.
+This prophecy was partially fulfilled when the Holy Spirit was poured out during Pentecost {% rf 'Acts 2:1–4' %}, empowering Jesus’ disciples to take the good news of His great sacrifice for sinners to the entire world. The prophecy will be fully fulfilled in the last days when the Holy Spirit empowers Christ’s followers to warn and prepare the world for His glorious return.
 
 ## Does the Bible give more evidence?
 
@@ -91,7 +91,7 @@ This prophecy was partially fulfilled when the Holy Spirit was poured out during
 > And I fell at his feet to worship him. And he said unto me, See thou do it not: I am thy fellowservant, and of thy brethren that have the testimony of Jesus: worship God: for *the testimony of Jesus is the spirit of prophecy*.
 {% ct 'Revelation 19:10' %}
 
-The [remnant](/posts/prophecy/remnant.md) of Revelation 12 is God’s church in the last days, and it has two characteristics: keeps God’s commandments and has the testimony of Jesus Christ, which, according to Revelation 19, is the spirit of prophecy. This is another clue that the gift of prophecy will be evident in the last days prior to Jesus’ return; in fact, it’s one of the identifying marks of the remnant church. Paul confirms this in {% rf '1 Corinthians 1:4-7' false %} where he says that the church waiting for His return will not lack any of the gifts of the Spirit. Just as God sent John the Baptist to prepare the world for Jesus’ first coming, He will send the gift of prophecy to His last-day commandment-keeping church to prepare the world (and itself) for Jesus’ second coming.
+The [remnant](/posts/prophecy/remnant.md) of Revelation 12 is God’s church in the last days, and it has two characteristics: keeps God’s commandments and has the testimony of Jesus Christ, which, according to Revelation 19, is the spirit of prophecy. This is another clue that the gift of prophecy will be evident in the last days prior to Jesus’ return; in fact, it’s one of the identifying marks of the remnant church. Paul confirms this in {% rf '1 Corinthians 1:4–7' false %} where he says that the church waiting for His return will not lack any of the gifts of the Spirit. Just as God sent John the Baptist to prepare the world for Jesus’ first coming, He will send the gift of prophecy to His last-day commandment-keeping church to prepare the world (and itself) for Jesus’ second coming.
 
 Incidentally, since the testimony of Jesus is the spirit of prophecy then the words of His prophets are special messages from Jesus to us. Bringing reproach upon His prophets is the same as bringing reproach upon Jesus because He is the One who sends them.
 
@@ -128,11 +128,11 @@ God speaks to His prophets through visions, dreams, and face to face.
 
 During a vision from God the true prophet will have the following physical characteristics, although they may not be present all at once:
 - Initially losing physical strength {% rf 'Daniel 10:17' %}.
-- Later receiving supernatural strength {% rf 'Daniel 10:18-19' %}.
+- Later receiving supernatural strength {% rf 'Daniel 10:18–19' %}.
 - No breath in the body {% rf 'Daniel 10:17' %}.
 - Able to speak {% rf 'Daniel 10:17' %}.
 - Eyes wide open {% rf 'Numbers 24:4' %}.
-- Not being aware of earthly surroundings {% rf '2 Corinthians 12:1-4' %}.
+- Not being aware of earthly surroundings {% rf '2 Corinthians 12:1–4' %}.
 
 ## What is another characteristic?
 
@@ -169,7 +169,7 @@ The genuine prophet’s predictions always come to pass if they are not conditio
 > Beware of false prophets, which come to you in sheep’s clothing, but inwardly they are ravening wolves. *Ye shall know them by their fruits*. Do men gather grapes of thorns, or figs of thistles?
 {% ct 'Matthew 7:15-16' %}
 
-The life of a genuine prophet will reveal the character of Jesus and the fruits of the Spirit {% rf 'Galatians 5:22-23' %}.
+The life of a genuine prophet will reveal the character of Jesus and the fruits of the Spirit {% rf 'Galatians 5:22–23' %}.
 
 ## What is the final characteristic?
 
