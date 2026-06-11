@@ -118,7 +118,7 @@ The second sign (“the sun became black as sackcloth of hair, and the moon beca
 
 The final sign (“the stars of heaven fell”) was fulfilled by the great Leonids meteor shower of November 13, 1833. Witnesses reported that the meteors fell like rain and that no language could describe their splendor. “Its sublimity and awful beauty still linger in many minds. … Never did rain fall much thicker than the meteors fell toward the earth; east, west, north, and south, it was the same. In a word, the whole heavens seemed in motion.”[^3] “No language, indeed, can come up to the splendor of that magnificent display; … no one who did not witness it can form an adequate conception of its glory. It seemed as if the whole starry heavens had congregated at one point near the zenith, and were simultaneously shooting forth, with the velocity of lightning, to every part of the horizon; and yet they were not exhausted—thousands swiftly followed in the tracks of thousands, as if created for the occasion.”[^4]
 
-Jesus prophesied that all three signs will occur again just prior to His Second Coming {% rf 'Matthew 24:29-30; Mark 13:24-26; Luke 21:25' %}.
+Jesus prophesied that all three signs will occur again just prior to His Second Coming {% rf 'Matthew 24:29–30; Mark 13:24–26; Luke 21:25' %}.
 
 [^1]: Sir Charles Lyell, *Principles of Geology*, p. 495.
 [^2]: *The Essex Antiquarian*, April 1899, vol. 3, no. 4, pp. 53-54.
@@ -133,7 +133,7 @@ Jesus prophesied that all three signs will occur again just prior to His Second 
 > Say unto them, As I live, saith the Lord GOD, *I have no pleasure in the death of the wicked*; but that the wicked turn from his way and live: *turn ye, turn ye from your evil ways; for why will ye die*, O house of Israel?
 {% ct 'Ezekiel 33:11' %}
 
-God does not want anyone to be caught off guard or unprepared for His coming. His desire is that every person be saved, so He is patient with us, granting repeated opportunities and every spiritual blessing {% rf 'Ephesians 1:3-4' %} we need to become His sons and daughters. Yet His patience is not infinite {% rf 'Genesis 6:3' %}, for if it were, the misery of sin would never end. One day, the door to reconciliation with our Maker will close forever. May it never be said of us: “The harvest is past, the summer is ended, and we are not saved” {% rf 'Jeremiah 8:20' %}. Let us make the most of every God-given opportunity and blessing.
+God does not want anyone to be caught off guard or unprepared for His coming. His desire is that every person be saved, so He is patient with us, granting repeated opportunities and every spiritual blessing {% rf 'Ephesians 1:3–4' %} we need to become His sons and daughters. Yet His patience is not infinite {% rf 'Genesis 6:3' %}, for if it were, the misery of sin would never end. One day, the door to reconciliation with our Maker will close forever. May it never be said of us: “The harvest is past, the summer is ended, and we are not saved” {% rf 'Jeremiah 8:20' %}. Let us make the most of every God-given opportunity and blessing.
 
 ## What advice and promise does the Bible give?
 
