@@ -8,6 +8,23 @@
         <a href="/feed.xml" title="RSS feed" rel="alternate">RSS</a> <span>•</span> 
         <i class="hey">hey @ vladigleba . com</i>
       </div>
+
+      <div class="subscription-form-wrapper">
+        <form
+          action="https://buttondown.com/api/emails/embed-subscribe/vladigleba"
+          method="post"
+          class="embeddable-buttondown-form"
+        >
+          <label for="bd-email" class="visually-hidden">Enter your email</label>
+          <input class="email-input" type="email" name="email" id="bd-email" placeholder="Enter your email" />
+          <input class="subscribe-button" type="submit" value="Subscribe" />
+          <p>
+            <a href="https://buttondown.com/refer/vladigleba" target="_blank">
+              Powered by Buttondown.
+            </a>
+          </p>
+        </form>
+      </div>
       
       <div class="last-updated">
         Last updated <time datetime="{{ 'now' | date: '%Y-%m-%dT%H:%M:%S.%3NZ' }}">{{ 'now' | date: '%B %-d, %Y' }}</time>

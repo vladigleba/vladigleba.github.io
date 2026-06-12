@@ -71,10 +71,12 @@ article > header p {
 .search-results .empty,
 .toc a,
 body > footer,
+.embeddable-buttondown-form input[type="email"],
 article > header .meta.series {
   font-size: 16px;
 }
 
+.subscribe-button,
 .popup-stat-label,
 .search-summary,
 .unified-card .tag,
@@ -82,6 +84,7 @@ li .tag {
   font-size: 15px;
 }
 
+.embeddable-buttondown-form p,
 .search-counter,
 .search-nav-btn,
 .search-clear-btn,

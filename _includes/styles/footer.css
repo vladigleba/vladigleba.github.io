@@ -1,5 +1,5 @@
 body > footer {
-  padding: 150px 0 65px;
+  padding: 140px 0 70px;
   text-align: center;
   color: var(--lighter-gray-color);
   line-height: 1.4;
@@ -13,10 +13,68 @@ body > footer > div {
   font-style: normal;
 }
 
+.subscription-form-wrapper {
+  margin: 40px 0;
+}
+
+.embeddable-buttondown-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0;
+  max-width: 350px;
+  margin: 0 auto;
+  row-gap: 10px;
+}
+
+.email-input {
+  padding: 10px 12px;
+  border: 1px solid #C46565;
+  border-right: none;
+  border-radius: var(--default-radius) 0 0 var(--default-radius);
+  font-family: inherit;
+  flex: 1;
+  transition: box-shadow 150ms ease;
+}
+
+.email-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(212, 73, 73, 0.1);
+}
+
+.subscribe-button {
+  padding: 10px 20px;
+  background: #C46565;
+  color: white;
+  border: none;
+  border-radius: 0 var(--default-radius) var(--default-radius) 0;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.subscribe-button:hover {
+  opacity: 0.95;
+}
+
+.embeddable-buttondown-form p {
+  margin: 0;
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.embeddable-buttondown-form a {
+  color: var(--lighter-gray-color);
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.embeddable-buttondown-form a:hover {
+  color: var(--gray-color);
+}
+
 .last-updated {
   display: inline-block;
-  padding: 2px var(--tag-horizontal-padding) 4px;
-  margin-top: 20px;
+  padding: 3px var(--tag-horizontal-padding) 4.5px;
   border: 1px solid #ccc;
   border-radius: var(--default-radius);
 }
