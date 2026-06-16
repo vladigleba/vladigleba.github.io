@@ -1,25 +1,20 @@
-<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg-gradient" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0%" stop-color="#ffe7d2"/>
-      <stop offset="100%" stop-color="#e6e1f0"/>
-    </linearGradient>
-    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#d1d5db" flood-opacity="0.25"/>
-    </filter>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg-gradient)" stroke="url(#bg-gradient)" stroke-width="8"/>
-  <rect x="4" y="4" width="1192" height="622" fill="none" stroke="url(#bg-gradient)" stroke-width="8"/>
-  <g filter="url(#softShadow)">
-    <rect x="80" y="90" width="1040" height="450" rx="32" fill="#fff"/>
-  </g>
-  <!-- "The Truth" on the same line, with correct font sizes and visibility -->
-  <text x="50%" y="48%" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif">
-    <tspan font-size="32" font-weight="normal" fill="#111">The </tspan>
-    <tspan font-family="'Open Sans', Arial, sans-serif" font-size="124" font-weight="bold" fill="#111">Truth</tspan>
-  </text>
-  <text x="50%" y="62%" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif" font-weight="bold">
-    <tspan font-size="58" fill="#111">will make you </tspan>
-    <tspan font-size="88" fill="#111">free</tspan>
-  </text>
+<svg width="100%" viewBox="0 0 690 390" role="img" xmlns="http://www.w3.org/2000/svg">
+
+  <title>Better than Gold — The Truth will make you free</title>
+  <desc>Light version social sharing card for the blog "Better than Gold" with subtitle inline with the bottom rule.</desc>
+  
+  <rect width="680" height="380" fill="#faf7f2" style="fill:rgb(250, 247, 242);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <line x1="60" y1="80" x2="620" y2="80" stroke="#a07c3a" stroke-width="0.75" style="fill:rgb(0, 0, 0);stroke:rgb(160, 124, 58);color:rgb(0, 0, 0);stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  
+  <text x="340" y="162" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="52" font-weight="700" fill="#1a1a1a" letter-spacing="-0.5" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Playfair Display&quot;, Georgia, serif;font-size:52px;font-weight:700;text-anchor:middle;dominant-baseline:auto">Better than</text>
+
+  <text x="340" y="262" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="104" font-weight="700" fill="#a07c3a" letter-spacing="-2" style="fill:rgb(160, 124, 58);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Playfair Display&quot;, Georgia, serif;font-size:104px;font-weight:700;text-anchor:middle;dominant-baseline:auto">Gold</text>
+  
+  <line x1="60" y1="300" x2="160" y2="300" stroke="#a07c3a" stroke-width="0.75" style="fill:rgb(0, 0, 0);stroke:rgb(160, 124, 58);color:rgb(0, 0, 0);stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <text x="340" y="306" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="22" font-style="italic" font-weight="400" fill="#7a6a54" letter-spacing="0.2" style="fill:rgb(122, 106, 84);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Playfair Display&quot;, Georgia, serif;font-size:22px;font-weight:400;font-style:italic;text-anchor:middle;dominant-baseline:auto">The Truth will make you free.</text>
+  
+  <line x1="520" y1="300" x2="620" y2="300" stroke="#a07c3a" stroke-width="0.75" style="fill:rgb(0, 0, 0);stroke:rgb(160, 124, 58);color:rgb(0, 0, 0);stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
 </svg>

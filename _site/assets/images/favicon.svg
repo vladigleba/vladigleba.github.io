@@ -1,4 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <circle cx="32" cy="32" r="30" fill="#fff" stroke="#222" stroke-width="4"/>
-  <text x="32" y="38" text-anchor="middle" dominant-baseline="middle" font-size="32" font-family="Fjalla One, Arial, sans-serif" fill="#222">T</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background fill -->
+  <rect width="100" height="100" rx="12" fill="#faf7f2"/>
+
+  <!-- Border — four separate sides to ensure equal visual weight -->
+  <line x1="12" y1="0.5" x2="88" y2="0.5" stroke="#c8b48a" stroke-width="1"/>
+  <line x1="12" y1="99.5" x2="88" y2="99.5" stroke="#c8b48a" stroke-width="1"/>
+  <line x1="0.5" y1="12" x2="0.5" y2="88" stroke="#c8b48a" stroke-width="1"/>
+  <line x1="99.5" y1="12" x2="99.5" y2="88" stroke="#c8b48a" stroke-width="1"/>
+  <path d="M12 0.5 Q0.5 0.5 0.5 12" fill="none" stroke="#c8b48a" stroke-width="1"/>
+  <path d="M88 0.5 Q99.5 0.5 99.5 12" fill="none" stroke="#c8b48a" stroke-width="1"/>
+  <path d="M0.5 88 Q0.5 99.5 12 99.5" fill="none" stroke="#c8b48a" stroke-width="1"/>
+  <path d="M99.5 88 Q99.5 99.5 88 99.5" fill="none" stroke="#c8b48a" stroke-width="1"/>
+
+  <!-- Top rule -->
+  <line x1="10" y1="28" x2="90" y2="28" stroke="#a07c3a" stroke-width="2"/>
+
+  <!-- BG -->
+  <text x="50" y="68"
+    text-anchor="middle"
+    font-family="'Playfair Display', Georgia, serif"
+    font-size="46"
+    font-weight="700"
+    fill="#a07c3a">BG</text>
+
+  <!-- Bottom rule -->
+  <line x1="10" y1="74" x2="90" y2="74" stroke="#a07c3a" stroke-width="2"/>
 </svg>

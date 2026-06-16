@@ -299,7 +299,7 @@ if (document.body.classList.contains('js-enabled')) {
       if (!link.dataset.loaded) {
         try {
           const response = await fetch(
-            `https://bible-api.com/${encodeURIComponent(reference)}?translation=kjv`
+            `https://bible-api.com/${encodeURIComponent(reference.replace(/–/g, '-'))}?translation=kjv`
           );
           const data = await response.json();
 

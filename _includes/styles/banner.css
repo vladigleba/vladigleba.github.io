@@ -12,7 +12,7 @@
 }
 
 .banner h1 span {
-  background: var(--gradient) padding-box text;
+  background: var(--accent) padding-box text;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
