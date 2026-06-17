@@ -28,7 +28,7 @@ body > footer > div {
 
 .email-input {
   padding: 8px 12px;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--accent-color);
   border-right: none;
   border-radius: var(--default-radius) 0 0 var(--default-radius);
   font-family: inherit;
@@ -43,7 +43,7 @@ body > footer > div {
 
 .subscribe-button {
   padding: 8px 20px;
-  background: var(--accent);
+  background: var(--accent-color);
   color: white;
   border: none;
   border-radius: 0 var(--default-radius) var(--default-radius) 0;

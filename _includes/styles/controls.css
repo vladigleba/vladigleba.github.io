@@ -1,6 +1,5 @@
 .posts-sort select,
 .switch-label,
-.stat-label,
 .popup-stat-label {
   font-weight: 600;
 }
@@ -26,10 +25,11 @@
 .stats .stat-count {
   font-weight: 500;
   display: block;
+  color: var(--accent-color);
 }
 
 .stats .stat-label {
-  color: var(--gray-color);
+  font-weight: 500;
 }
 
 /* stats popup */
