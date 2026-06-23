@@ -4,6 +4,7 @@ description: If God is in control, why is there so much evil in the world? How d
 date: 2021-11-02
 series: Controversy
 order: 300
+tags: [rebellion]
 featured: true
 ---
             
@@ -24,8 +25,11 @@ God cannot be the originator of evil because that is contrary to His character o
 
 ## What was Satan’s original name?
 
-> How art thou fallen from heaven, O *Lucifer*, son of the morning! how art thou cut down to the ground, which didst weaken the nations!
+> How art thou *fallen from heaven, O Lucifer*, son of the morning! how art thou cut down to the ground, which didst weaken the nations!
 {% ct 'Isaiah 14:12' %}
+
+> And he said unto them, I beheld *Satan as lightning fall from heaven*.
+{% ct 'Luke 10:18' %}
 
 Lucifer means “light bearer”, and he was one of God’s angels.
 
@@ -37,7 +41,7 @@ Lucifer means “light bearer”, and he was one of God’s angels.
 > The Lord reigneth; let the people tremble: *he sitteth between the cherubims*; let the earth be moved.
 {% ct 'Psalm 99:1' %}
 
-In Ezekiel 28 Lucifer is symbolized as the “prince of Tyre,” and we learn that he was created perfect. He was also a covering cherub, which means he had a high position in heaven and was next to God’s very presence. It’s unknown how long perfection existed in heaven, but eventually evil was born in Lucifer’s heart because he aall of God’s angels had freedom of choice. This is a risk God willingly took because genuine love cannot exist without a free will.
+In Ezekiel 28 Lucifer is symbolized as the “prince of Tyre,” and we learn that he was created perfect. He was also a covering cherub, which means he had a high position in heaven and was next to God’s very presence. It’s unknown how long perfection existed in heaven, but eventually evil was born in Lucifer’s heart, for all of God’s angels had freedom of choice. This is a risk God willingly took because genuine love cannot exist without a free will.
 
 ## How did he taint his heart?
 
