@@ -1,5 +1,5 @@
 ---
-title: The Rebellion Against Rest
+title: Rebelling Against Rest
 description: TODO
 color: rgb(112,83,124)
 date: 2026-06-17
@@ -50,15 +50,15 @@ The fact that Lucifer sinned implies that there was a law for him (and other ang
 > O that thou hadst *hearkened to my commandments! then had thy peace been as a river*, and thy righteousness as the waves of the sea.
 {% ct 'Isaiah 48:18' %}
 
-Rebellion against God's law, therefore, could only bring unrest:
+Rebellion against God’s law, therefore, could only bring unrest:
 
 > But the wicked are like the troubled sea, when it *cannot rest*, whose waters cast up mire and dirt. *There is no peace, saith my God, to the wicked*.
 {% ct 'Isaiah 47:20-21' %}
 
 ## What is the purpose of the gospel?
 
-> Let us therefore fear, lest, *a promise being left us of entering into his rest*, any of you should seem to come short of it. ... *There remaineth therefore a rest to the people of God*. For he that is entered into his rest, he also hath ceased from his own works, as God did from his.
+> Let us therefore fear, lest, *a promise being left us of entering into his rest*, any of you should seem to come short of it. … *There remaineth therefore a rest to the people of God*. For he that is entered into his rest, he also hath ceased from his own works, as God did from his.
 {% ct 'Hebrews 4:1, 9-10' %}
 
-Prior to Lucifer's rebellion, God's kingdom was in a state of rest--*sabbatismos*.
+In {% rf 'Hebrews 4:9' false %}, the Greek word for *rest* is *sabbatismos*, a derivative of *sabbaton*, the word for Sabbath. This promised Sabbath rest will be fully realized in God's heavenly kingdom, where His people will have complete rest from sin and all of its consequences {% rf 'Revelation 21:4; Isaiah 32:17-18' %}. The fulfillment of this promise is the purpose of the gospel as it seeks to restore the rest that Lucifer's war in heaven originally disrupted.[^1]
 
