@@ -14,9 +14,12 @@ One of the lessons we learned in the previous article was that the Sabbath is a 
 > And there was *war in heaven*: Michael and his angels fought against the dragon; and *the dragon fought and his angels*.
 {% ct 'Revelation 12:7' %}
 
-Before the curse of sin had wrecked Eden, it had already jolted heaven, piercing the heart of God and separating His angels into two opposite and irreconcilable groups: the good and the evil. Of those who chose to join the evil side, it is inconceivable to assume that they actively desired to be evil initially. It is more likely that they were deceived through clever insinuations that sounded reasonable and attractive. Someone must have been promising them an even better version of heaven than the one created by God.
+Before the curse of sin had wrecked Eden, it had already jolted heaven, piercing the heart of God and separating His angels into two opposite and irreconcilable groups: the good and the evil. Of those who chose to join the evil side, it is inconceivable to assume that they actively desired to be evil initially. It is more likely that they were deceived through clever insinuations that sounded reasonable and attractive. Someone must have been promising them an even better version of heaven than the one created by God. That someone was Satan.
 
-## Who was their deceiver?
+> And *the great dragon* was cast out, *that old serpent, called the Devil, and Satan*, which deceiveth the whole world: he was cast out into the earth, and his angels were cast out with him.
+{% ct 'Revelation 12:9' %}
+
+## What was his name in heaven?
 
 > 12 How art thou *fallen from heaven, O Lucifer*, son of the morning! how art thou cut down to the ground, which didst weaken the nations!
 {% ct 'Isaiah 14:12' %}
@@ -60,5 +63,17 @@ Rebellion against God’s law, therefore, could only bring unrest:
 > Let us therefore fear, lest, *a promise being left us of entering into his rest*, any of you should seem to come short of it. … *There remaineth therefore a rest to the people of God*. For he that is entered into his rest, he also hath ceased from his own works, as God did from his.
 {% ct 'Hebrews 4:1, 9-10' %}
 
-In {% rf 'Hebrews 4:9' false %}, the Greek word for *rest* is *sabbatismos*, a derivative of *sabbaton*, the word for Sabbath. This promised Sabbath rest will be fully realized in God's heavenly kingdom, where His people will have complete rest from sin and all of its consequences {% rf 'Revelation 21:4; Isaiah 32:17-18' %}. The fulfillment of this promise is the purpose of the gospel as it seeks to restore the rest that Lucifer's war in heaven originally disrupted.[^1]
+In {% rf 'Hebrews 4:9' false %}, the Greek word for *rest* is *sabbatismos*, a derivative of *sabbaton*, the word for Sabbath. God's promised rest, therefore, is like a perpetual Sabbath, which we can experience on a weekly basis now, but will experience more fully and on a permanent basis in His heavenly kingdom, where His people will be forever free from the unrest introduced by sin {% rf 'Revelation 21:4; Isaiah 32:17-18' %}. The fulfillment of this promise is the purpose of the gospel as it seeks to restore the *sabbatismos* that Lucifer first disrupted in heaven.
+
+## Why was Lucifer cast out of heaven?
+
+When God freed the Israelites out of Egypt, the land of their bondage, He led them into Canaan, the land of rest.
+
+> For ye are not as yet come *to the rest and to the inheritance*, which the LORD your God giveth you. But when ye go over Jordan, and dwell in the land which the LORD your God giveth you to inherit, and when he giveth you *rest from all your enemies round about*, so that ye dwell in safety ...
+{% ct 'Deuteronomy 12:9-10' %}
+
+But they could remain in that land of rest on one condition:
+
+> And *if ye will not yet for all this hearken unto me* ... And if ye will not be reformed by me by these things, *but will walk contrary unto me* ... And *I will scatter you among the heathen*, and will draw out a sword after you: and your land shall be desolate, and your cities waste. *Then shall the land enjoy her sabbaths*, as long as it lieth desolate, and ye be in your enemies' land; *even then shall the land rest, and enjoy her sabbaths*. As long as it lieth desolate it shall rest; *because it did not rest in your sabbaths, when ye dwelt upon it*.
+{% ct 'Leviticus 26:18, 23, 33-35' %}
 
