@@ -1,6 +1,6 @@
 ---
 title: Rebelling Against Rest
-description: TODO
+description: Before Adan and Eve fell, a war had already taken place in heaven. Why? And what was the controversy about?
 color: rgb(112,83,124)
 date: 2026-06-17
 order: 4000
@@ -63,17 +63,29 @@ Rebellion against God’s law, therefore, could only bring unrest:
 > Let us therefore fear, lest, *a promise being left us of entering into his rest*, any of you should seem to come short of it. … *There remaineth therefore a rest to the people of God*. For he that is entered into his rest, he also hath ceased from his own works, as God did from his.
 {% ct 'Hebrews 4:1, 9-10' %}
 
-In {% rf 'Hebrews 4:9' false %}, the Greek word for *rest* is *sabbatismos*, a derivative of *sabbaton*, the word for Sabbath. God's promised rest, therefore, is like a perpetual Sabbath, which we can experience on a weekly basis now, but will experience more fully and on a permanent basis in His heavenly kingdom, where His people will be forever free from the unrest introduced by sin {% rf 'Revelation 21:4; Isaiah 32:17-18' %}. The fulfillment of this promise is the purpose of the gospel as it seeks to restore the *sabbatismos* that Lucifer first disrupted in heaven.
+In {% rf 'Hebrews 4:9' false %}, the Greek word for *rest* is *sabbatismos*, a derivative of *sabbaton*, the word for Sabbath. God’s promised rest, therefore, is like a perpetual Sabbath, which we can experience on a weekly basis now, but will experience more fully and on a permanent basis in His heavenly kingdom, where His people will be forever free from the unrest introduced by sin {% rf 'Revelation 21:4; Isaiah 32:17–18' %}. The fulfillment of this promise is the purpose of the gospel as it seeks to restore the *sabbatismos* that Lucifer first disrupted in heaven.
 
 ## Why was Lucifer cast out of heaven?
 
 When God freed the Israelites out of Egypt, the land of their bondage, He led them into Canaan, the land of rest.
 
-> For ye are not as yet come *to the rest and to the inheritance*, which the LORD your God giveth you. But when ye go over Jordan, and dwell in the land which the LORD your God giveth you to inherit, and when he giveth you *rest from all your enemies round about*, so that ye dwell in safety ...
+> For ye are not as yet come *to the rest and to the inheritance*, which the LORD your God giveth you. But when ye go over Jordan, and dwell in the land which the LORD your God giveth you to inherit, and when he giveth you *rest from all your enemies round about*, so that ye dwell in safety …
 {% ct 'Deuteronomy 12:9-10' %}
 
-But they could remain in that land of rest on one condition:
+But they could remain in that land of rest on one condition only:
 
-> And *if ye will not yet for all this hearken unto me* ... And if ye will not be reformed by me by these things, *but will walk contrary unto me* ... And *I will scatter you among the heathen*, and will draw out a sword after you: and your land shall be desolate, and your cities waste. *Then shall the land enjoy her sabbaths*, as long as it lieth desolate, and ye be in your enemies' land; *even then shall the land rest, and enjoy her sabbaths*. As long as it lieth desolate it shall rest; *because it did not rest in your sabbaths, when ye dwelt upon it*.
+> And *if ye will not yet for all this hearken unto me* … And if ye will not be reformed by me by these things, *but will walk contrary unto me* … And *I will scatter you among the heathen*, and will draw out a sword after you: and your land shall be desolate, and your cities waste. *Then shall the land enjoy her sabbaths*, as long as it lieth desolate, and ye be in your enemies’ land; *even then shall the land rest, and enjoy her sabbaths*. As long as it lieth desolate it shall rest; *because it did not rest in your sabbaths, when ye dwelt upon it*.
 {% ct 'Leviticus 26:18, 23, 33-35' %}
+
+The Israelites could dwell in the promised land only if they did not walk contrary to God’s will (which was always for their good). If they did, God would scatter them out of the land, so it could rest from their evil ways. God drove the Canaanites out for this very reason.
+
+> Defile not ye yourselves in any of these things: for *in all these the nations are defiled which I cast out before you: and the land is defiled*: therefore I do visit the iniquity thereof upon it, and *the land itself vomiteth out her inhabitants*.
+{% ct 'Leviticus 18:24-25' %}
+
+When the Canaanites defiled themselves with their evil ways, they also defiled their land, which then vomited them out. This same principle applied to the next inhabitants, the Israelites. As long as they followed God’s will, the land would be able to enjoy her Sabbaths—rest from the defilement of sin, but if not, the land would expel them out. The conclusion is undeniable: the land of Canaan, a type of the heavenly promised land, was for righteous inhabitants only.
+
+> The *righteous* shall inherit the land, and dwell therein forever.
+{% ct 'Psalm 37:29' %}
+
+When Lucifer decided to rebel against God’s will, the same judgment applied to him. His iniquity disrupted heaven’s state of rest—it could no longer enjoy her *sabbatismos*—and he had to be driven out (along with his followers), because the heavenly Canaan was—and still is—for righteous inhabitants only. Lucifer had rebelled against righteousness and chosen iniquity.
 
