@@ -87,5 +87,4 @@ When the Canaanites defiled themselves with their evil ways, they also defiled t
 > The *righteous* shall inherit the land, and dwell therein forever.
 {% ct 'Psalm 37:29' %}
 
-When Lucifer decided to rebel against God’s will, the same judgment applied to him. His iniquity disrupted heaven’s state of rest—it could no longer enjoy her *sabbatismos*—and he had to be driven out (along with his followers), because the heavenly Canaan was—and still is—for righteous inhabitants only. Lucifer had rebelled against righteousness and chosen iniquity.
-
+When Lucifer decided to rebel against God’s will, the same judgment that applied to the Canaanites applied to him. His iniquity disrupted heaven’s state of rest—it could no longer enjoy her *sabbatismos*—and he had to be driven out (along with his followers). The heavenly Canaan was—and still is—for righteous inhabitants only, but Lucifer had rebelled against righteousness and chosen iniquity. In essence, he refused to keep the eternal Sabbath by refusing to rest in God, choosing instead to find rest in the pursuit of his own will.
