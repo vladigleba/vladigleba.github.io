@@ -87,4 +87,15 @@ When the Canaanites defiled themselves with their evil ways, they also defiled t
 > The *righteous* shall inherit the land, and dwell therein forever.
 {% ct 'Psalm 37:29' %}
 
-When Lucifer decided to rebel against God’s will, the same judgment that applied to the Canaanites applied to him. His iniquity disrupted heaven’s state of rest—it could no longer enjoy her *sabbatismos*—and he had to be driven out (along with his followers). The heavenly Canaan was—and still is—for righteous inhabitants only, but Lucifer had rebelled against righteousness and chosen iniquity. In essence, he refused to keep the eternal Sabbath by refusing to rest in God, choosing instead to find rest in the pursuit of his own will.
+When Lucifer decided to rebel against God, the same judgment that applied to the Canaanites applied to him. His iniquity disrupted heaven’s state of rest—it could no longer enjoy her *sabbatismos*—and he (and his followers) had to be driven out. The heavenly Canaan was—and still is—for righteous inhabitants only, but Lucifer had rebelled against righteousness and chosen iniquity. In essence, he refused to keep heaven's eternal Sabbath by refusing to rest in God, choosing instead to find rest in himself, in the pursuit of his own will.
+
+## What did Lucifer want?
+
+> How art thou fallen from heaven, O Lucifer, son of the morning! how art thou cut down to the ground, which didst weaken the nations! For thou hast said in thine heart, I will ascend into heaven, *I will exalt my throne above the stars of God*: I will sit also upon the mount of the congregation, in the sides of the north: I will ascend above the heights of the clouds; *I will be like the most High*.
+{% ct 'Isaiah 14:12-14' %}
+
+Stars symbolically represent angels {% rf 'Revelation 1:20' %}. Lucifer's desire to exalt his throne above the stars of God and to be like the most High meant that he wanted to have God's authority to rule over the angels. He wanted His power, but not His character. Little did he realize that heavenly greatness is not power *over* others but one's willingness to sacrifice self *for* others {% rf 'Matthew 20:25-28' %}. Every knee will bow before Jesus because He humbled Himself to a shameful death on the cross {% rf 'Philippians 2:8-10' %}. Lucifer, on the other hand, sought to elevate himself even higher.
+
+Earlier, we established that Lucifer's sin was rebellion against God's law, which was a law of rest, because it brought a state of *sabbatismos* to God's government and its subjects. It is hard to imagine, though, that he actually wanted to be evil. Sin was a new intruder, and he likely did not comprehend the depth and power of its perversity.
+
+
