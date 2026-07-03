@@ -100,9 +100,24 @@ Earlier, we learned that Lucifer’s sin was rebellion against God’s law, whic
 
 When he offered Jesus the kingdoms of the world {% rf 'Matthew 4:8–9' %}, he probably did not show the invalid of thirty-eight years suffering by the pool of Bethesda, longing to be healed, or the demoniac of Gadara living in tombs and cutting himself, or John the Baptist beheaded by a cowardly and foolish king. 
 
-When Satan tempted Eve {% rf 'Genesis 3:1–5' %}, he drew her into a discussion by asking her a devious question (“Yea, hath God said, Ye shall not eat of every tree of the garden?”), and quickly sowing doubt about God’s character (“Ye shall not surely die: For God doth know that in the day ye eat thereof, then your eyes shall be opened, and ye shall be as gods, knowing good and evil”). This quick one-two punch must have sent Eve’s mind spinning into an abyss of dissonance and confusion: Was God not who she thought He was? Was He trying to scare them into obedience? Did He have their best interest in mind, or was He manipulating them? Why was He preventing them from reaching a higher state of existence? What was it like to be a god like their Creator?
+When Satan tempted Eve {% rf 'Genesis 3:1–5' %}, he drew her into a discussion by asking a devious question (“Yea, hath God said, Ye shall not eat of every tree of the garden?”), and quickly sowing doubt about God’s character (“Ye shall not surely die: For God doth know that in the day ye eat thereof, then your eyes shall be opened, and ye shall be as gods, knowing good and evil”). This quick one-two punch must have sent Eve’s mind spinning into an abyss of dissonance and perplexity: Was God not who she thought He was? Was He trying to scare them into obedience? Did He have their best interest in mind, or was He manipulating them? Why was He preventing them from reaching a higher state of existence? What was it like to be a god?
 
-Lucifer likely presented similar questions before the angels. 
+Lucifer likely presented similar questions before the angels. The Bible does not talk about an off-limit tree in heaven, but it offers evidence that there was a law that Lucifer broke. Since the Ten Commandments can be summarized as loving God supremely and loving others as ourselves {% rf 'Matthew 22:37-40' %}, the heavenly law was likely based on the same principle. If God is love, then His law, which is a [reflection of His character](/posts/gospel/law.md#what-is-gods-law-a-reflection-of), must be anchored in love.
+
+> Beloved, let us love one another: for *love is of God*; and every one that loveth is born of God, and knoweth God. He that loveth not knoweth not God; for *God is love*.
+{% ct '1 John 4:7-8' %}
+
+We know Lucifer rebelled against God's law of love because iniquity was found in his heart {% rf 'Ezekiel 28:15; 1 John 3:4' %}, but what was his sin? Jesus said, "He was a murderer from the beginning" {% rf 'John 8:44' %}.
+
+## What is murder?
+
+> Whosoever *hateth his brother is a murderer*: and ye know that no murderer hath eternal life abiding in him.
+{% ct '1 John 3:15' %}
+
+> Ye have heard that it was said by them of old time, Thou shalt not kill; and whosoever shall kill shall be in danger of the judgment: But I say unto you, That *whosoever is angry with his brother without a cause* shall be in danger of the judgment: and whosoever shall say to his brother, Raca, shall be in danger of the council: but whosoever shall say, Thou fool, shall be in danger of hell fire.
+{% ct 'Matthew 5:21-22' %}
+
+In God's eyes, it is not necessary to commit murder to be guilty of it. Hatred alone will do it. It is the direct opposite of love, and therefore of God's law and the peace it guarantees. Wherever it appears, it shatters the state of *sabbatismos* created by love, and when allowed to fully develop, hatred will always lead to war, which is nothing but the desire to kill the one you hate.
 
 Because sin was a new intruder, few, if any, suspected how deep of a pit it would be.
 
