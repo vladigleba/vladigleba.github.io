@@ -102,12 +102,12 @@ When he offered Jesus the kingdoms of the world {% rf 'Matthew 4:8–9' %}, he p
 
 When Satan tempted Eve {% rf 'Genesis 3:1–5' %}, he drew her into a discussion by asking a devious question (“Yea, hath God said, Ye shall not eat of every tree of the garden?”), and quickly sowing doubt about God’s character (“Ye shall not surely die: For God doth know that in the day ye eat thereof, then your eyes shall be opened, and ye shall be as gods, knowing good and evil”). This quick one-two punch must have sent Eve’s mind spinning into an abyss of dissonance and perplexity: Was God not who she thought He was? Was He trying to scare them into obedience? Did He have their best interest in mind, or was He manipulating them? Why was He preventing them from reaching a higher state of existence? What was it like to be a god?
 
-Lucifer likely presented similar questions before the angels. The Bible does not talk about an off-limit tree in heaven, but it offers evidence that there was a law that Lucifer broke. Since the Ten Commandments can be summarized as loving God supremely and loving others as ourselves {% rf 'Matthew 22:37-40' %}, the heavenly law was likely based on the same principle. If God is love, then His law, which is a [reflection of His character](/posts/gospel/law.md#what-is-gods-law-a-reflection-of), must be anchored in love.
+Lucifer likely presented similar questions before the angels. The Bible does not talk about an off-limit tree in heaven, but it offers evidence that there was a law that Lucifer broke. Since the Ten Commandments can be summarized as loving God supremely and loving others as ourselves {% rf 'Matthew 22:37–40' %}, the heavenly law must have been based on the same principle. If God is love, then His law, which is a [reflection of His character](/posts/gospel/law.md#what-is-gods-law-a-reflection-of), must also be centered around love.
 
 > Beloved, let us love one another: for *love is of God*; and every one that loveth is born of God, and knoweth God. He that loveth not knoweth not God; for *God is love*.
 {% ct '1 John 4:7-8' %}
 
-We know Lucifer rebelled against God's law of love because iniquity was found in his heart {% rf 'Ezekiel 28:15; 1 John 3:4' %}, but what was his sin? Jesus said, "He was a murderer from the beginning" {% rf 'John 8:44' %}.
+We know Lucifer rebelled against God’s law of love because iniquity was found in his heart {% rf 'Ezekiel 28:15; 1 John 3:4' %}, but what was his sin? Jesus expressed it plainly: “He was a murderer from the beginning” {% rf 'John 8:44' %}.
 
 ## What is murder?
 
@@ -117,7 +117,12 @@ We know Lucifer rebelled against God's law of love because iniquity was found in
 > Ye have heard that it was said by them of old time, Thou shalt not kill; and whosoever shall kill shall be in danger of the judgment: But I say unto you, That *whosoever is angry with his brother without a cause* shall be in danger of the judgment: and whosoever shall say to his brother, Raca, shall be in danger of the council: but whosoever shall say, Thou fool, shall be in danger of hell fire.
 {% ct 'Matthew 5:21-22' %}
 
-In God's eyes, it is not necessary to commit murder to be guilty of it. Hatred alone will do it. It is the direct opposite of love, and therefore of God's law and the peace it guarantees. Wherever it appears, it shatters the state of *sabbatismos* created by love, and when allowed to fully develop, hatred will always lead to war, which is nothing but the desire to kill the one you hate.
+In God’s eyes, it is not necessary to commit murder to be guilty of it. Hatred alone will do it. It is the direct opposite of love, of God’s law, and the peace it guarantees. Wherever it appears, hatred shatters the state of *sabbatismos* created by love, and when allowed to fully develop, it will always lead to war, which is nothing but the desire to kill the one you hate.
+
+If he had the power, Lucifer would have killed his Maker. What he failed to do in heaven, however, he would have another chance to do on earth, and this time, he would succeed. God could have destroyed him on the spot, and saved Himself a lot of future suffering, but such an act would only raise further questions in the minds of the loyal angels. They would start wondering if Lucifer was right all long. Sin was a new intruder, and as such, it needed time to manifest itself, and its fruits, more fully, so after Lucifer lost his war against God, he was cast out unto the earth {% rf 'Revelation 12:9' %}, where God allowed him to continue his fight by giving him access to Adam and Eve.
+
+## How did Lucifer persuade other angels to join him?
+
 
 Because sin was a new intruder, few, if any, suspected how deep of a pit it would be.
 
