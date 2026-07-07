@@ -45,7 +45,12 @@ Lucifer was perfect before God until iniquity was found in Him:
 > Thou wast perfect in thy ways from the day that thou wast created, *till iniquity was found in thee*. By the multitude of thy merchandise they have filled the midst of thee with violence, and *thou hast sinned* …
 {% ct 'Ezekiel 28:15-16' %}
 
-The fact that Lucifer sinned implies that there was a law for him (and other angels) to sin against {% rf '1 John 3:4' %}. This law God had established in order to secure order and peace for all the inhabitants of His kingdom:
+The fact that iniquity was found in him implies that there was a law for him to sin against, a standard of righteousness of which he fell short, for the apostle John describes sin as breaking God’s law:
+
+> Whosoever committeth sin transgresseth also the law: *for sin is the transgression of the law*.
+{% ct '1 John 3:4' %}
+ 
+God had established this law in order to secure order and peace for all the inhabitants of His kingdom:
 
 > *Great peace have they which love thy law*: and nothing shall offend them.
 {% ct 'Psalm 119:165' %}
@@ -53,12 +58,12 @@ The fact that Lucifer sinned implies that there was a law for him (and other ang
 > O that thou hadst *hearkened to my commandments! then had thy peace been as a river*, and thy righteousness as the waves of the sea.
 {% ct 'Isaiah 48:18' %}
 
-Rebellion against God’s law, therefore, could only bring unrest:
+Rebellion against it, therefore, could only bring unrest:
 
 > But the wicked are like the troubled sea, when it *cannot rest*, whose waters cast up mire and dirt. *There is no peace, saith my God, to the wicked*.
 {% ct 'Isaiah 47:20-21' %}
 
-## What is the purpose of the gospel?
+## What did he disrupt?
 
 > Let us therefore fear, lest, *a promise being left us of entering into his rest*, any of you should seem to come short of it. … *There remaineth therefore a rest to the people of God*. For he that is entered into his rest, he also hath ceased from his own works, as God did from his.
 {% ct 'Hebrews 4:1, 9-10' %}
@@ -96,9 +101,11 @@ When Lucifer decided to rebel against God, the same judgment that applied to the
 
 {% rf 'Revelation 1:20' false %} tells us that stars symbolically represent angels. Lucifer’s desire to exalt his throne above the stars of God and to be like the most High meant that he wanted to have God’s authority to rule over the angels. He craved to have His power, but not His character. Little did he realize that greatness in heaven does not come from power *over* others but from one’s willingness to sacrifice self *for* others {% rf 'Matthew 20:25–28' %}. Every knee will bow before Jesus because He humbled Himself to a shameful death on the cross {% rf 'Philippians 2:8–10' %} whereas Lucifer sought to elevate himself even higher.
 
+## How did Lucifer persuade other angels to join him?
+
 Earlier, we learned that Lucifer’s sin was rebellion against God’s law, which was a law of rest that maintained a state of *sabbatismos* in heaven. Because he persuaded a third of the angels to join him {% rf 'Revelation 12:4' %}, Lucifer’s arguments must have seemed reasonable, noble even, for it is likely that none of the angels had a desire to be evil. In order to be effective, rebellion against God must appear attractive.
 
-When he offered Jesus the kingdoms of the world {% rf 'Matthew 4:8–9' %}, he probably did not show the invalid of thirty-eight years suffering by the pool of Bethesda, longing to be healed, or the demoniac of Gadara living in tombs and cutting himself, or John the Baptist beheaded by a cowardly and foolish king. 
+When he offered Jesus the kingdoms of the world {% rf 'Matthew 4:8–9' %}, he probably did not show the invalid of thirty-eight years suffering by the pool of Bethesda, longing to be healed, or the demoniac of Gadara living in tombs and cutting himself, or John the Baptist unjustly beheaded by a cowardly and foolish king. No, Satan showed Him only pomp and glitter: "the kingdoms of the world, and the glory of them" {% rf 'Matthew 4:8' %}.
 
 When Satan tempted Eve {% rf 'Genesis 3:1–5' %}, he drew her into a discussion by asking a devious question (“Yea, hath God said, Ye shall not eat of every tree of the garden?”), and quickly sowing doubt about God’s character (“Ye shall not surely die: For God doth know that in the day ye eat thereof, then your eyes shall be opened, and ye shall be as gods, knowing good and evil”). This quick one-two punch must have sent Eve’s mind spinning into an abyss of dissonance and perplexity: Was God not who she thought He was? Was He trying to scare them into obedience? Did He have their best interest in mind, or was He manipulating them? Why was He preventing them from reaching a higher state of existence? What was it like to be a god?
 
