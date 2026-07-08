@@ -37,7 +37,7 @@ Lucifer means “light bearer”, and he was one of God’s angels.
 > The Lord reigneth; let the people tremble: *he sitteth between the cherubims*; let the earth be moved.
 {% ct 'Psalm 99:1' %}
 
-In Ezekiel 28 Lucifer is symbolized as the “prince of Tyre,” and we learn that he was created perfect. He was also a covering cherub, which means he had a high position in heaven and was next to God’s very presence. It’s unknown how long perfection existed in heaven, but eventually evil was born in Lucifer’s heart because he aall of God’s angels had freedom of choice. This is a risk God willingly took because genuine love cannot exist without a free will.
+In Ezekiel 28 Lucifer is symbolized as the “prince of Tyre,” and we learn that he was created perfect. He was also a covering cherub, which means he had a high position in heaven and was next to God’s very presence. It’s unknown how long perfection existed in heaven, but eventually evil was born in Lucifer’s heart because he all of God’s angels had freedom of choice. This is a risk God willingly took because genuine love cannot exist without a free will.
 
 ## How did he taint his heart?
 

@@ -45,7 +45,7 @@ Lucifer was perfect before God until iniquity was found in Him:
 > Thou wast perfect in thy ways from the day that thou wast created, *till iniquity was found in thee*. By the multitude of thy merchandise they have filled the midst of thee with violence, and *thou hast sinned* …
 {% ct 'Ezekiel 28:15-16' %}
 
-The fact that iniquity was found in him implies that there was a law for him to sin against, a standard of righteousness of which he fell short, for the apostle John describes sin as breaking God’s law:
+The fact that iniquity was found in him implies that there was a law for him to sin against,[^1] a standard of righteousness of which he fell short, for the apostle John describes sin as breaking God’s law:
 
 > Whosoever committeth sin transgresseth also the law: *for sin is the transgression of the law*.
 {% ct '1 John 3:4' %}
@@ -62,6 +62,8 @@ Rebellion against it, therefore, could only bring unrest:
 
 > But the wicked are like the troubled sea, when it *cannot rest*, whose waters cast up mire and dirt. *There is no peace, saith my God, to the wicked*.
 {% ct 'Isaiah 47:20-21' %}
+
+[^1]: {% rf 'Daniel 9:16' false %} shows that sin and iniquity are synonymous in the Bible.
 
 ## What did he disrupt?
 
