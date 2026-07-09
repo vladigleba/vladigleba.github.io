@@ -70,7 +70,68 @@ Rebellion against it, therefore, could only bring unrest:
 > Let us therefore fear, lest, *a promise being left us of entering into his rest*, any of you should seem to come short of it. … *There remaineth therefore a rest to the people of God*. For he that is entered into his rest, he also hath ceased from his own works, as God did from his.
 {% ct 'Hebrews 4:1, 9-10' %}
 
-In {% rf 'Hebrews 4:9' false %}, the Greek word for *rest* is *sabbatismos*, a derivative of *sabbaton*, the word for Sabbath. God’s promised rest, therefore, is like a perpetual Sabbath, which we can experience on a weekly basis now, but will experience more fully and on a permanent basis in His heavenly kingdom, where His people will be forever free from the unrest introduced by sin {% rf 'Revelation 21:4; Isaiah 32:17–18' %}. The fulfillment of this promise is the purpose of the gospel as it seeks to restore the *sabbatismos* that Lucifer first disrupted in heaven.
+In {% rf 'Hebrews 4:9' false %}, the Greek word for *rest* is *sabbatismos*, a derivative of *sabbaton*, the word for Sabbath. God’s promised rest, therefore, is like a perpetual Sabbath, which we can experience on a weekly basis now, but will experience more fully and on a permanent basis in His heavenly kingdom, where His people will be forever free from the unrest introduced by sin {% rf 'Revelation 21:4; Isaiah 32:17–18' %}. The fulfillment of this promise is the purpose of the gospel as it seeks to restore the *sabbatismos* Lucifer first disrupted in heaven.
+
+## What did he want?
+
+> How art thou fallen from heaven, O Lucifer, son of the morning! how art thou cut down to the ground, which didst weaken the nations! For thou hast said in thine heart, I will ascend into heaven, *I will exalt my throne above the stars of God*: I will sit also upon the mount of the congregation, in the sides of the north: I will ascend above the heights of the clouds; *I will be like the most High*.
+{% ct 'Isaiah 14:12-14' %}
+
+{% rf 'Revelation 1:20' false %} tells us that stars symbolically represent angels. Lucifer’s desire to exalt his throne above the stars of God and to be like the most High meant that he wanted to have God’s authority to rule over the angels. He craved to have His power, but not His character. Little did he realize that greatness in heaven does not come from power *over* others but from one’s willingness to sacrifice self *for* others {% rf 'Matthew 20:25–28' %}. Every knee will bow before Jesus because He chose to humble Himself to a shameful death on the cross {% rf 'Philippians 2:8–10' %}, whereas Lucifer sought to elevate himself even higher. Instead of being content with his already exalted position as a covering cherub, he wanted equality with God!
+
+## How did he persuade other angels to join him?
+
+Lucifer’s sin was rebellion against God’s law, which was a law of rest that maintained a state of *sabbatismos* in heaven. Because he persuaded a third of the angels to join him {% rf 'Revelation 12:4' %}, his arguments must have seemed reasonable, noble even, for it is unlikely that any of the angels had a desire to be evil. In order to be effective, rebellion against God must appear attractive.
+
+When he offered Jesus the kingdoms of the world {% rf 'Matthew 4:8–9' %}, he probably did not show the invalid of thirty-eight years suffering by the pool of Bethesda, longing to be healed, or the demoniac of Gadara living in tombs and cutting himself, or John the Baptist unjustly beheaded by a cowardly king. No, Satan showed Him only pomp and glitter: “the kingdoms of the world, and the glory of them” {% rf 'Matthew 4:8' %}.
+
+When Satan tempted Eve {% rf 'Genesis 3:1–5' %},[^2] he drew her into a discussion by asking a devious question (“Yea, hath God said, Ye shall not eat of every tree of the garden?”), and quickly sowing doubt about God’s character (“Ye shall not surely die: For God doth know that in the day ye eat thereof, then your eyes shall be opened, and ye shall be as gods, knowing good and evil”). This quick one-two punch must have sent Eve’s mind spinning into an abyss of dissonance and perplexity: Was God not who she thought He was? Was He trying to scare them into obedience? Did He have their best interest in mind, or was He manipulating them? Why was He preventing them from reaching a higher state of existence? What was it like to be a god?
+
+Lucifer likely presented similar questions before the angels. The Bible does not mention an off-limit tree in heaven, but it offers evidence that there was a law Lucifer rebelled against—a clue that God’s law must have been the fulcrum of the heavenly controversy. Satan’s discourse with Eve insinuated that God was restricting her freedom by preventing her from reaching her fullest potential. If he felt that this assertion was strong enough to bring Eve over to his side, he must have had prior success with it with the angels in heaven, and God’s law would have been the perfect freedom-restricting lever for him to use.
+
+Lucifer wanted to be like God, but on his own terms, without the law of God telling him how to do it {% rf 'Isaiah 14:14' %}. He wanted to rule and to be worshiped, but his rebellion, which led to war, proved that he did not possess the character needed to rule in a way that would bring a state of rest. His disruption of God’s *sabbatismos* immediately disqualified him.
+
+Persuading a third of God’s angels to rebel against their Maker is no easy task, but Lucifer’s position as a covering cherub would have given him constant access to God and, therefore, credibility due to his supposed familiarity with His character. Thus, he would have had great influence over the angels. When they heard his proposition that God was not who He said He was, that He did not have their best interests in mind, that He was using His law to restrict their freedom, to prevent them from ascending to a higher state of existence, it is easy to see how his words would have had an affect.
+
+Sin was also a new intruder, because Lucifer was the first angel who had opened his heart to it {% rf 'Ezekiel 28:15' %}. Few, if any of the angels, suspected how deep of a pit it would become. Only God would have known what a great sacrifice it would require of him, and yet, he still chose to create Lucifer. Why? Because He knew love will always conquer hatred; freedom will always prevail over coercion. If genuine love would reign in His kingdom, the freedom to rebel must be extended to all. That freedom was worth it, even if it would cost Him everything, because in the end, He would have a universe inoculated against all future rebellion because of His love.
+
+> In the Lord’s service every soul is perfectly free to go on or turn back. Jesus has the satisfaction of knowing that every soul who follows Him, does so simply and solely because he prefers His company to anything else. There are no vows to bind them, after the love has waxed cold. The one tie that unites Christ to His people is love. In this freedom consists the joy of the relationship. The gladdest thought of the redeemed is that they are the chosen of Christ, and *as He looks over the hosts of the redeemed, His own infinite love finds satisfaction in the thought that there is not one among them who would not freely sacrifice all for Him*.
+{% ct 'Waggoner, Ellet. Waggoner on the Gospel of John. Kindle Edition.' %}
+
+[^2]: We know Satan was Eve’s tempter because Revelation calls him “that old serpent” {% rf 'Revelation 12:9; 20:2' %}.
+
+## What word best summarizes God’s law?
+
+Ten Commandments can be summarized as loving God supremely and loving others as ourselves:
+
+>37 Jesus said unto him, Thou shalt *love the Lord thy God* with all thy heart, and with all thy soul, and with all thy mind. This is the first and great commandment. And the second is like unto it, Thou shalt *love thy neighbour* as thyself. On these two commandments hang all the law and the prophets.
+{% ct 'Matthew 22:37-40' %}
+
+The core principle is love, which is the fulfillment of His law:
+
+> Love worketh no ill to his neighbour: therefore *love is the fulfilling of the law*.
+{% ct 'Romans 13:10' %}.
+
+Naturally, since God is love, then His law, which is a [reflection of His character](/posts/gospel/law.md#what-is-gods-law-a-reflection-of), must also be centered around love.
+
+> Beloved, let us love one another: for *love is of God*; and every one that loveth is born of God, and knoweth God. He that loveth not knoweth not God; for *God is love*.
+{% ct '1 John 4:7-8' %}
+
+Thus, the reason why iniquity was found in Lucifer was because he rebelled against God’s law of love: he failed to love God supremely and the other angels as himself. Love for self triumphed instead and brought an abundance of others sins with it, including idolatry (he sought the worship of other angels), blasphemy (he slandered God's character), Sabbath-breaking (he disrupted the heavenly *sabbatismos*), dishonoring parental authority (he rebelled against His Maker), adultery (he found another lover--himself), theft (he stole a third of God's angels), false witness (he deceived the angels), and covetousness (he wanted to be like God). Jesus, however, named one specific sin that all the others culminated in--murder. “He was a murderer from the beginning” {% rf 'John 8:44' %}.
+
+## What is murder?
+
+> Whosoever *hateth his brother is a murderer*: and ye know that no murderer hath eternal life abiding in him.
+{% ct '1 John 3:15' %}
+
+> Ye have heard that it was said by them of old time, Thou shalt not kill; and whosoever shall kill shall be in danger of the judgment: But I say unto you, That *whosoever is angry with his brother without a cause* shall be in danger of the judgment: and whosoever shall say to his brother, Raca, shall be in danger of the council: but whosoever shall say, Thou fool, shall be in danger of hell fire.
+{% ct 'Matthew 5:21-22' %}
+
+In God’s eyes, it is not necessary to commit murder to be guilty of it. Hatred alone will do it. It is the direct opposite of love, of God’s law, and the peace it guarantees. Wherever it appears, hatred shatters the state of *sabbatismos* created by love, and when allowed to fully develop, it will always lead to war, which is nothing but the desire to kill the one you hate.
+
+If he had the power, Lucifer would have killed his Maker. What he failed to do in heaven, however, he would have another chance to do on earth, and this time, he would succeed. God could have destroyed him on the spot, and saved Himself a lot of future suffering, but such an act would only raise further questions in the minds of the loyal angels. They would start wondering if Lucifer was right all long. Sin was a new intruder, and as such, it needed time to manifest itself, and its fruits, more fully, so after Lucifer lost his war against God, he was cast out unto the earth {% rf 'Revelation 12:9' %}, where God allowed him to continue his fight by giving him access to Adam and Eve.
+
+
 
 ## Why was Lucifer cast out of heaven?
 
