@@ -127,9 +127,20 @@ Thus, the reason why iniquity was found in Lucifer was because he rebelled again
 
 In God’s eyes, it is not necessary to commit murder to be guilty of it. Hatred alone will do it. Wherever it appears, hatred shatters the state of *sabbatismos* created by love, and when allowed to fully develop, it will always lead to war, which is nothing but the desire to kill the one you hate.
 
-If he had the power, Lucifer would have killed his Maker. What he failed to do in heaven, however, he would have another chance to do on earth, and this time, he would succeed. God could have destroyed him on the spot, and saved Himself a lot of future suffering, but such an act would only raise further questions in the minds of the loyal angels. They would start wondering if Lucifer was right all long. Sin was a new intruder, and as such, it needed time to manifest itself, and its fruits, more fully, so after Lucifer lost his war against God, he was cast out unto the earth {% rf 'Revelation 12:9' %}, where God allowed him to continue his fight by giving him access to Adam and Eve.
+Lucifer lost his war against God. But if he had the power, he would have killed his Maker. What he failed to do in heaven, however, he would have another chance to do on earth—and this time, he would succeed.
 
+Sin is a voracious beast, a bottomless pit that drags its victim lower and still lower, down to the lowest, most unimaginable depths of depravity. Christ’s death on the cross was the fully matured fruit of Lucifer’s hatred of Him that was born in heaven. He had rebelled against God’s law because he believed he could build a superior form of government without it. But it was doomed from the start, because a government built on hatred is built on a foundation of sand that will buckle under its own weight. The Daniel 2 image foretold this truth and history confirms it.[^2] Ever since Adam and Eve succumbed to Satan’s slander of God’s character, the earth has been ravaged by hatred and war—a continuation of what Lucifer started in heaven. On earth, he finally accomplished what he wanted to do in heaven and demonstrated that hatred, the founding principle of his government, can culminate in only one thing: the murder of the Creator of the universe.
 
+Killing their Maker is what Adam and Eve would have done apart if God had not given them a way out, a second chance, by placing enmity in them toward evil {% rf 'Genesis 3:15' %}. The world would quickly turn into an eat-or-be-eaten jungle of demoniacs. This, in fact, became reality in the pre-flood world where the restraining influence of the Holy Spirit was continually resisted, so that "every imagination of the thoughts of his heart was only evil continually" {% rf 'Genesis 6:5' %}.
+
+Killing our Maker is what each of us would have done if sin was given unrestrained rein in our lives. Our hatred of righteousness would have become so fierce that we would have crucified Jesus on that cross with our own hands.
+
+Allowing sin to reach full maturity is not needed, however, because it only takes one sin to put Jesus on the cross. We have all sinned at least once. We are all guilty of murder. He was innocent, yet He did not resist, but submitted willingly. He even asked His Father to forgive us for what we did {% rf 'Luke 23:34' %}.
+
+> Christ was treated as we deserve, that we might be treated as He deserves. He was condemned for our sins, in which He had no share, that we might be justified by His righteousness, in which we had no share. He suffered the death which was ours, that we might receive the life which was His. *“With His stripes we are healed.”*
+{% ct 'Ellen White, *The Desire of Ages*, p. 25' %}
+
+[^2]: Any future attempt to set up an earthly millennial kingdom through hatred or persecution of others will fail too.
 
 ## Why was Lucifer cast out of heaven?
 
