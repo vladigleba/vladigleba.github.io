@@ -140,7 +140,7 @@ Allowing sin to reach full maturity is not needed, however, because it only take
 > Christ was treated as we deserve, that we might be treated as He deserves. He was condemned for our sins, in which He had no share, that we might be justified by His righteousness, in which we had no share. He suffered the death which was ours, that we might receive the life which was His. *“With His stripes we are healed.”*
 {% ct 'Ellen White, The Desire of Ages, p. 25' %}
 
-> *When we understand and appreciate that "real sin" is the will to kill God, then we will know that the sin of man was indeed laid upon Christ*. He took our sin. Without a murmur the Saviour accepted the supreme evidence of hatred. He not only bore the sins of mankind, but *He bore mankind's sin of the murder of God displayed before the universe*. As a lamb He came to the slaughter and we slew Him. When we come to see and understand that sin, we can truly repent.
+> *When we understand and appreciate that “real sin” is the will to kill God, then we will know that the sin of man was indeed laid upon Christ*. He took our sin. Without a murmur the Saviour accepted the supreme evidence of hatred. He not only bore the sins of mankind, but *He bore mankind’s sin of the murder of God displayed before the universe*. As a lamb He came to the slaughter and we slew Him. When we come to see and understand that sin, we can truly repent.
 {% ct 'Donald Short, Then Shall the Sanctuary Be Cleansed, p. 121' %}
 
 [^2]: Any future attempt to set up an earthly millennial kingdom through hatred or persecution of others will fail too.
