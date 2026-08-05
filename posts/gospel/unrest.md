@@ -63,6 +63,9 @@ Rebellion against it, therefore, could only bring unrest:
 > But the wicked are like the troubled sea, when it *cannot rest*, whose waters cast up mire and dirt. *There is no peace, saith my God, to the wicked*.
 {% ct 'Isaiah 47:20-21' %}
 
+> There is no soundness in my flesh because of thine anger; *neither is there any rest* in my bones *because of my sin*.
+{% ct 'Psalm 38:3' %}
+
 ## What did he disrupt?
 
 > Let us therefore fear, lest, *a promise being left us of entering into his rest*, any of you should seem to come short of it. … *There remaineth therefore a rest to the people of God*. For he that is entered into his rest, he also hath ceased from his own works, as God did from his.
@@ -226,15 +229,15 @@ Immediately after Adam and Eve’s fall, God put the gospel in operation to undo
 
 Instead of finding rest in God’s law, Satan sought to find rest and happiness in himself, independent of and apart from God. Instead of resting in God’s word, Adam and Eve chose to rest in Satan’s word. We are doing the same thing today. “There is no such thing as absolute right and wrong; I will find happiness living as I please.“ In other words, ”I am my own god, capable of deciding what is best for me. Why should I avoid eating the fruit from the forbidden tree? I see no harm in it.“ Closer to home: ”The law of God was nailed to the cross and is no longer relevant for the New Testament church.“
 
-But the truth is we are not capable of deciding what is best for us. We need God telling us that, which means we still need His law.[^4] Do we believe this, or do we doubt? Satan planted unrest in the minds of the fallen angels and the minds of Adam and Eve by sowing doubt: ”Did God really say? Did He really mean what He said? Surely, His way cannot be the only right way.“
+But the truth is we are not capable of deciding what is best for us. We need God telling us what is sin, and what is not, which means we still need His law.[^4] Without it, we would call good evil and evil good {% rf 'Isaiah 5:20' %}. Do we believe this, or do we doubt? Satan planted unrest in the minds of the fallen angels and the mind of Eve by sowing doubt: ”Did God really say? Did He really mean what He said? Surely, His way cannot be the only right way.“
 
 Jesus tells us in {% rf 'John 8:44' false %} that the devil ”abode not in the truth.“ Why? Because he decided to pursue his own version of truth. But how many versions of truth are there? Jesus said, ”I am the way, the truth, and the life“ {% rf 'John 14:6' %}. In other words, our own version of truth can only be a counterfeit, because there is only one truth, and it is found in Him, for He is the Truth. Lucifer, on the other hand, abode not in Christ, but in himself—as did the fallen angels who joined him, as did Adam and Eve who believed him.
 
-In wanting to be like God by pursuing their own truth, the first pair ended up in the dust {% rf 'Genesis 3:19' %}. The same thing will happen to Satan and the fallen angels {% rf 'Isaiah 14:14–15; Ezekiel 28:18–19; Jude 6' %}. Adam and Eve were deceived, but we have the consequences of their decision recorded for our benefit {% rf '1 Corinthians 10:11' %}. We cannot expect a different outcome if we repeat the same mistakes.
+In wanting to be like God by pursuing their own truth, the first pair ended up being turned to dust upon death {% rf 'Genesis 3:19' %}. The same thing will happen to Satan and the fallen angels {% rf 'Isaiah 14:14–15; Ezekiel 28:18–19; Jude 6' %}. Adam and Eve were deceived, but we have the consequences of their decision recorded for our benefit {% rf '1 Corinthians 10:11' %}. We cannot expect a different outcome if we repeat the same mistakes.
 
-Instead of being a law of bondage, God’s law is a “law of liberty” to those who are born again {% rf 'James 1:25; 2:12' %}. It points out to the way of life that is free from shame, regret, guilt, pain, suffering, and bondage. Lucifer, the fallen angels, and the first pair thought they could determine what was best for them apart from God, but in the end they saw that they were wrong. ”The heart is deceitful above all things, and desperately wicked: who can know it?“ {% rf 'Jeremiah 17:9' %}. If we want happiness and rest in our lives, we ought to trust our Creator, for that is what He wants for us as well.
+Instead of being a law of bondage, God’s law is a “law of liberty” to those who are born again {% rf 'James 1:25; 2:12' %}. It points out to the way of life that is free from shame, regret, guilt, pain, suffering, and bondage. Lucifer, the fallen angels, and the first pair thought they could determine what was best for them apart from God, but in the end they saw that they were wrong. ”The heart is deceitful above all things, and desperately wicked: who can know it?“ {% rf 'Jeremiah 17:9' %}. If we want happiness and rest, we ought to trust our Creator, for that is what He wants for us as well.
 
-[^4]: Of course, we cannot keep His law ourselves; only He can keep it in us. But He cannot do it without our permission.
+[^4]: Of course, we cannot keep His law ourselves, apart from Him. Only He can keep it in us, but only if we ask Him to.
 
 ## Why was Lucifer cast out of heaven?
 
@@ -248,54 +251,24 @@ But they could remain in that land of rest on one condition only:
 > And *if ye will not yet for all this hearken unto me* … And if ye will not be reformed by me by these things, *but will walk contrary unto me* … And *I will scatter you among the heathen*, and will draw out a sword after you: and your land shall be desolate, and your cities waste. *Then shall the land enjoy her sabbaths*, as long as it lieth desolate, and ye be in your enemies’ land; *even then shall the land rest, and enjoy her sabbaths*. As long as it lieth desolate it shall rest; *because it did not rest in your sabbaths, when ye dwelt upon it*.
 {% ct 'Leviticus 26:18, 23, 33-35' %}
 
-The Israelites could dwell in the promised land only if they did not walk contrary to God’s will (which was always for their good). If they did, God would scatter them out of the land, so it could rest from their evil ways. God drove the Canaanites out for this very reason.
+The Israelites could dwell in the promised land only if they did not walk contrary to God’s will, which was designed to maximize their happiness. If they rebelled, God would scatter them out of the land, so it could "enjoy her sabbaths" and rest from their evil ways. In fact, God drove the Canaanites out for this very reason.
 
 > Defile not ye yourselves in any of these things: for *in all these the nations are defiled which I cast out before you: and the land is defiled*: therefore I do visit the iniquity thereof upon it, and *the land itself vomiteth out her inhabitants*.
 {% ct 'Leviticus 18:24-25' %}
 
-When the Canaanites defiled themselves with their evil ways, they also defiled their land, which then vomited them out. This same principle applied to the next inhabitants, the Israelites. As long as they followed God’s will, the land would be able to enjoy her Sabbaths—rest from the defilement of sin, but if not, the land would expel them out. The conclusion is undeniable: the land of Canaan, a type of the heavenly promised land, was for righteous inhabitants only.
+When the Canaanites defiled themselves with their evil ways, they also defiled their land, which then vomited them out. This same principle applied to the next inhabitants, the Israelites. As long as they followed God’s will, the land would be able to enjoy her Sabbaths—rest from the defilement of sin, but if not, the land would expel them out. Why? Because the land of Canaan, a type of the heavenly promised land, was for righteous inhabitants only.
 
 > The *righteous* shall inherit the land, and dwell therein forever.
 {% ct 'Psalm 37:29' %}
 
-When Lucifer decided to rebel against God, the same judgment that applied to the Canaanites applied to him. His iniquity disrupted heaven’s state of rest—it could no longer enjoy her *sabbatismos*—and he (and his followers) had to be driven out. The heavenly Canaan was—and still is—for righteous inhabitants only, but Lucifer had rebelled against righteousness and chosen iniquity. In essence, he refused to keep heaven’s eternal Sabbath by refusing to rest in God, choosing instead to find rest in himself, in the pursuit of his own will.
+When Lucifer rebelled against God, the same principle applied to him. His iniquity disrupted heaven’s state of rest—it could no longer enjoy her *sabbatismos*—and he (and his followers) had to be driven out. The heavenly Canaan was—and still is—for righteous inhabitants only, but Lucifer had rebelled against righteousness and chosen iniquity. He had refused to keep heaven’s eternal Sabbath by refusing to rest in God, choosing instead to find rest in himself, in the pursuit of his own will.
 
-## What did Lucifer want?
+God could have destroyed him on the spot, and saved Himself a lot of future suffering, but such an act would only raise further questions in the minds of the loyal angels. They would start wondering: "Was Lucifer was right all long?" Sin was a new intruder, and as such, it needed time to manifest its fruits more fully. 
 
-> How art thou fallen from heaven, O Lucifer, son of the morning! how art thou cut down to the ground, which didst weaken the nations! For thou hast said in thine heart, I will ascend into heaven, *I will exalt my throne above the stars of God*: I will sit also upon the mount of the congregation, in the sides of the north: I will ascend above the heights of the clouds; *I will be like the most High*.
-{% ct 'Isaiah 14:12-14' %}
+As Lucifer was free to turn his back on his Maker, so were Adam and Eve. As in the marriage covenant between husband and wife, God wants a willing, loving relationship with His creation, not a coercive one. The enemy is fine with coercion, because his government is built on selfish ambition, not self-sacrificing love. If he can gain subjects through force, he will do it, because the end result is the enlargement of his kingdom, no matter the means. God's government, on the other hand, is built on love, which requires the freedom to walk away. Love will prove, in the end, to be the only foundation that can establish an everlasting kingdom, one secure from all future rebellion.
 
-{% rf 'Revelation 1:20' false %} tells us that stars symbolically represent angels. Lucifer’s desire to exalt his throne above the stars of God and to be like the most High meant that he wanted to have God’s authority to rule over the angels. He craved to have His power, but not His character. Little did he realize that greatness in heaven does not come from power *over* others but from one’s willingness to sacrifice self *for* others {% rf 'Matthew 20:25–28' %}. Every knee will bow before Jesus because He humbled Himself to a shameful death on the cross {% rf 'Philippians 2:8–10' %} whereas Lucifer sought to elevate himself even higher.
+As Lucifer was cast out of heaven for his rebellion, so Adam and Eve were cast out of Eden for theirs. Both parties had disrupted God's state of *sabbatismos*. The perfect place of rest that God had created for them to enjoy could no longer be their home, for they had refused to rest.[^5]
 
-## How did Lucifer persuade other angels to join him?
+Have you been refusing to rest in God? If so, now is the time to lay down the weapon of pride, to wave the white flag of surrender, and to enter into God's blessed *sabbatismos*. He is waiting with open arms.
 
-Earlier, we learned that Lucifer’s sin was rebellion against God’s law, which was a law of rest that maintained a state of *sabbatismos* in heaven. Because he persuaded a third of the angels to join him {% rf 'Revelation 12:4' %}, Lucifer’s arguments must have seemed reasonable, noble even, for it is likely that none of the angels had a desire to be evil. In order to be effective, rebellion against God must appear attractive.
-
-When he offered Jesus the kingdoms of the world {% rf 'Matthew 4:8–9' %}, he probably did not show the invalid of thirty-eight years suffering by the pool of Bethesda, longing to be healed, or the demoniac of Gadara living in tombs and cutting himself, or John the Baptist unjustly beheaded by a cowardly and foolish king. No, Satan showed Him only pomp and glitter: "the kingdoms of the world, and the glory of them" {% rf 'Matthew 4:8' %}.
-
-When Satan tempted Eve {% rf 'Genesis 3:1–5' %}, he drew her into a discussion by asking a devious question (“Yea, hath God said, Ye shall not eat of every tree of the garden?”), and quickly sowing doubt about God’s character (“Ye shall not surely die: For God doth know that in the day ye eat thereof, then your eyes shall be opened, and ye shall be as gods, knowing good and evil”). This quick one-two punch must have sent Eve’s mind spinning into an abyss of dissonance and perplexity: Was God not who she thought He was? Was He trying to scare them into obedience? Did He have their best interest in mind, or was He manipulating them? Why was He preventing them from reaching a higher state of existence? What was it like to be a god?
-
-Lucifer likely presented similar questions before the angels. The Bible does not talk about an off-limit tree in heaven, but it offers evidence that there was a law that Lucifer broke. Since the Ten Commandments can be summarized as loving God supremely and loving others as ourselves {% rf 'Matthew 22:37–40' %}, the heavenly law must have been based on the same principle. If God is love, then His law, which is a [reflection of His character](/posts/gospel/law.md#what-is-gods-law-a-reflection-of), must also be centered around love.
-
-> Beloved, let us love one another: for *love is of God*; and every one that loveth is born of God, and knoweth God. He that loveth not knoweth not God; for *God is love*.
-{% ct '1 John 4:7-8' %}
-
-We know Lucifer rebelled against God’s law of love because iniquity was found in his heart {% rf 'Ezekiel 28:15; 1 John 3:4' %}, but what was his sin? Jesus expressed it plainly: “He was a murderer from the beginning” {% rf 'John 8:44' %}.
-
-## What is murder?
-
-> Whosoever *hateth his brother is a murderer*: and ye know that no murderer hath eternal life abiding in him.
-{% ct '1 John 3:15' %}
-
-> Ye have heard that it was said by them of old time, Thou shalt not kill; and whosoever shall kill shall be in danger of the judgment: But I say unto you, That *whosoever is angry with his brother without a cause* shall be in danger of the judgment: and whosoever shall say to his brother, Raca, shall be in danger of the council: but whosoever shall say, Thou fool, shall be in danger of hell fire.
-{% ct 'Matthew 5:21-22' %}
-
-In God’s eyes, it is not necessary to commit murder to be guilty of it. Hatred alone will do it. It is the direct opposite of love, of God’s law, and the peace it guarantees. Wherever it appears, hatred shatters the state of *sabbatismos* created by love, and when allowed to fully develop, it will always lead to war, which is nothing but the desire to kill the one you hate.
-
-If he had the power, Lucifer would have killed his Maker. What he failed to do in heaven, however, he would have another chance to do on earth, and this time, he would succeed. God could have destroyed him on the spot, and saved Himself a lot of future suffering, but such an act would only raise further questions in the minds of the loyal angels. They would start wondering if Lucifer was right all long. Sin was a new intruder, and as such, it needed time to manifest itself, and its fruits, more fully, so after Lucifer lost his war against God, he was cast out unto the earth {% rf 'Revelation 12:9' %}, where God allowed him to continue his fight by giving him access to Adam and Eve.
-
-## How did Lucifer persuade other angels to join him?
-
-
-Because sin was a new intruder, few, if any, suspected how deep of a pit it would be.
-
+[^5]: The earthly Canaan was able to enjoy her sabbaths once the Canaanites, and later, the Israelites, who had polluted it with their evil ways, were driven out of it. Under the New Testament dispensation, what was once local is now global. The entire earth is now groaning because of the evil practiced upon it {% rf 'Romans 8:22' %}. Soon, the time of probation will end, and the earth will be made desolate *globally* during the millennium because its inhabitants refused [to enter God’s Sabbath rest](/posts/prophecy/mark.md) {% rf 'Jeremiah 4:23-27' %}.
