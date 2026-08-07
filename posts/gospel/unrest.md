@@ -155,6 +155,15 @@ When Satan tempted Eve, he was attempting to infect her mind with his own. In he
 > God had said to them certain words, His words, the expression of His mind, His thought concerning them. *If they had received those words, had retained those words and the thoughts of God in those words, whose mind would they have retained? God’s.* When this other one, Satan, came and told them other words, expressing his thoughts and the product of his mind and they accepted that and yielded to that: then whose thoughts did they receive and whose mind did they receive?
 {% ct "A.T. Jones, The Third Angel's Message (1893), p. 153" %}
 
+Satan's mind was the mind of self, of self-exaltation and self-absorption. Note that the pronoun "I" is used five times in {% rf 'Isaiah 14:13-14' false %}. {% rf 'Ezekiel 28:17' false %} is also revealing: "Thine heart was lifted up because of thy beauty, thou hast corrupted thy wisdom by reason of thy brightness." His beauty corrupted his heart with pride and perverted his thinking. His thoughts were no longer anchored in reality.
+
+> “What he was came from God. But *Lucifer gave himself credit for all that he was* ... Did he not in that count himself as self-existent—in fact put himself in the place of God? ... when he came to our first parents and they received of that mind, what mind was that? The mind of self, ... and *the same ambition was set before them that he set before himself* ...” 
+{% ct "A.T. Jones, The Third Angel's Message (1893), p. 154" %}
+
+Eve fell into the same trap. Because she was not around when God had created the earth and everything in it, when God told her and Adam that He was their Creator, they had to trust Him, though God would have given them plenty of evidence, for He never asks for blind faith {% rf 'Hebrews 11:1' %}. This trust, however, was disrupted when the serpent lured Eve into a conversation with him. His devious questions likely caused her to wonder if she was self-existent after all, or perhaps the forbidden tree could make her self-existent if she was not already.
+
+## What was Satan's reply to Eve?
+
 > And the serpent said unto the woman, *Ye shall not surely die*: For God doth know that in the day ye eat thereof, then your eyes shall be opened, and ye shall be as gods, knowing good and evil.
 {% ct 'Genesis 3:4-5' %}
 
@@ -165,6 +174,9 @@ After his triumph over the first pair, the fallen angel had managed to replicate
 As Lucifer became unhappy with the position God gave him and desired to ascend to a more exalted one, so did the first pair. Both parties wanted to be like God. Christ, on the other hand, was willing to give up His exalted position to become a humble servant. Both Lucifer and the first pair chose to act independently and contrary to God’s revealed will; Jesus, on the other hand, prayed, “Not my will, but thine, be done” {% rf 'Luke 22:42' %}. The Bible, in fact, teaches that Jesus will continue to voluntarily subject Himself to His Father’s will even after sin is eradicated {% rf '1 Corinthians 11:3; 15:24–28' %}.
 
 Two opposite mindsets are still striving for the mastery in every person. Adam and Eve were initially made in God’s image, but lost it when they believed the serpent. Since then, we have all adopted the proud, selfish mindset of the tempter. But there is hope: God offers to reinstate the mind of Christ in us once more {% rf 'Philippians 2:5' %}. We can be remade in His image again {% rf '2 Corinthians 5:17' %}.
+
+> Christ is the image of God, the express image of His person, and *when we receive Jesus Christ in His fulness the image of God is returned* to the place where it belongs.
+{% ct "Jones, Alonzo, The Third Angel's Message, p. 154" %}
 
 ## What was God’s solution?
 
@@ -194,6 +206,11 @@ Satan’s head likely “exploded” in another sense—with incomprehensible sh
 
 Christ won that first war in heaven, and then voluntarily came down to earth to win the war that Adam and Eve had subsequently lost in Eden, by allowing Himself to be crucified on a cruel Roman cross on their—and our—behalf. His apparent defeat on the cross became Satan’s death knell. In dying, He conquered.
 
+> And having spoiled principalities and powers, he made a shew of them openly, *triumphing over them in it*.
+{% ct 'Colossians 2:15' %}
+
+[^3]: Since Jesus created all things, He also created Lucifer—in his perfect, unfallen state {% rf 'Ezekiel 28:15; John 1:3; Colossians 1:16–17' %}.
+
 ## Is there freedom in rebellion?
 
 When the first pair turned their back on their Creator, they allied themselves with Satan and thus became God’s enemies.
@@ -210,8 +227,6 @@ Anyone who chooses to separate from God automatically becomes a slave of sin, be
 {% ct 'Romans 7:18-20' %}
 
 Any honest, self-aware addict will also admit that he has no rest—no state of *sabbatismos* that is found in Christ alone. Whatever the addiction, life often degrades into a never-ending pursuit of the next fix, followed by feelings of guilt and shame. Only one remedy can put a permanent stop to the cycle: “Come unto me, all ye that labour and are heavy laden, and I will give you rest” {% rf 'Matthew 11:28' %}.
-
-[^3]: Since Jesus created all things, He also created Lucifer—in his perfect, unfallen state {% rf 'Ezekiel 28:15; John 1:3; Colossians 1:16–17' %}.
 
 ## What is the good news of Genesis 3:15?
 
@@ -265,10 +280,19 @@ When Lucifer rebelled against God, the same principle applied to him. His iniqui
 
 God could have destroyed him on the spot, and saved Himself a lot of future suffering, but such an act would only raise further questions in the minds of the loyal angels. They would start wondering: "Was Lucifer was right all long?" Sin was a new intruder, and as such, it needed time to manifest its fruits more fully. 
 
-As Lucifer was free to turn his back on his Maker, so were Adam and Eve. As in the marriage covenant between husband and wife, God wants a willing, loving relationship with His creation, not a coercive one. The enemy is fine with coercion, because his government is built on selfish ambition, not self-sacrificing love. If he can gain subjects through force, he will do it, because the end result is the enlargement of his kingdom, no matter the means. God's government, on the other hand, is built on love, which requires the freedom to walk away. Love will prove, in the end, to be the only foundation that can establish an everlasting kingdom, one secure from all future rebellion.
+As Lucifer was free to turn his back on his Maker, so were Adam and Eve. As in the marriage covenant between husband and wife, God wants a willing, loving relationship with His creation, not a coercive one. The enemy is fine with coercion, because his government is built on selfish ambition, not self-sacrificing love. If he can gain subjects through force, he will do it, because the end result is the enlargement of his kingdom, no matter the means. God's government, on the other hand, is built on love, which requires the freedom to walk away. Love will prove, in the end, to be the only foundation that can establish an everlasting kingdom, one secure from all future rebellion. On the cross, Christ opened the way to gather all, those in heaven (loyal angels) and on earth (redeemed humanity), into one united family.
+
+> That in the dispensation of the fullness of times he might *gather together in one all things in Christ*, both which are in heaven, and which are on earth; even in him.
+{% ct 'Ephesians 1:10' %}
 
 As Lucifer was cast out of heaven for his rebellion, so Adam and Eve were cast out of Eden for theirs. Both parties had disrupted God's state of *sabbatismos*. The perfect place of rest that God had created for them to enjoy could no longer be their home, for they had refused to rest.[^5]
 
-Have you been refusing to rest in God? If so, now is the time to lay down the weapon of pride, to wave the white flag of surrender, and to enter into God's blessed *sabbatismos*. He is waiting with open arms.
+Have you been refusing to rest in God? If so, now is the time to lay down the weapon of pride, to wave the white flag of surrender, and to enter into God's blessed *sabbatismos* through Christ. He is waiting with open arms.
 
-[^5]: The earthly Canaan was able to enjoy her sabbaths once the Canaanites, and later, the Israelites, who had polluted it with their evil ways, were driven out of it. Under the New Testament dispensation, what was once local is now global. The entire earth is now groaning because of the evil practiced upon it {% rf 'Romans 8:22' %}. Soon, the time of probation will end, and the earth will be made desolate *globally* during the millennium because its inhabitants refused [to enter God’s Sabbath rest](/posts/prophecy/mark.md) {% rf 'Jeremiah 4:23-27' %}.
+> For it pleased the Father that in him should all fullness dwell; and, *having made peace through the blood of his cross, by him to reconcile all things unto himself*; by him, I say, whether they be things in earth, or things in heaven. And you, that were sometime *alienated and enemies in your mind by wicked works*, yet now hath he *reconciled in the body of his flesh through death, to present you holy and unblameable and unreproveable in his sight*.
+{% ct 'Colossians 1:19-23' %}
+
+> And that he might reconcile both unto God in one body by the cross, having slain the enmity thereby: and *came and preached peace to you which were afar off, and to them that were nigh*. For through him we both have access by one Spirit unto the Father.
+{% ct 'Ephesians 2:16-18' %}
+
+[^5]: The land of Canaan was groaning, unable to enjoy its sabbaths (rest from evil), under the Canaanites, and later, the Israelites, who had polluted it with their evil ways. What was once local in the Old Testament is now global under the New Testament. The entire earth is now groaning, unable enjoy its rest, because of the evil practiced upon it {% rf 'Romans 8:22' %}. Soon, the time of probation will end, and the earth will be made desolate *globally*, because of its inhabitants' refusal [to enter God’s Sabbath rest](/posts/prophecy/mark.md) {% rf 'Jeremiah 4:23-27' %}. After 6000 years of sin, the earth will finally be able to rest [for a millennium](/posts/prophecy/millennium.md).
