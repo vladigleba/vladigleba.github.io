@@ -14,7 +14,7 @@ One of the lessons we learned in the previous article was that the Sabbath is a 
 > And there was *war in heaven*: Michael and his angels fought against the dragon; and *the dragon fought and his angels*.
 {% ct 'Revelation 12:7' %}
 
-Before the curse of sin had wrecked Eden, it had already jolted heaven, piercing the heart of God and separating His angels into two opposite and irreconcilable groups: the good and the evil. Of those who chose to join the evil side, it is inconceivable to assume that they actively desired to be evil initially. It is more likely that they were deceived through clever insinuations that sounded reasonable and attractive. Someone must have been promising them an even better version of heaven than the one created by God. That someone was Satan.
+Before the curse of sin had wrecked the earthly Eden, it had already jolted the heavenly one {% rf 'Ezekiel 28:14' %}, piercing the heart of God and separating His angels into two opposite and irreconcilable groups: the good and the evil. Of those who chose to join the evil side, it is inconceivable to assume that they actively desired to be evil initially. It is more likely that they were deceived through clever insinuations that sounded reasonable and attractive. Someone must have been promising them an even better version of heaven than the one created by God. That someone was Satan.
 
 > And *the great dragon* was cast out, *that old serpent, called the Devil, and Satan*, which deceiveth the whole world: he was cast out into the earth, and his angels were cast out with him.
 {% ct 'Revelation 12:9' %}
@@ -58,15 +58,15 @@ God had established this law in order to secure order and peace for all the inha
 > O that thou hadst *hearkened to my commandments! then had thy peace been as a river*, and thy righteousness as the waves of the sea.
 {% ct 'Isaiah 48:18' %}
 
-Rebellion against it, therefore, could only bring unrest:
-
-> But the wicked are like the troubled sea, when it *cannot rest*, whose waters cast up mire and dirt. *There is no peace, saith my God, to the wicked*.
-{% ct 'Isaiah 47:20-21' %}
+Transgression of God's law was an act of rebellion against His government, and considering Lucifer's exalted position as a covering cherub, it was a high-handed betrayal of His trust. Such a blatant rejection of God's law of peace could only bring unrest:
 
 > There is no soundness in my flesh because of thine anger; *neither is there any rest* in my bones *because of my sin*.
 {% ct 'Psalm 38:3' %}
 
-## What did he disrupt?
+> But the wicked are like the troubled sea, when it *cannot rest*, whose waters cast up mire and dirt. *There is no peace, saith my God, to the wicked*.
+{% ct 'Isaiah 47:20-21' %}
+
+## What did his rebellion disrupt?
 
 > Let us therefore fear, lest, *a promise being left us of entering into his rest*, any of you should seem to come short of it. … *There remaineth therefore a rest to the people of God*. For he that is entered into his rest, he also hath ceased from his own works, as God did from his.
 {% ct 'Hebrews 4:1, 9-10' %}
