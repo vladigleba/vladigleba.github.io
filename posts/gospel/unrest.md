@@ -49,8 +49,17 @@ The fact that iniquity was found in him implies that there was a law for him to 
 
 > Whosoever committeth sin transgresseth also the law: *for sin is the transgression of the law*.
 {% ct '1 John 3:4' %}
+
+The book of James gives another clue about sin: it is an informed, willful act.
+
+> Therefore to him that *knoweth to do good*, and doeth it not, to him *it is sin*.
+{% ct 'James 4:17' %}
+
+When iniquity—transgression of God’s law—was found in Lucifer, he knew what he was doing; it was not an act of ignorance. He chose to rebel.
+
+## What is a law needed?
  
-God had established this law in order to secure order and peace for all the inhabitants of His kingdom:
+Where there is no law there is only anarchy. Since God is not the author of confusion, but of peace {% rf '1 Corinthians 14:33' %}, He has a law, and since He has a law, He must have a government {% rf 'Isaiah 9:7' %}. As in human government, God’s government is established upon law in order to secure order and peace for all the inhabitants of His kingdom:
 
 > *Great peace have they which love thy law*: and nothing shall offend them.
 {% ct 'Psalm 119:165' %}
@@ -58,7 +67,7 @@ God had established this law in order to secure order and peace for all the inha
 > O that thou hadst *hearkened to my commandments! then had thy peace been as a river*, and thy righteousness as the waves of the sea.
 {% ct 'Isaiah 48:18' %}
 
-Transgression of God's law was an act of rebellion against His government, and considering Lucifer's exalted position as a covering cherub, it was a high-handed betrayal of His trust. Such a blatant rejection of God's law of peace could only bring unrest:
+Rejection of God’s law was an act of rebellion against His government, and considering Lucifer’s exalted position as a covering cherub, it was a high-handed betrayal of His trust. This rejection of the law of peace—of *sabbatismos*—could only bring unrest:
 
 > There is no soundness in my flesh because of thine anger; *neither is there any rest* in my bones *because of my sin*.
 {% ct 'Psalm 38:3' %}
@@ -71,7 +80,9 @@ Transgression of God's law was an act of rebellion against His government, and c
 > Let us therefore fear, lest, *a promise being left us of entering into his rest*, any of you should seem to come short of it. … *There remaineth therefore a rest to the people of God*. For he that is entered into his rest, he also hath ceased from his own works, as God did from his.
 {% ct 'Hebrews 4:1, 9-10' %}
 
-In {% rf 'Hebrews 4:9' false %}, the Greek word for *rest* is *sabbatismos*, a derivative of *sabbaton*, the word for Sabbath. God’s promised rest, therefore, is like a perpetual Sabbath, which we can experience on a weekly basis now, but will experience more fully and on a permanent basis in His heavenly kingdom, where His people will be forever free from the unrest introduced by sin {% rf 'Revelation 21:4; Isaiah 32:17–18' %}. The fulfillment of this promise is the purpose of the gospel as it seeks to restore the *sabbatismos* Lucifer first disrupted in heaven.
+In {% rf 'Hebrews 4:9' false %}, the Greek word for *rest* is *sabbatismos*, a derivative of *sabbaton*, the word for Sabbath. God’s promised rest, therefore, is like a perpetual Sabbath, which we can experience on a weekly basis now, but will experience more fully and on a permanent basis in His heavenly kingdom, where His people will be forever free from the unrest introduced by sin {% rf 'Revelation 21:4; Isaiah 32:17–18' %}. The fulfillment of this promise is the purpose of the gospel as it seeks to restore the *sabbatismos* that Lucifer first disrupted in heaven.
+
+The fact that Lucifer’s rebellion lead to a war in heaven, where there had only been peace before, was the strongest evidence that the ideas he was selling about God, His law, and His government were tainted with the spirit of hatred and strife from the start. The rejection of God's government of rest could only bring unrest. Thus, his path to a more exalted state of existence was already bearing fruit, and the war proved that it was rotten.
 
 ## What did he want?
 
@@ -155,14 +166,14 @@ When Satan tempted Eve, he was attempting to infect her mind with his own. In he
 > God had said to them certain words, His words, the expression of His mind, His thought concerning them. *If they had received those words, had retained those words and the thoughts of God in those words, whose mind would they have retained? God’s.* When this other one, Satan, came and told them other words, expressing his thoughts and the product of his mind and they accepted that and yielded to that: then whose thoughts did they receive and whose mind did they receive?
 {% ct "A.T. Jones, The Third Angel's Message (1893), p. 153" %}
 
-Satan's mind was the mind of self, of self-exaltation and self-absorption. Note that the pronoun "I" is used five times in {% rf 'Isaiah 14:13-14' false %}. {% rf 'Ezekiel 28:17' false %} is also revealing: "Thine heart was lifted up because of thy beauty, thou hast corrupted thy wisdom by reason of thy brightness." His beauty corrupted his heart with pride and perverted his thinking. His thoughts were no longer anchored in reality.
+Satan’s mind was the mind of self, of self-exaltation and self-absorption. Note that the pronoun “I” is used five times in {% rf 'Isaiah 14:13–14' false %}. {% rf 'Ezekiel 28:17' false %} is also revealing: “Thine heart was lifted up because of thy beauty, thou hast corrupted thy wisdom by reason of thy brightness.” His beauty corrupted his heart with pride and perverted his thinking. His thoughts were no longer anchored in reality.
 
-> “What he was came from God. But *Lucifer gave himself credit for all that he was* ... Did he not in that count himself as self-existent—in fact put himself in the place of God? ... when he came to our first parents and they received of that mind, what mind was that? The mind of self, ... and *the same ambition was set before them that he set before himself* ...” 
+> “What he was came from God. But *Lucifer gave himself credit for all that he was* … Did he not in that count himself as self-existent—in fact put himself in the place of God? … when he came to our first parents and they received of that mind, what mind was that? The mind of self, … and *the same ambition was set before them that he set before himself* …” 
 {% ct "A.T. Jones, The Third Angel's Message (1893), p. 154" %}
 
 Eve fell into the same trap. Because she was not around when God had created the earth and everything in it, when God told her and Adam that He was their Creator, they had to trust Him, though God would have given them plenty of evidence, for He never asks for blind faith {% rf 'Hebrews 11:1' %}. This trust, however, was disrupted when the serpent lured Eve into a conversation with him. His devious questions likely caused her to wonder if she was self-existent after all, or perhaps the forbidden tree could make her self-existent if she was not already.
 
-## What was Satan's reply to Eve?
+## What was Satan’s reply to Eve?
 
 > And the serpent said unto the woman, *Ye shall not surely die*: For God doth know that in the day ye eat thereof, then your eyes shall be opened, and ye shall be as gods, knowing good and evil.
 {% ct 'Genesis 3:4-5' %}
@@ -242,9 +253,9 @@ Immediately after Adam and Eve’s fall, God put the gospel in operation to undo
 
 ## Is there rebellion against God’s law of rest today?
 
-Instead of finding rest in God’s law, Satan sought to find rest and happiness in himself, independent of and apart from God. Instead of resting in God’s word, Adam and Eve chose to rest in Satan’s word. We are doing the same thing today. “There is no such thing as absolute right and wrong; I will find happiness living as I please.“ In other words, ”I am my own god, capable of deciding what is best for me. Why should I avoid eating the fruit from the forbidden tree? I see no harm in it.“ Closer to home: ”The law of God was nailed to the cross and is no longer relevant for the New Testament church.“
+Instead of finding rest in God’s law, Satan sought to find rest and happiness in himself, independent of and apart from God. Instead of resting in God’s word, Adam and Eve chose to rest in Satan’s word, which turned out to be a lie. We are doing the same thing today when we try to find that *sabbatismos* rest in ourselves: “There is no such thing as absolute right and wrong; I can find happiness by living as I please. I don't need God. He is not the only way to happiness.“ Translated to serpent-talk: ”I am my own god, capable of deciding what is best for me. I see no harm in eating the forbidden fruit. Why is God restricting my happiness?“ A version of this can be found in Christianity: "Happiness is not found in following a law. In fact, the law of God was nailed to the cross and is no longer relevant." Yet another version states: "I can sanctify myself; but if not, my works can at least contribute to my salvation."
 
-But the truth is we are not capable of deciding what is best for us. We need God telling us what is sin, and what is not, which means we still need His law.[^4] Without it, we would call good evil and evil good {% rf 'Isaiah 5:20' %}. Do we believe this, or do we doubt? Satan planted unrest in the minds of the fallen angels and the mind of Eve by sowing doubt: ”Did God really say? Did He really mean what He said? Surely, His way cannot be the only right way.“
+All of these are different variations of the same tune the serpent sung in Eden. We cannot save or sanctify ourselves. Nor are we capable of deciding what is best for us. We need God to save us and sanctify us. We need Him telling us what is sin, and what is not, which means we still need His law.[^4] Without it, we would call good evil and evil good {% rf 'Isaiah 5:20' %}. Do we believe this? Or do we doubt? Satan planted unrest in the minds of the fallen angels and the mind of Eve by sowing doubt: ”Did God really say? Did He really mean what He said? Surely, His way cannot be the only right way.“
 
 Jesus tells us in {% rf 'John 8:44' false %} that the devil ”abode not in the truth.“ Why? Because he decided to pursue his own version of truth. But how many versions of truth are there? Jesus said, ”I am the way, the truth, and the life“ {% rf 'John 14:6' %}. In other words, our own version of truth can only be a counterfeit, because there is only one truth, and it is found in Him, for He is the Truth. Lucifer, on the other hand, abode not in Christ, but in himself—as did the fallen angels who joined him, as did Adam and Eve who believed him.
 
@@ -266,7 +277,7 @@ But they could remain in that land of rest on one condition only:
 > And *if ye will not yet for all this hearken unto me* … And if ye will not be reformed by me by these things, *but will walk contrary unto me* … And *I will scatter you among the heathen*, and will draw out a sword after you: and your land shall be desolate, and your cities waste. *Then shall the land enjoy her sabbaths*, as long as it lieth desolate, and ye be in your enemies’ land; *even then shall the land rest, and enjoy her sabbaths*. As long as it lieth desolate it shall rest; *because it did not rest in your sabbaths, when ye dwelt upon it*.
 {% ct 'Leviticus 26:18, 23, 33-35' %}
 
-The Israelites could dwell in the promised land only if they did not walk contrary to God’s will, which was designed to maximize their happiness. If they rebelled, God would scatter them out of the land, so it could "enjoy her sabbaths" and rest from their evil ways. In fact, God drove the Canaanites out for this very reason.
+The Israelites could dwell in the promised land only if they did not walk contrary to God’s will, which was designed to maximize their happiness. If they rebelled, God would scatter them out of the land, so it could “enjoy her sabbaths” and rest from their evil ways. In fact, God drove the Canaanites out for this very reason.
 
 > Defile not ye yourselves in any of these things: for *in all these the nations are defiled which I cast out before you: and the land is defiled*: therefore I do visit the iniquity thereof upon it, and *the land itself vomiteth out her inhabitants*.
 {% ct 'Leviticus 18:24-25' %}
@@ -276,18 +287,20 @@ When the Canaanites defiled themselves with their evil ways, they also defiled t
 > The *righteous* shall inherit the land, and dwell therein forever.
 {% ct 'Psalm 37:29' %}
 
-When Lucifer rebelled against God, the same principle applied to him. His iniquity disrupted heaven’s state of rest—it could no longer enjoy her *sabbatismos*—and he (and his followers) had to be driven out. The heavenly Canaan was—and still is—for righteous inhabitants only, but Lucifer had rebelled against righteousness and chosen iniquity. He had refused to keep heaven’s eternal Sabbath by refusing to rest in God, choosing instead to find rest in himself, in the pursuit of his own will.
+When Lucifer rebelled against God, the same principle applied to him. His iniquity disrupted heaven’s rest—it could no longer enjoy her *sabbatismos*—and he (and his followers) had to go. The heavenly Canaan was (and still is) for righteous inhabitants only, but Lucifer had rebelled against righteousness and chosen iniquity. He had refused to rest in God, choosing instead to find rest in himself, in the pursuit of his own will.
 
-God could have destroyed him on the spot, and saved Himself a lot of future suffering, but such an act would only raise further questions in the minds of the loyal angels. They would start wondering: "Was Lucifer was right all long?" Sin was a new intruder, and as such, it needed time to manifest its fruits more fully. 
+God could have destroyed him on the spot, and saved Himself a lot of future suffering, but such an act would only raise further questions in the minds of the loyal angels. They would start wondering: “Was Lucifer was right all long?” Sin was a new intruder, and as such, it needed time to manifest its fruits more fully. 
 
-As Lucifer was free to turn his back on his Maker, so were Adam and Eve. As in the marriage covenant between husband and wife, God wants a willing, loving relationship with His creation, not a coercive one. The enemy is fine with coercion, because his government is built on selfish ambition, not self-sacrificing love. If he can gain subjects through force, he will do it, because the end result is the enlargement of his kingdom, no matter the means. God's government, on the other hand, is built on love, which requires the freedom to walk away. Love will prove, in the end, to be the only foundation that can establish an everlasting kingdom, one secure from all future rebellion. On the cross, Christ opened the way to gather all, those in heaven (loyal angels) and on earth (redeemed humanity), into one united family.
+As Lucifer was free to turn his back on his Maker, so were Adam and Eve. As in the marriage covenant between husband and wife, God wants a willing, loving relationship with His creation, not a coercive one. The enemy is fine with coercion, because his government is built on selfish ambition, not self-sacrificing love. If he can gain subjects through force, he will do it, because the end result is the enlargement of his kingdom, no matter the means. God’s government, on the other hand, is built on love, which requires the freedom to walk away. Love will prove, in the end, to be the only foundation that can establish an everlasting kingdom, one secure from all future rebellion. On the cross, Christ opened the way to gather all, those in heaven (loyal angels) and on earth (redeemed humanity), into one united family.
 
 > That in the dispensation of the fullness of times he might *gather together in one all things in Christ*, both which are in heaven, and which are on earth; even in him.
 {% ct 'Ephesians 1:10' %}
 
-As Lucifer was cast out of heaven for his rebellion, so Adam and Eve were cast out of Eden for theirs. Both parties had disrupted God's state of *sabbatismos*. The perfect place of rest that God had created for them to enjoy could no longer be their home, for they had refused to rest.[^5]
+As Lucifer was cast out of heaven for his rebellion, so Adam and Eve were cast out of Eden for theirs. Both parties had disrupted God’s state of *sabbatismos*. The perfect place of rest that God had created for them to enjoy could no longer be their home, for they had refused to rest.[^5]
 
-Have you been refusing to rest in God? If so, now is the time to lay down the weapon of pride, to wave the white flag of surrender, and to enter into God's blessed *sabbatismos* through Christ. He is waiting with open arms.
+The Sabbath is more than a day. It is a perfect snapshot of the principles of God's government, a weekly invitation to us: "Don't rebel. Don't try to save yourself. Rest in Me."
+
+Have you been refusing His rest? If so, now is the time to lay down the weapon of pride, to wave the white flag of surrender, and to enter into God’s blessed *sabbatismos* through Christ. He is waiting with open arms.
 
 > For it pleased the Father that in him should all fullness dwell; and, *having made peace through the blood of his cross, by him to reconcile all things unto himself*; by him, I say, whether they be things in earth, or things in heaven. And you, that were sometime *alienated and enemies in your mind by wicked works*, yet now hath he *reconciled in the body of his flesh through death, to present you holy and unblameable and unreproveable in his sight*.
 {% ct 'Colossians 1:19-23' %}
@@ -295,4 +308,4 @@ Have you been refusing to rest in God? If so, now is the time to lay down the we
 > And that he might reconcile both unto God in one body by the cross, having slain the enmity thereby: and *came and preached peace to you which were afar off, and to them that were nigh*. For through him we both have access by one Spirit unto the Father.
 {% ct 'Ephesians 2:16-18' %}
 
-[^5]: The land of Canaan was groaning, unable to enjoy its sabbaths (rest from evil), under the Canaanites, and later, the Israelites, who had polluted it with their evil ways. What was once local in the Old Testament is now global under the New Testament. The entire earth is now groaning, unable enjoy its rest, because of the evil practiced upon it {% rf 'Romans 8:22' %}. Soon, the time of probation will end, and the earth will be made desolate *globally*, because of its inhabitants' refusal [to enter God’s Sabbath rest](/posts/prophecy/mark.md) {% rf 'Jeremiah 4:23-27' %}. After 6000 years of sin, the earth will finally be able to rest [for a millennium](/posts/prophecy/millennium.md).
+[^5]: The land of Canaan was groaning, unable to enjoy its sabbaths (rest from evil), under the Canaanites, and later, the Israelites, who had polluted it with their evil ways. What was once local in the Old Testament is now global under the New Testament church. The entire earth is now groaning, unable enjoy its rest, because of the evil practiced upon it {% rf 'Romans 8:22' %}. Soon, the time of probation will end, and the earth will be made desolate *globally*, because of its inhabitants’ refusal [to enter God’s Sabbath rest](/posts/prophecy/mark.md) {% rf 'Jeremiah 4:23–27' %}. After 6000 years of sin, the earth will finally be able to rest [for a millennium](/posts/prophecy/millennium.md).
