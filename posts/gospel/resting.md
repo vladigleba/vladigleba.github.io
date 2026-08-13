@@ -155,7 +155,7 @@ The person who rests physically on the Sabbath receives the blessings of bodily 
 
 Blessings are meant to be delighted in. When God blessed the Sabbath, He made it a day of delight—to Himself and to Adam and Eve—because it was a special time of communion between the Creator and His creation, a day on which Adam and Eve, undistracted by their ordinary activities, were able to devote themselves fully to Him. This quality time is the foundation upon which any lasting relationship is built. Its presence or absence can determine whether a relationship thrives or gradually dies. If the Sabbath is not a delight but a yoke of bondage, it is likely that the spark of love is missing, for any couple genuinely in love will never protest that they must spend time together.
 
-Thus, it is possible to rest from labor on the Sabbath and yet fail to delight in our Lord, and therefore never experience its spiritual rest. Can we really call this true Sabbath-keeping?
+Thus, it is possible to rest from labor on the Sabbath and yet fail to delight in our Lord, and therefore never experience its spiritual rest. Is this true Sabbath-keeping? If the Sabbath is not a delight to us now, will heaven be?
 
 ## Can spiritual rest be forced?
 

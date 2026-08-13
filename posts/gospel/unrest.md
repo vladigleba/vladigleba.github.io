@@ -67,7 +67,7 @@ Where there is no law there is only anarchy. Since God is not the author of conf
 > O that thou hadst *hearkened to my commandments! then had thy peace been as a river*, and thy righteousness as the waves of the sea.
 {% ct 'Isaiah 48:18' %}
 
-Rejection of God’s law was an act of rebellion against His government, and considering Lucifer’s exalted position as a covering cherub, it was a high-handed betrayal of His trust. This rejection of the law of peace—of *sabbatismos*—could only bring unrest:
+Rejection of God’s law was an act of rebellion against His government, and considering Lucifer’s exalted position as a covering cherub, it was a high-handed betrayal of His trust. This rejection of the law of peace could only bring unrest:
 
 > There is no soundness in my flesh because of thine anger; *neither is there any rest* in my bones *because of my sin*.
 {% ct 'Psalm 38:3' %}
@@ -80,7 +80,7 @@ Rejection of God’s law was an act of rebellion against His government, and con
 > Let us therefore fear, lest, *a promise being left us of entering into his rest*, any of you should seem to come short of it. … *There remaineth therefore a rest to the people of God*. For he that is entered into his rest, he also hath ceased from his own works, as God did from his.
 {% ct 'Hebrews 4:1, 9-10' %}
 
-In {% rf 'Hebrews 4:9' false %}, the Greek word for *rest* is *sabbatismos*, a derivative of *sabbaton*, the word for Sabbath. God’s promised rest, therefore, is like a perpetual Sabbath, which we can experience on a weekly basis now, but will experience more fully and on a permanent basis in His heavenly kingdom, where His people will be forever free from the unrest introduced by sin {% rf 'Revelation 21:4; Isaiah 32:17–18' %}. The fulfillment of this promise is the purpose of the gospel as it seeks to restore the *sabbatismos* that Lucifer first disrupted in heaven.
+In {% rf 'Hebrews 4:9' false %}, the Greek word for *rest* is *sabbatismos*, a derivative of *sabbaton*, the word for Sabbath. God’s promised rest, therefore, is like a perpetual Sabbath, which we can experience on a weekly basis now, but will experience more fully and on a permanent basis in His heavenly kingdom, where His people will be forever free from the unrest introduced by sin {% rf 'Revelation 21:4; Isaiah 32:17–18' %}. The fulfillment of this promise is the purpose of the gospel as it seeks to restore God's *sabbatismos* internally in us first {% rf 'Luke 17:21' %} but eventually over all the earth {% rf 'Revelation 21:1-54' %}.
 
 The fact that Lucifer’s rebellion lead to a war in heaven, where there had only been peace before, was the strongest evidence that the ideas he was selling about God, His law, and His government were tainted with the spirit of hatred and strife from the start. The rejection of God's government of rest could only bring unrest. Thus, his path to a more exalted state of existence was already bearing fruit, and the war proved that it was rotten.
 
