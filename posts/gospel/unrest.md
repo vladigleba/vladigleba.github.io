@@ -40,7 +40,7 @@ As a covering cherub appointed by God Himself, Lucifer had the privilege to abid
 
 ## What happened to him?
 
-Lucifer was perfect before God until iniquity was found in Him:
+Lucifer was perfect before God until iniquity was found in him:
 
 > Thou wast perfect in thy ways from the day that thou wast created, *till iniquity was found in thee*. By the multitude of thy merchandise they have filled the midst of thee with violence, and *thou hast sinned* …
 {% ct 'Ezekiel 28:15-16' %}
@@ -103,7 +103,7 @@ Lucifer likely presented similar questions before the angels. The Bible does not
 
 Lucifer wanted to be like God, but on his own terms, without the law of God telling him how to do it {% rf 'Isaiah 14:14' %}. He wanted to rule and to be worshiped, but his rebellion, which led to war, proved that he did not possess the character needed to rule in a way that would bring a state of rest. His disruption of God’s *sabbatismos* immediately disqualified him.
 
-Persuading a third of God’s angels to rebel against their Maker is no easy task, but Lucifer’s position as a covering cherub would have given him constant access to God and, therefore, credibility due to his supposed familiarity with His character. Thus, he would have had great influence over the angels. When they heard his proposition that God was not who He said He was, that He did not have their best interests in mind, that He was using His law to restrict their freedom, to prevent them from ascending to a higher state of existence, it is easy to see how his words would have had an affect.
+Persuading a third of God’s angels to rebel against their Maker is no easy task, but Lucifer’s position as a covering cherub would have given him constant access to God and, therefore, credibility due to his supposed familiarity with His character. Thus, he would have had great influence over the angels. When they heard his proposition that God was not who He said He was, that He did not have their best interests in mind, that He was using His law to restrict their freedom, to prevent them from ascending to a higher state of existence, it is easy to see how his words would have had an effect.
 
 Sin was also a new intruder, because Lucifer was the first angel who had opened his heart to it {% rf 'Ezekiel 28:15' %}. Few, if any of the angels, suspected how deep of a pit it would become. Only God would have known what a great sacrifice it would require of him, and yet, he still chose to create Lucifer. Why? Because He knew love will always conquer hatred; freedom will always prevail over coercion. If genuine love would reign in His kingdom, the freedom to rebel must be extended to all. That freedom was worth it, even if it would cost Him everything, because in the end, He would have a universe inoculated against all future rebellion because of His love.
 
@@ -112,9 +112,11 @@ Sin was also a new intruder, because Lucifer was the first angel who had opened 
 
 [^1]: We know Satan was Eve’s tempter because Revelation calls him “that old serpent” {% rf 'Revelation 12:9; 20:2' %}.
 
-## What word best summarizes God’s law?
+## What can rebellion against rest progress into?
 
-Ten Commandments can be summarized as loving God supremely and loving others as ourselves:
+Besides bringing unrest, rebellion against God's *sabbatismos* can mature into something the rebel never expected. Sin is effective because it does not immediately reveal the horror and depths of its depravity, but the sweet-smelling, brightly-colored fruit always contains the sting of death underneath. Lucifer was the first to experience and succumb to the deceptive power of sin. Before we examine the progression of rebellion, however, we must first learn something about God's law.
+
+The Ten Commandments are far-reaching, but they can be summarized as loving God supremely and loving others as ourselves:
 
 >37 Jesus said unto him, Thou shalt *love the Lord thy God* with all thy heart, and with all thy soul, and with all thy mind. This is the first and great commandment. And the second is like unto it, Thou shalt *love thy neighbour* as thyself. On these two commandments hang all the law and the prophets.
 {% ct 'Matthew 22:37-40' %}
@@ -155,7 +157,7 @@ Allowing sin to reach full maturity is not needed, however, because it only take
 > *When we understand and appreciate that “real sin” is the will to kill God, then we will know that the sin of man was indeed laid upon Christ*. He took our sin. Without a murmur the Saviour accepted the supreme evidence of hatred. He not only bore the sins of mankind, but *He bore mankind’s sin of the murder of God displayed before the universe*. As a lamb He came to the slaughter and we slew Him. When we come to see and understand that sin, we can truly repent.
 {% ct 'Donald Short, Then Shall the Sanctuary Be Cleansed, p. 121' %}
 
-[^2]: Besides failing to kill his Maker, Lucifer also failed to establish his throne in heaven. But he was able to do this on earth when Adam and Eve allied themselves with him. Through deception, he won the dominion over the earth that originally belonged to Adam and Eve {% rf 'Genesis 1:26–28' %}. This is why, as the prince of this world, he was then able to offer Jesus the kingdoms of world in exchange for His worship '{% rf 'John 12:31; 14:30; Matthew 4:8–9' %}.
+[^2]: Besides failing to kill his Maker, Lucifer also failed to establish his throne in heaven. But he was able to do this on earth when Adam and Eve allied themselves with him. Through deception, he won the dominion over the earth that originally belonged to Adam and Eve {% rf 'Genesis 1:26–28' %}. This is why, as the prince of this world, he was then able to offer Jesus the kingdoms of world in exchange for His worship {% rf 'John 12:31; 14:30; Matthew 4:8–9' %}.
 [^3]: Any future attempt to set up an earthly millennial kingdom through hatred or persecution of others will fail too.
 
 ## What did the temptation imply?
@@ -264,7 +266,7 @@ Instead of being a law of bondage, God’s law is a “law of liberty” to thos
 
 [^5]: Of course, we cannot keep His law ourselves, apart from Him. Only He can keep it in us, but only if we ask Him to.
 
-## Why was Lucifer cast out of heaven?
+## What happens when rest is rejected?
 
 When God freed the Israelites out of Egypt, the land of their bondage, He led them into Canaan, the land of rest.
 
@@ -288,7 +290,7 @@ When the Canaanites defiled themselves with their evil ways, they also defiled t
 
 When Lucifer rebelled against God, the same principle applied to him. His iniquity disrupted heaven’s rest—it could no longer enjoy her *sabbatismos*—and he (and his followers) had to go. The heavenly Canaan was (and still is) for righteous inhabitants only, but Lucifer had rebelled against righteousness and chosen iniquity. He had refused to rest in God, choosing instead to find rest in himself, in the pursuit of his own will.
 
-God could have destroyed him on the spot, and saved Himself a lot of future suffering, but such an act would only raise further questions in the minds of the loyal angels. They would start wondering: “Was Lucifer was right all long?” Sin was a new intruder, and as such, it needed time to manifest its fruits more fully. 
+God could have destroyed him on the spot, and saved Himself a lot of future suffering, but such an act would only raise further questions in the minds of the loyal angels. They would start wondering: “Was Lucifer right all long?” Sin was a new intruder, and as such, it needed time to manifest its fruits more fully. 
 
 As Lucifer was free to turn his back on his Maker, so were Adam and Eve. As in the marriage covenant between husband and wife, God wants a willing, loving relationship with His creation, not a coercive one. The enemy is fine with coercion, because his government is built on selfish ambition, not self-sacrificing love. If he can gain subjects through force, he will do it, because the end result is the enlargement of his kingdom, no matter the means. God’s government, on the other hand, is built on love, which requires the freedom to walk away. Love will prove, in the end, to be the only foundation that can establish an everlasting kingdom, one secure from all future rebellion. On the cross, Christ opened the way to gather all, those in heaven (loyal angels) and on earth (redeemed humanity), into one united family.
 
