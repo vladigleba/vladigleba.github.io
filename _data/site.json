@@ -77,6 +77,10 @@
     "Controversy": {
       "title": "The Great Controversy",
       "color": "rgb(170, 88, 88)"
+    },
+    "Rest": {
+      "title": "The Rest of God",
+      "color": "rgb(112, 83, 124)"
     }
   }
 }

@@ -1,8 +1,8 @@
 ---
 title: Rebelling Against Rest
 description: Before Adan and Eve fell, a war had already taken place in heaven. Why? And what was the controversy about?
-color: rgb(112,83,124)
 date: 2026-06-17
+series: Rest
 order: 4000
 tags: [law, sabbath, salvation, rebellion]
 ---
@@ -59,7 +59,7 @@ When iniquity—transgression of God’s law—was found in Lucifer, he knew wha
 
 ## Why is a law needed?
  
-Where there is no law there is only anarchy. Since God is not the author of confusion, but of peace {% rf '1 Corinthians 14:33' %}, He has a law, and since He has a law, He must have a government {% rf 'Isaiah 9:7' %}. As in human government, God’s government is established upon law in order to secure order and peace for all the inhabitants of His kingdom:
+Where there is no law there is only anarchy. Since God is not the author of confusion, but of peace {% rf '1 Corinthians 14:33' %}, He has a law, and since He has a law, He must have a government {% rf 'Isaiah 9:7' %}. God’s government, like human government, is established upon law to secure order and peace for all its inhabitants. His law is a law of peace.
 
 > *Great peace have they which love thy law*: and nothing shall offend them.
 {% ct 'Psalm 119:165' %}
@@ -67,7 +67,7 @@ Where there is no law there is only anarchy. Since God is not the author of conf
 > O that thou hadst *hearkened to my commandments! then had thy peace been as a river*, and thy righteousness as the waves of the sea.
 {% ct 'Isaiah 48:18' %}
 
-Rejection of God’s law was an act of rebellion against His government, and considering Lucifer’s exalted position as a covering cherub, it was a high-handed betrayal of His trust. This rejection of the law of peace could only bring unrest:
+When Lucifer rejected God’s law, he was rejecting the peace that comes with it. But that is not all, because he was also rejecting His government, because it is built on His law. Considering his exalted position as a covering cherub, this was a high-handed betrayal of God’s trust. It is no surprise that his rejection of God’s law of peace could only bring unrest:
 
 > There is no soundness in my flesh because of thine anger; *neither is there any rest* in my bones *because of my sin*.
 {% ct 'Psalm 38:3' %}
@@ -114,7 +114,7 @@ Sin was also a new intruder, because Lucifer was the first angel who had opened 
 
 ## What can rebellion against rest progress into?
 
-Besides bringing unrest, rebellion against God's *sabbatismos* can mature into something the rebel never expected. Sin is effective because it does not immediately reveal the horror and depths of its depravity, but the sweet-smelling, brightly-colored fruit always contains the sting of death underneath. Lucifer was the first to experience and succumb to the deceptive power of sin. Before we examine the progression of rebellion, however, we must first learn something about God's law.
+Besides bringing unrest, rebellion against God’s *sabbatismos* can mature into something the rebel never expected. Sin is effective because it does not immediately reveal the horror and depths of its depravity, but the sweet-smelling, brightly-colored fruit always hides the sting of death underneath. Lucifer was the first to experience and succumb to the deceptive power of sin. But before we examine the progression of rebellion, we must first learn something about God’s law.
 
 The Ten Commandments are far-reaching, but they can be summarized as loving God supremely and loving others as ourselves:
 
@@ -131,7 +131,7 @@ Naturally, since God is love, then His law, which is a [reflection of His charac
 > Beloved, let us love one another: for *love is of God*; and every one that loveth is born of God, and knoweth God. He that loveth not knoweth not God; for *God is love*.
 {% ct '1 John 4:7-8' %}
 
-Thus, the reason why iniquity was found in Lucifer was because he rebelled against God’s law of love: he failed to love God supremely and the other angels as himself. Love for self triumphed instead and brought an abundance of others sins with it, including idolatry (he sought the worship of other angels), blasphemy (he fought against God), Sabbath-breaking (he disrupted the heavenly *sabbatismos*), dishonoring parental authority (he rebelled against His Maker), adultery (he found another lover—himself), theft (he stole a third of God’s angels), false witness (he deceived the angels), and covetousness (he wanted to be like God). Jesus, however, named one specific sin that all the others culminated in—murder. “He was a murderer from the beginning” {% rf 'John 8:44' %}.
+Thus, the reason why iniquity was found in Lucifer was because he rebelled against God’s law of love: he failed to love God supremely and the other angels as himself. Love for self triumphed instead and brought an abundance of others sins with it, including having other gods (himself), Sabbath-breaking (he disrupted the heavenly *sabbatismos*), dishonoring parental authority (he rebelled against His Maker), theft (he stole a third of God’s angels), and covetousness (he wanted to be like God). Jesus, however, named one specific sin that all the others culminated in—murder. “He was a murderer from the beginning” {% rf 'John 8:44' %}.
 
 ## What is murder?
 
@@ -157,10 +157,10 @@ Allowing sin to reach full maturity is not needed, however, because it only take
 > *When we understand and appreciate that “real sin” is the will to kill God, then we will know that the sin of man was indeed laid upon Christ*. He took our sin. Without a murmur the Saviour accepted the supreme evidence of hatred. He not only bore the sins of mankind, but *He bore mankind’s sin of the murder of God displayed before the universe*. As a lamb He came to the slaughter and we slew Him. When we come to see and understand that sin, we can truly repent.
 {% ct 'Donald Short, Then Shall the Sanctuary Be Cleansed, p. 121' %}
 
-[^2]: Besides failing to kill his Maker, Lucifer also failed to establish his throne in heaven. But he was able to do this on earth when Adam and Eve allied themselves with him. Through deception, he won the dominion over the earth that originally belonged to Adam and Eve {% rf 'Genesis 1:26–28' %}. This is why, as the prince of this world, he was then able to offer Jesus the kingdoms of world in exchange for His worship {% rf 'John 12:31; 14:30; Matthew 4:8–9' %}.
+[^2]: Besides failing to kill his Maker, Lucifer also failed to establish his throne in heaven. But he was able to do this on earth when Adam and Eve allied themselves with him. Through deception, he won the dominion over the earth that originally belonged to Adam and Eve {% rf 'Genesis 1:26–28' %}. This is why, as the prince of this world, he was then able to offer Jesus the kingdoms of the world in exchange for His worship {% rf 'John 12:31; 14:30; Matthew 4:8–9' %}.
 [^3]: Any future attempt to set up an earthly millennial kingdom through hatred or persecution of others will fail too.
 
-## What did the temptation imply?
+## What did the temptation in Eden imply?
 
 When Satan tempted Eve, he was attempting to infect her mind with his own. In heaven, he had declared: “I will be like the most High” {% rf 'Isaiah 14:14' %}. On earth, he presented the same mindset to Eve: “ye shall be as gods” {% rf 'Genesis 3:5' %}. This is the mind of self-exaltation: “Who is God to tell me how to live? I will decide for myself.” In rejecting God’s law, Satan had rejected God, and now he was presenting the same offer to Eve. By disbelieving God’s word that they would surely die, Adam and Eve were declaring themselves to be self-existent, independent of God, capable of choosing what is best without His guidance. They had adopted Satan’s mind.
 
@@ -290,7 +290,7 @@ When the Canaanites defiled themselves with their evil ways, they also defiled t
 
 When Lucifer rebelled against God, the same principle applied to him. His iniquity disrupted heaven’s rest—it could no longer enjoy her *sabbatismos*—and he (and his followers) had to go. The heavenly Canaan was (and still is) for righteous inhabitants only, but Lucifer had rebelled against righteousness and chosen iniquity. He had refused to rest in God, choosing instead to find rest in himself, in the pursuit of his own will.
 
-God could have destroyed him on the spot, and saved Himself a lot of future suffering, but such an act would only raise further questions in the minds of the loyal angels. They would start wondering: “Was Lucifer right all long?” Sin was a new intruder, and as such, it needed time to manifest its fruits more fully. 
+God could have destroyed him on the spot, and saved Himself a lot of future suffering, but such an act would only raise further questions in the minds of the loyal angels. They would start wondering: “Was Lucifer right all along?” Sin was a new intruder, and as such, it needed time to manifest its fruits more fully. 
 
 As Lucifer was free to turn his back on his Maker, so were Adam and Eve. As in the marriage covenant between husband and wife, God wants a willing, loving relationship with His creation, not a coercive one. The enemy is fine with coercion, because his government is built on selfish ambition, not self-sacrificing love. If he can gain subjects through force, he will do it, because the end result is the enlargement of his kingdom, no matter the means. God’s government, on the other hand, is built on love, which requires the freedom to walk away. Love will prove, in the end, to be the only foundation that can establish an everlasting kingdom, one secure from all future rebellion. On the cross, Christ opened the way to gather all, those in heaven (loyal angels) and on earth (redeemed humanity), into one united family.
 

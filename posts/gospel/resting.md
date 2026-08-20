@@ -1,8 +1,8 @@
 ---
 title: Sabbath Rest in Christ
 description: Go beyond mere physical Sabbath rest and discover how to find spiritual rest in Jesus.
-color: rgb(112,83,124)
 date: 2026-04-25
+series: Rest
 order: 3900
 tags: [discipleship, law, sabbath, salvation]
 ---
