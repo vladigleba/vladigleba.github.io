@@ -5,7 +5,7 @@
   "author": "Vladi Gleba",
   "url": "https://vladigleba.com",
   "useCustomReadingOrder": true,
-  "showComingNextCard": true,
+  "showComingNextCard": false,
   "enableTags": true,
   "categories": {
     "Basics": {

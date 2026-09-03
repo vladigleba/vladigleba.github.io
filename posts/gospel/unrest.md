@@ -1,7 +1,7 @@
 ---
 title: Rebelling Against Rest
 description: Before Adan and Eve fell, a war had already taken place in heaven. Why? And what was the controversy about?
-date: 2026-06-17
+date: 2026-09-02
 series: Rest
 order: 4000
 tags: [law, sabbath, salvation, rebellion]
