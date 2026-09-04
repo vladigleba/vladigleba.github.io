@@ -1,6 +1,6 @@
 ---
 title: Rebelling Against Rest
-description: Before Adan and Eve fell, a war had already taken place in heaven. Why? And what was the controversy about?
+description: Before Adam and Eve fell, a war had already taken place in heaven. Why? And what was the controversy about?
 date: 2026-09-02
 series: Rest
 order: 4000
@@ -61,7 +61,7 @@ When iniquity—transgression of God’s law—was found in Lucifer, he knew wha
 
 ## Why is a law needed?
  
-Where there is no law there is only anarchy. Since God is not the author of confusion, but of peace {% rf '1 Corinthians 14:33' %}, He has a law, and since He has a law, He must have a government {% rf 'Isaiah 9:7' %}. God’s government, like human government, is established upon law to secure order and peace for all its inhabitants.
+Remove a traffic law and a busy intersection turns into chaos—or worse. Where there is no law there is only anarchy. Since God is not the author of confusion, but of peace {% rf '1 Corinthians 14:33' %}, He has a law, and since He has a law, He must have a government {% rf 'Isaiah 9:7' %}. God’s government, like human government, is established upon law to secure order and peace for all its inhabitants.
 
 > *Great peace have they which love thy law*: and nothing shall offend them.
 {% ct 'Psalm 119:165' %}
@@ -101,7 +101,7 @@ Lucifer’s sin was rebellion against God’s law, which was a law of rest that 
 
 For example, when Satan offered Jesus the kingdoms of the world {% rf 'Matthew 4:8–9' %}, he probably did not show the invalid by the pool of Bethesda who had suffered for thirty-eight years, longing to be healed, or the demoniac of Gadara living in tombs and cutting himself, or John the Baptist unjustly beheaded by a cowardly king. Satan would have shown Him only pomp and glitter: “the kingdoms of the world, and the glory of them” {% rf 'Matthew 4:8' %}.
 
-Similarly, when he tempted Eve {% rf 'Genesis 3:1–5' %},[^1] he drew her into a discussion by asking a devious question (“Yea, hath God said, Ye shall not eat of every tree of the garden?”), and quickly sowing doubt about God’s character (“Ye shall not surely die: For God doth know that in the day ye eat thereof, then your eyes shall be opened, and ye shall be as gods, knowing good and evil”). This swift twofold assault must have sent Eve’s mind spinning into an abyss of dissonance and perplexity: Was God not who she thought He was? Was He trying to scare her and Adam into obedience? Did He have their best interest in mind, or was He manipulating them? Was He preventing them from reaching a higher state of existence, and if so, why? And what was it like to be a god?
+Similarly, when he tempted Eve {% rf 'Genesis 3:1–5' %},[^1] he drew her into a discussion by asking a devious question (“Yea, hath God said, Ye shall not eat of every tree of the garden?”), and quickly sowing doubt about God’s character (“Ye shall not surely die: For God doth know that in the day ye eat thereof, then your eyes shall be opened, and ye shall be as gods, knowing good and evil”). This swift twofold assault must have sent Eve’s mind spinning into an abyss of dissonance and perplexity: Was God not who she thought He was? Was He manipulating and preventing them from reaching a higher state of existence? What is it like to be a god?
 
 Lucifer likely presented similar questions before the angels. The Bible does not mention an off-limits tree in heaven, but, as we have seen, it offers evidence that there was a law Lucifer rebelled against—a clue that God’s law must have been the fulcrum of the heavenly controversy. Satan’s discourse with Eve insinuated that God was restricting her freedom by preventing her from reaching her fullest potential. If he felt that this assertion was strong enough to bring Eve to his side, he likely had prior success with the angels in heaven, and God’s law would have been the perfect freedom-restricting lever for him to use.
 
@@ -139,7 +139,7 @@ Since God is love, it makes sense that His law, which is a [reflection of His ch
 > Beloved, let us love one another: for *love is of God*; and every one that loveth is born of God, and knoweth God. He that loveth not knoweth not God; for *God is love*.
 {% ct '1 John 4:7-8' %}
 
-Iniquity was found in Lucifer was because he rebelled against God’s law of love: he failed to love God supremely and the other angels as himself. Love for self triumphed instead and brought an abundance of other sins with it, including having other gods (himself), Sabbath-breaking (he disrupted the heavenly *sabbatismos*), dishonoring parental authority (he rebelled against His Maker), theft (he stole a third of God’s angels), and covetousness (he wanted to be like God). Jesus, however, singled out one specific sin that all the others culminated in: murder. “He was a murderer from the beginning” {% rf 'John 8:44' %}. Murder would indeed qualify as the ultimate disruptor to heaven’s rest.
+Iniquity was found in Lucifer because he rebelled against God’s law of love: he failed to love God supremely and the other angels as himself. Love for self triumphed instead and brought an abundance of other sins with it, including having other gods (himself), Sabbath-breaking (he disrupted heaven’s state of rest), dishonoring parental authority (he rebelled against His Maker), theft (he stole a third of God’s angels), and covetousness (he wanted to be like God). Jesus, however, singled out one specific sin that all the others culminated in: murder. “He was a murderer from the beginning” {% rf 'John 8:44' %}. Murder would indeed qualify as the ultimate disruptor to heaven’s rest.
 
 ## What does murder include?
 
@@ -222,7 +222,7 @@ When the Canaanites defiled themselves with their evil ways, their land was defi
 > The *righteous* shall inherit the land, and dwell therein forever.
 {% ct 'Psalm 37:29' %}
 
-When Lucifer rebelled against God, the same principle applied to him. His iniquity disrupted heaven’s *sabbatismos* rest, so he, and his followers, had to go. The heavenly Canaan is for righteous inhabitants only, but Lucifer had rebelled against righteousness and chosen iniquity. He had refused to rest in God, choosing instead to find rest in himself, in the pursuit of his own will.[^7]
+When Lucifer rebelled against God, the same principle applied to him. His iniquity disrupted heaven’s rest, so he, and his followers, had to go. The heavenly Canaan is for righteous inhabitants only, but Lucifer had rebelled against righteousness and chosen iniquity. He had refused to rest in God, choosing instead to find rest in himself, in the pursuit of his own will.[^7]
 
 ## What was God’s solution to Adam and Eve’s predicament?
 
@@ -314,7 +314,7 @@ Sin, which is disobedience to His commandments, always brings unrest. When we fu
 
 The Sabbath is also a snapshot of the gospel, a weekly invitation to us: “Don’t rebel. Don’t try to save yourself. Rest in Me.” If we are willing, God can replace our carnal mind, which resists His will, with the born-again mind, which submits and rests in it, even when the “why” may not be fully understood {% rf 'John 14:15; 1 John 5:2–3' %}. Thus, the Sabbath becomes the ultimate sign of submission.[^9] Instead of working our way to heaven, it shows that we rest our way there. Instead of being a legalistic requirement, it is the ultimate antidote to legalism, a testament that we are resting from our own works {% rf 'Hebrews 4:10' %}, which are as “filthy rags,” because we have found rest in the works of Christ, which are free from every trace of sin {% rf 'Isaiah 64:6; 1 John 3:5' %}. This is why the gospel is good news: He is offering to exchange the unrest of sin for the rest of His perfect righteousness, to bring us back to heaven’s *sabbatismos*, where there is no rebellion and no sin—where all are at perfect rest in Him.
 
-If we refuse to begin to Sabbath here, we will not be able to Sabbath in heaven. Have you been resisting His rest? Now is the time to cease our rebellion, to raise the white flag of surrender, and to enter into God’s blessed *sabbatismos* through Christ.[^10] He is waiting to give it to anyone who is willing to receive it.
+If we refuse to begin to Sabbath here, we will not be able to Sabbath in heaven. Have you been resisting His rest? Now is the time to cease our rebellion, to raise the white flag of surrender, and to enter into God’s blessed rest through Christ.[^10] He is waiting to give it to anyone who is willing to receive it.
 
 > And that he might reconcile both unto God in one body by the cross, having slain the enmity thereby: and *came and preached peace to you which were afar off, and to them that were nigh. For through him we both have access by one Spirit unto the Father*.
 {% ct 'Ephesians 2:16-18' %}
