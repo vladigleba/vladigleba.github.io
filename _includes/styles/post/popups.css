@@ -1,7 +1,7 @@
 #dialog-popup,
 .copy-toast {
   position: absolute;
-  background-color: var(--light-gray-background);
+  background-color: #fff;
   box-shadow: var(--default-shadow);
   border-radius: var(--default-radius);
   z-index: 1000;

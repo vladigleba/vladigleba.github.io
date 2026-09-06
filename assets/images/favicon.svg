@@ -5,30 +5,20 @@
     </style>
   </defs>
 
-  <!-- Background fill -->
+  <!-- background fill -->
   <rect width="100" height="100" rx="12" fill="#faf7f2"/>
 
-  <!-- Border — four separate sides to ensure equal visual weight -->
-  <line x1="12" y1="0.5" x2="88" y2="0.5" stroke="#c8b48a" stroke-width="1"/>
-  <line x1="12" y1="99.5" x2="88" y2="99.5" stroke="#c8b48a" stroke-width="1"/>
-  <line x1="0.5" y1="12" x2="0.5" y2="88" stroke="#c8b48a" stroke-width="1"/>
-  <line x1="99.5" y1="12" x2="99.5" y2="88" stroke="#c8b48a" stroke-width="1"/>
-  <path d="M12 0.5 Q0.5 0.5 0.5 12" fill="none" stroke="#c8b48a" stroke-width="1"/>
-  <path d="M88 0.5 Q99.5 0.5 99.5 12" fill="none" stroke="#c8b48a" stroke-width="1"/>
-  <path d="M0.5 88 Q0.5 99.5 12 99.5" fill="none" stroke="#c8b48a" stroke-width="1"/>
-  <path d="M99.5 88 Q99.5 99.5 88 99.5" fill="none" stroke="#c8b48a" stroke-width="1"/>
+  <!-- top rule -->
+  <line x1="4" y1="20" x2="96" y2="20" stroke="#a07c3a" stroke-width="2"/>
 
-  <!-- Top rule -->
-  <line x1="10" y1="28" x2="90" y2="28" stroke="#a07c3a" stroke-width="2"/>
-
-  <!-- BG -->
-  <text x="50" y="68"
+  <!-- bg -->
+  <text x="50" y="70"
     text-anchor="middle"
     font-family="'Playfair Display', Georgia, serif"
-    font-size="46"
+    font-size="60"
     font-weight="700"
     fill="#a07c3a">BG</text>
 
-  <!-- Bottom rule -->
-  <line x1="10" y1="74" x2="90" y2="74" stroke="#a07c3a" stroke-width="2"/>
+  <!-- bottom rule -->
+  <line x1="4" y1="78" x2="96" y2="78" stroke="#a07c3a" stroke-width="2"/>
 </svg>
