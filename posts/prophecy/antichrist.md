@@ -48,7 +48,7 @@ Babylon was eventually conquered by Medo-Persia, which is symbolized by a bear r
 > After this I beheld, and lo another, *like a leopard*, which had upon the back of it four wings of a fowl; the beast had also four heads; and dominion was given to it.
 {% ct 'Daniel 7:6' %}
 
-The Medo-Persian empire was then conquered by Greece, which is symbolized by a leopard with four wings and four heads. Wings in the Bible represent speed {% rf 'Jeremiah 4:11–13' %}, and the four wings are a fitting representation for the speed with which Alexander the Great conquered. The four heads represent the four kingdoms into which the empire was divided when Alexanded died.
+The Medo-Persian empire was then conquered by Greece, which is symbolized by a leopard with four wings and four heads. Wings in the Bible represent speed {% rf 'Jeremiah 4:11–13' %}, and the four wings are a fitting representation for the speed with which Alexander the Great conquered. The four heads represent the four kingdoms into which the empire was eventually divided after Alexander’s death (Antigonids, Attalids, Ptolemies, and Seleucids).
 
 ## What was the fourth beast?
 

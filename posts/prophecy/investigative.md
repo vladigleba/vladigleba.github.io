@@ -18,13 +18,13 @@ Daniel sees a two-horned lamb, which we later learn represents the kingdom of Me
 
 ## What does he see next?
 
-> And as I was considering, behold, *an he goat came from the west* on the face of the whole earth, and touched not the ground: and the goat had a notable horn between his eyes. And he came to the ram that had two horns, which I had seen standing before the river, and ran unto him in the fury of his power. And I saw him come close unto the ram, and he was moved with choler against him, and smote the ram, and brake his two horns: and there was no power in the ram to stand before him, but he cast him down to the ground, and stamped upon him: and there was none that could deliver the ram out of his hand. Therefore the he goat waxed very great: and when he was strong, the great horn was broken; and for it came up four notable ones toward the four winds of heaven.
+> And as I was considering, behold, *an he goat came from the west* on the face of the whole earth, and touched not the ground: and the goat had a notable horn between his eyes. And he came to the ram that had two horns, which I had seen standing before the river, and ran unto him in the fury of his power. And I saw him come close unto the ram, and he was moved with choler against him, and smote the ram, and brake his two horns: and there was no power in the ram to stand before him, but he cast him down to the ground, and stamped upon him: and there was none that could deliver the ram out of his hand. *Therefore the he goat waxed very great: and when he was strong, the great horn was broken; and for it came up four notable ones toward the four winds of heaven*.
 {% ct 'Daniel 8:5-8' %}
 
-> And the *rough goat is the king of Grecia*: and the great horn that is between his eyes is the first king. Now that being broken, whereas four stood up for it, four kingdoms shall stand up out of the nation, but not in his power.
+> And the *rough goat is the king of Grecia*: and the great horn that is between his eyes is the first king. *Now that being broken, whereas four stood up for it, four kingdoms shall stand up out of the nation, but not in his power*.
 {% ct 'Daniel 8:21-22' %}
 
-Daniel then sees a goat with a large horn moving so swiftly that its feet never touch the ground. The goat attacks the ram, conquers it, and the goat’s horn is then broken off and replaced with four other horns. We later learn this goat represents the kingdom of Greece. The great horn is none other than Alexander the Great, while the four horns it’s replaced by represent the four kingdoms into which his empire was divided. In {% rf 'Daniel 7:6' false %} this same kingdom is represented by a leopard with four heads.
+Daniel then sees a goat with a large horn moving so swiftly that its feet never touch the ground. The goat attacks the ram, conquers it, and the goat’s horn is then broken off and replaced with four other horns. We later learn this goat represents the kingdom of Greece. The great horn is none other than Alexander the Great, while the four horns it’s replaced by represent the four kingdoms into which his empire was eventually divided (Antigonids, Attalids, Ptolemies, and Seleucids). In {% rf 'Daniel 7:6' false %} the Grecian kingdom is represented by a leopard with four heads.
 
 ## What does Daniel see next?
 
