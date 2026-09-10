@@ -1,5 +1,4 @@
-const CACHE_NAME = 'core-assets-1788915497323';
-const FONT_CACHE = 'google-fonts-v1';
+const CACHE_NAME = 'core-assets-1788999558182';
 const IMAGE_CACHE = 'images-v1';
 const CORE_ASSETS = [
   '/',
@@ -61,7 +60,6 @@ if (!isLocalhost) {
         Promise.all(keys
           .filter(key => 
             key !== CACHE_NAME && 
-            key !== FONT_CACHE && 
             key !== IMAGE_CACHE)
           .map(key => caches.delete(key)))
       )
@@ -75,31 +73,10 @@ if (!isLocalhost) {
     
     if (request.method !== 'GET') return;
     
-    // only cache same-origin requests (except Google Fonts)
-    const isFont = url.origin === 'https://fonts.googleapis.com';
+    // only cache same-origin requests
     const isSameOrigin = url.origin === self.location.origin;
     
-    if (!isFont && !isSameOrigin) return;
-
-    // Google Fonts: cache CSS only, let browser handle font files
-    if (isFont) {
-      event.respondWith(
-        caches.open(FONT_CACHE).then(cache =>
-          cache.match(request).then(cached => {
-            if (cached) return cached;
-            
-            return fetch(request).then(response => {
-              if (response.ok || response.type === 'opaque') {
-                const cloned = response.clone();
-                cache.put(request, cloned);
-              }
-              return response;
-            });
-          })
-        )
-      );
-      return;
-    }
+    if (!isSameOrigin) return;
 
     // Images: cache-first
     if (request.destination === 'image') {
