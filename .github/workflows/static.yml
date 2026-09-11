@@ -31,12 +31,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Smarten post text
+        run: node tools/smarten-text.js posts
+      - name: Build site
+        run: npm run build
+      - name: Build search index
+        run: node tools/build-index.js
+      - name: Validate anchors
+        run: node tools/validate-anchors.js
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
+          # Upload generated site
           path: './_site'
       - name: Deploy to GitHub Pages
         id: deployment
