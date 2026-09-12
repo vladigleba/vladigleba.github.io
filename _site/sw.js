@@ -1,4 +1,4 @@
-const CACHE_NAME = 'core-assets-1789015901137';
+const CACHE_NAME = 'core-assets-1789173013354';
 const IMAGE_CACHE = 'images-v1';
 const CORE_ASSETS = [
   '/',

@@ -62,7 +62,8 @@ article > header p {
 }
 
 .unified-card .details,
-.footnotes {
+.footnotes,
+.search-result .header h3 {
   font-size: 17px;
 }
 
@@ -70,7 +71,6 @@ article > header p {
 #dialog-popup,
 .copy-toast,
 .search-input,
-.search-result .header h3,
 .search-results .empty,
 .toc a,
 body > footer,
@@ -83,7 +83,8 @@ article > header .meta.series {
 .popup-stat-label,
 .search-summary,
 .unified-card .tag,
-li .tag {
+li .tag,
+.search-result .snippet {
   font-size: 15px;
 }
 
@@ -91,12 +92,11 @@ li .tag {
 .search-counter,
 .search-nav-btn,
 .search-clear-btn,
-.search-result .snippet {
+.search-result .header .match-count {
   font-size: 14px;
 }
 
-.search-result .header .series,
-.search-result .header .match-count {
+.search-result .header .series {
   font-size: 13px;
 }
 

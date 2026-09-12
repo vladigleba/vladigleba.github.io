@@ -538,7 +538,7 @@ if (document.body.classList.contains('js-enabled')) {
     let miniSearchInstance = null;
     const SEARCH_INDEX_URL = '/assets/js/search-index.json';
     const RESULTS_PER_PAGE = 10;
-    const SNIPPET_LENGTH = 165;
+    const SNIPPET_LENGTH = 140;
     const MAX_SNIPPETS_DISPLAY = 4;
 
     // normalize straight apostrophes to typographical
@@ -966,9 +966,9 @@ if (document.body.classList.contains('js-enabled')) {
         if (page === 0 && total > 0) {
           const summaryEl = document.createElement('div');
           summaryEl.className = 'search-summary';
-          summaryEl.textContent = `${total} ${total === 1 ? 'article' : 'articles'}`;
+          summaryEl.textContent = `${total} ${total === 1 ? 'article' : 'articles matched'}`;
           searchResults.appendChild(summaryEl);
-          announceToLiveRegion(`${total} ${total === 1 ? 'article' : 'articles'} found`);
+          announceToLiveRegion(`${total} ${total === 1 ? 'article' : 'articles'} matched`);
         }
 
         renderResults(results, searchResults);
@@ -1176,8 +1176,10 @@ if (document.body.classList.contains('js-enabled')) {
     const clearAllHighlights = () => {
       allHighlights.forEach((mark) => {
         // replace <mark> with its text content
-        mark.parentNode.replaceChild(document.createTextNode(mark.textContent), mark);
-        mark.parentNode.normalize(); // combine adjacent text nodes
+        const parent = mark.parentNode;
+        if (!parent) return;
+        parent.replaceChild(document.createTextNode(mark.textContent), mark);
+        parent.normalize(); // combine adjacent text nodes
       });
       allHighlights = [];
       currentHighlightIndex = -1;
