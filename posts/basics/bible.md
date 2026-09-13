@@ -51,7 +51,7 @@ God’s word is truth, and He will ensure it stays that way.
 > And that from a child thou hast known the holy scriptures, which are able *to make thee wise unto salvation* through faith which is in Christ Jesus.
 {% ct '2 Timothy 3:15' %}
 
-God gave us the Scriptures so we can learn about His character and be grounded in His truth while navigating a world of deception, so that through it we might be saved from sin and have hope of eternal life.
+God gave us the Scriptures to teach us about His character and to be grounded in His truth while navigating a world of deception, so that through it, we might be saved from sin and have hope of eternal life.
 
 ## Who do the Scriptures point me to?
 
