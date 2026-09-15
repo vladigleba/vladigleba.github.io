@@ -75,6 +75,6 @@ body > footer > div {
 .last-updated {
   display: inline-block;
   padding: 3px var(--tag-horizontal-padding) 4.5px;
-  border: 1px solid #ccc;
+  border: 1px solid #aaa;
   border-radius: var(--default-radius);
 }

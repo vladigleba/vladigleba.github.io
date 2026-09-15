@@ -156,6 +156,6 @@ When encountering a new teaching it’s crucial not to take someone else’s wor
 {% ct 'John 15:4-5' %}
 
 > Then spake Jesus again unto them, saying, *I am the light of the world: he that followeth me shall not walk in darkness, but shall have the light of life*.
-{% ct 'John 15:4-5' %}
+{% ct 'John 8:12' %}
 
 The good news is Satan is a defeated foe. Jesus has already won the battle between good and evil on the cross, and those who overcome Satan in the last days will do it only by the grace and power of Jesus in their lives. Jesus is the Light, and it is my privilege to know and follow Him by daily reading His love letter to me—the Bible; it will illuminate my path and expose darkness because Jesus does not want anyone to be deceived.
