@@ -92,10 +92,6 @@
     display: block;
   }
 
-  .content {
-    order: 0;
-  }
-
   .anchor-link {
     display: none !important;
   }
@@ -116,12 +112,7 @@
     line-height: 1.55;
   }
 
-  .content p,
-  .content ol,
-  .content ul,
-  .content figure {
-    break-inside: avoid;
-  }
+  .content figure { break-inside: avoid; }
 
   .content figure {
     border: 0;
@@ -138,13 +129,56 @@
   .content figure em {
     background: none;
     box-shadow: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1pt;
+    text-underline-offset: 2pt;
+  }
+
+  .content figcaption {
+    font-size: 8pt;
+    line-height: 1.3;
+    padding-bottom: 0;
+    margin-top: 4pt;
+  }
+
+  .footnotes {
+    width: 100% !important;
+    padding: 24pt 0 0;
+    /* page-break-before: always;
+    break-before: page; */
+  }
+
+  .footnotes-sep {
+    display: block;
+    width: 100%;
+    margin: 24pt 0 0;
+    border: 0;
+    border-top: 1pt solid #000;
+    break-after: avoid;
+  }
+
+  .footnotes::before {
+    display: none;
+  }
+
+  .footnotes-list {
+    padding-left: 18pt;
+  }
+
+  .footnote-item {
+    padding: 4pt 0;
+    font-size: 9pt;
+    line-height: 1.4;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .footnote-backref {
+    font-size: 8pt;
+    text-decoration: none;
   }
 
   a {
     color: #000;
-  }
-
-  abbr[title]::after {
-    content: ' (' attr(title) ')';
   }
 }
