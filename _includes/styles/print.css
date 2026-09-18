@@ -112,7 +112,9 @@
     line-height: 1.55;
   }
 
-  .content figure { break-inside: avoid; }
+  .content figure { 
+    break-inside: avoid; 
+  }
 
   .content figure {
     border: 0;
@@ -144,8 +146,6 @@
   .footnotes {
     width: 100% !important;
     padding: 24pt 0 0;
-    /* page-break-before: always;
-    break-before: page; */
   }
 
   .footnotes-sep {

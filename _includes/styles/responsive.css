@@ -1,5 +1,5 @@
 /* 2K/QHD monitors */
-@media (max-width: 3840px) {
+@media screen and (max-width: 3840px) {
   article,
   article > header > div,
   body > footer > div {
@@ -12,7 +12,7 @@
 }
 
 /* 2K/QHD monitors */
-@media (max-width: 2560px) {
+@media screen and (max-width: 2560px) {
   .list {
     padding: 0 75px;
   }
@@ -29,7 +29,7 @@
 }
 
 /* Midpoint between 2K and Full HD */
-@media (max-width: 2100px) {
+@media screen and (max-width: 2100px) {
   .list {
     padding: 0 50px;
   }
@@ -46,7 +46,7 @@
 }
 
 /* Full HD screens */
-@media (max-width: 1920px) {
+@media screen and (max-width: 1920px) {
   article,
   article > header > div,
   body > footer > div {
@@ -59,7 +59,7 @@
 }
 
 /* Widescreen monitors */
-@media (max-width: 1600px) {
+@media screen and (max-width: 1600px) {
   article,
   article > header > div,
   body > footer > div {
@@ -72,7 +72,7 @@
 }
 
 /* Larger laptops */
-@media (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
   article,
   article > header > div,
   body > footer > div {
@@ -85,7 +85,7 @@
 }
 
 /* Small desktops/laptops */
-@media (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
   article,
   article > header > div,
   body > footer > div {
@@ -102,7 +102,7 @@
 }
 
 /* Large tablets */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   :root {
     --font-size: 19px;
   }
@@ -143,7 +143,7 @@
 }
 
 /* Tablets and smaller screens */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .control-wrapper {
     max-width: 340px;
     padding: 15px 0;
@@ -310,7 +310,7 @@
 }
 
 /* Large phones */
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
   article,
   article > header > div,
   body > footer > div,
@@ -329,7 +329,7 @@
 }
 
 /* Small phones */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .main-nav li {
     padding: 5px 6px 3px !important;
   }
