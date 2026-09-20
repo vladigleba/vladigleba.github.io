@@ -28,7 +28,7 @@
     },
     "Salvation": {
       "title": "Experiencing Salvation",
-      "color": "rgb(145, 94, 124)"
+      "color": "rgb(143, 85, 119)"
     },
     "Coming": {
       "title": "The Second Coming",
@@ -36,15 +36,15 @@
     },
     "Judgment": {
       "title": "Facing Judgment",
-      "color": "rgb(237, 103, 82)"
+      "color": "rgb(217, 88, 68)"
     },
     "Sabbath": {
       "title": "The Bible Sabbath",
-      "color": "rgb(199, 103, 103)"
+      "color": "rgb(199, 90, 90)"
     },
     "Sunday": {
       "title": "The Counterfeit Sabbath",
-      "color": "rgb(133, 93, 162)"
+      "color": "rgb(114, 69, 145)"
     },
     "Mark": {
       "title": "The Antichrist’s Mark",
@@ -56,7 +56,7 @@
     },
     "Baptism": {
       "title": "Baptized by the Spirit",
-      "color": "rgb(86, 111, 170)"
+      "color": "rgb(72, 99, 164)"
     },
     "Healing": {
       "title": "Made Whole by Christ",
@@ -72,11 +72,11 @@
     },
     "Deception": {
       "title": "Mainstream Deceptions",
-      "color": "rgb(255, 98, 98)"
+      "color": "rgb(223, 84, 84)"
     },
     "Controversy": {
       "title": "The Great Controversy",
-      "color": "rgb(170, 88, 88)"
+      "color": "rgb(171, 78, 78)"
     },
     "Rest": {
       "title": "The Rest of God",

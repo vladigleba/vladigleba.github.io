@@ -1,6 +1,6 @@
 ---
 title: Who Is the Antichrist?
-description: Discover the truth about the entity that places itself in place of, and in opposition to, Christ Himself.
+description: Discover the truth about the entity that sets itself in place of, and in opposition to, Christ Himself.
 date: 2022-07-17
 series: Mark
 order: 2700

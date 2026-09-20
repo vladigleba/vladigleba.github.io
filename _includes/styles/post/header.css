@@ -41,11 +41,14 @@ article > header .tag b {
 
 article > header .series-links {
   margin-top: 40px;
+  display: inline-block;
+  min-width: 500px;
+}
+
+article > header .series-links nav {
   background: rgba(255, 255, 255, 0.1);
   border-radius: var(--default-radius);
-  display: inline-block;
-  padding: 0 20px 8px;
-  min-width: 500px;
+  padding: 8px 20px;
 }
 
 article > header .series-links ol {
@@ -62,7 +65,21 @@ article > header .series-item {
   color: inherit;
   transition: background-color 0.15s ease;
   margin: 0 -20px;
-  padding: 5px 20px;
+  padding: 5px 20px 5px 45px;
+  position: relative;
+}
+
+article > header .series-item::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 4px;
+  bottom: 4px;
+  width: 7px;
+  border-radius: var(--default-radius);
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 1;
+  transition: background-color 0.15s ease;
 }
 
 article > header .series-item .series-left {
@@ -72,31 +89,16 @@ article > header .series-item .series-left {
   margin-right: 0;
 }
 
-.series-item .number {
-  background: rgb(255, 255, 255, 0.9);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-}
-
 article > header .series-item .series-right {
   margin-left: auto;
   white-space: nowrap;
 }
 
-article > header .series-item[aria-current="page"],
-article > header .series-item:not([aria-current="page"]):hover {
-  background-color: rgba(255, 255, 255, 0.125);
+article > header .series-item[aria-current="page"]::before,
+article > header .series-item:not([aria-current="page"]):hover::before {
+  background: rgba(255, 255, 255, 0.9);
 }
 
 article > header .meta.series {
-  font-weight: 700;
-  padding: 10px 20px;
-  margin: 0 -20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.125);
-  text-transform: uppercase;
+  margin: 0 0 12px;
 }

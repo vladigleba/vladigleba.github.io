@@ -11,8 +11,7 @@
 {% if isSeries %}
   <div class="series-links">
     <h2 class="meta series">
-      {{ series_title }} <span>•</span>
-      {{ series.current }} of {{ series.total }}
+      Series <span>•</span> {{ series_title }} <span>•</span> Part {{ series.current }} of {{ series.total }}
     </h2>
 
     <nav aria-label="Series navigation">
@@ -27,8 +26,7 @@
               {% endif %}
             >
               <span class="series-left">
-                <span class="number">{{ forloop.index }}</span>
-                <span>{{ post.data.title }}</span>
+                {{ forloop.index }}. {{ post.data.title }}
               </span>
               <span class="series-right">
                 {{ post.data.length }} min read

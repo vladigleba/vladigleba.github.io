@@ -37,12 +37,10 @@
 
   article > header {
     display: block;
-    padding: 0 0 12pt;
+    padding: 12pt 0;
     color: #000 !important;
     background: #fff !important;
-    text-align: left;
-    border-bottom: 1pt solid #000;
-    margin-bottom: 24pt !important;
+    margin-bottom: 0pt !important;
   }
 
   article > header h1 {
@@ -52,26 +50,26 @@
     margin-bottom: 6pt;
   }
 
-  .content figcaption,
-  .number {
+  .content figcaption {
     color: #000 !important;
   }
 
-  article > header .description,
+  .footnote-item,
+  .footnote-item p,
   article > header .meta,
-  article > header .series-links,
   article > header .meta.series {
-    font-size: 10pt;
+    font-size: 9pt !important;
   }
 
   article > header .description {
+    font-size: 10pt;
     margin-bottom: 8pt;
   }
 
   article > header .series-links {
     display: block;
     min-width: 0;
-    margin-top: 8pt;
+    margin-top: 0pt;
     padding: 0;
     background: transparent;
     border-radius: 0;
@@ -112,13 +110,19 @@
     line-height: 1.55;
   }
 
+  .content p a,
+  .content ol a,
+  .content ul a {
+    text-decoration: none;
+  }
+
   .content figure { 
     break-inside: avoid; 
   }
 
   .content figure {
     border: 0;
-    border-left: 2pt solid #000;
+    border-left: 1pt solid #000;
     border-radius: 0;
     box-shadow: none;
     padding: 4pt 0 4pt 12pt;
@@ -137,7 +141,7 @@
   }
 
   .content figcaption {
-    font-size: 8pt;
+    font-size: 9pt;
     line-height: 1.3;
     padding-bottom: 0;
     margin-top: 4pt;
@@ -157,6 +161,7 @@
     break-after: avoid;
   }
 
+  .footnote-backref,
   .footnotes::before {
     display: none;
   }
@@ -167,15 +172,9 @@
 
   .footnote-item {
     padding: 4pt 0;
-    font-size: 9pt;
     line-height: 1.4;
     page-break-inside: avoid;
     break-inside: avoid;
-  }
-
-  .footnote-backref {
-    font-size: 8pt;
-    text-decoration: none;
   }
 
   a {

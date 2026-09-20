@@ -20,7 +20,6 @@ article > header h1 {
 .unified-card .title,
 .content h2 {
   font-size: 34px;
-  letter-spacing: -0.5px;
 }
 
 .list a {
@@ -74,8 +73,7 @@ article > header p {
 .search-results .empty,
 .toc a,
 body > footer,
-.embeddable-buttondown-form input[type="email"],
-article > header .meta.series {
+.embeddable-buttondown-form input[type="email"] {
   font-size: 16px;
 }
 
