@@ -1,14 +1,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preload" href="/assets/fonts/FjallaOne/woff2/FjallaOne-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/OpenSans/woff2/OpenSans-Medium.woff2" as="font" type="font/woff2" crossorigin>
 <title>{{ meta_title }}</title>
 <meta name="description" content="{{ meta_description }}">
 
 <!-- security headers -->
-<meta http-equiv='Content-Security-Policy' content="default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://cloud.umami.is; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://bible-api.com https://api-gateway.umami.dev; object-src 'none'; base-uri 'self'; form-action 'self' https://buttondown.com;">
+<meta http-equiv='Content-Security-Policy' content="default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://cloud.umami.is; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://bible-api.com https://gateway.umami.is; object-src 'none'; base-uri 'self'; form-action 'self' https://buttondown.com;">
 <meta name='referrer' content='strict-origin-when-cross-origin'>
 <meta http-equiv='Permissions-Policy' content="geolocation=(), camera=(), microphone=(), payment=()">
 <meta http-equiv='X-Content-Type-Options' content='nosniff'>
+
+<!-- third-party connection hint -->
+<link rel="preconnect" href="https://cloud.umami.is" crossorigin>
 
 <!-- social meta tags -->
 {% if is_article %}
@@ -31,6 +35,7 @@
 <style>
   {% render 'styles/nav.css' %}
   {% render 'styles/banner.css' %}
+  {% render 'styles/featured.css' %}
 </style>
 
 <!-- canonical and feeds -->
@@ -74,15 +79,24 @@
 
 <!-- analytics -->
 <script>
-  if (
-    location.hostname !== 'localhost' &&
-    location.hostname !== '127.0.0.1' &&
-    (!navigator.doNotTrack || navigator.doNotTrack === '0')
-  ) {
-    var s = document.createElement('script');
-    s.defer = true;
-    s.setAttribute('data-website-id', 'dd2fe86a-abe1-4240-869c-fbe22064287d');
-    s.src = 'https://cloud.umami.is/script.js';
-    document.head.appendChild(s);
-  }
+  window.addEventListener('load', () => {
+    if (
+      location.hostname !== 'localhost' &&
+      location.hostname !== '127.0.0.1' &&
+      (!navigator.doNotTrack || navigator.doNotTrack === '0')
+    ) {
+      const loadAnalytics = () => {
+        const script = document.createElement('script');
+        script.setAttribute('data-website-id', 'dd2fe86a-abe1-4240-869c-fbe22064287d');
+        script.src = 'https://cloud.umami.is/script.js';
+        document.head.appendChild(script);
+      };
+
+      if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(loadAnalytics);
+      } else {
+        setTimeout(loadAnalytics, 0);
+      }
+    }
+  }, { once: true });
 </script>

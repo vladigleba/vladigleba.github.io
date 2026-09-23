@@ -249,7 +249,8 @@
   }
 
   article>header .series-item {
-    padding: 5px 15px;
+    padding: 5px 15px 5px 40px;
+    font-size: 15px !important;
   }
 
   .series-right {
@@ -330,7 +331,7 @@
 /* Small phones */
 @media screen and (max-width: 480px) {
   .main-nav li {
-    padding: 5px 6px 3px !important;
+    padding: 5px 5px 3px !important;
   }
 
   article > header .series-links {
