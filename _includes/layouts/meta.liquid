@@ -31,8 +31,13 @@
 <meta name="twitter:image" content="{{ '/assets/images/social-default.png' | absoluteUrl }}">
 
 <!-- critical CSS -->
-<link href="/styles.css" rel="stylesheet">
+<link rel="preload" href="/styles.css" as="style">
+<link href="/styles.css" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
+<noscript><link rel="stylesheet" href="/styles.css"></noscript>
 <style>
+  {% render 'styles/variables.css' %}
+  {% render 'styles/reset.css' %}
+  {% render 'styles/typography.css' %}
   {% render 'styles/nav.css' %}
   {% render 'styles/banner.css' %}
   {% render 'styles/featured.css' %}

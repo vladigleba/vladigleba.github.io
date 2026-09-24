@@ -7,7 +7,7 @@
   }
 
   .unified-card {
-    width: 25%;
+    width: 25% !important;
   }
 }
 
@@ -24,7 +24,7 @@
   }
 
   .unified-card {
-    width: 30%;
+    width: 30% !important;
   }
 }
 
@@ -41,7 +41,7 @@
   }
 
   .unified-card {
-    width: 35%;
+    width: 35% !important;
   }
 }
 
@@ -54,7 +54,7 @@
   }
 
   .unified-card {
-    width: 40%;
+    width: 40% !important;
   }
 }
 
@@ -67,7 +67,7 @@
   }
 
   .unified-card {
-    width: 45%;
+    width: 45% !important;
   }
 }
 
@@ -80,7 +80,7 @@
   }
 
   .unified-card {
-    width: 50%;
+    width: 50% !important;
   }
 }
 
@@ -93,7 +93,7 @@
   }
 
   .unified-card {
-    width: 60%;
+    width: 60% !important;
   }
 
   .wrapper {
@@ -108,7 +108,7 @@
   }
 
   .unified-card {
-    width: 70%;
+    width: 70% !important;
   }
 
   .wrapper {
@@ -156,7 +156,7 @@
   }
 
   .unified-card {
-    width: 80%;
+    width: 80% !important;
   }
 
   article > header .series-links {
@@ -315,7 +315,7 @@
   article > header > div,
   body > footer > div,
   .unified-card {
-    width: 96%;
+    width: 96% !important;
   }
 
   .search-modal {
