@@ -12,11 +12,7 @@
 }
 
 .banner h1 span {
-  background: var(--accent-color) padding-box text;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block; /* iOS workaround */
+  color: var(--accent-color);
   line-height: 1.4;
 }
 
