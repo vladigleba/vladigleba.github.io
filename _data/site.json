@@ -5,7 +5,7 @@
   "author": "Vladi Gleba",
   "url": "https://vladigleba.com",
   "useCustomReadingOrder": true,
-  "showComingNextCard": false,
+  "showComingNextCard": true,
   "enableTags": true,
   "categories": {
     "Basics": {
@@ -32,7 +32,7 @@
     },
     "Coming": {
       "title": "The Second Coming",
-      "color": "rgb(57, 96, 136)"
+      "color": "rgb(38,105,133)"
     },
     "Judgment": {
       "title": "Facing Judgment",

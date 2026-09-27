@@ -1,20 +1,4 @@
 @font-face {
-  font-family: "Fjalla One";
-  src: url("/assets/fonts/FjallaOne/woff2/FjallaOne-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Literata";
-  src: url("/assets/fonts/Literata/woff2/Literata-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Literata";
   src: url("/assets/fonts/Literata/woff2/Literata-Medium.woff2") format("woff2");
   font-style: normal;
@@ -67,22 +51,6 @@
   src: url("/assets/fonts/Literata/woff2/Literata-BoldItalic.woff2") format("woff2");
   font-style: italic;
   font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("/assets/fonts/OpenSans/woff2/OpenSans-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("/assets/fonts/OpenSans/woff2/OpenSans-Medium.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 500;
   font-display: swap;
 }
 

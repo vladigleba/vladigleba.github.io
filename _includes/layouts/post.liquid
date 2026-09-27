@@ -12,7 +12,7 @@ layout: layouts/base
   .main-nav, .main-nav li:hover, .search-trigger, .search-trigger:hover { color: white; }
   header h1, .content h2, figcaption { color: {{ color }}; }
   header, .main-nav, .content figure::before { background: {{ color }}; }
-  .toc li.active { border-left: 4px solid {{ color }}; }
+  .toc li.active::before { background: {{ color }}; }
 </style>
 
 <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>

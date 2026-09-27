@@ -28,6 +28,20 @@
   line-height: 0.96;
  }
 
+.toc li.active {
+  position: relative;
+}
+
+.toc li.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0px;
+  bottom: 0px;
+  width: 4px;
+  border-radius: var(--default-radius);
+}
+
 .toc li.active a,
 .toc li:hover a {
   color: black;

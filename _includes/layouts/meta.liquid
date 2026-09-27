@@ -1,7 +1,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preload" href="/assets/fonts/FjallaOne/woff2/FjallaOne-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/OpenSans/woff2/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/OpenSans/woff2/OpenSans-Medium.woff2" as="font" type="font/woff2" crossorigin>
+{% if is_article %}
+  <link rel="preload" href="/assets/fonts/Literata/woff2/Literata-Regular.woff2" as="font" type="font/woff2" crossorigin>
+{% endif %}
 <title>{{ meta_title }}</title>
 <meta name="description" content="{{ meta_description }}">
 
@@ -35,6 +39,38 @@
 <link href="/styles.css" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
 <noscript><link rel="stylesheet" href="/styles.css"></noscript>
 <style>
+  @font-face {
+    font-family: "Fjalla One";
+    src: url("/assets/fonts/FjallaOne/woff2/FjallaOne-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Open Sans";
+    src: url("/assets/fonts/OpenSans/woff2/OpenSans-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Open Sans";
+    src: url("/assets/fonts/OpenSans/woff2/OpenSans-Medium.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Literata";
+    src: url("/assets/fonts/Literata/woff2/Literata-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+
   {% render 'styles/variables.css' %}
   {% render 'styles/reset.css' %}
   {% render 'styles/typography.css' %}

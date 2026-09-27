@@ -5,12 +5,11 @@
 
 .banner h1,
 article > header h1 {
-  font-size: 65px;
+  font-size: 60px;
 }
 
 .banner h1 {
-  letter-spacing: -2px;
-  font-weight: 500;
+  color: var(--accent-color);
 }
 
 .stat-count {
