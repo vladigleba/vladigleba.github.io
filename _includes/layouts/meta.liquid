@@ -35,50 +35,7 @@
 <meta name="twitter:image" content="{{ '/assets/images/social-default.png' | absoluteUrl }}">
 
 <!-- critical CSS -->
-<link rel="preload" href="/styles.css" as="style">
-<link href="/styles.css" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
-<noscript><link rel="stylesheet" href="/styles.css"></noscript>
-<style>
-  @font-face {
-    font-family: "Fjalla One";
-    src: url("/assets/fonts/FjallaOne/woff2/FjallaOne-Regular.woff2") format("woff2");
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Open Sans";
-    src: url("/assets/fonts/OpenSans/woff2/OpenSans-Regular.woff2") format("woff2");
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Open Sans";
-    src: url("/assets/fonts/OpenSans/woff2/OpenSans-Medium.woff2") format("woff2");
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Literata";
-    src: url("/assets/fonts/Literata/woff2/Literata-Regular.woff2") format("woff2");
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-  }
-
-  {% render 'styles/variables.css' %}
-  {% render 'styles/reset.css' %}
-  {% render 'styles/typography.css' %}
-  {% render 'styles/nav.css' %}
-  {% render 'styles/banner.css' %}
-  {% render 'styles/featured.css' %}
-  {% render 'styles/controls.css' %}
-</style>
+<link rel="stylesheet" href="/styles.css">
 
 <!-- canonical and feeds -->
 <link rel="canonical" href="{{ url }}">
