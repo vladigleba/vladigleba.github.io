@@ -28,16 +28,26 @@ Because redeemed humanity would understand Him better than any angel, He would e
 > If a false witness rise up against any man to testify against him that which is wrong; then both the men, between whom the controversy is, shall stand before the LORD, before the priests and the judges, which shall be in those days; and *the judges shall make diligent inquisition*.
 {% ct 'Deuteronomy 19:16-18' %}.
 
-In heaven, Satan [became a false witness](/posts/gospel/evil.md) against God {% rf 'John 8:44' %}; he thought he could do a better job in running the universe {% rf 'Isaiah 14:12-14' %}. Faced with an accuser that was fast gaining a following, how would God respond? He could immediately destroy Satan and his followers for their audacity to rebel, but that is not His character. He seeks to save, not to destroy {% rf 'Luke 9:56' %}. No doubt, God would have appealed to Lucifer again and again, for He is long-suffering, "not willing that any should perish, but that all should come to repentance," but eventually Lucifer crossed the line of no return. He refused to reconcile.
+In heaven, Satan [became a false witness](/posts/gospel/evil.md) against God {% rf 'John 8:44' %} after he started believing he could do a better job in running the universe {% rf 'Isaiah 14:12-14' %}. Faced with an accuser who was fast gaining a following, how would God respond? He could have immediately destroy Satan and his followers for their audacity to rebel. But that is not His character. He seeks to save, not to destroy {% rf 'Luke 9:56' %}. No doubt, God would have appealed to Lucifer again and again to turn around, for He is long-suffering, "not willing that any should perish, but that all should come to repentance." But Lucifer eventually crossed the line of no return. He refused to reconcile.
 
-When a controversy arises between two parties, there is a need for a neutral third party, a jury. In order to qualify to be one, three requirements must be met:
-1. the jury members must be law-abiding citizens,
-1. they must have no firsthand knowledge of the dispute,
-1. they must differentiate between good and evil.
+Instead of flexing His power over Lucifer, God respected his choice. But He went even further than that: He opened Himself up to judgment.
 
-First, jurors should have little firsthand knowledge of the offense. Adam and Eve had not yet been created when the rebellion occurred in heaven. Second, a juror must be a law-abiding citizen. When the first human pair was created, God made them in His likeness. The law of His government was written upon their hearts. They were law-abiding citizens of the kingdom of heaven. Third, a juror must know the difference between good and evil. Adam and Eve both knew this distinction. They knew that eating from the tree of the knowledge of good and evil was wrong. God made this clear to them.
+When a controversy arises between two parties, a neutral third party, a jury, is needed to settle the dispute. A jury member must meet three requirements:
+1. be a law-abiding citizen,
+1. have no firsthand knowledge of the conflict,
+1. be able to differentiate between good and evil.
+
+Adam and Eve qualified for all three: God created them in His own image as law-abiding citizens, they did not witness Lucifer's rebellion, for they were created after it occurred, and God was clear on what they could and could not do.[^2] To be fair to Satan, God gave placed two trees in the midst of the garden: the tree of life and tree of knowledge of good and evil {% rf 'Genesis 2:9' %}. They represented two choices: God or Satan. Though Adam and Eve had no reason to turn on God, for their life was perfect, the freedom to do so was there.
+
+The day came when Eve wandered near the forbidden tree, and Satan knew his opportunity had come. He disguised himself as a serpent and presented his side of the story, accusing God of being manipulative and untrustworthy. Eve considered his arguments and decided he was more trustworthy than God. Adam soon followed her lead. Satan had succeeded in deceiving the jury.
+
+What would God do now?
+
+He would give them a second chance--at infinite cost to Himself. God the Father would give His Son, who would voluntarily leave the glories of heaven and the adoration of angels, take on human flesh, live in a dark world of evil and sin, and die a most shameful death. He would bear its marks forever. keep human nature even after His triumph over Satan. Zechariah 13:6
 
 [^1]: How few realize our high and noble calling and accept a dehumanizing worldview instead that suggests humanity accidentally evolved from primordial goo, devoid of meaning or purpose! What would the biblical worldview do for the hopeless and despondent among us? What would the realization that our earthly life is a training for heavenly responsibilities do for all of us? How much more meaning and purpose would that bring both to the most mundane and the most challenging occupations? Adam certainly did not have it easy after the fall. But God in His wisdom saw that Him fallen nature needed to wrestle with work that included sweat, thorns, and thistles {% rf 'Genesis 3:18-19' %}. If we are open, even unpleasant work can teach us lessons for eternity.
+
+[^2]: I am indebted to Ivor Myers' book *Operation Blueprint* for this insight.
 
 > But God hath chosen the foolish things of the world to confound the wise; and God hath chosen the weak things of the world to confound the things which are mighty.
 {% ct '1 Corinthians 1:27' %}
@@ -50,4 +60,5 @@ FORK: Moreover, after the rebellion, a need arose for an impartial third-party t
 > Wherefore remember, that ye being in time past Gentiles in the flesh, who are called Uncircumcision by that which is called the Circumcision in the flesh made by hands; that at that time ye were without Christ, being aliens from the commonwealth of Israel, and strangers from the covenants of promise, having no hope, and without God in the world. But now in Christ Jesus ye who sometimes were far off are made nigh by the blood of Christ.
 {% ct 'Ephesians 2:11-13' %}
 
-talk about how all the progress adam and eve would've made will be fulfilled in the New Jerusalem
+TO DO:
+- all the subduing adam and eve would've made will be fulfilled in the New Jerusalem
