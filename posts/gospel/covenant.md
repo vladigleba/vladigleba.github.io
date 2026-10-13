@@ -30,20 +30,27 @@ Because redeemed humanity would understand Him better than any angel, He would e
 
 In heaven, Satan [became a false witness](/posts/gospel/evil.md) against God {% rf 'John 8:44' %} after he started believing he could do a better job in running the universe {% rf 'Isaiah 14:12-14' %}. Faced with an accuser who was fast gaining a following, how would God respond? He could have immediately destroy Satan and his followers for their audacity to rebel. But that is not His character. He seeks to save, not to destroy {% rf 'Luke 9:56' %}. No doubt, God would have appealed to Lucifer again and again to turn around, for He is long-suffering, "not willing that any should perish, but that all should come to repentance." But Lucifer eventually crossed the line of no return. He refused to reconcile.
 
-Instead of flexing His power over Lucifer, God respected his choice. But He went even further than that: He opened Himself up to judgment.
+Instead of demonstrating His power over Lucifer, God respected his choice. But He went even further than that: He opened Himself up to judgment. Lucifer had raised serious accusations against His character and government, and a neutral third party, a jury, was needed to settle the case.
 
-When a controversy arises between two parties, a neutral third party, a jury, is needed to settle the dispute. A jury member must meet three requirements:
+In order to be part of the jury, three requirements must be met:
 1. be a law-abiding citizen,
 1. have no firsthand knowledge of the conflict,
 1. be able to differentiate between good and evil.
+Adam and Eve met all three: God created them in His own image as law-abiding citizens, they did not witness Lucifer's rebellion, for they were created after it occurred, and God was clear on what they could and could not do.[^2]
 
-Adam and Eve qualified for all three: God created them in His own image as law-abiding citizens, they did not witness Lucifer's rebellion, for they were created after it occurred, and God was clear on what they could and could not do.[^2] To be fair to Satan, God gave placed two trees in the midst of the garden: the tree of life and tree of knowledge of good and evil {% rf 'Genesis 2:9' %}. They represented two choices: God or Satan. Though Adam and Eve had no reason to turn on God, for their life was perfect, the freedom to do so was there.
+To be fair to Satan, God gave placed two trees in the midst of the garden: the tree of life and tree of knowledge of good and evil {% rf 'Genesis 2:9' %}. They represented two choices: Him or Satan. Though Adam and Eve had no reason to turn on their Creator, for their life was perfect, the freedom to do so was nonetheless there.
 
-The day came when Eve wandered near the forbidden tree, and Satan knew his opportunity had come. He disguised himself as a serpent and presented his side of the story, accusing God of being manipulative and untrustworthy. Eve considered his arguments and decided he was more trustworthy than God. Adam soon followed her lead. Satan had succeeded in deceiving the jury.
+The day came when Eve wandered near the forbidden tree, and Satan knew his opportunity had come. He disguised himself as a serpent and presented his side of the story, accusing God of being manipulative and untrustworthy. Eve considered his arguments and decided that he was more trustworthy than God. Adam soon followed her lead.
 
-What would God do now?
+Satan had succeeded in deceiving the jury. After securing a third of God's angels, he now gained humanity, the very ones who were to judge him.
 
-He would give them a second chance--at infinite cost to Himself. God the Father would give His Son, who would voluntarily leave the glories of heaven and the adoration of angels, take on human flesh, live in a dark world of evil and sin, and die a most shameful death. He would bear its marks forever. keep human nature even after His triumph over Satan. Zechariah 13:6
+## What would God do now?
+
+Because Satan used deception to disqualify the jury, God would give them a second chance--at infinite cost to Himself. An animal, likely a lamb, did die that day, because God clothed them in animal skins, for their fig leaves, a symbol of our own attempts to atone for our sins, were inadequate {% rf 'Genesis 3:21' %}. The animal skins were a confirmation of His promise: "And I will put enmity between thee and the woman, and between thy seed and her seed; it shall bruise thy head, and thou shalt bruise his heel" {% rf 'Genesis 3:15' %}. What a Creator! The day Adam and Eve sinned, He proclaimed the gospel to them. Instead of abandoning them in their despair, or starting over with a new creation, He yoked Himself to them and made them a promise: a coming Deliverer would die the death they were supposed to die and would clothe their spiritual nakedness in His own perfect righteousness.
+
+After this promise, God drove them out of the beautiful garden made just for them, because it was for righteous inhabitants only. Now that they were infected with sin, they could no longer have face to face communion with Him and live {% rf 'Exodus 33:20' %}. They could no longer walk with Him through their favorite garden paths. From that time on, an invisible veil separated them from their Creator.
+
+The Father would give His Son, who would voluntarily leave the glories of heaven and the adoration of angels, take on human flesh, live in a dark world of evil and sin, and die a most shameful death. He would bear its marks forever. keep human nature even after His triumph over Satan. Zechariah 13:6
 
 [^1]: How few realize our high and noble calling and accept a dehumanizing worldview instead that suggests humanity accidentally evolved from primordial goo, devoid of meaning or purpose! What would the biblical worldview do for the hopeless and despondent among us? What would the realization that our earthly life is a training for heavenly responsibilities do for all of us? How much more meaning and purpose would that bring both to the most mundane and the most challenging occupations? Adam certainly did not have it easy after the fall. But God in His wisdom saw that Him fallen nature needed to wrestle with work that included sweat, thorns, and thistles {% rf 'Genesis 3:18-19' %}. If we are open, even unpleasant work can teach us lessons for eternity.
 
@@ -51,8 +58,6 @@ He would give them a second chance--at infinite cost to Himself. God the Father 
 
 > But God hath chosen the foolish things of the world to confound the wise; and God hath chosen the weak things of the world to confound the things which are mighty.
 {% ct '1 Corinthians 1:27' %}
-
-FORK: Moreover, after the rebellion, a need arose for an impartial third-party to serve as the jury between God and Satan. Satan had raised serious accusations against God's character and government, and a jury was needed to settle the case.
 
 > And I will establish my covenant between me and thee and thy seed after thee in their generations for an everlasting covenant, to be a God unto thee, and to thy seed after thee. And I will give unto thee, and to thy seed after thee, the land wherein thou art a stranger, all the land of Canaan, for an everlasting possession; and I will be their God.
 {% ct 'Genesis 17:7-8' %}
