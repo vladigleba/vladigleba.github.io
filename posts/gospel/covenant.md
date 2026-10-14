@@ -62,9 +62,9 @@ When Abraham was ninety-nine years old and Sarah could no longer bear children, 
 > Neither shall thy name any more be called Abram, but thy name shall be Abraham; for *a father of many nations have I made thee*. And I will make thee exceeding fruitful, and I will make nations of thee, and kings shall come out of thee. And *I will establish my covenant between me and thee and thy seed after thee in their generations for an everlasting covenant, to be a God unto thee, and to thy seed after thee*. And I will give unto thee, and to thy seed after thee, the land wherein thou art a stranger, *all the land of Canaan, for an everlasting possession*; and I will be their God.
 {% ct 'Genesis 17:5-8' %}
 
-It is remarkable that God's everlasting covenant with Abraham included an everlasting possession of land. But two chapters earlier, when Abraham had asked God, "How shall I know that I will inherit it?" God told him the following: 
+It is remarkable that God’s everlasting covenant with Abraham included an everlasting possession of land. But two chapters earlier, when Abraham had asked God, “How shall I know that I will inherit it?” God told him the following: 
 
-> Know of a surety that thy seed shall be a stranger in a land that is not theirs, and shall serve them; and they shall afflict them four hundred years... And thou shalt go to thy fathers in peace; thou shalt be buried in a good old age. But in the fourth generation they shall come hither again: for the iniquity of the Amorites is not yet full.
+> Know of a surety that thy seed shall be a stranger in a land that is not theirs, and shall serve them; and they shall afflict them four hundred years… And thou shalt go to thy fathers in peace; thou shalt be buried in a good old age. But in the fourth generation they shall come hither again: for the iniquity of the Amorites is not yet full.
 {% ct 'Genesis 15:13, 15-16' %}
 
 > Wherefore remember, that ye being in time past Gentiles in the flesh, who are called Uncircumcision by that which is called the Circumcision in the flesh made by hands; that at that time ye were without Christ, being aliens from the commonwealth of Israel, and strangers from the covenants of promise, having no hope, and without God in the world. But now in Christ Jesus ye who sometimes were far off are made nigh by the blood of Christ.
