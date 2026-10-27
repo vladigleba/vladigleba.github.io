@@ -60,7 +60,7 @@ The book of James gives another clue about sin: it is an informed, willful act.
 When iniquity—transgression of God’s law—was found in Lucifer, he knew what he was doing; it was not an act of ignorance. He chose to rebel.
 
 ## Why is a law needed?
- 
+
 Remove a traffic law and a busy intersection turns into chaos—or worse. Where there is no law there is only anarchy. Since God is not the author of confusion, but of peace {% rf '1 Corinthians 14:33' %}, He has a law, and since He has a law, He must have a government {% rf 'Isaiah 9:7' %}. God’s government, like human government, is established upon law to secure order and peace for all its inhabitants.
 
 > *Great peace have they which love thy law*: and nothing shall offend them.

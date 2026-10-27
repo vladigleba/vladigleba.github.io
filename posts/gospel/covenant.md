@@ -57,7 +57,19 @@ Thus, our Creator proclaimed the gospel to our first parents the same day they b
 
 ## To whom was the Edenic promise later confirmed?
 
-When Abraham was ninety-nine years old and Sarah could no longer bear children, God appeared to him with an astounding covenant promise:
+After Abraham's father, Terah, died in Haran, God appeared to Abraham when he was 75 years old and commanded him to leave Haran for Canaan {% rf 'Genesis 12:1-4' %}. As part of the command, God included a promise that He would bless Abraham and that in him would "all families of the earth be blessed." What was this blessing?
+
+> For what saith the scripture? Abraham believed God, and it was counted unto him for righteousness. Now to him that worketh is the reward not reckoned of grace, but of debt. But to him that worketh not, but believeth on him that justifieth the ungodly, his faith is counted for righteousness. Even as David also describeth the blessedness of the man, unto whom God imputeth righteousness without works, saying, *Blessed are they whose iniquities are forgiven, and whose sins are covered. Blessed is the man to whom the Lord will not impute sin.*
+{% ct 'Romans 4:3-8' %}
+
+Paul identifies God's blessing as the blessing of sins forgiven, and Peter confirms it:
+
+> Ye are the children of the prophets, and of the covenant which God made with our fathers, saying unto Abraham, And in thy seed shall all the kindreds of the earth be blessed. Unto you first God, *having raised up his Son Jesus, sent him to bless you, in turning away every one of you from his iniquities*.
+{% ct 'Acts 3:25-26' %}
+
+Peter declared that the blessing went beyond the mere forgiveness of sin to include a turning away from it, and Jesus was at the center of it. He would fulfill the {% rf 'Genesis 3:15' false %} promise by reconciling humanity back to their Creator and heal the great rift created by Adam and Eve's fall. The entrance of sin meant that they could no longer commune with God face to face without being consumed by His holiness {% rf 'Hebrews 12:29' %}. Instead, they hid themselves when He came calling for them {% rf 'Genesis 3:8' %}. Why did they hide? God explained the reason to Moses when he asked to see His glory, "Thou canst not see my face: for there shall no man see me, and live" {% rf 'Exodus 33:20' %}. Centuries later, the prophet Isaiah gave additional insight: "But your iniquities have separated between you and your God, and your sins have hid his face from you" {% rf 'Isaiah 59:2' %}. Thus, resolving the sin problem is at the core of God's blessing to Abraham, and Christ is its only hope.
+
+Twenty-four years after appearing to Abraham in Haran, God appeared to him again. He was now ninety-nine years old and Sarah could no longer bear children, yet God appeared to him with an astounding covenant promise:
 
 > Neither shall thy name any more be called Abram, but thy name shall be Abraham; for *a father of many nations have I made thee*. And I will make thee exceeding fruitful, and I will make nations of thee, and kings shall come out of thee. And *I will establish my covenant between me and thee and thy seed after thee in their generations for an everlasting covenant, to be a God unto thee, and to thy seed after thee*. And I will give unto thee, and to thy seed after thee, the land wherein thou art a stranger, *all the land of Canaan, for an everlasting possession*; and I will be their God.
 {% ct 'Genesis 17:5-8' %}
@@ -67,7 +79,10 @@ It is noteworthy that God’s everlasting covenant with Abraham included an ever
 > Know of a surety that thy seed shall be a stranger in a land that is not theirs, and shall serve them; and they shall afflict them four hundred years… And *thou shalt go to thy fathers in peace; thou shalt be buried in a good old age*. But in the fourth generation they shall come hither again: for the iniquity of the Amorites is not yet full.
 {% ct 'Genesis 15:13, 15-16' %}
 
-In other words, Abraham would die before he would set foot in the land of promise. Yet two chapters later, God told Him, "And I will give unto thee, and to thy seed after thee, the land wherein thou art a stranger, all the land of Canaan, for an everlasting possession" {% rf 'Genesis 17:8' %}. Was God contradicting Himself?
+In other words, Abraham would die before he would set foot in the land of promise. Yet two chapters later, God told Him, "And I will give unto thee, and to thy seed after thee, the land wherein thou art a stranger, all the land of Canaan, for an everlasting possession" {% rf 'Genesis 17:8' %}. Was God contradicting Himself? Stephen recognized it too:
+
+> And he gave him none inheritance in it, no, *not so much as to set his foot on: yet he promised that he would give it to him for a possession*, and to his seed after him, when as yet he had no child.
+{% ct 'Acts 7:5' %}
 
 Abraham's descendants did eventually inherit the promised land under the leadership of Joshua.
 
