@@ -77,16 +77,16 @@ The blessing of God’s covenant with Abraham is the blessing of the gospel, the
 > For the promise, that he should be the heir of the world, was not to Abraham, or to his seed, through the law, but *through the righteousness of faith*.
 {% ct 'Romans 4:13' %}
 
-Another synonym for the turning away from sin is righteousness. Abraham believed that despite his sinfulness, God would make Him righteous in Christ. Even though he did not know how it would be done, he did not doubt. Had he doubted, he would have forfeited the blessing of righteousness. Zacharias, the father of John the Baptist, recognized that God's covenant with Abraham included righteousness when he prophesied of the coming Messiah:
+Another synonym for the turning away from sin is righteousness. Abraham believed that despite his sinfulness, God would make Him righteous in Christ. Even though he did not know how it would be done, he did not doubt. Had he doubted, he would have forfeited the blessing of righteousness. Zacharias, the father of John the Baptist, recognized that God’s covenant with Abraham included righteousness when he prophesied of the coming Messiah.
 
-> ... to remember his holy covenant; the oath which he swore *to our father Abraham*, that he would grant unto us, that we being delivered out of the hand of our enemies might serve him without fear, *in holiness and righteousness before him*, all the days of our life.
+> …to remember his holy covenant; the oath which he swore *to our father Abraham*, that he would grant unto us, that we being delivered out of the hand of our enemies might serve him without fear, *in holiness and righteousness before him*, all the days of our life.
 {% ct 'Luke 1:72-75' %}
 
-God’s promise to Abraham was repeated by Zacharias thousands of years later as the Hope of that covenant was about to be born. John the Baptist recognized Him too when he declared, "Behold the Lamb of God, which taketh away the sin of the world" {% rf 'John 1:29' %}. He was the Lamb in whom Abraham placed his hope when he prophesied to his son Isaac, "My son, God will provide himself a lamb for a burnt offering" {% rf 'Genesis 22:8' %}. God did indeed provide Himself on a cruel Roman cross.
+God’s promise to Abraham was repeated by Zacharias thousands of years later as the Hope of that covenant was about to be born. John the Baptist recognized Him too when he declared, “Behold the Lamb of God, which taketh away the sin of the world” {% rf 'John 1:29' %}. He was the Lamb in whom Abraham placed his hope when he prophesied to his son Isaac, “My son, God will provide himself a lamb for a burnt offering” {% rf 'Genesis 22:8' %}. God did indeed provide Himself on a cruel Roman cross.
 
 That covenant with Abraham thousands of years ago has not lost any of its relevancy today. His promise of righteousness by faith is still available to us, because it is an everlasting covenant {% rf 'Hebrews 13:20' %}. We can receive the same blessings that Abraham received in Christ by faith.
 
-# What else did God’s promise include?
+## What else did God’s promise include?
 
 Twenty-four years after speaking to Abraham in Haran, God spoke again. Abraham was ninety-nine years old and Sarah could no longer bear children, yet God gave him an astounding promise:
 
