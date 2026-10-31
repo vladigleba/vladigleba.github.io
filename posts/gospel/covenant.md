@@ -53,7 +53,7 @@ The day came when Eve wandered near the forbidden tree, and Satan knew his oppor
 
 Because Satan used deception to disqualify the jury, God gave them a second chance—at infinite cost to Himself. An animal (likely a lamb) died that day, because God later clothed them in animal skins, after their fig leaves proved inadequate, a fitting symbol of our failed attempts to cover our spiritual nakedness through our own works {% rf 'Genesis 3:21; Revelation 16:15' %}. The animal skins were a tangible confirmation of His earlier promise that He would wage war against Satan and overcome him {% rf 'Genesis 3:15' %}.
 
-Thus, our Creator proclaimed the gospel to our first parents the same day they betrayed Him. Instead of abandoning them in their despair, or starting over with a new creation, He yoked Himself to them by a covenant promise: a coming Deliverer would die the death they were supposed to die and would clothe their spiritual nakedness in His own perfect righteousness. If He treated them with such kindness, would He treat us, their descendants, any differently? He is the same yesterday, and today, and forever {% rf 'Hebrews 13:8' %}.
+Thus, our Creator proclaimed the gospel to our first parents the same day they betrayed Him. Instead of abandoning them in their despair, or starting over with a new creation, He yoked Himself to them by a covenant promise: a coming Deliverer would die the death they should have died. And He would cover their spiritual nakedness with His own perfect righteousness. If God treated them with such mercy, would He treat us, their descendants, any differently? He is the same yesterday, and today, and forever {% rf 'Hebrews 13:8' %}.
 
 ## To whom was the Edenic promise later confirmed?
 
@@ -77,7 +77,14 @@ The blessing of God’s covenant with Abraham is the blessing of the gospel, the
 > For the promise, that he should be the heir of the world, was not to Abraham, or to his seed, through the law, but *through the righteousness of faith*.
 {% ct 'Romans 4:13' %}
 
-Another synonym for the turning away from sin is righteousness. Abraham believed that despite his sinfulness, God would make Him righteous in Christ. Even though he did not know how it would be done, he did not doubt. Had he doubted, he would have forfeited the blessing of righteousness. What about us? God’s promise to Abraham thousands of years ago has not lost any of its relevancy since He spoke it. His covenant of righteousness by faith is available to us, because it is an everlasting covenant {% rf 'Hebrews 13:20' %}. We can receive the same blessing Abraham received in Christ.
+Another synonym for the turning away from sin is righteousness. Abraham believed that despite his sinfulness, God would make Him righteous in Christ. Even though he did not know how it would be done, he did not doubt. Had he doubted, he would have forfeited the blessing of righteousness. Zacharias, the father of John the Baptist, recognized that God's covenant with Abraham included righteousness when he prophesied of the coming Messiah:
+
+> ... to remember his holy covenant; the oath which he swore *to our father Abraham*, that he would grant unto us, that we being delivered out of the hand of our enemies might serve him without fear, *in holiness and righteousness before him*, all the days of our life.
+{% ct 'Luke 1:72-75' %}
+
+God’s promise to Abraham was repeated by Zacharias thousands of years later as the Hope of that covenant was about to be born. John the Baptist recognized Him too when he declared, "Behold the Lamb of God, which taketh away the sin of the world" {% rf 'John 1:29' %}. He was the Lamb in whom Abraham placed his hope when he prophesied to his son Isaac, "My son, God will provide himself a lamb for a burnt offering" {% rf 'Genesis 22:8' %}. God did indeed provide Himself on a cruel Roman cross.
+
+That covenant with Abraham thousands of years ago has not lost any of its relevancy today. His promise of righteousness by faith is still available to us, because it is an everlasting covenant {% rf 'Hebrews 13:20' %}. We can receive the same blessings that Abraham received in Christ by faith.
 
 # What else did God’s promise include?
 
