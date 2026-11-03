@@ -103,7 +103,26 @@ In other words, Abraham would die before he would set foot in the land of promis
 > And he gave him none inheritance in it, no, *not so much as to set his foot on: yet he promised that he would give it to him for a possession*, and to his seed after him, when as yet he had no child.
 {% ct 'Acts 7:5' %}
 
-Abraham's descendants did eventually inherit the promised land under the leadership of Joshua.
+Since Abraham received the promise of righteousness by faith, the same is true of the land. It could only be possessed by faith, and it was: “By faith the walls of Jericho fell down” {% rf 'Hebrews 11:30' %}. However, the promised land was not limited to Canaan.
+
+> For the promise, that he should be the *heir of the world*, was not to Abraham, or to his seed, through the law, but through the righteousness of faith.
+{% ct 'Romans 4:13' %}
+
+God’s promise regarding the land of Canaan included the possession of the entire earth. Christ reconfirmed this in His Sermon on the Mount: “Blessed are the meek: for they shall inherit the earth” {% rf 'Matthew 5:5' %}. Abraham’s descendants did eventually inherit the promised land of Canaan under the leadership of Joshua, but they never inherited the world. Even their Canaan inheritance, however, fell short of God’s ideal, for at the height of David’s rule, when God gave them a nation of their own and rest from all their enemies {% rf '2 Samuel 7:1' %}, He gave David a peculiar promise.
+
+> I will appoint a place for My people Israel, and will plant them, *that they may dwell in a place of their own*, and move no more; *neither shall the children of wickedness afflict them* anymore as beforetime.
+{% ct '2 Samuel 7:10' %}
+
+At a time when David’s kingdom was most prosperous, God, nonetheless, expounded on His original promise to Abraham. David himself acknowledged this. As he publicly transferred the kingdom to Solomon, his son, David prayed, “For we are strangers [foreigners] before Thee, and sojourners [pilgrims], as were all our fathers; our days on the earth are as a shadow, and there is none abiding” {% rf '1 Chronicles 29:15' %}. David compared Israel's condition to that of their fathers: Abraham, Isaac, Jacob, Gideon, Samson, Jephthah, and Samuel, who "received not the promise" {% rf 'Hebrews 11:32-39' %}. He knew that the earthly Canaan was only a type that pointed to a greater reality--the heavenly Canaan.
+
+Nor was Israel's Canaan inheritance an everlasting one. After Solomon’s kingdom split, the Assyrians conquered the Kingdom of Israel after besieging its capital, Samaria, while the Babylonians conquered the Kingdom of Judah after besieging Jerusalem. In both cases, they drove the inhabitants off their land. The descendants from Judah did eventually return from exile under the leadership of Zerubbabel, Ezra, and Nehemiah, only to be dispossessed again under the Roman Empire.
+
+But there is another part to the possession of the promised land. An everlasting inheritance can only be enjoyed by people who have everlasting life. Abraham died before he inherited the promised land. Thus, he can possess it only through the resurrection, when death will be vanquished forever and eternal life will become a reality {% rf '1 Corinthians 15:51–55' %}. In order to have the gift of everlasting life, however, one must be righteous. For if God expelled Adam and Eve from the garden for the sin of eating the forbidden fruit, it is obvious that He will admit only the righteous into heaven. But we have no righteousness of our own, for all of us have sinned {% rf 'Isaiah 64:6; Romans 3:23' %}. If any of us enter heaven, therefore, it will be only because of Someone else's righteousness.
+
+> For all the promises of God *in him are yea, and in him Amen*, unto the glory of God by us.
+{% ct '2 Corinthians 1:20' %}
+
+Christ is the cornerstone and the surety to all of God's promises.
 
 > Wherefore remember, that ye being in time past Gentiles in the flesh, who are called Uncircumcision by that which is called the Circumcision in the flesh made by hands; that at that time ye were without Christ, being aliens from the commonwealth of Israel, and strangers from the covenants of promise, having no hope, and without God in the world. But now in Christ Jesus ye who sometimes were far off are made nigh by the blood of Christ.
 {% ct 'Ephesians 2:11-13' %}

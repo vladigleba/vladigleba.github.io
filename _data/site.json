@@ -44,7 +44,7 @@
     },
     "Sunday": {
       "title": "The Counterfeit Sabbath",
-      "color": "rgb(114, 69, 145)"
+      "color": "rgb(110, 71, 136)"
     },
     "Mark": {
       "title": "The Antichrist’s Mark",
@@ -80,7 +80,7 @@
     },
     "Rest": {
       "title": "The Rest of God",
-      "color": "rgb(112, 83, 124)"
+      "color": "rgb(110, 76, 124)"
     }
   }
 }
